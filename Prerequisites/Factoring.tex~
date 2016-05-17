@@ -1,0 +1,517 @@
+\mfpicnumber{1}
+
+\opengraphsfile{Factoring}
+
+\setcounter{footnote}{0}
+
+\label{Factoring}
+
+Now that we have reviewed the basics of polynomial arithmetic it's time to review the basic techniques of factoring polynomial expressions.  Our goal is to apply these techniques to help us solve certain specialized classes of non-linear equations.  Given that `factoring' literally means to resolve a product into its factors, it is, in the purest sense, `undoing' multiplication.  If this sounds like division to you then you've been paying attention.  Let's start with a numerical example.  
+
+\smallskip
+
+Suppose we are asked to factor $16337$.  We could write $16337 = 16337 \cdot 1$, and while this is technically a factorization of $16337$,  it's probably not an answer the poser of the question would accept.  Usually, when we're asked to factor a natural number, we are being asked to resolve it into to a product of so-called 	`prime' numbers.\footnote{As mentioned in Section \ref{RealNumberArithmetic}, this is possible, in only one way, thanks to the \href{https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic}{\underline{Fundamental Theorem of Arithmetic}.}}  Recall that \textbf{prime numbers}\index{number ! prime} are defined as natural numbers whose only (natural number) factors are themselves and $1$. They are, in essence, the `building blocks' of natural numbers as far as multiplication is concerned.  Said differently, we can build - via multiplication - any natural number given enough primes.  So how do we find the prime factors of $16337$?  We start by dividing each of the primes: $2$, $3$, $5$, $7$, etc., into $16337$ until we get a remainder of $0$.  Eventually, we find that $16337 \div 17 = 961$ with a remainder of $0$, which means $16337 = 17 \cdot 961$.  So factoring and division are indeed closely related - factors of a number are precisely the divisors of that number which produce a zero remainder.\footnote{We'll refer back to this when we get to Section \ref{Polydivision}.}  We continue our efforts to see if $961$ can be factored down further, and we find that $961 = 31 \cdot 31$.  Hence, $16337$ can be `completely factored' as $17 \cdot 31^2$.  (This factorization is called the \textbf{prime factorization}\index{number ! prime factorization} of $16337$.)  
+
+\smallskip
+
+In factoring natural numbers, our building blocks are prime numbers, so to be completely factored means that every number used in the factorization of a given number is prime. One of the challenges when it comes to factoring polynomial expressions is to explain what it means to be `completely factored'. In this section, our `building blocks' for factoring polynomials are `irreducible' polynomials as defined below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm \begin{defn}\label{irreduciblepoly}  A polynomial is said to be \textbf{irreducible}\index{polynomial ! irreducible} if it cannot be written as the product of polynomials of lower degree.
+\end{defn}
+\ebm}
+
+\medskip
+
+While Definition \ref{irreduciblepoly} seems straightforward enough, sometimes a greater level of specificity is required. For example, $x^2 - 3 = (x-\sqrt{3})(x + \sqrt{3})$.  While $x-\sqrt{3}$ and $x+\sqrt{3}$ are perfectly fine polynomials, factoring which requires irrational numbers is usually saved for a more advanced treatment of factoring.\footnote{See Section \ref{RealZeros}.}  For now, we will restrict ourselves to factoring using rational coefficients. The reasons for this are strictly practical: we want to work with examples where factoring can be done {\em by hand}. For polynomials of degree three or higher, if factoring involves irrational numbers, it generally can't be done without the help of calculus, and probably a computer as well. Thus, it may sometimes be necessary to distinguish between a polynomial which is \textbf{irreducible over the rationals}, versus a polynomial which is irreducible over the real numbers.
+
+\medskip
+
+Since polynomials involve terms, the first step in any factoring strategy involves pulling out factors which are common to all of the terms.  For example, in the polynomial $18x^2y^3 - 54x^3y^2 - 12xy^2$,  each coefficient is a multiple of $6$ so we can begin the factorization as $6(3x^2y^3 - 9x^3y^2 - 2xy^2)$.  The remaining coefficients: $3$, $9$ and $2$, have no common factors so $6$ was the greatest common factor.  What about the variables? Each term contains an $x$, so we can factor an $x$ from each term.  When we do this, we are effectively dividing each term by $x$ which means the exponent on  $x$ in each term is reduced by $1$:  $6x(3xy^3 - 9x^2y^2 - 2y^2)$.  Next, we see that each term has a factor of $y$ in it.  In fact, each term has at least \textit{two} factors of $y$ in it, since the lowest exponent on $y$ in each term is $2$. This means that we can factor $y^2$ from each term. Again, factoring out $y^2$ from each term is tantamount to dividing each term by $y^2$ so the exponent on $y$ in each term is reduced by \textit{two}:  $6xy^2(3xy - 9x^2 - 2)$.  Just like we checked our division by multiplication in the previous section, we can check our factoring here by multiplication, too.  $6xy^2(3xy - 9x^2 - 2) = (6xy^2)(3xy) - (6xy^2)(9x^2) - (6xy^2)(2) = 18x^2y^3 - 54x^3y^2  - 12xy^2 \, \checkmark$.  We summarize how to find the Greatest Common Factor (G.C.F.) of a polynomial expression below.
+
+\medskip
+
+\phantomsection
+\label{PolynomialGCF}
+\colorbox{ResultColor}{\bbm
+\centerline{\textbf{Finding the G.C.F. of a Polynomial Expression}}
+
+\begin{itemize}
+
+\item If the coefficients are integers, find the G.C.F. of the coefficients. 
+
+\textbf{NOTE 1:}  If all of the coefficients are negative, consider the negative as part of the G.C.F..
+
+\textbf{NOTE 2:}  If the coefficients involve fractions, get a common denominator, combine numerators, reduce to lowest terms and apply this step to the polynomial in the numerator.
+
+\item  If a variable is common to all of the terms, the G.C.F. contains that variable to the smallest exponent which appears among the terms.
+
+\end{itemize}
+
+\ebm}
+
+\smallskip
+
+For example, to factor $-\frac{3}{5}z^3 - 6z^2$, we would first get a common denominator and factor as: \[ -\frac{3}{5}z^3 - 6z^2 = \frac{-3z^3 - 30z^2}{5} = \frac{-3z^2(z + 10)}{5} = -\frac{3z^2(z + 10)}{5}\]
+
+We now list some common factoring formulas, each of which can be verified by multiplying out the right side of the equation.  While they all should look familiar - this is a review section after all - some should look more familiar than others since they appeared as `special product' formulas in the previous section.  
+
+\medskip
+
+\phantomsection
+\label{CommonFactoringFormulas}
+\colorbox{ResultColor}{\bbm
+\centerline{\textbf{Common Factoring Formulas}}
+
+\begin{itemize}
+
+\item \textbf{Perfect Square Trinomials:}  $a^2 + 2ab + b^2 = (a+b)^2$ and $a^2 - 2ab + b^2 = (a-b)^2$
+\item  \textbf{Difference of Two Squares:}  $a^2 - b^2 = (a-b)(a+b)$
+
+\textbf{NOTE:}  In general, the sum of squares, $a^2 + b^2$ is irreducible.
+
+\item  \textbf{Sum of Two Cubes:}  $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$
+
+\textbf{NOTE:}  In general, $a^2 - ab + b^2$ is irreducible.
+
+\item   \textbf{Difference of Two Cubes:}  $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ 
+
+\textbf{NOTE:}  In general, $a^2 + ab + b^2$ is irreducible.
+\end{itemize}
+
+\ebm}
+
+\medskip
+
+Our next example gives us practice with these formulas.
+
+\begin{ex}\label{FormulaFactoring}  Factor the following polynomials completely over the rationals.  That is, write each polynomial as a product polynomials of lowest degree which are irreducible over the rationals. 
+
+\begin{multicols}{3}
+
+\begin{enumerate}
+
+\item  $18x^2 - 48x + 32$  
+
+\item  $64y^2 - 1$ 
+
+\item  \label{quadinform2} $x^6 - 64$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+
+{\bf Solution.}
+
+\begin{enumerate}
+\item  Our first step is to factor out the G.C.F. which in this case is $2$.  To match what is left with one of the special forms, we rewrite $9x^2 = (3x)^2$ and $16 = 4^2$. Since the `middle' term is $-24x = -2(4)(3x)$, we see that we have a perfect square trinomial.\[ \begin{array}{rclr}
+
+18x^2 - 48x + 32 & = & 2(9x^2 - 24x + 16) & \text{Factor out G.C.F.}\\
+                 & = & 2((3x)^2 - 2(4)(3x) + (4)^2) & \\
+								 & = & 2(3x-4)^2 & \text{Perfect Square Trinomial:  $a = 3x$, $b=4$} \\ \end{array}\]Our final answer is $2(3x-4)^2$.  To check, we multiply out $2(3x-4)^2$ to show that it equals $18x^2 - 48x + 32$.
+ 
+\item  For $64y^2 - 1$, we note that the G.C.F. of the terms is just $1$, so there is nothing (of substance) to factor out of both terms. Since $64y^2 - 1$ is the difference of two terms, one of which is a square, we look to the Difference of Squares Formula for inspiration.   By identifying $64y^2 = (8y)^2$ and $1 = 1^2$, we get \[ \begin{array}{rclr} 
+
+64y^2 - 1 & = & (8y)^2 - 1^2 & \\
+          & = & (8y-1)(8y+1) & \text{Difference of Squares, $a = 8y$, $b = 1$} \end{array} \] As before, we can check our answer by multiplying out $(8y-1)(8y+1)$ to show that it equals $64y^2 - 1$.
+
+
+
+\item  With a G.C.F. of $1$ and just two terms, $x^6 - 64$ is a candidate for both the Difference of Squares and the Difference of Cubes formulas.  Notice that we can identify $x^6 = (x^3)^2$ and $64 = 8^2$ (both perfect squares), but also $x^6 = (x^2)^3$ and $64 = 4^3$ (both perfect cubes).  If we follow the Difference of Squares approach, we get: \[ \begin{array}{rclr}
+
+x^6 - 64 & = & (x^3)^2 - 8^2 & \\
+         & = & (x^3 - 8)(x^3 + 8) & \text{Difference of Squares, $a = x^3$ and $b = 8$} \\ \end{array} \] At this point, we have an opportunity to use both the Difference and Sum of Cubes formulas: \[ \begin{array}{rclr}
+
+x^6 - 64 & = & (x^3 - 2^3)(x^3 + 2^3) & \\
+         & = & (x-2)(x^2+2x+2^2)(x+2)(x^2 - 2x + 2^2) & \text{Sum / Difference of Cubes, $a = x$, $b = 2$} \\ 
+				 & = & (x-2)(x+2)(x^2-2x+4)(x^2+2x+4) & \text{Rearrange factors} \\ 
+\end{array} \] From this approach, our final answer is $(x-2)(x+2)(x^2-2x+4)(x^2+2x+4)$.  
+
+\smallskip
+
+Following the Difference of Cubes Formula approach, we get \[ \begin{array}{rclr}
+
+x^6 - 64 & = & (x^2)^3 - 4^3 & \\
+         & = & (x^2 - 4)((x^2)^2 + 4x^2 + 4^2) & \text{Difference of Cubes, $a = x^2$, $b = 4$} \\ 
+         & = & (x^2 - 4)(x^4 + 4x^2 + 16) & \\ 
+\end{array} \] At this point, we recognize $x^2 - 4$ as a difference of two squares: \[ \begin{array}{rclr}
+
+x^6 - 64 & = & (x^2 - 2^2)(x^4 + 4x^2 + 16)  & \\
+         & = & (x-2)(x+2)(x^4 + 4x^2 + 16) & \text{Difference of Squares, $a = x$, $b = 2$} \\ 
+ 
+\end{array} \]
+
+Unfortunately, the remaining factor $x^4 + 4x^2 + 16$ is not a perfect square trinomial - the middle term would have to be $8x^2$ for this to work - so our final answer using this approach is $(x-2)(x+2)(x^4 + 4x^2 + 16)$.   This isn't as factored as our result from the Difference of Squares approach which was $(x-2)(x+2)(x^2-2x+4)(x^2+2x+4)$.  While it is true that $x^4 + 4x^2 + 16 = (x^2-2x+4)(x^2+2x+4)$, there is no `intuitive' way to motivate this factorization at this point.\footnote{Of course, this begs the question, ``How do we know $x^2-2x+4$ and $x^2+2x+4$ are irreducible?'' (We were told so on page \pageref{CommonFactoringFormulas}, but no reason was given.)  Stay tuned!  We'll get back to this in due course.}  The moral of the story?  When given the option between using the Difference of Squares and Difference of Cubes, start with the Difference of Squares.  Our final answer to this problem is  $(x-2)(x+2)(x^2-2x+4)(x^2+2x+4)$.  The reader is strongly encouraged to show that this reduces down to $x^6 - 64$ after performing all of the  multiplication.\qed
+
+\end{enumerate}
+\end{ex}
+
+The formulas on page \pageref{CommonFactoringFormulas}, while useful, can only take us so far, so we need to review some more advanced factoring strategies. 
+
+\medskip
+
+\phantomsection
+\label{AdvancedReviewFactoring}
+
+\colorbox{ResultColor}{\bbm
+\centerline{\textbf{Advanced Factoring Formulas}}
+
+\begin{itemize}
+
+\item  \textbf{`un-F.O.I.L.ing':} Given a trinomial $Ax^2 + Bx + C$, try to reverse the F.O.I.L. process.  
+
+That is, find  $a$, $b$, $c$ and $d$ such that $Ax^2 + Bx + C= (ax+b)(cx+d)$.  
+
+\textbf{NOTE:}  This means $ac = A$, $bd = C$ and $B = ad+bc$.
+
+\item \textbf{Factor by Grouping:} If the expression contains four terms with no common factors among the four terms, try `factor by grouping': \[ac + bc + ad + bd = (a +b)c + (a+b)d = (a+b)(c+d)\]
+
+\end{itemize}
+
+\ebm}
+
+\medskip
+
+The techniques of `un-F.O.I.L.ing' and `factoring by grouping' are difficult to describe in general but should make sense to you with enough practice.  Be forewarned - like all `Rules of Thumb', these strategies work just often enough to be useful, but you can be sure there are exceptions which will defy any advice given here and will require some `inspiration' to solve. Even though Chapter \ref{Polynomials} will give us more powerful factoring methods, we'll find that, in the end, there is no single algorithm for factoring which works for every polynomial. In other words, there will be times when you just have to try something and see what happens.
+
+\begin{ex}\label{advfactoring}  Factor the following polynomials completely over the integers.\footnote{This means that all of the coefficients in the factors will be integers.}
+
+\enlargethispage{.1in}
+
+\begin{multicols}{4}
+
+\begin{enumerate}
+
+\item  $x^2 - x - 6$  
+
+\item  $2t^2 - 11t + 5$
+
+\item  $2t^3 - 10t^2 + 3t - 15$ 
+
+\item  $x^4 + 4x^2 + 16$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  The G.C.F. of the terms $x^2 - x - 6$  is $1$ and $x^2 - x - 6$ isn't a perfect square trinomial (Think about why not.) so we try to reverse the F.O.I.L. process and look for integers $a$, $b$, $c$ and $d$ such that $(ax + b)(cx + d) = x^2 - x - 6$.  To get started, we note that $ac = 1$.  Since $a$ and $c$ are meant to be integers, that leaves us with either $a$ and $c$ both being $1$, or $a$ and $c$ both being $-1$.  We'll go with $a = c = 1$, since we can factor\footnote{Pun intended!} the negatives into our choices for $b$ and $d$.  This yields $(x+b)(x+d) = x^2-x-6$.  Next, we use the fact that $bd = -6$.  The product is negative so we know that one of $b$ or $d$ is positive and the other is negative.  Since $b$ and $d$ are integers, one of $b$ or $d$ is $\pm 1$ and the other is $\mp 6$ OR one of $b$ or $d$ is $\pm 2$ and the other is $\mp 3$. After some guessing and checking,\footnote{The authors have seen some strange gimmicks that allegedly help students with this step.  We don't like them so we're sticking with good old-fashioned guessing and checking.} we find that $x^2 - x - 6 = (x+2)(x-3)$.
+
+\item As with the previous example, we check the G.C.F. of the terms in $2t^2 - 11t + 5$, determine it to be $1$ and see that the polynomial doesn't fit the pattern for a perfect square trinomial.  We now try to find integers $a$, $b$, $c$ and $d$ such that $(at+b)(ct+d) = 2t^2 - 11t + 5$.  Since $ac = 2$, we have that one of $a$ or $c$ is $2$, and the other is $1$. (Once again, we ignore the negative options.)  At this stage, there is nothing really distinguishing $a$ from $c$ so we choose $a = 2$ and $c = 1$.  Now we look for $b$ and $d$ so that $(2t + b)(t+d) = 2t^2 - 11t + 5$.  We know $bd = 5$ so one of $b$ or $d$ is $\pm 1$ and the other $\pm 5$. Given that $bd$ is positive, $b$ and $d$ must have the same sign.  The negative middle term $-11t$ guides us to guess $b = -1$ and $d = -5$ so that we get $(2t -1)(t -5) = 2t^2 - 11t + 5$.  We verify our answer by multiplying.\footnote{That's the `checking' part of 'guessing and checking'.}
+
+%\item  Once again, we check for a nontrivial G.C.F. and see if $36 - 11y - 12y^2$ fits the pattern of a perfect square.  Twice disappointed, we rewrite $36 - 11y - 12y^2 = -12y^2 - 11y + 36$ for notational convenience.  We now look for integers $a$, $b$, $c$ and $d$ such that $-12y^2 - 11y + 36 = (ay + b)(cy + d)$.  Since $ac =-12$, we know that one of $a$ or $c$ is $\pm 1$ and the other $\pm 12$ OR one of them is $\pm 2$ and the other is $\pm 6$ OR one of them is $\pm 3$ while the other is $\pm 4$. Since their product is $-12$, however, we know one of them is positive, while the other is negative.   To make matters worse, the constant term $36$ has its fair share of factors, too.  Our answers for $b$ and $d$ lie among the pairs $\pm 1$ and $\pm 36$, $\pm 2$ and $\pm 18$, $\pm 4$ and $\pm 9$, or $\pm 6$.  Since we know one of $a$ or $c$ will be negative, we can simplify our choices for $b$ and $d$ and just look at the positive possibilities.  After some guessing and checking,\footnote{Some of these guesses can be more `educated' than others.  Since the middle term is relatively `small,' we don't expect the `extreme' factors of $36$ and $12$ to appear, for instance.} we find $(-3y + 4)(4y+9) = -12y^2 - 11y + 36$.
+
+%\item  Since the G.C.F. of the terms in $18xy^2 - 54xy - 180x$  is $18x$, we begin the problem by factoring it out first:  $18xy^2 - 54xy - 180x = 18x(y^2 - 3y - 10)$.  We now focus our attention on $y^2 - 3y - 10$.  We can take $a$ and $c$ to both be $1$ which yields $(y+b)(y+d) = y^2 - 3y - 10$.  Our choices for $b$ and $d$ are among the factor pairs of $-10$: $\pm 1$ and $\pm 10$ or $\pm 2$ and $\pm 5$, where one of $b$ or $d$ is positive and the other is negative.  We find $(y-5)(y+2) = y^2 - 3y - 10$.  Our final answer is $18xy^2 - 54xy - 180x = 18x(y-5)(y+2)$.
+
+\item Since $2t^3 - 10t^2 - 3t + 15$  has four terms, we are pretty much resigned to factoring by grouping.  The strategy here is to factor out the G.C.F. from two \textit{pairs} of terms, and see if this reveals a common factor. If we group the first two terms, we can factor out a $2t^2$ to get $2t^3 - 10t^2 = 2t^2(t-5)$.  We now try to factor something out of the last two terms that will leave us with a factor of $(t-5)$.  Sure enough, we can factor out a $-3$ from both:  $-3t + 15 = -3(t-5)$.  Hence, we get \[ 2t^3 - 10t^2 - 3t + 15 = 2t^2(t-5) - 3(t-5) = (2t^2-3)(t-5)\] Now the question becomes can we factor $2t^2 - 3$ over the integers?  This would require integers $a, b, c$ and $d$ such that $(at + b)(ct + d) = 2t^2 - 3$.   Since $ab = 2$ and $cd = -3$, we aren't left with many options - in fact, we really have only four choices:  $(2t - 1)(t+3)$, $(2t+1)(t-3)$, $(2t - 3)(t+1)$ and $(2t+3)(t-1)$.  None of these produces $2t^2 - 3$ - which means it's irreducible over the integers - thus our final answer is $(2t^2-3)(t-5)$.
+
+\item  Our last example, $x^4 + 4x^2 + 16$, is our old friend from Example \ref{FormulaFactoring}.  As noted there, it is not a perfect square trinomial, so we could try to reverse the F.O.I.L. process. This is complicated by the fact that our highest degree term is $x^4$, so we would have to look at factorizations of the form $(x+b)(x^3+d)$ as well as $(x^2 + b)(x^2 + d)$.  We leave it to the reader to show that neither of those work.  This is an example of where `trying something' pays off.  Even though we've stated that it is not a perfect square trinomial, it's pretty close.  Identifying $x^4 = (x^2)^2$ and $16 = 4^2$, we'd have $(x^2 + 4)^2 = x^4 + 8x^2 + 16$, but instead of $8x^2$ as our middle term, we only have $4x^2$. We could add in the extra $4x^2$ we need, but to keep the balance, we'd have to subtract it off.  Doing so produces and unexpected opportunity: \[ \begin{array}{rclr}
+
+x^4 + 4x^2 + 16 & = & x^4 + 4x^2 + 16 + (4x^2 - 4x^2) & \text{Adding and subtracting the same term} \\
+                & = & x^4 + 8x^2 + 16 - 4x^2 & \text{Rearranging terms} \\
+                & = & (x^2 + 4)^2 - (2x)^2 & \text{Factoring perfect square trinomial} \\
+								& = & [(x^2 +4) - 2x][ (x^2 + 4) + 2x] & \text{Difference of Squares:  $a= (x^2 + 4)$, $b = 2x$}\\
+								& = & (x^2 - 2x + 4)(x^2 + 2x + 4) & \text{Rearraging terms} \\
+
+\end{array}\]
+
+We leave it to the reader to check that neither $x^2 - 2x + 4$ nor $x^2 + 2x + 4$ factor over the integers, so we are done. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+\subsection{Solving Equations by Factoring}
+\label{solveeqnsbyfactoring}
+
+Many students wonder why they are forced to learn how to factor.  Simply put, factoring is our main tool for solving the non-linear equations which arise in many of the applications of Mathematics. We use factoring in conjunction with the Zero Product Property of Real Numbers which was first stated on page \pageref{propertiesofzero} and is given here again for reference.
+
+\medskip
+ 
+\colorbox{ResultColor}{\bbm
+
+\textbf{The Zero Product Property of Real Numbers:}  If $a$ and $b$ are real numbers with $ab = 0$ then either $a = 0$ or $b = 0$ or both.
+
+\ebm}
+
+\medskip
+
+For example, consider the equation $6x^2 + 11x = 10$.  To see how the Zero Product Property is used to help us solve this equation, we first set the equation equal to zero and then apply the techniques from Example \ref{advfactoring}: \[ \begin{array}{rclr}
+6x^2 + 11x & = & 10 \\
+6x^2 + 11x - 10 & = & 0 & \text{Subtract $10$ from both sides} \\
+(2x+5)(3x-2) & = & 0 & \text{Factor} \\
+2x +5 = 0 & \text{or} & 3x -2 = 0 & \text{Zero Product Property} \\ [-2pt]
+          &           &           & a = 2x+5, b = 3x-2 \\ [-8pt]
+x = -\frac{5}{2} & \text{or} & x = \frac{2}{3} & \\ \end{array} \] The reader should check that both of these solutions satisfy the original equation.
+
+\smallskip
+
+It is critical that you see the importance of setting the expression equal to $0$ before factoring. Otherwise, we'd get: \[ \begin{array}{rclr}
+
+6x^2 + 11x & = & 10 \\
+x(6x + 11) & = & 10 & \text{Factor} \\
+\end{array} \] What we \textbf{cannot} deduce from this equation is that $x = 10$ or $6x+11 = 10$ or that $x = 2$ and $6x+11 = 5$, etc..  It is precisely because $0$ plays such a special role in the arithmetic of real numbers (as the Additive Identity) that we can assume a factor is $0$ when the product is $0$.  No other real number has that ability.
+
+\smallskip
+
+We summarize the {\bf correct} equation solving strategy below.
+
+\medskip
+
+\phantomsection
+\label{solvenonlineareqns}
+
+\colorbox{ResultColor}{\bbm
+\centerline{\textbf{Strategy for Solving Non-linear Equations}}
+
+\begin{enumerate}
+
+\item  Put all of the nonzero terms on one side of the equation so that the other side is $0$.
+\item  Factor.
+\item  Use the Zero Product Property of Real Numbers and set each factor equal to $0$.
+\item  Solve each of the resulting equations.
+
+\end{enumerate}
+
+\ebm}
+
+\medskip
+
+Let's finish the section with a collection of examples in which we use this strategy.
+
+\begin{ex}\label{solveeqnbyfactoring}  Solve the following equations.
+
+\begin{multicols}{3}
+
+\begin{enumerate}
+
+\item  $3x^2 = 35 - 16x$\vphantom{$t = \dfrac{1 + 4t^2}{4}$}
+
+\item  $t = \dfrac{1+4t^2}{4}$
+
+\item  $(y-1)^2 = 2(y-1)$\vphantom{$t = \dfrac{1 + 4t^2}{4}$}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+
+
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  We begin by gathering all of the nonzero terms to one side getting $0$ on the other and then we proceed to factor and apply the Zero Product Property. \[ \begin{array}{rclr}
+
+3x^2 & = & 35 - 16x & \\
+
+3x^2 + 16x - 35 & = & 0 & \text{Add $16x$, subtract $35$} \\
+
+(3x-5)(x+7) & = & 0 & \text{Factor} \\
+
+3x-5 = 0 & \text{or} & x+7 = 0 & \text{Zero Product Property} \\
+
+x = \frac{5}{3} & \text{or} & x = -7 & \\ 
+
+\end{array} \]
+
+We check our answers by substituting each of them into the original equation.  Plugging in $x = \frac{5}{3}$ yields $\frac{25}{3}$ on both sides while $x = -7$ gives $147$ on both sides.
+
+\item To solve $t = \frac{1+4t^2}{4}$, we first clear fractions then move all of the nonzero terms to one side of the equation, factor and apply the Zero Product Property.\[ \begin{array}{rclr}
+
+t & = & \dfrac{1+4t^2}{4} & \\
+
+4t & = & 1+4t^2 & \text{Clear fractions (multiply by $4$)} \\
+
+0 & = & 1+4t^2 - 4t & \text{Subtract 4} \\
+
+0 & = & 4t^2 - 4t + 1 & \text{Rearrange terms} \\
+
+0 & = & (2t-1)^2 & \text{Factor (Perfect Square Trinomial)} \\
+
+\end{array} \]
+
+At this point, we get $(2t-1)^2 = (2t-1)(2t-1) = 0$, so, the Zero Product Property gives us $2t-1 =0$ in both cases.\footnote{More generally, given a positive power $p$,  the only solution to $X^p = 0$ is $X = 0$.}  Our final answer is $t = \frac{1}{2}$, which we invite the reader to check.
+
+\item  Following the strategy outlined above, the first step to solving $(y-1)^2 = 2(y-1)$ is to gather the nonzero terms on one side of the equation with $0$ on the other side and factor.\[ \begin{array}{rclr}
+
+(y-1)^2 & = & 2(y-1) & \\
+
+(y-1)^2 - 2(y-1) & = & 0 & \text{Subtract $2(y-1)$} \\
+(y-1)[(y-1) - 2] & = & 0 & \text{Factor out G.C.F.} \\
+(y-1)(y-3) & = & 0 &  \text{Simplify} \\
+y-1 = 0 & \text{or} & y - 3 = 0 & \\
+
+y = 1 & \text{or} & y = 3 & \\  \end{array} \] Both of these answers are easily checked by substituting them into the original equation.  
+
+\smallskip
+
+An alternative method to solving this equation is to begin by dividing both sides by $(y-1)$ to simplify things outright.  As we saw in Example \ref{lineareqnreview}, however, whenever we divide by a variable quantity, we make the explicit assumption that this quantity is nonzero.  Thus we must stipulate that $y - 1 \neq 0$.\[ \begin{array}{rclr}
+
+\dfrac{(y-1)^2}{(y-1)} & = & \dfrac{2(y-1)}{(y-1)} & \text{Divide by $(y-1)$ - this assumes $(y-1) \neq 0$}\\
+y - 1 & = & 2 & \\
+y & = & 3 & \\  \end{array} \] Note that in this approach, we obtain the $y=3$ solution, but we `lose' the $y = 1$ solution. How did that happen?  Assuming $y - 1 \neq 0$ is equivalent to assuming $y \neq 1$.  This is an issue because $y = 1$ is a solution to the original equation and it was `divided out' too early.  The moral of the story?  If you decide to divide by a variable expression, double check that you aren't excluding any solutions.\footnote{You will see other examples throughout this text where dividing by a variable quantity does more harm than good.  Keep this basic one in mind as you move on in your studies - it's a good cautionary tale.}\qed
+
+\end{enumerate}
+
+\end{ex}
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely over the integers.  Check your answer by multiplication.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $2x - 10x^2$ \label{factoringexfirst}
+\item $12t^5 - 8t^3$
+\item $5(m+3)^2- 4(m+3)^3$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $25t^2 + 10t + 1$
+\item $(2x-1)(x+3) - 4(2x-1)$
+\item $t^2(t-5) + t - 5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $9z^2 - 64y^4$
+\item $49 - 4t^2$
+\item $81t^4 - 16$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $y^2 - 12y + 27$
+\item $(y+3)^2 - 4y^2$
+\item $(x+h)^3 - (x+h)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^2 - 5x - 14$
+\item $27 - 8x^3$
+\item $t^6 +t^3$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3m^3 + 9m^2 - 12m$
+\item $6x^2 - 23x + 20$
+\item $3t^2 + 16t + 5$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^3 - 5x^2 - 9x + 45$
+\item $x^4 + x^2 - 20$
+\item $4(t^2-1)^2 +3(t^2-1) - 10$\label{factoringexlast}
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+In Exercises \ref{solvebyfactorfirst} - \ref{solvebyfactorlast},  find all rational number solutions.  Check your answers.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item   $(7x+3)(x-5) = 0$ \label{solvebyfactorfirst}
+\item   $(2t-1)^2 (t+4) = 0$
+\item   $(y^2 + 4)(3y^2 +y - 10) = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item   $4t = t^2$
+\item   $y+3 = 2y^2$
+\item   $26x = 8x^2 + 21$  
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $16x^4 = 9x^2$
+\item $w(6w+11) = 10$
+\item $2w^2 + 5w + 2 = - 3(2w+1)$\label{solvebyfactorlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+\closegraphsfile

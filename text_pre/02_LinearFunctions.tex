@@ -1,0 +1,430 @@
+\section{Linear Functions}
+
+\label{LinearFunctions}
+
+We now begin the study of families of functions.  Our first family, linear functions, are old friends as we shall soon see.  Recall from Geometry that two distinct points in the plane determine a unique line containing those points, as indicated in Figure \ref{fig:linfun1}.
+
+\mfigure{.75}{The line between two points $P$ and $Q$}{fig:linfun1}{figures/LinearQuadraticGraphics/LinearFunctions-1}
+
+To give a sense of the `steepness' of the line, we recall that we can compute the \sword{slope} of the line using the formula below.
+
+\smallskip
+
+
+
+%\smallskip
+
+\definition{slope}{Slope}{
+The \index{slope ! definition} \sword{slope} $m$ of the line containing the points $P\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $Q\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right)$ is: \index{line ! slope of} \index{slope ! of a line}
+
+\[ m  = \dfrac{y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}}{x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}},\]
+
+provided $x_{\mbox{\tiny$1$}} \neq x_{\mbox{\tiny$0$}}$.
+}
+
+\smallskip
+
+A couple of notes about Definition \ref{slope} are in order.  First, don't ask why we use the letter `$m$' to represent slope.  There are many explanations out there, but apparently no one really knows for sure. Secondly, the stipulation  $x_{\mbox{\tiny$1$}} \neq x_{\mbox{\tiny$0$}}$ ensures that we aren't trying to divide by zero.  The reader is invited to pause to think about what is happening geometrically; the anxious reader can skip along to the next example.
+
+\mnote{.5}{See  \href{http://mathforum.org/dr.math/faq/faq.terms.html}{\underline{www.mathforum.org}} or \href{http://mathworld.wolfram.com/Slope.html}{\underline{www.mathworld.wolfram.com}} for discussions on the use of the letter $m$ to indicate slope.}
+
+\example{slopeex}{Finding the slope of a line}{
+ Find the slope of the line containing the following pairs of points, if it exists.  Plot each pair of points and the line containing them.
+
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item  $P(0,0)$, $Q(2,4)$
+\item  $P(-1,2)$, $Q(3,4)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $P(-2,3)$, $Q(2,-3)$
+\item  $P(-3,2)$, $Q(4,2)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $P(2,3)$, $Q(2,-1)$
+\item  $P(2,3)$, $Q(2.1, -1)$
+
+\end{enumerate}
+\end{multicols}
+}
+{
+In each of these examples, we apply the slope formula, from Definition \ref{slope}.
+
+\begin{enumerate}
+
+\item  \begin{tabular}{m{2.5in}m{2.5in}} $ m = \dfrac{4 - 0}{2 - 0} = \dfrac{4}{2} = 2$ & 
+
+\myincludegraphics{figures/LinearQuadraticGraphics/LinearFunctions-2} \\
+
+\end{tabular}
+
+\item \begin{tabular}{m{2.5in}m{2.5in}} $ m = \dfrac{4 - 2}{3 - (-1)} = \dfrac{2}{4} = \dfrac{1}{2}$ &
+
+\myincludegraphics{figures/LinearQuadraticGraphics/LinearFunctions-3}\\
+
+\end{tabular}
+
+\item  \begin{tabular}{m{2.5in}m{2.5in}} $ m = \dfrac{-3 - 3}{2 - (-2)} = \dfrac{-6}{4} = -\dfrac{3}{2}$ &
+
+\myincludegraphics{figures/LinearQuadraticGraphics/LinearFunctions-4}\\
+
+\end{tabular}
+
+\item  \begin{tabular}{m{2.5in}m{2.5in}} $ m = \dfrac{2 - 2}{4 - (-3)} = \dfrac{0}{7} = 0$ &
+
+\myincludegraphics[scale=0.8]{figures/LinearQuadraticGraphics/LinearFunctions-5} \\
+
+\end{tabular}
+
+\item  \begin{tabular}{m{3in}m{2in}} $ m = \dfrac{-1 - 3}{2 - 2} = \dfrac{-4}{0}$, which is undefined &
+
+\myincludegraphics{figures/LinearQuadraticGraphics/LinearFunctions-6} \\
+
+\end{tabular}
+
+\item  \begin{tabular}{m{3in}m{2in}} $ m = \dfrac{-1 - 3}{2.1 - 2} = \dfrac{-4}{0.1}=-40$ &
+
+\myincludegraphics{figures/LinearQuadraticGraphics/LinearFunctions-7} \\
+
+\end{tabular}
+
+\end{enumerate}
+} 
+
+A few comments about Example \ref{slopeex} are in order.  First, for reasons which will be made clear soon, if the slope is positive then the resulting line is said to be increasing.  If it is negative, we say the line is decreasing.  A slope of $0$ results in a horizontal line which we say is constant, and an undefined slope results in a vertical line. Second, the larger the slope is in absolute value, the steeper the line.  You may recall from high school that slope can be described as the ratio `$\frac{\mbox{\small rise}}{\mbox{\small run}}$'.  For example, in the second part of Example \ref{slopeex}, we found the slope to be $\frac{1}{2}$.  We can interpret this as a rise of 1 unit upward for every $2$ units to the right we travel along the line, as shown in Figure \ref{fig:riserun}.
+
+\mfigure{.7}{Slope as ``rise over run''}{fig:riserun}{figures/LinearQuadraticGraphics/LinearFunctions-8}
+
+
+Using more formal notation, given points $\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right)$, we use the Greek letter delta `$\Delta$' to write $\Delta y = y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}$ and $\Delta x = x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}$.  In most scientific circles, the symbol $\Delta$ means `change in'.  
+
+\smallskip
+
+Hence, we may write \[ m = \dfrac{\Delta y}{\Delta x},\] which describes the slope as the \index{slope ! rate of change}\index{rate of change ! slope of a line}\sword{rate of change} of $y$ with respect to $x$.  Rates of change abound in the `real world', as the next example illustrates.
+
+\example{ex_tempchange}{Temperature rate of change}{
+Suppose that two separate temperature readings were taken at the ranger station on the top of Mt. Sasquatch: at $6$ AM the temperature was $2^{\circ}$C and  at $10$ AM it was $8^{\circ}$C.  
+
+\begin{enumerate}
+
+\item Find the slope of the line containing the points $(6,2)$ and $(10, 8)$.
+
+\item Interpret your answer to the first part in terms of temperature and time.
+
+\item  Predict the temperature at noon.
+
+\end{enumerate}
+}
+{
+\begin{enumerate}
+
+\item For the slope, we have  $m = \frac{8 - 2}{10 - 6} = \frac{6}{4} = \frac{3}{2}$.  
+
+\item  Since the values in the numerator correspond to the temperatures in $^{\circ}$C, and the values in the denominator correspond to time in hours, we can interpret the slope as $\dfrac{3}{2} = \dfrac{3^{\circ} \, \mbox{\small C}}{2 \, \mbox{\small hour}},$ or $1.5^{\circ}$C per hour.  Since the slope is positive, we know this corresponds to an increasing line.  Hence, the temperature is increasing at a rate of $1.5^{\circ}$C per hour.
+
+\item  Noon is two hours after $10$ AM.  Assuming a temperature increase of $1.5^{\circ}$C per hour, in two hours the temperature should rise $3^{\circ}$C.  Since the temperature at $10$ AM is $82^{\circ}$C, we would expect the temperature at noon to be $8+3=11^{\circ}$C.
+\end{enumerate}
+}
+
+Now it may well happen that in the previous scenario, at noon the temperature is only $10^{\circ}$C.  This doesn't mean our calculations are incorrect, rather, it means that the temperature change throughout the day isn't a constant $1.5^{\circ}$C per hour. As discussed in Section \ref{modeling}, mathematical models are just that:  models.  The predictions we get out of the models may be mathematically accurate, but may not resemble what happens in the real world. 
+
+
+\smallskip
+
+In Section \ref{Relations}, we discussed the equations of vertical and horizontal lines.  Using the concept of slope, we can develop equations for the other varieties of lines.  Suppose a line has a slope of $m$ and contains the point $\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$.  Suppose $(x,y)$ is another point on the line, as indicated in Figure \ref{fig:linfun2}.
+
+\mfigure{.8}{Deriving the point-slope formula}{fig:linfun2}{figures/LinearQuadraticGraphics/LinearFunctions-9}
+
+\pagebreak
+
+Definition \ref{slope} yields
+
+\setlength{\extrarowheight}{2pt}
+
+\[ \begin{array}{rclr}  
+                      m & = & \dfrac{y - y_{\mbox{\tiny$0$}}}{x-x_{\mbox{\tiny$0$}}} & \\
+m\left(x - x_{\mbox{\tiny$0$}}\right) & = & y - y_{\mbox{\tiny$0$}} & \\ 
+              y - y_{\mbox{\tiny$0$}} & = & m\left(x - x_{\mbox{\tiny$0$}}\right) & \\
+   \end{array} \]
+
+We have just derived the \textbf{point-slope form} of a line.
+
+\mfigure{.8}{Deriving the point-slope formula}{fig:linfun2}{figures/LinearQuadraticGraphics/LinearFunctions-9}
+
+\smallskip
+
+\keyidea{pointslope}{The point-slope form of a line}{
+The \index{line ! point-slope form}\sword{point-slope form} of the equation of a line with slope $m$ containing the point $\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ is the equation $y - y_{\mbox{\tiny$0$}}  =  m\left(x - x_{\mbox{\tiny$0$}}\right)$. \index{point-slope form of a line}
+}
+
+\example{ex_pointslope}{Using the point-slope form}{
+Write the equation of the line containing the points $(-1,3)$ and $(2,1)$.
+}
+{
+In order to use Key Idea \ref{pointslope} we need to find the slope of the line in question so we use Definition \ref{slope} to get $m = \frac{\Delta y}{\Delta x} = \frac{1 - 3}{2 - (-1)} = -\frac{2}{3}$.  We are spoiled for choice for a point $\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$. We'll use $(-1,3)$ and leave it to the reader to check that using $(2,1)$ results in the same equation.  Substituting into the point-slope form of the line, we get 
+\setlength{\extrarowheight}{10pt}
+\[\begin{array}{rclr} 
+y - y_{\mbox{\tiny$0$}} & = & m\left(x - x_{\mbox{\tiny$0$}}\right)  & \\
+y - 3 & = & -\dfrac{2}{3} \left(x - (-1)\right) & \\
+y - 3 & = & -\dfrac{2}{3} \left(x +1 \right) & \\
+y - 3& = & -\dfrac{2}{3}x - \dfrac{2}{3}\\
+y & = & -\dfrac{2}{3} x + \dfrac{7}{3}. \\ 
+\end{array} \]
+
+\setlength{\extrarowheight}{2pt}
+
+We can check our answer by showing that both $(-1,3)$ and $(2,1)$ are on the graph of $y  =  -\frac{2}{3} x + \frac{7}{3}$ algebraically, as we did in Section \ref{GraphsofEquations}.
+}
+
+In simplifying the equation of the line in the previous example, we produced another form of a line, the \sword{slope-intercept form}.  This is the familiar $y = mx + b$ form you have probably seen in high school. The `intercept' in `slope-intercept' comes from the fact that if we set $x=0$, we get $y = b$.  In other words, the $y$-intercept of the line $y = mx + b$ is $(0,b)$.
+
+\smallskip
+
+\keyidea{slopeintercept}{Slope intercept form of a line}{
+The \index{line ! slope-intercept form}\sword{slope-intercept form} of the line with slope $m$ and $y$-intercept $(0,b)$ is the equation $y  =  mx + b.$ \index{slope-intercept form of a line}
+}
+
+\smallskip
+
+Note that if we have slope $m = 0$, we get the equation $y = b$ which matches our formula for a horizontal line given in Section \ref{Relations}.  The formula given in Key Idea \ref{slopeintercept} can be used to describe all lines except vertical lines.  All lines except vertical lines are functions (Why is this?) so we have finally reached a good point to introduce \sword{linear functions}.
+
+\medskip
+
+\definition{linearfunction}{Linear function}{
+A \index{function ! linear}\index{line ! linear function}\index{linear function}\sword{linear function} is a function of the form \[ f(x) = mx + b,\] where $m$ and $b$ are real numbers with $m \neq 0$.  The domain of a linear function is $(-\infty, \infty)$.
+}
+
+\medskip
+
+For the case $m=0$, we get $f(x) = b$.  These are given their own classification.
+
+\medskip
+
+\definition{constantfunction}{Constant function}{
+A \index{function ! constant}\index{constant function ! as a horizontal line}\sword{constant function} is a function of the form \[ f(x) =  b,\] where $b$ is real number.  The domain of a constant function is $(-\infty, \infty)$.
+}
+
+\medskip
+
+Recall that to graph a function, $f$, we graph the equation $y=f(x)$. Hence, the graph of a linear function is a line with slope $m$ and $y$-intercept $(0,b)$; the graph of a constant function is a horizontal line (a line with slope $m = 0$) and a $y$-intercept of $(0,b)$.  Now think back to Section \ref{genfuncbehavior}, specifically Definition \ref{incdeccnstdefn} concerning increasing, decreasing and constant functions.  A line with positive slope was called an increasing line because a linear function with $m > 0$ is an increasing function.  Similarly, a line with a negative slope was called a decreasing line because a linear function with $m < 0$ is a decreasing function.  And horizontal lines were called constant because, well, we hope you've already made the connection.  
+
+\example{ex_linfungraph}{Graphing linear functions}{
+Graph the following functions.  Identify the slope and $y$-intercept.
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item  $f(x) = 3$
+
+\item  $f(x) = 3x - 1$
+
+\item  $f(x) = \dfrac{3 - 2x}{4}$
+
+\item  $f(x) = \dfrac{x^2 - 4}{x-2}$
+
+\end{enumerate}
+
+\end{multicols}
+}
+{
+\begin{enumerate}
+
+\item To graph $f(x) = 3$, we graph $y=3$.  This is a horizontal line ($m=0$) through $(0,3)$: see Figure \ref{fig:linfun3}.
+
+\mfigure{.35}{The graph of $f(x)=3$}{fig:linfun3}{figures/LinearQuadraticGraphics/LinearFunctions-10}
+
+\item The graph of $f(x) = 3x-1$ is the graph of the line $y = 3x-1$.  Comparison of this equation with Equation \ref{slopeintercept} yields $m=3$ and $b = -1$.  Hence, our slope is $3$ and our $y$-intercept is $(0,-1)$.  To get another point on the line, we can plot $(1,f(1)) = (1,2)$.  Constructing the line through these points gives us Figure \ref{fig:linfun4}.
+
+\mfigure{.18}{The graph of $f(x)=3x-1$}{fig:linfun4}{figures/LinearQuadraticGraphics/LinearFunctions-11}
+
+\item  At first glance, the function $f(x) = \dfrac{3 - 2x}{4}$ does not fit the form in Definition \ref{linearfunction} but after some rearranging we get $f(x) = \frac{3 - 2x}{4} = \frac{3}{4} - \frac{2x}{4} = -\frac{1}{2} x + \frac{3}{4}$.  We identify $m = -\frac{1}{2}$ and $b = \frac{3}{4}$.  Hence, our graph is a line with a slope of $-\frac{1}{2}$ and a $y$-intercept of $\left(0, \frac{3}{4}\right)$.  Plotting an additional point, we can choose $(1,f(1))$ to get $\left(1, \frac{1}{4}\right)$: see Figure \ref{fig:linfun5}.
+
+\mfigure{.8}{The graph of $f(x)=\dfrac{3-2x}{4}$}{fig:linfun5}{figures/LinearQuadraticGraphics/LinearFunctions-12}
+
+\item  If we simplify the expression for $f$, we get
+
+\[ f(x) = \dfrac{x^2-4}{x-2} = \dfrac{\cancel{(x-2)}(x+2)}{\cancel{(x-2)}} = x+2.\]
+
+If we were to state $f(x) = x+2$, we would be committing a sin of omission.  Remember, to find the domain of a function, we do so \textbf{before} we simplify! In this case, $f$ has big problems when $x=2$, and as such,  the domain of $f$ is $(-\infty, 2) \cup (2,\infty)$.  To indicate this, we write $f(x) = x+2,$ $x \neq 2$.  So, except at $x=2$, we graph the line $y = x+2$.  The slope $m =1$ and the $y$-intercept is $(0,2)$.  A second point on the graph is $(1,f(1)) = (1,3)$.  Since our function $f$ is not defined at $x=2$, we put an open circle at the point that would be on the line $y=x+2$ when $x=2$, namely $(2,4)$, as shown in Figure \ref{fig:linfun6}.
+\end{enumerate}
+}
+
+\medskip
+
+\mfigure{.6}{The graph of $f(x)=\dfrac{x^2-4}{x-2}$}{fig:linfun6}{figures/LinearQuadraticGraphics/LinearFunctions-13}
+
+The last two functions in the previous example showcase some of the difficulty in defining a linear function using the phrase `of the form' as in Definition \ref{linearfunction}, since some algebraic manipulations may be needed to rewrite a given function to match `the form'. Keep in mind that the domains of linear and constant functions are all real numbers $(-\infty, \infty)$, so while $f(x) = \frac{x^2-4}{x-2}$ simplified to a formula $f(x) = x+2$, $f$ is not considered a linear function since its domain excludes $x=2$.  However, we would consider \[f(x) = \dfrac{2x^2 + 2}{x^2+1}\] to be a constant function since its domain is all real numbers (Can you tell us why?) and \[ f(x) = \dfrac{2x^2 + 2}{x^2+1} = \dfrac{2\cancel{\left(x^2+1\right)}}{\cancel{\left(x^2+1\right)}} = 2\]
+
+The following example uses linear functions to model some basic economic relationships.
+
+\medskip
+
+\example{PortaBoyCost}{Pricing for a game system}{
+The cost $C$, in dollars, to produce $x$ PortaBoy game systems for a local retailer is given by   $C(x) = 80x + 150$ for $x \geq 0$.  
+
+\mnote{.3}{The similarity of this name to \href{http://www.toilets.com}{\underline{PortaJohn}} is deliberate.}
+
+\begin{enumerate}
+
+\item Find and interpret $C(10)$.
+
+\item How many PortaBoys can be produced for $\$15,\! 000$?  
+
+\item  Explain the significance of the restriction on the domain, $x \geq 0$.
+
+\item  Find and interpret $C(0)$.
+
+\item  Find and interpret the slope of the graph of  $y = C(x)$.
+
+
+\end{enumerate}
+}
+{
+\begin{enumerate}
+
+\item  To find $C(10)$, we replace every occurrence of $x$ with $10$ in the formula for $C(x)$ to get $C(10) = 80(10)+150 = 950$.  Since $x$ represents the number of PortaBoys produced, and $C(x)$ represents the cost, in dollars, $C(10) = 950$ means it costs $\$950$ to produce $10$ PortaBoys for the local retailer.
+
+\item  To find how many PortaBoys can be produced for $\$15, \! 000$, we solve $C(x) = 15000$, or $80x+150 = 15000$.  Solving, we get  $x = \frac{14850}{80} = 185.625$. Since we can only produce a whole number amount of PortaBoys, we can produce $185$ PortaBoys for $\$15, \! 000$. 
+
+
+\item  The restriction $x \geq 0$ is the applied domain, as discussed in Section \ref{modeling}.  In this context, $x$ represents the number of PortaBoys produced.  It makes no sense to produce a negative quantity of game systems.
+
+\mnote{.7}{Actually, it makes no sense to produce a fractional part of a game system, either, as we saw in the previous part of this example.  This absurdity, however, seems quite forgiveable in some textbooks but not to us.}
+
+\item  We find $C(0) = 80(0)+150 = 150$.  This means it costs $\$150$ to produce $0$ PortaBoys.  As mentioned on page \pageref{pricerevenuecostprofit}, this is the fixed, or start-up cost of this venture.
+
+\item  If we were to graph $y = C(x)$, we would be graphing the portion of the line $y = 80x + 150$ for $x \geq 0$.  We recognize the slope, $m = 80$.  Like any slope, we can interpret this as a rate of change.  Here, $C(x)$ is the cost in dollars, while $x$ measures the number of PortaBoys so \[ m = \dfrac{\Delta y}{\Delta x} = \dfrac{\Delta C}{\Delta x} = 80 = \dfrac{80}{1} = \dfrac{\$ 80}{1 \, \mbox{PortaBoy}}.\] In other words,  the cost is increasing at a rate of $\$80$ per PortaBoy produced.  This is often called the \index{cost ! variable}\index{variable cost}\sword{variable cost} for this venture.  
+
+\end{enumerate}
+}
+
+\medskip
+
+The next example asks us to find a linear function to model a related economic problem.
+
+\medskip
+
+\example{PortaBoyDemand}{Modelling demand}{
+The local retailer in Example \ref{PortaBoyCost} has determined that the number $x$ of PortaBoy game systems sold in a week is related to the price $p$ in dollars of each system.  When the price was $\$220$, $20$ game systems were sold in a week.  When the systems went on sale the following week, $40$ systems were sold at $\$190$ a piece. 
+
+\begin{enumerate}
+
+\item Find a linear function which fits this data.  Use the weekly sales $x$ as the independent variable and the price $p$ as the dependent variable.  
+
+\item Find a suitable applied domain.
+
+\item Interpret the slope.
+
+\item  If the retailer wants to sell $150$ PortaBoys next week, what should the price be?
+
+\item  What would the weekly sales be if the price were set at $\$150$ per system?
+
+\end{enumerate}
+}
+{
+\begin{enumerate}
+
+\item  We recall from Section \ref{FunctionNotation} the meaning of `independent' and `dependent' variable.  Since $x$ is to be the independent variable, and $p$ the dependent variable, we treat $x$ as the input variable and $p$ as the output variable.  Hence, we are looking for a function of the form $p(x) = mx + b$.  To determine $m$ and $b$, we use the fact that $20$ PortaBoys were sold during the week when the price was $220$ dollars and $40$ units were sold when the price was $190$ dollars.  Using function notation, these two facts can be translated as $p(20)=220$ and $p(40)=190$.  Since $m$ represents the rate of change of $p$ with respect to $x$, we have  \[ m = \dfrac{\Delta p}{\Delta x} = \dfrac{190-220}{40-20} = \dfrac{-30}{20} = -1.5.\]  We now have determined $p(x) = -1.5 x + b$.  To determine $b$, we can use our given data again.  Using $p(20) = 220$, we substitute $x=20$ into $p(x) = 1.5x + b$ and set the result equal to $220$:  $-1.5(20)+b = 220$.  Solving, we get  $b = 250$. Hence, we get $p(x) = -1.5x + 250$.  We can check our formula by computing $p(20)$ and $p(40)$ to see if we get $220$ and $190$, respectively.  You may recall from page \pageref{pricerevenuecostprofit} that the function $p(x)$ is called the price-demand (or simply demand) function for this venture.
+
+\item  To determine the applied domain, we look at the physical constraints of the problem.  Certainly, we can't sell a negative number of PortaBoys, so $x \geq 0$. However, we also note that the slope of this linear function is negative, and as such, the price is decreasing as more units are sold.  Thus another constraint on the price is $p(x)\geq 0$.  Solving $-1.5 x + 250 \geq 0$ results in $-1.5 x \geq -250$ or $x \leq \dfrac{500}{3} = 166.\overline{6}$.  Since $x$ represents the number of PortaBoys sold in a week, we round down to $166$.  As a result, a reasonable applied domain for $p$ is $[0,166]$.  
+
+\item The slope $m = -1.5$, once again, represents the rate of change of the price of a system with respect to weekly sales of PortaBoys.  Since the slope is negative, we have that the price is decreasing at a rate of $\$1.50$ per PortaBoy sold.  (Said differently, you can sell one more PortaBoy for every $\$1.50$ drop in price.)
+
+\item  To determine the price which will move $150$ PortaBoys, we find $p(150) = -1.5(150) + 250 = 25$.  That is, the price would have to be $\$25$.
+
+\item  If the price of a PortaBoy were set at $\$150$, we have $p(x) = 150$, or, $-1.5x + 250 = 150$.  Solving, we get $-1.5x = -100$ or $x = 66.\overline{6}$. This means you would be able to sell $66$ PortaBoys a week if the price were $\$150$ per system.
+
+\end{enumerate}
+}
+
+\medskip
+
+Not all real-world phenomena can be modelled using linear functions.  Nevertheless, it is possible to use the concept of slope to help analyze non-linear functions using the following.
+
+\smallskip
+
+\definition{arc}{Average rate of change}{
+Let $f$ be a function defined on the interval $[a,b]$. The \index{average rate of change}\index{rate of change ! average}\sword{average rate of change} of $f$ over $[a,b]$ is defined as: \[ \dfrac{\Delta f}{\Delta x} = \dfrac{f(b) - f(a)}{b-a} \]
+}
+
+\smallskip
+
+Geometrically, if we have the graph of $y=f(x)$, the average rate of change over $[a,b]$ is the slope of the line which connects $(a,f(a))$ and $(b,f(b))$.  This is called the \index{secant line} \sword{secant line} through these points.  For that reason, some textbooks use the notation $m_{\sec}$ for the average rate of change of a function.  Note that for a linear function $m = m_{\sec}$, or in other words, its rate of change over an interval is the same as its average rate of change.
+
+\mfigure{.8}{The graph of $y=f(x)$ and its secant line through $(a,f(a))$ and $(b,f(b))$}{fig:avsecant}{figures/LinearQuadraticGraphics/LinearFunctions-14}
+
+
+The interested reader may question the adjective `average' in the phrase `average rate of change'.  In the figure above, we can see that the function changes wildly on $[a,b]$, yet the slope of the secant line only captures a snapshot of the action at $a$ and $b$.  This situation is entirely analogous to the average speed on a trip.  Suppose it takes you $2$ hours to travel $100$ kilometres.  Your average speed is $\frac{100 \, \mbox{\small km}}{2 \, \mbox{\small h}} = 50 \, \mbox{km/h}$.  However, it is entirely possible that at the start of your journey, you travelled $25$ kilometres per hour, then sped up to $65$ kilometres per hour, and so forth.  The average rate of change is akin to your average speed on the trip.  Your speedometer measures your speed at any one instant along the trip, your \index{rate of change ! instantaneous}\index{instantaneous rate of change}\sword{instantaneous rate of change}, and this is one of the central themes of Calculus.
+
+\phantomsection
+\label{instantaneousrateofchange}
+
+\smallskip
+
+When interpreting rates of change, we interpret them the same way we did slopes.  In the context of functions, it may be helpful to think of the average rate of change as:
+
+\[ \dfrac{\mbox{change in outputs}}{\mbox{change in inputs}}\] 
+
+\example{PortaBoyRevenue}{A non-linear revenue model}{
+Recall from page  \pageref{pricerevenuecostprofit}, the revenue from selling $x$ units at a price $p$ per unit is given by the formula  $R=xp$.  Suppose we are in the scenario of Examples \ref{PortaBoyCost} and \ref{PortaBoyDemand}.
+
+
+\begin{enumerate}
+
+\item  Find and simplify an expression for the weekly revenue $R(x)$ as a function of weekly sales $x$.
+
+\item  Find and interpret the average rate of change of $R(x)$ over the interval $[0,50]$.
+
+\item  Find and interpret the average rate of change of $R(x)$ as $x$ changes from $50$ to $100$ and compare that to your result in part 2.
+
+\item  Find and interpret the average rate of change of weekly revenue as weekly sales increase from $100$ PortaBoys to $150$ PortaBoys.
+
+
+\end{enumerate}
+}
+{
+\begin{enumerate}
+
+\item  Since $R = xp$, we substitute $p(x) = -1.5x + 250$ from Example \ref{PortaBoyDemand} to get $R(x) = x (-1.5x + 250) = -1.5x^2+250x$. Since we determined the price-demand function $p(x)$ is restricted to $0 \leq x \leq 166$, $R(x)$ is restricted to these values of $x$ as well.
+
+\item  Using Definition \ref{arc}, we get that the average rate of change is \[ \dfrac{\Delta R}{\Delta x} = \dfrac{R(50) - R(0)}{50 - 0} = \dfrac{8750 - 0}{50 - 0} = 175.\]
+
+Interpreting this slope as we have in similar situations, we conclude that for every additional PortaBoy sold during a given week, the weekly revenue increases $\$ 175$.
+
+\item  The wording of this part is slightly different than that in Definition 
+\ref{arc}, but its meaning is to find the average rate of change of $R$ over the interval $[50,100]$.  To find this rate of change, we compute \[ \dfrac{\Delta R}{\Delta x} = \dfrac{R(100) - R(50)}{100-50} = \dfrac{10000 - 8750}{50} = 25.\]
+
+In other words, for each additional PortaBoy sold, the revenue increases by $\$25$.  Note that while the revenue is still increasing by selling more game systems, we aren't getting as much of an increase as we did in part 2 of this example. (Can you think of why this would happen?)
+
+\item  Translating the English to the mathematics, we are being asked to find the average rate of change of $R$ over the interval $[100,150]$.  We find \[ \dfrac{\Delta R}{\Delta x} = \dfrac{R(150) - R(100)}{150-100} = \dfrac{3750 - 10000}{50} = -125.\]
+
+This means that we are losing $\$125$ dollars of weekly revenue for each additional PortaBoy sold.  (Can you think why this is possible?)
+
+\end{enumerate}
+}
+
+\medskip
+
+We close this section with a new look at difference quotients which were first introduced in Section \ref{FunctionNotation}.  If we wish to compute the average rate of change of a function $f$ over the interval $[x, x+h]$, then we would have
+
+\[ \dfrac{\Delta f}{\Delta x} = \dfrac{f(x+h) - f(x)}{(x+h) - x} = \dfrac{f(x+h) - f(x)}{h}\]
+
+As we have indicated, the rate of change of a function (average or otherwise) is of great importance in Calculus. (So we are not torturing you with these for nothing.) Also, we have the geometric interpretation of difference quotients which was promised to you back on page \pageref{diffquotgeompromise} -- a difference quotient yields the slope of a secant line.
+
+\printexercises{exercises_pre/02_01_exercises}

@@ -1,0 +1,463 @@
+\mfpicnumber{1}
+
+\opengraphsfile{LinearEqIneq}
+
+\setcounter{footnote}{0}
+
+\label{LinearEqIneq}
+
+Over the course of the next few sections we will focus our review on the Algebra skills needed to solve basic equations and inequalities.  In general, equations and inequalities fall into one of three categories:  conditional, identity or contradiction, depending on the nature of their solutions.  A \textbf{conditional}\index{equation ! conditional}\index{inequality ! conditional} equation or inequality is true for only \textit{certain} real numbers.  For example, $2x+1 = 7$ is true precisely when $x = 3$, and $w - 3 \leq 4$ is true precisely when $w \leq 7$.  An \textbf{identity}\index{equation ! identity}\index{inequality ! identity} is an equation or inequality that is true for \textit{all} real numbers.  For example, $2x -3 = 1+x-4+x$ or $2t \leq 2t + 3$.  A \textbf{contradiction}\index{equation ! contradiction}\index{inequality ! contradiction} is an equation or inequality that is \textit{never} true.  Examples here include $3x - 4 = 3x + 7$ and $a - 1 > a + 3$.  
+
+\smallskip
+
+As you may recall, solving an equation or inequality means finding all of the values of the variable, if any exist, which make the given equation or inequality true.  This often requires us to manipulate the given equation or inequality from its given form to an easier form.  For example, if we're asked to solve $3 - 2(x-3) = 7x + 3(x+1)$, we get $x = \frac{1}{2}$, but not without a fair amount of algebraic manipulation. In order to obtain the correct answer(s), however, we need to make sure that whatever maneuvers we apply are reversible in order to guarantee that we maintain a chain of \textbf{equivalent} equations or inequalities.  Two equations or inequalities are called \textbf{equivalent}\index{equation ! equivalent}\index{inequality ! equivalent} if they have the same solutions.  We list these `legal moves' below.
+
+\medskip
+
+\phantomsection \label{equivalenteqnineq}
+
+\colorbox{ResultColor}{\bbm
+
+\centerline{\textbf{Procedures which Generate Equivalent Equations}}
+
+\begin{itemize}
+
+\item  Add (or subtract) the same real number to (from) both sides of the equation.
+
+\item  Multiply (or divide) both sides of the equation by the same \textbf{nonzero} real number.\footnote{Multiplying both sides of an equation by $0$ collapses the equation to $0 = 0$, which doesn't do anybody any good.}
+
+\end{itemize}
+
+\centerline{\textbf{Procedures which Generate Equivalent Inequalities}}
+
+\vspace{-0.1in}
+
+\begin{itemize}
+
+\item  Add (or subtract) the same real number to (from) both sides of the equation.
+
+\item  Multiply (or divide) both sides of the equation by the same \textbf{positive} real number.\footnote{Remember that if you multiply both sides of an inequality by a negative real number, the inequality sign is reversed:  $3 \leq 4$, but $(-2)(3) \geq (-2)(4)$.}
+
+\end{itemize}
+
+\ebm}
+
+\subsection{Linear Equations} \label{LinearEqn}
+
+The first type of equations we need to review are \textbf{linear} equations as defined below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn}\label{lineareqndefn}\index{equation ! linear} An equation is said to be \textbf{linear} in a variable $X$ if it can be written in the form $AX = B$ where $A$ and $B$ are expressions which do not involve $X$ and $A \neq 0$.
+
+\end{defn}
+
+\ebm}
+
+One key point about Definition \ref{lineareqndefn} is that the exponent on the unknown `$X$' in the equation is $1$, that is $X = X^1$. Our main strategy for solving linear equations is summarized below.
+
+\medskip
+
+\phantomsection \label{strategyforsolvinglineareqns}
+
+\colorbox{ResultColor}{\bbm
+
+\centerline{\textbf{Strategy for Solving Linear Equations}}
+
+\vspace{0.05in}
+
+In order to solve an equation which is linear in a given variable, say $X$:
+
+\vspace{-0.1in}
+
+\begin{enumerate}
+
+\item  Isolate all of the terms containing $X$ on one side of the equation, putting all of the terms not containing $X$ on the other side of the equation.
+
+\item  Factor out the $X$ and divide both sides of the equation by its coefficient.
+
+\end{enumerate}
+
+\ebm}
+
+\medskip
+
+We illustrate this process with a collection of examples below.
+
+\begin{ex}\label{lineareqnreview}  Solve the following equations for the indicated variable.  Check your answer.
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item  Solve for $x$: $3x - 6 = 7x + 4$\vphantom{$3 - 1.7t = \dfrac{t}{4}$}
+
+\item  Solve for $a$: $\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  Solve for $y$:  $8 y \sqrt{3} + 1 = 7 - \sqrt{12}(5 - y)$\vphantom{$\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$.}
+
+\item  Solve for $y$: $x(4-y)=8y$.
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+{\bf Solution.} 
+
+\begin{enumerate}
+
+\item  The variable we are asked to solve for is $x$ so our first move is to gather all of the terms involving $x$ on one side and put the remaining terms on the other.\footnote{In the margin notes, when we speak of operations, e.g.,`Subtract $7x$,' we mean to subtract $7x$ from \textbf{both} sides of the equation.  The `from both sides of the equation' is omitted in the interest of spacing.}\[ \begin{array}{rclr} 3x - 6 &  = & 7x + 4 & \\
+                       (3x-6) - 7x + 6 &  = & (7x+4) -7x +6 &  \text{Subtract $7x$, add $6$} \\
+											3x - 7x - 6 + 6 & = & 7x - 7x + 4 + 6 & \text{Rearrange terms} \\
+											-4x & = & 10 & \text{$3x-7x = (3-7)x = -4x$} \\ [5pt]
+											\dfrac{-4x}{-4} & = & \dfrac{10}{-4} & \text{Divide by the coefficient of $x$} \\ [10pt]
+											x & = & -\dfrac{5}{2} & \text{Reduce to lowest terms} \\ \end{array}\]
+											
+To check our answer, we substitute $x = -\frac{5}{2}$ into each side of the \textbf{orginial} equation to see the equation is satisfied.  Sure enough, $3\left(-\frac{5}{2}\right) - 6 = -\frac{27}{2}$ and $7\left(-\frac{5}{2}\right) + 4 = -\frac{27}{2}$.
+
+\item  To solve this next equation, we begin once again by clearing fractions.  The least common denominator here is $36$:\[ \begin{array}{rclr}
+
+ \dfrac{1}{18}(7 - 4a) + 2 & = & \dfrac{a}{3} - \dfrac{4-a}{12} & \\[8pt]
+
+36 \left(\dfrac{1}{18}(7 - 4a) + 2\right) & = & 36 \left(\dfrac{a}{3} - \dfrac{4-a}{12}\right) & \text{Multiply by $36$} \\[13pt]
+
+\dfrac{36}{18} (7-4a) + (36)(2) & = & \dfrac{36a}{3} - \dfrac{36(4-a)}{12} & \text{Distribute} \\[5pt]
+
+2(7-4a)  + 72 & = & 12 a - 3(4-a) & \text{Distribute} \\
+
+14  - 8a + 72 & = & 12a - 12 + 3a & \\
+
+86 - 8a & = & 15 a - 12 & \text{$12 a + 3a = (12+3)a = 15a$} \\
+
+(86-8a)+8a+12 & = & (15a-12) + 8a + 12 & \text{Add $8a$ and $12$} \\
+
+86 + 12 - 8a + 8a & = & 15a + 8a - 12 + 12 & \text{Rearrange terms} \\
+
+98 & = & 23 a & \text{$15a + 8a = (15+8)a = 23a$} \\ [5pt]
+
+\dfrac{98}{23} & = & \dfrac{23a}{23} & \text{Divide by the coefficient of $a$} \\[8pt]
+
+\dfrac{98}{23} & = & a &
+
+\end{array} \]
+
+The check, as usual, involves substituting $a = \frac{98}{23}$ into both sides of the original equation.  The reader is encouraged to work through the (admittedly messy) arithmetic.  Both sides work out to $\frac{199}{138}$.
+
+
+\item  The square roots may dishearten you but we treat them just like the real numbers they are.  Our strategy is the same:  get everything with the variable (in this case $y$) on one side, put everything else on the other and divide by the coefficient of the variable.  We've added a few steps to the narrative that we would ordinarily omit just to help you see that this equation is indeed linear.\[ \begin{array}{rclr}
+
+8 y \sqrt{3} + 1 & = & 7 - \sqrt{12}(5 - y) & \\ [3pt]
+
+8 y \sqrt{3} + 1 & = & 7 - \sqrt{12}(5)  + \sqrt{12} y & \text{Distribute} \\ [3pt]
+
+8 y \sqrt{3} + 1 & = & 7 - (2 \sqrt{3})5 + (2 \sqrt{3})y & \text{$\sqrt{12} = \sqrt{4\cdot 3} = 2 \sqrt{3}$} \\ [3pt]
+
+8 y \sqrt{3} + 1 & = & 7 - 10 \sqrt{3} + 2y \sqrt{3}  &  \\ [3pt]
+
+(8 y \sqrt{3} + 1) - 1 - 2y\sqrt{3} & = & (7 - 10 \sqrt{3} + 2y \sqrt{3}) - 1 - 2y\sqrt{3}  & \text{Subtract $1$ and $2y\sqrt{3}$}  \\ [3pt]
+
+8 y \sqrt{3} - 2y\sqrt{3} + 1 - 1 & = & 7 - 1 - 10 \sqrt{3} + 2y \sqrt{3}  - 2y\sqrt{3}  & \text{Rearrange terms}  \\ [3pt]
+
+(8\sqrt{3}-2\sqrt{3})y & = & 6 - 10 \sqrt{3}  & \\ [3pt]
+
+6 y \sqrt{3} & = & 6 - 10 \sqrt{3}  &  \text{See note below} \\ [3pt]
+
+\dfrac{6 y \sqrt{3}}{6 \sqrt{3}}  & = & \dfrac{6 - 10 \sqrt{3}}{6 \sqrt{3}}  & \text{Divide $6\sqrt{3}$} \\ [12pt]
+
+y & = & \dfrac{2 \cdot \sqrt{3} \cdot \sqrt{3} - 2 \cdot 5 \cdot \sqrt{3}}{2 \cdot 3 \cdot \sqrt{3}} & \\ [12pt]
+
+y & = & \dfrac{\cancel{2} \cancel{\sqrt{3}}(\sqrt{3} - 5)}{\cancel{2} \cdot 3 \cdot \cancel{\sqrt{3}}} &  \text{Factor and cancel} \\ [12pt]
+
+y & = & \dfrac{\sqrt{3} - 5}{3} & \\ \end{array}\]In the list of computations above we marked the row $6 y \sqrt{3} = 6 - 10 \sqrt{3}$ with a note.  That's because we wanted to draw your attention to this line without breaking the flow of the manipulations.  The equation $6 y \sqrt{3} = 6 - 10 \sqrt{3}$ is in fact linear according to Definition \ref{lineareqndefn}: the variable is $y$, the value of $A$ is $6\sqrt{3}$ and $B = 6 - 10 \sqrt{3}$. Checking the solution, while not trivial, is good mental exercise.  Each side works out to be $\frac{27 - 40 \sqrt{3}}{3}$.
+
+
+
+\item  If we were instructed to solve our last equation for $x$, we'd be done in one step: divide both sides by $(4-y)$ - assuming $4-y \neq 0$, that is.  Alas, we are instructed to solve for $y$, which means we have some more work to do.\[ \begin{array}{rclr}
+
+x(4-y) & = & 8y & \\
+
+4x - xy & = & 8y & \text{Distribute} \\
+
+(4x - xy) + xy & = & 8y + xy & \text{Add $xy$} \\
+
+4x & = & (8+x)y & \text{Factor} \\ \end{array}\]In order to finish the problem, we need to divide both sides of the equation by the coefficient of $y$ which in this case is $8+x$.  Since this expression contains a variable, we need to stipulate that we may perform this division only if $8 + x \neq 0$, or, in other words, $x \neq -8$.  Hence, we write our solution as:\[ y = \dfrac{4x}{8+x}, \quad \text{provided $x \neq -8$}\] What happens if $x = -8$?  Substituting $x = -8$ into the original equation gives $(-8)(4-y) = 8y$ or $-32 + 8y = 8y$.  This reduces to $-32 = 0$, which is a contradiction.  This means there is no solution when $x = -8$, so we've covered all the bases.  Checking our answer requires some Algebra we haven't reviewed yet in this text, but the necessary skills \emph{should} be lurking somewhere in the mathematical mists of your mind.  The adventurous reader is invited to show that both sides work out to $\frac{32x}{x+8}$. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+\subsection{Linear Inequalities}
+\label{LinearInequal}
+
+We now turn our attention to linear inequalities.  Unlike linear equations which admit at most one solution, the solutions to linear inequalities are generally intervals of real numbers.  While the solution strategy for solving linear inequalities is the same as with solving linear equations, we need to remind ourselves that, should we decide to multiply or divide both sides of an inequality by a \textbf{negative} number, we need to reverse the direction of the inequality. (See page \pageref{equivalenteqnineq}.)  In the example below, we work not only some `simple' linear inequalities in the sense there is only one inequality present, but also some `compound' linear inequalities which require us to use the notions of intersection and union. 
+
+\begin{ex}\label{linearineqreview}  Solve the following inequalities for the indicated variable. 
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item  Solve for $x$: $\dfrac{7-8x}{2} \geq 4x + 1$
+
+\item  Solve for $y$: $\dfrac{3}{4} \leq \dfrac{7-y}{2} < 6$\vphantom{$\dfrac{7-8x}{2} \geq 4x + 1$}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  Solve for $t$:  $2t-1 \leq 4-t < 6t+1$
+
+\item  Solve for $w$: $2.1 - 0.01w \leq -3$ or $2.1-0.01w \geq 3$
+
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  We begin by clearing denominators and gathering all of the terms containing $x$ to one side of the inequality and putting the remaining terms on the other.\[ \begin{array}{rclr}
+
+\dfrac{7-8x}{2} & \geq & 4x + 1 & \\ [8pt]
+
+2\left(\dfrac{7-8x}{2}\right) & \geq & 2(4x + 1) & \text{Multiply by $2$} \\ [10pt]
+
+\dfrac{\cancel{2}(7-8x)}{\cancel{2}} & \geq & 2(4x) + 2(1) & \text{Distribute} \\ [3pt]
+
+7 - 8x & \geq & 8x + 2 & \\
+
+(7-8x) + 8x-2 & \geq & 8x+2 + 8x -2 & \text{Add $8x$, subtract $2$} \\
+
+7 - 2 - 8x + 8x & \geq & 8x + 8x + 2 - 2 & \text{Rearrange terms} \\
+
+5 & \geq &  16x & \text{$8x + 8x = (8+8)x = 16x$} \\ [3pt]
+
+\dfrac{5}{16} & \geq & \dfrac{16x}{16} & \text{Divide by the coefficient of $x$} \\[8pt]
+
+\dfrac{5}{16} & \geq & x & \\ 
+
+\end{array} \]
+
+We get $\frac{5}{16} \geq x$ or, said differently,  $x \leq \frac{5}{16}$.  We express this set\footnote{Using set-builder notation, our `set' of solutions here is $\{ x \, | \, x \leq \frac{5}{16} \}$.} of real numbers as  $\left(-\infty, \frac{5}{16}\right]$. Though not required to do so, we could partially check our answer by substituting $x = \frac{5}{16}$ and a few other values in our solution set ($x =0$, for instance) to make sure the inequality holds.  (It also isn't a bad idea to choose an $x > \frac{5}{16}$, say $x = 1$, to see that the inequality \textit{doesn't} hold there.)  The only real way to actually show that our answer works for \textit{all} values in our solution set is to start with $x \leq \frac{5}{16}$ and reverse all of the steps in our solution procedure to prove it is equivalent to our original inequality.  
+
+\item  We have our first example of a `compound' inequality.  The solutions to  \[ \dfrac{3}{4} \leq \dfrac{7-y}{2} < 6 \] must satisfy \[ \dfrac{3}{4} \leq \dfrac{7-y}{2} \qquad \text{\underline{and}} \qquad \dfrac{7-y}{2} < 6\]
+
+One approach is to solve each of these inequalities separately, then intersect their solution sets.  While this method works (and will be used later for more complicated problems), since our variable $y$ appears only in the middle expression, we can proceed by essentially working both inequalities at once:\[ \begin{array}{rclr}
+
+\dfrac{3}{4} \leq & \dfrac{7-y}{2} & < 6 & \\ [10pt]
+
+4\left(\dfrac{3}{4} \right) \leq & 4\left( \dfrac{7-y}{2}\right) & < 4(6) & \text{Multiply by $4$} \\ [12pt]
+
+\dfrac{\cancel{4} \cdot 3}{\cancel{4}} \leq & \dfrac{\cancelto{2}{4}(7-y)}{\cancel{2}} &  < 24 & \\ [5pt]
+
+3 \leq & 2(7-y) & < 24 & \\
+
+3 \leq & 2(7)-2y & < 24 & \text{Distrbute}\\
+
+3 \leq & 14-2y & < 24 & \\
+
+3 -14 \leq & (14-2y) - 14 & < 24 - 14 & \text{Subtract $14$}\\
+
+-11 \leq & -2y & < 10 & \\ [3pt]
+
+\dfrac{-11}{-2} \geq & \dfrac{-2y}{-2} & > \dfrac{10}{-2} & \text{Divide by the coefficient of $y$} \\ [-5pt]
+                     &                 &                  & \text{Reverse inequalities} \\ [-3pt]
+
+\dfrac{11}{2}  \geq & y & > -5 & \\
+
+\end{array} \]
+
+Our final answer is $\frac{11}{2} \geq y > -5$, or, said differently,  $-5 < y \leq \frac{11}{2}$. In interval notation, this is $\left( -5, \frac{11}{2} \right]$.  We could check the reasonableness of our answer as before, and the reader is encouraged to do so.  
+
+\item  We have another compound inequality and what distinguishes this one from our previous example is that `$t$' appears on both sides of both inequalities.  In this case, we need to create two separate inequalities and find all of the real numbers $t$ which satisfy both  $2t-1 \leq 4-t$ \textit{and} $4-t < 6t + 1$.  The first inequality, $2t-1 \leq 4-t$, reduces to $3t \leq 5$ or $t \leq \frac{5}{3}$.  The second inequality, $4-t < 6t+1$, becomes $3 < 7t$  which reduces to $t > \frac{3}{7}$.  Thus our solution is all real numbers $t$ with $t \leq \frac{5}{3}$ \textit{and}  $t > \frac{3}{7}$, or, writing this as a compound inequality,  $\frac{3}{7} < t \leq \frac{5}{3}$. Using interval notation,\footnote{If we intersect the solution sets of the two individual inequalities, we get the answer, too:  $\left(-\infty, \frac{5}{3}\right] \cap \left(\frac{3}{7}, \infty\right) = \left( \frac{3}{7}, \frac{5}{3} \right]$.} we express our solution as $\left( \frac{3}{7}, \frac{5}{3} \right]$.
+
+
+\item  Our last example is yet another compound inequality but here, instead of the two inequalities being connected with the conjunction `\textit{and}', they are connected with `\textit{or}', which indicates that we need to find the \textit{union} of the results of each.  Starting with $2.1 - 0.01w \leq -3$, we get $-0.01 w \leq -5.1$, which gives\footnote{Don't forget to flip the inequality!} $w \geq 510$.  The second inequality, $2.1-0.01w \geq 3$, becomes $-0.01w \geq 0.9$, which reduces to  $w \leq -90$.  Our solution set consists of all real numbers $w$ with $w \geq 510$ \textit{or} $w \leq -90$.  In interval notation, this is $(-\infty, -90] \cup [510, \infty)$. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{lineareqfirst0} - \ref{lineareqlast0}, solve the given linear equation and check your answer.  
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $3x - 4 = 2 - 4(x-3)$\vphantom{$\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$}\label{lineareqfirst0} 
+\item $\dfrac{3 - 2t}{4} = 7t+1$\vphantom{$\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$}
+
+\item  $\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\sqrt{50} y = \dfrac{6 - \sqrt{8} y}{3}$ \vphantom{$4 - (2x+1) = \dfrac{x \sqrt{7}}{9}$} 
+\item  $\dfrac{49w - 14}{7}= 3w - (2-4w)$ 
+\item  $7 - (4-x) = \dfrac{2x-3}{2}$ \vphantom{$\dfrac{49w - 14}{7}= 3w - (2-4w)$} \label{lineareqlast0} 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+
+In equations \ref{literalexfirst0} - \ref{literalexlast0}, solve each equation for the indicated variable.
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  Solve for $y$:  $3x+2y = 4$  \label{literalexfirst0}
+\item  Solve for $C$: $F = \dfrac{9}{5} C + 32$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  Solve for $y$:  $x= 4(y+1) + 3$ 
+\item  Solve for $y$:  $x(y-3) = 2y+1$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  Solve for $v$:   $vw - 1 = 3v$
+\item  Solve for $w$:  $vw - 1 = 3v$ \label{literalexlast0}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+In Exercises \ref{subex1} - \ref{subex2}, the subscripts on the variables have no intrinsic mathematical meaning; they're just used to distinguish one variable from another.  In other words, treat `$P_{\text{\tiny $1$}}$' and `$P_{\text{\tiny $2$}}$'  as two different variables as you would `$x$' and `$y$.'  (The same goes for `$x$' and `$x_{\text{\tiny $0$}}$,'  etc.)
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item Solve for $V_{\text{\tiny $2$}}$:  $P_{\text{\tiny $1$}}V_{\text{\tiny $1$}} = P_{\text{\tiny $2$}}V_{\text{\tiny $2$}}$  \label{subex1}
+\item Solve for $t$:  $x = x_{\text{\tiny $0$}} + at$ 
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item Solve for $x$:   $y-y_{\text{\tiny $0$}} = m(x -x_{\text{\tiny $0$}})$
+\item Solve for $T_{\text{\tiny $1$}}$:  $q = mc(T_{\text{\tiny $2$}} -T_{\text{\tiny $1$}})$   \label{subex2}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item With the help of your classmates, find values for $c$ so that the equation:  $2x - 5c = 1 - c(x+2)$
+
+\begin{enumerate}
+
+\item  has $x = 42$ as a solution.
+\item  has no solution (that is, the equation is a contradiction.)
+
+\end{enumerate}
+Is it possible to find a value of $c$ so the equation is an identity?  Explain.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+In Exercises \ref{linineqnexfirst0} - \ref{linineqnexlast0}, solve the given inequality.  Write your answer using interval notation.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $3 - 4x \geq 0$\vphantom{$\dfrac{7 -y}{4} \geq 3y + 1$}\label{linineqnexfirst0}
+\item  $\dfrac{7 -y}{4} \geq 3y + 1$ 
+\item $7 - (2-x) \leq x+3$\vphantom{$\dfrac{10m+1}{5} \geq 2m - \dfrac{1}{2}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x \sqrt{12} - \sqrt{3} > \sqrt{3} x + \sqrt{27}$
+
+\item $-\dfrac{1}{2} \leq 5x - 3 \leq \dfrac{1}{2}$\vphantom{$-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$}
+
+\item $-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$
+
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $3x \geq 4-x \geq 3$
+
+\item   $4-x \leq 0$ \text{or} $2x+7 < x$
+
+\item   $\dfrac{5-2x}{3} > x$ \text{or} $2x + 5 \geq 1$ \label{linineqnexlast0}
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\closegraphsfile

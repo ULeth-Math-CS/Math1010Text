@@ -1,0 +1,513 @@
+\mfpicnumber{1}
+
+\opengraphsfile{QuadEqus}
+
+\setcounter{footnote}{0}
+
+\label{QuadEqus}
+
+In Section \ref{solveeqnsbyfactoring}, we reviewed how to solve basic non-linear equations by factoring.  The astute reader should have noticed that all of the equations in that section were carefully constructed so that the polynomials could be factored using the integers.  To demonstrate just how contrived the equations had to be, we can solve $2x^2+5x-3=0$ by factoring, $(2x-1)(x+3) = 0$, from which we obtain $x = \frac{1}{2}$ and $x = -3$.  If we change the $5$ to a $6$ and try to solve $2x^2 + 6x - 3 = 0$, however, we find that this polynomial doesn't factor over the integers and we are stuck.  It turns out that there are two real number solutions to this equation, but they are \textit{irrational} numbers, and our aim in this section is to review the techniques which allow us to find these solutions.\footnote{While our discussion in this section departs from factoring, we'll see in Chapter \ref{Polynomials} that the same correspondence between factoring and solving equations holds whether or not the polynomial factors over the integers.}  In this section, we focus our attention on \textbf{quadratic}\index{equations ! quadratic} equations.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn}\label{quadeqndefn}\index{equation ! quadratic} An equation is said to be \textbf{quadratic} in a variable $X$ if it can be written in the form $AX^2 + BX + C = 0$ where $A$, $B$ and $C$ are expressions which do not involve $X$ and $A \neq 0$.
+
+\end{defn}
+
+\ebm}
+
+\medskip
+
+Think of quadratic equations as equations that are one degree up from linear equations - instead of the highest power of $X$ being just $X = X^1$, it's $X^2$.  The simplest class of quadratic equations to solve are the ones in which $B = 0$.  In that case, we have the following.
+
+\medskip
+
+\phantomsection
+\label{extractingthesquareroot}
+
+\colorbox{ResultColor}{\bbm
+
+\centerline{\textbf{Solving Quadratic Equations by Extracting Square Roots}}
+\vspace{.05in}
+If $c$ is a real number with $c \geq 0$, the solutions to $X^2 = c$ are $X = \pm \sqrt{c}$.
+
+\vspace{.05in}
+\textbf{Note:}  If $c < 0$, $X^2 = c$ has no real number solutions.
+
+\ebm}
+
+\medskip
+
+There are a couple different ways to see why Extracting Square Roots works, both of which are demonstrated by solving the equation $x^2 = 3$.  If we follow the procedure outlined in the previous section, we subtract $3$ from both sides to get $x^2 - 3 = 0$ and we now try to factor $x^2 - 3$.   As mentioned in the remarks following Definition \ref{irreduciblepoly}, we could think of $x^2 - 3 = x^2 - (\sqrt{3})^2$ and apply the Difference of Squares formula to factor $x^2 - 3 = (x-\sqrt{3})(x+\sqrt{3})$.  We solve $(x-\sqrt{3})(x+\sqrt{3}) = 0$ by using the Zero Product Property as before by setting each factor equal to zero:  $x - \sqrt{3} = 0$ and $x+\sqrt{3} - 0$.  We get the answers $x = \pm \sqrt{3}$.  In general,  if $c \geq 0$, then $\sqrt{c}$ is a real number, so  $x^2 - c = x^2 - (\sqrt{c})^2 = (x-\sqrt{c})(x+\sqrt{c})$.  Replacing the `$3$' with `$c$' in the above discussion gives the general result. 
+
+\smallskip
+
+Another way to view this result is to visualize  `taking the square root' of both sides:   since $x^2 = c$,  $\sqrt{x^2} = \sqrt{c}$.  How do we simplify $\sqrt{x^2}$? We have to exercise a bit of caution here.  Note that $\sqrt{(5)^2}$ and $\sqrt{(-5)^2}$ both simplify to  $\sqrt{25} = 5$.  In both cases, $\sqrt{x^2}$ returned a \textit{positive} number, since the negative in $-5$ was `squared away' \textit{before} we took the square root.  In other words, $\sqrt{x^2}$ is $x$ if $x$ is positive, or, if $x$ is negative, we make $x$ positive - that is, $\sqrt{x^2} = |x|$, the \textbf{absolute value} of $x$.  So from $x^2 = 3$, we `take the square root' of both sides of the equation to get $\sqrt{x^2} = \sqrt{3}$.  This simplifies to $|x| = \sqrt{3}$, which by Theorem \ref{absvalequality} is equivalent to $x = \sqrt{3}$ or $x = -\sqrt{3}$.  Replacing the `$3$' in the previous argument with `$c$,' gives the general result.
+
+\smallskip
+
+As you might expect, Extracting Square Roots can be applied to more complicated equations.  Consider the equation below.  We can solve it by Extracting Square Roots provided we first isolate the perfect square quantity:\[ \begin{array}{rclr}
+
+2\left(x + \dfrac{3}{2}\right)^2 - \dfrac{15}{2} & = & 0 & \\ [8pt]
+2\left(x + \dfrac{3}{2}\right)^2 & = & \dfrac{15}{2} & \text{Add $\dfrac{15}{2}$} \\
+\left(x + \dfrac{3}{2}\right)^2 & = & \dfrac{15}{4} & \text{Divide by $2$} \\
+x + \dfrac{3}{2} & = & \pm \sqrt{\dfrac{15}{4}} & \text{Extract Square Roots} \\ [8pt]
+x + \dfrac{3}{2} & = & \pm \dfrac{\sqrt{15}}{2} & \text{Property of Radicals} \\ [5pt]
+x & = & -\dfrac{3}{2} \pm \dfrac{\sqrt{15}}{2}  & \text{Subtract $\dfrac{3}{2}$} \\ [8pt]
+x & = & -\dfrac{3 \pm \sqrt{15}}{2}  & \text{Add fractions} \\
+
+\end{array} \] Let's return to the equation $2x^2 + 6x - 3 = 0$ from the beginning of the section.  We leave it to the reader to show that \[2\left(x + \dfrac{3}{2}\right)^2 - \dfrac{15}{2} =  2x^2 + 6x - 3. \] (Hint: Expand the left side.)  In other words, we can solve $2x^2 + 6x - 3 = 0$  by \textit{transforming} into an equivalent equation. This process, you may recall, is called `Completing the Square.'\index{Completing the Square}  We'll revisit Completing the Square in Section \ref{QuadraticFunctions} in more generality and for a different purpose but for now we revisit the steps needed to complete the square to solve a quadratic equation.
+
+\medskip
+
+\phantomsection
+\label{completesquareeqns}
+
+\colorbox{ResultColor}{\bbm
+
+\centerline{\textbf{Solving Quadratic Equations:  Completing the Square}}
+\vspace{0.05in}
+To solve a quadratic equation $AX^2 + BX + C = 0$ by Completing the Square:
+
+\begin{enumerate}
+
+\item  Subtract the constant $C$ from both sides.
+\item  Divide both sides by $A$,  the coefficient of $X^2$.  (Remember:  $A \neq 0$.)
+\item  Add $\left(\frac{B}{2A}\right)^2$ to both sides of the equation. (That's half the coefficient of $X$, squared.)
+\vspace{-0.1in}
+\item  Factor the left hand side of the equation as $\left(X + \frac{B}{2A}\right)^2$.
+\item  Extract Square Roots.
+\item  Subtract $\frac{B}{2A}$ from both sides.
+
+\end{enumerate}
+
+\ebm}
+
+\medskip
+
+To refresh our memories, we apply this method to solve $3x^2 - 24x + 5 = 0$: \[ \begin{array}{rclr}
+
+3x^2 - 24x + 5 & = & 0 & \\
+
+3x^2 - 24x  & = & -5 & \text{Subtract  $C=5$} \\
+
+x^2 - 8x & = & -\dfrac{5}{3} & \text{Divide by $A = 3$} \\ [8pt]
+
+x^2 - 8x + 16 & = & -\dfrac{5}{3} + 16 & \text{Add $\left(\frac{B}{2A}\right)^2 = (-4)^2 = 16$} \\ [8pt]
+
+(x - 4)^2 & = & \dfrac{43}{3} & \text{Factor: Perfect Square Trinomial} \\
+x - 4 & = & \pm \sqrt{\dfrac{43}{3}} & \text{Extract Square Roots} \\ [5pt]
+
+x & = & 4 \pm \sqrt{\dfrac{43}{3}} & \text{Add $4$} \\
+
+\end{array}\]
+
+At this point, we use properties of fractions and radicals to `rationalize' the denominator:\footnote{Recall that this means we want to get a denominator with rational (more specifically, integer) numbers.}  \[ \sqrt{\dfrac{43}{3}} = \sqrt{\dfrac{43 \cdot 3}{3 \cdot 3}} = \dfrac{\sqrt{129}}{\sqrt{9}} = \dfrac{\sqrt{129}}{3} \]
+
+We can now get a common (integer) denominator which yields: \[x=  4 \pm \sqrt{\dfrac{43}{3}} = 4 \pm \dfrac{\sqrt{129}}{3} = \dfrac{12 \pm \sqrt{129}}{3} \]
+
+The key to Completing the Square is that the procedure always produces a perfect square trinomial. To see why this works \textit{every single time}, we start with $AX^2 + BX + C = 0$ and follow the procedure:\[ \begin{array}{rclr}
+
+AX^2 + BX + C & = & 0 & \\
+
+AX^2 + BX & = & -C & \text{Subtract $C$} \\
+
+X^2 + \dfrac{BX}{A} & = & -\dfrac{C}{A} & \text{Divide by $A \neq 0$} \\ [8pt]
+
+X^2 + \dfrac{BX}{A} + \left(\dfrac{B}{2A}\right)^2 & = & -\dfrac{C}{A} + \left(\dfrac{B}{2A}\right)^2 & \text{Add $ \left(\dfrac{B}{2A}\right)^2$} \\
+
+\end{array} \]
+
+(Hold onto the line above for a moment.)  Here's the heart of the method - we need to show that \[ X^2 + \dfrac{BX}{A} + \left(\dfrac{B}{2A}\right)^2 = \left(X + \dfrac{B}{2A}\right)^2 \]
+
+To show this, we start with the right side of the equation and apply the Perfect Square Formula from Theorem \ref{SpecialProducts} \[ \left(X + \dfrac{B}{2A}\right)^2 = X^2 + 2\left(\dfrac{B}{2A}\right)X + \left(\dfrac{B}{2A}\right)^2 = X^2 + \dfrac{BX}{A} + \left(\dfrac{B}{2A}\right)^2 \, \checkmark \]
+
+With just a few more steps we can solve the general equation $AX^{2} + BX + C = 0$ so let's pick up the story where we left off. (The line on the previous page we told you to hold on to.)\[ \begin{array}{rclr}
+
+X^2 + \dfrac{BX}{A} + \left(\dfrac{B}{2A}\right)^2 & = & -\dfrac{C}{A} + \left(\dfrac{B}{2A}\right)^2 & \\ [8pt]
+\left(X + \dfrac{B}{2A}\right)^2 & = & -\dfrac{C}{A} + \dfrac{B^2}{4A^2} & \text{Factor: Perfect Square Trinomial} \\ [3pt]
+
+\left(X + \dfrac{B}{2A}\right)^2 & = & -\dfrac{4AC}{4A^2} + \dfrac{B^2}{4A^2} & \text{Get a common denominator}\\
+
+\left(X + \dfrac{B}{2A}\right)^2 & = & \dfrac{B^2 - 4AC}{4A^2} & \text{Add fractions}\\ [5pt]
+
+X + \dfrac{B}{2A} & = & \pm \sqrt{\dfrac{B^2 - 4AC}{4A^2}} & \text{Extract Square Roots} \\ [8pt]
+
+X + \dfrac{B}{2A} & = & \pm \dfrac{\sqrt{B^2 - 4AC}}{2A} & \text{Properties of Radicals} \\ [8pt]
+
+X  & = & - \dfrac{B}{2A} \pm \dfrac{\sqrt{B^2 - 4AC}}{2A} & \text{Subtract $\dfrac{B}{2A}$} \\ [8pt]
+
+X  & = & \dfrac{-B \pm \sqrt{B^2 - 4AC}}{2A} & \text{Add fractions.} \\
+
+\end{array}\]
+
+Lo and behold, we have derived the legendary \textbf{Quadratic Formula}!\index{quadratic formula}\index{formula ! quadratic}
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{thm}\label{quadraticformula0}  \textbf{Quadratic Formula:} The solution to $AX^2 + BX + C = 0$ with $A \neq 0$ is: \[X  = \dfrac{-B \pm \sqrt{B^2 - 4AC}}{2A} \]
+
+\end{thm}
+
+\ebm}
+
+\medskip
+
+We can check our earlier solutions to $2x^2 + 6x - 3 = 0$ and $3x^2 - 24x + 5 = 0$ using the Quadratic Formula.  For $2x^2 + 6x - 3 = 0$, we identify $A = 2$, $B = 6$ and $C = -3$.  The quadratic formula gives: \[ x = \dfrac{-6 \pm \sqrt{6^2 - 4(2)(-3)}}{2(2)} - \dfrac{-6 \pm \sqrt{36 + 24}}{4} = \dfrac{-6 \pm \sqrt{60}}{4} \] Using properties of radicals ($\sqrt{60} = 2 \sqrt{15}$), this reduces to $\frac{2(-3 \pm \sqrt{15})}{4} =\frac{-3 \pm \sqrt{15}}{2}$. We leave it to the reader to show these two answers are the same as $-\frac{3 \pm \sqrt{15}}{2}$,  as required.\footnote{Think about what $-(3 \pm \sqrt{15})$ is really telling you.}  
+
+\smallskip
+
+For $3x^2 - 24x + 5 = 0$, we identify $A = 3$, $B = -24$ and $C = 5$.  Here, we get: \[ x = \dfrac{-(-24) \pm \sqrt{(-24)^2 - 4(3)(5)}}{2(3)} = \dfrac{24 \pm \sqrt{516}}{6} \]
+
+Since $\sqrt{516} = 2\sqrt{129}$, this reduces to  $x = \frac{12 \pm \sqrt{129}}{3}$. 
+
+\smallskip
+
+It is worth noting that the Quadratic Formula applies to all quadratic equations - even ones we could solve using other techniques.  For example, to solve $2x^2 + 5x - 3 = 0$  we identify $A = 2$, $B = 5$ and $C = -3$.  This yields: \[ x = \dfrac{-5 \pm \sqrt{5^2 - 4(2)(-3)}}{2(2)} = \dfrac{-5 \pm \sqrt{49}}{4} = \dfrac{-5 \pm 7}{4} \]
+
+At this point, we have $x = \frac{-5+7}{4} = \frac{1}{2}$ and $x = \frac{-5-7}{4} = \frac{-12}{4} = -3$ - the same two answers we obtained factoring.  We can also use it to solve $x^2 = 3$, if we wanted to.  From $x^2 -3 = 0$, we have $A = 1$, $B = 0$ and $C = -3$.  The Quadratic Formula produces \[ x = \dfrac{-0 \pm \sqrt{0^2 - 4(1)(3)}}{2(1)} = \dfrac{\pm\sqrt{12}}{2} = \pm \dfrac{2\sqrt{3}}{2} = \pm \sqrt{3}\]
+
+As this last example illustrates, while the  Quadratic Formula \textit{can} be used to solve every quadratic equation, that doesn't mean it \textit{should} be used.  Many times other methods are more efficient.  We now provide a more comprehensive approach to solving Quadratic Equations.  
+
+\medskip
+
+\phantomsection
+\label{solvequadraticeqns}
+
+\colorbox{ResultColor}{\bbm
+\centerline{\textbf{Strategies for Solving Quadratic Equations}}
+
+\begin{itemize}
+
+\item  If the variable appears in the squared term only, isolate it and Extract Square Roots.
+\item  Otherwise, put the nonzero terms on one side of the equation so that the other side is $0$.
+\begin{itemize}
+\item  Try factoring.  
+\item  If the expression doesn't factor easily, use the Quadratic Formula.
+
+\end{itemize}
+\end{itemize}
+
+\ebm}
+
+\medskip
+
+The reader is encouraged to pause for a moment to think about why `Completing the Square' doesn't appear in our list of strategies despite the fact that we've spent the majority of the section so far talking about it. Let's get some practice solving quadratic equations, shall we?
+
+\begin{ex}\label{reviewquadraticex}  Find all real number solutions to the following equations.
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\item $3 - (2w-1)^2 = 0$\vphantom{$(y-1)^2 = 2 - \dfrac{y+2}{3}$}
+
+
+
+\item  $(y-1)^2 = 2 - \dfrac{y+2}{3}$ 
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $5x - x(x-3) = 7$\vphantom{$5(25 - 21x) = \dfrac{59}{4} - 25x^2$}
+
+
+
+\item $2x^2 = 3x^4 - 6$\vphantom{$5(25 - 21x) = \dfrac{59}{4} - 25x^2$}
+
+
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  Since $3 - (2w-1)^2 = 0$ contains a perfect square, we isolate it first then extract square roots: \[ \begin{array}{rclr}
+
+3 - (2w-1)^2 & = & 0 & \\
+
+3 & = & (2w-1)^2 & \text{Add $(2w-1)^2$} \\
+
+\pm \sqrt{3} & = & 2w - 1 & \text{Extract Square Roots} \\
+
+1 \pm \sqrt{3} & = & 2w & \text{Add $1$} \\
+
+\dfrac{1 \pm \sqrt{3}}{2} & = & w & \text{Divide by $2$} \\
+
+\end{array} \]
+
+We find our two answers $w = \frac{1 \pm \sqrt{3}}{2}$.  The reader is encouraged to check both answers by substituting each into the original equation.
+
+\item Even though we have a perfect square in $(y-1)^2 = 2 - \frac{y+2}{3}$, Extracting Square Roots won't help matters since we have a $y$ on the other side of the equation.  Our strategy here is to perform the indicated operations (and clear the fraction for good measure) and get $0$ on one side of the equation.\[ \begin{array}{rclr}
+
+(y-1)^2 & = &  2 - \dfrac{y+2}{3} & \\ [8pt]
+
+y^2 - 2y + 1 & = & 2 - \dfrac{y+2}{3} & \text{Perfect Square Trinomial}\\ [8pt]
+
+3(y^2 - 2y + 1) & = & 3\left(2 - \dfrac{y+2}{3} \right) & \text{Multiply by $3$} \\ [10pt]
+3y^2 - 6y + 3 & = & 6 - 3\left(\dfrac{y+2}{3}\right) & \text{Distribute} \\ [8pt]
+
+3y^2 - 6y + 3 & = & 6 - (y+2) & \\
+
+3y^2 - 6y + 3 - 6 + (y+2) & = & 0 & \text{Subtract $6$, Add $(y+2)$}\\
+
+3y^2 - 5y - 1 & = & 0 & \\
+
+\end{array}\]
+
+A cursory attempt at factoring bears no fruit, so we run this through the Quadratic Formula with $A = 3$, $B = -5$ and $C = -1$. \[ \begin{array}{rclr}
+
+y & = & \dfrac{-(-5) \pm \sqrt{(-5)^2 - 4(3)(-1)}}{2(3)} & \\ [8pt]
+
+y & = & \dfrac{5 \pm \sqrt{25 + 12}}{6} & \\[8pt]
+
+y & = & \dfrac{5 \pm \sqrt{37}}{6} & \\
+
+\end{array} \] Since $37$ is prime, we have no way to reduce $\sqrt{37}$.  Thus, our final answers are $y = \frac{5 \pm \sqrt{37}}{6}$. The reader is encouraged to supply the details of the challenging verification of the answers.
+
+\item To solve $5x - x(x-3) = 7$, we begin performing the indicated operations and getting one side equal to $0$.\[ \begin{array}{rclr}
+
+5x - x(x-3) & = & 7 & \\
+
+5x - x^2 + 3x & = & 7 & \text{Distribute} \\
+
+-x^2 + 8x & = & 7 & \text{Gather like terms} \\
+
+-x^2 + 8x - 7 & = & 0& \text{Subtract $7$} \\
+
+\end{array}\]
+
+At this point, we attempt to factor and find $-x^2 + 8x - 7 = (x-1)(-x+7)$.  Using the Zero Product Property, we get $x-1 = 0$  or $-x+7 = 0$.  Our answers are $x = 1$ or $x = 7$, both of which are easy to check.
+
+
+
+\item At first glance, the equation $2x^2 = 3x^4 - 6$ seems misplaced.  The highest power of the variable $x$ here is $4$, not $2$, so this equation isn't a quadratic equation - at least not in terms of the variable $x$.  It is, however, an example of an equation that is quadratic `in disguise.' We introduce a new variable $u$ to help us see the pattern - specifically we let $u = x^2$.  Thus $u^2 = (x^2)^2 = x^4$.  So in terms of the variable $u$, the equation $2x^2 = 3x^4 - 6$ is $2u = 3u^2 - 6$.  The latter is a quadratic equation, which we can solve using the usual techniques:\[ \begin{array}{rclr}
+
+2u & = & 3u^2 - 6 & \\
+
+0 & = & 3u^2 - 2u - 6 & \text{Subtract $2u$} \\
+
+\end{array}\] After a few attempts at factoring, we resort to the Quadratic Formula with $A = 3$, $B = -2$, $C = -6$ and get:\[ \begin{array}{rclr}
+
+u & = & \dfrac{-(-2) \pm \sqrt{(-2)^2 - 4(3)(-6)}}{2(3)} & \\ [10pt]
+
+& = & \dfrac{2 \pm \sqrt{4 + 72}}{6} & \\ [10pt]
+
+& = & \dfrac{2 \pm \sqrt{76}}{6} & \\ [10pt]
+
+& = & \dfrac{2 \pm \sqrt{4 \cdot 19}}{6} & \\ [10pt]
+
+& = & \dfrac{2 \pm 2\sqrt{19}}{6} & \text{Properties of Radicals} \\ [10pt]
+
+& = & \dfrac{2(1 \pm \sqrt{19})}{2(3)} & \text{Factor} \\ [10pt]
+
+& = & \dfrac{1 \pm \sqrt{19}}{3} & \text{Reduce} \\
+
+\end{array} \]
+
+We've solved the equation for $u$, but what we still need to solve the original equation\footnote{Or, you've solved the equation for `you' ($u$), now you have to solve it for your instructor ($x$).} - which means we need to find the corresponding values of $x$.  Since $u = x^2$, we have two equations:\[ \begin{array}{rclr}  
+
+x^2  =\dfrac{1 + \sqrt{19}}{3} & \text{or} & x^2  =\dfrac{1 - \sqrt{19}}{3} & \\
+
+\end{array}\] We can solve the first equation by extracting square roots to get  $x = \pm \sqrt{\frac{1 + \sqrt{19}}{3}}$.  The second equation, however, has no real number solutions because $\frac{1 - \sqrt{19}}{3}$ is a negative number.  For our final answers we can rationalize the denominator\footnote{We'll say more about this technique in Section \ref{RadEqus}.} to get: \[ x = \pm \sqrt{\dfrac{1 + \sqrt{19}}{3}} = \pm \sqrt{\dfrac{1 + \sqrt{19}}{3} \cdot \dfrac{3}{3}} = \pm \dfrac{\sqrt{3 + 3\sqrt{19}}}{3} \] As with the previous exercise, the very challenging check is left to the reader. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+Our last example above, the `Quadratic in Disguise', hints that the Quadratic Formula is applicable to a wider class of equations than those which are strictly quadratic.  We give some general guidelines to recognizing these beasts in the wild on the next page.
+
+\phantomsection
+\label{QuadinDisguise}
+\colorbox{ResultColor}{\bbm
+
+\centerline{\textbf{Identifying Quadratics in Disguise}}
+
+An equation is a `Quadratic in Disguise' if it can be written in the form:  $AX^{2m} + BX^{m} + C = 0$.  
+
+In other words:
+
+\begin{itemize}
+
+\item There are exactly three terms, two with variables and one constant term.
+
+\item  The exponent on the variable in one term is \textit{exactly twice} the variable on the other term.
+
+\end{itemize}
+
+To transform a Quadratic in Disguise to a quadratic equation, let $u = X^m$ so $u^2 = (X^m)^2 = X^{2m}$. This transforms the equation into $Au^2 + Bu + C = 0$.
+
+\ebm}
+
+\medskip
+
+For example, $3x^6 - 2x^3 + 1 = 0$ is a Quadratic in Disguise, since $6 = 2 \cdot 3$.  If we let $u = x^3$, we get $u^2 = (x^3)^2 = x^6$, so the equation becomes $3u^2 - 2u + 1 = 0$.  However, $3x^6 - 2x^2 + 1 = 0$ is \textit{not} a Quadratic in Disguise, since $6 \neq 2\cdot 2$. The substitution $u = x^2$ yields $u^2 = (x^2)^2 = x^4$, not $x^6$ as required.  We'll see more instances of `Quadratics in Disguise' in later sections.
+
+\medskip
+
+We close this section with a review of the \textbf{discriminant} of a quadratic equation as defined below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{defn} \textbf{The Discriminant:}\index{discriminant}\index{equation ! quadratic ! discriminant} Given a quadratic equation $AX^2 + BX + C = 0$, the quantity $B^2 - 4AC$ is called the \textbf{discriminant} of the equation.
+
+\end{defn}
+\ebm}
+
+\medskip
+
+The discriminant is the radicand of the square root in the quadratic formula:  \[X  = \dfrac{-B \pm \sqrt{B^2 - 4AC}}{2A} \] It \textit{discriminates} between the nature and number of solutions we get from a quadratic equation.   The results are summarized below. 
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm} \textbf{Discriminant Theorem:} \label{discriminanttheoremrealversion} Given a Quadratic Equation $AX^2 + BX + C = 0$, let $D = B^2 - 4AC$ be the discriminant.
+
+\begin{itemize}
+
+\item  If $D > 0$, there are two distinct real number solutions to the equation. 
+
+\item  If $D = 0$, there is one repeated real number solution.  
+
+\textbf{Note:}  `Repeated' here comes from the fact that `both' solutions $\frac{-B \pm 0}{2A}$ reduce to $-\frac{B}{2A}$.
+
+\item  If $D < 0$, there are no real solutions.
+
+\end{itemize}
+
+\end{thm}
+\ebm}
+
+\medskip
+
+For example, $x^2 + x - 1 = 0$ has two real number solutions since the discriminant works out to be $(1)^2 - 4(1)(-1) = 5 > 0$.  This results in a $\pm \sqrt{5}$ in the Quadratic Formula, generating two different answers.  On the other hand, $x^2 + x + 1 = 0$ has no real solutions since here, the discriminant is $(1)^2 - 4(1)(1) = -3 < 0$ which generates a $\pm \sqrt{-3}$ in the Quadratic Formula.  The equation $x^2 + 2x +1 = 0$ has discriminant $(2)^2 - 4(1)(1) = 0$ so in the Quadratic Formula we get a $\pm \sqrt{0} = 0$ thereby  generating just one solution.  More can be said as well.  For example, the discriminant of $6x^2 - x - 40 = 0$ is $961$.  This is a perfect square, $\sqrt{961} = 31$, which means our solutions are rational numbers.  When our solutions are rational numbers, the quadratic actually factors nicely. In our example  $6x^2 - x - 40 = (2x+5)(3x-8)$.  Admittedly,  if you've already computed the discriminant, you're most of the way done with the problem and probably wouldn't take the time to experiment with factoring the quadratic at this point -- but we'll see another use for this analysis of the discriminant in the next section.\footnote{Specifically in Example \ref{rationalexpressionreviewex}.}
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{solvequadfirst} - \ref{solvequadlast}, find all real solutions.  Check your answers, as directed by your instructor.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $3\left(x - \dfrac{1}{2}\right)^2 = \dfrac{5}{12}$ \label{solvequadfirst}
+\item  $4 - (5t+3)^2 = 3$ \vphantom{$3\left(x - \dfrac{1}{2}\right)^2 = \dfrac{5}{12}$}
+\item  $3(y^2-3)^2-2 = 10$ \vphantom{$3\left(x - \dfrac{1}{2}\right)^2 = \dfrac{5}{12}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^2 + x - 1 = 0$
+\item $3w^2 = 2-w$
+\item $y(y+4) = 1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3-t = 2(t+1)^2$
+\item $(x-3)^2 = x^2+9$
+\item $(3y-1)(2y+1) = 5y$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $w^4 + 3w^2 - 1 = 0$
+\item $2x^4 +x^2 = 3$ 
+\item $(2-y)^4 = 3(2-y)^2 + 1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3x^4 + 6x^2 = 15x^3$
+\item $6p + 2 = p^2 + 3p^3$
+\item $10v = 7v^3 - v^5$\label{solvequadlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+
+
+
+
+%\begin{enumerate}
+%\setcounter{enumi}{\value{HW}}
+
+
+%\item $(0.00623 + 2Q)^2 = 54.3(0.00414 - Q)(0.0224-Q)$\label{solvequadcalclast}
+
+%\setcounter{HW}{\value{enumi}}
+%\end{enumerate}
+
+In Exercises \ref{absquadfirst} - \ref{absquadlast}, use Theorem \ref{absvalequality} along with the techniques in this section to find all real solutions to the following.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $|x^2 - 3x| = 2$ \label{absquadfirst}
+\item $|2x-x^2| = |2x-1|$
+\item $|x^2 -x + 3| = |4-x^2|$ \label{absquadlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  Prove that for every nonzero number $p$, $x^2 + xp + p^2 = 0$  has no real solutions.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+
+
+
+\closegraphsfile

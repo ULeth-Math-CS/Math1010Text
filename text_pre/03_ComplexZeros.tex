@@ -1,0 +1,562 @@
+\section{Complex Zeros of Polynomials}
+
+\label{ComplexZeros}
+
+In Section \ref{RealZeros}, we were focused on finding the real zeros of a polynomial function.  In this section, we expand our horizons and look for the non-real zeros as well.  Consider the polynomial $p(x) = x^2+1$.  The zeros of $p$ are the solutions to $x^2+1=0$, or $x^2=-1$.  This equation has no real solutions, but you may recall Section \ref{CmpNums} that we can formally extract the square roots of both sides to get  $x = \pm \sqrt{-1}$.  You may want to review the basics of complex numbers in Section \ref{CmpNums} before proceeding.
+
+\medskip
+
+Suppose we wish to find the zeros of $f(x) = x^2-2x+5$.  To solve the equation $x^2-2x+5 = 0$, we note that the quadratic doesn't factor nicely, so we resort to the Quadratic Formula, Equation \ref{quadraticformula} and obtain \[ x = \dfrac{-(-2) \pm \sqrt{(-2)^2-4(1)(5)}}{2(1)} = \dfrac{2 \pm \sqrt{-16}}{2} = \dfrac{2 \pm 4i}{2} = 1 \pm 2i.\] Two things are important to note.  First, the zeros $1+2i$ and $1-2i$ are complex conjugates.  If ever we obtain non-real zeros to a quadratic function with \underline{real} coefficients, the zeros  will be a complex conjugate pair. (Do you see why?)  Next, we note that in Example \ref{complexzeroex1}, part 6, we found $(x-[1+2i])(x-[1-2i])=x^2-2x+5$.  This demonstrates that the factor theorem holds even for non-real zeros, i.e,  $x=1+2i$ is a zero of $f$, and, sure enough, $(x-[1+2i])$ is a factor of $f(x)$.  It turns out that polynomial division works the same way for all complex numbers, real and non-real alike, so the Factor and Remainder Theorems hold as well.  But how do we know if a general polynomial has any complex zeros at all?  We have many examples of polynomials with no real zeros.  Can there be polynomials with no zeros whatsoever?  The answer to that last question is ``No.'' and the theorem which provides that answer is \index{Fundamental Theorem of Algebra} The Fundamental Theorem of Algebra.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm} \label{ftoa} \textbf{The Fundamental Theorem of Algebra:}  Suppose $f$ is a polynomial function with complex number coefficients of degree $n \geq 1$, then $f$ has at least one complex zero.
+
+\end{thm}
+\ebm}
+
+\medskip
+
+The Fundamental Theorem of Algebra is an example of an `existence' theorem in Mathematics.  Like the Intermediate Value Theorem, Theorem \ref{IVT}, the Fundamental Theorem of Algebra  guarantees the existence of at least one zero, but gives us no algorithm to use in finding it.  In fact, as we mentioned in Section \ref{RealZeros}, there are polynomials whose real zeros, though they exist, cannot be expressed using the `usual' combinations of arithmetic symbols, and must be approximated.  The authors are fully aware that the full impact and profound nature of the Fundamental Theorem of Algebra  is lost on most students studying College Algebra, and that's fine.  It took mathematicians literally hundreds of years to prove the theorem in its full generality, and some of that history is recorded \href{http://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra}{\underline{here}}.  Note that the Fundamental Theorem of Algebra  applies to not only polynomial functions with real coefficients, but to those with complex number coefficients as well.  
+
+\smallskip
+
+Suppose  $f$ is a polynomial of degree $n \geq 1$.  The Fundamental Theorem of Algebra guarantees us at least one complex zero, $z_{\mbox{\tiny $1$}}$, and as such, the Factor Theorem guarantees that $f(x)$ factors as $f(x) = \left(x - z_{\mbox{\tiny $1$}}\right) q_{\mbox{\tiny $1$}}(x)$ for a polynomial function $q_{\mbox{\tiny $1$}}$,  of degree exactly $n-1$.  If $n-1 \geq 1$, then the Fundamental Theorem of Algebra guarantees a complex zero of $q_{\mbox{\tiny $1$}}$ as well, say $z_{\mbox{\tiny $2$}}$, so then the Factor Theorem gives us $q_{\mbox{\tiny $1$}}(x) = \left(x - z_{\mbox{\tiny $2$}}\right) q_{\mbox{\tiny $2$}}(x)$, and hence $f(x) = \left(x - z_{\mbox{\tiny $1$}}\right) \left(x - z_{\mbox{\tiny $2$}}\right) q_{\mbox{\tiny $2$}}(x)$.  We can continue this process exactly $n$ times, at which point our quotient polynomial $q_{\mbox{\tiny $n$}}$ has degree $0$ so it's a constant.  This argument gives us the following factorization theorem.
+
+\smallskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm} \label{complexfactorization} \textbf{Complex Factorization Theorem:} Suppose $f$ is a polynomial function with complex number coefficients.  If the degree of $f$ is $n$ and $n \geq 1$, then  $f$ has exactly $n$ complex zeros, counting multiplicity.  If $z_{\mbox{\tiny $1$}}$, $z_{\mbox{\tiny $2$}}$, \ldots, $z_{\mbox{\tiny $k$}}$ are the distinct zeros of $f$, with multiplicities $m_{\mbox{\tiny $1$}}$, $m_{\mbox{\tiny $2$}}$, \ldots, $m_{\mbox{\tiny $k$}}$, respectively, then $f(x) = a\left(x - z_{\mbox{\tiny $1$}}  \right)^{m_{\mbox{\tiny $1$}}}\left(x - z_{\mbox{\tiny $2$}}  \right)^{m_{\mbox{\tiny $2$}}} \cdots \left(x - z_{\mbox{\tiny $k$}}  \right)^{m_{\mbox{\tiny $k$}}}$. \index{Complex Factorization Theorem}
+
+\end{thm}
+\ebm}
+
+\smallskip
+
+Note that the value $a$ in Theorem \ref{complexfactorization} is the leading coefficient of $f(x)$ (Can you see why?) and as such, we see that a polynomial is completely determined by its zeros, their multiplicities, and its leading coefficient.  We put this theorem to good use in the next example.
+
+\begin{ex}  Let $f(x) = 12x^5 - 20x^4+19x^3-6x^2-2x+1$.
+
+\begin{enumerate}
+
+\item Find all of the complex zeros of $f$ and state their multiplicities.  
+
+\item  Factor $f(x)$ using Theorem \ref{complexfactorization}
+
+\end{enumerate}
+
+{ \bf Solution.}
+
+\begin{enumerate}
+
+\item  Since $f$ is a fifth degree polynomial, we know that we need to perform at least three successful divisions to get the quotient down to a quadratic function.  At that point, we can find the remaining zeros using the Quadratic Formula, if necessary.  Using the techniques developed in Section \ref{RealZeros}, we get
+
+\[\begin{array}{rrrrrrr}
+\frac{1}{2} \, \, \vline& 12 & -20& 19  & -6 & -2 &1 \\
+
+  & \downarrow     &  6  &  -7  & 6 & 0 & -1\\ \hhline{~------} 
+
+ \frac{1}{2} \, \, \vline& 12 & -14 & 12  & 0 & -2 & \fbox{$0$} \\
+
+  & \downarrow     &  6 &  -4  & 4 & 2 &\\ \hhline{~-----} 
+  
+  -\frac{1}{3} \, \, \vline&  12 &  -8  & 8 & 4 &  \fbox{$0$} & \\
+    
+               & \downarrow &  -4  &  4  & -4  & & \\ \hhline{~----} 
+ 
+   & 12  &   -12 & 12& \fbox{0} &&   \\
+  
+
+
+\end{array}\]
+
+Our quotient is $12x^2 - 12x + 12$, whose zeros we find to be $\frac{1 \pm i \sqrt{3}}{2}$.  From Theorem \ref{complexfactorization}, we know $f$ has exactly $5$ zeros, counting multiplicities, and as such we have the zero $\frac{1}{2}$ with multiplicity $2$, and the zeros $-\frac{1}{3}$, $\frac{1 + i \sqrt{3}}{2}$ and $\frac{1 - i \sqrt{3}}{2}$, each of multiplicity $1$.
+
+\item  Applying Theorem \ref{complexfactorization}, we are guaranteed that $f$ factors as
+
+\[f(x) = 12 \left(x- \dfrac{1}{2}\right)^2 \left(x + \dfrac{1}{3}\right) \left(x - \left[\dfrac{1 + i \sqrt{3}}{2}\right]\right) \left(x - \left[\dfrac{1 - i \sqrt{3}}{2}\right]\right)\]
+
+\vspace{-.4in} \qed
+
+\end{enumerate}
+
+\end{ex}
+
+A true test of Theorem \ref{complexfactorization} (and a student's mettle!) would be to take the factored form of $f(x)$ in the previous example and multiply it out\footnote{You really should do this once in your life to convince yourself that all of the theory actually does work!} to see that it really does reduce to the original formula  $f(x) = 12x^5 - 20x^4+19x^3-6x^2-2x+1$.  When factoring a polynomial using Theorem \ref{complexfactorization}, we say that it is \index{polynomial function ! completely factored ! over the complex numbers} \textbf{factored completely over the complex numbers}, meaning that it is impossible to factor the polynomial any further using complex numbers.  If we wanted to  \index{polynomial function ! completely factored ! over the real numbers} completely factor $f(x)$ over the \textbf{real numbers} then we would have stopped short of finding the nonreal zeros of $f$ and factored $f$ using our work from the synthetic division to write $f(x) = \left(x - \frac{1}{2} \right)^2 \left(x + \frac{1}{3} \right)\left(12x^2 - 12x + 12\right)$, or $f(x) = 12\left(x - \frac{1}{2} \right)^2 \left(x + \frac{1}{3} \right)\left(x^2 - x + 1\right)$.  Since the zeros of $x^2-x+1$ are nonreal, we call $x^2-x+1$ an \index{quadratic function ! irreducible quadratic}\index{irreducible quadratic}\textbf{irreducible quadratic} meaning it is impossible to break it down any further using \emph{real} numbers.  
+
+\smallskip
+
+The last two results of the section show us that, at least in theory, if we have a polynomial function with real coefficients, we can always factor it down enough so that any nonreal zeros come from irreducible quadratics.
+
+\smallskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{thm} \label{conjugatepairsthm}\textbf{Conjugate Pairs Theorem:} If $f$ is a polynomial function with real number coefficients and $z$ is a zero of $f$, then so is $\overline{z}$. \index{Conjugate Pairs Theorem}
+
+\end{thm}
+
+\ebm}
+
+\smallskip
+
+To prove the theorem, suppose $f$ is a polynomial with real number coefficients.  Specifically, let 
+$ f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}} x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} x^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} x + a_{\mbox{\tiny $0$}}$.  If $z$ is a zero of $f$, then $f(z) = 0$, which means $a_{n} z^{n} + a_{n-\mbox{\tiny$1$}} z^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} z^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} z + a_{\mbox{\tiny $0$}} = 0$.  Next, we consider $f\left(\overline{z}\right)$ and apply Theorem \ref{conjugateprops} below.
+
+\[ \begin{array}{rclr}
+
+ f\left(\overline{z}\right) & = &  a_{n} \left(\overline{z}\right)^{n} + a_{n-\mbox{\tiny$1$}} \left(\overline{z}\right)^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}}\left( \overline{z}\right)^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} \overline{z} + a_{\mbox{\tiny $0$}} & \\ [3pt]
+ 
+ &  = & a_{n}\overline{z^{n}} + a_{n-\mbox{\tiny$1$}}\overline{z^{n-\mbox{\tiny$1$}}} + \ldots + a_{\mbox{\tiny $2$}}\overline{z^{\mbox{\tiny $2$}}} + a_{\mbox{\tiny $1$}} \overline{z} + a_{\mbox{\tiny $0$}} & \mbox{ since $\left(\overline{z}\right)^n = \overline{z^{n}}$}\\ [3pt]
+ 
+ & = & \overline{a_{n}}\overline{z^{n}} + \overline{a_{n-\mbox{\tiny$1$}}}\overline{z^{n-\mbox{\tiny$1$}}} + \ldots +  \overline{a_{\mbox{\tiny $2$}}}\overline{z^{\mbox{\tiny $2$}}} + \overline{a_{\mbox{\tiny $1$}}}\, \overline{z} + \overline{a_{\mbox{\tiny $0$}}} & \mbox{since the coefficients are real} \\ [3pt]
+ 
+ & = & \overline{a_{n} z^{n}} + \overline{a_{n-\mbox{\tiny$1$}} z^{n-\mbox{\tiny$1$}}} + \ldots +  \overline{a_{\mbox{\tiny $2$}} z^{\mbox{\tiny $2$}}} + \overline{a_{\mbox{\tiny $1$}} z} + \overline{a_{\mbox{\tiny $0$}}} &  \mbox{ since $\overline{z} \, \overline{w}=\overline{zw} $}\\ [3pt]
+ 
+ & = & \overline{a_{n} z^{n} + a_{n-\mbox{\tiny$1$}} z^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} z^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} z + a_{\mbox{\tiny $0$}}} & \mbox{ since $ \overline{z} + \overline{w} = \overline{z+w} $}\\ [3pt]
+ 
+ & = & \overline{f(z)} & \\ [3pt]
+ 
+ & = & \overline{0} & \\ [3pt]
+ 
+ & = & 0 & \\
+ 
+\end{array} \]
+
+This shows that $\overline{z}$ is a zero of $f$.  So, if $f$ is a polynomial function with real number coefficients, Theorem \ref{conjugatepairsthm} tells us that if $a+bi$ is a nonreal zero of $f$, then so is $a-bi$.  In other words, nonreal zeros of $f$ come in conjugate pairs.  The Factor Theorem kicks in to give us both $(x-[a+bi])$ and $(x-[a-bi])$ as factors of $f(x)$ which means $(x-[a+bi])(x-[a-bi]) = x^2 + 2a x + \left(a^2+b^2\right)$ is an irreducible quadratic factor of $f$.  As a result, we have our last theorem of the section.
+
+\smallskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm}\label{realfactorization}\textbf{Real Factorization Theorem:} Suppose $f$ is a polynomial function with real number coefficients.  Then $f(x)$ can be factored into a product of linear factors corresponding to the real zeros of $f$ and irreducible quadratic factors which give the nonreal zeros of $f$. \index{Real Factorization Theorem}
+\end{thm}
+\ebm}
+
+\smallskip
+
+We now present an example which pulls together all of the major ideas of this section.
+
+\begin{ex}  Let $f(x) = x^4+64$.  
+
+\begin{enumerate}
+
+\item  Use synthetic division to show that $x=2+2i$ is a zero of $f$.
+
+\item  Find the remaining complex zeros of $f$.
+
+\item  Completely factor $f(x)$ over the complex numbers.
+
+\item  Completely factor $f(x)$ over the real numbers.
+
+\end{enumerate}
+
+{ \bf Solution.}
+
+\begin{enumerate}
+
+\item  Remembering to insert the $0$'s in the synthetic division tableau we have
+
+\[ \begin{array}{cccccc}
+ 2+2i \, \, \vline& 1 & 0 & 0  & 0 & 64 \\
+
+  & \downarrow     &  2+2i  &  8i & -16+16i & -64\\ \hhline{~-----} 
+  
+               & 1 &  2+2i  & 8i & -16+16i &  \fbox{$0$}  \\ \end{array}\]
+
+
+
+\item  Since $f$ is a fourth degree polynomial, we need to make two successful divisions to get a quadratic quotient.  Since $2+2i$ is a zero, we know from Theorem \ref{conjugatepairsthm} that $2-2i$ is also a zero.  We continue our synthetic division tableau.
+
+\[ \begin{array}{cccccc}
+  2+2i \, \, \vline& 1 & 0 & 0  & 0 & 64 \\
+
+  & \downarrow     &  2+2i  &  8i & -16+16i & -64\\ \hhline{~-----} 
+  
+  2-2i \, \, \vline  & 1 &  2+2i  & 8i & -16+16i &  \fbox{$0$}  \\
+    
+               & \downarrow &  2-2i  &  8-8i  & 16-16i &\\ \hhline{~----} 
+ 
+                & 1  &  4  & 8& \fbox{0} &   \\
+  
+
+
+\end{array}\]
+
+Our quotient polynomial is $x^2+4x+8$.  Using the quadratic formula, we obtain the remaining zeros $-2+2i$ and $-2-2i$.  
+
+\item  Using Theorem \ref{complexfactorization}, we get $f(x) = (x-[2-2i])(x-[2+2i])(x-[-2+2i])(x-[-2-2i])$.
+
+\item  We multiply the linear factors of $f(x)$ which correspond to complex conjugate pairs.  We find $(x-[2-2i])(x-[2+2i]) = x^2-4x+8$, and $(x-[-2+2i])(x-[-2-2i]) = x^2+4x+8$.  Our final answer is $f(x) =  \left(x^2-4x+8\right) \left(x^2+4x+8\right)$. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+
+Our last example turns the tables and asks us to manufacture a polynomial with certain properties of its graph and zeros.
+
+\begin{ex}  Find a polynomial $p$ of lowest degree that has integer coefficients and satisfies all of the following criteria:
+
+\begin{itemize}
+
+\item  the graph of $y=p(x)$ touches (but doesn't cross) the $x$-axis at $\left(\frac{1}{3}, 0\right)$
+
+\item  $x=3i$ is a zero of $p$.
+
+\item  as $x \rightarrow -\infty$, $p(x) \rightarrow -\infty$
+
+\item  as $x \rightarrow \infty$, $p(x) \rightarrow -\infty$
+
+
+\end{itemize}
+
+{\bf Solution.}  To solve this problem, we will need a good understanding of the relationship between the $x$-intercepts of the graph of a function and the zeros of a function, the Factor Theorem, the role of multiplicity, complex conjugates, the Complex Factorization Theorem, and end behavior of polynomial functions.  (In short, you'll need most of the major concepts of this chapter.)  Since the graph of $p$ touches the $x$-axis at $\left(\frac{1}{3}, 0\right)$, we know $x=\frac{1}{3}$ is a zero of even multiplicity.  Since we are after a polynomial of lowest degree, we need $x=\frac{1}{3}$ to have multiplicity exactly $2$. The Factor Theorem now tells us  $\left(x-\frac{1}{3}\right)^2$ is a factor of $p(x)$.  Since $x=3i$ is a zero and our final answer is to have integer (real) coefficients, $x=-3i$ is also a zero.  The Factor Theorem kicks in again to give us $(x-3i)$ and $(x+3i)$ as factors of $p(x)$.  We are given no further information about zeros or intercepts so we conclude, by the Complex Factorization Theorem that $p(x) = a \left(x-\frac{1}{3}\right)^2 (x-3i)(x+3i)$ for some real number $a$.  Expanding this, we get $p(x) =  ax^4-\frac{2a}{3} x^3+\frac{82a}{9} x^2-6ax+a$.  In order to obtain integer coefficients, we know $a$ must be an integer multiple of $9$.  Our last concern is end behavior.  Since the leading term of $p(x)$ is $ax^4$, we need $a < 0$ to get $p(x) \rightarrow -\infty$ as $x \rightarrow \pm \infty$. Hence, if we choose $x=-9$, we get $p(x) = -9x^4+ 6 x^3 - 82 x^2+54x-9$.    We can verify our handiwork using the techniques developed in this chapter.  \qed
+
+\end{ex}
+
+This example concludes our study of polynomial functions.\footnote{With the exception of the Exercises on the next page, of course.}  The last few sections have contained what is considered by many to be `heavy' Mathematics.  Like a heavy meal, heavy Mathematics takes time to digest.  Don't be overly concerned if it doesn't seem to sink in all at once, and pace yourself in the Exercises or you're liable to get mental cramps.  But before we get to the Exercises, we'd like to offer a bit of an epilogue.  
+
+\medskip
+
+\phantomsection
+\label{complexepilogue}
+
+Our main goal in presenting the material on the complex zeros of a polynomial was to give the chapter a sense of completeness.  Given that it can be shown that some polynomials have real zeros which cannot be expressed using the usual algebraic operations, and still others have no real zeros at all, it was nice to discover that every polynomial of degree $n \geq 1$ has $n$ complex zeros.  So like we said, it gives us a sense of closure.  But the observant reader will note that we did not give any examples of applications which involve complex numbers. Students often wonder when complex numbers will be used in `real-world' applications.  After all, didn't we call $i$ the \underline{imaginary} unit?  How can imaginary things be used in reality?  It turns out that complex numbers are very useful in many applied fields such as fluid dynamics, electromagnetism and quantum mechanics, but most of the applications require Mathematics well beyond College Algebra to fully understand them.  That does not mean you'll never be be able to understand them; in fact, it is the authors' sincere hope that all of you will reach a point in your studies when the glory, awe and splendor of complex numbers are revealed to you.  For now, however, the really good stuff is beyond the scope of this text. We invite you and your classmates to find a few examples of complex number applications and see what you can make of them.  A simple Internet search with the phrase `complex numbers in real life' should get you started.  Basic electronics classes are another place to look, but remember, they might use the letter $j$ where we have used $i$.
+
+\medskip
+
+For the remainder of the text, with the exception of Section \ref{PolarComplex} and a few exploratory exercises scattered about, we will restrict our attention to real numbers.  We do this primarily because the first Calculus sequence you will take, ostensibly the one that this text is preparing you for, studies only functions of real variables.  Also, lots of really cool scientific things don't require any deep understanding of complex numbers to study them, but they do need more Mathematics like exponential, logarithmic and trigonometric functions.  We believe it makes more sense pedagogically for you to learn about those functions now then take a course in Complex Function Theory in your junior or senior year once you've completed the Calculus sequence.  It is in that course that the true power of the complex numbers is released.  But for now, in order to fully prepare you for life immediately after College Algebra, we will say that functions like $f(x) = \frac{1}{x^{2} + 1}$ have a domain of all real numbers, even though we know $x^{2} + 1 = 0$ has two complex solutions, namely $x = \pm i$.  Because $x^{2} + 1 > 0$ for all \emph{real} numbers $x$, the fraction $\frac{1}{x^{2} + 1}$ is never undefined in the real variable setting.
+
+\newpage
+
+\subsection{Exercises}
+
+
+
+In Exercises \ref{compfactpolyfirst} - \ref{compfactpolylast}, find all of the zeros of the polynomial then completely factor it over the real numbers and completely factor it over the complex numbers.
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^{2} - 4x + 13$ \label{compfactpolyfirst}
+\item $f(x) = x^2 - 2x + 5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = 3x^{2} + 2x + 10$
+\item $f(x) = x^3-2x^2+9x-18$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^{3} + 6x^{2} + 6x + 5$
+\item $f(x) = 3x^{3} - 13x^{2} + 43x - 13$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^3 + 3x^2 + 4x + 12$
+\item $f(x) = 4x^3-6x^2-8x+15$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item  $f(x) = x^3 + 7x^2+9x-2$
+\item  $f(x) = 9x^3+2x+1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = 4x^{4} - 4x^{3} + 13x^{2} - 12x + 3$
+\item $f(x) = 2x^4-7x^3+14x^2-15x+6$
+
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = x^4+x^3+7x^2+9x-18$
+\item  $f(x) = 6x^4+17x^3-55x^2+16x+12$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = -3x^4-8x^3-12x^2-12x-5$
+\item  $f(x) = 8x^4+50x^3+43x^2+2x-4$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^4+9x^2+20$
+\item $f(x) = x^4 + 5x^2 - 24$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = x^5 - x^4+7x^3-7x^2+12x-12$
+\item $f(x) = x^6-64$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^{4} - 2x^{3} + 27x^{2} - 2x + 26$ (Hint: $x = i$ is one of the zeros.)
+\item  $f(x) = 2x^4+5x^3+13x^2+7x+5$ (Hint:  $x = -1+2i$ is a zero.) \label{compfactpolylast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+In Exercises \ref{buildcomppolyfirst} - \ref{buildcompolylast}, create a polynomial $f$ with real number coefficients which has all of the desired characteristics.  You may leave the polynomial in factored form. 
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item \label{buildcomppolyfirst}
+
+\begin{itemize}
+
+\item The zeros of $f$ are $c=\pm 1$ and $c = \pm i$
+\item The leading term of $f(x)$ is $42x^4$
+
+\end{itemize}
+
+
+\item
+
+\begin{itemize}
+
+\item $c=2i$ is a zero.
+\item the point $(-1,0)$ is a local minimum on the graph of $y=f(x)$ 
+\item the leading term of $f(x)$ is $117x^4$
+
+\end{itemize}
+
+
+\item
+
+\begin{itemize}
+
+\item The solutions to $f(x) = 0$ are $x = \pm 2$ and $x=\pm 7i$
+\item The leading term of $f(x)$ is $-3x^5$
+\item The point $(2,0)$ is a local maximum on the graph of $y=f(x)$.
+
+\end{itemize}
+
+
+\item
+
+\begin{itemize}
+
+\item $f$ is degree $5$.
+\item $x=6$, $x = i$ and $x = 1-3i$ are zeros of $f$
+\item as $x \rightarrow -\infty$, $f(x) \rightarrow \infty$
+
+\end{itemize}
+
+\item \label{buildcompolylast}
+
+\begin{itemize}
+
+\item The leading term of $f(x)$ is $-2x^3$
+\item $c=2i$ is a zero
+\item $f(0) = -16$
+
+\end{itemize}
+
+
+\item \label{zbarexercise} Let $z$ and $w$ be arbitrary complex numbers.  Show that  $\overline{z} \, \overline{w}  = \overline{zw}$ and $\overline{\overline{z}} = z$.
+
+\end{enumerate}
+
+\newpage
+
+\subsection{Answers}
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = x^2-4x+13 = (x-(2+3i)) (x-(2-3i))$ \\
+Zeros: $x = 2 \pm 3i$ 
+
+\item $f(x) = x^2 - 2x + 5 = (x-(1+2i))(x-(1-2i))$ \\ 
+Zeros:  $x = 1 \pm 2i$
+
+
+\item $f(x) = 3x^2 + 2x +10 = 3\left(x-\left(-\frac{1}{3} + \frac{\sqrt{29}}{3} i\right) \right) \left(x-\left(-\frac{1}{3} - \frac{\sqrt{29}}{3} i\right) \right)$
+
+
+Zeros:  $x = -\frac{1}{3} \pm \frac{\sqrt{29}}{3} i$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $f(x) = x^3-2x^2+9x-18 = (x-2) \left(x^2+9\right) = (x-2)(x-3i)(x+3i)$\\
+Zeros:  $x=2, \pm 3i$
+
+\item $f(x) = x^{3} + 6x^{2} + 6x + 5 = (x + 5)(x^{2} + x + 1) = (x + 5) \left( x - \left( -\frac{1}{2} + \frac{\sqrt{3}}{2}i \right) \right) \left( x - \left(-\frac{1}{2} - \frac{\sqrt{3}}{2}i \right) \right)$ \\
+Zeros: $x = -5, \;  x = -\frac{1}{2} \pm \frac{\sqrt{3}}{2}i $
+
+\item $f(x) = 3x^{3} - 13x^{2} + 43x - 13 = (3x - 1)(x^{2} - 4x + 13) = (3x - 1)(x - (2 + 3i))(x - (2 - 3i))$\\
+Zeros: $x = \frac{1}{3}, \; x = 2 \pm 3i$
+
+
+
+\item $f(x) = x^3 + 3x^2 + 4x + 12 = (x+3) \left(x^2 + 4 \right) = (x+3)(x+2i)(x-2i)$ \\
+Zeros:  $x = -3, \; \pm 2i$
+
+\item $f(x) = 4x^3-6x^2-8x+15 = \left(x + \frac{3}{2} \right) \left(4x^2-12x+10\right) \\
+ \phantom{f(x)} = 4 \left(x + \frac{3}{2} \right) \left(x - \left( \frac{3}{2} + \frac{1}{2}i  \right) \right) \left(x - \left( \frac{3}{2} - \frac{1}{2}i  \right) \right)$\\
+Zeros:  $x = - \frac{3}{2}, \; x = \frac{3}{2} \pm \frac{1}{2}i$
+
+
+\item  $f(x) = x^3 + 7x^2+9x-2 = (x+2) \left(x - \left( -\frac{5}{2}+\frac{\sqrt{29}}{2}\right) \right) \left(x - \left( -\frac{5}{2}-\frac{\sqrt{29}}{2}\right) \right)$ \\
+Zeros:  $x = -2, \; x = -\frac{5}{2} \pm \frac{\sqrt{29}}{2}$
+
+\item  $f(x) = 9x^3+2x+1 = \left(x + \frac{1}{3}\right) \left(9x^2 - 3x + 3\right) \\
+\phantom{f(x)}= 9\left(x + \frac{1}{3}\right) \left(x - \left(\frac{1}{6} + \frac{\sqrt{11}}{6} i \right) \right) \left(x - \left(\frac{1}{6} - \frac{\sqrt{11}}{6} i \right) \right)$\\
+Zeros:  $x = -\frac{1}{3}, \; x = \frac{1}{6} \pm \frac{\sqrt{11}}{6} i$
+
+\item $f(x) = 4x^{4} - 4x^{3} + 13x^{2} - 12x + 3 = \left(x - \frac{1}{2}\right)^{2}\left(4x^{2} + 12\right) = 4\left(x - \frac{1}{2}\right)^{2}(x + i\sqrt{3})(x - i\sqrt{3})$\\
+Zeros: $x = \frac{1}{2}, \; x = \pm \sqrt{3}i$
+
+\item $f(x) = 2x^4-7x^3+14x^2-15x+6 = (x-1)^2 \left(2x^2 - 3x + 6\right)  \\
+\phantom{f(x)} = 2 (x-1)^2 \left( x - \left( \frac{3}{4} +  \frac{\sqrt{39}}{4} i \right) \right)  \left( x - \left( \frac{3}{4} -  \frac{\sqrt{39}}{4} i \right) \right) $ \\
+Zeros: $x = 1, \; x = \frac{3}{4}  \pm  \frac{\sqrt{39}}{4} i$
+
+
+
+\item  $f(x) = x^4+x^3+7x^2+9x-18 = (x+2)(x-1)\left(x^2+9\right) = (x+2)(x-1)(x+3i)(x-3i)$\\
+Zeros:  $x = -2, \; 1, \; \pm 3i$
+
+\item  $f(x) = 6x^4+17x^3-55x^2+16x+12 = 6 \left(x + \frac{1}{3} \right) \left(x - \frac{3}{2} \right) \left(x - \left( -2 + 2 \sqrt{2}\right)\right) \left(x - \left( -2 - 2 \sqrt{2}\right)\right)$ \\
+Zeros:  $x = -\frac{1}{3}, \; x = \frac{3}{2}, \; x = -2 \pm 2 \sqrt{2}$
+
+
+\item  $f(x) = -3x^4-8x^3-12x^2-12x-5 = (x+1)^2 \left(-3x^2-2x-5\right) \\
+\phantom{f(x)}= -3(x+1)^2\left(x - \left( -\frac{1}{3}+\frac{\sqrt{14}}{3} i\right) \right) \left(x - \left( -\frac{1}{3}-\frac{\sqrt{14}}{3} i\right) \right)$ \\
+Zeros:  $x = -1, \; x = -\frac{1}{3} \pm \frac{\sqrt{14}}{3} i$
+
+\item  $f(x) = 8x^4+50x^3+43x^2+2x-4 = 8\left(x + \frac{1}{2}\right) \left(x - \frac{1}{4}\right)(x - (-3 + \sqrt{5}))(x - (-3 - \sqrt{5}))$ \\
+Zeros:  $x = -\frac{1}{2}, \; \frac{1}{4}, \; x = -3 \pm \sqrt{5}$
+
+\item  $f(x) = x^4+9x^2+20 = \left(x^2+4\right) \left(x^2+5\right) = (x-2i)(x+2i)\left(x - i \sqrt{5}\right)\left(x + i \sqrt{5}\right)$\\
+Zeros:  $x = \pm 2i, \pm i \sqrt{5}$
+
+
+\item  $f(x) = x^4+5x^2-24 = \left(x^2-3 \right) \left(x^2+8\right) = (x-\sqrt{3})(x+\sqrt{3})\left(x - 2i \sqrt{2}\right)\left(x + 2i \sqrt{2}\right)$\\
+Zeros:  $x = \pm \sqrt{3}, \pm 2i \sqrt{2}$
+
+\item  $f(x) = x^5 - x^4+7x^3-7x^2+12x-12 = (x-1) \left(x^2 + 3\right) \left(x^2 + 4 \right) \\
+\phantom{f(x)} = (x-1)(x - i \sqrt{3})(x + i \sqrt{3})(x-2i)(x+2i)$ \\
+Zeros:  $x = 1, \;  \pm  \sqrt{3}i,  \; \pm 2i$
+
+\item $f(x) = x^6 - 64 = (x-2)(x+2)\left(x^2+2x+4\right)\left(x^2-2x+4\right) \\
+      \phantom{f(x)} = (x-2)(x+2)\left( x - \left( -1+i\sqrt{3} \right) \right)\left( x - \left( -1-i\sqrt{3} \right) \right)\left( x - \left( 1+i\sqrt{3} \right) \right)\left( x - \left( 1-i\sqrt{3} \right) \right)$ \\
+Zeros:  $x = \pm 2$, $x = -1 \pm i\sqrt{3}$, $x = 1 \pm i\sqrt{3}$
+
+
+\item $f(x) = x^{4} - 2x^{3} + 27x^{2} - 2x + 26 = (x^{2} - 2x + 26)(x^{2} + 1) = (x - (1 + 5i))(x - (1 - 5i))(x + i)(x - i)$\\ 
+Zeros: $x = 1 \pm 5i, \; x = \pm i$
+
+\item  $f(x) = 2x^4+5x^3+13x^2+7x+5 = \left(x^2+2x+5\right) \left(2x^2+x+1\right)  \\ \phantom{f(x)} = 2 (x-(-1+2i))(x-(-1-2i))\left(x - \left(-\frac{1}{4} + i \frac{\sqrt{7}}{4}\right) \right)\left(x - \left(-\frac{1}{4} - i \frac{\sqrt{7}}{4}\right) \right) $\\
+Zeros:  $x = -1 \pm 2i, -\frac{1}{4} \pm i \frac{\sqrt{7}}{4}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = 42(x-1)(x+1)(x-i)(x+i)$
+
+
+\item $f(x) = 117(x+1)^2(x-2i)(x+2i)$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = -3(x-2)^2(x+2)(x-7i)(x+7i)$
+
+
+\item $f(x) = a(x-6)(x-i)(x+i)(x-(1-3i))(x-(1+3i))$ where $a$ is any real number,  $a < 0$
+
+
+\item $f(x) = -2(x-2i)(x+2i)(x+2)$
+
+\end{enumerate}
+
+
+\closegraphsfile

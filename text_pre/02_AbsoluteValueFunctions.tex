@@ -1,0 +1,1206 @@
+\section{Absolute Value Functions}
+\label{AbsoluteValueFunctions}
+
+There are a few ways to describe what is meant by the absolute value $|x|$ of a real number $x$.  You may have been taught that $|x|$ is the distance from the real number $x$ to $0$ on the number line.  So, for example, $|5| = 5$ and $|-5| = 5$, since each is $5$ units from $0$ on the number line.
+
+\begin{center}
+
+\begin{mfpic}[15]{-6}{6}{-1}{2}
+\arrow \reverse \arrow \polyline{(-6,0), (6,0)}
+\arrow \reverse \arrow \polyline{(-5,1), (0,1)}
+\arrow \reverse \arrow \polyline{(5,1), (0,1)}
+\point[3pt]{(-5,0), (5,0)}
+\tlabel[cc](-2.5,1.5){\tiny distance is $5$ units}
+\tlabel[cc](2.5,1.5){\tiny distance is $5$ units}
+\xmarks{-5,-4,-3,-2,-1,0,1,2,3,4,5}
+\tlpointsep{4pt}
+\axislabels {x}{{\tiny $-5 \hspace{7pt}$} -5,{\tiny $-4 \hspace{7pt}$} -4,{\tiny $-3 \hspace{7pt}$} -3,{\tiny $-2 \hspace{7pt}$} -2,{\tiny $-1 \hspace{7pt}$} -1,{\tiny $0$} 0,{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4, {\tiny $5$} 5}
+\end{mfpic}
+
+\end{center}
+
+Another way to define absolute value is by the equation $|x| = \sqrt{x^2}$. Using this definition, we have $|5| = \sqrt{(5)^2} = \sqrt{25} = 5$ and $|-5| = \sqrt{(-5)^2} = \sqrt{25} = 5$.  The long and short of both of these procedures is that $|x|$ takes negative real numbers and assigns them to their positive counterparts while it leaves positive numbers alone.  This last description is the one we shall adopt, and is summarized in the following definition.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn}
+
+\label{absolutevalue}
+
+The \index{absolute value ! definition of}\index{function ! absolute value}\textbf{absolute value} of a real number $x$, denoted $|x|$, is given by \[ |x| = \left\{ \begin{array}{rcl} -x, & \mbox{if} & x < 0  \\ x, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]
+
+\end{defn}
+
+\ebm}
+
+\medskip
+
+In Definition \ref{absolutevalue}, we define $|x|$ using a piecewise-defined function.  (See page \pageref{piecewisefunction} in Section \ref{FunctionNotation}.)  To check that this definition agrees with what we previously understood as absolute value, note that since $5 \geq 0$, to find $|5|$ we use the rule $|x| = x$, so $|5|=5$.  Similarly, since $-5 < 0$, we use the rule $|x| = -x$, so that $|-5| = -(-5) = 5$.  This is one of the times when it's best to interpret the expression `$-x$' as `the opposite of $x$' as opposed to `negative $x$'.  Before we begin studying absolute value functions, we remind ourselves of the properties of absolute value.
+
+\medskip
+\colorbox{ResultColor}{\bbm
+\begin{thm}  \textbf{Properties of Absolute Value:} Let $a$, $b$ and $x$ be real numbers and let $n$ be an integer.\footnote{See page \pageref{setsofnumbersboxonthispage} if you don't remember what an integer is.}  Then \index{absolute value ! properties of}\label{absolutevalueprops} 
+
+\begin{itemize}
+
+\item {\bf Product Rule:} $|ab|= |a||b|$ \index{product rule ! for absolute value}
+
+\item {\bf Power Rule:} $\left| a^{n} \right| = |a|^{n}$ whenever $a^{n}$ is defined \index{power rule ! for absolute value}
+
+\item {\bf Quotient Rule:} $\left| \dfrac{a}{b} \right| = \dfrac{|a|}{|b|}$, provided $b \neq 0$ \index{quotient rule ! for absolute value}
+
+\end{itemize}
+
+{\bf Equality Properties:}
+
+\begin{itemize}
+
+\item  $|x| = 0$ if and only if $x = 0$.
+
+\item  For $c > 0$, $|x| = c$ if and only if $x = c$ or $-x = c$.
+
+\item  For $c < 0$, $|x| = c$ has no solution.
+
+\end{itemize}
+
+\end{thm}
+
+\ebm}
+
+\medskip
+
+The proofs of the Product and Quotient Rules in Theorem \ref{absolutevalueprops} boil down to checking four cases:  when both $a$ and $b$ are positive;  when they are both negative;  when one is positive and the other is negative; and when one or both are zero.  
+
+\medskip
+
+For example, suppose we wish to show that $|ab| = |a||b|$.  We need to show that this equation is true for all real numbers $a$ and $b$.  If $a$ and $b$ are both positive, then so is $ab$.  Hence, $|a| = a$, $|b| = b$ and $|ab| = ab$.  Hence, the equation $|ab| = |a||b|$ is the same as $ab = ab$ which is true.  If both $a$ and $b$ are negative, then $ab$ is positive.  Hence, $|a| = -a$, $|b| = -b$ and $|ab| = ab$.  The equation $|ab| = |a||b|$ becomes $ab = (-a)(-b)$, which is true.  Suppose $a$ is positive and $b$ is negative. Then $ab$ is negative, and we have $|ab| = -ab$, $|a| = a$ and $|b| = -b$.  The equation $|ab| = |a||b|$ reduces to $-ab = a(-b)$ which is true.  A symmetric argument shows the equation $|ab| = |a||b|$ holds when $a$ is negative and $b$ is positive.  Finally, if either $a$ or $b$ (or both) are zero, then both sides of $|ab| = |a||b|$ are zero, so the equation holds in this case, too.  All of this rhetoric has shown that the equation $|ab| = |a||b|$ holds true in all cases.  
+
+\medskip
+
+The proof of the Quotient Rule is very similar, with the exception that $b \neq 0$. The Power Rule can be shown by repeated application of the Product Rule.  The `Equality Properties' can be proved using Definition \ref{absolutevalue} and by looking at the cases when $x\geq 0$, in which case $|x| = x$, or when $x<0$, in which case $|x| = -x$.  For example, if $c>0$, and $|x| = c$, then if $x \geq 0$, we have $x = |x| = c$.  If, on the other hand, $x < 0$, then $-x = |x| = c$, so $x = -c$.  The remaining properties are proved similarly and are left for the Exercises.  Our first example reviews how to solve basic equations involving absolute value using the properties listed in Theorem \ref{absolutevalueprops}.
+
+
+\begin{ex} \label{absvalueeqnex}  Solve each of the following equations.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $|3x-1| = 6$
+\item  $3 - |x+5| = 1$
+\item  $3|2x+1| - 5 = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $4 - |5x+3| = 5$
+\item  $|x| = x^2-6$
+\item  $|x-2| + 1 = x$
+
+\end{enumerate}
+\end{multicols}
+
+{\bf Solution.} 
+
+\begin{enumerate}
+
+\item  The equation  $|3x-1| = 6$ is of the form $|x| = c$ for $c>0$, so by the Equality Properties, $|3x-1| = 6$ is equivalent to $3x-1=6$ or $3x-1 = -6$.  Solving the former, we arrive at $x = \frac{7}{3}$, and solving the latter, we get $x = -\frac{5}{3}$.  We may check both of these solutions by substituting them into the original equation and showing that the arithmetic works out.
+
+\item  To use the Equality Properties to solve $3 - |x+5| = 1$, we first isolate the absolute value. \[ \begin{array}{rclr}
+
+3 - |x+5| & = & 1 &  \\
+-|x+5| & = & -2 & \text{subtract $3$} \\
+|x+5| & = & 2 & \text{divide by $-1$}  \\ 
+
+\end{array} \]
+
+From the Equality Properties, we have $x+5 = 2$ or $x+5 = -2$, and get our solutions to be $x = -3$ or $x = -7$.  We leave it to the reader to check both answers in the original equation.
+
+\item As in the previous example, we first isolate the absolute value in the equation $3|2x+1| - 5 = 0$ and get $|2x+1| = \frac{5}{3}$.  Using the Equality Properties, we have $2x+1 = \frac{5}{3}$ or $2x+1 = -\frac{5}{3}$.  Solving the former gives $x = \frac{1}{3}$ and solving the latter gives $x = -\frac{4}{3}$.  As usual, we may substitute both answers in the original equation to check.
+
+\item  Upon isolating the absolute value in the equation $4 - |5x+3| = 5$, we get $|5x+3| = -1$.  At this point, we know there cannot be any real solution, since, by definition, the absolute value of \textit{anything} is never negative.  We are done. 
+
+
+\item  The equation  $|x| = x^2-6$ presents us with some difficulty, since $x$ appears both inside and outside of the absolute value. Moreover, there are values of $x$ for which $x^2-6$ is positive, negative and zero, so we cannot use the Equality Properties without the risk of introducing extraneous solutions, or worse, losing solutions.  For this reason, we break equations like this into cases  by rewriting the term in absolute values, $|x|$, using Definition \ref{absolutevalue}.  For $x < 0$, $|x| = -x$, so for $x < 0$, the equation $|x| = x^2-6$ is equivalent to $-x = x^2-6$.  Rearranging this gives us $x^2+x-6 = 0$, or $(x+3)(x-2) = 0$.  We get $x = -3$ or $x=2$.  Since only $x=-3$ satisfies $x<0$, this is the answer we keep. For $x \geq 0$, $|x| = x$, so the equation $|x| = x^2-6$ becomes $x = x^2-6$.  From this, we get $x^2-x-6 =0$ or $(x-3)(x+2) = 0$.  Our solutions are $x=3$ or $x = -2$, and since only $x=3$ satisfies $x \geq 0$, this is the one we keep.  Hence, our two solutions to $|x| = x^2-6$ are $x=-3$ and $x=3$.
+
+\item  To solve $|x-2| + 1 = x$, we first isolate the absolute value and get $|x-2| = x-1$.  Since we see $x$ both inside and outside of the absolute value, we break the equation into cases.  The term with absolute values here is $|x-2|$, so we replace `$x$' with the quantity `$(x-2)$' in Definition \ref{absolutevalue} to get \[ |x-2| = \left\{ \begin{array}{rcl} -(x-2), & \mbox{if} & (x-2) < 0  \\ (x-2), & \mbox{if} & (x-2) \geq 0 \\ \end{array} \right.\]
+
+Simplifying yields \[ |x-2| = \left\{ \begin{array}{rcl} -x+2, & \mbox{if} & x < 2 \\ x-2, & \mbox{if} & x \geq 2 \\ \end{array} \right.\]
+
+So, for $x<2$, $|x-2| = -x+2$ and our equation  $|x-2| = x-1$ becomes $-x+2 = x-1$, which gives $x = \frac{3}{2}$.  Since this solution satisfies $x < 2$, we keep it.  Next, for $x \geq 2$, $|x-2| = x-2$, so the equation $|x-2| = x-1$ becomes $x-2 = x-1$.  Here, the equation reduces to $-2 = -1$, which signifies we have no solutions here.  Hence, our only solution is $x = \frac{3}{2}$.  \qed
+
+\end{enumerate}
+
+\end{ex}
+
+Next, we turn our attention to graphing absolute value functions.  Our strategy in the next example is to make liberal use of Definition \ref{absolutevalue} along with what we know about graphing linear functions (from Section \ref{LinearFunctions}) and piecewise-defined functions (from Section \ref{FunctionNotation}).
+
+\begin{ex} Graph each of the following functions.  
+\enlargethispage{.5in}
+\vspace{-.1in}
+\begin{multicols}{4}
+
+\begin{enumerate}
+
+\item  $f(x) = |x|$
+\item  $g(x) = |x-3|$
+\item  $h(x) = |x| -3$
+\item  \small $i(x) = 4 - 2|3x+1|$ \normalsize
+
+\end{enumerate}
+
+\end{multicols}
+\vspace{-.2in}
+
+Find the zeros of each function and the $x$- and $y$-intercepts of  each graph, if any exist.  From the graph, determine the domain and range of each function, list the intervals on which the function is increasing, decreasing  or constant, and find the relative and absolute extrema, if they exist.
+
+\medskip
+
+{\bf Solution.}  
+
+\begin{enumerate}
+
+\item  To find the zeros of $f$, we set $f(x)= 0$.  We get $|x|=0$, which, by Theorem \ref{absolutevalueprops} gives us $x=0$.  Since the zeros of $f$ are the $x$-coordinates of the $x$-intercepts of the graph of $y=f(x)$, we get $(0,0)$ as our only $x$-intercept.  To find the $y$-intercept, we set $x=0$, and find $y = f(0) = 0$, so that $(0,0)$ is our $y$-intercept as well.\footnote{Actually, since functions can have at most one $y$-intercept (Do you know why?), as soon as we found $(0,0)$ as the $x$-intercept, we knew this was also the $y$-intercept.}  Using Definition \ref{absolutevalue}, we get \[ f(x) = |x| =  \left\{ \begin{array}{rcl} -x, & \mbox{if} & x < 0  \\ x, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]  Hence, for $x < 0$, we are graphing the line $y = -x$;  for $x \geq 0$, we have the line $y = x$.  Proceeding as we did in Section \ref{GraphsofFunctions}, we get
+
+\begin{center}
+
+\begin{tabular}{m{3in}m{2in}} 
+ 
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \polyline{( -4,4), (0,0)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\gclear \circle{(0,0),0.1}
+\circle{(0,0),0.1}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{1,2,3,4}
+\tcaption{$f(x) = |x|$, $x < 0$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic} &
+
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \polyline{(0,0), (4,4)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(0,0)}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{1,2,3,4}
+\tcaption{$f(x) = |x|$, $x \geq 0$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic} \\
+
+\end{tabular}
+
+\end{center}
+
+
+Notice that we have an `open circle' at $(0,0)$ in the graph when $x<0$. As we have seen before, this is due to the fact that the points on $y = -x$ approach $(0,0)$ as the $x$-values approach $0$.  Since $x$ is required to be strictly less than zero on this stretch, the open circle is drawn at the origin.  However, notice that when $x \geq 0$, we get to fill in the point at $(0,0)$, which effectively `plugs' the hole indicated by the open circle.  Thus we get,
+
+\begin{center}
+
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \arrow \polyline{(-4,4),(0,0),(4,4)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(0,0)}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{1,2,3,4}
+\tcaption{$f(x) = |x|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic}
+
+\end{center}
+
+By projecting the graph to the $x$-axis, we see that the domain is $(-\infty, \infty)$.  Projecting to the $y$-axis gives us the range $[0,\infty)$.  The function is increasing on $[0,\infty)$ and decreasing on $(-\infty,0]$.  The relative minimum value of $f$ is the same as the absolute minimum, namely $0$ which occurs at $(0,0)$.  There is no relative maximum value of $f$.  There is also no absolute maximum value of $f$, since the $y$ values on the graph extend infinitely upwards.
+
+\item  To find the zeros of $g$, we set $g(x) = |x-3|=0$.  By Theorem \ref{absolutevalueprops}, we get $x-3=0$ so that $x=3$.  Hence, the $x$-intercept is $(3,0)$.  To find our $y$-intercept, we set $x=0$ so that $y = g(0) = |0-3| = 3$, which yields $(0,3)$ as our $y$-intercept.  To graph $g(x) = |x-3|$, we use Definition \ref{absolutevalue} to rewrite $g$ as
+
+\[ g(x) = |x-3| =  \left\{ \begin{array}{rcl} -(x-3), & \mbox{if} & (x-3) < 0  \\ (x-3), & \mbox{if} & (x -3) \geq 0 \\ \end{array} \right.\]
+
+Simplifying, we get
+
+\[ g(x) =\left\{ \begin{array}{rcl} -x+3, & \mbox{if} & x<3  \\ x-3, & \mbox{if} & x \geq 3 \\ \end{array} \right.\]
+
+
+
+As before, the open circle we introduce at $(3,0)$ from the graph of $y = -x+3$ is filled by the point $(3,0)$ from the line $y = x-3$. We determine the domain as $(-\infty, \infty)$ and the range as $[0,\infty)$.  The function $g$ is increasing on $[3,\infty)$ and decreasing on $(-\infty,3]$.  The relative and absolute minimum value of $g$ is $0$ which occurs at $(3,0)$.  As before, there is no relative or absolute maximum value of $g$.
+
+\item  Setting $h(x) = 0$ to look for zeros gives $|x|-3=0$. As in Example \ref{absvalueeqnex},  we isolate the absolute value to get  $|x| = 3$ so that $x =3$ or $x=-3$.  As a result, we have a pair of $x$-intercepts:  $(-3,0)$ and $(3,0)$.  Setting $x=0$ gives $y = h(0) = |0|-3 = -3$, so our $y$-intercept is $(0,-3)$.  As before, we rewrite the absolute value in $h$ to get
+
+\[ h(x) =\left\{ \begin{array}{rcl} -x-3, & \mbox{if} & x<0  \\ x-3, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]
+
+Once again, the open circle at $(0,-3)$ from one piece of the graph of $h$ is filled by the point $(0,-3)$ from the other piece of $h$.  From the graph, we determine the domain of $h$ is $(-\infty, \infty)$ and the range is $[-3,\infty)$.   On $[0,\infty)$, $h$ is increasing;  on $(-\infty,0]$ it is decreasing.  The relative minimum occurs at the point $(0,-3)$ on the graph, and we see $-3$ is both the relative and absolute minimum value of $h$.  Also, $h$ has no relative or absolute maximum value.
+
+\begin{center}
+
+\begin{tabular}{m{3in}m{2in}} 
+ 
+\begin{mfpic}[15]{-1}{7}{0}{5}
+\arrow \reverse \arrow \polyline{(-0.5,3.5),(3,0),(6.5,3.5)}
+\axes
+\tlabel[cc](7,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(3,0),(0,3)}
+\xmarks{1,2,3,4,5}
+\ymarks{1,2,3,4}
+\tcaption{$g(x) = |x-3|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4, {\tiny $5$} 5}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic} &
+
+\begin{mfpic}[15]{-4}{4}{-4}{2}
+\arrow \reverse \arrow \polyline{(-4,1), (0,-3), (4,1)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,2){\scriptsize $y$}
+\point[3pt]{(0,-3),(3,0),(-3,0)}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{-4,-3,-2,-1,1}
+\tcaption{$h(x) = |x|-3$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $-4$} -4, {\tiny $-3$} -3, {\tiny $-2$} -2,{\tiny $-1$} -1, {\tiny $1$} 1}
+\end{mfpic} \\
+
+\end{tabular}
+
+\end{center}
+
+\item As before, we set $i(x)=0$ to find the zeros of $i$ and get $4 - 2|3x+1|=0$.  Isolating the absolute value term gives $|3x+1|=2$, so either  $3x+1 = 2$ or $3x+1=-2$.  We get $x=\frac{1}{3}$ or $x=-1$, so our $x$-intercepts are $\left(\frac{1}{3},0\right)$ and $(-1,0)$.  Substituting $x=0$ gives $y = i(0) = 4-2|3(0)+1| = 2$, for a $y$-intercept of $(0,2)$.  Rewriting the formula for $i(x)$ without absolute values gives  \[ i(x) =\left\{ \begin{array}{rcl} 4-2(-(3x+1)), & \mbox{if} & (3x+1) <0  \\ 4-2(3x+1), & \mbox{if} & (3x+1) \geq 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} 6x+6, & \mbox{if} & x < -\frac{1}{3} \\[2pt]  -6x+2, & \mbox{if} & x \geq - \frac{1}{3} \\ \end{array} \right. \]  The usual analysis near the trouble spot $x=-\frac{1}{3}$ gives the `corner' of this graph is  $\left( -\frac{1}{3}, 4\right)$, and we get the distinctive `$\vee$' shape:
+
+\begin{center}
+
+\begin{mfpic}[15]{-2}{2}{-2}{6}
+\arrow \reverse \arrow \polyline{(-1.3333,-2), (-0.3333,4), (0.6666,-2)}
+\axes
+\tlabel[cc](2,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,6){\scriptsize $y$}
+\point[3pt]{(-0.3333,4), (0.3333,0), (-1,0), (0,2)}
+\xmarks{-1,1}
+\ymarks{-1,1,2,3,4,5}
+
+\tlpointsep{4pt}
+\axislabels {x}{{\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1}
+\axislabels {y}{{\tiny $-1$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3,  {\tiny $5$} 5}
+\end{mfpic} \\
+
+$i(x) = 4-2|3x+1|$
+
+\end{center}
+
+The domain of $i$ is $(-\infty, \infty)$ while the range is $(-\infty, 4]$. The function $i$ is increasing on $\left(-\infty, -\frac{1}{3}\right]$ and decreasing on $\left[ -\frac{1}{3}, \infty\right)$.  The relative maximum occurs at the point $\left(-\frac{1}{3}, 4\right)$ and the relative and absolute maximum value of $i$ is $4$.  Since the graph of $i$ extends downwards forever more, there is no absolute minimum value.  As we can see from the graph, there is no relative minimum, either. \qed
+
+\end{enumerate}
+
+\label{absvaluegraph1}
+
+\end{ex}
+
+Note that all of the functions in the previous example bear the characteristic `$\vee$' shape of the graph of $y=|x|$.  We could have graphed the functions $g$, $h$ and $i$ in Example \ref{absvaluegraph1} starting with the graph of $f(x)=|x|$ and applying transformations as in Section \ref{Transformations} as our next example illustrates.
+
+\pagebreak
+
+\begin{ex} Graph the following functions starting with the graph of $f(x) = |x|$ and using transformations.  
+
+
+\begin{multicols}{3}
+
+\begin{enumerate}
+
+\item $g(x) = |x-3|$
+
+\item  $h(x) = |x| - 3$
+
+\item $i(x) = 4-2|3x+1|$
+
+\end{enumerate}
+\end{multicols}
+
+{\bf Solution.}  We begin by graphing $f(x) = |x|$ and labeling three points, $(-1,1)$, $(0,0)$ and $(1,1)$.
+
+\begin{center}
+
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \arrow \polyline{(-4,4),(0,0),(4,4)}
+\axes
+\point[3pt]{(-1,1), (0,0), (1,1)}
+\tlabel[cc](-2.25,1){\scriptsize $(-1,1)$}
+\tlabel[cc](2,1){\scriptsize $(1,1)$}
+\tlabel[cc](0,-0.5){\scriptsize $(0,0)$}
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(0,0)}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{1,2,3,4}
+\tcaption{$f(x) = |x|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic}
+
+\end{center}
+
+\begin{enumerate}
+
+\item Since $g(x) = |x-3| = f(x-3)$, Theorem \ref{transformationsthm} tells us to \textit{add} $3$ to each of the $x$-values of the points on the graph of $y=f(x)$ to obtain the graph of $y=g(x)$.   This shifts the graph of $y=f(x)$ to the \textit{right} $3$ units and moves the point $(-1,1)$ to $(2,1)$,  $(0,0)$ to $(3,0)$ and $(1,1)$ to $(4,1)$.  Connecting these points in the classic `$\vee$' fashion produces the graph of $y = g(x)$.
+
+\[ \begin{array}{ccc}
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \arrow \polyline{(-3.5,3.5),(0,0),(3.5,3.5)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(-1,1),(0,0),(1,1)}
+\xmarks{1,2,3,-1,-2,-3}
+\ymarks{1,2,3,4}
+\tlabel[cc](-2.5,1){\scriptsize $(-1,1)$}
+\tlabel[cc](0,-0.5){\scriptsize $(0,0)$}
+\tlabel[cc](2,1){\scriptsize $(1,1)$}
+\tcaption{$f(x) = |x|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1,{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic}
+&
+
+\stackrel{\stackrel{\mbox{\scriptsize shift right $3$ units}}{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize add $3$ to each $x$-coordinate}} 
+
+&
+
+\begin{mfpic}[15]{-1}{7}{0}{5}
+\arrow \reverse \arrow \polyline{(-0.5,3.5),(3,0),(6.5,3.5)}
+\axes
+\tlabel[cc](7,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(2,1),(3,0),(4,1)}
+\xmarks{1,2,3,4,5,6}
+\ymarks{1,2,3,4}
+\tlabel[cc](1,1){\scriptsize $(2,1)$}
+\tlabel[cc](3,-0.5){\scriptsize $(3,0)$}
+\tlabel[cc](5,1){\scriptsize $(4,1)$}
+\tcaption{$g(x) = f(x-3) = |x-3|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $1$} 1, {\tiny $2$} 2,  {\tiny $4$} 4,  {\tiny $5$} 5,  {\tiny $6$} 6}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic} \end{array}\]
+
+\item For $h(x) = |x| - 3 = f(x) -3$, Theorem \ref{transformationsthm} tells us to \textit{subtract} $3$ from each of the $y$-values of the points on the graph of $y=f(x)$ to obtain the graph of $y = h(x)$.  This shifts the graph of $y=f(x)$ \textit{down} $3$ units and moves $(-1,1)$ to $(-1,-2)$, $(0,0)$ to $(0,-3)$ and $(1,1)$ to $(1,-2)$.  Connecting these points with the `$\vee$' shape produces our graph of $y=h(x)$. 
+
+\[ \begin{array}{ccc}
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \arrow \polyline{(-3.5,3.5),(0,0),(3.5,3.5)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(-1,1),(0,0),(1,1)}
+\xmarks{1,2,3,-1,-2,-3}
+\ymarks{1,2,3,4}
+\tlabel[cc](-2.5,1){\scriptsize $(-1,1)$}
+\tlabel[cc](0,-0.5){\scriptsize $(0,0)$}
+\tlabel[cc](2,1){\scriptsize $(1,1)$}
+\tcaption{$f(x) = |x|$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1,{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic}
+&
+
+\stackrel{\stackrel{\mbox{\scriptsize shift down $3$ units}}{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize subtract $3$ from each $y$-coordinate}} 
+
+&
+
+\begin{mfpic}[15]{-4}{4}{-4}{2}
+\arrow \reverse \arrow \polyline{(-4,1), (0,-3), (4,1)}
+\axes
+\point[3pt]{(-1,-2), (0,-3), (1,-2)}
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,2){\scriptsize $y$}
+\point[3pt]{(0,-3),(3,0),(-3,0)}
+\tlabel[cc](-2.5,-2){\scriptsize $(-1,-2)$}
+\tlabel[cc](1.25,-3){\scriptsize $(0,-3)$}
+\tlabel[cc](2,-2){\scriptsize $(1,-2)$}
+\xmarks{-3,-2,-1,1,2,3}
+\ymarks{-4,-3,-2,-1,1}
+\tcaption{$h(x) = f(x) - 3 = |x|-3$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $-4$} -4,{\tiny $-3$} -3, {\tiny $-2$} -2,{\tiny $-1$} -1, {\tiny $1$} 1}
+\end{mfpic} \end{array}\]
+
+
+\item We re-write $i(x) = 4-2|3x+1| =  4-2f(3x+1) = -2f(3x+1) + 4$  and apply Theorem \ref{transformationsthm}.  First, we take care of the changes on the `inside' of the absolute value.  Instead of $|x|$, we have $|3x+1|$, so, in accordance with Theorem \ref{transformationsthm}, we first \textit{subtract} $1$ from each of the $x$-values of points on the graph of $y = f(x)$,  then \textit{divide} each of those new values by $3$.  This effects a horizontal shift \textit{left} $1$ unit followed by a horizontal \textit{shrink} by a factor of $3$.  These transformations move $(-1,1)$ to $\left(-\frac{2}{3}, 1 \right)$, $(0,0)$ to $\left(-\frac{1}{3}, 0 \right)$ and $(1,1)$ to $\left(0,1\right)$.  Next, we take care of what's happening `outside of' the absolute value.   Theorem \ref{transformationsthm} instructs us to first \textit{multiply} each $y$-value of these new points by $-2$ then \textit{add} $4$.  Geometrically, this corresponds to a vertical \textit{stretch} by a factor of $2$, a reflection across the $x$-axis and finally, a vertical shift \textit{up} $4$ units.  These transformations move $\left(-\frac{2}{3}, 1 \right)$ to $\left(-\frac{2}{3}, 2 \right)$, $\left(-\frac{1}{3}, 0 \right)$ to $\left(-\frac{1}{3}, 4 \right)$, and $\left(0,1\right)$ to $\left(0, 2\right)$.  Connecting these points with the usual `$\vee$' shape produces our graph of $y = i(x)$.
+
+\[ \begin{array}{ccc}
+
+\begin{mfpic}[15]{-4}{4}{0}{5}
+\arrow \reverse \arrow \polyline{(-3.5,3.5),(0,0),(3.5,3.5)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\point[3pt]{(-1,1),(0,0),(1,1)}
+\xmarks{1,2,3,-1,-2,-3}
+\ymarks{1,2,3,4}
+\tlabel[cc](-2.5,1){\scriptsize $(-1,1)$}
+\tlabel[cc](0,-0.5){\scriptsize $(0,0)$}
+\tlabel[cc](2,1){\scriptsize $(1,1)$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1,{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\axislabels {y}{{\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\end{mfpic}
+&
+
+\xrightarrow{\hspace{1in}}
+
+&
+
+\begin{mfpic}[15]{-2}{2}{-2}{6}
+\arrow \reverse \arrow \polyline{(-1.3333,-2), (-0.3333,4), (0.6666,-2)}
+\axes
+
+\point[3pt]{(-0.6666,2), (0,2), (-0.3333,4)}
+\tlabel[cc](-2,2){\scriptsize $\left(-\frac{2}{3}, 2\right)$}
+\tlabel[cc](0.75,2){\scriptsize $\left(0, 2\right)$}
+\tlabel[cc](-1.5,4){\scriptsize $\left(-\frac{1}{3}, 4\right)$}
+\tlabel[cc](2,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,6){\scriptsize $y$}
+\xmarks{-1,1}
+\ymarks{-1,1,2,3,4}
+\tlpointsep{4pt}
+\axislabels {x}{{\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1}
+\axislabels {y}{{\tiny $-1$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\end{mfpic} \\
+
+f(x) = |x| && i(x) = -2f(3x+1)+4 \\ && \phantom{i(x)} = -2|3x+1|+4 \end{array}\]
+
+\qed
+
+\end{enumerate}
+
+\end{ex}
+
+While the methods in Section \ref{Transformations} can be used to graph an entire family of absolute value functions, not all functions involving absolute values posses the characteristic `$\vee$' shape.  As the next example illustrates, often there is no substitute for appealing directly to the definition.
+
+\begin{ex} Graph each of the following functions.  Find the zeros of each function and the $x$- and $y$-intercepts of  each graph, if any exist.  From the graph, determine the domain and range of each function, list the intervals on which the function is increasing, decreasing or constant, and find the relative and absolute extrema, if they exist.
+
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+
+\item  $f(x) = \dfrac{|x|}{x}$ 
+
+\item  $g(x) = |x+2| - |x-3|+1$
+
+
+\end{enumerate}
+
+\end{multicols}
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  We first note that, due to the fraction in the formula of $f(x)$, $x \neq 0$.  Thus the domain is $(-\infty, 0) \cup (0, \infty)$.  To find the zeros of $f$, we set $f(x) = \frac{|x|}{x} = 0$.  This last equation implies $|x|=0$, which, from Theorem \ref{absolutevalueprops}, implies $x=0$.  However, $x=0$ is not in the domain of $f$, which means we have, in fact, no $x$-intercepts.  We have no $y$-intercepts either, since $f(0)$ is undefined.  Re-writing the absolute value in the function gives
+
+\[ f(x) =\left\{ \begin{array}{rcl} \dfrac{-x}{x}, & \mbox{if} & x <0  \\ [10pt] \dfrac{x}{x}, & \mbox{if} & x > 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} -1, & \mbox{if} & x < 0 \\ 1, & \mbox{if} & x >0 \\ \end{array} \right. \]
+
+To graph this function, we graph two horizontal lines:  $y = -1$ for $x < 0$ and $y = 1$ for $x > 0$.  We have open circles at $(0,-1)$ and $(0,1)$ (Can you explain why?) so we get
+\begin{center}
+
+\begin{mfpic}[15]{-4}{4}{-2}{2}
+\arrow \polyline{ (0,-1),(-4,-1)}
+\arrow \polyline{(0,1), (4,1)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,2){\scriptsize $y$}
+\xmarks{-3,-2,-1,1,2,3}
+\gclear \circle{(0,-1),0.1}
+\circle{(0,-1),0.1}
+\gclear \circle{(0,1),0.1}
+\circle{(0,1),0.1}
+\tcaption{$f(x) = \dfrac{|x|}{x}$}
+\tlpointsep{4pt}
+\axislabels {x}{ {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3}
+\end{mfpic}
+
+\end{center}
+
+As we found earlier, the domain is $(-\infty, 0)\cup(0,\infty)$.  The range consists of just two $y$-values: $\{-1,1\}$.  The function $f$ is constant on $(-\infty,0)$ and $(0,\infty)$.  The local minimum value of $f$ is the absolute minimum value of $f$, namely $-1$;  the local maximum and absolute maximum values for $f$ also coincide $-$ they both are $1$.  Every point on the graph of $f$ is simultaneously a relative maximum and a relative minimum. (Can you remember why in light of Definition \ref{maxmindefn}?  This was explored in the Exercises in Section \ref{GraphsofFunctionsExercises}.)
+
+\item  To find the zeros of $g$, we set $g(x) = 0$.  The result is $|x+2|-|x-3| +1 = 0$.  Attempting to isolate the absolute value term is complicated by the fact that there are \textbf{two} terms with absolute values.  In this case, it easier to proceed using cases by re-writing the function $g$ with two separate applications of Definition \ref{absolutevalue} to remove each instance of the absolute values, one at a time.  In the first round we get 
+
+\[ g(x) =\left\{ \begin{array}{rcl} -(x+2) - |x-3|+1, & \mbox{if} & (x+2) <0  \\ (x+2) - |x-3|+1, & \mbox{if} & (x+2) \geq 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} -x-1 - |x-3|, & \mbox{if} & x<-2 \\ x+3-|x-3|, & \mbox{if} & x \geq -2 \\ \end{array} \right. \]
+
+
+Given that 
+
+\[ |x-3| =\left\{ \begin{array}{rcl} -(x-3), & \mbox{if} & (x-3) <0  \\ x-3, & \mbox{if} & (x-3) \geq 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} -x+3, & \mbox{if} & x<3 \\ x-3, & \mbox{if} & x \geq 3 \\ \end{array} \right., \]
+
+
+we need to break up the domain again at $x=3$.  Note that if $x < -2$, then $x < 3$, so we replace $|x-3|$ with $-x+3$ for that part of the domain, too.  Our completed revision of the form of $g$ yields 
+
+\setlength{\extrarowheight}{2pt}
+\[ g(x) = \left\{ \begin{array}{rcl} 
+-x-1 - (-x+3), & \mbox{if} & x<-2 \\
+x+3-(-x+3), & \mbox{if} & x \geq -2 \, \mbox{ and } \, x < 3 \\
+x+3 - (x-3), & \mbox{if} & x \geq 3  \\  \end{array} \right. \;\; = \;\; \left\{ \begin{array}{rcl} -4, & \mbox{if} & x<-2 \\                                                                                    2x, & \mbox{if} &  -2 \leq x < 3 \\
+                                                                                6, & \mbox{if} & x \geq 3  \\                                                                                 \end{array} \right. \]
+
+\end{enumerate}
+
+To solve $g(x)=0$, we see that the only piece which contains a variable is $g(x) = 2x$ for $-2 \leq x < 3$.  Solving $2x=0$ gives $x=0$.  Since $x=0$ is in the interval $[-2,3)$, we keep this solution and have $(0,0)$ as our only $x$-intercept.  Accordingly, the $y$-intercept is also $(0,0)$.  To graph $g$, we start with $x < -2$ and graph the horizontal line $y=-4$ with an open circle  at $(-2,-4)$. For $-2 \leq x < 3$, we graph the line $y=2x$ and the point $(-2,-4)$ patches the hole left by the previous piece.  An open circle at $(3,6)$ completes the graph of this part.  Finally, we graph the horizontal line $y=6$ for $x \geq 3$, and the point $(3,6)$ fills in the open circle left by the previous part of the graph.  The finished graph is 
+
+\begin{center}
+
+
+\begin{mfpic}[15][7.5]{-5}{5}{-5}{7}
+\arrow \polyline{ (-2,-4), (-5,-4)}
+\arrow \polyline{ (3,6), (5,6)}
+\polyline{(-2,-4),(3,6)}
+\point[3pt]{(-2,-4),(0,0),(3,6)}
+\axes
+\tlabel[cc](5,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,7){\scriptsize $y$}
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4,5,6}
+\tcaption{$g(x) = |x+2|-|x-3|+1$}
+\tlpointsep{4pt}
+\axislabels {x}{{\tiny $-4 \hspace{7pt}$} -4, {\tiny $-3 \hspace{7pt}$} -3, {\tiny $-2 \hspace{7pt}$} -2, {\tiny $-1 \hspace{7pt}$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4}
+\axislabels {y}{{\tiny $-4$} -4, {\tiny $-3$} -3, {\tiny $-2$} -2,{\tiny $-1$} -1, {\tiny $1$} 1, {\tiny $2$} 2, {\tiny $3$} 3, {\tiny $4$} 4, {\tiny $5$} 5, , {\tiny $6$} 6}
+\end{mfpic}
+
+\end{center} 
+
+The domain of $g$ is all real numbers, $(-\infty, \infty)$, and the range of $g$ is all real numbers between $-4$ and $6$ inclusive, $[-4,6]$.  The function is increasing on $[-2,3]$ and constant on $(-\infty, -2]$ and $[3,\infty)$.  The relative minimum value of $f$ is $-4$ which matches the absolute minimum.  The relative and absolute maximum values also coincide at $6$.  Every point on the graph of $y=g(x)$ for $x<-2$ and $x> 3$ yields both a relative minimum and relative maximum.  The point $(-2,-4)$, however, gives only a relative minimum and the point $(3,6)$ yields only a relative maximum.  (Recall the Exercises in Section \ref{GraphsofFunctionsExercises} which dealt with constant functions.)  \qed
+
+\end{ex}
+
+Many of the applications that the authors are aware of involving absolute values also involve absolute value inequalities.  For that reason, we save our discussion of applications for Section \ref{Inequalities}.
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{solveabsvalequfirst} - \ref{solveabsvalequlast}, solve the equation.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $|x| = 6$ \label{solveabsvalequfirst} 
+\item $|3x-1| = 10$
+\item $|4-x| = 7$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $4 - |x| = 3$
+\item $2|5x+1| - 3 = 0$
+\item $|7x-1| + 2 = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{5 - |x|}{2} = 1$
+\item $\frac{2}{3} |5-2x| - \frac{1}{2} = 5$ \vphantom{$\dfrac{5 - |x|}{2} = 1$}
+\item $|x| = x + 3$ \vphantom{$\dfrac{5 - |x|}{2} = 1$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $|2x-1| = x+1$
+\item  $4 - |x| = 2x+1$
+\item  $|x-4| = x-5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $|x| = x^2$
+\item $|x| = 12 - x^2$
+\item $|x^2 - 1| = 3$ \label{solveabsvalequlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+Prove that if $|f(x)| = |g(x)|$ then either $f(x) = g(x)$ or $f(x) = -g(x)$. Use that result to solve the equations in Exercises \ref{moreabsvalequfirst} - \ref{moreabsvalequlast}.
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $|3x - 2| = |2x + 7|$  \label{moreabsvalequfirst}
+\item $|3x+1| = |4x|$
+\item $|1-2x| = |x+1|$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $|4-x| - |x+2| = 0$
+\item $|2-5x| = 5 |x+1|$
+\item $3|x-1| = 2|x+1|$ \label{moreabsvalequlast}
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+In Exercises \ref{graphabsvalexerfirst} - \ref{graphabsvalexerlast}, graph the function. Find the zeros of each function and the $x$- and $y$-intercepts of each graph, if any exist.  From the graph, determine the domain and range of each function, list the intervals on which the function is increasing, decreasing or constant, and find the relative and absolute extrema, if they exist.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = |x + 4|$ \label{graphabsvalexerfirst}
+\item $f(x) = |x| + 4$
+\item $f(x) = |4x|$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = -3|x|$ \vphantom{$\dfrac{1}{3}$}
+\item $f(x) = 3|x + 4| - 4$ \vphantom{$\dfrac{1}{3}$}
+\item $f(x) = \dfrac{1}{3}|2x - 1|$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(x) = \dfrac{|x + 4|}{x + 4}$
+\item $f(x) = \dfrac{|2 - x|}{2 - x}$
+\item  $f(x) = x + |x| - 3$ \vphantom{$\dfrac{|x + 4|}{x + 4}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = |x+2| - x$
+\item  $f(x) = |x+2| - |x|$
+\item $f(x) = |x + 4| + |x - 2|$ \label{graphabsvalexerlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item With the help of your classmates, find an absolute value function whose graph is given below.
+
+\begin{center}
+
+\begin{mfpic}[10]{-10}{10}{-1}{5}
+\arrow \polyline{(-4,0), (-9,5)}
+\arrow \polyline{(4,0), (9, 5)}
+\polyline{(-4,0), (0,4), (4,0)}
+\point[3pt]{(-4, 0), (0, 4), (4, 0)}
+\axes
+\tlabel[cc](10,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\xmarks{-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}
+\ymarks{1,2,3,4}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-8 \hspace{7pt}$} -8, {$-7 \hspace{7pt}$} -7, {$-6 \hspace{7pt}$} -6, {$-5 \hspace{7pt}$} -5, {$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5, {$6$} 6, {$7$} 7, {$8$} 8}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+\end{center}
+
+\item  With help from your classmates, prove the second, third and fifth parts of Theorem \ref{absolutevalueprops}.
+
+\item \label{triangleinequalityreals} Prove \index{Triangle Inequality} \textbf{The Triangle Inequality:} For all real numbers $a$ and $b,\;\;$ $|a+b| \leq |a| + |b|$.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+\newpage
+
+\subsection{Answers}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $x = -6$ or $x=6$
+
+\item $x = -3$ or $x= \frac{11}{3}$
+
+\item $x = -3$ or $x= 11$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x = -1$ or $x= 1$
+
+\item $x=-\frac{1}{2}$ or $x= \frac{1}{10}$
+
+\item no solution
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x=-3$ or $x= 3$
+
+\item $x = -\frac{13}{8}$ or $x= \frac{53}{8}$
+
+\item $x=-\frac{3}{2}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x=0$ or $x= 2$
+
+\item  $x=1$
+
+\item  no solution
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x=-1$, $x= 0$ or $x= 1$
+
+\item $x=-3$ or $x=3$
+
+\item $x=-2$ or $x=2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3} 
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x = -1$ or $x = 9$
+
+\item $x = -\frac{1}{7}$ or $x = 1$
+
+\item $x = 0$ or $x = 2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3} 
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x=1$
+
+\item $x = -\frac{3}{10}$
+
+\item $x = \frac{1}{5}$ or $x = 5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item \begin{multicols}{2} \raggedcolumns
+
+$f(x) = |x + 4|$ \\ $f(-4) = 0$ \\ $x$-intercept $(-4, 0)$ \\ $y$-intercept $(0, 4)$ \\ Domain $(-\infty, \infty)$ \\ Range $[0, \infty)$ \\ Decreasing on $(-\infty, -4]$ \\ Increasing on $[-4, \infty)$ \\ Relative and absolute min.~at~$(-4,0)$ \\ No relative or absolute maximum
+
+
+\begin{mfpic}[18][20]{-9}{2}{-1}{5}
+\arrow \polyline{(-4,0), (-8.5,4.5)}
+\arrow \polyline{(-4,0), (1,5)}
+\point[3pt]{(-4, 0), (0,4)}
+\axes
+\tlabel[cc](2,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,4.75){\scriptsize $y$}
+\xmarks{-8,-7,-6,-5,-4,-3,-2,-1,1}
+\ymarks{1,2,3,4}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-8 \hspace{7pt}$} -8, {$-7 \hspace{7pt}$} -7, {$-6 \hspace{7pt}$} -6, {$-5 \hspace{7pt}$} -5, {$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic} 
+
+\end{multicols}
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = |x| + 4$ \\ No zeros \\ No $x$-intercepts \\ $y$-intercept $(0, 4)$ \\ Domain $(-\infty, \infty)$ \\ Range $[4, \infty)$ \\ Decreasing on $(-\infty, 0]$ \\ Increasing on $[0, \infty)$ \\ Relative and absolute minimum at $(0, 4)$ \\ No relative or absolute maximum 
+
+
+\begin{mfpic}[15]{-5}{5}{-1}{9}
+\arrow \polyline{(0, 4), (-4.5,8.5)}
+\arrow \polyline{(0,4), (4.5,8.5)}
+\point[3pt]{(0,4)}
+\axes
+\tlabel[cc](5,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,8.75){\scriptsize $y$}
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{1,2,3,4,5,6,7,8}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5, {$6$} 6, {$7$} 7, {$8$} 8}
+\normalsize
+\end{mfpic} 
+
+\end{multicols}
+
+
+\newpage
+
+\item \begin{multicols}{2} \raggedcolumns 
+$f(x) = |4x|$ \\ $f(0) = 0$ \\ $x$-intercept $(0, 0)$ \\ $y$-intercept $(0, 0)$ \\ Domain $(-\infty, \infty)$ \\ Range $[0, \infty)$ \\ Decreasing on $(-\infty, 0]$ \\ Increasing on $[0, \infty)$ \\ Relative and absolute minimum at $(0, 0)$ \\ No relative or absolute maximum 
+
+\begin{mfpic}[15]{-3}{3}{-1}{9}
+\arrow \polyline{(0, 0), (-2.125,8.5)}
+\arrow \polyline{(0,0), (2.125,8.5)}
+\point[3pt]{(0,0)}
+\axes
+\tlabel[cc](3,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,8.75){\scriptsize $y$}
+\xmarks{-2,-1,1,2}
+\ymarks{1,2,3,4,5,6,7,8}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5, {$6$} 6, {$7$} 7, {$8$} 8}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = -3|x|$ \\ $f(0) = 0$ \\ $x$-intercept $(0, 0)$ \\ $y$-intercept $(0, 0)$ \\ Domain $(-\infty, \infty)$ \\ Range $(-\infty, 0]$ \\ Increasing on $(-\infty, 0]$ \\ Decreasing on $[0, \infty)$ \\ Relative and absolute maximum at $(0, 0)$ \\ No relative or absolute minimum 
+
+\begin{mfpic}[15]{-3}{3}{-7}{1}
+\arrow \polyline{(0, 0), (-2.1,-6.3)}
+\arrow \polyline{(0,0), (2.1,-6.3)}
+\point[3pt]{(0,0)}
+\axes
+\tlabel[cc](3,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,.75){\scriptsize $y$}
+\xmarks{-2,-1,1,2}
+\ymarks{-6,-5,-4,-3,-2,-1}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2}
+\axislabels {y}{{$-6$} -6, {$-5$} -5, {$-4$} -4, {$-3$} -3, {$-2$} -2, {$-1$} -1}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = 3|x + 4| - 4$ \\ $f\left(-\frac{16}{3}\right) = 0$,  $f\left(-\frac{8}{3}\right) = 0$\\ $x$-intercepts $\left(-\frac{16}{3}, 0\right)$, $\left(-\frac{8}{3}, 0\right)$ \\ $y$-intercept $(0, 8)$ \\ Domain $(-\infty, \infty)$ \\ Range $[-4, \infty)$ \\ Decreasing on $(-\infty, -4]$ \\ Increasing on $[-4, \infty)$ \\ Relative and absolute min.~at~$(-4,-4)$ \\ No relative or absolute maximum 
+
+
+\begin{mfpic}[10]{-9}{2}{-5}{10}
+\arrow \polyline{(-4,-4), (-8.5,9.5)}
+\arrow \polyline{(-4,-4), (0.5,9.5)}
+\point[3pt]{(-4, -4), (0,8), (-5.333, 0), (-2.6667, 0)}
+\axes
+\tlabel[cc](2,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,9.75){\scriptsize $y$}
+\xmarks{-8,-7,-6,-5,-4,-3,-2,-1,1}
+\ymarks{-4,-3,-2,-1,1,2,3,4,5,6,7,8}
+\tlpointsep{4pt}
+\tiny
+\axislabels {x}{{$-8 \hspace{6pt}$} -8, {$-7 \hspace{6pt}$} -7, {$-6 \hspace{6pt}$} -6, {$-5 \hspace{6pt}$} -5, {$-4 \hspace{6pt}$} -4, {$-3 \hspace{6pt}$} -3, {$-2 \hspace{6pt}$} -2, {$-1 \hspace{6pt}$} -1, {$1$} 1}
+\axislabels {y}{{$-4$} -4, {$-3$} -3, {$-2$} -2, {$-1$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5, {$6$} 6, {$7$} 7, {$8$} 8}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = \frac{1}{3}|2x - 1|$ \\ $f\left(\frac{1}{2}\right) = 0$ \\ $x$-intercepts $\left(\frac{1}{2}, 0\right)$ \\ $y$-intercept $\left(0, \frac{1}{3}\right)$ \\ Domain $(-\infty, \infty)$ \\ Range $[0, \infty)$ \\ Decreasing on $\left(-\infty, \frac{1}{2}\right]$ \\ Increasing on $\left[\frac{1}{2}, \infty\right)$ \\ Relative and absolute min. at $\left(\frac{1}{2},0\right)$ \\ No relative or absolute maximum 
+
+
+\begin{mfpic}[15]{-4}{5}{-1}{3}
+\arrow \polyline{(0.5,0), (-4,3)}
+\arrow \polyline{(0.5,0), (5,3)}
+\point[3pt]{(0,0.3333), (0.5, 0)}
+\axes
+\tlabel[cc](5,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,2.75){\scriptsize $y$}
+\xmarks{-3,-2,-1,1,2,3,4}
+\ymarks{1,2}
+\tlpointsep{4pt}
+\tiny
+\axislabels {x}{{$-3 \hspace{6pt}$} -3, {$-2 \hspace{6pt}$} -2, {$-1 \hspace{6pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$1$} 1, {$2$} 2}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = \dfrac{|x + 4|}{x + 4}$ \\ No zeros \\ No $x$-intercept \\ $y$-intercept $(0, 1)$ \\ Domain $(-\infty, -4) \cup (-4, \infty)$ \\ Range $\{-1, 1\}$ \\ Constant on $(-\infty, -4)$ \\ Constant on $(-4, \infty)$ \\ Absolute minimum at every point $(x, -1)$ where $x < -4$ \\ Absolute maximum at every point $(x, 1)$ where $x > -4$ \\ Relative maximum AND minimum at every point on the graph
+
+
+\begin{mfpic}[15]{-8}{2}{-2}{2}
+\arrow \polyline{(-4,1), (2,1)}
+\arrow \polyline{(-4,-1), (-8,-1)}
+\point[3pt]{(0,1)}
+\axes
+\tlabel[cc](2,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,1.75){\scriptsize $y$}
+\xmarks{-8,-7,-6,-5,-4,-3,-2,-1,1}
+\ymarks{-1,1}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-8 \hspace{7pt}$} -8, {$-7 \hspace{7pt}$} -7, {$-6 \hspace{7pt}$} -6, {$-5 \hspace{7pt}$} -5, {$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1}
+\axislabels {y}{{$-1$} -1, {$1$} 1}
+\normalsize
+\gclear \circle{(-4,1),0.1}
+\circle{(-4,1),0.1}
+\gclear \circle{(-4,-1),0.1}
+\circle{(-4,-1),0.1}
+\end{mfpic}
+
+\end{multicols}
+
+\item \begin{multicols}{2} \raggedcolumns
+$f(x) = \dfrac{|2 - x|}{2 - x}$ \\ No zeros \\ No $x$-intercept \\ $y$-intercept $(0, 1)$ \\ Domain $(-\infty, 2) \cup (2, \infty)$ \\ Range $\{-1, 1\}$ \\ Constant on $(-\infty, 2)$ \\ Constant on $(2, \infty)$ \\ Absolute minimum at every point $(x, -1)$ where $x > 2$ \\ Absolute maximum at every point $(x, 1)$ where $x < 2$ \\ Relative maximum AND minimum at every point on the graph
+
+
+\begin{mfpic}[13]{-4}{6}{-2}{2}
+\arrow \polyline{(2,1), (-4,1)}
+\arrow \polyline{(2,-1), (6,-1)}
+\point[3pt]{(0,1)}
+\axes
+\tlabel[cc](6,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,1.75){\scriptsize $y$}
+\xmarks{-3,-2,-1,1,2,3,4,5}
+\ymarks{-1,1}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5}
+\axislabels {y}{{$-1$} -1, {$1$} 1}
+\normalsize
+\gclear \circle{(2,1),0.1}
+\circle{(2,1),0.1}
+\gclear \circle{(2,-1),0.1}
+\circle{(2,-1),0.1}
+\end{mfpic}
+
+\end{multicols}
+
+
+
+\item \begin{multicols}{2} \raggedcolumns
+Re-write $f(x) = x+|x| - 3$ as \\ ${\displaystyle f(x) = \left\{ \begin{array}{rcl}
+-3 & \mbox{ if } & x < 0\\
+     2x -3 & \mbox{ if } & x \geq 0 \\ \end{array} \right. }$ \\ $f\left(\frac{3}{2}\right) = 0$ \\ $x$-intercept $\left(\frac{3}{2}, 0\right)$ \\ $y$-intercept $(0,-3)$ \\ Domain $(-\infty, \infty)$ \\ Range $[-3, \infty)$ \\ Increasing on $[0,\infty)$ \\ Constant on $(-\infty, 0]$ \\ Absolute minimum at every point $(x,-3)$ where $x \leq 0$ \\ No absolute maximum \\ Relative minimum at every point $(x, -3)$ where $x \leq 0$ \\ Relative maximum at every point $(x, -3)$ where $x < 0$ 
+ 
+
+\begin{mfpic}[15]{-3}{3}{-4}{3}
+\arrow \polyline{(0,-3), (-3,-3)}
+\arrow \polyline{(0,-3), (3,3)}
+\point[3pt]{(1.5,0), (0,-3)}
+\axes
+\tlabel[cc](3,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,3){\scriptsize $y$}
+\xmarks{-2,-1,1,2}
+\ymarks{-4,-3,-2,-1,1,2}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-2 \hspace{7pt}$} -2,{$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2}
+\axislabels {y}{{$-4$} -4,{$-3$} -3,{$-2$} -2,{$-1$} -1, {$1$} 1, {$2$} 2}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+\newpage
+
+\small
+
+\item \begin{multicols}{2} \raggedcolumns
+Re-write $f(x) = |x+2| - x$ as \\ ${\displaystyle f(x) = \left\{ \begin{array}{rcl}
+-2x-2 & \mbox{ if } & x < -2\\
+     2 & \mbox{ if } & x \geq -2 \\ \end{array} \right. }$ \\ No zeros \\ No $x$-intercepts  \\ $y$-intercept $(0,2)$ \\ Domain $(-\infty, \infty)$ \\ Range $[2, \infty)$ \\ Decreasing on $(-\infty, -2]$ \\ Constant on $[-2,\infty)$ \\ Absolute minimum at every point $(x,2)$ where $x \geq -2$ \\ No absolute maximum \\ Relative minimum at every point $(x, 2)$ where $x \geq -2$ \\ Relative maximum at every point $(x, 2)$ where $x > -2$ 
+
+
+\begin{mfpic}[15]{-4}{3}{-1}{4}
+\arrow \polyline{(-2,2), (-3,4)}
+\arrow \polyline{(-2,2), (3,2)}
+\point[3pt]{(-2,2), (0,2)}
+\axes
+\tlabel[cc](3,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,4){\scriptsize $y$}
+\xmarks{-3,-2,-1,1,2}
+\ymarks{1,2,3}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-3 \hspace{7pt}$} -3,{$-2 \hspace{7pt}$} -2,{$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+
+\item \begin{multicols}{2} \raggedcolumns
+Re-write $f(x) = |x+2|-|x|$ as \\ ${\displaystyle f(x) = \left\{ \begin{array}{rcl}
+-2 & \mbox{ if } & x < -2\\
+     2x+2 & \mbox{ if } & -2 \leq x < 0 \\ 
+    2 & \mbox{ if } & x \geq 0 \\ \end{array} \right. }$ \\ $f\left(-1\right) = 0$ \\ $x$-intercept $\left(-1, 0\right)$ \\ $y$-intercept $(0,2)$ \\ Domain $(-\infty, \infty)$ \\ Range $[-2,2]$ \\ Increasing on $[-2,0]$ \\ Constant on $(-\infty, -2]$ \\ Constant on $[0,\infty)$ \\ Absolute minimum at every point $(x,-2)$ where $x \leq -2$ \\ Absolute maximum at every point $(x,2)$ where $x \geq 0$ \\ Relative minimum at every point $(x, -2)$ where $x \leq -2$ and at every point $(x,2)$ where $x>0$ \\ Relative maximum at every point $(x, -2)$ where $x < -2$ and at every point $(x,2)$ where $x \geq 0$ 
+ 
+
+\begin{mfpic}[15]{-4}{3}{-3}{3}
+\arrow \polyline{(-2,-2), (-4,-2)}
+\arrow \polyline{(0,2), (3,2)}
+\polyline{(-2,-2), (0,2)}
+
+\point[3pt]{(-2,-2), (-1,0), (0,2)}
+\axes
+\tlabel[cc](3,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,3){\scriptsize $y$}
+\xmarks{-3,-2,-1,1,2}
+\ymarks{-2,-1,1,2}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-3 \hspace{7pt}$} -3,{$-2 \hspace{7pt}$} -2,{$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2}
+\axislabels {y}{{$-2$} -2,{$-1$} -1, {$1$} 1, {$2$} 2}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+%\newpage
+
+\item \begin{multicols}{2} \raggedcolumns
+Re-write $f(x) = |x + 4| + |x - 2|$ as \\ ${\displaystyle f(x) = \left\{ \begin{array}{rcl}
+-2x - 2 & \mbox{ if } & x < -4\\
+      6 & \mbox{ if } & -4 \leq x < 2\\
+ 2x + 2 & \mbox{ if } & x \geq 2  \end{array} \right. }$ \\ No zeros \\ No $x$-intercept \\ $y$-intercept $(0, 6)$ \\ Domain $(-\infty, \infty)$ \\ Range $[6, \infty)$ \\ Decreasing on $(-\infty, -4]$ \\ Constant on $[-4, 2]$ \\ Increasing on $[2, \infty)$ \\  Absolute minimum at every point $(x, 6)$ where $-4 \leq x \leq 2$ \\ No absolute maximum \\ Relative minimum at every point $(x, 6)$ where $-4 \leq x \leq 2$ \\ Relative maximum at every point $(x, 6)$ where $-4 < x < 2$ 
+
+
+\begin{mfpic}[15]{-6}{4}{-1}{9}
+\arrow \polyline{(-4,6), (-5.5,9)}
+\arrow \polyline{(2,6), (3.5,9)}
+\polyline{(2,6), (-4,6)}
+\point[3pt]{(2,6), (-4,6), (0,6)}
+\axes
+\tlabel[cc](4,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,8.75){\scriptsize $y$}
+\xmarks{-5,-4,-3,-2,-1,1,2,3}
+\ymarks{1,2,3,4,5,6,7,8}
+\tlpointsep{4pt}
+\scriptsize
+\axislabels {x}{{$-5 \hspace{7pt}$} -5, {$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5, {$6$} 6, {$7$} 7, {$8$} 8}
+\normalsize
+\end{mfpic}
+
+\end{multicols}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\normalsize
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\addtocounter{enumi}{1}
+
+\item $f(x) = ||x| - 4|$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+
+
+\closegraphsfile
