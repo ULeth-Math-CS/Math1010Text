@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  17 MAY 2016 10:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  17 MAY 2016 12:30
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -1637,11 +1637,7 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 10.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 \c@HW=\count336
 
-(Math1010text.aux
-
-LaTeX Warning: Label `fig:linfun2' multiply defined.
-
-)
+(Math1010text.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
@@ -3534,12 +3530,7 @@ Overfull \hbox (0.61047pt too wide) in paragraph at lines 277--277
 pis’ – pronounced ‘dopeys’
  []
 
-[73]
-
-LaTeX Warning: Reference `QuadraticFunctions' on page 74 undefined on input lin
-e 277.
-
-[74] [75]
+[73] [74] [75]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4289,55 +4280,51 @@ Overfull \hbox (90.35002pt too wide) in paragraph at lines 107--107
 [110]
 File: figures/LinearQuadraticGraphics/LinearFunctions-8.pdf Graphic file (type 
 QTm)
- <use  "figures/LinearQuadraticGraphics/LinearFunctions-8.pdf" >
-File: figures/LinearQuadraticGraphics/LinearFunctions-9.pdf Graphic file (type 
-QTm)
-
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-9.pdf" > [111]
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 173--174
+ <use  "figures/LinearQuadraticGraphics/LinearFunctions-8.pdf" > [111]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 172--173
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 200--201
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 199--200
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 210--211
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 209--210
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 File: figures/LinearQuadraticGraphics/LinearFunctions-9.pdf Graphic file (type 
 QTm)
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-9.pdf" > [112]
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 220--221
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 219--220
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
 LaTeX Warning: Reference `genfuncbehavior' on page 113 undefined on input line 
-224.
+223.
 
 File: figures/LinearQuadraticGraphics/LinearFunctions-10.pdf Graphic file (type
  QTm)
@@ -4346,7 +4333,7 @@ File: figures/LinearQuadraticGraphics/LinearFunctions-11.pdf Graphic file (type
  QTm)
 
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-11.pdf" > [113]
-Overfull \hbox (0.30496pt too wide) in paragraph at lines 315--315
+Overfull \hbox (0.30496pt too wide) in paragraph at lines 314--314
 []\EU1/Calibri(0)/m/n/10 To find how many PortaBoys can be produced for $\OT1/c
 mr/m/n/10 $[][]\OML/cmm/m/it/10 ;  [][][]$\EU1/Calibri(0)/m/n/10 , we solve $[]
 \OT1/cmr/m/n/10 ([]) =
@@ -4359,12 +4346,12 @@ File: figures/LinearQuadraticGraphics/LinearFunctions-13.pdf Graphic file (type
  QTm)
 
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-13.pdf" > [114] [115]
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 364--365
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 363--364
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
@@ -4411,7 +4398,7 @@ File: figures/LinearQuadraticGraphics/LinearFunctions-14.pdf Graphic file (type
 File: figures/LinearQuadraticGraphics/LinearFunctions-15.pdf Graphic file (type
  QTm)
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-15.pdf" >
-Overfull \hbox (8.0877pt too wide) in paragraph at lines 430--430
+Overfull \hbox (8.0877pt too wide) in paragraph at lines 429--429
  [] 
  []
 
@@ -4421,7 +4408,7 @@ File: figures/LinearQuadraticGraphics/LinearFunctions-16.pdf Graphic file (type
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-16.pdf" >
 
 LaTeX Warning: Reference `InverseFunctions' on page 121 undefined on input line
- 430.
+ 429.
 
 [121]) (text_pre/02_AbsoluteValueFunctions.tex
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1.pdf Graphic file
@@ -4461,11 +4448,15 @@ File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-3.pdf Graphic file
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4.pdf Graphic file
  (type QTm)
 
-<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4.pdf" > [125]
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4.pdf" >
+Underfull \hbox (badness 1681) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 3.9: |Constructing the graph of
+ []
+
+[125]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5.pdf Graphic file
  (type QTm)
-
-<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5.pdf" >
+ <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-6.pdf Graphic file
  (type QTm)
 
@@ -4493,7 +4484,7 @@ e (type QTm)
 [127]
 
 LaTeX Warning: Reference `GraphsofFunctionsExercises' on page 128 undefined on 
-input line 315.
+input line 317.
 
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15.pdf Graphic fil
 e (type QTm)
@@ -4501,10 +4492,10 @@ e (type QTm)
 [128]
 
 LaTeX Warning: Reference `GraphsofFunctionsExercises' on page 129 undefined on 
-input line 315.
+input line 317.
 
 
-LaTeX Warning: Reference `Inequalities' on page 129 undefined on input line 319
+LaTeX Warning: Reference `Inequalities' on page 129 undefined on input line 321
 .
 
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-16.pdf Graphic fil
@@ -4552,7 +4543,217 @@ e (type QTm)
  <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17.pdf" >
 [130
 
-])
+]) (text_pre/02_QuadraticFunctions.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-1.pdf Graphic file (ty
+pe QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-1.pdf" >
+Underfull \hbox (badness 3536) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 3.19: |The graph of the basic
+ []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-2.pdf Graphic file (ty
+pe QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-2.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-3.pdf Graphic file (ty
+pe QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-3.pdf" > [131
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 75--76
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 85--86
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-5.pdf Graphic file (ty
+pe QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-5.pdf" > [132]
+Overfull \hbox (3.11539pt too wide) in paragraph at lines 102--103
+\EU1/Calibri(0)/m/n/10 paragraphs have also shown us the role of the number $[]
+$ in the graphs of quadratic
+ []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-6.pdf Graphic file (ty
+pe QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-6.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-7.pdf Graphic file (ty
+pe QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-7.pdf" > [133]
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-8.pdf Graphic file (ty
+pe QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-8.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-9.pdf Graphic file (ty
+pe QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-9.pdf" > [134]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 188--189
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Overfull \hbox (0.47049pt too wide) in paragraph at lines 192--193
+[]\EU1/Calibri(0)/m/n/10 There are two more results which can be gleaned from t
+he completed-square
+ []
+
+
+LaTeX Warning: Reference `GraphsofPolynomials' on page 135 undefined on input l
+ine 197.
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 203--204
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+
+Underfull \vbox (badness 5711) has occurred while \output is active []
+
+ [135]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 234--235
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+[136]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 254--255
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Overfull \hbox (14.51698pt too wide) detected at line 301
+[]\OT1/cmr/m/n/10 ([]) = []([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]) = [
+] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]\OML/cmm/m/it
+/10 :[][][] \OT1/cmr/m/n/10 + [][][][] \OMS/cmsy/m/n/10 ^^@ [][][]\OML/cmm/m/it
+/10 :
+ []
+
+[137]
+Underfull \vbox (badness 1205) has occurred while \output is active []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-10.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-10.pdf" >
+Overfull \hbox (9.11987pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[138]
+Overfull \hbox (1.88101pt too wide) in paragraph at lines 323--323
+\EU1/Calibri(0)/m/n/10 Much to Donnie’s surprise and delight, he inherits a lar
+ge parcel of land in Ashtab-
+ []
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-11.pdf Graphic file (t
+ype QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-11.pdf" > [139]
+
+LaTeX Warning: Reference `Inequalities' on page 140 undefined on input line 352
+.
+
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-12.pdf Graphic file (t
+ype QTm)
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-12.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-13.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-13.pdf" >
+Underfull \hbox (badness 4518) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 3.28: |Obtaining the graph of
+ []
+
+[140]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [141
+
+]
+Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/calibrib.ttf
+
+
+LaTeX Warning: Reference `catenary' on page 142 undefined on input line 362.
+
+
+LaTeX Warning: Reference `ExpLogApplications' on page 142 undefined on input li
+ne 362.
+
+[142])
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4756,9 +4957,6 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf" >
-Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 8.0pt
- -> C:/WINDOWS/Fonts/calibrib.ttf
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf Graphic fi
 le (type QTm)
 
@@ -4966,7 +5164,7 @@ Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
 [19
 
 ])
-Package atenddvi Info: Last page = 158.
+Package atenddvi Info: Last page = 170.
  [20
 
 ]
@@ -4979,18 +5177,15 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 377.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
  ) 
 Here is how much of TeX's memory you used:
- 50855 strings out of 428755
- 1092436 string characters out of 3164219
- 1422142 words of memory out of 3000000
- 52454 multiletter control sequences out of 15000+200000
+ 51027 strings out of 428755
+ 1096318 string characters out of 3164219
+ 1426290 words of memory out of 3000000
+ 52587 multiletter control sequences out of 15000+200000
  19640 words of font info for 142 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,25n,88p,10385b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (158 pages).
+Output written on Math1010text.pdf (170 pages).
