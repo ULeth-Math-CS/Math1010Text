@@ -7,6 +7,8 @@
 \RequirePackage{ifthen}
 \newboolean{longpage}
 \setboolean{longpage}{false}
+\newboolean{synthetic}
+\setboolean{synthetic}{false}
 \ifthenelse{\boolean{longpage}}%
 {\documentclass[10pt]{article}}%
 {\documentclass[10pt]{book}}
@@ -106,6 +108,8 @@
 \thispagestyle{empty}
 
 \input{text_pre/03_GraphsofPolynomials}
+%\input{text_pre/03_PolyArith}
+\input{text_pre/03_Polydivision}
 
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 %\chapter{Limits}\label{chapter:limits}
