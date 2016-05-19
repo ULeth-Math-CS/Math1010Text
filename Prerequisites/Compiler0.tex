@@ -9,18 +9,7 @@
 \usepackage{colortbl}
 \usepackage{import, multicol,boxedminipage}
 \usepackage{chapterfolder}
-\usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
-\usepackage[metapost,truebbox,mplabels]{mfpic}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
-\usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
-\begin{document}
-} 
+\usepackage[metapost,truebbox]{mfpic}
 \usepackage[pdflatex]{graphicx}
 \usepackage{makeidx}
 \usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
@@ -34,7 +23,6 @@
 \newtheorem{defn}{Definition}[chapter]
 \newtheorem{thm}{Theorem}[chapter]
 \newtheorem{cor}[thm]{Corollary}
-\newtheorem{rem}{Remark}[section]
 \newtheorem{eqn}{Equation}[chapter]
 \newtheorem{ex}{Example}[section]
 \setlength{\parindent}{0in}
@@ -42,9 +30,12 @@
 \newcommand{\ebm}{\end{boxedminipage}}
 \newcounter{HW}
 \newcounter{HWindent}
-
-
-%\allsectionsfont{\mdseries \scshape}
+%sans serif fonts:  
+\renewcommand{\familydefault}{\sfdefault}  %makes the text of the book sans serif
+\usepackage[helvet]{sfmath}  %makes the math in the book sans serif
+%\usepackage{sfmath}  %makes the math in the book sans serif
+\allsectionsfont{\sffamily}  %makes the chapter and section titles sans serif
+\usepackage{helvet}
 \DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
 \DeclareMathSymbol{\C}{\mathbin}{AMSb}{"43}
 \DeclareMathSymbol{\N}{\mathbin}{AMSb}{"4E}

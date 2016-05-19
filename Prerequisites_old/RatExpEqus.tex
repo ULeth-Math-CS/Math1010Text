@@ -1,0 +1,448 @@
+\mfpicnumber{1}
+\mfpverbtex{%
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage[sfdefault,lf]{carlito}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\begin{document}
+}
+\opengraphsfile{RatExpEqus}
+
+\setcounter{footnote}{0}
+
+\label{RatExpEqus}
+
+We now turn our attention to rational expressions - that is, algebraic fractions - and equations which contain them.  The reader is encouraged to keep in mind the properties of fractions listed on page \pageref{fractionarithmetic} because we will need them along the way.  Before we launch into reviewing the basic arithmetic operations of rational expressions, we take a moment to review how to simplify them properly.  As with numeric fractions, we `cancel common \textit{factors},' not common \textit{terms}.  That is, in order to simplify rational expressions, we first \textit{factor} the numerator and denominator.  For example:  \[ \dfrac{x^4 + 5x^3}{x^3 - 25x} \neq \dfrac{x^4 + 5\cancel{x^3}}{\cancel{x^3} - 25x} \]
+
+but, rather \[ \begin{array}{rclr}
+
+\dfrac{x^4 + 5x^3}{x^3 - 25x} & = & \dfrac{x^3(x + 5)}{x(x^2-25)} & \text{Factor G.C.F.} \\ [12pt]
+                             & = & \dfrac{x^3(x + 5)}{x(x-5)(x+5)} & \text{Difference of Squares} \\ [12pt]
+														& = & \dfrac{\cancelto{x^2}{x^3}\cancel{(x + 5)}}{\cancel{x}(x-5)\cancel{(x+5)}} & \text{Cancel common factors}\\ [12pt]                         
+														& = & \dfrac{x^2}{x-5} & \\ \end{array}\] This equivalence holds provided the factors being cancelled aren't $0$. Since a factor of $x$ and a factor of $x+5$ were cancelled, $x \neq 0$ and $x+5 \neq 0$, so $x \neq -5$.   We usually stipulate this as: \[ \dfrac{x^4 + 5x^3}{x^3 - 25x}  = \dfrac{x^2}{x-5}, \qquad \text{provided $x \neq 0$, $x \neq -5$} \]
+
+While we're talking about common mistakes, please notice that 
+
+\[ \dfrac{5}{x^2+9} \neq \dfrac{5}{x^2} + \dfrac{5}{9} \] 
+
+Just like their numeric counterparts, you don't add algebraic fractions by \textit{adding denominators} of fractions with \textit{common numerators} - it's the other way around:\footnote{One of the most common errors students make on Mathematics placement tests is that they forget how to add algebraic fractions correctly.  This places many students into remedial classes even though they are probably ready for university-level math.  We urge you to really study this section with great care so that you don't fall into that trap.} 
+
+\[ \dfrac{x^2+9}{5} = \dfrac{x^2}{5} + \dfrac{9}{5} \] 
+
+It's time to review the basic arithmetic operations with rational expressions. 
+
+\pagebreak
+
+\begin{ex} \label{rationalexpressionreviewex} Perform the indicated operations and simplify.
+
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item  $\dfrac{2x^2-5x-3}{x^4 - 4} \left/ \dfrac{x^2-2x-3}{x^5 + 2x^3}\right.$
+
+\item  $\dfrac{5}{w^2 - 9} - \dfrac{w+2}{w^2-9}$\vphantom{$\dfrac{2x^2-5x-3}{x^4 - 16} \div \dfrac{x^2-2x-3}{x^5 + 2x^3}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\dfrac{3}{y^2 - 8y + 16} + \dfrac{y+1}{16y - y^3}$\vphantom{$\dfrac{\dfrac{2}{4 - (x+h)} - \dfrac{2}{4-x}}{h}$}
+
+\item  $\dfrac{\dfrac{2}{4 - (x+h)} - \dfrac{2}{4-x}}{h}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $2t^{-3} - (3t)^{-2}$
+
+\item  $10x(x-3)^{-1} + 5x^2(-1)(x-3)^{-2}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item As with numeric fractions, we divide rational expressions by `inverting and multiplying'.  Before we get too carried away however, we factor to see what, if any, factors cancel.\[ \begin{array}{rclr}
+
+\dfrac{2x^2-5x-3}{x^4 - 4} \left/ \dfrac{x^2-2x-3}{x^5 + 2x^3}\right. & = & \dfrac{2x^2-5x-3}{x^4 - 4} \cdot \dfrac{x^5 + 2x^3}{x^2-2x-3} & \text{Invert and multiply} \\ [10pt]
+
+& = & \dfrac{(2x^2-5x-3)(x^5 + 2x^3)}{(x^4 - 4)(x^2-2x-3)} & \text{Multiply fractions}  \\ [10pt]
+
+& = & \dfrac{(2x+1)(x-3)x^3(x^2+2)}{(x^2-2)(x^2+2)(x-3)(x+1)} & \text{Factor} \\ [10pt]
+
+& = & \dfrac{(2x+1)\cancel{(x-3)}x^3\cancel{(x^2+2)}}{(x^2-2)\cancel{(x^2+2)}\cancel{(x-3)}(x+1)} & \text{Cancel common factors} \\ [10pt]
+
+& = & \dfrac{x^3(2x+1)}{(x+1)(x^2-2)} & \text{Provided $x \neq 3$} \\
+
+\end{array}\]
+
+The `$x \neq 3$' is mentioned since a factor of $(x-3)$ was cancelled as we reduced the expression.  We also cancelled a factor of $(x^2+2)$.  Why is there no stipulation as a result of cancelling this factor? Because $x^2 + 2 \neq 0$.  (Can you see why?)  At this point, we \textit{could} go ahead and multiply out the numerator and denominator to get \[\dfrac{x^3(2x+1)}{(x+1)(x^2-2)}  = \dfrac{2x^4 + x^3}{x^3+x^2-2x-2}\] but for most of the applications where this kind of algebra is needed (solving equations, for instance), it is best to leave things factored. 
+
+\item  As with numeric fractions we need common denominators in order to subtract.  This is the case here so we proceed by subtracting the numerators. \[ \begin{array}{rclr}
+
+\dfrac{5}{w^2 - 9} - \dfrac{w+2}{w^2-9} & = & \dfrac{5 - (w+2)}{w^2 - 9}& \text{Subtract fractions}\\ [8pt]
+                                        & = & \dfrac{5 - w - 2}{w^2-9} & \text{Distribute} \\ [8pt]
+																				& = & \dfrac{3-w}{w^2-9} & \text{Combine like terms} \\ \end{array}\]
+At this point, we need to see if we can reduce this expression so we proceed to factor.  It first appears as if we have no common factors among the numerator and denominator until we recall the property of `factoring negatives' from Page \pageref{propertiesofnegatives}:  $3-w = -(w-3)$. This yields:\[ \begin{array}{rclr}
+
+\dfrac{3-w}{w^2-9} & = & \dfrac{-(w-3)}{(w-3)(w+3)} & \text{Factor} \\ [10pt]
+                   & = & \dfrac{-\cancel{(w-3)}}{\cancel{(w-3)}(w+3)} & \text{Cancel common factors} \\ [10pt]
+									 & = & \dfrac{-1}{w+3} & \text{Provided $w \neq 3$} \\ 
+									\end{array}\]
+The stipulation $w \neq 3$ comes from the cancellation of the $(w-3)$ factor.
+
+\item  	In this next example, we are asked to add two rational expressions with \textit{different} denominators.  As with numeric fractions, we must first find a \textit{common denominator}. To do so, we start by factoring each of the denominators. \[ \begin{array}{rclr}
+
+\dfrac{3}{y^2 - 8y + 16} + \dfrac{y+1}{16y - y^3} & = & \dfrac{3}{(y-4)^2} + \dfrac{y+1}{y(16 - y^2)} & \text{Factor} \\	[8pt]		
+                                                  & = & \dfrac{3}{(y-4)^2} + \dfrac{y+1}{y(4-y)(4+y)} & \text{Factor some more} \\
+																									
+																									\end{array}\]
+To find the common denominator, we examine the factors in the first denominator and note that we need a factor of $(y-4)^2$.  We now look at the second denominator to see what other factors we need. We need a factor of $y$ and $(4+y) = (y+4)$.  What about $(4-y)$?  As mentioned in the last example, we can factor this as: $(4-y) = -(y-4)$. Using properties of negatives, we `migrate' this negative out to the front of the fraction, turning the addition into subtraction.  We find the (least) common denominator to be $(y-4)^2 y (y+4)$.  We can now proceed to multiply the numerator and denominator of each fraction by whatever factors each is missing from their respective denominators to produce equivalent expressions with common denominators. \[ \begin{array}{rclr}
+
+\dfrac{3}{(y-4)^2} + \dfrac{y+1}{y(4-y)(4+y)} & = & \dfrac{3}{(y-4)^2} + \dfrac{y+1}{y(-(y-4))(y+4)} &   \\ [8pt]
+																							& = & \dfrac{3}{(y-4)^2} - \dfrac{y+1}{y(y-4)(y+4)} & \\ [10pt]
+																							& = & \dfrac{3}{(y-4)^2} \cdot \dfrac{y(y+4)}{y(y+4)} - \dfrac{y+1}{y(y-4)(y+4)} \cdot \dfrac{(y-4)}{(y-4)} & \text{Equivalent} \\[-8pt]                                             &   &                                                                                                       & \text{Fractions} \\
+																						& = & \dfrac{3y(y+4)}{(y-4)^2y(y+4)}  - \dfrac{(y+1)(y-4)}{y(y-4)^2(y+4)}  & \text{Multiply} \\ [-8pt]
+																						&   &                                                                      & \text{Fractions} \\	\end{array}\] At this stage, we can subtract numerators and simplify. We'll keep the denominator factored (in case we can reduce down later), but in the numerator, since there are no common factors, we proceed to perform the indicated multiplication and combine like terms.\[ \begin{array}{rclr}
+
+ \dfrac{3y(y+4)}{(y-4)^2y(y+4)}  - \dfrac{(y+1)(y-4)}{y(y-4)^2(y+4)} & = &  \dfrac{3y(y+4) -(y+1)(y-4)}{(y-4)^2y(y+4)}  & \text{Subtract numerators} \\ [10pt]
+
+& = & \dfrac{3y^2 + 12y - (y^2 - 3y - 4)}{(y-4)^2 y (y+4)} & \text{Distribute} \\ [10pt]
+
+& = & \dfrac{3y^2 + 12y - y^2 + 3y + 4}{(y-4)^2 y (y+4)} & \text{Distribute} \\ [10pt]
+
+& = & \dfrac{2y^2 + 15y + 4}{y (y+4) (y-4)^2} & \text{Gather like terms} \\ \end{array}\] We would like to factor the numerator and cancel factors it has in common with the denominator.  After a few attempts, it appears as if the numerator doesn't factor, at least over the integers.  As a check, we compute the discriminant of $2y^2 + 15y + 4$ and get $15^2 - 4(2)(4) = 193$.  This isn't a perfect square so we know that the quadratic equation $2y^2 + 15y + 4=0$ has irrational solutions. This means $2y^2 + 15y + 4$  can't factor over the integers\footnote{See the remarks following Theorem \ref{discriminanttheoremrealversion}.} so we are done.  
+
+\item  In this example, we have a compound fraction, and we proceed to simplify it as we did its numeric counterparts in Example \ref{fractionreview}.  Specifically, we start by multiplying the numerator and denominator of the `big' fraction by the least common denominator of the `little' fractions inside of it - in this case we need to use $(4-(x+h))(4-x)$ - to remove the compound nature of the `big' fraction.  Once we have a more normal looking fraction, we can proceed as we have in the previous examples.\[ \begin{array}{rclr}
+
+\dfrac{\dfrac{2}{4 - (x+h)} - \dfrac{2}{4-x}}{h} & = & \dfrac{\left(\dfrac{2}{4 - (x+h)} - \dfrac{2}{4-x}\right)}{h}  \cdot \dfrac{(4-(x+h))(4-x)}{(4-(x+h))(4-x)} & \text{Equivalent} \\ [-8pt]
+                                                 &    &                                                                                                            & \text{fractions} \\
+
+& = & \dfrac{\left(\dfrac{2}{4 - (x+h)} - \dfrac{2}{4-x}\right) \cdot (4-(x+h))(4-x) }{h (4-(x+h))(4-x)} & \text{Multiply} \\ [20pt]
+
+& = & \dfrac{\dfrac{2(4-(x+h))(4-x)}{4 - (x+h)} - \dfrac{2(4-(x+h))(4-x)}{4-x}}{h (4-(x+h))(4-x)} & \text{Distribute} \\ [20pt]
+
+
+& = & \dfrac{\dfrac{2\cancel{(4-(x+h))}(4-x)}{\cancel{(4 - (x+h))}} - \dfrac{2(4-(x+h))\cancel{(4-x)}}{\cancel{(4-x)}}}{h (4-(x+h))(4-x)} & \text{Reduce} \\ [20pt]
+
+
+& = & \dfrac{2(4-x) - 2(4-(x+h))}{h(4-(x+h))(4-x)} & \\ 
+
+\end{array}\]
+
+Now we can clean up and factor the numerator to see if anything cancels.  (This why we kept the denominator factored.)\[ \begin{array}{rclr}
+
+\dfrac{2(4-x) - 2(4-(x+h))}{h(4-(x+h))(4-x)} & = & \dfrac{2[(4-x) - (4-(x+h))]}{h(4-(x+h))(4-x)} & \text{Factor out G.C.F.} \\ [12pt]
+																						 & = & \dfrac{2[4-x - 4+(x+h)]}{h(4-(x+h))(4-x)} & \text{Distribute} \\ [12pt]
+																						 & = & \dfrac{2[4- 4 - x+x+h]}{h(4-(x+h))(4-x)} & \text{Rearrange terms} \\ [12pt]
+																						 & = & \dfrac{2h}{h(4-(x+h))(4-x)} & \text{Gather like terms} \\ [12pt]
+																						 & = & \dfrac{2\cancel{h}}{\cancel{h}(4-(x+h))(4-x)} & \text{Reduce} \\ [12pt]
+																						& = & \dfrac{2}{(4-(x+h))(4-x)} & \text{Provided $h \neq 0$} \\
+\end{array}\]
+
+
+\item  At first glance, it doesn't seem as if there is anything that can be done with $2t^{-3} - (3t)^{-2}$ because the exponents on the variables are different.  However, since the exponents are negative, these are actually rational expressions.  In the first term, the $-3$ exponent applies to the $t$ \textit{only} but in the second term, the exponent $-2$ applies to \textit{both} the $3$ and the $t$, as indicated by the parentheses.  We can proceed as follows:\[ \begin{array}{rclr}
+
+ 2t^{-3} - (3t)^{-2} & = & \dfrac{2}{t^3} - \dfrac{1}{(3t)^2} & \\ [10pt]
+                     & = & \dfrac{2}{t^3} - \dfrac{1}{9t^2} & \\ \end{array}\]
+										
+We see that we are being asked to subtract two rational expressions with different denominators, so we need to find a common denominator.  The first fraction contributes a $t^3$ to the denominator, while the second contributes a factor of $9$.  Thus our common denominator is $9t^3$, so we are missing a factor of `$9$' in the first denominator and a factor of `$t$' in the second. \[ \begin{array}{rclr}
+
+ \dfrac{2}{t^3} - \dfrac{1}{9t^2} & = &  \dfrac{2}{t^3} \cdot \dfrac{9}{9} - \dfrac{1}{9t^2} \cdot \dfrac{t}{t} & \text{Equivalent Fractions} \\ [10pt]
+
+                                  & = &  \dfrac{18}{9t^3} - \dfrac{t}{9t^3} & \text{Multiply}\\ [10pt]
+																	
+																	& = & \dfrac{18 - t}{9t^3} & \text{Subtract} \\ \end{array}\]
+We find no common factors among the numerator and denominator so we are done.  \qed
+
+%A second way to approach this problem is by factoring.  We can extend the concept of the `Polynomial G.C.F.' to these types of expressions and we can follow the same guidelines as set forth on page \pageref{PolynomialGCF} to factor out the G.C.F. of these two terms.  The key ideas to remember are that we take out each factor with the \textit{smallest} exponent and factoring is the same as dividing.  We first note that $2t^{-3} - (3t)^{-2}=  2t^{-3} - 3^{-2} t^{-2}$ and we see that the smallest power on $t$ is $-3$. Thus we want to factor out $t^{-3}$ from both terms.  It's clear that this will leave $2$ in the first term, but what about the second term?  Since factoring is the same as dividing, we would be dividing the second term by $t^{-3}$ which thanks to the properties of exponents is the same as \textit{multiplying} by $\frac{1}{t^{-3}} = t^3$.  The same holds for $3^{-2}$.  Even though there are no factors of $3$ in the first term, we can factor out $3^{-2}$ by multiplying it by $\frac{1}{3^{-2}} = 3^2 = 9$. We put these ideas together below.\[ \begin{array}{rclr}
+%
+%2t^{-3} - (3t)^{-2} & = & 2t^{-3} - 3^{-2} t^{-2} &  \text{Properties of Exponents} \\ [5pt]
+%                    & = & 3^{-2} t^{-3} (2(3)^2 - t^{1}) & \text{Factor} \\ [5pt]
+%										& = & \dfrac{1}{3^2} \dfrac{1}{t^3} (18 - t) & \text{Rewrite}\\ [10pt]
+%										& = & \dfrac{18-t}{9t^3} & \text{Multiply} \\ \end{array}\]
+%																							
+%While both ways are valid, one may be more of a natural fit than the other depending on the circumstances and temperament of the student.
+
+
+
+																
+\end{enumerate}
+
+\end{ex}
+
+
+Next, we review the solving of equations which involve rational expressions.  As with equations involving numeric fractions, our first step in solving equations with algebraic fractions is to clear denominators.  In doing so, we run the risk of introducing what are known as \textbf{extraneous}\index{solution ! extraneous} solutions - `answers' which don't satisfy the original equation.  As we illustrate the techniques used to solve these basic equations, see if you can find the step which creates the problem for us.
+
+
+
+\begin{ex}\label{rateqnreviewex} Solve the following equations.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $1 + \dfrac{1}{x} = x$\vphantom{$\dfrac{t^3-2t+1}{t-1} = \dfrac{1}{2}t-1$}
+
+\item  $\dfrac{t^3-2t+1}{t-1} = \dfrac{1}{2}t-1$
+
+\item  $\dfrac{3}{1 - w\sqrt{2}} - \dfrac{1}{2w+5} = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\end{multicols}
+
+
+
+
+{\bf Solution.} 
+
+\begin{enumerate}
+
+\item   Our first step is to clear the fractions by multiplying both sides of the equation by $x$. In doing so, we are implicitly assuming $x \neq 0$; otherwise, we would have no guarantee that the resulting equation is equivalent to our original equation.\footnote{See page \pageref{equivalenteqnineq}.}\[ \begin{array}{rclr}
+
+1 + \dfrac{1}{x} & = & x & \\ [8pt]
+
+\left(1 + \dfrac{1}{x}\right) x & = & (x)x & \text{Provided $x \neq 0$} \\ [10pt]
+
+
+1(x) + \dfrac{1}{x} (x) & = & x^2 & \text{Distribute} \\ [8pt]
+
+x + \dfrac{x}{x} & = & x^2 & \text{Multiply} \\ [8pt]
+
+x + 1 & = & x^2 &  \\
+
+0 & = & x^2 - x - 1 & \text{Subtract $x$, subtract $1$} \\ [5pt]
+
+x & = & \dfrac{-(-1) \pm \sqrt{(-1)^2 - 4(1)(-1)}}{2(1)} & \text{Quadratic Formula} \\
+
+x & = & \dfrac{1 \pm \sqrt{5}}{2} & \text{Simplify} \\
+
+\end{array}\]
+
+We obtain two answers, $x = \frac{1 \pm \sqrt{5}}{2}$.  Neither of these are $0$ thus neither contradicts our assumption that $x \neq 0$.  The reader is invited to check both of these solutions.\footnote{The check relies on being able to `rationalize' the denominator  - a skill we haven't reviewed yet. (Come back after you've read Section \ref{RadEqus} if you want to!)  Additionally, the positive solution to this equation is the famous \href{http://en.wikipedia.org/wiki/Golden_ratio}{\underline{Golden Ratio}}.}
+
+\item  To solve the equation, we clear denominators.  Here, we need to assume $t-1 \neq 0$, or $t \neq 1$.\[ \begin{array}{rclr}
+
+\dfrac{t^3-2t+1}{t-1} & = & \dfrac{1}{2}t-1 & \\ [8pt]
+
+\left(\dfrac{t^3-2t+1}{t-1}\right) \cdot 2(t-1) & = & \left( \dfrac{1}{2}t-1 \right) \cdot 2(t-1) & \text{Provided $t \neq 1$} \\ [12pt]
+
+\dfrac{(t^3-2t+1)(2\cancel{(t-1)})}{\cancel{(t-1)}}  & = & \dfrac{1}{\cancel{2}} t (\cancel{2}(t-1)) - 1(2(t-1))  & \text{Multiply, distribute} \\ [8pt]
+
+2(t^3-2t+1) & = & t^2 - t - 2t + 2 & \text{Distribute} \\ [2pt]
+
+2t^3 - 4t + 2 & = & t^2 -3t + 2 & \text{Distribute, combine like terms} \\ [2pt]
+
+2t^3 -t^2 - t & = & 0 & \text{Subtract $t^2$, add $3t$, subtract $2$}\\ [2pt]
+
+t(2t^2 -t - 1) & = & 0 & \text{Factor} \\ [2pt]
+
+t = 0 & \text{or} & 2t^2 - t - 1 = 0 & \text{Zero Product Property}\\ [2pt]
+
+t = 0 & \text{or} & (2t+1)(t-1) = 0 & \text{Factor}\\ [2pt]
+
+t = 0 & \text{or} & 2t+1 = 0 \quad \text{or} \quad t-1 = 0 &\\ [2pt]
+
+t & = & 0, \; -\dfrac{1}{2} \text{ or } 1 & \\
+
+\end{array}\] We assumed that $t \neq 1$ in order to clear denominators.  Sure enough, the `solution' $t = 1$ doesn't check in the original equation since it causes division by $0$.  In this case, we call $t = 1$ an \textit{extraneous} solution.  Note that $t=1$ \textit{does} work in every equation \textit{after} we clear denominators.  In general, multiplying by variable expressions can produce these `extra' solutions, which is why checking our answers is always encouraged.\footnote{Contrast this with what happened in  Example \ref{solveeqnbyfactoring} when we divided by a variable and `lost' a solution.}  The other two solutions, $t = 0$ and $t = -\frac{1}{2}$, both work.
+
+\item  As before, we begin by clearing denominators.  Here, we assume $1 - w\sqrt{2} \neq 0$ (so $w \neq \frac{1}{\sqrt{2}}$) and $2w+5 \neq 0$ (so $w \neq -\frac{5}{2}$).\[ \begin{array}{rclr}
+
+ \dfrac{3}{1 - w\sqrt{2}} - \dfrac{1}{2w+5} & = &  0 & \\
+
+\left(\dfrac{3}{1 - w\sqrt{2}} - \dfrac{1}{2w+5}\right)(1 - w\sqrt{2})(2w+5) & = &  0 (1 - w\sqrt{2})(2w+5)  & w \neq \dfrac{1}{\sqrt{2}}, -\dfrac{5}{2} \\ [12pt]
+
+\dfrac{3\cancel{(1 - w\sqrt{2})}(2w+5) }{\cancel{(1 - w\sqrt{2})}}- \dfrac{1(1 - w\sqrt{2})\cancel{(2w+5)}}{\cancel{(2w+5)}} & = & 0 & \text{Distribute} \\ [12pt]
+
+3(2w+5) - (1-w\sqrt{2}) & = & 0 & \\  \end{array}\]
+
+The result is a \textit{linear} equation in $w$ so we gather the terms with $w$ on one side of the equation and put everything else on the other.  We factor out $w$ and divide by its coefficient. \[ \begin{array}{rclr}
+
+3(2w+5) - (1-w\sqrt{2}) & = & 0 & \\
+
+6w + 15 - 1 + w\sqrt{2} & = & 0 & \text{Distribute} \\
+
+6w + w\sqrt{2} & = & -14 & \text{Subtract $14$} \\
+
+(6 + \sqrt{2})w & = & -14 & \text{Factor} \\
+
+w & = & -\dfrac{14}{6 + \sqrt{2}} & \text{Divide by $6 + \sqrt{2}$} \\ 
+
+\end{array}\] This solution is different than our excluded values, $\frac{1}{\sqrt{2}}$ and $-\frac{5}{2}$, so we keep $w = -\frac{14}{6 + \sqrt{2}}$ as our final answer.  The reader is invited to check this in the original equation.\qed
+
+%\item  To solve our next equation, we have two approaches to choose from:  we could rewrite the quantities with negative exponents as fractions and clear denominators, or we can factor.  We showcase each technique below.
+
+%\begin{itemize}
+
+%\item \textit{Clearing Denominators Approach}:  We rewrite the negative exponents as fractions and clear denominators.  In this case, we multiply both sides of the equation by $(x^2+4)^2$, which is never $0$. (Think about that for a moment.)  As a result, we need not exclude any $x$ values from our solution set.\[ \begin{array}{rclr}
+
+%3(x^2+4)^{-1} + 3x(-1)(x^2+4)^{-2}(2x)& = &  0 & \\ [8pt]
+
+%\dfrac{3}{x^2+4} + \dfrac{3x(-1)(2x)}{(x^2+4)^2} & = & 0 & \text{Rewrite} \\ [12pt]
+%\left(\dfrac{3}{x^2+4} - \dfrac{6x^2}{(x^2+4)^2} \right)(x^2+4)^2 & = & 0 (x^2+4)^2 & \text{Multiply} \\[12pt]
+
+%\dfrac{3\cancelto{(x^2+4)}{(x^2 + 4)^2}}{\cancel{(x^2+4)}}  - \dfrac{6x^2\cancel{(x^2+4)^2}}{\cancel{(x^2+4)^2}} & = & 0 & \text{Distribute} \\ [12pt]
+
+%3(x^2+4) - 6x^2 & = & 0 & \\ [2pt]
+
+%3x^2 + 12 - 6x^2 & = & 0 & \text{Distribute} \\ [2pt]
+
+%-3x^2 & = & -12 & \text{Combine like terms, subtract $12$} \\ [2pt]
+
+%x^2 & = & 4 & \text{Divide by $-3$} \\ [2pt]
+
+%x & = & \pm \sqrt{4} = \pm 2 & \text{Extract square roots} \\ 
+
+%\end{array} \]
+
+%We leave it to the reader to show both $x = -2$ and $x = 2$ satisfy the original equation.
+
+%\item  \textit{Factoring Approach}:  Since the equation is already set equal to $0$, we're ready to factor. Following the guidelines presented in Example \ref{rationalexpressionreviewex}, we factor out $3(x^2+4)^{-2}$ from both terms and look to see if more factoring can be done:\[ \begin{array}{rclr}
+
+%3(x^2+4)^{-1} + 3x(-1)(x^2+4)^{-2}(2x)& = &  0 & \\ [2pt]
+
+%3(x^2+4)^{-2}( (x^2+4)^{1} + x(-1)(2x)) & = & 0 & \text{Factor} \\ [2pt]
+
+%3(x^2+4)^{-2}( x^2 + 4 - 2x^2 ) & = & 0 & \\ [2pt]
+
+%3(x^2+4)^{-2}(4 - x^2) & = & 0 & \text{Gather like terms} \\ [2pt]
+
+%3(x^2+4)^{-2} = 0 & \text{or} & 4 - x^2 = 0 & \text{Zero Product Property} \\ [2pt]
+
+%\dfrac{3}{x^2+4} = 0 & \text{or} & 4 = x^2 & \\ \end{array} \]
+
+%The first equation yields no solutions (Think about this for a moment.) while the second gives us $x = \pm \sqrt{4} = \pm 2$ as before.
+
+
+%\end{itemize}
+
+\end{enumerate}
+
+\end{ex}
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{ratsimpfirst} - \ref{ratsimplast}, perform the indicated operations and simplify.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $\dfrac{x^2-9}{x^2} \cdot \dfrac{3x}{x^2-x-6}$\vphantom{$\dfrac{4y-y^2}{2y+1} \div \dfrac{y^2-16}{2y^2-5y-3}$}\label{ratsimpfirst}
+\item $\dfrac{t^2-2t}{t^2+1} \div (3t^2 - 2t - 8)$\vphantom{$\dfrac{4y-y^2}{2y+1} \div \dfrac{y^2-16}{2y^2-5y-3}$}
+\item $\dfrac{4y-y^2}{2y+1} \div \dfrac{y^2-16}{2y^2-5y-3}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\dfrac{x}{3x-1} - \dfrac{1-x}{3x-1}$\vphantom{$\dfrac{2-y}{3y} - \dfrac{1-y}{3y} + \dfrac{y^2-1}{3y}$}
+\item  $\dfrac{2}{w-1} - \dfrac{w^2+1}{w-1}$\vphantom{$\dfrac{2-y}{3y} - \dfrac{1-y}{3y} + \dfrac{y^2-1}{3y}$}
+\item  $\dfrac{2-y}{3y} - \dfrac{1-y}{3y} + \dfrac{y^2-1}{3y}$
+ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{\dfrac{2}{x} - 2}{x-1}$\vphantom{$\dfrac{\dfrac{1}{x+h} - \dfrac{1}{x}}{h}$}
+\item $\dfrac{\dfrac{3}{2-h} - \dfrac{3}{2}}{h}$\vphantom{$\dfrac{\dfrac{1}{x+h} - \dfrac{1}{x}}{h}$}
+\item $\dfrac{\dfrac{1}{x+h} - \dfrac{1}{x}}{h}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $3w^{-1} - (3w)^{-1}$
+\item  $-2y^{-1}  + 2(3-y)^{-2}$
+\item  $3(x-2)^{-1} - 3x(x-2)^{-2}$\label{ratsimplast}
+
+ 
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\vspace{-0.15in}
+
+In Exercises \ref{rateqnfirst} - \ref{rateqnlast}, find all real solutions.  Be sure to check for extraneous solutions.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{x}{5x + 4} = 3$\vphantom{$\dfrac{1}{w + 3} + \dfrac{1}{w - 3} = \dfrac{w^{2} - 3}{w^{2} - 9}$} \label{rateqnfirst}
+\item $\dfrac{3y - 1}{y^{2} + 1} = 1$\vphantom{$\dfrac{1}{w + 3} + \dfrac{1}{w - 3} = \dfrac{w^{2} - 3}{w^{2} - 9}$}
+\item $\dfrac{1}{w + 3} + \dfrac{1}{w - 3} = \dfrac{w^{2} - 3}{w^{2} - 9}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $\dfrac{2x + 17}{x + 1} = x + 5$\vphantom{$\dfrac{-y^{3} + 4y}{y^{2} - 9} = 4y$}
+
+\item $\dfrac{-y^{3} + 4y}{y^{2} - 9} = 4y$  
+
+\item $\dfrac{2}{x\sqrt{2} - 1}  - 1 = \dfrac{3}{x \sqrt{2} + 1}$\vphantom{ $\dfrac{x^2}{(1 + x\sqrt{3})^2} = 3$}\label{rateqnlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+In Exercises \ref{absratfirst} - \ref{absratlast}, use Theorem \ref{absvalequality} along with the techniques in this section to find all real solutions.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\left|\dfrac{3n}{n-1}  \right| = 3$\vphantom{$\left| \dfrac{2t}{4-t^2}\right| = \left|\dfrac{2}{t-2}\right|$} \label{absratfirst}
+\item $\left| \dfrac{2x}{x^2-1}\right| = 2$\vphantom{$\left| \dfrac{2t}{4-t^2}\right| = \left|\dfrac{2}{t-2}\right|$}
+\item $\left| \dfrac{2t}{4-t^2}\right| = \left|\dfrac{2}{t-2}\right|$ \label{absratlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+\closegraphsfile

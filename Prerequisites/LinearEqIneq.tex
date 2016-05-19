@@ -1,23 +1,66 @@
-\mfpicnumber{1}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
+\documentclass[11pt]{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
+\usepackage{colortbl}
+\usepackage{import, multicol,boxedminipage}
+\usepackage{graphicx}
+\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
+\usepackage[all]{hypcap}
+\definecolor{ResultColor}{gray}{0.9}
+\theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
+\newtheorem{defn}{\bf Definition}[section]
+\newtheorem{thm}{\bf Theorem}[section]
+\newtheorem{cor}[thm]{\bf Corollary}
+\newtheorem{eqn}{\bf Equation}[section]
+\newtheorem{ex}{\bf Example}[section]
+\newtheorem{fig}{\bf Figure}[section]
+\setlength{\parindent}{0in}
+\newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
+\newcommand{\ebm}{\end{boxedminipage}}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+\allowdisplaybreaks[2]
+\usepackage{cancel}
+\usepackage{sectsty}
+\usepackage{textcomp}
+\usepackage{multirow}
 \usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+	%% The 'lf' option for lining figures
+	%% The 'sfdefault' option to make the base font sans serif
+	\usepackage[T1]{fontenc}
+	\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage[nottoc]{tocbibind}
+\allsectionsfont{\mdseries \scshape}
+\makeatletter
+\renewcommand\l@section{\@dottedtocline{1}{1.5em}{3em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{4.5em}{3.5em}}
+\makeatother
+\pagestyle{fancy}
+\newcounter{HW}
+\newcounter{HWindent}
+
+\title{Review \#1: Linear Equations and Inequalities}
+\author{Carl Stitz and Jeff Zeager\\
+Edited by Sean Fitzpatrick}
+
 \begin{document}
-}
-\opengraphsfile{LinearEqIneq}
+\maketitle
 
-\setcounter{footnote}{0}
 
-\label{LinearEqIneq}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+\lhead[\fancyplain{}{\sc\thepage}]%
+      {\fancyplain{}{\sc \nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\sc \nouppercase{\leftmark}}]%
+      {\fancyplain{}{\sc\thepage}}
+\cfoot{}
 
-Over the course of the next few sections we will focus our review on the Algebra skills needed to solve basic equations and inequalities.  In general, equations and inequalities fall into one of three categories:  conditional, identity or contradiction, depending on the nature of their solutions.  A \textbf{conditional}\index{equation ! conditional}\index{inequality ! conditional} equation or inequality is true for only \textit{certain} real numbers.  For example, $2x+1 = 7$ is true precisely when $x = 3$, and $w - 3 \leq 4$ is true precisely when $w \leq 7$.  An \textbf{identity}\index{equation ! identity}\index{inequality ! identity} is an equation or inequality that is true for \textit{all} real numbers.  For example, $2x -3 = 1+x-4+x$ or $2t \leq 2t + 3$.  A \textbf{contradiction}\index{equation ! contradiction}\index{inequality ! contradiction} is an equation or inequality that is \textit{never} true.  Examples here include $3x - 4 = 3x + 7$ and $a - 1 > a + 3$.  
+
+This is the first of several handouts concentrating on a review of the Algebra skills needed to solve the sorts of basic equations and inequalities encountered in Math 1010.  In general, equations and inequalities fall into one of three categories:  conditional, identity or contradiction, depending on the nature of their solutions.  A \textbf{conditional} equation or inequality is true for only \textit{certain} real numbers.  For example, $2x+1 = 7$ is true precisely when $x = 3$, and $w - 3 \leq 4$ is true precisely when $w \leq 7$.  An \textbf{identity} is an equation or inequality that is true for \textit{all} real numbers.  For example, $2x -3 = 1+x-4+x$ or $2t \leq 2t + 3$.  A \textbf{contradiction} is an equation or inequality that is \textit{never} true.  Examples here include $3x - 4 = 3x + 7$ and $a - 1 > a + 3$.  
 
 \smallskip
 
-As you may recall, solving an equation or inequality means finding all of the values of the variable, if any exist, which make the given equation or inequality true.  This often requires us to manipulate the given equation or inequality from its given form to an easier form.  For example, if we're asked to solve $3 - 2(x-3) = 7x + 3(x+1)$, we get $x = \frac{1}{2}$, but not without a fair amount of algebraic manipulation. In order to obtain the correct answer(s), however, we need to make sure that whatever maneuvers we apply are reversible in order to guarantee that we maintain a chain of \textbf{equivalent} equations or inequalities.  Two equations or inequalities are called \textbf{equivalent}\index{equation ! equivalent}\index{inequality ! equivalent} if they have the same solutions.  We list these `legal moves' below.
+As you may recall, solving an equation or inequality means finding all of the values of the variable, if any exist, which make the given equation or inequality true.  This often requires us to manipulate the given equation or inequality from its given form to an easier form.  For example, if we're asked to solve $3 - 2(x-3) = 7x + 3(x+1)$, we get $x = \frac{1}{2}$, but not without a fair amount of algebraic manipulation. In order to obtain the correct answer(s), however, we need to make sure that whatever manoeuvres we apply are reversible in order to guarantee that we maintain a chain of \textbf{equivalent} equations or inequalities.  Two equations or inequalities are called \textbf{equivalent} if they have the same solutions.  We list these `legal moves' below.
 
 \medskip
 
@@ -49,7 +92,7 @@ As you may recall, solving an equation or inequality means finding all of the va
 
 \ebm}
 
-\subsection{Linear Equations} \label{LinearEqn}
+\section{Linear Equations} \label{LinearEqn}
 
 The first type of equations we need to review are \textbf{linear} equations as defined below.
 
@@ -57,7 +100,7 @@ The first type of equations we need to review are \textbf{linear} equations as d
 
 \colorbox{ResultColor}{\bbm
 
-\begin{defn}\label{lineareqndefn}\index{equation ! linear} An equation is said to be \textbf{linear} in a variable $X$ if it can be written in the form $AX = B$ where $A$ and $B$ are expressions which do not involve $X$ and $A \neq 0$.
+\begin{defn}\label{lineareqndefn} An equation is said to be \textbf{linear} in a variable $X$ if it can be written in the form $AX = B$ where $A$ and $B$ are expressions which do not involve $X$ and $A \neq 0$.
 
 \end{defn}
 
@@ -101,7 +144,7 @@ We illustrate this process with a collection of examples below.
 
 \item  Solve for $x$: $3x - 6 = 7x + 4$\vphantom{$3 - 1.7t = \dfrac{t}{4}$}
 
-\item  Solve for $a$: $\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$
+\item  Solve for $t$: $3 - 1.7t = \dfrac{t}{4}$
 
 \setcounter{HW}{\value{enumi}}
 
@@ -115,9 +158,9 @@ We illustrate this process with a collection of examples below.
 
 \setcounter{enumi}{\value{HW}}
 
-\item  Solve for $y$:  $8 y \sqrt{3} + 1 = 7 - \sqrt{12}(5 - y)$\vphantom{$\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$.}
+\item  Solve for $a$: $\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$
 
-\item  Solve for $y$: $x(4-y)=8y$.
+\item  Solve for $y$:  $8 y \sqrt{3} + 1 = 7 - \sqrt{12}(5 - y)$\vphantom{$\dfrac{1}{18}(7 - 4a) + 2 = \dfrac{a}{3} - \dfrac{4-a}{12}$.}
 
 \setcounter{HW}{\value{enumi}}
 
@@ -125,6 +168,21 @@ We illustrate this process with a collection of examples below.
 
 \end{multicols}
 
+\begin{multicols}{2}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  Solve for $x$: $\dfrac{3x-1}{2} = x\sqrt{50} + 4$
+
+\item  Solve for $y$:  $x(4-y) = 8y$\vphantom{$\dfrac{3x-1}{2} = x\sqrt{50} + 4$.}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
 
 {\bf Solution.} 
 
@@ -137,7 +195,19 @@ We illustrate this process with a collection of examples below.
 											\dfrac{-4x}{-4} & = & \dfrac{10}{-4} & \text{Divide by the coefficient of $x$} \\ [10pt]
 											x & = & -\dfrac{5}{2} & \text{Reduce to lowest terms} \\ \end{array}\]
 											
-To check our answer, we substitute $x = -\frac{5}{2}$ into each side of the \textbf{orginial} equation to see the equation is satisfied.  Sure enough, $3\left(-\frac{5}{2}\right) - 6 = -\frac{27}{2}$ and $7\left(-\frac{5}{2}\right) + 4 = -\frac{27}{2}$.
+To check our answer, we substitute $x = -\frac{5}{2}$ into each side of the \textbf{original} equation to see the equation is satisfied.  Sure enough, $3\left(-\frac{5}{2}\right) - 6 = -\frac{27}{2}$ and $7\left(-\frac{5}{2}\right) + 4 = -\frac{27}{2}$.
+
+\item  In our next example, the unknown is $t$ and we not only have a fraction but also a decimal to wrangle.  Fortunately, with equations we can multiply both sides to rid us of  these computational obstacles:\[ \begin{array}{rclr}  3 - 1.7t  & = &  \dfrac{t}{4} & \\ [5pt]
+                       40(3 - 1.7t)  & = &  40 \left(\dfrac{t}{4}\right) & \text{Multiply by $40$} \\[5pt]
+											40(3) - 40(1.7t)  & = &  \dfrac{40 t}{4} & \text{Distribute} \\
+											120 - 68t & = & 10 t & \\
+											(120 -68t) + 68 t & = & 10t + 68 t & \text{Add $68t$ to both sides} \\
+											120 & = & 78 t & \text{$68t + 10t = (68 + 10)t = 78 t$}\\
+											\dfrac{120}{78} & = & \dfrac{78t}{78} &  \text{Divide by the coefficient of $t$}\\[8pt]
+											\dfrac{120}{78} & = & t & \\ [8pt]
+											\dfrac{20}{13} & = & t & \text{Reduce to lowest terms} \\ \end{array}\]
+											
+To check, we again substitute $t = \frac{20}{13}$ into each side of the original equation.  We find that $3 - 1.7 \left(\frac{20}{13}\right) = 3 - \left(\frac{17}{10}\right)\left(\frac{20}{13}\right) =   \frac{5}{13}$ and $\frac{(20/13)}{4} = \frac{20}{13} \cdot \frac{1}{4} = \frac{5}{13}$ as well.
 
 \item  To solve this next equation, we begin once again by clearing fractions.  The least common denominator here is $36$:\[ \begin{array}{rclr}
 
@@ -194,7 +264,29 @@ y & = & \dfrac{\cancel{2} \cancel{\sqrt{3}}(\sqrt{3} - 5)}{\cancel{2} \cdot 3 \c
 
 y & = & \dfrac{\sqrt{3} - 5}{3} & \\ \end{array}\]In the list of computations above we marked the row $6 y \sqrt{3} = 6 - 10 \sqrt{3}$ with a note.  That's because we wanted to draw your attention to this line without breaking the flow of the manipulations.  The equation $6 y \sqrt{3} = 6 - 10 \sqrt{3}$ is in fact linear according to Definition \ref{lineareqndefn}: the variable is $y$, the value of $A$ is $6\sqrt{3}$ and $B = 6 - 10 \sqrt{3}$. Checking the solution, while not trivial, is good mental exercise.  Each side works out to be $\frac{27 - 40 \sqrt{3}}{3}$.
 
+\item  Proceeding as before, we simplify radicals and clear denominators.  Once we gather all of the terms containing $x$ on one side and move the other terms to the other, we factor out $x$ to identify its coefficient then divide to get our answer.\[ \begin{array}{rclr}
 
+\dfrac{3x-1}{2} & = &  x\sqrt{50} + 4 & \\ [8pt]
+
+\dfrac{3x-1}{2} & = &  5x\sqrt{2} + 4 & \text{$\sqrt{50} = \sqrt{25 \cdot 2}$} \\ [8pt]
+
+2\left(\dfrac{3x-1}{2}\right) & = & 2 \left(5x\sqrt{2} + 4 \right) & \text{Multiply by $2$} \\ [8pt]
+
+\dfrac{\cancel{2} \cdot (3x-1)}{\cancel{2}} & = & 2 (5x \sqrt{2}) + 2\cdot 4 & \text{Distribute} \\ [8pt]
+
+3x - 1 & = & 10x \sqrt{2} + 8 & \\
+
+(3x-1) - 10x\sqrt{2} + 1 & = & (10x \sqrt{2} + 8) - 10x\sqrt{2} + 1 & \text{Subtract $10x\sqrt{2}$,  add $1$} \\
+
+3x - 10x\sqrt{2} - 1 + 1 & = & 10x\sqrt{2} - 10x\sqrt{2} + 8 + 1 & \text{Rearrange terms} \\
+
+3x - 10x\sqrt{2} & = & 9 & \\
+
+(3 - 10\sqrt{2}) x & = & 9 & \text{Factor} \\[3pt]
+
+\dfrac{(3 - 10\sqrt{2}) x}{3 - 10\sqrt{2}} & = & \dfrac{9}{3 - 10\sqrt{2}} & \text{Divide by the coefficient of $x$} \\ [8pt]
+
+x & = & \dfrac{9}{3 - 10\sqrt{2}} & \\ \end{array} \] The reader is encouraged to check this solution - it isn't as bad as it looks if you're careful! Each side works out to be $\dfrac{12 + 5\sqrt{2}}{3-10\sqrt{2}}$.
 
 \item  If we were instructed to solve our last equation for $x$, we'd be done in one step: divide both sides by $(4-y)$ - assuming $4-y \neq 0$, that is.  Alas, we are instructed to solve for $y$, which means we have some more work to do.\[ \begin{array}{rclr}
 
@@ -210,7 +302,7 @@ x(4-y) & = & 8y & \\
 
 \end{ex}
 
-\subsection{Linear Inequalities}
+\section{Linear Inequalities}
 \label{LinearInequal}
 
 We now turn our attention to linear inequalities.  Unlike linear equations which admit at most one solution, the solutions to linear inequalities are generally intervals of real numbers.  While the solution strategy for solving linear inequalities is the same as with solving linear equations, we need to remind ourselves that, should we decide to multiply or divide both sides of an inequality by a \textbf{negative} number, we need to reverse the direction of the inequality. (See page \pageref{equivalenteqnineq}.)  In the example below, we work not only some `simple' linear inequalities in the sense there is only one inequality present, but also some `compound' linear inequalities which require us to use the notions of intersection and union. 
@@ -239,7 +331,7 @@ We now turn our attention to linear inequalities.  Unlike linear equations which
 
 \item  Solve for $t$:  $2t-1 \leq 4-t < 6t+1$
 
-\item  Solve for $w$: $2.1 - 0.01w \leq -3$ or $2.1-0.01w \geq 3$
+\item  Solve for $x$: $5 + \sqrt{7} x \leq 4x + 1 \leq 8$
 
 
 \setcounter{HW}{\value{enumi}}
@@ -248,7 +340,13 @@ We now turn our attention to linear inequalities.  Unlike linear equations which
 
 \end{multicols}
 
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+\item  Solve for $w$: $2.1 - 0.01w \leq -3$ or $2.1-0.01w \geq 3$
+
+
+\end{enumerate}
 
 {\bf Solution.}
 
@@ -310,6 +408,29 @@ Our final answer is $\frac{11}{2} \geq y > -5$, or, said differently,  $-5 < y \
 \item  We have another compound inequality and what distinguishes this one from our previous example is that `$t$' appears on both sides of both inequalities.  In this case, we need to create two separate inequalities and find all of the real numbers $t$ which satisfy both  $2t-1 \leq 4-t$ \textit{and} $4-t < 6t + 1$.  The first inequality, $2t-1 \leq 4-t$, reduces to $3t \leq 5$ or $t \leq \frac{5}{3}$.  The second inequality, $4-t < 6t+1$, becomes $3 < 7t$  which reduces to $t > \frac{3}{7}$.  Thus our solution is all real numbers $t$ with $t \leq \frac{5}{3}$ \textit{and}  $t > \frac{3}{7}$, or, writing this as a compound inequality,  $\frac{3}{7} < t \leq \frac{5}{3}$. Using interval notation,\footnote{If we intersect the solution sets of the two individual inequalities, we get the answer, too:  $\left(-\infty, \frac{5}{3}\right] \cap \left(\frac{3}{7}, \infty\right) = \left( \frac{3}{7}, \frac{5}{3} \right]$.} we express our solution as $\left( \frac{3}{7}, \frac{5}{3} \right]$.
 
 
+\item As before, with this inequality  we have no choice but to solve each inequality individually and intersect the solution sets.  Starting with the leftmost inequality, we first note that the in the term $\sqrt{7} x$, the vinculum of the square root extends over the $7$ only, meaning the $x$ is not part of the radicand.  In order to avoid confusion, we will write $\sqrt{7} x$ as $x \sqrt{7}$.\[ \begin{array}{rclr}
+
+5 + x\sqrt{7}  & \leq & 4x+1  & \\
+
+(5 + x\sqrt{7} ) -4x  - 5 & \leq&  (4x + 1) - 4x - 5  & \text{Subtract $4x$ and $5$} \\
+
+x\sqrt{7} - 4x + 5 - 5 & \leq & 4x - 4x + 1 - 5 & \text{Rearrange terms} \\
+
+x(\sqrt{7} - 4) & \leq & -4 & \text{Factor} \\ \end{array} \] At this point, we need to exercise a bit of caution because the number $\sqrt{7} - 4$ is negative.\footnote{Since $4 < 7 < 9$, it stands to reason that $\sqrt{4} < \sqrt{7} < \sqrt{9}$ so $2 < \sqrt{7} < 3$.} When we divide by it the inequality reverses:\[ \begin{array}{rclr}
+
+x(\sqrt{7} - 4) & \leq & -4 & \\[3pt]
+
+\dfrac{x(\sqrt{7}-4)}{\sqrt{7}-4} & \geq & \dfrac{-4}{\sqrt{7} - 4} & \text{Divide by the coefficient of $x$} \\ [-8pt]
+                                  &      &                          & \text{Reverse inequalities} \\ [-3pt]
+
+x & \geq & \dfrac{-4}{\sqrt{7} - 4} & \\ [10pt]
+
+x & \geq & \dfrac{-4}{-(4 - \sqrt{7})} &  \\ [12pt]
+
+x & \geq & \dfrac{4}{4 -\sqrt{7}} & \\
+
+\end{array} \] We're only half done because we still have the rightmost inequality to solve.  Fortunately, that one seems rather mundane:  $4x+1 \leq 8$ reduces to $x \leq \frac{7}{4}$ without too much incident.  Our solution is $ x \geq \frac{4}{4-\sqrt{7}}$ \textit{and} $x \leq \frac{7}{4}$.  We may be tempted to write $\frac{4}{4-\sqrt{7}} \leq x \leq \frac{7}{4}$ and call it a day but that would be nonsense!  To see why, notice that $\sqrt{7}$ is between $2$ and $3$ so $\frac{4}{4 - \sqrt{7}}$ is between  $\frac{4}{4-2} = 2$ and $\frac{4}{4-3} = 4$. In particular, we get $\frac{4}{4 - \sqrt{7}} > 2$.  On the other hand, $\frac{7}{4} < 2$.  This means that our `solutions' have to be simultaneously  greater than $2$ AND less than $2$  which is impossible.  Therefore, this compound inequality has no solution, which means we did all that work for nothing.
+
 \item  Our last example is yet another compound inequality but here, instead of the two inequalities being connected with the conjunction `\textit{and}', they are connected with `\textit{or}', which indicates that we need to find the \textit{union} of the results of each.  Starting with $2.1 - 0.01w \leq -3$, we get $-0.01 w \leq -5.1$, which gives\footnote{Don't forget to flip the inequality!} $w \geq 510$.  The second inequality, $2.1-0.01w \geq 3$, becomes $-0.01w \geq 0.9$, which reduces to  $w \leq -90$.  Our solution set consists of all real numbers $w$ with $w \geq 510$ \textit{or} $w \leq -90$.  In interval notation, this is $(-\infty, -90] \cup [510, \infty)$. \qed
 
 \end{enumerate}
@@ -318,15 +439,15 @@ Our final answer is $\frac{11}{2} \geq y > -5$, or, said differently,  $-5 < y \
 
 \newpage
 
-\subsection{Exercises}
+\section{Exercises}
 
-In Exercises \ref{lineareqfirst0} - \ref{lineareqlast0}, solve the given linear equation and check your answer.  
+In Exercises \ref{lineareqfirst} - \ref{lineareqlast}, solve the given linear equation and check your answer.  
 
 
 \begin{multicols}{3}
 \begin{enumerate}
 
-\item $3x - 4 = 2 - 4(x-3)$\vphantom{$\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$}\label{lineareqfirst0} 
+\item $3x - 4 = 2 - 4(x-3)$\vphantom{$\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$}\label{lineareqfirst} 
 \item $\dfrac{3 - 2t}{4} = 7t+1$\vphantom{$\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$}
 
 \item  $\dfrac{2(w-3)}{5} = \dfrac{4}{15} - \dfrac{3w+1}{9}$ 
@@ -339,27 +460,46 @@ In Exercises \ref{lineareqfirst0} - \ref{lineareqlast0}, solve the given linear 
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item  $\sqrt{50} y = \dfrac{6 - \sqrt{8} y}{3}$ \vphantom{$4 - (2x+1) = \dfrac{x \sqrt{7}}{9}$} 
+\item  $-0.02y + 1000 = 0$ \vphantom{$\dfrac{49w - 14}{7}= 3w - (2-4w)$} 
 \item  $\dfrac{49w - 14}{7}= 3w - (2-4w)$ 
-\item  $7 - (4-x) = \dfrac{2x-3}{2}$ \vphantom{$\dfrac{49w - 14}{7}= 3w - (2-4w)$} \label{lineareqlast0} 
+\item  $7 - (4-x) = \dfrac{2x-3}{2}$ \vphantom{$\dfrac{49w - 14}{7}= 3w - (2-4w)$} 
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3 t\sqrt{7}  + 5 = 0$ \vphantom{$4 - (2x+1) = \dfrac{x \sqrt{7}}{9}$} 
+
+\item  $\sqrt{50} y = \dfrac{6 - \sqrt{8} y}{3}$ \vphantom{$4 - (2x+1) = \dfrac{x \sqrt{7}}{9}$} 
+
+\item  $4 - (2x+1) = \dfrac{x \sqrt{7}}{9}$ \label{lineareqlast} 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 
-
-
-
-In equations \ref{literalexfirst0} - \ref{literalexlast0}, solve each equation for the indicated variable.
+In equations \ref{literalexfirst} - \ref{literalexlast}, solve each equation for the indicated variable.
 
 \begin{multicols}{2}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
-\item  Solve for $y$:  $3x+2y = 4$  \label{literalexfirst0}
+\item  Solve for $y$:  $3x+2y = 4$  \label{literalexfirst}
+\item  Solve for $x$:  $3x+2y = 4$ 
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 \item  Solve for $C$: $F = \dfrac{9}{5} C + 32$
+\item  Solve for $x$:  $p = -2.5x + 15$ 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
@@ -367,8 +507,18 @@ In equations \ref{literalexfirst0} - \ref{literalexlast0}, solve each equation f
 \begin{multicols}{2}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
+\item  Solve for $x$: $C = 200x + 1000$ 
 \item  Solve for $y$:  $x= 4(y+1) + 3$ 
-\item  Solve for $y$:  $x(y-3) = 2y+1$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  Solve for $w$:  $vw - 1 = 3v$ 
+\item  Solve for $v$:   $vw - 1 = 3v$
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
@@ -376,12 +526,32 @@ In equations \ref{literalexfirst0} - \ref{literalexlast0}, solve each equation f
 \begin{multicols}{2}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
-\item  Solve for $v$:   $vw - 1 = 3v$
-\item  Solve for $w$:  $vw - 1 = 3v$ \label{literalexlast0}
+\item Solve for $y$:  $x(y-3) = 2y+1$
+\item Solve for $\pi$:  $C = 2\pi r$
+
+
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item Solve for $V$:   $PV = nRT$
+\item Solve for $R$:  $PV = nRT$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item Solve for $g$:   $E = mgh$ \vphantom{$E = \dfrac{1}{2} mv^2$}
+\item Solve for $m$:  $E = \dfrac{1}{2} mv^2$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 In Exercises \ref{subex1} - \ref{subex2}, the subscripts on the variables have no intrinsic mathematical meaning; they're just used to distinguish one variable from another.  In other words, treat `$P_{\text{\tiny $1$}}$' and `$P_{\text{\tiny $2$}}$'  as two different variables as you would `$x$' and `$y$.'  (The same goes for `$x$' and `$x_{\text{\tiny $0$}}$,'  etc.)
 
@@ -399,7 +569,7 @@ In Exercises \ref{subex1} - \ref{subex2}, the subscripts on the variables have n
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 \item Solve for $x$:   $y-y_{\text{\tiny $0$}} = m(x -x_{\text{\tiny $0$}})$
-\item Solve for $T_{\text{\tiny $1$}}$:  $q = mc(T_{\text{\tiny $2$}} -T_{\text{\tiny $1$}})$   \label{subex2}
+\item Solve for $T_{\text{\tiny $1$}}$:  $q = mc(T_{\text{\tiny $2$}} -T_{\text{\tiny $1$}})$  \label {subex2} \label{literalexlast}
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
@@ -420,15 +590,29 @@ Is it possible to find a value of $c$ so the equation is an identity?  Explain.
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 
+\newpage
 
-In Exercises \ref{linineqnexfirst0} - \ref{linineqnexlast0}, solve the given inequality.  Write your answer using interval notation.
+
+In Exercises \ref{linineqnexfirst} - \ref{linineqnexlast}, solve the given inequality.  Write your answer using interval notation.
 
 \begin{multicols}{3}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
-\item $3 - 4x \geq 0$\vphantom{$\dfrac{7 -y}{4} \geq 3y + 1$}\label{linineqnexfirst0}
+\item $3 - 4x \geq 0$\vphantom{$\dfrac{7 -y}{4} \geq 3y + 1$}\label{linineqnexfirst}
+\item  $2t - 1 < 3 - (4t-3)$\vphantom{$\dfrac{7 -y}{4} \leq 3y + 1$}
 \item  $\dfrac{7 -y}{4} \geq 3y + 1$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $0.05R + 1.2 > 0.8 - 0.25R$\vphantom{$\dfrac{10m+1}{5} \geq 2m - \dfrac{1}{2}$}
 \item $7 - (2-x) \leq x+3$\vphantom{$\dfrac{10m+1}{5} \geq 2m - \dfrac{1}{2}$}
+\item $\dfrac{10m+1}{5} \geq 2m - \dfrac{1}{2}$ 
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -440,11 +624,9 @@ In Exercises \ref{linineqnexfirst0} - \ref{linineqnexlast0}, solve the given ine
 
 \item $x \sqrt{12} - \sqrt{3} > \sqrt{3} x + \sqrt{27}$
 
-\item $-\dfrac{1}{2} \leq 5x - 3 \leq \dfrac{1}{2}$\vphantom{$-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$}
+\item  $2t - 7 \leq \sqrt[3]{18} t$
 
-\item $-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$
-
-
+\item   $117y \geq y\sqrt{2} - 7y \sqrt[4]{8}$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -455,11 +637,121 @@ In Exercises \ref{linineqnexfirst0} - \ref{linineqnexlast0}, solve the given ine
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
+\item $-\dfrac{1}{2} \leq 5x - 3 \leq \dfrac{1}{2}$\vphantom{$-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$}
+\item $-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$
+\item $-0.1 \leq \dfrac{5-x}{3} - 2 < 0.1$\vphantom{$-\dfrac{3}{2} \leq \dfrac{4 - 2t}{10} < \dfrac{7}{6}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $2y \leq 3-y < 7$
+
 \item  $3x \geq 4-x \geq 3$
 
-\item   $4-x \leq 0$ \text{or} $2x+7 < x$
+\item  $6-5t > \dfrac{4t}{3} \geq t - 2$
 
-\item   $\dfrac{5-2x}{3} > x$ \text{or} $2x + 5 \geq 1$ \label{linineqnexlast0}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item   $2x+1 \leq -1$ \text{or} $2x+1 \geq 1$ 
+\item   $4-x \leq 0$ \text{or} $2x+7 < x$
+\item   $\dfrac{5-2x}{3} > x$ \text{or} $2x + 5 \geq 1$ \label{linineqnexlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\newpage
+
+\section{Answers}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $x = \dfrac{18}{7}$
+\item $t = -\dfrac{1}{30}$
+\item $w = \dfrac{61}{33}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $y = 50000$
+\item  All real numbers.
+\item  No solution.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $t = -\dfrac{5}{3\sqrt{7}} = -\dfrac{5\sqrt{7}}{21}$\vphantom{$x = \dfrac{27}{18+\sqrt{7}}$}
+\item  $y = \dfrac{6}{17\sqrt{2}}  = \dfrac{3 \sqrt{2}}{17}$\vphantom{$x = \dfrac{27}{18+\sqrt{7}}$}
+\item  $x = \dfrac{27}{18+\sqrt{7}}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $y = \dfrac{4 - 3x}{2}$ or $y = -\dfrac{3}{2}x + 2$
+\item  $x = \dfrac{4 - 2y}{3}$ or $x = -\dfrac{2}{3} y + \dfrac{4}{3}$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $C = \dfrac{5}{9}(F - 32)$ or  $C = \dfrac{5}{9} F - \dfrac{160}{9}$
+\item  $x = \dfrac{p - 15}{-2.5} = \dfrac{15-p}{2.5}$ or $x = -\dfrac{2}{5} p + 6$.
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $x = \dfrac{C - 1000}{200}$ or $x = \dfrac{1}{200} C - 5$
+\item  $y = \dfrac{x-7}{4}$ or $y = \dfrac{1}{4} x - \dfrac{7}{4}$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $w = \dfrac{3v+1}{v}$, provided $v \neq 0$.
+\item  $v = \dfrac{1}{w-3}$, provided $w \neq 3$.
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $y = \dfrac{3x+1}{x-2}$, provided $x \neq 2$.
+\item $\pi = \dfrac{C}{2r}$, provided $r \neq 0$.
 
 
 \setcounter{HW}{\value{enumi}}
@@ -467,4 +759,120 @@ In Exercises \ref{linineqnexfirst0} - \ref{linineqnexlast0}, solve the given ine
 \end{multicols}
 
 
-\closegraphsfile
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $V = \dfrac{nRT}{P}$, provided $P \neq 0$.
+\item $R = \dfrac{PV}{nT}$, provided $n \neq 0, T \neq 0$.
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $g = \dfrac{E}{mh}$, provided $m \neq 0, h \neq 0$.
+\item $m = \dfrac{2E}{v^2}$, provided $v^2 \neq 0$ (so $v \neq 0$).
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $V_{\text{\tiny $2$}} = \dfrac{P_{\text{\tiny $1$}}V_{\text{\tiny $1$}}}{P_{\text{\tiny $2$}}}$, provided $P_{\text{\tiny $2$}} \neq 0$. 
+\item $t = \dfrac{x - x_{\text{\tiny $0$}}}{a}$, provided $a \neq 0$.
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $x = \dfrac{y-y_{\text{\tiny $0$}} + mx_{\text{\tiny $0$}}}{m}$ or $x = x_{\text{\tiny $0$}} + \dfrac{y-y_{\text{\tiny $0$}}}{m}$, provided $m \neq 0$. 
+\item $T_{\text{\tiny $1$}} = \dfrac{mcT_{\text{\tiny $2$}} - q}{mc}$ or $T_{\text{\tiny $1$}} = T_{\text{\tiny $2$}} - \dfrac{q}{mc} $, provided $m \neq 0, c \neq 0$.  
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\addtocounter{enumi}{1}
+\item $\left(-\infty, \dfrac{3}{4}\right]$
+\item $\left(-\infty, \dfrac{7}{6} \right)$  
+\item  $\left( -\infty,  \dfrac{3}{13}\right]$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\left(-\dfrac{4}{3}, \infty\right)$
+\item No solution.\vphantom{$\left(-\dfrac{4}{3}, \infty\right)$}
+\item $(-\infty, \infty)$\vphantom{$\left(-\dfrac{4}{3}, \infty\right)$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(4, \infty)$\vphantom{$\left[ \dfrac{7}{2 - \sqrt[3]{18}}, \infty\right)$
+}
+
+\item  $\left[ \dfrac{7}{2 - \sqrt[3]{18}}, \infty\right)$
+
+\item   $[0, \infty)$\vphantom{$\left[ \dfrac{7}{2 - \sqrt[3]{18}}, \infty\right)$
+}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\left[ \dfrac{1}{2}, \dfrac{7}{10}\right]$
+\item $\left(-\dfrac{23}{6}, \dfrac{19}{2} \right]$
+\item $\left(-\dfrac{13}{10}, -\dfrac{7}{10} \right]$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $(-4,1]$\vphantom{$\left[-6, \dfrac{18}{19} \right)$}
+
+\item  $\{1 \} = [1,1]$ \vphantom{$\left[-6, \dfrac{18}{19} \right)$}
+
+\item  $\left[-6, \dfrac{18}{19} \right)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $(-\infty, -1] \cup [0, \infty)$ 
+\item   $(-\infty, -7) \cup [4, \infty)$
+\item   $(-\infty, \infty)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\end{document}

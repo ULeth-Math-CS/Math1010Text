@@ -1,25 +1,68 @@
-\mfpicnumber{1}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
+\documentclass[11pt]{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
+\usepackage{colortbl}
+\usepackage{import, multicol,boxedminipage}
+\usepackage{graphicx}
+\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
+\usepackage[all]{hypcap}
+\definecolor{ResultColor}{gray}{0.9}
+\theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
+\newtheorem{defn}{\bf Definition}
+\newtheorem{thm}{\bf Theorem}
+\newtheorem{cor}[thm]{\bf Corollary}
+\newtheorem{eqn}{\bf Equation}
+\newtheorem{ex}{\bf Example}
+\newtheorem{fig}{\bf Figure}
+\setlength{\parindent}{0in}
+\newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
+\newcommand{\ebm}{\end{boxedminipage}}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+\allowdisplaybreaks[2]
+\usepackage{cancel}
+\usepackage{sectsty}
+\usepackage{textcomp}
+\usepackage{multirow}
 \usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+	%% The 'lf' option for lining figures
+	%% The 'sfdefault' option to make the base font sans serif
+	\usepackage[T1]{fontenc}
+	\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage[nottoc]{tocbibind}
+\allsectionsfont{\mdseries \scshape}
+\makeatletter
+\renewcommand\l@section{\@dottedtocline{1}{1.5em}{3em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{4.5em}{3.5em}}
+\makeatother
+\pagestyle{fancy}
+\newcounter{HW}
+\newcounter{HWindent}
+%\makeindex
+
+\title{Review \#2: Absolute Value Equations and Inequalities}
+\author{Carl Stitz and Jeff Zeager\\
+Edited by Sean Fitzpatrick}
 \begin{document}
-}
-\opengraphsfile{AbsValEqIneq}
+\maketitle
 
-\setcounter{footnote}{0}
 
-\label{AbsValEqIneq}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+\lhead[\fancyplain{}{\sc\thepage}]%
+      {\fancyplain{}{\sc \nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\sc \nouppercase{\leftmark}}]%
+      {\fancyplain{}{\sc\thepage}}
+\cfoot{}
 
-In this section, we review some basic concepts involving the absolute value of a real number $x$.  There are a few different ways to define absolute value and in this section we choose the following definition.  (Absolute value will be revisited in much greater depth in Section \ref{AbsoluteValueFunctions} where we present what one can think of as the ``precise'' definition.)
+
+In this section, we review some basic concepts involving the absolute value of a real number $x$.  There are a few different ways to define absolute value and in this section we choose the following definition.  (Absolute value will be revisited in much greater depth in the Math 1010 textbook, where we present what one can think of as the ``precise'' definition.)
 
 \medskip
 
 \colorbox{ResultColor}{\bbm
 
-\begin{defn}\label{absvaldistdefn}{\bf Absolute Value as Distance:}  For every real number $x$, the \textbf{absolute value}\index{absolute value} of $x$, denoted $|x|$, is the distance between $x$ and $0$ on the number line.  More generally, if $x$ and $c$ are real numbers, $|x-c|$ is the distance between the numbers $x$ and $c$ on the number line.
+\begin{defn}\label{absvaldistdefn}{\bf Absolute Value as Distance:}  For every real number $x$, the \textbf{absolute value} of $x$, denoted $|x|$, is the distance between $x$ and $0$ on the number line.  More generally, if $x$ and $c$ are real numbers, $|x-c|$ is the distance between the numbers $x$ and $c$ on the number line.
 
 \end{defn}
 
@@ -31,17 +74,7 @@ For example, $|5| = 5$ and $|-5| = 5$, since each is $5$ units from $0$ on the n
 
 \begin{center}
 
-\begin{mfpic}[20]{-6}{6}{-1}{2}
-\arrow \reverse \arrow \polyline{(-6,0), (6,0)}
-\arrow \reverse \arrow \polyline{(-5,1), (0,1)}
-\arrow \reverse \arrow \polyline{(5,1), (0,1)}
-\point[3pt]{(-5,0), (5,0)}
-\tlabel[cc](-2.5,1.5){distance is $5$ units}
-\tlabel[cc](2.5,1.5){distance is $5$ units}
-\xmarks{-5,-4,-3,-2,-1,0,1,2,3,4,5}
-\tlpointsep{4pt}
-\axislabels {x}{{$-5 \hspace{10pt}$} -5,{$-4 \hspace{10pt}$} -4,{$-3 \hspace{10pt}$} -3,{$-2 \hspace{10pt}$} -2,{$-1 \hspace{10pt}$} -1,{$0$} 0,{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4, {$5$} 5}
-\end{mfpic}
+\includegraphics{AbsValEqIneq-1}
 
 Graphically why $|-5| = 5$ and $|5| = 5$
 
@@ -51,18 +84,9 @@ Computationally, the absolute value `makes negative numbers positive',  though w
 
 \begin{center}
 
-\begin{mfpic}[20]{-5}{5}{-1}{2}
-\arrow \reverse \arrow \polyline{(-5,0), (5,0)}
-\arrow \reverse \arrow \polyline{(-4,1), (4,1)}
-\point[3pt]{(-4,0), (4,0)}
-\tlabel[cc](0,1.5){distance is $2$ units}
-\xmarks{-4, 0, 4}
-\tlpointsep{4pt}
-\axislabels {x}{{$5$} -4,{$6$} 0,{$7$} 4}
+\includegraphics{AbsValEqIneq-2}
 
-\end{mfpic}
-
-Graphically why $|5-7| = 2$
+Graphical illustration of why $|5-7| = 2$
 
 \end{center}
 
@@ -71,15 +95,15 @@ We list some of the operational properties of absolute value below.
 \medskip
 
 \colorbox{ResultColor}{\bbm
-\begin{thm}  \textbf{Properties of Absolute Value:} Let $a$, $b$ and $x$ be real numbers and let $n$ be an integer.\footnote{See page \pageref{setsofnumbersboxonthispage} if you don't remember what an integer is.}  Then \index{absolute value ! properties of}\label{absolutevalueprops0} 
+\begin{thm}  \textbf{Properties of Absolute Value:} Let $a$, $b$ and $x$ be real numbers and let $n$ be an integer. Then \label{absolutevalueprops} 
 
 \begin{itemize}
 
-\item {\bf Products:} $|ab|= |a||b|$ \index{product rule ! for absolute value}
+\item {\bf Product Rule:} $|ab|= |a||b|$ 
 
-\item {\bf Powers:} $\left| a^{n} \right| = |a|^{n}$ whenever $a^{n}$ is defined \index{power rule ! for absolute value}
+\item {\bf Power Rule:} $\left| a^{n} \right| = |a|^{n}$ whenever $a^{n}$ is defined 
 
-\item {\bf Quotients:} $\left| \dfrac{a}{b} \right| = \dfrac{|a|}{|b|}$, provided $b \neq 0$ \index{quotient rule ! for absolute value}
+\item {\bf Quotient Rule:} $\left| \dfrac{a}{b} \right| = \dfrac{|a|}{|b|}$, provided $b \neq 0$ 
 
 \end{itemize}
 
@@ -89,9 +113,9 @@ We list some of the operational properties of absolute value below.
 
 \medskip
 
-The proof of Theorem \ref{absolutevalueprops0} will be discussed using a more ``precise'' definition in Section \ref{AbsoluteValueFunctions}.  For now, let's focus on how to solve basic equations and inequalities involving the absolute value.
+The proof of Theorem \ref{absolutevalueprops} is difficult, but not impossible, using the distance definition of absolute value or even the `it makes negatives positive' notion.  It is, however, much easier if one uses the ``precise'' definition given in the textbook, so we will omit the proof for now. For now, let's focus on how to solve basic equations and inequalities involving the absolute value.
 
-\subsection{Absolute Value Equations}
+\section{Absolute Value Equations}
 \label{basicabsvaleqns}
 
 Thinking of absolute value in terms of distance gives us a geometric way to interpret equations.  For example, to solve $|x| = 3$, we are looking for all real numbers $x$ whose distance from $0$ is $3$ units.  If we move three units to the right of $0$, we end up at $x = 3$.  If we move three units to the left, we end up at $x = -3$.  Thus the solutions to  $|x| = 3$ are $x = \pm 3$.  
@@ -99,18 +123,7 @@ Thinking of absolute value in terms of distance gives us a geometric way to inte
 
 \begin{center}
 
-\begin{mfpic}[20]{-6}{6}{-1}{2}
-\arrow \reverse \arrow \polyline{(-6,0), (6,0)}
-\arrow \reverse \arrow \polyline{(-4,1), (0,1)}
-\arrow \reverse \arrow \polyline{(4,1), (0,1)}
-\point[3pt]{(-4,0), (4,0)}
-\tlabel[cc](2,1.5){\small $3$ units}
-\tlabel[cc](-2,1.5){\small $3$ units}
-\xmarks{-4, 0, 4}
-\tlpointsep{4pt}
-\axislabels {x}{{$-3 \hspace{10pt}$} -4,{$0$} 0,{$3$} 4}
-
-\end{mfpic}
+\includegraphics{AbsValEqIneq-3}
 
 The solutions to  $|x| = 3$ are $x = \pm 3$.  
 
@@ -173,9 +186,9 @@ In order to solve an equation involving the absolute value of a quantity $|X|$:
 
 \medskip
 
-The techniques we use to `isolate the absolute value' are precisely those we used in Section \ref{LinearEqIneq} to isolate the variable when solving linear equations.  Time for some practice.
+The techniques we use to `isolate the absolute value' are precisely those we used in the handout on solving linear equations and inequalities (Review \#1) to isolate the variable when solving linear equations.  Time for some practice.
 
-\begin{ex} \label{absvalueeqnex0}  Solve each of the following equations.
+\begin{ex} \label{absvalueeqnex}  Solve each of the following equations.
 
 \begin{multicols}{3}
 \begin{enumerate}
@@ -234,7 +247,7 @@ The techniques we use to `isolate the absolute value' are precisely those we use
 \end{ex}
 
 
-\subsection{Absolute Value Inequalities}
+\section{Absolute Value Inequalities}
 \label{basicabsvalineq}
 
 We now turn our attention to solving some basic inequalities involving the absolute value.  Suppose we wished to solve $|x| < 3$.  Geometrically, we are looking for all of the real numbers whose distance from $0$ is \textit{less} than $3$ units.  We get $-3 < x < 3$, or in interval notation, $(-3,3)$.  Suppose we are asked to solve $|x| > 3$ instead.  Now we want the distance between $x$ and $0$ to be \textit{greater} than $3$ units.  Moving in the positive direction, this means $x > 3$.  In the negative direction, this puts $x < -3$.  Our solutions would then satisfy $x < -3$ \textit{or} $x > 3$.  In interval notation, we express this as $(-\infty, -3) \cup (3, \infty)$.  
@@ -244,41 +257,11 @@ We now turn our attention to solving some basic inequalities involving the absol
 
 \begin{tabular}{cc}
 
-\begin{mfpic}[15]{-6}{6}{-1}{2}
-\arrow \reverse \arrow \polyline{(-6,0), (6,0)}
-\arrow \reverse \arrow \polyline{(-4,1), (0,1)}
-\arrow \reverse \arrow \polyline{(4,1), (0,1)}
-\tlabel[cc](2,1.5){\small $3$ units}
-\tlabel[cc](-2,1.5){\small $3$ units}
-\xmarks{-4, 0, 4}
-\penwd{1.5pt}
-\polyline{(-4,0), (4,0)}
-\pointfillfalse
-\point[4pt]{(-4,0), (4,0)}
-\tlpointsep{4pt}
-\axislabels {x}{{$-3 \hspace{10pt}$} -4,{$0$} 0,{$3$} 4}
-
-\end{mfpic}
+\includegraphics{AbsValEqIneq-4}
 
 & 
 
-\begin{mfpic}[15]{-6}{6}{-1}{2}
-\arrow \reverse \arrow \polyline{(-6,0), (6,0)}
-\arrow \reverse \arrow \polyline{(-4,1), (0,1)}
-\arrow \reverse \arrow \polyline{(4,1), (0,1)}
-\point[3pt]{(-4,0), (4,0)}
-\tlabel[cc](2,1.5){\small $3$ units}
-\tlabel[cc](-2,1.5){\small $3$ units}
-\xmarks{-4, 0, 4}
-\penwd{1.5pt}
-\arrow \polyline{(-4,0), (-6,0)}
-\arrow \polyline{(4,0), (6,0)}
-\pointfillfalse
-\point[4pt]{(-4,0), (4,0)}
-\tlpointsep{4pt}
-\axislabels {x}{{$-3 \hspace{10pt}$} -4,{$0$} 0,{$3$} 4}
-
-\end{mfpic}
+\includegraphics{AbsValEqIneq-5}
 
 \\
 
@@ -296,7 +279,7 @@ Generalizing this notion, we get the following:
 \medskip
 
 \colorbox{ResultColor}{\bbm
-\begin{thm}  \label{absolutevalueineq0} \textbf{Inequalities Involving Absolute Value:}  Let $c$ be a real number. \index{inequality ! absolute value} \index{absolute value ! inequality}
+\begin{thm}  \label{absolutevalueineq} \textbf{Inequalities Involving Absolute Value:}  Let $c$ be a real number.  
 
 \begin{itemize}
 
@@ -367,7 +350,21 @@ In order to solve an inequality involving the absolute value of a quantity $|X|$
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+
+
+\item  $2 < |x-1| \leq 5$\vphantom{$\left|\sqrt{10} x - 5 \right| + \left|\sqrt{10} - 5x \right| \leq 0$
+}
+
+\item  $|10 x - 5| +|10 - 5x| \leq 0$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 {\bf Solution.}  
 
@@ -404,26 +401,55 @@ In order to solve an inequality involving the absolute value of a quantity $|X|$
 \item  The inequality  $|2x - 1| \leq 3|4 - 8x| + 10$ differs from the previous example in exactly one respect: on the right side of the inequality, we have `$+10$' instead of `$-10$.' The steps to isolate the absolute value here are identical to those in the previous example, but instead of obtaining $|2x - 1| \geq  \frac{10}{11}$ as before, we obtain $|2x - 1| \geq  -\frac{10}{11}$.  This latter inequality is \textit{always} true. (Absolute value is, by definition, a distance and hence always $0$ or greater.)  Thus our solution to this inequality is all real numbers, $(-\infty, \infty)$.
 
 
-%\item  To solve  $2 < |x-1| \leq 5$, we rewrite it as the compound inequality: $2 < |x-1|$ \textit{and} $|x-1| \leq 5$.   The first inequality, $2 < |x-1|$, can be re-written as $|x-1|>2$ so it is equivalent to  $x-1 < -2$ \textit{or} $x-1 > 2$.  Thus the solution to $2 < |x-1|$ is $x<-1$ or $x>3$, which in interval notation is  $(-\infty, -1) \cup (3, \infty)$.  For $|x-1| \leq 5$, we combine the results of Theorems \ref{absvalequality} and \ref{absolutevalueineq} to get $-5 \leq x-1 \leq 5$ so that $-4 \leq x \leq 6$, or $[-4,6]$.  Our solution to   $2 < |x-1| \leq 5$ is comprised of values of $x$ which satisfy both parts of the inequality, so we intersect $(-\infty, -1) \cup (3, \infty)$ with $[-4,6]$ to get our final answer $[-4,-1) \cup (3,6]$. 
+\item  To solve  $2 < |x-1| \leq 5$, we rewrite it as the compound inequality: $2 < |x-1|$ \textit{and} $|x-1| \leq 5$.   The first inequality, $2 < |x-1|$, can be re-written as $|x-1|>2$ so it is equivalent to  $x-1 < -2$ \textit{or} $x-1 > 2$.  Thus the solution to $2 < |x-1|$ is $x<-1$ or $x>3$, which in interval notation is  $(-\infty, -1) \cup (3, \infty)$.  For $|x-1| \leq 5$, we combine the results of Theorems \ref{absvalequality} and \ref{absolutevalueineq} to get $-5 \leq x-1 \leq 5$ so that $-4 \leq x \leq 6$, or $[-4,6]$.  Our solution to   $2 < |x-1| \leq 5$ is comprised of values of $x$ which satisfy both parts of the inequality, so we intersect $(-\infty, -1) \cup (3, \infty)$ with $[-4,6]$ to get our final answer $[-4,-1) \cup (3,6]$. 
 
-%\item Our first hope when encountering $|10 x - 5| + |10 - 5x| \leq 0$ is that we can somehow combine the two absolute value quantities as we'd done in earlier examples.  We leave it to the reader to show, however, that no matter what we try to factor out of the absolute value quantities, what remains inside the absolute values will always be different.  At this point, we take a step back and look at the equation in a more general way:  we are adding two absolute values together and wanting the result to be less than or equal to $0$.  Since the absolute value of anything is always $0$ or greater, there are no solutions to:  $|10x - 5| + |10 - 5x| < 0$.  Is it possible that $|10x - 5| + |10 - 5x| = 0$?  Only if there is an $x$ where $|10x-5| = 0$ and $|10-5x| = 0$ \textit{at the same time}.\footnote{Do you see why?}  The first equation holds only when $x = \frac{1}{2}$, while the second holds only when $x = 2$.  Alas, we have no solution. \qed
+\item Our first hope when encountering $|10 x - 5| + |10 - 5x| \leq 0$ is that we can somehow combine the two absolute value quantities as we'd done in earlier examples.  We leave it to the reader to show, however, that no matter what we try to factor out of the absolute value quantities, what remains inside the absolute values will always be different.  At this point, we take a step back and look at the equation in a more general way:  we are adding two absolute values together and wanting the result to be less than or equal to $0$.  Since the absolute value of anything is always $0$ or greater, there are no solutions to:  $|10x - 5| + |10 - 5x| < 0$.  Is it possible that $|10x - 5| + |10 - 5x| = 0$?  Only if there is an $x$ where $|10x-5| = 0$ and $|10-5x| = 0$ \textit{at the same time}.\footnote{Do you see why?}  The first equation holds only when $x = \frac{1}{2}$, while the second holds only when $x = 2$.  Alas, we have no solution.\footnote{Not for lack of trying, however!}   \qed
 
 \end{enumerate}
 
 \end{ex}
 
-\newpage
-\subsection{Exercises}
+We close this section with an example of how the properties in Theorem \ref{absolutevalueprops} are used in Calculus.  Here, `$\varepsilon$' is the Greek letter `epsilon' and it represents a positive real number.  Those of you who will be taking Calculus in the future should become \emph{very} familiar with this type of algebraic manipulation.\[ \begin{array}{rclr}
 
-In Exercises \ref{solveabsvalequfirst0} - \ref{solveabsvalequlast0}, solve the equation.
+\left| \dfrac{8-4x}{3} \right| & < & \varepsilon & \\ [12pt]
+
+\dfrac{|8 - 4x|}{|3|} & < & \varepsilon & \text{Quotient Rule}\\ [12pt]
+
+\dfrac{|-4(x-2)|}{3} & < & \varepsilon & \text{Factor} \\ [12pt]
+
+\dfrac{|-4| |x-2|}{3} & < & \varepsilon & \text{Product Rule} \\ [12pt]
+
+\dfrac{4 |x-2|}{3} & < & \varepsilon & \\ [12pt]
+
+\dfrac{3}{4} \cdot \dfrac{4 |x-2|}{3} & < & \dfrac{3}{4} \cdot \varepsilon & \text{Multiply by $\dfrac{3}{4}$} \\ [12pt]
+
+|x -2 | & < & \dfrac{3}{4} \varepsilon & \\  \end{array}\]
+
+\newpage
+
+\section{Exercises}
+
+In Exercises \ref{solveabsvalequfirst} - \ref{solveabsvalequlast}, solve the equation.
 
 
 \begin{multicols}{3}
 \begin{enumerate}
 
-\item  $|x| = 6$ \label{solveabsvalequfirst0} 
+\item  $|x| = 6$ \label{solveabsvalequfirst} 
 \item $|3t-1| = 10$
 \item $|4-w| = 7$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $4 - |y| = 3$
+\item $2|5m+1| - 3 = 0$
+\item $|7x-1| + 2 = 0$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -459,9 +485,22 @@ In Exercises \ref{solveabsvalequfirst0} - \ref{solveabsvalequlast0}, solve the e
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
+\item $|3t - 2| = |2t + 7|$  
+\item $|3x+1| = |4x|$
+\item $|1-\sqrt{2} y| = |y+1|$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
 \item  $|4-x| - |x+2| = 0$
 \item $|2-5z| = 5 |z+1|$
-\item $\sqrt{3}|w-1| = 2|w+1|$ \label{solveabsvalequlast0}
+\item $\sqrt{3}|w-1| = 2|w+1|$ \label{solveabsvalequlast}
 
 
 \setcounter{HW}{\value{enumi}}
@@ -469,18 +508,30 @@ In Exercises \ref{solveabsvalequfirst0} - \ref{solveabsvalequlast0}, solve the e
 \end{multicols}
 
 
-In Exercises \ref{solveinequabsquadfirst0} - \ref{solveinequabsquadlast0}, solve the inequality.  Write your answer using interval notation. 
+In Exercises \ref{solveinequabsquadfirst} - \ref{solveinequabsquadlast}, solve the inequality.  Write your answer using interval notation. 
 
 \begin{multicols}{3}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
-\item $|3x - 5| \leq 4$ \label{solveinequabsquadfirst0}
+\item $|3x - 5| \leq 4$ \label{solveinequabsquadfirst}
 \item $|7t + 2| > 10$
 \item $|2w+1| - 5 < 0$   
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $|2-y| - 4 \geq -3$
+\item $|3z+5| + 2 < 1$   
+\item $2|7-v| +4 > 1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 \begin{multicols}{3}
 \begin{enumerate}
@@ -501,12 +552,179 @@ In Exercises \ref{solveinequabsquadfirst0} - \ref{solveinequabsquadlast0}, solve
 
 \item  $2 \leq |4-y| < 7$ 
 \item $1 < |2w - 9| \leq 3$ 
-\item  $3 > 2|\sqrt{3} - x| > 1$ \label{solveinequabsquadlast0}
+\item  $3 > 2|\sqrt{3} - x| > 1$ \label{solveinequabsquadlast}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  With help from your classmates, solve:
+\begin{enumerate}
+\item  $|5 - |2x-3|| = 4$
+\item   $|5 - |2x-3|| < 4$
+ 
+\end{enumerate}
+
+\end{enumerate}
+
+
+\newpage
+
+\section{Answers}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $x = -6$ or $x=6$ \vphantom{$t = -3$ or $t= \dfrac{11}{3}$}
+
+\item $t = -3$ or $t= \dfrac{11}{3}$
+
+\item $w = -3$ or $w= 11$ \vphantom{$t = -3$ or $t= \dfrac{11}{3}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $y = -1$ or $y= 1$\vphantom{$m=-\dfrac{1}{2}$ or $m= \dfrac{1}{10}$}
+
+\item $m=-\dfrac{1}{2}$ or $m= \dfrac{1}{10}$
+
+\item No solution\vphantom{$m=-\dfrac{1}{2}$ or $m= \dfrac{1}{10}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x=-3$ or $x= 3$\vphantom{$t = \dfrac{\sqrt{2} \pm 2}{3}$}
+
+\item $w = -\dfrac{13}{8}$ or $w= \dfrac{53}{8}$\vphantom{$t = \dfrac{\sqrt{2} \pm 2}{3}$}
+
+\item $t = \dfrac{\sqrt{2} \pm 2}{3}$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $v = -1$ or $v = 0$ \vphantom{$y = \dfrac{3}{2}$}
+
+\item  No solution\vphantom{$y = \dfrac{3}{2}$}
+
+\item  $y = \dfrac{3}{2}$
+
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
 
 
+\begin{multicols}{3} 
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
-\closegraphsfile
+\item $t = -1$ or $t = 9$\vphantom{$x = -\dfrac{1}{7}$ or $x = 1$}
+
+\item $x = -\dfrac{1}{7}$ or $x = 1$
+
+\item $y = 0$ or $y = \dfrac{2}{\sqrt{2} - 1}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3} 
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x=1$\vphantom{$w = \dfrac{\sqrt{3} \pm 2}{\sqrt{3} \mp 2}$}
+
+\item $z = -\dfrac{3}{10}$\vphantom{$w = \dfrac{\sqrt{3} \pm 2}{\sqrt{3} \mp 2}$}
+
+\item $w = \dfrac{\sqrt{3} \pm 2}{\sqrt{3} \mp 2}$ 
+
+See footnote\footnote{That is, $w = \dfrac{\sqrt{3} + 2}{\sqrt{3} - 2}$ or $w = \dfrac{\sqrt{3} - 2}{\sqrt{3} + 2}$} 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\left[\dfrac{1}{3}, 3\right]$\vphantom{$\left(-\infty, -\dfrac{12}{7} \right) \cup \left(\dfrac{8}{7}, \infty\right)$}  
+\item $\left(-\infty, -\dfrac{12}{7} \right) \cup \left(\dfrac{8}{7}, \infty\right)$
+\item $(-3,2)$\vphantom{$\left(-\infty, -\dfrac{12}{7} \right) \cup \left(\dfrac{8}{7}, \infty\right)$}  
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+ 
+\item $(-\infty,1] \cup [3,\infty)$
+\item No solution  
+\item $(-\infty, \infty)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $(-\infty, -6-\sqrt{5}) \cup (6-\sqrt{5}, \infty)$ \vphantom{$\left[ -\dfrac{3}{4}, \dfrac{3}{4}\right]$}
+\item $\left[ -\dfrac{3}{4}, \dfrac{3}{4}\right]$   
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item No solution 
+\item $(-3,2] \cup [6,11)$
+
+\item $[3, 4) \cup (5, 6]$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\left(\dfrac{2 \sqrt{3} - 3}{2},  \dfrac{2 \sqrt{3} - 1}{2}   \right) \cup \left(\dfrac{2 \sqrt{3} +1}{2},  \dfrac{2 \sqrt{3} +3}{2}   \right)$
+
+\item  \begin{enumerate} \item $x = -3$, or $x = 1$, or $x = 2$, or $x = 6$
+
+\item $(-3,1) \cup (2,6)$
+
+\end{enumerate}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+\end{document}

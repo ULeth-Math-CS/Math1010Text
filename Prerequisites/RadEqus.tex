@@ -1,19 +1,141 @@
-\mfpicnumber{1}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
+\documentclass[11pt]{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
+\usepackage{colortbl}
+\usepackage{import, multicol,boxedminipage}
+\usepackage{graphicx}
+\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
+\usepackage[all]{hypcap}
+\definecolor{ResultColor}{gray}{0.9}
+\theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
+\newtheorem{defn}{\bf Definition}
+\newtheorem{thm}{\bf Theorem}
+\newtheorem{cor}[thm]{\bf Corollary}
+\newtheorem{eqn}{\bf Equation}
+\newtheorem{ex}{\bf Example}
+\newtheorem{fig}{\bf Figure}
+\setlength{\parindent}{0in}
+\newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
+\newcommand{\ebm}{\end{boxedminipage}}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+\allowdisplaybreaks[2]
+\usepackage{cancel}
+\usepackage{sectsty}
+\usepackage{textcomp}
+\usepackage{multirow}
 \usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+	%% The 'lf' option for lining figures
+	%% The 'sfdefault' option to make the base font sans serif
+	\usepackage[T1]{fontenc}
+	\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage[nottoc]{tocbibind}
+\allsectionsfont{\mdseries \scshape}
+\makeatletter
+\renewcommand\l@section{\@dottedtocline{1}{1.5em}{3em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{4.5em}{3.5em}}
+\makeatother
+\pagestyle{fancy}
+\newcounter{HW}
+\newcounter{HWindent}
+
+\title{Review \#7: Radical Equations and Expressions}
+\author{Carl Stitz and Jeff Zeager\\
+Edited by Sean Fitzpatrick}
+
 \begin{document}
-}
-\opengraphsfile{RadEqus}
+\maketitle
 
-\setcounter{footnote}{0}
 
-\label{RadEqus}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+\lhead[\fancyplain{}{\sc\thepage}]%
+      {\fancyplain{}{\sc \nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\sc \nouppercase{\leftmark}}]%
+      {\fancyplain{}{\sc\thepage}}
+\cfoot{}
 
-In this section we review simplifying expressions and solving equations involving radicals.  In addition to the product, quotient and power rules stated in Theorem \ref{radicalprops0} in Section \ref{RealNumberArithmetic},  we present the following result which states that $n^{\text{th}}$ roots and $n^{\text{th}}$ powers more or less `undo' each other.
+
+In this handout we review simplifying expressions and solving equations involving radicals.  
+We begin with a discussion of roots and radical notation.  Just as subtraction and division were defined in terms of the inverse of addition and multiplication, respectively, we define roots by undoing natural number exponents.
+
+\section{Radical expressions}
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn} \label{principalnthrootdefn} Let $a$ be a real number and let $n$ be a natural number.  If $n$ is odd, then the \index{$n^{\text{th}}$ root ! principal}\index{principal $n^{\text{th}}$ root}\textbf{principal \boldmath $n^{\textbf{th}}$ root} of $a$ (denoted $\sqrt[n]{a}$) is the unique real number satisfying $\left(\sqrt[n]{a}\right)^n = a$.  If $n$ is even, $\sqrt[n]{a}$ is defined similarly provided  $a \geq 0$ and $\sqrt[n]{a} \geq 0$.  The number $n$ is called the \index{root ! index}\index{index of a root}\textbf{index} of the root and the the number $a$ is called the \index{root ! radicand}\index{radicand}\textbf{radicand}.  For $n=2$, we write $\sqrt{a}$ instead of $\sqrt[2]{a}$.
+
+\end{defn}
+
+\ebm}
+
+\medskip
+
+The reasons for the added stipulations for even-indexed roots in Definition \ref{principalnthrootdefn} can be found in the Properties of Negatives.  First, for all real numbers,  $x^{\text{even power}} \geq 0$, which means it is never negative.  Thus if $a$ is a \textit{negative} real number, there are no real numbers $x$ with $x^{\text{even power}} = a$.  This is why if $n$ is even, $\sqrt[n]{a}$ only exists if $a \geq 0$.  The second restriction for even-indexed roots is that $\sqrt[n]{a} \geq 0$.  This comes from the fact that $x^{\text{even power}} = (-x)^{\text{even power}}$, and we require $\sqrt[n]{a}$ to have just one value.  So even though $2^{4} = 16$ and $(-2)^{4} = 16$, we require $\sqrt[4]{16} = 2$ and ignore $-2$.  
+
+\smallskip
+
+Dealing with odd powers is much easier. For example, $x^3 = -8$ has one and only one real solution, namely $x = -2$, which means not only does $\sqrt[3]{-8}$ exist, there is only one choice, namely $\sqrt[3]{-8} = -2$. Of course, when it comes to solving $x^{5213} = -117$, it's not so clear that there is one and only one real solution, let alone that the solution is $\sqrt[5213]{-117}$. Such pills are easier to swallow once we've thought a bit about such equations graphically, and ultimately, these things come from the completeness property of the real numbers mentioned earlier.  
+
+\smallskip
+
+We list properties of radicals below as a `theorem' since they can be justified using the properties of exponents.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm}  \textbf{Properties of Radicals:} Let $a$ and $b$ be real numbers and let $m$ and $n$ be natural numbers.  If $\sqrt[n]{a}$ and $\sqrt[n]{b}$ are real numbers, then\index{radical ! properties of}
+
+\label{radicalprops}
+
+\begin{itemize}
+
+\item  \textbf{Product Rule:}  $\sqrt[n]{ab} = \sqrt[n]{a} \, \sqrt[n]{b}$ \index{product rule ! for radicals}
+
+\item  \textbf{Quotient Rule:}  $\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$, provided $b \neq 0$. \index{quotient rule ! for radicals}
+
+\item  \textbf{Power Rule:} $\sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m$ \index{power rule ! for radicals}
+
+\end{itemize}
+
+\end{thm}
+
+\ebm}
+
+\medskip
+
+The proof of Theorem \ref{radicalprops} is based on the definition of the principal $n^{\textbf{th}}$ root and the Properties of Exponents.  To establish the product rule, consider the following.  If $n$ is odd, then by definition $\sqrt[n]{ab}$ is the \underline{unique} real number such that $(\sqrt[n]{ab})^{n} = ab$.  Given that $( \sqrt[n]{a} \, \sqrt[n]{b})^n = (\sqrt[n]{a})^n (\sqrt[n]{b})^n = ab$ as well, it must be the case that $\sqrt[n]{ab} = \sqrt[n]{a} \, \sqrt[n]{b}$. If $n$ is even, then $\sqrt[n]{ab}$ is the unique non-negative real number such that $(\sqrt[n]{ab})^{n} = ab$.  Note that since $n$ is even, $\sqrt[n]{a}$ and $\sqrt[n]{b}$ are also non-negative thus $\sqrt[n]{a}\sqrt[n]{b} \geq 0$ as well.  Proceeding as above, we find that $\sqrt[n]{ab} = \sqrt[n]{a} \, \sqrt[n]{b}$.  The quotient rule is proved similarly and is left as an exercise.  The power rule results from repeated application of the product rule, so long as $\sqrt[n]{a}$ is a real number to start with.\footnote{Otherwise we'd run into an interesting paradox.  See the handout on complex numbers.}   We leave that as an exercise as well.
+
+\smallskip
+
+We pause here to point out one of the most common errors students make when working with radicals.  Obviously $\sqrt{9} = 3$, $\sqrt{16} = 4$ and $\sqrt{9 + 16} = \sqrt{25} = 5$.  Thus we can clearly see that $5 = \sqrt{25} = \sqrt{9 + 16} \neq \sqrt{9} + \sqrt{16} = 3 + 4 = 7$ because we all know that $5 \neq 7$.  The authors urge you to never consider `distributing' roots or exponents.  It's wrong and no good will come of it because in general $\sqrt[n]{a+b} \neq \sqrt[n]{a} + \sqrt[n]{b}$. 
+
+\phantomsection
+\label{donotdistributeexponents}
+
+\smallskip
+
+Since radicals have properties inherited from exponents, they are often written as such.  We define rational exponents in terms of radicals in the box below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn}  \label{rationalexponentdefn} Let $a$ be a real number, let $m$ be an integer and let $n$ be a natural number. \index{rational exponent}
+
+\begin{itemize}
+
+\item  $a^{\frac{1}{n}} = \sqrt[n]{a}$ whenever $\sqrt[n]{a}$ is a real number.\footnote{If $n$ is even we need $a \geq 0$.}
+
+\item  $a^{\frac{m}{n}}  = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}$ whenever $\sqrt[n]{a}$ is a real number.
+
+\end{itemize}
+\end{defn}
+
+\ebm}
+
+
+We pause to note that from Definition \ref{principalnthrootdefn}, we can conclude  that $n^{\text{th}}$ roots and $n^{\text{th}}$ powers more or less `undo' each other, giving us the following Theorem. \footnote{This is best explained in the context of inverse functions: see your Math 1010 textbook.}
 
 \medskip
 
@@ -35,19 +157,19 @@ In this section we review simplifying expressions and solving equations involvin
 
 \medskip
 
-Since $\sqrt[n]{a}$ is \textit{defined} so that $(\sqrt[n]{a})^n = a$,  the first claim in the theorem is just a re-wording of  Definition \ref{principalnthrootdefn0}.  The second part of the theorem breaks down along odd/even exponent lines due to how exponents affect negatives. To see this, consider the specific cases of $\sqrt[3]{(-2)^3}$ and $\sqrt[4]{(-2)^{4}}$.  
+Since $\sqrt[n]{a}$ is \textit{defined} so that $(\sqrt[n]{a})^n = a$,  the first claim in the theorem is just a re-wording of  Definition \ref{principalnthrootdefn}.  The second part of the theorem breaks down along odd/even exponent lines due to how exponents affect negatives. To see this, consider the specific cases of $\sqrt[3]{(-2)^3}$ and $\sqrt[4]{(-2)^{4}}$.  
 
 \medskip
 
-In the first case,  $\sqrt[3]{(-2)^3} =\sqrt[3]{-8} = -2$, so we have an instance of when $\sqrt[n]{a^{n}} = a$.  The reason that the cube root `undoes' the third power in $\sqrt[3]{(-2)^3} = -2$ is because the negative is preserved when raised to the third (odd) power.  In  $\sqrt[4]{(-2)^{4}}$,  the negative `goes away' when raised to the fourth (even) power:$\sqrt[4]{(-2)^{4}} = \sqrt[4]{16}$.  According to Definition \ref{principalnthrootdefn0}, the fourth root is defined to give only \textit{non-negative} numbers, so $\sqrt[4]{16} = 2$.  Here we have a case where $\sqrt[4]{(-2)^{4}} = 2 = |-2|$, not $-2$. 
+In the first case,  $\sqrt[3]{(-2)^3} =\sqrt[3]{-8} = -2$, so we have an instance of when $\sqrt[n]{a^{n}} = a$.  The reason that the cube root `undoes' the third power in $\sqrt[3]{(-2)^3} = -2$ is because the negative is preserved when raised to the third (odd) power.  In  $\sqrt[4]{(-2)^{4}}$,  the negative `goes away' when raised to the fourth (even) power:$\sqrt[4]{(-2)^{4}} = \sqrt[4]{16}$.  According to Definition \ref{principalnthrootdefn}, the fourth root is defined to give only \textit{non-negative} numbers, so $\sqrt[4]{16} = 2$.  Here we have a case where $\sqrt[4]{(-2)^{4}} = 2 = |-2|$, not $-2$. 
 
 \medskip
 
-In general, we need the absolute values to simplify $\sqrt[n]{a^{n}}$ only when $n$ is even because a negative to an even power is always positive.  In particular, $\sqrt{x^2} = |x|$, not just `$x$' (unless we \textit{know} $x \geq 0$.)\footnote{If this discussion sounds familiar, see the discussion following Definition \ref{rationalexponentdefn0} and the discussion following `Extracting the Square Root' on page \pageref{extractingthesquareroot}.}  We practice these formulas in the following example.
+In general, we need the absolute values to simplify $\sqrt[n]{a^{n}}$ only when $n$ is even because a negative to an even power is always positive.  In particular, $\sqrt{x^2} = |x|$, not just `$x$' (unless we \textit{know} $x \geq 0$.)  We practice these formulas in the following example.
 
 \begin{ex}\label{simplifyradexpressions}  Perform the indicated operations and simplify.
 
-\begin{multicols}{3}
+\begin{multicols}{4}
 
 \begin{enumerate}
 
@@ -55,7 +177,7 @@ In general, we need the absolute values to simplify $\sqrt[n]{a^{n}}$ only when 
 
 \item  $\sqrt{t^2-10t+25}$\vphantom{$\sqrt[4]{\dfrac{\pi r^{4}}{L^{8}}}$}
 
-%\item  $\sqrt[3]{48x^{14}}$\vphantom{$\sqrt[4]{\dfrac{\pi r^{4}}{L^{8}}}$}
+\item  $\sqrt[3]{48x^{14}}$\vphantom{$\sqrt[4]{\dfrac{\pi r^{4}}{L^{8}}}$}
 
 \item  $\sqrt[4]{\dfrac{\pi r^{4}}{L^{8}}}$
 
@@ -83,11 +205,17 @@ In general, we need the absolute values to simplify $\sqrt[n]{a^{n}}$ only when 
 
 \begin{enumerate}
 
-\item We told you back on page \pageref{donotdistributeexponents} that roots do not `distribute' across addition and since $x^{2} + 1$ cannot be factored over the real numbers, $\sqrt{x^{2} + 1}$ cannot be simplified.  It may seem silly to start with this example but it is extremely important that you understand what manoeuvres are legal and which ones are not.\footnote{You really do need to understand this otherwise horrible evil will plague your future studies in Math.  If you say something totally wrong like $\sqrt{x^{2} + 1} = x + 1$ then you may never pass Calculus.  PLEASE be careful!}
+\item We told you back on page \pageref{donotdistributeexponents} that roots do not `distribute' across addition and since $x^{2} + 1$ cannot be factored over the real numbers, $\sqrt{x^{2} + 1}$ cannot be simplified.  It may seem silly to start with this example but it is extremely important that you understand what maneuvers are legal and which ones are not.\footnote{You really do need to understand this otherwise horrible evil will plague your future studies in Math.  If you say something totally wrong like $\sqrt{x^{2} + 1} = x + 1$ then you may never pass Calculus.  PLEASE be careful!}
 
 \item Again we note that $\sqrt{t^2-10t+25}  \neq \sqrt{t^2} - \sqrt{10t} + \sqrt{25}$, since radicals do \textit{not} distribute across addition and subtraction.\footnote{Let $t = 1$ and see what happens to $\sqrt{t^2-10t+25}$  versus $\sqrt{t^2} - \sqrt{10t} + \sqrt{25}$.}  In this case, however, we can factor the radicand and simplify as \[ \sqrt{t^2 - 10t + 25} = \sqrt{(t-5)^2} = |t-5| \]
 Without knowing more about the value of $t$, we have no idea if $t-5$ is positive or negative so $|t-5|$ is our final answer.\footnote{In general,  $|t-5| \neq |t| - |5|$ and  $|t-5| \neq t + 5$ so watch what you're doing!}
 
+\item  To simplify $\sqrt[3]{48x^{14}}$, we need to look for perfect cubes in the radicand.  For the cofficient, we have $48 = 8 \cdot 6 = 2^3 \cdot 6$.  To find the largest perfect cube factor in $x^{14}$, we divide $14$ (the exponent on $x$) by $3$ (since we are looking for a perfect \textit{cube}).  We get $4$ with a remainder of $2$.  This means $14 = 4 \cdot 3 + 2$, so $x^{14} = x^{4 \cdot 3 + 2} = x^{4 \cdot 3} x^2 = (x^4)^3 x^2$.  Putting this altogether gives:\[\begin{array}{rclr}
+
+\sqrt[3]{48x^{14}} & = & \sqrt[3]{2^3 \cdot 6 \cdot(x^4)^3 x^2} & \text{Factor out perfect cubes} \\ [2pt]
+                   & = & \sqrt[3]{2^3} \sqrt[3]{(x^4)^3} \sqrt[3]{6x^2} & \text{Rearrange factors,  Product Rule of Radicals} \\ [2pt]
+									 & = & 2x^4\sqrt[3]{6x^2} & \\
+\end{array} \]
 
 \item  In this example, we are looking for perfect fourth powers in the radicand.  In the numerator $r^4$ is clearly a perfect fourth power.  For the denominator, we take the power on the $L$, namely $12$, and divide by $4$ to get $3$.  This means $L^{8} = L^{2\cdot 4} = (L^2)^{4}$.  We get \[ \begin{array}{rclr}
 
@@ -122,7 +250,7 @@ Without knowing more about the value of $t$, we have no idea if $t-5$ is positiv
 \end{array}\] We cannot reduce this any further because $x^2 - 3$ is irreducible over the rational numbers. 
 
 
-\item  We begin by working inside each set of parentheses, using the product rule for radicals and combining like terms. (Note that the square root does \textbf{not} cancel with the two squared terms!)\[ \begin{array}{rclr}
+\item  We begin by working inside each set of parentheses, using the product rule for radicals and combining like terms.\[ \begin{array}{rclr}
 
 
  \sqrt{(\sqrt{18y} - \sqrt{8y})^2 + (\sqrt{20} - \sqrt{80})^2} & = & \sqrt{(\sqrt{9\cdot 2y} - \sqrt{4 \cdot 2y})^2 + (\sqrt{4\cdot 5} - \sqrt{16 \cdot 5})^2} & \\[8pt]
@@ -152,7 +280,7 @@ To see if this simplifies any further, we factor the radicand:  $\sqrt{2y+20} = 
 \end{ex}
 
 
-Theorem \ref{simplifyradicals} allows us to generalize the process of `Extracting Square Roots' to `Extracting $n^{\text{th}}$ roots' which in turn allows us to solve equations of the form $X^n  = c$.
+Theorem \ref{simplifyradicals} allows us to generalize the process of `Extracting Square Roots' to `Extracting $n^{\text{th}}$ roots' which in turn allows us to solve equations\footnote{Well, not entirely.  The equation $x^{7} = 1$ has seven answers: $x = 1$ and six complex number solutions. The techniques for finding complex roots are usually taught in Math 1410.} of the form $X^n  = c$.
 
 \phantomsection
 \label{extractingnthroots}
@@ -177,7 +305,7 @@ Theorem \ref{simplifyradicals} allows us to generalize the process of `Extractin
 
 \medskip
 
-Essentially, we solve $X^{n} = c$ by `taking the $n^{\text{th}}$ root' of both sides:  $\sqrt[n]{X^{n}} = \sqrt[n]{c}$. Simplifying the left side gives us just $X$ if $n$ is odd or $|X|$ if $n$ is even.  In the first case,  $X =  \sqrt[n]{c}$, and in the second, $X = \pm \sqrt[n]{c}$.  Putting this together with the other part of Theorem \ref{simplifyradicals}, namely $(\sqrt[n]{a})^n = a$, gives us a strategy for solving equations which involve $n^{\text{th}}$ powers and $n^{\text{th}}$ roots. 
+Essentially, we solve $X^{n} = c$ by `taking the $n^{\text{th}}$ root' of both sides:  $\sqrt[n]{X^{n}} = \sqrt[n]{c}$. Simplifying the left side gives us just $X$ if $n$ is odd or $|X|$ if $n$ is even.  In the first case,  $X =  \sqrt[n]{c}$, and in the second, $X = \pm \sqrt[n]{c}$.  Putting this together with the other part of Theorem \ref{simplifyradicals}, namely $(\sqrt[n]{a})^n = a$, gives us a strategy for solving equations which involve $n^{\text{th}}$ and $n^{\text{th}}$ roots. 
 
 \phantomsection
 \label{solvepowerandradicaleqns}
@@ -203,8 +331,6 @@ Essentially, we solve $X^{n} = c$ by `taking the $n^{\text{th}}$ root' of both s
 
 The note about `extraneous solutions' can be demonstrated by the basic equation: $\sqrt{x} = -2$.  This equation has no solution since, by definition, $\sqrt{x} \geq 0$ for all real numbers $x$.  However, if we square both sides of this equation, we get $(\sqrt{x})^2 = (-2)^2$ or $x = 4$.  However, $x = 4$ doesn't check in the original equation, since $\sqrt{4} = 2$, not $-2$.  Once again, the root\footnote{Pun intended!} of all of our problems lies in the fact that a \textit{negative} number to an \textit{even} power results in a \textit{positive} number. In other words, raising both sides of an equation to an even power does \textit{not} produce an equivalent equation, but rather, an equation which may possess \textit{more} solutions than the original.  Hence the cautionary remark above about extraneous solutions.
 
-\pagebreak
-
 \begin{ex}\label{radicaleqnreview}  Solve the following equations.
 
 
@@ -214,22 +340,55 @@ The note about `extraneous solutions' can be demonstrated by the basic equation:
 
 \item  $(5x +3)^{4} = 16$\vphantom{$1 - \dfrac{(5-2w)^3}{7} = 9$}
 
-%\item  $1 - \dfrac{(5-2w)^3}{7} = 9$\vphantom{$1 - \dfrac{(5-2w)^3}{7} = 9$}
+\item  $1 - \dfrac{(5-2w)^3}{7} = 9$\vphantom{$1 - \dfrac{(5-2w)^3}{7} = 9$}
 
 \item  $t + \sqrt{2t+3} = 6$\vphantom{$1 - \dfrac{(5-2w)^3}{7} = 9$}
-
-\item  $\sqrt{4x-1}  + 2\sqrt{1 - 2x} = 1$
 
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
-%\begin{enumerate}
-%\setcounter{enumi}{\value{HW}}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $\sqrt{2} - 3\sqrt[3]{2y+1} = 0$ 
+
+\item  $\sqrt{4x-1}  + 2\sqrt{1 - 2x} = 1$
+
+\item  $\sqrt[4]{n^2 + 2} + n = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+For the remaining problems, assume that all of the variables represent positive real numbers.\footnote{That is, you needn't worry that you're multiplying or dividing by $0$ or that you're forgetting absolute value symbols.}
+
+\begin{multicols}{2}
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  Solve for $r$:  $V = \dfrac{4\pi}{3}(R^3 - r^3)$.\vphantom{$\dfrac{r_{\text{\tiny$1$}}}{r_{\text{\tiny$2$}}} = \sqrt{\dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}}}$}
+\item  Solve for $M_{\text{\tiny$1$}}$:  $\dfrac{r_{\text{\tiny$1$}}}{r_{\text{\tiny$2$}}} = \sqrt{\dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}}}$\vphantom{$\dfrac{r_{\text{\tiny$1$}}}{r_{\text{\tiny$2$}}} = \sqrt{\dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}}}$}
 
 
-%\setcounter{HW}{\value{enumi}}
-%\end{enumerate}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  Solve for $v$:  $m = \dfrac{m_{\text{\tiny$0$}}}{\sqrt{1 - \dfrac{v^2}{c^2}}}$.  Assume all quantities represent positive real numbers.
+
+\setcounter{enumi}{\value{HW}}
+
+\end{enumerate}
+
 
 {\bf Solution.}
 
@@ -247,30 +406,30 @@ The note about `extraneous solutions' can be demonstrated by the basic equation:
 
 x = -\dfrac{1}{5} & \text{or} & x = -1 \\ \end{array} \] We leave it to the reader that both of these solutions satisfy the original equation.
 
-%\item  In this example, we first need to isolate the quantity containing the variable $w$.  Here, third (cube) roots are required and since the exponent (index) is odd, we do not need the $\pm$:\[ \begin{array}{rclr} 
+\item  In this example, we first need to isolate the quantity containing the variable $w$.  Here, third (cube) roots are required and since the exponent (index) is odd, we do not need the $\pm$:\[ \begin{array}{rclr} 
 
-%1 - \dfrac{(5-2w)^3}{7} & = &  9 & \\ [8pt]
+1 - \dfrac{(5-2w)^3}{7} & = &  9 & \\ [8pt]
 
 
-%- \dfrac{(5-2w)^3}{7} & = & 8 & \text{Subtract $1$} \\[8pt]
+- \dfrac{(5-2w)^3}{7} & = & 8 & \text{Subtract $1$} \\[8pt]
 
-%(5-2w) ^ 3 & = & -56 & \text{Multiply by $-7$} \\[2pt]
+(5-2w) ^ 3 & = & -56 & \text{Multiply by $-7$} \\[2pt]
 
-%5 - 2w & = & \sqrt[3]{-56} & \text{Extract cube root} \\[2pt]
+5 - 2w & = & \sqrt[3]{-56} & \text{Extract cube root} \\[2pt]
 
-%5 - 2w & = & \sqrt[3]{(-8)(7)} & \\[2pt]
+5 - 2w & = & \sqrt[3]{(-8)(7)} & \\[2pt]
 
-%5 - 2w & = & \sqrt[3]{-8} \sqrt[3]{7} & \text{Product Rule}\\[2pt]
+5 - 2w & = & \sqrt[3]{-8} \sqrt[3]{7} & \text{Product Rule}\\[2pt]
 
-%5 - 2w & = & -2\sqrt[3]{7} & \\[2pt]
+5 - 2w & = & -2\sqrt[3]{7} & \\[2pt]
 
-%-2w & = & -5-2 \sqrt[3]{7} & \text{Subtract $5$} \\[2pt]
+-2w & = & -5-2 \sqrt[3]{7} & \text{Subtract $5$} \\[2pt]
 
-%w & = & \dfrac{-5 - 2\sqrt[3]{7}}{-2} & \text{Divide by $-2$} \\[8pt]
+w & = & \dfrac{-5 - 2\sqrt[3]{7}}{-2} & \text{Divide by $-2$} \\[8pt]
 
-%w & = & \dfrac{5 + 2\sqrt[3]{7}}{2} & \text{Properties of Negatives} \\
+w & = & \dfrac{5 + 2\sqrt[3]{7}}{2} & \text{Properties of Negatives} \\
 
-%\end{array}\] The reader should check the answer because it provides a hearty review of arithmetic.
+\end{array}\] The reader should check the answer because it provides a hearty review of arithmetic.
 
 \item  To solve  $t + \sqrt{2t+3} = 6$, we first isolate the square root, then proceed to square both sides of the equation.  In doing so, we run the risk of introducing extraneous solutions so checking our answers here is a necessity. \[ \begin{array}{rclr}
 
@@ -286,7 +445,31 @@ t + \sqrt{2t+3}  & = & 6 & \\ [2pt]
 
 0 & = & (t-3)(t-11) & \text{Factor} \\ \end{array} \] From the Zero Product Property, we know either $t - 3 = 0$ (which gives $t=3$) or $t-11 = 0$ (which gives $t=11$).  When checking our answers, we find $t = 3$ satisfies the original equation, but $t = 11$ does not.\footnote{It is worth noting that when $t=11$ is substituted into the original equation, we get $11 + \sqrt{25} = 6$.  If the $+\sqrt{25}$ were $-\sqrt{25}$, the solution would check. Once again, when squaring both sides of an equation, we lose track of $\pm$, which is what lets extraneous solutions in the door.}  So our final answer is $t = 3$ only.
 
+\item  In our next example, we locate the variable (in this case $y$) beneath a cube root, so we first isolate that root and cube both sides. \[ \begin{array}{rclr}
 
+
+\sqrt{2} - 3\sqrt[3]{2y+1} &  = &  0 & \\[2pt]
+
+- 3\sqrt[3]{2y+1} &  = &  - \sqrt{2} & \text{Subtract $\sqrt{2}$} \\[2pt]
+
+\sqrt[3]{2y+1} & = & \dfrac{-\sqrt{2}}{-3} & \text{Divide by $-3$} \\[8pt]
+
+\sqrt[3]{2y+1} & = & \dfrac{\sqrt{2}}{3}  & \text{Properties of Negatives} \\[8pt]
+
+(\sqrt[3]{2y+1})^3 & = & \left( \dfrac{\sqrt{2}}{3} \right)^{3} & \text{Cube both sides} \\[12pt]
+
+2y + 1 & = & \dfrac{(\sqrt{2})^3}{3^3} & \\[8pt]
+
+2y + 1 & = & \dfrac{2\sqrt{2}}{27} & \\ [8pt]
+2y  & = & \dfrac{2 \sqrt{2}}{27}  - 1 & \text{Subtract $1$} \\[8pt]
+
+2y  & = & \dfrac{2 \sqrt{2}}{27}  - \dfrac{27}{27} & \text{Common denominators} \\ [8pt]
+
+2y  & = & \dfrac{2 \sqrt{2} - 27}{27} & \text{Subtract fractions} \\[8pt]
+
+y  & = & \dfrac{2 \sqrt{2} - 27}{54} & \text{Divide by $2$ $\left(\text{multiply by $\frac{1}{2}$} \right)$} \\
+
+\end{array}\] Since we raised both sides to an \textit{odd} power, we don't need to worry about extraneous solutions but we encourage the reader to check the solution just for the fun of it.
 
 \item In the equation $\sqrt{4x-1}  + 2\sqrt{1 - 2x} = 1$, we have not one but two square roots.  We begin by isolating one of the square roots and squaring both sides.\[ \begin{array}{rclr}
 
@@ -320,20 +503,97 @@ t + \sqrt{2t+3}  & = & 6 & \\ [2pt]
 
 4(2x-1)(18x - 5) & = & 0 & \text{Factor some more} \\
 
-\end{array} \] From the Zero Product Property, we know either $2x-1 = 0$ or $18x - 5 = 0$.  The former gives $x = \frac{1}{2}$ while the latter gives us $x = \frac{5}{18}$.  Since we squared both sides of the equation (twice!), we need to check for extraneous solutions.  We find $x = \frac{5}{18}$ to be extraneous, so our only solution is $x = \frac{1}{2}$.\qed
+\end{array} \] From the Zero Product Property, we know either $2x-1 = 0$ or $18x - 5 = 0$.  The former gives $x = \frac{1}{2}$ while the latter gives us $x = \frac{5}{18}$.  Since we squared both sides of the equation (twice!), we need to check for extraneous solutions.  We find $x = \frac{5}{18}$ to be extraneous, so our only solution is $x = \frac{1}{2}$.
+
+\item As usual, our first step in solving $\sqrt[4]{n^2 + 2} + n = 0$ is to isolate the radical.  We then proceed to raise both sides to the fourth power to eliminate the fourth root:\[ \begin{array}{rclr}
+
+\sqrt[4]{n^2 + 2} + n & = & 0 &  \\
+
+\sqrt[4]{n^2 + 2} & = &  -n & \text{Subtract $n$} \\
+
+(\sqrt[4]{n^2 + 2})^4 & = & (-n)^4 & \text{Raise both sides to the $4^{\text{th}}$ power} \\
+
+n^2 + 2 & = & n^4 & \text{Properties of Negatives}\\
+
+0 & = & n^{4} - n^2 - 2 & \text{Subtract $n^2$ and $2$} \\
+
+0 & = & (n^2 - 2)(n^2 + 1) & \text{Factor - this is a `Quadratic in Disguise'} \\
+
+\end{array} \]
+
+At this point, the Zero Product Property gives either $n^2 - 2 = 0$ or $n^2 + 1 = 0$.  From $n^2 - 2 = 0$, we get $n^2 = 2$, so $n = \pm \sqrt{2}$.  From $n^2 + 1 = 0$, we get $n^2 = -1$, which gives no real solutions.\footnote{Why is that again?}  Since we raised both sides to an even (the fourth) power, we need to check for extraneous solutions. We find that $n = -\sqrt{2}$ works but $n = \sqrt{2}$ is extraneous.
+
+\item In this problem, we are asked to solve for $r$. While there are a lot of letters in this equation\footnote{including a Greek letter, no less!}, $r$ appears in only one term:  $r^3$.  Our strategy is to isolate $r^3$ then extract the cube root.\[ \begin{array}{rclr}
+
+V & = & \dfrac{4\pi}{3}(R^3 - r^3) & \\ [5pt]
+
+3V & = & 4\pi (R^3 - r^3) &  \text{Multiply by $3$ to clear fractions}\\[2pt]
+
+3V & = & 4\pi R^3 - 4\pi r^3 & \text{Distribute} \\[2pt]
+
+3V - 4\pi R^3 & = & -4 \pi r^3 & \text{Subtract $4 \pi R^3$} \\[2pt]
+
+\dfrac{3V - 4\pi R^3}{-4\pi} & = & r^3 & \text{Divide by $-4\pi$} \\[8pt]
+
+\dfrac{4\pi R^3 - 3V}{4\pi} & = & r^3 & \text{Properties of Negatives} \\[10pt]
+
+\sqrt[3]{\dfrac{4\pi R^3 - 3V}{4\pi}} & = & r & \text{Extract the cube root} \\
+
+\end{array} \] The check is, as always, left to the reader and highly encouraged.
+
+\item  The equation we are asked to solve in this example is from the world of Chemistry and is none other than \href{http://en.wikipedia.org/wiki/Graham's_law}{\underline{Graham's Law of effusion}}.  Recall that subscripts in Mathematics are used to distinguish between variables and have no arithmetic significance.  In this example, $r_{\text{\tiny$1$}}$, $r_{\text{\tiny$2$}}$, $M_{\text{\tiny$1$}}$ and $M_{\text{\tiny$2$}}$ are as different as $x$, $y$, $z$ and $117$.  Since we are asked to solve for $M_{\text{\tiny$1$}}$, we locate $M_{\text{\tiny$1$}}$ and see it is in a denominator in a square root.  We eliminate the square root by squaring both sides and proceed from there.  \[ \begin{array}{rclr}
+
+ \dfrac{r_{\text{\tiny$1$}}}{r_{\text{\tiny$2$}}} & = &  \sqrt{\dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}}} & \\[8pt]
+
+\left(\dfrac{r_{\text{\tiny$1$}}}{r_{\text{\tiny$2$}}}\right)^2 & = & \left(\sqrt{\dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}}}\right)^2 & \text{Square both sides} \\[8pt]
+
+\dfrac{r_{\text{\tiny$1$}}^2}{r_{\text{\tiny$2$}}^2} & = & \dfrac{M_{\text{\tiny$2$}}}{M_{\text{\tiny$1$}}} & \\[8pt]
+
+r_{\text{\tiny$1$}}^2 M_{\text{\tiny$1$}} & = & M_{\text{\tiny$2$}}r_{\text{\tiny$2$}}^2 & \text{Multiply by $r_{\text{\tiny$2$}}^2 M_{\text{\tiny$1$}}$ to clear fractions, assume $r_{\text{\tiny$2$}}$,  $M_{\text{\tiny$1$}} \neq 0$ } \\[2pt]
 
 
+M_{\text{\tiny$1$}} & = & \dfrac{M_{\text{\tiny$2$}}r_{\text{\tiny$2$}}^2}{r_{\text{\tiny$1$}}^2} & \text{Divide by $r_{\text{\tiny$1$}}^2$, assume $r_{\text{\tiny$1$}} \neq 0$} \\
+\end{array} \] As the reader may expect, checking the answer amounts to a good exercise in simplifying rational and radical expressions.  The fact that we are assuming all of the variables represent positive real numbers comes in to play, as well.
 
+\item  Our last equation to solve comes from Einstein's Special Theory of Relativity and relates the mass of an object to its velocity as it moves.\footnote{See this article on the \href{http://en.wikipedia.org/wiki/Lorentz_factor}{\underline{Lorentz Factor}}.} We are asked to solve for $v$ which is located in just one term, namely $v^2$, which happens to lie in a fraction underneath a square root which is itself a denominator. We have quite a lot of work ahead of us!\[ \begin{array}{rclr}
+
+ m &  = & \dfrac{m_{\text{\tiny$0$}}}{\sqrt{1 - \dfrac{v^2}{c^2}}} & \\
+
+m \sqrt{1 - \dfrac{v^2}{c^2}} & = & m_{\text{\tiny$0$}} & \text{Multiply by $\sqrt{1 - \dfrac{v^2}{c^2}}$ to clear fractions}\\ [8pt]
+
+\left(m \sqrt{1 - \dfrac{v^2}{c^2}}\right)^{2} & = & m_{\text{\tiny$0$}}^{2} & \text{Square both sides}\\ [12pt]
+
+m^2 \left(1 - \dfrac{v^2}{c^2}\right) & = &  m_{\text{\tiny$0$}}^{2} & \text{Properties of Exponents}\\[8pt]
+
+m^2 - \dfrac{m^2 v^2}{c^2} & = & m_{\text{\tiny$0$}}^{2} & \text{Distribute} \\[8pt]
+
+- \dfrac{m^2 v^2}{c^2} & = & m_{\text{\tiny$0$}}^{2} - m^2 & \text{Subtract $m^2$}  \\ [8pt]
+
+m^2 v^2 & = & -c^2 (m_{\text{\tiny$0$}}^{2} - m^2)  & \text{Multiply by $-c^2$ ($c^2 \neq 0$)} \\ [2pt]
+
+m^2 v^2 & = & -c^2m_{\text{\tiny$0$}}^{2} + c^2 m^2 & \text{Distribute} \\[2pt]
+
+v^2  & = & \dfrac{c^2 m^2 -c^2m_{\text{\tiny$0$}}^{2}}{m^2} & \text{Rearrange terms, divide by $m^2$ ($m^2 \neq 0$)} \\[8pt]
+
+v & = & \sqrt{\dfrac{c^2 m^2 -c^2m_{\text{\tiny$0$}}^{2}}{m^2}} & \text{Extract Square Roots, $v > 0$ so no $\pm$} \\[12pt]
+
+v & = & \dfrac{\sqrt{c^2 (m^2 -m_{\text{\tiny$0$}}^{2})}}{\sqrt{m^2}} & \text{Properties of Radicals, factor} \\[12pt]
+
+v & = & \dfrac{|c|\sqrt{m^2 -m_{\text{\tiny$0$}}^{2}}}{|m|} &  \\[12pt]
+
+v & = & \dfrac{c\sqrt{m^2 -m_{\text{\tiny$0$}}^{2}}}{m} & \text{$c > 0$ and $m > 0$ so $|c| = c$ and $|m| = m$} \\
+
+\end{array}\] Checking the answer algebraically would earn the reader great honor and respect on the Algebra battlefield so it is highly recommended.
 
 \end{enumerate}
 
 \end{ex}
 
-\subsection{Rationalizing Denominators and Numerators}
+\section{Rationalizing Denominators and Numerators}
 
-In Section \ref{QuadEqus}, there were a few instances where we needed to `rationalize' a denominator - that is, take a fraction with radical in the denominator and re-write it as an equivalent fraction without a radical in the denominator.  There are various reasons for wanting to do this,\footnote{Before the advent of the hand-held calculator, rationalizing denominators made it easier to get decimal approximations to fractions containing radicals.} but the most pressing reason is that rationalizing denominators - and numerators as well - gives us an opportunity for more practice with fractions and radicals. To help refresh your memory, we rationalize a denominator and then a numerator below: \[ \dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{\sqrt{2} \sqrt{2}} = \dfrac{\sqrt{2}}{\sqrt{4}} = \dfrac{\sqrt{2}}{2} \quad \text{and} \quad \dfrac{7\sqrt[3]{4}}{3} = \dfrac{7 \sqrt[3]{4}\sqrt[3]{2}}{3\sqrt[3]{2}} = \dfrac{7\sqrt[3]{8}}{3\sqrt[3]{2}} = \dfrac{7 \cdot 2}{3\sqrt[3]{2}} =  \dfrac{14}{3\sqrt[3]{2}} \]
+In the handout on quadratic equations, there were a few instances where we needed to `rationalize' a denominator - that is, take a fraction with radical in the denominator and re-write it as an equivalent fraction without a radical in the denominator.  There are various reasons for wanting to do this,\footnote{Before the advent of the handheld calculator, rationalizing denominators made it easier to get decimal approximations to fractions containing radicals.   However, some (admittedly more abstract) applications remain today --  one occurs in the arithmetic of complex numbers; another you'll see in Calculus.} but the most pressing reason is that rationalizing denominators - and numerators as well - gives us an opportunity for more practice with fractions and radicals. To help refresh your memory, we rationalize a denominator and then a numerator below: \[ \dfrac{1}{\sqrt{2}} = \dfrac{\sqrt{2}}{\sqrt{2} \sqrt{2}} = \dfrac{\sqrt{2}}{\sqrt{4}} = \dfrac{\sqrt{2}}{2} \quad \text{and} \quad \dfrac{7\sqrt[3]{4}}{3} = \dfrac{7 \sqrt[3]{4}\sqrt[3]{2}}{3\sqrt[3]{2}} = \dfrac{7\sqrt[3]{8}}{3\sqrt[3]{2}} = \dfrac{7 \cdot 2}{3\sqrt[3]{2}} =  \dfrac{14}{3\sqrt[3]{2}} \]
 
- In general, if the fraction contains either a single term numerator or denominator with an undesirable $n^{\text{th}}$ root, we multiply the numerator and denominator by whatever is required to obtain a perfect $n^{\text{th}}$ power in the radicand that we want to eliminate. If the fraction contains two terms the situation is somewhat more complicated.  To see why, consider the fraction $\frac{3}{4 - \sqrt{5}}$.  Suppose we wanted to rid the denominator of the $\sqrt{5}$ term.  We could try as above and multiply numerator and denominator by $\sqrt{5}$ but that just yields: \[ \dfrac{3}{4 - \sqrt{5}} = \dfrac{3\sqrt{5}}{(4 - \sqrt{5})\sqrt{5}} = \dfrac{3\sqrt{5}}{4\sqrt{5} - \sqrt{5}\sqrt{5}} = \dfrac{3\sqrt{5}}{4\sqrt{5} - 5}\] We haven't removed $\sqrt{5}$ from the denominator - we've just shuffled it over to the other term in the denominator.  As you may recall, the strategy here is to multiply both numerator and denominator by what's called the \textbf{conjugate}\index{conjugate}.  
+ In general, if the fraction contains either a single term numerator or denominator with an undesirable $n^{\text{th}}$ root, we multiply the numerator and denominator by whatever is required to obtain a perfect $n^{\text{th}}$ power in the radicand that we want to eliminate. If the fraction contains two terms the situation is somewhat more complicated.  To see why, consider the fraction $\frac{3}{4 - \sqrt{5}}$.  Suppose we wanted to rid the denominator of the $\sqrt{5}$ term.  We could try as above and multiply numerator and denominator by $\sqrt{5}$ but that just yields: \[ \dfrac{3}{4 - \sqrt{5}} = \dfrac{3\sqrt{5}}{(4 - \sqrt{5})\sqrt{5}} = \dfrac{3\sqrt{5}}{4\sqrt{5} - \sqrt{5}\sqrt{5}} = \dfrac{3\sqrt{5}}{4\sqrt{5} - 5}\] We haven't removed $\sqrt{5}$ from the denominator - we've just shuffled it over to the other term in the denominator.  As you may recall, the strategy here is to multiply both numerator and denominator by what's called the \textbf{conjugate}.  
 
 \medskip
 
@@ -421,8 +681,7 @@ Simplify the compound fraction $\dfrac{\dfrac{1}{\sqrt{2(x+h)+1}} - \dfrac{1}{\s
 																															& = & \dfrac{\sqrt{2x + 1}- \sqrt{2x+2h+1}}{h\sqrt{2x+2h+1} \sqrt{2x+1}}\\	
 																															\end{array}\]
 																															
-Next, we multiply the numerator and denominator by the conjugate of $\sqrt{2x+1} - \sqrt{2x+2h+1}$; namely,\\
- $\sqrt{2x+1} + \sqrt{2x+2h+1}$, simplify and reduce:\[\begin{array}{rcl}
+Next, we multiply the numerator and denominator by the conjugate of $\sqrt{2x+1} - \sqrt{2x+2h+1}$, namely $\sqrt{2x+1} + \sqrt{2x+2h+1}$, simplify and reduce:\[\begin{array}{rcl}
 
  \dfrac{\sqrt{2x + 1}- \sqrt{2x+2h+1}}{h\sqrt{2x+2h+1} \sqrt{2x+1}} & = & \dfrac{(\sqrt{2x+1} - \sqrt{2x+2h+1})(\sqrt{2x+1} + \sqrt{2x+2h+1})}{h\sqrt{2x+2h+1} \sqrt{2x+1}(\sqrt{2x+1} + \sqrt{2x+2h+1})} \\ [20pt]
 
@@ -442,7 +701,7 @@ While the denominator is quite a bit more complicated than what we started with,
 
 \newpage
 
-\subsection{Exercises}
+\section{Exercises}
 
 In Exercises \ref{simpradfirst} - \ref{simpradlast}, perform the indicated operations and simplify.
 
@@ -453,14 +712,39 @@ In Exercises \ref{simpradfirst} - \ref{simpradlast}, perform the indicated opera
 
 \item   $\sqrt[3]{8t^3}$
 
-\item   $\sqrt{4t^2 + 4t + 1}$
-
+\item   $\sqrt{50y^6}$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+\item  $\sqrt{4t^2 + 4t + 1}$
+
+\item  $\sqrt{w^2 - 16w + 64}$
+
+\item  $\sqrt{(\sqrt{12x} - \sqrt{3x})^2+1}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\sqrt{\dfrac{c^2 - v^2}{c^2}}$\vphantom{$\sqrt[3]{\dfrac{24 \pi r^5}{L^3}}$}
+
+\item  $\sqrt[3]{\dfrac{24 \pi r^5}{L^3}}$
+
+\item   $\sqrt[4]{\dfrac{32 \pi \varepsilon^8}{\rho^{12}}}$ \vphantom{$\sqrt[3]{\dfrac{24 \pi r^5}{L^3}}$}   
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 \begin{multicols}{2}
 \begin{enumerate}
@@ -478,7 +762,8 @@ In Exercises \ref{simpradfirst} - \ref{simpradlast}, perform the indicated opera
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item  $\sqrt{(\sqrt{12x} - \sqrt{3x})^2+1}$
+\item  $2 \sqrt[3]{1-z} + 2z \left(\dfrac{1}{3 \left(\sqrt[3]{1-z}\right)^2}\right)(-1)$\vphantom{$\dfrac{3}{\sqrt[3]{2x-1}} + (3x)\left(-\dfrac{1}{3 \left(\sqrt[3]{2x-1} \right)^4}\right)(2)$}
+
 
 \item  $\dfrac{3}{\sqrt[3]{2x-1}} + (3x)\left(-\dfrac{1}{3 \left(\sqrt[3]{2x-1} \right)^4}\right)(2)$  \label{simpradlast}
 
@@ -488,14 +773,14 @@ In Exercises \ref{simpradfirst} - \ref{simpradlast}, perform the indicated opera
 
 
 
-In Exercises \ref{algineqexfirst0} - \ref{algineqexlast0}, find all real solutions.
+In Exercises \ref{algineqexfirst} - \ref{algineqexlast}, find all real solutions.
 
 \begin{multicols}{3}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item  $(2x+1)^3 + 8 = 0$ \label{algineqexfirst0} \vphantom{ $\dfrac{1}{1 + 2t^3} = 4$}
-\item $\sqrt{3x+1} = 4$ \vphantom{ $\dfrac{1}{1 + 2t^3} = 4$}
+\item  $(2x+1)^3 + 8 = 0$ \label{algineqexfirst} \vphantom{ $\dfrac{1}{1 + 2t^3} = 4$}
+\item $\dfrac{(1-2y)^{4}}{3} = 27$ \vphantom{ $\dfrac{1}{1 + 2t^3} = 4$}
 \item  $\dfrac{1}{1 + 2t^3} = 4$ 
 
 
@@ -507,16 +792,69 @@ In Exercises \ref{algineqexfirst0} - \ref{algineqexlast0}, find all real solutio
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item  $y + \sqrt{3y+10} = -2$
-\item $\sqrt{x - 2} + \sqrt{x - 5} = 3$
-\item $x+1 = \sqrt{3x+7}$ \label{algineqexlast0}% $x=3$     
+\item $\sqrt{3x+1} = 4$
+\item $5 - \sqrt[3]{t^2+1} = 1$
+\item $x+1 = \sqrt{3x+7}$ % $x=3$     
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+\item  $y + \sqrt{3y+10} = -2$ % $y=-3$
+\item  $3t+\sqrt{6-9t}=2$ % $x = -\dfrac{1}{3}, \dfrac{2}{3}$
+\item $2x - 1 = \sqrt{x + 3}$ % $x = \dfrac{5 + \sqrt{57}}{8}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $w = \sqrt[4]{12-w^2}$
+\item $\sqrt{x - 2} + \sqrt{x - 5} = 3$ % $x = 6$
+\item $\sqrt{2x+1} = 3 + \sqrt{4-x}$  \label{algineqexlast} % $x = 4$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+In Exercises \ref{radliteqnfirst} - \ref{radliteqnlast}, solve each equation for the indicated variable.  Assume all quantities represent positive real numbers.
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item Solve for $h$:  $I = \dfrac{bh^3}{12}$. \vphantom{$I_{\text{\tiny $0$}} = \dfrac{5\sqrt{3} a^4}{16}$} \label{radliteqnfirst}
+
+\item Solve for $a$:  $I_{\text{\tiny $0$}} = \dfrac{5\sqrt{3} a^4}{16}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item Solve for $g$:  $T = 2\pi \sqrt{\dfrac{L}{g}}$
+
+\item Solve for $v$:   $L = L_{\text{\tiny $0$}} \sqrt{1 - \dfrac{v^2}{c^2}}$. \vphantom{$T = 2\pi \sqrt{\dfrac{L}{g}}$} \label{radliteqnlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 In Exercises \ref{rationalizefirst} - \ref{rationalizelast}, rationalize the numerator or denominator, and simplify.
 
@@ -530,8 +868,211 @@ In Exercises \ref{rationalizefirst} - \ref{rationalizelast}, rationalize the num
 
 \item  $\dfrac{7}{\sqrt[3]{12x^7}}$
 
-\item  $\dfrac{\sqrt{2x+2h+1} - \sqrt{2x+1}}{h}$ \label{rationalizelast}
- \vphantom{$\dfrac{7}{\sqrt[3]{12x^7}}$}
+\item   $\dfrac{\sqrt{x} - \sqrt{c}}{x - c}$ \vphantom{$\dfrac{7}{\sqrt[3]{12x^7}}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\enlargethispage{1in}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item  $\dfrac{\sqrt{2x+2h+1} - \sqrt{2x+1}}{h}$ 
+
+\item  $\dfrac{\sqrt[3]{x+1} - 2}{x- 7}$                                          
+
+\item  $\dfrac{\sqrt[3]{x+h} - \sqrt[3]{x}}{h}$  \label{rationalizelast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\newpage
+
+\section{Answers}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item   $3|x|$ 
+
+\item   $2t$
+
+\item   $5|y^3|\sqrt{2}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $|2t+1|$
+
+\item  $|w-8|$
+
+\item  $\sqrt{3x+1}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{\sqrt{c^2-v^2}}{|c|}$ \vphantom{$\dfrac{2 \varepsilon^2 \sqrt[4]{2\pi}}{|\rho^3|}$ }
+
+\item $\dfrac{2r \sqrt[3]{3 \pi r^2}}{L}$ \vphantom{$\dfrac{2 \varepsilon^2 \sqrt[4]{2\pi}}{|\rho^3|}$ }
+
+\item  $\dfrac{2 \varepsilon^2 \sqrt[4]{2\pi}}{|\rho^3|}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $-\dfrac{1}{\sqrt{x}}$ \vphantom{$\dfrac{3-6t^2}{\sqrt{1-t^2}}$}
+
+\item  $\dfrac{3-6t^2}{\sqrt{1-t^2}}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\dfrac{6-8z}{3 (\sqrt[3]{1-z})^2}$
+
+
+\item  $\dfrac{4x-3}{(2x-1)\sqrt[3]{2x-1}}$  
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x = -\dfrac{3}{2}$ \vphantom{$t = -\dfrac{\sqrt[3]{3}}{2}$}
+\item $y = -1, 2$ \vphantom{$t = -\dfrac{\sqrt[3]{3}}{2}$}
+\item  $t = -\dfrac{\sqrt[3]{3}}{2}$ 
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x = 5$
+\item $t = \pm 3 \sqrt{7}$
+\item $x=3$     
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $y=-3$ \vphantom{$x = \dfrac{5 + \sqrt{57}}{8}$}
+\item  $t = -\dfrac{1}{3}, \dfrac{2}{3}$ \vphantom{$x = \dfrac{5 + \sqrt{57}}{8}$}
+\item $x = \dfrac{5 + \sqrt{57}}{8}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $w = \sqrt{3}$
+\item $x = 6$
+\item $x = 4$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $h = \sqrt[3]{\dfrac{12I}{b}}$ \vphantom{ $a = \dfrac{2 \sqrt[4]{I_{\text{\tiny $0$}}}}{\sqrt[4]{5\sqrt{3}}}$}
+
+\item  $a = \dfrac{2 \sqrt[4]{I_{\text{\tiny $0$}}}}{\sqrt[4]{5\sqrt{3}}}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $g = \dfrac{4 \pi^2 L}{T^2}$ \vphantom{$v = \dfrac{c \sqrt{L_{\text{\tiny $0$}}^2 - L^2}}{L_{\text{\tiny $0$}}}$}
+
+\item $v = \dfrac{c \sqrt{L_{\text{\tiny $0$}}^2 - L^2}}{L_{\text{\tiny $0$}}}$  
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item   $\dfrac{12 + 4\sqrt{2}}{7}$ \vphantom{$\dfrac{7 \sqrt[3]{18x^2}}{6x^3}$} 
+
+\item  $\dfrac{7 \sqrt[3]{18x^2}}{6x^3}$
+
+\item   $\dfrac{1}{\sqrt{x}+ \sqrt{c}}$ \vphantom{$\dfrac{7 \sqrt[3]{18x^2}}{6x^3}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\enlargethispage{1in}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item  $\dfrac{2}{\sqrt{2x+2h+1} + \sqrt{2x+1}}$ \vphantom{$\dfrac{1}{(\sqrt[3]{x+h})^2 + \sqrt[3]{x+h}\sqrt[3]{x} + (\sqrt[3]{x})^2}$}                                 
+
+\item  $\dfrac{1}{(\sqrt[3]{x+1})^2 + 2\sqrt[3]{x+1} + 4}$   \vphantom{$\dfrac{1}{(\sqrt[3]{x+h})^2 + \sqrt[3]{x+h}\sqrt[3]{x} + (\sqrt[3]{x})^2}$}                                 
+
+\item  $\dfrac{1}{(\sqrt[3]{x+h})^2 + \sqrt[3]{x+h}\sqrt[3]{x} + (\sqrt[3]{x})^2}$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -541,5 +1082,4 @@ In Exercises \ref{rationalizefirst} - \ref{rationalizelast}, rationalize the num
 
 
 
-
-\closegraphsfile
+\end{document}

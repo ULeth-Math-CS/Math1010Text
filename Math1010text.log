@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  17 MAY 2016 15:18
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  19 MAY 2016 12:54
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -1729,15 +1729,12 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.12} (current compat level: 1.8).
 
-(text/front_matter_and_coverI.tex (text/title_pageI.tex
+(text_pre/front_matter_and_coverI.tex (text_pre/title_pageI.tex
 Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
 ex-text;+smcp;" at 10.0pt
  -> C:/WINDOWS/Fonts/calibri.ttf
 Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
 ex-text;+smcp;" at 24.88pt
- -> C:/WINDOWS/Fonts/calibri.ttf
-Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
-ex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/calibri.ttf
 Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
 ex-text;" at 14.4pt
@@ -1746,7 +1743,7 @@ Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;" at 14.4pt
  -> C:/WINDOWS/Fonts/calibrii.ttf
 Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 9.0pt
+=tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/calibrii.ttf
 Requested font "cmr12" at 14.4pt
 Requested font "cmmi12" at 14.4pt
@@ -1812,7 +1809,7 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 5.0pt
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 5.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 
-Overfull \hbox (140.0pt too wide) in paragraph at lines 3--56
+Overfull \hbox (140.0pt too wide) in paragraph at lines 3--44
 [] $[]$ 
  []
 
@@ -1823,15 +1820,15 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 
-] (text/copyright_pageI.tex
+] (text_pre/copyright_pageI.tex
 File: text/by-nc.pdf Graphic file (type QTm)
  <use  "text/by-nc.pdf" >
-Underfull \hbox (badness 3838) in paragraph at lines 8--9
+Underfull \hbox (badness 3838) in paragraph at lines 10--11
 []\EU1/Calibri(0)/m/n/10 Licensed to the public under Creative Commons
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 8--9
+Underfull \hbox (badness 1701) in paragraph at lines 10--11
 \EU1/Calibri(0)/m/n/10 Attribution-Noncommercial 4.0 International Public
  []
 
@@ -1889,7 +1886,7 @@ Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (text/prefaceI.tex
+ (text_pre/prefaceI.tex
 Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;+smcp;" at 24.88pt
  -> C:/WINDOWS/Fonts/calibrib.ttf
@@ -1901,62 +1898,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 [5
 
 ]
-Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 12.0pt
- -> C:/WINDOWS/Fonts/calibrii.ttf
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 35.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Requested font "[lmmono10-regular]" at 10.0pt
- -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmono10-regular.otf
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
-
- []
-
 Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/calibrib.ttf
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-) [8
-
-])
+) [6])
 Chapter 1.
 (text_pre/00_SetTheory.tex
 Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
@@ -2084,6 +2034,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
+Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
+ex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/calibri.ttf
 
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 144--145
 [][][]
@@ -2101,6 +2054,9 @@ Requested font "cmex9" at 9.0pt
 Requested font "msam10" at 9.0pt
 Requested font "msbm10" at 9.0pt
 Requested font "vect9" at 9.0pt
+Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 9.0pt
+ -> C:/WINDOWS/Fonts/calibrii.ttf
 Requested font "[cmmi10]/OT:mapping=tex-text;" at 9.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 9.0pt
@@ -2415,9 +2371,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 
-LaTeX Warning: Reference `Polynomials' on page 12 undefined on input line 158.
-
-
 LaTeX Warning: Reference `Rationals' on page 12 undefined on input line 158.
 
 
@@ -2559,9 +2512,6 @@ Overfull \hbox (18.10443pt too wide) in paragraph at lines 475--476
 []\EU1/Calibri(0)/m/n/10 15[] can be found in the Properties of Negatives. Firs
 t, for all real numbers, $[][] \OMS/cmsy/m/n/10 ^^U
  []
-
-
-LaTeX Warning: Reference `Polynomials' on page 20 undefined on input line 479.
 
 
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 503--504
@@ -3229,13 +3179,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
  []
 
 
-LaTeX Warning: Reference `fig:domaineqprojx' on page 53 undefined on input line
- 152.
-
-
-LaTeX Warning: Reference `domainegran' on page 53 undefined on input line 152.
-
-
 Underfull \vbox (badness 1424) has occurred while \output is active []
 
 File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-8.pdf Graphic file
@@ -3733,6 +3676,13 @@ Overfull \hbox (23.6002pt too wide) has occurred while \output is active
 LaTeX Warning: Reference `chapter:graphbehavior' on page 86 undefined on input 
 line 536.
 
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 547
+.
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "[lmmono10-regular]" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmono10-regular.otf
 
 Overfull \hbox (19.15157pt too wide) in paragraph at lines 547--548
 []\EU1/Calibri(0)/m/n/10 To two decimal places, $[]$ appears to have its only l
@@ -4623,10 +4573,6 @@ he completed-square
  []
 
 
-LaTeX Warning: Reference `GraphsofPolynomials' on page 135 undefined on input l
-ine 197.
-
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 203--204
 [][][]
  []
@@ -4969,6 +4915,278 @@ Missing character: There is no ϵ in font [cmmi10]/I/OT:mapping=tex-text;!
 Missing character: There is no ϵ in font [cmmi10]/I/OT:mapping=tex-text;!
 
 [152])
+Chapter 4.
+(text_pre/03_GraphsofPolynomials.tex
+Overfull \hbox (0.89142pt too wide) in paragraph at lines 4--5
+\EU1/Calibri(0)/m/n/10 Three of the families of functions studied thus far – co
+nstant, linear and quadratic
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+[153
+
+
+
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 82--83
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 1406) has occurred while \output is active
+[][]$ \EU1/Calibri(0)/m/n/9 are known as \EU1/Calibri(0)/m/it/9 indeterminant f
+orms\EU1/Calibri(0)/m/n/9 .
+ []
+
+[154]
+File: figures/PolynomialsGraphics/GraphsofPolynomials-1.pdf Graphic file (type 
+QTm)
+ <use  "figures/PolynomialsGraphics/GraphsofPolynomials-1.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-2.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-2.pdf" > [155]
+File: figures/PolynomialsGraphics/GraphsofPolynomials-6.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-6.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-7.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-7.pdf" >
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 222--223
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+File: figures/PolynomialsGraphics/BoxNoTopV.png Graphic file (type QTm)
+<use  "figures/PolynomialsGraphics/BoxNoTopV.png" >
+File: figures/PolynomialsGraphics/BoxNoTopVmax.png Graphic file (type QTm)
+
+<use  "figures/PolynomialsGraphics/BoxNoTopVmax.png" >
+Overfull \hbox (16.13214pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[156]
+File: figures/PolynomialsGraphics/GraphsofPolynomials-11.pdf Graphic file (type
+ QTm)
+ <use  "figures/PolynomialsGraphics/GraphsofPolynomials-11.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-12.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-12.pdf" >
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 282--283
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-3.pdf Graphic file (type 
+QTm)
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-3.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-4.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-4.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-5.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-5.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-8.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-8.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-9.pdf Graphic file (type 
+QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-9.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-10.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-10.pdf" > [157]
+Overfull \hbox (1.95032pt too wide) in paragraph at lines 297--298
+[]\EU1/Calibri(0)/m/n/10 The notion of smoothness is what tells us graphically 
+that, for example, $[]\OT1/cmr/m/n/10 ([]) =
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 303--304
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 338--339
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-13.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-13.pdf" >
+Overfull \hbox (4.99962pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 2134) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 4.5: |Pathologies not found on
+ []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-14.pdf Graphic file (type
+ QTm)
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-14.pdf" > [158]
+Overfull \hbox (16.45343pt too wide) in paragraph at lines 351--351
+[]$[]$ \EU1/Calibri(0)/m/n/10 First, we find the zeros of $[]$ by solving $[][]
+\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )[]([] + []) [] =
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 361--362
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-15.pdf Graphic file (type
+ QTm)
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-15.pdf" >
+Overfull \hbox (9.9996pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-16.pdf Graphic file (type
+ QTm)
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-16.pdf" > [159]
+File: figures/PolynomialsGraphics/EndBehaviour_near.png Graphic file (type QTm)
+
+
+<use  "figures/PolynomialsGraphics/EndBehaviour_near.png" >
+File: figures/PolynomialsGraphics/EndBehaviour_far.png Graphic file (type QTm)
+
+<use  "figures/PolynomialsGraphics/EndBehaviour_far.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[160]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 410--411
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 428--429
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+
+ []
+
+
+Overfull \hbox (2.2511pt too wide) in paragraph at lines 432--433
+[]\EU1/Calibri(0)/m/n/10 Our last example shows how end behaviour and multiplic
+ity allow us to sketch
+ []
+
+File: figures/PolynomialsGraphics/GraphsofPolynomials-19.pdf Graphic file (type
+ QTm)
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-19.pdf" > [161]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+LaTeX Warning: Reference `boxnotopex' on page 162 undefined on input line 445.
+
+[162
+
+]
+Requested font "Calibri/BI/OT:script=latn;language=DFLT;mapping=tex-text;mappin
+g=tex-text;" at 9.0pt
+ -> C:/WINDOWS/Fonts/calibriz.ttf
+File: figures/PolynomialsGraphics/GraphsofPolynomials-20.pdf Graphic file (type
+ QTm)
+ <use  "figures/PolynomialsGraphics/GraphsofPolynomials-20.pdf" >
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 163 might be wrong on input line 44
+5.
+
+[163] [164])
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5325,7 +5543,39 @@ m)
 File: figures/LinearQuadraticGraphics/Inequalities-31.pdf Graphic file (type QT
 m)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-31.pdf" >) [16]
+<use  "figures/LinearQuadraticGraphics/Inequalities-31.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-21.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-21.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-23.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-23.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-25.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-25.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-29.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-29.pdf" > [16]
+File: figures/PolynomialsGraphics/GraphsofPolynomials-31.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-31.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf" >) [17]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5358,13 +5608,13 @@ m)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [17
+ [18
 
 
 
 ]
+No file Math1010text.ind.
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [19]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
@@ -5384,11 +5634,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[18
+[20
 
-] [19
+] [21
 
-] [20
+] [22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -5411,31 +5661,34 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[21
+[23
 
 ])
-Package atenddvi Info: Last page = 182.
- [22
+Package atenddvi Info: Last page = 194.
+ [24
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 382.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 382.
  (Math1010text.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 382.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 382.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 51312 strings out of 428755
- 1102642 string characters out of 3164219
- 1432668 words of memory out of 3000000
- 52764 multiletter control sequences out of 15000+200000
- 19640 words of font info for 142 fonts, out of 3000000 for 9000
+ 51554 strings out of 428755
+ 1108505 string characters out of 3164219
+ 1438041 words of memory out of 3000000
+ 52935 multiletter control sequences out of 15000+200000
+ 19648 words of font info for 143 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,25n,88p,10385b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (182 pages).
+Output written on Math1010text.pdf (194 pages).

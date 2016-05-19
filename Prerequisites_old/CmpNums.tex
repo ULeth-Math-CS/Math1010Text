@@ -1,0 +1,1016 @@
+\mfpicnumber{1}
+\mfpverbtex{%
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage[sfdefault,lf]{carlito}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\begin{document}
+}
+\opengraphsfile{CmpNums}
+
+\setcounter{footnote}{0}
+
+\label{CmpNums}
+
+We conclude our Prerequisites chapter with a review the set of \textbf{Complex Numbers}\index{numbers ! complex}\index{complex numbers}.  As you may recall, the complex numbers fill an algebraic gap left by the real numbers.  There is no real number $x$ with $x^2 = -1$, since for any real number $x^2 \geq 0$.  However, we could formally extract square roots and write $x = \pm \sqrt{-1}$.  We build the complex numbers by relabeling the quantity $\sqrt{-1}$ as $i$, the unfortunately misnamed \index{imaginary unit, $i$}\index{complex number ! imaginary unit, $i$}\textbf{imaginary unit}.\footnote{Some Technical Mathematics textbooks label it `$j$'.  While it carries the adjective `imaginary', these numbers have essential real-world implications.  For example, every electronic device owes its existence to the study of `imaginary' numbers.}  The number $i$, while not a real number, is defined so that it plays along well with real numbers and acts very much like any other radical expression.  For instance, $3(2i) = 6i$, $7i-3i = 4i$, $(2-7i) + (3 + 4i) = 5-3i$, and so forth.  The key properties which distinguish $i$ from the real numbers are listed below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{defn} \label{idefn} The imaginary unit $i$ satisfies the two following properties:
+
+\begin{enumerate}
+
+\item  $i^2 = -1$
+
+\item  If $c$ is a real number with $c \geq 0$ then $\sqrt{-c} = i \sqrt{c}$
+
+\end{enumerate}
+
+\end{defn}
+\ebm}
+
+\medskip
+
+Property 1 in Definition \ref{idefn} establishes that $i$ does act as a square root\footnote{Note the use of the indefinite article `a'.  Whatever beast is chosen to be $i$, $-i$ is the other square root of $-1$.} of $-1$, and property 2 establishes what we mean by the `principal square root' of a negative real number.  In property 2, it is important to remember the restriction on $c$.  For example, it is perfectly acceptable to say  $\sqrt{-4} = i \sqrt{4} = i(2) = 2i$. However, $\sqrt{-(-4)} \neq i \sqrt{-4}$, otherwise, we'd get\[ 2 = \sqrt{4} = \sqrt{-(-4)} = i \sqrt{-4} = i (2i) = 2i^2 = 2(-1) = -2,\] which is unacceptable. The moral of this story is that the general properties of radicals do not apply for even roots of negative quantities.  With Definition \ref{idefn} in place, we are now in position to define the \index{complex number ! definition of}\textbf{complex numbers}.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{defn} \label{complexdefn} A \textbf{complex number} is a number of the form $a+bi$, where $a$ and $b$ are real numbers and $i$ is the imaginary unit.  The set of complex numbers is denoted $\C$.
+\end{defn}
+\ebm}
+
+\medskip
+
+Complex numbers include things you'd normally expect, like $3+2i$ and $\frac{2}{5} - i\sqrt{3}$.  However, don't forget that $a$ or $b$ could be zero, which means numbers like $3i$ and $6$ are also complex numbers.  In other words, don't forget that the complex numbers \textit{include} the real numbers,\footnote{To use the language  of Section \ref{SetsofRealNumbers}, $\R \subseteq \C$.} so $0$ and $\pi - \sqrt{21}$ are both considered complex numbers.   The arithmetic of complex numbers is as you would expect.  The only things you need to remember are the two properties in Definition \ref{idefn}.  The next example should help recall how these animals behave.
+
+\pagebreak
+
+\begin{ex} \label{complexzeroex1} Perform the indicated operations.
+\label{complexnumberarithmetic}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $(1-2i) - (3+4i)$ \vphantom{$\dfrac{1-2i}{3-4i}$}
+\item  $(1-2i)(3+4i)$ \vphantom{$\dfrac{1-2i}{3-4i}$}
+\item  $\dfrac{1-2i}{3-4i}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $\sqrt{-3} \sqrt{-12}$
+\item  $\sqrt{(-3)(-12)}$
+\item  $(x-[1+2i])(x-[1-2i])$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+{\bf Solution.} 
+
+\begin{enumerate}
+
+\item  As mentioned earlier, we treat expressions involving $i$ as we would any other radical. We distribute and combine like terms:\[ \begin{array}{rclr}
+
+ (1-2i) - (3+4i) & = &  1-2i-3-4i & \text{Distribute} \\
+                 & = &  -2 - 6i & \text{Gather like terms} \\
+\end{array}\] Technically, we'd have to rewrite our answer  $-2-6i$ as $(-2) + (-6)i$ to be (in the strictest sense) `in the form $a+bi$'. That being said, even pedants have their limits, and we'll consider $-2-6i$ good enough.
+
+\item  Using the Distributive Property (a.k.a. F.O.I.L.), we get \[ \begin{array}{rclr}
+
+  (1-2i)(3+4i)  & = & (1)(3) + (1)(4i) - (2i)(3) - (2i)(4i) & \text{F.O.I.L.} \\
+	              & = & 3+4i-6i-8i^2 & \\
+								& = & 3 - 2i - 8(-1) & \text{$i^2=-1$} \\
+								& = & 3 - 2i + 8 & \\
+								& = & 11 - 2i & \\ \end{array}\]
+
+\item  How in the world are we supposed to simplify $\frac{1-2i}{3-4i}$?  Well, we deal with the denominator $3-4i$ as we would any other denominator containing two terms, one of which is a square root: we and multiply both numerator and denominator by $3+4i$, the (complex) conjugate of $3 - 4i$.  Doing so produces\[\begin{array}{rclr}
+
+ \dfrac{1-2i}{3-4i} & = & \dfrac{(1-2i)(3+4i)}{(3-4i)(3+4i)} & \text{Equivalent Fractions} \\[8pt]
+
+                     & = &   \dfrac{3 + 4i - 6i - 8i^2}{9 - 16i^2} & \text{F.O.I.L.}\\[8pt]
+										 & = & \dfrac{3 - 2i - 8(-1)}{9  - 16(-1)} & \text{$i^2 = -1$}\\[8pt]
+						         & = &  \dfrac{11 - 2i}{25} & \\[8pt]
+										  & = & \dfrac{11}{25} - \dfrac{2}{25} \, i & \\ \end{array}\]
+										
+
+\item  We use property 2 of Definition \ref{idefn} first, then apply the rules of radicals applicable to real numbers to get $\sqrt{-3} \sqrt{-12} = \left(i \sqrt{3}\right) \left(i \sqrt{12}\right) = i^2 \sqrt{3\cdot 12} = -\sqrt{36} = -6$.
+
+\item  We adhere to the order of operations here and perform the multiplication before the radical to get  $\sqrt{(-3)(-12)} = \sqrt{36} = 6$. 
+
+\item  We can brute force multiply using the distributive property and see that \[\begin{array}{rclr} (x-[1+2i])(x-[1-2i]) & = &  x^2 -x[1-2i]-x[1+2i]+[1-2i][1+2i] & \text{F.O.I.L.}\\[2pt]
+
+																					 &	= & x^2-x+2ix-x-2ix+1-2i+2i-4i^2 & \text{Distribute} \\ [2pt]
+																					 &	= & x^2-2x + 1-4(-1)& \hspace*{-.05in}\text{Gather like terms}\\[2pt]
+																					 & =  & x^2 -2x +5 & i^2=-1 \\ \end{array}\] This type of factoring will be revisited in Section \ref{ComplexZeros}. \qed
+
+\end{enumerate}
+
+\end{ex}
+
+In the previous example, we used the `conjugate' idea from Section \ref{RadEqus} to divide two complex numbers.  More generally, the \index{complex number ! complex conjugate ! definition of}\index{conjugate ! complex conjugate ! definition of}\textbf{complex conjugate} of a complex number $a+bi$ is the number $a-bi$.  The notation commonly used for complex conjugation is a `bar':  $\overline{a+bi} = a-bi$. For example, $\overline{3+2i} = 3-2i$ and $\overline{3-2i} = 3+2i$. To find $\overline{6}$, we note that $\overline{6} = \overline{6+0i}= 6 - 0i = 6$, so $\overline{6} = 6$. Similarly, $\overline{4i} = -4i$, since $\overline{4i} = \overline{0 + 4i} = 0 - 4i =  -4i$.  Note that $\overline{3+\sqrt{5}} = 3 + \sqrt{5}$, not $3 - \sqrt{5}$, since  $\overline{3+\sqrt{5}} = \overline{3+\sqrt{5} + 0i} = 3+\sqrt{5}  - 0i = 3+\sqrt{5}$. Here, the conjugation specified by the `bar' notation involves reversing the sign before $i = \sqrt{-1}$, not before  $\sqrt{5}$.  The properties of the conjugate are summarized in the following theorem.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{thm}  \label{conjugateprops}\index{complex number ! conjugate ! properties of}\index{conjugate of a complex number ! properties of}{\bf Properties of the Complex Conjugate:} Let $z$ and $w$ be complex numbers. 
+
+\begin{itemize}
+
+\item  $\overline{\overline{z}} = z$
+
+\item  $ \overline{z+w} = \overline{z} + \overline{w}$
+
+\item  $ \overline{zw} = \overline{z} \, \overline{w}$
+
+\item  $\overline{z^{n}} = \left(\overline{z}\right)^n$, for any natural number $n$
+
+\item  $z$ is a real number if and only if $\overline{z} = z$.
+
+\end{itemize}
+
+\end{thm}
+\ebm}
+
+\medskip
+
+Essentially, Theorem \ref{conjugateprops} says that complex conjugation works well with addition, multiplication and powers.  The proofs of these properties can best be achieved by writing out $z = a+bi$ and $w = c+di$ for real numbers $a$, $b$, $c$ and $d$.   Next, we compute the left and right sides of each equation and verify that they are the same.  
+
+\smallskip
+
+The proof of the first property is a very quick exercise.\footnote{Trust us on this.}  To prove the second property, we compare $\overline{z+w}$ with $\overline{z} + \overline{w}$.  We have $\overline{z} + \overline{w} = \overline{a+bi} + \overline{c+di}  = a-bi + c-di$.  To find $\overline{z+w}$, we first compute \[z+w = (a+bi) + (c+di) = (a+c)+(b+d)i\] so \[\overline{z+w} = \overline{(a+c)+(b+d)i} = (a+c) - (b+d)i = a+c - bi - di = a - bi + c - di = \overline{z} + \overline{w}\]  As such, we have established  $\overline{z+w} = \overline{z}+\overline{w}$. The proof for multiplication works similarly.  The proof that the conjugate works well with powers can be viewed as a repeated application of the product rule, and is best proved using a technique called Mathematical Induction.\footnote{See Section \ref{Induction}.}  The last property is a characterization of real numbers.  If $z$ is real, then $z = a + 0i$, so $\overline{z} = a - 0i = a = z$.  On the other hand, if $z=\overline{z}$, then $a+bi = a - bi$ which means $b=-b$ so $b=0$.  Hence, $z = a +0i = a$ and is real.
+
+\medskip
+
+We now return to the business of solving quadratic equations. Consider  $x^2-2x+5 = 0$. The discriminant $b^2 - 4ac = -16$ is negative, so we know by Theorem \ref{discriminanttheoremrealversion} there are no \textit{real} solutions, since the Quadratic Formula would involve the term $\sqrt{-16}$.  Complex numbers, however, are built just for such situations, so we can go ahead and apply the Quadratic Formula to get: \[ x = \dfrac{-(-2) \pm \sqrt{(-2)^2-4(1)(5)}}{2(1)} = \dfrac{2 \pm \sqrt{-16}}{2} = \dfrac{2 \pm 4i}{2} = 1 \pm 2i.\]  
+
+\begin{ex} \label{complexsolnsreviewex}  Find the complex solutions to the following equations.\footnote{Remember, all real numbers are complex numbers, so `complex solutions' means both real and non-real answers.} 
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+
+\item  $\dfrac{2x}{x+1} = x+3$
+
+\item $2t^4 = 9t^2 + 5$
+
+\item  $z^3 + 1 = 0$
+
+\end{enumerate}
+\end{multicols}
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\enlargethispage{20pt}
+
+\item  Clearing fractions yields a quadratic equation so we then proceed as in Section \ref{QuadEqus}.\[ \begin{array}{rclr}
+
+
+\dfrac{2x}{x+1} & = &  x+3 & \\[5pt]
+2x & = & (x+3)(x+1) & \text{Multiply by $(x+1)$ to clear denominators} \\
+
+2x & = & x^2 + x + 3x + 3 & \text{F.O.I.L.} \\
+
+2x & = & x^2 + 4x + 3 & \text{Gather like terms} \\
+
+0 & = & x^2 + 2x + 3 & \text{Subtract $2x$} \\
+
+\end{array}\] From here, we apply the Quadratic Formula \[ \begin{array}{rclr}
+
+x  & =  & \dfrac{-2 \pm \sqrt{2^2 - 4(1)(3)}}{2(1)}  & \text{Quadratic Formula}\\[8pt]
+    & = &  \dfrac{-2 \pm \sqrt{-8}}{2} & \text{Simplify}\\[8pt]
+		& =  & \dfrac{-2 \pm i \sqrt{8}}{2} & \text{Definition of $i$}\\[8pt]
+		& =  & \dfrac{-2 \pm i 2\sqrt{2}}{2} & \text{Product Rule for Radicals}\\[8pt]
+		& = & \dfrac{\cancel{2}(-1 \pm i\sqrt{2})}{\cancel{2}} & \text{Factor and reduce}\\[8pt]
+		& = & -1 \pm i \sqrt{2} & \\
+		\end{array} \]
+		
+We get two answers: $x = -1 + i\sqrt{2}$ and its conjugate $x = -1 - i\sqrt{2}$.  Checking both of these answers reviews all of the salient points about complex number arithmetic and is therefore strongly encouraged.
+
+\item  Since we have three terms, and the exponent on one term (`$4$' on $t^4$) is exactly twice the exponent on the other (`$2$' on $t^2$), we have a Quadratic in Disguise.  We proceed accordingly.\[ \begin{array}{rclr}
+
+2t^4 & = & 9t^2 + 5 & \\
+
+2t^4 - 9t^2 - 5 & = & 0 & \text{Subtract $9t^2$ and $5$} \\
+(2t^2 + 1)(t^2 - 5) & = & 0 & \text{Factor} \\
+2t^2 + 1 = 0 & \text{or} & t^2 = 5 & \text{Zero Product Property} \\
+\end{array}\]  From $2t^2 + 1 = 0$ we get $2t^2 = -1$, or $t^2 = -\frac{1}{2}$.  We extract square roots as follows: \[ t = \pm \sqrt{-\dfrac{1}{2}} = \pm i \sqrt{\dfrac{1}{2}} = \pm i \dfrac{\sqrt{1}}{\sqrt{2}} = \pm i \dfrac{1}{\sqrt{2}} = \pm \dfrac{i \sqrt{2}}{2},\]
+where we have rationalized the denominator per convention.  From $t^2 = 5$, we get $t = \pm \sqrt{5}$. In total, we have four complex solutions - two real: $t = \pm \sqrt{5}$ and two non-real: $t = \pm \frac{i \sqrt{2}}{2}$.
+
+\item To find  the \textit{real} solutions to  $z^3 + 1 = 0$, we can subtract the $1$ from both sides and extract cube roots: $z^3 = -1$, so $z  = \sqrt[3]{-1} = -1$.  It turns out there are two more non-real complex number solutions to this equation.  To get at these, we factor:\[ \begin{array}{rclr}
+
+z ^ 3 + 1 & = & 0 & \\
+(z + 1)(z^2 - z + 1) & = & 0 & \text{Factor (Sum of Two Cubes)} \\
+z + 1 = 0 & \text{or} & z^2 - z + 1 = 0 & \\
+\end{array} \] From $z+1 = 0$, we get our real solution $z = -1$.  From $z^2 -z + 1 = 0$, we apply the Quadratic Formula to get: \[z = \dfrac{-(-1) \pm \sqrt{(-1)^2 - 4(1)(1)}}{2(1)} = \dfrac{1 \pm \sqrt{-3}}{2} = \dfrac{1 \pm i\sqrt{3}}{2} \]
+Thus we get \textit{three} solutions to $z^3 + 1 = 0$ - one real: $z = -1$ and two non-real: $z =  \frac{1 \pm i\sqrt{3}}{2}$.  As always, the reader is encouraged to test their algebraic mettle and check these solutions. \qed
+		
+\end{enumerate}
+
+
+\end{ex}
+
+It is no coincidence that the non-real solutions to the equations in Example \ref{complexsolnsreviewex} appear in  complex conjugate pairs. Any time we use the Quadratic Formula to solve an equation with \underline{real} coefficients, the answers will form a  complex conjugate pair owing to the $\pm$ in the Quadratic Formula.  This leads us to a generalization of Theorem \ref{discriminanttheoremrealversion} which we state on the next page.
+
+\colorbox{ResultColor}{\bbm
+\begin{thm} \textbf{Discriminant Theorem:} \label{discriminanttheoremcomplexversion} Given a Quadratic Equation $AX^2 + BX + C = 0$, where $A$, $B$ and $C$ are real numbers, let $D = B^2 - 4AC$ be the discriminant.
+
+\begin{itemize}
+
+\item  If $D > 0$, there are two distinct real number solutions to the equation. 
+
+\item  If $D = 0$, there is one (repeated) real number solution.  
+
+\textbf{Note:}  `Repeated' here comes from the fact that `both' solutions $\frac{-B \pm 0}{2A}$ reduce to $-\frac{B}{2A}$.
+
+\item  If $D < 0$, there are two non-real solutions which form a complex conjugate pair.
+
+\end{itemize}
+
+\end{thm}
+\ebm}
+
+\medskip
+
+We will have much more to say about complex solutions to equations in Section \ref{ComplexZeros} and we will revisit Theorem \ref{discriminanttheoremcomplexversion} then.
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{compnumbasicfirst} - \ref{compnumbasiclast}, use the given complex numbers $z$ and $w$ to find and simplify the following. 
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w$
+\item $zw$
+\item $z^2$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\dfrac{1}{z}$
+\item $\dfrac{z}{w}$
+\item $\dfrac{w}{z}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z}$
+\item $z\overline{z}$
+\item $(\overline{z})^2$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item  $z = 2+3i$, $w = 4i$ \label{compnumbasicfirst}
+\item  $z = 1+i$, $w = -i$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $z = i$, $w = -1+2i$
+\item  $z = 4i$, $w = 2-2i$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $z = 3-5i$, $w = 2+7i$
+\item  $z = -5+i$, $w = 4+2i$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $z = \sqrt{2} - i\sqrt{2}$, $w = \sqrt{2} + i\sqrt{2}$
+\item  $z = 1 - i\sqrt{3}$, $w = -1 - i\sqrt{3}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $z = \dfrac{1}{2} + \dfrac{\sqrt{3}}{2} \, i$, $w = -\dfrac{1}{2} + \dfrac{\sqrt{3}}{2} \,i$
+\item  $z = -\dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} \, i$, $w = -\dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2} \, i$ \label{compnumbasiclast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+In Exercises \ref{rootsofnegfirst} - \ref{rootsofneglast}, simplify the quantity.
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\sqrt{-49}$ \label{rootsofnegfirst}
+\item $\sqrt{-9}$
+\item $\sqrt{-25}\sqrt{-4}$
+\item $\sqrt{(-25)(-4)}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\sqrt{-9}\sqrt{-16}$
+\item $\sqrt{(-9)(-16)}$
+\item $\sqrt{-(-9)}$
+\item $-\sqrt{(-9)}$ \label{rootsofneglast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+We know that $i^{2} = -1$ which means $i^{3} = i^{2} \cdot i = (-1) \cdot i = -i$ and $i^{4} = i^{2} \cdot i^{2} = (-1)(-1) = 1$. In Exercises \ref{powerofifirst} - \ref{powerofilast}, use this information to simplify the given power of $i$.
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $i^{5}$ \label{powerofifirst}
+\item $i ^{6}$
+\item $i^{7}$
+\item $i^{8}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $i^{15}$
+\item $i^{26}$
+\item $i^{117}$
+\item $i^{304}$ \label{powerofilast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+In Exercises \ref{solvecomplexfirst} - \ref{solvecomplexlast}, find all complex solutions.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3x^2 + 6 = 4x$ \label{solvecomplexfirst}
+\item  $15t^2+2t+5= 3t(t^2+1)$
+\item  $3y^2 + 4 = y^4$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{2}{1-w}= w$ \vphantom{$\dfrac{x^3}{2x-1} = \dfrac{x}{3}$ 
+}
+\item $\dfrac{y}{3} - \dfrac{3}{y} = y$ \vphantom{$\dfrac{x^3}{2x-1} = \dfrac{x}{3}$ 
+}
+\item $\dfrac{x^3}{2x-1} = \dfrac{x}{3}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x =\dfrac{2}{\sqrt{5} - x}$\vphantom{$\dfrac{5z^4 + 1}{z^2-1} = 3z^2$}
+\item  $\dfrac{5y^4 + 1}{y^2-1} = 3y^2$
+\item  $z^{4} = 16$ \vphantom{$\dfrac{5z^4 + 1}{z^2-1} = 3z^2$} \label{solvecomplexlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  Multiply and simplify:  $\left(x - [3 - i\sqrt{23}]\right)\left(x - [3+i\sqrt{23}]\right)$
+
+\end{enumerate}
+
+
+\newpage
+
+\subsection{Answers}
+
+\begin{enumerate}
+
+\item  For $z = 2+3i$ and $w = 4i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = 2+7i$
+
+\item $zw = -12+8i$
+
+\item $z^2 = -5 + 12i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{2}{13} - \frac{3}{13} \, i$
+
+\item $\frac{z}{w} = \frac{3}{4} - \frac{1}{2} \, i$
+
+\item $\frac{w}{z} = \frac{12}{13} + \frac{8}{13} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = 2-3i$
+
+\item $z\overline{z} = 13$
+
+\item $(\overline{z})^2 = -5-12i$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For $z = 1+i$ and $w = -i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = 1$
+
+\item $zw = 1-i$
+
+\item $z^2 = 2i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{1}{2} - \frac{1}{2} \, i$
+
+\item $\frac{z}{w} = -1+i$
+
+\item $\frac{w}{z} = -\frac{1}{2} - \frac{1}{2} \, i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = 1-i$
+
+\item $z\overline{z} = 2$
+
+\item $(\overline{z})^2 = -2i$
+
+\end{itemize}
+
+\end{multicols}
+
+
+
+\item  For  $z = i$ and $w = -1+2i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = -1+3i$
+
+\item $zw = -2-i$
+
+\item $z^2 = -1$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = -i$
+
+\item $\frac{z}{w} = \frac{2}{5} - \frac{1}{5} \, i$
+
+\item $\frac{w}{z} = 2+i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = -i$
+
+\item $z\overline{z} = 1$
+
+\item $(\overline{z})^2 = -1$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $z = 4i$ and $w = 2-2i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = 2+2i$
+
+\item $zw = 8+8i$
+
+\item $z^2 = -16$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = -\frac{1}{4} \,i$
+
+\item $\frac{z}{w} = -1+i$
+
+\item $\frac{w}{z} = -\frac{1}{2} - \frac{1}{2} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = -4i$
+
+\item $z\overline{z} = 16$
+
+\item $(\overline{z})^2 = -16$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $z = 3-5i$ and $w = 2+7i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = 5+2i$
+
+\item $zw = 41+11i$
+
+\item $z^2 = -16-30i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{3}{34} + \frac{5}{34} \,i$
+
+\item $\frac{z}{w} = -\frac{29}{53} - \frac{31}{53} \, i$
+
+\item $\frac{w}{z} = -\frac{29}{34} + \frac{31}{34} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = 3+5i$
+
+\item $z\overline{z} = 34$
+
+\item $(\overline{z})^2 = -16+30i$
+
+\end{itemize}
+
+\end{multicols}
+
+\newpage
+
+
+\item  For  $z = -5+i$ and  $w = 4+2i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = -1+3i$
+
+\item $zw = -22-6i$
+
+\item $z^2 = 24-10i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = -\frac{5}{26} - \frac{1}{26} \,i$
+
+\item $\frac{z}{w} = -\frac{9}{10} + \frac{7}{10} \, i$
+
+\item $\frac{w}{z} = -\frac{9}{13} - \frac{7}{13} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = -5-i$
+
+\item $z\overline{z} = 26$
+
+\item $(\overline{z})^2 = 24+10i$
+
+\end{itemize}
+
+\end{multicols}
+
+
+\item  For  $z = \sqrt{2} - i\sqrt{2}$ and $w = \sqrt{2} + i\sqrt{2}$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = 2\sqrt{2}$
+
+\item $zw = 4$
+
+\item $z^2 = -4i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{\sqrt{2}}{4} + \frac{\sqrt{2}}{4} \,i$
+
+\item $\frac{z}{w} = -i$
+
+\item $\frac{w}{z} = i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = \sqrt{2}+i\sqrt{2}$
+
+\item $z\overline{z} = 4$
+
+\item $(\overline{z})^2 = 4i$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $z = 1 - i\sqrt{3}$ and $w = -1-i\sqrt{3}$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = -2i\sqrt{3}$
+
+\item $zw = -4$
+
+\item $z^2 = -2-2i\sqrt{3}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{1}{4} + \frac{\sqrt{3}}{4} \,i$
+
+\item $\frac{z}{w} = \frac{1}{2} + \frac{\sqrt{3}}{2} \,i$
+
+\item $\frac{w}{z} = \frac{1}{2} - \frac{\sqrt{3}}{2} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = 1+i\sqrt{3}$
+
+\item $z\overline{z} = 4$
+
+\item $(\overline{z})^2 = -2+2i\sqrt{3}$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $z = \frac{1}{2} + \frac{\sqrt{3}}{2} \, i$ and $w = -\frac{1}{2} + \frac{\sqrt{3}}{2} \,i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z+w = i\sqrt{3}$
+
+\item $zw = -1$
+
+\item $z^2 = -\frac{1}{2} + \frac{\sqrt{3}}{2} \,i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = \frac{1}{2} - \frac{\sqrt{3}}{2} \, i$
+
+\item $\frac{z}{w} = \frac{1}{2} - \frac{\sqrt{3}}{2} \, i$
+
+\item $\frac{w}{z} = \frac{1}{2} + \frac{\sqrt{3}}{2} \, i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = \frac{1}{2} - \frac{\sqrt{3}}{2} \, i$
+
+\item $z\overline{z} = 1$
+
+\item $(\overline{z})^2 = -\frac{1}{2} - \frac{\sqrt{3}}{2} \, i$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $z = -\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} \, i$ and $w = -\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2} \, i$
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $z + w = -\sqrt{2}$
+
+\item $zw = 1$
+
+\item $z^2 =-i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\frac{1}{z} = -\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2} \, i$
+
+\item $\frac{z}{w} = -i$
+
+\item $\frac{w}{z} = i$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item $\overline{z} = -\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2} \, i$
+
+\item $z\overline{z} = 1$
+
+\item $(\overline{z})^2 = i$
+
+\end{itemize}
+\end{multicols}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $7i$
+\item $3i$
+
+\item $-10$
+\item $10$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $-12$
+\item $12$
+
+\item $3$
+\item $-3i$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $i^{5} = i^{4} \cdot i = 1 \cdot i = i$
+\item $i ^{6} =  i^{4} \cdot i^{2} = 1 \cdot (-1) = -1$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $i^{7} = i^{4} \cdot i^{3} = 1 \cdot (-i) = -i$
+\item $i^{8} = i^{4} \cdot i^{4} = \left(i^{4}\right)^{2} = (1)^{2} =1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $i^{15} = \left(i^{4}\right)^{3} \cdot i^{3} = 1 \cdot (-i) = -i$
+\item $i ^{26} = \left(i^{4}\right)^{6} \cdot i^{2} = 1\cdot (-1) = -1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $i^{117} = \left(i^{4}\right)^{29} \cdot i = 1 \cdot i = i$
+\item $i ^{304} = \left(i^{4}\right)^{76} = 1^{76} = 1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x = \dfrac{2 \pm i\sqrt{14}}{3}$ 
+\item  $t = 5, \pm \dfrac{i \sqrt{3}}{3}$ \vphantom{$x = \dfrac{2 \pm i\sqrt{14}}{3}$}
+\item  $y = \pm 2, \pm i$ \vphantom{$x = \dfrac{2 \pm i\sqrt{14}}{3}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $w = \dfrac{1 \pm i \sqrt{7}}{2}$ \vphantom{$x= 0, \dfrac{1 \pm i\sqrt{2}}{3}$ }
+\item $y = \pm \dfrac{3i \sqrt{2}}{2}$ \vphantom{$x= 0, \dfrac{1 \pm i\sqrt{2}}{3}$ }
+\item $x= 0, \dfrac{1 \pm i\sqrt{2}}{3}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $x = \dfrac{\sqrt{5} \pm i\sqrt{3}}{2}$
+\item  $y = \pm i, \pm \dfrac{i\sqrt{2}}{2}$ \vphantom{$x = \dfrac{\sqrt{5} \pm i\sqrt{3}}{2}$}
+\item  $z = \pm 2, \pm 2i$  \vphantom{$x = \dfrac{\sqrt{5} \pm \sqrt{3}}{2}$}
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+\end{multicols}
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^2 - 6x + 32$
+
+\end{enumerate}
+
+\closegraphsfile

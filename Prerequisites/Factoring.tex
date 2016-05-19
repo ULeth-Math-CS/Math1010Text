@@ -1,23 +1,66 @@
-\mfpicnumber{1}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
+\documentclass[11pt]{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
+\usepackage{colortbl}
+\usepackage{import, multicol,boxedminipage}
+\usepackage{graphicx}
+\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
+\usepackage[all]{hypcap}
+\definecolor{ResultColor}{gray}{0.9}
+\theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
+\newtheorem{defn}{\bf Definition}
+\newtheorem{thm}{\bf Theorem}
+\newtheorem{cor}[thm]{\bf Corollary}
+\newtheorem{eqn}{\bf Equation}
+\newtheorem{ex}{\bf Example}
+\newtheorem{fig}{\bf Figure}
+\setlength{\parindent}{0in}
+\newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
+\newcommand{\ebm}{\end{boxedminipage}}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+\allowdisplaybreaks[2]
+\usepackage{cancel}
+\usepackage{sectsty}
+\usepackage{textcomp}
+\usepackage{multirow}
 \usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+	%% The 'lf' option for lining figures
+	%% The 'sfdefault' option to make the base font sans serif
+	\usepackage[T1]{fontenc}
+	\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage[nottoc]{tocbibind}
+\allsectionsfont{\mdseries \scshape}
+\makeatletter
+\renewcommand\l@section{\@dottedtocline{1}{1.5em}{3em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{4.5em}{3.5em}}
+\makeatother
+\pagestyle{fancy}
+\newcounter{HW}
+\newcounter{HWindent}
+
+\title{Review \#5: Factoring}
+\author{Carl Stitz and Jeff Zeager\\
+Edited by Sean Fitzpatrick}
+
 \begin{document}
-}
-\opengraphsfile{Factoring}
+\maketitle
 
-\setcounter{footnote}{0}
 
-\label{Factoring}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+\lhead[\fancyplain{}{\sc\thepage}]%
+      {\fancyplain{}{\sc \nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\sc \nouppercase{\leftmark}}]%
+      {\fancyplain{}{\sc\thepage}}
+\cfoot{}
+
 
 Now that we have reviewed the basics of polynomial arithmetic it's time to review the basic techniques of factoring polynomial expressions.  Our goal is to apply these techniques to help us solve certain specialized classes of non-linear equations.  Given that `factoring' literally means to resolve a product into its factors, it is, in the purest sense, `undoing' multiplication.  If this sounds like division to you then you've been paying attention.  Let's start with a numerical example.  
 
 \smallskip
 
-Suppose we are asked to factor $16337$.  We could write $16337 = 16337 \cdot 1$, and while this is technically a factorization of $16337$,  it's probably not an answer the poser of the question would accept.  Usually, when we're asked to factor a natural number, we are being asked to resolve it into to a product of so-called 	`prime' numbers.\footnote{As mentioned in Section \ref{RealNumberArithmetic}, this is possible, in only one way, thanks to the \href{https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic}{\underline{Fundamental Theorem of Arithmetic}.}}  Recall that \textbf{prime numbers}\index{number ! prime} are defined as natural numbers whose only (natural number) factors are themselves and $1$. They are, in essence, the `building blocks' of natural numbers as far as multiplication is concerned.  Said differently, we can build - via multiplication - any natural number given enough primes.  So how do we find the prime factors of $16337$?  We start by dividing each of the primes: $2$, $3$, $5$, $7$, etc., into $16337$ until we get a remainder of $0$.  Eventually, we find that $16337 \div 17 = 961$ with a remainder of $0$, which means $16337 = 17 \cdot 961$.  So factoring and division are indeed closely related - factors of a number are precisely the divisors of that number which produce a zero remainder.\footnote{We'll refer back to this when we get to Section \ref{Polydivision}.}  We continue our efforts to see if $961$ can be factored down further, and we find that $961 = 31 \cdot 31$.  Hence, $16337$ can be `completely factored' as $17 \cdot 31^2$.  (This factorization is called the \textbf{prime factorization}\index{number ! prime factorization} of $16337$.)  
+Suppose we are asked to factor $16337$.  We could write $16337 = 16337 \cdot 1$, and while this is technically a factorization of $16337$,  it's probably not an answer the poser of the question would accept.  Usually, when we're asked to factor a natural number, we are being asked to resolve it into to a product of so-called 	`prime' numbers.\footnote{This is possible (up to ordering) in only one way, thanks to the \href{https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic}{\underline{Fundamental Theorem of Arithmetic}.}}  Recall that \textbf{prime numbers} are defined as natural numbers whose only (natural number) factors are themselves and $1$. They are, in essence, the `building blocks' of natural numbers as far as multiplication is concerned.  Said differently, we can build - via multiplication - any natural number given enough primes.  So how do we find the prime factors of $16337$?  We start by dividing each of the primes: $2$, $3$, $5$, $7$, etc., into $16337$ until we get a remainder of $0$.  Eventually, we find that $16337 \div 17 = 961$ with a remainder of $0$, which means $16337 = 17 \cdot 961$.  So factoring and division are indeed closely related - factors of a number are precisely the divisors of that number which produce a zero remainder.  We continue our efforts to see if $961$ can be factored down further, and we find that $961 = 31 \cdot 31$.  Hence, $16337$ can be `completely factored' as $17 \cdot 31^2$.  (This factorization is called the \textbf{prime factorization} of $16337$.)  
 
 \smallskip
 
@@ -25,13 +68,13 @@ In factoring natural numbers, our building blocks are prime numbers, so to be co
 
 \medskip
 
-\colorbox{ResultColor}{\bbm \begin{defn}\label{irreduciblepoly}  A polynomial is said to be \textbf{irreducible}\index{polynomial ! irreducible} if it cannot be written as the product of polynomials of lower degree.
+\colorbox{ResultColor}{\bbm \begin{defn}\label{irreduciblepoly}  A polynomial is said to be \textbf{irreducible} if it cannot be written as the product of polynomials of lower degree.
 \end{defn}
 \ebm}
 
 \medskip
 
-While Definition \ref{irreduciblepoly} seems straightforward enough, sometimes a greater level of specificity is required. For example, $x^2 - 3 = (x-\sqrt{3})(x + \sqrt{3})$.  While $x-\sqrt{3}$ and $x+\sqrt{3}$ are perfectly fine polynomials, factoring which requires irrational numbers is usually saved for a more advanced treatment of factoring.\footnote{See Section \ref{RealZeros}.}  For now, we will restrict ourselves to factoring using rational coefficients. The reasons for this are strictly practical: we want to work with examples where factoring can be done {\em by hand}. For polynomials of degree three or higher, if factoring involves irrational numbers, it generally can't be done without the help of calculus, and probably a computer as well. Thus, it may sometimes be necessary to distinguish between a polynomial which is \textbf{irreducible over the rationals}, versus a polynomial which is irreducible over the real numbers.
+While Definition \ref{irreduciblepoly} seems straightforward enough, sometimes a greater level of specificity is required. For example, $x^2 - 3 = (x-\sqrt{3})(x + \sqrt{3})$.  While $x-\sqrt{3}$ and $x+\sqrt{3}$ are perfectly fine polynomials, factoring which requires irrational numbers is usually saved for a more advanced treatment of factoring.  For now, we will restrict ourselves to factoring using rational coefficients. So, while the polynomial $x^2 - 3$ can be factored using irrational numbers, it is called irreducible \textbf{over the rationals}, since there are no polynomials with \textit{rational} coefficients of smaller degree which can be used to factor it.\footnote{If this isn't immediately obvious, don't worry - in some sense, it shouldn't be.  We'll talk more about this later.} 
 
 \medskip
 
@@ -76,15 +119,15 @@ We now list some common factoring formulas, each of which can be verified by mul
 \item \textbf{Perfect Square Trinomials:}  $a^2 + 2ab + b^2 = (a+b)^2$ and $a^2 - 2ab + b^2 = (a-b)^2$
 \item  \textbf{Difference of Two Squares:}  $a^2 - b^2 = (a-b)(a+b)$
 
-\textbf{NOTE:}  In general, the sum of squares, $a^2 + b^2$ is irreducible.
+\textbf{NOTE:}  In general, the sum of squares, $a^2 + b^2$ is irreducible over the rationals.
 
 \item  \textbf{Sum of Two Cubes:}  $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$
 
-\textbf{NOTE:}  In general, $a^2 - ab + b^2$ is irreducible.
+\textbf{NOTE:}  In general, $a^2 - ab + b^2$ is irreducible over the rationals.
 
 \item   \textbf{Difference of Two Cubes:}  $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$ 
 
-\textbf{NOTE:}  In general, $a^2 + ab + b^2$ is irreducible.
+\textbf{NOTE:}  In general, $a^2 + ab + b^2$ is irreducible over the rationals.
 \end{itemize}
 
 \ebm}
@@ -103,7 +146,8 @@ Our next example gives us practice with these formulas.
 
 \item  $64y^2 - 1$ 
 
-\item  \label{quadinform2} $x^6 - 64$
+\item  $75t^4 + 30t^3 + 3t^2$
+
 
 \setcounter{HW}{\value{enumi}}
 
@@ -111,7 +155,24 @@ Our next example gives us practice with these formulas.
 
 \end{multicols}
 
+\begin{multicols}{3}
 
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+
+\item  $w^4 z - w z^4$
+
+\item  \label{quadinform1} $81 - 16t^4$ 
+
+\item  \label{quadinform2} $x^6 - 64$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
 
 {\bf Solution.}
 
@@ -127,7 +188,27 @@ Our next example gives us practice with these formulas.
 64y^2 - 1 & = & (8y)^2 - 1^2 & \\
           & = & (8y-1)(8y+1) & \text{Difference of Squares, $a = 8y$, $b = 1$} \end{array} \] As before, we can check our answer by multiplying out $(8y-1)(8y+1)$ to show that it equals $64y^2 - 1$.
 
+\item  The G.C.F. of the terms in $75t^4 + 30t^3 + 3t^2$ is $3t^2$, so we factor that out first.  We identify what remains as a perfect square trinomial:\[ \begin{array}{rclr}
+ 
+75t^4 + 30t^3 + 3t^2 & = & 3t^2 (25t^2+10t + 1) & \text{Factor out G.C.F.}\\
+                     & = & 3t^2 ((5t)^2 + 2(1)(5t) + 1^2) & \\
+                     & = & 3t^2 (5t+1)^2 & \text{Perfect Square Trinomial, $a = 5t$, $b = 1$} \\
 
+\end{array}\] Our final answer is $3t^2 (5t+1)^2$, which the reader is invited to check.
+
+\item  For $w^4 z - w z^4$, we identify the G.C.F. as $wz$ and once we factor it out a difference of cubes is revealed: \[ \begin{array}{rclr}
+
+w^4 z - w z^4 & = & wz(w^3 - z^3) & \text{Factor out G.C.F.} \\
+              & = & wz(w-z)(w^2+wz+z^2) & \text{Difference of Cubes, $a=w$, $b = z$} \\
+							\end{array} \] Our final answer is $wz(w-z)(w^2+wz+z^2)$.  The reader is strongly encouraged to multiply this out to see that it reduces to $w^4 z - w z^4$.
+
+\item  The G.C.F. of the terms in $81 - 16t^4$ is just $1$ so there is nothing of substance to factor out from both terms.  With just a difference of two terms, we are limited to fitting this polynomial into either the Difference of Two Squares or Difference of Two Cubes formula. Since the variable here is $t^4$, and $4$ is a multiple of $2$, we can think of $t^4 = (t^2)^2$.  This means that we can write $16t^4 = (4t^2)^2$ which is a perfect square.  (Since $4$ is not a multiple of $3$, we cannot write $t^4$ as a perfect cube of a polynomial.)  Identifying $81 = 9^2$ and $16t^4 = (4t^2)^2$, we apply the Difference of Squares Formula to get: \[ \begin{array}{rclr}
+
+81 - 16t^4 & = & 9^2 - (4t^2)^2 & \\
+           & = & (9-4t^2)(9+4t^2) & \text{Difference of Squares, $a = 9$, $b = 4t^2$} \\ \end{array}\] At this point, we have an opportunity to proceed further.  Identifying $9 = 3^2$ and $4t^2 = (2t)^2$, we see that we have another difference of squares in the first quantity, which we can reduce. (The sum of two squares in the second quantity \underline{cannot} be factored over the rationals.) \[ \begin{array}{rclr}
+81 - 16t^4 & = & (9-4t^2)(9+4t^2) & \\
+           & = & (3^2 - (2t)^2) (9 + 4t^2) & \\
+					 & = & (3 - 2t)(3+2t)(9 + 4t^2) & \text{Difference of Squares, $a = 3$, $b = 2t$} \\ \end{array} \] As always, the reader is encouraged to multiply out $(3 - 2t)(3+2t)(9 + 4t^2)$ to check the result.
 
 \item  With a G.C.F. of $1$ and just two terms, $x^6 - 64$ is a candidate for both the Difference of Squares and the Difference of Cubes formulas.  Notice that we can identify $x^6 = (x^3)^2$ and $64 = 8^2$ (both perfect squares), but also $x^6 = (x^2)^3$ and $64 = 4^3$ (both perfect cubes).  If we follow the Difference of Squares approach, we get: \[ \begin{array}{rclr}
 
@@ -184,19 +265,39 @@ That is, find  $a$, $b$, $c$ and $d$ such that $Ax^2 + Bx + C= (ax+b)(cx+d)$.
 
 \medskip
 
-The techniques of `un-F.O.I.L.ing' and `factoring by grouping' are difficult to describe in general but should make sense to you with enough practice.  Be forewarned - like all `Rules of Thumb', these strategies work just often enough to be useful, but you can be sure there are exceptions which will defy any advice given here and will require some `inspiration' to solve. Even though Chapter \ref{Polynomials} will give us more powerful factoring methods, we'll find that, in the end, there is no single algorithm for factoring which works for every polynomial. In other words, there will be times when you just have to try something and see what happens.
+The techniques of `un-F.O.I.L.ing' and `factoring by grouping' are difficult to describe in general but should make sense to you with enough practice.  Be forewarned - like all `Rules of Thumb', these strategies work just often enough to be useful, but you can be sure there are exceptions which will defy any advice given here and will require some `inspiration' to solve. Even though the Math 1010 textbook will give us more powerful factoring methods, we'll find that, in the end, there is no single algorithm for factoring which works for every polynomial. In other words, there will be times when you just have to try something and see what happens.
 
-\begin{ex}\label{advfactoring}  Factor the following polynomials completely over the integers.\footnote{This means that all of the coefficients in the factors will be integers.}
+\begin{ex}\label{advfactoring}  Factor the following polynomials completely over the integers.\footnote{This means that all of the coefficients in the factors will be integers. In a rare departure from form, Carl decided to avoid fractions in this set of examples.  Don't get complacent, though, because fractions will return with a vengeance soon enough.}
 
 \enlargethispage{.1in}
 
-\begin{multicols}{4}
+\begin{multicols}{3}
 
 \begin{enumerate}
 
 \item  $x^2 - x - 6$  
 
 \item  $2t^2 - 11t + 5$
+
+\item  $36 - 11y - 12y^2$
+
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\vspace*{-.3in}
+
+\begin{multicols}{3}
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+
+\item  $18xy^2 - 54xy - 180x$
 
 \item  $2t^3 - 10t^2 + 3t - 15$ 
 
@@ -208,7 +309,7 @@ The techniques of `un-F.O.I.L.ing' and `factoring by grouping' are difficult to 
 
 \end{multicols}
 
-
+\pagebreak
 
 {\bf Solution.}
 
@@ -218,9 +319,9 @@ The techniques of `un-F.O.I.L.ing' and `factoring by grouping' are difficult to 
 
 \item As with the previous example, we check the G.C.F. of the terms in $2t^2 - 11t + 5$, determine it to be $1$ and see that the polynomial doesn't fit the pattern for a perfect square trinomial.  We now try to find integers $a$, $b$, $c$ and $d$ such that $(at+b)(ct+d) = 2t^2 - 11t + 5$.  Since $ac = 2$, we have that one of $a$ or $c$ is $2$, and the other is $1$. (Once again, we ignore the negative options.)  At this stage, there is nothing really distinguishing $a$ from $c$ so we choose $a = 2$ and $c = 1$.  Now we look for $b$ and $d$ so that $(2t + b)(t+d) = 2t^2 - 11t + 5$.  We know $bd = 5$ so one of $b$ or $d$ is $\pm 1$ and the other $\pm 5$. Given that $bd$ is positive, $b$ and $d$ must have the same sign.  The negative middle term $-11t$ guides us to guess $b = -1$ and $d = -5$ so that we get $(2t -1)(t -5) = 2t^2 - 11t + 5$.  We verify our answer by multiplying.\footnote{That's the `checking' part of 'guessing and checking'.}
 
-%\item  Once again, we check for a nontrivial G.C.F. and see if $36 - 11y - 12y^2$ fits the pattern of a perfect square.  Twice disappointed, we rewrite $36 - 11y - 12y^2 = -12y^2 - 11y + 36$ for notational convenience.  We now look for integers $a$, $b$, $c$ and $d$ such that $-12y^2 - 11y + 36 = (ay + b)(cy + d)$.  Since $ac =-12$, we know that one of $a$ or $c$ is $\pm 1$ and the other $\pm 12$ OR one of them is $\pm 2$ and the other is $\pm 6$ OR one of them is $\pm 3$ while the other is $\pm 4$. Since their product is $-12$, however, we know one of them is positive, while the other is negative.   To make matters worse, the constant term $36$ has its fair share of factors, too.  Our answers for $b$ and $d$ lie among the pairs $\pm 1$ and $\pm 36$, $\pm 2$ and $\pm 18$, $\pm 4$ and $\pm 9$, or $\pm 6$.  Since we know one of $a$ or $c$ will be negative, we can simplify our choices for $b$ and $d$ and just look at the positive possibilities.  After some guessing and checking,\footnote{Some of these guesses can be more `educated' than others.  Since the middle term is relatively `small,' we don't expect the `extreme' factors of $36$ and $12$ to appear, for instance.} we find $(-3y + 4)(4y+9) = -12y^2 - 11y + 36$.
+\item  Once again, we check for a nontrivial G.C.F. and see if $36 - 11y - 12y^2$ fits the pattern of a perfect square.  Twice disappointed, we rewrite $36 - 11y - 12y^2 = -12y^2 - 11y + 36$ for notational convenience.  We now look for integers $a$, $b$, $c$ and $d$ such that $-12y^2 - 11y + 36 = (ay + b)(cy + d)$.  Since $ac =-12$, we know that one of $a$ or $c$ is $\pm 1$ and the other $\pm 12$ OR one of them is $\pm 2$ and the other is $\pm 6$ OR one of them is $\pm 3$ while the other is $\pm 4$. Since their product is $-12$, however, we know one of them is positive, while the other is negative.   To make matters worse, the constant term $36$ has its fair share of factors, too.  Our answers for $b$ and $d$ lie among the pairs $\pm 1$ and $\pm 36$, $\pm 2$ and $\pm 18$, $\pm 4$ and $\pm 9$, or $\pm 6$.  Since we know one of $a$ or $c$ will be negative, we can simplify our choices for $b$ and $d$ and just look at the positive possibilities.  After some guessing and checking,\footnote{Some of these guesses can be more `educated' than others.  Since the middle term is relatively `small,' we don't expect the `extreme' factors of $36$ and $12$ to appear, for instance.} we find $(-3y + 4)(4y+9) = -12y^2 - 11y + 36$.
 
-%\item  Since the G.C.F. of the terms in $18xy^2 - 54xy - 180x$  is $18x$, we begin the problem by factoring it out first:  $18xy^2 - 54xy - 180x = 18x(y^2 - 3y - 10)$.  We now focus our attention on $y^2 - 3y - 10$.  We can take $a$ and $c$ to both be $1$ which yields $(y+b)(y+d) = y^2 - 3y - 10$.  Our choices for $b$ and $d$ are among the factor pairs of $-10$: $\pm 1$ and $\pm 10$ or $\pm 2$ and $\pm 5$, where one of $b$ or $d$ is positive and the other is negative.  We find $(y-5)(y+2) = y^2 - 3y - 10$.  Our final answer is $18xy^2 - 54xy - 180x = 18x(y-5)(y+2)$.
+\item  Since the G.C.F. of the terms in $18xy^2 - 54xy - 180x$  is $18x$, we begin the problem by factoring it out first:  $18xy^2 - 54xy - 180x = 18x(y^2 - 3y - 10)$.  We now focus our attention on $y^2 - 3y - 10$.  We can take $a$ and $c$ to both be $1$ which yields $(y+b)(y+d) = y^2 - 3y - 10$.  Our choices for $b$ and $d$ are among the factor pairs of $-10$: $\pm 1$ and $\pm 10$ or $\pm 2$ and $\pm 5$, where one of $b$ or $d$ is positive and the other is negative.  We find $(y-5)(y+2) = y^2 - 3y - 10$.  Our final answer is $18xy^2 - 54xy - 180x = 18x(y-5)(y+2)$.
 
 \item Since $2t^3 - 10t^2 - 3t + 15$  has four terms, we are pretty much resigned to factoring by grouping.  The strategy here is to factor out the G.C.F. from two \textit{pairs} of terms, and see if this reveals a common factor. If we group the first two terms, we can factor out a $2t^2$ to get $2t^3 - 10t^2 = 2t^2(t-5)$.  We now try to factor something out of the last two terms that will leave us with a factor of $(t-5)$.  Sure enough, we can factor out a $-3$ from both:  $-3t + 15 = -3(t-5)$.  Hence, we get \[ 2t^3 - 10t^2 - 3t + 15 = 2t^2(t-5) - 3(t-5) = (2t^2-3)(t-5)\] Now the question becomes can we factor $2t^2 - 3$ over the integers?  This would require integers $a, b, c$ and $d$ such that $(at + b)(ct + d) = 2t^2 - 3$.   Since $ab = 2$ and $cd = -3$, we aren't left with many options - in fact, we really have only four choices:  $(2t - 1)(t+3)$, $(2t+1)(t-3)$, $(2t - 3)(t+1)$ and $(2t+3)(t-1)$.  None of these produces $2t^2 - 3$ - which means it's irreducible over the integers - thus our final answer is $(2t^2-3)(t-5)$.
 
@@ -243,7 +344,7 @@ We leave it to the reader to check that neither $x^2 - 2x + 4$ nor $x^2 + 2x + 4
 \subsection{Solving Equations by Factoring}
 \label{solveeqnsbyfactoring}
 
-Many students wonder why they are forced to learn how to factor.  Simply put, factoring is our main tool for solving the non-linear equations which arise in many of the applications of Mathematics. We use factoring in conjunction with the Zero Product Property of Real Numbers which was first stated on page \pageref{propertiesofzero} and is given here again for reference.
+Many students wonder why they are forced to learn how to factor.  Simply put, factoring is our main tool for solving the non-linear equations which arise in many of the applications of Mathematics.\footnote{Also known as `story problems' or `real-world examples'.}  We use factoring in conjunction with the Zero Product Property of Real Numbers:
 
 \medskip
  
@@ -269,7 +370,7 @@ It is critical that you see the importance of setting the expression equal to $0
 
 6x^2 + 11x & = & 10 \\
 x(6x + 11) & = & 10 & \text{Factor} \\
-\end{array} \] What we \textbf{cannot} deduce from this equation is that $x = 10$ or $6x+11 = 10$ or that $x = 2$ and $6x+11 = 5$, etc..  It is precisely because $0$ plays such a special role in the arithmetic of real numbers (as the Additive Identity) that we can assume a factor is $0$ when the product is $0$.  No other real number has that ability.
+\end{array} \] What we \textbf{cannot} deduce from this equation is that $x = 10$ or $6x+11 = 10$ or that $x = 2$ and $6x+11 = 5$, etc..  (It's wrong and you should feel bad if you do it.)  It is precisely because $0$ plays such a special role in the arithmetic of real numbers (as the Additive Identity) that we can assume a factor is $0$ when the product is $0$.  No other real number has that ability.
 
 \smallskip
 
@@ -316,9 +417,25 @@ Let's finish the section with a collection of examples in which we use this stra
 
 \end{multicols}
 
+\begin{multicols}{3}
 
+\begin{enumerate}
 
+\setcounter{enumi}{\value{HW}}
 
+\item  $\dfrac{w^4}{3} = \dfrac{8w^3-12}{12} - \dfrac{w^2-4}{4}$
+
+\item  $z(z(18z+9)-50) = 25$\vphantom{$\dfrac{w^4}{3} = \dfrac{8w^3-12}{12} - \dfrac{w^2-4}{4}$}
+
+\item  $x^4-8x^2 - 9 = 0$\vphantom{$\dfrac{w^4}{3} = \dfrac{8w^3-12}{12} - \dfrac{w^2-4}{4}$}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\pagebreak
 
 {\bf Solution.}
 
@@ -369,11 +486,44 @@ y = 1 & \text{or} & y = 3 & \\  \end{array} \] Both of these answers are easily 
 
 \smallskip
 
-An alternative method to solving this equation is to begin by dividing both sides by $(y-1)$ to simplify things outright.  As we saw in Example \ref{lineareqnreview}, however, whenever we divide by a variable quantity, we make the explicit assumption that this quantity is nonzero.  Thus we must stipulate that $y - 1 \neq 0$.\[ \begin{array}{rclr}
+An alternative method to solving this equation is to begin by dividing both sides by $(y-1)$ to simplify things outright.  However, whenever we divide by a variable quantity, we must make the explicit assumption that this quantity is nonzero.  Thus we must stipulate that $y - 1 \neq 0$.\[ \begin{array}{rclr}
 
 \dfrac{(y-1)^2}{(y-1)} & = & \dfrac{2(y-1)}{(y-1)} & \text{Divide by $(y-1)$ - this assumes $(y-1) \neq 0$}\\
 y - 1 & = & 2 & \\
-y & = & 3 & \\  \end{array} \] Note that in this approach, we obtain the $y=3$ solution, but we `lose' the $y = 1$ solution. How did that happen?  Assuming $y - 1 \neq 0$ is equivalent to assuming $y \neq 1$.  This is an issue because $y = 1$ is a solution to the original equation and it was `divided out' too early.  The moral of the story?  If you decide to divide by a variable expression, double check that you aren't excluding any solutions.\footnote{You will see other examples throughout this text where dividing by a variable quantity does more harm than good.  Keep this basic one in mind as you move on in your studies - it's a good cautionary tale.}\qed
+y & = & 3 & \\  \end{array} \] Note that in this approach, we obtain the $y=3$ solution, but we `lose' the $y = 1$ solution. How did that happen?  Assuming $y - 1 \neq 0$ is equivalent to assuming $y \neq 1$.  This is an issue because $y = 1$ is a solution to the original equation and it was `divided out' too early.  The moral of the story?  If you decide to divide by a variable expression, double check that you aren't excluding any solutions.\footnote{You will see other examples throughout your textbook where dividing by a variable quantity does more harm than good.  Keep this basic one in mind as you move on in your studies - it's a good cautionary tale.}
+
+\item Proceeding as before, we clear fractions, gather the nonzero terms on one side of the equation, have $0$ on the other and factor.\[ \begin{array}{rclr}
+
+\dfrac{w^4}{3} & = & \dfrac{8w^3-12}{12} - \dfrac{w^2-4}{4} & \\ [5pt]
+
+12 \left(\dfrac{w^4}{3}\right) & = & 12 \left(\dfrac{8w^3-12}{12} - \dfrac{w^2-4}{4} \right) & \text{Multiply by $12$}\\[8pt]
+
+4w^4 & = & (8w^3 - 12) - 3(w^2-4) & \text{Distribute} \\
+4w^4 & = & 8w^3 - 12 - 3w^2 + 12 & \text{Distribute} \\
+
+0 & = & 8w^3 - 12 - 3w^2 + 12  - 4w^4 & \text{Subtract $4w^4$} \\
+0 & = & 8w^3  - 3w^2 - 4w^4 & \text{Gather like terms} \\
+0 & = & w^2(8w - 3 - 4w^2) & \text{Factor out G.C.F.} \\ \end{array} \] At this point, we  apply the Zero Product Property to deduce that $w^2 = 0$ or $8w - 3 - 4w^2 = 0$. From $w^2 = 0$, we get $w = 0$. To solve $8w - 3 - 4w^2 = 0$, we rearrange terms and factor:  $-4w^2 + 8w - 3= (2w - 1)(-2w+3) = 0$.  Applying the Zero Product Property again, we get $2w - 1= 0$ (which gives $w = \frac{1}{2}$), or $-2w+3 = 0$ (which gives $w = \frac{3}{2}$).  Our final answers are $w = 0$, $w = \frac{1}{2}$ and $w = \frac{3}{2}$.  The reader is encouraged to check each of these answers in the original equation.  (You need the practice with fractions!)
+
+\item  For our next example, we begin by subtracting the $25$ from both sides then work out the indicated operations before factoring by grouping.\[ \begin{array}{rclr}
+
+z(z(18z+9)-50) & = & 25 & \\
+
+z(z(18z+9)-50) - 25 & = & 0 & \text{Subtract $25$} \\
+z(18z^2 + 9z - 50) - 25 & = & 0 & \text{Distribute} \\
+18z^3 + 9z^2 - 50z - 25 & = & 0 & \text{Distribute} \\
+
+9z^2(2z + 1) - 25(2z + 1) & = & 0 & \text{Factor} \\
+
+(9z^2 - 25)(2z+1) & = & 0 & \text{Factor} \\ \end{array} \]
+
+At this point, we use the Zero Product Property and get $9z^2 - 25 = 0$ or $2z + 1 = 0$.  The latter gives $z = -\frac{1}{2}$ whereas the former  factors as $(3z - 5)(3z+5) = 0$.  Applying the Zero Product Property again gives $3z-5 = 0$ (so $z = \frac{5}{3}$) or $3z+5 = 0$ (so $z = -\frac{5}{3}$.) Our final answers are $z = -\frac{1}{2}$,  $z = \frac{5}{3}$ and $z = -\frac{5}{3}$, each of which good fun to check.
+
+\item  The nonzero terms of the equation $x^4-8x^2 - 9= 0$ are already on one side of the equation so we proceed to factor.  This trinomial doesn't fit the pattern of a perfect square so we attempt to reverse the F.O.I.L.ing process.  With an $x^4$ term, we have two possible forms to try:  $(ax^2 + b)(cx^2 + d)$ and $(ax^3 + b)(cx +d)$.  We leave it to you to show that $(ax^3 + b)(cx +d)$ does not work and we show that  $(ax^2 + b)(cx^2 + d)$ does. 
+
+\smallskip
+
+Since the coefficient of $x^4$ is $1$, we take $a = c = 1$.  The constant term is $-9$ so we know $b$ and $d$ have opposite signs and our choices are limited to two options: either $b$ and $d$ come from $\pm 1$ and $\pm 9$ OR one is $3$ while the other is $-3$.  After some trial and error, we get $x^4 - 8x^2 - 9 = (x^2 - 9)(x^2+1)$.  Hence $x^4-8x^2 - 9= 0$ reduces to $(x^2 - 9)(x^2 + 1) = 0$.  The Zero Product Property tells us that either $x^2 - 9 = 0$ or $x^2+1 = 0$.  To solve the former, we factor: $(x-3)(x+3) = 0$, so $x-3 = 0$ (hence, $x = 3$) or $x+3 = 0$ (hence, $x = -3$).  The equation $x^2 + 1 = 0$ has no (real) solution, since for any real number $x$, $x^2$ is always $0$ or greater.  Thus $x^2 + 1$ is always positive.  Our final answers are $x = 3$ and $x = -3$. As always, the reader is invited to check both answers in the original equation. \qed
 
 \end{enumerate}
 
@@ -390,7 +540,7 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 
 \item $2x - 10x^2$ \label{factoringexfirst}
 \item $12t^5 - 8t^3$
-\item $5(m+3)^2- 4(m+3)^3$
+\item $16xy^2 - 12x^2y$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -400,7 +550,7 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $25t^2 + 10t + 1$
+\item $5(m+3)^2- 4(m+3)^3$
 \item $(2x-1)(x+3) - 4(2x-1)$
 \item $t^2(t-5) + t - 5$
 
@@ -412,7 +562,7 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $9z^2 - 64y^4$
+\item $w^2 - 121$
 \item $49 - 4t^2$
 \item $81t^4 - 16$
 
@@ -424,7 +574,7 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $y^2 - 12y + 27$
+\item $9z^2 - 64y^4$
 \item $(y+3)^2 - 4y^2$
 \item $(x+h)^3 - (x+h)$
 
@@ -432,12 +582,23 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $y^2 - 24y + 144$
+\item $25t^2 + 10t + 1$
+\item $12x^3 - 36x^2 + 27x$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 \begin{multicols}{3}
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $x^2 - 5x - 14$
+\item $m^4 + 10m^2 + 25$
 \item $27 - 8x^3$
 \item $t^6 +t^3$
 
@@ -452,8 +613,8 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $3m^3 + 9m^2 - 12m$
-\item $6x^2 - 23x + 20$
+\item $x^2 - 5x - 14$
+\item $y^2 - 12y + 27$
 \item $3t^2 + 16t + 5$
 
 
@@ -466,9 +627,10 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $x^3 - 5x^2 - 9x + 45$
-\item $x^4 + x^2 - 20$
-\item $4(t^2-1)^2 +3(t^2-1) - 10$\label{factoringexlast}
+\item $6x^2 - 23x + 20$
+\item $35+2m - m^2$
+\item $7w - 2w^2 - 3$
+
 
 
 \setcounter{HW}{\value{enumi}}
@@ -476,7 +638,31 @@ In Exercises \ref{factoringexfirst} - \ref{factoringexlast}, factor completely o
 \end{multicols}
 
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+\item $3m^3 + 9m^2 - 12m$
+\item $x^4 + x^2 - 20$
+\item $4(t^2-1)^2 +3(t^2-1) - 10$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^3 - 5x^2 - 9x + 45$
+\item $3t^2 + t - 3 - t^3$
+\item\hspace{-0.1in}\footnote{$y^4 + 5y^2 + 9 = (y^4 + 6y^2 + 9) - y^2$} $y^4 + 5y^2 + 9$\label{factoringexlast}
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 In Exercises \ref{solvebyfactorfirst} - \ref{solvebyfactorlast},  find all rational number solutions.  Check your answers.
 
@@ -512,7 +698,118 @@ In Exercises \ref{solvebyfactorfirst} - \ref{solvebyfactorlast},  find all ratio
 
 \item $16x^4 = 9x^2$
 \item $w(6w+11) = 10$
-\item $2w^2 + 5w + 2 = - 3(2w+1)$\label{solvebyfactorlast}
+\item $2w^2 + 5w + 2 = - 3(2w+1)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x^2(x-3) = 16(x-3)$
+\item $(2t+1)^3 = (2t+1)$
+\item $a^4 + 4 = 6 - a^2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{8t^2}{3} = 2t+3$\vphantom{$\dfrac{y^4}{3} - y^2 = \dfrac{3}{2} (y^2 + 3)$}
+\item $\dfrac{x^3+x}{2} = \dfrac{x^2+1}{3}$\vphantom{$\dfrac{y^4}{3} - y^2 = \dfrac{3}{2} (y^2 + 3)$}
+\item $\dfrac{y^4}{3} - y^2 = \dfrac{3}{2} (y^2 + 3)$ \label{solvebyfactorlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  With help from your classmates, factor $4x^4 + 8x^2 + 9$.  
+
+\item  With help from your classmates, find an equation which has $3$, $-\frac{1}{2}$, and $117$ as solutions.  
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\newpage
+
+\subsection{Answers}
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $2x(1 - 5x)$ 
+\item $4t^3(3t^2-2)$
+\item $4xy(4y-3x)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $-(m+3)^2(4m+7)$
+\item $(2x-1)(x-1)$
+\item $(t-5)(t^2+1)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(w-11)(w+11)$
+\item $(7-2t)(7+2t)$
+\item $(3t-2)(3t+2)(9t^2+4)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(3z-8y^2)(3z+8y^2)$
+\item $-3(y - 3)(y+1)$
+\item $(x+h)(x+h-1)(x+h+1)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(y-12)^2$
+\item $(5t+1)^2$
+\item $3x(2x-3)^2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(m^2+5)^2$
+\item $(3-2x)(9 + 6x + 4x^2)$
+\item $t^3(t+1)(t^2 - t + 1)$
+
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -520,5 +817,123 @@ In Exercises \ref{solvebyfactorfirst} - \ref{solvebyfactorlast},  find all ratio
 
 
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
-\closegraphsfile
+\item $(x-7)(x+2)$
+\item $(y-9)(y-3)$
+\item $(3t+1)(t+5)$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(2x-5)(3x-4)$
+\item $(7-m)(5+m)$
+\item $(-2w+1)(w-3)$
+
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $3m(m-1)(m+4)$
+\item $(x-2)(x+2)(x^2+5)$
+\item $(2t-3)(2t+3)(t^2+1)$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(x-3)(x+3)(x-5)$
+\item $(t-3)(1-t)(1+t)$
+\item $(y^2-y+3)(y^2+y+3)$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item   $x = -\dfrac{3}{7}$ or $x = 5$ 
+\item   $t = \dfrac{1}{2}$ or $t = -4$
+\item   $y = \dfrac{5}{3}$ or $y = -2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item   $t = 0$ or $t = 4$\vphantom{$x = \dfrac{3}{2}$ or $x = \dfrac{7}{4}$ }
+\item   $y = -1$ or $y = \dfrac{3}{2}$ \vphantom{$x = \dfrac{3}{2}$ or $x = \dfrac{7}{4}$}
+\item   $x = \dfrac{3}{2}$ or $x = \dfrac{7}{4}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x = 0$ or $x = \pm \dfrac{3}{4}$ 
+\item $w = -\dfrac{5}{2}$ or $w = \dfrac{2}{3}$
+\item $w=-5$ or $w = -\dfrac{1}{2}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $x=3$ or $x = \pm 4$ \vphantom{$t = -1$, $t= -\dfrac{1}{2}$, or $t = 0$}
+\item $t = -1$, $t= -\dfrac{1}{2}$, or $t = 0$
+\item $a = \pm 1$\vphantom{$t = -1$, $t= -\dfrac{1}{2}$, or $t = 0$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $t = -\dfrac{3}{4}$ or $t = \dfrac{3}{2}$
+\item $x = \dfrac{2}{3}$
+\item $y = \pm 3$  \vphantom{$x = \dfrac{2}{3}$}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\end{document}

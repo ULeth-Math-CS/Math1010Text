@@ -1,46 +1,76 @@
-\mfpicnumber{1}
-\mfpverbtex{%
-\documentclass[10pt]{article}
-\usepackage{amsmath}
+\documentclass[11pt]{article}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{amssymb,amsmath,amsthm,fancyhdr,supertabular,longtable,hhline}
+\usepackage{colortbl}
+\usepackage{import, multicol,boxedminipage}
+\usepackage{graphicx}
+\usepackage[colorlinks, hyperindex, plainpages=false, linkcolor=blue, urlcolor=blue, pdfpagelabels]{hyperref}
+\usepackage[all]{hypcap}
+\definecolor{ResultColor}{gray}{0.9}
+\theoremstyle{definition}  % this prevents the text in definitions, theorems, and corollaries from being italicized
+\newtheorem{defn}{\bf Definition}
+\newtheorem{thm}{\bf Theorem}
+\newtheorem{cor}[thm]{\bf Corollary}
+\newtheorem{eqn}{\bf Equation}
+\newtheorem{ex}{\bf Example}
+\newtheorem{fig}{\bf Figure}
+\setlength{\parindent}{0in}
+\newcommand{\bbm}{\begin{boxedminipage}{6.41in}}
+\newcommand{\ebm}{\end{boxedminipage}}
+\usepackage{array}
+\setlength{\extrarowheight}{2pt}
+\allowdisplaybreaks[2]
+\usepackage{cancel}
+\usepackage{sectsty}
+\usepackage{textcomp}
+\usepackage{multirow}
 \usepackage[sfdefault,lf]{carlito}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+	%% The 'lf' option for lining figures
+	%% The 'sfdefault' option to make the base font sans serif
+	\usepackage[T1]{fontenc}
+	\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\usepackage[nottoc]{tocbibind}
+\allsectionsfont{\mdseries \scshape}
+\makeatletter
+\renewcommand\l@section{\@dottedtocline{1}{1.5em}{3em}}
+\renewcommand\l@subsection{\@dottedtocline{2}{4.5em}{3.5em}}
+\makeatother
+\pagestyle{fancy}
+\newcounter{HW}
+\newcounter{HWindent}
+
+\title{Review \#4: Polynomial Arithmetic}
+\author{Carl Stitz and Jeff Zeager\\
+Edited by Sean Fitzpatrick}
+
 \begin{document}
-}
-\opengraphsfile{PolyArith}
+\maketitle
 
-\setcounter{footnote}{0}
 
-\label{PolyArith}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headheight}{14pt}
+\lhead[\fancyplain{}{\sc\thepage}]%
+      {\fancyplain{}{\sc \nouppercase{\rightmark}}}
+\rhead[\fancyplain{}{\sc \nouppercase{\leftmark}}]%
+      {\fancyplain{}{\sc\thepage}}
+\cfoot{}
 
-In this section, we review the arithmetic of \textbf{polynomials}. What precisely is a polynomial?
+
+
+In this handout, we review the arithmetic of \textbf{polynomials}. What precisely is a polynomial?\footnote{In this handout we focus on polynomial \textit{expressions}. When you encounter polynomials in your textbook (and courses) it will usually be in the context of polynomial \textit{functions} of the form $f(x) = a_nx^n+\cdots + a_1x + a_0$.}
 
 \medskip
 
 \colorbox{ResultColor}{\bbm
 
-\begin{defn}  A \textbf{polynomial}\index{polynomial} is a sum of terms, each of which is either a real number, or a product of a real number and one or more variables raised to positive integer powers.
+\begin{defn}  A \textbf{polynomial} is a sum of terms each of which is a real number or a real number multiplied by one or more variables to natural number powers. 
 \end{defn}
 
 \ebm}
 
 \medskip
 
-Some examples of polynomials are $x^2 + x\sqrt{3} + 4$, $27x^2y + \frac{7x}{2}$ and $6$. Things like $3\sqrt{x}$, $4x - \frac{2}{x+1}$ and $13x^{2/3}y^{2}$ are \textbf{not} polynomials. (Do you see why not?) 
-
-\medskip
-
-\begin{rem}
-In general, a polynomial can involve several variables. For example, $x^2y+3xyz-5yz^3$ is a polynomial in three variables, $x$, $y$, and $z$. However, in this text we will deal almost exclusively with polynomials of a single variable (usually denoted by $x$). A general polynomial in one variable is of the form
-\[
-a_nx^n+a_{n-1}x^{n-1}+\cdots+ a_2x^2+a_1x+a_0.
-\]
-(The subscript notation $a_0, a_1, a_2$, etc. for the coefficients is simply a bookkeeping device to make it easy for us to refer to the coefficients of each power of $x$.)
-\end{rem}
-
-\medskip
-
- Below we review some of the terminology associated with polynomials.
+Some examples of polynomials are $x^2 + x\sqrt{3} + 4$, $27x^2y + \frac{7x}{2}$ and $6$. Things like $3\sqrt{x}$, $4x - \frac{2}{x+1}$ and $13x^{2/3}y^{2}$ are \textbf{not} polynomials. (Do you see why not?)  Below we review some of the terminology associated with polynomials.
 
 \medskip
 
@@ -50,25 +80,25 @@ a_nx^n+a_{n-1}x^{n-1}+\cdots+ a_2x^2+a_1x+a_0.
 
 \begin{itemize}
 
-\item  \textbf{Constant Terms:} Terms in polynomials without variables are called \textbf{constant}\index{polynomial ! constant} terms.
+\item  \textbf{Constant Terms:} Terms in polynomials without variables are called \textbf{constant} terms.
 
-\item  \textbf{Coefficient:}   In the non-constant terms, the real number factor in the expression is called the \textbf{coefficient}\index{polynomial ! coefficient} of the term. 
+\item  \textbf{Coefficient:}   In non-constant terms, the real number factor in the expression is called the \textbf{coefficient} of the term. 
 
-\item  \textbf{Degree:}  The \textbf{degree}\index{polynomial ! degree} of a non-constant term is the sum of the exponents on the variables in the term; non-zero constant terms are defined to have degree $0$. The degree of a polynomial is the highest degree of the nonzero terms.\footnote{In the case of a single-variable polynomial, the degree is the highest power of $x$ with a non-zero coefficient.}
+\item  \textbf{Degree:}  The \textbf{degree} of a non-constant term is the sum of the exponents on the variables in the term; non-zero constant terms are defined to have degree $0$. The degree of a polynomial is the highest degree of the nonzero terms.
 
-\item  \textbf{Like Terms:} Terms in a polynomial are called \textbf{like}\index{term ! like} terms if they have the same variables each with the same corresponding exponents.\footnote{For single-variable polynomials, like terms have the same power of $x$ in them.}
+\item  \textbf{Like Terms:} Terms in a polynomial are called \textbf{like} terms if they have the same variables each with the same corresponding exponents.
 
-\item  \textbf{Simplified:} A polynomial is said to be \textbf{simplified}\index{polynomial ! simplified} if all arithmetic operations have been completed and there are no longer any like terms.
+\item  \textbf{Simplified:} A polynomial is said to be \textbf{simplified} if all arithmetic operations have been completed and there are no longer any like terms.
 
 \item  \textbf{Classification by Number of Terms:}  A simplified polynomial  is  called a 
 
 \begin{itemize}
 
-\item   \textbf{monomial}\index{monomial} if it has exactly one nonzero term
+\item   \textbf{monomial} if it has exactly one nonzero term
 
-\item   \textbf{binomial}\index{binomial} if it has exactly two nonzero terms
+\item   \textbf{binomial} if it has exactly two nonzero terms
 
-\item   \textbf{trinomial}\index{trinomial} if it has exactly three nonzero terms
+\item   \textbf{trinomial} if it has exactly three nonzero terms
 
 \end{itemize}
 
@@ -90,7 +120,7 @@ The concept of `like' terms really amounts to finding terms which can be combine
 
 There are four basic operations we can perform with polynomials:  addition, subtraction, multiplication and division. The first three of these operations follow directly from properties of real number arithmetic and will be discussed together first.  Division, on the other hand, is a bit more complicated and will be discussed separately.
 
-\subsection{Polynomial Addition, Subtraction and Multiplication.}
+\section{Polynomial Addition, Subtraction and Multiplication.}
 \label{polyaddsubtmult}
 
 Adding and subtracting polynomials comes down to identifying like terms and then adding or subtracting the coefficients of those like terms.  Multiplying polynomials comes to us courtesy of the Generalized Distributive Property.
@@ -99,7 +129,7 @@ Adding and subtracting polynomials comes down to identifying like terms and then
 
 \colorbox{ResultColor}{\bbm
 
-\begin{thm}\label{generaldistprop} \textbf{Generalized Distributive Property:}  To multiply a sum of $n$ terms by a sum of $m$ terms, multiply each of the $n$ terms of the first sum by each of the $m$ terms in the second sum and add the resulting $n \cdot m$ terms together. 
+\begin{thm}\label{generaldistprop} \textbf{Generalized Distributive Property:}  To multiply a quantity of $n$ terms by a quantity of $m$ terms, multiply each of the $n$ terms of the first quantity by each of the $m$ terms in the second quantity and add the resulting $n \cdot m$ terms together. 
 
 \end{thm}
 
@@ -107,8 +137,7 @@ Adding and subtracting polynomials comes down to identifying like terms and then
 
 \medskip
 
-That is, we multiply the first term in the first sum by each of the terms in the second sum, and then the second term in the first sum, and so on.
-In particular, Theorem \ref{generaldistprop} says that, before combining like terms, a product of an $n$-term polynomial and an $m$-term polynomial will generate $(n \cdot m)$-terms.  For example, a binomial times a trinomial will produce six terms, some of which may be like terms.  Thus the simplified end result may have fewer than six terms but you will start with six terms. 
+In particular, Theorem \ref{generaldistprop} says that, before combining like terms, a product of an $n$-term polynomial and an $m$-term polynomial will generate $(n \cdot m)$-terms.  For example, a binomial times a trinomial will produce six terms some of which may be like terms.  Thus the simplified end result may have fewer than six terms but you will start with six terms. 
 
 \medskip
 
@@ -140,11 +169,9 @@ That is, $(a+b)(c+d) = ac + ad + bc + bd$.
 
 \medskip
 
-The problem with multiplying a rule like ``F.O.I.L.'' is that it doesn't tell you what to do in any of the other cases covered by the generalized distributive property. For example, F.O.I.L. says nothing about the product $(a+b)(x+y+z)$, while Theorem \ref{generaldistprop} gives us
-\[
-(a+b)(x+y+z) = ax+ay+az+bx+by+bz.
-\]
+Theorem \ref{generaldistprop} is best proved using the technique known as Mathematical Induction which is covered in Math 2000.  The result is really nothing more than repeated applications of the Distributive Property so it seems reasonable and we'll use it without proof for now.  The other major piece of polynomial multiplication is the law of exponents  $a^n a^m = a^{n+m}$.  The Commutative and Associative Properties of addition and multiplication are also used extensively.  We put all of these properties to good use in the next example.
 
+\pagebreak
 
 \begin{ex}
 
@@ -208,7 +235,7 @@ Perform the indicated operations and simplify.
 
 \begin{enumerate}
 
-\item  We begin `distributing the negative' as indicated on page \pageref{propertiesofnegatives} in Section \ref{RealNumberArithmetic}, then we rearrange and combine like term:\[\begin{array}{rclr}
+\item  We begin `distributing the negative', then we rearrange and combine like terms:\[\begin{array}{rclr}
 
 \left(3x^2 - 2x + 1\right) - (7x-3) &  = & 3x^2-2x+1 - 7x + 3 & \text{Distribute} \\
                                     & = & 3x^2  -2x - 7x + 1 + 3 & \text{Rearrange terms} \\
@@ -241,7 +268,7 @@ Perform the indicated operations and simplify.
 
 \end{array} \] To our surprise and delight, this product reduces to $27y^3 - 2$.
 
-\item Since exponents do \textbf{not} distribute across powers,\footnote{See the remarks following the Properties of Exponents on \pageref{propertiesofintegerexponents}.}  $\left(4w - \frac{1}{2} \right)^2 \neq (4w)^2 - \left(\frac{1}{2}\right)^2$.  (We know you knew that.)  Instead, we proceed as follows:\[ \begin{array}{rclr}
+\item Since exponents do \textbf{not} distribute across powers,  $\left(4w - \frac{1}{2} \right)^2 \neq (4w)^2 - \left(\frac{1}{2}\right)^2$.  (We know you knew that.)  Instead, we proceed as follows:\[ \begin{array}{rclr}
 
 \left(4w - \dfrac{1}{2} \right)^2 & = & \left(4w - \dfrac{1}{2} \right)\left(4w - \dfrac{1}{2} \right) & \hspace*{-.2in} \\[12pt]
                                  & = & (4w)(4w) + (4w)\left(-\dfrac{1}{2}\right) + \left(-\dfrac{1}{2}\right)(4w) + \left(-\dfrac{1}{2}\right)\left(-\dfrac{1}{2}\right) & \hspace*{-.2in} \text{F.O.I.L.} \\[12pt]
@@ -291,10 +318,10 @@ We conclude our discussion of polynomial multiplication by showcasing two specia
 
 The formulas in Theorem \ref{SpecialProducts} can be verified by working through the multiplication.\footnote{These are both special cases of F.O.I.L.}
 
-\subsection{Polynomial Long Division.}
+\section{Polynomial Long Division.}
 \label{polylongdiv}
 
-We now turn our attention to polynomial long division.  Dividing two polynomials follows the same algorithm, in principle, as dividing two natural numbers so we review\footnote{With apologies to those of you for whom this is not, in fact, review...} that process first.  Suppose we wished to divide $2585$ by $79$.  The standard division tableau is given below. 
+We now turn our attention to polynomial long division.  Dividing two polynomials follows the same algorithm, in principle, as dividing two natural numbers so we review that process first.  Suppose we wished to divide $2585$ by $79$.  The standard division tableau is given below. 
 
 \setlength\arraycolsep{0.1pt}
 \setlength\extrarowheight{2pt}
@@ -316,7 +343,7 @@ We now turn our attention to polynomial long division.  Dividing two polynomials
 \setlength\arraycolsep{5pt}
 \setlength\extrarowheight{0pt}
 
-In this case, $79$ is called the \textbf{divisor}\index{division ! divisor}, $2585$ is called the \textbf{dividend}\index{division ! dividend}, $32$ is called the \textbf{quotient}\index{division ! quotient} and $57$ is called the \textbf{remainder}\index{division ! remainder}.  We can check our answer by showing:  \[ \text{dividend} = (\text{divisor})( \text{quotient}) + \text{remainder}\] or in this case, $2585 = 
+In this case, $79$ is called the \textbf{divisor}, $2585$ is called the \textbf{dividend}, $32$ is called the \textbf{quotient} and $57$ is called the \textbf{remainder}.  We can check our answer by showing:  \[ \text{dividend} = (\text{divisor})( \text{quotient}) + \text{remainder}\] or in this case, $2585 = 
  (79)(32) + 57 \checkmark$.  We hope that the long division tableau evokes warm, fuzzy memories of your formative years as opposed to feelings of hopelessness and frustration.  If you experience the latter, keep in mind that the Division Algorithm essentially is a two-step process, iterated over and over again.  First, we guess the number of times the divisor goes into the dividend and  then we subtract off our guess.  We repeat those steps with what's left over until what's left over (the remainder) is less than what we started with (the divisor).  That's all there is to it!
 
 \smallskip
@@ -350,7 +377,7 @@ Written this way, we see that when we line up the digits we are really lining up
 
 \colorbox{ResultColor}{\bbm
 
-\begin{thm} \label{polydiv0} \textbf{Polynomial Division:}  Let $d$ and $p$ be nonzero polynomials where the degree of $p$ is greater than or equal to the degree of $d$.  There exist two unique polynomials, $q$ and $r$, such that $p = d \cdot q + r,\,$ where either $r = 0$ or the degree of $r$ is strictly less than the degree of $d$.
+\begin{thm} \label{polydiv} \textbf{Polynomial Division:}  Let $d$ and $p$ be nonzero polynomials where the degree of $p$ is greater than or equal to the degree of $d$.  There exist two unique polynomials, $q$ and $r$, such that $p = d \cdot q + r,\,$ where either $r = 0$ or the degree of $r$ is strictly less than the degree of $d$.
 \end{thm}
 \ebm}
 
@@ -507,7 +534,7 @@ w^2 & + & 0w & - & \sqrt{2} \, \vline & w^3 & + & 0w^2 & + & 0w & + & 0  \\
 \setlength\arraycolsep{5pt}
 \setlength\extrarowheight{0pt}
 
-Since the degree of $w\sqrt{2}$ (which is $1$) is less than the degree of the divisor (which is $2$), we are done.  Our answer is $w$ with a remainder of $w \sqrt{2}$.  To check, we compute:
+Since the degree of $w\sqrt{2}$ (which is $1$) is less than the degree of the divisor (which is $2$), we are done.\footnote{Since $\frac{0w^2}{w^2} = 0$, we could proceed, write our quotient as $w+0$, and move on\ldots but even pedants have limits.}  Our answer is $w$ with a remainder of $w \sqrt{2}$.  To check, we compute:
 
 \[ \left(w^2 - \sqrt{2}\right)w + w\sqrt{2} = w^3 - w\sqrt{2} + w\sqrt{2} = w^3 \, \checkmark\]
 
@@ -519,7 +546,7 @@ Since the degree of $w\sqrt{2}$ (which is $1$) is less than the degree of the di
 
 \newpage
 
-\subsection{Exercises}
+\section{Exercises}
 
 In Exercises \ref{polyarithexfirst} - \ref{polyarithexlast}, perform the indicated operations and simplify.
 
@@ -528,7 +555,7 @@ In Exercises \ref{polyarithexfirst} - \ref{polyarithexlast}, perform the indicat
 
 \item  $(4-3x) + (3x^2 + 2x + 7)$ \label{polyarithexfirst}
 \item $t^2 + 4t - 2(3-t)$
-\item $(3y-1)(2y+1)$\vphantom{$\left(3-\dfrac{x}{2}\right)(2x+5)$}
+\item $q(200-3q) - (5q + 500)$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
@@ -538,14 +565,26 @@ In Exercises \ref{polyarithexfirst} - \ref{polyarithexlast}, perform the indicat
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
+\item $(3y-1)(2y+1)$\vphantom{$\left(3-\dfrac{x}{2}\right)(2x+5)$}
+\item $\left(3-\dfrac{x}{2}\right)(2x+5)$
 \item $-(4t+3)(t^2-2)$\vphantom{$\left(3-\dfrac{x}{2}\right)(2x+5)$}
-\item $(5a^2 - 3)(25a^4 + 15a^2 + 9)$
-\item $(x^2-2x+3)(x^2+2x+3)$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $2w(w^3-5)(w^3+5)$
+\item $(5a^2 - 3)(25a^4 + 15a^2 + 9)$
+\item $(x^2-2x+3)(x^2+2x+3)$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 \begin{multicols}{3}
 \begin{enumerate}
@@ -603,15 +642,49 @@ In Exercises \ref{polydivexfirst} - \ref{polydivexlast}, perform the indicated d
 \begin{enumerate}
 \setcounter{enumi}{\value{HW}}
 
-\item $(2x^2 - x + 1) \div (3x^2 + 1)$
+\item $(t^2 - 4) \div (2t + 1)$
 
-\item $(4y^4+3y^2+1) \div (2y^2-y+1)$\label{polydivexlast}
+\item $(w^3 - 8) \div (5w-10)$
 
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 \end{multicols}
 
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
 
+\item $(2x^2 - x + 1) \div (3x^2 + 1)$
+
+\item $(4y^4+3y^2+1) \div (2y^2-y+1)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $w^4 \div (w^3 - 2)$
+\item $(5t^3 - t + 1) \div (t^2 + 4)$
+
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item $(t^3 - 4) \div (t - \sqrt[3]{4})$
+
+\item $(x^2-2x-1) \div (x-[1-\sqrt{2}])$  \label{polydivexlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
 
 In Exercises \ref{specialformexfirst} - \ref{specialformexlast} verify the given formula by showing the left hand side of the equation simplifies to the right hand side of the equation.
 
@@ -630,12 +703,146 @@ In Exercises \ref{specialformexfirst} - \ref{specialformexlast} verify the given
 
 \item  \textbf{Sum of Quartics:}  $(a^2 + ab \sqrt{2} + b^2)(a^2 - ab \sqrt{2} + b^2) = a^4 + b^4$ \label{specialformexlast}
 
+\item  With help from your classmates, determine under what conditions $(a+b)^2 = a^2 + b^2$.  What about $(a+b)^3 = a^3 + b^3$? In general, when does $(a+b)^n = a^n + b^n$ for a natural number $n \geq 2$?
+
 \setcounter{HW}{\value{enumi}}
 \end{enumerate}
 
 
 \newpage
 
+\section{Answers}
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $3x^2 - x + 11$
+\item $t^2 + 6t-6$
+\item $-3q^2+195q-500$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $6y^2+y-1$\vphantom{$-x^2 + \dfrac{7}{2} x + 15$}
+\item $-x^2 + \dfrac{7}{2} x + 15$
+\item $-4t^3-3t^2+8t+6$\vphantom{$-x^2 + \dfrac{7}{2} x + 15$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $2w^7 - 50w$
+\item $125a^6 - 27$
+\item $x^4+2x^2+9$
 
 
-\closegraphsfile
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $7-z^2$
+\item $x^3 - 3x^2\sqrt[3]{5} + 3x\sqrt[3]{25} - 5$
+\item $x^3 - 5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $-6w$
+\item $h^2 + 2xh - 2h$
+\item $x^2 - 4x - 1$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item quotient: $5x-8$, remainder: $9$ 
+\item quotient: $3y+15$, remainder: $38$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item quotient: $3$, remainder: $18$ \vphantom{$\dfrac{11}{3}$}
+\item quotient: $\dfrac{2}{3}$, remainder: $\dfrac{11}{3}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item quotient: $\dfrac{t}{2} - \dfrac{1}{4}$, remainder: $-\dfrac{15}{4}$ \vphantom{ $\dfrac{w^2}{5} + \dfrac{2w}{5} + \dfrac{4}{5}$, remainder: $0$}
+
+\item quotient: $\dfrac{w^2}{5} + \dfrac{2w}{5} + \dfrac{4}{5}$, remainder: $0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item quotient: $\dfrac{2}{3}$, remainder: $-x + \dfrac{1}{3}$
+
+\item quotient:  $2y^2+y+1$, remainder: $0$ \vphantom{$\dfrac{2}{3}$, remainder: $-x + \dfrac{1}{3}$}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item quotient: $w$, remainder: $2w$
+\item quotient: $5t$, remainder: $-21t + 1$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item quotient:\footnote{Note: $\sqrt[3]{16} = 2\sqrt[3]{2}$.} $t^2 + t \sqrt[3]{4} + 2\sqrt[3]{2}$, remainder: $0$
+
+\item quotient: $x -1 - \sqrt{2}$, remainder: 0  
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\end{document}
