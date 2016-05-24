@@ -3,7 +3,7 @@
 
 In Section \ref{Polydivision}, we found that we can use \ifthenelse{\boolean{synthetic}}{synthetic}{long} division to determine if a given real number is a zero of a polynomial function.  This section presents results which will help us determine good candidates to test using \ifthenelse{\boolean{synthetic}}{synthetic}{long} division.  There are two approaches to the topic of finding the real zeros of a polynomial.  The first approach (which is gaining popularity) is to use a little bit of Mathematics followed by a good use of technology like graphing calculators.  The second approach (for purists) makes good use of mathematical machinery (theorems) only.  For completeness, we include the two approaches but in separate subsections.  Both approaches benefit from the following two theorems, the first of which is due to the famous mathematician \href{http://en.wikipedia.org/wiki/Cauchy}{\underline{Augustin Cauchy}}.  It gives us an interval on which all of the real zeros of a polynomial can be found.
 
-\mnote{.75}{Carl is the purist and is responsible for all of the theorems in this section.  Jeff, on the other hand, has spent too much time in school politics and has been polluted with notions of `compromise.'  You can blame the slow decline of civilization on him and those like him who mingle Mathematics with technology.}
+\mnote{.7}{Carl is the purist and is responsible for all of the theorems in this section.  Jeff, on the other hand, has spent too much time in school politics and has been polluted with notions of `compromise.'  You can blame the slow decline of civilization on him and those like him who mingle Mathematics with technology.}
 
 \smallskip
 
@@ -12,7 +12,7 @@ Suppose $f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}}x^{n-\mbox{\tiny$1$}} + \ldot
 
 \smallskip
 
-\mnote{.6}{
+\mnote{.57}{
 The proof of Theorem \ref{CauchysBound} is not easily explained within the confines of this text.  This \href{http://titan.princeton.edu/papers/claire/hertz-etal-99.pdf}{\underline{paper}} contains the result and gives references to its proof. }
 
 Like many of the results in this section, Cauchy's Bound is best understood with an example.
@@ -161,7 +161,7 @@ We have a winner!  Remembering that $f$ was a fourth degree polynomial, we know 
 
 \[ \begin{array}{cccccccccc}
 
-& & & & & 2x^2 & - & 3 &  &  \\ \hhline{~~~|-------}
+& & & & & & & 2x^2 & - & 3 \\ \hhline{~~~|-------}
 
 x & + & 1 \, \vline& 2x^3 & + & 2x^2 & - & 3x & - & 3\\
 
@@ -183,12 +183,18 @@ Success!  Our quotient polynomial is now $2x^2 - 3$.  Setting this to zero gives
 
 It is interesting to note that we could greatly improve on the graph of $y=f(x)$ in the previous example given to us by GeoGebra. For instance, from our determination of the zeros of $f$ and their multiplicities, we know the graph crosses at $x=-\frac{\sqrt{6}}{2} \approx -1.22$ then turns back upwards to touch the $x-$axis at $x=-1$. This tells us that, despite what the software showed us the first time, there is a relative maximum occurring at $x = -1$ and not a `flattened crossing' as we originally believed.  After zooming in and rescaling the coordinate axes, we see not only the relative maximum but also a relative minimum (this is an example of what is called `hidden behaviour.') just to the left of $x = -1$ which shows us, once again, that Mathematics enhances the technology, instead of vice-versa: see Figure \ref{fig:realzero2}.
 
+\ifthenelse{\boolean{synthetic}}{
 \mnote{.15}{The $y$-axis isn't visible in Figure \ref{fig:realzero2}, so it's worth pointing out that in order to get a good view of the two local extrema, we had to shrink the $y$ scale significantly: the $y$-value of the local minimum at $x=-\sqrt{6}/2$ is just shy of $-0.01$.}
 
-\mfigure[width=0.95\marginparwidth]{.3}{Zooming in on the repeated zero in Example \ref{ex_rzerotech}}{fig:realzero2}{figures/PolynomialsGraphics/RealZero2}
-
+\mfigure[width=0.95\marginparwidth]{.3}{Zooming in on the repeated zero in Example \ref{ex_rzerotech}}{fig:realzero2}{figures/PolynomialsGraphics/RealZero2}}{}
 
 Our next example shows how even a mild-mannered polynomial can cause problems.
+
+
+\ifthenelse{\boolean{synthetic}}{}
+{\mnote{.65}{The $y$-axis isn't visible in Figure \ref{fig:realzero2}, so it's worth pointing out that in order to get a good view of the two local extrema, we had to shrink the $y$ scale significantly: the $y$-value of the local minimum at $x=-\sqrt{6}/2$ is just shy of $-0.01$.}
+
+\mfigure[width=0.95\marginparwidth]{.8}{Zooming in on the repeated zero in Example \ref{ex_rzerotech}}{fig:realzero2}{figures/PolynomialsGraphics/RealZero2}}
 
 \example{usubex}{Factoring using a $u$-substitution}{
 Let $f(x) = x^4 + x^2 - 12$.
@@ -215,14 +221,24 @@ Let $f(x) = x^4 + x^2 - 12$.
 
 \item  Graphing $y=f(x)$ on the interval $[-13,13]$ produces the graph in Figure \ref{fig:realzero3} (a). Zooming in a bit gives the graph (b).  Based on the graph, none of our rational zeros will work. (Do you see why not?)
 
-\mtable{.6}{Two views of $y=f(x)=x^4+x^2-12$}{fig:realzero3}{
+\ifthenelse{\boolean{synthetic}}{
+\mtable{.6}{Two views of the graph\\ $y=f(x)=x^4+x^2-12$ in Example \ref{usubex}}{fig:realzero3}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero3}\\
 (a)\\
 \\
 \myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero4}\\
 (b)
-\end{tabular}
+\end{tabular}}}
+{
+\mtable{.3}{Two views of the graph\\ $y=f(x)=x^4+x^2-12$ in Example \ref{usubex}}{fig:realzero3}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero3}\\
+(a)\\
+\\
+\myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero4}\\
+(b)
+\end{tabular}}
 }
 
 \item  From the graph, we know $f$ has two real zeros, one positive, and one negative.  Our only hope at this point is to try and find the zeros of $f$ by setting $f(x)=x^4+x^2-12=0$ and solving.  If we stare at this equation long enough, we may recognize it as a `quadratic in disguise' or `quadratic in form'.   In other words, we have three terms: $x^4$, $x^2$ and $12$, and the exponent on the first term, $x^4$, is exactly twice that of the second term, $x^2$.  We may rewrite this as $\left(x^2\right)^2 + \left(x^2\right) - 12 = 0$.  To better see the forest for the trees, we momentarily replace $x^2$ with the variable $u$.  In terms of $u$, our equation becomes $u^2 + u - 12 = 0$, which we can readily factor as $(u+4)(u-3) = 0$.  In terms of $x$, this means $x^4+x^2-12= \left(x^2-3\right) \left(x^2 + 4 \right)=0$. We get $x^2 = 3$, which gives us $x = \pm \sqrt{3}$, or $x^2=-4$, which admits no real solutions.  Since $\sqrt{3} \approx 1.73$, the two zeros match what we expected from the graph.  In terms of multiplicity, the Factor Theorem guarantees $\left(x - \sqrt{3}\right)$ and $\left(x + \sqrt{3}\right)$ are factors of $f(x)$.  Since $f(x)$ can be factored as $f(x) = \left(x^2-3\right) \left(x^2 + 4 \right)$, and $x^2 + 4$ has no real zeros, the quantities $\left(x - \sqrt{3}\right)$ and $\left(x + \sqrt{3}\right)$ must both be factors of $x^2-3$.  According to Theorem \ref{nzerosreal}, $x^2-3$ can have at most $2$ zeros, counting multiplicity, hence each of $\pm \sqrt{3}$ is a zero of $f$ of multiplicity $1$. 
@@ -412,7 +428,7 @@ Descartes' Rule of Signs told us that we may have up to three negative real zero
 
 \[ \begin{array}{cccccccccc}
 
-& & & & & 2x^2 & - & 3 &  &  \\ \hhline{~~~|-------}
+& & & & & & & 2x^2 & - & 3 \\ \hhline{~~~|-------}
 
 x & + & 1 \, \vline& 2x^3 & + & 2x^2 & - & 3x & - & 3\\
 
@@ -436,17 +452,21 @@ Setting the quotient polynomial equal to zero yields $2x^2 - 3 = 0$, so that $x^
 \end{enumerate}
 }
 
-\mfigure[width=0.95\marginparwidth]{.25}{The graph $y=2x^4+4x^3-x^2-6x-3$}{fig:realzero4}{figures/PolynomialsGraphics/RealZeros_New-1}
+\ifthenelse{\boolean{synthetic}}{
+\mfigure[width=0.95\marginparwidth]{.25}{The graph $y=2x^4+4x^3-x^2-6x-3$}{fig:realzero4}{figures/PolynomialsGraphics/RealZeros_New-1}}
+{\mfigure[width=0.95\marginparwidth]{.65}{The graph $y=2x^4+4x^3-x^2-6x-3$}{fig:realzero4}{figures/PolynomialsGraphics/RealZeros_New-1}}
 
 You can see why the `no calculator' approach is not very popular these days.  It requires more computation and more theorems than the alternative. (This is apparently a bad thing.)  In general, no matter how many theorems you throw at a polynomial, it may well be impossible to find their zeros exactly.  The polynomial $f(x) = x^5-x-1$ is one such beast.  According to Descartes' Rule of Signs, $f$ has exactly one positive real zero, and it could have two negative real zeros, or none at all.  The Rational Zeros Test gives us $\pm 1$ as rational zeros to try but neither of these work since $f(1) = f(-1) = -1$.  If we try the substitution technique we used in Example \ref{usubex}, we find $f(x)$ has three terms, but the exponent on the $x^5$ isn't exactly twice the exponent on $x$.  How could we go about approximating the positive zero without resorting to the `Zero' command of a graphing calculator?  We use the \index{Bisection Method} \sword{Bisection Method}.  The first step in the Bisection Method is to find an interval on which $f$ changes sign.  We know $f(1) = -1$ and we find $f(2) = 29$.  By the Intermediate Value Theorem, we know that the zero of $f$ lies in the interval $[1,2]$.  Next, we `bisect' this interval and find the midpoint is $1.5$.  We have that $f(1.5)\approx 5.09$.  This means that our zero is between $1$ and $1.5$, since $f$ changes sign on this interval.  Now, we `bisect' the interval $[1,1.5]$ and find $f(1.25) \approx 0.80$, so now we have the zero between $1$ and $1.25$.  Bisecting $[1,1.25]$, we find $f(1.125) \approx -0.32$, which means the zero of $f$ is between $1.125$ and $1.25$.  We continue in this fashion until we have `sandwiched' the zero between two numbers which differ by no more than a desired accuracy. You can think of the Bisection Method as reversing the sign diagram process:  instead of finding the zeros and checking the sign of $f$ using test values, we are using test values to determine where the signs switch to find the zeros.  It is a slow and tedious, yet fool-proof, method for approximating a real zero.  
 
-\mnote{.7}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. See this \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{page}}, for example.}
+\ifthenelse{\boolean{synthetic}}{
+\mnote{.7}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. See this \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{page}}, for example.}}
+{\mnote{.5}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. See this \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{page}}, for example.}}
 
 Our next example reminds us of the role finding zeros plays in solving equations and inequalities.
 
 \medskip
 
-\example{polyeqineqexample}{Using real zeros to solve a polynomial equation and inequality}{
+\example{polyeqineqexample}{Solving a polynomial equation and inequality}{
 \begin{enumerate}
 
 \item  Find all of the real solutions to the equation $2x^5+6x^3+3 = 3x^4+8x^2$. 
@@ -493,9 +513,9 @@ The possible rational zeros of the quotient $q_1(x) = 2x^4-x^3+5x^2-3x-3$ are th
 \[
 p(x) = 2x^5-3x^4+6x^3-8x^2+3 = (x-1)^2(2x^3+x^2+6x+3).
 \]
-This time, trying $x=\pm 1$ in the quotient $q_2(x) = 2x^3+x^2+6x+3$ gets us $q_2(1) = 12\neq 0$ and $q_2(-1) = -4\neq 0$, so neither value is a zero; however, since $q_2(-1)<0$ and $q_2(1)>0$, the Intermediate Value Theorem guarantees us a zero between $-1$ and $1$. Trying possible rational roots first, we find 
+This time, trying $x=\pm 1$ in the quotient $q_2(x) = 2x^3+x^2+6x+3$ gets us $q_2(1) = 12\neq 0$ and $q_2(-1) = -4\neq 0$, so neither value is a zero; however, since $q_2(-1)<0$ and $q_2(1)>0$, the Intermediate Value Theorem guarantees us a zero between $-1$ and $1$. Trying possible rational roots first, we find $q_2\left(\frac{1}{2}\right)= \frac{13}{2}\neq 0$, but 
 \[
-q_2\left(\frac{1}{2}\right)= \frac{13}{2}\neq 0$, but $q_2\left(-\frac{1}{2}\right) = 2\left(-\frac{1}{8}\right)+\frac{1}{4}+6\left(-\frac{1}{2}\right)+3 = -\frac{1}{4}+\frac{1}{4}-3+3=0,
+q_2\left(-\frac{1}{2}\right) = 2\left(-\frac{1}{8}\right)+\frac{1}{4}+6\left(-\frac{1}{2}\right)+3 = -\frac{1}{4}+\frac{1}{4}-3+3=0,
 \]
 so $x=-\frac{1}{2}$ is a root. Dividing once more by $x+\frac{1}{2}$, we find
 \[
@@ -505,7 +525,9 @@ The quotient polynomial is $2x^2 + 6$ which has no real zeros so we get $x=-\fra
 
 \item To solve this nonlinear inequality, we follow the same guidelines set forth in Section \ref{Inequalities}:  we get $0$ on one side of the inequality and construct a sign diagram.  Our original inequality can be rewritten as $2x^5-3x^4+6x^3-8x^2+3 \leq 0$.  We found the zeros of $p(x) = 2x^5-3x^4+6x^3-8x^2+3$ in part 1 to be $x=-\frac{1}{2}$ and $x=1$. We construct our sign diagram as before, giving us Figure \ref{fig:sdzeros1}.
 
-\mfigure{.85}{The sign diagram for $p(x)$ in Example \ref{polyeqineqexample}}{fig:sdzeros1}{figures/PolynomialsGraphics/RealZeros_New-2}
+\ifthenelse{\boolean{synthetic}}{
+\mfigure{.85}{The sign diagram for $p(x)$ in Example \ref{polyeqineqexample}}{fig:sdzeros1}{figures/PolynomialsGraphics/RealZeros_New-2}}
+{\mfigure{.55}{The sign diagram for $p(x)$ in Example \ref{polyeqineqexample}}{fig:sdzeros1}{figures/PolynomialsGraphics/RealZeros_New-2}}
 
 The solution to $p(x) < 0$ is $\left(-\infty, -\frac{1}{2}\right)$, and we know $p(x) = 0$ at $x=-\frac{1}{2}$ and $x=1$.  Hence, the solution to $p(x) \leq 0$ is $\left(-\infty, -\frac{1}{2}\right] \cup \left\{1\right\}$.  
 
@@ -515,6 +537,7 @@ The solution to $p(x) < 0$ is $\left(-\infty, -\frac{1}{2}\right)$, and we know 
 \end{enumerate}
 }
 
+\ifthenelse{\boolean{synthetic}}{
 \mtable{.6}{The polynomials $f(x)$ and $g(x)$ from Example \ref{polyeqineqexample}, part 3}{fig:realzeroeg1}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero5}\\
@@ -523,9 +546,19 @@ The solution to $p(x) < 0$ is $\left(-\infty, -\frac{1}{2}\right)$, and we know 
 \myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero6}\\
 (b)
 \end{tabular}
-}
+}}
+{
+\mtable{.3}{The polynomials $f(x)$ and $g(x)$ from Example \ref{polyeqineqexample}, part 3}{fig:realzeroeg1}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero5}\\
+(a)\\
+\\
+\myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero6}\\
+(b)
+\end{tabular}
+}}
 
-\medskip
+\ifthenelse{\boolean{synthetic}}{\medskip}{\pagebreak}
 
 Our last example revisits an application from page \pageref{LCDmaxprofit} in the Exercises of Section \ref{GraphsofPolynomials}.
 
@@ -535,13 +568,17 @@ Our last example revisits an application from page \pageref{LCDmaxprofit} in the
 }
 {To `make a profit' means to solve $P(x) = -5x^3+35x^2-45x-25 > 0$, which we do analytically using a sign diagram.  To simplify things, we first factor out the $-5$ common to all the coefficients to get $-5\left(x^3 - 7x^2+9x-5\right) > 0$, so we can just focus on finding the zeros of $f(x) = x^3-7x^2+9x+5$.  The possible rational zeros of $f$ are $\pm 1$ and $\pm 5$, and going through the usual computations, we find $x=5$ is the only rational zero.  Using this, we factor $f(x) = x^3-7x^2+9x+5 = (x-5) \left(x^2-2x-1\right)$, and we find the remaining zeros by applying the Quadratic Formula to $x^2-2x-1 = 0$.  We find three real zeros,  $x=1-\sqrt{2} = -0.414 \ldots$,  $x = 1+\sqrt{2} = 2.414 \ldots$, and $x = 5$, of which only the last two fall in the applied domain of $[0, 10.07]$.  We choose $x=0$, $x=3$ and $x=10.07$ as our test values and plug them into the function $P(x)=-5x^3+35x^2-45x-25$ (not $f(x) =x^3 - 7x^2+9x-5$) to get the sign diagram in Figure \ref{fig:sdzeros2}.
 
-\mfigure{.35}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}
+\ifthenelse{\boolean{synthetic}}{
+\mfigure{.35}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}}
+{\mfigure{.7}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}}
 
 
 We see immediately that $P(x)>0$ on $(1+\sqrt{2},5)$.  Since $x$ measures the number of TVs in \textit{hundreds}, $x = 1 + \sqrt{2}$ corresponds to $241.4\ldots$ TVs.  Since we can't produce a fractional part of a TV, we need to choose between producing 241 and 242 TVs.  From the sign diagram, we see that $P(2.41) < 0$ but $P(2.42)>0$ so, in this case we take the next \textit{larger} integer value and set the minimum production to 242 TVs.  At the other end of the interval, we have $x=5$ which corresponds to $500$ TVs.  Here, we take the next \textit{smaller} integer value, $499$ TVs to ensure that we make a profit.  Hence, in order to make a profit, at least 242, but no more than 499 TVs need to be produced.  To check our answer using GeoGebra, we graph $y=P(x)$ and use the Intersect tool to see where $y=P(x)$ intersects the $x$-axis. We see in Figure \ref{fig:applzeroeg} that the software approximations bear out our analysis.
 }
 
-\mfigure[width=0.95\marginparwidth]{.2}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}
+\ifthenelse{\boolean{synthetic}}{
+\mfigure[width=0.95\marginparwidth]{.2}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
+{\mfigure[width=0.95\marginparwidth]{.5}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
 
 \printexercises{exercises_pre/03_03_exercises}
 

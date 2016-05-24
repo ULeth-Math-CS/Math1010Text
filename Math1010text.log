@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  20 MAY 2016 14:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  24 MAY 2016 10:42
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -2791,11 +2791,6 @@ Overfull \hbox (4.87463pt too wide) in paragraph at lines 111--111
  []
 
 [35]
-
-LaTeX Warning: Reference `ComplexZeros' on page 36 undefined on input line 111.
-
-
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 136--137
 [][][]
  []
@@ -2838,12 +2833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
-[38]
-
-LaTeX Warning: Reference `ComplexZeros' on page 39 undefined on input line 244.
-
-
-[39]
+[38] [39]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5233,35 +5223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-(text_pre/03_SyntheticDivision.tex
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [165]
-[166]
-Overfull \hbox (7.01611pt too wide) in paragraph at lines 300--300
-[]\EU1/Calibri(0)/m/n/10 Since the dividend was a third degree polynomial, the 
-quotient is a quadratic
- []
-
-[167]) [168]
-Overfull \hbox (50.74515pt too wide) in paragraph at lines 204--205
-[]\EU1/Calibri(0)/m/n/10 From the first division, we get $[][][] \OMS/cmsy/m/n/
-10 ^^@ [][][] ^^@ [][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT
-1/cmr/m/n/10 = [] []$\EU1/Calibri(0)/m/n/10 .
- []
-
-[169]
-Overfull \hbox (5.96243pt too wide) in paragraph at lines 242--242
-[]\EU1/Calibri(0)/m/n/10 This gives us $[][][] \OMS/cmsy/m/n/10 ^^@ [][][] ^^@ 
-[][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 = [][
-] [] [] ([])$\EU1/Calibri(0)/m/n/10 ,
- []
-
-
-LaTeX Warning: Reference `ComplexZeros' on page 170 undefined on input line 244
-.
-
-
+[165] [166]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 250--251
 [][][]
  []
@@ -5281,11 +5243,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [170]
-[171]
+[167]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5318,9 +5276,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [172
+ [168
 
-] [173]) (text_pre/03_RealZeros.tex
+]) (text_pre/03_RealZeros.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 11--12
 [][][]
  []
@@ -5340,89 +5298,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[174
+[169
 
 ]
 File: figures/PolynomialsGraphics/RealZero1.png Graphic file (type QTm)
- <use  "figures/PolynomialsGraphics/RealZero1.png" > [175]
+ <use  "figures/PolynomialsGraphics/RealZero1.png" > [170] [171]
+
+LaTeX Warning: Reference `AlgebraicFunctions' on page 172 undefined on input li
+ne 249.
+
 File: figures/PolynomialsGraphics/RealZero2.png Graphic file (type QTm)
-
-<use  "figures/PolynomialsGraphics/RealZero2.png" > [176]
-
-LaTeX Warning: Reference `AlgebraicFunctions' on page 177 undefined on input li
-ne 233.
-
-
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 252--253
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
+<use  "figures/PolynomialsGraphics/RealZero2.png" >
 File: figures/PolynomialsGraphics/RealZero3.png Graphic file (type QTm)
+
 <use  "figures/PolynomialsGraphics/RealZero3.png" >
 File: figures/PolynomialsGraphics/RealZero4.png Graphic file (type QTm)
 
 <use  "figures/PolynomialsGraphics/RealZero4.png" >
 Overfull \hbox (4.49954pt too wide) has occurred while \output is active
- [][] 
+ [][][] 
  []
 
-[177]
-Overfull \hbox (1.10355pt too wide) in paragraph at lines 262--263
-[]$[]$\EU1/Calibri(0)/m/n/10 As noted above, the variations of sign of $[]\OT1/
-cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 is $[]$. This means,
- []
-
-
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 286--286
+[172]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 268--269
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (1.10355pt too wide) in paragraph at lines 278--279
+[]$[]$\EU1/Calibri(0)/m/n/10 As noted above, the variations of sign of $[]\OT1/
+cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 is $[]$. This means,
+ []
 
- [178]
-[179]
+[173] [174]
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
+
+ []
+
 File: figures/PolynomialsGraphics/RealZeros_New-1.pdf Graphic file (type QTm)
- <use  "figures/PolynomialsGraphics/RealZeros_New-1.pdf" > [180]
-Overfull \hbox (2.89072pt too wide) in paragraph at lines 516--516
- $[]$ $[]$[]\EU1/Calibri(0)/bx/n/10 Using real zeros to solve a polynomial equa
-tion and inequal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--516
-
- []
-
-
+<use  "figures/PolynomialsGraphics/RealZeros_New-1.pdf" >
 Underfull \hbox (badness 4266) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 We don’t use the word “impossible”
  []
 
-[181]
-
-LaTeX Warning: Reference `LCDmaxprofit' on page 182 undefined on input line 530
-.
-
-
-Overfull \hbox (3.09503pt too wide) in paragraph at lines 542--542
-\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
-m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
-m/m/it/10 >
- []
-
+[175]
 File: figures/PolynomialsGraphics/RealZeros_New-2.pdf Graphic file (type QTm)
-<use  "figures/PolynomialsGraphics/RealZeros_New-2.pdf" >
+ <use  "figures/PolynomialsGraphics/RealZeros_New-2.pdf" >
 File: figures/PolynomialsGraphics/RealZero5.png Graphic file (type QTm)
 
 <use  "figures/PolynomialsGraphics/RealZero5.png" >
@@ -5433,11 +5359,18 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
+[176]
+Overfull \hbox (3.09503pt too wide) in paragraph at lines 577--577
+\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
+m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
+m/m/it/10 >
+ []
+
 File: figures/PolynomialsGraphics/RealZeros_New-3.pdf Graphic file (type QTm)
 <use  "figures/PolynomialsGraphics/RealZeros_New-3.pdf" >
 File: figures/PolynomialsGraphics/RealZero7.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero7.png" > [182]
+<use  "figures/PolynomialsGraphics/RealZero7.png" > [177]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5470,13 +5403,117 @@ File: figures/PolynomialsGraphics/RealZero7.png Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [183
+ [178
 
 ]
 
-LaTeX Warning: Reference `boxnotopex' on page 184 undefined on input line 546.
+LaTeX Warning: Reference `boxnotopex' on page 179 undefined on input line 583.
 
-[184])
+[179]) (text_pre/03_ComplexZeros.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 14--15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 2326) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The Fundamental Theorem of Algebra
+ []
+
+[180
+
+]
+Underfull \hbox (badness 1845) in paragraph at lines 30--30
+\EU1/Calibri(0)/m/n/10 If the degree of $[]$ is $[]$ and $[] \OMS/cmsy/m/n/10 ^
+^U []$\EU1/Calibri(0)/m/n/10 , then $[]$ has exactly $[]$ com-
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 30--31
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Overfull \hbox (2.79843pt too wide) in paragraph at lines 116--116
+\EU1/Calibri(0)/m/n/10 function. At that point, we can find the remaining zeros
+ using the Quadratic
+ []
+
+
+Underfull \hbox (badness 6188) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 We don’t really recommend jumping
+ []
+
+[181]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 127--128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[182]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 150--151
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+[183] [184]
+
+LaTeX Warning: Reference `PolarComplex' on page 185 undefined on input line 255
+.
+
+[185]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [186
+
+])
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5865,7 +5902,8 @@ File: figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf Graphic file (type
 File: figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf Graphic file (type
  QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf" > [17]) [18]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf" > [17] [18])
+[19]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5898,13 +5936,13 @@ File: figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf Graphic file (type
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [19
+ [20
 
 
 
 ]
+No file Math1010text.ind.
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [21]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
@@ -5924,11 +5962,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[20
+[22
 
-] [21
+] [23
 
-] [22
+] [24
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -5951,31 +5989,31 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[23
+[25
 
 ])
-Package atenddvi Info: Last page = 214.
- [24
+Package atenddvi Info: Last page = 218.
+ [26
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 201.
  (Math1010text.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 200.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 201.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 51947 strings out of 428755
- 1115423 string characters out of 3164219
- 1464341 words of memory out of 3000000
- 53182 multiletter control sequences out of 15000+200000
+ 52005 strings out of 428755
+ 1116442 string characters out of 3164219
+ 1447070 words of memory out of 3000000
+ 53224 multiletter control sequences out of 15000+200000
  19648 words of font info for 143 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,25n,88p,10385b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (214 pages).
+Output written on Math1010text.pdf (218 pages).

@@ -240,6 +240,8 @@ The first three numbers in the last row of our tableau are the coefficients of t
 
 \mnote{.4}{\textbf{Caution:} It is important to note that it works \emph{only} for divisors of the form $x-a$, where $a$ is a constant. For divisors of the form $ax+b$, you need to either first factor out the $a$, or use long division. For divisors of higher degree (such as $x^2+1$), you have no other option but to use long division.}
 
+\medskip
+
 \example{ex_synthetic}{Using synthetic division}{
 Use synthetic division to perform the following polynomial divisions.  Find the quotient and the remainder polynomials, then write the dividend, quotient and remainder in the form given in Theorem \ref{polydiv}.
 
@@ -298,3 +300,5 @@ We get the quotient $q(x) = x^2-2x+4$ and the remainder $r(x) =0$. Relating the 
 
 From this, we get $-6x^2-4x+2 = \left(x-\frac{3}{2}\right)(-6 x - 13) - \frac{35}{2}$.  Multiplying both sides by $2$ and distributing gives $-12x^2-8x+4 = \left(2x-3\right) (-6 x - 13) - 35$.  At this stage, we have written $-12x^2-8x+4$ in the \textbf{form} $(2x-3) q(x) + r(x)$, but how can we be sure the quotient polynomial is $-6x-13$ and the remainder is $-35$?  The answer is the word `unique' in Theorem \ref{polydiv}.  The theorem states that there is only one way to decompose $-12x^2-8x+4$ into a multiple of $(2x-3)$  plus a constant term.  Since we have found such a way, we can be sure it is the only way.
 }
+
+\medskip

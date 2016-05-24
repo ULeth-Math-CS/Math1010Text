@@ -17,7 +17,7 @@ Suppose we wish to find the zeros of $f(x) = x^2-2x+5$.  To solve the equation $
 
 The Fundamental Theorem of Algebra is an example of an `existence' theorem in Mathematics.  Like the Intermediate Value Theorem, Theorem \ref{IVT}, the Fundamental Theorem of Algebra  guarantees the existence of at least one zero, but gives us no algorithm to use in finding it.  In fact, as we mentioned in Section \ref{RealZeros}, there are polynomials whose real zeros, though they exist, cannot be expressed using the `usual' combinations of arithmetic symbols, and must be approximated.  The authors are fully aware that the full impact and profound nature of the Fundamental Theorem of Algebra  is lost on most students studying College Algebra, and that's fine.  It took mathematicians literally hundreds of years to prove the theorem in its full generality, and some of that history is recorded \href{http://en.wikipedia.org/wiki/Fundamental_theorem_of_algebra}{\underline{in this Wikipedia article}}.  Note that the Fundamental Theorem of Algebra  applies to not only polynomial functions with real coefficients, but to those with complex number coefficients as well.  
 
-\mnote{.5}{The Fundamental Theorem of Algebra has since been proved many times, using many different methods, by many mathematicians. There are probably very few, if any, results in mathematics with the variety of proofs this result has. Unfortunately, none of the proofs can be understood within the realm of this text, but if the reader is sufficiently interested, a collection of proofs can be found at \href{http://www.cut-the-knot.org/fta/analytic.shtml}{\underline{this website}}.}
+\mnote{.25}{The Fundamental Theorem of Algebra has since been proved many times, using many different methods, by many mathematicians. There are probably very few, if any, results in mathematics with the variety of proofs this result has. Unfortunately, none of the proofs can be understood within the realm of this text, but if the reader is sufficiently interested, a collection of proofs can be found at \href{http://www.cut-the-knot.org/fta/analytic.shtml}{\underline{this website}}.}
 
 
 \smallskip
@@ -32,6 +32,8 @@ Suppose  $f$ is a polynomial of degree $n \geq 1$.  The Fundamental Theorem of A
 \smallskip
 
 Note that the value $a$ in Theorem \ref{complexfactorization} is the leading coefficient of $f(x)$ (Can you see why?) and as such, we see that a polynomial is completely determined by its zeros, their multiplicities, and its leading coefficient.  We put this theorem to good use in the next example.
+
+\medskip
 
 \example{ex_compfact}{Factoring using complex numbers}{  Let $f(x) = 12x^5 - 20x^4+19x^3-6x^2-2x+1$.
 
@@ -73,7 +75,7 @@ f\left(\frac{1}{2}\right) = \frac{12}{32}-\frac{20}{16}+\frac{19}{8}-\frac{6}{4}
 \]
 so $x=\frac{1}{2}$ is a zero. In fact, $x=\frac{1}{2}$ is a zero of multiplicity 2: dividing $f(x)$ by $\left(x-\frac{1}{2}\right)^2 = x^2-x+\frac{1}{4}$, we have:
 
-\mnote{.5}{We don't really recommend jumping straight to division by $\left(x-\frac{1}{2}\right)^2$ to see if $x=\frac{1}{2}$ has multiplicity 2. In the back rooms of the Mathematics Department, we secretly divided first by $x-\frac{1}{2}$ and then checked that $x=\frac{1}{2}$ was still a divisor of the resulting quotient. We're presenting things this way since it lets us write out one long division instead of two (and since it's always good to get practice dividing by higher-degree polynomials).}
+\mnote{.2}{We don't really recommend jumping straight to division by $\left(x-\frac{1}{2}\right)^2$ to see if $x=\frac{1}{2}$ has multiplicity 2. In the back rooms of the Mathematics Department, we secretly divided first by $x-\frac{1}{2}$ and then checked that $x=\frac{1}{2}$ was still a divisor of the resulting quotient. We're presenting things this way since it lets us write out one long division instead of two (and since it's always good to get practice dividing by higher-degree polynomials).}
 
 \setlength\arraycolsep{0.1pt}
 \setlength\extrarowheight{2pt}
@@ -181,7 +183,7 @@ We now present an example which pulls together all of the major ideas of this se
   
                & 1 &  2+2i  & 8i & -16+16i &  \fbox{$0$}  \\ \end{array}\]
 }
-{We divide $f(x)$ by $x-(2+2i)$ using long division as follows:}
+{\item We divide $f(x)$ by $x-(2+2i)$ using long division as follows:}
 
 
 \item  Since $f$ is a fourth degree polynomial, we need to make two successful divisions to get a quadratic quotient.  Since $2+2i$ is a zero, we know from Theorem \ref{conjugatepairsthm} that $2-2i$ is also a zero.  
@@ -208,8 +210,7 @@ Our quotient polynomial is $x^2+4x+8$.  Using the quadratic formula, we obtain t
 
 \item  Using Theorem \ref{complexfactorization}, we get $f(x) = (x-[2-2i])(x-[2+2i])(x-[-2+2i])(x-[-2-2i])$.
 
-\item  We multiply the linear factors of $f(x)$ which correspond to complex conjugate pairs.  We find $(x-[2-2i])(x-[2+2i]) = x^2-4x+8$, and $(x-[-2+2i])(x-[-2-2i]) = x^2+4x+8$.  Our final answer is $f(x) =  \left(x^2-4x+8\right) \left(x^2+4x+8\right)$. \qed
-
+\item  We multiply the linear factors of $f(x)$ which correspond to complex conjugate pairs.  We find $(x-[2-2i])(x-[2+2i]) = x^2-4x+8$, and $(x-[-2+2i])(x-[-2-2i]) = x^2+4x+8$.  Our final answer is $f(x) =  \left(x^2-4x+8\right) \left(x^2+4x+8\right)$. 
 \end{enumerate}
 }
 
@@ -235,7 +236,7 @@ Our last example turns the tables and asks us to manufacture a polynomial with c
 \end{itemize}
 }
 {
- To solve this problem, we will need a good understanding of the relationship between the $x$-intercepts of the graph of a function and the zeros of a function, the Factor Theorem, the role of multiplicity, complex conjugates, the Complex Factorization Theorem, and end behaviour of polynomial functions.  (In short, you'll need most of the major concepts of this chapter.)  Since the graph of $p$ touches the $x$-axis at $\left(\frac{1}{3}, 0\right)$, we know $x=\frac{1}{3}$ is a zero of even multiplicity.  Since we are after a polynomial of lowest degree, we need $x=\frac{1}{3}$ to have multiplicity exactly $2$. The Factor Theorem now tells us  $\left(x-\frac{1}{3}\right)^2$ is a factor of $p(x)$.  Since $x=3i$ is a zero and our final answer is to have integer (real) coefficients, $x=-3i$ is also a zero.  The Factor Theorem kicks in again to give us $(x-3i)$ and $(x+3i)$ as factors of $p(x)$.  We are given no further information about zeros or intercepts so we conclude, by the Complex Factorization Theorem that $p(x) = a \left(x-\frac{1}{3}\right)^2 (x-3i)(x+3i)$ for some real number $a$.  Expanding this, we get $p(x) =  ax^4-\frac{2a}{3} x^3+\frac{82a}{9} x^2-6ax+a$.  In order to obtain integer coefficients, we know $a$ must be an integer multiple of $9$.  Our last concern is end behavior.  Since the leading term of $p(x)$ is $ax^4$, we need $a < 0$ to get $p(x) \rightarrow -\infty$ as $x \rightarrow \pm \infty$. Hence, if we choose $x=-9$, we get $p(x) = -9x^4+ 6 x^3 - 82 x^2+54x-9$.    We can verify our handiwork using the techniques developed in this chapter.  \qed
+ To solve this problem, we will need a good understanding of the relationship between the $x$-intercepts of the graph of a function and the zeros of a function, the Factor Theorem, the role of multiplicity, complex conjugates, the Complex Factorization Theorem, and end behaviour of polynomial functions.  (In short, you'll need most of the major concepts of this chapter.)  Since the graph of $p$ touches the $x$-axis at $\left(\frac{1}{3}, 0\right)$, we know $x=\frac{1}{3}$ is a zero of even multiplicity.  Since we are after a polynomial of lowest degree, we need $x=\frac{1}{3}$ to have multiplicity exactly $2$. The Factor Theorem now tells us  $\left(x-\frac{1}{3}\right)^2$ is a factor of $p(x)$.  Since $x=3i$ is a zero and our final answer is to have integer (real) coefficients, $x=-3i$ is also a zero.  The Factor Theorem kicks in again to give us $(x-3i)$ and $(x+3i)$ as factors of $p(x)$.  We are given no further information about zeros or intercepts so we conclude, by the Complex Factorization Theorem that $p(x) = a \left(x-\frac{1}{3}\right)^2 (x-3i)(x+3i)$ for some real number $a$.  Expanding this, we get $p(x) =  ax^4-\frac{2a}{3} x^3+\frac{82a}{9} x^2-6ax+a$.  In order to obtain integer coefficients, we know $a$ must be an integer multiple of $9$.  Our last concern is end behavior.  Since the leading term of $p(x)$ is $ax^4$, we need $a < 0$ to get $p(x) \rightarrow -\infty$ as $x \rightarrow \pm \infty$. Hence, if we choose $x=-9$, we get $p(x) = -9x^4+ 6 x^3 - 82 x^2+54x-9$.    We can verify our handiwork using the techniques developed in this chapter.
 }
 
 \medskip
@@ -253,335 +254,4 @@ Our main goal in presenting the material on the complex zeros of a polynomial wa
 
 For the remainder of the text, with the exception of Section \ref{PolarComplex} and a few exploratory exercises scattered about, we will restrict our attention to real numbers.  We do this primarily because the first Calculus sequence you will take, ostensibly the one that this text is preparing you for, studies only functions of real variables.  Also, lots of really cool scientific things don't require any deep understanding of complex numbers to study them, but they do need more Mathematics like exponential, logarithmic and trigonometric functions.  We believe it makes more sense pedagogically for you to learn about those functions now then take a course in Complex Function Theory in your junior or senior year once you've completed the Calculus sequence.  It is in that course that the true power of the complex numbers is released.  But for now, in order to fully prepare you for life immediately after College Algebra, we will say that functions like $f(x) = \frac{1}{x^{2} + 1}$ have a domain of all real numbers, even though we know $x^{2} + 1 = 0$ has two complex solutions, namely $x = \pm i$.  Because $x^{2} + 1 > 0$ for all \emph{real} numbers $x$, the fraction $\frac{1}{x^{2} + 1}$ is never undefined in the real variable setting.
 
-\newpage
-
-\subsection{Exercises}
-
-
-
-In Exercises \ref{compfactpolyfirst} - \ref{compfactpolylast}, find all of the zeros of the polynomial then completely factor it over the real numbers and completely factor it over the complex numbers.
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^{2} - 4x + 13$ \label{compfactpolyfirst}
-\item $f(x) = x^2 - 2x + 5$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = 3x^{2} + 2x + 10$
-\item $f(x) = x^3-2x^2+9x-18$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^{3} + 6x^{2} + 6x + 5$
-\item $f(x) = 3x^{3} - 13x^{2} + 43x - 13$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^3 + 3x^2 + 4x + 12$
-\item $f(x) = 4x^3-6x^2-8x+15$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-
-\item  $f(x) = x^3 + 7x^2+9x-2$
-\item  $f(x) = 9x^3+2x+1$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = 4x^{4} - 4x^{3} + 13x^{2} - 12x + 3$
-\item $f(x) = 2x^4-7x^3+14x^2-15x+6$
-
-
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item  $f(x) = x^4+x^3+7x^2+9x-18$
-\item  $f(x) = 6x^4+17x^3-55x^2+16x+12$
-
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item  $f(x) = -3x^4-8x^3-12x^2-12x-5$
-\item  $f(x) = 8x^4+50x^3+43x^2+2x-4$
-
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^4+9x^2+20$
-\item $f(x) = x^4 + 5x^2 - 24$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item  $f(x) = x^5 - x^4+7x^3-7x^2+12x-12$
-\item $f(x) = x^6-64$
-
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-
-
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^{4} - 2x^{3} + 27x^{2} - 2x + 26$ (Hint: $x = i$ is one of the zeros.)
-\item  $f(x) = 2x^4+5x^3+13x^2+7x+5$ (Hint:  $x = -1+2i$ is a zero.) \label{compfactpolylast}
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-
-In Exercises \ref{buildcomppolyfirst} - \ref{buildcompolylast}, create a polynomial $f$ with real number coefficients which has all of the desired characteristics.  You may leave the polynomial in factored form. 
-
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item \label{buildcomppolyfirst}
-
-\begin{itemize}
-
-\item The zeros of $f$ are $c=\pm 1$ and $c = \pm i$
-\item The leading term of $f(x)$ is $42x^4$
-
-\end{itemize}
-
-
-\item
-
-\begin{itemize}
-
-\item $c=2i$ is a zero.
-\item the point $(-1,0)$ is a local minimum on the graph of $y=f(x)$ 
-\item the leading term of $f(x)$ is $117x^4$
-
-\end{itemize}
-
-
-\item
-
-\begin{itemize}
-
-\item The solutions to $f(x) = 0$ are $x = \pm 2$ and $x=\pm 7i$
-\item The leading term of $f(x)$ is $-3x^5$
-\item The point $(2,0)$ is a local maximum on the graph of $y=f(x)$.
-
-\end{itemize}
-
-
-\item
-
-\begin{itemize}
-
-\item $f$ is degree $5$.
-\item $x=6$, $x = i$ and $x = 1-3i$ are zeros of $f$
-\item as $x \rightarrow -\infty$, $f(x) \rightarrow \infty$
-
-\end{itemize}
-
-\item \label{buildcompolylast}
-
-\begin{itemize}
-
-\item The leading term of $f(x)$ is $-2x^3$
-\item $c=2i$ is a zero
-\item $f(0) = -16$
-
-\end{itemize}
-
-
-\item \label{zbarexercise} Let $z$ and $w$ be arbitrary complex numbers.  Show that  $\overline{z} \, \overline{w}  = \overline{zw}$ and $\overline{\overline{z}} = z$.
-
-\end{enumerate}
-
-\newpage
-
-\subsection{Answers}
-
-
-
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = x^2-4x+13 = (x-(2+3i)) (x-(2-3i))$ \\
-Zeros: $x = 2 \pm 3i$ 
-
-\item $f(x) = x^2 - 2x + 5 = (x-(1+2i))(x-(1-2i))$ \\ 
-Zeros:  $x = 1 \pm 2i$
-
-
-\item $f(x) = 3x^2 + 2x +10 = 3\left(x-\left(-\frac{1}{3} + \frac{\sqrt{29}}{3} i\right) \right) \left(x-\left(-\frac{1}{3} - \frac{\sqrt{29}}{3} i\right) \right)$
-
-
-Zeros:  $x = -\frac{1}{3} \pm \frac{\sqrt{29}}{3} i$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-
-
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-
-\item $f(x) = x^3-2x^2+9x-18 = (x-2) \left(x^2+9\right) = (x-2)(x-3i)(x+3i)$\\
-Zeros:  $x=2, \pm 3i$
-
-\item $f(x) = x^{3} + 6x^{2} + 6x + 5 = (x + 5)(x^{2} + x + 1) = (x + 5) \left( x - \left( -\frac{1}{2} + \frac{\sqrt{3}}{2}i \right) \right) \left( x - \left(-\frac{1}{2} - \frac{\sqrt{3}}{2}i \right) \right)$ \\
-Zeros: $x = -5, \;  x = -\frac{1}{2} \pm \frac{\sqrt{3}}{2}i $
-
-\item $f(x) = 3x^{3} - 13x^{2} + 43x - 13 = (3x - 1)(x^{2} - 4x + 13) = (3x - 1)(x - (2 + 3i))(x - (2 - 3i))$\\
-Zeros: $x = \frac{1}{3}, \; x = 2 \pm 3i$
-
-
-
-\item $f(x) = x^3 + 3x^2 + 4x + 12 = (x+3) \left(x^2 + 4 \right) = (x+3)(x+2i)(x-2i)$ \\
-Zeros:  $x = -3, \; \pm 2i$
-
-\item $f(x) = 4x^3-6x^2-8x+15 = \left(x + \frac{3}{2} \right) \left(4x^2-12x+10\right) \\
- \phantom{f(x)} = 4 \left(x + \frac{3}{2} \right) \left(x - \left( \frac{3}{2} + \frac{1}{2}i  \right) \right) \left(x - \left( \frac{3}{2} - \frac{1}{2}i  \right) \right)$\\
-Zeros:  $x = - \frac{3}{2}, \; x = \frac{3}{2} \pm \frac{1}{2}i$
-
-
-\item  $f(x) = x^3 + 7x^2+9x-2 = (x+2) \left(x - \left( -\frac{5}{2}+\frac{\sqrt{29}}{2}\right) \right) \left(x - \left( -\frac{5}{2}-\frac{\sqrt{29}}{2}\right) \right)$ \\
-Zeros:  $x = -2, \; x = -\frac{5}{2} \pm \frac{\sqrt{29}}{2}$
-
-\item  $f(x) = 9x^3+2x+1 = \left(x + \frac{1}{3}\right) \left(9x^2 - 3x + 3\right) \\
-\phantom{f(x)}= 9\left(x + \frac{1}{3}\right) \left(x - \left(\frac{1}{6} + \frac{\sqrt{11}}{6} i \right) \right) \left(x - \left(\frac{1}{6} - \frac{\sqrt{11}}{6} i \right) \right)$\\
-Zeros:  $x = -\frac{1}{3}, \; x = \frac{1}{6} \pm \frac{\sqrt{11}}{6} i$
-
-\item $f(x) = 4x^{4} - 4x^{3} + 13x^{2} - 12x + 3 = \left(x - \frac{1}{2}\right)^{2}\left(4x^{2} + 12\right) = 4\left(x - \frac{1}{2}\right)^{2}(x + i\sqrt{3})(x - i\sqrt{3})$\\
-Zeros: $x = \frac{1}{2}, \; x = \pm \sqrt{3}i$
-
-\item $f(x) = 2x^4-7x^3+14x^2-15x+6 = (x-1)^2 \left(2x^2 - 3x + 6\right)  \\
-\phantom{f(x)} = 2 (x-1)^2 \left( x - \left( \frac{3}{4} +  \frac{\sqrt{39}}{4} i \right) \right)  \left( x - \left( \frac{3}{4} -  \frac{\sqrt{39}}{4} i \right) \right) $ \\
-Zeros: $x = 1, \; x = \frac{3}{4}  \pm  \frac{\sqrt{39}}{4} i$
-
-
-
-\item  $f(x) = x^4+x^3+7x^2+9x-18 = (x+2)(x-1)\left(x^2+9\right) = (x+2)(x-1)(x+3i)(x-3i)$\\
-Zeros:  $x = -2, \; 1, \; \pm 3i$
-
-\item  $f(x) = 6x^4+17x^3-55x^2+16x+12 = 6 \left(x + \frac{1}{3} \right) \left(x - \frac{3}{2} \right) \left(x - \left( -2 + 2 \sqrt{2}\right)\right) \left(x - \left( -2 - 2 \sqrt{2}\right)\right)$ \\
-Zeros:  $x = -\frac{1}{3}, \; x = \frac{3}{2}, \; x = -2 \pm 2 \sqrt{2}$
-
-
-\item  $f(x) = -3x^4-8x^3-12x^2-12x-5 = (x+1)^2 \left(-3x^2-2x-5\right) \\
-\phantom{f(x)}= -3(x+1)^2\left(x - \left( -\frac{1}{3}+\frac{\sqrt{14}}{3} i\right) \right) \left(x - \left( -\frac{1}{3}-\frac{\sqrt{14}}{3} i\right) \right)$ \\
-Zeros:  $x = -1, \; x = -\frac{1}{3} \pm \frac{\sqrt{14}}{3} i$
-
-\item  $f(x) = 8x^4+50x^3+43x^2+2x-4 = 8\left(x + \frac{1}{2}\right) \left(x - \frac{1}{4}\right)(x - (-3 + \sqrt{5}))(x - (-3 - \sqrt{5}))$ \\
-Zeros:  $x = -\frac{1}{2}, \; \frac{1}{4}, \; x = -3 \pm \sqrt{5}$
-
-\item  $f(x) = x^4+9x^2+20 = \left(x^2+4\right) \left(x^2+5\right) = (x-2i)(x+2i)\left(x - i \sqrt{5}\right)\left(x + i \sqrt{5}\right)$\\
-Zeros:  $x = \pm 2i, \pm i \sqrt{5}$
-
-
-\item  $f(x) = x^4+5x^2-24 = \left(x^2-3 \right) \left(x^2+8\right) = (x-\sqrt{3})(x+\sqrt{3})\left(x - 2i \sqrt{2}\right)\left(x + 2i \sqrt{2}\right)$\\
-Zeros:  $x = \pm \sqrt{3}, \pm 2i \sqrt{2}$
-
-\item  $f(x) = x^5 - x^4+7x^3-7x^2+12x-12 = (x-1) \left(x^2 + 3\right) \left(x^2 + 4 \right) \\
-\phantom{f(x)} = (x-1)(x - i \sqrt{3})(x + i \sqrt{3})(x-2i)(x+2i)$ \\
-Zeros:  $x = 1, \;  \pm  \sqrt{3}i,  \; \pm 2i$
-
-\item $f(x) = x^6 - 64 = (x-2)(x+2)\left(x^2+2x+4\right)\left(x^2-2x+4\right) \\
-      \phantom{f(x)} = (x-2)(x+2)\left( x - \left( -1+i\sqrt{3} \right) \right)\left( x - \left( -1-i\sqrt{3} \right) \right)\left( x - \left( 1+i\sqrt{3} \right) \right)\left( x - \left( 1-i\sqrt{3} \right) \right)$ \\
-Zeros:  $x = \pm 2$, $x = -1 \pm i\sqrt{3}$, $x = 1 \pm i\sqrt{3}$
-
-
-\item $f(x) = x^{4} - 2x^{3} + 27x^{2} - 2x + 26 = (x^{2} - 2x + 26)(x^{2} + 1) = (x - (1 + 5i))(x - (1 - 5i))(x + i)(x - i)$\\ 
-Zeros: $x = 1 \pm 5i, \; x = \pm i$
-
-\item  $f(x) = 2x^4+5x^3+13x^2+7x+5 = \left(x^2+2x+5\right) \left(2x^2+x+1\right)  \\ \phantom{f(x)} = 2 (x-(-1+2i))(x-(-1-2i))\left(x - \left(-\frac{1}{4} + i \frac{\sqrt{7}}{4}\right) \right)\left(x - \left(-\frac{1}{4} - i \frac{\sqrt{7}}{4}\right) \right) $\\
-Zeros:  $x = -1 \pm 2i, -\frac{1}{4} \pm i \frac{\sqrt{7}}{4}$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item $f(x) = 42(x-1)(x+1)(x-i)(x+i)$
-
-
-\item $f(x) = 117(x+1)^2(x-2i)(x+2i)$
-
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
-\item  $f(x) = -3(x-2)^2(x+2)(x-7i)(x+7i)$
-
-
-\item $f(x) = a(x-6)(x-i)(x+i)(x-(1-3i))(x-(1+3i))$ where $a$ is any real number,  $a < 0$
-
-
-\item $f(x) = -2(x-2i)(x+2i)(x+2)$
-
-\end{enumerate}
-
-
-\closegraphsfile
+\printexercises{exercises_pre/03_04_exercises}
