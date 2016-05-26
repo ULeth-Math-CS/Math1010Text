@@ -1,0 +1,1476 @@
+\mfpicnumber{1}
+
+\opengraphsfile{FunctionComposition}
+
+\setcounter{footnote}{0}
+
+\label{FunctionComposition}
+
+Before we embark upon any further adventures with functions, we need to take some time to gather our thoughts and gain some perspective.  Chapter \ref{RelationsandFunctions} first introduced us to functions in Section \ref{IntrotoFunctions}.  At that time, functions were specific kinds of relations - sets of points in the plane which passed the Vertical Line Test, Theorem \ref{VLT}.  In Section \ref{FunctionNotation}, we developed the idea that functions are processes - rules which match inputs to outputs - and this gave rise to the concepts of domain and range.  We spoke about how functions could be combined in Section \ref{FunctionArithmetic} using the four basic arithmetic operations, took a more detailed look at their graphs in Section \ref{GraphsofFunctions} and studied how their graphs behaved under certain classes of transformations in Section \ref{Transformations}.  In Chapter \ref{LinearQuadratic}, we took a closer look at three families of functions: linear functions (Section \ref{LinearFunctions}), absolute value functions\footnote{These were introduced, as you may recall, as piecewise-defined linear functions.} (Section \ref{AbsoluteValueFunctions}), and quadratic functions (Section \ref{QuadraticFunctions}).  Linear and quadratic functions were special cases of polynomial functions, which we studied in generality in Chapter \ref{Polynomials}. Chapter \ref{Polynomials} culminated with the Real Factorization Theorem, Theorem \ref{realfactorization}, which says that all polynomial functions with real coefficients can be thought of as products of linear and quadratic functions.  Our next step was to enlarge our field\footnote{This is a really bad math pun.} of study to rational functions in Chapter \ref{Rationals}.  Being quotients of polynomials, we can ultimately view this family of functions as being built up of linear and quadratic functions as well.  So in some sense, Chapters \ref{LinearQuadratic}, \ref{Polynomials}, and \ref{Rationals} can be thought of as an exhaustive study of linear and quadratic\footnote{If we broaden our concept of functions to allow for complex valued coefficients, the Complex Factorization Theorem, Theorem \ref{complexfactorization}, tells us every function we have studied thus far is a combination of linear functions.} functions and their arithmetic combinations as described in Section \ref{FunctionArithmetic}. We now wish to study other algebraic functions, such as $f(x) = \sqrt{x}$ and $g(x) = x^{2/3}$, and the purpose of the first two sections of this chapter is to see how these kinds of functions arise from polynomial and rational functions.  To that end, we first study a new way to combine functions as defined below.
+
+\smallskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn} \label{functioncompositiondefn} Suppose $f$ and $g$ are two functions.  The \index{function ! composite ! definition of}\index{composite function ! definition of}\textbf{composite} of $g$ with $f$, denoted $g \circ f$, is defined by the formula $(g \circ f) (x) = g(f(x))$, provided $x$ is an element of the domain of $f$ and $f(x)$ is an element of the domain of $g$. 
+
+
+\end{defn}
+\ebm}
+
+\smallskip
+
+The quantity $g \circ f$ is also read `$g$ composed with $f$' or, more simply `$g$ of $f$.' At its most basic level, Definition \ref{functioncompositiondefn} tells us to obtain the formula for $\left(g \circ f\right)(x)$, we replace every occurrence of $x$ in the formula for $g(x)$ with the formula we have for $f(x)$.  If we take a step back and look at this from a procedural, `inputs and outputs' perspective, Defintion \ref{functioncompositiondefn} tells us  the output from $g \circ f$ is found by taking the output from $f$, $f(x)$,  and then making that the input to $g$.  The result, $g(f(x))$, is the output from $g \circ f$.  From this perspective, we see $g \circ f$ as a two step process taking an input $x$ and first applying the procedure $f$ then applying the procedure $g$.  Abstractly, we have
+
+\begin{center}
+
+\footnotesize
+
+\begin{mfpic}[10]{-10}{20}{-10}{10}
+\tlabel[cc](-2,6){$f$}
+\tlabel[cc](11,6){$g$}
+\tlabel[cc](4.5,-6){$g \circ f$}
+\tlabel[cc](-9,-1){$x$}
+\tlabel[cc](4,-1){$f(x)$}
+\tlabel[cc](18,-2){$g(f(x))$}
+\point[2pt]{(-9,0), (4,0), (18,0)} 
+\sclosed \curve{(-6,4), (-12,0), (-6,-5), (-3,0)}
+\sclosed \curve{(1,3), (6,0), (5,-4)}
+\sclosed \curve{(18,3), (15,0), (18,-5), (20,0)}
+\penwd{0.75pt}
+\arrow \curve{(-8.9,0.25), (-2,5), (3.9,0.25)}
+\arrow \curve{(4.1,0.25), (11,5), (17.9,0.25)}
+\arrow \curve{(-8.9,-0.25), (4.5,-5), (17.9,-0.25)}
+\end{mfpic}
+
+\end{center}
+
+\normalsize
+
+In the expression $g(f(x))$, the function $f$ is often called the `inside' function while $g$ is often called the `outside' function.  There are two ways to go about evaluating composite functions - `inside out' and `outside in' - depending on which function we replace with its formula first.  Both ways are  demonstrated in the following example.  
+
+\begin{ex}  Let $f(x) = x^2-4x$, $g(x) = 2-\sqrt{x+3}$, and $h(x) = \dfrac{2x}{x+1}$.  
+
+In numbers \ref{fcexvalfirst} - \ref{fcexvallast}, find the indicated function value.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item  $(g \circ f)(1)$ \label{fcexvalfirst}
+
+\item  $(f \circ g)(1)$
+
+\item  $(g \circ g)(6)$ \label{fcexvallast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+
+In numbers \ref{fcexformfirst} - \ref{fcexformlast}, find and simplify the indicated composite functions.  State the domain of each.
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $(g \circ f)(x)$ \label{fcexformfirst}
+
+\item  $(f \circ g)(x)$
+
+\item  $(g \circ h)(x)$
+
+\item  $(h \circ g)(x)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{4}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $(h \circ h)(x)$
+
+\item  $(h \circ (g \circ f))(x)$ 
+
+\item  $((h \circ g) \circ f)(x)$ \label{fcexformlast}
+
+\end{enumerate}
+\end{multicols}
+
+{\bf Solution.}  
+\begin{enumerate}
+
+\item  Using Definition \ref{functioncompositiondefn}, $(g \circ f)(1) = g(f(1))$.  We find $f(1) = -3$, so \[(g \circ f)(1) = g(f(1)) = g(-3) = 2 \]
+
+\item As before, we use Definition \ref{functioncompositiondefn} to write $(f \circ g)(1) = f(g(1))$.  We find $g(1) = 0$, so \[(f \circ g)(1) = f(g(1)) = f(0) = 0 \] 
+
+\item  Once more, Definition \ref{functioncompositiondefn} tells us $(g \circ g)(6) = g(g(6))$.  That is, we evaluate $g$ at $6$, then plug that result back into $g$. Since $g(6) = -1$,  \[(g \circ g)(6) = g(g(6)) = g(-1) = 2-\sqrt{2} \]
+
+
+\item  By definition, $(g \circ f)(x) = g(f(x))$. We now illustrate \textit{two} ways to approach this problem.
+
+\begin{itemize}
+
+\item  \textit{inside out}:  We insert the expression $f(x)$ into $g$ first to get  \[(g \circ f)(x) = g(f(x)) = g\left(x^2-4x\right) = 2 - \sqrt{\left(x^2-4x\right)+3} = 2 - \sqrt{x^2-4x+3}\] Hence, $(g \circ f)(x) = 2 - \sqrt{x^2-4x+3}$.
+
+\item  \textit{outside in}:  We use the formula for $g$ first to get  \[(g \circ f)(x) = g(f(x)) = 2 - \sqrt{f(x)+3}  = 2 - \sqrt{\left(x^2-4x\right)+3} = 2 - \sqrt{x^2-4x+3}\] We get the same answer as before,  $(g \circ f)(x) = 2 - \sqrt{x^2-4x+3}$.
+
+\end{itemize} 
+
+To find the domain of $g \circ f$, we need to find the elements in the domain of $f$ whose outputs $f(x)$ are in the domain of $g$.  We accomplish this by following the rule set forth in Section \ref{FunctionNotation}, that is, we find the domain \textit{before} we simplify.  To that end, we examine $(g \circ f)(x) = 2 - \sqrt{\left(x^2-4x\right)+3}$.  To keep the square root happy, we solve the inequality $x^2-4x+3 \geq 0$ by creating a sign diagram.  If we let $r(x) = x^2-4x+3$, we find the zeros of $r$ to be $x = 1$ and $x = 3$.  We obtain
+
+\begin{center}
+
+\begin{mfpic}[10]{-5}{5}{-1}{2}
+\arrow \reverse \arrow \polyline{(-5,0),(5,0)}
+\xmarks{-2,2}
+\tlpointsep{6pt}
+\axislabels {x}{{$1$} -2, {$3$} 2}
+\tlabel[cc](-3.5,1){$(+)$}
+\tlabel[cc](-2,1){$0$}
+\tlabel[cc](0,1){$(-)$}
+\tlabel[cc](2,1){$0$}
+\tlabel[cc](3.5,1){$(+)$}
+\end{mfpic}
+
+\end{center}
+
+Our solution to $x^2-4x+3 \geq 0$, and hence the domain of $g \circ f$, is $(-\infty, 1] \cup [3,\infty)$.
+
+\item  To find $(f \circ g)(x)$, we find $f(g(x))$. 
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $g(x)$ into $f$ first to get  
+\begin{longtable}{rclr} $(f \circ g)(x)$ & = & $f(g(x))$ = $f\left(2-\sqrt{x+3}\right)$ & \\ [2pt]
+ & = & $\left(2-\sqrt{x+3}\right)^2 - 4\left(2-\sqrt{x+3}\right)$ & \\[2pt] 
+ & = & $4 - 4\sqrt{x+3} + \left(\sqrt{x+3}\right)^2 - 8 + 4 \sqrt{x+3}$ & \\ [2pt]
+ & = & $4 + x+3 - 8$ & \\ 
+ & = & $x-1$ & \\
+ \end{longtable}
+
+\item  \textit{outside in}:  We use the formula for $f(x)$ first to get
+\begin{longtable}{rclr} $(f \circ g)(x)$ & = & $f(g(x))$ = $\left(g(x)\right)^2 - 4\left(g(x)\right)$& \\ [2pt]
+ & = & $\left(2-\sqrt{x+3}\right)^2 - 4\left(2-\sqrt{x+3}\right)$ & \\[2pt] 
+ & = & $x-1$ & same algebra as before \\
+ \end{longtable}
+
+\end{itemize}
+
+Thus we get $(f \circ g)(x) = x-1$.  To find the domain of $(f \circ g)$, we look to the step before we did any simplification and find $(f \circ g)(x) = \left(2-\sqrt{x+3}\right)^2 - 4\left(2-\sqrt{x+3}\right)$.  To keep the square root happy, we set $x+3 \geq 0$ and find our domain to be $[-3, \infty)$.  
+
+
+
+\item  To find $(g \circ h)(x)$, we compute $g(h(x))$. 
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $h(x)$ into $g$ first to get 
+\begin{longtable}{rclr} $(g \circ h)(x)$ & = & $g(h(x))$ = $g\left(\dfrac{2x}{x+1}\right)$  & \\ [12pt]
+ & = & $2 - \sqrt{\left(\dfrac{2x}{x+1}\right)+3}$ & \\[12pt] 
+ & = & $2 - \sqrt{\dfrac{2x}{x+1} + \dfrac{3(x+1)}{x+1}}$ & get common denominators\\ [12pt]
+ & = & $2 - \sqrt{\dfrac{5x+3}{x+1}}$ & \\
+ \end{longtable}
+
+\item  \textit{outside in}:  We use the formula for $g(x)$ first to get
+\begin{longtable}{rclr} $(g \circ h)(x)$ & = & $g(h(x))$ = $2 - \sqrt{h(x)+3}$& \\ [2pt]
+  & = & $2 - \sqrt{\left(\dfrac{2x}{x+1}\right)+3}$ & \\[12pt] 
+ & = & $2 - \sqrt{\dfrac{5x+3}{x+1}}$ & get common denominators as before\\
+ \end{longtable}
+
+\end{itemize}
+
+To find the domain of $(g \circ h)$, we look to the step before we began to simplify: \[(g \circ h)(x) = 2 - \sqrt{\left(\frac{2x}{x+1}\right)+3}\]  To avoid division by zero, we need $x \neq -1$. To keep the radical happy, we need to solve \[\frac{2x}{x+1} +3  = \frac{5x+3}{x+1}\geq 0\] Defining $r(x) = \frac{5x+3}{x+1}$, we see $r$ is undefined at $x=-1$ and $r(x) = 0$ at $x = -\frac{3}{5}$. We get
+
+\begin{center}
+
+\begin{mfpic}[10]{-5}{5}{-1}{2}
+\arrow \reverse \arrow \polyline{(-5,0),(5,0)}
+\xmarks{-2,2}
+\tlpointsep{7pt}
+\axislabels {x}{{$-1 \hspace{7pt}$} -2, {$-\frac{3}{5} \hspace{7pt}$} 2}
+\tlabel[cc](-3.5,1){$(+)$}
+\tlabel[cc](-2,1){\textinterrobang}
+\tlabel[cc](0,1){$(-)$}
+\tlabel[cc](2,1){$0$}
+\tlabel[cc](3.5,1){$(+)$}
+\end{mfpic}
+
+\end{center}
+
+Our domain is $(-\infty, -1) \cup \left[-\frac{3}{5}, \infty\right)$.
+
+\item  We find $(h \circ g)(x)$ by finding $h(g(x))$.
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $g(x)$ into $h$ first to get
+\begin{longtable}{rclr} $(h \circ g)(x)$ & = & $h(g(x))$ =$h\left(2-\sqrt{x+3}\right)$ & \\ [2pt]
+ & = & $\dfrac{2 \left(2-\sqrt{x+3} \right)}{\left(2-\sqrt{x+3}\right)+1}$ & \\[12pt] 
+ & = & $\dfrac{4-2\sqrt{x+3}}{3-\sqrt{x+3}}$ & \\
+  \end{longtable}
+
+\item  \textit{outside in}:  We use the formula for $h(x)$ first to get
+\begin{longtable}{rclr} $(h \circ g)(x)$ & = & $h(g(x))$ = $\dfrac{2 \left(g(x)\right)}{\left( g(x)\right) + 1}$ & \\ [12pt]
+ & = & $\dfrac{2 \left(2-\sqrt{x+3} \right)}{\left(2-\sqrt{x+3}\right)+1}$ & \\[12pt] 
+ & = & $\dfrac{4-2\sqrt{x+3}}{3-\sqrt{x+3}}$ & \\
+  \end{longtable}
+ 
+ \end{itemize}
+
+To find the domain of $h \circ g$, we look to the step before any simplification:  \[(h \circ g)(x) =  \frac{2 \left(2-\sqrt{x+3} \right)}{\left(2-\sqrt{x+3}\right)+1}\]  To keep the square root happy, we require $x+3 \geq 0$ or $x \geq -3$.  Setting the denominator equal to zero gives $\left(2-\sqrt{x+3}\right)+1=0$ or $\sqrt{x+3} = 3$.  Squaring both sides gives us $x+3=9$, or $x=6$.  Since $x=6$ checks in the original equation, $\left(2-\sqrt{x+3}\right)+1=0$, we know $x=6$ is the only zero of the denominator.  Hence, the domain of $h \circ g$ is $[-3,6) \cup (6, \infty)$.
+
+\item  To find $(h \circ h)(x)$, we substitute the function $h$ into itself, $h(h(x))$.
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $h(x)$ into $h$ to get
+\begin{longtable}{rclr} $(h \circ h)(x)$ & $=$ & $h(h(x)) =h\left(\dfrac{2x}{x+1}\right)$ & \\ [.25in]
+&=& $\dfrac{2\left(\dfrac{2x}{x+1}\right)}{\left(\dfrac{2x}{x+1}\right)+1}$ & \\[.35in] 
+ & = & $\dfrac{\dfrac{4x}{x+1}}{\dfrac{2x}{x+1}+1} \cdot \dfrac{(x+1)}{(x+1)}$ & \\ [.25in]
+& = & $\dfrac{\frac{4x}{x+1} \cdot (x+1)}{\left(\dfrac{2x}{x+1}\right)\cdot(x+1)+1\cdot(x+1)}$ & \\ [.35in]
+& = & $\dfrac{\dfrac{4x}{\cancelto{1}{(x+1})} \cdot \cancel{(x+1)}}{\dfrac{2x}{\cancelto{1}{(x+1)}}\cdot\cancel{(x+1)}+x+1}$ & \\ [.35in]
+& = & $\dfrac{4x}{3x+1}$ & \\ 
+ \end{longtable}
+
+\item  \textit{outside in}: This approach yields
+\begin{longtable}{rclr} $(h \circ h)(x)$ & = & $h(h(x)) = \dfrac{2 (h(x))}{h(x) + 1}$ & \\ [.25in]
+& = & $\dfrac{2\left(\dfrac{2x}{x+1}\right)}{\left(\dfrac{2x}{x+1}\right)+1}$ & \\[.35in] 
+& = & $\dfrac{4x}{3x+1}$ &  same algebra as before\\
+ \end{longtable}
+
+\end{itemize}
+
+To find the domain of $h \circ h$, we analyze \[(h \circ h)(x) = \dfrac{2\left(\dfrac{2x}{x+1}\right)}{\left(\dfrac{2x}{x+1}\right)+1}\]  To keep the denominator $x+1$ happy, we need $x \neq -1$.  Setting the denominator \[\frac{2x}{x+1}+1 = 0\] gives $x = -\frac{1}{3}$.  Our domain is $(-\infty, -1) \cup \left(-1, -\frac{1}{3}\right) \cup \left(-\frac{1}{3}, \infty\right)$. 
+
+\item  The expression $(h \circ (g \circ f))(x)$ indicates that we first find the composite, $g \circ f$ and compose the function $h$ with the result.  We know from number 1 that $(g \circ f)(x) =  2 - \sqrt{x^2-4x+3}$.  We now proceed as usual.
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $(g \circ f)(x)$ into $h$ first to get
+\begin{longtable}{rclr} $(h \circ (g \circ f))(x)$ & = & $h((g \circ f)(x))=h\left(2 - \sqrt{x^2-4x+3}\right)$  & \\ [5pt]
+ & = & $\dfrac{2 \left(2 - \sqrt{x^2-4x+3}\right)}{\left(2 - \sqrt{x^2-4x+3}\right)+1}$ & \\ [12pt]
+ & = & $\dfrac{4 - 2\sqrt{x^2-4x+3}}{3 - \sqrt{x^2-4x+3}}$ & \\
+ \end{longtable}
+
+\item  \textit{outside in}:  We use the formula for $h(x)$ first to get
+\begin{longtable}{rclr} $(h \circ (g \circ f))(x)$ & = & $h((g \circ f)(x))=\dfrac{2 \left( (g \circ f)(x)\right)}{  \left( (g \circ f)(x)\right) + 1}$  & \\ [12pt]
+& = & $\dfrac{2 \left(2 - \sqrt{x^2-4x+3}\right)}{\left(2 - \sqrt{x^2-4x+3}\right)+1}$ & \\ [12pt]
+ & = & $\dfrac{4 - 2\sqrt{x^2-4x+3}}{3 - \sqrt{x^2-4x+3}}$ & \\
+ \end{longtable}
+ 
+ \end{itemize}
+ 
+To find the domain of $(h \circ (g \circ f))$, we look at the step before we began to simplify, \[(h \circ (g \circ f))(x) = \frac{2 \left(2 - \sqrt{x^2-4x+3}\right)}{\left(2 - \sqrt{x^2-4x+3}\right)+1}\]  For the square root, we need $x^2-4x+3 \geq 0$, which we determined in number 1 to be $(-\infty, 1] \cup [3,\infty)$.  Next, we set the denominator to zero and solve:  $\left(2 - \sqrt{x^2-4x+3}\right)+1 = 0$.  We get $\sqrt{x^2-4x+3} = 3$, and, after squaring both sides, we have $x^2-4x+3 = 9$.  To solve $x^2-4x-6 = 0$, we use the quadratic formula and get $x = 2 \pm \sqrt{10}$.  The reader is encouraged to check that both of these numbers satisfy the original equation, $\left(2 - \sqrt{x^2-4x+3}\right)+1 = 0$.  Hence we must exclude these numbers from the domain of $h \circ (g \circ f)$.  Our final domain for $h \circ (f \circ g)$ is $(-\infty, 2 -\sqrt{10}) \cup (2 - \sqrt{10}, 1] \cup \left[3, 2 + \sqrt{10}\right) \cup \left(2+\sqrt{10}, \infty\right)$.
+
+\item  The expression $((h \circ g) \circ f)(x)$ indicates that we first find the composite $h \circ g$ and then compose that with $f$.  From number 4, we have \[(h \circ g)(x) = \frac{4-2\sqrt{x+3}}{3-\sqrt{x+3}}\]  We now proceed as before.
+
+\begin{itemize}
+
+\item  \textit{inside out}: We insert the expression $f(x)$ into $h \circ g$ first to get 
+
+\[ \begin{array}{rclr}
+((h \circ g) \circ f)(x) & = & (h \circ g)(f(x)) = (h \circ g)\left(x^2-4x\right) & \\ [2pt]
+                         & = & \dfrac{4-2\sqrt{\left(x^2-4x\right)+3}}{3-\sqrt{\left(x^2-4x\right)+3}} & \\ [12pt]
+                         & = & \dfrac{4 - 2\sqrt{x^2-4x+3}}{3 - \sqrt{x^2-4x+3}} & \\ \end{array}\]
+
+\item  \textit{outside in}:  We use the formula for $(h \circ g)(x)$ first to get
+\begin{longtable}{rclr} $((h \circ g) \circ f)(x)$ & = & $(h \circ g)(f(x))=\dfrac{4-2\sqrt{(f(x))+3}}{3-\sqrt{f(x))+3}}$  & \\ [12pt]
+  & = & $\dfrac{4 - 2\sqrt{\left(x^2-4x\right)+3}}{3 - \sqrt{\left(x^2-4x\right)+3}}$ & \\[12pt]
+ & = & $\dfrac{4 - 2\sqrt{x^2-4x+3}}{3 - \sqrt{x^2-4x+3}}$ & \\
+ \end{longtable}
+ 
+ \end{itemize}
+
+ 
+We note that the formula for $((h \circ g) \circ f)(x)$ before simplification is identical to that of $(h \circ (g \circ f))(x)$ before we simplified it.  Hence, the two functions have the same domain, $h \circ (f \circ g)$ is $(-\infty, 2 -\sqrt{10}) \cup (2 - \sqrt{10}, 1] \cup \left[3, 2 + \sqrt{10}\right) \cup \left(2+\sqrt{10}, \infty\right)$. \qed
+
+\end{enumerate}
+
+\label{functioncompex1}
+\end{ex}
+
+It should be clear from Example \ref{functioncompex1} that, in general, when you compose two functions, such as $f$ and $g$ above, the order matters.\footnote{This shows us function composition isn't \textbf{commutative}. \index{commutative property ! function composition does not have} An example of an operation we perform on two functions which is commutative is function addition, which we defined in Section \ref{FunctionArithmetic}.  In other words, the functions $f+g$ and $g+f$ are always equal.  Which of the remaining operations on functions we have discussed are commutative?}   We found that the functions $f \circ g$ and $g \circ f$ were different as were $g \circ h$ and $h \circ g$.  Thinking of functions as processes, this isn't all that surprising.  If we think of one process as putting on our socks, and the other as putting on our shoes, the order in which we do these two tasks does matter.\footnote{A more mathematical example in which the order of two processes matters can be found in Section \ref{Transformations}.  In fact, all of the transformations in that section can be viewed in terms of composing functions with linear functions.}  Also note the importance of finding the domain of the composite function \textit{before} simplifying.  For instance, the domain  of $f \circ g$ is much different than its simplified formula would indicate.  Composing a function with itself, as in the case of finding $(g\circ g)(6)$ and $(h \circ h)(x)$, may seem odd.  Looking at this from a procedural perspective, however, this merely indicates performing a task $h$ and then doing it again - like setting the washing machine to do a `double rinse'. Composing a function with itself is called `iterating' the function, and we could easily spend an entire course on just that. The last two problems in Example \ref{functioncompex1} serve to demonstrate the \index{associative property ! for function composition} \textbf{associative} property of functions.  That is, when composing three (or more) functions, as long as we keep the order the same, it doesn't matter which two functions we compose first. This property as well as another important property are listed in the theorem below.
+
+\medskip
+
+\colorbox{ResultColor}{\bbm
+\begin{thm}\label{functioncompprops}  \textbf{Properties of Function Composition:} Suppose $f$, $g$, and $h$ are functions. \index{function ! composite ! properties of} \index{composite function ! properties of}
+
+\begin{itemize}
+
+\item  $h \circ (g \circ f) = (h \circ g) \circ f$, provided the composite functions are defined.
+
+\item  If $I$ is defined as $I(x) = x$ for all real numbers $x$, then $ I \circ f = f \circ I =f$.
+
+\end{itemize}
+
+\end{thm}
+\ebm}
+
+\medskip
+
+By repeated applications of Definition \ref{functioncompositiondefn}, we find  $(h \circ (g \circ f))(x) = h((g \circ f)(x)) = h(g(f(x)))$.  Similarly, $((h \circ g) \circ f)(x) = (h \circ g)(f(x)) = h(g(f(x)))$.  This establishes that the formulas for the two functions are the same.  We leave it to the reader to think about why the domains of these two functions are identical, too.  These two facts establish the equality $h \circ (g \circ f) = (h \circ g) \circ f$.  A consequence of the associativity of function composition is that there is no need for parentheses when we write $h \circ g \circ f$. The second property can also be verified using Definition \ref{functioncompositiondefn}.  Recall that the function $I(x) = x$ is called the \index{identity ! function} \textit{identity function} and was introduced in Exercise  \ref{identityexercise} in Section \ref{LinearFunctions}.  If we compose the function $I$ with a function $f$, then we have $(I \circ f)(x) = I(f(x)) = f(x)$, and a similar computation shows $(f\circ I)(x) = f(x)$. This establishes that we have an identity for function composition much in the same way the real number $1$ is an identity for real number multiplication. That is, just as for any real number $x$, $1 \cdot x = x \cdot 1 = x$ , we have for any function $f$, $ I \circ f = f \circ I =f$.  We shall see the concept of an identity take on great significance in the next section.  Out in the wild, function composition is often used to relate two quantities which may not be directly related, but have a variable in common, as illustrated in our next example.
+
+\begin{ex}  The surface area $S$ of a sphere is a function of its radius $r$ and is given by the formula $S(r) = 4 \pi r^2$.  Suppose the sphere is being inflated so that the radius of the sphere is increasing according to the formula $r(t) = 3t^2$, where $t$ is measured in seconds, $t \geq 0$, and $r$ is measured in inches.  Find and interpret $(S \circ r)(t)$.
+
+\smallskip
+
+{\bf Solution.}  If we look at the functions $S(r)$ and $r(t)$ individually, we see the former gives the surface area of a sphere of a given radius while the latter gives the radius at a given time.    So, given a specific time, $t$, we could find the radius at that time, $r(t)$ and feed that into $S(r)$ to find the surface area at that time.  From this we see that the surface area $S$ is ultimately a function of time $t$ and we find $(S \circ r)(t) = S(r(t)) = 4 \pi (r(t))^2 = 4 \pi \left(3t^2\right)^2 = 36 \pi t^{4}$.  This formula allows us to compute the surface area directly given the time without going through the `middle man' $r$. \qed
+
+\end{ex}
+
+A useful skill in Calculus is to be able to take a complicated function and break it down into a composition of easier functions which our last example illustrates.
+
+\begin{ex}  Write each of the following functions as a composition of two or more (non-identity) functions.  Check your answer by performing the function composition.
+
+\begin{multicols}{3}
+\begin{enumerate}
+
+\item $F(x) = |3x-1|$
+
+\item $G(x) = \dfrac{2}{x^2+1}$
+
+\item  $H(x) = \dfrac{\sqrt{x}+1}{\sqrt{x}-1}$
+
+\end{enumerate}
+\end{multicols}
+
+{ \bf Solution.}  There are many approaches to this kind of problem, and we showcase a different methodology in each of the solutions below.
+
+\begin{enumerate}
+
+\item  Our goal is to express the function $F$ as $F = g \circ f$ for functions $g$ and $f$.  From Definition \ref{functioncompositiondefn}, we know $F(x) = g(f(x))$, and we can think of $f(x)$ as being the `inside' function and $g$ as being the `outside' function.  Looking at $F(x) = |3x-1|$ from an `inside versus outside' perspective, we can think of $3x-1$ being inside the absolute value symbols.  Taking this cue, we define $f(x) = 3x-1$.  At this point, we have $F(x) = |f(x)|$.  What is the outside function?  The function which takes the absolute value of its input, $g(x) = |x|$. Sure enough,  $(g \circ f)(x) = g(f(x)) = |f(x)| = |3x-1| = F(x)$, so we are done.
+
+\item  We attack deconstructing $G$ from an operational approach.  Given an input $x$, the first step is to square $x$, then add $1$, then divide the result into $2$.  We will assign each of these steps a function so as to write $G$ as a composite of three functions: $f$, $g$ and $h$.  Our first function, $f$, is the function that squares its input, $f(x) = x^2$.  The next function is the function that adds $1$ to its input, $g(x) = x+1$.  Our last function takes its input and divides it into $2$, $h(x) = \frac{2}{x}$.  The claim is that $G = h \circ g \circ f$. We find  \[(h \circ g \circ f)(x) = h(g(f(x))) = h(g\left(x^2\right)) = h\left(x^2+1\right)= \frac{2}{x^2+1} = G(x),\] so we are done.
+\item  If we look $H(x) = \frac{\sqrt{x}+1}{\sqrt{x}-1}$ with an eye towards building a complicated function from simpler functions, we see the expression $\sqrt{x}$ is a simple piece of the larger function.  If we define $f(x) = \sqrt{x}$, we have $H(x) = \frac{f(x)+1}{f(x)-1}$.  If we want to decompose $H = g \circ f$, then we can glean the formula for $g(x)$ by looking at what is being done to $f(x)$.  We take $g(x) = \frac{x+1}{x-1}$, so \[(g \circ f)(x) = g(f(x)) = \frac{f(x)+1}{f(x)-1} = \frac{\sqrt{x}+1}{\sqrt{x}-1} = H(x),\] as required.  \qed
+
+\end{enumerate}
+
+\end{ex}
+
+\newpage
+
+\subsection{Exercises}
+
+In Exercises \ref{funccompeval1first} - \ref{funccompeval1last}, use the given pair of functions to find the following values if they exist.
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0)$
+
+\item  $(f\circ g)(-1)$
+
+\item  $(f \circ f)(2)$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3)$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right)$
+
+\item  $(f \circ f)(-2)$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+
+\item  $f(x) = x^2$, $g(x) = 2x+1$ \label{funccompeval1first}
+\item  $f(x) = 4-x$, $g(x) = 1-x^2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = 4-3x$, $g(x) = |x|$
+\item  $f(x) = |x-1|$, $g(x) = x^2-5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = 4x+5$, $g(x) = \sqrt{x}$
+\item  $f(x) = \sqrt{3-x}$, $g(x) = x^2+1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = 6-x-x^2$, $g(x) = x\sqrt{x+10}$
+\item  $f(x) = \sqrt[3]{x+1}$, $g(x) = 4x^2-x$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = \dfrac{3}{1-x}$, $g(x) = \dfrac{4x}{x^2+1}$
+\item  $f(x) = \dfrac{x}{x+5}$, $g(x) = \dfrac{2}{7-x^2}$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = \dfrac{2x}{5-x^2}$, $g(x) = \sqrt{4x+1}$
+\item  $f(x) =\sqrt{2x+5}$, $g(x) = \dfrac{10x}{x^2+1}$ \label{funccompeval1last}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+In Exercises \ref{funccompexp1first} - \ref{funccompexp1last}, use the given pair of functions to find and simplify expressions for the following functions and state the domain of each using interval notation.
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g \circ f)(x)$
+
+\item  $(f \circ g)(x)$
+
+\item  $(f \circ f)(x)$
+
+
+\end{itemize}
+
+\end{multicols}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = 2x+3$, $g(x) = x^2-9$ \label{funccompexp1first}
+\item  $f(x) = x^2 -x+1$, $g(x) = 3x-5$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = x^2-4$, $g(x) = |x|$
+\item  $f(x) = 3x-5$, $g(x) = \sqrt{x}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = |x+1|$, $g(x) = \sqrt{x}$
+\item  $f(x) = 3-x^2$, $g(x) = \sqrt{x+1}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = |x|$, $g(x) = \sqrt{4-x}$
+\item  $f(x) = x^2-x-1$, $g(x) = \sqrt{x-5}$ 
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = 3x-1$, $g(x) = \dfrac{1}{x+3}$
+\item  $f(x) = \dfrac{3x}{x-1}$, $g(x) =\dfrac{x}{x-3}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $f(x) = \dfrac{x}{2x+1}$, $g(x) = \dfrac{2x+1}{x}$
+\item  $f(x) =  \dfrac{2x}{x^2-4}$, $g(x) =\sqrt{1-x}$ 
+ \label{funccompexp1last}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+In Exercises \ref{threefunccompfirst} - \ref{threefunccomplast}, use $f(x) = -2x$, $g(x) = \sqrt{x}$ and $h(x) = |x|$ to find and simplify expressions for the following functions and state the domain of each using interval notation.
+
+\begin{multicols}{3}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(h\circ g \circ f)(x)$ \label{threefunccompfirst}
+
+\item $(h\circ f \circ g)(x)$
+
+\item $(g\circ f \circ h)(x)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(g\circ h \circ f)(x)$ 
+
+\item $(f\circ h \circ g)(x)$
+
+\item $(f\circ g \circ h)(x)$ \label{threefunccomplast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+In Exercises \ref{breakdowncompexfirst} - \ref{breakdownxomexlast},  write the given function as a composition of two or more non-identity functions.  (There are several correct answers, so check your answer using function composition.)
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $p(x) = (2x+3)^3$ \label{breakdowncompexfirst}
+\item  $P(x) = \left(x^2-x+1\right)^5$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $h(x) = \sqrt{2x-1}$
+\item  $H(x) = |7-3x|$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $r(x) = \dfrac{2}{5x+1}$
+\item  $R(x) = \dfrac{7}{x^2-1}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $q(x) = \dfrac{|x|+1}{|x|-1}$
+\item  $Q(x) = \dfrac{2x^3+1}{x^3-1}$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $v(x) = \dfrac{2x+1}{3-4x}$
+\item  $w(x) = \dfrac{x^2}{x^4+1}$ \label{breakdownxomexlast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item Write the function $F(x) = \sqrt{\dfrac{x^{3} + 6}{x^{3} - 9}}$ as a composition of three or more non-identity functions.
+
+\item Let $g(x) = -x, \, h(x) = x + 2, \, j(x) = 3x$ and $k(x) = x - 4$.  In what order must these functions be composed with $f(x) = \sqrt{x}$ to create $F(x) = 3\sqrt{-x + 2} - 4$?
+
+\item What linear functions could be used to transform $f(x) = x^{3}$ into $F(x) = -\frac{1}{2}(2x - 7)^{3} + 1$?  What is the proper order of composition?
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+
+In Exercises \ref{pointcompexfirst} - \ref{pointcompexlast}, let $f$ be the function defined by \[f = \{(-3, 4), (-2, 2), (-1, 0), (0, 1), (1, 3), (2, 4), (3, -1)\}\] and let $g$ be the function defined \[g = \{(-3, -2), (-2, 0), (-1, -4), (0, 0), (1, -3), (2, 1), (3, 2)\}\].  Find the value if it exists.
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(f \circ g)(3)$ \label{pointcompexfirst}
+\item $f(g(-1))$
+\item $(f \circ f)(0)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item $(f \circ g)(-3)$
+\item $(g \circ f)(3)$
+\item $g(f(-3))$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(g \circ g)(-2)$
+\item $(g \circ f)(-2)$
+\item $g(f(g(0)))$
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(f(f(-1)))$
+\item $f(f(f(f(f(1)))))$
+\item $\underbrace{(g \circ g \circ \cdots \circ g)}_{\mbox{$n$ times}}(0)$ \label{pointcompexlast}
+
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+%\pagebreak
+
+In Exercises \ref{twofuncgraphcompfirst} - \ref{twofuncgraphcomplast}, use the graphs of $y=f(x)$ and $y=g(x)$ below to find the function value.
+
+\begin{center}
+
+\begin{tabular}{cc}
+
+\begin{mfpic}[20]{-1}{5}{-1}{5}
+\axes
+\tlabel[cc](5,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\xmarks{1,2,3,4}
+\ymarks{1,2,3,4}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\polyline{(0,4), (1,2), (2,3), (3,3), (4,0)}
+\point[3pt]{(0,4), (1,2), (2,3), (3,3), (4,0)}
+\normalsize 
+\tcaption{$y = f(x)$}
+\end{mfpic}
+
+&
+
+\hspace{1in}
+
+\begin{mfpic}[20]{-1}{5}{-1}{5}
+\axes
+\tlabel[cc](5,-0.5){\scriptsize $x$}
+\tlabel[cc](0.5,5){\scriptsize $y$}
+\xmarks{1,2,3,4}
+\ymarks{1,2,3,4}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\polyline{(0,0), (1,3), (2,3), (3,0), (4,4)}
+\point[3pt]{(0,0), (1,3), (2,3), (3,0), (4,4)}
+\normalsize 
+\tcaption{$y = g(x)$}
+\end{mfpic}
+
+\end{tabular}
+
+\end{center}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $(g\circ f)(1)$ \label{twofuncgraphcompfirst}
+\item  $(f \circ g)(3)$
+\item  $(g\circ f)(2)$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $(f\circ g)(0)$  
+\item  $(f\circ f)(1)$
+\item  $(g \circ g)(1)$ \label{twofuncgraphcomplast}
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+
+\item The volume $V$ of a cube is a function of its side length $x$.  Let's assume that $x = t + 1$ is also a function of time $t$, where $x$ is measured in inches and $t$ is measured in minutes.  Find a formula for $V$ as a function of $t$.
+
+\item  Suppose a local vendor charges $\$2$ per hot dog and that the number of hot dogs sold per hour $x$ is given by $x(t) = -4t^2+20t+92$, where $t$ is the number of hours since $10$ AM, $0 \leq t \leq 4$.
+
+\begin{enumerate}
+
+\item  Find an expression for the revenue per hour $R$ as a function of $x$.
+\item  Find and simplify $\left(R \circ x\right)(t)$.  What does this represent?
+\item  What is the revenue per hour at noon?
+
+\end{enumerate}
+
+\item Discuss with your classmates how `real-world' processes such as filling out federal income tax forms or computing your final course grade could be viewed as a use of function composition.  Find a process for which composition with itself (iteration) makes sense.
+
+\end{enumerate}
+
+\newpage
+
+\subsection{Answers}
+
+
+\begin{enumerate}
+
+\item  For  $f(x) = x^2$ and $g(x) = 2x+1$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 1$
+
+\item  $(f\circ g)(-1) = 1$
+
+\item  $(f \circ f)(2) = 16$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 19$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = 4$
+
+\item  $(f \circ f)(-2) = 16$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $f(x) = 4-x$ and $g(x) = 1-x^2$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = -15$
+
+\item  $(f\circ g)(-1) = 4$
+
+\item  $(f \circ f)(2) = 2$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = -48$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{13}{4}$
+
+\item  $(f \circ f)(-2) = -2$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $f(x) = 4-3x$ and  $g(x) = |x|$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 4$
+
+\item  $(f\circ g)(-1) = 1$
+
+\item  $(f \circ f)(2) = 10$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 13$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{5}{2}$
+
+\item  $(f \circ f)(-2) = -26$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For   $f(x) = |x-1|$ and $g(x) = x^2-5$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = -4$
+
+\item  $(f\circ g)(-1) = 5$
+
+\item  $(f \circ f)(2) = 0$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 11$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{23}{4}$
+
+\item  $(f \circ f)(-2) = 2$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For $f(x) = 4x+5$ and $g(x) = \sqrt{x}$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = \sqrt{5}$
+
+\item  $(f\circ g)(-1)$ is not real
+
+\item  $(f \circ f)(2) = 57$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3)$ is not real
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = 5+2\sqrt{2}$
+
+\item  $(f \circ f)(-2) = -7$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For $f(x) = \sqrt{3-x}$ and $g(x) = x^2+1$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 4$
+
+\item  $(f\circ g)(-1) = 1$
+
+\item  $(f \circ f)(2) = \sqrt{2}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 7$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{\sqrt{7}}{2}$
+
+\item  $(f \circ f)(-2) = \sqrt{3 - \sqrt{5}}$
+
+\end{itemize}
+
+\end{multicols}
+
+\pagebreak
+
+\item  For  $f(x) = 6-x-x^2$ and $g(x) = x\sqrt{x+10}$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 24$
+
+\item  $(f\circ g)(-1) = 0$
+
+\item  $(f \circ f)(2) = 6$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 0$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{27-2\sqrt{42}}{8}$
+
+\item  $(f \circ f)(-2) = -14$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $f(x) = \sqrt[3]{x+1}$ and $g(x) = 4x^2-x$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 3$
+
+\item  $(f\circ g)(-1) = \sqrt[3]{6}$
+
+\item  $(f \circ f)(2) = \sqrt[3]{\sqrt[3]{3}+1}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = 4\sqrt[3]{4}+\sqrt[3]{2}$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{\sqrt[3]{12}}{2}$
+
+\item  $(f \circ f)(-2) = 0$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $f(x) = \frac{3}{1-x}$ and $g(x) = \frac{4x}{x^2+1}$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = \frac{6}{5}$
+
+\item  $(f\circ g)(-1) = 1$
+
+\item  $(f \circ f)(2) = \frac{3}{4}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = \frac{48}{25}$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = -5$
+
+\item  $(f \circ f)(-2)$ is undefined
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $f(x) = \frac{x}{x+5}$ and $g(x) = \frac{2}{7-x^2}$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = \frac{2}{7}$
+
+\item  $(f\circ g)(-1) = \frac{1}{16}$
+
+\item  $(f \circ f)(2) = \frac{2}{37}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = \frac{8}{19}$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \frac{8}{143}$
+
+\item  $(f \circ f)(-2) = -\frac{2}{13}$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $f(x) = \frac{2x}{5-x^2}$ and $g(x) = \sqrt{4x+1}$,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = 1$
+
+\item  $(f\circ g)(-1)$ is not real
+
+\item  $(f \circ f)(2) = -\frac{8}{11}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3) = \sqrt{7}$
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \sqrt{3}$
+
+\item  $(f \circ f)(-2) = \frac{8}{11}$
+
+\end{itemize}
+
+\end{multicols}
+
+\item  For  $f(x) =\sqrt{2x+5}$ and $g(x) = \frac{10x}{x^2+1}$ ,
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(0) = \frac{5\sqrt{5}}{3}$
+
+\item  $(f\circ g)(-1)$ is not real
+
+\item  $(f \circ f)(2) = \sqrt{11}$
+
+\end{itemize}
+
+\end{multicols}
+
+\begin{multicols}{3}
+
+\begin{itemize}
+
+\item  $(g\circ f)(-3)$ is not real
+
+\item  $(f\circ g)\left(\frac{1}{2}\right) = \sqrt{13}$
+
+\item  $(f \circ f)(-2) = \sqrt{7}$
+
+\end{itemize}
+
+\end{multicols}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item For $f(x) = 2x+3$ and $g(x) = x^2-9$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = 4x^2+12x$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ g)(x) = 2x^2-15$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ f)(x) = 4x+9$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+\pagebreak
+
+\item For  $f(x) = x^2 -x+1$ and $g(x) = 3x-5$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = 3x^2-3x-2$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ g)(x) =9x^2-33x+31$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ f)(x) = x^4-2x^3+2x^2-x+1$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+\item For  $f(x) = x^2-4$ and $g(x) = |x|$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = |x^2-4|$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ g)(x) =|x|^2-4 = x^2-4$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ f)(x) =x^4-8x^2+12$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+\item For   $f(x) = 3x-5$ and $g(x) = \sqrt{x}$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \sqrt{3x-5}$, domain: $\left[ \frac{5}{3}, \infty \right)$
+
+\item  $(f \circ g)(x) = 3\sqrt{x}-5$, domain: $[0,\infty)$
+
+\item  $(f \circ f)(x) = 9x-20$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+
+\item For   $f(x) = |x+1|$ and $g(x) = \sqrt{x}$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \sqrt{|x+1|}$, domain: $(-\infty, \infty)$
+
+\item  $(f \circ g)(x) = |\sqrt{x}+1| = \sqrt{x}+1$, domain: $[0,\infty)$
+
+\item  $(f \circ f)(x) = ||x+1|+1| = |x+1|+1$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+
+\item For   $f(x) = 3-x^2$ and $g(x) = \sqrt{x+1}$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \sqrt{4-x^2}$, domain: $[-2,2]$
+
+\item  $(f \circ g)(x) =2-x$, domain: $[-1, \infty)$
+
+\item  $(f \circ f)(x) = -x^4+6x^2-6$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+\item For   $f(x) = |x|$ and $g(x) = \sqrt{4-x}$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \sqrt{4-|x|}$, domain: $[-4,4]$
+
+\item  $(f \circ g)(x) =|\sqrt{4-x}| = \sqrt{4-x}$, domain: $(-\infty, 4]$
+
+\item  $(f \circ f)(x) = | |x| | = |x|$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+
+\pagebreak
+
+\item For  $f(x) = x^2-x-1$ and $g(x) = \sqrt{x-5}$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \sqrt{x^2-x-6}$, domain: $(-\infty, -2] \cup [3,\infty)$
+
+\item  $(f \circ g)(x) =x-6-\sqrt{x-5}$, domain: $[5,\infty)$
+
+\item  $(f \circ f)(x) =x^4-2x^3-2x^2+3x+1$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+\item For   $f(x) = 3x-1$ and $g(x) = \frac{1}{x+3}$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \frac{1}{3x+2}$, domain: $\left(-\infty, -\frac{2}{3}\right) \cup \left(-\frac{2}{3}, \infty\right)$
+
+\item  $(f \circ g)(x) = -\frac{x}{x+3}$, domain: $\left(-\infty, -3\right) \cup \left(-3, \infty\right)$
+
+\item  $(f \circ f)(x) = 9x-4$, domain: $(-\infty, \infty)$
+
+\end{itemize}
+
+
+\item For   $f(x) = \frac{3x}{x-1}$ and $g(x) =\frac{x}{x-3}$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) =x$, domain: $\left(-\infty, 1\right) \cup (1, \infty)$
+
+\item  $(f \circ g)(x) =x$, domain:  $\left(-\infty, 3\right) \cup (3,\infty)$
+
+\item  $(f \circ f)(x) = \frac{9x}{2x+1}$, domain: $\left(-\infty, -\frac{1}{2}\right) \cup \left(-\frac{1}{2}, 1 \right) \cup \left(1,\infty \right)$
+
+\end{itemize}
+
+
+\item For    $f(x) = \frac{x}{2x+1}$ and $g(x) = \frac{2x+1}{x}$
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) = \frac{4x+1}{x}$, domain: $\left(-\infty, -\frac{1}{2}\right) \cup \left(-\frac{1}{2}, 0), \cup (0, \infty\right)$
+
+\item  $(f \circ g)(x) = \frac{2x+1}{5x+2}$, domain:  $\left(-\infty, -\frac{2}{5}\right) \cup \left(-\frac{2}{5}, 0\right) \cup (0,\infty)$
+
+\item  $(f \circ f)(x) = \frac{x}{4x+1}$, domain: $\left(-\infty, -\frac{1}{2}\right) \cup \left(-\frac{1}{2}, -\frac{1}{4} \right) \cup \left(-\frac{1}{4},\infty\right)$
+
+\end{itemize}
+
+
+
+
+\item For  $f(x) = \frac{2x}{x^2-4}$ and $g(x) =\sqrt{1-x}$ 
+
+\begin{itemize}
+
+\item  $(g \circ f)(x) =\sqrt{\frac{x^2-2x-4}{x^2-4}}$, domain: $\left(-\infty, -2\right) \cup \left[1-\sqrt{5}, 2\right) \cup \left[1+\sqrt{5}, \infty\right)$
+
+\item  $(f \circ g)(x) = -\frac{2\sqrt{1-x}}{x+3}$, domain: $\left(-\infty, -3\right) \cup \left(-3, 1\right]$
+
+\item  $(f \circ f)(x) = \frac{4x-x^3}{x^4-9x^2+16}$, domain: $\left(-\infty, -\frac{1+\sqrt{17}}{2}\right) \cup \left(-\frac{1+\sqrt{17}}{2}, -2\right) \cup \left(-2, \frac{1-\sqrt{17}}{2}\right) \cup \left(\frac{1-\sqrt{17}}{2}, \frac{-1+\sqrt{17}}{2}\right) \cup \left(\frac{-1+\sqrt{17}}{2}, 2\right) \cup \left(2, \frac{1+\sqrt{17}}{2} \right) \cup \left(\frac{1+\sqrt{17}}{2}, \infty\right)$
+
+\end{itemize}
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(h\circ g \circ f)(x)= |\sqrt{-2x}|= \sqrt{-2x}$, domain: $(-\infty, 0]$ 
+
+\item $(h\circ f \circ g)(x) = |-2\sqrt{x}|= 2\sqrt{x}$, domain: $[0,\infty)$
+
+\item $(g\circ f \circ h)(x) = \sqrt{-2|x|}$, domain:  $\{0\}$
+
+\item $(g\circ h \circ f)(x) = \sqrt{|-2x|} = \sqrt{2|x|}$, domain: $(-\infty, \infty)$ 
+
+\item $(f\circ h \circ g)(x) = -2|\sqrt{x}| = -2\sqrt{x}$, domain: $[0,\infty)$
+
+\item $(f\circ g \circ h)(x) = -2\sqrt{|x|}$, , domain: $(-\infty,\infty)$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  Let $f(x) = 2x+3$ and $g(x) = x^3$, then $p(x) = (g\circ f)(x)$.
+\item Let $f(x) = x^2-x+1$ and $g(x) = x^5$,  $P(x) =(g\circ f)(x)$.
+\item  Let $f(x) = 2x-1$ and $g(x) = \sqrt{x}$, then $h(x) = (g\circ f)(x)$.
+\item Let $f(x) = 7-3x$ and $g(x) = |x|$, then  $H(x) =  (g\circ f)(x)$.
+\item  Let $f(x) = 5x+1$ and $g(x) = \frac{2}{x}$, then $r(x) =(g\circ f)(x)$.
+\item  Let $f(x) = x^2-1$ and $g(x) = \frac{7}{x}$, then $R(x) =(g\circ f)(x)$.
+\item  Let $f(x) = |x|$ and $g(x) = \frac{x+1}{x-1}$, then  $q(x) =(g\circ f)(x)$.
+
+\item Let $f(x) = x^3$ and $g(x)= \frac{2x+1}{x-1}$, then  $Q(x) =(g\circ f)(x)$.
+
+\item Let $f(x) =2x$ and $g(x) = \frac{x+1}{3-2x}$, then  $v(x) =(g\circ f)(x)$.
+
+\item  Let $f(x) = x^2$ and $g(x) = \frac{x}{x^2+1}$, then  $w(x) =(g\circ f)(x)$.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $F(x) = \sqrt{\frac{x^{3} + 6}{x^{3} - 9}} = (h(g(f(x)))$ where $f(x) = x^{3}, \, g(x) = \frac{x + 6}{x - 9}$ and $h(x) = \sqrt{x}$.
+
+\item $F(x) = 3\sqrt{-x + 2} - 4 = k(j(f(h(g(x)))))$
+
+\item One possible solution is $F(x) = -\frac{1}{2}(2x - 7)^{3} + 1 = k(j(f(h(g(x)))))$ where $g(x) = 2x, \, h(x) = x - 7, \, j(x) = -\frac{1}{2}x$ and $k(x) = x + 1$.  You could also have $F(x) = H(f(G(x)))$ where $G(x) = 2x - 7$ and $H(x) = -\frac{1}{2}x + 1$.
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(f \circ g)(3)= f(g(3)) = f(2) = 4$
+\item $f(g(-1)) = f(-4)$ which is undefined
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(f \circ f)(0) = f(f(0)) = f(1) = 3$
+\item $(f \circ g)(-3) = f(g(-3)) = f(-2) = 2$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(g \circ f)(3) = g(f(3)) = g(-1) = -4$
+\item $g(f(-3)) = g(4)$ which is undefined
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $(g \circ g)(-2) = g(g(-2)) = g(0) = 0$
+\item $(g \circ f)(-2) = g(f(-2)) = g(2) = 1$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $g(f(g(0))) = g(f(0)) = g(1) = -3$
+\item $f(f(f(-1))) = f(f(0)) = f(1) = 3$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $f(f(f(f(f(1))))) = f(f(f(f(3)))) =\\ f(f(f(-1))) = f(f(0))  = f(1) = 3$
+\item $\underbrace{(g \circ g \circ \cdots \circ g)}_{\mbox{$n$ times}}(0) = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item  $(g\circ f)(1) = 3$ 
+\item  $(f \circ g)(3) = 4$
+\item  $(g\circ f)(2) = 0$
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{3}
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+\item  $(f\circ g)(0) = 4$  
+\item  $(f\circ f)(1) = 3$
+\item  $(g \circ g)(1) = 0$
+
+\setcounter{HW}{\value{enumi}}
+\end{enumerate}
+\end{multicols}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{HW}}
+
+\item $V(x) = x^{3}$ so $V(x(t)) = (t + 1)^{3}$
+
+\item  \begin{enumerate}
+
+\item  $R(x) = 2x$
+
+\item  $\left(R \circ x \right)(t) =  -8t^2+40t+184$, $0 \leq t \leq 4$.  This gives the revenue per hour as a function of time.
+
+\item  Noon corresponds to $t=2$, so $\left(R \circ x \right)(2) = 232$.  The hourly revenue at noon is $\$232$ per hour. 
+
+\end{enumerate}
+
+\end{enumerate}
+
+\closegraphsfile
+

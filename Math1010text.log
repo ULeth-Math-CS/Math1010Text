@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  24 MAY 2016 10:42
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  25 MAY 2016 16:28
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -1845,15 +1845,12 @@ Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;" at 10.0pt
  -> C:/WINDOWS/Fonts/calibrib.ttf
-)
-\tf@toc=\write7
  [3
 
 
-] [4
-
-
-]
+])
+\tf@toc=\write7
+ [4]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -1896,6 +1893,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
  []
 
 [5
+
+
 
 ]
 Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
@@ -2369,9 +2368,6 @@ Overfull \hbox (1.39998pt too wide) in paragraph at lines 152--153
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
-
-
-LaTeX Warning: Reference `Rationals' on page 12 undefined on input line 158.
 
 
 Underfull \hbox (badness 1286) has occurred while \output is active
@@ -3423,9 +3419,6 @@ Overfull \hbox (1.39998pt too wide) in paragraph at lines 126--127
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
-
-
-LaTeX Warning: Reference `Rationals' on page 70 undefined on input line 211.
 
 [70]
 Overfull \hbox (3.91528pt too wide) in alignment at lines 211--211
@@ -5223,7 +5216,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[165] [166]
+(text_pre/03_SyntheticDivision.tex
+Underfull \vbox (badness 1226) has occurred while \output is active []
+
+ [165]
+[166]
+Overfull \hbox (7.01611pt too wide) in paragraph at lines 302--302
+[]\EU1/Calibri(0)/m/n/10 Since the dividend was a third degree polynomial, the 
+quotient is a quadratic
+ []
+
+[167]) [168]
+Overfull \hbox (50.74515pt too wide) in paragraph at lines 204--205
+[]\EU1/Calibri(0)/m/n/10 From the first division, we get $[][][] \OMS/cmsy/m/n/
+10 ^^@ [][][] ^^@ [][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT
+1/cmr/m/n/10 = [] []$\EU1/Calibri(0)/m/n/10 .
+ []
+
+[169]
+Overfull \hbox (5.96243pt too wide) in paragraph at lines 242--242
+[]\EU1/Calibri(0)/m/n/10 This gives us $[][][] \OMS/cmsy/m/n/10 ^^@ [][][] ^^@ 
+[][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 = [][
+] [] [] ([])$\EU1/Calibri(0)/m/n/10 ,
+ []
+
+
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 250--251
 [][][]
  []
@@ -5243,7 +5260,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-[167]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [170]
+[171]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5276,9 +5297,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [168
+ [172
 
-]) (text_pre/03_RealZeros.tex
+] [173]) (text_pre/03_RealZeros.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 11--12
 [][][]
  []
@@ -5298,28 +5319,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[169
+[174
 
 ]
 File: figures/PolynomialsGraphics/RealZero1.png Graphic file (type QTm)
- <use  "figures/PolynomialsGraphics/RealZero1.png" > [170] [171]
+ <use  "figures/PolynomialsGraphics/RealZero1.png" > [175]
+File: figures/PolynomialsGraphics/RealZero2.png Graphic file (type QTm)
 
-LaTeX Warning: Reference `AlgebraicFunctions' on page 172 undefined on input li
+<use  "figures/PolynomialsGraphics/RealZero2.png" > [176]
+
+LaTeX Warning: Reference `AlgebraicFunctions' on page 177 undefined on input li
 ne 249.
 
-File: figures/PolynomialsGraphics/RealZero2.png Graphic file (type QTm)
-<use  "figures/PolynomialsGraphics/RealZero2.png" >
-File: figures/PolynomialsGraphics/RealZero3.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero3.png" >
-File: figures/PolynomialsGraphics/RealZero4.png Graphic file (type QTm)
-
-<use  "figures/PolynomialsGraphics/RealZero4.png" >
-Overfull \hbox (4.49954pt too wide) has occurred while \output is active
- [][][] 
- []
-
-[172]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 268--269
 [][][]
  []
@@ -5329,26 +5341,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
+File: figures/PolynomialsGraphics/RealZero3.png Graphic file (type QTm)
+<use  "figures/PolynomialsGraphics/RealZero3.png" >
+File: figures/PolynomialsGraphics/RealZero4.png Graphic file (type QTm)
 
+<use  "figures/PolynomialsGraphics/RealZero4.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[177]
 Overfull \hbox (1.10355pt too wide) in paragraph at lines 278--279
 []$[]$\EU1/Calibri(0)/m/n/10 As noted above, the variations of sign of $[]\OT1/
 cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 is $[]$. This means,
  []
 
-[173] [174]
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 302--302
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [178]
+[179]
+File: figures/PolynomialsGraphics/RealZeros_New-1.pdf Graphic file (type QTm)
+ <use  "figures/PolynomialsGraphics/RealZeros_New-1.pdf" > [180]
 Underfull \hbox (badness 10000) in paragraph at lines 538--538
 
  []
 
-File: figures/PolynomialsGraphics/RealZeros_New-1.pdf Graphic file (type QTm)
-<use  "figures/PolynomialsGraphics/RealZeros_New-1.pdf" >
+
 Underfull \hbox (badness 4266) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 We don’t use the word “impossible”
  []
 
-[175]
+[181]
+Overfull \hbox (3.09503pt too wide) in paragraph at lines 577--577
+\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
+m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
+m/m/it/10 >
+ []
+
 File: figures/PolynomialsGraphics/RealZeros_New-2.pdf Graphic file (type QTm)
- <use  "figures/PolynomialsGraphics/RealZeros_New-2.pdf" >
+<use  "figures/PolynomialsGraphics/RealZeros_New-2.pdf" >
 File: figures/PolynomialsGraphics/RealZero5.png Graphic file (type QTm)
 
 <use  "figures/PolynomialsGraphics/RealZero5.png" >
@@ -5359,18 +5401,11 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
-[176]
-Overfull \hbox (3.09503pt too wide) in paragraph at lines 577--577
-\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
-m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
-m/m/it/10 >
- []
-
 File: figures/PolynomialsGraphics/RealZeros_New-3.pdf Graphic file (type QTm)
 <use  "figures/PolynomialsGraphics/RealZeros_New-3.pdf" >
 File: figures/PolynomialsGraphics/RealZero7.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero7.png" > [177]
+<use  "figures/PolynomialsGraphics/RealZero7.png" > [182]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5403,13 +5438,13 @@ File: figures/PolynomialsGraphics/RealZero7.png Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [178
+ [183
 
 ]
 
-LaTeX Warning: Reference `boxnotopex' on page 179 undefined on input line 583.
+LaTeX Warning: Reference `boxnotopex' on page 184 undefined on input line 583.
 
-[179]) (text_pre/03_ComplexZeros.tex
+[184]) (text_pre/03_ComplexZeros.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 14--15
 [][][]
  []
@@ -5424,7 +5459,7 @@ Underfull \hbox (badness 2326) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 The Fundamental Theorem of Algebra
  []
 
-[180
+[185
 
 ]
 Underfull \hbox (badness 1845) in paragraph at lines 30--30
@@ -5448,12 +5483,7 @@ Overfull \hbox (2.79843pt too wide) in paragraph at lines 116--116
  using the Quadratic
  []
 
-
-Underfull \hbox (badness 6188) has occurred while \output is active
-[]\EU1/Calibri(0)/m/n/9 We don’t really recommend jumping
- []
-
-[181]
+[186]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 127--128
 [][][]
  []
@@ -5463,7 +5493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-[182]
+
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 150--151
 [][][]
  []
@@ -5473,12 +5503,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[183] [184]
 
-LaTeX Warning: Reference `PolarComplex' on page 185 undefined on input line 255
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [187]
+[188] [189]
+
+LaTeX Warning: Reference `PolarComplex' on page 190 undefined on input line 255
 .
 
-[185]
+[190]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5511,9 +5545,464 @@ LaTeX Warning: Reference `PolarComplex' on page 185 undefined on input line 255
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [186
+ [191
+
+]) [192
+
+
+
+]
+Chapter 5.
+(text_pre/04_IntroRational.tex
+Overfull \hbox (0.16711pt too wide) in paragraph at lines 4--5
+\EU1/Calibri(0)/m/n/10 arithmetic rules defined in Section []2.4[], we will pro
+duce another polynomial func-
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 13--14
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 1205) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 According to Definition []40[], all polyno-
+ []
+
+[193
+
+]
+Overfull \hbox (40.93425pt too wide) detected at line 72
+[]
+ []
+
+[194]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 143--144
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 147--148
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+File: figures/RationalsGraphics/Rationals01.png Graphic file (type QTm)
+<use  "figures/RationalsGraphics/Rationals01.png" >
+Overfull \hbox (32.45236pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+
+Overfull \hbox (18.06357pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+
+LaTeX Warning: Reference `exploregraphslast' on page 195 undefined on input lin
+e 156.
+
+
+LaTeX Warning: Reference `TrigGraphs' on page 195 undefined on input line 156.
+
+[195]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 201--203
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+ []
+
+
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+
+Overfull \hbox (8.9202pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+File: figures/RationalsGraphics/IntroRational-1.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/IntroRational-1.pdf" > [196]
+File: figures/RationalsGraphics/Rationals02.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals02.png" >
+File: figures/RationalsGraphics/Rationals03.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals03.png" >
+File: figures/RationalsGraphics/Rationals04.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals04.png" >
+File: figures/RationalsGraphics/Rationals05.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals05.png" > [197]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 309--310
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+File: figures/RationalsGraphics/Doomsday.png Graphic file (type QTm)
+<use  "figures/RationalsGraphics/Doomsday.png" > [198]
+File: figures/RationalsGraphics/Rationals06.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals06.png" >
+File: figures/RationalsGraphics/Rationals07.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals07.png" >
+File: figures/RationalsGraphics/Rationals08.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals08.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[199]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 442--443
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
+
+ []
+
+
+LaTeX Warning: Reference `ExpLogs' on page 200 undefined on input line 443.
+
+File: figures/RationalsGraphics/SA01.png Graphic file (type QTm)
+<use  "figures/RationalsGraphics/SA01.png" >
+Overfull \hbox (16.58536pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+File: figures/RationalsGraphics/SA02.png Graphic file (type QTm)
+<use  "figures/RationalsGraphics/SA02.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[200]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 454--455
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+[201]
+File: figures/RationalsGraphics/SAEX01.png Graphic file (type QTm)
+ <use  "figures/RationalsGraphics/SAEX01.png" >
+File: figures/RationalsGraphics/SAEX02.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/SAEX02.png" >
+Underfull \hbox (badness 5787) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 While the word ‘asymptote’ has the
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 connotation of ‘approaching but not
+ []
+
+File: figures/RationalsGraphics/SAEX03.png Graphic file (type QTm)
+<use  "figures/RationalsGraphics/SAEX03.png" > [202]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [203
 
 ])
+(text_pre/04_RationalGraphs.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 39--40
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1681) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Recall that at this stage (prior to dis-
+ []
+
+
+Underfull \hbox (badness 1122) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 cussing calculus), continuity of a func-
+ []
+
+File: figures/RationalsGraphics/RationalGraphs-1.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/RationalGraphs-1.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-2.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-2.pdf" >
+Underfull \hbox (badness 1024) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 5.20: |The sign diagram for the
+ []
+
+[204
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 65--66
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+[205] [206]
+File: figures/RationalsGraphics/RationalGraphs-3.pdf Graphic file (type QTm)
+ <use  "figures/RationalsGraphics/RationalGraphs-3.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-4.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-4.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-5.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-5.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-6.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-6.pdf" > [207] [208]
+Overfull \hbox (0.26819pt too wide) in paragraph at lines 205--205
+[]\EU1/Calibri(0)/m/n/10 Since the degrees of the numerator and denominator of 
+$[]\OT1/cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 are the same,
+ []
+
+File: figures/RationalsGraphics/RationalGraphs-7.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/RationalGraphs-7.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-8.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-8.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-9.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-9.pdf" > [209]
+Overfull \hbox (0.19537pt too wide) in paragraph at lines 264--264
+[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]$\EU1/Calibri(0)/m/n/10 . To make th
+is exclusion specific, we write $[]\OT1/cmr/m/n/10 ([]) = []$\EU1/Calibri(0)/m/
+n/10 ,
+ []
+
+File: figures/RationalsGraphics/RationalGraphs-10.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/RationalGraphs-10.pdf" > [210]
+File: figures/RationalsGraphics/RationalGraphs-11.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-11.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-12.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-12.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-13.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-13.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-14.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-14.pdf" > [211]
+Overfull \hbox (12.82013pt too wide) in paragraph at lines 306--307
+[]\EU1/Calibri(0)/m/n/10 As usual, the authors offer no apologies for what may 
+be construed as ‘pedantry’
+ []
+
+File: figures/RationalsGraphics/RationalGraphs-15.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/RationalGraphs-15.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-16.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-16.pdf" >
+File: figures/RationalsGraphics/Rationals09.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals09.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[212]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [213
+
+]) (text_pre/04_RationalIneq.tex
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+
+ []
+
+[214
+
+]
+Overfull \hbox (7.24069pt too wide) in paragraph at lines 138--138
+\EU1/Calibri(0)/m/n/10 Carl decides to explore the Meander River, the location 
+of several recent Sasquatch
+ []
+
+
+Overfull \hbox (33.29094pt too wide) detected at line 138
+[]
+ []
+
+File: figures/RationalsGraphics/RationalIneq-1.pdf Graphic file (type QTm)
+<use  "figures/RationalsGraphics/RationalIneq-1.pdf" >
+File: figures/RationalsGraphics/Rationals10.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals10.png" >
+File: figures/RationalsGraphics/Rationals11.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals11.png" > [215]
+Overfull \hbox (18.23236pt too wide) detected at line 138
+[]
+ []
+
+[216]
+Overfull \hbox (4.33409pt too wide) in paragraph at lines 190--190
+[]\EU1/Calibri(0)/m/n/10 From this, we find that the rate of Taylor and Carl wo
+rking together is $[] \OT1/cmr/m/n/10 =
+ []
+
+[217]
+File: figures/RationalsGraphics/RationalIneq-2.pdf Graphic file (type QTm)
+ <use  "figures/RationalsGraphics/RationalIneq-2.pdf" > [218]
+File: figures/RationalsGraphics/RationalIneq-3.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalIneq-3.pdf" > [219]
+File: figures/RationalsGraphics/RationalIneq-4.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalIneq-4.pdf" >
+File: figures/RationalsGraphics/Rationals12.png Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/Rationals12.png" > [220]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [221]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 330--331
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+[222] [223]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [224
+
+] [225]) [226
+
+
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5597,210 +6086,408 @@ File: figures/RelationsandFunctionsGraphics/CartesianPlane-46.pdf Graphic file
 
 
 
-
-
-
 ]
+[2] [3]
 File: figures/RelationsandFunctionsGraphics/Relations-23.pdf Graphic file (type
  QTm)
+ <use  "figures/RelationsandFunctionsGraphics/Relations-23.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-24.pdf Graphic file (type
+ QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-23.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-24.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-25.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-25.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-26.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-26.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-27.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-27.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-28.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-28.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-29.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-29.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-30.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-30.pdf" > [4]
 File: figures/RelationsandFunctionsGraphics/Relations-31.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-31.pdf" > [2]
+<use  "figures/RelationsandFunctionsGraphics/Relations-31.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-32.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-32.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-33.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-33.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-34.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-34.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-35.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-35.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-36.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-36.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-37.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-37.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-38.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-38.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-39.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-39.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-40.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-40.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-41.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-41.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-41.pdf" > [5]
+File: figures/RelationsandFunctionsGraphics/Relations-42.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-42.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-43.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-43.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-44.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-44.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-45.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-45.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-46.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-46.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-47.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-47.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-48.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-48.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-49.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-49.pdf" > [3]
+<use  "figures/RelationsandFunctionsGraphics/Relations-49.pdf" > [6]
+File: figures/RelationsandFunctionsGraphics/Relations-50.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-50.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-51.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-51.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-52.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-52.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-53.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-53.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-53.pdf" > [7]
+File: figures/RelationsandFunctionsGraphics/Relations-54.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-54.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-55.pdf Graphic file (type
  QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Relations-55.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-56.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-56.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-57.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-57.pdf" > [4]
+<use  "figures/RelationsandFunctionsGraphics/Relations-57.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-58.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-58.pdf" > [8]
 File: figures/RelationsandFunctionsGraphics/Relations-59.pdf Graphic file (type
  QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-59.pdf" > [5] [6]
-[7]
+<use  "figures/RelationsandFunctionsGraphics/Relations-59.pdf" >
+File: figures/RelationsandFunctionsGraphics/Relations-60.pdf Graphic file (type
+ QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Relations-60.pdf" > [9] [10]
+Overfull \hbox (0.33516pt too wide) in paragraph at lines 20--20
+[]$  
+ []
+
+[11] [12] [13] [14]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-17.pdf Graphic fi
 le (type QTm)
- <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-17.pdf" >
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-17.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-18.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-18.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-19.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-19.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-20.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-20.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-21.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-21.pdf" >
+[15]
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-22.pdf Graphic fi
+le (type QTm)
+ <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-22.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-23.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-23.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-24.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-24.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-25.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-25.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-26.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-26.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-27.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-27.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-28.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-28.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-29.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-29.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-30.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-30.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-31.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-31.pdf" >
+[16]
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-32.pdf Graphic fi
+le (type QTm)
+ <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-32.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-33.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-33.pdf" >
-[8]
-File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf Graphic fi
-le (type QTm)
- <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf" >
-File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf Graphic fi
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-34.pdf Graphic fi
 le (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-34.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf" >
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-36.pdf Graphic fi
+le (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-36.pdf" >
+[17]
+File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf Graphic fi
+le (type QTm)
+ <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-59.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-59.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-60.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-60.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-61.pdf Graphic file
  (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Transformations-61.pdf" > [9]
+<use  "figures/RelationsandFunctionsGraphics/Transformations-61.pdf" > [18]
+File: figures/RelationsandFunctionsGraphics/Transformations-62.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-62.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-63.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-63.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-64.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-64.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-65.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-65.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-66.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-66.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-67.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-67.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-68.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-68.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-69.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-69.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-70.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-70.pdf" > [19]
 File: figures/RelationsandFunctionsGraphics/Transformations-71.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-71.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-72.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-72.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-73.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-73.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-74.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-74.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-75.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-75.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-76.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-76.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-77.pdf Graphic file
  (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Transformations-77.pdf" > [10]
+<use  "figures/RelationsandFunctionsGraphics/Transformations-77.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-78.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-78.pdf" > [20]
 File: figures/RelationsandFunctionsGraphics/Transformations-79.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-79.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-80.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-80.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-81.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-81.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-82.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-82.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-83.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-83.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-84.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-84.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-85.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-85.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-86.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-86.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-87.pdf Graphic file
  (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-87.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-88.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-88.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-89.pdf Graphic file
  (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Transformations-89.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Transformations-89.pdf" > [21]
+File: figures/RelationsandFunctionsGraphics/Transformations-90.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-90.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-91.pdf Graphic file
  (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Transformations-91.pdf" > [11]
+<use  "figures/RelationsandFunctionsGraphics/Transformations-91.pdf" >
+File: figures/RelationsandFunctionsGraphics/Transformations-92.pdf Graphic file
+ (type QTm)
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-92.pdf" >
 File: figures/LinearQuadraticGraphics/LinearFunctions-17.pdf Graphic file (type
  QTm)
 
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-17.pdf" >
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-17.pdf" > [22]
+File: figures/LinearQuadraticGraphics/LinearFunctions-18.pdf Graphic file (type
+ QTm)
+
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-18.pdf" >
 File: figures/LinearQuadraticGraphics/LinearFunctions-19.pdf Graphic file (type
  QTm)
 
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-19.pdf" >
+File: figures/LinearQuadraticGraphics/LinearFunctions-20.pdf Graphic file (type
+ QTm)
+
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-20.pdf" >
 File: figures/LinearQuadraticGraphics/LinearFunctions-21.pdf Graphic file (type
  QTm)
 
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-21.pdf" >
+File: figures/LinearQuadraticGraphics/LinearFunctions-22.pdf Graphic file (type
+ QTm)
+
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-22.pdf" >
 
 LaTeX Warning: Command \nobreakspace invalid in math mode on input line 30.
 
@@ -5810,28 +6497,52 @@ File: figures/LinearQuadraticGraphics/LinearFunctions-23.pdf Graphic file (type
 File: figures/LinearQuadraticGraphics/LinearFunctions-24.pdf Graphic file (type
  QTm)
 
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-24.pdf" > [12]
-File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19.pdf Graphic fil
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-24.pdf" > [23]
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-18.pdf Graphic fil
 e (type QTm)
 
-<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19.pdf" >
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-18.pdf" >
+[24]
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19.pdf Graphic fil
+e (type QTm)
+ <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19.pdf" >
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-20.pdf Graphic fil
+e (type QTm)
+
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-20.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-21.pdf Graphic fil
 e (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-21.pdf" >
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-22.pdf Graphic fil
+e (type QTm)
+
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-22.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23.pdf Graphic fil
 e (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23.pdf" >
+[25]
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-24.pdf Graphic fil
+e (type QTm)
+ <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-24.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25.pdf Graphic fil
 e (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25.pdf" >
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-26.pdf Graphic fil
+e (type QTm)
+
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-26.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27.pdf Graphic fil
 e (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27.pdf" >
-[13]
+File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-28.pdf Graphic fil
+e (type QTm)
+
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-28.pdf" >
+[26]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29.pdf Graphic fil
 e (type QTm)
  <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29.pdf" >
@@ -5839,71 +6550,192 @@ File: figures/LinearQuadraticGraphics/QuadraticFunctions-14.pdf Graphic file (t
 ype QTm)
 
 <use  "figures/LinearQuadraticGraphics/QuadraticFunctions-14.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-15.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-15.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-16.pdf Graphic file (t
 ype QTm)
 
 <use  "figures/LinearQuadraticGraphics/QuadraticFunctions-16.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-17.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-17.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-18.pdf Graphic file (t
 ype QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-18.pdf" >
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-18.pdf" > [27]
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-19.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-19.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-20.pdf Graphic file (t
 ype QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-20.pdf" > [14]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-20.pdf" >
+File: figures/LinearQuadraticGraphics/QuadraticFunctions-21.pdf Graphic file (t
+ype QTm)
+
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-21.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-22.pdf Graphic file (t
 ype QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-22.pdf" >
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-22.pdf" > [28]
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-23.pdf Graphic file (t
 ype QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-23.pdf" >
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-23.pdf" > [29]
 File: figures/LinearQuadraticGraphics/Inequalities-27.pdf Graphic file (type QT
 m)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-27.pdf" > [15]
+<use  "figures/LinearQuadraticGraphics/Inequalities-27.pdf" >
+File: figures/LinearQuadraticGraphics/Inequalities-28.pdf Graphic file (type QT
+m)
+
+<use  "figures/LinearQuadraticGraphics/Inequalities-28.pdf" >
 File: figures/LinearQuadraticGraphics/Inequalities-29.pdf Graphic file (type QT
 m)
 
 <use  "figures/LinearQuadraticGraphics/Inequalities-29.pdf" >
+File: figures/LinearQuadraticGraphics/Inequalities-30.pdf Graphic file (type QT
+m)
+
+<use  "figures/LinearQuadraticGraphics/Inequalities-30.pdf" >
 File: figures/LinearQuadraticGraphics/Inequalities-31.pdf Graphic file (type QT
 m)
 
 <use  "figures/LinearQuadraticGraphics/Inequalities-31.pdf" >
+File: figures/LinearQuadraticGraphics/Inequalities-32.pdf Graphic file (type QT
+m)
+
+<use  "figures/LinearQuadraticGraphics/Inequalities-32.pdf" > [30]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-21.pdf Graphic file (type
  QTm)
 
 <use  "figures/PolynomialsGraphics/GraphsofPolynomials-21.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-22.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-22.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-23.pdf Graphic file (type
  QTm)
 
 <use  "figures/PolynomialsGraphics/GraphsofPolynomials-23.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-24.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-24.pdf" > [31]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-25.pdf Graphic file (type
  QTm)
 
 <use  "figures/PolynomialsGraphics/GraphsofPolynomials-25.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-26.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-26.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf Graphic file (type
  QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf" > [16]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-28.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-28.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-29.pdf Graphic file (type
  QTm)
 
 <use  "figures/PolynomialsGraphics/GraphsofPolynomials-29.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-30.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-30.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-31.pdf Graphic file (type
  QTm)
 
 <use  "figures/PolynomialsGraphics/GraphsofPolynomials-31.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-32.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-32.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf Graphic file (type
  QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf" >
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf" > [32]
+File: figures/PolynomialsGraphics/GraphsofPolynomials-34.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-34.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf Graphic file (type
  QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf" > [17] [18])
-[19]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf" >
+File: figures/PolynomialsGraphics/GraphsofPolynomials-36.pdf Graphic file (type
+ QTm)
+
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-36.pdf" > [33] [34]
+[35]
+Overfull \hbox (39.59708pt too wide) in paragraph at lines 46--46
+[]\OT1/cmr/m/n/8 ) [] [] [] []$  
+ []
+
+[36] [37]
+File: figures/RationalsGraphics/RationalGraphs-17.pdf Graphic file (type QTm)
+ <use  "figures/RationalsGraphics/RationalGraphs-17.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-18.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-18.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-19.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-19.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-20.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-20.pdf" > [38]
+File: figures/RationalsGraphics/RationalGraphs-21.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-21.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-22.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-22.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-23.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-23.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-24.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-24.pdf" > [39]
+File: figures/RationalsGraphics/RationalGraphs-25.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-25.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-26.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-26.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-27.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-27.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-28.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-28.pdf" > [40]
+File: figures/RationalsGraphics/RationalGraphs-29.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-29.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-30.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-30.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-31.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-31.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-33.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-33.pdf" > [41]
+File: figures/RationalsGraphics/RationalGraphs-34.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-34.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-35.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-35.pdf" >
+File: figures/RationalsGraphics/RationalGraphs-36.pdf Graphic file (type QTm)
+
+<use  "figures/RationalsGraphics/RationalGraphs-36.pdf" > [42]) [43]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5936,13 +6768,13 @@ File: figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf Graphic file (type
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [20
+ [44
 
 
 
 ]
 No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [21]
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [45]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
@@ -5962,11 +6794,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[22
+[46
 
-] [23
+] [47
 
-] [24
+] [48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -5989,31 +6821,31 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[25
+[49
 
 ])
-Package atenddvi Info: Last page = 218.
- [26
+Package atenddvi Info: Last page = 282.
+ [50
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 209.
  (Math1010text.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 209.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 52005 strings out of 428755
- 1116442 string characters out of 3164219
- 1447070 words of memory out of 3000000
- 53224 multiletter control sequences out of 15000+200000
+ 52790 strings out of 428755
+ 1135423 string characters out of 3164219
+ 1462720 words of memory out of 3000000
+ 53754 multiletter control sequences out of 15000+200000
  19648 words of font info for 143 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,25n,88p,10385b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (218 pages).
+Output written on Math1010text.pdf (282 pages).
