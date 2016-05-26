@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  25 MAY 2016 16:28
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  26 MAY 2016 14:55
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -3432,15 +3432,6 @@ nts in Section []3.1[] where
  []
 
 [72]
-
-LaTeX Warning: Reference `demandfunctionofprice' on page 73 undefined on input 
-line 222.
-
-
-LaTeX Warning: Reference `InverseFunctions' on page 73 undefined on input line 
-222.
-
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 242--243
 [][][]
  []
@@ -4338,12 +4329,8 @@ Overfull \hbox (8.0877pt too wide) in paragraph at lines 429--429
 [120]
 File: figures/LinearQuadraticGraphics/LinearFunctions-16.pdf Graphic file (type
  QTm)
- <use  "figures/LinearQuadraticGraphics/LinearFunctions-16.pdf" >
-
-LaTeX Warning: Reference `InverseFunctions' on page 121 undefined on input line
- 429.
-
-[121]) (text_pre/02_AbsoluteValueFunctions.tex
+ <use  "figures/LinearQuadraticGraphics/LinearFunctions-16.pdf" > [121])
+(text_pre/02_AbsoluteValueFunctions.tex
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1.pdf Graphic file
  (type QTm)
 
@@ -5951,9 +5938,6 @@ File: figures/RationalsGraphics/RationalIneq-4.pdf Graphic file (type QTm)
 File: figures/RationalsGraphics/Rationals12.png Graphic file (type QTm)
 
 <use  "figures/RationalsGraphics/Rationals12.png" > [220]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [221]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 330--331
 [][][]
  []
@@ -5963,7 +5947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-[222] [223]
+[221] [222]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5996,9 +5980,301 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [224
+ [223
 
-] [225]) [226
+] [224])
+Chapter 6.
+(text_pre/05_FunctionComposition.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 12--13
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+File: figures/FurtherGraphics/FunctionComposition-1.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/FunctionComposition-1.pdf" > [225
+
+
+
+
+]
+File: figures/FurtherGraphics/FunctionComposition-2.pdf Graphic file (type QTm)
+
+
+<use  "figures/FurtherGraphics/FunctionComposition-2.pdf" > [226] [227]
+File: figures/FurtherGraphics/FunctionComposition-3.pdf Graphic file (type QTm)
+
+
+<use  "figures/FurtherGraphics/FunctionComposition-3.pdf" > [228] [229]
+[230]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 286--287
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+[231] [232] [233]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [234
+
+]
+Overfull \hbox (14.46515pt too wide) detected at line 330
+[] \OT1/cmr/m/n/9 = \OMS/cmsy/m/n/9 f\OT1/cmr/m/n/9 (\OMS/cmsy/m/n/9 ^^@[]\OML/
+cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@[]\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/
+n/9 (\OMS/cmsy/m/n/9 ^^@[]\OML/cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ;
+ \OT1/cmr/m/n/9 (\OMS/cmsy/m/n/9 ^^@[]\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@[]\O
+T1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; []\OT1/cmr/
+m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^
+@[]\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; []\OT1
+/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; []\OT1/cmr/m/
+n/9 )\OMS/cmsy/m/n/9 g\OML/cmm/m/it/9 :
+ []
+
+File: figures/FurtherGraphics/FunctionComposition-4.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/FunctionComposition-4.pdf" >
+File: figures/FurtherGraphics/FunctionComposition-5.pdf Graphic file (type QTm)
+
+
+<use  "figures/FurtherGraphics/FunctionComposition-5.pdf" >
+Overfull \hbox (1.48386pt too wide) in paragraph at lines 330--330
+ [] 
+ []
+
+[235]) (text_pre/05_InverseFunctions.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 45--46
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 63--64
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+File: figures/FurtherGraphics/InverseFunctions-1.pdf Graphic file (type QTm)
+<use  "figures/FurtherGraphics/InverseFunctions-1.pdf" > [236
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 91--92
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+File: figures/FurtherGraphics/InverseFunctions-2.pdf Graphic file (type QTm)
+<use  "figures/FurtherGraphics/InverseFunctions-2.pdf" >
+Underfull \hbox (badness 2261) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 tion composition standpoint, however,
+ []
+
+[237]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 121--122
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 130--131
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 151--152
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+File: figures/FurtherGraphics/InverseFunctions-3.pdf Graphic file (type QTm)
+<use  "figures/FurtherGraphics/InverseFunctions-3.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-4.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-4.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-5.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-5.pdf" > [238]
+File: figures/FurtherGraphics/InverseFunctions-6.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-6.pdf" > [239]
+Overfull \hbox (12.38034pt too wide) detected at line 251
+[]
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 268--269
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+File: figures/FurtherGraphics/InverseFunctions-7.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-7.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-8.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-8.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-9.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-9.pdf" > [240] [241]
+File: figures/FurtherGraphics/InverseFunctions-10.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-10.pdf" > [242]
+Underfull \vbox (badness 2096) has occurred while \output is active []
+
+File: figures/FurtherGraphics/InverseFunctions-11.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-11.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-12.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-12.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-13.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-13.pdf" > [243]
+File: figures/FurtherGraphics/InverseFunctions-14.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-14.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-15.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-15.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-16.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-16.pdf" >
+Overfull \hbox (1.99962pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[244]
+File: figures/FurtherGraphics/InverseFunctions-17.pdf Graphic file (type QTm)
+ <use  "figures/FurtherGraphics/InverseFunctions-17.pdf" >
+File: figures/FurtherGraphics/InverseFunctions-18.pdf Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/InverseFunctions-18.pdf" >
+Overfull \hbox (1.99962pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[245]
+Overfull \hbox (5.2894pt too wide) in paragraph at lines 558--558
+[]\EU1/Calibri(0)/m/n/10 We compute $[] \OT1/cmr/m/n/10 ([]) = [] [] = [] [] = 
+\OMS/cmsy/m/n/10 ^^@[]\OML/cmm/m/it/10 :[] [][] \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (0.3342pt too wide) in paragraph at lines 558--558
+[]\EU1/Calibri(0)/m/n/10 We know from Section []3.3[] that the graph of $[] \OT
+1/cmr/m/n/10 = [] ([])$ \EU1/Calibri(0)/m/n/10 is a parabola
+ []
+
+[246]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+LaTeX Warning: Reference `genericinverselast' on page 247 undefined on input li
+ne 560.
+
+[247
+
+]) [248
 
 
 
@@ -6735,7 +7011,8 @@ File: figures/RationalsGraphics/RationalGraphs-35.pdf Graphic file (type QTm)
 <use  "figures/RationalsGraphics/RationalGraphs-35.pdf" >
 File: figures/RationalsGraphics/RationalGraphs-36.pdf Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/RationalGraphs-36.pdf" > [42]) [43]
+<use  "figures/RationalsGraphics/RationalGraphs-36.pdf" > [42] [43] [44])
+[45]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6768,13 +7045,13 @@ File: figures/RationalsGraphics/RationalGraphs-36.pdf Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [44
+ [46
 
 
 
 ]
 No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [45]
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [47]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
@@ -6794,11 +7071,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[46
+[48
 
-] [47
+] [49
 
-] [48
+] [50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -6821,31 +7098,34 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[49
+[51
 
 ])
-Package atenddvi Info: Last page = 282.
- [50
+Package atenddvi Info: Last page = 306.
+ [52
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 209.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 217.
  (Math1010text.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 209.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 217.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
  ) 
 Here is how much of TeX's memory you used:
- 52790 strings out of 428755
- 1135423 string characters out of 3164219
- 1462720 words of memory out of 3000000
- 53754 multiletter control sequences out of 15000+200000
+ 53200 strings out of 428755
+ 1144235 string characters out of 3164219
+ 1470701 words of memory out of 3000000
+ 54027 multiletter control sequences out of 15000+200000
  19648 words of font info for 143 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,25n,88p,10385b,884s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (282 pages).
+Output written on Math1010text.pdf (306 pages).
