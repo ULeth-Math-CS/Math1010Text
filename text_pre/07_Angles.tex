@@ -1,0 +1,1205 @@
+\mfpicnumber{1}
+\mfpverbtex{%
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage[sfdefault,lf]{carlito}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+\begin{document}
+}
+
+\opengraphsfile{Angles}
+
+\setcounter{footnote}{0}
+
+\label{Angles}
+
+This section begins our study of Trigonometry and to get started, we recall some basic definitions from Geometry.  A \index{ray ! definition of} \textbf{ray} is usually described as a `half-line' and can be thought of as a line segment in which one of the two endpoints is pushed off infinitely distant from the other, as pictured below.  The point from which the ray originates is called the \index{ray ! initial point} \textbf{initial point} of the ray.
+
+\begin{center}
+
+\begin{mfpic}[15]{-1}{7}{-1}{3}
+\arrow \polyline{(0,0), (7,2)}
+\point[3pt]{(0,0)}
+\tlabel[cc](-0.25,-0.5){\scriptsize $P$}
+\tcaption{A ray with initial point $P$.}
+\end{mfpic}
+
+\end{center}
+
+When two rays share a common initial point they form an \index{angle ! definition} \textbf{angle} and the common initial point is called the \index{angle ! vertex}\index{vertex ! of an angle}\textbf{vertex} of the angle.  Two  examples of what are commonly thought of as angles are
+
+\[ \begin{array}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow \polyline{(-5,2), (0,0), (5,2)}
+\point[3pt]{(0,0)}
+\tlabel[cc](-0.1,-0.5){\scriptsize $P$}
+\tcaption{An angle with vertex $P$.}
+\end{mfpic}  
+
+&
+
+\hspace{1.75in}
+
+\begin{mfpic}[15]{-5}{7}{-3}{3}
+\arrow \reverse \arrow \polyline{(7,2), (0,0), (7,-2)}
+\point[3pt]{(0,0)}
+\tlabel[cc](-0.25,-0.5){\scriptsize $Q$}
+\tcaption{An angle with vertex $Q$.}
+\end{mfpic}   \\ \end{array} \]
+
+However, the two figures below also depict angles - albeit these are, in some sense, extreme cases.  In the first case, the two rays are directly opposite each other forming what is known as a \index{angle ! straight}\index{straight angle}\textbf{straight angle}; in the second, the rays are identical so the `angle' is indistinguishable from the ray itself.
+
+\[ \begin{array}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow \polyline{(-5,0), (5,0)}
+\point[3pt]{(0,0)}
+\tlabel[cc](-0.1,-0.5){\scriptsize $P$}
+\tcaption{A straight angle.}
+\end{mfpic}  
+
+&
+
+\hspace{1.75in}
+
+\begin{mfpic}[15]{-5}{7}{-3}{3}
+\arrow  \polyline{(0,0), (7,-2)}
+\point[3pt]{(0,0)}
+\tlabel[cc](-0.25,-0.5){\scriptsize $Q$}
+\end{mfpic}   \\ \end{array} \]
+
+The \index{angle ! measurement}\index{measure of an angle}\textbf{measure of an angle} is a number which indicates the amount of rotation that separates the rays of the angle.  There is one immediate problem with this, as pictured below. 
+
+\[ \begin{array}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow \polyline{(5,2), (0,0), (5,-2)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,-0.9), 40}
+\drawcolor{white} \arc[c]{(0,0), (2.4,-1.1), -310}
+\end{mfpic}  
+
+& 
+
+\hspace{2in}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow \polyline{(5,2), (0,0), (5,-2)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.4,-1.1), -310}
+\end{mfpic} \\ \end{array} \]
+
+Which amount of rotation are we attempting to quantify?  What we have just discovered is that we have at least two angles described by this diagram.\footnote{The phrase `at least' will be justified in short order.}  Clearly these two angles have different measures because one appears to represent a larger rotation than the other, so we must label them differently.  In this book, we use lower case Greek letters such as $\alpha$ (alpha),   $\beta$ (beta),  $\gamma$ (gamma) and $\theta$ (theta) to label angles.  So, for instance, we have
+
+\[ \begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow \polyline{(5,2), (0,0), (5,-2)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,-0.9), 40}
+\tlabel[cc](3,0){\scriptsize{$\alpha$}}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.4,-1.1), -310}
+\tlabel[cc](-3,0){\scriptsize{$\beta$}}
+\end{mfpic}  \]
+
+One commonly used system to measure angles is \index{angle ! degree}\index{degree measure}\textbf{degree measure}.  Quantities measured in degrees are denoted by the familiar `$^{\circ}$' symbol.  One complete revolution as shown below is $360^{\circ}$, and parts of a revolution are measured proportionately.\footnote{The choice of `$360$' is most often attributed to the \href{http://en.wikipedia.org/wiki/Degree_(angle)}{\underline{Babylonians}}.}  Thus half of a revolution (a straight angle) measures $\frac{1}{2} \left(360^{\circ}\right) = 180^{\circ}$, a quarter of a revolution (a \index{right angle}\index{angle ! right}\textbf{right angle}) measures $\frac{1}{4} \left(360^{\circ}\right) = 90^{\circ}$ and so on.
+
+\[ \begin{array}{ccc}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow  \polyline{(0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 355}
+\tcaption{One revolution $\leftrightarrow 360^{\circ}$}
+\end{mfpic} 
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-3}{3}
+\arrow \reverse \arrow  \polyline{(-5,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 175}
+\drawcolor{white} \arc[c]{(0,0), (2.5,-0.1), -175}
+\tcaption{$180^{\circ}$}
+\end{mfpic} 
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-3}{5}
+\arrow \reverse \arrow  \polyline{(0,5), (0,0),  (5,0)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 85}
+\polyline{(0,0.5), (0.5,0.5), (0.5,0)}
+\drawcolor{white} \arc[c]{(0,0), (2.5,-0.1), -265}
+\tcaption{$90^{\circ}$}
+\end{mfpic} 
+
+\\  \end{array} \]
+
+Note that in the above figure,  we have used the small square `$\! \! \! \! \! \! \qed$' to denote a right angle, as is commonplace in Geometry.  Recall that if an angle measures strictly between $0^{\circ}$ and $90^{\circ}$ it is called an \index{acute angle}\index{angle ! acute}\textbf{acute angle} and if it measures strictly between $90^{\circ}$ and $180^{\circ}$ it is called an \index{obtuse angle}\index{angle ! obtuse}\textbf{obtuse angle}. It is important to note that, theoretically, we can know the measure of any angle as long as we know the proportion it represents of entire revolution. For instance, the measure of an angle which represents a rotation of $\frac{2}{3}$ of a revolution would measure $\frac{2}{3} \left(360^{\circ}\right) = 240^{\circ}$,  the measure of an angle which constitutes only $\frac{1}{12}$ of a revolution measures $\frac{1}{12} \left(360^{\circ}\right) = 30^{\circ}$ and an angle which indicates no rotation at all is measured as $0^{\circ}$.
+
+\[ \begin{array}{ccc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\arrow \reverse \arrow \polyline{(-2.5,-4.33), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 235}
+\tcaption{$240^{\circ}$}
+\end{mfpic} 
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor{white}
+\polyline{(-2.5,-4.33), (0,0), (5,0)}
+\arc[c]{(0,0), (2.5,0.1), 235}
+\drawcolor{black}
+\arrow \reverse \arrow  \polyline{(4.33, 2.5), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 25}
+\tcaption{$30^{\circ}$}
+\end{mfpic} 
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor{white}
+\polyline{(-2.5,-4.33), (0,0), (5,0)}
+\arc[c]{(0,0), (2.5,0.1), 235}
+\drawcolor{black}
+\arrow \polyline{(0,0), (5,0)}
+\point[3pt]{(0,0)}
+\tcaption{$0^{\circ}$}
+\end{mfpic} 
+
+\\  \end{array} \]
+
+
+Two acute angles are called \index{complementary angles}\index{angle ! complementary}\textbf{complementary angles} if their measures add to $90^{\circ}$.  Two angles, either a pair of right angles or one acute angle and one obtuse angle, are called \index{supplementary angles}\index{angle ! supplementary}\textbf{supplementary angles} if their measures add to $180^{\circ}$. In the diagram below,  the angles $\alpha$ and $\beta$ are supplementary angles while the pair $\gamma$ and $\theta$ are complementary angles. 
+
+\[ \begin{array}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\arrow \reverse \arrow  \polyline{(-5,0), (5,0)}
+\arrow \polyline{(0,0),  (4.33, 2.5)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 25}
+\arrow \reverse \arrow \arc[c]{(0,0), (-2.5,0.1), -145}
+\tlabel[cc](3,0.75){\scriptsize{$\alpha$}}
+\tlabel[cc](-0.5,3){\scriptsize{$\beta$}}
+\tcaption{Supplementary Angles}
+\end{mfpic} 
+
+&
+
+\hspace{1in}
+
+\begin{mfpic}[15]{-5}{6}{-5}{5}
+\arrow \reverse \arrow  \polyline{(0,5), (0,0), (6,0)}
+\arrow \polyline{(0,0),  (4.33, 2.5)}
+\point[3pt]{(0,0)}
+\arrow \reverse \arrow \arc[c]{(0,0), (2.5,0.1), 25}
+\arrow \reverse \arrow \arc[c]{(0,0), (0.1,2.5), -55}
+\tlabel[cc](3,0.75){\scriptsize{$\gamma$}}
+\tlabel[cc](1.5,2.5){\scriptsize{$\theta$}}
+\tcaption{Complementary Angles}
+\end{mfpic} 
+
+\\  \end{array} \]
+
+In practice, the distinction between the angle itself and its measure is blurred so that the sentence `$\alpha$ is an angle measuring $42^{\circ}$' is often abbreviated as `$\alpha = 42^{\circ}$.' 
+
+\smallskip
+
+Up to this point, we have discussed only angles which measure between $0^{\circ}$ and $360^{\circ}$, inclusive.  Ultimately, we want to use the arsenal of Algebra which we have stockpiled in Chapters \ref{RelationsandFunctions} through \ref{Rationals} to not only solve geometric problems involving angles, but also to extend their applicability to other real-world phenomena.  A first step in this direction is to extend our notion of `angle' from merely measuring an extent of rotation to quantities which can be associated with real numbers.  To that end, we introduce the concept of an \index{angle ! oriented}\index{oriented angle}\textbf{oriented angle}.  As its name suggests, in an oriented angle, the direction of the rotation is important.  We imagine the angle being swept out starting from an \index{angle ! initial side}\index{initial side of an angle}\textbf{initial side} and ending at a \index{angle ! terminal side}\index{terminal side of an angle}\textbf{terminal side}, as shown below.  When the rotation is counter-clockwise from initial side to terminal side, we say that the angle is \index{angle ! positive}\index{positive angle}\textbf{positive}; when the rotation is clockwise, we say that the angle is \index{angle ! negative}\index{negative angle}\textbf{negative}.
+
+\[ \begin{array}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\arrow \reverse \arrow  \polyline{(3.5355, 3.5355), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,0.1), 40}
+\tlabel[cc](2, -0.5){\tiny Initial Side}
+\tlabel[cc](1.5,2){\tiny \rotatebox{45}{Terminal Side}}
+\end{mfpic}
+
+&
+
+\hspace{1.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\arrow \reverse \arrow  \polyline{(3.5355, -3.5355), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,-0.1), -40}
+\tlabel[cc](2, 0.5){\tiny Initial Side}
+\tlabel[cc](1.5,-2){\tiny \rotatebox{-45}{Terminal Side}}
+\end{mfpic} \\ 
+
+\text{A positive angle, $45^{\circ}$} & \hspace{1.5in} \text{A negative angle, $-45^{\circ}$}
+
+\end{array} \]
+
+At this point, we also extend our allowable rotations to include angles which encompass more than one revolution.  For example, to sketch an angle with measure $450^{\circ}$ we start with an initial side, rotate counter-clockwise one complete revolution (to take care of the `first' $360^{\circ}$) then continue with an additional $90^{\circ}$ counter-clockwise rotation, as seen below.
+
+\begin{center}
+
+\begin{mfpic}[15]{-5}{5}{-3}{5}
+\arrow \reverse \arrow  \polyline{(0,5), (0,0),  (5,0)}
+\point[3pt]{(0,0)}
+\arrow \parafcn{0,445,5}{(t+200)*dir(t)/200} 
+\tcaption{$450^{\circ}$}
+\end{mfpic} 
+
+\end{center}
+
+To further connect angles with the Algebra which has come before, we shall often overlay an angle diagram on the coordinate plane.  An angle is said to be in \index{angle ! standard position}\index{standard position of an angle}\textbf{standard position} if its vertex is the origin and its initial side coincides with the positive $x$-axis.  Angles in standard position are classified according to where their terminal side lies.  For instance, an angle in standard position whose terminal side lies in Quadrant I is called a `Quadrant I angle'.  If the terminal side of an angle lies on one of the coordinate axes, it is called a \index{angle ! quadrantal}\index{quadrantal angle}\textbf{quadrantal angle}\footnote{This terminology is not particularly important (i.e. you don't need to remember it) but it turned out to be a challenge to completely excise it from the text.}.  Two angles in standard position are called \index{angle ! coterminal}\index{coterminal angle}\textbf{coterminal} if they share the same terminal side.\footnote{Note that by being in standard position they automatically share the same initial side which is the positive $x$-axis.}  In the figure below, $\alpha = 120^{\circ}$ and $\beta = -240^{\circ}$ are two coterminal Quadrant II angles drawn in standard position.    Note that $\alpha = \beta + 360^{\circ}$, or equivalently, $\beta = \alpha - 360^{\circ}$. We leave it as an exercise to the reader to verify that coterminal angles always differ by a multiple of $360^{\circ}$.\footnote{It is worth noting that all of the pathologies of Analytic Trigonometry result from this innocuous fact.} More precisely, if $\alpha$ and $\beta$ are coterminal angles, then $\beta = \alpha + 360^{\circ} \cdot k$ where $k$ is an integer.\footnote{Recall that this means $k = 0, \pm 1, \pm 2, \ldots$.}
+
+\begin{center}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(2,2){\scriptsize $\alpha = 120^{\circ}$}
+\tlabel(-5,-2){\scriptsize $\beta = -240^{\circ}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(-2.5, 4.3301), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,0.1), 115}
+\arrow \arc[c]{(0,0), (2.5,-0.1), -235}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+Two coterminal angles, $\alpha = 120^{\circ}$ and $\beta = -240^{\circ}$, in standard position.
+
+\end{center}
+
+\begin{ex}  \label{orientedcoterminaldegree} Graph each of the (oriented) angles below in standard position and classify them according to where their terminal side lies. Find three coterminal angles, at least one of which is positive and one of which is negative.
+
+\begin{multicols}{4}
+
+\begin{enumerate}
+
+\item  $\alpha = 60^{\circ}$
+
+\item  $\beta = -225^{\circ}$
+
+\item  $\gamma = 540^{\circ}$
+
+\item  $\phi = -750^{\circ}$
+
+\end{enumerate}
+
+\end{multicols}
+
+{\bf Solution.}  
+
+\begin{enumerate}
+
+\item  To graph $\alpha = 60^{\circ}$, we draw an angle with its initial side on the positive $x$-axis and rotate counter-clockwise $\frac{60^{\circ}}{360^{\circ}} = \frac{1}{6}$ of a revolution.  We see that $\alpha$ is a Quadrant I angle.  To find angles which are coterminal, we look for angles $\theta$ of the form $\theta = \alpha + 360^{\circ} \cdot k$, for some integer $k$.  When $k = 1$, we get $\theta =  60^{\circ} + 360^{\circ} = 420^{\circ}$.   Substituting $k = -1$ gives $\theta = 60^{\circ} - 360^{\circ} = -300^{\circ}$.  Finally, if we let $k = 2$, we get $\theta =  60^{\circ} + 720^{\circ} = 780^{\circ}$.  
+
+\item  Since $\beta = - 225^{\circ}$ is negative, we start at the positive $x$-axis and rotate \textit{clockwise} $\frac{225^{\circ}}{360^{\circ}} = \frac{5}{8}$ of a revolution. We see that $\beta$ is a Quadrant II angle.  To find coterminal angles, we proceed as before and compute $\theta = -225^{\circ} + 360^{\circ} \cdot k$ for integer values of $k$.  We find $135^{\circ}$, $-585^{\circ}$ and $495^{\circ}$ are all coterminal with $-225^{\circ}$.   
+
+\begin{center}
+
+\begin{tabular}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(2.5,1){\scriptsize $\alpha = 60^{\circ}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(2.5, 4.3301), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,0.1), 55}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(-4.5,-2.5){\scriptsize $\beta = -225^{\circ}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(-3.801, 3.801), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,-0.1), -220}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic} 
+
+\\
+
+$\alpha = 60^{\circ}$ in standard position. & \hspace{1in} $\beta = -225^{\circ}$ in standard position.\\
+
+\end{tabular}
+
+\end{center}
+
+\item Since $\gamma = 540^{\circ}$ is positive, we rotate counter-clockwise from the positive $x$-axis.  One full revolution accounts for $360^{\circ}$, with $180^{\circ}$, or $\frac{1}{2}$ of a revolution remaining.  Since the terminal side of $\gamma$ lies on the negative $x$-axis, $\gamma$ is a quadrantal angle.  All angles coterminal with $\gamma$ are of the form $\theta = 540^{\circ} + 360^{\circ} \cdot k$, where $k$ is an integer.  Working through the arithmetic, we find three such angles: $180^{\circ}$, $-180^{\circ}$ and $900^{\circ}$.
+
+\item  The Greek letter $\phi$ is pronounced `fee' or `fie' and since $\phi$ is negative, we begin our rotation clockwise from the positive $x$-axis.  Two full revolutions account for $720^{\circ}$, with just $30^{\circ}$ or $\frac{1}{12}$ of a revolution to go. We find that $\phi$ is a Quadrant IV angle. To find coterminal angles, we compute $\theta = -750^{\circ} +   360^{\circ} \cdot k$ for a few integers $k$ and obtain $-390^{\circ}$, $-30^{\circ}$ and $330^{\circ}$.
+
+\begin{center}
+
+\begin{tabular}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(-4.5,2.5){\scriptsize $\gamma = 540^{\circ}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(-5,0), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \parafcn{0,535,5}{(t+200)*dir(t)/200} 
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(0.5,-2.5){\scriptsize $\phi = -750^{\circ}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(4.3301, -2.5), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \parafcn{0,745,5}{(t+100)*dir(0-t)/400}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic} 
+
+\\
+
+$\gamma = 540^{\circ}$ in standard position. & \hspace{1in} $\phi = -750^{\circ}$ in standard position.   \\
+
+\end{tabular}
+
+\end{center}
+
+\end{enumerate}
+\qed
+
+\end{ex}
+
+Note that since there are infinitely many integers, any given angle has infinitely many coterminal angles, and the reader is encouraged to plot the few sets of coterminal angles found in Example \ref{orientedcoterminaldegree} to see this.  We are now just one step away from completely marrying angles with the real numbers and the rest of Algebra.  To that end, we recall this definition from Geometry.
+
+\smallskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{defn} \label{pidefn} \index{pi, $\pi$} The real number $\pi$ is defined to be the ratio of a circle's circumference to its diameter.  In symbols, given a circle of circumference $C$ and diameter $d$, 
+
+\[ \pi = \dfrac{C}{d} \]
+
+\end{defn}
+
+\ebm}
+
+\smallskip
+
+While Definition \ref{pidefn} is quite possibly the `standard' definition of $\pi$, the authors would be remiss if we didn't mention that buried in this definition is actually a theorem.  As the reader is probably aware, the number $\pi$ is a mathematical constant - that is, it doesn't matter \textit{which} circle is selected, the ratio of its circumference to its diameter will have the same value as any other circle.  While this is indeed true, it is far from obvious.\footnote{If you think it \textit{is} obvious, try to come up with a rigorous proof of this fact!}   Since the diameter of a circle is twice its radius, we can quickly rearrange the equation in Definition \ref{pidefn} to get a formula more useful for our purposes, namely: $2 \pi = \dfrac{C}{r}$
+
+This tells us that for any circle, the ratio of its circumference to its radius is also always constant; in this case the constant is $2\pi$.  Suppose now we take a \textit{portion} of the circle, so instead of comparing the entire circumference $C$ to the radius, we compare some arc measuring $s$ units in length to the radius, as depicted below.  Let $\theta$ be the \textbf{central angle}\index{angle ! central angle}\index{central angle} subtended by this arc, that is, an angle whose vertex is the center of the circle and whose determining rays pass through the endpoints of the arc.  Using proportionality arguments, it stands to reason that the ratio $\dfrac{s}{r}$ should also be a constant among all circles, and it is this ratio which defines the \index{angle ! radian measure}\index{radian measure}\textbf{radian measure} of an angle.
+
+\begin{center}
+
+
+\begin{mfpic}[20]{-5}{5}{-5}{5}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \arrow \polyline{(5, 0), (0,0), (-2.5, 4.3301)}
+\arrow \reverse \arrow \parafcn{5, 115, 5}{1.5*dir(t)}
+\tlabel[cc](0.75, 1.75){$\theta$}
+\penwd{1.5pt}
+\parafcn{0,120,5}{3*dir(t)}
+\tlabel[cc](1.75,3.1){$s$}
+\tlabel[cc](1.5,-0.5){$r$}
+\tlabel[cc](-1.5,1){$r$}
+\end{mfpic} 
+
+
+The radian measure of $\theta$ is $\dfrac{s}{r}$. 
+
+\end{center}
+
+
+To get a better feel for radian measure, we note that an angle with radian measure $1$ means the corresponding arc length $s$ equals the radius of the circle $r$, hence $s = r$.  When the radian measure is $2$, we have $s = 2r$; when the radian measure is $3$, $s = 3r$, and so forth.  Thus the radian measure of an angle $\theta$ tells us how many `radius lengths' we need to sweep out along the circle to subtend the angle $\theta$.
+
+
+\begin{center}
+\begin{tabular}{cc}
+
+\begin{mfpic}[20]{-5}{5}{-5}{5}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \arrow \polyline{(5, 0), (0,0), (2.70, 4.21)}
+\arrow \reverse \arrow \parafcn{5, 52, 5}{1.5*dir(t)}
+\tlabel[cc](1.755, 0.9588){$\alpha$}
+\penwd{1.5pt}
+\parafcn{0,57.30,5}{3*dir(t)}
+\point[3pt]{(3,0), (1.62, 2.52)}
+\tlabel[cc](3.12,1.71){$r$}
+\tlabel[cc](1.5,-0.5){$r$}
+\tlabel[cc](0.5,1.5){$r$}
+\end{mfpic} 
+
+\hspace{.5in}
+& 
+
+\begin{mfpic}[20]{-5}{5}{-5}{5}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \arrow \polyline{(5, 0), (0,0), (-3.268, -3.784)}
+\arrow \reverse \arrow \parafcn{5, 225, 5}{1.5*dir(t)}
+\tlabel[cc](-0.83, 1.82){$\beta$}
+\penwd{1.5pt}
+\parafcn{0,229.18,5}{3*dir(t)}
+\point[3pt]{(3,0), (1.62, 2.52), (-1.25, 2.73), (-2.97, 0.42), (-1.96, -2.27)}
+\tlabel[cc](3.12,1.71){$r$}
+\tlabel[cc](0.25,3.55){$r$}
+\tlabel[cc](-2.84,2.12){$r$}
+\tlabel[cc](-3.74,-1.24){$r$}
+\tlabel[cc](1.5,-0.5){$r$}
+\tlabel[cc](-.5,-1.23){$r$}
+\end{mfpic}  \\
+
+
+$\alpha$ has radian measure $1$ 
+\hspace{.5in}
+
+& $\beta$ has radian measure $4$
+
+\end{tabular}
+
+\end{center}
+
+
+Since one revolution sweeps out the entire circumference $2\pi r$, one revolution has radian measure $\dfrac{2 \pi r}{r} = 2 \pi$.  From this we can find the radian measure of other central angles using proportions, just like we did with degrees.    For instance, half of a revolution has radian measure  $\frac{1}{2} (2 \pi) = \pi$, a quarter revolution has radian measure $\frac{1}{4} (2 \pi) = \frac{\pi}{2}$, and so forth.   Note that, by definition, the radian measure of an angle is a length divided by another length so that these measurements are actually dimensionless and are considered `pure' numbers. For this reason, we do not use any symbols to denote radian measure, but we use the word `radians' to denote these dimensionless units as needed. For instance, we say one revolution measures `$2\pi$ radians,' half of a revolution measures `$\pi$ radians,' and so forth.  
+
+As with degree measure, the distinction between the angle itself and its measure is often blurred in practice, so when we write  `$\theta = \frac{\pi}{2}$', we mean $\theta$ is an angle which measures $\frac{\pi}{2}$ radians.\footnote{The authors are well aware that we are now identifying radians with real numbers.  We will justify this shortly.} We extend radian measure to oriented angles, just as we did with degrees beforehand, so that a positive measure indicates counter-clockwise rotation and a negative measure indicates clockwise rotation. Much like before, two positive angles $\alpha$ and $\beta$ are supplementary if $\alpha + \beta = \pi$ and complementary if $\alpha + \beta = \frac{\pi}{2}$.   Finally, we leave it to the reader to show that when using radian measure, two angles $\alpha$ and $\beta$ are coterminal if and only if $\beta = \alpha + 2\pi k$ for some integer $k$. 
+
+\begin{ex}  \label{orientedcoterminalradian} Graph each of the (oriented) angles below in standard position and classify them according to where their terminal side lies. Find three coterminal angles, at least one of which is positive and one of which is negative.
+
+\hspace{-0.1in}
+
+\begin{multicols}{4}
+
+\begin{enumerate}
+
+\item  $\alpha = \dfrac{\pi}{6}$
+
+\item  $\beta = -\dfrac{4\pi}{3}$
+
+\item  $\gamma = \dfrac{9 \pi}{4}$
+
+\item  $\phi = - \dfrac{5 \pi}{2}$
+
+\end{enumerate}
+
+\end{multicols}
+
+{\bf Solution.}  
+
+\begin{enumerate}
+
+\item  The angle $\alpha = \frac{\pi}{6}$ is positive, so we draw an angle with its initial side on the positive $x$-axis and rotate counter-clockwise $\frac{\left( \pi / 6\right)}{2 \pi} = \frac{1}{12}$ of a revolution.  Thus $\alpha$ is a Quadrant I angle. Coterminal angles $\theta$ are of the form $\theta = \alpha + 2\pi \cdot k$, for some integer $k$.  To make the arithmetic a bit easier, we note that $2\pi = \frac{12 \pi}{6}$, thus when $k = 1$, we get $\theta =  \frac{\pi}{6} + \frac{12 \pi}{6} = \frac{13 \pi}{6}$.   Substituting $k = -1$ gives $\theta = \frac{\pi}{6} - \frac{12 \pi}{6} = -\frac{11 \pi}{6}$ and when we let $k = 2$, we get $\theta =  \frac{\pi}{6} + \frac{24 \pi}{6} = \frac{25 \pi}{6}$.  
+
+\item  Since $\beta = - \frac{4\pi}{3}$ is negative, we start at the positive $x$-axis and rotate clockwise $\frac{\left(4 \pi / 3\right)}{2\pi} = \frac{2}{3}$ of a revolution.  We find $\beta$ to be a Quadrant II angle. To find coterminal angles, we proceed as before using $2\pi = \frac{6 \pi}{3}$,  and compute $\theta = -\frac{4 \pi}{3} + \frac{6 \pi}{3}  \cdot k$ for integer values of $k$.  We obtain $\frac{2\pi}{3}$, $-\frac{10 \pi}{3}$ and $\frac{8 \pi}{3}$ as coterminal angles.   
+
+\begin{center}
+
+\begin{tabular}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(2.75,0.5){\scriptsize $\alpha = \frac{\pi}{6}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(4.3301, 2.5), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,0.1), 25}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(-4.5,-2.5){\scriptsize $\beta = -\frac{4 \pi}{3}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{ (-2.5, 4.3301), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \arc[c]{(0,0), (2.5,-0.1), - 235}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic} 
+
+\\
+
+$\alpha = \frac{\pi}{6}$ in standard position. & \hspace{1in} $\beta = - \frac{4 \pi}{3}$ in standard position.\\
+
+\end{tabular}
+
+\end{center}
+
+\item Since $\gamma = \frac{9 \pi}{4}$ is positive, we rotate counter-clockwise from the positive $x$-axis.  One full revolution accounts for $2 \pi = \frac{8 \pi}{4}$ of the radian measure with $\frac{\pi}{4}$ or  $\frac{1}{8}$ of a revolution remaining.  We have $\gamma$ as a Quadrant I angle. All angles coterminal with $\gamma$ are of the form $\theta = \frac{9 \pi}{4} + \frac{8\pi}{4} \cdot k$, where $k$ is an integer.  Working through the arithmetic, we find: $\frac{\pi}{4}$, $-\frac{7 \pi}{4}$ and $\frac{17 \pi}{4}$.
+
+\item  To graph  $\phi = -\frac{5 \pi}{2}$, we begin our rotation clockwise from the positive $x$-axis.  As  $2 \pi = \frac{4 \pi}{2}$, after one full revolution clockwise, we have  $\frac{\pi}{2}$ or $\frac{1}{4}$ of a revolution remaining.  Since the terminal side of $\phi$ lies on the negative $y$-axis, $\phi$ is a quadrantal angle.  To find coterminal angles, we compute $\theta = -\frac{5 \pi}{2} +   \frac{4 \pi}{2} \cdot k$ for a few integers $k$ and obtain $-\frac{\pi}{2}$, $\frac{3 \pi}{2}$ and $\frac{7 \pi}{2}$.
+
+\begin{center}
+
+\begin{tabular}{cc}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(3,-2.5){\scriptsize $\gamma = \frac{9\pi}{4}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(3.5355, 3.5355), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \parafcn{0,400,5}{(t+200)*dir(t)/200} 
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic}
+
+&
+
+\hspace{.5in}
+
+\begin{mfpic}[15]{-5}{5}{-5}{5}
+\drawcolor[gray]{0.7}
+\axes
+\xmarks{-4,-3,-2,-1,1,2,3,4}
+\ymarks{-4,-3,-2,-1,1,2,3,4}
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.25,4.75){\scriptsize $y$}
+\tlabel(2.5,2.5){\scriptsize $\phi = -\frac{5 \pi}{2}$}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \polyline{(0, -5), (0,0), (5,0)}
+\point[3pt]{(0,0)}
+\arrow \parafcn{0,445,5}{(t+200)*dir(0-t)/200}
+\tlpointsep{5pt}
+\scriptsize
+\axislabels {x}{{$-4 \hspace{7pt}$} -4, {$-3 \hspace{7pt}$} -3, {$-2 \hspace{7pt}$} -2, {$-1 \hspace{7pt}$} -1, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\axislabels {y}{{$-1$} -1, {$-2$} -2, {$-3$} -3, {$-4$} -4, {$1$} 1, {$2$} 2, {$3$} 3, {$4$} 4}
+\normalsize
+\end{mfpic} 
+
+\\
+
+$\gamma = \frac{9 \pi}{4}$ in standard position. & \hspace{1in} $\phi = -\frac{5 \pi}{2}$ in standard position.   \\
+
+\end{tabular}
+
+\end{center}
+
+\end{enumerate}
+\qed
+
+\end{ex}
+
+It is worth mentioning that we could have plotted the angles in Example \ref{orientedcoterminalradian} by first converting them to degree measure and following the procedure set forth in Example \ref{orientedcoterminaldegree}.  While converting back and forth from degrees and radians is certainly a good skill to have, it is best that you learn to `think in radians' as well as you can `think in degrees'.  The authors would, however, be derelict in our duties if we ignored the basic conversion between these systems altogether.  Since one revolution counter-clockwise measures $360^{\circ}$ and the same angle measures $2 \pi$ radians, we can use the proportion $\frac{2 \pi \, \text{radians}}{360^{\circ}}$, or its reduced equivalent, $\frac{\pi \, \text{radians}}{180^{\circ}}$, as the conversion factor between the two systems.  For example, to convert $60^{\circ}$ to radians we find $60^{\circ} \left( \frac{\pi \, \text{radians}}{180^{\circ}}\right) = \frac{\pi}{3} \, \text{radians}$, or simply $\frac{\pi}{3}$.  To convert from radian measure back to degrees, we multiply by the ratio $\frac{180^{\circ}}{\pi \, \text{radian}}$.  For example,  $-\frac{5 \pi}{6} \, \text{radians}$ is equal to $\left(-\frac{5 \pi}{6} \, \text{radians} \right) \left( \frac{180^{\circ}}{\pi \, \text{radians}}\right) = -150^{\circ}$.  Of particular interest is the fact that an angle which measures $1$ in radian measure is equal to $\frac{180^{\circ}}{\pi}  \approx 57.2958^{\circ}$.  
+
+We summarize these conversions below.
+
+\bigskip
+
+\colorbox{ResultColor}{\bbm
+
+\begin{eqn}  \label{degreenradianconversion} \textbf{Degree  - Radian Conversion:}
+
+\begin{itemize}
+
+\item  To convert degree measure to radian measure, multiply by $\dfrac{\pi \, \text{radians}}{180^{\circ}}$
+
+\item  To convert radian measure to degree measure, multiply by $\dfrac{180^{\circ}}{\pi \, \text{radians}}$
+
+\end{itemize}
+
+\end{eqn}
+\ebm}
+\smallskip
+
+\bigskip
+
+In light of Example \ref{orientedcoterminalradian} and Equation \ref{degreenradianconversion}, the reader may well wonder what the allure of radian measure is.  The numbers involved are, admittedly, much more complicated than degree measure.  The answer lies in how easily angles in radian measure can be identified with real numbers.   Consider the Unit Circle, $x^2 + y^2 = 1$, as drawn below, the angle $\theta$ in standard position and the corresponding arc measuring $s$ units in length.  By definition, and the fact that the Unit Circle has radius 1, the radian measure of $\theta$ is $\dfrac{s}{r}=\dfrac{s}{1} = s$ so that, once again blurring the distinction between an angle and its measure, we have $\theta = s$.  In order to identify real numbers with oriented angles, we make good use of this fact by essentially  `wrapping' \index{wrapping function} the real number line around the Unit Circle and associating to each real number $t$ an \textit{oriented} arc \index{oriented arc} on the Unit Circle with initial point $(1,0)$.  This identification between angles and real numbers will also be essential once we begin our study of trigonometric functions in Calculus. 
+
+Viewing the vertical line $x=1$ as another real number line demarcated like the $y$-axis, given a real number $t>0$, we `wrap' the (vertical) interval $[0,t]$ around the Unit Circle in a counter-clockwise fashion.  The resulting arc has a length of $t$ units and therefore the corresponding angle has radian measure equal to $t$.  If $t<0$, we wrap the interval $[t,0]$ \textit{clockwise} around the Unit Circle.  Since we have defined clockwise rotation as having negative radian measure, the angle determined by this arc has radian measure equal to $t$.    If $t=0$, we are at the point $(1,0)$ on the $x$-axis which corresponds to an angle with radian measure $0$.  In this way, we identify each real number $t$ with the corresponding angle with radian measure $t$.
+
+\phantomsection
+\label{wrappingfunction}
+
+\smallskip
+
+\begin{tabular}{ccc}
+
+\begin{mfpic}[14]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \polyline{(5, 0), (0,0), (2.5, 4.3301)}
+\arrow \parafcn{5, 55, 5}{1.5*dir(t)}
+\tlabel[cc](1.732, 1){$\theta$}
+\penwd{1.5pt}
+\parafcn{0,60,5}{3*dir(t)}
+\tlabel[cc](3.0311,1.75){$s$}
+\end{mfpic} 
+
+&
+
+\begin{mfpic}[14]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \polyline{(0,0), (2.5, 4.3301)}
+\arrow \reverse \arrow \polyline{(3,-5), (3,5)}
+\polyline{(2.8,3.1416), (3.2,3.1416)}
+\arrow \parafcn{5, 55, 5}{1.5*dir(t)}
+\tlabel[cc](1.732, 1){$t$}
+\penwd{1.5pt}
+\arrow \polyline{(3,0), (3, 3.1416)}
+\arrow \parafcn{0,60,5}{3*dir(t)}
+\tlabel[cc](3.5,1.75){$t$}
+\end{mfpic} 
+
+&
+
+\begin{mfpic}[14]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\point[3pt]{(0,0)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \polyline{(0,0), (2.5, -4.3301)}
+\arrow \reverse \arrow \polyline{(3,-5), (3,5)}
+\polyline{(2.8,-3.1416), (3.2,-3.1416)}
+\arrow \parafcn{-5, -55, -5}{1.5*dir(t)}
+\tlabel[cc](1.732, -1){$t$}
+\penwd{1.5pt}
+\arrow \polyline{(3,0), (3, -3.1416)}
+\arrow \parafcn{0,-60,-5}{3*dir(t)}
+\tlabel[cc](3.5,-1.75){$t$}
+\end{mfpic}  \\
+
+On the Unit Circle, $\theta = s$.
+
+&
+
+Identifying $t > 0$ with an angle.
+
+&
+
+Identifying $t < 0$ with an angle. \\
+
+
+\end{tabular}
+
+\pagebreak
+
+\begin{ex} \label{realwrap}  Sketch the oriented arc on the Unit Circle corresponding to each of the following real numbers.  
+
+\begin{multicols}{4}
+
+\begin{enumerate}
+
+\item $t=\dfrac{3 \pi}{4}$
+
+\item $t =  - 2 \pi$
+
+\item $t = -2$
+
+\item  $t = 117$
+
+\end{enumerate}
+
+\end{multicols}
+
+{\bf Solution.}
+
+\begin{enumerate}
+
+\item  The arc associated with $t = \frac{3 \pi}{4}$ is the arc on the Unit Circle which subtends the angle $\frac{3 \pi}{4}$ in radian measure.  Since $\frac{3 \pi}{4}$ is $\frac{3}{8}$ of a revolution, we have an arc which begins at the point $(1,0)$ proceeds counter-clockwise up to midway through Quadrant II.
+
+\item Since one revolution is $2\pi$ radians, and $t=-2\pi$ is negative, we graph  the arc which begins at $(1,0)$ and proceeds \textit{clockwise} for one full revolution.
+
+\hspace{.5in} \begin{tabular}{cc}
+
+\begin{mfpic}[12.5]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\dotted \polyline{(0,0), (-3.5355,3.5355)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\penwd{1.5pt}
+\arrow \parafcn{0, 135, 5}{3*dir(t)}
+\tcaption{$t = \frac{3\pi}{4}$}
+\end{mfpic} 
+
+&
+
+\hspace{1in}
+
+\begin{mfpic}[12.5]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\penwd{1.5pt}
+\arrow \parafcn{0, -358, -5}{3*dir(t)}
+\tcaption{$t = -2\pi$} 
+\end{mfpic}  
+
+\\
+
+\end{tabular}
+
+\item Like $t=-2\pi$, $t=-2$ is negative, so we begin our arc at $(1,0)$ and proceed clockwise around the unit circle.  Since $\pi \approx 3.14$ and  $\frac{\pi}{2} \approx 1.57$, we find that rotating $2$ radians clockwise from the point $(1,0)$ lands us in Quadrant III.  To more accurately place the endpoint, we successively halve the angle measure until we find $\frac{5 \pi}{8} \approx 1.96$ which tells us our arc extends just a bit beyond the quarter mark into Quadrant III.
+
+\item  Since $117$ is positive, the arc corresponding to $t=117$ begins at $(1,0)$ and proceeds counter-clockwise.  As $117$ is much greater than $2\pi$, we wrap around the Unit Circle several times before finally reaching our endpoint.  We approximate $\frac{117}{2\pi}$ as $18.62$ which tells us we complete $18$ revolutions counter-clockwise with $0.62$, or  just shy of $\frac{5}{8}$ of a revolution to spare.  In other words, the terminal side of the angle which measures $117$ radians in standard position is just short of being midway through Quadrant III.
+
+\smallskip
+
+\hspace{.5in} \begin{tabular}{cc}
+
+\begin{mfpic}[12.5]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\dotted \polyline{(0,0), (-3.5355,-3.5355)}
+\dotted \polyline{(0,0), (-1.9135,-4.6194)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\penwd{1.5pt}
+\arrow \parafcn{0, -114, -5}{3*dir(t)}
+\tcaption{$t = -2$} 
+\end{mfpic}  
+
+&
+
+\hspace{1in}
+
+\begin{mfpic}[12.5]{-5}{5}{-5}{5}
+\axes
+\tlabel(5,-0.5){\scriptsize $x$}
+\tlabel(0.5,5){\scriptsize $y$}
+\tlabel(3.1,-0.75){\scriptsize $1$}
+\tlabel(0.25,3.1){\scriptsize $1$}
+\xmarks{-3 step 3 until 3}
+\ymarks{-3 step 3 until 3}
+\dotted \polyline{(0,0), (-3.5355,-3.5355)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\penwd{1.5pt}
+\arrow \parafcn{0, 583, 5}{3*dir(t)}
+\tcaption{$t = 117$} 
+\end{mfpic}  \\
+
+\end{tabular}
+
+\end{enumerate}
+
+\vspace{-.05in} \qed
+
+\end{ex}
+
+\subsection{Applications of Radian Measure:  Circular Motion}
+\label{circularmotion}
+
+Now that we have paired angles with real numbers via radian measure, a whole world of applications awaits us.  Our first excursion into this realm comes by way of circular motion.  Suppose an object is moving as pictured below along a circular path of radius $r$ from the point $P$ to the point $Q$ in an amount of time $t$.  
+ 
+\begin{center}
+ 
+\begin{mfpic}[14]{-5}{5}{-5}{5}
+\tlabel[cc](3.25,-0.5){\small $P$}
+\tlabel[cc](1.25,3.25){\small $Q$}
+\tlabel[cc](1.5,-0.5){\small $r$}
+\point[3pt]{(0,0), (3,0), (1.5, 2.5981)}
+\drawcolor[gray]{0.7}
+\circle{(0,0),3}
+\drawcolor[rgb]{0.33,0.33,0.33}
+\arrow \reverse \arrow \polyline{(5, 0), (0,0), (2.5, 4.3301)}
+\arrow \parafcn{5, 55, 5}{1.5*dir(t)}
+\tlabel[cc](1.732, 1){$\theta$}
+\penwd{1.5pt}
+\arrow \parafcn{0,60,5}{3*dir(t)}
+\tlabel[cc](3.0311,1.75){$s$}
+\end{mfpic} 
+
+\end{center}
+
+Here $s$ represents a \textit{displacement} so that  $s > 0$ means the object is travelling in a counter-clockwise direction and $s<0$ indicates movement in a clockwise direction. Note that with this convention the formula we used to define radian measure, namely $\theta = \dfrac{s}{r}$, still holds since a negative value of $s$ incurred from a clockwise displacement matches the negative we assign to $\theta$ for a clockwise rotation. 
+
+Borrowing terminology from Physics, if we imagine the circular motion of our object taking place over a duration of time $t$, we can define the quantity $\dfrac{\theta}{t}$, called the \index{velocity ! average angular}\index{average angular velocity}\textbf{average angular velocity} of the object.  It is denoted by $\overline{\omega}$ and is read `omega-bar'.  The quantity $\overline{\omega}$ is the average rate of change of the angle $\theta$ with respect to time and thus has units $\frac{\text{radians}}{\text{time}}$. If the circular motion is \textit{uniform}, meaning that the rate at which the angle $\theta$ changes with time is constant, then the average angular velocity $\overline{\omega}$ is the same as the \textit{instantaneous} angular velocity $\omega$. (If the rate is not constant, we can't define $\omega$ without calculus.)  
+
+\smallskip
+
+If the path of the object were `uncurled' from a circle to form a line segment, then we could discuss the average \textit{linear} velocity of the object, given by $\overline{v} = \dfrac{s}{t}$. Note that since $s = r\theta$, we obtain
+\[
+\overline{v} = \frac{s}{t} = \frac{r\theta}{t} = r\left(\frac{\theta}{t}\right) = r\overline{\omega}.
+\]
+One note of caution is needed here: the true motion of our object is, of course, \textbf{not} linear -- it's circular. Lest we draw the ire of any students with high school Physics under their belts, we should point out that motion in the plane is best described as a \textit{vector} quantity (we will \textit{not} be discussing vectors in this text), and the relationship $\overline{v} = r\overline{\omega}$ describes not the velocity of the object, but its \textit{speed}. 
+
+
+\newpage
+
+\subsection{Exercises}
+
+
+In Exercises \ref{orientedanglefirst} - \ref{orientedanglelast}, graph the oriented angle in standard position. Classify each angle according to where its terminal side lies and then give two coterminal angles, one of which is positive and the other negative.
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $330^{\circ}$ \label{orientedanglefirst}
+\item $-135^{\circ}$
+\item $120^{\circ}$
+\item $405^{\circ}$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{3\pi}{4}$
+\item $-\dfrac{\pi}{3}$ \vphantom{$\dfrac{11\pi}{6}$}
+\item $\dfrac{7\pi}{2}$
+\item $\dfrac{\pi}{4}$ \vphantom{$\dfrac{11\pi}{6}$}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item  $-2\pi$ \vphantom{$\dfrac{11\pi}{6}$}
+\item $-\dfrac{\pi}{4}$ \vphantom{$\dfrac{11\pi}{6}$}
+\item $\dfrac{15\pi}{4}$
+\item $-\dfrac{13\pi}{6}$ \label{orientedanglelast}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+In Exercises \ref{degreetoradianfirst} - \ref{degreetoradianlast}, convert the angle from degree measure into radian measure, giving the exact value in terms of $\pi$.
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $0^{\circ}$ \label{degreetoradianfirst}
+\item $240^{\circ}$
+\item $135^{\circ}$
+\item $-270^{\circ}$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $-315^{\circ}$
+\item $150^{\circ}$
+\item $45^{\circ}$
+\item $-225^{\circ}$ \label{degreetoradianlast}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+In Exercises \ref{radiantodegreefirst} - \ref{radiantodegreelast}, convert the angle from radian measure into degree measure.
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $\pi$ \vphantom{$\dfrac{11\pi}{6}$} \label{radiantodegreefirst}
+\item $-\dfrac{2\pi}{3}$
+\item $\dfrac{7\pi}{6}$
+\item $\dfrac{11\pi}{6}$
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+\begin{multicols}{4} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $\dfrac{\pi}{3}$ \vphantom{$\dfrac{11\pi}{6}$}
+\item $\dfrac{5\pi}{3}$
+\item $-\dfrac{\pi}{6}$ \vphantom{$\dfrac{11\pi}{6}$}
+\item $\dfrac{\pi}{2}$ \vphantom{$\dfrac{11\pi}{6}$} \label{radiantodegreelast}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+%\pagebreak
+
+In Exercises \ref{orientedarcfirst} - \ref{orientedarclast}, sketch the oriented arc on the Unit Circle which  corresponds to the given real number. 
+
+\begin{multicols}{5} 
+
+\begin{enumerate}
+
+\setcounter{enumi}{\value{HW}}
+
+\item $t=\frac{5 \pi}{6}$ \label{orientedarcfirst}
+
+\item $t=-\pi$
+
+\item $t = 6$
+
+\item  $t = -2$
+
+\item  $t = 12$ \label{orientedarclast}
+
+\setcounter{HW}{\value{enumi}}
+
+\end{enumerate}
+
+\end{multicols}
+
+%\begin{enumerate}
+
+%\setcounter{enumi}{\value{HW}}
+
+%\item  \label{spinningyoyo} A yo-yo which is 2.25 inches in diameter spins at a rate of 4500 revolutions per minute.  How fast is the edge of the yo-yo spinning in miles per hour?  Round your answer to two decimal places.
+
+%\item  How many revolutions per minute would the yo-yo in exercise \ref{spinningyoyo} have to complete if the edge of the yo-yo is to be spinning at a rate of 42 miles per hour?  Round your answer to two decimal places.
+
+%\item  \label{yoyotrick} In the yo-yo trick `Around the World,' the performer throws the yo-yo so it sweeps out a vertical circle whose radius is the yo-yo string. If the yo-yo string is 28 inches long and the yo-yo takes 3 seconds to complete one revolution of the circle, compute the speed of the yo-yo in miles per hour.  Round your answer to two decimal places.
+
+%\item A computer hard drive contains a circular disk with diameter 2.5 inches and spins at a rate of 7200 RPM (revolutions per minute).  Find the linear speed of a point on the edge of the disk in miles per hour. \label{harddrive} 
+
+%\item A rock got stuck in the tread of my tire and when I was driving 70 miles per hour, the rock came loose and hit the inside of the wheel well of the car.  How fast, in miles per hour, was the rock traveling when it came out of the tread?  (The tire has a diameter of 23 inches.)
+
+%\item The Giant Wheel at Cedar Point is a circle with diameter 128 feet which sits on an 8 foot tall platform making its overall height is 136 feet.  (Remember this from Exercise \ref{giantwheelcircle} in Section \ref{Circles}?)  It completes two revolutions in 2 minutes and 7 seconds.\footnote{Source: \href{http://www.cedarpoint.com/public/park/rides/tranquil/giant_wheel.cfm}{\underline{Cedar Point's webpage}}.}  Assuming the riders are at the edge of the circle, how fast are they traveling in miles per hour?
+%\label{giantwheelmotion}
+
+%\item  Consider the circle of radius $r$ pictured below with central angle $\theta$, measured in radians,  and subtended arc of length $s$.  Prove that the area of the shaded sector is $A = \frac{1}{2} r^{2} \theta$. 
+
+%(Hint: Use the proportion  $\frac{A}{\text{area of the circle}} = \frac{s}{\text{circumference of the circle}}$.)
+%\label{circularsectorarea}
+
+%\begin{center}
+
+%\begin{mfpic}[20]{-5}{5}{-5}{5}
+% \drawcolor[gray]{0.7}
+%\circle{(0,0),3}
+%\fillcolor[gray]{0.7}
+%\gfill \plrregion{0,60,5}{3}
+%\drawcolor[rgb]{0.33,0.33,0.33}
+%\polyline{(3, 0), (0,0), (1.5, 2.598)}
+%\arrow \reverse \arrow \parafcn{5, 55, 5}{1.5*dir(t)}
+%\point[3pt]{(0,0)}
+%\tlabel[cc](1.732, 1){$\theta$}
+%\penwd{1.5pt}
+%\parafcn{0,60,5}{3*dir(t)}
+%\tlabel[cc](3.0311,1.75){$s$}
+%\tlabel[cc](1.5,-0.5){$r$}
+%\tlabel[cc](0.5,1.5){$r$}
+%\end{mfpic}
+
+%\end{center}
+
+%\setcounter{HW}{\value{enumi}}
+
+%\end{enumerate}
+
+%In Exercises \ref{sectorfirst} - \ref{sectorlast}, use the result of Exercise \ref{circularsectorarea} to compute the areas of the circular sectors with the given central angles and radii.
+
+%\begin{multicols}{3} 
+
+%\begin{enumerate}
+
+%\setcounter{enumi}{\value{HW}}
+
+%\item $\theta = \dfrac{\pi}{6}, \; r = 12$ \vphantom{$\dfrac{5\pi}{4}$} \label{sectorfirst}
+%\item $\theta = \dfrac{5\pi}{4}, \; r = 100$
+%\item $\theta = 330^{\circ}, \; r = 9.3$ \vphantom{$\dfrac{5\pi}{4}$}
+
+%\setcounter{HW}{\value{enumi}}
+
+%\end{enumerate}
+
+%\end{multicols}
+
+%\begin{multicols}{3} 
+
+%\begin{enumerate}
+
+%\setcounter{enumi}{\value{HW}}
+
+%\item $\theta =\pi, \; r = 1$
+%\item $\theta = 240^{\circ}, \; r = 5$
+%\item $\theta = 1^{\circ}, \; r = 117$ \label{sectorlast}
+
+%\setcounter{HW}{\value{enumi}}
+
+%\end{enumerate}
+
+%\end{multicols}
+
+
+
+\closegraphsfile

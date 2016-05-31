@@ -3,6 +3,8 @@
 \setboolean{longpage}{false}
 \newboolean{synthetic}
 \setboolean{synthetic}{true}
+\newboolean{colour}
+\setboolean{colour}{true}
 \ifthenelse{\boolean{longpage}}%
 {\documentclass[10pt]{article}}%
 {\documentclass[10pt]{book}}
@@ -62,7 +64,8 @@
 %%%\tracingonline=1
 \begin{document}
 %\printexercisenames
-\printincolor
+\ifthenelse{\boolean{colour}}{\printincolor}{\printinblackandwhite}
+%\printincolor
 %\printinblackandwhite
 \printallanswers
 
@@ -121,7 +124,17 @@
 
 \input{text_pre/05_FunctionComposition}
 \input{text_pre/05_InverseFunctions}
-%\input{text_pre/05_AlgebraicFunctions}
+\input{text_pre/05_AlgebraicFunctions}
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\chapter{Exponential and Logarithmic Functions}\label{ExpLogs}
+\thispagestyle{empty}
+
+\input{text_pre/06_IntroExpLogs}
+\input{text_pre/06_LogProperties}
+\input{text_pre/06_ExpEquations}
+\input{text_pre/06_LogEquations}
+\input{text_pre/06_ExpLogApplications}
 
 %\clearpage{\pagestyle{empty}\cleardoublepage}
 %\chapter{Limits}\label{chapter:limits}
