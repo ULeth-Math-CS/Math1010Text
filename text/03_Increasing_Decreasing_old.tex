@@ -25,13 +25,13 @@ Our interest lies in finding intervals in the domain of $f$ on which $f$ is eith
 To find such intervals, we again consider secant lines. Let $f$ be an increasing, differentiable function on an open interval $I$, such as the one shown in Figure \ref{fig:incr00}, and let $a<b$ be given in $I$. The secant line on the graph of $f$ from $x=a$ to $x=b$ is drawn; it has a slope of $(f(b)-f(a))/(b-a)$. But note:
 $$\frac{f(b)-f(a)}{b-a} \Rightarrow \frac{\text{numerator }>0}{\text{denominator } >0} \Rightarrow \parbox{70pt}{\centering slope of the secant line $>0$} \Rightarrow \parbox{70pt}{\centering Average rate of change of $f$ on $[a,b]$ is $>0$.}$$
 
-\mfigure{.35}{Examining the secant line of an increasing function.}{fig:incr00}{figures/figincr00}
+\mfigure{.4}{Examining the secant line of an increasing function.}{fig:incr00}{figures/figincr00}
 
-We have shown mathematically what may have already been obvious: when $f$ is increasing, its secant lines will have a positive slope. Now recall the Mean Value Theorem guarantees that there is a number $c$, where $a<c<b$, such that $$\fp(c) = \frac{f(b)-f(a)}{b-a}>0.$$ By considering all such secant lines in $I$, we strongly imply that $\fp(x) \geq 0$ on $I$. A similar statement can be made for decreasing functions.
+We have shown mathematically what may have already been obvious: when $f$ is increasing, its secant lines will have a positive slope. The Mean Value Theorem guarantees that there is a number $c$, where $a<c<b$, such that $$\fp(c) = \frac{f(b)-f(a)}{b-a}>0.$$ By considering all such secant lines in $I$, we strongly imply that $\fp(x) \geq 0$ on $I$. A similar statement can be made for decreasing functions.
 
-\mnote{.16}{The \textbf{Mean Value Theorem}, which is covered in more advanced courses, like Math 1560, is a remarkably powerful result. It guarantees that if a function $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there is some $c\in (a,b)$ such that $f'(c) = \dfrac{f(b)-f(a)}{b-a}$; that is, that at some point the instantaneous rate of change must equal the average rate of change.}
+\mnote{.18}{The \textbf{Mean Value Theorem}, which is covered in more advanced courses, like Math 1560, is a remarkably powerful result. It guarantees that if a function $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there is some $c\in (a,b)$ such that $f'(c) = \dfrac{f(b)-f(a)}{b-a}$; that is, that at some point the instantaneous rate of change must equal the average rate of change.}
 
-Our above logic can be summarized as ``If $f$ is increasing, then $\fp$ is probably  positive." Theorem \ref{thm:incr_decr} below turns this around by stating ``If $\fp$ is postive, then $f$ is increasing.'' This leads us to a method for finding when functions are increasing and decreasing.
+Our above logic can be summarized as ``If $f$ is increasing, then $\fp$ is probably  positive." Theorem \ref{thm:incr_decr} below turns this around by stating ``If $\fp$ is positive, then $f$ is increasing.'' This leads us to a method for finding when functions are increasing and decreasing.
 
 \theorem{thm:incr_decr}{Test For Increasing/Decreasing Functions}%
 {Let $f$ be a continuous function on $[a,b]$ and differentiable on $(a,b)$.
@@ -42,7 +42,7 @@ Our above logic can be summarized as ``If $f$ is increasing, then $\fp$ is proba
 \end{enumerate}
 }
 
-\mnote{.7}{\textbf{Note:} Theorem \ref{thm:incr_decr} also holds if $\fp(c) = 0$ for a finite number of values of $c$ in $I$.}
+\mnote{.8}{\textbf{Note:} Theorem \ref{thm:incr_decr} also holds if $\fp(c) = 0$ for a finite number of values of $c$ in $I$.}
 
 Let $a$ and $b$ be in $I$ where $\fp(a)>0$ and $\fp(b)<0$. It follows from the Intermediate Value Theorem that there must be some value $c$ between $a$ and $b$ where $\fp(c) = 0$. This leads us to the following method for finding intervals on which a function is increasing or decreasing.
 
@@ -84,7 +84,7 @@ Note we can arrive at the same conclusion without computation. For instance, we 
 \noindent\textbf{Subinterval 3}, $(1/3,\infty)$:\quad Pick an arbitrarily large value for $p>1/3$ and note that $\fp(p) =3p^2+2p-1 >0$. We conclude that $f$ is increasing on $(1/3,\infty)$.
 
 We can verify our calculations by considering Figure \ref{fig:incr1}, where $f$ is graphed. The graph also presents $\fp$; note how $\fp>0$ when $f$ is increasing and $\fp<0$ when $f$ is decreasing.
-\mfigure{.75}{A graph of $f(x)$ in Example \ref{ex_incr1}, showing where $f$ is increasing and decreasing.}{fig:incr1}{figures/figincr1}
+\mfigure{.7}{A graph of $f(x)$ in Example \ref{ex_incr1}, showing where $f$ is increasing and decreasing.}{fig:incr1}{figures/figincr1}
 }\\
 
 \enlargethispage{2\baselineskip}
@@ -96,9 +96,8 @@ One could argue that just finding critical values is important; once we know the
 So our second reason why the above work is worthwhile is this: once mastery of a subject is gained, one has \textit{options} for finding needed information. We are working to develop mastery.
 
 Finally, our third reason: many problems we face ``in the real world'' are very complex. Solutions are tractable only through the use of computers to do many calculations for us. Computers do not solve problems ``on their own,'' however; they need to be taught (i.e., \textit{programmed}) to do the right things. It would be beneficial to give a function to a computer and have it return maximum and minimum values, intervals on which the function is increasing and decreasing, the locations of relative maxima, etc. The work that we are doing here is easily programmable. It is hard to teach a computer to ``look at the graph and see if it is going up or down.'' It is easy to teach a computer to ``determine if a number is greater than or less than 0.''
-\pagebreak
 
-\enlargethispage{3\baselineskip}
+%\enlargethispage{3\baselineskip}
 In Section \ref{sec:extreme_values} we learned the definition of relative maxima and minima and found that they occur at critical points. We are now learning that functions can switch from increasing to decreasing (and vice--versa) at critical points. This new understanding of increasing and decreasing creates a great method of determining whether a critical point corresponds to a maximum, minimum, or neither. Imagine a function increasing until a critical point at $x=c$, after which it decreases. A quick sketch helps confirm that $f(c)$ must be a relative maximum. A similar statement can be made for relative minimums. We formalize this concept in a theorem.
 
 %\small
@@ -190,7 +189,7 @@ This derivation of $\fp$ shows that $\fp(x) = 0$ when $x=\pm 1$ and \fp\ is not 
 \end{minipage}\\
 \vskip \baselineskip
 We conclude by stating that $f$ is increasing on $(-1,0) \cup (1,\infty)$ and decreasing on $(-\infty,-1) \cup (0,1)$. The sign of \fp\ changes from negative to positive around $x=-1$ and $x=1$, meaning by Theorem \ref{thm:first_der} that $f(-1)$ and $f(1)$ are relative minima of $f$. As the sign of \fp\ changes from positive to negative at $x=0$, we have a relative maximum at $f(0)$. Figure \ref{fig:incr3} shows a graph of $f$, confirming our result. We also graph $\fp$, highlighting once more that $f$ is increasing when $\fp>0$ and is decreasing when $\fp<0$.
-\mfigure{.4}{A graph of $f(x)$ in Example \ref{ex_incr3}, showing where $f$ is increasing and decreasing.}{fig:incr3}{figures/figincr3}
+\mfigure{.5}{A graph of $f(x)$ in Example \ref{ex_incr3}, showing where $f$ is increasing and decreasing.}{fig:incr3}{figures/figincr3}
 }\\
 
 We have seen how the first derivative of a function helps determine when the function is going ``up'' or ``down.'' In the next section, we will see how the second derivative helps determine how the graph of a function curves.

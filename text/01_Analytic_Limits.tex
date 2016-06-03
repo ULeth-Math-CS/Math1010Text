@@ -7,10 +7,9 @@
 %This process has its shortcomings, not the least of which is the fact that $\epsilon$--$\delta$ proofs are cumbersome. This section gives a series of theorems which allow us to find limits much more quickly and intuitively. 
 %\end{minipage}
 
-In Section \ref{sec:limit_intro} we explored the concept of the limit without a strict definition, meaning we could only make approximations. In the previous section we gave the definition of the limit and demonstrated how to use it to verify our approximations were correct. Thus far, our method of finding a limit is 1) make a really good approximation either graphically or numerically, and 2) verify our approximation is correct using a $\epsilon$-$\delta$ proof.
+In Section \ref{sec:limit_intro} we explored the concept of the limit without a strict definition, meaning we could only make approximations. Proving that these approximations are correct requires a rigorous definition of limits, which is beyond the scope of this course.
 
-Recognizing that $\epsilon$-$\delta$ proofs are cumbersome, this section gives a series of theorems which allow us to find limits much more quickly and intuitively. \\
-%\vskip \baselineskip
+\mnote{.7}{The rigorous definition of limits is often known as the ``$\varepsilon$ -- $\delta$ definition of the limit. You might have a few brief encounters with this definition as you make your way through the calculus sequence, but a careful treatment of limits is usually not encountered until Math 3500.}
 
 Suppose that $\lim_{x\to 2} f(x)=2$ and $\lim_{x\to 2} g(x) = 3$. What is $\lim_{x\to 2}(f(x)+g(x))$? Intuition tells us that the limit should be 5, as we expect limits to behave in a nice way. The following theorem states that already established limits do behave nicely.
 
@@ -84,7 +83,7 @@ Using Theorem \ref{thm:poly_rat}, find $$\lim_{x\to -1} \frac{3x^2-5x+1}{x^4-x^2
 \vskip -2\baselineskip
 }\\
 
-It was likely frustrating in Section \ref{sec:limit_def} to do a lot of work to prove that $$\lim_{x\to 2} x^2 = 4$$ as it seemed fairly obvious. The previous theorems state that many functions behave in such an ``obvious'' fashion, as demonstrated by the rational function in Example \ref{ex_limit_rat}. 
+Using approximations (or worse -- the rigorous definition) to deal with limits such as $$\lim_{x\to 2} x^2 = 4$$ can be annoying, since the result seems fairly obvious. The previous theorems state that many functions behave in such an ``obvious'' fashion, as demonstrated by the rational function in Example \ref{ex_limit_rat}. 
 
 Polynomial and rational functions are not the only functions to behave in such a predictable way. The following theorem gives a list of functions whose behaviour is particularly ``nice'' in terms of limits. In the next section, we will give a formal name to these functions that behave ``nicely.''
 
@@ -92,7 +91,7 @@ Polynomial and rational functions are not the only functions to behave in such a
 \ifthenelse{\boolean{longpage}}{}
 {\setboxwidth{100pt}
 }
-\noindent\ifthenelse{\isodd{\thepage}}{}{\hskip -100pt}%
+\noindent\ifthenelse{\isodd{\thepage}}{\hskip -100pt}{}%
 \noindent\begin{minipage}{\specialboxlength}
 \theorem{thm:lim_continuous}{Special Limits}{%
 Let $c$ be a real number in the domain of the given function and let $n$ be a positive integer. The following limits hold: 
@@ -224,7 +223,7 @@ We include this special limit, along with three others, in the following theorem
 
 A short word on how to interpret the latter three limits. We know that as $x$ goes to 0, $\cos x$ goes to 1. So, in the second limit, both the numerator and denominator are approaching 0. However, since the limit is 0, we can interpret this as saying that ``$\cos x$ is approaching 1 faster than $x$ is approaching 0.''
 
-In the third limit, inside the parentheses we have an expression that is approaching 1 (though never equaling 1), and we know that 1 raised to any power is still 1. At the same time, the power is growing toward infinity. What happens to a number near 1 raised to a very large power? In this particular case, the result approaches Euler's number, $e$, approximately $2.718.$
+In the third limit, inside the parentheses we have an expression that is approaching 1 (though never equalling 1), and we know that 1 raised to any power is still 1. At the same time, the power is growing toward infinity. What happens to a number near 1 raised to a very large power? In this particular case, the result approaches Euler's number, $e$, approximately $2.718.$
 
 In the fourth limit, we see that as $x\to 0$, $e^x$ approaches 1 ``just as fast'' as $x\to 0$, resulting in a limit of 1.\\
 
@@ -285,7 +284,7 @@ This matches our previous approximation.
 
 %\noindent\parbox{60pt}{\textbf{\itshape Preview:}}
 %\begin{minipage}[t]{\textwidth-63pt}
-This section contains several valuable tools for evaluating limits. One of the main results of this section is Theorem \ref{thm:lim_continuous}; it states that many functions that we use regularly behave in a very nice, predictable way. In the next section we give a name to this nice behavior; we label such functions as \textit{continuous.} Defining that term will require us to look again at what a limit is and what causes limits to not exist.
+This section contains several valuable tools for evaluating limits. One of the main results of this section is Theorem \ref{thm:lim_continuous}; it states that many functions that we use regularly behave in a very nice, predictable way. In the next section we give a name to this nice behaviour; we label such functions as \textit{continuous.} Defining that term will require us to look again at what a limit is and what causes limits to not exist.
 %\end{minipage}\\
 
 %\clearpage

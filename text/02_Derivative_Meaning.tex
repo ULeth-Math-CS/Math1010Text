@@ -12,9 +12,9 @@ This section falls in between the ``What is the definition of the derivative?'' 
 
 The previous section started with an example of using the position of an object (in this case, a falling amusement--park rider) to find the object's velocity. This type of example is often used when introducing the derivative because we tend to readily recognize that velocity is the \textit{instantaneous rate of change of position.} In general, if $f$ is a function of $x$, then $\fp(x)$ measures the instantaneous rate of change of $f$ with respect to $x$. Put another way, the derivative answers ``When $x$ changes, at what rate does $f$ change?'' Thinking back to the amusement--park ride, we asked ``When time changed, at what rate did the height change?'' and found the answer to be ``By $-64$ feet per second.'' 
 
-Now imagine driving a car and looking at the speedometer, which reads ``60 mph.'' Five minutes later, you wonder how far you have traveled. Certainly, lots of things could have happened in those 5 minutes; you could have intentionally sped up significantly, you might have come to a complete stop, you might have slowed to 20 mph as you passed through construction.  But suppose that you know, as the driver, none of these things happened. You know you maintained a fairly consistent speed over those 5 minutes. What is a good approximation of the distance traveled?
+Now imagine driving a car and looking at the speedometer, which reads ``60 mph.'' Five minutes later, you wonder how far you have travelled. Certainly, lots of things could have happened in those 5 minutes; you could have intentionally sped up significantly, you might have come to a complete stop, you might have slowed to 20 mph as you passed through construction.  But suppose that you know, as the driver, none of these things happened. You know you maintained a fairly consistent speed over those 5 minutes. What is a good approximation of the distance travelled?
 
-One could argue the \textit{only} good approximation, given the information provided, would be based on ``distance = rate $\times$ time.'' In this case, we assume a constant rate of 60 mph with a time of $5/60$ hours. Hence we would approximate the distance traveled as 5 miles.\\
+One could argue the \textit{only} good approximation, given the information provided, would be based on ``distance = rate $\times$ time.'' In this case, we assume a constant rate of 60 mph with a time of $5/60$ hours. Hence we would approximate the distance travelled as 5 miles.\\
 
 
 Referring back to the falling amusement--park ride, knowing that at $t=2$ the velocity was $-64$ ft/s, we could reasonably assume that 1 second later the riders' height would have dropped by about 64 feet. Knowing that the riders were \textit{accelerating} as they fell would inform us that this is an \textit{under--approximation}. If all we knew was that $f(2) = 86$ and $\fp(2) = -64$, we'd know that we'd have to stop the riders quickly otherwise they would hit the ground!
@@ -22,7 +22,7 @@ Referring back to the falling amusement--park ride, knowing that at $t=2$ the ve
 \vskip \baselineskip
 \noindent\textbf{Units of the Derivative}\\
 
-It is useful to recognize the \textit{units} of the derivative function. If $y$ is a function of $x$, i.e., $y=f(x)$ for some function $f$, and $y$ is measured in feet and $x$ in seconds, then the units of $y' = \fp$ are ``feet per second,'' commonly written as ``ft/s.'' In general, if $y$ is measured in units $P$ and $x$ is measured in units $Q$, then $y'$ will be measured in units ``$P$ per $Q$'', or ``$P/Q$.'' Here we see the fraction--like behavior of the derivative in the notation:
+It is useful to recognize the \textit{units} of the derivative function. If $y$ is a function of $x$, i.e., $y=f(x)$ for some function $f$, and $y$ is measured in feet and $x$ in seconds, then the units of $y' = \fp$ are ``feet per second,'' commonly written as ``ft/s.'' In general, if $y$ is measured in units $P$ and $x$ is measured in units $Q$, then $y'$ will be measured in units ``$P$ per $Q$'', or ``$P/Q$.'' Here we see the fraction--like behaviour of the derivative in the notation:
 	\begin{center}
 	the units of $\quad\ds \frac{dy}{dx}$\quad are \quad$\ds \frac{\text{units of $y$}}{\text{units of $x$}}$.
 	\end{center}
@@ -44,23 +44,23 @@ The equation $P(1000)=500$ means that selling 1,000 widgets returns a profit of 
 We approximate that selling 1,100 widgets returns a profit of \$525.
 }\\
 
-The previous examples made use of an important approximation tool that we first used in our previous ``driving a car at 60 mph'' example at the beginning of this section. Five minutes after looking at the speedometer, our best approximation for distance traveled assumed the rate of change was constant. In Examples \ref{ex_der_meaning1} and \ref{ex_der_meaning2} we made similar approximations. We were given rate of change information which we used to approximate total change. Notationally, we would say that 
+The previous examples made use of an important approximation tool that we first used in our previous ``driving a car at 60 mph'' example at the beginning of this section. Five minutes after looking at the speedometer, our best approximation for distance travelled assumed the rate of change was constant. In Examples \ref{ex_der_meaning1} and \ref{ex_der_meaning2} we made similar approximations. We were given rate of change information which we used to approximate total change. Notationally, we would say that 
 	$$f(c+h) \approx f(c) + \fp(c)\cdot h.$$ This approximation is best when $h$ is ``small.'' ``Small'' is a relative term; when dealing with the world population, $h=$ 22 days = 28,800 minutes is small in comparison to years. When manufacturing widgets, 100 widgets is small when one plans to manufacture thousands. \\
 
 % If $C(t)$ measures the number of customers in a store at time $t$, where $t$ is measured in hours since opening, then $C'(t)$ measures the rate at which the number of customers is increasing per hour. Suppose 2 hours after opening there are 50 customers in a store; this means $C(2) = 50$. Suppose further that $C'(2) = 20$. That means that 2 hours after opening, customers are coming into the store at a rate of 20 per hour. One could then reasonably assume that 3 hours after opening the store would have about 70 customers in it. (And 2.5 hours after opening the store would have about 60 customers in it.) If one were to plot the number of people in the 
 
 \noindent\textbf{\large The Derivative and Motion}\\
 
-One of the most fundamental applications of the derivative is the study of motion. Let $s(t)$ be a position function, where $t$ is time and $s(t)$ is  distance. For instance, $s$ could measure the height of a projectile or the distance an object has traveled. 
+One of the most fundamental applications of the derivative is the study of motion. Let $s(t)$ be a position function, where $t$ is time and $s(t)$ is  distance. For instance, $s$ could measure the height of a projectile or the distance an object has travelled. 
 
-Let's let $s(t)$ measure the distance traveled, in feet, of an object after $t$ seconds of travel. Then $s\primeskip'(t)$ has units ``feet per second,'' and $s\primeskip'(t)$ measures the \textit{instantaneous rate of distance change} -- it measures \textbf{velocity}.\index{velocity} 
+Let's let $s(t)$ measure the distance travelled, in feet, of an object after $t$ seconds of travel. Then $s\primeskip'(t)$ has units ``feet per second,'' and $s\primeskip'(t)$ measures the \textit{instantaneous rate of distance change} -- it measures \textbf{velocity}.\index{velocity} 
 
 Now consider $v(t)$, a velocity function. That is, at time $t$, $v(t)$ gives the velocity of an object. The derivative of $v$, $v\primeskip'(t)$, gives the \textit{instantaneous rate of velocity change} --
 \textbf{acceleration}. (We often think of acceleration in terms of cars: a car may ``go from 0 to 60 in 4.8 seconds.'' This is an \textit{average} acceleration, a measurement of how quickly the velocity changed.) If velocity is measured in feet per second, and time is measured in seconds, then the units of acceleration (i.e., the units of $v\primeskip'(t)$) are ``feet per second per second,'' or $($ft/s$)$/s. We often shorten this to ``feet per second squared,'' or ft/s$^2$, but this tends to obscure the meaning of the units.\index{acceleration}
 
 Perhaps the most well known acceleration is that of gravity. In this text, we use $g=32$ft/s$^2$ or $g=9.8$m/s$^2$. What do these numbers mean?
 
-A constant acceleration of 32$($ft/s$)$/s means that the velocity changes by 32ft/s each second. For instance, let $v(t)$ measures the velocity of a ball thrown straight up into the air, where $v$ has units ft/s and $t$ is measured in seconds. The ball will have a positive velocity while traveling upwards and a negative velocity while falling down. The acceleration is thus $-32$ft/s$^2$. If $v(1) = 20$ft/s, then when $t=2$, the velocity will have decreased by 32ft/s; that is, $v(2) = -12$ft/s. We can continue: $v(3) = -44$ft/s, and we can also figure that $v(0) = 42$ft/s.
+A constant acceleration of 32$($ft/s$)$/s means that the velocity changes by 32ft/s each second. For instance, let $v(t)$ measures the velocity of a ball thrown straight up into the air, where $v$ has units ft/s and $t$ is measured in seconds. The ball will have a positive velocity while travelling upwards and a negative velocity while falling down. The acceleration is thus $-32$ft/s$^2$. If $v(1) = 20$ft/s, then when $t=2$, the velocity will have decreased by 32ft/s; that is, $v(2) = -12$ft/s. We can continue: $v(3) = -44$ft/s, and we can also figure that $v(0) = 42$ft/s.
 
 These ideas are so important we write them out as a Key Idea.
 
