@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  3 JUN 2016 14:38
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  3 JUN 2016 14:47
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -1740,16 +1740,20 @@ ex-text;+smcp;" at 24.88pt
 LaTeX Font Info:    Font shape `EU1/Calibri(0)/m/sl' in size <10> not available
 
 (Font)              Font shape `EU1/Calibri(0)/m/it' tried instead on input lin
-e 8.
+e 11.
 Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;" at 10.0pt
+ -> C:/WINDOWS/Fonts/calibrii.ttf
+LaTeX Font Info:    Font shape `EU1/Calibri(0)/m/sl' in size <14.4> not availab
+le
+(Font)              Font shape `EU1/Calibri(0)/m/it' tried instead on input lin
+e 11.
+Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 14.4pt
  -> C:/WINDOWS/Fonts/calibrii.ttf
 Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
 ex-text;" at 14.4pt
  -> C:/WINDOWS/Fonts/calibri.ttf
-Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 14.4pt
- -> C:/WINDOWS/Fonts/calibrii.ttf
 Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
 =tex-text;" at 12.0pt
  -> C:/WINDOWS/Fonts/calibrii.ttf
@@ -1758,7 +1762,7 @@ Requested font "cmmi12" at 14.4pt
 Requested font "cmsy10" at 14.4pt
 Requested font "cmex10" at 14.4pt
 Requested font "cmex7" at 7.0pt
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1766,7 +1770,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 Requested font "msam10" at 14.4pt
 Requested font "msam10" at 10.0pt
 Requested font "msam7" at 7.0pt
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1774,7 +1778,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Requested font "msbm10" at 14.4pt
 Requested font "msbm10" at 10.0pt
 Requested font "msbm7" at 7.0pt
-LaTeX Font Info:    Try loading font information for U+esvect on input line 24.
+LaTeX Font Info:    Try loading font information for U+esvect on input line 27.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\esvect\uesvect.fd"
@@ -1814,7 +1818,7 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 5.0pt
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 5.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 
-Overfull \hbox (140.0pt too wide) in paragraph at lines 3--44
+Overfull \hbox (140.0pt too wide) in paragraph at lines 3--47
 [] $[]$ 
  []
 
@@ -12431,9 +12435,13 @@ File: figures/fig02_04_ex_45a.pdf Graphic file (type QTm)
 
 
 
+] (Math1010text.ind
+[41
+
+] [42] [43] [44] [45] [46] [47])
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [48
+
 ]
-No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [41]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
@@ -12453,11 +12461,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[42
+[49
 
-] [43
+] [50
 
-] [44
+] [51
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -12480,11 +12488,11 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[45
+[52
 
 ])
-Package atenddvi Info: Last page = 558.
- [46
+Package atenddvi Info: Last page = 565.
+ [53
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
@@ -12495,12 +12503,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 254.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 57956 strings out of 428755
- 1237393 string characters out of 3164219
- 1589621 words of memory out of 3000000
- 57440 multiletter control sequences out of 15000+200000
+ 57959 strings out of 428755
+ 1237449 string characters out of 3164219
+ 1589595 words of memory out of 3000000
+ 57441 multiletter control sequences out of 15000+200000
  19704 words of font info for 150 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,30n,88p,10385b,1060s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (558 pages).
+Output written on Math1010text.pdf (565 pages).
