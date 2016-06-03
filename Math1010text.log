@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  31 MAY 2016 13:36
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  3 JUN 2016 11:44
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -1636,32 +1636,33 @@ ine 48.
 Requested font "[cmmi10]/OT:mapping=tex-text;" at 10.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 \c@HW=\count336
+\c@HWindent=\count337
 
 (Math1010text.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 65.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 66.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    ... okay on input line 66.
 \AtBeginShipoutBox=\box95
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
@@ -1707,7 +1708,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 66.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1715,11 +1716,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count337
+\c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (Math1010text.out) (Math1010text.out)
 \@outlinefile=\write6
@@ -2119,12 +2120,6 @@ Underfull \hbox (badness 5446) has occurred while \output is active
 \EU1/Calibri(0)/m/n/9 This gives us the rational expression
  []
 
-Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 9.0pt
- -> C:/WINDOWS/Fonts/calibrib.ttf
-
-LaTeX Warning: Reference `Angles' on page 4 undefined on input line 240.
-
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 The classic example of an irrational
@@ -2136,8 +2131,8 @@ Underfull \hbox (badness 7291) has occurred while \output is active
  []
 
 
-Underfull \hbox (badness 7397) has occurred while \output is active
-\EU1/Calibri(0)/m/n/9 tion []), but numbers like $[]$ and
+Underfull \hbox (badness 5147) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 tion []8.1[]), but numbers like $[]$ and
  []
 
 
@@ -2311,7 +2306,11 @@ File: figures/RelationsandFunctionsGraphics/CartesianPlane-33.pdf Graphic file
 File: figures/RelationsandFunctionsGraphics/CartesianPlane-34.pdf Graphic file 
 (type QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/CartesianPlane-34.pdf" > [9
+<use  "figures/RelationsandFunctionsGraphics/CartesianPlane-34.pdf" >
+Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 9.0pt
+ -> C:/WINDOWS/Fonts/calibrib.ttf
+ [9
 
 ])
 (text_pre/00_RealNumberArithmetic.tex
@@ -5586,9 +5585,6 @@ Overfull \hbox (18.06357pt too wide) has occurred while \output is active
 LaTeX Warning: Reference `exploregraphslast' on page 195 undefined on input lin
 e 156.
 
-
-LaTeX Warning: Reference `TrigGraphs' on page 195 undefined on input line 156.
-
 [195]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 201--203
 [][][]
@@ -7263,6 +7259,1529 @@ Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
  [306
 
 ] [307] [308])
+Chapter 8.
+(text_pre/07_Angles.tex
+File: figures/IntroTrigGraphics/Angles-2.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/Angles-2.pdf" >
+File: figures/IntroTrigGraphics/Angles-3.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-3.pdf" >
+Overfull \hbox (15.0pt too wide) in paragraph at lines 15--25
+[]$[]$ 
+ []
+
+File: figures/IntroTrigGraphics/Angles-4.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-4.pdf" >
+File: figures/IntroTrigGraphics/Angles-5.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-5.pdf" >
+Overfull \hbox (15.0pt too wide) in paragraph at lines 33--43
+[]$[]$ 
+ []
+
+File: figures/IntroTrigGraphics/Angles-9.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-9.pdf" >
+File: figures/IntroTrigGraphics/Angles-10.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-10.pdf" >
+File: figures/IntroTrigGraphics/Angles-11.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-11.pdf" >
+Overfull \hbox (4.00293pt too wide) in paragraph at lines 69--76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--79
+
+ []
+
+
+Underfull \vbox (badness 4913) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/Angles-1.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-1.pdf" >
+File: figures/IntroTrigGraphics/Angles-6.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-6.pdf" >
+File: figures/IntroTrigGraphics/Angles-7.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-7.pdf" >
+File: figures/IntroTrigGraphics/Angles-8.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-8.pdf" >
+Underfull \hbox (badness 2142) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The choice of ‘$[][][]$’ is most often at-
+ []
+
+[309
+
+
+
+
+]
+File: figures/IntroTrigGraphics/Angles-12.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/Angles-12.pdf" >
+File: figures/IntroTrigGraphics/Angles-13.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-13.pdf" >
+File: figures/IntroTrigGraphics/Angles-14.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-14.pdf" >
+Overfull \hbox (4.00293pt too wide) in paragraph at lines 89--96
+[][]
+ []
+
+File: figures/IntroTrigGraphics/Angles-15.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-15.pdf" >
+File: figures/IntroTrigGraphics/Angles-16.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-16.pdf" >
+Overfull \hbox (11.99963pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+File: figures/IntroTrigGraphics/Angles-17.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-17.pdf" >
+File: figures/IntroTrigGraphics/Angles-18.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-18.pdf" >
+File: figures/IntroTrigGraphics/Angles-19.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-19.pdf" > [310]
+File: figures/IntroTrigGraphics/Angles-20.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-20.pdf" >
+File: figures/IntroTrigGraphics/Angles-21.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-21.pdf" >
+File: figures/IntroTrigGraphics/Angles-22.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-22.pdf" >
+File: figures/IntroTrigGraphics/Angles-23.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-23.pdf" > [311]
+Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 7.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 5.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 196--197
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+File: figures/IntroTrigGraphics/Angles-24.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-24.pdf" >
+File: figures/IntroTrigGraphics/Angles-25.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-25.pdf" >
+File: figures/IntroTrigGraphics/Angles-26.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-26.pdf" >
+File: figures/IntroTrigGraphics/Angles-27.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-27.pdf" >
+Overfull \hbox (21.29851pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[312]
+File: figures/IntroTrigGraphics/Angles-28.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/Angles-28.pdf" >
+File: figures/IntroTrigGraphics/Angles-29.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-29.pdf" >
+File: figures/IntroTrigGraphics/Angles-30.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-30.pdf" >
+File: figures/IntroTrigGraphics/Angles-31.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-31.pdf" > [313]
+Underfull \hbox (badness 2875) in paragraph at lines 281--281
+[]\EU1/Calibri(0)/m/n/10 To convert degree measure to radian measure, multiply 
+by
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 281--281
+[]\EU1/Calibri(0)/m/n/10 To convert radian measure to degree measure, multiply 
+by
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 281--282
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+File: figures/IntroTrigGraphics/Angles-32.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-32.pdf" >
+File: figures/IntroTrigGraphics/Angles-33.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-33.pdf" >
+File: figures/IntroTrigGraphics/Angles-34.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-34.pdf" >
+Overfull \hbox (150.0pt too wide) in paragraph at lines 290--300
+$[]$ 
+ []
+
+[314]
+File: figures/IntroTrigGraphics/Angles-35.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/Angles-35.pdf" >
+File: figures/IntroTrigGraphics/Angles-36.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-36.pdf" >
+File: figures/IntroTrigGraphics/Angles-37.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-37.pdf" > [315]
+File: figures/IntroTrigGraphics/Angles-38.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-38.pdf" >
+File: figures/IntroTrigGraphics/Angles-39.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-39.pdf" > [316]
+
+LaTeX Warning: Reference `Sinusoid' on page 317 undefined on input line 375.
+
+[317]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 9.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 6.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+ [318
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 378--378
+[]\EU1/Calibri(0)/m/n/9 (Hint: Use the proportion $[] \OT1/cmr/m/n/9 =
+ []
+
+File: figures/IntroTrigGraphics/Angles-40.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Angles-40.pdf" > [319])
+(text_pre/07_TheUnitCircle.tex
+File: figures/IntroTrigGraphics/TheUnitCircle-5.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-5.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-6.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-6.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 94--94
+[][]
+ []
+
+
+Overfull \hbox (5.00003pt too wide) in paragraph at lines 94--94
+ $[]$ 
+ []
+
+
+Underfull \vbox (badness 6725) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-2.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-2.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-3.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-3.pdf" >
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.30: |Finding $[]\OT1/cmr/m/n/9 ([][][][])$ \EU
+1/Calibri(0)/m/n/9 and
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-4.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-4.pdf" >
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.31: |Finding $[]\OT1/cmr/m/n/9 (\OMS/cmsy/m/n/
+9 ^^@[]\OT1/cmr/m/n/9 )$ \EU1/Calibri(0)/m/n/9 and
+ []
+
+[320
+
+]
+File: figures/IntroTrigGraphics/TheUnitCircle-7.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-7.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-8.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-8.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 94--94
+[][]
+ []
+
+
+Overfull \hbox (5.00003pt too wide) in paragraph at lines 94--94
+ $[]$ 
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-9.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-9.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-10.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-10.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 94--94
+[][]
+ []
+
+
+Overfull \hbox (5.00003pt too wide) in paragraph at lines 94--94
+ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [321]
+Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/calibrib.ttf
+
+
+LaTeX Warning: Reference `ArcTrig' on page 322 undefined on input line 100.
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 105--106
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+LaTeX Warning: Reference `Circles' on page 322 undefined on input line 109.
+
+[322]
+File: figures/IntroTrigGraphics/TheUnitCircle-11.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-11.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-12.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-12.pdf" >
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 166--167
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-13.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-13.pdf" >
+Underfull \hbox (badness 1895) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.35: |Reference angle $[]$ for a
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-14.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-14.pdf" >
+Underfull \hbox (badness 1895) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.36: |Reference angle $[]$ for a
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-15.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-15.pdf" >
+Underfull \hbox (badness 1895) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.37: |Reference angle $[]$ for a
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-16.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-16.pdf" >
+Underfull \hbox (badness 1895) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.38: |Reference angle $[]$ for a
+ []
+
+[323]
+File: figures/IntroTrigGraphics/TheUnitCircle-17.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-17.pdf" >
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.39: |Finding $[] []$ and
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-18.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-18.pdf" >
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.40: |Finding $[] []$ and
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-19.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-19.pdf" >
+Underfull \hbox (badness 7273) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.41: |Finding $[] []$ and
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-20.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-20.pdf" >
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.42: |Finding $[] []$ and
+ []
+
+[324]
+File: figures/IntroTrigGraphics/TheUnitCircle-21.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-21.pdf" >
+Overfull \hbox (132.9989pt too wide) in paragraph at lines 251--252
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [325]
+File: figures/IntroTrigGraphics/TheUnitCircle-23.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-23.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-24.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-24.pdf" >
+Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
+ $[]$ 
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-25.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-25.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-26.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-26.pdf" >
+Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
+ $[]$ 
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-22.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-22.pdf" > [326]
+File: figures/IntroTrigGraphics/TheUnitCircle-27.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-27.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-28.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-28.pdf" >
+Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
+ $[]$ 
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-29.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-29.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-30.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-30.pdf" >
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
+[][]
+ []
+
+
+Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
+ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [327]
+
+LaTeX Warning: Reference `TrigEquIneq' on page 328 undefined on input line 371.
+
+
+File: figures/IntroTrigGraphics/TheUnitCircle-31.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-31.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-32.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-32.pdf" >
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 448--448
+ $[]$ 
+ []
+
+[328]
+File: figures/IntroTrigGraphics/TheUnitCircle-33.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-33.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-34.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-34.pdf" >
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 448--448
+ $[]$ 
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-35.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-35.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-36.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-36.pdf" >
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 448--448
+ $[]$ 
+ []
+
+
+LaTeX Warning: Reference `SequencesandSeries' on page 329 undefined on input li
+ne 452.
+
+[329]
+File: figures/IntroTrigGraphics/TheUnitCircle-37.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-37.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-38.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-38.pdf" >
+Overfull \hbox (7.99901pt too wide) in paragraph at lines 463--468
+[][]
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 484--485
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
+
+ []
+
+[330]
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
+
+ []
+
+
+Underfull \vbox (badness 3514) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-39.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-39.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-40.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-40.pdf" >
+Underfull \hbox (badness 1783) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Figure 8.54: |A point on the Earth at
+ []
+
+[331]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 525--526
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-41.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TheUnitCircle-41.pdf" >
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 559--560
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
+
+ []
+
+
+Underfull \vbox (badness 7273) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-42.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-42.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-43.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-43.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[332]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 605--606
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/TheUnitCircle-44.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-44.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-45.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-45.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-46.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-46.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-47.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-47.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+[333] [334]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [335
+
+]
+File: figures/IntroTrigGraphics/TheUnitCircle-48.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TheUnitCircle-48.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-49.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-49.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-50.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-50.pdf" >
+File: figures/IntroTrigGraphics/TheUnitCircle-48.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TheUnitCircle-48.pdf" > [336] [337])
+(text_pre/07_CircularFunctions.tex
+Overfull \hbox (0.72336pt too wide) in paragraph at lines 1--1
+[]\EU1/Calibri(0)/bx/n/14.4 The Six Circular Functions and Fundamental Iden-
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 30--31
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+File: figures/IntroTrigGraphics/CircularFunctions-1.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-1.pdf" > [338
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 61--62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Overfull \hbox (5.3962pt too wide) in paragraph at lines 98--98
+[]\EU1/Calibri(0)/m/n/10 According to Theorem []57[], $[] [] \OT1/cmr/m/n/10 = 
+[]$\EU1/Calibri(0)/m/n/10 . Hence, $[] [] \OT1/cmr/m/n/10 = [] =
+ []
+
+
+Overfull \hbox (6.23792pt too wide) in paragraph at lines 98--98
+[][]\OT1/cmr/m/n/10 ([]) = []$\EU1/Calibri(0)/m/n/10 , to find $[]\OT1/cmr/m/n/
+10 ([])$ \EU1/Calibri(0)/m/n/10 by knowing $[]\OT1/cmr/m/n/10 ([])$\EU1/Calibri
+(0)/m/n/10 . Substituting, we get $[][]\OT1/cmr/m/n/10 ([]) +
+ []
+
+[339]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 132--133
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \vbox (badness 1048) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1708) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 As we shall see shortly, when solving
+ []
+
+[340]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 229--230
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \vbox (badness 2368) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/CircularFunctions-2.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-2.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-3.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-3.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/IntroTrigGraphics/CircularFunctions-4.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-4.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-5.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-5.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[341]
+Underfull \hbox (badness 6284) in paragraph at lines 333--333
+[]$\OT1/cmr/m/n/10 ([]([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]))([]([]) 
++
+ []
+
+
+Overfull \hbox (0.4019pt too wide) in paragraph at lines 333--333
+[]$[] []\OT1/cmr/m/n/10 ([]) []([]) = [] \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (4.07538pt too wide) in paragraph at lines 333--333
+[]\EU1/Calibri(0)/m/n/10 Starting with the right hand side of $[]\OT1/cmr/m/n/1
+0 ([]) = []([]) []([])$\EU1/Calibri(0)/m/n/10 , we use $[]\OT1/cmr/m/n/10 ([]) 
+=
+ []
+
+[342]
+Overfull \hbox (11.86598pt too wide) in paragraph at lines 333--333
+[]\EU1/Calibri(0)/m/n/10 Expanding the left hand side of the equation gives: $\
+OT1/cmr/m/n/10 ([]([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]))([]([]) +
+ []
+
+
+Overfull \hbox (4.26395pt too wide) in paragraph at lines 333--333
+[]\OT1/cmr/m/n/10 ([])) = [][]([]) \OMS/cmsy/m/n/10 ^^@ [][]\OT1/cmr/m/n/10 ([]
+)$\EU1/Calibri(0)/m/n/10 . According to Theorem []59[], $[][]\OT1/cmr/m/n/10 ([
+]) \OMS/cmsy/m/n/10 ^^@ [][]\OT1/cmr/m/n/10 ([]) =
+ []
+
+
+Overfull \hbox (40.79053pt too wide) detected at line 333
+[]
+ []
+
+
+Overfull \hbox (56.89603pt too wide) detected at line 333
+[]
+ []
+
+
+Overfull \hbox (11.47684pt too wide) detected at line 333
+[]
+ []
+
+[343]
+Overfull \hbox (21.27893pt too wide) detected at line 333
+[]
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 358--359
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+
+ []
+
+[344]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 385--386
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+[345]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 409--410
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--432
+
+ []
+
+
+Underfull \vbox (badness 1005) has occurred while \output is active []
+
+ [346]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 443--444
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
+
+ []
+
+
+Overfull \hbox (11.83702pt too wide) in paragraph at lines 495--495
+[]\EU1/Calibri(0)/m/n/10 Using Theorem []61[], we get a pair of equations: $[] 
+[] \OT1/cmr/m/n/10 = []$ \EU1/Calibri(0)/m/n/10 and $[] [] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+File: figures/IntroTrigGraphics/CircularFunctions-6.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-6.pdf" >
+Overfull \hbox (16.99959pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/IntroTrigGraphics/CircularFunctions-7.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-7.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-8.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-8.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-9.pdf Graphic file (type QTm)
+
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-9.pdf" > [347]
+File: figures/IntroTrigGraphics/CircularFunctions-10.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-10.pdf" >
+
+LaTeX Warning: Reference `SequencesandSeries' on page 348 undefined on input li
+ne 508.
+
+
+Underfull \vbox (badness 1394) has occurred while \output is active []
+
+ [348]
+Overfull \hbox (31.39998pt too wide) in paragraph at lines 571--572
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--572
+
+ []
+
+
+Overfull \hbox (680.0pt too wide) in paragraph at lines 529--574
+ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2529) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 Notice we have used the variable ‘$[]$’
+ []
+
+[349] [350]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [351
+
+]
+File: figures/IntroTrigGraphics/CircularFunctions-11.pdf Graphic file (type QTm
+)
+ <use  "figures/IntroTrigGraphics/CircularFunctions-11.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-12.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-12.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-13.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-13.pdf" >
+File: figures/IntroTrigGraphics/CircularFunctions-14.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-14.pdf" > [352]
+File: figures/IntroTrigGraphics/CircularFunctions-15.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-15.pdf" > [353]
+File: figures/IntroTrigGraphics/CircularFunctions-16.pdf Graphic file (type QTm
+)
+
+<use  "figures/IntroTrigGraphics/CircularFunctions-16.pdf" > [354] [355])
+(text_pre/07_Identities.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 34--35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 61--62
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+File: figures/IntroTrigGraphics/Identities-1.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Identities-1.pdf" >
+File: figures/IntroTrigGraphics/Identities-2.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Identities-2.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[356
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+
+ []
+
+File: figures/IntroTrigGraphics/Identities-3.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/Identities-3.pdf" >
+File: figures/IntroTrigGraphics/Identities-4.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Identities-4.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 1552) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 In Figure []8.68[], the $[]$angles $[][][]$ and
+ []
+
+[357]
+Overfull \hbox (9.06137pt too wide) in paragraph at lines 170--171
+[]\EU1/Calibri(0)/m/n/10 which says, in words, that the ‘co’sine of an angle is
+ the sine of its ‘co’mplement.
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 195--196
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+[358]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 222--223
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+
+ []
+
+[359] [360]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 300--301
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 321--322
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+
+Overfull \hbox (8.8624pt too wide) in paragraph at lines 325--326
+\EU1/Calibri(0)/m/n/10 change’ squares of cosine and sine via the Pythagorean I
+dentity $[][]\OT1/cmr/m/n/10 ([]) + [][]([]) =
+ []
+
+
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
+ [361]
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
+
+ []
+
+
+LaTeX Warning: Reference `ArcTrig' on page 362 undefined on input line 391.
+
+
+Overfull \hbox (1.68065pt too wide) in paragraph at lines 391--391
+[]\EU1/Calibri(0)/m/n/10 We start with the right hand side of the identity and 
+note that $[] \OT1/cmr/m/n/10 + [][]([]) =
+ []
+
+
+Overfull \hbox (13.01225pt too wide) detected at line 391
+[]
+ []
+
+[362]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 408--409
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
+[363]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 456--457
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--511
+
+ []
+
+[364] [365]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 532--533
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+
+LaTeX Warning: Reference `TrigEquIneq' on page 366 undefined on input line 536.
+
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 551--552
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--584
+
+ []
+
+
+Overfull \hbox (12.458pt too wide) in paragraph at lines 584--584
+\EU1/Calibri(0)/m/n/10 where the last equality is courtesy of the even identity
+ for cosine, $[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[][]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 1442) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The identities in Theorem []71[] are also
+ []
+
+[366]
+
+LaTeX Warning: Reference `idengraphfirst' on page 367 undefined on input line 5
+90.
+
+
+LaTeX Warning: Reference `idengraphlast' on page 367 undefined on input line 59
+0.
+
+[367]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--592
+[]$[] \OT1/cmr/m/n/9 = []([]) [] +
+ []
+
+[368
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 592--592
+[]$[] \OT1/cmr/m/n/9 = []([]) [] \OMS/cmsy/m/n/9 ^^@
+ []
+
+[369] [370]) (text_pre/07_TrigGraphs.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 14--15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\EU1/Calibri(0)/m/n/10 is continuous and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\EU1/Calibri(0)/m/n/10 is continuous and
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 50--51
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+[371
+
+]
+File: figures/IntroTrigGraphics/TrigGraphs-2.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-2.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-4.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-4.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-1.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-1.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/IntroTrigGraphics/TrigGraphs-3.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TrigGraphs-3.pdf" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[372]
+File: figures/IntroTrigGraphics/TrigGraphs-5.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-5.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 280--280
+ [] 
+ []
+
+[373]
+File: figures/IntroTrigGraphics/TrigGraphs-6.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-6.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 280--280
+ [] 
+ []
+
+
+Overfull \hbox (2.36513pt too wide) in paragraph at lines 280--280
+[]\EU1/Calibri(0)/m/n/10 One cycle was graphed on the interval $[]$ so the peri
+od is $[] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 311--312
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+File: figures/IntroTrigGraphics/TrigGraphs-7.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TrigGraphs-7.pdf" > [374]
+
+LaTeX Warning: Reference `fig:riggraph6' on page 375 undefined on input line 36
+4.
+
+File: figures/IntroTrigGraphics/TrigGraphs-8.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TrigGraphs-8.pdf" > [375]
+File: figures/IntroTrigGraphics/TrigGraphs-9.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-9.pdf" >
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 364--364
+ $[]$ 
+ []
+
+[376]
+Overfull \hbox (1.84683pt too wide) in paragraph at lines 406--406
+\EU1/Calibri(0)/m/n/10 mulas and match up corresponding coefficients. Equating 
+$[]\OT1/cmr/m/n/10 ([]) = []([][]) \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+LaTeX Warning: Reference `ParFrac' on page 377 undefined on input line 406.
+
+
+Overfull \hbox (0.32655pt too wide) in paragraph at lines 406--406
+[] []\OT1/cmr/m/n/10 ([]) = []$\EU1/Calibri(0)/m/n/10 , or $[]\OT1/cmr/m/n/10 (
+[]) = []$\EU1/Calibri(0)/m/n/10 , and $[] []\OT1/cmr/m/n/10 ([]) = \OMS/cmsy/m/
+n/10 ^^@[]$\EU1/Calibri(0)/m/n/10 , which means $[]\OT1/cmr/m/n/10 ([]) =
+ []
+
+[377]
+File: figures/IntroTrigGraphics/TrigGraphs-10.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-10.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 423--443
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [378]
+File: figures/IntroTrigGraphics/TrigGraphs-11.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-11.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-12.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-12.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 466--486
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [379]
+File: figures/IntroTrigGraphics/TrigGraphs-13.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-13.pdf" >
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
+[]\EU1/Calibri(0)/m/n/10 has domain $[] \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
+[]\EU1/Calibri(0)/m/n/10 has domain $[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 554--555
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [380]
+File: figures/IntroTrigGraphics/TrigGraphs-14.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-14.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 673--673
+ [] 
+ []
+
+
+Underfull \vbox (badness 5878) has occurred while \output is active []
+
+ [381]
+Overfull \hbox (8.0763pt too wide) in paragraph at lines 673--673
+[]\EU1/Calibri(0)/m/n/10 Proceeding as before, we set the argument of cosecant 
+in $[]\OT1/cmr/m/n/10 ([]) = []$
+ []
+
+File: figures/IntroTrigGraphics/TrigGraphs-15.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TrigGraphs-15.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 673--673
+ [] 
+ []
+
+[382]
+File: figures/IntroTrigGraphics/TrigGraphs-16.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-16.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 687--707
+ [] 
+ []
+
+File: figures/IntroTrigGraphics/TrigGraphs-17.pdf Graphic file (type QTm)
+<use  "figures/IntroTrigGraphics/TrigGraphs-17.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-18.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-18.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 738--758
+ [] 
+ []
+
+[383]
+File: figures/IntroTrigGraphics/TrigGraphs-19.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-19.pdf" >
+Overfull \hbox (31.39998pt too wide) in paragraph at lines 826--827
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--827
+
+ []
+
+
+Overfull \hbox (61.50717pt too wide) in paragraph at lines 786--829
+ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [384]
+File: figures/IntroTrigGraphics/TrigGraphs-20.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-20.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 952--952
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [385]
+File: figures/IntroTrigGraphics/TrigGraphs-21.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-21.pdf" >
+Overfull \hbox (24.0pt too wide) in paragraph at lines 952--952
+ [] 
+ []
+
+[386]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+LaTeX Warning: Reference `TrigEquIneq' on page 387 undefined on input line 958.
+
+
+[387
+
+] [388])
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -7587,10 +9106,6 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-36.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-36.pdf" >
-Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 8.0pt
- -> C:/WINDOWS/Fonts/calibrib.ttf
-
 [17]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf Graphic fi
 le (type QTm)
@@ -8184,7 +9699,156 @@ LaTeX Warning: Reference `Parametric' on page A.52 undefined on input line 72.
 
 [52] [53]
 File: figures/ExpLogsGraphics/PURSUIT03.jpg Graphic file (type QTm)
- <use  "figures/ExpLogsGraphics/PURSUIT03.jpg" >) [54]
+ <use  "figures/ExpLogsGraphics/PURSUIT03.jpg" >
+File: figures/IntroTrigGraphics/Angles-41.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-41.pdf" >
+File: figures/IntroTrigGraphics/Angles-42.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-42.pdf" >
+File: figures/IntroTrigGraphics/Angles-43.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-43.pdf" >
+File: figures/IntroTrigGraphics/Angles-44.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-44.pdf" >
+File: figures/IntroTrigGraphics/Angles-45.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-45.pdf" > [54]
+File: figures/IntroTrigGraphics/Angles-46.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-46.pdf" >
+File: figures/IntroTrigGraphics/Angles-47.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-47.pdf" >
+File: figures/IntroTrigGraphics/Angles-48.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-48.pdf" >
+File: figures/IntroTrigGraphics/Angles-49.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-49.pdf" >
+File: figures/IntroTrigGraphics/Angles-50.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-50.pdf" >
+File: figures/IntroTrigGraphics/Angles-51.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-51.pdf" >
+File: figures/IntroTrigGraphics/Angles-52.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-52.pdf" >
+File: figures/IntroTrigGraphics/Angles-53.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-53.pdf" > [55]
+File: figures/IntroTrigGraphics/Angles-54.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-54.pdf" >
+File: figures/IntroTrigGraphics/Angles-55.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-55.pdf" >
+File: figures/IntroTrigGraphics/Angles-56.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-56.pdf" >
+File: figures/IntroTrigGraphics/Angles-57.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-57.pdf" >
+File: figures/IntroTrigGraphics/Angles-58.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-58.pdf" >
+File: figures/IntroTrigGraphics/Angles-59.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-59.pdf" >
+File: figures/IntroTrigGraphics/Angles-60.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-60.pdf" > [56]
+File: figures/IntroTrigGraphics/Angles-61.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-61.pdf" >
+File: figures/IntroTrigGraphics/Angles-63.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-63.pdf" >
+File: figures/IntroTrigGraphics/Angles-64.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-64.pdf" >
+File: figures/IntroTrigGraphics/Angles-65.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/Angles-65.pdf" > [57] [58] [59] [60] [61]
+[62]
+File: figures/IntroTrigGraphics/TrigGraphs-22.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-22.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-23.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-23.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-24.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-24.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-25.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-25.pdf" > [63]
+File: figures/IntroTrigGraphics/TrigGraphs-26.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-26.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-27.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-27.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-28.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-28.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-29.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-29.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-30.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-30.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-31.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-31.pdf" > [64]
+File: figures/IntroTrigGraphics/TrigGraphs-32.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-32.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-33.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-33.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-34.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-34.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-35.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-35.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-36.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-36.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-37.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-37.pdf" >
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page A.65 might be wrong on input line 8
+6.
+
+[65]
+File: figures/IntroTrigGraphics/TrigGraphs-38.pdf Graphic file (type QTm)
+ <use  "figures/IntroTrigGraphics/TrigGraphs-38.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-39.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-39.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-40.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-40.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-41.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-41.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-42.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-42.pdf" > [66]
+File: figures/IntroTrigGraphics/TrigGraphs-43.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-43.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-44.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-44.pdf" >
+File: figures/IntroTrigGraphics/TrigGraphs-45.pdf Graphic file (type QTm)
+
+<use  "figures/IntroTrigGraphics/TrigGraphs-45.pdf" > [67]) [68]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -8219,7 +9883,7 @@ File: figures/ExpLogsGraphics/PURSUIT03.jpg Graphic file (type QTm)
 
 
 No file Math1010text.ind.
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [55
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [69
 
 
 
@@ -8243,11 +9907,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[56
+[70
 
-] [57
+] [71
 
-] [58
+] [72
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -8270,18 +9934,18 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[59
+[73
 
 ])
-Package atenddvi Info: Last page = 374.
- [60
+Package atenddvi Info: Last page = 468.
+ [74
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 230.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 244.
  (Math1010text.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 230.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 230.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 244.
 
 
 LaTeX Warning: There were undefined references.
@@ -8289,15 +9953,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 54431 strings out of 428755
- 1169095 string characters out of 3164219
- 1496718 words of memory out of 3000000
- 54785 multiletter control sequences out of 15000+200000
- 19664 words of font info for 145 fonts, out of 3000000 for 9000
+ 55978 strings out of 428755
+ 1201928 string characters out of 3164219
+ 1526323 words of memory out of 3000000
+ 55693 multiletter control sequences out of 15000+200000
+ 19704 words of font info for 150 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 62i,26n,88p,10385b,1060s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,30n,88p,10385b,1060s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010text.pdf (374 pages).
+Output written on Math1010text.pdf (468 pages).
