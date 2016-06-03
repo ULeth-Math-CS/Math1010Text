@@ -170,7 +170,7 @@ f(-x) & = & f(x) & \\
 
 Hence, $f$ is \sword{even}.  A plot of $f(x)$ using GeoGebra is given in Figure \ref{fig:evenodd1}.
 
-\mfigure{.5}{The graph of $f(x)$ in Example \ref{ex_evenodd}}{fig:evenodd1}{figures/RelationsandFunctionsGraphics/GoF-1.png}
+\mfigure{.5}{The graph of $f(x)$ in Example \ref{ex_evenodd}}{fig:evenodd1}{figures/RelationsandFunctionsGraphics/GoF-1}
 
 
 This suggests that the graph of $f$ is symmetric about the $y$-axis, as expected.
@@ -197,7 +197,7 @@ It doesn't appear that $g(-x)$ is equivalent to $g(x)$.  To prove this, we check
 \end{array} \]
 Hence, $g$ is odd: see Figure \ref{fig:evenodd2}.
 
-\mfigure{.18}{The graph of $g(x)$ in Example \ref{ex_evenodd}}{fig:evenodd2}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_02.png}
+\mfigure{.18}{The graph of $g(x)$ in Example \ref{ex_evenodd}}{fig:evenodd2}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_02}
 
 \item  \[ \begin{array}{rclr}   
 
@@ -211,7 +211,7 @@ h(-x) & = & \dfrac{-5x}{2 + x^3} & \\
 
 Once again, $h(-x)$ doesn't appear to be equivalent to $h(x)$.  We check with an $x$ value, for example, $h(1) = 5$ but $h(-1) = -\frac{5}{3}$.  This proves that $h$ is not even and it also shows $h$ is not odd. (Why?)  
 
-\mfigure{.8}{The graph of $h(x)$ in Example \ref{ex_evenodd}}{fig:evenodd3}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_03.png}
+\mfigure{.8}{The graph of $h(x)$ in Example \ref{ex_evenodd}}{fig:evenodd3}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_03}
 
 In Figure \ref{fig:evenodd3}, the graph of $h$ appears to be neither symmetric about the $y$-axis nor the origin.
 
@@ -243,7 +243,7 @@ i(x) & = & \dfrac{5x}{2x - x^3} & \\
 
 Hence, $i(x) = i(-x)$, so $i$ is even. See Figure \ref{fig:evenodd4} for the graph.
 
-\mfigure{.35}{The graph of $i(x)$ in Example \ref{ex_evenodd}}{fig:evenodd4}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_04.png}
+\mfigure{.35}{The graph of $i(x)$ in Example \ref{ex_evenodd}}{fig:evenodd4}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_04}
 
 \setlength{\extrarowheight}{8pt}
 
@@ -273,14 +273,14 @@ j(x) & = & x^2 - \dfrac{x}{100} - 1 & \\
 
 The expression $-j(x)$ doesn't seem to match $j(-x)$ either.  Testing $x = 2$ gives $j(2) = \frac{149}{50}$ and $j(-2) = \frac{151}{50}$, so $j$ is not odd, either. 
 
-\mfigure{.78}{The graph of $j(x)$ in Example \ref{ex_evenodd}}{fig:evenodd5}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_05.png}
+\mfigure{.78}{The graph of $j(x)$ in Example \ref{ex_evenodd}}{fig:evenodd5}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_05}
 
 Notice in Figure \ref{fig:evenodd5} that the computer plot seems to suggests that the graph of $j$ is symmetric about the $y$-axis which would imply that $j$ is even. However, we have proven that is not the case.  The problem is that the effect of the $x/100$ term is so small, our eyes don't detect it in the graph.
 
 
 \item Testing the graph of $y=p(x)$ for symmetry is complicated by the fact $p(x)$ is a piecewise-defined function.  As always, we handle this by checking the condition for symmetry by checking it on each piece of the domain.  We first consider the case when $x < 0$ and set about finding the correct expression for $p(-x)$.  Even though $p(x) = x+3$ for $x < 0$, $p(-x) \neq -x + 3$ here. The reason for this is that since $x < 0$, $-x > 0$ which means to find $p(-x)$, we need to use the \textit{other} formula for $p(x)$, namely $p(x) = -x+3$. Hence, for $x < 0$, $p(-x) = -(-x)+3 = x+3 = p(x)$.   For $x \geq 0$, $p(x) = -x+3$ and we have two cases.  If $x > 0$, then $-x < 0$ so $p(-x) = (-x)+3 = -x+3 = p(x)$.  If $x = 0$, then $p(0) = 3 = p(-0)$.  Hence, in all cases, $p(-x) = p(x)$, so $p$ is even. Since $p(0) = 3$ but $p(-0) = p(0) = 3 \neq -3$, we also have $p$ is not odd.  
 
-\mfigure{.53}{The graph of $p(x)$ in Example \ref{ex_evenodd}}{fig:evenodd6}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_06.png}
+\mfigure{.53}{The graph of $p(x)$ in Example \ref{ex_evenodd}}{fig:evenodd6}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_06}
  
 In Figure \ref{fig:evenodd6}, we see that the graph appears to be symmetric about the $y$-axis. 
 
@@ -541,7 +541,7 @@ In general, the problem of finding maximum and minimum values, requires the tech
 {
 Using GeoGebra, we enter \texttt{f(x) = 15x/(x\string^2+3)} to plot the graph of $f$. The command \texttt{Max[f,-3,3]} then calculates the maximum value of $f$ on the interval $[-3,3]$. Similarly, \texttt{Min[f,-3,3]} gives the minimum value of $f$ on the interval $[-3,3]$. The graph of $f$, together with the local maximum and local minimum, are plotted in Figure \ref{fig:maxmincomp1}.
 
-\mfigure{.3}{The local maximum and minimum of $f(x) = \dfrac{15x}{x^2+3}$ in Example \ref{ex_maxmincomp}}{fig:maxmincomp1}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_07.png}
+\mfigure{.3}{The local maximum and minimum of $f(x) = \dfrac{15x}{x^2+3}$ in Example \ref{ex_maxmincomp}}{fig:maxmincomp1}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_07}
 
 To two decimal places, $f$ appears to have its only local minimum at $(-1.73, -4.33)$ and its only local maximum at  $(1.73, 4.33)$.  Given the symmetry about the origin suggested by the graph, the relation between these points shouldn't be too surprising.  The function appears to be increasing on $[-1.73, 1.73]$ and decreasing on $(-\infty, -1.73] \cup [1.73,\infty)$.  This makes $-4.33$ the (absolute) minimum and $4.33$ the (absolute) maximum.
 }
@@ -569,7 +569,7 @@ d & = &  \sqrt{(x-0)^2+(y-0)^2} & \\
 
 Given a value for $x$, the formula $d =  \sqrt{x^2 + (x-3)^4} $ is the distance from $(0,0)$ to the point $(x,y)$ on the curve $y = (x-3)^2$.  What we have defined, then, is a function $d(x)$ which we wish to minimize over all values of $x$.  To accomplish this task analytically would require Calculus so as we've mentioned before, we can use a graphing calculator to find an approximate solution.   Using Geogebra, we enter the function $d(x)$ as shown below and graph.
 
-\mfigure{.8}{Minimizing $d(x)$ in Example \ref{distancefunctionex}}{fig:distfunctex}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_08.png}
+\mfigure{.8}{Minimizing $d(x)$ in Example \ref{distancefunctionex}}{fig:distfunctex}{figures/RelationsandFunctionsGraphics/GraphsofFunctions_08}
 
 Using the Minimum feature, we see above on the right that the (absolute) minimum occurs near $x=2$.  Rounding to two decimal places, we get that the minimum distance occurs when $x = 2.00$.  To find the $y$ value on the parabola associated with $x = 2.00$, we substitute $2.00$ into the equation to get $y = (x-3)^2 = (2.00-3)^2 = 1.00$.  So, our final answer is $(2.00,1.00).$
 }
