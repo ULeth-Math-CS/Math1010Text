@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  3 JUN 2016 16:31
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  6 JUN 2016 12:13
 entering extended mode
 **Math1010print.tex
 (Math1010print.tex
@@ -2749,11 +2749,108 @@ e (type QTm)
 <use  "figures/RelationsandFunctionsGraphics/CartesianPlane-35BW.pdf" >
 [33
 
-]) [34
+]) (text_pre/00_CmpNums.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 20--21
+[][][]
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 32--33
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+[34
 
 ]
+Overfull \hbox (4.87463pt too wide) in paragraph at lines 111--111
+\EU1/Calibri(0)/m/n/10 plicable to real numbers to get $[][] \OT1/cmr/m/n/10 = 
+[] [] = [][][] =
+ []
+
+[35]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 136--137
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Overfull \hbox (18.75052pt too wide) detected at line 144
+[] \OT1/cmr/m/n/10 = [] = ([] + []) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 ([] + 
+[])[] = [] + [] \OMS/cmsy/m/n/10 ^^@ [][] ^^@ [][] \OT1/cmr/m/n/10 = [] \OMS/cm
+sy/m/n/10 ^^@ [][] \OT1/cmr/m/n/10 + [] \OMS/cmsy/m/n/10 ^^@ [][] \OT1/cmr/m/n/
+10 = [] + []
+ []
+
+[36]
+Overfull \hbox (9.8671pt too wide) detected at line 222
+[]
+ []
+
+
+Underfull \hbox (badness 1655) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 it would be unfair to tackle quadratic
+ []
+
+[37]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 242--243
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
+
+ []
+
+[38] [39]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [40
+
+])
 Chapter 2.
 (text_pre/01_Relations.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 13--14
@@ -2793,7 +2890,10 @@ e QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-3BW.pdf Graphic file (typ
 e QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-3BW.pdf" > [35
+<use  "figures/RelationsandFunctionsGraphics/Relations-3BW.pdf" > [41
+
+
+
 
 ]
 File: figures/RelationsandFunctionsGraphics/Relations-8BW.pdf Graphic file (typ
@@ -2826,7 +2926,7 @@ e QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-7BW.pdf Graphic file (typ
 e QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-7BW.pdf" > [36]
+<use  "figures/RelationsandFunctionsGraphics/Relations-7BW.pdf" > [42]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 152--153
 [][][]
  []
@@ -2836,7 +2936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[37]
+[43]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 250--251
 [][][]
  []
@@ -2867,7 +2967,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][] 
  []
 
-[38]
+[44]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 298--299
 [][][]
  []
@@ -2877,15 +2977,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-[39]
+[45]
 File: figures/RelationsandFunctionsGraphics/Relations-11BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/RelationsandFunctionsGraphics/Relations-11BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-12BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-12BW.pdf" > [40]
-[41]
+<use  "figures/RelationsandFunctionsGraphics/Relations-12BW.pdf" > [46]
+[47]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -2944,7 +3044,7 @@ pe QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-20BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-20BW.pdf" > [42
+<use  "figures/RelationsandFunctionsGraphics/Relations-20BW.pdf" > [48
 
 ]
 File: figures/RelationsandFunctionsGraphics/Relations-21BW.pdf Graphic file (ty
@@ -2970,7 +3070,7 @@ m/n/9 ([]\OML/cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 (
 cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; []\OMS/cmsy/m/n/9 g$ 
  []
 
-[43] [44]) (text_pre/01_IntrotoFunctions.tex
+[49] [50]) (text_pre/01_IntrotoFunctions.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 11--12
 [][][]
  []
@@ -3023,7 +3123,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-2BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-2BW.pdf" >
-[45
+[51
 
 ]
 File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-5BW.pdf Graphic fi
@@ -3037,7 +3137,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-7BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-7BW.pdf" >
-[46]
+[52]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 124--125
 [][][]
  []
@@ -3062,7 +3162,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-10BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-10BW.pdf" >
-[47]
+[53]
 File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-11BW.pdf Graphic f
 ile (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-11BW.pdf" >
@@ -3070,7 +3170,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-12BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-12BW.pdf" >
-[48]
+[54]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -3154,7 +3254,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-22BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-22BW.pdf" >
-[49
+[55
 
 ]
 File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-23BW.pdf Graphic f
@@ -3196,7 +3296,7 @@ File: figures/RelationsandFunctionsGraphics/IntrotoFunctions-32BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/IntrotoFunctions-32BW.pdf" >
-[50]
+[56]
 Overfull \hbox (16.53235pt too wide) in paragraph at lines 236--236
 []$\OMS/cmsy/m/n/9 f[] \OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 (\OMS/cmsy/m/n/9 ^^@[]\
 OML/cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 (\OMS/cmsy/
@@ -3208,7 +3308,7 @@ m/n/9 ([]\OML/cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 (
 cmm/m/it/9 ; []\OT1/cmr/m/n/9 )\OML/cmm/m/it/9 ; []\OMS/cmsy/m/n/9 g$ 
  []
 
-[51]) (text_pre/01_FunctionNotation.tex
+[57]) (text_pre/01_FunctionNotation.tex
 File: figures/RelationsandFunctionsGraphics/FunctionNotation-1BW.pdf Graphic fi
 le (type QTm)
 
@@ -3217,15 +3317,15 @@ Overfull \hbox (22.49957pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[52
+[58
 
-] [53] [54] [55] [56] [57]
+] [59] [60] [61] [62] [63]
 Overfull \hbox (0.22742pt too wide) in paragraph at lines 274--275
 []\EU1/Calibri(0)/m/n/10 Mathematical modelling is not a one-section topic. It’
 s not even a one-\EU1/Calibri(0)/m/it/10 course
  []
 
-[58]
+[64]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -3258,9 +3358,9 @@ s not even a one-\EU1/Calibri(0)/m/it/10 course
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [59
+ [65
 
-] [60]
+] [66]
 Requested font "cmbx9" at 9.0pt
 Requested font "cmbx6" at 6.0pt
 Requested font "cmmib9" at 9.0pt
@@ -3271,7 +3371,7 @@ Requested font "cmbsy6" at 6.0pt
 Overfull \vbox (16.95634pt too high) has occurred while \output is active []
 
 
-[61]) (text_pre/01_FunctionArithmetic.tex
+[67]) (text_pre/01_FunctionArithmetic.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 24--25
 [][][]
  []
@@ -3281,7 +3381,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[62
+[68
 
 ]
 Overfull \hbox (14.14743pt too wide) in paragraph at lines 113--113
@@ -3289,7 +3389,7 @@ Overfull \hbox (14.14743pt too wide) in paragraph at lines 113--113
  expression $[] \OT1/cmr/m/n/10 ([]) =
  []
 
-[63]
+[69]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 126--127
 [][][]
  []
@@ -3299,18 +3399,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[64]
+[70]
 Overfull \hbox (3.91528pt too wide) in alignment at lines 211--211
  [] [] [] [] 
  []
 
-[65]
+[71]
 Overfull \hbox (1.14368pt too wide) in paragraph at lines 218--219
 []\EU1/Calibri(0)/m/n/10 As mentioned before, we will revisit difference quotie
 nts in Section []3.1[] where
  []
 
-[66]
+[72]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 242--243
 [][][]
  []
@@ -3326,7 +3426,7 @@ Overfull \hbox (0.61047pt too wide) in paragraph at lines 277--277
 pis’ – pronounced ‘dopeys’
  []
 
-[67] [68] [69]
+[73] [74] [75]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -3359,7 +3459,7 @@ pis’ – pronounced ‘dopeys’
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [70
+ [76
 
 ]
 Overfull \hbox (14.46515pt too wide) detected at line 282
@@ -3374,7 +3474,7 @@ m/n/9 )\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 ([]\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^
 n/9 )\OMS/cmsy/m/n/9 g\OML/cmm/m/it/9 :
  []
 
-[71]) (text_pre/01_GraphsofFunctions.tex
+[77]) (text_pre/01_GraphsofFunctions.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
 [][][]
  []
@@ -3387,7 +3487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-1BW.pdf Graphic f
 ile (type QTm)
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-1BW.pdf" >
-[72
+[78
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 88--89
@@ -3416,7 +3516,7 @@ Underfull \hbox (badness 1400) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Note that for graphs of functions, we
  []
 
-[73]
+[79]
 Underfull \hbox (badness 5008) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 A good resource when you need to
  []
@@ -3440,7 +3540,7 @@ Overfull \hbox (4.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[74]
+[80]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions_03BW.png Graphic 
 file (type QTm)
 
@@ -3456,7 +3556,7 @@ Overfull \hbox (4.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[75]
+[81]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions_05BW.png Graphic 
 file (type QTm)
 
@@ -3472,7 +3572,7 @@ Overfull \hbox (4.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[76]
+[82]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 331--332
 [][][]
  []
@@ -3494,7 +3594,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Typically, in (pre)calculus, whenever
  []
 
-[77]
+[83]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 371--372
 [][][]
  []
@@ -3511,7 +3611,7 @@ Overfull \hbox (23.6002pt too wide) has occurred while \output is active
  [][] 
  []
 
-[78]
+[84]
 Overfull \hbox (2.08667pt too wide) in paragraph at lines 532--532
 \EU1/Calibri(0)/m/n/10 sponds to a point on the graph is everything from $\OMS/
 cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/m/n/10 to $[]$, inclusive. Hence,
@@ -3524,7 +3624,7 @@ Overfull \hbox (23.6002pt too wide) has occurred while \output is active
  [][] 
  []
 
-[79]
+[85]
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 547
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd"
@@ -3550,7 +3650,7 @@ Overfull \hbox (2.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[80]
+[86]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions_08BW.png Graphic 
 file (type QTm)
 
@@ -3564,7 +3664,7 @@ Underfull \hbox (badness 1215) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 It seems silly to list a final answer as
  []
 
-[81]
+[87]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -3600,7 +3700,7 @@ Underfull \hbox (badness 1215) has occurred while \output is active
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-6BW.pdf Graphic f
 ile (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-6BW.pdf" >
-[82
+[88
 
 ]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-7BW.pdf Graphic f
@@ -3614,7 +3714,7 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-9BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-9BW.pdf" >
-[83]
+[89]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-10BW.pdf Graphic 
 file (type QTm)
 
@@ -3627,7 +3727,7 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-12BW.pdf Graphic
 file (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-12BW.pdf" >
-[84]
+[90]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-13BW.pdf Graphic 
 file (type QTm)
 
@@ -3644,7 +3744,7 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-16BW.pdf Graphic
 file (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-16BW.pdf" >
-[85]) (text_pre/01_Transformations.tex
+[91]) (text_pre/01_Transformations.tex
 File: figures/RelationsandFunctionsGraphics/Transformations-2BW.pdf Graphic fil
 e (type QTm)
 
@@ -3660,7 +3760,7 @@ Overfull \hbox (50.64285pt too wide) in paragraph at lines 30--39
 File: figures/RelationsandFunctionsGraphics/Transformations-1BW.pdf Graphic fil
 e (type QTm)
 <use  "figures/RelationsandFunctionsGraphics/Transformations-1BW.pdf" >
-[86
+[92
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 58--59
@@ -3675,7 +3775,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [87]
+ [93]
 File: figures/RelationsandFunctionsGraphics/Transformations-4BW.pdf Graphic fil
 e (type QTm)
 
@@ -3703,7 +3803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--190
 
  []
 
-[88]
+[94]
 File: figures/RelationsandFunctionsGraphics/Transformations-6BW.pdf Graphic fil
 e (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/Transformations-6BW.pdf" >
@@ -3723,7 +3823,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-14BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-14BW.pdf" >
-[89]
+[95]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 208--209
 [][][]
  []
@@ -3755,7 +3855,7 @@ Overfull \hbox (153.7087pt too wide) in paragraph at lines 238--247
  [][] 
  []
 
-[90]
+[96]
 File: figures/RelationsandFunctionsGraphics/Transformations-19BW.pdf Graphic fi
 le (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/Transformations-19BW.pdf" >
@@ -3771,7 +3871,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-24BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-24BW.pdf" >
-[91]
+[97]
 File: figures/RelationsandFunctionsGraphics/Transformations-26BW.pdf Graphic fi
 le (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/Transformations-26BW.pdf" >
@@ -3787,7 +3887,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-31BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-31BW.pdf" >
-[92]
+[98]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 351--352
 [][][]
  []
@@ -3816,7 +3916,7 @@ Overfull \hbox (14.99962pt too wide) has occurred while \output is active
  [][] 
  []
 
-[93]
+[99]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 428--429
 [][][]
  []
@@ -3837,7 +3937,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-41BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-41BW.pdf" >
-[94]
+[100]
 Overfull \hbox (23.56723pt too wide) in paragraph at lines 481--481
 []\EU1/Calibri(0)/m/n/10 We now examine what’s happening to the outputs. From $
 []\OT1/cmr/m/n/10 ([]) = \OMS/cmsy/m/n/10 ^^@[] [] \OT1/cmr/m/n/10 +
@@ -3881,7 +3981,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[95]
+[101]
 File: figures/RelationsandFunctionsGraphics/Transformations-50BW.pdf Graphic fi
 le (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/Transformations-50BW.pdf" >
@@ -3889,7 +3989,7 @@ Overfull \hbox (11.6002pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[96]
+[102]
 Overfull \hbox (4.6664pt too wide) in paragraph at lines 560--560
 []\EU1/Calibri(0)/m/n/10 Next, we take each of the $[]$ values and substitute t
 hem into $[]\OT1/cmr/m/n/10 ([]) = \OMS/cmsy/m/n/10 ^^@[][]\OT1/cmr/m/n/10 (\OM
@@ -3920,7 +4020,7 @@ Overfull \hbox (9.29395pt too wide) has occurred while \output is active
  [][] 
  []
 
-[97]
+[103]
 File: figures/RelationsandFunctionsGraphics/Trans06BW.jpg Graphic file (type QT
 m)
  <use  "figures/RelationsandFunctionsGraphics/Trans06BW.jpg" >
@@ -3948,7 +4048,7 @@ Overfull \hbox (7.67908pt too wide) has occurred while \output is active
  [][] 
  []
 
-[98]
+[104]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -3992,7 +4092,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-55BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-55BW.pdf" >
-[99
+[105
 
 ]
 File: figures/RelationsandFunctionsGraphics/Transformations-56BW.pdf Graphic fi
@@ -4010,7 +4110,7 @@ Overfull \hbox (13.68547pt too wide) in paragraph at lines 615--615
 [][] 
  []
 
-[100] [101]) [102
+[106] [107]) [108
 
 
 
@@ -4052,7 +4152,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []$[]$[] \EU1/Calibri(0)/m/n/9 for
  []
 
-[103
+[109
 
 ]
 File: figures/LinearQuadraticGraphics/LinearFunctions-4BW.pdf Graphic file (typ
@@ -4083,11 +4183,11 @@ Overfull \hbox (90.35002pt too wide) in paragraph at lines 107--107
 [][] 
  []
 
-[104]
+[110]
 File: figures/LinearQuadraticGraphics/LinearFunctions-8BW.pdf Graphic file (typ
 e QTm)
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-8BW.pdf" >
-[105]
+[111]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 172--173
 [][][]
  []
@@ -4119,7 +4219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
 File: figures/LinearQuadraticGraphics/LinearFunctions-9BW.pdf Graphic file (typ
 e QTm)
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-9BW.pdf" > [106]
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-9BW.pdf" > [112]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 219--220
 [][][]
  []
@@ -4135,7 +4235,7 @@ pe QTm)
 File: figures/LinearQuadraticGraphics/LinearFunctions-11BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-11BW.pdf" > [107]
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-11BW.pdf" > [113]
 Overfull \hbox (0.30496pt too wide) in paragraph at lines 314--314
 []\EU1/Calibri(0)/m/n/10 To find how many PortaBoys can be produced for $\OT1/c
 mr/m/n/10 $[][]\OML/cmm/m/it/10 ;  [][][]$\EU1/Calibri(0)/m/n/10 , we solve $[]
@@ -4148,8 +4248,8 @@ pe QTm)
 File: figures/LinearQuadraticGraphics/LinearFunctions-13BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-13BW.pdf" > [108]
-[109]
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-13BW.pdf" > [114]
+[115]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 363--364
 [][][]
  []
@@ -4159,11 +4259,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
-[110]
+[116]
 File: figures/LinearQuadraticGraphics/LinearFunctions-14BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-14BW.pdf" >
-[111] [112]
+[117] [118]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4196,7 +4296,7 @@ pe QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [113
+ [119
 
 ]
 File: figures/LinearQuadraticGraphics/LinearFunctions-15BW.pdf Graphic file (ty
@@ -4207,11 +4307,11 @@ Overfull \hbox (8.0877pt too wide) in paragraph at lines 429--429
  [] 
  []
 
-[114]
+[120]
 File: figures/LinearQuadraticGraphics/LinearFunctions-16BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-16BW.pdf" >
-[115]) (text_pre/02_AbsoluteValueFunctions.tex
+[121]) (text_pre/02_AbsoluteValueFunctions.tex
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1BW.pdf Graphic fi
 le (type QTm)
 
@@ -4235,9 +4335,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[116
+[122
 
-] [117] [118]
+] [123] [124]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-2BW.pdf Graphic fi
 le (type QTm)
 
@@ -4254,7 +4354,7 @@ Underfull \hbox (badness 1681) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 3.9: |Constructing the graph of
  []
 
-[119]
+[125]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5BW.pdf Graphic fi
 le (type QTm)
  <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5BW.pdf" >
@@ -4266,7 +4366,7 @@ File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-7BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-7BW.pdf" >
-[120]
+[126]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-8BW.pdf Graphic fi
 le (type QTm)
  <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-8BW.pdf" >
@@ -4282,12 +4382,12 @@ File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-14BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-14BW.pdf" >
-[121]
+[127]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15BW.pdf" >
-[122]
+[128]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-16BW.pdf Graphic f
 ile (type QTm)
 
@@ -4296,7 +4396,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[123]
+[129]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4333,7 +4433,7 @@ File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17BW.pdf" >
-[124
+[130
 
 ]) (text_pre/02_QuadraticFunctions.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
@@ -4358,7 +4458,7 @@ type QTm)
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-3BW.pdf Graphic file (
 type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-3BW.pdf" > [125
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-3BW.pdf" > [131
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 75--76
@@ -4382,7 +4482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-5BW.pdf Graphic file (
 type QTm)
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-5BW.pdf" > [126]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-5BW.pdf" > [132]
 Overfull \hbox (3.11539pt too wide) in paragraph at lines 102--103
 \EU1/Calibri(0)/m/n/10 paragraphs have also shown us the role of the number $[]
 $ in the graphs of quadratic
@@ -4394,7 +4494,7 @@ type QTm)
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-7BW.pdf Graphic file (
 type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-7BW.pdf" > [127]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-7BW.pdf" > [133]
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-8BW.pdf Graphic file (
 type QTm)
 
@@ -4402,7 +4502,7 @@ type QTm)
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-9BW.pdf Graphic file (
 type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-9BW.pdf" > [128]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-9BW.pdf" > [134]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 188--189
 [][][]
  []
@@ -4431,7 +4531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
 Underfull \vbox (badness 5711) has occurred while \output is active []
 
- [129]
+ [135]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 234--235
 [][][]
  []
@@ -4441,7 +4541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
-[130]
+[136]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 254--255
 [][][]
  []
@@ -4459,7 +4559,7 @@ Overfull \hbox (14.51698pt too wide) detected at line 301
 /10 :
  []
 
-[131]
+[137]
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-10BW.pdf Graphic file 
@@ -4470,7 +4570,7 @@ Overfull \hbox (9.11987pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[132]
+[138]
 Overfull \hbox (1.88101pt too wide) in paragraph at lines 323--323
 \EU1/Calibri(0)/m/n/10 Much to Donnie’s surprise and delight, he inherits a lar
 ge parcel of land in Ashtab-
@@ -4478,7 +4578,7 @@ ge parcel of land in Ashtab-
 
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-11BW.pdf Graphic file 
 (type QTm)
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-11BW.pdf" > [133]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-11BW.pdf" > [139]
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-12BW.pdf Graphic file 
 (type QTm)
 
@@ -4491,7 +4591,7 @@ Underfull \hbox (badness 4518) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 3.28: |Obtaining the graph of
  []
 
-[134]
+[140]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4524,21 +4624,9 @@ Underfull \hbox (badness 4518) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [135
+ [141
 
-]
-Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 8.0pt
- -> C:/WINDOWS/Fonts/calibrib.ttf
-
-
-LaTeX Warning: Reference `catenary' on page 136 undefined on input line 362.
-
-
-LaTeX Warning: Reference `ExpLogApplications' on page 136 undefined on input li
-ne 362.
-
-[136]) (text_pre/02_Inequalities.tex
+] [142]) (text_pre/02_Inequalities.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 67--68
 [][][]
  []
@@ -4563,7 +4651,7 @@ Overfull \hbox (13.73547pt too wide) has occurred while \output is active
  [][] 
  []
 
-[137
+[143
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 129--130
@@ -4592,7 +4680,7 @@ Tm)
 File: figures/LinearQuadraticGraphics/Inequalities-6BW.pdf Graphic file (type Q
 Tm)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-6BW.pdf" > [138]
+<use  "figures/LinearQuadraticGraphics/Inequalities-6BW.pdf" > [144]
 File: figures/LinearQuadraticGraphics/Inequalities-7BW.pdf Graphic file (type Q
 Tm)
 
@@ -4615,7 +4703,7 @@ Overfull \hbox (13.79848pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[139]
+[145]
 File: figures/LinearQuadraticGraphics/Inequalities-13BW.pdf Graphic file (type 
 QTm)
  <use  "figures/LinearQuadraticGraphics/Inequalities-13BW.pdf" >
@@ -4630,7 +4718,7 @@ QTm)
 File: figures/LinearQuadraticGraphics/Inequalities-12BW.pdf Graphic file (type 
 QTm)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-12BW.pdf" > [140]
+<use  "figures/LinearQuadraticGraphics/Inequalities-12BW.pdf" > [146]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 221--222
 [][][]
  []
@@ -4661,7 +4749,7 @@ Underfull \hbox (badness 1953) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 3.40: |Verifying the solution to
  []
 
-[141]
+[147]
 File: figures/LinearQuadraticGraphics/Inequalities-16BW.pdf Graphic file (type 
 QTm)
  <use  "figures/LinearQuadraticGraphics/Inequalities-16BW.pdf" >
@@ -4690,7 +4778,7 @@ QTm)
 File: figures/LinearQuadraticGraphics/Inequalities-21BW.pdf Graphic file (type 
 QTm)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-21BW.pdf" > [142]
+<use  "figures/LinearQuadraticGraphics/Inequalities-21BW.pdf" > [148]
 File: figures/LinearQuadraticGraphics/Inequalities-22BW.pdf Graphic file (type 
 QTm)
 
@@ -4703,7 +4791,7 @@ Overfull \hbox (4.70073pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[143]
+[149]
 File: figures/LinearQuadraticGraphics/Inequalities-24BW.pdf Graphic file (type 
 QTm)
  <use  "figures/LinearQuadraticGraphics/Inequalities-24BW.pdf" >
@@ -4714,7 +4802,7 @@ QTm)
 File: figures/LinearQuadraticGraphics/Inequalities-26BW.pdf Graphic file (type 
 QTm)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-26BW.pdf" > [144]
+<use  "figures/LinearQuadraticGraphics/Inequalities-26BW.pdf" > [150]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -4747,13 +4835,13 @@ QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [145
+ [151
 
 ]
 Missing character: There is no ϵ in font [cmmi10]/I/OT:mapping=tex-text;!
 Missing character: There is no ϵ in font [cmmi10]/I/OT:mapping=tex-text;!
 
-[146])
+[152])
 Chapter 4.
 (text_pre/03_GraphsofPolynomials.tex
 Overfull \hbox (0.89142pt too wide) in paragraph at lines 4--5
@@ -4771,7 +4859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[147
+[153
 
 
 
@@ -4792,14 +4880,14 @@ Underfull \hbox (badness 1406) has occurred while \output is active
 orms\EU1/Calibri(0)/m/n/9 .
  []
 
-[148]
+[154]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-1BW.pdf Graphic file (typ
 e QTm)
  <use  "figures/PolynomialsGraphics/GraphsofPolynomials-1BW.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-2BW.pdf Graphic file (typ
 e QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-2BW.pdf" > [149]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-2BW.pdf" > [155]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-6BW.pdf Graphic file (typ
 e QTm)
 
@@ -4826,7 +4914,7 @@ Overfull \hbox (16.13214pt too wide) has occurred while \output is active
  [][] 
  []
 
-[150]
+[156]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-11BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/PolynomialsGraphics/GraphsofPolynomials-11BW.pdf" >
@@ -4865,7 +4953,7 @@ e QTm)
 File: figures/PolynomialsGraphics/GraphsofPolynomials-10BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-10BW.pdf" > [151]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-10BW.pdf" > [157]
 Overfull \hbox (1.95032pt too wide) in paragraph at lines 297--298
 []\EU1/Calibri(0)/m/n/10 The notion of smoothness is what tells us graphically 
 that, for example, $[]\OT1/cmr/m/n/10 ([]) =
@@ -4909,7 +4997,7 @@ Underfull \hbox (badness 2134) has occurred while \output is active
 
 File: figures/PolynomialsGraphics/GraphsofPolynomials-14BW.pdf Graphic file (ty
 pe QTm)
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-14BW.pdf" > [152]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-14BW.pdf" > [158]
 Overfull \hbox (16.45343pt too wide) in paragraph at lines 351--351
 []$[]$ \EU1/Calibri(0)/m/n/10 First, we find the zeros of $[]$ by solving $[][]
 \OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )[]([] + []) [] =
@@ -4939,7 +5027,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[153]
+[159]
 File: figures/PolynomialsGraphics/EndBehaviour_nearBW.png Graphic file (type QT
 m)
  <use  "figures/PolynomialsGraphics/EndBehaviour_nearBW.png" >
@@ -4951,7 +5039,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
-[154]
+[160]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 410--411
 [][][]
  []
@@ -4979,7 +5067,7 @@ ity allow us to sketch
 
 File: figures/PolynomialsGraphics/GraphsofPolynomials-19BW.pdf Graphic file (ty
 pe QTm)
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-19BW.pdf" > [155]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-19BW.pdf" > [161]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5016,13 +5104,13 @@ Requested font "Calibri/BI/OT:script=latn;language=DFLT;mapping=tex-text;mappin
 g=tex-text;" at 9.0pt
  -> C:/WINDOWS/Fonts/calibriz.ttf
 
-[156
+[162
 
 ]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-20BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/PolynomialsGraphics/GraphsofPolynomials-20BW.pdf" >
-[157]) (text_pre/03_Polydivision.tex
+[163]) (text_pre/03_Polydivision.tex
 Overfull \hbox (0.42805pt too wide) in paragraph at lines 1--1
 []\EU1/Calibri(0)/bx/n/14.4 The Factor Theorem and the Remainder Theorem 
  []
@@ -5058,7 +5146,7 @@ Overfull \hbox (20.99957pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[158
+[164
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 60--61
@@ -5070,35 +5158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-(text_pre/03_SyntheticDivision.tex
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [159]
-[160]
-Overfull \hbox (7.01611pt too wide) in paragraph at lines 302--302
-[]\EU1/Calibri(0)/m/n/10 Since the dividend was a third degree polynomial, the 
-quotient is a quadratic
- []
-
-[161]) [162]
-Overfull \hbox (50.74515pt too wide) in paragraph at lines 204--205
-[]\EU1/Calibri(0)/m/n/10 From the first division, we get $[][][] \OMS/cmsy/m/n/
-10 ^^@ [][][] ^^@ [][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT
-1/cmr/m/n/10 = [] []$\EU1/Calibri(0)/m/n/10 .
- []
-
-[163]
-Overfull \hbox (5.96243pt too wide) in paragraph at lines 242--242
-[]\EU1/Calibri(0)/m/n/10 This gives us $[][][] \OMS/cmsy/m/n/10 ^^@ [][][] ^^@ 
-[][][][] \OT1/cmr/m/n/10 + [][][] \OMS/cmsy/m/n/10 ^^@ [] \OT1/cmr/m/n/10 = [][
-] [] [] ([])$\EU1/Calibri(0)/m/n/10 ,
- []
-
-
-LaTeX Warning: Reference `ComplexZeros' on page 164 undefined on input line 244
-.
-
-
+[165] [166]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 250--251
 [][][]
  []
@@ -5118,11 +5178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [164]
-[165]
+[167]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5155,9 +5211,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [166
+ [168
 
-] [167]) (text_pre/03_RealZeros.tex
+]) (text_pre/03_RealZeros.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 11--12
 [][][]
  []
@@ -5177,19 +5233,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[168
+[169
 
 ]
 File: figures/PolynomialsGraphics/RealZero1BW.png Graphic file (type QTm)
- <use  "figures/PolynomialsGraphics/RealZero1BW.png" > [169]
+ <use  "figures/PolynomialsGraphics/RealZero1BW.png" > [170] [171]
 File: figures/PolynomialsGraphics/RealZero2BW.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero2BW.png" > [170]
+<use  "figures/PolynomialsGraphics/RealZero2BW.png" >
+File: figures/PolynomialsGraphics/RealZero3BW.png Graphic file (type QTm)
 
-LaTeX Warning: Reference `AlgebraicFunctions' on page 171 undefined on input li
-ne 249.
+<use  "figures/PolynomialsGraphics/RealZero3BW.png" >
+File: figures/PolynomialsGraphics/RealZero4BW.png Graphic file (type QTm)
 
+<use  "figures/PolynomialsGraphics/RealZero4BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
 
+[172]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 268--269
 [][][]
  []
@@ -5199,58 +5261,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-File: figures/PolynomialsGraphics/RealZero3BW.png Graphic file (type QTm)
-<use  "figures/PolynomialsGraphics/RealZero3BW.png" >
-File: figures/PolynomialsGraphics/RealZero4BW.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero4BW.png" >
-Overfull \hbox (4.49954pt too wide) has occurred while \output is active
- [][][] 
- []
-
-[171]
 Overfull \hbox (1.10355pt too wide) in paragraph at lines 278--279
 []$[]$\EU1/Calibri(0)/m/n/10 As noted above, the variations of sign of $[]\OT1/
 cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 is $[]$. This means,
  []
 
-
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 302--302
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--302
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [172]
-[173]
-File: figures/PolynomialsGraphics/RealZeros_New-1BW.pdf Graphic file (type QTm)
-
- <use  "figures/PolynomialsGraphics/RealZeros_New-1BW.pdf" > [174]
+[173] [174]
 Underfull \hbox (badness 10000) in paragraph at lines 538--538
 
  []
 
+File: figures/PolynomialsGraphics/RealZeros_New-1BW.pdf Graphic file (type QTm)
 
+<use  "figures/PolynomialsGraphics/RealZeros_New-1BW.pdf" >
 Underfull \hbox (badness 4266) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 We don’t use the word “impossible”
  []
 
 [175]
-Overfull \hbox (3.09503pt too wide) in paragraph at lines 577--577
-\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
-m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
-m/m/it/10 >
- []
-
 File: figures/PolynomialsGraphics/RealZeros_New-2BW.pdf Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZeros_New-2BW.pdf" >
+ <use  "figures/PolynomialsGraphics/RealZeros_New-2BW.pdf" >
 File: figures/PolynomialsGraphics/RealZero5BW.png Graphic file (type QTm)
 
 <use  "figures/PolynomialsGraphics/RealZero5BW.png" >
@@ -5261,12 +5293,19 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
+[176]
+Overfull \hbox (3.09503pt too wide) in paragraph at lines 577--577
+\EU1/Calibri(0)/m/n/10 factor out the $\OMS/cmsy/m/n/10 ^^@[]$ \EU1/Calibri(0)/
+m/n/10 common to all the coefficients to get $\OMS/cmsy/m/n/10 ^^@[] [] \OML/cm
+m/m/it/10 >
+ []
+
 File: figures/PolynomialsGraphics/RealZeros_New-3BW.pdf Graphic file (type QTm)
 
 <use  "figures/PolynomialsGraphics/RealZeros_New-3BW.pdf" >
 File: figures/PolynomialsGraphics/RealZero7BW.png Graphic file (type QTm)
 
-<use  "figures/PolynomialsGraphics/RealZero7BW.png" > [176]
+<use  "figures/PolynomialsGraphics/RealZero7BW.png" > [177]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5299,9 +5338,109 @@ File: figures/PolynomialsGraphics/RealZero7BW.png Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [177
+ [178
 
-] [178])
+] [179])
+(text_pre/03_ComplexZeros.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 14--15
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 2326) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The Fundamental Theorem of Algebra
+ []
+
+[180
+
+]
+Underfull \hbox (badness 1845) in paragraph at lines 30--30
+\EU1/Calibri(0)/m/n/10 If the degree of $[]$ is $[]$ and $[] \OMS/cmsy/m/n/10 ^
+^U []$\EU1/Calibri(0)/m/n/10 , then $[]$ has exactly $[]$ com-
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 30--31
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Overfull \hbox (2.79843pt too wide) in paragraph at lines 116--116
+\EU1/Calibri(0)/m/n/10 function. At that point, we can find the remaining zeros
+ using the Quadratic
+ []
+
+
+Underfull \hbox (badness 6188) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 We don’t really recommend jumping
+ []
+
+[181]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 127--128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[182]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 150--151
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+[183] [184] [185]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [186
+
+])
 Chapter 5.
 (text_pre/04_IntroRational.tex
 Overfull \hbox (0.16711pt too wide) in paragraph at lines 4--5
@@ -5321,10 +5460,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
 
 Underfull \hbox (badness 1205) has occurred while \output is active
-[]\EU1/Calibri(0)/m/n/9 According to Definition []38[], all polyno-
+[]\EU1/Calibri(0)/m/n/9 According to Definition []40[], all polyno-
  []
 
-[179
+[187
 
 
 
@@ -5334,7 +5473,7 @@ Overfull \hbox (40.93425pt too wide) detected at line 72
 []
  []
 
-[180]
+[188]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 143--144
 [][][]
  []
@@ -5365,7 +5504,7 @@ Overfull \hbox (18.06357pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[181]
+[189]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 201--203
 [][][]
  []
@@ -5384,7 +5523,7 @@ Overfull \hbox (8.9202pt too wide) has occurred while \output is active
  []
 
 File: figures/RationalsGraphics/IntroRational-1BW.pdf Graphic file (type QTm)
-<use  "figures/RationalsGraphics/IntroRational-1BW.pdf" > [182]
+<use  "figures/RationalsGraphics/IntroRational-1BW.pdf" > [190]
 File: figures/RationalsGraphics/Rationals02BW.png Graphic file (type QTm)
 
 <use  "figures/RationalsGraphics/Rationals02BW.png" >
@@ -5396,7 +5535,7 @@ File: figures/RationalsGraphics/Rationals04BW.png Graphic file (type QTm)
 <use  "figures/RationalsGraphics/Rationals04BW.png" >
 File: figures/RationalsGraphics/Rationals05BW.png Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/Rationals05BW.png" > [183]
+<use  "figures/RationalsGraphics/Rationals05BW.png" > [191]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 309--310
 [][][]
  []
@@ -5407,7 +5546,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--310
  []
 
 File: figures/RationalsGraphics/DoomsdayBW.png Graphic file (type QTm)
-<use  "figures/RationalsGraphics/DoomsdayBW.png" > [184]
+<use  "figures/RationalsGraphics/DoomsdayBW.png" > [192]
 File: figures/RationalsGraphics/Rationals06BW.png Graphic file (type QTm)
 
 <use  "figures/RationalsGraphics/Rationals06BW.png" >
@@ -5421,7 +5560,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
-[185]
+[193]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 442--443
 [][][]
  []
@@ -5443,7 +5582,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[186]
+[194]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 454--455
 [][][]
  []
@@ -5453,7 +5592,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
 
-[187]
+[195]
 File: figures/RationalsGraphics/SAEX01BW.png Graphic file (type QTm)
  <use  "figures/RationalsGraphics/SAEX01BW.png" >
 File: figures/RationalsGraphics/SAEX02BW.png Graphic file (type QTm)
@@ -5469,7 +5608,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 File: figures/RationalsGraphics/SAEX03BW.png Graphic file (type QTm)
-<use  "figures/RationalsGraphics/SAEX03BW.png" > [188]
+<use  "figures/RationalsGraphics/SAEX03BW.png" > [196]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5502,7 +5641,7 @@ File: figures/RationalsGraphics/SAEX03BW.png Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [189
+ [197
 
 ])
 (text_pre/04_RationalGraphs.tex
@@ -5537,7 +5676,7 @@ Underfull \hbox (badness 1024) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 5.20: |The sign diagram for the
  []
 
-[190
+[198
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 65--66
@@ -5549,7 +5688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[191] [192]
+[199] [200]
 File: figures/RationalsGraphics/RationalGraphs-3BW.pdf Graphic file (type QTm)
  <use  "figures/RationalsGraphics/RationalGraphs-3BW.pdf" >
 File: figures/RationalsGraphics/RationalGraphs-4BW.pdf Graphic file (type QTm)
@@ -5560,7 +5699,7 @@ File: figures/RationalsGraphics/RationalGraphs-5BW.pdf Graphic file (type QTm)
 <use  "figures/RationalsGraphics/RationalGraphs-5BW.pdf" >
 File: figures/RationalsGraphics/RationalGraphs-6BW.pdf Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/RationalGraphs-6BW.pdf" > [193] [194]
+<use  "figures/RationalsGraphics/RationalGraphs-6BW.pdf" > [201] [202]
 Overfull \hbox (0.26819pt too wide) in paragraph at lines 205--205
 []\EU1/Calibri(0)/m/n/10 Since the degrees of the numerator and denominator of 
 $[]\OT1/cmr/m/n/10 ([])$ \EU1/Calibri(0)/m/n/10 are the same,
@@ -5573,7 +5712,7 @@ File: figures/RationalsGraphics/RationalGraphs-8BW.pdf Graphic file (type QTm)
 <use  "figures/RationalsGraphics/RationalGraphs-8BW.pdf" >
 File: figures/RationalsGraphics/RationalGraphs-9BW.pdf Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/RationalGraphs-9BW.pdf" > [195]
+<use  "figures/RationalsGraphics/RationalGraphs-9BW.pdf" > [203]
 Overfull \hbox (0.19537pt too wide) in paragraph at lines 264--264
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[]$\EU1/Calibri(0)/m/n/10 . To make th
 is exclusion specific, we write $[]\OT1/cmr/m/n/10 ([]) = []$\EU1/Calibri(0)/m/
@@ -5582,7 +5721,7 @@ n/10 ,
 
 File: figures/RationalsGraphics/RationalGraphs-10BW.pdf Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/RationalGraphs-10BW.pdf" > [196]
+<use  "figures/RationalsGraphics/RationalGraphs-10BW.pdf" > [204]
 File: figures/RationalsGraphics/RationalGraphs-11BW.pdf Graphic file (type QTm)
 
 
@@ -5598,7 +5737,7 @@ File: figures/RationalsGraphics/RationalGraphs-13BW.pdf Graphic file (type QTm)
 File: figures/RationalsGraphics/RationalGraphs-14BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/RationalsGraphics/RationalGraphs-14BW.pdf" > [197]
+<use  "figures/RationalsGraphics/RationalGraphs-14BW.pdf" > [205]
 Overfull \hbox (12.82013pt too wide) in paragraph at lines 306--307
 []\EU1/Calibri(0)/m/n/10 As usual, the authors offer no apologies for what may 
 be construed as ‘pedantry’
@@ -5618,7 +5757,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[198]
+[206]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5651,14 +5790,14 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [199
+ [207
 
 ]) (text_pre/04_RationalIneq.tex
 Underfull \hbox (badness 10000) in paragraph at lines 68--68
 
  []
 
-[200
+[208
 
 ]
 Overfull \hbox (7.24069pt too wide) in paragraph at lines 138--138
@@ -5678,29 +5817,29 @@ File: figures/RationalsGraphics/Rationals10BW.png Graphic file (type QTm)
 <use  "figures/RationalsGraphics/Rationals10BW.png" >
 File: figures/RationalsGraphics/Rationals11BW.png Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/Rationals11BW.png" > [201]
+<use  "figures/RationalsGraphics/Rationals11BW.png" > [209]
 Overfull \hbox (18.23236pt too wide) detected at line 138
 []
  []
 
-[202]
+[210]
 Overfull \hbox (4.33409pt too wide) in paragraph at lines 190--190
 []\EU1/Calibri(0)/m/n/10 From this, we find that the rate of Taylor and Carl wo
 rking together is $[] \OT1/cmr/m/n/10 =
  []
 
-[203]
+[211]
 File: figures/RationalsGraphics/RationalIneq-2BW.pdf Graphic file (type QTm)
- <use  "figures/RationalsGraphics/RationalIneq-2BW.pdf" > [204]
+ <use  "figures/RationalsGraphics/RationalIneq-2BW.pdf" > [212]
 File: figures/RationalsGraphics/RationalIneq-3BW.pdf Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/RationalIneq-3BW.pdf" > [205]
+<use  "figures/RationalsGraphics/RationalIneq-3BW.pdf" > [213]
 File: figures/RationalsGraphics/RationalIneq-4BW.pdf Graphic file (type QTm)
 
 <use  "figures/RationalsGraphics/RationalIneq-4BW.pdf" >
 File: figures/RationalsGraphics/Rationals12BW.png Graphic file (type QTm)
 
-<use  "figures/RationalsGraphics/Rationals12BW.png" > [206]
+<use  "figures/RationalsGraphics/Rationals12BW.png" > [214]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 330--331
 [][][]
  []
@@ -5710,7 +5849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-[207] [208]
+[215] [216]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5743,16 +5882,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [209
+ [217
 
-] [210])
+] [218])
 Chapter 6.
 (text_pre/05_FunctionComposition.tex
-
-LaTeX Warning: Reference `realfactorization' on page 211 undefined on input lin
-e 5.
-
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 12--13
 [][][]
  []
@@ -5762,13 +5896,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-
-LaTeX Warning: Reference `complexfactorization' on page 211 undefined on input 
-line 21.
-
 File: figures/FurtherGraphics/FunctionComposition-1BW.pdf Graphic file (type QT
 m)
-<use  "figures/FurtherGraphics/FunctionComposition-1BW.pdf" > [211
+<use  "figures/FurtherGraphics/FunctionComposition-1BW.pdf" > [219
 
 
 
@@ -5777,12 +5907,12 @@ m)
 File: figures/FurtherGraphics/FunctionComposition-2BW.pdf Graphic file (type QT
 m)
 
-<use  "figures/FurtherGraphics/FunctionComposition-2BW.pdf" > [212] [213]
+<use  "figures/FurtherGraphics/FunctionComposition-2BW.pdf" > [220] [221]
 File: figures/FurtherGraphics/FunctionComposition-3BW.pdf Graphic file (type QT
 m)
 
-<use  "figures/FurtherGraphics/FunctionComposition-3BW.pdf" > [214] [215]
-[216]
+<use  "figures/FurtherGraphics/FunctionComposition-3BW.pdf" > [222] [223]
+[224]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 286--287
 [][][]
  []
@@ -5792,7 +5922,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
-[217] [218] [219]
+[225] [226] [227]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -5825,7 +5955,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [220
+ [228
 
 ]
 Overfull \hbox (14.46515pt too wide) detected at line 330
@@ -5851,7 +5981,7 @@ Overfull \hbox (1.48386pt too wide) in paragraph at lines 330--330
  [] 
  []
 
-[221]) (text_pre/05_InverseFunctions.tex
+[229]) (text_pre/05_InverseFunctions.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 45--46
 [][][]
  []
@@ -5872,7 +6002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
  []
 
 File: figures/FurtherGraphics/InverseFunctions-1BW.pdf Graphic file (type QTm)
-<use  "figures/FurtherGraphics/InverseFunctions-1BW.pdf" > [222
+<use  "figures/FurtherGraphics/InverseFunctions-1BW.pdf" > [230
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 91--92
@@ -5890,7 +6020,7 @@ Underfull \hbox (badness 2261) has occurred while \output is active
 \EU1/Calibri(0)/m/n/9 tion composition standpoint, however,
  []
 
-[223]
+[231]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 121--122
 [][][]
  []
@@ -5927,10 +6057,10 @@ File: figures/FurtherGraphics/InverseFunctions-4BW.pdf Graphic file (type QTm)
 <use  "figures/FurtherGraphics/InverseFunctions-4BW.pdf" >
 File: figures/FurtherGraphics/InverseFunctions-5BW.pdf Graphic file (type QTm)
 
-<use  "figures/FurtherGraphics/InverseFunctions-5BW.pdf" > [224]
+<use  "figures/FurtherGraphics/InverseFunctions-5BW.pdf" > [232]
 File: figures/FurtherGraphics/InverseFunctions-6BW.pdf Graphic file (type QTm)
 
-<use  "figures/FurtherGraphics/InverseFunctions-6BW.pdf" > [225]
+<use  "figures/FurtherGraphics/InverseFunctions-6BW.pdf" > [233]
 Overfull \hbox (12.38034pt too wide) detected at line 251
 []
  []
@@ -5956,11 +6086,11 @@ File: figures/FurtherGraphics/InverseFunctions-8BW.pdf Graphic file (type QTm)
 <use  "figures/FurtherGraphics/InverseFunctions-8BW.pdf" >
 File: figures/FurtherGraphics/InverseFunctions-9BW.pdf Graphic file (type QTm)
 
-<use  "figures/FurtherGraphics/InverseFunctions-9BW.pdf" > [226] [227]
+<use  "figures/FurtherGraphics/InverseFunctions-9BW.pdf" > [234] [235]
 File: figures/FurtherGraphics/InverseFunctions-10BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/FurtherGraphics/InverseFunctions-10BW.pdf" > [228]
+<use  "figures/FurtherGraphics/InverseFunctions-10BW.pdf" > [236]
 Underfull \vbox (badness 2096) has occurred while \output is active []
 
 File: figures/FurtherGraphics/InverseFunctions-11BW.pdf Graphic file (type QTm)
@@ -5974,7 +6104,7 @@ File: figures/FurtherGraphics/InverseFunctions-12BW.pdf Graphic file (type QTm)
 File: figures/FurtherGraphics/InverseFunctions-13BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/FurtherGraphics/InverseFunctions-13BW.pdf" > [229]
+<use  "figures/FurtherGraphics/InverseFunctions-13BW.pdf" > [237]
 File: figures/FurtherGraphics/InverseFunctions-14BW.pdf Graphic file (type QTm)
 
 
@@ -5982,7 +6112,7 @@ File: figures/FurtherGraphics/InverseFunctions-14BW.pdf Graphic file (type QTm)
 File: figures/FurtherGraphics/InverseFunctions-15BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/FurtherGraphics/InverseFunctions-15BW.pdf" > [230]
+<use  "figures/FurtherGraphics/InverseFunctions-15BW.pdf" > [238]
 File: figures/FurtherGraphics/InverseFunctions-16BW.pdf Graphic file (type QTm)
 
 
@@ -6002,7 +6132,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[231]
+[239]
 Overfull \hbox (5.2894pt too wide) in paragraph at lines 558--558
 []\EU1/Calibri(0)/m/n/10 We compute $[] \OT1/cmr/m/n/10 ([]) = [] [] = [] [] = 
 \OMS/cmsy/m/n/10 ^^@[]\OML/cmm/m/it/10 :[] [][] \OT1/cmr/m/n/10 +
@@ -6014,7 +6144,7 @@ Overfull \hbox (0.3342pt too wide) in paragraph at lines 558--558
 1/cmr/m/n/10 = [] ([])$ \EU1/Calibri(0)/m/n/10 is a parabola
  []
 
-[232]
+[240]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6047,9 +6177,213 @@ Overfull \hbox (0.3342pt too wide) in paragraph at lines 558--558
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [233
+ [241
 
-]) [234
+]) (text_pre/05_AlgebraicFunctions.tex
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 64--65
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+File: figures/FurtherGraphics/AlgebraicFunctions-1BW.pdf Graphic file (type QTm
+)
+<use  "figures/FurtherGraphics/AlgebraicFunctions-1BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-2BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-2BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-3BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-3BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-4BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-4BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-5BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-5BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-6BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-6BW.pdf" > [242
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 81--82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 110--111
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1648) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 As mentioned in Section []3.2[], $[]\OT1/cmr/m/n/9 ([])
+ =
+ []
+
+[243]
+File: figures/FurtherGraphics/AlgebraicFunctions-7BW.pdf Graphic file (type QTm
+)
+ <use  "figures/FurtherGraphics/AlgebraicFunctions-7BW.pdf" >
+File: figures/FurtherGraphics/Algebraic01BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic01BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[244]
+File: figures/FurtherGraphics/AlgebraicFunctions-8BW.pdf Graphic file (type QTm
+)
+ <use  "figures/FurtherGraphics/AlgebraicFunctions-8BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-9BW.pdf Graphic file (type QTm
+)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-9BW.pdf" >
+File: figures/FurtherGraphics/Algebraic02BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic02BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/FurtherGraphics/AlgebraicFunctions-10BW.pdf Graphic file (type QT
+m)
+<use  "figures/FurtherGraphics/AlgebraicFunctions-10BW.pdf" >
+File: figures/FurtherGraphics/Algebraic03BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic03BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/FurtherGraphics/AlgebraicFunctions-11BW.pdf Graphic file (type QT
+m)
+<use  "figures/FurtherGraphics/AlgebraicFunctions-11BW.pdf" > [245]
+File: figures/FurtherGraphics/AlgebraicFunctions-12BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-12BW.pdf" >
+File: figures/FurtherGraphics/Algebraic04BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic04BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+[246]
+Overfull \hbox (8.23042pt too wide) in paragraph at lines 309--309
+\EU1/Calibri(0)/m/n/10 Setting the denominator equal to zero we get $\OT1/cmr/m
+/n/10 ([] \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 )[] = []$\EU1/Calibri(0)/m/n/1
+0 , or $[] \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (28.89302pt too wide) detected at line 309
+[]
+ []
+
+
+Overfull \hbox (34.1399pt too wide) detected at line 309
+[]
+ []
+
+File: figures/FurtherGraphics/AlgebraicFunctions-13BW.pdf Graphic file (type QT
+m)
+<use  "figures/FurtherGraphics/AlgebraicFunctions-13BW.pdf" >
+File: figures/FurtherGraphics/Algebraic05BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic05BW.png" >
+Overfull \hbox (4.49954pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/FurtherGraphics/Algebraic06BW.png Graphic file (type QTm)
+<use  "figures/FurtherGraphics/Algebraic06BW.png" >
+File: figures/FurtherGraphics/Algebraic07BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic07BW.png" > [247]
+File: figures/FurtherGraphics/AlgebraicFunctions-14BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-14BW.pdf" >
+File: figures/FurtherGraphics/Algebraic08BW.png Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/Algebraic08BW.png" >
+Overfull \hbox (23.79793pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/FurtherGraphics/AlgebraicFunctions-15BW.pdf Graphic file (type QT
+m)
+<use  "figures/FurtherGraphics/AlgebraicFunctions-15BW.pdf" > [248] [249]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+[250
+
+] [251]) [252
 
 
 
@@ -6079,7 +6413,7 @@ Underfull \hbox (badness 2772) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 To fully understand the argument we
  []
 
-[235
+[253
 
 ]
 Requested font "Calibri/BI/OT:script=latn;language=DFLT;mapping=tex-text;mappin
@@ -6117,26 +6451,13 @@ File: figures/ExpLogsGraphics/IntroExpLogs-2BW.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/IntroExpLogs-2BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-3BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-3BW.pdf" > [236]
-
-LaTeX Warning: Reference `ExpLogApplications' on page 237 undefined on input li
-ne 131.
-
-[237]
-
-LaTeX Warning: Reference `ExpLogApplications' on page 238 undefined on input li
-ne 172.
-
+<use  "figures/ExpLogsGraphics/IntroExpLogs-3BW.pdf" > [254] [255]
 File: figures/ExpLogsGraphics/IntroExpLogs-6BW.pdf Graphic file (type QTm)
+
 <use  "figures/ExpLogsGraphics/IntroExpLogs-6BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-7BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-7BW.pdf" >
-
-LaTeX Warning: Reference `ExpLogApplications' on page 238 undefined on input li
-ne 211.
-
-[238]
+<use  "figures/ExpLogsGraphics/IntroExpLogs-7BW.pdf" > [256]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 220--221
 [][][]
  []
@@ -6160,7 +6481,7 @@ File: figures/ExpLogsGraphics/IntroExpLogs-8BW.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/IntroExpLogs-8BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-9BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-9BW.pdf" > [239]
+<use  "figures/ExpLogsGraphics/IntroExpLogs-9BW.pdf" > [257]
 File: figures/ExpLogsGraphics/IntroExpLogs-12BW.pdf Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/IntroExpLogs-12BW.pdf" >
@@ -6194,14 +6515,14 @@ LaTeX Font Warning: Command \boldmath invalid in math mode on input line 326.
 LaTeX Font Warning: Command \mathversion invalid in math mode on input line 326
 .
 
-[240]
+[258]
 Overfull \hbox (11.44408pt too wide) in paragraph at lines 371--371
 \EU1/Calibri(0)/m/n/10 as a power of $[][]$. We have $[]\OML/cmm/m/it/10 :[][][
 ] \OT1/cmr/m/n/10 = [] = [] = [][][]$\EU1/Calibri(0)/m/n/10 . Hence, $[]\OT1/cm
 r/m/n/10 ([]\OML/cmm/m/it/10 :[][][]\OT1/cmr/m/n/10 ) =
  []
 
-[241]
+[259]
 Overfull \hbox (1.97113pt too wide) in paragraph at lines 409--410
 []\EU1/Calibri(0)/m/n/10 While logarithms have some interesting applications of
  their own which you’ll
@@ -6222,12 +6543,12 @@ Overfull \hbox (13.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[242]
+[260]
 File: figures/ExpLogsGraphics/IntroExpLogs-15BW.pdf Graphic file (type QTm)
  <use  "figures/ExpLogsGraphics/IntroExpLogs-15BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-16BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-16BW.pdf" > [243]
+<use  "figures/ExpLogsGraphics/IntroExpLogs-16BW.pdf" > [261]
 File: figures/ExpLogsGraphics/IntroExpLogs-17BW.pdf Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/IntroExpLogs-17BW.pdf" >
@@ -6241,7 +6562,7 @@ Overfull \hbox (8.9996pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[244]
+[262]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6274,9 +6595,9 @@ Overfull \hbox (8.9996pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [245
+ [263
 
-] [246] [247]) (text_pre/06_LogProperties.tex
+] [264] [265]) (text_pre/06_LogProperties.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 20--21
 [][][]
  []
@@ -6297,10 +6618,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
  []
 
 
-LaTeX Warning: Reference `AlgebraicFunctions' on page 248 undefined on input li
-ne 41.
-
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 56--57
 [][][]
  []
@@ -6313,7 +6630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [248
+ [266
 
 ]
 Underfull \hbox (badness 1527) in paragraph at lines 75--75
@@ -6332,7 +6649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[249]
+[267]
 Underfull \hbox (badness 6001) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Interestingly enough, expanding loga-
  []
@@ -6343,7 +6660,7 @@ Underfull \hbox (badness 6141) has occurred while \output is active
 Calibri(0)/m/n/9 process
  []
 
-[250] [251] [252]
+[268] [269] [270]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 255--256
 [][][]
  []
@@ -6356,7 +6673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [253]
+ [271]
 Underfull \hbox (badness 1062) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 While, in the grand scheme of things,
  []
@@ -6367,14 +6684,14 @@ Overfull \hbox (12.9996pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[254]
+[272]
 File: figures/ExpLogsGraphics/ExpLogs04BW.png Graphic file (type QTm)
  <use  "figures/ExpLogsGraphics/ExpLogs04BW.png" >
 Overfull \hbox (14.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[255]
+[273]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6407,9 +6724,9 @@ Overfull \hbox (14.99959pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [256
+ [274
 
-] [257]) (text_pre/06_ExpEquations.tex
+] [275]) (text_pre/06_ExpEquations.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 41--42
 [][][]
  []
@@ -6427,7 +6744,7 @@ Underfull \hbox (badness 2027) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Please resist the temptation to divide
  []
 
-[258
+[276
 
 ]
 File: figures/ExpLogsGraphics/ExpLogs05BW.png Graphic file (type QTm)
@@ -6454,13 +6771,9 @@ Overfull \hbox (15.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[259]
-
-LaTeX Warning: Reference `AlgebraicFunctions' on page 260 undefined on input li
-ne 139.
-
+[277]
 File: figures/ExpLogsGraphics/ExpLogs09BW.png Graphic file (type QTm)
-<use  "figures/ExpLogsGraphics/ExpLogs09BW.png" >
+ <use  "figures/ExpLogsGraphics/ExpLogs09BW.png" >
 Overfull \hbox (12.9996pt too wide) has occurred while \output is active
  [][][] 
  []
@@ -6471,7 +6784,7 @@ Overfull \hbox (15.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[260]
+[278]
 File: figures/ExpLogsGraphics/ExpEquations-1BW.pdf Graphic file (type QTm)
  <use  "figures/ExpLogsGraphics/ExpEquations-1BW.pdf" >
 File: figures/ExpLogsGraphics/ExpLogs11BW.png Graphic file (type QTm)
@@ -6490,7 +6803,7 @@ Overfull \hbox (20.9996pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[261]
+[279]
 File: figures/ExpLogsGraphics/ExpEquations-3BW.pdf Graphic file (type QTm)
  <use  "figures/ExpLogsGraphics/ExpEquations-3BW.pdf" >
 File: figures/ExpLogsGraphics/ExpLogs13BW.png Graphic file (type QTm)
@@ -6504,7 +6817,7 @@ File: figures/ExpLogsGraphics/ExpEquations-4BW.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/ExpEquations-4BW.pdf" >
 File: figures/ExpLogsGraphics/ExpEquations-5BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/ExpEquations-5BW.pdf" > [262]
+<use  "figures/ExpLogsGraphics/ExpEquations-5BW.pdf" > [280]
 File: figures/ExpLogsGraphics/ExpLogs14BW.png Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/ExpLogs14BW.png" >
@@ -6512,7 +6825,7 @@ Overfull \hbox (11.9996pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[263]
+[281]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6545,9 +6858,9 @@ Overfull \hbox (11.9996pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [264
+ [282
 
-] [265]) (text_pre/06_LogEquations.tex
+] [283]) (text_pre/06_LogEquations.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 25--26
 [][][]
  []
@@ -6575,15 +6888,11 @@ Overfull \hbox (15.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[266
+[284
 
 ]
-
-LaTeX Warning: Reference `fig:logeqn5' on page 267 undefined on input line 114.
-
-
 File: figures/ExpLogsGraphics/ExpLogs17BW.png Graphic file (type QTm)
-<use  "figures/ExpLogsGraphics/ExpLogs17BW.png" >
+ <use  "figures/ExpLogsGraphics/ExpLogs17BW.png" >
 Overfull \hbox (11.9996pt too wide) has occurred while \output is active
  [][][] 
  []
@@ -6606,7 +6915,7 @@ Overfull \hbox (14.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[267]
+[285]
 Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []$[][] \OML/cmm/m/it/10 <
  []
@@ -6629,7 +6938,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[268]
+[286]
 Underfull \vbox (badness 7397) has occurred while \output is active []
 
 File: figures/ExpLogsGraphics/LogEquations-3BW.pdf Graphic file (type QTm)
@@ -6648,14 +6957,14 @@ Overfull \hbox (14.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[269]
+[287]
 File: figures/ExpLogsGraphics/ExpLogs25BW.png Graphic file (type QTm)
  <use  "figures/ExpLogsGraphics/ExpLogs25BW.png" >
 Overfull \hbox (13.99959pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[270]
+[288]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6688,9 +6997,209 @@ Overfull \hbox (13.99959pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [271
+ [289
 
-] [272])
+] [290]) (text_pre/06_ExpLogApplications.tex
+Overfull \hbox (5.79524pt too wide) in paragraph at lines 1--1
+[]\EU1/Calibri(0)/bx/n/14.4 Applications of Exponential and Logarithmic Func-
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 15--16
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+[291
+
+]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 24--25
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Overfull \hbox (14.68224pt too wide) in paragraph at lines 60--60
+\EU1/Calibri(0)/m/n/10 Suppose $\OT1/cmr/m/n/10 $[][][][]$ \EU1/Calibri(0)/m/n/
+10 is invested in an account which offers $[]\OML/cmm/m/it/10 :[][][]\OT1/cmr/m
+/n/10 %$ \EU1/Calibri(0)/m/n/10 compounded monthly. 
+ []
+
+[292]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 86--87
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 95--96
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+[293]
+Overfull \hbox (4.08012pt too wide) in paragraph at lines 99--100
+\EU1/Calibri(0)/m/n/10 tinuously compounding gives $[]\OT1/cmr/m/n/10 ([][]) = 
+[][][][][][]$ \EU1/Calibri(0)/m/n/10 which is about $\OT1/cmr/m/n/10 $[][]\OML/
+cmm/m/it/10 ;  [][][]:[][]$
+ []
+
+
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 112--113
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+[294]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 133--134
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+
+Overfull \hbox (1.61566pt too wide) in paragraph at lines 139--140
+[]$[]$ \EU1/Calibri(0)/m/n/10 Since we start with $[]$ grams initially, Equatio
+n []33[] gives $[]\OT1/cmr/m/n/10 ([]) =
+ []
+
+[295]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 152--153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 6859) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The Second Law of Thermodynamics
+ []
+
+[296]
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 191--192
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+[297]
+File: figures/ExpLogsGraphics/ExpLogs26BW.png Graphic file (type QTm)
+ <use  "figures/ExpLogsGraphics/ExpLogs26BW.png" >
+Overfull \hbox (8.9996pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/ExpLogsGraphics/ExpLogs27BW.png Graphic file (type QTm)
+<use  "figures/ExpLogsGraphics/ExpLogs27BW.png" >
+Overfull \hbox (8.9996pt too wide) has occurred while \output is active
+ [][][] 
+ []
+
+File: figures/ExpLogsGraphics/ExpLogs28BW.png Graphic file (type QTm)
+<use  "figures/ExpLogsGraphics/ExpLogs28BW.png" >
+File: figures/ExpLogsGraphics/ExpLogs29BW.png Graphic file (type QTm)
+
+<use  "figures/ExpLogsGraphics/ExpLogs29BW.png" > [298]
+Overfull \hbox (4.87703pt too wide) in paragraph at lines 284--285
+[]$[]$ \EU1/Calibri(0)/m/n/10 We set $[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 :
+[]$ \EU1/Calibri(0)/m/n/10 and get $[]\OML/cmm/m/it/10 :[] \OT1/cmr/m/n/10 = []
+\OML/cmm/m/it/10 :[] \OT1/cmr/m/n/10 + [] []$\EU1/Calibri(0)/m/n/10 , or $[] []
+ \OT1/cmr/m/n/10 =
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]\EU1/Calibri(0)/m/n/9 The equation for blood pH in Ex-
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 ample []134[] is derived from the
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]$[]$[]\EU1/Calibri(0)/m/n/9 .
+ []
+
+
+Underfull \hbox (badness 1953) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 See Exercise []43[] in Section []7.2[]. Has-
+ []
+
+
+Underfull \hbox (badness 4819) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 selbalch himself was studying carbon
+ []
+
+[299]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.0pt, 470.295pt, 72.0pt)
+* v-part:(T,H,B)=(54.2025pt, 668.4975pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=470.295pt
+* \textheight=668.4975pt
+* \oddsidemargin=-0.26999pt
+* \evensidemargin=-0.26999pt
+* \topmargin=-48.13498pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=150.0pt
+* \marginparsep=32.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 6.0pt
+ -> C:/WINDOWS/Fonts/calibrib.ttf
+ [300
+
+] [301] [302])
 Chapter 8.
 (text_pre/07_Angles.tex
 File: figures/IntroTrigGraphics/Angles-2BW.pdf Graphic file (type QTm)
@@ -6747,7 +7256,7 @@ Underfull \hbox (badness 2142) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 The choice of ‘$[][][]$’ is most often at-
  []
 
-[273
+[303
 
 
 
@@ -6781,7 +7290,7 @@ File: figures/IntroTrigGraphics/Angles-18BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-18BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-19BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-19BW.pdf" > [274]
+<use  "figures/IntroTrigGraphics/Angles-19BW.pdf" > [304]
 File: figures/IntroTrigGraphics/Angles-20BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/Angles-20BW.pdf" >
@@ -6793,7 +7302,7 @@ File: figures/IntroTrigGraphics/Angles-22BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-22BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-23BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-23BW.pdf" > [275]
+<use  "figures/IntroTrigGraphics/Angles-23BW.pdf" > [305]
 Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 10.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 7.0pt
@@ -6825,7 +7334,7 @@ Overfull \hbox (21.29851pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[276]
+[306]
 File: figures/IntroTrigGraphics/Angles-28BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/Angles-28BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-29BW.pdf Graphic file (type QTm)
@@ -6836,7 +7345,7 @@ File: figures/IntroTrigGraphics/Angles-30BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-30BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-31BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-31BW.pdf" > [277]
+<use  "figures/IntroTrigGraphics/Angles-31BW.pdf" > [307]
 Underfull \hbox (badness 2875) in paragraph at lines 281--281
 []\EU1/Calibri(0)/m/n/10 To convert degree measure to radian measure, multiply 
 by
@@ -6870,7 +7379,7 @@ Overfull \hbox (150.0pt too wide) in paragraph at lines 290--300
 $[]$ 
  []
 
-[278]
+[308]
 File: figures/IntroTrigGraphics/Angles-35BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/Angles-35BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-36BW.pdf Graphic file (type QTm)
@@ -6878,13 +7387,13 @@ File: figures/IntroTrigGraphics/Angles-36BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-36BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-37BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-37BW.pdf" > [279]
+<use  "figures/IntroTrigGraphics/Angles-37BW.pdf" > [309]
 File: figures/IntroTrigGraphics/Angles-38BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/Angles-38BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-39BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-39BW.pdf" > [280] [281]
+<use  "figures/IntroTrigGraphics/Angles-39BW.pdf" > [310] [311]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -6919,12 +7428,9 @@ File: figures/IntroTrigGraphics/Angles-39BW.pdf Graphic file (type QTm)
 
 Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 9.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 6.0pt
- -> C:/WINDOWS/Fonts/calibrib.ttf
 Requested font "[cmmi10]/B/OT:mapping=tex-text;" at 6.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
- [282
+ [312
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 378--378
@@ -6932,7 +7438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--378
  []
 
 File: figures/IntroTrigGraphics/Angles-40BW.pdf Graphic file (type QTm)
-<use  "figures/IntroTrigGraphics/Angles-40BW.pdf" > [283])
+<use  "figures/IntroTrigGraphics/Angles-40BW.pdf" > [313])
 (text_pre/07_TheUnitCircle.tex
 File: figures/IntroTrigGraphics/TheUnitCircle-5BW.pdf Graphic file (type QTm)
 
@@ -6970,7 +7476,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 9 ^^@[]\OT1/cmr/m/n/9 )$ \EU1/Calibri(0)/m/n/9 and
  []
 
-[284
+[314
 
 ]
 File: figures/IntroTrigGraphics/TheUnitCircle-7BW.pdf Graphic file (type QTm)
@@ -7004,7 +7510,7 @@ Overfull \hbox (5.00003pt too wide) in paragraph at lines 94--94
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [285]
+ [315]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 105--106
 [][][]
  []
@@ -7014,7 +7520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[286]
+[316]
 File: figures/IntroTrigGraphics/TheUnitCircle-11BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TheUnitCircle-11BW.pdf" >
 File: figures/IntroTrigGraphics/TheUnitCircle-12BW.pdf Graphic file (type QTm)
@@ -7053,7 +7559,7 @@ Underfull \hbox (badness 1895) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 8.38: |Reference angle $[]$ for a
  []
 
-[287]
+[317]
 File: figures/IntroTrigGraphics/TheUnitCircle-17BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TheUnitCircle-17BW.pdf" >
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -7078,7 +7584,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 8.42: |Finding $[] []$ and
  []
 
-[288]
+[318]
 File: figures/IntroTrigGraphics/TheUnitCircle-21BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TheUnitCircle-21BW.pdf" >
 Overfull \hbox (132.9989pt too wide) in paragraph at lines 251--252
@@ -7088,7 +7594,7 @@ Overfull \hbox (132.9989pt too wide) in paragraph at lines 251--252
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [289]
+ [319]
 File: figures/IntroTrigGraphics/TheUnitCircle-23BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TheUnitCircle-23BW.pdf" >
@@ -7109,7 +7615,7 @@ Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
  []
 
 File: figures/IntroTrigGraphics/TheUnitCircle-22BW.pdf Graphic file (type QTm)
-<use  "figures/IntroTrigGraphics/TheUnitCircle-22BW.pdf" > [290]
+<use  "figures/IntroTrigGraphics/TheUnitCircle-22BW.pdf" > [320]
 File: figures/IntroTrigGraphics/TheUnitCircle-27BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TheUnitCircle-27BW.pdf" >
@@ -7137,7 +7643,7 @@ Overfull \hbox (27.00003pt too wide) in paragraph at lines 367--367
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [291]
+ [321]
 File: figures/IntroTrigGraphics/TheUnitCircle-31BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TheUnitCircle-31BW.pdf" >
@@ -7148,7 +7654,7 @@ Overfull \hbox (15.00003pt too wide) in paragraph at lines 450--450
  $[]$ 
  []
 
-[292]
+[322]
 File: figures/IntroTrigGraphics/TheUnitCircle-33BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TheUnitCircle-33BW.pdf" >
 File: figures/IntroTrigGraphics/TheUnitCircle-34BW.pdf Graphic file (type QTm)
@@ -7167,7 +7673,7 @@ Overfull \hbox (15.00003pt too wide) in paragraph at lines 450--450
  $[]$ 
  []
 
-[293]
+[323]
 File: figures/IntroTrigGraphics/TheUnitCircle-37BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TheUnitCircle-37BW.pdf" >
 File: figures/IntroTrigGraphics/TheUnitCircle-38BW.pdf Graphic file (type QTm)
@@ -7187,7 +7693,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
-[294]
+[324]
 Underfull \hbox (badness 10000) in paragraph at lines 517--517
 
  []
@@ -7205,7 +7711,7 @@ Underfull \hbox (badness 1783) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 8.54: |A point on the Earth at
  []
 
-[295]
+[325]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 527--528
 [][][]
  []
@@ -7239,7 +7745,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[296]
+[326]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 607--608
 [][][]
  []
@@ -7268,7 +7774,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][] 
  []
 
-[297] [298]
+[327] [328]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -7301,7 +7807,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [299
+ [329
 
 ]
 File: figures/IntroTrigGraphics/TheUnitCircle-48BW.pdf Graphic file (type QTm)
@@ -7314,7 +7820,7 @@ File: figures/IntroTrigGraphics/TheUnitCircle-50BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/TheUnitCircle-50BW.pdf" >
 File: figures/IntroTrigGraphics/TheUnitCircle-48BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/TheUnitCircle-48BW.pdf" > [300] [301])
+<use  "figures/IntroTrigGraphics/TheUnitCircle-48BW.pdf" > [330] [331])
 (text_pre/07_CircularFunctions.tex
 Overfull \hbox (0.72336pt too wide) in paragraph at lines 1--1
 []\EU1/Calibri(0)/bx/n/14.4 The Six Circular Functions and Fundamental Iden-
@@ -7332,7 +7838,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
 File: figures/IntroTrigGraphics/CircularFunctions-1BW.pdf Graphic file (type QT
 m)
-<use  "figures/IntroTrigGraphics/CircularFunctions-1BW.pdf" > [302
+<use  "figures/IntroTrigGraphics/CircularFunctions-1BW.pdf" > [332
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 61--62
@@ -7346,7 +7852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
 
 Overfull \hbox (5.3962pt too wide) in paragraph at lines 98--98
-[]\EU1/Calibri(0)/m/n/10 According to Theorem []49[], $[] [] \OT1/cmr/m/n/10 = 
+[]\EU1/Calibri(0)/m/n/10 According to Theorem []56[], $[] [] \OT1/cmr/m/n/10 = 
 []$\EU1/Calibri(0)/m/n/10 . Hence, $[] [] \OT1/cmr/m/n/10 = [] =
  []
 
@@ -7357,7 +7863,7 @@ Overfull \hbox (6.23792pt too wide) in paragraph at lines 98--98
 (0)/m/n/10 . Substituting, we get $[][]\OT1/cmr/m/n/10 ([]) +
  []
 
-[303]
+[333]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 132--133
 [][][]
  []
@@ -7375,7 +7881,7 @@ Underfull \hbox (badness 1708) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 As we shall see shortly, when solving
  []
 
-[304]
+[334]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 229--230
 [][][]
  []
@@ -7411,7 +7917,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[305]
+[335]
 Underfull \hbox (badness 6284) in paragraph at lines 333--333
 []$\OT1/cmr/m/n/10 ([]([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]))([]([]) 
 +
@@ -7429,7 +7935,7 @@ Overfull \hbox (4.07538pt too wide) in paragraph at lines 333--333
 =
  []
 
-[306]
+[336]
 Overfull \hbox (11.86598pt too wide) in paragraph at lines 333--333
 []\EU1/Calibri(0)/m/n/10 Expanding the left hand side of the equation gives: $\
 OT1/cmr/m/n/10 ([]([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]))([]([]) +
@@ -7438,7 +7944,7 @@ OT1/cmr/m/n/10 ([]([]) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 ([]))([]([]) +
 
 Overfull \hbox (4.26395pt too wide) in paragraph at lines 333--333
 []\OT1/cmr/m/n/10 ([])) = [][]([]) \OMS/cmsy/m/n/10 ^^@ [][]\OT1/cmr/m/n/10 ([]
-)$\EU1/Calibri(0)/m/n/10 . According to Theorem []51[], $[][]\OT1/cmr/m/n/10 ([
+)$\EU1/Calibri(0)/m/n/10 . According to Theorem []58[], $[][]\OT1/cmr/m/n/10 ([
 ]) \OMS/cmsy/m/n/10 ^^@ [][]\OT1/cmr/m/n/10 ([]) =
  []
 
@@ -7457,7 +7963,7 @@ Overfull \hbox (11.47684pt too wide) detected at line 333
 []
  []
 
-[307]
+[337]
 Overfull \hbox (21.27893pt too wide) detected at line 333
 []
  []
@@ -7472,7 +7978,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-[308]
+[338]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 385--386
 [][][]
  []
@@ -7482,7 +7988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
-[309]
+[339]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 409--410
 [][][]
  []
@@ -7500,7 +8006,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--432
 
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
- [310]
+ [340]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 443--444
 [][][]
  []
@@ -7517,7 +8023,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--495
 
 
 Overfull \hbox (11.83702pt too wide) in paragraph at lines 495--495
-[]\EU1/Calibri(0)/m/n/10 Using Theorem []53[], we get a pair of equations: $[] 
+[]\EU1/Calibri(0)/m/n/10 Using Theorem []60[], we get a pair of equations: $[] 
 [] \OT1/cmr/m/n/10 = []$ \EU1/Calibri(0)/m/n/10 and $[] [] \OT1/cmr/m/n/10 =
  []
 
@@ -7542,14 +8048,14 @@ m)
 File: figures/IntroTrigGraphics/CircularFunctions-9BW.pdf Graphic file (type QT
 m)
 
-<use  "figures/IntroTrigGraphics/CircularFunctions-9BW.pdf" > [311]
+<use  "figures/IntroTrigGraphics/CircularFunctions-9BW.pdf" > [341]
 File: figures/IntroTrigGraphics/CircularFunctions-10BW.pdf Graphic file (type Q
 Tm)
 
 <use  "figures/IntroTrigGraphics/CircularFunctions-10BW.pdf" >
 Underfull \vbox (badness 1337) has occurred while \output is active []
 
- [312]
+ [342]
 Overfull \hbox (31.39998pt too wide) in paragraph at lines 571--572
 [][][]
  []
@@ -7567,7 +8073,7 @@ Underfull \hbox (badness 2529) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Notice we have used the variable ‘$[]$’
  []
 
-[313] [314]
+[343] [344]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -7600,7 +8106,7 @@ Underfull \hbox (badness 2529) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [315
+ [345
 
 ]
 File: figures/IntroTrigGraphics/CircularFunctions-11BW.pdf Graphic file (type Q
@@ -7618,15 +8124,15 @@ Tm)
 File: figures/IntroTrigGraphics/CircularFunctions-14BW.pdf Graphic file (type Q
 Tm)
 
-<use  "figures/IntroTrigGraphics/CircularFunctions-14BW.pdf" > [316]
+<use  "figures/IntroTrigGraphics/CircularFunctions-14BW.pdf" > [346]
 File: figures/IntroTrigGraphics/CircularFunctions-15BW.pdf Graphic file (type Q
 Tm)
 
-<use  "figures/IntroTrigGraphics/CircularFunctions-15BW.pdf" > [317]
+<use  "figures/IntroTrigGraphics/CircularFunctions-15BW.pdf" > [347]
 File: figures/IntroTrigGraphics/CircularFunctions-16BW.pdf Graphic file (type Q
 Tm)
 
-<use  "figures/IntroTrigGraphics/CircularFunctions-16BW.pdf" > [318] [319])
+<use  "figures/IntroTrigGraphics/CircularFunctions-16BW.pdf" > [348] [349])
 (text_pre/07_Identities.tex
 Underfull \hbox (badness 10000) in paragraph at lines 34--34
 []$[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@[]\OT1/cmr/m/n/10 ) =
@@ -7686,7 +8192,7 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[320
+[350
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 161--161
@@ -7707,7 +8213,7 @@ Underfull \hbox (badness 1552) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 In Figure []8.68[], the $[]$angles $[][][]$ and
  []
 
-[321]
+[351]
 Overfull \hbox (9.06137pt too wide) in paragraph at lines 170--171
 []\EU1/Calibri(0)/m/n/10 which says, in words, that the ‘co’sine of an angle is
  the sine of its ‘co’mplement.
@@ -7723,7 +8229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[322]
+[352]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 222--223
 [][][]
  []
@@ -7738,7 +8244,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--281
 
  []
 
-[323] [324]
+[353] [354]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 300--301
 [][][]
  []
@@ -7767,7 +8273,7 @@ dentity $[][]\OT1/cmr/m/n/10 ([]) + [][]([]) =
 
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
- [325]
+ [355]
 Underfull \hbox (badness 10000) in paragraph at lines 391--391
 
  []
@@ -7783,7 +8289,7 @@ Overfull \hbox (13.01225pt too wide) detected at line 391
 []
  []
 
-[326]
+[356]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 408--409
 [][][]
  []
@@ -7793,7 +8299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
-[327]
+[357]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 456--457
 [][][]
  []
@@ -7808,7 +8314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--511
 
  []
 
-[328] [329]
+[358] [359]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 532--533
 [][][]
  []
@@ -7841,10 +8347,10 @@ Overfull \hbox (12.458pt too wide) in paragraph at lines 584--584
 
 
 Underfull \hbox (badness 1442) has occurred while \output is active
-[]\EU1/Calibri(0)/m/n/9 The identities in Theorem []63[] are also
+[]\EU1/Calibri(0)/m/n/9 The identities in Theorem []70[] are also
  []
 
-[330] [331]
+[360] [361]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -7882,14 +8388,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--592
 []$[] \OT1/cmr/m/n/9 = []([]) [] +
  []
 
-[332
+[362
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 592--592
 []$[] \OT1/cmr/m/n/9 = []([]) [] \OMS/cmsy/m/n/9 ^^@
  []
 
-[333] [334]) (text_pre/07_TrigGraphs.tex
+[363] [364]) (text_pre/07_TrigGraphs.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 14--15
 [][][]
  []
@@ -7919,7 +8425,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[335
+[365
 
 ]
 File: figures/IntroTrigGraphics/TrigGraphs-2BW.pdf Graphic file (type QTm)
@@ -7940,14 +8446,14 @@ Overfull \hbox (4.49954pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[336]
+[366]
 File: figures/IntroTrigGraphics/TrigGraphs-5BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TrigGraphs-5BW.pdf" >
 Overfull \hbox (24.0pt too wide) in paragraph at lines 280--280
  [] 
  []
 
-[337]
+[367]
 File: figures/IntroTrigGraphics/TrigGraphs-6BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TrigGraphs-6BW.pdf" >
 Overfull \hbox (24.0pt too wide) in paragraph at lines 280--280
@@ -7971,10 +8477,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
  []
 
 File: figures/IntroTrigGraphics/TrigGraphs-7BW.pdf Graphic file (type QTm)
-<use  "figures/IntroTrigGraphics/TrigGraphs-7BW.pdf" > [338]
+<use  "figures/IntroTrigGraphics/TrigGraphs-7BW.pdf" > [368]
 File: figures/IntroTrigGraphics/TrigGraphs-8BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/TrigGraphs-8BW.pdf" > [339]
+<use  "figures/IntroTrigGraphics/TrigGraphs-8BW.pdf" > [369]
 File: figures/IntroTrigGraphics/TrigGraphs-9BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-9BW.pdf" >
@@ -7982,7 +8488,7 @@ Overfull \hbox (15.00003pt too wide) in paragraph at lines 364--364
  $[]$ 
  []
 
-[340]
+[370]
 Overfull \hbox (1.84683pt too wide) in paragraph at lines 406--406
 \EU1/Calibri(0)/m/n/10 mulas and match up corresponding coefficients. Equating 
 $[]\OT1/cmr/m/n/10 ([]) = []([][]) \OMS/cmsy/m/n/10 ^^@
@@ -7995,7 +8501,7 @@ Overfull \hbox (0.32655pt too wide) in paragraph at lines 406--406
 n/10 ^^@[]$\EU1/Calibri(0)/m/n/10 , which means $[]\OT1/cmr/m/n/10 ([]) =
  []
 
-[341]
+[371]
 File: figures/IntroTrigGraphics/TrigGraphs-10BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TrigGraphs-10BW.pdf" >
 Overfull \hbox (24.0pt too wide) in paragraph at lines 423--443
@@ -8005,7 +8511,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 423--443
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [342]
+ [372]
 File: figures/IntroTrigGraphics/TrigGraphs-11BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-11BW.pdf" >
@@ -8019,7 +8525,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 466--486
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [343]
+ [373]
 File: figures/IntroTrigGraphics/TrigGraphs-13BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-13BW.pdf" >
@@ -8045,7 +8551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [344]
+ [374]
 File: figures/IntroTrigGraphics/TrigGraphs-14BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-14BW.pdf" >
@@ -8056,7 +8562,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 673--673
 
 Underfull \vbox (badness 5878) has occurred while \output is active []
 
- [345]
+ [375]
 Overfull \hbox (8.0763pt too wide) in paragraph at lines 673--673
 []\EU1/Calibri(0)/m/n/10 Proceeding as before, we set the argument of cosecant 
 in $[]\OT1/cmr/m/n/10 ([]) = []$
@@ -8068,7 +8574,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 673--673
  [] 
  []
 
-[346]
+[376]
 File: figures/IntroTrigGraphics/TrigGraphs-16BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TrigGraphs-16BW.pdf" >
 Overfull \hbox (24.0pt too wide) in paragraph at lines 687--707
@@ -8084,7 +8590,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 738--758
  [] 
  []
 
-[347]
+[377]
 File: figures/IntroTrigGraphics/TrigGraphs-19BW.pdf Graphic file (type QTm)
  <use  "figures/IntroTrigGraphics/TrigGraphs-19BW.pdf" >
 Overfull \hbox (31.39998pt too wide) in paragraph at lines 826--827
@@ -8104,7 +8610,7 @@ Overfull \hbox (61.50717pt too wide) in paragraph at lines 786--829
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [348]
+ [378]
 File: figures/IntroTrigGraphics/TrigGraphs-20BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-20BW.pdf" >
@@ -8115,7 +8621,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 952--952
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [349]
+ [379]
 File: figures/IntroTrigGraphics/TrigGraphs-21BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-21BW.pdf" >
@@ -8123,7 +8629,7 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 952--952
  [] 
  []
 
-[350]
+[380]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -8156,9 +8662,9 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 952--952
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [351
+ [381
 
-] [352])
+] [382])
 Chapter 9.
 (text/01_Limit_Introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -8172,7 +8678,7 @@ Overfull \hbox (7.9996pt too wide) has occurred while \output is active
  []
 
 File: figures/figSinXOverXBW.pdf Graphic file (type QTm)
-<use  "figures/figSinXOverXBW.pdf" > [353
+<use  "figures/figSinXOverXBW.pdf" > [383
 
 
 
@@ -8190,7 +8696,7 @@ Overfull \hbox (10.9996pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[354]
+[384]
 Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
@@ -8213,7 +8719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 (figures/table_limit1.tex)
 File: figures/figlimit2BW.pdf Graphic file (type QTm)
  <use  "figures/figlimit2BW.pdf" >
-(figures/table_limit2.tex) [355]
+(figures/table_limit2.tex) [385]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
@@ -8255,7 +8761,7 @@ Overfull \hbox (2.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-(figures/table_nolimit2.tex) [356]
+(figures/table_nolimit2.tex) [386]
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
@@ -8266,7 +8772,7 @@ Underfull \hbox (badness 2790) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 9.14: |Interpreting a difference
  []
 
-[357]
+[387]
 Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
@@ -8293,7 +8799,7 @@ Overfull \hbox (1.99965pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[358]
+[388]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -8326,7 +8832,7 @@ Overfull \hbox (1.99965pt too wide) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [359
+ [389
 
 ]) (text/01_Analytic_Limits.tex
 Overfull \hbox (1.35648pt too wide) in paragraph at lines 33--33
@@ -8359,7 +8865,7 @@ Overfull \hbox (1.50717pt too wide) in paragraph at lines 65--65
  []
 
 Missing character: There is no ϵ in font [cmmi10]/I/OT:mapping=tex-text;!
-[360
+[390
 
 ]
 Overfull \hbox (9.18732pt too wide) in paragraph at lines 65--65
@@ -8392,7 +8898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-[361]
+[391]
 Overfull \hbox (1.50717pt too wide) in paragraph at lines 159--159
 [] []
  []
@@ -8402,7 +8908,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--159
 
  []
 
-[362]
+[392]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
@@ -8429,7 +8935,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
  []
 
 File: figures/figSqueeze1BW.pdf Graphic file (type QTm)
-<use  "figures/figSqueeze1BW.pdf" > [363]
+<use  "figures/figSqueeze1BW.pdf" > [393]
 File: figures/figSqueeze1aBW.pdf Graphic file (type QTm)
  <use  "figures/figSqueeze1aBW.pdf" >
 File: figures/figSqueeze1bBW.pdf Graphic file (type QTm)
@@ -8466,7 +8972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-[364]
+[394]
 Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
@@ -8482,7 +8988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
  []
 
 File: figures/fig_LimitXplus1BW.pdf Graphic file (type QTm)
-<use  "figures/fig_LimitXplus1BW.pdf" > [365]
+<use  "figures/fig_LimitXplus1BW.pdf" > [395]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 248--249
 [][][]
  []
@@ -8512,12 +9018,12 @@ Overfull \hbox (10.4779pt too wide) in paragraph at lines 283--283
 [] 
  []
 
-[366]
+[396]
 Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
-[367]
+[397]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -8550,9 +9056,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--284
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [368
+ [398
 
-] [369]) (text/01_One_Sided_Limits.tex
+] [399]) (text/01_One_Sided_Limits.tex
 Underfull \hbox (badness 10000) in paragraph at lines 50--50
 
  []
@@ -8572,7 +9078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[370
+[400
 
 ]
 Overfull \hbox (1.50717pt too wide) in paragraph at lines 93--93
@@ -8595,7 +9101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
  []
 
 File: figures/figOneSidedLimits1BW.pdf Graphic file (type QTm)
-<use  "figures/figOneSidedLimits1BW.pdf" > [371]
+<use  "figures/figOneSidedLimits1BW.pdf" > [401]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
@@ -8619,7 +9125,7 @@ File: figures/figOneSidedLimits2BW.pdf Graphic file (type QTm)
 <use  "figures/figOneSidedLimits2BW.pdf" >
 File: figures/figOneSidedLimits3BW.pdf Graphic file (type QTm)
 
-<use  "figures/figOneSidedLimits3BW.pdf" > [372]
+<use  "figures/figOneSidedLimits3BW.pdf" > [402]
 Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
@@ -8635,7 +9141,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
  []
 
 File: figures/figOneSidedLimits4BW.pdf Graphic file (type QTm)
-<use  "figures/figOneSidedLimits4BW.pdf" > [373]
+<use  "figures/figOneSidedLimits4BW.pdf" > [403]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -8741,7 +9247,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--197
 
  []
 
-[374
+[404
 
 ]
 File: figures/fig01_04_ex_12BW.pdf Graphic file (type QTm)
@@ -8844,7 +9350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--197
 Overfull \vbox (8.69868pt too high) has occurred while \output is active []
 
 
-[375]) (text/01_Continuity.tex
+[405]) (text/01_Continuity.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 10--11
 [][][]
  []
@@ -8868,7 +9374,7 @@ File: figures/figContinuous1BW.pdf Graphic file (type QTm)
 <use  "figures/figContinuous1BW.pdf" >
 File: figures/figContinuous2BW.pdf Graphic file (type QTm)
  <use  "figures/figContinuous2BW.pdf" >
-[376
+[406
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
@@ -8895,7 +9401,7 @@ Overfull \hbox (1.50717pt too wide) in paragraph at lines 93--93
 [] [] 
  []
 
-[377]
+[407]
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
@@ -8930,7 +9436,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[378]
+[408]
 Overfull \hbox (1.50717pt too wide) in paragraph at lines 162--162
 []$ $[]$
  []
@@ -8969,7 +9475,7 @@ Underfull \hbox (badness 1472) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 9.25: |A graph of $[]$ in Example
  []
 
-[379
+[409
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
@@ -9001,7 +9507,7 @@ Overfull \hbox (20.4892pt too wide) has occurred while \output is active
  [] 
  []
 
-[380] [381]
+[410] [411]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -9051,7 +9557,7 @@ File: figures/fig01_04_ex_10BW.pdf Graphic file (type QTm)
 <use  "figures/fig01_04_ex_10BW.pdf" >
 File: figures/fig01_04_ex_11BW.pdf Graphic file (type QTm)
  <use  "figures/fig01_04_ex_11BW.pdf" >
-[382
+[412
 
 ]
 Overfull \hbox (1.35645pt too wide) in paragraph at lines 233--233
@@ -9063,7 +9569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--233
 
  []
 
-[383]) (text/01_Limits_Involving_Infinity.tex
+[413]) (text/01_Limits_Involving_Infinity.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 21--22
 [][][]
  []
@@ -9095,7 +9601,7 @@ Overfull \hbox (2.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[384
+[414
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
@@ -9133,7 +9639,7 @@ Underfull \hbox (badness 2096) has occurred while \output is active
 []\EU1/Calibri(0)/m/n/9 Figure 9.32: |Graphically showing that
  []
 
-[385]
+[415]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
@@ -9168,7 +9674,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[386]
+[416]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -9212,7 +9718,7 @@ Overfull \hbox (7.99963pt too wide) has occurred while \output is active
  [][] 
  []
 
-[387]
+[417]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 199--200
 [][][]
  []
@@ -9222,7 +9728,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
-[388]
+[418]
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
@@ -9258,7 +9764,7 @@ Overfull \hbox (22.9996pt too wide) has occurred while \output is active
  [] 
  []
 
-[389] [390
+[419] [420
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -9314,7 +9820,7 @@ File: figures/fig01_06_ex_13BW.pdf Graphic file (type QTm)
 <use  "figures/fig01_06_ex_13BW.pdf" >
 File: figures/fig01_06_ex_40BW.pdf Graphic file (type QTm)
  <use  "figures/fig01_06_ex_40BW.pdf" >
-[391
+[421
 
 ]
 Overfull \hbox (1.35645pt too wide) in paragraph at lines 285--285
@@ -9326,14 +9832,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--285
 
  []
 
-[392])
+[422])
 Chapter 10.
 (text/02_Derivative.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[393
+[423
 
 
 
@@ -9361,7 +9867,7 @@ Overfull \hbox (21.9992pt too wide) in paragraph at lines 57--63
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [394]
+ [424]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 70--71
 [][][]
  []
@@ -9389,7 +9895,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
 Underfull \vbox (badness 1668) has occurred while \output is active []
 
- [395]
+ [425]
 Overfull \hbox (1.50717pt too wide) in paragraph at lines 122--122
 [] []
  []
@@ -9437,7 +9943,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[396]
+[426]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
@@ -9452,7 +9958,7 @@ Underfull \vbox (badness 5939) has occurred while \output is active []
 
 File: figures/fignormal1BW.pdf Graphic file (type QTm)
 
-<use  "figures/fignormal1BW.pdf" > [397]
+<use  "figures/fignormal1BW.pdf" > [427]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
@@ -9473,7 +9979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
  []
 
 File: figures/figtangentsinxBW.pdf Graphic file (type QTm)
-<use  "figures/figtangentsinxBW.pdf" > [398]
+<use  "figures/figtangentsinxBW.pdf" > [428]
 Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
  []
@@ -9503,7 +10009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-[399]
+[429]
 Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
@@ -9518,7 +10024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
-[400]
+[430]
 Underfull \hbox (badness 10000) in paragraph at lines 312--312
 
  []
@@ -9547,7 +10053,7 @@ File: figures/figabsolutevalueBW.pdf Graphic file (type QTm)
 <use  "figures/figabsolutevalueBW.pdf" >
 File: figures/figabsolutevalueprimeBW.pdf Graphic file (type QTm)
 
-<use  "figures/figabsolutevalueprimeBW.pdf" > [401]
+<use  "figures/figabsolutevalueprimeBW.pdf" > [431]
 Underfull \hbox (badness 10000) in paragraph at lines 362--362
 
  []
@@ -9574,7 +10080,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[402]
+[432]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -9618,7 +10124,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--369
 
  []
 
-[403
+[433
 
 ]
 File: figures/fig02_01_ex_27BW.pdf Graphic file (type QTm)
@@ -9661,7 +10167,7 @@ Overfull \hbox (1.35645pt too wide) in paragraph at lines 369--369
  []
 
 File: figures/fig02_01_ex_34BW.pdf Graphic file (type QTm)
-<use  "figures/fig02_01_ex_34BW.pdf" > [404]) (text/02_Derivative_Meaning.tex
+<use  "figures/fig02_01_ex_34BW.pdf" > [434]) (text/02_Derivative_Meaning.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -9681,7 +10187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[405
+[435
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
@@ -9716,7 +10222,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[406]
+[436]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 72--73
 [][][]
  []
@@ -9758,7 +10264,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[407]
+[437]
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
@@ -9788,7 +10294,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[408]
+[438]
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
@@ -9799,7 +10305,7 @@ Overfull \hbox (6.7248pt too wide) in paragraph at lines 153--154
 be understated. When
  []
 
-[409]
+[439]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -9856,7 +10362,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--155
 
  []
 
-[410
+[440
 
 ]) (text/02_Derivative_Rules.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
@@ -9883,7 +10389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-[411
+[441
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
@@ -9911,7 +10417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 File: figures/figxcubedwithderivBW.pdf Graphic file (type QTm)
-<use  "figures/figxcubedwithderivBW.pdf" > [412]
+<use  "figures/figxcubedwithderivBW.pdf" > [442]
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
@@ -9938,11 +10444,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
 
 Underfull \hbox (badness 4132) has occurred while \output is active
-[]\EU1/Calibri(0)/bx/n/9 Note: \EU1/Calibri(0)/m/n/9 Definition []62[] comes wi
+[]\EU1/Calibri(0)/bx/n/9 Note: \EU1/Calibri(0)/m/n/9 Definition []66[] comes wi
 th the
  []
 
-[413]
+[443]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
@@ -9969,7 +10475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
-[414] [415]
+[444] [445]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -10016,7 +10522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--194
 Overfull \vbox (4.9724pt too high) has occurred while \output is active []
 
 
-[416
+[446
 
 ]) (text/02_Product_Quotient_Rules.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 8--9
@@ -10054,7 +10560,7 @@ Overfull \hbox (1.99962pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[417
+[447
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
@@ -10071,7 +10577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[418]
+[448]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
@@ -10106,7 +10612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[419]
+[449]
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
@@ -10146,14 +10652,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: figures/figtanxBW.pdf Graphic file (type QTm)
 
-<use  "figures/figtanxBW.pdf" > [420]
+<use  "figures/figtanxBW.pdf" > [450]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
 Overfull \hbox (13.48161pt too wide) in paragraph at lines 155--155
-[]$[]$\EU1/Calibri(0)/m/n/10 We found in Example []198[] that the $[] []\OT1/cm
+[]$[]$\EU1/Calibri(0)/m/n/10 We found in Example []212[] that the $[] []\OT1/cm
 r/m/n/10 ([]) = []$\EU1/Calibri(0)/m/n/10 .
  []
 
@@ -10167,7 +10673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[421]
+[451]
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
@@ -10190,12 +10696,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
 Underfull \vbox (badness 1406) has occurred while \output is active []
 
- [422]
+ [452]
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[423]
+[453]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -10228,7 +10734,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [424
+ [454
 
 ]
 File: figures/fig02_04_ex_42BW.pdf Graphic file (type QTm)
@@ -10255,7 +10761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--217
 
  []
 
-[425]) (text/02_Chain_Rule.tex
+[455]) (text/02_Chain_Rule.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
@@ -10288,7 +10794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
 Underfull \vbox (badness 1342) has occurred while \output is active []
 
- [426
+ [456
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
@@ -10335,7 +10841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[427]
+[457]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
@@ -10351,7 +10857,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
  []
 
 File: figures/figchain7BW.pdf Graphic file (type QTm)
-<use  "figures/figchain7BW.pdf" > [428]
+<use  "figures/figchain7BW.pdf" > [458]
 Overfull \hbox (1.50717pt too wide) in paragraph at lines 138--151
 [] [] 
  []
@@ -10381,7 +10887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-[429]
+[459]
 Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
@@ -10406,7 +10912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-[430]
+[460]
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
@@ -10426,13 +10932,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
-[431]
+[461]
 Underfull \hbox (badness 10000) in paragraph at lines 375--377
 
  []
 
 File: figures/figchainrulegearsBW.pdf Graphic file (type QTm)
-<use  "figures/figchainrulegearsBW.pdf" > [432]
+<use  "figures/figchainrulegearsBW.pdf" > [462]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -10465,9 +10971,9 @@ File: figures/figchainrulegearsBW.pdf Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [433
+ [463
 
-]) [434
+]) [464
 
 
 
@@ -10509,7 +11015,7 @@ Overfull \hbox (3.99965pt too wide) has occurred while \output is active
  [][][] 
  []
 
-[435
+[465
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
@@ -10547,7 +11053,7 @@ File: figures/figextval2BW.pdf Graphic file (type QTm)
  <use  "figures/figextval2BW.pdf" >
 File: figures/figextval3BW.pdf Graphic file (type QTm)
 
-<use  "figures/figextval3BW.pdf" > [436]
+<use  "figures/figextval3BW.pdf" > [466]
 Underfull \hbox (badness 10000) in paragraph at lines 117--117
 
  []
@@ -10590,7 +11096,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--140
 File: figures/figextreme4BW.pdf Graphic file (type QTm)
 <use  "figures/figextreme4BW.pdf" >
 File: figures/figextval4BW.pdf Graphic file (type QTm)
- <use  "figures/figextval4BW.pdf" > [437]
+ <use  "figures/figextval4BW.pdf" > [467]
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
@@ -10605,7 +11111,7 @@ Underfull \vbox (badness 4752) has occurred while \output is active []
 
 File: figures/figextval5BW.pdf Graphic file (type QTm)
 
-<use  "figures/figextval5BW.pdf" > [438]
+<use  "figures/figextval5BW.pdf" > [468]
 Overfull \hbox (14.92125pt too wide) in paragraph at lines 189--189
 \EU1/Calibri(0)/m/n/10 always positive so we ignore $\OMS/cmsy/m/n/10 ^^@[]$\EU
 1/Calibri(0)/m/n/10 , etc.) So $[]\OT1/cmr/m/n/10 ([][]) = []$ \EU1/Calibri(0)/
@@ -10637,7 +11143,7 @@ Underfull \hbox (badness 2111) has occurred while \output is active
 File: figures/figextval6BW.pdf Graphic file (type QTm)
 <use  "figures/figextval6BW.pdf" >
 File: figures/figextval7BW.pdf Graphic file (type QTm)
- <use  "figures/figextval7BW.pdf" > [439]
+ <use  "figures/figextval7BW.pdf" > [469]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -10699,9 +11205,9 @@ File: figures/fig03_01_ex_13BW.pdf Graphic file (type QTm)
  <use  "figures/fig03_01_ex_13BW.pdf" >
 File: figures/fig03_01_ex_14BW.pdf Graphic file (type QTm)
 
-<use  "figures/fig03_01_ex_14BW.pdf" > [440
+<use  "figures/fig03_01_ex_14BW.pdf" > [470
 
-] [441])
+] [471])
 (text/03_Increasing_Decreasing.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 19--20
 [][][]
@@ -10725,7 +11231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 File: figures/figincr0BW.pdf Graphic file (type QTm)
 <use  "figures/figincr0BW.pdf" >
 File: figures/figincr00BW.pdf Graphic file (type QTm)
- <use  "figures/figincr00BW.pdf" > [442
+ <use  "figures/figincr00BW.pdf" > [472
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 60--61
@@ -10753,7 +11259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
 
  []
 
-[443]
+[473]
 Underfull \hbox (badness 10000) in paragraph at lines 88--88
 
  []
@@ -10779,7 +11285,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: figures/figincr1BW.pdf Graphic file (type QTm)
 
-<use  "figures/figincr1BW.pdf" > [444]
+<use  "figures/figincr1BW.pdf" > [474]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 113--116
 [][][]
  []
@@ -10789,7 +11295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--116
 
  []
 
-[445]
+[475]
 File: figures/figincrline2BW.pdf Graphic file (type QTm)
  <use  "figures/figincrline2BW.pdf" >
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
@@ -10807,7 +11313,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--194
  []
 
 File: figures/figincr2BW.pdf Graphic file (type QTm)
-<use  "figures/figincr2BW.pdf" > [446]
+<use  "figures/figincr2BW.pdf" > [476]
 Underfull \hbox (badness 10000) in paragraph at lines 194--194
 
  []
@@ -10824,7 +11330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
  []
 
 File: figures/figincr3BW.pdf Graphic file (type QTm)
-<use  "figures/figincr3BW.pdf" > [447]
+<use  "figures/figincr3BW.pdf" > [477]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -10857,7 +11363,7 @@ File: figures/figincr3BW.pdf Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [448
+ [478
 
 ]) (text/03_Concavity.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -10893,7 +11399,7 @@ Underfull \hbox (badness 3158) has occurred while \output is active
 
  []
 
-[449
+[479
 
 ]
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 72--73
@@ -10937,7 +11443,7 @@ File: figures/figconcline1BW.pdf Graphic file (type QTm)
  <use  "figures/figconcline1BW.pdf" >
 File: figures/figconc1BW.pdf Graphic file (type QTm)
 
-<use  "figures/figconc1BW.pdf" > [450]
+<use  "figures/figconc1BW.pdf" > [480]
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 
  []
@@ -10961,7 +11467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 File: figures/figconc2BW.pdf Graphic file (type QTm)
 <use  "figures/figconc2BW.pdf" >
 File: figures/figconc3BW.pdf Graphic file (type QTm)
- <use  "figures/figconc3BW.pdf" > [451]
+ <use  "figures/figconc3BW.pdf" > [481]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
@@ -10996,13 +11502,13 @@ File: figures/figconcavity5BW.pdf Graphic file (type QTm)
 <use  "figures/figconcavity5BW.pdf" >
 File: figures/figconcavity6BW.pdf Graphic file (type QTm)
  <use  "figures/figconcavity6BW.pdf" >
-[452]
+[482]
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 File: figures/figconc4BW.pdf Graphic file (type QTm)
-<use  "figures/figconc4BW.pdf" > [453
+<use  "figures/figconc4BW.pdf" > [483
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -11037,9 +11543,9 @@ File: figures/figconc4BW.pdf Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [454
+ [484
 
-] [455])
+] [485])
 (text/03_Curve_Sketching.tex
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 29--42
 [][][]
@@ -11063,7 +11569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--45
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [456
+ [486
 
 ]
 File: figures/figsketchline1BW.pdf Graphic file (type QTm)
@@ -11089,7 +11595,7 @@ Overfull \hbox (3.99965pt too wide) has occurred while \output is active
  [][] 
  []
 
-[457]
+[487]
 Overfull \hbox (2.93321pt too wide) in paragraph at lines 148--148
 []\EU1/Calibri(0)/m/n/10 There is a horizontal asymptote of $[] \OT1/cmr/m/n/10
  = []$\EU1/Calibri(0)/m/n/10 , as $[] []\OT1/cmr/m/n/10 ([]) = []$ \EU1/Calibri
@@ -11118,7 +11624,7 @@ Overfull \hbox (1.99965pt too wide) has occurred while \output is active
  [][] 
  []
 
-[458]
+[488]
 File: figures/figsketchline3BW.pdf Graphic file (type QTm)
  <use  "figures/figsketchline3BW.pdf" >
 Overfull \hbox (25.00003pt too wide) in paragraph at lines 196--196
@@ -11141,7 +11647,7 @@ Overfull \hbox (1.99965pt too wide) has occurred while \output is active
  [][] 
  []
 
-[459]
+[489]
 File: figures/figmathematica_sinx.pdf Graphic file (type QTm)
  <use  "figures/figmathematica_sinx.pdf" >
 Overfull \hbox (3.80219pt too wide) in paragraph at lines 219--220
@@ -11149,7 +11655,7 @@ Overfull \hbox (3.80219pt too wide) in paragraph at lines 219--220
 rivatives beyond curve
  []
 
-[460]
+[490]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -11182,7 +11688,7 @@ rivatives beyond curve
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [461
+ [491
 
 ]) (text/05_Antiderivatives.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--22
@@ -11209,7 +11715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-[462
+[492
 
 ]
 File: figures/figanti1BW.pdf Graphic file (type QTm)
@@ -11230,7 +11736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[463]
+[493]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
@@ -11260,13 +11766,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--196
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [464]
-[465]
+ [494]
+[495]
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[466]
+[496]
 Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
@@ -11276,7 +11782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-[467]
+[497]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -11309,9 +11815,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [468
+ [498
 
-] [469]) [470
+] [499]) [500
 
 
 
@@ -11395,15 +11901,15 @@ File: figures/RelationsandFunctionsGraphics/CartesianPlane-46BW.pdf Graphic fil
 e (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/CartesianPlane-46BW.pdf" >
-File: figures/RelationsandFunctionsGraphics/Relations-23BW.pdf Graphic file (ty
-pe QTm)
-
-<use  "figures/RelationsandFunctionsGraphics/Relations-23BW.pdf" > [1
+[1
 
 
 
 
 ]
+File: figures/RelationsandFunctionsGraphics/Relations-23BW.pdf Graphic file (ty
+pe QTm)
+ <use  "figures/RelationsandFunctionsGraphics/Relations-23BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-25BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11419,7 +11925,7 @@ pe QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-31BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-31BW.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-31BW.pdf" > [2]
 File: figures/RelationsandFunctionsGraphics/Relations-33BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11443,7 +11949,7 @@ pe QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-43BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-43BW.pdf" > [2]
+<use  "figures/RelationsandFunctionsGraphics/Relations-43BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-45BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11455,7 +11961,7 @@ pe QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-49BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-49BW.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-49BW.pdf" > [3]
 File: figures/RelationsandFunctionsGraphics/Relations-51BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11467,16 +11973,16 @@ pe QTm)
 File: figures/RelationsandFunctionsGraphics/Relations-55BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-55BW.pdf" > [3]
+<use  "figures/RelationsandFunctionsGraphics/Relations-55BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Relations-57BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-57BW.pdf" >
+<use  "figures/RelationsandFunctionsGraphics/Relations-57BW.pdf" > [4]
 File: figures/RelationsandFunctionsGraphics/Relations-59BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/RelationsandFunctionsGraphics/Relations-59BW.pdf" > [4] [5]
-[6]
+<use  "figures/RelationsandFunctionsGraphics/Relations-59BW.pdf" > [5] [6]
+[7]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-17BW.pdf Graphic 
 file (type QTm)
  <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-17BW.pdf" >
@@ -11492,10 +11998,10 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-23BW.pdf Graphic
 file (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-23BW.pdf" >
-[7]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-25BW.pdf Graphic 
 file (type QTm)
- <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-25BW.pdf" >
+
+<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-25BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-27BW.pdf Graphic 
 file (type QTm)
 
@@ -11512,26 +12018,29 @@ File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-33BW.pdf Graphic
 file (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-33BW.pdf" >
+[8]
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-35BW.pdf Graphic 
 file (type QTm)
-
-<use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-35BW.pdf" >
+ <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-35BW.pdf" >
+Requested font "Calibri/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/calibrib.ttf
 File: figures/RelationsandFunctionsGraphics/GraphsofFunctions-37BW.pdf Graphic 
 file (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/GraphsofFunctions-37BW.pdf" >
-[8]
 File: figures/RelationsandFunctionsGraphics/Transformations-59BW.pdf Graphic fi
 le (type QTm)
- <use  "figures/RelationsandFunctionsGraphics/Transformations-59BW.pdf" >
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-59BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-61BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-61BW.pdf" >
+[9]
 File: figures/RelationsandFunctionsGraphics/Transformations-63BW.pdf Graphic fi
 le (type QTm)
-
-<use  "figures/RelationsandFunctionsGraphics/Transformations-63BW.pdf" >
+ <use  "figures/RelationsandFunctionsGraphics/Transformations-63BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-65BW.pdf Graphic fi
 le (type QTm)
 
@@ -11552,18 +12061,18 @@ File: figures/RelationsandFunctionsGraphics/Transformations-73BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-73BW.pdf" >
-[9]
 File: figures/RelationsandFunctionsGraphics/Transformations-75BW.pdf Graphic fi
 le (type QTm)
- <use  "figures/RelationsandFunctionsGraphics/Transformations-75BW.pdf" >
+
+<use  "figures/RelationsandFunctionsGraphics/Transformations-75BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-77BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-77BW.pdf" >
+[10]
 File: figures/RelationsandFunctionsGraphics/Transformations-79BW.pdf Graphic fi
 le (type QTm)
-
-<use  "figures/RelationsandFunctionsGraphics/Transformations-79BW.pdf" >
+ <use  "figures/RelationsandFunctionsGraphics/Transformations-79BW.pdf" >
 File: figures/RelationsandFunctionsGraphics/Transformations-81BW.pdf Graphic fi
 le (type QTm)
 
@@ -11588,7 +12097,7 @@ File: figures/RelationsandFunctionsGraphics/Transformations-91BW.pdf Graphic fi
 le (type QTm)
 
 <use  "figures/RelationsandFunctionsGraphics/Transformations-91BW.pdf" >
-[10]
+[11]
 File: figures/LinearQuadraticGraphics/LinearFunctions-17BW.pdf Graphic file (ty
 pe QTm)
  <use  "figures/LinearQuadraticGraphics/LinearFunctions-17BW.pdf" >
@@ -11601,7 +12110,7 @@ pe QTm)
 
 <use  "figures/LinearQuadraticGraphics/LinearFunctions-21BW.pdf" >
 
-LaTeX Warning: Command \nobreakspace invalid in math mode on input line 28.
+LaTeX Warning: Command \nobreakspace invalid in math mode on input line 30.
 
 File: figures/LinearQuadraticGraphics/LinearFunctions-23BW.pdf Graphic file (ty
 pe QTm)
@@ -11609,7 +12118,7 @@ pe QTm)
 File: figures/LinearQuadraticGraphics/LinearFunctions-24BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/LinearQuadraticGraphics/LinearFunctions-24BW.pdf" > [11]
+<use  "figures/LinearQuadraticGraphics/LinearFunctions-24BW.pdf" > [12]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19BW.pdf Graphic f
 ile (type QTm)
 
@@ -11622,18 +12131,18 @@ File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23BW.pdf" >
-[12]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25BW.pdf Graphic f
 ile (type QTm)
- <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25BW.pdf" >
+
+<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25BW.pdf" >
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27BW.pdf Graphic f
 ile (type QTm)
 
 <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27BW.pdf" >
+[13]
 File: figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29BW.pdf Graphic f
 ile (type QTm)
-
-<use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29BW.pdf" >
+ <use  "figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29BW.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-14BW.pdf Graphic file 
 (type QTm)
 
@@ -11645,11 +12154,11 @@ File: figures/LinearQuadraticGraphics/QuadraticFunctions-16BW.pdf Graphic file
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-18BW.pdf Graphic file 
 (type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-18BW.pdf" > [13]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-18BW.pdf" >
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-20BW.pdf Graphic file 
 (type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-20BW.pdf" >
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-20BW.pdf" > [14]
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-22BW.pdf Graphic file 
 (type QTm)
 
@@ -11657,11 +12166,11 @@ File: figures/LinearQuadraticGraphics/QuadraticFunctions-22BW.pdf Graphic file
 File: figures/LinearQuadraticGraphics/QuadraticFunctions-23BW.pdf Graphic file 
 (type QTm)
 
-<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-23BW.pdf" > [14]
+<use  "figures/LinearQuadraticGraphics/QuadraticFunctions-23BW.pdf" >
 File: figures/LinearQuadraticGraphics/Inequalities-27BW.pdf Graphic file (type 
 QTm)
 
-<use  "figures/LinearQuadraticGraphics/Inequalities-27BW.pdf" >
+<use  "figures/LinearQuadraticGraphics/Inequalities-27BW.pdf" > [15]
 File: figures/LinearQuadraticGraphics/Inequalities-29BW.pdf Graphic file (type 
 QTm)
 
@@ -11673,7 +12182,7 @@ QTm)
 File: figures/PolynomialsGraphics/GraphsofPolynomials-21BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-21BW.pdf" > [15]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-21BW.pdf" >
 File: figures/PolynomialsGraphics/GraphsofPolynomials-23BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11685,7 +12194,7 @@ pe QTm)
 File: figures/PolynomialsGraphics/GraphsofPolynomials-27BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-27BW.pdf" >
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-27BW.pdf" > [16]
 File: figures/PolynomialsGraphics/GraphsofPolynomials-29BW.pdf Graphic file (ty
 pe QTm)
 
@@ -11701,8 +12210,8 @@ pe QTm)
 File: figures/PolynomialsGraphics/GraphsofPolynomials-35BW.pdf Graphic file (ty
 pe QTm)
 
-<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35BW.pdf" > [16]
-[17] [18]
+<use  "figures/PolynomialsGraphics/GraphsofPolynomials-35BW.pdf" > [17]
+[18] [19]
 File: figures/RationalsGraphics/RationalGraphs-17BW.pdf Graphic file (type QTm)
 
  <use  "figures/RationalsGraphics/RationalGraphs-17BW.pdf" >
@@ -11717,11 +12226,11 @@ File: figures/RationalsGraphics/RationalGraphs-21BW.pdf Graphic file (type QTm)
 File: figures/RationalsGraphics/RationalGraphs-23BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/RationalsGraphics/RationalGraphs-23BW.pdf" > [19]
+<use  "figures/RationalsGraphics/RationalGraphs-23BW.pdf" >
 File: figures/RationalsGraphics/RationalGraphs-25BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/RationalsGraphics/RationalGraphs-25BW.pdf" >
+<use  "figures/RationalsGraphics/RationalGraphs-25BW.pdf" > [20]
 File: figures/RationalsGraphics/RationalGraphs-27BW.pdf Graphic file (type QTm)
 
 
@@ -11737,11 +12246,66 @@ File: figures/RationalsGraphics/RationalGraphs-31BW.pdf Graphic file (type QTm)
 File: figures/RationalsGraphics/RationalGraphs-33BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/RationalsGraphics/RationalGraphs-33BW.pdf" > [20]
+<use  "figures/RationalsGraphics/RationalGraphs-33BW.pdf" > [21]
 File: figures/RationalsGraphics/RationalGraphs-35BW.pdf Graphic file (type QTm)
 
 
-<use  "figures/RationalsGraphics/RationalGraphs-35BW.pdf" > [21] [22]
+<use  "figures/RationalsGraphics/RationalGraphs-35BW.pdf" > [22]
+File: figures/FurtherGraphics/AlgebraicFunctions-16BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-16BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-17BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-17BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-20BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-20BW.pdf" > [23]
+File: figures/FurtherGraphics/AlgebraicFunctions-21BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-21BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-24BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-24BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-25BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-25BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-28BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-28BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-29BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-29BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-32BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-32BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-33BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-33BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-36BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-36BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-38BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-38BW.pdf" >
+File: figures/FurtherGraphics/AlgebraicFunctions-40BW.pdf Graphic file (type QT
+m)
+
+<use  "figures/FurtherGraphics/AlgebraicFunctions-40BW.pdf" > [24]
+File: figures/FurtherGraphics/WINDCHILLBW.jpg Graphic file (type QTm)
+
+<use  "figures/FurtherGraphics/WINDCHILLBW.jpg" >
 File: figures/ExpLogsGraphics/IntroExpLogs-21BW.pdf Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/IntroExpLogs-21BW.pdf" >
@@ -11753,7 +12317,7 @@ File: figures/ExpLogsGraphics/IntroExpLogs-25BW.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/IntroExpLogs-25BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-27BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-27BW.pdf" >
+<use  "figures/ExpLogsGraphics/IntroExpLogs-27BW.pdf" > [25]
 File: figures/ExpLogsGraphics/IntroExpLogs-29BW.pdf Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/IntroExpLogs-29BW.pdf" >
@@ -11765,10 +12329,10 @@ File: figures/ExpLogsGraphics/IntroExpLogs-32BW.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/IntroExpLogs-32BW.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-34BW.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-34BW.pdf" > [23]
+<use  "figures/ExpLogsGraphics/IntroExpLogs-34BW.pdf" > [26] [27]
 File: figures/IntroTrigGraphics/Angles-41BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-41BW.pdf" > [24]
+<use  "figures/IntroTrigGraphics/Angles-41BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-43BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/Angles-43BW.pdf" >
@@ -11789,7 +12353,7 @@ File: figures/IntroTrigGraphics/Angles-53BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-53BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-55BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-55BW.pdf" > [25]
+<use  "figures/IntroTrigGraphics/Angles-55BW.pdf" > [28]
 File: figures/IntroTrigGraphics/Angles-57BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/Angles-57BW.pdf" >
@@ -11804,13 +12368,13 @@ File: figures/IntroTrigGraphics/Angles-63BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/Angles-63BW.pdf" >
 File: figures/IntroTrigGraphics/Angles-65BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/Angles-65BW.pdf" > [26] [27] [28]
+<use  "figures/IntroTrigGraphics/Angles-65BW.pdf" > [29] [30] [31]
 File: figures/IntroTrigGraphics/TrigGraphs-22BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-22BW.pdf" >
 File: figures/IntroTrigGraphics/TrigGraphs-24BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/TrigGraphs-24BW.pdf" > [29]
+<use  "figures/IntroTrigGraphics/TrigGraphs-24BW.pdf" > [32]
 File: figures/IntroTrigGraphics/TrigGraphs-26BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-26BW.pdf" >
@@ -11828,7 +12392,7 @@ File: figures/IntroTrigGraphics/TrigGraphs-34BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/TrigGraphs-34BW.pdf" >
 File: figures/IntroTrigGraphics/TrigGraphs-36BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/TrigGraphs-36BW.pdf" > [30]
+<use  "figures/IntroTrigGraphics/TrigGraphs-36BW.pdf" > [33]
 File: figures/IntroTrigGraphics/TrigGraphs-38BW.pdf Graphic file (type QTm)
 
 <use  "figures/IntroTrigGraphics/TrigGraphs-38BW.pdf" >
@@ -11840,19 +12404,19 @@ File: figures/IntroTrigGraphics/TrigGraphs-42BW.pdf Graphic file (type QTm)
 <use  "figures/IntroTrigGraphics/TrigGraphs-42BW.pdf" >
 File: figures/IntroTrigGraphics/TrigGraphs-44BW.pdf Graphic file (type QTm)
 
-<use  "figures/IntroTrigGraphics/TrigGraphs-44BW.pdf" > [31] [32]
+<use  "figures/IntroTrigGraphics/TrigGraphs-44BW.pdf" > [34] [35]
 File: figures/fig02_01_ex_27ansBW.pdf Graphic file (type QTm)
 
-<use  "figures/fig02_01_ex_27ansBW.pdf" > [33]
+<use  "figures/fig02_01_ex_27ansBW.pdf" > [36]
 File: figures/fig02_01_ex_29ansBW.pdf Graphic file (type QTm)
 
 <use  "figures/fig02_01_ex_29ansBW.pdf" >
 File: figures/fig02_04_ex_43aBW.pdf Graphic file (type QTm)
 
-<use  "figures/fig02_04_ex_43aBW.pdf" > [34]
+<use  "figures/fig02_04_ex_43aBW.pdf" > [37]
 File: figures/fig02_04_ex_45aBW.pdf Graphic file (type QTm)
 
-<use  "figures/fig02_04_ex_45aBW.pdf" > [35]) [36]
+<use  "figures/fig02_04_ex_45aBW.pdf" > [38]) [39]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
@@ -11885,16 +12449,15 @@ File: figures/fig02_04_ex_45aBW.pdf Graphic file (type QTm)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- (Math1010print.ind [37
+ [40
 
 
 
+] (Math1010print.ind
+[41
 
-]
-[38] [39] [40] [41] [42] [43
-
-])
-(text/Inside_Cover_Of_The_Text_Material_Complete.tex [44
+] [42] [43] [44] [45] [46] [47])
+(text/Inside_Cover_Of_The_Text_Material_Complete.tex [48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 181--182
@@ -11916,11 +12479,11 @@ Overfull \hbox (9.8515pt too wide) in paragraph at lines 233--240
 [][] 
  []
 
-[45
+[49
 
-] [46
+] [50
 
-] [47
+] [51
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 643--647
@@ -11943,11 +12506,11 @@ Requested font "[cmmi10]/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-[48
+[52
 
 ])
-Package atenddvi Info: Last page = 525.
- [49
+Package atenddvi Info: Last page = 559.
+ [53
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
@@ -11955,22 +12518,15 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 254.
  (Math1010print.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 254.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 254.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 56522 strings out of 428755
- 1217103 string characters out of 3164219
- 1520662 words of memory out of 3000000
- 56191 multiletter control sequences out of 15000+200000
+ 57052 strings out of 428755
+ 1228305 string characters out of 3164219
+ 1531940 words of memory out of 3000000
+ 56555 multiletter control sequences out of 15000+200000
  19704 words of font info for 150 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,30n,88p,10386b,1044s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Math1010print.pdf (525 pages).
+Output written on Math1010print.pdf (559 pages).

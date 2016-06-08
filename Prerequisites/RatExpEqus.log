@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  18 MAY 2016 11:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  8 JUN 2016 10:32
 entering extended mode
 **RatExpEqus.tex
 (RatExpEqus.tex
@@ -1161,20 +1161,6 @@ xt;+tnum;+onum;"
 .................................................
 LaTeX Info: Redefining \textin on input line 153.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 105.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Requested font "ec-lmr10" at 10.0pt
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
@@ -1217,15 +1203,13 @@ LaTeX Font Info:    Try loading font information for T3+cmr on input line 47.
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Try loading font information for T1+Carlito(0) on input lin
-e 47.
-LaTeX Font Info:    No file T1Carlito(0).fd. on input line 47.
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 47.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 10.95pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
 
-
-LaTeX Font Warning: Font shape `T1/Carlito(0)/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 47.
-
-Requested font "ecrm1095" at 10.95pt
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -1333,8 +1317,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 47.
-Requested font "ecrm1728" at 17.28pt
-Requested font "ecrm1200" at 12.0pt
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 49.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 17.28pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 49.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 12.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
 Requested font "[lmroman12-regular]:mapping=tex-text" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-regular.otf
 Requested font "[lmroman8-regular]:mapping=tex-text" at 8.0pt
@@ -1369,24 +1363,40 @@ Requested font "msbm7" at 6.0pt
 Requested font "cmr12" at 12.0pt
 Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
-
-
-LaTeX Font Warning: Font shape `T1/Carlito(0)/m/it' undefined
-(Font)              using `T1/Carlito(0)/m/n' instead on input line 59.
-
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 59.
+Requested font "[Carlito-Italic.ttf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+lnum;+pnum;" at 10.95pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Italic.
+ttf
 Requested font "cmmi10" at 10.95pt
 Requested font "cmsy10" at 10.95pt
 Requested font "cmex10" at 10.95pt
 Requested font "msam10" at 10.95pt
 Requested font "msbm10" at 10.95pt
-Requested font "ecrm0800" at 8.0pt
-Requested font "ecrm0600" at 6.0pt
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 63.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 8.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 63.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 6.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
 Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman5-regular.otf
 Requested font "cmex7" at 5.0pt
 Requested font "msam5" at 5.0pt
 Requested font "msbm5" at 5.0pt
-Requested font "ecrm0900" at 9.0pt
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 72.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 9.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
 Requested font "[lmroman9-regular]:mapping=tex-text" at 9.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman9-regular.otf
 Requested font "cmmi9" at 9.0pt
@@ -1395,6 +1405,7 @@ Requested font "cmex9" at 9.0pt
 Requested font "msam10" at 9.0pt
 Requested font "msbm10" at 9.0pt
 Requested font "cmr9" at 9.0pt
+
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -1402,63 +1413,57 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 ]
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/bx/n' will be
+(Font)              scaled to size 10.95pt on input line 80.
+Requested font "[Carlito-Bold.ttf]/OT:script=latn;language=DFLT;mapping=tex-tex
+t;mapping=tex-text;+lnum;+pnum;" at 10.95pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Bold.tt
+f
 
-LaTeX Font Warning: Font shape `T1/Carlito(0)/m/sc' undefined
-(Font)              using `T1/Carlito(0)/m/n' instead on input line 79.
 
+LaTeX Font Warning: Font shape `EU1/Carlito(0)/m/sc' undefined
+(Font)              using `EU1/Carlito(0)/m/n' instead on input line 150.
+
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 150.
 [2]
-
-LaTeX Font Warning: Font shape `T1/Carlito(0)/bx/n' undefined
-(Font)              using `T1/Carlito(0)/m/n' instead on input line 80.
-
-[3]
-Overfull \hbox (5.65546pt too wide) detected at line 165
+Overfull \hbox (1.5116pt too wide) detected at line 165
 []
  []
 
-
-Overfull \hbox (2.67487pt too wide) detected at line 173
+[3] [4] [5]
+Overfull \hbox (0.98344pt too wide) detected at line 249
 []
  []
 
-[4] [5] [6]
-LaTeX Font Info:    Try loading font information for TS1+Carlito(0) on input li
-ne 231.
-LaTeX Font Info:    No file TS1Carlito(0).fd. on input line 231.
-
-
-LaTeX Font Warning: Font shape `TS1/Carlito(0)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 231.
-
-Requested font "tcrm1095" at 10.95pt
-
-Overfull \hbox (4.96246pt too wide) detected at line 241
-[]
- []
-
-
-Overfull \hbox (8.28528pt too wide) detected at line 249
-[]
- []
-
-[7] [8] [9] [10]
-Overfull \hbox (7.70071pt too wide) detected at line 406
-[]
- []
-
-[11]
-Requested font "ecrm0500" at 5.0pt
- [12]
-Requested font "ecrm1440" at 14.4pt
+[6] [7] [8] [9]
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 5.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
+ [10]
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 479.
+Requested font "[Carlito-Regular.ttf]/OT:script=latn;language=DFLT;mapping=tex-
+text;mapping=tex-text;+lnum;+pnum;" at 14.4pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Regular
+.ttf
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/bx/n' will be
+(Font)              scaled to size 14.4pt on input line 479.
+Requested font "[Carlito-Bold.ttf]/OT:script=latn;language=DFLT;mapping=tex-tex
+t;mapping=tex-text;+lnum;+pnum;" at 14.4pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/truetype/typoland/carlito/Carlito-Bold.tt
+f
+LaTeX Font Info:    Font shape `EU1/Carlito(0)/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 479.
 
 Overfull \hbox (2.92111pt too wide) in paragraph at lines 551--552
 []$[]$
  []
 
-[13] [14]
+[11] [12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 873.
- [15]
+ [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 873.
  (RatExpEqus.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 873.
@@ -1470,12 +1475,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 873.
  ) 
 Here is how much of TeX's memory you used:
- 23916 strings out of 428755
- 432111 string characters out of 3164219
- 492885 words of memory out of 3000000
- 27027 multiletter control sequences out of 15000+200000
- 21964 words of font info for 73 fonts, out of 3000000 for 9000
+ 23870 strings out of 428755
+ 432114 string characters out of 3164219
+ 494885 words of memory out of 3000000
+ 26990 multiletter control sequences out of 15000+200000
+ 12591 words of font info for 74 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 43i,21n,64p,10392b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,21n,64p,10414b,566s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on RatExpEqus.pdf (15 pages).
+Output written on RatExpEqus.pdf (13 pages).

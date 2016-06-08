@@ -68,7 +68,7 @@ Given sets $A$ and $B$, we say that the set $A$ is a \textbf{subset}\index{subse
 
 \medskip
 
-Note that in our example above $C \subseteq S$, but not vice-versa, since $o \in S$ but $o \notin C$.  Additionally, the set of vowels $V = \{ a, e, i, o, u\}$, while it does have an element in common with $S$, is not a subset of $S$. (As an added note,  $S$ is not a subset of $V$, either.)  We could, however, \textit{build} a set which contains both $S$ and $V$ as subsets by gathering all of the elements in both $S$ and $V$ together into a single set, say $U = \{ p, r, o, n, g, h, s, a, e, i, u\}$.   Then $S \subseteq U$ and $V \subseteq U$.  The set $U$ we have built is called the \textbf{union} of the sets $S$ and $V$ and is denoted $S \cup V$.    Furthermore, $S$ and $V$ aren't completely \textit{different}\footnote{Since the word `different' could be ambiguous, mathematicians use the word \textit{disjoint} to refer to two sets that have no elements in common.} sets since they both contain the letter `o.'  The \textbf{intersection} of two sets is the set of elements (if any) the two sets have in common. In this case, the intersection of $S$ and $V$ is $\{ o\}$, written $S \cap V = \{ o \}$.  We formalize these ideas below.
+Note that in our example above $C \subseteq S$, but not vice-versa, since $o \in S$ but $o \notin C$.  Additionally, the set of vowels $V = \{ a, e, i, o, u\}$, while it does have an element in common with $S$, is not a subset of $S$. (As an added note,  $S$ is not a subset of $V$, either.)  We could, however, \textit{build} a set which contains both $S$ and $V$ as subsets by gathering all of the elements in both $S$ and $V$ together into a single set, say $U = \{ p, r, o, n, g, h, s, a, e, i, u\}$.   Then $S \subseteq U$ and $V \subseteq U$.  The set $U$ we have built is called the \textbf{union} of the sets $S$ and $V$ and is denoted $S \cup V$.    Furthermore, $S$ and $V$ aren't completely \textit{different} sets since they both contain the letter `o.' (Since the word `different' could be ambiguous, mathematicians use the word \textit{disjoint} to refer to two sets that have no elements in common.) The \textbf{intersection} of two sets is the set of elements (if any) the two sets have in common. In this case, the intersection of $S$ and $V$ is $\{ o\}$, written $S \cap V = \{ o \}$.  We formalize these ideas below.
 
 \medskip
 
@@ -171,7 +171,7 @@ Certain subsets of the real numbers are worthy of note and are listed below.  In
 
 \item The \sword{Real Numbers}:\index{real number ! set of}\index{real number ! definition of} $\mathbb R = \{ x\,|\,\mbox{$x$ possesses a decimal representation.}\}$
 
-\item The \sword{Irrational Numbers}:\index{irrational number ! set of}\index{irrational number ! definition of} $\mathbb P = \{x\,|\,\mbox{$x$ is a non-rational real number.}\}$  Said another way, an \underline{ir}rational number is a decimal which neither repeats nor terminates.
+\item The \sword{Irrational Numbers}:\index{irrational number ! set of}\index{irrational number ! definition of} Real numbers that are not rational are called \sword{irrational}.  As a set, we have  $\{x\in\mathbb{R}\,|\, x\notin \mathbb{Q}\}$. (There is no standard symbol for this set.)  Every \underline{ir}rational number has a decimal expansion which neither repeats nor terminates.
 
 \item The \sword{Complex Numbers}:\index{complex number ! set of}\index{complex number ! definition of} $\mathbb C=\{a+bi\,|\,\mbox{$a$,$b \in \mathbb R$ and $i=\sqrt{-1}$}\}$  (We will not deal with complex numbers in Math 1010, although they usually make an appearance in Math 1410.)
 
@@ -206,7 +206,7 @@ It is important to note that every natural number is a whole number is an intege
 Which elements of $A$ are natural numbers?  Rational numbers?  Real numbers?
 
 
-%\item  What is another name for $\mathbb{N} \cup \mathbb{Q}$?  What about  $\mathbb{Q} \cup \mathbb P$?
+%\item  What is another name for $\mathbb{N} \cup \mathbb{Q}$?  What about  $\mathbb{Q} \cup \mathbb P$, where, for this example, we let $\mathbb{P}$ denote the set of irrational numbers?
 
 \end{enumerate}
 }
@@ -233,27 +233,27 @@ So suppose $s \in S$.  What can be said about $s$?  We know there is some real n
 
 \item  The set $A$ contains no natural numbers. Clearly, $\frac{4}{5}$ is a rational number as is $-117$ (which can be written as $\frac{-117}{1}$). It's the last two numbers listed in $A$, $0.20\overline{2002}$ and $0.202002000200002 \ldots$, that warrant some discussion.  First, recall that the `line' over the digits $2002$ in $0.20\overline{2002}$ (called the vinculum) indicates that these digits repeat, so it is a rational number. As for the number $0.202002000200002 \ldots$, the `$\ldots$' indicates the pattern of adding an extra `$0$' followed by a `$2$' is what defines this real number.  Despite the fact there is a \textit{pattern} to this decimal, this decimal is \textit{not repeating}, so it is not a rational number - it is, in fact, an irrational number.  All of the elements of $A$ are real numbers, since all of them can be expressed as decimals (remember that $\frac{4}{5} = 0.8$).\qed
 
-\item  The set $\mathbb{N} \cup \mathbb{Q} = \{ x \, | \, \text{$x \in \mathbb{N}$ or $x \in \mathbb{Q}$} \}$ is the union of the set of natural numbers with the set of rational numbers.  Since every natural number is a rational number, $\mathbb{N}$ doesn't contribute any new elements to $\mathbb{Q}$, so $\mathbb{N} \cup \mathbb{Q} = \mathbb{Q}$. For the  set $\mathbb{Q} \cup \mathbb P$, we note that every real number is either rational or not, hence $\mathbb{Q} \cup \mathbb P = \mathbb{R}$, pretty much by the definition of the set $\mathbb P$.  
+%\item  The set $\mathbb{N} \cup \mathbb{Q} = \{ x \, | \, \text{$x \in \mathbb{N}$ or $x \in \mathbb{Q}$} \}$ is the union of the set of natural numbers with the set of rational numbers.  Since every natural number is a rational number, $\mathbb{N}$ doesn't contribute any new elements to $\mathbb{Q}$, so $\mathbb{N} \cup \mathbb{Q} = \mathbb{Q}$. For the  set $\mathbb{Q} \cup \mathbb P$, we note that every real number is either rational or not, hence $\mathbb{Q} \cup \mathbb P = \mathbb{R}$, pretty much by the definition of the set $\mathbb P$.  
 
 
 \end{enumerate}
 }
-\pagebreak
+%\pagebreak
 
 As you may recall, we often visualize the set of real numbers $\mathbb{R}$ as a line where each point on the line corresponds to one and only one real number.  Given two different real numbers $a$ and $b$,  we write $a < b$ if $a$ is located to the left of $b$ on the number line, as shown in Figure \ref{fig:numline}.
 
 
 
 
-While this notion seems innocuous, it is worth pointing out that this convention is rooted in two deep properties of real numbers.  The first property is that $\mathbb{R}$ is  \href{http://en.wikipedia.org/wiki/Complete_metric_space}{\underline{complete}}. This means that there are no `holes' or `gaps' in the real number line.\footnote{Alas, this intuitive feel for what it means to be `complete' is as good as it gets at this level.  Completeness does get a much more precise meaning later in courses like Analysis and Topology.} Another way to think about this is that if you choose any two distinct (different) real numbers, and look between them, you'll find a solid line segment (or interval) consisting of infinitely many real numbers.  
+While this notion seems innocuous, it is worth pointing out that this convention is rooted in two deep properties of real numbers.  The first property is that $\mathbb{R}$ is  \href{http://en.wikipedia.org/wiki/Complete_metric_space}{\underline{complete}}. This means that there are no `holes' or `gaps' in the real number line. (This intuitive feel for what it means to be `complete' is as good as it gets at this level.  Completeness does get a much more precise meaning later in courses like Analysis and Topology.) Another way to think about this is that if you choose any two distinct (different) real numbers, and look between them, you'll find a solid line segment (or interval) consisting of infinitely many real numbers.  
 
-\mfigure{.75}{The real number line with two numbers $a$ and $b$, where $a<b$.}{fig:numline}{figures/RelationsandFunctionsGraphics/SetTheory-5}
+\mfigure{.5}{The real number line with two numbers $a$ and $b$, where $a<b$.}{fig:numline}{figures/RelationsandFunctionsGraphics/SetTheory-5}
 
 The next result tells us what types of numbers we can expect to find.
 
 \medskip
 
-\theorem{densityofqandp}{Density Property of $\mathbb{Q}$ and $\mathbb P$ in $\mathbb{R}$}{
+\theorem{densityofqandp}{Density Property of $\mathbb{Q}$ in $\mathbb{R}$}{
 
 Between any two distinct real numbers, there is at least one rational number and irrational number.  It then follows that between any two distinct real numbers there will be \underline{infinitely many} rational and irrational numbers.
 }
@@ -271,7 +271,7 @@ The second property $\mathbb{R}$ possesses that lets us view it as a line is tha
 \definition{trichotomy}{Law of Trichotomy}{
 If $a$ and $b$ are real numbers then {\bf exactly one} of the following statements is true: \vspace{-.15in} \[ \begin{array}{lclcl} a < b & \hspace*{1.25in} & a > b & \hspace*{1.25in} & a = b \end{array} \]
 }
-\mnote{.5}{The Law of Trichotomy, strictly speaking, is an \textit{axiom} of the real numbers: a basic requirement that we assume to be true. However, in any \textit{construction} of the real, such as the method of \href{https://en.wikipedia.org/wiki/Dedekind_cut}{Dedekind cuts}, it is necessary to \textit{prove} that the Law of Trichotomy is satisfied.}
+\mnote{.35}{The Law of Trichotomy, strictly speaking, is an \textit{axiom} of the real numbers: a basic requirement that we assume to be true. However, in any \textit{construction} of the real, such as the method of \href{https://en.wikipedia.org/wiki/Dedekind_cut}{Dedekind cuts}, it is necessary to \textit{prove} that the Law of Trichotomy is satisfied.}
 
 \medskip
 
