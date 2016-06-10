@@ -171,6 +171,8 @@ Everything in Theorem \ref{arccosinesinefunctionprops} is a direct consequence o
 
 \end{enumerate}
 
+\drawexampleline
+
 \item
 
 \begin{enumerate}
@@ -336,6 +338,8 @@ $gf^{-1}(x) = \operatorname{arccot}(x)$
 
 \end{enumerate}
 
+\drawexampleline
+
 \mnote{.5}{It's always a good idea to make sure the identities used in these situations are valid for all values $t$ under consideration.  Check our work back in Example \ref{arccosinesineex}.  Were the identities we used there valid for all $t$ under consideration?  A pedantic point, to be sure, but what else do you expect from this book?}
 
 \item  
@@ -381,24 +385,6 @@ It is clear from the graph of secant that we cannot find one single continuous p
 
 In this subsection, we restrict the secant and cosecant functions to coincide with the restrictions on cosine and sine, respectively.  For $f(x) = \sec(x)$, we restrict the domain to $\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]$ (Figure \ref{fig:arctrig7}) \index{arcsecant ! trigonometry friendly ! graph of} and we restrict $g(x) = \csc(x)$ to $\left[-\frac{\pi}{2}, 0\right) \cup \left(0,  \frac{\pi}{2}\right]$ (Figure \ref{fig:arctrig8}. \index{arccosecant ! trigonometry friendly ! graph of}
 
-\mtable{.7}{The ``Trigonometry Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig7}{
-\begin{tabular}{c}
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-13}\\
-$f(x) = \sec(x)$ on  $\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]$\\
-\\
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-14}\\
-$f^{-1}(x)=\operatorname{arcsec}(x)$
-\end{tabular}}
- 
-
-\mtable{.3}{The ``Trigonometry Friendly'' definition of $\operatorname{arccsc}(x)$}{fig:arctrig8}{
-\begin{tabular}{c}
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-15}\\
-$g(x) = \csc(x)$ on  $\left[-\frac{\pi}{2}, 0\right) \cup \left(0,  \frac{\pi}{2}\right]$\\
-\\
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-16}\\
-$g^{-1}(x)=\operatorname{arccsc}(x)$
-\end{tabular}}
 
 Note that for both arcsecant and arccosecant, the domain is $(-\infty, -1] \cup [1, \infty)$.  Taking a page from Section \ref{AbsoluteValueFunctions}, we can rewrite this as $\left\{ x : |x| \geq 1\right\}$.  This is often done in Calculus textbooks, so we include it here for completeness.  Using these definitions, we get the following properties of the arcsecant and arccosecant functions.
 
@@ -455,6 +441,24 @@ Note that for both arcsecant and arccosecant, the domain is $(-\infty, -1] \cup 
 
 \medskip
 
+\mtable{.7}{The ``Trigonometry Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig7}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.7\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-13}\\
+$f(x) = \sec(x)$ on  $\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]$\\
+\\
+\myincludegraphics[width=0.9\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-14}\\
+$f^{-1}(x)=\operatorname{arcsec}(x)$
+\end{tabular}}
+ 
+
+\mtable{.3}{The ``Trigonometry Friendly'' definition of $\operatorname{arccsc}(x)$}{fig:arctrig8}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.7\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-15}\\
+$g(x) = \csc(x)$ on  $\left[-\frac{\pi}{2}, 0\right) \cup \left(0,  \frac{\pi}{2}\right]$\\
+\\
+\myincludegraphics[width=0.9\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-16}\\
+$g^{-1}(x)=\operatorname{arccsc}(x)$
+\end{tabular}}
 
 
 \example{arcsecantcosecantex1}{Evaluating the arcsecant and arccosecant functions}{
@@ -463,7 +467,7 @@ Note that for both arcsecant and arccosecant, the domain is $(-\infty, -1] \cup 
 
 \item  Find the exact values of the following.
 
-\begin{multicols}{4}
+\begin{multicols}{2}
 
 \begin{enumerate}
 
@@ -504,7 +508,7 @@ Note that for both arcsecant and arccosecant, the domain is $(-\infty, -1] \cup 
 
 \item Using Theorem \ref{arcsecantcosecantfunctionprops1}, we have $\operatorname{arcsec}(2) = \arccos\left(\frac{1}{2}\right) = \frac{\pi}{3}$.
 
-\item  Once again, Theorem \ref{arcsecantcosecantfunctionprops1} comes to our aid giving $\operatorname{arccsc}(-2) = \arcsin\left(-\frac{1}{2}\right) = -\frac{\pi}{6}$.
+\item  Once again, Theorem \ref{arcsecantcosecantfunctionprops1} gives us $\operatorname{arccsc}(-2) = \arcsin\left(-\frac{1}{2}\right) = -\frac{\pi}{6}$.
 
 
 \item  Since $\frac{5\pi}{4}$ doesn't fall between $0$ and $\frac{\pi}{2}$ or $\frac{\pi}{2}$ and $\pi$, we cannot use the inverse property stated in Theorem \ref{arcsecantcosecantfunctionprops1}.  We can, nevertheless, begin by working `inside out' which yields  $\operatorname{arcsec}\left( \sec\left( \frac{5\pi}{4} \right) \right) = \operatorname{arcsec}(-\sqrt{2}) = \arccos\left(-\frac{\sqrt{2}}{2}\right) = \frac{3\pi}{4}$.
@@ -543,24 +547,6 @@ Now we need to determine what these conditions on $t$ mean for $x$.  Since $x = 
 
 In this subsection, we restrict $f(x) = \sec(x)$ to $\left[0, \frac{\pi}{2}\right) \cup \left[\pi, \frac{3\pi}{2}\right)$, \index{arcsecant ! calculus friendly ! graph of} and we restrict $g(x) = \csc(x)$ to $\left(0, \frac{\pi}{2}\right] \cup \left( \pi, \frac{3\pi}{2}\right]$.  \index{arccosecant ! calculus friendly ! graph of}
 
-\mtable{.7}{The ``Calculus Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig9}{
-\begin{tabular}{c}
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-17}\\
-$f(x) = \sec(x)$ on  $\left[0, \frac{\pi}{2}\right) \cup \left[ \pi, \frac{3\pi}{2}\right)$\\
-\\
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-18}\\
-$f^{-1}(x)=\operatorname{arcsec}(x)$
-\end{tabular}}
- 
-
-\mtable{.3}{The ``Calculus Friendly definition of $\operatorname{arccsc}(x)$}{fig:arctrig10}{
-\begin{tabular}{c}
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-19}\\
-$g(x) = \csc(x)$ on  $\left(0, \frac{\pi}{2}\right] \cup \left(\pi,  \frac{3\pi}{2}\right]$\\
-\\
-\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-20}\\
-$g^{-1}(x)=\operatorname{arccsc}(x)$
-\end{tabular}}
 
 Using these definitions, we get the following result.
 
@@ -617,6 +603,24 @@ Using these definitions, we get the following result.
 \medskip
 
 
+\mtable{.7}{The ``Calculus Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig9}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.8\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-17}\\
+$f(x) = \sec(x)$ on  $\left[0, \frac{\pi}{2}\right) \cup \left[ \pi, \frac{3\pi}{2}\right)$\\
+\\
+\myincludegraphics[width=0.9\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-18}\\
+$f^{-1}(x)=\operatorname{arcsec}(x)$
+\end{tabular}}
+ 
+
+\mtable{.3}{The ``Calculus Friendly definition of $\operatorname{arccsc}(x)$}{fig:arctrig10}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.8\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-19}\\
+$g(x) = \csc(x)$ on  $\left(0, \frac{\pi}{2}\right] \cup \left(\pi,  \frac{3\pi}{2}\right]$\\
+\\
+\myincludegraphics[width=0.9\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-20}\\
+$g^{-1}(x)=\operatorname{arccsc}(x)$
+\end{tabular}}
 
 Our next example is a duplicate of Example \ref{arcsecantcosecantex1}.  The interested reader is invited to compare and contrast the solution to each.
 
@@ -706,7 +710,7 @@ In the sections to come, we will have need to approximate the values of the inve
 
 \medskip
 
-\example{arcstuffoncalc}{Using the calculator to evaluate inverse trigonometric functions}{
+\example{arcstuffoncalc}{Inverse trig functions not on the calculator}{
 
 \begin{enumerate}
 
@@ -819,6 +823,7 @@ The result is shown in Figure \ref{fig:arctrig16}.
 
 The inverse trigonometric functions are typically found in applications whenever the measure of an angle is required.  One such scenario is presented in the following example. (The authors would like to thank Dan Stitz for this problem and associated graphics.)
 
+\pagebreak
 
 \example{roofpitchex}{Angle of a pitched roof}{  The roof on the house below has a  `$6/12$ pitch'.  This means that when viewed from the side, the roof line has a rise of 6 feet over a run of 12 feet.  Find the angle of inclination from the bottom of the roof to the top of the roof.  Express your answer in decimal degrees, rounded to the nearest hundredth of a degree.
 
@@ -837,7 +842,7 @@ Front View & Side View
 {
 If we divide the side view of the house down the middle, we find that the roof line forms the hypotenuse of a right triangle with legs of length $6$ feet and $12$ feet.  Using Theorem \ref{circularfunctionstriangle}, we find the angle of inclination, labelled $\theta$ in Figure \ref{fig:arctrigappex}, satisfies $\tan(\theta) = \frac{6}{12} = \frac{1}{2}$.  Since $\theta$ is an acute angle, we can use the arctangent function and we find $\theta = \arctan\left(\frac{1}{2}\right)\, \text{radians} \, \approx 26.56^{\circ}$.
 
-\mfigure[width=0.95\marginparwidth]{.7}{Angle of inclination $\theta$ for Example \ref{roofpitchex}}{fig:arctrigappex}{figures/IntroTrigGraphics/ArcTrig-24}
+\mfigure[width=0.95\marginparwidth]{.65}{Angle of inclination $\theta$ for Example \ref{roofpitchex}}{fig:arctrigappex}{figures/IntroTrigGraphics/ArcTrig-24}
 }
 
 
@@ -881,6 +886,7 @@ In Sections \ref{TheUnitCircle} and \ref{CircularFunctions}, we learned how to s
 
 \medskip
 
+\drawexampleline
 
 Since $\frac{1}{3}$ isn't the sine of any of the `common angles' discussed earlier, we use the arcsine functions to express our answers.  The real number $t = \arcsin\left(\frac{1}{3}\right)$ is defined so it satisfies $0 < t < \frac{\pi}{2}$ with $\sin(t) = \frac{1}{3}$.  Hence, $\alpha = \arcsin\left(\frac{1}{3}\right)$ radians. Since the solutions in Quadrant I are all coterminal with $\alpha$, we get part of our solution to be $\theta = \alpha + 2\pi k  = \arcsin\left(\frac{1}{3}\right) + 2\pi k$ for integers $k$.  Turning our attention to Quadrant II, we get one solution to be $\pi - \alpha$.  Hence, the Quadrant II solutions are  $\theta = \pi - \alpha + 2\pi k = \pi - \arcsin\left(\frac{1}{3}\right) + 2\pi k$, for integers $k$.
 
