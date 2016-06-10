@@ -260,6 +260,8 @@ The proofs of the Change of Base formulas are a result of the other properties s
 
 \mnote{.75}{While, in the grand scheme of things, both change of base formulas are really saying the same thing, the logarithmic form is the one usually encountered in Algebra while the exponential form isn't usually introduced until Calculus. The authors feel so strongly about showing students that every property of logarithms comes from and corresponds to a property of exponents that we have broken tradition with the vast majority of other authors in this field.  This isn't the first time this happened, and it certainly won't be the last.}
 
+\medskip
+
 \example{ex_basechange}{Using change of base formulas}{ Use an appropriate change of base formula to convert the following expressions to ones with the indicated base.  Verify your answers using a computer or calculator, as appropriate.
 
 \begin{enumerate}
@@ -282,13 +284,13 @@ The proofs of the Change of Base formulas are a result of the other properties s
 
 \item  Here, $a=2$ and $b = e$ so we have $2^{x} = e^{x \ln(2)}$.  To verify this on our calculator, we can graph $f(x) = 2^x$ \ifthenelse{\boolean{colour}}{(in red)}{(in black)} and $g(x) = e^{x \ln(2)}$ \ifthenelse{\boolean{colour}}{(in blue)}{(in grey)}.  Their graphs are indistinguishable which provides evidence that they are the same function: see Figure \ref{fig:logprop1}.
 
-\mfigure{.2}{$y=f(x)=2^x$ and $y=g(x)=e^{x\ln(2)}$}{fig:logprop1}{figures/ExpLogsGraphics/ExpLogs03}
+\mfigure{.4}{$y=f(x)=2^x$ and $y=g(x)=e^{x\ln(2)}$}{fig:logprop1}{figures/ExpLogsGraphics/ExpLogs03}
 
 \item  Applying the change of base with $a=4$ and $b=e$ leads us to write $\log_{4}(5) = \frac{\ln(5)}{\ln(4)}$.  Evaluating this in the calculator gives $\frac{\ln(5)}{\ln(4)} \approx 1.16$.  How do we check this really is the value of $\log_{4}(5)$?  By definition, $\log_{4}(5)$ is the exponent we put on $4$ to get $5$.  The plot from GeoGebra in Figure \ref{fig:logprop2} confirms this. (Which means if it is lying to us about the first answer it gave us, at least it is being consistent.) 
 
 \item  We write $\ln(x) = \log_{e}(x) = \frac{\log(x)}{\log(e)}$.  We graph both $f(x) = \ln(x)$ and $g(x) = \frac{\log(x)}{\log(e)}$ and find both graphs appear to be identical.
 
-\mfigure{.8}{$y=f(x)=2^x$ and $y=g(x)=e^{x\ln(2)}$}{fig:logprop2}{figures/ExpLogsGraphics/ExpLogs04}
+\mfigure{.2}{$y=f(x)=2^x$ and $y=g(x)=e^{x\ln(2)}$}{fig:logprop2}{figures/ExpLogsGraphics/ExpLogs04}
 
 \end{enumerate}
 
