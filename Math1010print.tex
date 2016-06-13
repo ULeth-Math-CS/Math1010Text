@@ -2,7 +2,7 @@
 \newboolean{longpage}
 \setboolean{longpage}{false}
 \newboolean{synthetic}
-\setboolean{synthetic}{false}
+\setboolean{synthetic}{true}
 \newboolean{colour}
 \setboolean{colour}{false}
 \ifthenelse{\boolean{longpage}}%
@@ -147,11 +147,11 @@
 \input{text_pre/07_Identities}
 \input{text_pre/07_TrigGraphs}
 
-%\clearpage{\pagestyle{empty}\cleardoublepage}
-%\chapter{Further Topics in Trigonometry}\label{AppExt}
-%\thispagestyle{empty}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\chapter{Further Topics in Trigonometry}\label{AppExt}
+\thispagestyle{empty}
 
-%\input{text_pre/07_ArcTrig}
+\input{text_pre/07_ArcTrig}
 %\input{text_pre/07_TrigEquIneq}
 %\input{text_pre/08_LawofSines}
 %\input{text_pre/08_LawofCosines}
