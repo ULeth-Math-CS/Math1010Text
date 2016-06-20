@@ -66,7 +66,7 @@ We now formalize the concept that inverse functions exchange inputs and outputs.
 
 Theorem \ref{inversefunctionprops} is a consequence of Definition \ref{inversefunctiondefn} and the Fundamental Graphing Principle for Functions.  We note the third property in Theorem \ref{inversefunctionprops} tells us that the graphs of inverse functions are reflections about the line $y=x$.  For a proof of this, see Example \ref{inversemidpointex1} in Section \ref{CartesianPlane} and Exercise \ref{inversemidpointex2} in Section \ref{LinearFunctions}.  For example, we plot the inverse functions $f(x) = 3x+4$ and $g(x) = \dfrac{x-4}{3}$ in Figure \ref{fig:inverse2}.
 
-\mfigure{.55}{Reflecting $y=f(x)$ across $y=x$ to obtain $y=g(x)$}{fig:inverse2}{figures/FurtherGraphics/InverseFunctions-2}
+\mfigure[width=0.95\marginparwidth]{.55}{Reflecting $y=f(x)$ across $y=x$ to obtain $y=g(x)$}{fig:inverse2}{figures/FurtherGraphics/InverseFunctions-2}
 
 
 If we abstract one step further, we can express the sentiment in Definition \ref{inversefunctiondefn} by saying that $f$ and $g$ are inverses if and only if  $g \circ f = I_{\mbox{\tiny $1$}}$ and $f \circ g = I_{\mbox{\tiny $2$}}$ where $I_{\mbox{\tiny $1$}}$ is the identity function restricted to the domain of $f$ and $I_{\mbox{\tiny $2$}}$ is the identity function restricted to the domain of $g$.  In other words, $I_{\mbox{\tiny $1$}}(x) = x$ for all $x$ in the domain of $f$ and $I_{\mbox{\tiny $2$}}(x) = x$ for all $x$ in the domain of $g$.   Using this description of inverses along with the properties of function composition listed in Theorem  \ref{functioncompprops}, we can show that function inverses are unique. (In other words, invertible functions have exactly one inverse.)  Suppose $g$ and $h$ are both inverses of a function $f$. By Theorem \ref{inversefunctionprops}, the domain of $g$ is equal to the domain of $h$, since both are the range of $f$.  This means the identity function $I_{\mbox{\tiny $2$}}$ applies both to the domain of $h$ and the domain of $g$.  Thus $h = h \circ I_{\mbox{\tiny $2$}} = h \circ (f \circ g) = (h \circ f) \circ g = I_{\mbox{\tiny $1$}} \circ g = g$, as required. (It is an excellent exercise to explain each step in this string of equalities.)  We summarize the discussion of the last two paragraphs in the following theorem.
@@ -153,6 +153,8 @@ We say that the graph of a function \sword{passes} the Horizontal Line Test  if 
 \medskip
 
 We put this result to work in the next example.
+
+\medskip
 
 \example{inversefunctiononetooneex}{Finding one-to-one functions}{ Determine if the following functions are one-to-one in two ways: (a) analytically using Definition \ref{onetoone} and (b) graphically using the Horizontal Line Test.
 
@@ -250,6 +252,8 @@ We get $c=d$ as one possibility, but we also get the possibility that $c=2-d$.  
 \mfigure{.3}{The function $F$ is not one-to-one}{fig:inverse8}{figures/FurtherGraphics/InverseFunctions-9}
 }
 
+\medskip
+
 We have shown that the functions $f$ and $g$ in Example \ref{inversefunctiononetooneex} are one-to-one.  This means they are invertible, so it is natural to wonder what $f^{-1}(x)$ and $g^{-1}(x)$ would be.  For $f(x) =  \frac{1-2x}{5}$, we can think our way through the inverse since there is only one occurrence of $x$. We can track step-by-step what is done to $x$ and reverse those steps as we did at the beginning of the chapter.  The function $g(x) = \frac{2x}{1-x}$ is a bit trickier since $x$ occurs in two places.  When one evaluates $g(x)$ for a specific value of $x$, which is first, the $2x$ or the $1-x$?  We can imagine functions more complicated than these so we need to develop a general methodology to attack this problem.  Theorem \ref{inversefunctionprops} tells us equation $y = f^{-1}(x)$ is equivalent to $f(y) = x$ and this is the basis of our algorithm.
 
 \smallskip
@@ -270,6 +274,8 @@ We have shown that the functions $f$ and $g$ in Example \ref{inversefunctiononet
 \smallskip 
 
 Note that we could have simply written `Solve $x=f(y)$ for $y$' and be done with it.  The act of interchanging the $x$ and $y$ is there to remind us that we are finding the inverse function by switching the inputs and outputs.  
+
+\medskip
 
 \example{ex_inverse1}{Computing inverse functions}{ Find the inverse of the following one-to-one functions. Check your answers analytically using function composition and graphically.
 
@@ -333,6 +339,8 @@ x & =  xy + 2y = y(x+2)  \tag*{factor}\\
 y & = \dfrac{x}{x+2}
 \end{align*}
 
+\drawexampleline
+
 We obtain $g^{-1}(x) = \dfrac{x}{x+2}$.  To check this analytically, we first check $\left(g^{-1} \circ g \right)(x) = x$ for all $x$ in the domain of $g$, that is, for all $x \neq 1$.
 
 \begin{align*}
@@ -361,6 +369,8 @@ Graphing $y=g(x)$ and  $y = g^{-1}(x)$ on the same set of axes is busy, but we c
 
 \end{enumerate}
 }
+
+\medskip
 
 We now return to $f(x) = x^2$.  We know that $f$ is not one-to-one, and thus, is not invertible.  However, if we restrict the domain of $f$, we can produce a new function $g$ which is one-to-one.  If we define $g(x) = x^2$, $x \geq 0$, then we have the graph in Figure \ref{fig:inverse11} (b).
 
@@ -481,6 +491,8 @@ x^2 + 2x + 1 & = & y + 2 & \\
 y & = & x^2 + 2x - 1 & \\
 
 \end{array} \]
+
+\drawexampleline
 
 We have $k^{-1}(x) = x^2+2x-1$.  Based on our experience, we know something isn't quite right.  We determined $k^{-1}$ is a quadratic function, and we have seen several times in this section that these are not one-to-one unless their domains are suitably restricted.  Theorem \ref{inversefunctionprops} tells us that the domain of $k^{-1}$ is the range of $k$.  From the graph of $k$, we see that the range is $[-1, \infty)$, which means we restrict the domain of $k^{-1}$ to $x \geq -1$. We now check that this works in our compositions.
 

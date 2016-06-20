@@ -214,6 +214,7 @@ Find the domain of the following functions.
 \setlength{\extrarowheight}{2pt} 
 So we get two real numbers which make denominators $0$, namely $x = -1$ and $x=3$.  Our domain is all real numbers except $-1$ and $3$:  $(-\infty, -1) \cup (-1,3) \cup (3, \infty)$.
 
+\drawexampleline
 
 \item  In finding the domain of $F$, we notice that we have two potentially hazardous issues:  not only do we have a denominator, we have a fourth (even-indexed) root.  Our strategy is to determine the restrictions imposed by each part and select the real numbers which satisfy both conditions.  To satisfy the fourth root,  we require $2x+1 \geq 0$.  From this we get $2x \geq -1$ or $x \geq -\frac{1}{2}$.  Next, we round up the values of $x$ which could cause trouble in the denominator by setting the denominator equal to $0$.  We get $x^2 - 1=0$, or $x = \pm 1$.  Hence, in order for a real number $x$ to be in the domain of $F$, $x \geq -\frac{1}{2}$ but $x \neq \pm 1$.  In interval notation, this set is $\left[ -\frac{1}{2}, 1 \right) \cup (1, \infty)$. 
 
@@ -241,6 +242,7 @@ It is important to keep in mind that any time Mathematics is used to approximate
 
 Even though, mathematically, $c(g) = 1.5g$ has no domain restrictions (there are no denominators and no even-indexed radicals), there are certain values of $g$ that don't make any physical sense.  For example, $g = -1$ corresponds to `purchasing' $-1$ pounds of grapes. (Maybe this means \textit{returning} a pound of grapes?)  Also, unless the `local market' mentioned is the State of California (or some other exporter of grapes), it also doesn't make much sense for $g = 500,\!000,\!000$, either. So the reality of the situation limits what $g$ can be, and these limits determine the applied domain of $g$.  Typically, an applied domain is stated explicitly.  In this case, it would be common to see something like $c(g) = 1.5g$, $0 \leq g \leq 100$, meaning the number of pounds of grapes purchased is limited from $0$ up to $100$. The upper bound here, $100$ may represent the inventory of the market, or some other limit as set by local policy or law.  Even with this restriction, our model has its limitations.  As we saw above, it is virtually impossible to buy exactly  $3.\overline{3}$ pounds of grapes so that our cost is exactly $\$5$.  In this case, being sensible shoppers, we would most likely `round down' and purchase $3$ pounds of grapes or however close the market scale can read to $3.\overline{3}$ without being over.  It is time for a more sophisticated example.
 
+\medskip
 
 \example{heightofrocketmodel}{Height of a model rocket}{
 The height $h$ in feet of a model rocket above the ground $t$ seconds after lift-off is given by \[ h(t) = \left\{ \begin{array}{rcl} -5t^2 + 100t, & \mbox{if} & 0 \leq t \leq 20 \\ 0, & \mbox{if} & t > 20 \\ \end{array} \right.\]

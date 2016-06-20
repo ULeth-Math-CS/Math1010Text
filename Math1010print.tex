@@ -30,7 +30,7 @@
 \pgfplotsset{compat=1.8}
 \usepackage{pdfpages}
 
-\renewcommand{\C}{\mathbb{C}}
+\ifthenelse{\boolean{xetex}}{\renewcommand{\C}{\mathbb{C}}}{\newcommand{\C}{\mathbb{C}}}
 \newcommand{\R}{\mathbb{R}}
 
 \ifthenelse{\boolean{xetex}}%
@@ -152,11 +152,12 @@
 \thispagestyle{empty}
 
 \input{text_pre/07_ArcTrig}
-%\input{text_pre/07_TrigEquIneq}
-%\input{text_pre/08_LawofSines}
-%\input{text_pre/08_LawofCosines}
-%\input{text_pre/08_IntroPolar}
-%\input{text_pre/08_PolarComplex}
+\input{text_pre/07_TrigEquIneq}
+\input{text_pre/08_Sinusoid}
+\input{text_pre/08_LawofSines}
+\input{text_pre/08_LawofCosines}
+\input{text_pre/08_IntroPolar}
+\input{text_pre/08_PolarComplex}
 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
