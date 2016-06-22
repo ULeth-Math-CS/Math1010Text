@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  20 JUN 2016 11:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  20 JUN 2016 15:33
 entering extended mode
 **Math1010print.tex
 (Math1010print.tex
@@ -2733,24 +2733,6 @@ e (type QTm)
 [33
 
 ]) (text_pre/00_CmpNums.tex
-Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
-ex-text;" at 8.0pt
- -> C:/WINDOWS/Fonts/calibri.ttf
-Requested font "cmr8" at 8.0pt
-Requested font "cmmi8" at 8.0pt
-Requested font "cmsy8" at 8.0pt
-Requested font "cmex8" at 8.0pt
-Requested font "msam10" at 8.0pt
-Requested font "msbm10" at 8.0pt
-Requested font "vect8" at 8.0pt
-Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
-=tex-text;" at 8.0pt
- -> C:/WINDOWS/Fonts/calibrii.ttf
-Requested font "[cmmi10]/OT:mapping=tex-text;" at 8.0pt
- -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 8.0pt
- -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-
 Overfull \hbox (1.39998pt too wide) in paragraph at lines 20--21
 [][][]
  []
@@ -2761,35 +2743,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 32--33
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 34--35
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
+ []
+
+
+Underfull \hbox (badness 1603) has occurred while \output is active
+\EU1/Calibri(0)/m/n/9 label the imaginary unit ‘$[]$’, usually to
  []
 
 [34
 
 ]
-Overfull \hbox (4.87463pt too wide) in paragraph at lines 113--113
+Overfull \hbox (4.87463pt too wide) in paragraph at lines 115--115
 \EU1/Calibri(0)/m/n/10 plicable to real numbers to get $[][] \OT1/cmr/m/n/10 = 
 [] [] = [][][] =
  []
 
 [35]
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 138--139
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 140--141
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 [36]
-Overfull \hbox (9.8671pt too wide) detected at line 224
+Overfull \hbox (9.8671pt too wide) detected at line 226
 []
  []
 
@@ -2799,12 +2786,12 @@ Underfull \hbox (badness 1655) has occurred while \output is active
  []
 
 [37]
-Overfull \hbox (1.39998pt too wide) in paragraph at lines 244--245
+Overfull \hbox (1.39998pt too wide) in paragraph at lines 246--247
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
@@ -4615,6 +4602,23 @@ Underfull \hbox (badness 4518) has occurred while \output is active
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Requested font "Calibri/OT:script=latn;language=DFLT;mapping=tex-text;mapping=t
+ex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/calibri.ttf
+Requested font "cmr8" at 8.0pt
+Requested font "cmmi8" at 8.0pt
+Requested font "cmsy8" at 8.0pt
+Requested font "cmex8" at 8.0pt
+Requested font "msam10" at 8.0pt
+Requested font "msbm10" at 8.0pt
+Requested font "vect8" at 8.0pt
+Requested font "Calibri/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping
+=tex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/calibrii.ttf
+Requested font "[cmmi10]/OT:mapping=tex-text;" at 8.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+Requested font "[cmmi10]/I/OT:mapping=tex-text;" at 8.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
  [141
 
 ]
