@@ -28,8 +28,8 @@ For example, consider the point $P$ on the next page.  To use the numbers on the
 
 \medskip
 
-\noindent%\hskip-110pt
-\begin{minipage}{1.3\linewidth}
+\noindent\ifthenelse{\isodd{\thepage}}{\hskip-110pt}{}
+\noindent\begin{minipage}{1.3\linewidth}
 \begin{tabular}{cc}
 \myincludegraphics{figures/RelationsandFunctionsGraphics/CartesianPlane-22} &
 
@@ -187,7 +187,7 @@ To reflect a point $(x,y)$ about the:
 
 \subsection{Distance in the Plane}
 
-Another important concept in Geometry is the notion of length.  If we are going to unite Algebra and Geometry using the Cartesian Plane, then we need to develop an algebraic understanding of what distance in the plane means.  Suppose we have two points, $P\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $Q\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right),$ in the plane. By the \index{distance ! definition} \sword{distance} $d$  between $P$ and $Q$, we mean the length of the line segment joining $P$ with $Q$.  (Remember, given any two distinct points in the plane, there is a unique line containing both points.)  Our goal now is to create an algebraic formula to compute the distance between these two points. Consider the generic situation in Figure \ref{fig:cartdist}.
+Another important concept in Geometry is the notion of length.  If we are going to unite Algebra and Geometry using the Cartesian Plane, then we need to develop an algebraic understanding of what distance in the plane means.  Suppose we have two points, $P\left(x_{0}, y_{0}\right)$ and $Q\left(x_{1}, y_{1}\right),$ in the plane. By the \index{distance ! definition} \sword{distance} $d$  between $P$ and $Q$, we mean the length of the line segment joining $P$ with $Q$.  (Remember, given any two distinct points in the plane, there is a unique line containing both points.)  Our goal now is to create an algebraic formula to compute the distance between these two points. Consider the generic situation in Figure \ref{fig:cartdist}.
 
 \medskip
 
@@ -201,19 +201,19 @@ Another important concept in Geometry is the notion of length.  If we are going 
 
 \medskip
 
-With a little more imagination, we can envision a right triangle whose hypotenuse has length $d$ as drawn above on the right.  From the latter figure, we see that the lengths of the legs of the triangle are $\left|x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}\right|$ and $\left|y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}\right|$ so the \href{http://en.wikipedia.org/wiki/Pythagorean_Theorem}{\underline{Pythagorean Theorem}} gives us
+With a little more imagination, we can envision a right triangle whose hypotenuse has length $d$ as drawn above on the right.  From the latter figure, we see that the lengths of the legs of the triangle are $\left|x_{1} - x_{0}\right|$ and $\left|y_{1} - y_{0}\right|$ so the \href{http://en.wikipedia.org/wiki/Pythagorean_Theorem}{\underline{Pythagorean Theorem}} gives us
  
- \[ \left|x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}\right|^2 + \left|y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}\right|^2 = d^2\]
- \[ \left(x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}\right)^2 + \left(y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}\right)^2 = d^2\]
+ \[ \left|x_{1} - x_{0}\right|^2 + \left|y_{1} - y_{0}\right|^2 = d^2\]
+ \[ \left(x_{1} - x_{0}\right)^2 + \left(y_{1} - y_{0}\right)^2 = d^2\]
  
 (Do you remember why we can replace the absolute value notation with parentheses?)  By extracting the square root of both sides of the second equation and using the fact that distance is never negative, we get
  
 \medskip
  
 \keyidea{distanceformula}{The Distance Formula}{
-\index{distance ! distance formula}  The distance $d$ between the points $P\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $Q\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right)$ is:
+\index{distance ! distance formula}  The distance $d$ between the points $P\left(x_{0}, y_{0}\right)$ and $Q\left(x_{1}, y_{1}\right)$ is:
  
-\[d = \sqrt{ \left(x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}}\right)^2 + \left(y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}}\right)^2} \]
+\[d = \sqrt{ \left(x_{1} - x_{0}\right)^2 + \left(y_{1} - y_{0}\right)^2} \]
 }
 
 \medskip
@@ -226,12 +226,12 @@ It is not always the case that the points $P$ and $Q$ lend themselves to constru
 Find and simplify the distance between $P(-2,3)$ and  $Q(1,-3)$.  
 }
 {
-\[ \begin{array}{rcl}
-
- d & = & \sqrt{\left(x_{\mbox{\tiny$1$}} - x_{\mbox{\tiny$0$}} \right)^2 + \left(y_{\mbox{\tiny$1$}} - y_{\mbox{\tiny$0$}} \right)^2} \\
-   & = & \sqrt{ (1-(-2))^2 + (-3-3)^2} \\
-   & = & \sqrt{9 + 36} \\
-   & = & 3 \sqrt{5} \end{array} \]
+\begin{align*}
+ d & =  \sqrt{\left(x_{1} - x_{0} \right)^2 + \left(y_{1} - y_{0} \right)^2} \\
+   & =  \sqrt{ (1-(-2))^2 + (-3-3)^2} \\
+   & =  \sqrt{9 + 36} \\
+   & =  3 \sqrt{5}
+\end{align*}
 
 So the distance is $3 \sqrt{5}$. 
 }
@@ -246,18 +246,18 @@ We shall soon see that the points we wish to find are on the line $x=1$, but for
 
 We require that the distance from $(3,2)$ to $(1,y)$ be $4$.  The Distance Formula, Equation \ref{distanceformula}, yields
 
-\[ \begin{array}{rclr} 
-d &  = & \sqrt{\left(x_{\mbox{\tiny$1$}}-x_{\mbox{\tiny$0$}}\right)^2+\left(y_{\mbox{\tiny$1$}}-y_{\mbox{\tiny$0$}}\right)^2}  & \\
-4 &  = & \sqrt{(1-3)^2+(y-2)^2} & \\
-4  & = & \sqrt{4+(y-2)^2} & \\ 
-4^2 & = & \left(\sqrt{4+(y-2)^2}\right)^2 &  \mbox{squaring both sides} \\
-16 & = & 4+(y-2)^2 & \\
-12 & = & (y-2)^2 & \\
-(y-2)^2 & = & 12 &  \\
-y - 2 & = & \pm \sqrt{12} & \mbox{extracting the square root} \\
-y-2 & = & \pm 2 \sqrt{3} & \\
-y & = & 2 \pm 2 \sqrt{3}  & 
-\end{array} \]
+\begin{align*} 
+d &  =  \sqrt{\left(x_{1}-x_{0}\right)^2+\left(y_{1}-y_{0}\right)^2} \\
+4 &  =  \sqrt{(1-3)^2+(y-2)^2}  \\
+4  & =  \sqrt{4+(y-2)^2}  \\ 
+4^2 & =  \left(\sqrt{4+(y-2)^2}\right)^2   \tag*{squaring both sides} \\
+16 & =  4+(y-2)^2 \\
+12 & =  (y-2)^2  \\
+(y-2)^2 & =  12   \\
+y - 2 & =  \pm \sqrt{12} \tag*{extracting the square root} \\
+y-2 & =  \pm 2 \sqrt{3}  \\
+y & =  2 \pm 2 \sqrt{3}   
+\end{align*}
 
 
 We obtain two answers:  $(1, 2 + 2 \sqrt{3})$ and $(1, 2-2 \sqrt{3}).$  The reader is encouraged to think about why there are two answers.}
@@ -270,7 +270,7 @@ We obtain two answers:  $(1, 2 + 2 \sqrt{3})$ and $(1, 2-2 \sqrt{3}).$  The read
 
 \medskip
 
-Related to finding the distance between two points is the problem of finding the \index{midpoint ! definition of} \sword{midpoint} of the line segment connecting two points.  Given two points, $P\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $Q\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right)$, the \textbf{midpoint} $M$  of $P$ and $Q$ is defined to be the point on the line segment connecting $P$ and $Q$ whose distance from $P$ is equal to its distance from  $Q$.  
+Related to finding the distance between two points is the problem of finding the \index{midpoint ! definition of} \sword{midpoint} of the line segment connecting two points.  Given two points, $P\left(x_{0}, y_{0}\right)$ and $Q\left(x_{1}, y_{1}\right)$, the \textbf{midpoint} $M$  of $P$ and $Q$ is defined to be the point on the line segment connecting $P$ and $Q$ whose distance from $P$ is equal to its distance from  $Q$.  
 
 \mtable{.4}{The midpoint of a line segment}{fig:midptseg}{
 \begin{tabular}{c}
@@ -283,9 +283,11 @@ If we think of reaching $M$ by going `halfway over' and `halfway up' we get the 
 \medskip
 
 \keyidea{midpointformula}{The Midpoint Formula}{
-\index{midpoint ! midpoint formula}The midpoint $M$ of the line segment connecting $P\left(x_{\mbox{\tiny$0$}}, y_{\mbox{\tiny$0$}}\right)$ and $Q\left(x_{\mbox{\tiny$1$}}, y_{\mbox{\tiny$1$}}\right)$ is:
+\index{midpoint ! midpoint formula}The midpoint $M$ of the line segment connecting $P\left(x_{0}, y_{0}\right)$ and $Q\left(x_{1}, y_{1}\right)$ is:
 
-\[ M = \left( \dfrac{x_{\mbox{\tiny$0$}} + x_{\mbox{\tiny$1$}}}{2} , \dfrac{y_{\mbox{\tiny$0$}} + y_{\mbox{\tiny$1$}}}{2} \right)\]
+\[ 
+M = \left( \dfrac{x_{0} + x_{1}}{2} , \dfrac{y_{0} + y_{1}}{2} \right)
+\]
 }
 
 \medskip
@@ -299,14 +301,12 @@ If we let $d$ denote the distance between $P$ and $Q$, we leave it as Exercise \
 Find the midpoint of the line segment connecting $P(-2,3)$ and  $Q(1,-3)$.  
 }
 {
-\setlength{\extrarowheight}{10pt}
 
-\[ \begin{array}{rcl}
- M & = & \left( \dfrac{x_{\mbox{\tiny$0$}}+x_{\mbox{\tiny$1$}}}{2},  \dfrac{y_{\mbox{\tiny$0$}}+y_{\mbox{\tiny$1$}}}{2} \right) \\
-   & = & \left( \dfrac{(-2)+1}{2},  \dfrac{3+(-3)}{2} \right)  = \left(- \dfrac{1}{2}, \dfrac{0}{2} \right) \\
-   & = & \left(- \dfrac{1}{2}, 0 \right) 
-   \end{array} \]
-   
+\begin{align*}
+ M & = \left( \dfrac{x_{0}+x_{1}}{2},  \dfrac{y_{0}+y_{1}}{2} \right) \\
+   & = \left( \dfrac{(-2)+1}{2},  \dfrac{3+(-3)}{2} \right)  = \left(- \dfrac{1}{2}, \dfrac{0}{2} \right) \\
+   & = \left(- \dfrac{1}{2}, 0 \right) 
+\end{align*}   
 The midpoint is  $\left(- \frac{1}{2}, 0 \right)$.}
 
 \medskip
@@ -328,10 +328,10 @@ To prove the claim, we use Equation \ref{midpointformula} to find the midpoint
 
 %\setlength{\extrarowheight}{10pt}
 
-\[ \begin{array}{rcl}
-
- M & = & \left( \dfrac{a+b}{2},  \dfrac{b+a}{2} \right) \\
-   & = & \left( \dfrac{a+b}{2},  \dfrac{a+b}{2} \right)  \\ \end{array} \]
+\begin{align*}
+ M & =  \left( \dfrac{a+b}{2},  \dfrac{b+a}{2} \right) \\
+   & =  \left( \dfrac{a+b}{2},  \dfrac{a+b}{2} \right)
+\end{align*}
 
 Since the $x$ and $y$ coordinates of this point are the same, we find that the midpoint lies on the line $y=x$, as required. 
 }
