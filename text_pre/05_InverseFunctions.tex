@@ -47,6 +47,7 @@ then $f$ and $g$ are \index{function ! inverse ! definition of}\index{inverse ! 
 \smallskip
 
 We now formalize the concept that inverse functions exchange inputs and outputs.
+
 \smallskip
 
 \theorem{inversefunctionprops}{Properties of Inverse Functions}{ Suppose $f$ and $g$ are inverse functions. \index{inverse ! of a function ! properties of} \index{function ! inverse ! properties of}
@@ -69,7 +70,7 @@ Theorem \ref{inversefunctionprops} is a consequence of Definition \ref{inversefu
 \mfigure[width=0.95\marginparwidth]{.55}{Reflecting $y=f(x)$ across $y=x$ to obtain $y=g(x)$}{fig:inverse2}{figures/FurtherGraphics/InverseFunctions-2}
 
 
-If we abstract one step further, we can express the sentiment in Definition \ref{inversefunctiondefn} by saying that $f$ and $g$ are inverses if and only if  $g \circ f = I_{\mbox{\tiny $1$}}$ and $f \circ g = I_{\mbox{\tiny $2$}}$ where $I_{\mbox{\tiny $1$}}$ is the identity function restricted to the domain of $f$ and $I_{\mbox{\tiny $2$}}$ is the identity function restricted to the domain of $g$.  In other words, $I_{\mbox{\tiny $1$}}(x) = x$ for all $x$ in the domain of $f$ and $I_{\mbox{\tiny $2$}}(x) = x$ for all $x$ in the domain of $g$.   Using this description of inverses along with the properties of function composition listed in Theorem  \ref{functioncompprops}, we can show that function inverses are unique. (In other words, invertible functions have exactly one inverse.)  Suppose $g$ and $h$ are both inverses of a function $f$. By Theorem \ref{inversefunctionprops}, the domain of $g$ is equal to the domain of $h$, since both are the range of $f$.  This means the identity function $I_{\mbox{\tiny $2$}}$ applies both to the domain of $h$ and the domain of $g$.  Thus $h = h \circ I_{\mbox{\tiny $2$}} = h \circ (f \circ g) = (h \circ f) \circ g = I_{\mbox{\tiny $1$}} \circ g = g$, as required. (It is an excellent exercise to explain each step in this string of equalities.)  We summarize the discussion of the last two paragraphs in the following theorem.
+If we abstract one step further, we can express the sentiment in Definition \ref{inversefunctiondefn} by saying that $f$ and $g$ are inverses if and only if  $g \circ f = I_{1}$ and $f \circ g = I_{2}$ where $I_{1}$ is the identity function restricted to the domain of $f$ and $I_{2}$ is the identity function restricted to the domain of $g$.  In other words, $I_{1}(x) = x$ for all $x$ in the domain of $f$ and $I_{2}(x) = x$ for all $x$ in the domain of $g$.   Using this description of inverses along with the properties of function composition listed in Theorem  \ref{functioncompprops}, we can show that function inverses are unique. (In other words, invertible functions have exactly one inverse.)  Suppose $g$ and $h$ are both inverses of a function $f$. By Theorem \ref{inversefunctionprops}, the domain of $g$ is equal to the domain of $h$, since both are the range of $f$.  This means the identity function $I_{2}$ applies both to the domain of $h$ and the domain of $g$.  Thus $h = h \circ I_{2} = h \circ (f \circ g) = (h \circ f) \circ g = I_{1} \circ g = g$, as required. (It is an excellent exercise to explain each step in this string of equalities.)  We summarize the discussion of the last two paragraphs in the following theorem.
 
 \mnote{.4}{The identity function $I$, which was introduced in Section \ref{LinearFunctions} and mentioned in Theorem \ref{functioncompprops}, has a domain of all real numbers.  Since the domains of $f$ and $g$ may not be all real numbers, we need the restrictions listed here.}
 
@@ -528,6 +529,7 @@ and
 
 \end{array}\]
 
+\enlargethispage{2\baselineskip}
 Graphically, everything checks out as well in Figure \ref{fig:inverse16}, provided that we remember the domain restriction on $k^{-1}$ means we take the right half of the parabola.
 
 \mfigure{.25}{The graphs of $k$ and $k^{-1}$ from Example \ref{inverserestrictionex}}{fig:inverse16}{figures/FurtherGraphics/InverseFunctions-18}
@@ -535,7 +537,7 @@ Graphically, everything checks out as well in Figure \ref{fig:inverse16}, provid
 \end{enumerate}
 }
 
-\medskip
+\pagebreak
 
 Our last example of the section gives an application of inverse functions.  
 

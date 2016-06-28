@@ -6,12 +6,12 @@ Three of the families of functions studied thus far -- constant, linear and  qua
 \smallskip
 
 \definition{polynomialfunction}{Polynomial function}{
-A \index{function ! polynomial}\index{polynomial function ! definition of}\sword{polynomial function} is a function of the form \[ f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}} x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} x^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} x + a_{\mbox{\tiny $0$}},\] where $a_{\mbox{\tiny $0$}}$, $a_{\mbox{\tiny $1$}}$, \ldots, $a_{n}$ are real numbers and $n \geq 1$ is a natural number.  The domain of a polynomial function is $(-\infty, \infty)$.
+A \index{function ! polynomial}\index{polynomial function ! definition of}\sword{polynomial function} is a function of the form \[ f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0},\] where $a_{0}$, $a_{1}$, \ldots, $a_{n}$ are real numbers and $n \geq 1$ is a natural number.  The domain of a polynomial function is $(-\infty, \infty)$.
 }
 
-\medskip
+\smallskip
 
-There are several things about Definition \ref{polynomialfunction} that may be off-putting or downright frightening.  The best thing to do is look at an example.  Consider $f(x) = 4x^5 - 3x^2 + 2x - 5$.  Is this a polynomial function?  We can re-write the formula for $f$ as $f(x)= 4x^5 + 0 x^{4} + 0 x^{3} + (-3)x^2 + 2 x + (-5).$  Comparing this with Definition \ref{polynomialfunction}, we identify $n=5$, $a_{\mbox{\tiny $5$}} = 4$, $a_{\mbox{\tiny $4$}} = 0$, $a_{\mbox{\tiny $3$}} = 0$, $a_{\mbox{\tiny $2$}} = -3$, $a_{\mbox{\tiny $1$}} = 2$ and $a_{\mbox{\tiny $0$}} = -5$.  In other words, $a_{\mbox{\tiny $5$}}$ is the coefficient of $x^{5}$, $a_{\mbox{\tiny $4$}}$ is the coefficient of $x^{4}$, and so forth;  the subscript on the $a$'s merely indicates to which power of $x$ the coefficient belongs.  The business of restricting $n$ to be a natural number lets us focus on well-behaved algebraic animals. (Yes, there are examples of worse behaviour still to come!)
+There are several things about Definition \ref{polynomialfunction} that may be off-putting or downright frightening.  The best thing to do is look at an example.  Consider $f(x) = 4x^5 - 3x^2 + 2x - 5$.  Is this a polynomial function?  We can re-write the formula for $f$ as $f(x)= 4x^5 + 0 x^{4} + 0 x^{3} + (-3)x^2 + 2 x + (-5).$  Comparing this with Definition \ref{polynomialfunction}, we identify $n=5$, $a_{5} = 4$, $a_{4} = 0$, $a_{3} = 0$, $a_{2} = -3$, $a_{1} = 2$ and $a_{0} = -5$.  In other words, $a_{5}$ is the coefficient of $x^{5}$, $a_{4}$ is the coefficient of $x^{4}$, and so forth;  the subscript on the $a$'s merely indicates to which power of $x$ the coefficient belongs.  The business of restricting $n$ to be a natural number lets us focus on well-behaved algebraic animals. (Yes, there are examples of worse behaviour still to come!)
 
 
 \medskip
@@ -45,7 +45,7 @@ Determine if the following functions are polynomials.  Explain your reasoning.
 
 \item  The function $h(x) = |x|$ isn't a polynomial, since it can't be written as a combination of powers of $x$ even though it can be written as a piecewise function involving polynomials.  As we shall see in this section, graphs of polynomials possess a quality that the graph of $h$ does not.  
 
-\mnote{.8}{Once we get to calculus, we'll see that the absolute value function is the classic example of a function which is continuous everywhere, but fails to have a derivative everywhere: the graph of $h(x)=\lvert x\rvert$ fails to be ``smooth'' at the origin.}
+\mnote{.7}{Once we get to calculus, we'll see that the absolute value function is the classic example of a function which is continuous everywhere, but fails to have a derivative everywhere: the graph of $h(x)=\lvert x\rvert$ fails to be ``smooth'' at the origin.}
 
 \item  There's nothing in Definition \ref{polynomialfunction} which prevents all the coefficients $a_{n}$, etc., from being $0$.  Hence, $z(x) = 0$, is an honest-to-goodness polynomial.
 
@@ -53,14 +53,14 @@ Determine if the following functions are polynomials.  Explain your reasoning.
 }
 
 
-\smallskip
+\medskip
 
 \definition{degreeandallthat}{Polynomial terminology}{
 Suppose $f$ is a polynomial function.
 
 \begin{itemize}
 
-\item Given $f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}} x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} x^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} x + a_{\mbox{\tiny $0$}}$ with $a_{n} \neq 0$, we say 
+\item Given $f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}$ with $a_{n} \neq 0$, we say 
 
 \begin{itemize}
 
@@ -70,11 +70,11 @@ Suppose $f$ is a polynomial function.
 
 \item  The real number $a_{n}$ is called the \index{polynomial function ! leading coefficient}\index{leading coefficient of a polynomial}\sword{leading coefficient} of the polynomial $f$.
 
-\item  The real number $a_{\mbox{\tiny $0$}}$ is called the \index{polynomial function ! constant term}\index{constant term of a polynomial}\sword{constant term} of the polynomial $f$.
+\item  The real number $a_{0}$ is called the \index{polynomial function ! constant term}\index{constant term of a polynomial}\sword{constant term} of the polynomial $f$.
 
 \end{itemize}
 
-\item  If $f(x) = a_{\mbox{\tiny $0$}}$, and $a_{\mbox{\tiny $0$}} \neq 0$, we say $f$ has degree $0$.
+\item  If $f(x) = a_{0}$, and $a_{0} \neq 0$, we say $f$ has degree $0$.
 
 \item  If $f(x) = 0$, we say $f$ has no degree.
 
@@ -83,12 +83,12 @@ Suppose $f$ is a polynomial function.
 
 \smallskip
 
-The reader may well wonder why we have chosen to separate off constant functions from the other polynomials in Definition \ref{degreeandallthat}.  Why not just lump them all together and, instead of forcing $n$ to be a natural number, $n = 1, 2, \ldots$, allow $n$ to be a whole number, $n = 0, 1, 2, \ldots$.  We could unify all of the cases, since, after all, isn't $a_{\mbox{\tiny $0$}}x^{0} = a_{\mbox{\tiny $0$}}$?  The answer is `yes, as long as $x\neq 0$.'  The function $f(x) = 3$ and $g(x) = 3x^{0}$ are different, because their domains are different.  The number $f(0) = 3$ is defined, whereas $g(0) = 3(0)^{0}$ is not.  \phantomsection \label{indeterminantformone} Indeed, much of the theory we will develop in this chapter doesn't include the constant functions, so we might as well treat them as outsiders from the start.  One good thing that comes from Definition \ref{degreeandallthat} is that we can now think of linear functions as degree $1$ (or `first degree') polynomial functions and quadratic functions as degree $2$ (or `second degree') polynomial functions.
+The reader may well wonder why we have chosen to separate off constant functions from the other polynomials in Definition \ref{degreeandallthat}.  Why not just lump them all together and, instead of forcing $n$ to be a natural number, $n = 1, 2, \ldots$, allow $n$ to be a whole number, $n = 0, 1, 2, \ldots$.  We could unify all of the cases, since, after all, isn't $a_{0}x^{0} = a_{0}$?  The answer is `yes, as long as $x\neq 0$.'  The function $f(x) = 3$ and $g(x) = 3x^{0}$ are different, because their domains are different.  The number $f(0) = 3$ is defined, whereas $g(0) = 3(0)^{0}$ is not.  \phantomsection \label{indeterminantformone} Indeed, much of the theory we will develop in this chapter doesn't include the constant functions, so we might as well treat them as outsiders from the start.  One good thing that comes from Definition \ref{degreeandallthat} is that we can now think of linear functions as degree $1$ (or `first degree') polynomial functions and quadratic functions as degree $2$ (or `second degree') polynomial functions.
 
-\mnote{.25}{In the context of limits, results such as $0^{0}$ are known as \textit{indeterminant forms}. These are cases where the function fails to be defined, but the methods of calculus might still be able to extract information.
+\mnote{.15}{In the context of limits, results such as $0^{0}$ are known as \textit{indeterminant forms}. These are cases where the function fails to be defined, but the methods of calculus might still be able to extract information.
 }
 
-\medskip
+\pagebreak
 
 \example{ex_degreeetc}{Using polynomial terminiology}{
 Find the degree, leading term, leading coefficient and constant term of the following polynomial functions.
@@ -354,13 +354,13 @@ First, we find the zeros of $f$ by solving $x^3 (x-3)^2 (x+2)\left(x^2+1\right)=
 
 A couple of notes about the Example \ref{polygraphex} are in order.  First, note that we purposefully did not label the $y$-axis in the sketch of the graph of $y=f(x)$.  This is because the sign diagram gives us the zeros and the relative position of the graph - it doesn't give us any information as to how high or low the graph strays from the $x$-axis.  Furthermore, as we have mentioned earlier in the text, without Calculus, the values of the relative maximum and minimum can only be found approximately using a calculator.  If we took the time to find the leading term of $f$, we would find it to be $x^8$.  Looking at the end behaviour of $f$, we notice that it matches the end behaviour of $y=x^8$.  This is no accident, as we find out in the next theorem.
 
-\medskip
+\smallskip
 
 \theorem{EBPolynomials}{End behaviour for Polynomial Functions}{
-\index{end behaviour ! polynomial} The end behaviour of a polynomial $f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}} x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny $2$}} x^{\mbox{\tiny $2$}} + a_{\mbox{\tiny $1$}} x + a_{\mbox{\tiny $0$}}$ with $a_{n} \neq 0$ matches the end behaviour of $y = a_{n} x^{n}$.  
+\index{end behaviour ! polynomial} The end behaviour of a polynomial $f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}$ with $a_{n} \neq 0$ matches the end behaviour of $y = a_{n} x^{n}$.  
 }
 
-\medskip
+\smallskip
 
 To see why Theorem \ref{EBPolynomials} is true, let's first look at a specific example.  Consider $f(x) = 4x^3 - x + 5$.  If we wish to examine end behaviour, we look to see the behaviour of $f$ as $x \rightarrow \pm \infty$.  Since we're concerned with $x$'s far down the $x$-axis, we are far away from $x=0$ so can rewrite $f(x)$ for these values of $x$ as \[ f(x) = 4x^3 \left( 1 - \dfrac{1}{4x^2} + \dfrac{5}{4x^3}\right)\]
 
@@ -384,7 +384,9 @@ As $x$ becomes unbounded (in either direction), the terms $\dfrac{1}{4x^2}$ and 
 
 In other words, as $x \rightarrow \pm \infty$, $f(x) \approx 4x^3\left( 1 - 0 +0\right) = 4x^3$, which is the leading term of $f$.  The formal proof of Theorem \ref{EBPolynomials} works in much the same way.  Factoring out the leading term leaves
 
-\[ f(x) = a_{n} x^{n} \left( 1 + \dfrac{a_{n-\mbox{\tiny$1$}}}{a_{n} x}+ \ldots + \dfrac{a_{\mbox{\tiny$2$}}}{a_{n} x^{n-2}} + \dfrac{a_{\mbox{\tiny$1$}}}{a_{n} x^{n-1}}+\dfrac{a_{\mbox{\tiny$0$}}}{a_{n} x^{n}}\right)\]
+\[
+ f(x) = a_{n} x^{n} \left( 1 + \dfrac{a_{n-1}}{a_{n} x}+ \ldots + \dfrac{a_{2}}{a_{n} x^{n-2}} + \dfrac{a_{1}}{a_{n} x^{n-1}}+\dfrac{a_{0}}{a_{n} x^{n}}\right)
+\]
 
 As $x \rightarrow \pm \infty$, any term with an $x$ in the denominator becomes closer and closer to $0$, and we have $f(x) \approx a_{n} x^{n}$.  Geometrically, Theorem \ref{EBPolynomials} says that if we graph $y=f(x)$ using a graphing calculator, and continue to `zoom out', the graph of it and its leading term become indistinguishable.  In Figure \ref{fig:leadingterm} the graphs of $y=4x^3-x+5$  and $y=4x^3$ ) in two different windows.
 
@@ -427,7 +429,7 @@ Suppose $f$ is a polynomial function  and $x=c$ is a zero of multiplicity $m$.  
 \end{itemize}
 }
 
-\medskip
+\smallskip
 
 Our last example shows how end behaviour and multiplicity allow us to sketch a decent graph without appealing to a sign diagram.
 

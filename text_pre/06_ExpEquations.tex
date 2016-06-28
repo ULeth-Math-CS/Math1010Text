@@ -168,24 +168,18 @@ Sign diagram for $r(x)=2^{x^2-3x}-16$\\
 $y=r(x)=2^{x^2-3x}-16$
 \end{tabular}}
 
-\item The first step we need to take to solve  $\frac{e^{x}}{e^{x}-4} \leq 3$ is to get $0$ on one side of the inequality. To that end, we subtract $3$ from both sides and get a common denominator
-
-
-\setlength{\extrarowheight}{12pt}
-\[ \begin{array}{rclr}
-
-\dfrac{e^{x}}{e^{x}-4} & \leq & 3 & \\
-
-\dfrac{e^{x}}{e^{x}-4} - 3 & \leq & 0 & \\
-
-\dfrac{e^{x}}{e^{x}-4} - \dfrac{3 \left(e^{x}-4\right)}{e^{x}-4} & \leq & 0 & \mbox{Common denomintors.} \\
-
-\dfrac{12 - 2e^{x}}{e^{x}-4} & \leq & 0 & \\
-
-\end{array}\]
-\setlength{\extrarowheight}{2pt}
-
-We set $r(x) = \frac{12 - 2e^{x}}{e^{x}-4}$ and we note that $r$ is undefined when its denominator $e^{x}-4=0$, or when $e^{x} = 4$.  Solving this gives $x = \ln(4)$, so the domain of $r$ is $(-\infty, \ln(4)) \cup (\ln(4), \infty)$. To find the zeros of $r$, we solve $r(x) = 0$ and obtain $12 - 2e^{x} = 0$.  Solving for $e^{x}$, we find $e^{x} = 6$, or $x = \ln(6)$.  When we build our sign diagram, finding test values may be a little tricky since we need to check values around $\ln(4)$ and $\ln(6)$.  Recall that the function $\ln(x)$ is increasing  which means $\ln(3) < \ln(4) < \ln(5) < \ln(6) < \ln(7)$. (This is because the base of $\ln(x)$ is $e > 1$.  If the base $b$ were in the interval $0 < b < 1$, then $\log_{b}(x)$ would decreasing.) While the prospect of determining the sign of $r\left(\ln(3)\right)$ may be very unsettling, remember that $e^{\ln(3)} = 3$, so \[r\left(\ln(3)\right) = \frac{12 - 2e^{\ln(3)}}{e^{\ln(3)}-4} = \frac{12-2(3)}{3-4} = -6\]  We determine the signs of $r\left(\ln(5)\right)$ and $r\left(\ln(7)\right)$ similarly. (We could, of course, use the calculator, but what fun would that be?) From the sign diagram, we find our answer to be $(-\infty,\ln(4)) \cup [\ln(6), \infty)$.  Using GeoGebra, we see the graph of $f(x) = \frac{e^{x}}{e^{x}-4}$ is below the graph of $g(x) = 3$ on $(-\infty,\ln(4)) \cup (\ln(6), \infty)$, and they intersect at $x = \ln(6) \approx 1.792$.
+\item The first step we need to take to solve  $\frac{e^{x}}{e^{x}-4} \leq 3$ is to get $0$ on one side of the inequality. To that end, we subtract $3$ from both sides and get a common denominator.
+\begin{align*}
+\dfrac{e^{x}}{e^{x}-4} & \leq  3  \\[3pt]
+\dfrac{e^{x}}{e^{x}-4} - 3 & \leq  0  \\[3pt]
+\dfrac{e^{x}}{e^{x}-4} - \dfrac{3 \left(e^{x}-4\right)}{e^{x}-4} & \leq  0  \tag*{Common denomintors.} \\[3pt]
+\dfrac{12 - 2e^{x}}{e^{x}-4} & \leq  0 
+\end{align*}
+We set $r(x) = \frac{12 - 2e^{x}}{e^{x}-4}$ and we note that $r$ is undefined when its denominator $e^{x}-4=0$, or when $e^{x} = 4$.  Solving this gives $x = \ln(4)$, so the domain of $r$ is $(-\infty, \ln(4)) \cup (\ln(4), \infty)$. To find the zeros of $r$, we solve $r(x) = 0$ and obtain $12 - 2e^{x} = 0$.  Solving for $e^{x}$, we find $e^{x} = 6$, or $x = \ln(6)$.  When we build our sign diagram, finding test values may be a little tricky since we need to check values around $\ln(4)$ and $\ln(6)$.  Recall that the function $\ln(x)$ is increasing  which means $\ln(3) < \ln(4) < \ln(5) < \ln(6) < \ln(7)$. (This is because the base of $\ln(x)$ is $e > 1$.  If the base $b$ were in the interval $0 < b < 1$, then $\log_{b}(x)$ would decreasing.) While the prospect of determining the sign of $r\left(\ln(3)\right)$ may be very unsettling, remember that $e^{\ln(3)} = 3$, so 
+\[
+r\left(\ln(3)\right) = \frac{12 - 2e^{\ln(3)}}{e^{\ln(3)}-4} = \frac{12-2(3)}{3-4} = -6
+\]  
+We determine the signs of $r\left(\ln(5)\right)$ and $r\left(\ln(7)\right)$ similarly. (We could, of course, use the calculator, but what fun would that be?) From the sign diagram, we find our answer to be $(-\infty,\ln(4)) \cup [\ln(6), \infty)$.  Using GeoGebra, we see the graph of $f(x) = \frac{e^{x}}{e^{x}-4}$ is below the graph of $g(x) = 3$ on $(-\infty,\ln(4)) \cup (\ln(6), \infty)$, and they intersect at $x = \ln(6) \approx 1.792$.
 
 \ifthenelse{\boolean{colour}}{
 \mtable{.25}{Solving $\dfrac{e^x}{e^x-4}\leq 3$}{fig:expineq2}{
@@ -209,17 +203,12 @@ $y=g(x)=3$
 
 
 \item  As before, we start solving $x e^{2x} < 4x$ by getting $0$ on one side of the inequality, $x e^{2x} - 4x < 0$.   We set $r(x) = xe^{2x} - 4x$ and since there are no denominators, even-indexed radicals, or logs, the domain of $r$ is all real numbers.  Setting $r(x) = 0$  produces $x e^{2x} - 4x  = 0$. We factor to get $x \left(e^{2x} - 4\right)  = 0$ which gives $x=0$ or $e^{2x} - 4 = 0$.  To solve the latter, we isolate the exponential and take logs to get $2x = \ln(4)$, or $x = \frac{\ln(4)}{2} = \ln(2)$.  (Can you explain the last equality using properties of logs?)  As in the previous example, we need to be careful about choosing test values.  Since $\ln(1) = 0$, we choose $\ln\left(\frac{1}{2}\right)$, $\ln\left(\frac{3}{2}\right)$ and $\ln(3)$.  Evaluating, we get 
-
-\[\begin{array}{rclr}
-
-r\left(\ln\left(\frac{1}{2}\right)\right) & = & \ln\left(\frac{1}{2}\right) e^{2\ln\left(\frac{1}{2}\right)} - 4\ln\left(\frac{1}{2}\right) & \\
-
-&= & \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{2}\right)^2}- 4\ln\left(\frac{1}{2}\right) & \text{Power Rule} \\
-
-& = & \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{4}\right)}- 4\ln\left(\frac{1}{2}\right) & \\
-
-& = & \frac{1}{4}  \ln\left(\frac{1}{2}\right) - 4  \ln\left(\frac{1}{2}\right) =  -\frac{15}{4} \ln\left(\frac{1}{2}\right) & \end{array}\] 
-
+\begin{align*}
+r\left(\ln\left(\frac{1}{2}\right)\right) & =  \ln\left(\frac{1}{2}\right) e^{2\ln\left(\frac{1}{2}\right)} - 4\ln\left(\frac{1}{2}\right)  \\
+&=  \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{2}\right)^2}- 4\ln\left(\frac{1}{2}\right)  \tag*{Power Rule} \\
+& =  \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{4}\right)}- 4\ln\left(\frac{1}{2}\right)  \\
+& =  \frac{1}{4}  \ln\left(\frac{1}{2}\right) - 4  \ln\left(\frac{1}{2}\right) =  -\frac{15}{4} \ln\left(\frac{1}{2}\right)
+\end{align*}
 Since $\frac{1}{2} < 1$, $ \ln\left(\frac{1}{2}\right) < 0$ and we get $r(\ln\left(\frac{1}{2}\right))$ is $(+)$, so $r(x) < 0$ on $(0 ,\ln(2))$.  Plotting in GeoGebra confirms that the graph of $f(x) = x e^{2x} $ is below the graph of $g(x) = 4x$ on these intervals: see Figure \ref{fig:expineq3}. (Note: $\ln(2) \approx 0.693$.)
 
 \ifthenelse{\boolean{colour}}{
@@ -266,23 +255,22 @@ In order to interpret what this means in the context of the real world, we need 
 
 We close this section by finding the inverse of a function which is a composition of a rational function with an exponential function.
 
-\medskip
+\pagebreak
 
 \example{expfracinverse}{Inverting a fractional exponential function}{ The function $f(x) = \dfrac{5e^{x}}{e^{x}+1}$ is one-to-one.  Find a formula for $f^{-1}(x)$ and check your answer graphically using your calculator.}
 {We start by writing $y=f(x)$, and interchange the roles of $x$ and $y$.  To solve for $y$, we first clear denominators and then isolate the exponential function.
 
-\[ \begin{array}{rclr}
-y & = & \dfrac{5e^{x}}{e^{x}+1} & \\ [12pt]
-x & = & \dfrac{5e^{y}}{e^{y}+1} & \mbox{Switch $x$ and $y$} \\ [12pt]
-x \left(e^{y}+1\right) & = & 5e^{y} & \\ [4pt]
-x e^{y}+x & = & 5e^{y} & \\ [4pt]
-x & = & 5e^{y} - x e^{y} & \\ [4pt]
-x & = & e^{y}(5 - x) & \\ [4pt]
-e^{y}& = & \dfrac{x}{5-x} & \\[12pt]
-\ln\left(e^{y}\right) & = & \ln\left(\dfrac{x}{5-x}\right) & \\[12pt]
-y & = & \ln\left(\dfrac{x}{5-x}\right) & \\
-\end{array}\]
-
+\begin{align*}
+y & =  \dfrac{5e^{x}}{e^{x}+1}  \\[3pt]
+x & =  \dfrac{5e^{y}}{e^{y}+1}  \tag*{Switch $x$ and $y$} \\[3pt]
+x \left(e^{y}+1\right) & =  5e^{y}  \\
+x e^{y}+x & = 5e^{y} \\
+x & =  5e^{y} - x e^{y}  \\
+x & =  e^{y}(5 - x) \\
+e^{y}& =  \dfrac{x}{5-x}  \\[3pt]
+\ln\left(e^{y}\right) & =  \ln\left(\dfrac{x}{5-x}\right) \\[3pt]
+y & =  \ln\left(\dfrac{x}{5-x}\right)
+\end{align*}
 We claim $f^{-1}(x) = \ln\left(\frac{x}{5-x}\right)$.  To verify this analytically, we would need to verify the compositions $\left(f^{-1} \circ f\right)(x) = x$ for all $x$ in the domain of $f$ and that $\left(f \circ f^{-1}\right)(x) = x$ for all $x$ in the domain of $f^{-1}$.  We leave this to the reader.  To verify our solution graphically, we graph $y = f(x) = \frac{5e^{x}}{e^{x}+1}$ and $y = g(x) = \ln\left(\frac{x}{5-x}\right)$ on the same set of axes and observe the symmetry about the line $y=x$ in Figure \ref{fig:expinverse}.  Note the domain of $f$ is the range of $g$ and vice-versa.
 
 \ifthenelse{\boolean{colour}}{

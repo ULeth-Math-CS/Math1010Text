@@ -3,14 +3,11 @@
 
 One of the core concepts in College Algebra is the \textbf{function}.  There are many ways to describe a function and we begin by defining a function as a special kind of relation.
 
-\medskip
-
+\smallskip
 
 \definition{functiondefn}{Function}{
 A relation in which each $x$-coordinate is matched with only one $y$-coordinate is said to describe $y$ as a \index{function ! definition as a relation} \textbf{function} of $x$.
 }
-
-
 
 \medskip
 
@@ -18,51 +15,49 @@ A relation in which each $x$-coordinate is matched with only one $y$-coordinate 
 {
 Which of the following relations describe $y$ as a function of $x$?
 
-\begin{multicols}{2}
-
 \begin{enumerate}
 
-\item  $R_{\mbox{\tiny$1$}} = \{ (-2,1), (1,3), (1,4), (3,-1) \}$
+\item  $R_{1} = \{ (-2,1), (1,3), (1,4), (3,-1) \}$
 
-\item  $R_{\mbox{\tiny$2$}} = \{ (-2,1), (1,3), (2,3), (3,-1) \}$
+\item  $R_{2} = \{ (-2,1), (1,3), (2,3), (3,-1) \}$
 
 \end{enumerate}
-
-\end{multicols}
 }
 { 
-A quick scan of the points in $R_{\mbox{\tiny$1$}}$ reveals that the $x$-coordinate $1$ is matched with two \emph{different} $y$-coordinates:  namely $3$ and $4$.  Hence in $R_{\mbox{\tiny$1$}}$, $y$ is not a function of $x$.  On the other hand, every $x$-coordinate in $R_{\mbox{\tiny$2$}}$ occurs only once which means each $x$-coordinate has only one corresponding $y$-coordinate.  So, $R_{\mbox{\tiny$2$}}$  does represent $y$ as a function of $x$.
+A quick scan of the points in $R_{1}$ reveals that the $x$-coordinate $1$ is matched with two \emph{different} $y$-coordinates:  namely $3$ and $4$.  Hence in $R_{1}$, $y$ is not a function of $x$.  On the other hand, every $x$-coordinate in $R_{2}$ occurs only once which means each $x$-coordinate has only one corresponding $y$-coordinate.  So, $R_{2}$  does represent $y$ as a function of $x$.
 }
 
-\smallskip
-
-Note that in the previous example, the relation $R_{\mbox{\tiny$2$}}$ contained two different points with the same $y$-coordinates, namely $(1,3)$ and $(2,3)$. Remember, in order to say $y$ is a function of $x$, we just need to ensure the same $x$-coordinate isn't used in more than one point.
-\mnote{.6}{We will have occasion later in the text to concern ourselves with the concept of $x$ being a function of $y$.  In this case, $R_{\mbox{\tiny$1$}}$ represents $x$ as a function of $y$;  $R_{\mbox{\tiny$2$}}$ does not.} 
-
-\smallskip
-
-To see what the function concept means geometrically, we graph $R_{\mbox{\tiny$1$}}$ and $R_{\mbox{\tiny$2$}}$ in the plane.
-
-\mfigure{.47}{The graph of $R_{\mbox{\tiny$1$}}$}{fig:relfunct1}{figures/RelationsandFunctionsGraphics/IntrotoFunctions-1}
-
-\mfigure{.28}{The graph of $R_{\mbox{\tiny$2$}}$}{fig:relfunct2}{figures/RelationsandFunctionsGraphics/IntrotoFunctions-2}
-
 \medskip
 
+Note that in the previous example, the relation $R_{2}$ contained two different points with the same $y$-coordinates, namely $(1,3)$ and $(2,3)$. Remember, in order to say $y$ is a function of $x$, we just need to ensure the same $x$-coordinate isn't used in more than one point.
+\mnote{.6}{We will have occasion later in the text to concern ourselves with the concept of $x$ being a function of $y$.  In this case, $R_{1}$ represents $x$ as a function of $y$;  $R_{2}$ does not.} 
 
 
-The fact that the $x$-coordinate $1$ is matched with two different $y$-coordinates in $R_{\mbox{\tiny$1$}}$ presents itself graphically as the points $(1,3)$ and $(1,4)$ lying on the same vertical line, $x=1$.  If we turn our attention to the graph of $R_{\mbox{\tiny$2$}}$, we see that no two points of the relation lie on the same vertical line.  We can generalize this idea as follows
 
-\medskip
+
+\mfigure{.47}{The graph of $R_{1}$}{fig:relfunct1}{figures/RelationsandFunctionsGraphics/IntrotoFunctions-1}
+
+\mfigure{.28}{The graph of $R_{2}$}{fig:relfunct2}{figures/RelationsandFunctionsGraphics/IntrotoFunctions-2}
+
+
+
+
+To see what the function concept means geometrically, we graph $R_{1}$ and $R_{2}$ in the plane.
+The fact that the $x$-coordinate $1$ is matched with two different $y$-coordinates in $R_{1}$ presents itself graphically as the points $(1,3)$ and $(1,4)$ lying on the same vertical line, $x=1$.  If we turn our attention to the graph of $R_{2}$, we see that no two points of the relation lie on the same vertical line.  We can generalize this idea as follows
+
+\smallskip
 
 \theorem{VLT}{ The Vertical Line Test}{
 \index{Vertical Line Test (VLT)}  A set of points in the plane represents $y$ as a function of $x$ if and only if no two points lie on the same vertical line.
 }
 
+\smallskip
 
 %\pagebreak
 
 It is worth taking some time to meditate on the Vertical Line Test; it will check to see how well you understand the concept of `function' as well as the concept of `graph'.
+
+\pagebreak
 
 \example{ex_vlt}{Using the Vertical Line Test}{
  Use the Vertical Line Test to determine which of the following relations describes $y$ as a function of $x$.
@@ -77,7 +72,7 @@ The graph of $R$ & The graph of $S$
 \end{center}
 }
 {
-Looking at the graph of $R$, we can easily imagine a vertical line crossing the graph more than once.  Hence, $R$ does not represent $y$ as a function of $x$.  However, in the graph of $S$, every vertical line crosses the graph at most once, so $S$ does represent $y$ as a function of $x$.  \qed
+Looking at the graph of $R$, we can easily imagine a vertical line crossing the graph more than once.  Hence, $R$ does not represent $y$ as a function of $x$.  However, in the graph of $S$, every vertical line crosses the graph at most once, so $S$ does represent $y$ as a function of $x$. 
 }
 
 
@@ -93,21 +88,21 @@ Use the Vertical Line Test to determine which of the following relations describ
 \begin{center}
 \begin{tabular}{cc}
 \myincludegraphics{figures/RelationsandFunctionsGraphics/IntrotoFunctions-5} & \myincludegraphics{figures/RelationsandFunctionsGraphics/IntrotoFunctions-6}\\
-The graph of $S_{\mbox{\tiny$1$}}$ & The graph of $S_{\mbox{\tiny$2$}}$
+The graph of $S_{1}$ & The graph of $S_{2}$
 \end{tabular}
 \end{center}
 }
 {
-Both $S_{\mbox{\tiny$1$}}$ and $S_{\mbox{\tiny$2$}}$ are slight modifications to the relation $S$ in the previous example whose graph we determined passed the Vertical Line Test.  In both $S_{\mbox{\tiny$1$}}$ and $S_{\mbox{\tiny$2$}}$, it is the addition of the point $(1,2)$ which threatens to cause trouble.  In $S_{\mbox{\tiny$1$}}$, there is a point on the curve with $x$-coordinate 1 just below $(1,2)$, which means that both $(1,2)$ and this point on the curve lie on the vertical line $x=1$.  (See the picture below and the left.)  Hence, the graph of  $S_{\mbox{\tiny$1$}}$ fails the Vertical Line Test, so $y$ is not a function of $x$ here.  However, in $S_{\mbox{\tiny$2$}}$ notice that the point with $x$-coordinate 1 on the curve has been omitted, leaving an `open circle' there.  Hence, the vertical line $x=1$ crosses the graph of $S_{\mbox{\tiny$2$}}$ only at the point $(1,2)$.  Indeed, any vertical line will cross the graph at most once, so we have that the graph of $S_{\mbox{\tiny$2$}}$ passes the Vertical Line Test.  Thus it describes $y$ as a function of $x$.
+Both $S_{1}$ and $S_{2}$ are slight modifications to the relation $S$ in the previous example whose graph we determined passed the Vertical Line Test.  In both $S_{1}$ and $S_{2}$, it is the addition of the point $(1,2)$ which threatens to cause trouble.  In $S_{1}$, there is a point on the curve with $x$-coordinate 1 just below $(1,2)$, which means that both $(1,2)$ and this point on the curve lie on the vertical line $x=1$.  (See the picture below and the left.)  Hence, the graph of  $S_{1}$ fails the Vertical Line Test, so $y$ is not a function of $x$ here.  However, in $S_{2}$ notice that the point with $x$-coordinate 1 on the curve has been omitted, leaving an `open circle' there.  Hence, the vertical line $x=1$ crosses the graph of $S_{2}$ only at the point $(1,2)$.  Indeed, any vertical line will cross the graph at most once, so we have that the graph of $S_{2}$ passes the Vertical Line Test.  Thus it describes $y$ as a function of $x$.
 }
-\mtable{.2}{$S_{\mbox{\tiny$1$}}$ and the line $x=1$}{fig:vlteg2}{ \myincludegraphics{figures/RelationsandFunctionsGraphics/IntrotoFunctions-7}}
+\mtable{.2}{$S_{1}$ and the line $x=1$}{fig:vlteg2}{ \myincludegraphics{figures/RelationsandFunctionsGraphics/IntrotoFunctions-7}}
 
 
 \medskip
 
 Suppose a relation $F$ describes $y$ as a function of $x$.  The sets of $x$- and $y$-coordinates are given special names which we define below.
 
-\medskip
+\smallskip
 
 \definition{domainrangedefn}{Domain and range}{
 Suppose $F$ is a relation which describes $y$ as a function of $x$.
@@ -122,9 +117,9 @@ Suppose $F$ is a relation which describes $y$ as a function of $x$.
 
 \end{itemize}
 }
-
 \mtable{.8}{The graph of $G$ for Example \ref{firstdomainexample}}{fig:domaineg}{ \myincludegraphics{figures/RelationsandFunctionsGraphics/IntrotoFunctions-8}}
-\medskip
+
+\smallskip
 
 We demonstrate finding the domain and range of functions given to us either graphically or via the roster method in the following example.
 
@@ -179,36 +174,33 @@ Determine which equations represent $y$ as a function of $x$.
 {
 For each of these equations, we solve for $y$ and determine whether each choice of $x$ will determine only one corresponding value of $y$.
 
-\setlength{\extrarowheight}{2pt}
-
 \begin{enumerate}
 
-\item  \[ \begin{array}{rclr} 
-         x^3 + y^2 & = & 1 & \\
-               y^2 & = & 1 - x^3 & \\
-        \sqrt{y^2} & = & \sqrt{1 - x^3} & \mbox{extract square roots} \\
-                 y & = & \pm \sqrt{1 - x^3} & \\ 
-        \end{array} \]
+\item   \begin{align*}
+         x^3 + y^2 & =  1  \\
+               y^2 & =  1 - x^3  \\
+        \sqrt{y^2} & =  \sqrt{1 - x^3}  \tag*{extract square roots} \\
+                 y & =  \pm \sqrt{1 - x^3}  
+		\end{align*}
 
 If we substitute $x=0$ into our equation for $y$, we get  $y = \pm \sqrt{1 - 0^3} = \pm 1$, so that $(0,1)$ and $(0,-1)$ are on the graph of this equation. Hence, this equation does not represent $y$ as a function of $x$.
 
-\item  \[ \begin{array}{rclr} 
-          x^2 + y^3 & = & 1 & \\
-          y^3 & = & 1 - x^2 & \\
-          \sqrt[3]{y^3} & = & \sqrt[3]{1 - x^2} & \\
-          y & = & \sqrt[3]{1 - x^2} & \\ 
-          \end{array} \]
+\item  \begin{align*}
+          x^2 + y^3 & =  1  \\
+          y^3 & =  1 - x^2  \\
+          \sqrt[3]{y^3} & =  \sqrt[3]{1 - x^2}\\
+          y & = \sqrt[3]{1 - x^2}
+       \end{align*}
 
 For every choice of $x$, the equation $y =  \sqrt[3]{1 - x^2}$ returns only \textbf{one} value of $y$.  Hence, this equation describes $y$ as a function of $x$.
 
-\item  \[ \begin{array}{rclr} 
-          x^2y & = & 1 - 3y & \\
-          x^2y + 3y & = & 1 & \\
-          y \left(x^2 + 3\right) & = & 1 & \mbox{factor} \\
-          y & = & \dfrac{1}{x^2 + 3} & \\ 
-          \end{array} \]
-
-
+\item   \begin{align*}
+          x^2y & =  1 - 3y  \\
+          x^2y + 3y & =  1  \\
+          y \left(x^2 + 3\right) & =  1  \tag*{factor} \\
+          y & =  \dfrac{1}{x^2 + 3} 
+		\end{align*}
+		
 \end{enumerate}
 
 For each choice of $x$, there is only one value for $y$, so this equation describes $y$ as a function of~$x$.

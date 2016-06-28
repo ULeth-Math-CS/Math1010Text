@@ -95,7 +95,7 @@ To see why the formula in Theorem \ref{standardformvertex} produces the vertex, 
 
 \smallskip
 
-Alternatively, we can apply the machinery in Section \ref{Transformations}. Since the vertex of $y = x^2$ is $(0,0)$, we can determine the vertex of $y = a(x-h)^2+k$ by determining the final destination of $(0,0)$ as it is moved through each transformation. To obtain the formula $f(x)= a(x-h)^2+k$, we start with $g(x)=x^2$ and first define $g_{\mbox{\tiny$1$}}(x) = a g(x) = ax^2$.  This is results in a  vertical scaling and/or reflection. (Just a scaling if $a>0$.  If $a<0$, there is a reflection involved.)  Since we multiply the output by $a$, we multiply the $y$-coordinates on the graph of $g$  by $a$, so the point $(0,0)$ remains $(0,0)$ and remains the vertex.  Next, we define $g_{\mbox{\tiny$2$}}(x) = g_{\mbox{\tiny$1$}}(x-h) = a(x-h)^2$.  This induces a horizontal shift right or left $h$ units (right if $h>0$, left if $h<0$.) moves the vertex, in either case,  to $(h,0)$.  Finally, $f(x) = g_{\mbox{\tiny$2$}}(x)+k = a(x-h)^2+k$ which effects a vertical shift up or down $k$ units (up if $k>0$, down if $k<0$) resulting in the vertex moving from $(h,0)$ to $(h,k)$.
+Alternatively, we can apply the machinery in Section \ref{Transformations}. Since the vertex of $y = x^2$ is $(0,0)$, we can determine the vertex of $y = a(x-h)^2+k$ by determining the final destination of $(0,0)$ as it is moved through each transformation. To obtain the formula $f(x)= a(x-h)^2+k$, we start with $g(x)=x^2$ and first define $g_{1}(x) = a g(x) = ax^2$.  This is results in a  vertical scaling and/or reflection. (Just a scaling if $a>0$.  If $a<0$, there is a reflection involved.)  Since we multiply the output by $a$, we multiply the $y$-coordinates on the graph of $g$  by $a$, so the point $(0,0)$ remains $(0,0)$ and remains the vertex.  Next, we define $g_{2}(x) = g_{1}(x-h) = a(x-h)^2$.  This induces a horizontal shift right or left $h$ units (right if $h>0$, left if $h<0$.) moves the vertex, in either case,  to $(h,0)$.  Finally, $f(x) = g_{2}(x)+k = a(x-h)^2+k$ which effects a vertical shift up or down $k$ units (up if $k>0$, down if $k<0$) resulting in the vertex moving from $(h,0)$ to $(h,k)$.
 
 \smallskip
 
@@ -121,7 +121,7 @@ Convert the functions below from general form to standard form.  Find the vertex
 \item  $f(x) = x^2-4x+3$.
 \item  $g(x) = 6-x-x^2$
 
-\end{enumerate}
+\end{enumerate}\pagebreak
 }
 {
 \begin{enumerate}
@@ -132,7 +132,7 @@ Convert the functions below from general form to standard form.  Find the vertex
 
 \begin{align*}
 f(x) & =  x^2-4x+3  \tag*{(Compute $\frac{1}{2} (-4) = -2$.)} \\
-     & =  \left(x^2 - 4x + \underline{4}  - \underline{4}\right) + 3  \tag*{(Add and subtract $(-2)^2 = 4$ to $(x^2+4x)$.)}\\
+     & =  \left(x^2 - 4x + \underline{4}  - \underline{4}\right) + 3  \tag*{(Add and subtract $(-2)^2 = 4$.)}\\
           & =  \left(x^2 - 4x + 4\right)  - 4 + 3  \tag*{(Group the perfect square trinomial.)}\\
      & =  (x-2)^2 - 1  \tag*{(Factor the perfect square trinomial.)}
 \end{align*}
@@ -150,9 +150,9 @@ Of course, we can always check our answer by multiplying out $f(x) = (x-2)^2 -1$
 \begin{align*}
 g(x) & =  -x^2-x+6  \\
 	   & = (-1)\left(x^2 + x \right) + 6  \tag*{(Factor the coefficient of $x^2$ from $x^2$ and $x$.)} \\
-		 & = (-1)\left(x^2 + x + \underline{\frac{1}{4}} - \underline{\frac{1}{4}} \right) + 6  \\
+		 & = (-1)\left(x^2 + x + \underline{\frac{1}{4}} - \underline{\frac{1}{4}} \right) + 6  \\[3pt]
 		 & =  (-1)\left(x^2 + x + \frac{1}{4}\right) + (-1)\left(-\frac{1}{4}\right) + 6  \tag*{(Group the perfect square trinomial.)}\\
-		  & =  -\left(x +\frac{1}{2}\right)^2 + \frac{25}{4} \\
+		  & =  -\left(x +\frac{1}{2}\right)^2 + \frac{25}{4}
 \end{align*}
 
 \mfigure{.3}{$g(x) = 6-x-x^2$}{fig:parabgr5}{figures/LinearQuadraticGraphics/QuadraticFunctions-9}	
@@ -168,8 +168,8 @@ With Example \ref{parabolaex2} fresh in our minds, we are now in a position to s
 \begin{align*}
 f(x) & =  ax^2 + bx + c  \\
 & =  a\left(x^2 + \dfrac{b}{a} x\right) + c  \tag*{(Factor out coefficient of $x^2$ from $x^2$ and $x$.)} \\
-& =   a\left(x^2 + \dfrac{b}{a} x + \underline{\dfrac{b^{2}}{4a^2}} - \underline{\dfrac{b^{2}}{4a^2}} \right) + c   \\
-& =   a\left(x^2 + \dfrac{b}{a} x + \dfrac{b^{2}}{4a^2} \right)  - a \left(\dfrac{b^{2}}{4a^2}\right) + c   \tag*{(Group the perfect square trinomial.)} \\ 
+& =   a\left(x^2 + \dfrac{b}{a} x + \underline{\dfrac{b^{2}}{4a^2}} - \underline{\dfrac{b^{2}}{4a^2}} \right) + c   \\[3pt]
+& =   a\left(x^2 + \dfrac{b}{a} x + \dfrac{b^{2}}{4a^2} \right)  - a \left(\dfrac{b^{2}}{4a^2}\right) + c   \tag*{(Group the perfect square trinomial.)} \\[3pt] 
 & =  a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a}  \tag*{(Factor and get a common denominator.)}
 \end{align*}
 
@@ -218,12 +218,12 @@ Solving gives
 
 \begin{align*}
  a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a} & =  0  \\ 
-  a\left(x+\dfrac{b}{2a}\right)^2  & =  - \dfrac{4ac - b^2}{4a}  \\
-  \dfrac{1}{a} \left[a\left(x+\dfrac{b}{2a}\right)^2\right] & =  \dfrac{1}{a} \left(\dfrac{b^2-4ac}{4a}\right)  \\
- \left(x+\dfrac{b}{2a}\right)^2 & =  \dfrac{b^2-4ac}{4a^2} \\ 
-  x+\dfrac{b}{2a} & =  \pm \sqrt{\dfrac{b^2-4ac}{4a^2}}  \tag*{extract square roots} \\ 
-  x+\dfrac{b}{2a} & =  \pm \dfrac{\sqrt{b^2-4ac}}{2a}  \\
-  x & =  -\dfrac{b}{2a} \pm \dfrac{\sqrt{b^2-4ac}}{2a} \\ 
+  a\left(x+\dfrac{b}{2a}\right)^2  & =  - \dfrac{4ac - b^2}{4a}  \\[3pt]
+  \dfrac{1}{a} \left[a\left(x+\dfrac{b}{2a}\right)^2\right] & =  \dfrac{1}{a} \left(\dfrac{b^2-4ac}{4a}\right)  \\[3pt]
+ \left(x+\dfrac{b}{2a}\right)^2 & =  \dfrac{b^2-4ac}{4a^2} \\[3pt]
+  x+\dfrac{b}{2a} & =  \pm \sqrt{\dfrac{b^2-4ac}{4a^2}}  \tag*{extract square roots} \\[3pt]
+  x+\dfrac{b}{2a} & =  \pm \dfrac{\sqrt{b^2-4ac}}{2a}  \\[3pt]
+  x & =  -\dfrac{b}{2a} \pm \dfrac{\sqrt{b^2-4ac}}{2a} \\[3pt]
     & =  \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
 \end{align*}
 
@@ -284,10 +284,12 @@ The proof of Theorem \ref{discriminanttrichotomy} stems from the position of the
 \item  To find the profit function $P(x)$, we subtract \[P(x) = R(x) - C(x) = \left(-1.5x^2+250x\right) - \left(80x + 150\right) = -1.5x^2+170x-150.\]  Since the revenue function is valid when $0 \leq x \leq 166$, $P$ is also restricted to these values. 
 
 \item  To find the $x$-intercepts, we set $P(x) = 0$ and solve  $-1.5x^2+170x-150=0$. The mere thought of trying to factor the left hand side of this equation could do serious psychological damage, so we resort to the quadratic formula, Equation \ref{quadraticformula}.  Identifying $a = -1.5$, $b=170$, and $c=-150$, we obtain
-
-\setlength{\extrarowheight}{10pt}
-\[ \begin{array}{rclr} x & = & \dfrac{-b \pm \sqrt{b^2-4ac}}{2a} & \\ & = & \dfrac{-170 \pm \sqrt{170^2 - 4(-1.5)(-150)}}{2(-1.5)} & \\ & = & \dfrac{-170 \pm \sqrt{28000}}{-3} & \\ & = & \dfrac{170 \pm 20 \sqrt{70}}{3} & \\ \end{array}\]
-
+\begin{align*}
+	x & = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a} \\
+	  & = \dfrac{-170 \pm \sqrt{170^2 - 4(-1.5)(-150)}}{2(-1.5)}\\
+	  & = \dfrac{-170 \pm \sqrt{28000}}{-3}\\
+	  & = \dfrac{170 \pm 20 \sqrt{70}}{3}.
+\end{align*}
 We get two $x$-intercepts: $\left( \frac{170 - 20 \sqrt{70}}{3},0\right)$ and $\left( \frac{170 + 20 \sqrt{70}}{3},0\right)$.  To find the $y$-intercept, we set $x=0$ and find $y=P(0)=-150$ for a $y$-intercept of $(0,-150)$.  To find the vertex, we use the fact that $P(x)=-1.5x^2+170x-150$ is in the general form of a quadratic function and appeal to Equation \ref{vertexofquadraticfunctions}.  Substituting $a = -1.5$ and $b=170$, we get $x = -\frac{170}{2(-1.5)} = \frac{170}{3}$.  To find the $y$-coordinate of the vertex, we compute $P\left( \frac{170}{3} \right) = \frac{14000}{3}$ and find that our vertex is $\left(\frac{170}{3}, \frac{14000}{3}\right)$.  The axis of symmetry is the vertical line passing through the vertex so it is the line $x=\frac{170}{3}$.  To sketch a reasonable graph, we approximate the $x$-intercepts,  $(0.89,0)$ and $(112.44,0)$, and the vertex, $(56.67,4666.67)$.  (Note that in order to get the $x$-intercepts and the vertex to show up in the same picture, we had to scale the $x$-axis differently than the $y$-axis in Figure \ref{fig:parabprofit}.  This results in the left-hand $x$-intercept and the $y$-intercept being uncomfortably close to each other and to the origin in the picture.)
 
 \mfigure[scale=0.72]{.5}{The graph of the profit function $P(x)$}{fig:parabprofit}{figures/LinearQuadraticGraphics/QuadraticFunctions-10}
@@ -335,11 +337,12 @@ Graph $f(x) = |x^2 - x - 6|$.
 }
 {
 Using the definition of absolute value, Definition \ref{absolutevalue}, we have
-
-\setlength{\extrarowheight}{0pt}
-\[ f(x) = \left\{ \begin{array}{rcl} -\left(x^2 - x - 6\right), & \mbox{if} & x^2 - x - 6 < 0  \\ x^2 - x - 6, & \mbox{if} & x^2 - x - 6 \geq 0 \\ \end{array} \right.\]
-\setlength{\extrarowheight}{2pt}
-
+\[
+ f(x) = \begin{cases}
+ 		 -\left(x^2 - x - 6\right), & \mbox{ if } x^2 - x - 6 < 0  \\
+ 		  x^2 - x - 6, & \mbox{ if } x^2 - x - 6 \geq 0
+ 		\end{cases}.
+\]
 The trouble is that we have yet to develop any analytic techniques to solve nonlinear inequalities such as $x^2 - x - 6 < 0$.  You won't have to wait long; this is one of the main topics of Section \ref{Inequalities}.  Nevertheless, we can attack this problem graphically.  To that end, we graph $y = g(x) = x^2 - x-6$ using the intercepts and the vertex.  To find the $x$-intercepts, we solve $x^2 - x - 6 = 0$.  Factoring gives $(x-3)(x+2)=0$ so $x=-2$ or $x=3$.  Hence, $(-2,0)$ and $(3,0)$ are $x$-intercepts. The $y$-intercept $(0,-6)$ is found by setting $x=0$.  To plot the vertex, we find $x = -\frac{b}{2a} = -\frac{-1}{2(1)} = \frac{1}{2}$, and $y =  \left(\frac{1}{2}\right)^2 - \left(\frac{1}{2}\right)-6 = -\frac{25}{4} = -6.25$.  Plotting, we get the parabola seen below on the left.  To obtain points on the graph of $y = f(x) = |x^2-x-6|$, we can take points on the graph of $g(x) =  x^2-x-6$ and apply the absolute value to each of the $y$ values on the parabola.  We see from the graph of $g$ that for $x \leq -2$ or $x \geq 3$, the $y$ values on the parabola are greater than or equal to zero (since the graph is on or above the $x$-axis), so the absolute value leaves these portions of the graph alone.  For $x$ between $-2$ and $3$, however, the $y$ values on the parabola are negative.  For example, the point $(0,-6)$ on $y = x^2-x-6$ would result in the point $(0,|-6|) = (0,-(-6))= (0,6)$ on the graph of $f(x) = |x^2-x-6|$.  Proceeding in this manner for all points with $x$-coordinates between $-2$ and $3$ results in the graph seen at the bottom of Figure \ref{fig:parabgrlast}.
 
 \mtable{.65}{Obtaining the graph of $f(x)=\lvert x^2-x-6\rvert$}{fig:parabgrlast}{
@@ -355,10 +358,12 @@ $y=\lvert x^2-x-6$
 
 If we take a step back and look at the graphs of $g$ and $f$ in the last example,  we notice that to obtain the graph of $f$ from the graph of  $g$, we reflect a \textit{portion} of the graph of $g$ about the $x$-axis.  We can see this analytically by substituting $g(x) = x^2-x-6$ into the formula for $f(x)$ and calling to mind Theorem \ref{reflections} from Section \ref{Transformations}.
 
-\setlength{\extrarowheight}{0pt}
-\[ f(x) = \left\{ \begin{array}{rcl} -g(x), & \mbox{if} & g(x) < 0  \\ g(x), & \mbox{if} & g(x) \geq 0 \\ \end{array} \right.\]
-\setlength{\extrarowheight}{2pt}
-
+\[
+ f(x) = \begin{cases}
+ 		 -g(x), & \mbox{ if }  g(x) < 0  \\
+ 		  g(x), & \mbox{ if }  g(x) \geq 0
+ 		\end{cases}.
+\]
 The function $f$ is defined so that when $g(x)$ is negative (i.e., when its graph is below the $x$-axis), the graph of $f$ is its refection across the $x$-axis.   This is a general template to graph functions of the form $f(x) = |g(x)|$.  From this perspective, the graph of $f(x) = |x|$ can be obtained by reflecting the portion of the line $g(x) =x$ which is below the $x$-axis back above the $x$-axis creating the characteristic `$\vee$' shape.  
 
 \printexercises{exercises_pre/02_03_exercises}

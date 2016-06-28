@@ -66,14 +66,16 @@ The preceding example demonstrates the following, which is a consequence of the 
 \end{itemize}
 }
 
-\medskip
+\smallskip
 
 The next example turns the tables and furnishes the graphs of two functions and asks for solutions to equations and inequalities.
+
+\medskip
 
 \example{ex_solvewithgraph}{Using graphs to solve equations and inequalities}{
 The graphs of $f$ and $g$ are shown in Figure \ref{fig:graphineq}. (The graph of $y=g(x)$ is in  bold.) Use these graphs to answer the following questions.
 
-\mfigure{.7}{The graphs $y=f(x)$ and $y=g(x)$ for Example \ref{ex_solvewithgraph}}{fig:graphineq}{figures/LinearQuadraticGraphics/Inequalities-4}
+\mfigure[width=0.95\marginparwidth]{.7}{The graphs $y=f(x)$ and $y=g(x)$ for Example \ref{ex_solvewithgraph}}{fig:graphineq}{figures/LinearQuadraticGraphics/Inequalities-4}
 
 \begin{enumerate}
 
@@ -95,9 +97,9 @@ The graphs of $f$ and $g$ are shown in Figure \ref{fig:graphineq}. (The graph of
 \item  To solve $f(x) \geq g(x)$, we look for solutions to $f(x)=g(x)$ as well as $f(x) > g(x)$.  We solved the former equation and found $x = \pm 1$.  To solve $f(x) > g(x)$, we look for where the graph of $f$ is above the graph of $g$.  This appears to happen between $x=-1$ and $x=1$, on the interval $(-1,1)$. Hence, our solution to $f(x) \geq g(x)$ is $[-1,1]$. 
 
 
-\mfigure{.43}{The solution to $f(x)<g(x)$}{fig:graphineq1}{figures/LinearQuadraticGraphics/Inequalities-5}
+\mfigure[width=0.95\marginparwidth]{.43}{The solution to $f(x)<g(x)$}{fig:graphineq1}{figures/LinearQuadraticGraphics/Inequalities-5}
 
-\mfigure{.2}{The solution to $f(x) \geq g(x)$}{fig:graphineq2}{figures/LinearQuadraticGraphics/Inequalities-6}
+\mfigure[width=0.95\marginparwidth]{.2}{The solution to $f(x) \geq g(x)$}{fig:graphineq2}{figures/LinearQuadraticGraphics/Inequalities-6}
 
 \end{enumerate}
 }
@@ -128,11 +130,11 @@ Let $c$ be a real number. \index{inequality ! absolute value} \index{absolute va
 \end{itemize}
 }
 
-\medskip
+\smallskip
 
 As with Theorem \ref{absolutevalueprops} in Section \ref{AbsoluteValueFunctions}, we could argue Theorem \ref{absolutevalueineq} using cases.  However, in light of what we have developed in this section, we can understand these statements graphically.  For instance, if $c > 0$, the graph of $y=c$ is a horizontal line which lies above the $x$-axis through $(0,c)$.  To solve $|x| < c$, we are looking for the $x$ values where the graph of $y=|x|$ is below the graph of $y=c$.  We know that the graphs intersect when $|x|=c$, which, from Section \ref{AbsoluteValueFunctions}, we know happens when $x=c$ or $x=-c$.  
 
-\mfigure[scale=0.95]{.8}{Solving $\lvert x\rvert <c$ graphically}{fig:absvalineq}{figures/LinearQuadraticGraphics/Inequalities-7}
+\mfigure[width=0.95\marginparwidth]{.8}{Solving $\lvert x\rvert <c$ graphically}{fig:absvalineq}{figures/LinearQuadraticGraphics/Inequalities-7}
 
 In Figure \ref{fig:absvalineq} we see that the graph of $y=|x|$ is below $y=c$ for $x$ between $-c$ and $c$, and hence we get $|x| < c$ is equivalent to $-c < x < c$.  The other properties in Theorem \ref{absolutevalueineq} can be shown similarly.
 
@@ -156,25 +158,25 @@ Solve the following inequalities analytically;  check your answers graphically.
 {
 \begin{enumerate}
 
-\item  From Theorem \ref{absolutevalueineq}, $|x-1|\geq3$ is equivalent to $x-1 \leq -3$ or $x-1 \geq 3$. Solving, we get $x \leq -2$ or $x \geq 4$, which, in interval notation is  $(-\infty,-2] \cup [4,\infty)$.  Graphically, we have Figure \ref{fig:absvalineqeg1}.
+\item  From Theorem \ref{absolutevalueineq}, $|x-1|\geq 3$ is equivalent to $x-1 \leq -3$ or $x-1 \geq 3$. Solving, we get $x \leq -2$ or $x \geq 4$, which, in interval notation is  $(-\infty,-2] \cup [4,\infty)$.  Graphically, we have Figure \ref{fig:absvalineqeg1}.
 
-\mfigure[scale=0.9]{.35}{Solving $\lvert x-1\rvert \geq 3$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg1}{figures/LinearQuadraticGraphics/Inequalities-8}
+\mfigure[width=0.95\marginparwidth]{.35}{Solving $\lvert x-1\rvert \geq 3$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg1}{figures/LinearQuadraticGraphics/Inequalities-8}
 
 
 We see that the graph of $y=|x-1|$  is above the horizontal line $y=3$ for $x < -2$ and $x > 4$ hence this is where $|x-1| > 3$.  The two graphs intersect when $x=-2$ and $x=4$, so we have graphical confirmation of our analytic solution.
 
 \item  To solve $4 - 3|2x+1| > -2$ analytically, we first isolate the absolute value before applying Theorem \ref{absolutevalueineq}.  To that end, we get $-3|2x+1|>-6$ or $|2x+1|<2$.  Rewriting, we now have $-2 < 2x+1 < 2$ so that $-\frac{3}{2} < x < \frac{1}{2}$.  In interval notation, we write $\left(-\frac{3}{2}, \frac{1}{2}\right)$. Graphically we see in Figure \ref{fig:absvalineqeg2} that the graph of $y=4-3|2x+1|$ is above $y=-2$ for $x$ values between $-\frac{3}{2}$ and $\frac{1}{2}$.
 
-\mfigure[scale=0.9]{.18}{Solving $4 - 3|2x+1| > -2$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg2}{figures/LinearQuadraticGraphics/Inequalities-9}
+\mfigure[width=0.95\marginparwidth]{.18}{Solving $4 - 3|2x+1| > -2$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg2}{figures/LinearQuadraticGraphics/Inequalities-9}
 
 \item  Rewriting the compound inequality  $2 < |x-1| \leq 5$ as `$2 < |x-1|$ and $|x-1| \leq 5$' allows us to solve each piece using Theorem \ref{absolutevalueineq}.  The first inequality, $2 < |x-1|$ can be re-written as $|x-1|>2$ so $x-1 < -2$ or $x-1 > 2$.  We get $x<-1$ or $x>3$.  Our solution to the first inequality is then $(-\infty, -1) \cup (3, \infty)$.  For $|x-1| \leq 5$, we combine results in Theorems \ref{absolutevalueprops} and \ref{absolutevalueineq} to get $-5 \leq x-1 \leq 5$ so that $-4 \leq x \leq 6$, or $[-4,6]$.  Our solution to   $2 < |x-1| \leq 5$ is comprised of values of $x$ which satisfy both parts of the inequality, so we take the intersection  of $(-\infty, -1) \cup (3, \infty)$ and $[-4,6]$ to get  $[-4,-1) \cup (3,6]$.  (see Definition \ref{intersectionunion} in Section \ref{SetsofNumbers}.) Graphically, we see that the graph of $y=|x-1|$ is `between' the horizontal lines $y=2$ and $y=5$ for $x$ values between $-4$ and $-1$ as well as those between $3$ and $6$.  Including the $x$ values where $y=|x-1|$ and $y=5$ intersect, we get Figure \ref{fig:absvalineqeg3}.
 
-\mfigure[scale=0.5]{.8}{Solving $2 < |x-1| \leq 5$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg3}{figures/LinearQuadraticGraphics/Inequalities-10}
+\mfigure[width=0.95\marginparwidth]{.8}{Solving $2 < |x-1| \leq 5$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg3}{figures/LinearQuadraticGraphics/Inequalities-10}
 
 
 \item  We need to exercise some special caution when solving $|x+1|\geq \frac{x+4}{2}$.  As we saw in Example \ref{absvalueeqnex} in Section \ref{AbsoluteValueFunctions},  when variables are both inside and outside of the absolute value, it's usually best to refer to the definition of absolute value, Definition \ref{absolutevalue}, to remove the absolute values and proceed from there.  To that end, we have $|x+1| = -(x+1)$ if $x < -1$ and $|x+1| = x+1$ if $x \geq -1$.  We break the inequality into cases, the first case being when $x<-1$.  For these values of $x$, our inequality becomes $-(x+1) \geq \frac{x+4}{2}$.  Solving, we get $-2x-2 \geq x+4$, so that $-3x \geq 6$, which means $x \leq -2$.  Since all of these solutions fall into the category $x < -1$, we keep them all.  For the second case, we assume $x \geq -1$. Our inequality becomes $x+1 \geq \frac{x+4}{2}$, which gives $2x+2 \geq x+4$ or $x \geq 2$.  Since all of these values of $x$ are greater than or equal to $-1$, we accept all of  these solutions as well.  Our final answer is  $(-\infty, -2] \cup [2,\infty)$.
 
-\mfigure[scale=0.7]{.55}{Solving $|x+1|\geq \frac{x+4}{2}$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg4}{figures/LinearQuadraticGraphics/Inequalities-11}
+\mfigure[width=0.95\marginparwidth]{.55}{Solving $|x+1|\geq \dfrac{x+4}{2}$ in Example \ref{ex_absvalineq}}{fig:absvalineqeg4}{figures/LinearQuadraticGraphics/Inequalities-11}
 \end{enumerate}
 }
 
@@ -220,7 +222,7 @@ Our next goal is to establish a procedure by which we can generate the sign diag
 \end{enumerate}
 }
 
-\smallskip
+\medskip
 
 \example{ex_quadineq}{Solving quadratic inequalities}{
 Solve the following inequalities analytically using sign diagrams.  Verify your answer graphically.
@@ -246,7 +248,7 @@ Solve the following inequalities analytically using sign diagrams.  Verify your 
 
 \mfigure{.4}{The sign diagram for $f(x)=2x^2+x-3$}{fig:quadineqeg1}{figures/LinearQuadraticGraphics/Inequalities-14}
 
-\mfigure{.17}{Verifying the solution to $2x^2\leq 3-x$ graphically}{fig:quadineqeg2}{figures/LinearQuadraticGraphics/Inequalities-15}
+\mfigure[width=0.95\marginparwidth]{.17}{Verifying the solution to $2x^2\leq 3-x$ graphically}{fig:quadineqeg2}{figures/LinearQuadraticGraphics/Inequalities-15}
 
 \smallskip
 
@@ -262,13 +264,13 @@ In this case, we say the line $y=2x$ is \textbf{tangent} to $y=x^2+1$ at $\left(
 
 \mfigure{.85}{The sign diagram for $f(x)=x^2-2x-1$}{fig:quadineqeg3}{figures/LinearQuadraticGraphics/Inequalities-16}
 
-\mfigure{.71}{Verifying the solution to $x^2-2x > 1$ graphically}{fig:quadineqeg4}{figures/LinearQuadraticGraphics/Inequalities-17}
+\mfigure[width=0.95\marginparwidth]{.71}{Verifying the solution to $x^2-2x > 1$ graphically}{fig:quadineqeg4}{figures/LinearQuadraticGraphics/Inequalities-17}
 
 \drawexampleline
 
 \mfigure{.55}{The sign diagram for $f(x)=x^2-2x+1$}{fig:quadineqeg5}{figures/LinearQuadraticGraphics/Inequalities-18}
 
-\mfigure{.4}{Verifying the solution to $x^2+1\leq 2x$ graphically}{fig:quadineqeg6}{figures/LinearQuadraticGraphics/Inequalities-19}
+\mfigure[width=0.8\marginparwidth]{.4}{Verifying the solution to $x^2+1\leq 2x$ graphically}{fig:quadineqeg6}{figures/LinearQuadraticGraphics/Inequalities-19}
 
 \item  To solve our last inequality,  $2x-x^2 \geq |x-1|-1$, we re-write the absolute value using cases.  For $x < 1$, $|x-1| = -(x-1) = 1-x$, so we get $2x-x^2 \geq 1-x-1$, or $x^2-3x \leq 0$.  Finding the zeros of $f(x) = x^2-3x$, we get $x=0$ and $x=3$.  However, we are only concerned with the portion of the number line where $x < 1$, so the only zero that we concern ourselves with is $x=0$.  This divides the interval $x<1$ into two intervals:  $(-\infty, 0)$ and $(0,1)$.  We choose $x=-1$ and $x=\frac{1}{2}$ as our test values.  We find $f(-1) = 4$ and $f\left(\frac{1}{2}\right) = -\frac{5}{4}$, giving us the signs in Figure \ref{fig:quadineqeg7}. Hence, our solution to $x^2-3x \leq 0$ for $x < 1$ is $[0,1)$.  Next, we turn our attention to the case $x \geq 1$.  Here, $|x-1| = x-1$, so our original inequality becomes $2x-x^2 \geq x-1-1$, or $x^2-x-2 \leq 0$.  Setting $g(x) = x^2-x-2$, we find the zeros of $g$ to be $x=-1$ and $x=2$.  Of these, only $x=2$ lies in the region $x \geq 1$, so we ignore $x=-1$.  Our test intervals are now $[1,2)$ and $(2,\infty)$.  We choose $x=1$ and $x=3$ as our test values and find $g(1) = -2$ and $g(3) = 4$, yielding the sign diagram in Figure \ref{fig:quadineqeg8}.  Hence, our solution to $g(x) = x^2-x-2 \leq 0$, in this region is $[1,2)$.
 
@@ -289,7 +291,7 @@ One of the classic applications of inequalities is the notion of tolerances.  Re
 
 \mfigure{.85}{The overall sign diagram for Problem 4 in Example \ref{ex_quadineq}}{fig:quadineqeg9}{figures/LinearQuadraticGraphics/Inequalities-22}
 
-\mfigure[scale=0.85]{.7}{Verifying the inequality $2x-x^2\geq \lvert x-1\rvert -1$ graphically}{fig:quadineqeglast}{figures/LinearQuadraticGraphics/Inequalities-23}
+\mfigure[width=0.95\marginparwidth]{.7}{Verifying the inequality $2x-x^2\geq \lvert x-1\rvert -1$ graphically}{fig:quadineqeglast}{figures/LinearQuadraticGraphics/Inequalities-23}
 
 \medskip
 
@@ -299,12 +301,12 @@ The area $A$ (in square inches) of a square piece of particle board which measur
 {
 Mathematically, we express the desire for the area $A(x)$ to be within $0.25$ square inches of $576$ as $|A - 576| \leq 0.25$.  Since $A(x) = x^2$, we get $|x^2 - 576| \leq 0.25$, which is equivalent to $-0.25 \leq x^2 - 576 \leq 0.25$.  One way to proceed at this point is to solve the two inequalities $-0.25 \leq x^2 - 576$ and $x^2 - 576 \leq 0.25$ individually using sign diagrams and then taking the intersection of the solution sets.  While this way will (eventually) lead to the correct answer, we take this opportunity to showcase the increasing property of the square root:  if $0 \leq a \leq b$, then $\sqrt{a} \leq \sqrt{b}$.  To use this property, we proceed as follows
 
-\[ \begin{array}{rclr}
-
--0.25  \leq & x^2 - 576 & \leq 0.25 & \\
-575.75 \leq & x^2 & \leq 576.25 & \text{(add $576$ across the inequalities.)} \\
-\sqrt{575.75} \leq & \sqrt{x^2} & \leq \sqrt{576.25} & \text{(take square roots.)} \\
-\sqrt{575.75} \leq & |x| & \leq \sqrt{576.25} & \text{($\sqrt{x^2} = |x|$)} \\ \end{array} \]
+\begin{align*}
+-0.25  \leq & x^2 - 576  \leq 0.25  \\
+575.75 \leq & x^2  \leq 576.25  \tag*{(add $576$ across the inequalities.)} \\
+\sqrt{575.75} \leq & \sqrt{x^2}  \leq \sqrt{576.25}  \tag*{(take square roots.)} \\
+\sqrt{575.75} \leq & |x|  \leq \sqrt{576.25}  \tag*{($\sqrt{x^2} = |x|$)}
+\end{align*}
 
 By Theorem \ref{absolutevalueineq}, we find the solution to $\sqrt{575.75} \leq |x|$ to be 
 \[
@@ -317,7 +319,7 @@ and the solution to $|x| \leq \sqrt{576.25}$ to be  $\left[-\sqrt{576.25}, \sqrt
 Since $x$ represents a length, we discard the negative answers and get  the interval $[\sqrt{575.75},\sqrt{576.25}]$.  This means that the side of the piece of particle board must be cut between $\sqrt{575.75} \approx 23.995$ and $\sqrt{576.25} \approx 24.005$ inches, a tolerance of (approximately) $0.005$ inches of the target length of $24$ inches. 
 }
 
-\medskip
+\pagebreak
 
 Our last example in the section demonstrates how inequalities can be used to describe regions in the plane, as we saw earlier in Section \ref{Relations}.
 
@@ -345,13 +347,13 @@ Sketch the following relations.
 
 \item  For a point to be in $S$, its $y$-coordinate must be less than or equal to the $y$-coordinate on the parabola $y=2-x^2$.  This is the set of all points \emph{below} or \emph{on} the parabola $y=2-x^2$: see Figure \ref{fig:ineqrel2}.
 
-\mfigure{.8}{Graph of the relation $R$ in Example \ref{ex_ineqrels}}{fig:ineqrel1}{figures/LinearQuadraticGraphics/Inequalities-24}
+\mfigure[width=0.95\marginparwidth]{.8}{Graph of the relation $R$ in Example \ref{ex_ineqrels}}{fig:ineqrel1}{figures/LinearQuadraticGraphics/Inequalities-24}
 
-\mfigure{.6}{Graph of the relation $S$ in Example \ref{ex_ineqrels}}{fig:ineqrel2}{figures/LinearQuadraticGraphics/Inequalities-25}
+\mfigure[width=0.95\marginparwidth]{.6}{Graph of the relation $S$ in Example \ref{ex_ineqrels}}{fig:ineqrel2}{figures/LinearQuadraticGraphics/Inequalities-25}
 
 \item  Finally, the relation $T$ takes the points whose $y$-coordinates satisfy both the conditions given in $R$ and those of $S$.  Thus we shade the region between $y=|x|$ and $y=2-x^2$, keeping those points on the parabola, but not the points on $y=|x|$.  To get an accurate graph, we need to find where these two graphs intersect, so we set $|x| = 2-x^2$.  Proceeding as before, breaking this equation into cases, we get $x=-1,1$.  Graphing yields Figure \ref{fig:ineqrel3}.
 
-\mfigure{.4}{Graph of the relation $T$ in Example \ref{ex_ineqrels}}{fig:ineqrel3}{figures/LinearQuadraticGraphics/Inequalities-26}
+\mfigure[width=0.95\marginparwidth]{.4}{Graph of the relation $T$ in Example \ref{ex_ineqrels}}{fig:ineqrel3}{figures/LinearQuadraticGraphics/Inequalities-26}
 \end{enumerate}
 }
 

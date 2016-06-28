@@ -39,21 +39,21 @@ To prove the theorem, we consider a generic triangle with the vertex of angle $\
 
 From this set-up, we immediately find that the coordinates of $A$ and $C$ are $A(0,0)$ and $C(b,0)$.  From Theorem \ref{cosinesinecircle}, we know that since the point $B(x,y)$ lies on a circle of radius $c$, the coordinates of $B$ are $B(x,y) = B(c \cos(\alpha), c \sin(\alpha))$.  (This would be true even if $\alpha$ were an obtuse or right angle so although we have drawn the case when $\alpha$ is acute, the following computations hold for any angle $\alpha$ drawn in standard position where $0 < \alpha < 180^{\circ}$.)  We note that the distance between the points $B$ and $C$ is none other than the length of side $a$.  Using the distance formula, Equation \ref{distanceformula}, we get
 
-\[\begin{array}{rclr}
-a & = & \sqrt{(c \cos(\alpha) - b)^{2} + (c \sin(\alpha) - 0)^2} & \\ [3pt]
-a^{2} & = & \left(\sqrt{(c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha)}\right)^2 & \\  [3pt]
-a^2 & = &  (c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha) & \\  [3pt]
-a^2 & = & c^2 \cos^2(\alpha) - 2bc \cos(\alpha) + b^2 + c^2 \sin^2(\alpha) & \\  [3pt]
-a^2 & = & c^2\left(\cos^2(\alpha) + \sin^2(\alpha)\right) + b^2 - 2bc \cos(\alpha) & \\  [3pt]
-a^2 & = & c^2(1) + b^2 - 2bc \cos(\alpha) & \text{Since $\cos^2(\alpha) + \sin^2(\alpha) = 1$}\\  [3pt]
-a^2 & = & c^2 + b^2 - 2bc \cos(\alpha) & \\
-\end{array} \]
+\begin{align*}
+a & =  \sqrt{(c \cos(\alpha) - b)^{2} + (c \sin(\alpha) - 0)^2} & \\
+a^{2} & =  \left(\sqrt{(c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha)}\right)^2  \\
+a^2 & =   (c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha) \\
+a^2 & =  c^2 \cos^2(\alpha) - 2bc \cos(\alpha) + b^2 + c^2 \sin^2(\alpha) \\
+a^2 & =  c^2\left(\cos^2(\alpha) + \sin^2(\alpha)\right) + b^2 - 2bc \cos(\alpha) \\
+a^2 & =  c^2(1) + b^2 - 2bc \cos(\alpha)  \tag*{Since $\cos^2(\alpha) + \sin^2(\alpha) = 1$}\\
+a^2 & =  c^2 + b^2 - 2bc \cos(\alpha) \\
+\end{align*}
 
-The remaining formulas given in Theorem \ref{lawofcosines} can be shown by simply reorienting the triangle to place a different vertex at the origin.  We leave these details to the reader.  What's important about $a$ and $\alpha$ in the above proof is that $(\alpha,a)$ is an angle-side opposite pair and $b$ and $c$ are the sides adjacent to $\alpha$ -- the same can be said of any other angle-side opposite pair in the triangle.   Notice that the proof of the Law of Cosines relies on the distance formula which has its roots in the Pythagorean Theorem.  That being said, the Law of Cosines can be thought of as a generalization of the Pythagorean Theorem.  If we have a triangle in which $\gamma = 90^{\circ}$, then $\cos(\gamma) = \cos\left(90^{\circ}\right) = 0$ so we get the familiar relationship  $c^2 = a^2 + b^2$.  What this means is that in the larger mathematical sense, the Law of Cosines and the Pythagorean Theorem amount to pretty much the same thing.\footnote{This shouldn't come as too much of a shock.  All of the theorems in Trigonometry can ultimately be traced back to the definition of the circular functions along with the distance formula and hence, the Pythagorean Theorem.}
+The remaining formulas given in Theorem \ref{lawofcosines} can be shown by simply reorienting the triangle to place a different vertex at the origin.  We leave these details to the reader.  What's important about $a$ and $\alpha$ in the above proof is that $(\alpha,a)$ is an angle-side opposite pair and $b$ and $c$ are the sides adjacent to $\alpha$ -- the same can be said of any other angle-side opposite pair in the triangle.   Notice that the proof of the Law of Cosines relies on the distance formula which has its roots in the Pythagorean Theorem.  That being said, the Law of Cosines can be thought of as a generalization of the Pythagorean Theorem.  If we have a triangle in which $\gamma = 90^{\circ}$, then $\cos(\gamma) = \cos\left(90^{\circ}\right) = 0$ so we get the familiar relationship  $c^2 = a^2 + b^2$.  What this means is that in the larger mathematical sense, the Law of Cosines and the Pythagorean Theorem amount to pretty much the same thing. (This shouldn't come as too much of a shock.  All of the theorems in Trigonometry can ultimately be traced back to the definition of the circular functions along with the distance formula and hence, the Pythagorean Theorem.)
+
+\medskip
 
 \example{locex}{Using the Law of Cosines}{  Solve the following triangles.  Give exact answers and decimal approximations (rounded to hundredths) and sketch the triangle.
-
-\begin{multicols}{2}
 
 \begin{enumerate}
 
@@ -61,12 +61,12 @@ The remaining formulas given in Theorem \ref{lawofcosines} can be shown by simpl
 
 \item  \label{locsss} $a=4$ units, $b=7$ units, $c = 5$ units
 
-\end{enumerate}
-
-\end{multicols}}
+\end{enumerate}}
 {\begin{enumerate}
 
 \item  We are given the lengths of two sides, $a=7$ and $c = 2$, and the measure of the included angle, $\beta = 50^{\circ}$.  With no angle-side opposite pair to use, we apply  the Law of Cosines.  We get  $b^2 = 7^2 + 2^2 - 2(7)(2)\cos\left(50^{\circ}\right)$ which yields $b = \sqrt{53-28\cos\left(50^{\circ}\right)} \approx 5.92$ units.  In order to determine the measures of the remaining angles $\alpha$ and $\gamma$, we are forced to used the derived value for $b$. There are two ways to proceed at this point.  We could use the Law of Cosines again, or, since  we have the angle-side opposite pair $(\beta, b)$ we could use the Law of Sines. The advantage to using the Law of Cosines over the Law of Sines in cases like this is that unlike the sine function, the cosine function distinguishes between acute and obtuse angles.  The cosine of an acute is positive, whereas the cosine of an obtuse angle is negative.  Since the sine of both acute and obtuse angles are positive, the sine of an angle alone is not enough to determine if the angle in question is acute or obtuse.  Since both authors of the textbook prefer the Law of Cosines, we proceed with this method first.  When using the Law of Cosines, it's always best to find the measure of the largest unknown angle first, since this will give us the obtuse angle of the triangle if there is one.  Since the largest angle is opposite the longest side, we choose to find $\alpha$ first. To that end, we use the formula $\cos(\alpha) = \frac{b^2+c^2-a^2}{2bc}$ and substitute $a = 7$, $b =  \sqrt{53-28\cos\left(50^{\circ}\right)}$ and $c = 2$. We get (after simplifying) \[\cos(\alpha) = \frac{2-7\cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ}\right)}}\]  Since $\alpha$ is an angle in a triangle, we know the radian measure of $\alpha$ must lie between $0$ and $\pi$ radians.  This matches the range of the arccosine function, so we have \[\alpha = \arccos\left(\frac{2-7\cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ} \right)}}\right) \, \text{radians} \, \approx  114.99^{\circ}\] At this point, we could find $\gamma$ using $\gamma = 180^{\circ} - \alpha - \beta \approx 180^{\circ} - 114.99^{\circ} - 50^{\circ} = 15.01^{\circ}$, that is if we trust our approximation for $\alpha$. To minimize propagation of error, however, we could use the Law of Cosines again, in this case using $\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}$.  Plugging in $a = 7$, $b = \sqrt{53-28\cos\left(50^{\circ} \right)}$ and $c=2$, we get  $\gamma = \arccos\left(\frac{7-2 \cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ} \right)}} \right)$ radians $\approx 15.01^{\circ}$.  We sketch the triangle in Figure \ref{fig:cosines2} below.
+
+\drawexampleline
 
 \medskip
 
@@ -118,7 +118,9 @@ In Section \ref{LawofSines}, we used the proof of the Law of Sines to develop Th
 
 \theorem{HeronsFormula}{Heron's Formula}{  \index{Heron's Formula} Suppose $a$, $b$ and $c$ denote the lengths of the three sides of a triangle.  Let $s$ be the semiperimeter of the triangle, that is, let $s = \frac{1}{2}(a + b + c)$.  Then the area $A$ enclosed by the triangle is given by
 
-\[ A = \sqrt{s (s-a) (s-b) (s-c)}\]
+\[
+ A = \sqrt{s (s-a) (s-b) (s-c)}
+\]
 }
 
 \smallskip
@@ -127,54 +129,43 @@ We prove Theorem \ref{HeronsFormula} using Theorem \ref{areaformulasine}.  Using
 
 
 
-\[ \begin{array}{rclr} 
-
-A^2 & = & \left(\dfrac{1}{2} ab \sin(\gamma)\right)^2 &\\[10pt] 
-    & =  &  \dfrac{1}{4} a^2 b^2 \sin^{2}(\gamma) & \\[10pt]
-    & = & \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right) & \text{since $\sin^2(\gamma) = 1 - \cos^{2}(\gamma)$.} \\ \end{array}\]
+\begin{align*}
+A^2 & =  \left(\dfrac{1}{2} ab \sin(\gamma)\right)^2 \\[3pt] 
+    & =  \dfrac{1}{4} a^2 b^2 \sin^{2}(\gamma) \\[3pt]
+    & =  \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right) \tag*{Since $\sin^2(\gamma) = 1 - \cos^{2}(\gamma)$.}
+\end{align*}
 
 The Law of Cosines tells us $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$, so substituting this into our equation for $A^2$ gives
 
-\[ \begin{array}{rclr}
-
-A^2 & = &  \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right) 	& \text{\hphantom{perfect square trinomials.}}\\[10pt]
-
-    & = & \dfrac{a^2b^2}{4} \left[1 - \left( \dfrac{a^2 + b^2 - c^2}{2ab} \right)^2\right] &  \\ [10pt]
-    
-	 	& = & \dfrac{a^2b^2}{4} \left[1 - \dfrac{\left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right] &  \\ [10pt]
-	  
-	 	& = & \dfrac{a^2b^2}{4} \left[\dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right] &  \\ [10pt]
-	 	
-	 	& = & \dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{16}  &  \\ [10pt]
-	 	
-	 	& = & \dfrac{(2ab)^2  - \left(a^2 + b^2 - c^2\right)^2}{16}  &  \\ [10pt]
-	 	
-	 		& = & \dfrac{\left( 2ab - \left[a^2+b^2 - c^2\right]\right)  \left( 2ab + \left[a^2+b^2 - c^2\right]\right)}{16}  & \text{difference of squares.} \\ [10pt]
-	 	 	& = & \dfrac{\left(c^2 - a^2 + 2ab - b^2 \right)\left( a^2 + 2ab + b^2- c^2\right)}{16}  &  \\ [10pt]
-	 	\end{array} \]
-	 	
 \begin{align*}
-A^2	& =  \dfrac{\left(c^2 - \left[a^2 - 2ab + b^2\right] \right)  \left( \left[a^2 + 2ab + b^2\right]- c^2\right)}{16}    \\ 
-    & =  \dfrac{\left(c^2 - (a-b)^2 \right)  \left( (a+b)^2- c^2\right)}{16}    \tag*{perfect square trinomials.}\\ 
-    & =  \dfrac{ (c-(a-b))(c+(a-b))((a+b) -c)((a+b)+c)}{16}    \tag*{difference of squares.} \\
- 	& =  \dfrac{ (b+c-a)(a+c-b)(a+b-c)(a+b+c)}{16}    \\ 	
+A^2 & =   \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right)\\[3pt]
+    & =  \dfrac{a^2b^2}{4} \left[1 - \left( \dfrac{a^2 + b^2 - c^2}{2ab} \right)^2\right] \\[3pt]
+    & =  \dfrac{a^2b^2}{4} \left[1 - \dfrac{\left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right] \\[3pt]
+	& =  \dfrac{a^2b^2}{4} \left[\dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right]  \\[3pt]	 	
+	& =  \dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{16}\\[3pt] 	
+	& =  \dfrac{(2ab)^2  - \left(a^2 + b^2 - c^2\right)^2}{16}\\[3pt] 	
+	& =  \dfrac{\left( 2ab - \left[a^2+b^2 - c^2\right]\right)  \left( 2ab + \left[a^2+b^2 - c^2\right]\right)}{16}  \tag*{difference of squares.} \\[3pt]
+	& =  \dfrac{\left(c^2 - a^2 + 2ab - b^2 \right)\left( a^2 + 2ab + b^2- c^2\right)}{16} \\[3pt] 
+	& =  \dfrac{\left(c^2 - \left[a^2 - 2ab + b^2\right] \right)  \left( \left[a^2 + 2ab + b^2\right]- c^2\right)}{16}    \\[3pt] 
+    & =  \dfrac{\left(c^2 - (a-b)^2 \right)  \left( (a+b)^2- c^2\right)}{16}    \tag*{perfect square trinomials.}\\[3pt] 
+    & =  \dfrac{ (c-(a-b))(c+(a-b))((a+b) -c)((a+b)+c)}{16}    \tag*{difference of squares.} \\[3pt]
+ 	& =  \dfrac{ (b+c-a)(a+c-b)(a+b-c)(a+b+c)}{16}    \\[3pt]
     & =  \dfrac{(b+c-a)}{2} \cdot \dfrac{(a+c-b)}{2} \cdot \dfrac{(a+b-c)}{2} \cdot \dfrac{(a+b+c)}{2} 	 		
 \end{align*}
 
-At this stage, we recognize the last factor as the semiperimeter, $s = \frac{1}{2}(a+b+c) = \dfrac{a+b+c}{2}$.  To complete the proof, we note that
-
-\[ (s - a) = \dfrac{a+b+c}{2} - a = \dfrac{a+b+c-2a}{2} = \dfrac{b+c-a}{2} \]  
-			
+At this stage, we recognize the last factor as the semiperimeter, 
+\[
+ s = \frac{1}{2}(a+b+c) = \dfrac{a+b+c}{2}.
+\]  
+To complete the proof, we note that
+\[
+ (s - a) = \dfrac{a+b+c}{2} - a = \dfrac{a+b+c-2a}{2} = \dfrac{b+c-a}{2} .
+\]  			
 Similarly, we find $(s-b) = \dfrac{a+c-b}{2}$ and $(s-c) = \dfrac{a+b-c}{2}$.  Hence, we get
-
-\[ \begin{array}{rclr}
-
-A^2 & = & \dfrac{(b+c-a)}{2} \cdot \dfrac{(a+c-b)}{2} \cdot \dfrac{(a+b-c)}{2} \cdot \dfrac{(a+b+c)}{2}  &  \\ [10pt]	 
-	 	
-	 	& = & (s-a) (s-b) (s-c) s  &  \\ [10pt]	 	
-	 	
-\end{array} \]
-
+\begin{align*}
+A^2 & =  \dfrac{(b+c-a)}{2} \cdot \dfrac{(a+c-b)}{2} \cdot \dfrac{(a+b-c)}{2} \cdot \dfrac{(a+b+c)}{2}  \\[3pt]
+ 	& =  (s-a) (s-b) (s-c) s  
+\end{align*}
 so that  $A = \sqrt{s(s-a)(s-b)(s-c)}$ as required. 
 
 \bigskip

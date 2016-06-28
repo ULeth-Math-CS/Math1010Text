@@ -40,7 +40,7 @@ In Section \ref{circularmotion}, we introduced the concept of circular motion an
 
 We know from the equations given on page \pageref{equationsforcircularmotion} in Section \ref{cosinesinebeyond} that the $y$-coordinate for counter-clockwise motion on a circle of radius $r$ centred at the origin with constant angular velocity (frequency) $\omega$ is given by $y = r\sin(\omega t)$.  Here,  $t=0$ corresponds to the point $(r,0)$ so that $\theta$, the angle measuring the amount of rotation, is in standard position. In our case, the diameter of the wheel is 128 feet, so the radius is $r = 64$ feet. Since the wheel completes two revolutions in 2 minutes and 7 seconds (which is $127$ seconds) the period $T = \frac{1}{2} (127) = \frac{127}{2}$ seconds.  Hence, the angular frequency is $\omega = \frac{2\pi}{T} = \frac{4 \pi}{127}$ radians per second.  Putting these two pieces of information together, we have that  $y = 64 \sin\left(\frac{4 \pi}{127} t\right)$ describes the $y$-coordinate on the Giant Wheel after $t$ seconds, assuming it is centred at $(0,0)$ with $t=0$ corresponding to the point $Q$.  In order to find an expression for $h$, we take the point $O$ in the figure as the origin.    Since the base of the Giant Wheel ride is $8$ feet above the ground and the Giant Wheel itself has a radius of  $64$ feet, its center is $72$ feet above the ground. To account for this vertical shift upward, (we are readjusting our `baseline' from $y=0$ to $y=72$) we add $72$ to our formula for $y$ to obtain the new formula $h = y  + 72 = 64 \sin\left(\frac{4 \pi}{127} t\right) + 72$.  Next, we need to adjust things so that $t=0$ corresponds to the point $P$ instead of the point $Q$. This is where the phase comes into play.  Geometrically, we need to shift the angle $\theta$ in the figure back $\frac{\pi}{2}$ radians.  From Section \ref{cosinesinebeyond}, we know $\theta = \omega t = \frac{4 \pi}{127} t$, so we (temporarily) write the height in terms of $\theta$ as  $h =64 \sin\left(\theta\right) + 72$.    Subtracting $\frac{\pi}{2}$ from $\theta$ gives the final answer $h(t) = 64 \sin\left(\theta - \frac{\pi}{2}\right) + 72 = 64\sin\left(\frac{4 \pi}{127} t -\frac{\pi}{2} \right) + 72$. We can check the reasonableness of our answer by graphing $y = h(t)$ over the interval $\left[0, \frac{127}{2}\right]$ in Figure \ref{fig:sinusoid1}.
 
-\mfigure[width=0.95\marginparwidth]{.5}{$y=h(t)=64\sin\left(\frac{4\pi}{127}t-\frac{\pi}{2}\right)+72$}{fig:sinusoid1}{figures/AppExtGraphics/Sinusoid-3}
+\mfigure[width=0.95\marginparwidth]{.5}{The graph $y=h(t)=64\sin\left(\frac{4\pi}{127}t-\frac{\pi}{2}\right)+72$}{fig:sinusoid1}{figures/AppExtGraphics/Sinusoid-3}
 }
 
 \medskip
@@ -172,19 +172,19 @@ equilibrium position
 
 \medskip
 
-If we ignore all other influences on the system except gravity and the spring force, then Physics tells us that gravity and the spring force will battle each other forever and the object will oscillate indefinitely.  In this case, we describe the motion as `free' (meaning there is no external force causing the motion) and `undamped' (meaning we ignore friction caused by surrounding medium, which in our case is air).  The following theorem, which comes from Differential Equations, gives $x(t)$ as a function of the mass $m$ of the object, the spring constant $k$, the initial displacement $x_{\text{\tiny $0$}}$ of the object and initial velocity $v_{\text{\tiny $0$}}$ of the object.  As with $x(t)$, $x_{\text{\tiny $0$}} = 0$ means the object is released from the equilibrium position, $x_{\text{\tiny $0$}} < 0$ means the object is released \textit{above} the equilibrium position and $x_{\text{\tiny $0$}}>0$ means the object is released \textit{below} the equilibrium position.  As far as the initial velocity $v_{\text{\tiny $0$}}$ is concerned, $v_{\text{\tiny $0$}} =0 $ means the object is released `from rest,' $v_{\text{\tiny $0$}}<0$ means the object is heading \textit{upwards} and $v_{\text{\tiny $0$}}>0$ means the object is heading \textit{downwards}.
+If we ignore all other influences on the system except gravity and the spring force, then Physics tells us that gravity and the spring force will battle each other forever and the object will oscillate indefinitely.  In this case, we describe the motion as `free' (meaning there is no external force causing the motion) and `undamped' (meaning we ignore friction caused by surrounding medium, which in our case is air).  The following theorem, which comes from Differential Equations, gives $x(t)$ as a function of the mass $m$ of the object, the spring constant $k$, the initial displacement $x_{0}$ of the object and initial velocity $v_{0}$ of the object.  As with $x(t)$, $x_{0} = 0$ means the object is released from the equilibrium position, $x_{0} < 0$ means the object is released \textit{above} the equilibrium position and $x_{0}>0$ means the object is released \textit{below} the equilibrium position.  As far as the initial velocity $v_{0}$ is concerned, $v_{0} =0 $ means the object is released `from rest,' $v_{0}<0$ means the object is heading \textit{upwards} and $v_{0}>0$ means the object is heading \textit{downwards}.
 
 \mnote{.5}{The sign conventions here are carried over from Physics.  If not for the spring, the object would fall towards the ground, which is the `natural' or `positive' direction.  Since the spring force acts in direct opposition to gravity,  any movement upwards is considered `negative'.}
 
 \medskip
 
-\theorem{freeundampedmotion}{Equation for Free Undamped Harmonic Motion}{  Suppose an object of  mass $m$ is suspended from a spring with spring constant $k$.  If the initial displacement from the equilibrium position is $x_{\text{\tiny $0$}}$ and the initial velocity of the object is $v_{\text{\tiny $0$}}$, then the displacement $x$ from the equilibrium position at time $t$ is given by  $x(t) = A \sin(\omega t + \phi)$ where
+\theorem{freeundampedmotion}{Equation for Free Undamped Harmonic Motion}{  Suppose an object of  mass $m$ is suspended from a spring with spring constant $k$.  If the initial displacement from the equilibrium position is $x_{0}$ and the initial velocity of the object is $v_{0}$, then the displacement $x$ from the equilibrium position at time $t$ is given by  $x(t) = A \sin(\omega t + \phi)$ where
 
 \begin{itemize}
 
-\item  $\omega = \sqrt{\dfrac{k}{m}}$ and $A = \sqrt{x_{\text{\tiny $0$}}^2 + \left( \dfrac{v_{\text{\tiny $0$}}}{\omega}\right)^2}$
+\item  $\omega = \sqrt{\dfrac{k}{m}}$ and $A = \sqrt{x_{0}^2 + \left( \dfrac{v_{0}}{\omega}\right)^2}$
 
-\item $A\sin(\phi) = x_{\text{\tiny $0$}}$ and $A\omega\cos(\phi) = v_{\text{\tiny $0$}}$.
+\item $A\sin(\phi) = x_{0}$ and $A\omega\cos(\phi) = v_{0}$.
 
 \end{itemize} 
 }
@@ -208,14 +208,26 @@ It is a great exercise in `dimensional analysis' to verify that the formulas giv
 
 \begin{enumerate}
 
-\item  With $k = 8$ and $m = 2$, we get $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{8}{2}} = 2$. We are told that the object is released 3 feet \textit{below} the equilibrium position `from rest.'  This means  $x_{\text{\tiny $0$}} = 3$ and  $v_{\text{\tiny $0$}} = 0$.  Therefore, $A = \sqrt{x_{\text{\tiny $0$}}^2 + \left( \frac{v_{\text{\tiny $0$}}}{\omega}\right)^2} = \sqrt{3^2 + 0^2} = 3$.  To determine the phase $\phi$, we have $A\sin(\phi) = x_{\text{\tiny $0$}}$, which in this case gives $3 \sin(\phi) = 3$ so $\sin(\phi) = 1$.  Only $\phi = \frac{\pi}{2}$ and angles coterminal to it satisfy this condition, so we pick the phase to be $\phi = \frac{\pi}{2}$. (For confirmation, we note that $A\omega\cos(\phi) = v_{\text{\tiny $0$}}$, which in this case reduces to $6\cos(\phi) = 0$.) Hence, the equation of motion is $x(t) = 3\sin\left(2t + \frac{\pi}{2}\right)$.  To find when the object passes through the equilibrium position we solve $x(t)= 3\sin\left(2t + \frac{\pi}{2}\right) = 0$. Going through the usual analysis we find $t = -\frac{\pi}{4} + \frac{\pi}{2} k$ for integers $k$. Since we are interested in the first time the object passes through the equilibrium position, we look for the smallest positive $t$ value which in this case is $t = \frac{\pi}{4} \approx 0.78$ seconds after the  start of the motion.  Common sense suggests that if we release the object below the equilibrium position, the object should be travelling upwards when it first passes through it.  To check this answer, we graph one cycle of  $x(t)$.  Since our applied domain in this situation is $t \geq 0$, and the period of $x(t)$ is $T = \frac{2\pi}{\omega} = \frac{2\pi}{2} = \pi$, we graph $x(t)$ over the interval $[0,\pi]$.  Remembering that $x(t) > 0$ means the object is below the equilibrium position and $x(t) < 0$ means the object is above the equilibrium position, the fact our graph in Figure \ref{fig:sinusoid2} is crossing through the $t$-axis from positive $x$ to negative $x$ at $t = \frac{\pi}{4}$ confirms our answer.
+\item  With $k = 8$ and $m = 2$, we get $\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{8}{2}} = 2$. We are told that the object is released 3 feet \textit{below} the equilibrium position `from rest.'  This means  $x_{0} = 3$ and  $v_{0} = 0$.  Therefore, $A = \sqrt{x_{0}^2 + \left( \frac{v_{0}}{\omega}\right)^2} = \sqrt{3^2 + 0^2} = 3$.  To determine the phase $\phi$, we have $A\sin(\phi) = x_{0}$, which in this case gives $3 \sin(\phi) = 3$ so $\sin(\phi) = 1$.  Only $\phi = \frac{\pi}{2}$ and angles coterminal to it satisfy this condition, so we pick the phase to be $\phi = \frac{\pi}{2}$. (For confirmation, we note that $A\omega\cos(\phi) = v_{0}$, which in this case reduces to $6\cos(\phi) = 0$.) Hence, the equation of motion is $x(t) = 3\sin\left(2t + \frac{\pi}{2}\right)$.  To find when the object passes through the equilibrium position we solve $x(t)= 3\sin\left(2t + \frac{\pi}{2}\right) = 0$. Going through the usual analysis we find $t = -\frac{\pi}{4} + \frac{\pi}{2} k$ for integers $k$. Since we are interested in the first time the object passes through the equilibrium position, we look for the smallest positive $t$ value which in this case is $t = \frac{\pi}{4} \approx 0.78$ seconds after the  start of the motion.  Common sense suggests that if we release the object below the equilibrium position, the object should be travelling upwards when it first passes through it.  To check this answer, we graph one cycle of  $x(t)$.  Since our applied domain in this situation is $t \geq 0$, and the period of $x(t)$ is $T = \frac{2\pi}{\omega} = \frac{2\pi}{2} = \pi$, we graph $x(t)$ over the interval $[0,\pi]$.  Remembering that $x(t) > 0$ means the object is below the equilibrium position and $x(t) < 0$ means the object is above the equilibrium position, the fact our graph in Figure \ref{fig:sinusoid2} is crossing through the $t$-axis from positive $x$ to negative $x$ at $t = \frac{\pi}{4}$ confirms our answer.
 
-\mfigure[width=0.95\marginparwidth]{.8}{$y=x(t)=3\sin(2t+\frac{\pi}{2}$ in Example \ref{freeudampedex}.1}{fig:sinusoid2}{figures/AppExtGraphics/Sinusoid-8}
+\mfigure[width=0.95\marginparwidth]{.8}{$y=x(t)=3\sin(2t+\frac{\pi}{2})$ in Example \ref{freeudampedex}.1}{fig:sinusoid2}{figures/AppExtGraphics/Sinusoid-8}
 
-\item  The only difference between this problem and the previous problem is that we now release the object with an upward velocity of $8 \, \frac{\text{ft}}{s}$.  We still have $\omega = 2$ and $x_{\text{\tiny $0$}} = 3$, but now we have $v_{\text{\tiny $0$}} = -8$, the negative indicating the velocity is directed upwards. Here, we get $A = \sqrt{x_{\text{\tiny $0$}}^2 + \left( \frac{v_{\text{\tiny $0$}}}{\omega}\right)^2} = \sqrt{3^2 + (-4)^2} = 5$.  From $A\sin(\phi) = x_{\text{\tiny $0$}}$, we get $5\sin(\phi) = 3$ which gives $\sin(\phi) = \frac{3}{5}$.  From  $A\omega\cos(\phi) = v_{\text{\tiny $0$}}$, we get $10\cos(\phi) = -8$, or $\cos(\phi) = -\frac{4}{5}$.  This means that $\phi$ is a Quadrant II angle which we can describe in terms of either arcsine or arccosine.  Since $x(t)$ is expressed in terms of sine, we choose to express $\phi = \pi - \arcsin\left(\frac{3}{5}\right)$.  Hence, $x(t)= 5 \sin\left(2t + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)$.  Since the amplitude of $x(t)$ is $5$, the object will travel at most $5$ feet above the equilibrium position.  To find when this happens, we solve the equation $x(t)= 5 \sin\left(2t + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)= -5$, the negative once again signifying that the object is \textit{above} the equilibrium position.  Going through the usual machinations, we get $t = \frac{1}{2} \arcsin\left(\frac{3}{5}\right) +\frac{\pi}{4}  + \pi k$ for integers $k$. The smallest of these values occurs when $k=0$, that is, $t = \frac{1}{2} \arcsin\left(\frac{3}{5}\right) +\frac{\pi}{4} \approx 1.107$ seconds after the start of the motion. To check our answer using the computer, we graph $y = 5 \sin\left(2x + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)$ using GeoGebra and confirm the coordinates of the first relative minimum to be approximately $(1.107,-5)$: see Figure \ref{fig:sinusoid3}.
+\item  The only difference between this problem and the previous problem is that we now release the object with an upward velocity of $8 \, \frac{\text{ft}}{s}$.  We still have $\omega = 2$ and $x_{0} = 3$, but now we have $v_{0} = -8$, the negative indicating the velocity is directed upwards. Here, we get 
+\[
+ A = \sqrt{x_{0}^2 + \left( \frac{v_{0}}{\omega}\right)^2} = \sqrt{3^2 + (-4)^2} = 5.
+\]
+From $A\sin(\phi) = x_{0}$, we get $5\sin(\phi) = 3$ which gives $\sin(\phi) = \frac{3}{5}$.  From  $A\omega\cos(\phi) = v_{0}$, we get $10\cos(\phi) = -8$, or $\cos(\phi) = -\frac{4}{5}$.  This means that $\phi$ is a Quadrant II angle which we can describe in terms of either arcsine or arccosine.  Since $x(t)$ is expressed in terms of sine, we choose to express $\phi = \pi - \arcsin\left(\frac{3}{5}\right)$.  Hence, $x(t)= 5 \sin\left(2t + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)$.  Since the amplitude of $x(t)$ is $5$, the object will travel at most $5$ feet above the equilibrium position.  To find when this happens, we solve the equation $x(t)= 5 \sin\left(2t + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)= -5$, the negative once again signifying that the object is \textit{above} the equilibrium position.  Going through the usual machinations, we get 
+\[
+ t = \frac{1}{2} \arcsin\left(\frac{3}{5}\right) +\frac{\pi}{4}  + \pi k
+\]
+for all integers $k$. The smallest of these values occurs when $k=0$, that is, $t = \frac{1}{2} \arcsin\left(\frac{3}{5}\right) +\frac{\pi}{4} \approx 1.107$ seconds after the start of the motion. To check our answer using the computer, we graph 
+\[
+ y = 5 \sin\left(2x + \left[\pi - \arcsin\left(\frac{3}{5}\right)\right]\right)
+\]
+using GeoGebra and confirm the coordinates of the first relative minimum to be approximately $(1.107,-5)$: see Figure \ref{fig:sinusoid3}.
 %\enlargethispage{\baselineskip}
 
-\mfigure[width=0.95\marginparwidth]{.58}{$y=5\sin(2x+[\pi-\arcsin(\frac{3}{5})])$ in Example \ref{freeudampedex}.2}{fig:sinusoid3}{figures/AppExtGraphics/Sinusoid01}
+\mfigure[width=0.95\marginparwidth]{.58}{The graph $y=5\sin(2x+[\pi-\arcsin(\frac{3}{5})])$ in Example \ref{freeudampedex}.2}{fig:sinusoid3}{figures/AppExtGraphics/Sinusoid01}
 
 \end{enumerate}
 }
@@ -239,18 +251,18 @@ It is possible, though beyond the scope of this course, to model the effects of 
 \mtable{.28}{Graphing $x(t)$ in Example \ref{underdampedresonance}.1}{fig:sinusoid4}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.95\marginparwidth]{figures/AppExtGraphics/Sinusoid02}\\
-(a) $y=10e^{-x/5}\sin(x+\frac{\pi}{3}$\\
+(a) $y=10e^{-x/5}\sin(x+\frac{\pi}{3})$\\
 \\
 \myincludegraphics[width=0.95\marginparwidth]{figures/AppExtGraphics/Sinusoid03}\\
-(b) {\color{blue} $y=10e^{-x/5}\sin(x+\frac{\pi}{3}$}, {\color{red} $y=\pm 10e^{-x/5}$}
+(b) {\color{blue} $y=10e^{-x/5}\sin(x+\frac{\pi}{3})$}, {\color{red} $y=\pm 10e^{-x/5}$}
 \end{tabular}}}
 {\mtable{.28}{Graphing $x(t)$ in Example \ref{underdampedresonance}.1}{fig:sinusoid4}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.95\marginparwidth]{figures/AppExtGraphics/Sinusoid02}\\
-(a) $y=10e^{-x/5}\sin(x+\frac{\pi}{3}$\\
+(a) $y=10e^{-x/5}\sin(x+\frac{\pi}{3})$\\
 \\
 \myincludegraphics[width=0.95\marginparwidth]{figures/AppExtGraphics/Sinusoid03}\\
-(b) {\color{gray} $y=10e^{-x/5}\sin(x+\frac{\pi}{3}$}, {\color{black} $y=\pm 10e^{-x/5}$}
+(b) {\color{gray} $y=10e^{-x/5}\sin(x+\frac{\pi}{3})$}, {\color{black} $y=\pm 10e^{-x/5}$}
 \end{tabular}}}
 
 \end{enumerate}}

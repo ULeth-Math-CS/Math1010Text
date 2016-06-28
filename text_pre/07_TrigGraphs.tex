@@ -227,7 +227,6 @@ We now find the corresponding $y$-values on the graph by substituting each of th
 \begin{center}
 \begin{tabular}{m{0.5\textwidth} m{0.5\textwidth}}
 \setlength{\extrarowheight}{2pt}
-\setlength{\extrarowheight}{2pt}
 \[ \begin{array}{|r||r|r|}  
 
 \hline
@@ -329,11 +328,11 @@ g(x) &= \frac{1}{2} \sin(\pi - 2x) + \frac{3}{2} = \frac{1}{2} \sin(-(2x - \pi))
 
 We find $A = -\frac{1}{2}$, $\omega = 2$, $\phi = -\pi$ and $B = \frac{3}{2}$.  The period is then $\frac{2\pi}{2} = \pi$, the amplitude is $\left| - \frac{1}{2} \right| = \frac{1}{2}$, the phase shift is $-\frac{-\pi}{2} = \frac{\pi}{2}$ (indicating a shift \textit{right} $\frac{\pi}{2}$ units) and the vertical shift is \textit{up} $\frac{3}{2}$.  Note that, in this case, all of the data match our graph of $y=g(x)$ with the exception of the phase shift. \phantomsection \label{phaseshiftissue} Instead of the graph \textit{starting} at $x = \frac{\pi}{2}$, it ends there.  Remember, however, that the graph presented in Example \ref{cosinesinegraphex1} is only one portion of the graph of $y=g(x)$.  Indeed, another complete cycle begins at $x = \frac{\pi}{2}$, and this is the cycle Theorem \ref{sinusoidform} is detecting.  The reason for the discrepancy is that, in order to apply  Theorem \ref{sinusoidform}, we had to rewrite the formula for $g(x)$ using the odd property of the sine function.  Note that whether we graph $y=g(x)$ using the `quarter marks' approach or using the Theorem \ref{sinusoidform}, we get one complete cycle of the graph, which means we have completely determined the sinusoid.
 
-\medskip
+\pagebreak
 
 \example{fitsinusoidtodata1}{Fitting a sinusoid to given data}{Figure \ref{fig:triggraph6} shows the graph of one complete cycle of a sinusoid $y=f(x)$.
 
-\mfigure[width=0.95\marginparwidth]{.18}{One cycle of $y=f(x)$ in Example \ref{fitsinusoidtodata1}}{fig:triggraph6}{figures/IntroTrigGraphics/TrigGraphs-8}
+\mfigure[width=0.95\marginparwidth]{.75}{One cycle of $y=f(x)$ in Example \ref{fitsinusoidtodata1}}{fig:triggraph6}{figures/IntroTrigGraphics/TrigGraphs-8}
 
 \begin{enumerate}
 
@@ -365,7 +364,7 @@ We find $A = -\frac{1}{2}$, $\omega = 2$, $\phi = -\pi$ and $B = \frac{3}{2}$.  
 
 Note that each of the answers given in Example \ref{fitsinusoidtodata1} is one choice out of many possible answers.  For example, when fitting a sine function to the data, we could have chosen to start at $\left(\frac{1}{2}, \frac{1}{2}\right)$ taking $A = -2$.  In this case, the phase shift is $\frac{1}{2}$ so  $\phi = -\frac{\pi}{6}$ for an answer of $S(x) = -2 \sin\left(\frac{\pi}{3} x - \frac{\pi}{6}\right) + \frac{1}{2}$.  Alternatively, we could have extended the graph of $y=f(x)$ to the left and considered a sine function starting at $\left(-\frac{5}{2}, \frac{1}{2}\right)$, and so on.  Each of these formulas determine the same sinusoid curve and their formulas are all equivalent using identities.  \phantomsection \label{expandedsinusoid} Speaking of identities, if we use the sum identity for cosine, we can expand the formula to yield \[C(x) = A \cos(\omega x + \phi) + B = A\cos(\omega x) \cos(\phi) - A \sin(\omega x)\sin(\phi) + B.\]   Similarly, using the sum identity for sine, we get  \[S(x) = A \sin(\omega x + \phi) + B = A\sin(\omega x) \cos(\phi) + A \cos(\omega x)\sin(\phi) + B.\]  Making these observations allows us to recognize (and graph) functions as sinusoids which, at first glance, don't appear to fit the forms of either $C(x)$ or $S(x)$.  
 
-\pagebreak
+\medskip
 
 \example{expandedsinusoidex1}{Converting a sinusoid to standard form}{  Consider the function $f(x) = \cos(2x) - \sqrt{3} \sin(2x)$. Find a formula for $f(x)$:
 
@@ -380,24 +379,24 @@ Note that each of the answers given in Example \ref{fitsinusoidtodata1} is one c
 {\begin{enumerate}
 
 \item The key to this problem is to use the expanded forms of the sinusoid formulas and match up corresponding coefficients.  Equating   $f(x) = \cos(2x) - \sqrt{3} \sin(2x)$ with the expanded form of $C(x) = A \cos(\omega x + \phi) + B$, we get
-
-\vspace{-.05in}
-
-\[ \cos(2x) - \sqrt{3} \sin(2x) = A\cos(\omega x) \cos(\phi) - A \sin(\omega x)\sin(\phi) + B\]
-
+\[
+ \cos(2x) - \sqrt{3} \sin(2x) = A\cos(\omega x) \cos(\phi) - A \sin(\omega x)\sin(\phi) + B
+\]
 It should be clear that we can take $\omega = 2$ and $B = 0$ to get
-
-\[ \cos(2x) - \sqrt{3} \sin(2x) = A\cos(2x) \cos(\phi) - A \sin(2x)\sin(\phi) \]
+\[
+ \cos(2x) - \sqrt{3} \sin(2x) = A\cos(2x) \cos(\phi) - A \sin(2x)\sin(\phi) 
+\]
 
 To determine $A$ and $\phi$, a bit more work is involved.  We get started by equating the coefficients of the trigonometric functions on either side of the equation.  On the left hand side, the coefficient of $\cos(2x)$ is $1$, while on the right hand side, it is $A \cos(\phi)$.  Since this equation is to hold for all real numbers, we must have that $A \cos(\phi) = 1$.   Similarly, we find by equating the coefficients of $\sin(2x)$ that $A \sin(\phi) = \sqrt{3}$. What we have here is a system of nonlinear equations!  We can temporarily eliminate the dependence on $\phi$ by using the Pythagorean Identity.  We know $\cos^{2}(\phi) + \sin^{2}(\phi) = 1$, so multiplying this by $A^2$ gives $A^2\cos^{2}(\phi) + A^2\sin^{2}(\phi) = A^2$.  Since $A \cos(\phi) = 1$ and $A \sin(\phi) = \sqrt{3}$, we get $A^2 = 1^2 + (\sqrt{3})^2 = 4$ or $A = \pm 2$.  Choosing $A = 2$, we have $2\cos(\phi) = 1$ and $2 \sin(\phi) = \sqrt{3}$ or, after some rearrangement, $\cos(\phi) = \frac{1}{2}$ and $\sin(\phi) = \frac{\sqrt{3}}{2}$.  One such angle $\phi$ which satisfies this criteria is $\phi = \frac{\pi}{3}$.  Hence, one way to write $f(x)$ as a sinusoid is  $f(x) = 2 \cos\left(2x + \frac{\pi}{3}\right)$.   We can easily check our answer using the sum formula for cosine  \[\begin{array}{rcl} f(x) &  = &  2 \cos\left(2x + \frac{\pi}{3}\right) \\ [3pt] & = &  2 \left[ \cos(2x) \cos\left(\frac{\pi}{3}\right) - \sin(2x) \sin\left(\frac{\pi}{3}\right) \right]\\ [3pt] & = & 2 \left[ \cos(2x) \left(\frac{1}{2}\right) - \sin(2x) \left(\frac{\sqrt{3}}{2}\right)\right] \\ [3pt] & = & \cos(2x) - \sqrt{3} \sin(2x) \\ \end{array}\]
 
 \item  Proceeding as before, we equate $f(x) = \cos(2x) - \sqrt{3} \sin(2x)$ with the expanded form of $S(x) = A \sin(\omega x + \phi) + B$ to get 
-
-\[ \cos(2x) - \sqrt{3} \sin(2x) = A\sin(\omega x) \cos(\phi) + A \cos(\omega x)\sin(\phi) + B\]
-
+\[
+ \cos(2x) - \sqrt{3} \sin(2x) = A\sin(\omega x) \cos(\phi) + A \cos(\omega x)\sin(\phi) + B
+\]
 Once again, we may take $\omega = 2$ and $B = 0$ so that 
-
-\[ \cos(2x) - \sqrt{3} \sin(2x) =  A\sin(2x) \cos(\phi) + A \cos(2x)\sin(\phi)\]
+\[
+ \cos(2x) - \sqrt{3} \sin(2x) =  A\sin(2x) \cos(\phi) + A \cos(2x)\sin(\phi)
+\]
 
 We equate (be careful here!) the coefficients of $\cos(2x)$ on either side and get $A\sin(\phi) = 1$ and $A\cos(\phi) = -\sqrt{3}$.  Using $A^2\cos^{2}(\phi) + A^2\sin^{2}(\phi) = A^2$ as before, we get $A = \pm 2$, and again we choose $A = 2$.  This means $2 \sin(\phi) = 1$, or $\sin(\phi) = \frac{1}{2}$,  and $2\cos(\phi) = -\sqrt{3}$, which means $\cos(\phi) = -\frac{\sqrt{3}}{2}$.  One such angle which meets these criteria   is $\phi = \frac{5\pi}{6}$.  Hence, we have $f(x) = 2 \sin\left(2x + \frac{5\pi}{6}\right)$.  Checking our work analytically, we have \[\begin{array}{rcl} f(x) &  = &  2 \sin\left(2x + \frac{5\pi}{6}\right) \\ [3pt] & = &  2 \left[ \sin(2x) \cos\left(\frac{5\pi}{6}\right) + \cos(2x) \sin\left(\frac{5\pi}{6}\right) \right]\\ [3pt] & = & 2 \left[ \sin(2x) \left(-\frac{\sqrt{3}}{2}\right) +  \cos(2x) \left(\frac{1}{2}\right)\right] \\ [3pt] & = & \cos(2x) - \sqrt{3} \sin(2x) \\ \end{array}\]
 \end{enumerate}
@@ -443,7 +442,7 @@ We now turn our attention to graphing $y = \sec(x)$.  Since $\sec(x) = \frac{1}{
 
 \bigskip
 
-\mnote{.6}{In Section \ref{circularfunctionsbeyond}, we argued the range of $F(x) = \sec(x)$ is $(-\infty, -1] \cup [1,\infty)$.  We can now see this graphically.}
+\mnote{.6}{Note: in Section \ref{circularfunctionsbeyond}, we argued the range of $F(x) = \sec(x)$ is $(-\infty, -1] \cup [1,\infty)$.  We can now see this graphically.}
 \mnote{.2}{Note: provided that $\sec(\alpha)$ and  $\sec(\beta)$ are defined, $\sec(\alpha) = \sec(\beta)$ if and only if $\cos(\alpha) = \cos(\beta)$.  Hence, $\sec(x)$ inherits its period from $\cos(x)$.}
 
 

@@ -138,20 +138,21 @@ Hence $|zw| = |z| |w|$ as required.
 
 Now that the Product Rule has been established, we use it and the Principle of Mathematical Induction to 	prove the power rule.  Let $P(n)$ be the statement $\left|z^{n}\right| = |z|^n$.  Then $P(1)$ is true since $\left|z^{1}\right| = |z| = |z|^1$.  Next, assume $P(k)$ is true.  That is, assume $\left|z^{k}\right| = |z|^k$ for some $k \geq 1$.  Our job is to show that $P(k+1)$ is true, namely $\left|z^{k+1}\right| = |z|^{k+1}$.  As is customary with induction proofs, we first try to reduce the problem in such a way as to  use the Induction Hypothesis.
 
-\[\begin{array}{rcll}
-\left|z^{k+1}\right| & = & \left|z^{k} z\right| & \text{Properties of Exponents} \\[3pt]
-										 & = & \left|z^{k}\right| |z| & \text{Product Rule} \\[3pt]
-										 & = &  |z|^{k} |z| & \text{Induction Hypothesis} \\[3pt]
-										 & = &  |z|^{k+1} & \text{Properties of Exponents} \\ \end{array} \]
+\begin{align*}
+\left|z^{k+1}\right| & =  \left|z^{k} z\right|  \tag*{Properties of Exponents} \\[3pt]
+										 & =  \left|z^{k}\right| |z|  \tag*{Product Rule} \\[3pt]
+										 & =   |z|^{k} |z|  \tag*{Induction Hypothesis} \\[3pt]
+										 & =   |z|^{k+1}  \tag*{Properties of Exponents} 
+\end{align*}
 Hence, $P(k+1)$ is true, which means $\left|z^{n}\right| = |z|^{n}$ is true for all natural numbers $n$.  
 
 \smallskip
 
 Like the Power Rule, the Quotient Rule can also be established with the help of the Product Rule. We assume $w \neq 0$ (so $|w| \neq 0$) and we get
-\[ \begin{array}{rcll}
-
-\left| \dfrac{z}{w} \right| &  = & \left| (z) \left( \dfrac{1}{w} \right) \right| & \\ [7pt] 
-										        & = & |z| \left| \dfrac{1}{w}\right| & \text{Product Rule.} \\ \end{array} \]
+\begin{align*}
+\left| \dfrac{z}{w} \right| &  =  \left| (z) \left( \dfrac{1}{w} \right) \right|  \\ [3pt] 
+							& =  |z| \left| \dfrac{1}{w}\right|  \tag*{Product Rule.}
+\end{align*}
 Hence, the proof really boils down to showing $\left| \frac{1}{w} \right| = \frac{1}{|w|}$.  This is left as an exercise.
 
 \smallskip
@@ -324,10 +325,10 @@ and so on. For more details, see Exercise \ref{eulerformulaexercise}.}
 
 The proof of Theorem \ref{prodquotpolarcomplex} requires a healthy mix of definition, arithmetic and identities.  We first start with the product rule.
 
-\[ \begin{array}{rcl}
-
-zw & = & \left[|z|\operatorname{cis}(\alpha)\right] \left[|w|\operatorname{cis}(\beta)\right]  \\[3pt]
-   & = & |z||w|\left[\cos(\alpha) + i\sin(\alpha)\right]\left[\cos(\beta) + i \sin(\beta)\right] \\ \end{array} \]
+\begin{align*}
+zw & =  \left[|z|\operatorname{cis}(\alpha)\right] \left[|w|\operatorname{cis}(\beta)\right]  \\[3pt]
+   & =  |z||w|\left[\cos(\alpha) + i\sin(\alpha)\right]\left[\cos(\beta) + i \sin(\beta)\right]
+\end{align*}
 
 We now focus on the quantity in brackets on the right hand side of the equation.
 
@@ -348,14 +349,12 @@ Putting this together with our earlier work, we get $zw = |z| |w| \operatorname{
 
 Moving right along, we next take aim at the Power Rule, better known  as DeMoivre's Theorem. (Compare this proof with the proof of the Power Rule in Theorem \ref{modprops}.) We proceed by induction on $n$. Let $P(n)$ be the sentence $z^{n} = |z|^{n} \operatorname{cis}(n \theta)$.  Then $P(1)$ is true, since $z^{1} = z = |z| \operatorname{cis}(\theta) = |z|^{1} \operatorname{cis}(1\cdot \theta)$.  We now assume $P(k)$ is true, that is, we assume  $z^{k} = |z|^{k} \operatorname{cis}(k \theta)$ for some $k \geq 1$. Our goal is to show that $P(k+1)$ is true, or that $z^{k+1} = |z|^{k+1} \operatorname{cis}((k+1)\theta)$. We have
 
-\[ \begin{array}{rcll}
-
-z^{k+1} & = & z^{k} z & \text{Properties of Exponents} \\[3pt]
-				& = & \left(|z|^{k} \operatorname{cis}(k \theta)\right) \left(|z| \operatorname{cis}(\theta)\right) & \text{Induction Hypothesis}\\[3pt]
-				& = & \left(|z|^k |z|\right) \operatorname{cis}(k \theta + \theta) & \text{Product Rule}\\[3pt]
-				& = & |z|^{k+1} \operatorname{cis}((k+1)\theta) \\
-
-\end{array} \] 
+\begin{align*}
+z^{k+1} & =  z^{k} z  \tag*{Properties of Exponents} \\
+				& =  \left(|z|^{k} \operatorname{cis}(k \theta)\right) \left(|z| \operatorname{cis}(\theta)\right) \tag*{Induction Hypothesis}\\
+				& =  \left(|z|^k |z|\right) \operatorname{cis}(k \theta + \theta)  \tag*{Product Rule}\\
+				& =  |z|^{k+1} \operatorname{cis}((k+1)\theta) 
+\end{align*}
 
 Hence, assuming $P(k)$ is true, we have that $P(k+1)$ is true, so by the Principle of Mathematical Induction, $z^{n} = |z|^{n} \operatorname{cis}(n \theta)$ for all natural numbers $n$. 
 
@@ -363,16 +362,16 @@ Hence, assuming $P(k)$ is true, we have that $P(k+1)$ is true, so by the Princip
 
 The last property in Theorem \ref{prodquotpolarcomplex} to prove is the quotient rule.   Assuming $|w| \neq 0$ we have
 
-\[ \begin{array}{rcl}
-
-\dfrac{z}{w} & = & \dfrac{|z| \operatorname{cis}(\alpha)}{|w| \operatorname{cis}(\beta)}  \\ [8pt]
-						 & = & \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)}   \\ 		 \end{array}\]
+\begin{align*}
+\dfrac{z}{w} & =  \dfrac{|z| \operatorname{cis}(\alpha)}{|w| \operatorname{cis}(\beta)}  \\ [3pt]
+			 & =  \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)}
+\end{align*}
 						 
 Next, we multiply both the numerator and denominator of the right hand side by $(\cos(\beta) - i \sin(\beta))$ which is the complex conjugate of $(\cos(\beta) + i \sin(\beta))$ to get
 
-\[\begin{array}{rcll}
-
-\dfrac{z}{w}	& = & \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)} \cdot \dfrac{\cos(\beta) - i \sin(\beta)}{\cos(\beta) - i \sin(\beta)} & \\ \end{array}\]
+\[
+\dfrac{z}{w}	 =  \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)} \cdot \dfrac{\cos(\beta) - i \sin(\beta)}{\cos(\beta) - i \sin(\beta)} 
+\]
 
 If we let the numerator be $N = \left[\cos(\alpha) + i \sin(\alpha)\right] \left[\cos(\beta) - i \sin(\beta)\right]$ and simplify we get
 
@@ -405,12 +404,11 @@ D & =  \left[\cos(\beta) + i\sin(\beta)\right]\left[\cos(\beta) - i\sin(\beta)\r
 																										 
 Putting it all together, we get
 
-\[ \begin{array}{rcll}
-
-\dfrac{z}{w} & = & \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)} \cdot \dfrac{\cos(\beta) - i \sin(\beta)}{\cos(\beta) - i \sin(\beta)} & \\[8pt]
-						 & = & \left( \dfrac{|z|}{|w|}\right) \dfrac{\operatorname{cis}(\alpha - \beta)}{1}  &  \\ 	[8pt]	 
-						 & = &  \dfrac{|z|}{|w|} \operatorname{cis}(\alpha - \beta) \\ \end{array}\]
-
+\begin{align*}
+\dfrac{z}{w} & =  \left( \dfrac{|z|}{|w|}\right) \dfrac{\cos(\alpha) + i \sin(\alpha)}{\cos(\beta) + i \sin(\beta)} \cdot \dfrac{\cos(\beta) - i \sin(\beta)}{\cos(\beta) - i \sin(\beta)}  \\[3pt]
+						 & =  \left( \dfrac{|z|}{|w|}\right) \dfrac{\operatorname{cis}(\alpha - \beta)}{1}    \\[3pt]	 
+						 & =   \dfrac{|z|}{|w|} \operatorname{cis}(\alpha - \beta)
+\end{align*}
 and we are done.  The next example makes good use of Theorem \ref{prodquotpolarcomplex}.
 
 \medskip
@@ -507,34 +505,30 @@ Our last goal of the section is to reverse DeMoivre's Theorem to extract roots o
 
 Unlike Definition \ref{principalnthrootdefn2} in Section \ref{AlgebraicFunctions}, we do not specify one particular \textit{prinicpal} $n^{\text{th}}$ root, hence the use of the indefinite article `an' as in `an $n^{\text{th}}$ root of $z$'.  Using this definition, both $4$ and $-4$ are square roots of $16$, while $\sqrt{16}$ means the principal square root of $16$ as in $\sqrt{16}= 4$.  Suppose we wish to find all complex third (cube) roots of $8$.  Algebraically, we are trying to solve $w^{3} = 8$.  We know that there is only one \textit{real} solution to this equation, namely $w = \sqrt[3]{8} = 2$, but if we take the time to rewrite this equation as $w^3 - 8 = 0$ and factor, we get $(w-2)\left(w^2 + 2w + 4\right) = 0$.  The quadratic factor gives two more cube roots $w = -1 \pm i \sqrt{3}$, for a total of three cube roots of $8$. In accordance with Theorem \ref{complexfactorization}, since the degree of $p(w) = w^3 -8$ is three, there are three complex zeros, counting multiplicity.  Since we have found three distinct zeros, we know these are all of the zeros, so there are exactly three distinct cube roots of $8$.  Let us now solve this same problem using the machinery developed in this section.  To do so, we express $z = 8$ in polar form. Since $z=8$ lies $8$ units away on the positive real axis, we get $z = 8 \operatorname{cis}(0)$.  If we let $w = |w| \operatorname{cis}(\alpha)$ be a polar form of $w$, the equation $w^3 = 8$ becomes
 
-\[ \begin{array}{rcll}
+\begin{align*}
+w^3 & =  8  \\
+\left(|w| \operatorname{cis}(\alpha)\right)^3 & = 8 \operatorname{cis}(0)  \\
+|w|^3 \operatorname{cis}(3\alpha) & =  8 \operatorname{cis}(0)  \tag*{DeMoivre's Theorem} \\
+\end{align*}
 
-w^3 & = & 8 & \\[3pt]
-\left(|w| \operatorname{cis}(\alpha)\right)^3 & = & 8 \operatorname{cis}(0) & \\[3pt]
-|w|^3 \operatorname{cis}(3\alpha) & = & 8 \operatorname{cis}(0) & \text{DeMoivre's Theorem} \\[3pt]
-
-\end{array}\]
-
-The complex number on the left hand side of the equation corresponds to the point with polar coordinates $\left(|w|^3, 3\alpha\right)$,   while the complex number on the right hand side corresponds to the point with polar coordinates $(8,0)$.  Since $|w| \geq 0$, so is $|w|^3$, which means  $\left(|w|^3, 3\alpha\right)$ and $(8,0)$ are two polar representations corresponding to the same complex number, both with positive $r$ values.  From Section \ref{IntroPolar}, we know $|w|^3 = 8$ and $3\alpha = 0 + 2\pi k$ for integers $k$.  Since $|w|$ is a real number, we solve $|w|^3 = 8$ by extracting the principal cube root to get  $|w| = \sqrt[3]{8} = 2$.  As for $\alpha$, we get  $\alpha = \frac{2\pi k}{3}$ for integers $k$.  This produces three distinct points with polar coordinates corresponding to $k = 0$, $1$ and $2$: specifically $(2,0)$, $\left(2, \frac{2\pi}{3}\right)$ and $\left(2, \frac{4\pi}{3}\right)$.  These correspond to the complex numbers  $w_{\text{\tiny $0$}} = 2 \operatorname{cis}(0)$, $w_{\text{\tiny $1$}} = 2 \operatorname{cis}\left(\frac{2\pi}{3}\right)$ and $w_{\text{\tiny $2$}} = 2 \operatorname{cis}\left(\frac{4\pi}{3}\right)$, respectively.  Writing these out in rectangular form yields $w_{\text{\tiny $0$}} = 2$, $w_{\text{\tiny $1$}} = -1 + i\sqrt{3}$ and $w_{\text{\tiny $2$}} = -1-i\sqrt{3}$. While this process seems a tad more involved than our previous factoring approach, this procedure can be generalized to find, for example, all of the fifth roots of $32$. (Try using Chapter \ref{Polynomials} techniques on that!) If we start with a generic complex number in polar form $z = |z| \operatorname{cis}(\theta)$ and solve $w^{n} = z$ in the same manner as above, we arrive at the following theorem.
+The complex number on the left hand side of the equation corresponds to the point with polar coordinates $\left(|w|^3, 3\alpha\right)$,   while the complex number on the right hand side corresponds to the point with polar coordinates $(8,0)$.  Since $|w| \geq 0$, so is $|w|^3$, which means  $\left(|w|^3, 3\alpha\right)$ and $(8,0)$ are two polar representations corresponding to the same complex number, both with positive $r$ values.  From Section \ref{IntroPolar}, we know $|w|^3 = 8$ and $3\alpha = 0 + 2\pi k$ for integers $k$.  Since $|w|$ is a real number, we solve $|w|^3 = 8$ by extracting the principal cube root to get  $|w| = \sqrt[3]{8} = 2$.  As for $\alpha$, we get  $\alpha = \frac{2\pi k}{3}$ for integers $k$.  This produces three distinct points with polar coordinates corresponding to $k = 0$, $1$ and $2$: specifically $(2,0)$, $\left(2, \frac{2\pi}{3}\right)$ and $\left(2, \frac{4\pi}{3}\right)$.  These correspond to the complex numbers  $w_{0} = 2 \operatorname{cis}(0)$, $w_{1} = 2 \operatorname{cis}\left(\frac{2\pi}{3}\right)$ and $w_{2} = 2 \operatorname{cis}\left(\frac{4\pi}{3}\right)$, respectively.  Writing these out in rectangular form yields $w_{0} = 2$, $w_{1} = -1 + i\sqrt{3}$ and $w_{2} = -1-i\sqrt{3}$. While this process seems a tad more involved than our previous factoring approach, this procedure can be generalized to find, for example, all of the fifth roots of $32$. (Try using Chapter \ref{Polynomials} techniques on that!) If we start with a generic complex number in polar form $z = |z| \operatorname{cis}(\theta)$ and solve $w^{n} = z$ in the same manner as above, we arrive at the following theorem.
 
 \smallskip
 
-\theorem{nthrootscomplexthm}{The $n^{\textrm{th}}$ roots of a complex number}{ Let $z \neq 0$ be a complex number with polar form $z = r\operatorname{cis}(\theta)$. For each natural number $n$, $z$ has $n$ distinct $n^{\text{th}}$ roots, which we denote by $w_{\text{\tiny$0$}}$, $w_{\text{\tiny$1$}}$, \ldots, $w_{\text{\tiny$n-1$}}$, and they are given by the formula \index{$n^{\textrm{th}}$ root ! of a complex number} \index{complex number ! $n^{\textrm{th}}$ root} 
+\theorem{nthrootscomplexthm}{The $n^{\textrm{th}}$ roots of a complex number}{ Let $z \neq 0$ be a complex number with polar form $z = r\operatorname{cis}(\theta)$. For each natural number $n$, $z$ has $n$ distinct $n^{\text{th}}$ roots, which we denote by $w_{0}$, $w_{1}$, \ldots, $w_{n-1}$, and they are given by the formula \index{$n^{\textrm{th}}$ root ! of a complex number} \index{complex number ! $n^{\textrm{th}}$ root} 
 
-\[ w_{\text{\tiny$k$}} = \sqrt[n]{r}\operatorname{cis}\left(\frac{\theta}{n} + \frac{2\pi}{n} k \right) \]
+\[ w_{k} = \sqrt[n]{r}\operatorname{cis}\left(\frac{\theta}{n} + \frac{2\pi}{n} k \right) \]
 }
 
 \smallskip
 
-The proof of Theorem \ref{nthrootscomplexthm} breaks into to two parts:  first, showing that each $w_{\text{\tiny$k$}}$ is an $n^{\text{th}}$ root, and second, showing that the set  $\left\{ w_{\text{\tiny$k$}} \, | \, k = 0, 1, \ldots, (n-1)\right\}$ consists of $n$ different  complex numbers.  To show $w_{\text{\tiny$k$}}$ is an  $n^{\text{th}}$ root of $z$, we use DeMoivre's Theorem to show $\left(w_{\text{\tiny$k$}}\right)^n = z$.
+The proof of Theorem \ref{nthrootscomplexthm} breaks into to two parts:  first, showing that each $w_{k}$ is an $n^{\text{th}}$ root, and second, showing that the set  $\left\{ w_{k} \, | \, k = 0, 1, \ldots, (n-1)\right\}$ consists of $n$ different  complex numbers.  To show $w_{k}$ is an  $n^{\text{th}}$ root of $z$, we use DeMoivre's Theorem to show $\left(w_{k}\right)^n = z$.
 
-\[ \begin{array}{rcll}
-
-\left(w_{\text{\tiny$k$}}\right)^n & = & \left(\sqrt[n]{r}\operatorname{cis}\left(\frac{\theta}{n} + \frac{2\pi}{n} k \right)\right)^n & \\ [3pt]
-																	 & = & \left(\sqrt[n]{r}\right)^{n} \operatorname{cis}\left( n \cdot \left[\frac{\theta}{n} + \frac{2\pi}{n} k \right] \right) & \text{DeMoivre's Theorem}\\ [3pt]
-																	 & = & r \operatorname{cis}\left(\theta + 2\pi k\right) & \\ \end{array} \]
+\begin{align*}
+\left(w_{k}\right)^n & =  \left(\sqrt[n]{r}\operatorname{cis}\left(\frac{\theta}{n} + \frac{2\pi}{n} k \right)\right)^n  \\ 																	 & =  \left(\sqrt[n]{r}\right)^{n} \operatorname{cis}\left( n \cdot \left[\frac{\theta}{n} + \frac{2\pi}{n} k \right] \right)  \tag*{DeMoivre's Theorem}\\ 													 & =  r \operatorname{cis}\left(\theta + 2\pi k\right)
+\end{align*}
 																	 
-Since $k$ is a whole number, $\cos(\theta + 2\pi k) = \cos(\theta)$ and $\sin(\theta + 2\pi k) = \sin(\theta)$. Hence, it follows that $\operatorname{cis}(\theta + 2\pi k) = \operatorname{cis}(\theta)$, so $\left(w_{\text{\tiny$k$}}\right)^n = r \operatorname{cis}(\theta) = z$, as required.  To show that the formula in Theorem  \ref{nthrootscomplexthm} generates $n$ distinct numbers, we assume $n \geq 2$ (or else there is nothing to prove) and note that the modulus of each of the  $w_{\text{\tiny$k$}}$  is the same, namely $\sqrt[n]{r}$.  Therefore, the only way any two of these polar forms correspond to  the same number is if their arguments are coterminal -- that is, if the arguments differ by an integer multiple of $2\pi$. Suppose $k$ and $j$ are whole numbers between $0$ and $(n-1)$, inclusive,  with $k \neq j$.  Since $k$ and $j$ are different, let's assume for the sake of argument that  $k > j$.  Then $\left( \frac{\theta}{n} + \frac{2\pi}{n} k \right)  - \left( \frac{\theta}{n} + \frac{2\pi}{n} j \right) = 2\pi \left(\frac{k-j}{n}\right)$. For this to be an integer multiple of $2\pi$, $(k-j)$ must be a multiple of $n$.  But because of the restrictions on $k$ and $j$, $0 < k - j \leq n-1$. (Think this through.)  Hence, $(k-j)$ is a positive number less  than $n$, so it cannot be a multiple of $n$.  As a result, $w_{\text{\tiny$k$}}$ and $w_{\text{\tiny$j$}}$ are different complex numbers, and we are done.  By Theorem  \ref{complexfactorization}, we know there at most $n$ distinct solutions to $w^{n} = z$, and we have just found all of them.   We illustrate Theorem \ref{nthrootscomplexthm} in the next example.
+Since $k$ is a whole number, $\cos(\theta + 2\pi k) = \cos(\theta)$ and $\sin(\theta + 2\pi k) = \sin(\theta)$. Hence, it follows that $\operatorname{cis}(\theta + 2\pi k) = \operatorname{cis}(\theta)$, so $\left(w_{k}\right)^n = r \operatorname{cis}(\theta) = z$, as required.  To show that the formula in Theorem  \ref{nthrootscomplexthm} generates $n$ distinct numbers, we assume $n \geq 2$ (or else there is nothing to prove) and note that the modulus of each of the  $w_{k}$  is the same, namely $\sqrt[n]{r}$.  Therefore, the only way any two of these polar forms correspond to  the same number is if their arguments are coterminal -- that is, if the arguments differ by an integer multiple of $2\pi$. Suppose $k$ and $j$ are whole numbers between $0$ and $(n-1)$, inclusive,  with $k \neq j$.  Since $k$ and $j$ are different, let's assume for the sake of argument that  $k > j$.  Then $\left( \frac{\theta}{n} + \frac{2\pi}{n} k \right)  - \left( \frac{\theta}{n} + \frac{2\pi}{n} j \right) = 2\pi \left(\frac{k-j}{n}\right)$. For this to be an integer multiple of $2\pi$, $(k-j)$ must be a multiple of $n$.  But because of the restrictions on $k$ and $j$, $0 < k - j \leq n-1$. (Think this through.)  Hence, $(k-j)$ is a positive number less  than $n$, so it cannot be a multiple of $n$.  As a result, $w_{k}$ and $w_{j}$ are different complex numbers, and we are done.  By Theorem  \ref{complexfactorization}, we know there at most $n$ distinct solutions to $w^{n} = z$, and we have just found all of them.   We illustrate Theorem \ref{nthrootscomplexthm} in the next example.
 
 \medskip
 
@@ -554,19 +548,19 @@ Since $k$ is a whole number, $\cos(\theta + 2\pi k) = \cos(\theta)$ and $\sin(\t
 {
 \begin{enumerate}
 
-\item  We start by writing $z= - 2 + 2i\sqrt{3} = 4 \operatorname{cis}\left(\frac{2\pi}{3}\right)$.  To use Theorem \ref{nthrootscomplexthm}, we identify $r =4$,  $\theta = \frac{2\pi}{3}$ and $n=2$.  We know that $z$ has two square roots, and in keeping with the notation in Theorem \ref{nthrootscomplexthm}, we'll call them  $w_{\text{\tiny$0$}}$ and $w_{\text{\tiny$1$}}$.  We get $w_{\text{\tiny$0$}} = \sqrt{4} \operatorname{cis}\left(\frac{(2\pi/3)}{2} + \frac{2\pi}{2} (0)\right) = 2\operatorname{cis}\left(\frac{\pi}{3}\right)$ and $w_{\text{\tiny$1$}} = \sqrt{4} \operatorname{cis}\left(\frac{(2\pi/3)}{2} + \frac{2\pi}{2} (1)\right) = 2\operatorname{cis}\left(\frac{4\pi}{3}\right)$.  In rectangular form, the two square roots of $z$ are $w_{\text{\tiny$0$}} = 1+i\sqrt{3}$ and $w_{\text{\tiny$1$}} = -1-i\sqrt{3}$.  We can check our answers by squaring them and showing that we get $z= -2 + 2i\sqrt{3}$. We've plotted the position of the two square roots along the circle $r=2$ in Figure \ref{fig:polarroot1}.
+\item  We start by writing $z= - 2 + 2i\sqrt{3} = 4 \operatorname{cis}\left(\frac{2\pi}{3}\right)$.  To use Theorem \ref{nthrootscomplexthm}, we identify $r =4$,  $\theta = \frac{2\pi}{3}$ and $n=2$.  We know that $z$ has two square roots, and in keeping with the notation in Theorem \ref{nthrootscomplexthm}, we'll call them  $w_{0}$ and $w_{1}$.  We get $w_{0} = \sqrt{4} \operatorname{cis}\left(\frac{(2\pi/3)}{2} + \frac{2\pi}{2} (0)\right) = 2\operatorname{cis}\left(\frac{\pi}{3}\right)$ and $w_{1} = \sqrt{4} \operatorname{cis}\left(\frac{(2\pi/3)}{2} + \frac{2\pi}{2} (1)\right) = 2\operatorname{cis}\left(\frac{4\pi}{3}\right)$.  In rectangular form, the two square roots of $z$ are $w_{0} = 1+i\sqrt{3}$ and $w_{1} = -1-i\sqrt{3}$.  We can check our answers by squaring them and showing that we get $z= -2 + 2i\sqrt{3}$. We've plotted the position of the two square roots along the circle $r=2$ in Figure \ref{fig:polarroot1}.
 
 \mfigure{.82}{The two square roots of $z=-2+2\sqrt{3}i$}{fig:polarroot1}{figures/AppExtGraphics/PolarComplex01}
 
-\item  Proceeding as above, we get $z = -16 = 16 \operatorname{cis}(\pi)$.  With $r = 16$, $\theta = \pi$ and $n = 4$, we get the four fourth roots of $z$ to be  $w_{\text{\tiny$0$}} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (0)\right) = 2\operatorname{cis}\left(\frac{\pi}{4}\right)$, $w_{\text{\tiny$1$}} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (1)\right) = 2\operatorname{cis}\left(\frac{3\pi}{4}\right)$, $w_{\text{\tiny$2$}} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (2)\right) = 2\operatorname{cis}\left(\frac{5\pi}{4}\right)$ and $w_{\text{\tiny$3$}} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (3)\right) = 2\operatorname{cis}\left(\frac{7\pi}{4}\right)$.  Converting these to rectangular form gives $w_{\text{\tiny$0$}} = \sqrt{2} + i\sqrt{2}$,  $w_{\text{\tiny$1$}} = -\sqrt{2} + i\sqrt{2}$,  $w_{\text{\tiny$2$}} = -\sqrt{2} - i\sqrt{2}$ and  $w_{\text{\tiny$3$}} = \sqrt{2} - i\sqrt{2}$. We've plotted the four roots in Figure \ref{fig:polarroot2}. Note how the roots are placed symmetrically about the circle $r=2$.
+\item  Proceeding as above, we get $z = -16 = 16 \operatorname{cis}(\pi)$.  With $r = 16$, $\theta = \pi$ and $n = 4$, we get the four fourth roots of $z$ to be  $w_{0} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (0)\right) = 2\operatorname{cis}\left(\frac{\pi}{4}\right)$, $w_{1} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (1)\right) = 2\operatorname{cis}\left(\frac{3\pi}{4}\right)$, $w_{2} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (2)\right) = 2\operatorname{cis}\left(\frac{5\pi}{4}\right)$ and $w_{3} = \sqrt[4]{16} \operatorname{cis}\left(\frac{\pi}{4} + \frac{2\pi}{4} (3)\right) = 2\operatorname{cis}\left(\frac{7\pi}{4}\right)$.  Converting these to rectangular form gives $w_{0} = \sqrt{2} + i\sqrt{2}$,  $w_{1} = -\sqrt{2} + i\sqrt{2}$,  $w_{2} = -\sqrt{2} - i\sqrt{2}$ and  $w_{3} = \sqrt{2} - i\sqrt{2}$. We've plotted the four roots in Figure \ref{fig:polarroot2}. Note how the roots are placed symmetrically about the circle $r=2$.
 
 \mfigure{.61}{The four fourth roots of $z=-16$}{fig:polarroot2}{figures/AppExtGraphics/PolarComplex02}
 
-\item  For $z = \sqrt{2} + i \sqrt{2}$, we have $z = 2\operatorname{cis}\left(\frac{\pi}{4}\right)$.  With $r = 2$, $\theta = \frac{\pi}{4}$ and $n =3$ the usual computations yield $w_{\text{\tiny$0$}} = \sqrt[3]{2} \operatorname{cis}\left(\frac{\pi}{12}\right)$,  $w_{\text{\tiny$1$}} = \sqrt[3]{2} \operatorname{cis}\left(\frac{9\pi}{12}\right) = \sqrt[3]{2} \operatorname{cis}\left(\frac{3\pi}{4}\right) $ and  $w_{\text{\tiny$2$}} = \sqrt[3]{2} \operatorname{cis}\left(\frac{17\pi}{12}\right)$.  If we were to  convert these to rectangular form, we would need to use either the Sum and Difference Identities in Theorem \ref{circularsumdifference} or the Half-Angle Identities in Theorem \ref{halfangle} to evaluate $w_{\text{\tiny$0$}}$ and  $w_{\text{\tiny$2$}}$.  Since we are not explicitly told to do so, we leave this as a good, but messy, exercise, and plot the points in Figure \ref{fig:polarroot3}.
+\item  For $z = \sqrt{2} + i \sqrt{2}$, we have $z = 2\operatorname{cis}\left(\frac{\pi}{4}\right)$.  With $r = 2$, $\theta = \frac{\pi}{4}$ and $n =3$ the usual computations yield $w_{0} = \sqrt[3]{2} \operatorname{cis}\left(\frac{\pi}{12}\right)$,  $w_{1} = \sqrt[3]{2} \operatorname{cis}\left(\frac{9\pi}{12}\right) = \sqrt[3]{2} \operatorname{cis}\left(\frac{3\pi}{4}\right) $ and  $w_{2} = \sqrt[3]{2} \operatorname{cis}\left(\frac{17\pi}{12}\right)$.  If we were to  convert these to rectangular form, we would need to use either the Sum and Difference Identities in Theorem \ref{circularsumdifference} or the Half-Angle Identities in Theorem \ref{halfangle} to evaluate $w_{0}$ and  $w_{2}$.  Since we are not explicitly told to do so, we leave this as a good, but messy, exercise, and plot the points in Figure \ref{fig:polarroot3}.
 
 \mfigure{.39}{The three third roots of $z=\sqrt{2}+i\sqrt{2}$}{fig:polarroot3}{figures/AppExtGraphics/PolarComplex03}
 
-\item  To find the five fifth roots of $1$, we write $1 = 1 \operatorname{cis}(0)$.  We have $r = 1$, $\theta = 0$ and $n = 5$. Since $\sqrt[5]{1} = 1$, the roots are  $w_{\text{\tiny$0$}} = \operatorname{cis}(0) = 1$, $w_{\text{\tiny$1$}} = \operatorname{cis}\left(\frac{2\pi}{5}\right)$, $w_{\text{\tiny$2$}} = \operatorname{cis}\left(\frac{4\pi}{5}\right)$, $w_{\text{\tiny$3$}} = \operatorname{cis}\left(\frac{6\pi}{5}\right)$ and $w_{\text{\tiny$4$}} = \operatorname{cis}\left(\frac{8\pi}{5}\right)$.  The situation here is even graver than in the previous example, since we have not developed any identities to help us determine the cosine or sine of $\frac{2\pi}{5}$.  At this stage, we could approximate our answers using a calculator, and we leave this as an exercise. Once more, we plot the roots, which in this case all lie on the unit circle.
+\item  To find the five fifth roots of $1$, we write $1 = 1 \operatorname{cis}(0)$.  We have $r = 1$, $\theta = 0$ and $n = 5$. Since $\sqrt[5]{1} = 1$, the roots are  $w_{0} = \operatorname{cis}(0) = 1$, $w_{1} = \operatorname{cis}\left(\frac{2\pi}{5}\right)$, $w_{2} = \operatorname{cis}\left(\frac{4\pi}{5}\right)$, $w_{3} = \operatorname{cis}\left(\frac{6\pi}{5}\right)$ and $w_{4} = \operatorname{cis}\left(\frac{8\pi}{5}\right)$.  The situation here is even graver than in the previous example, since we have not developed any identities to help us determine the cosine or sine of $\frac{2\pi}{5}$.  At this stage, we could approximate our answers using a calculator, and we leave this as an exercise. Once more, we plot the roots, which in this case all lie on the unit circle.
 
 \mfigure{.17}{The five fifth roots of $1$}{fig:polarroot4}{figures/AppExtGraphics/PolarComplex04}
 
@@ -575,7 +569,7 @@ Since $k$ is a whole number, $\cos(\theta + 2\pi k) = \cos(\theta)$ and $\sin(\t
 
 \medskip
 
-Notice the geometric interpretation given in Figures \ref{fig:polarroot1}-\ref{fig:polarroot4}.  Essentially,  Theorem \ref{nthrootscomplexthm} says that to find the $n^{\text{th}}$ roots of a complex number,  we first take the $n^{\text{th}}$ root of the modulus and divide the argument by $n$.  This gives the first root  $w_{\text{\tiny$0$}}$. Each successive root is found by adding  $\frac{2\pi}{n}$ to the argument, which amounts to rotating $w_{\text{\tiny$0$}}$ by $\frac{2\pi}{n}$ radians.  This results in $n$ roots, spaced equally around the complex plane.  
+Notice the geometric interpretation given in Figures \ref{fig:polarroot1}-\ref{fig:polarroot4}.  Essentially,  Theorem \ref{nthrootscomplexthm} says that to find the $n^{\text{th}}$ roots of a complex number,  we first take the $n^{\text{th}}$ root of the modulus and divide the argument by $n$.  This gives the first root  $w_{0}$. Each successive root is found by adding  $\frac{2\pi}{n}$ to the argument, which amounts to rotating $w_{0}$ by $\frac{2\pi}{n}$ radians.  This results in $n$ roots, spaced equally around the complex plane.  
 
 We have only glimpsed at the beauty of the complex numbers in this section.  The complex plane is without a doubt one of the most important mathematical constructs ever devised.  Coupled with Calculus, it is the venue for incredibly important Science and Engineering applications.  For now, the following exercises will have to suffice.
 

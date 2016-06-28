@@ -338,7 +338,7 @@ $gf^{-1}(x) = \operatorname{arccot}(x)$
 
 \end{enumerate}
 
-\drawexampleline
+\enlargethispage{2\baselineskip}
 
 \mnote{.5}{It's always a good idea to make sure the identities used in these situations are valid for all values $t$ under consideration.  Check our work back in Example \ref{arccosinesineex}.  Were the identities we used there valid for all $t$ under consideration?  A pedantic point, to be sure, but what else do you expect from this book?}
 
@@ -355,7 +355,7 @@ $gf^{-1}(x) = \operatorname{arccot}(x)$
 \end{enumerate}
 }
 
-\medskip
+\pagebreak
 
 
 
@@ -524,7 +524,9 @@ $g^{-1}(x)=\operatorname{arccsc}(x)$
 
 \item  We begin simplifying  $\tan(\operatorname{arcsec}(x))$ by letting $t = \operatorname{arcsec}(x)$.  Then, $\sec(t) = x$ for $t$ in $\left[0, \frac{\pi}{2}\right) \cup \left(\frac{\pi}{2}, \pi \right]$, and we seek a formula for $\tan(t)$.  Since $\tan(t)$ is defined for all $t$ values under consideration, we have no additional restrictions on $t$.  To relate $\sec(t)$ to $\tan(t)$, we use the identity $1 + \tan^{2}(t) = \sec^{2}(t)$.  This is valid for all values of $t$ under consideration, and when we substitute $\sec(t) = x$, we get $1 + \tan^{2}(t) = x^2$.  Hence, $\tan(t) = \pm \sqrt{x^2-1}$.  If $t$ belongs to $\left[0, \frac{\pi}{2}\right)$ then $\tan(t) \geq 0$;  if, on the the other hand, $t$ belongs to  $\left(\frac{\pi}{2}, \pi \right]$ then $\tan(t) \leq 0$. As a result, we get a piecewise defined function for $\tan(t)$
 
-\[ \tan(t) = \left\{ \begin{array}{rr} \sqrt{x^2-1}, & \text{if $0 \leq t < \frac{\pi}{2}$} \\ [5pt] -\sqrt{x^2-1}, & \text{if $\frac{\pi}{2} < t \leq \pi$}  \end{array}\right. \]
+\[ 
+\tan(t) = \left\{\begin{array}{rr} \sqrt{x^2-1}, & \text{ if } 0 \leq t < \frac{\pi}{2} \\ [5pt] -\sqrt{x^2-1}, & \text{ if } \frac{\pi}{2} < t \leq \pi  \end{array}\right. 
+\]
 
 Now we need to determine what these conditions on $t$ mean for $x$.  Since $x = \sec(t)$, when $0 \leq t < \frac{\pi}{2}$, $x \geq 1$, and when $\frac{\pi}{2} < t \leq \pi$, $x \leq -1$.  Since we encountered no further restrictions on $t$, the  equivalence below holds for all $x$ in $(-\infty, -1] \cup [1, \infty)$.
 
@@ -603,7 +605,7 @@ Using these definitions, we get the following result.
 \medskip
 
 
-\mtable{.7}{The ``Calculus Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig9}{
+\mtable{.71}{The ``Calculus Friendly'' definition of $\operatorname{arcsec}(x)$}{fig:arctrig9}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.8\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-17}\\
 $f(x) = \sec(x)$ on  $\left[0, \frac{\pi}{2}\right) \cup \left[ \pi, \frac{3\pi}{2}\right)$\\
@@ -613,7 +615,7 @@ $f^{-1}(x)=\operatorname{arcsec}(x)$
 \end{tabular}}
  
 
-\mtable{.3}{The ``Calculus Friendly definition of $\operatorname{arccsc}(x)$}{fig:arctrig10}{
+\mtable{.28}{The ``Calculus Friendly definition of $\operatorname{arccsc}(x)$}{fig:arctrig10}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.8\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-19}\\
 $g(x) = \csc(x)$ on  $\left(0, \frac{\pi}{2}\right] \cup \left(\pi,  \frac{3\pi}{2}\right]$\\
@@ -690,9 +692,22 @@ Our next example is a duplicate of Example \ref{arcsecantcosecantex1}.  The inte
 
 \item To simplify $\cos(\operatorname{arccsc}(4x))$, we start by letting $t = \operatorname{arccsc}(4x)$.   Then $\csc(t) = 4x$ for $t$ in $\left(0, \frac{\pi}{2} \right] \cup \left(\pi, \frac{3\pi}{2} \right]$, and we now set about finding an expression for  $\cos(\operatorname{arccsc}(4x)) = \cos(t)$.  Since $\cos(t)$ is defined for all $t$, we do not encounter any additional restrictions on $t$.  From $\csc(t) = 4x$, we get $\sin(t) = \frac{1}{4x}$, so to find $\cos(t)$, we can make use if the identity $\cos^{2}(t) + \sin^{2}(t) = 1$.  Substituting $\sin(t) = \frac{1}{4x}$  gives $\cos^{2}(t) + \left(\frac{1}{4x}\right)^2 = 1$.  Solving, we get \[\cos(t) = \pm \sqrt{\frac{16x^2-1}{16x^2}} = \pm \frac{\sqrt{16x^2-1}}{4|x|}\]  If $t$ lies in $\left(0, \frac{\pi}{2} \right]$, then $\cos(t) \geq 0$, and we choose  $\cos(t) = \frac{\sqrt{16x^2-1}}{4|x|}$. Otherwise, $t$ belongs to $\left( \pi, \frac{3\pi}{2} \right]$ in which case $\cos(t) \leq 0$, so, we choose $\cos(t) = -\frac{\sqrt{16x^2-1}}{4|x|}$ This leads us to a (momentarily) piecewise defined function for $\cos(t)$
 
-\[ \cos(t) = \left\{ \begin{array}{rr} \dfrac{\sqrt{16x^2-1}}{4|x|}, & \text{if $0 \leq t \leq \frac{\pi}{2}$} \\ [5pt]  -\dfrac{\sqrt{16x^2-1}}{4|x|}, & \text{if $\pi < t \leq \frac{3\pi}{2}$}  \end{array}\right. \]
+\[ 
+\cos(t) = \left\{ \begin{array}{rr}
+			 \dfrac{\sqrt{16x^2-1}}{4|x|}, & \text{if $0 \leq t \leq \frac{\pi}{2}$} \\ [10pt]
+			   -\dfrac{\sqrt{16x^2-1}}{4|x|}, & \text{if $\pi < t \leq \frac{3\pi}{2}$}  
+			    \end{array}\right. 
+\]
 
-We now see what these restrictions mean in terms of $x$.  Since $4x = \csc(t)$, we get that for $0 \leq t \leq \frac{\pi}{2}$, $4x \geq 1$, or $x \geq \frac{1}{4}$.  In this case, we can simplify $|x| = x$ so \[\cos(t) = \frac{\sqrt{16x^2-1}}{4|x|} = \frac{\sqrt{16x^2-1}}{4x}\]  Similarly, for $\pi < t \leq \frac{3\pi}{2}$, we get $4x \leq -1$, or $x \leq -\frac{1}{4}$.  In this case, $|x| = -x$, so we also get \[\cos(t) = -\frac{\sqrt{16x^2-1}}{4|x|}  = -\frac{\sqrt{16x^2-1}}{4(-x)} =  \frac{\sqrt{16x^2-1}}{4x}\]  Hence, in all cases, $\cos(\operatorname{arccsc}(4x)) =  \frac{\sqrt{16x^2-1}}{4x}$, and this equivalence is valid for all $x$ in the domain of $t = \operatorname{arccsc}(4x)$, namely \\$\left(-\infty, -\frac{1}{4}\right] \cup \left[ \frac{1}{4}, \infty \right)$  
+We now see what these restrictions mean in terms of $x$.  Since $4x = \csc(t)$, we get that for $0 \leq t \leq \frac{\pi}{2}$, $4x \geq 1$, or $x \geq \frac{1}{4}$.  In this case, we can simplify $|x| = x$ so 
+\[
+\cos(t) = \frac{\sqrt{16x^2-1}}{4|x|} = \frac{\sqrt{16x^2-1}}{4x}
+\]  
+Similarly, for $\pi < t \leq \frac{3\pi}{2}$, we get $4x \leq -1$, or $x \leq -\frac{1}{4}$.  In this case, $|x| = -x$, so we also get 
+\[
+\cos(t) = -\frac{\sqrt{16x^2-1}}{4|x|}  = -\frac{\sqrt{16x^2-1}}{4(-x)} =  \frac{\sqrt{16x^2-1}}{4x}
+\]  
+Hence, in all cases, $\cos(\operatorname{arccsc}(4x)) =  \frac{\sqrt{16x^2-1}}{4x}$, and this equivalence is valid for all $x$ in the domain of $t = \operatorname{arccsc}(4x)$, namely \\$\left(-\infty, -\frac{1}{4}\right] \cup \left[ \frac{1}{4}, \infty \right)$  
 
 \end{enumerate}
 
@@ -748,7 +763,7 @@ In the sections to come, we will have need to approximate the values of the inve
 
 
 
-\end{enumerate}
+\end{enumerate}\pagebreak
 }
 {
 \begin{enumerate}
@@ -853,7 +868,7 @@ If we divide the side view of the house down the middle, we find that the roof l
 
 In Sections \ref{TheUnitCircle} and \ref{CircularFunctions}, we learned how to solve equations like $\sin(\theta) = \frac{1}{2}$ for angles $\theta$ and $\tan(t) = -1$ for real numbers $t$. In each case, we ultimately appealed to the Unit Circle and relied on the fact that the answers corresponded to a set of `common angles' listed on page \pageref{commonanglesunitcircle}.  If, on the other hand, we had been asked to find all angles with $\sin(\theta) = \frac{1}{3}$ or solve $\tan(t) = -2$ for real numbers $t$, we would have been hard-pressed to do so.  With the introduction of the inverse trigonometric functions, however, we are now in a position to solve these equations. A good parallel to keep in mind is how the square root function can be used to solve certain quadratic equations.  The equation $x^2 = 4$ is a lot like  $\sin(\theta) = \frac{1}{2}$ in that it has friendly, `common value' answers  $x = \pm 2$.  The equation $x^2 = 7$, on the other hand, is a lot like $\sin(\theta) = \frac{1}{3}$.  We know there are answers (how do we know this again?), but we can't express them using `friendly' numbers. (This is all, of course, a matter of opinion.  For the record, the authors find $\pm \sqrt{7}$ just as `nice' as $\pm 2$.)  To solve $x^2 = 7$, we make use of the square root function and write $x = \pm \sqrt{7}$. We can certainly \textit{approximate} these answers using a calculator, but as far as exact answers go, we leave them as $x = \pm \sqrt{7}$.  In the same way, we will use the arcsine function to solve $\sin(\theta) = \frac{1}{3}$, as seen in the following example.
 
-\medskip
+\pagebreak
 
 \example{basicinverseeqns}{Solving trigonometric equations}{  Solve the following equations.
 
@@ -872,21 +887,12 @@ In Sections \ref{TheUnitCircle} and \ref{CircularFunctions}, we learned how to s
 
 \item  If $\sin(\theta) = \frac{1}{3}$, then the terminal side of $\theta$, when plotted in standard position, intersects the Unit Circle at $y = \frac{1}{3}$.  Geometrically, we see that this happens at two places:  in Quadrant I and Quadrant II. If we let $\alpha$ denote the acute solution to the equation, then all the solutions to this equation in Quadrant I  are coterminal with $\alpha$, and $\alpha$ serves as the reference angle for all of the solutions to this equation in Quadrant II.
 
-\medskip
-
-\noindent\hskip-10pt\begin{minipage}{\textwidth}
-\begin{center}
-\begin{tabular}{cc}
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-25}&
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-26}
-\end{tabular}
-\end{center}
-\end{minipage}
-
-
-\medskip
-
-\drawexampleline
+\mtable{.7}{Solving $\sin(\theta)=\frac{1}{3}$}{fig:trigeqn1}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-25}\\
+\\
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-26}
+\end{tabular}}
 
 Since $\frac{1}{3}$ isn't the sine of any of the `common angles' discussed earlier, we use the arcsine functions to express our answers.  The real number $t = \arcsin\left(\frac{1}{3}\right)$ is defined so it satisfies $0 < t < \frac{\pi}{2}$ with $\sin(t) = \frac{1}{3}$.  Hence, $\alpha = \arcsin\left(\frac{1}{3}\right)$ radians. Since the solutions in Quadrant I are all coterminal with $\alpha$, we get part of our solution to be $\theta = \alpha + 2\pi k  = \arcsin\left(\frac{1}{3}\right) + 2\pi k$ for integers $k$.  Turning our attention to Quadrant II, we get one solution to be $\pi - \alpha$.  Hence, the Quadrant II solutions are  $\theta = \pi - \alpha + 2\pi k = \pi - \arcsin\left(\frac{1}{3}\right) + 2\pi k$, for integers $k$.
 
@@ -895,19 +901,12 @@ Since $\frac{1}{3}$ isn't the sine of any of the `common angles' discussed earli
 
 
 
-\medskip
-
-\noindent\hskip-10pt\begin{minipage}{\textwidth}
-\begin{center}
-\begin{tabular}{cc}
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-27}&
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-28}
-\end{tabular}
-\end{center}
-\end{minipage}
-
-\medskip
-
+\mtable{.3}{Solving $\tan(t)=-2$}{fig:trigeqn2}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-27}\\
+\\
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-28}
+\end{tabular}}
 
 Since $-2$ isn't the tangent of any of the `common angles', we need to use the arctangent function to express our answers.  The real number $t = \arctan(-2)$ satisfies $\tan(t)=-2$  and $-\frac{\pi}{2} < t < 0$.   If we let $\beta = \arctan(-2)$ radians, we see that all of the Quadrant IV solutions to  $\tan(\theta) = -2$  are coterminal with $\beta$. Moreover, the solutions from Quadrant II differ by exactly $\pi$ units from the solutions in Quadrant IV, so all the solutions to $\tan(\theta) = -2$ are of the form $\theta = \beta + \pi k = \arctan(-2) + \pi k$ for some integer $k$.  Switching back to the variable $t$,  we record our final answer to $\tan(t) = -2$ as $t = \arctan(-2) + \pi k$ for integers $k$.
 
@@ -917,14 +916,12 @@ Since $-2$ isn't the tangent of any of the `common angles', we need to use the a
 
 \medskip
 
-\noindent\hskip-10pt\begin{minipage}{\textwidth}
-\begin{center}
-\begin{tabular}{cc}
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-29}&
-\myincludegraphics[width=0.45\textwidth]{figures/IntroTrigGraphics/ArcTrig-30}
-\end{tabular}
-\end{center}
-\end{minipage}
+\mtable{.7}{Solving $\sec(x)=-\frac{5}{3}$}{fig:trigeqn3}{
+\begin{tabular}{c}
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-29}\\
+\\
+\myincludegraphics[width=0.95\marginparwidth]{figures/IntroTrigGraphics/ArcTrig-30}
+\end{tabular}}
 
 \end{enumerate}
 }

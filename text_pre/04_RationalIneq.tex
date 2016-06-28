@@ -43,12 +43,16 @@ Since we cleared denominators, we need to check for extraneous solutions.  Sure 
 
 \item  To solve the inequality, it may be tempting to begin as we did with the equation $-$ namely by multiplying both sides by the quantity $(x-1)$.  The problem is that, depending on $x$, $(x-1)$ may be positive (which doesn't affect the inequality) or $(x-1)$ could be negative (which would reverse the inequality).  Instead of working by cases, we collect all of the terms on one side of the inequality with $0$ on the other and make a sign diagram using the technique given on page \pageref{rationalsigndiagram} in Section \ref{RationalGraphs}.
 
+\noindent\hskip-25pt\begin{minipage}{\textwidth}
 \begin{align*}
 \dfrac{x^3-2x+1}{x-1} & \geq \dfrac{1}{2}x-1  \\ 
 \dfrac{x^3-2x+1}{x-1}  - \dfrac{1}{2} x + 1& \geq  0 \\
 \dfrac{2\left(x^3-2x+1\right)-x(x-1)+1(2(x-1))}{2(x-1)} & \geq  0  \tag*{get a common denominator} \\ 
 \dfrac{2x^3-x^2-x}{2x-2} & \geq  0  \tag*{expand}
 \end{align*}
+\end{minipage}
+
+\medskip
 
 Viewing the left hand side as a rational function $r(x)$ we make a sign diagram.  The only value excluded from the domain of $r$ is $x=1$ which is the solution to $2x-2=0$.  The zeros of $r$ are the solutions to $2x^3-x^2-x=0$, which we have already found to be $x=0$, $x=-\frac{1}{2}$ and $x=1$, the latter was discounted as a zero because it is not in the domain.  Choosing test values in each test interval, we obtain the sign diagram in Figure \ref{fig:ratineq1}. 
 
@@ -73,30 +77,30 @@ Next, we explore how rational equations can be used to solve some classic proble
 
 \medskip
 
-\example{upstreamdownstreamex}{Calculating the speed of a river}{  Carl decides to explore the Meander River, the location of several recent Sasquatch sightings.  From camp, he canoes downstream five miles to check out a purported Sasquatch nest.  Finding nothing, he immediately turns around, retraces his route (this time travelling upstream), and returns to camp 3 hours after he left.  If Carl canoes at a rate  of 6 miles per hour in still water, how fast was the Meander River flowing on that day?
+\example{upstreamdownstreamex}{Calculating the speed of a river}{  Carl decides to explore the Meander River, where several recent Sasquatch sightings were located.  From camp, he canoes downstream five miles to check out a purported Sasquatch nest.  Finding nothing, he immediately turns around, retraces his route (this time travelling upstream), and returns to camp 3 hours after he left.  If Carl canoes at a rate  of 6 miles per hour in still water, how fast was the Meander River flowing on that day?
 }
 {
 We are given information about distances, rates (speeds) and times.  The basic principle relating these quantities is: \[ \text{distance} = \text{rate} \cdot \text{time}\]  The first observation to make, however, is that the distance, rate and time given to us aren't `compatible':  the distance given is the distance for only \textit{part} of the trip,  the rate given is the speed Carl can canoe in still water, not in a flowing river, and  the time given is the duration of the \textit{entire} trip.  Ultimately, we are after the speed of the river, so let's call that $R$ measured in miles per hour to be consistent with the other rate given to us.  To get started, let's divide the trip into its two parts:  the initial trip downstream and the return trip upstream.  For the downstream trip, all we know is that the distance travelled is $5$ miles.
 
 \[ \begin{array}{rcl}
 
-\text{distance downstream} & = & \text{rate travelling downstream} \cdot \text{time travelling downstream} \\
+\text{distance downstream} & = & \text{speed downstream} \cdot \text{time travelling downstream} \\
 
-5 \, \text{miles} & = & \text{rate travelling downstream} \cdot \text{time travelling downstream} \\ \end{array} \]
+5 \, \text{miles} & = & \text{speed downstream} \cdot \text{time travelling downstream} \\ \end{array} \]
 
 Since the return trip upstream followed the same route as the trip downstream, we know that the distance travelled upstream is also 5 miles.
 
 \[ \begin{array}{rcl}
 
-\text{distance upstream} & = & \text{rate traveling upstream} \cdot \text{time traveling upstream} \\
+\text{distance upstream} & = & \text{speed upstream} \cdot \text{time travelling upstream} \\
 
-5 \, \text{miles} & = & \text{rate traveling upstream} \cdot \text{time traveling upstream} \\ \end{array} \]
+5 \, \text{miles} & = & \text{speed upstream} \cdot \text{time travelling upstream} \\ \end{array} \]
 
 We are told Carl can canoe at a  rate of $6$ miles per hour in still water.  How does this figure into the rates travelling upstream and downstream?  The speed the canoe travels in the river is a combination of the speed at which Carl can propel the canoe in still water, 6 miles per hour,  and the speed of the river, which we're calling $R$. When travelling downstream, the river is helping Carl along, so we \textit{add} these two speeds: 
 
 \[ \begin{array}{rcl}
 
-\text{rate traveling downstream} & = & \text{rate Carl propels the canoe} + \text{speed of the river} \\
+\text{speed downstream} & = & \text{rate Carl propels the canoe} + \text{speed of the river} \\
 
  & = & 6 \frac{\text{miles}}{\text{hour}} + R \frac{\text{miles}}{\text{hour}} \\ \end{array} \]
  
@@ -104,7 +108,7 @@ We are told Carl can canoe at a  rate of $6$ miles per hour in still water.  How
  
  \[ \begin{array}{rcl}
 
-5 \, \text{miles} & = & \text{rate traveling downstream} \cdot \text{time traveling downstream} \\ 
+5 \, \text{miles} & = & \text{speed downstream} \cdot \text{time traveling downstream} \\ 
 
 5 \, \text{miles} & = & (6+R) \frac{\text{miles}}{\text{hour}} \cdot \text{time traveling downstream} \\ 	\end{array} \]
 
@@ -114,7 +118,7 @@ We are told Carl can canoe at a  rate of $6$ miles per hour in still water.  How
 
  \[ \begin{array}{rcl}
 
-\text{rate traveling upstream} & = & \text{rate Carl propels the canoe} - \text{river speed} \\
+\text{speed upstream} & = & \text{rate Carl propels the canoe} - \text{river speed} \\
 
  & = & 6 \frac{\text{miles}}{\text{hour}} - R \frac{\text{miles}}{\text{hour}} \\ \end{array} \]
  
@@ -122,7 +126,7 @@ Proceeding as before, we get
  
  \[ \begin{array}{rcl}
 
-5 \, \text{miles} & = & \text{rate traveling upstream} \cdot \text{time traveling upstream} \\ 
+5 \, \text{miles} & = & \text{speed upstream} \cdot \text{time traveling upstream} \\ 
 
 5 \, \text{miles} & = & (6 - R) \frac{\text{miles}}{\text{hour}} \cdot \text{time traveling upstream} \\ 	\end{array} \]
  
@@ -164,7 +168,7 @@ So we have that the rate Taylor works is $\frac{1 \, \text{garden}}{ 4 \, \text{
 
 1 \, \text{garden} & = & (\text{rate of working together}) \cdot (3 \, \text{hours}) \\ \end{array} \]
 
-From this, we find that the rate of Taylor and Carl working together is $\frac{1 \, \text{garden}}{3 \, \text{hours}} = \frac{1}{3} \frac{\text{garden}}{\text{hour}}$.   We are asked to find out how long it would take for Carl to weed the garden on his own.  Let us call this unknown $t$, measured in hours to be consistent with the other times given to us in the problem. Then:
+From this, we find that the rate of Taylor and Carl working together is equal to $\frac{1 \, \text{garden}}{3 \, \text{hours}} = \frac{1}{3} \frac{\text{garden}}{\text{hour}}$.   We are asked to find out how long it would take for Carl to weed the garden on his own.  Let us call this unknown $t$, measured in hours to be consistent with the other times given to us in the problem. Then:
 
 \[ \begin{array}{rcl}
 

@@ -126,29 +126,31 @@ f(x) + f(2) & = & \left(-x^2 + 3x + 4\right) + 6  & \\
 \end{enumerate}
 
 \item   Since $f(x) = -x^2 + 3x + 4$, the equation $f(x) = 4$ is equivalent to $-x^2+3x+4 = 4$. Solving we get $-x^2+3x = 0$, or $x(-x+3) = 0$.  We get $x=0$ or $x=3$, and we can verify these answers by checking that $f(0) = 4$ and $f(3) = 4$.   
-         
+
 \end{enumerate}
 }
 
-\medskip
+\pagebreak
 
 A few notes about Example \ref{funcnotatex1} are in order.  First note the difference between the answers for $f(2x)$ and $2f(x)$.  For $f(2x)$, we are multiplying the \textit{input} by $2$;  for $2 f(x)$, we are multiplying the \textit{output} by $2$.  As we see, we get entirely different results.  Along these lines, note that $f(x+2)$, $f(x) + 2$ and $f(x) + f(2)$ are three \textit{different} expressions as well.  Even though function notation uses parentheses, as does multiplication, there is \textit{no} general `distributive property' of function notation. Finally, note the practice of using parentheses when substituting one algebraic expression into another;  we highly recommend this practice as it will reduce careless errors. 
 
 \smallskip
-%\enlargethispage{.1in}
+
 
 Suppose now we wish to find $r(3)$ for $r(x) = \dfrac{2x}{x^2 - 9}$.  Substitution gives
 
-\[r(3) = \dfrac{2(3)}{(3)^2-9} = \dfrac{6}{0},\]
+\[
+r(3) = \dfrac{2(3)}{(3)^2-9} = \dfrac{6}{0},
+\]
 
 which is undefined. (Why is this, again?) The number $3$ is not an allowable input to the function $r$;  in other words, $3$ is not in the domain of $r$.  Which other real numbers are forbidden in this formula?  We think back to arithmetic.  The reason $r(3)$ is undefined is because substitution results in a division by $0$.  To determine which other numbers result in such a transgression, we set the denominator equal to $0$ and solve
 
-\[ \begin{array}{rclr}  
-x^2 - 9 & = & 0  & \\
-x^2 & = & 9 & \\
-\sqrt{x^2} & = & \sqrt{9} & \mbox{extract square roots}  \\
-x & = & \pm 3 & \\ 
-\end{array} \]
+\begin{align*}
+x^2 - 9 & =  0   \\
+x^2 & =  9  \\
+\sqrt{x^2} & =  \sqrt{9}  \tag*{extract square roots}  \\
+x & =  \pm 3 
+\end{align*}
 
 As long as we substitute numbers other than $3$ and $-3$, the expression $r(x)$ is a real number.  Hence, we write our domain in interval notation (see the Exercises for Section \ref{CartesianPlane}) as  $(-\infty, -3) \cup (-3,3) \cup (3, \infty)$.  When a formula for a function is given, we assume that the function is valid for all real numbers which make arithmetic sense when substituted into the formula.  This set of numbers is often called the \index{domain ! implied}\index{implied domain of a function}\sword{implied domain} (or `implicit domain') of the function.  At this stage, there are only two mathematical sins we need to avoid:  division by $0$ and extracting even roots of negative numbers.  The following example illustrates these concepts.
 
@@ -162,28 +164,10 @@ Find the domain of the following functions.
 
 \item  $g(x) = \sqrt{4 - 3x}$
 \item  $h(x) =  \sqrt[5]{4 - 3x}$
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
 \item  $f(x) = \dfrac{2}{1 - \dfrac{4x}{x-3}}$
-\item  $F(x) = \dfrac{\sqrt[4]{2x+1}}{x^2-1}$ \vphantom{$\dfrac{2}{1 - \dfrac{4x}{x-3}}$}
-
-\setcounter{HW}{\value{enumi}}
-\end{enumerate}
-\end{multicols}
-
-\begin{multicols}{2}
-\begin{enumerate}
-\setcounter{enumi}{\value{HW}}
-
+\item  $F(x) = \dfrac{\sqrt[4]{2x+1}}{x^2-1}$ 
 \item  $r(t) = \dfrac{4}{6 - \sqrt{t+3}}$
-\item  $I(x) = \dfrac{3x^2}{x}$ \vphantom{$\dfrac{4}{6 - \sqrt{t+3}}$}
+\item  $I(x) = \dfrac{3x^2}{x}$ 
 
 \end{enumerate}
 \end{multicols}
@@ -191,7 +175,7 @@ Find the domain of the following functions.
 {
 \begin{enumerate}
 
-\mnote{.15}{The `radicand' is the expression `inside' the radical.}
+\mnote{.12}{The `radicand' is the expression `inside' the radical.}
 
 \item  The potential disaster for $g$ is if the radicand is negative.  To avoid this, we set $4 - 3x \geq 0$. From this, we get $3x \leq 4$ or $x \leq \frac{4}{3}$.  What this shows is that as long as $x \leq \frac{4}{3}$, the expression $4 - 3x \geq 0$, and the formula $g(x)$ returns a real number.  Our domain is $\left(-\infty, \frac{4}{3}\right]$.
 
@@ -200,19 +184,19 @@ Find the domain of the following functions.
 
 \item  In the expression for $f$, there are two denominators.  We need to make sure neither of them is $0$.  To that end, we set each denominator equal to $0$ and solve.  For the `small' denominator, we get $x - 3 = 0$ or $x=3$.  For the `large' denominator
 
-\setlength{\extrarowheight}{10pt}
+\begin{align*}
+1 - \dfrac{4x}{x-3} & =  0  & \\
+                  1 & =  \dfrac{4x}{x-3}  \\[5pt] 
+           (1)(x-3) & =  \left(\dfrac{4x}{\cancel{x-3}}\right)\cancel{(x-3)}  \tag*{clear denominators}  \\[5pt]
+              x - 3 & =   4x \\
+                 -3 & =  3x \\
+                 -1 & =  x 
+\end{align*}
 
-\[ \begin{array}{rclr}  
-1 - \dfrac{4x}{x-3} & = & 0  & \\
-                  1 & = & \dfrac{4x}{x-3} & \\ 
-           (1)(x-3) & = & \left(\dfrac{4x}{\cancel{x-3}}\right)\cancel{(x-3)} & \mbox{clear denominators}  \\
-              x - 3 & = &  4x & \\
-                 -3 & = & 3x \\
-                 -1 & = & x 
-\end{array} \]
-
-\setlength{\extrarowheight}{2pt} 
-So we get two real numbers which make denominators $0$, namely $x = -1$ and $x=3$.  Our domain is all real numbers except $-1$ and $3$:  $(-\infty, -1) \cup (-1,3) \cup (3, \infty)$.
+So we get two real numbers which make denominators $0$, namely $x = -1$ and $x=3$.  Our domain is all real numbers except $-1$ and $3$:  
+\[
+(-\infty, -1) \cup (-1,3) \cup (3, \infty).
+\]
 
 \drawexampleline
 
@@ -222,7 +206,7 @@ So we get two real numbers which make denominators $0$, namely $x = -1$ and $x=3
 
 \mnote{.2}{Squaring both sides of an equation can introduce \textit{extraneous solutions}. Do you remember why?  Consider squaring both sides to `solve' $\sqrt{t+1} = -2$.}
 
-\item  It's tempting to simplify $I(x) = \frac{3x^2}{x} = 3x$, and, since there are no longer any denominators, claim that there are no longer any restrictions.  However, in simplifying $I(x)$, we are assuming $x \neq 0$, since $\frac{0}{0}$ is undefined. Proceeding as before, we find the domain of $I$ to be all real numbers except $0$:  $(-\infty, 0) \cup (0, \infty)$.  
+\item  It's tempting to simplify $I(x) = \dfrac{3x^2}{x} = 3x$, and, since there are no longer any denominators, claim that there are no longer any restrictions.  However, in simplifying $I(x)$, we are assuming $x \neq 0$, since $\frac{0}{0}$ is undefined. Proceeding as before, we find the domain of $I$ to be all real numbers except $0$:  $(-\infty, 0) \cup (0, \infty)$.  
 \end{enumerate}
 }
 
@@ -245,7 +229,10 @@ Even though, mathematically, $c(g) = 1.5g$ has no domain restrictions (there are
 \medskip
 
 \example{heightofrocketmodel}{Height of a model rocket}{
-The height $h$ in feet of a model rocket above the ground $t$ seconds after lift-off is given by \[ h(t) = \left\{ \begin{array}{rcl} -5t^2 + 100t, & \mbox{if} & 0 \leq t \leq 20 \\ 0, & \mbox{if} & t > 20 \\ \end{array} \right.\]
+The height $h$ in feet of a model rocket above the ground $t$ seconds after lift-off is given by 
+\[ 
+h(t) = \begin{cases} -5t^2 + 100t, & \mbox{if} \quad  0 \leq t \leq 20 \\ 0, & \mbox{if} \quad t > 20 \end{cases}
+\]
 
 \begin{enumerate}
 

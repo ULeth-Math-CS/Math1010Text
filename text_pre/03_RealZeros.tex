@@ -9,7 +9,7 @@ Our ability to find zeros of a polynomial depends on a number of factors, includ
 \smallskip
 
 \theorem{CauchysBound}{Cauchy's Bound}{\index{Cauchy's Bound}
-Suppose $f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}}x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny$1$}} x + a_{\mbox{\tiny$0$}}$ is a polynomial of degree $n$ with $n \geq 1$.  Let $M$ be the largest of the numbers: $\frac{|a_{0}|}{|a_{n}|}$, $\frac{|a_{1}|}{|a_{n}|}$, \ldots, $\frac{|a_{n-1}|}{|a_{n}|}$.  Then all the real zeros of $f$ lie in in the interval $[-(M+1),M+1]$.}
+Suppose $f(x) = a_{n} x^{n} + a_{n-1}x^{n-1} + \ldots + a_{1} x + a_{0}$ is a polynomial of degree $n$ with $n \geq 1$.  Let $M$ be the largest of the numbers: $\frac{|a_{0}|}{|a_{n}|}$, $\frac{|a_{1}|}{|a_{n}|}$, \ldots, $\frac{|a_{n-1}|}{|a_{n}|}$.  Then all the real zeros of $f$ lie in in the interval $[-(M+1),M+1]$.}
 
 \smallskip
 
@@ -36,37 +36,37 @@ Whereas the previous result tells us \textit{where} we can find the real zeros o
 \smallskip
 
 \theorem{RZT}{Rational Zeros Theorem}{\index{Rational Zeros Theorem}
-Suppose $f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny$1$}}x^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny$1$}} x + a_{\mbox{\tiny$0$}}$ is a polynomial of degree $n$ with $n \geq 1$, and $a_{\mbox{\tiny$0$}}$, $a_{\mbox{\tiny$1$}}$, \ldots $a_{n}$ are integers.  If $r$ is a rational zero of $f$, then $r$ is of the form $\pm \frac{p}{q}$, where $p$ is a factor of the constant term $a_{\mbox{\tiny$0$}}$, and $q$ is a factor of the leading coefficient $a_{n}$.  
+Suppose $f(x) = a_{n} x^{n} + a_{n-1}x^{n-1} + \ldots + a_{1} x + a_{0}$ is a polynomial of degree $n$ with $n \geq 1$, and $a_{0}$, $a_{1}$, \ldots $a_{n}$ are integers.  If $r$ is a rational zero of $f$, then $r$ is of the form $\pm \frac{p}{q}$, where $p$ is a factor of the constant term $a_{0}$, and $q$ is a factor of the leading coefficient $a_{n}$.  
 }
 
 \smallskip
 
 The Rational Zeros Theorem gives us a list of numbers to try in our \ifthenelse{\boolean{synthetic}}{synthetic}{long} division and that is a lot nicer than simply guessing.  If none of the numbers in the list are zeros, then either the polynomial has no real zeros at all, or all of the real zeros are irrational numbers.  To see why the Rational Zeros Theorem works, suppose $c$ is a zero of $f$ and $c = \frac{p}{q}$ in lowest terms.  This means $p$ and $q$ have no common factors.  Since $f(c) = 0$, we have 
 \[
-a_{n} \left(\frac{p}{q}\right)^{n} + a_{n-\mbox{\tiny$1$}}\left(\frac{p}{q}\right)^{n-\mbox{\tiny$1$}} + \ldots + a_{\mbox{\tiny$1$}} \left(\frac{p}{q}\right) + a_{\mbox{\tiny$0$}} = 0.
+a_{n} \left(\frac{p}{q}\right)^{n} + a_{n-1}\left(\frac{p}{q}\right)^{n-1} + \ldots + a_{1} \left(\frac{p}{q}\right) + a_{0} = 0.
 \]  
 Multiplying both sides of this equation by $q^n$, we clear the denominators to get 
 \[
-a_{n}p^{n} + a_{n-\mbox{\tiny$1$}}p^{n-\mbox{\tiny$1$}}q + \ldots + a_{\mbox{\tiny$1$}}p q^{n-\mbox{\tiny$1$}} + a_{\mbox{\tiny$0$}}q^n = 0
+a_{n}p^{n} + a_{n-1}p^{n-1}q + \ldots + a_{1}p q^{n-1} + a_{0}q^n = 0
 \]  
 Rearranging this equation, we get  
 \[
-a_{n}p^{n} = -a_{n-\mbox{\tiny$1$}}p^{n-\mbox{\tiny$1$}}q - \ldots - a_{\mbox{\tiny$1$}}p q^{n-\mbox{\tiny$1$}} -a_{\mbox{\tiny$0$}}q^n
+a_{n}p^{n} = -a_{n-1}p^{n-1}q - \ldots - a_{1}p q^{n-1} -a_{0}q^n
 \] 
 Now, the left hand side is an integer multiple of $p$, and the right hand side is an integer multiple of $q$. (Can you see why?)  This means $a_{n}p^{n}$ is both a multiple of $p$ and a multiple of $q$.  Since $p$ and $q$ have no common factors, $a_{n}$ must be a multiple of $q$.  If we rearrange the equation 
 \[
-a_{n}p^{n} + a_{n-\mbox{\tiny$1$}}p^{n-\mbox{\tiny$1$}}q + \ldots + a_{\mbox{\tiny$1$}}p q^{n-\mbox{\tiny$1$}} + a_{\mbox{\tiny$0$}}q^n = 0
+a_{n}p^{n} + a_{n-1}p^{n-1}q + \ldots + a_{1}p q^{n-1} + a_{0}q^n = 0
 \] 
 as 
 \[
-a_{\mbox{\tiny$0$}}q^n = -a_{n}p^{n} - a_{n-\mbox{\tiny$1$}}p^{n-\mbox{\tiny$1$}}q - \ldots - a_{\mbox{\tiny$1$}}p q^{n-\mbox{\tiny$1$}}
+a_{0}q^n = -a_{n}p^{n} - a_{n-1}p^{n-1}q - \ldots - a_{1}p q^{n-1}
 \] 
-we can play the same game and conclude $a_{\mbox{\tiny$0$}}$ is a multiple of $p$, and we have the result.
+we can play the same game and conclude $a_{0}$ is a multiple of $p$, and we have the result.
 
 \medskip
 
 \example{RZTex}{Finding rational zeros}{  Let $f(x) = 2x^4+4x^3-x^2-6x-3$. Use the Rational Zeros Theorem to list all of the possible rational zeros of $f$.}
-{To generate a complete list of rational zeros, we need to take each of the factors of constant term, $a_{\mbox{\tiny$0$}} = -3$, and divide them by each of the factors of the leading coefficient $a_{\mbox{\tiny$4$}} = 2$.  The factors of $-3$ are $\pm \, 1$ and $\pm \, 3$.  Since the Rational Zeros Theorem tacks on a $\pm$ anyway, for the moment, we consider only the positive factors $1$ and $3$.  The factors of $2$ are  $1$ and $2$, so the Rational Zeros Theorem gives the list $\left\{\pm \, \frac{1}{1}, \pm \, \frac{1}{2},  \pm \, \frac{3}{1}, \pm \, \frac{3}{2}\right\}$ or $\left\{\pm \, \frac{1}{2}, \pm \, 1, \pm \, \frac{3}{2}, \pm \, 3\right\}$. }
+{To generate a complete list of rational zeros, we need to take each of the factors of constant term, $a_{0} = -3$, and divide them by each of the factors of the leading coefficient $a_{4} = 2$.  The factors of $-3$ are $\pm \, 1$ and $\pm \, 3$.  Since the Rational Zeros Theorem tacks on a $\pm$ anyway, for the moment, we consider only the positive factors $1$ and $3$.  The factors of $2$ are  $1$ and $2$, so the Rational Zeros Theorem gives the list $\left\{\pm \, \frac{1}{1}, \pm \, \frac{1}{2},  \pm \, \frac{3}{1}, \pm \, \frac{3}{2}\right\}$ or $\left\{\pm \, \frac{1}{2}, \pm \, 1, \pm \, \frac{3}{2}, \pm \, 3\right\}$. }
 
 \medskip
 
@@ -231,7 +231,7 @@ Let $f(x) = x^4 + x^2 - 12$.
 
 \ifthenelse{\boolean{colour}}{\item  Applying Cauchy's Bound, we find $M = 12$, so all of the real zeros lie in the interval $[-13,13]$.}{}
 
-\item  Applying the Rational Zeros Theorem with constant term $a_{\mbox{\tiny$0$}} = -12$ and leading coefficient $a_{\mbox{\tiny$4$}} = 1$, we get the list $\{\pm \, 1$, $\pm \, 2$, $\pm \, 3$, $\pm \, 4$, $\pm \, 6$, $\pm \, 12\}$.
+\item  Applying the Rational Zeros Theorem with constant term $a_{0} = -12$ and leading coefficient $a_{4} = 1$, we get the list $\{\pm \, 1$, $\pm \, 2$, $\pm \, 3$, $\pm \, 4$, $\pm \, 6$, $\pm \, 12\}$.
 
 \item  Graphing $y=f(x)$ on the interval $[-13,13]$ produces the graph in Figure \ref{fig:realzero3} (a). Zooming in a bit gives the graph (b).  Based on the graph, none of our rational zeros will work. (Do you see why not?)
 
@@ -342,11 +342,11 @@ Let $f(x) = 2x^4+4x^3-x^2-6x-3$.
 We try our positive rational zeros, starting with the smallest, $\frac{1}{2}$.  \ifthenelse{\boolean{synthetic}}{Since the remainder isn't zero, we know $\frac{1}{2}$ isn't a zero.  Sadly, the final line in the division tableau has both positive and negative numbers, so $\frac{1}{2}$ is not an upper bound.  The only information we get from this division is courtesy of the Remainder Theorem which tells us $f\left(\frac{1}{2}\right) =  -\frac{45}{8}$ so the point $\left(\frac{1}{2}, -\frac{45}{8}\right)$ is on the graph of $f$.  We continue to our next possible zero, $1$.  As before, the only information we can glean from this is that $(1,-4)$ is on the graph of $f$.  When we try our next possible zero, $\frac{3}{2}$, we get that it is not a zero,\ifthenelse{\boolean{colour}}{ and we also see that it is an upper bound on the zeros of $f$, since all of the numbers in the final line of the division tableau are positive.  This means there is no point trying our last possible rational zero, $3$.}{{ and the same is true of 3, our last possible positive rational zero.}}}{Plugging in $x=\frac{1}{2}$, we get $f\left(\frac{1}{2}\right) = -\frac{45}{8}\neq 0$, so we know that $x=\frac{1}{2}$ is not a zero of $f$. Trying the next possible rational zero, we find $f(1)=-4\neq 0$, so $x=1$ is not a zero of $f$ either. We can similarly check that $f\left(\frac{3}{2}\right)  = \frac{75}{8}\neq 0$ and $f(3) = 240$, so that none of the possible rational zeros are, in fact zeros.} %Descartes' Rule of Signs guaranteed us a positive real zero, and at this point we have shown this zero is irrational. 
 Although we did not find any positive rational zeros, we can conclude that there must be a positive irrational zero: we found that $f(1) = -4 < 0$ and $f\left(\frac{3}{2}\right) = \frac{75}{8} > 0$, so the Intermediate Value Theorem, Theorem \ref{IVT}, tells us the zero lies between $1$ and $\frac{3}{2}$.   
 
-\drawexampleline
-
 \smallskip
 
 \ifthenelse{\boolean{synthetic}}{
+\drawexampleline
+
 \begin{tabular}{c}
 
 $\begin{array}{rrrrrr}
@@ -577,7 +577,7 @@ The solution to $p(x) < 0$ is $\left(-\infty, -\frac{1}{2}\right)$, and we know 
 \end{tabular}
 }}
 {
-\mtable{.3}{The polynomials $f(x)$ and $g(x)$ from Example \ref{polyeqineqexample}, part 3}{fig:realzeroeg1}{
+\mtable{.75}{The polynomials $f(x)$ and $g(x)$ from Example \ref{polyeqineqexample}, part 3}{fig:realzeroeg1}{
 \begin{tabular}{c}
 \myincludegraphics[width=0.95\marginparwidth]{figures/PolynomialsGraphics/RealZero5}\\
 (a)\\
@@ -587,7 +587,7 @@ The solution to $p(x) < 0$ is $\left(-\infty, -\frac{1}{2}\right)$, and we know 
 \end{tabular}
 }}
 
-\ifthenelse{\boolean{synthetic}}{\medskip}{\pagebreak}
+\medskip
 
 Our last example revisits an application from page \pageref{LCDmaxprofit} in the Exercises of Section \ref{GraphsofPolynomials}.
 
@@ -599,15 +599,15 @@ Our last example revisits an application from page \pageref{LCDmaxprofit} in the
 
 \ifthenelse{\boolean{synthetic}}{
 \mfigure{.35}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}}
-{\mfigure{.7}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}}
+{\mfigure{.5}{The sign diagram for $P(x)$ in Example \ref{ex_zerosappl}}{fig:sdzeros2}{figures/PolynomialsGraphics/RealZeros_New-3}}
 
 
 We see immediately that $P(x)>0$ on $(1+\sqrt{2},5)$.  Since $x$ measures the number of TVs in \textit{hundreds}, $x = 1 + \sqrt{2}$ corresponds to $241.4\ldots$ TVs.  Since we can't produce a fractional part of a TV, we need to choose between producing 241 and 242 TVs.  From the sign diagram, we see that $P(2.41) < 0$ but $P(2.42)>0$ so, in this case we take the next \textit{larger} integer value and set the minimum production to 242 TVs.  At the other end of the interval, we have $x=5$ which corresponds to $500$ TVs.  Here, we take the next \textit{smaller} integer value, $499$ TVs to ensure that we make a profit.  Hence, in order to make a profit, at least 242, but no more than 499 TVs need to be produced.  To check our answer using GeoGebra, we graph $y=P(x)$ and use the Intersect tool to see where $y=P(x)$ intersects the $x$-axis. We see in Figure \ref{fig:applzeroeg} that the software approximations bear out our analysis.
 }
 
 \ifthenelse{\boolean{synthetic}}{
-\mfigure[width=0.95\marginparwidth]{.2}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
-{\mfigure[width=0.95\marginparwidth]{.5}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
+\mfigure[width=0.95\marginparwidth]{.8}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
+{\mfigure[width=0.95\marginparwidth]{.3}{Plotting the profit function $P(x)$ in Example \ref{ex_zerosappl}}{fig:applzeroeg}{figures/PolynomialsGraphics/RealZero7}}
 
 \printexercises{exercises_pre/03_03_exercises}
 

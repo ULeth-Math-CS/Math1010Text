@@ -8,12 +8,13 @@
 %\end{minipage}
 
 In Section \ref{sec:limit_intro} we explored the concept of the limit without a strict definition, meaning we could only make approximations. Proving that these approximations are correct requires a rigorous definition of limits, which is beyond the scope of this course.
+Suppose that $\lim_{x\to 2} f(x)=2$ and $\lim_{x\to 2} g(x) = 3$. What is 
+\[
+\lim_{x\to 2}(f(x)+g(x))?
+\]
+Intuition tells us that the limit should be 5, as we expect limits to behave in a nice way. The following theorem states that already established limits do behave nicely.
 
-\mnote{.7}{The rigorous definition of limits is often known as the ``$\varepsilon$ -- $\delta$ definition of the limit. You might have a few brief encounters with this definition as you make your way through the calculus sequence, but a careful treatment of limits is usually not encountered until Math 3500.}
-
-Suppose that $\lim_{x\to 2} f(x)=2$ and $\lim_{x\to 2} g(x) = 3$. What is $\lim_{x\to 2}(f(x)+g(x))$? Intuition tells us that the limit should be 5, as we expect limits to behave in a nice way. The following theorem states that already established limits do behave nicely.
-
-%\enlargethispage{4\baselineskip}
+\mnote{.7}{The rigorous definition of limits is often known as the ``$\epsilon$ -- $\delta$'' definition of the limit. You might have a few brief encounters with this definition as you make your way through the calculus sequence, but a careful treatment of limits is usually not encountered until Math 3500.}
 
 \theorem{thm:limit_algebra}{Basic Limit Properties}{\small
 Let $b$, $c$, $L$ and $K$ be real numbers, let $n$ be a positive integer, and let $f$ and $g$ be functions with the following limits: \index{limit!properties}
@@ -49,7 +50,7 @@ Let $$\lim_{x\to 2} f(x)=2,\quad\lim_{x\to 2} g(x) = 3\quad \text{\ and \ }\quad
 \begin{enumerate}\addtocounter{enumi}{2}
 \item		$\ds \lim_{x\to 2} p(x)$
 \end{enumerate}
-\end{minipage}}
+\end{minipage}\pagebreak}
 {\begin{enumerate}
 \item		Using the Sum/Difference rule, we know that $\ds \lim_{x\to 2} \big(f(x) + g(x)\big) = 2+3 =5$.
 \item		Using the Scalar Multiple and Sum/Difference rules, we find that $\ds \lim_{x\to 2} \big(5f(x) + g(x)^2\big) = 5\cdot 2 + 3^2 = 19.$

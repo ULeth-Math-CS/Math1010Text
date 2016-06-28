@@ -3,7 +3,7 @@
 
 In the previous section we used the newly defined function notation to make sense of expressions such as `$f(x) + 2$' and `$2f(x)$' for a given function $f$.  It would seem natural, then, that functions should have their own arithmetic which is consistent with the arithmetic of real numbers.  The following definitions allow us to add, subtract, multiply and divide functions using the arithmetic we already know for real numbers.
 
-\medskip
+\smallskip
 
 \definition{def:functarith}{Function Arithmetic}{ \index{function ! arithmetic}
 Suppose $f$ and $g$ are functions and $x$ is in both the domain of $f$ and the domain of $g$.
@@ -23,7 +23,7 @@ Suppose $f$ and $g$ are functions and $x$ is in both the domain of $f$ and the d
 \end{itemize}
 }
 
-\medskip
+\smallskip
 
 In other words, to add two functions, we add their outputs;  to subtract two functions, we subtract their outputs, and so on.  Note that while the formula $(f+g)(x) = f(x) + g(x)$ looks suspiciously like some kind of distributive property, it is nothing of the sort;  the addition on the left hand side of the equation is \textit{function} addition, and we are using this equation to \textit{define} the output of the new function $f+g$ as the sum of the real number outputs from $f$ and $g$.
 
@@ -50,7 +50,7 @@ Let $f(x) = 6x^2 - 2x$ and $g(x) = 3-\dfrac{1}{x}$.
 
 \item  Find the domain of $g-f$ then find and simplify a formula for  $(g-f)(x)$.
 
-\item  \label{quotdomainex} Find the domain of $\left(\frac{g}{f}\right)$ then find and simplify a formula for  $\left(\frac{g}{f}\right)(x)$.
+\item  \label{quotdomainex} Find the domain of $\left(\dfrac{g}{f}\right)$ then find and simplify a formula for  $\left(\dfrac{g}{f}\right)(x)$.
 
 \end{enumerate}
 }
@@ -66,20 +66,24 @@ Let $f(x) = 6x^2 - 2x$ and $g(x) = 3-\dfrac{1}{x}$.
 
 A second method is to analyze the formula for $(g-f)(x)$ \textit{before simplifying} and look for the usual domain issues.  In this case, 
 
-\[ (g-f)(x) = g(x) - f(x) = \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right),\]
+\[
+ (g-f)(x) = g(x) - f(x) = \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right),
+\]
 
 so we find, as before, the domain is $(-\infty, 0) \cup (0, \infty)$.
 
 Moving along, we need to simplify a formula for $(g-f)(x)$.  In this case, we get common denominators and attempt to reduce the resulting fraction.  Doing so, we get
 
-\[ \begin{array}{rclr}
-(g-f)(x) & = & g(x) - f(x) & \\ [5pt]
-         & = & \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right) &\\  [10pt]
-         & = & 3 - \dfrac{1}{x} - 6x^2 + 2x & \\  [10pt]
-         & = & \dfrac{3x}{x} - \dfrac{1}{x} - \dfrac{6x^3}{x} + \dfrac{2x^2}{x} & \text{get common denominators} \\  [10pt]
-         & = & \dfrac{3x - 1 - 6x^3 - 2x^2}{x} & \\  [10pt]
-         & = & \dfrac{-6x^3-2x^2+3x-1}{x} & \\   
-\end{array}\]         
+\begin{align*}
+(g-f)(x) & =  g(x) - f(x)  \\
+         & =  \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right) \\[5pt]
+         & =  3 - \dfrac{1}{x} - 6x^2 + 2x  \\[5pt]
+         & =  \dfrac{3x}{x} - \dfrac{1}{x} - \dfrac{6x^3}{x} + \dfrac{2x^2}{x}  \tag*{get common denominators} \\[5pt]
+         & =  \dfrac{3x - 1 - 6x^3 - 2x^2}{x}  \\[5pt]
+         & =  \dfrac{-6x^3-2x^2+3x-1}{x}
+\end{align*}
+
+\drawexampleline
 
 \item  As in the previous example, we have two ways to approach finding the domain of $\frac{g}{f}$.  First, we can find the domain of $g$ and $f$ separately, and find the intersection of these two sets.  In addition, since $\left(\frac{g}{f}\right)(x) = \frac{g(x)}{f(x)}$, we are introducing a new denominator, namely $f(x)$, so we need to guard against this being $0$ as well.  Our previous work tells us that the domain of $g$ is $(-\infty, 0) \cup (0, \infty)$ and the domain of $f$ is $(-\infty, \infty)$.  Setting $f(x) = 0$ gives $6x^2 - 2x = 0$ or $x = 0, \frac{1}{3}$.  As a result, the domain of $\frac{g}{f}$ is all real numbers except $x = 0$ and $x = \frac{1}{3}$, or $(-\infty, 0) \cup \left(0, \frac{1}{3} \right) \cup \left( \frac{1}{3}, \infty \right)$.
 
@@ -92,23 +96,14 @@ We see immediately from the `little' denominator that $x \neq 0$.  To keep the `
 
 Next, we find and simplify a formula for $\left(\dfrac{g}{f}\right)(x)$.
 
-\setlength{\extrarowheight}{12pt}
-
-\begin{longtable}{rclr}
- 
-$\left( \dfrac{g}{f}\right)(x)$ & $=$ & $\dfrac{g(x)}{f(x)} $  & \\
-& = & $\dfrac{3-\dfrac{1}{x}\vphantom{\left(\dfrac{1}{x}\right)}}{6x^2 - 2x}$ & \\[.125in]
-& = & $\dfrac{3-\dfrac{1}{x}\vphantom{\left(\dfrac{1}{x}\right)}}{6x^2 - 2x} \cdot \dfrac{x}{x}$ & simplify compound fractions  \\[.125in]
-& = & $\dfrac{\left(3-\dfrac{1}{x}\right) x}{\left(6x^2 - 2x\right)x}$ & \\
-& = & $\dfrac{3x-1}{\left(6x^2 - 2x\right)x}$ & \\
-& = & $\dfrac{3x-1}{2x^2(3x-1)}$ & factor \\
-& = & $\dfrac{\cancelto{1}{(3x-1)}}{2x^2\cancel{(3x-1)}}$ & cancel \\
-& = & $\dfrac{1}{2x^2}$ &  \\
-
-\end{longtable} 
-
-\setlength{\extrarowheight}{2pt}
-
+\begin{align*} 
+\left( \dfrac{g}{f}\right)(x) & = \dfrac{g(x)}{f(x)} = \dfrac{3-\dfrac{1}{x}}{6x^2 - 2x} \\[5pt]
+& = \dfrac{3-\dfrac{1}{x}}{6x^2 - 2x} \cdot \dfrac{x}{x} \tag*{simplify compound fractions}  \\[5pt]
+& = \dfrac{\left(3-\dfrac{1}{x}\right) x}{\left(6x^2 - 2x\right)x} = \dfrac{3x-1}{\left(6x^2 - 2x\right)x}  \\[5pt]
+& = \dfrac{3x-1}{2x^2(3x-1)}  \tag*{factor} \\[5pt]
+& = \dfrac{\cancelto{1}{(3x-1)}}{2x^2\cancel{(3x-1)}}  \tag*{cancel} \\[5pt]
+& = \dfrac{1}{2x^2}  
+\end{align*}
 \end{enumerate}
 }
 
@@ -119,22 +114,26 @@ Please note the importance of finding the domain of a function \textit{before} s
 
 Next, we turn our attention to the \sword{difference quotient} of a function.  
 
-\medskip
+\smallskip
 
 \definition{differencequotient}{Difference quotient of a function}{
-Given a function $f$, the \index{function ! difference quotient}\index{difference quotient}\sword{difference quotient} of $f$ is the expression \[ \dfrac{f(x+h) - f(x)}{h} \]
+Given a function $f$, the \index{function ! difference quotient}\index{difference quotient}\sword{difference quotient} of $f$ is the expression 
+\[ 
+\dfrac{f(x+h) - f(x)}{h} .
+\]
 }
 
 
-\medskip
+\smallskip
 
 We will revisit this concept in Section \ref{LinearFunctions}, but for now, we use it as a way to practice function notation and function arithmetic.  For reasons which will become clear in Calculus,  `simplifying' a difference quotient means rewriting it in a form where the `$h$' in the definition of the difference quotient cancels from the denominator. Once that happens, we consider our work to be done.
 
-\medskip
+\pagebreak
 
 \example{differencequotientex}{Computing difference quotients}{
 Find and simplify the difference quotients for the following functions
 
+\begin{multicols}{3}
 \begin{enumerate}
 
 \item  $f(x) = x^2-x-2$
@@ -144,53 +143,49 @@ Find and simplify the difference quotients for the following functions
 \item  $r(x) = \sqrt{x}$ 
 
 \end{enumerate}
+\end{multicols}
 }
 {
 \begin{enumerate}
 
-\item To find $f(x+h)$, we replace every occurrence of $x$ in the formula $f(x) = x^2-x-2$ with the quantity $(x+h)$ to get \[ \begin{array}{rclr}  
- 
- f(x+h) & = & (x+h)^2 - (x+h) -2 & \\ [8pt]
- & = & x^2 + 2xh + h^2 - x - h - 2.
- \end{array} \]
+\item To find $f(x+h)$, we replace every occurrence of $x$ in the formula\\
+ $f(x) = x^2-x-2$ with the quantity $(x+h)$ to get 
+\begin{align*} 
+ f(x+h) & =  (x+h)^2 - (x+h) -2  \\
+ & =  x^2 + 2xh + h^2 - x - h - 2.
+\end{align*}
 
 So the difference quotient is
 
-\setlength{\extrarowheight}{12pt}
-
-\begin{longtable}{rclr}  
-
-$\dfrac{f(x+h)-f(x)}{h}$ & = & $\dfrac{\left(x^2+2xh+h^2-x-h-2 \right)-\left(x^{2}-x-2 \right)}{h}$ & \\[8pt] 
-& = & $\dfrac{x^2+2xh+h^2-x-h-2-x^2+x+2}{h}$ & \\ [8pt]
-& = & $\dfrac{2xh+h^2-h}{h}$ & \\ [8pt]
-& = & $\dfrac{h \left(2x+h-1\right)}{h}$ & factor \\ [8pt]
-& = & $\dfrac{\cancel{h} \left(2x+h-1\right)}{\cancel{h}}$ & cancel \\ [8pt]
-& = & $2x+h-1$. \\
-
-\end{longtable} 
+\begin{align*}
+\dfrac{f(x+h)-f(x)}{h} & = \dfrac{\left(x^2+2xh+h^2-x-h-2 \right)-\left(x^{2}-x-2 \right)}{h} \\[5pt] 
+& = \dfrac{x^2+2xh+h^2-x-h-2-x^2+x+2}{h}\\[5pt]
+& = \dfrac{2xh+h^2-h}{h}\\[5pt]
+& = \dfrac{h \left(2x+h-1\right)}{h} \tag*{factor} \\[5pt]
+& = \dfrac{\cancel{h} \left(2x+h-1\right)}{\cancel{h}} \tag*{cancel} \\[5pt]
+& = 2x+h-1.
+\end{align*}
 
 %\pagebreak
 
-\item To find $g(x+h)$, we replace every occurrence of $x$ in the formula $g(x) = \frac{3}{2x+1}$ with the quantity $(x+h)$ to get 
+\item To find $g(x+h)$, we replace every occurrence of $x$ in the formula\\ $g(x) = \dfrac{3}{2x+1}$ with the quantity $(x+h)$ to get 
 
- \[ \begin{array}{rclr}  
- g(x+h) & = & \dfrac{3}{2(x+h)+1} & \\
- & = & \dfrac{3}{2x+2h+1}, 
- \end{array} \]
+\begin{align*}
+ g(x+h) & =  \dfrac{3}{2(x+h)+1}  \\[5pt]
+ & =  \dfrac{3}{2x+2h+1}, 
+\end{align*}
 
 which yields 
 
-\begin{longtable}{rclr}  
-
-$\dfrac{g(x+h)-g(x)}{h}$ & = & $\dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h}$ & \\ [3pt]
-& = &  $\dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h} \cdot \dfrac{(2x+2h+1)(2x+1)}{(2x+2h+1)(2x+1)}$ & \\ [3pt]
-& = &  $\dfrac{3(2x+1)-3(2x+2h+1)}{h(2x+2h+1)(2x+1)}$  & \\ [3pt]
-& = &  $\dfrac{6x+3-6x-6h-3}{h(2x+2h+1)(2x+1)}$  & \\ [3pt]
-& = &  $\dfrac{-6h}{h(2x+2h+1)(2x+1)}$  & \\ [3pt]
-& = &  $\dfrac{-6\cancel{h}}{\cancel{h}(2x+2h+1)(2x+1)}$  & \\ [3pt]
-& = &  $\dfrac{-6}{(2x+2h+1)(2x+1)}$.  & \\ 
-
-\end{longtable}
+\begin{align*}
+\dfrac{g(x+h)-g(x)}{h} & = \dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h}\\[5pt]
+& = \dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h} \cdot \dfrac{(2x+2h+1)(2x+1)}{(2x+2h+1)(2x+1)}\\[5pt]
+& = \dfrac{3(2x+1)-3(2x+2h+1)}{h(2x+2h+1)(2x+1)} \\[5pt]
+& = \dfrac{6x+3-6x-6h-3}{h(2x+2h+1)(2x+1)}\\[5pt]
+& = \dfrac{-6h}{h(2x+2h+1)(2x+1)}\\[5pt]
+& = \dfrac{-6\cancel{h}}{\cancel{h}(2x+2h+1)(2x+1)}\\[5pt]
+& = \dfrac{-6}{(2x+2h+1)(2x+1)}.
+\end{align*}
 
 Since we have managed to cancel the original `$h$' from the denominator, we are done.
 
@@ -200,17 +195,22 @@ Since we have managed to cancel the original `$h$' from the denominator, we are 
 
 In order to cancel the `$h$' from the denominator, we rationalize the \textit{numerator} by multiplying by its conjugate.
 
+\noindent\hskip-30pt\begin{minipage}{\textwidth+20pt}
 \begin{align*}
-\dfrac{r(x+h) - r(x)}{h} & = \dfrac{\sqrt{x+h} - \sqrt{x}}{h}  \\ 											 & =  \dfrac{\left(\sqrt{x+h} - \sqrt{x}\right)}{h} \cdot \dfrac{\left(\sqrt{x+h} + \sqrt{x}\right)}{\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag*{Multiply by the conjugate.} \\
-	 & =   \dfrac{\left(\sqrt{x+h}\right)^2 - \left(\sqrt{x}\right)^2}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag*{Difference of Squares.}\\					& =   \dfrac{(x+h) - x}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \\ 				    & =   \dfrac{h}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \\						    & =   \dfrac{\cancelto{1}{h}}{\cancel{h}\left(\sqrt{x+h} + \sqrt{x}\right)} \\ 
+\dfrac{r(x+h) - r(x)}{h} & = \dfrac{\sqrt{x+h} - \sqrt{x}}{h}  \\[5pt] 											 & =  \dfrac{\left(\sqrt{x+h} - \sqrt{x}\right)}{h} \cdot \dfrac{\left(\sqrt{x+h} + \sqrt{x}\right)}{\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag*{Multiply by the conjugate.} \\[5pt]
+	 & =   \dfrac{\left(\sqrt{x+h}\right)^2 - \left(\sqrt{x}\right)^2}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag*{Difference of Squares.}\\[5pt]					& =   \dfrac{(x+h) - x}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \\[5pt]
+	  				    & =   \dfrac{h}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \\[5pt]
+	  				    & =   \dfrac{\cancelto{1}{h}}{\cancel{h}\left(\sqrt{x+h} + \sqrt{x}\right)} \\ 
 	 & =   \dfrac{1}{\sqrt{x+h} + \sqrt{x}}
 \end{align*}
+\end{minipage}
+
+\enlargethispage{2\baselineskip}
 
 Since we have removed the original `$h$' from the denominator, we are done.
 \end{enumerate}
 }
-
-\medskip
+\pagebreak
 
 \phantomsection
 \label{diffquotgeompromise}
@@ -221,7 +221,7 @@ As mentioned before, we will revisit difference quotients in Section \ref{Linear
 
 Suppose you are a manufacturer making a certain product. Let $x$ be the \textbf{production level}, that is, the number of items produced in a given time period. It is customary to let $C(x)$ denote the function which calculates the total \textbf{cost} of producing the $x$ items.  The quantity $C(0)$, which represents the cost of producing no items, is called the \textbf{fixed} cost, and represents the amount of money required to begin production. Associated with the total cost $C(x)$ is cost per item, or \textbf{average cost}, denoted $\overline{C}(x)$ and read `$C$-bar' of $x$.  To compute $\overline{C}(x)$,  we take the total cost $C(x)$ and divide by the number of items produced $x$ to get \[ \overline{C}(x) = \dfrac{C(x)}{x}\] On the retail end, we have the \textbf{price} $p$ charged per item.  To simplify the dialogue and computations in this text, we assume that \textit{the number of items sold equals the number of items produced}. From a retail perspective, it seems natural to think of the number of items sold, $x$, as a function of the price charged, $p$.  After all, the retailer can easily adjust the price to sell more product.  In the language of functions,  $x$ would be the \textit{dependent} variable and $p$ would be the \textit{independent} variable or, using function notation, we have a function $x(p)$.  While we will adopt this convention later in the text, (see Example \ref{demandfunctionofprice} in Section \ref{InverseFunctions}) we will hold with tradition at this point and consider the price $p$ as a function of the number of items sold, $x$.  That is, we regard $x$ as the independent variable and $p$ as the dependent variable and speak of the \textbf{price-demand} function, $p(x)$.  Hence, $p(x)$ returns the price charged per item when $x$ items are produced and sold.   Our next function to consider is the \textbf{revenue} function, $R(x)$.  The function $R(x)$ computes the amount of money collected as a result of selling $x$ items.  Since $p(x)$ is the price charged per item, we have $R(x)= x p(x)$.  Finally, the \textbf{profit} function, $P(x)$ calculates how much money is earned after the costs are paid.  That is, $P(x) = (R-C)(x) = R(x) - C(x)$.  We summarize all of these functions below.
 
-\medskip
+\smallskip
 
 \keyidea{pricerevenuecostprofit}{Summary of Common Economic Functions}{
 Suppose $x$ represents the quantity of items produced and sold.
@@ -241,12 +241,14 @@ Suppose $x$ represents the quantity of items produced and sold.
 \end{itemize}
 }
 
-\medskip 
+\pagebreak
 
 %\vspace{-.1in}
 
 \example{costrevenueprofitex1}{Computing (and interpreting) cost and profit functions}{
-Let $x$ represent the number of dOpi media players (`dOpis' -- pronounced `dopeys' \ldots) produced and sold in a typical week.  Suppose the cost, in dollars, to produce $x$ dOpis  is given by   $C(x) = 100x + 2000$, for $x \geq 0$, and the price, in dollars per dOpi, is given by $p(x) = 450-15x$ for $0 \leq x \leq 30$.
+Let $x$ represent the number of dOpi media players produced and sold in a typical week.  Suppose the cost, in dollars, to produce $x$ dOpis  is given by   $C(x) = 100x + 2000$, for $x \geq 0$, and the price, in dollars per dOpi, is given by $p(x) = 450-15x$ for $0 \leq x \leq 30$.
+
+\mnote{.86}{`dOpis' -- pronounced `dopeys' \ldots}
 
 \begin{enumerate}
 

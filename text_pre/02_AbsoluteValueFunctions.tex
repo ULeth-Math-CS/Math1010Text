@@ -11,18 +11,23 @@ There are a few ways to describe what is meant by the absolute value $|x|$ of a 
 
 Another way to define absolute value is by the equation $|x| = \sqrt{x^2}$. Using this definition, we have $|5| = \sqrt{(5)^2} = \sqrt{25} = 5$ and $|-5| = \sqrt{(-5)^2} = \sqrt{25} = 5$.  The long and short of both of these procedures is that $|x|$ takes negative real numbers and assigns them to their positive counterparts while it leaves positive numbers alone.  This last description is the one we shall adopt, and is summarized in the following definition.
 
-\medskip
+\smallskip
 
 \definition{absolutevalue}{Absolute value function}{
 
-The \index{absolute value ! definition of}\index{function ! absolute value}\sword{absolute value} of a real number $x$, denoted $|x|$, is given by \[ |x| = \left\{ \begin{array}{rcl} -x, & \mbox{if} & x < 0  \\ x, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]
+The \index{absolute value ! definition of}\index{function ! absolute value}\sword{absolute value} of a real number $x$, denoted $|x|$, is given by 
+\[
+ |x| = \begin{cases} -x, & \mbox{ if }  x < 0  \\
+ 					  x, & \mbox{ if }  x \geq 0 \\
+		\end{cases}
+\]
 }
 
-\medskip
+\smallskip
 
 In Definition \ref{absolutevalue}, we define $|x|$ using a piecewise-defined function.  (See page \pageref{piecewisefunction} in Section \ref{FunctionNotation}.)  To check that this definition agrees with what we previously understood as absolute value, note that since $5 \geq 0$, to find $|5|$ we use the rule $|x| = x$, so $|5|=5$.  Similarly, since $-5 < 0$, we use the rule $|x| = -x$, so that $|-5| = -(-5) = 5$.  This is one of the times when it's best to interpret the expression `$-x$' as `the opposite of $x$' as opposed to `negative $x$'.  Before we begin studying absolute value functions, we remind ourselves of the properties of absolute value.
 
-\medskip
+\smallskip
 
 \theorem{absolutevalueprops}{Properties of Absolute Value}{
 Let $a$, $b$ and $x$ be real numbers and let $n$ be an integer.  Then \index{absolute value ! properties of}
@@ -50,15 +55,15 @@ Let $a$, $b$ and $x$ be real numbers and let $n$ be an integer.  Then \index{abs
 \end{itemize}
 }
 
-\medskip
+\smallskip
 
 The proofs of the Product and Quotient Rules in Theorem \ref{absolutevalueprops} boil down to checking four cases:  when both $a$ and $b$ are positive;  when they are both negative;  when one is positive and the other is negative; and when one or both are zero.  
 
-\medskip
+\smallskip
 
 For example, suppose we wish to show that $|ab| = |a||b|$.  We need to show that this equation is true for all real numbers $a$ and $b$.  If $a$ and $b$ are both positive, then so is $ab$.  Hence, $|a| = a$, $|b| = b$ and $|ab| = ab$.  Hence, the equation $|ab| = |a||b|$ is the same as $ab = ab$ which is true.  If both $a$ and $b$ are negative, then $ab$ is positive.  Hence, $|a| = -a$, $|b| = -b$ and $|ab| = ab$.  The equation $|ab| = |a||b|$ becomes $ab = (-a)(-b)$, which is true.  Suppose $a$ is positive and $b$ is negative. Then $ab$ is negative, and we have $|ab| = -ab$, $|a| = a$ and $|b| = -b$.  The equation $|ab| = |a||b|$ reduces to $-ab = a(-b)$ which is true.  A symmetric argument shows the equation $|ab| = |a||b|$ holds when $a$ is negative and $b$ is positive.  Finally, if either $a$ or $b$ (or both) are zero, then both sides of $|ab| = |a||b|$ are zero, so the equation holds in this case, too.  All of this rhetoric has shown that the equation $|ab| = |a||b|$ holds true in all cases.  
 
-\medskip
+\smallskip
 
 The proof of the Quotient Rule is very similar, with the exception that $b \neq 0$. The Power Rule can be shown by repeated application of the Product Rule.  The `Equality Properties' can be proved using Definition \ref{absolutevalue} and by looking at the cases when $x\geq 0$, in which case $|x| = x$, or when $x<0$, in which case $|x| = -x$.  For example, if $c>0$, and $|x| = c$, then if $x \geq 0$, we have $x = |x| = c$.  If, on the other hand, $x < 0$, then $-x = |x| = c$, so $x = -c$.  The remaining properties are proved similarly and are left for the Exercises.  Our first example reviews how to solve basic equations involving absolute value using the properties listed in Theorem \ref{absolutevalueprops}.
 
@@ -94,13 +99,12 @@ Solve each of the following equations.
 
 \item  The equation  $|3x-1| = 6$ is of the form $|x| = c$ for $c>0$, so by the Equality Properties, $|3x-1| = 6$ is equivalent to $3x-1=6$ or $3x-1 = -6$.  Solving the former, we arrive at $x = \frac{7}{3}$, and solving the latter, we get $x = -\frac{5}{3}$.  We may check both of these solutions by substituting them into the original equation and showing that the arithmetic works out.
 
-\item  To use the Equality Properties to solve $3 - |x+5| = 1$, we first isolate the absolute value. \[ \begin{array}{rclr}
-
-3 - |x+5| & = & 1 &  \\
--|x+5| & = & -2 & \text{subtract $3$} \\
-|x+5| & = & 2 & \text{divide by $-1$}  \\ 
-
-\end{array} \]
+\item  To use the Equality Properties to solve $3 - |x+5| = 1$, we first isolate the absolute value. 
+\begin{align*}
+3 - |x+5| & =  1 \\
+-|x+5| & =  -2  \tag*{subtract $3$} \\
+|x+5| & =  2 \tag*{divide by $-1$}  
+\end{align*}
 
 From the Equality Properties, we have $x+5 = 2$ or $x+5 = -2$, and get our solutions to be $x = -3$ or $x = -7$.  We leave it to the reader to check both answers in the original equation.
 
@@ -111,10 +115,18 @@ From the Equality Properties, we have $x+5 = 2$ or $x+5 = -2$, and get our solut
 
 \item  The equation  $|x| = x^2-6$ presents us with some difficulty, since $x$ appears both inside and outside of the absolute value. Moreover, there are values of $x$ for which $x^2-6$ is positive, negative and zero, so we cannot use the Equality Properties without the risk of introducing extraneous solutions, or worse, losing solutions.  For this reason, we break equations like this into cases  by rewriting the term in absolute values, $|x|$, using Definition \ref{absolutevalue}.  For $x < 0$, $|x| = -x$, so for $x < 0$, the equation $|x| = x^2-6$ is equivalent to $-x = x^2-6$.  Rearranging this gives us $x^2+x-6 = 0$, or $(x+3)(x-2) = 0$.  We get $x = -3$ or $x=2$.  Since only $x=-3$ satisfies $x<0$, this is the answer we keep. For $x \geq 0$, $|x| = x$, so the equation $|x| = x^2-6$ becomes $x = x^2-6$.  From this, we get $x^2-x-6 =0$ or $(x-3)(x+2) = 0$.  Our solutions are $x=3$ or $x = -2$, and since only $x=3$ satisfies $x \geq 0$, this is the one we keep.  Hence, our two solutions to $|x| = x^2-6$ are $x=-3$ and $x=3$.
 
-\item  To solve $|x-2| + 1 = x$, we first isolate the absolute value and get $|x-2| = x-1$.  Since we see $x$ both inside and outside of the absolute value, we break the equation into cases.  The term with absolute values here is $|x-2|$, so we replace `$x$' with the quantity `$(x-2)$' in Definition \ref{absolutevalue} to get \[ |x-2| = \left\{ \begin{array}{rcl} -(x-2), & \mbox{if} & (x-2) < 0  \\ (x-2), & \mbox{if} & (x-2) \geq 0 \\ \end{array} \right.\]
-
-Simplifying yields \[ |x-2| = \left\{ \begin{array}{rcl} -x+2, & \mbox{if} & x < 2 \\ x-2, & \mbox{if} & x \geq 2 \\ \end{array} \right.\]
-
+\item  To solve $|x-2| + 1 = x$, we first isolate the absolute value and get $|x-2| = x-1$.  Since we see $x$ both inside and outside of the absolute value, we break the equation into cases.  The term with absolute values here is $|x-2|$, so we replace `$x$' with the quantity `$(x-2)$' in Definition \ref{absolutevalue} to get 
+\[ 
+|x-2| = \begin{cases} -(x-2), & \mbox{ if }  (x-2) < 0  \\
+					   (x-2), & \mbox{ if }  (x-2) \geq 0
+		\end{cases}.
+\]
+Simplifying yields 
+\[
+ |x-2| = \begin{cases} -x+2, & \mbox{ if }  x < 2 \\
+ 					    x-2, & \mbox{ if }  x \geq 2 
+ 		 \end{cases}.
+\]
 So, for $x<2$, $|x-2| = -x+2$ and our equation  $|x-2| = x-1$ becomes $-x+2 = x-1$, which gives $x = \frac{3}{2}$.  Since this solution satisfies $x < 2$, we keep it.  Next, for $x \geq 2$, $|x-2| = x-2$, so the equation $|x-2| = x-1$ becomes $x-2 = x-1$.  Here, the equation reduces to $-2 = -1$, which signifies we have no solutions here.  Hence, our only solution is $x = \frac{3}{2}$. 
 
 \end{enumerate}
@@ -146,7 +158,14 @@ Find the zeros of each function and the $x$- and $y$-intercepts of  each graph, 
 {
 \begin{enumerate}
 
-\item  To find the zeros of $f$, we set $f(x)= 0$.  We get $|x|=0$, which, by Theorem \ref{absolutevalueprops} gives us $x=0$.  Since the zeros of $f$ are the $x$-coordinates of the $x$-intercepts of the graph of $y=f(x)$, we get $(0,0)$ as our only $x$-intercept.  To find the $y$-intercept, we set $x=0$, and find $y = f(0) = 0$, so that $(0,0)$ is our $y$-intercept as well. Using Definition \ref{absolutevalue}, we get \[ f(x) = |x| =  \left\{ \begin{array}{rcl} -x, & \mbox{if} & x < 0  \\ x, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]  Hence, for $x < 0$, we are graphing the line $y = -x$;  for $x \geq 0$, we have the line $y = x$.  Proceeding as we did in Section \ref{GraphsofFunctions}, we get the first two graphs in Figure \ref{fig:absvalgraph}.
+\item  To find the zeros of $f$, we set $f(x)= 0$.  We get $|x|=0$, which, by Theorem \ref{absolutevalueprops} gives us $x=0$.  Since the zeros of $f$ are the $x$-coordinates of the $x$-intercepts of the graph of $y=f(x)$, we get $(0,0)$ as our only $x$-intercept.  To find the $y$-intercept, we set $x=0$, and find $y = f(0) = 0$, so that $(0,0)$ is our $y$-intercept as well. Using Definition \ref{absolutevalue}, we get 
+\[
+ f(x) = |x| =  \begin{cases} -x, & \mbox{ if }  x < 0  \\
+ 							  x, & \mbox{ if }  x \geq 0
+ 							  
+ 				\end{cases}.
+\]
+Hence, for $x < 0$, we are graphing the line $y = -x$;  for $x \geq 0$, we have the line $y = x$.  Proceeding as we did in Section \ref{GraphsofFunctions}, we get the first two graphs in Figure \ref{fig:absvalgraph}.
 
 \mnote{.7}{Since functions can have at most one $y$-intercept (Do you know why?), as soon as we found $(0,0)$ as the $x$-intercept for $f(x)$ in Example \ref{absvaluegraph1}, we knew this was also the $y$-intercept.} 
 
@@ -163,7 +182,7 @@ $f(x)=\lvert x\rvert$
 \end{tabular}
 }
 
-\medskip
+\smallskip
 
 Notice that we have an `open circle' at $(0,0)$ in the graph when $x<0$. As we have seen before, this is due to the fact that the points on $y = -x$ approach $(0,0)$ as the $x$-values approach $0$.  Since $x$ is required to be strictly less than zero on this stretch, the open circle is drawn at the origin.  However, notice that when $x \geq 0$, we get to fill in the point at $(0,0)$, which effectively `plugs' the hole indicated by the open circle.  Thus our final result is the graph at the bottom of Figure \ref{fig:absvalgraph}.
 
@@ -172,20 +191,26 @@ By projecting the graph to the $x$-axis, we see that the domain is $(-\infty, \i
 
 \item  To find the zeros of $g$, we set $g(x) = |x-3|=0$.  By Theorem \ref{absolutevalueprops}, we get $x-3=0$ so that $x=3$.  Hence, the $x$-intercept is $(3,0)$.  To find our $y$-intercept, we set $x=0$ so that $y = g(0) = |0-3| = 3$, which yields $(0,3)$ as our $y$-intercept.  To graph $g(x) = |x-3|$, we use Definition \ref{absolutevalue} to rewrite $g$ as
 
-\[ g(x) = |x-3| =  \left\{ \begin{array}{rcl} -(x-3), & \mbox{if} & (x-3) < 0  \\ (x-3), & \mbox{if} & (x -3) \geq 0 \\ \end{array} \right.\]
-
+\[ g(x) = |x-3| =  \begin{cases} -(x-3), & \mbox{ if }  (x-3) < 0  \\
+								  (x-3), & \mbox{ if }  (x-3) \geq 0
+					\end{cases}.
+\]
 Simplifying, we get
-
-\[ g(x) =\left\{ \begin{array}{rcl} -x+3, & \mbox{if} & x<3  \\ x-3, & \mbox{if} & x \geq 3 \\ \end{array} \right.\]
-
-
-
+\[
+ g(x) = \begin{cases} -x+3, & \mbox{ if }  x<3  \\
+ 					   x-3, & \mbox{ if }  x \geq 3
+ 		\end{cases}.
+\]
 
 As before, the open circle we introduce at $(3,0)$ from the graph of $y = -x+3$ is filled by the point $(3,0)$ from the line $y = x-3$. We determine the domain as $(-\infty, \infty)$ and the range as $[0,\infty)$.  The function $g$ is increasing on $[3,\infty)$ and decreasing on $(-\infty,3]$.  The relative and absolute minimum value of $g$ is $0$ which occurs at $(3,0)$.  As before, there is no relative or absolute maximum value of $g$.
 
 \item  Setting $h(x) = 0$ to look for zeros gives $|x|-3=0$. As in Example \ref{absvalueeqnex},  we isolate the absolute value to get  $|x| = 3$ so that $x =3$ or $x=-3$.  As a result, we have a pair of $x$-intercepts:  $(-3,0)$ and $(3,0)$.  Setting $x=0$ gives $y = h(0) = |0|-3 = -3$, so our $y$-intercept is $(0,-3)$.  As before, we rewrite the absolute value in $h$ to get
 
-\[ h(x) =\left\{ \begin{array}{rcl} -x-3, & \mbox{if} & x<0  \\ x-3, & \mbox{if} & x \geq 0 \\ \end{array} \right.\]
+\[
+ h(x) = \begin{cases} -x-3, & \mbox{ if }  x<0  \\
+						 x-3, & \mbox{ if }  x \geq 0 
+		\end{cases}.
+\]
 
 \mfigure{.8}{$g(x) = |x-3|$}{fig:absvalgr2}{figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5}
 
@@ -196,8 +221,14 @@ Once again, the open circle at $(0,-3)$ from one piece of the graph of $h$ is fi
 
 \item As before, we set $i(x)=0$ to find the zeros of $i$ and get $4 - 2|3x+1|=0$.  Isolating the absolute value term gives $|3x+1|=2$, so either  $3x+1 = 2$ or $3x+1=-2$.  We get $x=\frac{1}{3}$ or $x=-1$, so our $x$-intercepts are $\left(\frac{1}{3},0\right)$ and $(-1,0)$.  Substituting $x=0$ gives $y = i(0) = 4-2|3(0)+1| = 2$, for a $y$-intercept of $(0,2)$.  Rewriting the formula for $i(x)$ without absolute values gives  
 \begin{align*}
-i(x) & = \left\{ \begin{array}{rcl} 4-2(-(3x+1)), & \mbox{if} & (3x+1) <0  \\ 4-2(3x+1), & \mbox{if} & (3x+1) \geq 0 \\ \end{array} \right.\\
-& = \left\{ \begin{array}{rcl} 6x+6, & \mbox{if} & x < -\frac{1}{3} \\[2pt]  -6x+2, & \mbox{if} & x \geq - \frac{1}{3} \\ \end{array} \right.
+i(x) & = \begin{cases}
+		 4-2(-(3x+1)), & \mbox{ if }  (3x+1) <0  \\
+		 4-2(3x+1), & \mbox{ if }  (3x+1) \geq 0 
+		 \end{cases}\\
+     & = \begin{cases}
+     	 6x+6, & \mbox{ if }  x < -\frac{1}{3} \\
+     	-6x+2, & \mbox{ if }  x \geq - \frac{1}{3}
+     	 \end{cases}.
 \end{align*}
 The usual analysis near the trouble spot $x=-\frac{1}{3}$ gives that the `corner' of this graph is  $\left( -\frac{1}{3}, 4\right)$, and we get the distinctive `$\vee$' shape: see Figure \ref{fig:absvalgr4}.
 
@@ -251,7 +282,7 @@ We begin by graphing $f(x) = |x|$ and labelling three points, $(-1,1)$, $(0,0)$ 
 
 While the methods in Section \ref{Transformations} can be used to graph an entire family of absolute value functions, not all functions involving absolute values posses the characteristic `$\vee$' shape.  As the next example illustrates, often there is no substitute for appealing directly to the definition.
 
-\medskip
+\pagebreak
 
 \example{ex_absgraphhard}{A more complicated example}{
 Graph each of the following functions.  Find the zeros of each function and the $x$- and $y$-intercepts of  each graph, if any exist.  From the graph, determine the domain and range of each function, list the intervals on which the function is increasing, decreasing or constant, and find the relative and absolute extrema, if they exist.
@@ -274,38 +305,56 @@ Graph each of the following functions.  Find the zeros of each function and the 
 \begin{enumerate}
 
 \item  We first note that, due to the fraction in the formula of $f(x)$, $x \neq 0$.  Thus the domain is $(-\infty, 0) \cup (0, \infty)$.  To find the zeros of $f$, we set $f(x) = \frac{|x|}{x} = 0$.  This last equation implies $|x|=0$, which, from Theorem \ref{absolutevalueprops}, implies $x=0$.  However, $x=0$ is not in the domain of $f$, which means we have, in fact, no $x$-intercepts.  We have no $y$-intercepts either, since $f(0)$ is undefined.  Re-writing the absolute value in the function gives
-
-\[ f(x) =\left\{ \begin{array}{rcl} \dfrac{-x}{x}, & \mbox{if} & x <0  \\ [10pt] \dfrac{x}{x}, & \mbox{if} & x > 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} -1, & \mbox{if} & x < 0 \\ 1, & \mbox{if} & x >0 \\ \end{array} \right. \]
-
+\[
+   f(x) = \begin{cases}
+		   \dfrac{-x}{x}, & \mbox{ if }  x <0  \\[8pt]
+		   \dfrac{x}{x},  & \mbox{ if }  x > 0
+		  \end{cases}  = 
+		  \begin{cases}
+		    -1, & \mbox{ if }  x < 0 \\
+		     1, & \mbox{ if }  x >0
+		  \end{cases}.
+\]
 To graph this function, we graph two horizontal lines:  $y = -1$ for $x < 0$ and $y = 1$ for $x > 0$.  We have open circles at $(0,-1)$ and $(0,1)$ (Can you explain why?) so we get the graph in figure \ref{fig:absvalgr9}.
-
-\drawexampleline
 
 \mfigure{.5}{$f(x) = \dfrac{\lvert x\rvert}{x}$}{fig:absvalgr9}{figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15}
 
 As we found earlier, the domain is $(-\infty, 0)\cup(0,\infty)$.  The range consists of just two $y$-values: $\{-1,1\}$.  The function $f$ is constant on $(-\infty,0)$ and $(0,\infty)$.  The local minimum value of $f$ is the absolute minimum value of $f$, namely $-1$;  the local maximum and absolute maximum values for $f$ also coincide $-$ they both are $1$.  Every point on the graph of $f$ is simultaneously a relative maximum and a relative minimum. (Can you remember why in light of Definition \ref{maxmindefn}?  This was explored in the Exercises in Section \ref{GraphsofFunctions}.)
 
 \item  To find the zeros of $g$, we set $g(x) = 0$.  The result is $|x+2|-|x-3| +1 = 0$.  Attempting to isolate the absolute value term is complicated by the fact that there are \textbf{two} terms with absolute values.  In this case, it easier to proceed using cases by re-writing the function $g$ with two separate applications of Definition \ref{absolutevalue} to remove each instance of the absolute values, one at a time.  In the first round we get 
-
 \begin{align*}
- g(x) &= \left\{ \begin{array}{rcl} -(x+2) - |x-3|+1, & \mbox{if} & (x+2) <0  \\ (x+2) - |x-3|+1, & \mbox{if} & (x+2) \geq 0 \\ \end{array} \right.\\
- & = \left\{ \begin{array}{rcl} -x-1 - |x-3|, & \mbox{if} & x<-2 \\ x+3-|x-3|, & \mbox{if} & x \geq -2 \\ \end{array} \right.
+ g(x) &= \begin{cases}
+ 		   -(x+2) - |x-3|+1, & \mbox{ if }  (x+2) <0  \\
+ 		    (x+2) - |x-3|+1, & \mbox{ if }  (x+2) \geq 0
+ 		 \end{cases}\\[3pt]
+	  & = \begin{cases}
+	  		-x-1 - |x-3|, & \mbox{ if }  x<-2 \\
+	  		 x+3 - |x-3|, & \mbox{ if }  x \geq -2
+	  	  \end{cases}.
 \end{align*}
 
-
 Given that 
-
-\[ |x-3| =\left\{ \begin{array}{rcl} -(x-3), & \mbox{if} & (x-3) <0  \\ x-3, & \mbox{if} & (x-3) \geq 0 \\ \end{array} \right. = \left\{ \begin{array}{rcl} -x+3, & \mbox{if} & x<3 \\ x-3, & \mbox{if} & x \geq 3 \\ \end{array} \right., \]
-
-
+\[
+ |x-3| = \begin{cases}
+ 		  -(x-3), & \mbox{ if }  (x-3) <0  \\
+ 		    x-3, & \mbox{ if }  (x-3) \geq 0
+ 		 \end{cases}  = 
+ 		 \begin{cases}
+ 		   -x+3, & \mbox{ if }  x<3 \\
+ 		    x-3, & \mbox{ if }  x \geq 3
+ 		 \end{cases},
+\]
 we need to break up the domain again at $x=3$.  Note that if $x < -2$, then $x < 3$, so we replace $|x-3|$ with $-x+3$ for that part of the domain, too.  Our completed revision of the form of $g$ yields 
-
 \begin{align*}
- g(x) &= \left\{ \begin{array}{rcl} 
--x-1 - (-x+3), & \mbox{if} & x<-2 \\
-x+3-(-x+3), & \mbox{if} & x \geq -2 \, \mbox{ and } \, x < 3 \\
-x+3 - (x-3), & \mbox{if} & x \geq 3  \\  \end{array} \right.\\
-& = \left\{ \begin{array}{rcl} -4, & \mbox{if} & x<-2 \\                                                                                    2x, & \mbox{if} &  -2 \leq x < 3 \\                                                                                6, & \mbox{if} & x \geq 3  \\                                                                                 \end{array} \right. 
+ g(x) &= \begin{cases} 
+			-x-1 - (-x+3), & \mbox{ if }  x<-2 \\
+			 x+3 - (-x+3), & \mbox{ if }  x \geq -2 \, \mbox{ and } \, x < 3 \\
+			 x+3 - (x-3), & \mbox{ if }  x \geq 3  
+		 \end{cases}\\[5pt]
+	  &= \begin{cases}
+	  		 -4, & \mbox{ if }  x<-2 \\                                                                                    			 2x, & \mbox{ if }  -2 \leq x < 3 \\
+			  6, & \mbox{ if }  x \geq 3
+		 \end{cases}. 
 \end{align*}
 \end{enumerate}
 

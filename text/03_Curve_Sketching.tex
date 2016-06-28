@@ -1,11 +1,11 @@
 \section{Curve Sketching}\label{sec:sketch}
 
 
-We have been learning how we can understand the behavior of a function based on its first and second derivatives. While we have been treating the properties of a function separately (increasing and decreasing, concave up and concave down, etc.), we combine them here to produce an accurate graph of the function without plotting lots of extraneous points.
+We have been learning how we can understand the behaviour of a function based on its first and second derivatives. While we have been treating the properties of a function separately (increasing and decreasing, concave up and concave down, etc.), we combine them here to produce an accurate graph of the function without plotting lots of extraneous points.
 
 Why bother? Graphing utilities are very accessible, whether on a computer, a hand--held calculator, or a smartphone. These resources are usually very fast and accurate. We will see that our method is not particularly fast -- it will require time (but it is not \textit{hard}). So again: why bother?
 
-We are attempting to understand the behavior of a function $f$ based on the information given by its derivatives. While all of a function's derivatives relay information about it, it turns out that ``most'' of the behavior we care about is explained by \fp\ and \fpp. Understanding the interactions between the graph of $f$ and \fp\ and \fpp\ is important. To gain this understanding, one might argue that all that is needed is to look at lots of graphs. This is true to a point, but is somewhat similar to stating that one understands how an engine works after looking only at pictures. It is true that the basic ideas will be conveyed, but ``hands--on'' access increases understanding.
+We are attempting to understand the behaviour of a function $f$ based on the information given by its derivatives. While all of a function's derivatives relay information about it, it turns out that ``most'' of the behaviour we care about is explained by \fp\ and \fpp. Understanding the interactions between the graph of $f$ and \fp\ and \fpp\ is important. To gain this understanding, one might argue that all that is needed is to look at lots of graphs. This is true to a point, but is somewhat similar to stating that one understands how an engine works after looking only at pictures. It is true that the basic ideas will be conveyed, but ``hands--on'' access increases understanding.
 
 The following Key Idea summarizes what we have learned so far that is applicable to sketching graphs of functions and gives a framework for putting that information together. It is followed by several examples.
 
@@ -21,7 +21,7 @@ The following Key Idea summarizes what we have learned so far that is applicable
 \item		Find the critical values of $f$.
 \item		Find the possible points of inflection of $f$.
 \item		Find the location of any vertical asymptotes of $f$ (usually done in conjunction with item 1 above).
-\item		Consider the limits $\ds\lim_{x\to-\infty}f(x)$ and $\ds\lim_{x\to\infty}f(x)$ to determine the end behavior of the function.
+\item		Consider the limits $\ds\lim_{x\to-\infty}f(x)$ and $\ds\lim_{x\to\infty}f(x)$ to determine the end behaviour of the function.
 %\item		Create a number line that includes all critical points, possible points of inflection, and locations of vertical asymptotes. For each interval created, determine whether $f$ is increasing or decreasing, concave up or down.
 %\item		Evaluate $f$ at each critical point and possible point of inflection. Plot these points on a set of axes. Connect these points with curves exhibiting the proper concavity. Sketch asymptotes and $x$ and $y$ intercepts where applicable.
 \end{enumerate}
@@ -52,7 +52,7 @@ Use Key Idea \ref{idea:sketch} to sketch $f(x) = 3x^3-10x^2+7x+5$.}
 				$$x = \frac{20\pm \sqrt{(-20)^2-4(9)(7)}}{2(9)} = \frac19\left(10\pm\sqrt{37}\right) \Rightarrow x\approx 0.435, 1.787.$$
 \item		Find the possible points of inflection of $f$. Compute $\fpp(x) = 18x-20$. We have $$\fpp(x) = 0 \Rightarrow x= 10/9 \approx 1.111.$$
 \item		There are no vertical asymptotes.
-\item		We determine the end behavior using limits as $x$ approaches $\pm$infinity.				
+\item		We determine the end behaviour using limits as $x$ approaches $\pm$infinity.				
 			$$\lim_{x\to -\infty} f(x) = -\infty \qquad \lim_{x\to \infty}f(x) = \infty.$$
 			We do not have any horizontal asymptotes.
 \item		We place the values $x=(10\pm\sqrt{37})/9$ and $x=10/9$ on a number line, as shown in Figure \ref{fig:sketchline1}. We mark each subinterval as increasing or decreasing, concave up or down, using the techniques used in Sections \ref{sec:incr_decr} and \ref{sec:concavity}.
@@ -72,6 +72,8 @@ Use Key Idea \ref{idea:sketch} to sketch $f(x) = 3x^3-10x^2+7x+5$.}
 			\caption{Number line for $f$ in Example \ref{ex_sketch1}.}\label{fig:sketchline1}
 \end{minipage}
 
+\enlargethispage{2\baselineskip}
+
 \item		We plot the appropriate points on axes as shown in Figure \ref{fig:sketch1}(a) and connect the points with straight lines. In Figure \ref{fig:sketch1}(b) we adjust these lines to demonstrate the proper concavity. Our curve crosses the $y$ axis at $y=5$ and crosses the $x$ axis near $x=-0.424$. In Figure \ref{fig:sketch1}(c) we show a graph of $f$ drawn with a computer program, verifying the accuracy of our sketch.
 \end{enumerate}
 
@@ -89,7 +91,9 @@ Use Key Idea \ref{idea:sketch} to sketch $f(x) = 3x^3-10x^2+7x+5$.}
 %\mfigure{.57}{Adding concavity to the  sketch $f$ in Example \ref{ex_sketch1}.}{fig:sketch1b}{figures/figsketch1b}
 %\mfigure{.34}{A computer generated graph of $f$ in Example \ref{ex_sketch1}.}{fig:sketch1}{figures/figsketch1}
 }
-\vskip-\baselineskip}\\
+}
+
+\pagebreak
 
 \example{ex_sketch2}{Curve sketching}{
 Sketch $\ds f(x) = \frac{x^2-x-2}{x^2-x-6}$.}
@@ -111,6 +115,8 @@ Sketch $\ds f(x) = \frac{x^2-x-2}{x^2-x-6}$.}
 		\item		There is a horizontal asymptote of $y=1$, as $\ds \lim_{x\to -\infty}f(x) = 1$ and $\ds\lim_{x\to\infty}f(x) =1$.
 		
 		\item		We place the values $x=1/2$, $x=-2$ and $x=3$ on a number line as shown in Figure \ref{fig:sketchline2}. We mark in each interval whether $f$ is increasing or decreasing, concave up or down. We see that $f$ has a relative maximum at $x=1/2$; concavity changes only at the vertical asymptotes.
+
+\enlargethispage{2\baselineskip}
 		
 		\vskip \baselineskip
 %\noindent\ifthenelse{\boolean{longpage}}% in longpage form
@@ -145,7 +151,9 @@ Figure \ref{fig:sketch2}(c) shows a computer generated graph of $f$, which verif
 %\mfigure{.57}{Adding concavity to the  sketch $f$ in Example \ref{ex_sketch2}.}{fig:sketch2b}{figures/figsketch2b}
 %\mfigure{.34}{A computer generated graph of $f$ in Example \ref{ex_sketch2}.}{fig:sketch2}{figures/figsketch2}
 }% ends if/then/else
-\vskip-\baselineskip}\\
+}
+
+\pagebreak
 
 \example{ex_sketch3}{Curve sketching}{
 Sketch $\ds f(x) = \frac{5(x-2)(x+1)}{x^2+2x+4}.$}
