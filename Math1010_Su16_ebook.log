@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  28 JUN 2016 15:56
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  30 JUN 2016 13:25
 entering extended mode
 **Math1010_Su16_ebook.tex
 (Math1010_Su16_ebook.tex
@@ -1835,16 +1835,19 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 [1
 
 
-] (text_pre/copyright_pageI.tex
-File: text/by-nc.pdf Graphic file (type QTm)
- <use  "text/by-nc.pdf" >
-Underfull \hbox (badness 3838) in paragraph at lines 10--11
-[]\EU1/Calibri(0)/m/n/10 Licensed to the public under Creative Commons
+] (text_pre/copyright_page_Su16.tex
+File: figures/license.pdf Graphic file (type QTm)
+ <use  "figures/license.pdf" >
+Underfull \hbox (badness 1859) in paragraph at lines 10--11
+\EU1/Calibri(0)/m/n/10 Noncommercial-ShareAlike 3.0 Unported Public Li-
  []
 
-
-Underfull \hbox (badness 1701) in paragraph at lines 10--11
-\EU1/Calibri(0)/m/n/10 Attribution-Noncommercial 4.0 International Public
+File: text/by-nc.pdf Graphic file (type QTm)
+<use  "text/by-nc.pdf" >
+File: figures/license.pdf Graphic file (type QTm)
+ <use  "figures/license.pdf" >
+Underfull \hbox (badness 6675) in paragraph at lines 45--46
+[]\EU1/Calibri(0)/m/n/10 This work is licensed under the Creative Com-
  []
 
 ) [2
@@ -11318,10 +11321,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 254.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 55935 strings out of 428755
- 1203351 string characters out of 3164219
- 1507916 words of memory out of 3000000
- 55811 multiletter control sequences out of 15000+200000
+ 55937 strings out of 428755
+ 1203393 string characters out of 3164219
+ 1507941 words of memory out of 3000000
+ 55812 multiletter control sequences out of 15000+200000
  19704 words of font info for 150 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
  62i,30n,91p,10392b,1071s stack positions out of 5000i,500n,10000p,200000b,50000s
