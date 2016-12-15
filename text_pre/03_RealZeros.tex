@@ -14,7 +14,7 @@ Suppose $f(x) = a_{n} x^{n} + a_{n-1}x^{n-1} + \ldots + a_{1} x + a_{0}$ is a po
 \smallskip
 
 \mnote{.57}{
-The proof of Theorem \ref{CauchysBound} is not easily explained within the confines of this text.  This \href{http://titan.princeton.edu/papers/claire/hertz-etal-99.pdf}{\underline{paper}} contains the result and gives references to its proof. }
+The proof of Theorem \ref{CauchysBound} is not easily explained within the confines of this text.  Fortunately there is no shortage of material available online on this topic for anyone who is interested.}
 
 Like many of the results in this section, Cauchy's Bound is best understood with an example.
 
@@ -488,8 +488,8 @@ We now have two zeros of multiplicity one yielding factors $\left(x-\frac{\sqrt{
 You can see why the `no calculator' approach is not very popular these days.  It requires more computation and more theorems than the alternative. (This is apparently a bad thing.)  In general, no matter how many theorems you throw at a polynomial, it may well be impossible to find their zeros exactly.  The polynomial $f(x) = x^5-x-1$ is one such beast.   The Rational Zeros Test gives us $\pm 1$ as rational zeros to try but neither of these work since $f(1) = f(-1) = -1$.  If we try the substitution technique we used in Example \ref{usubex}, we find $f(x)$ has three terms, but the exponent on the $x^5$ isn't exactly twice the exponent on $x$.  How could we go about approximating the positive zero without resorting to the `Zero' command of a graphing calculator?  We use the \index{Bisection Method} \sword{Bisection Method}.  The first step in the Bisection Method is to find an interval on which $f$ changes sign.  We know $f(1) = -1$ and we find $f(2) = 29$.  By the Intermediate Value Theorem, we know that the zero of $f$ lies in the interval $[1,2]$.  Next, we `bisect' this interval and find the midpoint is $1.5$.  We have that $f(1.5)\approx 5.09$.  This means that our zero is between $1$ and $1.5$, since $f$ changes sign on this interval.  Now, we `bisect' the interval $[1,1.5]$ and find $f(1.25) \approx 0.80$, so now we have the zero between $1$ and $1.25$.  Bisecting $[1,1.25]$, we find $f(1.125) \approx -0.32$, which means the zero of $f$ is between $1.125$ and $1.25$.  We continue in this fashion until we have `sandwiched' the zero between two numbers which differ by no more than a desired accuracy. You can think of the Bisection Method as reversing the sign diagram process:  instead of finding the zeros and checking the sign of $f$ using test values, we are using test values to determine where the signs switch to find the zeros.  It is a slow and tedious, yet fool-proof, method for approximating a real zero.  
 
 \ifthenelse{\boolean{synthetic}}{
-\mnote{.7}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. See this \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{page}}, for example.}}
-{\mnote{.45}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. See this \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{page}}, for example.}}
+\mnote{.7}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. For further details, see the Wikipedia page on \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{Galois Theory}}.}}
+{\mnote{.45}{We don't use the word ``impossible'' lightly;  it can be proven that the zeros of some polynomials cannot be expressed using the usual algebraic symbols. For further details, see the Wikipedia page on \href{http://en.wikipedia.org/wiki/Galois_theory}{\underline{Galois Theory}}.}}
 
 Our next example reminds us of the role finding zeros plays in solving equations and inequalities.
 

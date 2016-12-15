@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  30 JUN 2016 15:15
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2015.11.18)  1 SEP 2016 16:13
 entering extended mode
 **Math1010text.tex
 (Math1010text.tex
@@ -13563,11 +13563,11 @@ File: figures/FurtherGraphics/AlgebraicFunctions-16.pdf Graphic file (type QTm)
 File: figures/FurtherGraphics/AlgebraicFunctions-17.pdf Graphic file (type QTm)
 
 
-<use  "figures/FurtherGraphics/AlgebraicFunctions-17.pdf" >
+<use  "figures/FurtherGraphics/AlgebraicFunctions-17.pdf" > [24]
 File: figures/FurtherGraphics/AlgebraicFunctions-20.pdf Graphic file (type QTm)
 
 
-<use  "figures/FurtherGraphics/AlgebraicFunctions-20.pdf" > [24]
+<use  "figures/FurtherGraphics/AlgebraicFunctions-20.pdf" >
 File: figures/FurtherGraphics/AlgebraicFunctions-21.pdf Graphic file (type QTm)
 
 
@@ -13619,10 +13619,10 @@ File: figures/ExpLogsGraphics/IntroExpLogs-23.pdf Graphic file (type QTm)
 <use  "figures/ExpLogsGraphics/IntroExpLogs-23.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-25.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-25.pdf" >
+<use  "figures/ExpLogsGraphics/IntroExpLogs-25.pdf" > [26]
 File: figures/ExpLogsGraphics/IntroExpLogs-27.pdf Graphic file (type QTm)
 
-<use  "figures/ExpLogsGraphics/IntroExpLogs-27.pdf" > [26]
+<use  "figures/ExpLogsGraphics/IntroExpLogs-27.pdf" >
 File: figures/ExpLogsGraphics/IntroExpLogs-29.pdf Graphic file (type QTm)
 
 <use  "figures/ExpLogsGraphics/IntroExpLogs-29.pdf" >
@@ -13851,12 +13851,16 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 255.
  (Math1010text.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 255.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 255.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
  ) 
 Here is how much of TeX's memory you used:
  58867 strings out of 428755
  1259997 string characters out of 3164219
- 1563913 words of memory out of 3000000
+ 1563901 words of memory out of 3000000
  57534 multiletter control sequences out of 15000+200000
  19712 words of font info for 151 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
