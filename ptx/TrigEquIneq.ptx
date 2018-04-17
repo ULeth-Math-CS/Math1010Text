@@ -1,0 +1,2730 @@
+
+
+<section xml:id="TrigEquIneq">
+  <title>Trigonometric Equations and Inequalities</title>
+  <introduction>
+    <p>
+      In <xref ref="TheUnitCircle">Sections</xref>,
+      <xref ref="CircularFunctions"></xref>
+      and most <xref ref="ArcTrig">recently</xref>,
+      we solved some basic equations involving the trigonometric functions.
+      Below we summarize the techniques we've employed thus far.
+      Note that we use the neutral letter <q><m>u</m></q>
+      as the argument of each circular function for generality.
+    </p>
+
+    <insight xml:id="trigeqnstrategy1">
+      <title>Strategies for Solving Basic Equations Involving Trigonometric Functions</title>
+      <ul>
+        <li>
+          <p>
+            To solve <m>\cos(u) = c</m> or
+            <m>\sin(u) = c</m> for <m>-1 \leq c \leq 1</m>,
+            first solve for <m>u</m> in the interval
+            <m>[0,2\pi)</m> and add integer multiples of the period <m>2\pi</m>.
+            If <m>c \lt -1</m> or of <m>c > 1</m>,
+            there are no real solutions.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            To solve <m>\sec(u) = c</m> or
+            <m>\csc(u) = c</m> for <m>c \leq -1</m> or <m>c \geq 1</m>,
+            convert to cosine or sine, respectively, and solve as above.
+            If <m>-1 \lt c \lt 1</m>, there are no real solutions.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            To solve <m>\tan(u) = c</m> for any real number <m>c</m>,
+            first solve for <m>u</m> in the interval
+            <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m> and add integer multiples of the period <m>\pi</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            To solve <m>\cot(u) = c</m> for <m>c \neq 0</m>,
+            convert to tangent and solve as above.
+            If <m>c = 0</m>, the solution to <m>\cot(u) = 0</m> is
+            <m>u = \frac{\pi}{2} + \pi k</m> for integers <m>k</m>.
+          </p>
+        </li>
+      </ul>
+    </insight>
+
+    <p>
+      Using the above guidelines,
+      we can comfortably solve <m>\sin(x) = \frac{1}{2}</m> and find the solution <m>x = \frac{\pi}{6} + 2\pi k</m> or
+      <m>x = \frac{5\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+      How do we solve something like <m>\sin(3x) = \frac{1}{2}</m>?
+      Since this equation has the <em>form</em> <m>\sin(u) = \frac{1}{2}</m>,
+      we know the solutions take the form <m>u= \frac{\pi}{6} + 2\pi k</m> or
+      <m>u = \frac{5\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+      Since the argument of sine here is <m>3x</m>,
+      we have <m>3x= \frac{\pi}{6} + 2\pi k</m> or
+      <m>3x = \frac{5\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+      To solve for <m>x</m>,
+      we divide both sides of these equations by <m>3</m>, (Don't forget to divide the <m>2\pi k</m> by <m>3</m> as well!) and obtain <m>x = \frac{\pi}{18} + \frac{2\pi}{3} k</m> or
+      <m>x = \frac{5\pi}{18} + \frac{2\pi}{3}k</m> for integers <m>k</m>.
+      This is the technique employed in the example below.
+    </p>
+
+    <example xml:id="TrigEqnEx1">
+      <title>Solving basic trigonometric equations</title>
+      <statement>
+        <p>
+          Solve the following equations and check your answers analytically.
+          List the solutions which lie in the interval
+          <m>[0,2\pi)</m> and verify them using a graphing utility.
+
+          <ol>
+            <li>
+              <p>
+                <m>\cos(2x) = -\frac{\sqrt{3}}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\csc\left(\frac{1}{3}x-\pi \right) = \sqrt{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\cot\left(3x \right) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sec^{2}(x) = 4</m>
+              </p>
+            </li>
+
+            <li xml:id="arctanin02pi">
+
+            <p>
+              <m>\tan\left(\frac{x}{2}\right) = -3</m>
+            </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sin(2x) = 0.87</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The solutions to <m>\cos(u) =-\frac{\sqrt{3}}{2}</m> are <m>u = \frac{5\pi}{6} + 2\pi k</m> or
+                <m>u = \frac{7\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+                Since the argument of cosine here is <m>2x</m>,
+                this means <m>2x = \frac{5\pi}{6} + 2\pi k</m> or
+                <m>2x = \frac{7\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+                Solving for <m>x</m> gives <m>x = \frac{5\pi}{12} + \pi k</m> or
+                <m>x = \frac{7\pi}{12} + \pi k</m> for integers <m>k</m>.
+                To check these answers analytically,
+                we substitute them into the original equation.
+                For any integer <m>k</m> we have
+                <md>
+                  <mrow>\cos\left( 2\left[\frac{5\pi}{12} + \pi k\right]\right) \amp   =   \cos\left(\frac{5\pi}{6} + 2\pi k\right)</mrow>
+                  <mrow>\amp  =     \cos\left(\frac{5\pi}{6}\right)  \tag{the period of cosine is $2\pi$}</mrow>
+                  <mrow>\amp  =   -\frac{\sqrt{3}}{2}</mrow>
+                </md>
+                Similarly,
+          we find <m>\cos\left( 2\left[\frac{7\pi}{12} + \pi k\right]\right) = \cos\left(\frac{7\pi}{6} + 2\pi k\right) = \cos\left(\frac{7\pi}{6}\right) = -\frac{\sqrt{3}}{2}</m>.
+                To determine which of our solutions lie in <m>[0,2\pi)</m>,
+                we substitute integer values for <m>k</m>.
+                The solutions we keep come from the values of <m>k = 0</m> and <m>k =1</m> and are 
+                <m>x = \frac{5\pi}{12}</m>,  <m>\frac{7\pi}{12}</m>,
+                <m>\frac{17\pi}{12}</m> and <m>\frac{19\pi}{12}</m>.
+                Using GeoGebra, we graph <m>y = \cos(2x)</m> and
+                <m>y = -\frac{\sqrt{3}}{2}</m> and examine where these two graphs intersect on <m>[0,2\pi)</m>.
+                We see in <xref ref="fig_trigeg1-1">Figure</xref>
+                that the <m>x</m>-coordinates of the intersection points correspond to the decimal representations of our exact answers.
+
+                <figure xml:id="fig_trigeg1-1">
+                  <caption>Solving <m>\cos(2x)=-\frac{\sqrt{3}}{2}</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq01.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since this equation has the form <m>\csc(u) = \sqrt{2}</m>,
+                we rewrite this as <m>\sin(u) = \frac{\sqrt{2}}{2}</m> and find <m>u = \frac{\pi}{4} + 2\pi k</m> or
+                <m>u = \frac{3\pi}{4} + 2\pi  k</m> for integers <m>k</m>.
+                Since the argument of cosecant here is <m>\left(\frac{1}{3}x-\pi \right)</m>,
+                <me>
+                  \frac{1}{3}x-\pi = \frac{\pi}{4} + 2\pi k  \text{ or }    \frac{1}{3}x-\pi = \frac{3\pi}{4} + 2\pi k
+                </me>
+                To solve <m>\frac{1}{3}x-\pi = \frac{\pi}{4} + 2\pi k</m>,
+                we first add <m>\pi</m> to both sides
+                <me>
+                  \frac{1}{3} x = \frac{\pi}{4} + 2\pi k + \pi
+                </me>
+                A common error is to treat the <q><m>2\pi k</m></q>
+                and <q><m>\pi</m></q> terms as <q>like</q>
+                terms and try to combine them when they are not. (Do you see why?)  We can, however,
+                combine the <q><m>\pi</m></q>
+                and <q><m>\frac{\pi}{4}</m></q> terms to get
+                <me>
+                  \frac{1}{3} x = \frac{5\pi}{4} + 2\pi k
+                </me>
+                We now finish by multiplying both sides by <m>3</m> to get
+                <me>
+                  x = 3 \left( \frac{5\pi}{4} + 2\pi k \right) = \frac{15 \pi}{4} + 6\pi k
+                </me>
+                Solving the other equation,
+                <m>\frac{1}{3}x-\pi = \frac{3\pi}{4} + 2\pi k</m> produces
+                <m>x = \frac{21\pi}{4} + 6 \pi k</m> for integers <m>k</m>.
+                To check the first family of answers, we substitute,
+                combine line terms, and simplify.
+                <md>
+                  <mrow>\csc\left(\frac{1}{3} \left[ \frac{15\pi}{4} + 6 \pi  k \right] - \pi   \right) \amp  =   \csc\left(\frac{5\pi}{4} + 2\pi k - \pi \right)</mrow>
+                  <mrow>\amp  =   \csc\left(\frac{\pi}{4} + 2\pi k\right)</mrow>
+                  <mrow>\amp  =   \csc\left(\frac{\pi}{4}\right)  \tag{the period of cosecant is $2\pi$}</mrow>
+                  <mrow>\amp  =  \sqrt{2}</mrow>
+                </md>
+                The family <m>x= \frac{21\pi}{4} + 6 \pi  k</m> checks similarly.
+                Despite having infinitely many solutions,
+                we find that <em>none</em>
+                of them lie in <m>[0,2\pi)</m>.
+                To verify this graphically,
+                plot <m>y=\csc\left(\frac{1}{3}x-\pi\right)</m> and
+                <m>y =\sqrt{2}</m> in GeoGebra and find that do not intersect at all over the interval <m>[0,2\pi)</m>:
+                see <xref ref="fig_trigeg1-2">Figure</xref>.
+
+                <figure xml:id="fig_trigeg1-2">
+                  <caption>Solving <m>\csc\left(\frac{1}{3}x-\pi\right)=\sqrt{2}</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq02.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>\cot(3x) = 0</m> has the form <m>\cot(u) = 0</m>,
+                we know <m>u = \frac{\pi}{2} + \pi k</m>, so, in this case,
+                <m>3x =  \frac{\pi}{2} + \pi k</m> for integers <m>k</m>.
+                Solving for <m>x</m> yields <m>x = \frac{\pi}{6} + \frac{\pi}{3} k</m>.
+                Checking our answers, we get
+                <md>
+                  <mrow>\cot\left(3\left[ \frac{\pi}{6} + \frac{\pi}{3} k\right]\right)  \amp   =  \cot\left(\frac{\pi}{2} + \pi k\right)</mrow>
+                  <mrow>\amp  =     \cot\left(\frac{\pi}{2}\right)  \tag{the period of cotangent is $\pi$}</mrow>
+                  <mrow>\amp  =  0</mrow>
+                </md>
+                As <m>k</m> runs through the integers, we obtain six answers,
+                corresponding to <m>k=0</m> through <m>k=5</m>,
+                which lie in <m>[0, 2\pi)</m>:
+                <m>x = \frac{\pi}{6}</m>,
+                <m>\frac{\pi}{2}</m>, <m>\frac{5\pi}{6}</m>,
+                <m>\frac{7\pi}{6}</m> ,
+          <m>\frac{3\pi}{2}</m> and  <m>\frac{11\pi}{6}</m>:
+                see <xref ref="fig_trigeg1-3">Figure</xref>.
+
+                <figure xml:id="fig_trigeg1-3">
+                  <caption>Solving <m>\cot(3x)=0</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq03.pdf"/>
+                </figure>
+
+                <aside>
+                  <p>
+                    <em>Note:</em>
+                    To confirm the solution for <xref ref="TrigEqnEx1">Example</xref>.3 graphically using GeoGebra,
+                    we simply plot the cotangent function.
+                    However,
+                we must be careful when using a graphing calculator.
+                    On many calculators,
+          there is no function button for cotangent.
+                    We choose to use the quotient identity <m>\cot(3x) = \dfrac{\cos(3x)}{\sin(3x)}</m>.
+                    Graphing <m>y = \dfrac{\cos(3x)}{\sin(3x)}</m> and <m>y = 0</m>
+                    (the <m>x</m>-axis),
+                    we see that the <m>x</m>-coordinates of the intersection points approximately match our solutions.
+                    The calculator-using reader is encouraged to see what happens if we had chosen the reciprocal identity <m>\cot(3x) = \dfrac{1}{\tan(3x)}</m> instead.
+                    The graph on the calculator
+                <em>appears</em> identical,
+                    but what happens when you try to find the intersection points?
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The complication in solving an equation like
+                <m>\sec^{2}(x) = 4</m> comes not from the argument of secant,
+                which is just <m>x</m>, but rather,
+                the fact the secant is being squared.
+                To get this equation to look like one of the forms listed on <xref ref="trigeqnstrategy1">page</xref>,
+                we extract square roots to get <m>\sec(x) = \pm 2</m>.
+                Converting to cosines,
+          we have  <m>\cos(x) = \pm \frac{1}{2}</m>.
+                For <m>\cos(x) = \frac{1}{2}</m>,
+                we get <m>x = \frac{\pi}{3} + 2\pi k</m> or
+                <m>x = \frac{5\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                For <m>\cos(x) = -\frac{1}{2}</m>,
+                we get <m>x = \frac{2\pi}{3} + 2\pi k</m> or
+                <m>x = \frac{4\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                If we take a step back and think of these families of solutions geometrically,
+                we see we are finding the measures of all angles with a reference angle of <m>\frac{\pi}{3}</m>.
+                As a result,
+                these solutions can be combined and we may write our solutions as <m>x = \frac{\pi}{3} + \pi k</m> and
+                <m>x = \frac{2\pi}{3} + \pi k</m> for integers <m>k</m>.
+                To check the first family of solutions, we note that,
+                depending on the integer <m>k</m>,
+                <m>\sec\left(\frac{\pi}{3} + \pi k\right)</m> doesn't always equal <m>\sec\left(\frac{\pi}{3}\right)</m>.
+                However, it is true that for all integers <m>k</m>,
+                <m>\sec\left(\frac{\pi}{3} + \pi k\right) = \pm \sec\left(\frac{\pi}{3}\right) = \pm 2</m>.  (Can you show this?)  As a result,
+                <md>
+                  <mrow>\sec^{2}\left(\frac{\pi}{3} + \pi k\right)  \amp   =   \left( \pm \sec\left(\frac{\pi}{3}\right)\right)^2</mrow>
+                  <mrow>\amp  =  (\pm 2)^2</mrow>
+                  <mrow>\amp  =  4</mrow>
+                </md>
+                The same holds for the family <m>x =\frac{2\pi}{3} + \pi k</m>.
+                The solutions which lie in
+                <m>[0,2\pi)</m> come from the values <m>k = 0</m> and <m>k=1</m>,
+                namely <m>x = \frac{\pi}{3}</m>,
+                <m>\frac{2\pi}{3}</m>,
+          <m>\frac{4\pi}{3}</m> and <m>\frac{5\pi}{3}</m>.
+                To confirm graphically,
+          we simply plot <m>f(x)=\sec^2(x)</m> in GeoGebra:
+                see <xref ref="fig_trigeg1-4">Figure</xref>. (Again,
+                if you're using a calculator,
+                you'll probably have to rely on a reciprocal identity.) The <m>x</m>-coordinates of the intersection points of 
+                <m>y = \frac{1}{(\cos(x))^2}</m> and <m>y = 4</m> verify our answers.
+
+                <figure xml:id="fig_trigeg1-4">
+                  <caption>Solving <m>\sec^2(x)=4</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq04.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The equation  <m>\tan\left(\frac{x}{2}\right) = -3</m> has the form <m>\tan(u) = -3</m>,
+                whose solution is <m>u = \arctan(-3) + \pi k</m>.
+                Hence, <m>\frac{x}{2} = \arctan(-3) + \pi k</m>,
+                so  <m>x = 2\arctan(-3) + 2\pi k</m> for integers <m>k</m>.
+                To check, we note
+                <md>
+                  <mrow>\tan\left(\frac{2\arctan(-3) + 2\pi k}{2}\right)  \amp   =  \tan\left( \arctan(-3) + \pi k \right)</mrow>
+                  <mrow>\amp  =   \tan\left(\arctan(-3) \right)  \tag{the period of tangent is $\pi$}</mrow>
+                  <mrow>\amp  =   -3  \tag{See <xref ref="arctangentcotangentfunctionprops">Theorem</xref>}</mrow>
+                </md>
+                To determine which of our answers lie in the interval <m>[0,2\pi)</m>,
+                we first need to get an idea of the value of <m>2\arctan(-3)</m>.
+                While we could easily find an approximation using a calculator,
+                we proceed analytically.
+                Since <m>-3 \lt  0</m>,
+                it follows that <m>-\frac{\pi}{2} \lt  \arctan(-3) \lt  0</m>.
+                Multiplying through by <m>2</m> gives <m>-\pi \lt  2\arctan(-3) \lt  0</m>.
+                We are now in a position to argue which of the solutions
+                <m>x = 2\arctan(-3) + 2\pi k</m> lie in <m>[0,2\pi)</m>.
+                For <m>k = 0</m>, we get <m>x = 2\arctan(-3) \lt  0</m>,
+                so we discard this answer and all answers
+                <m>x = 2\arctan(-3) + 2\pi k</m> where <m>k \lt  0</m>.
+                Next,
+          we turn our attention to <m>k = 1</m> and get <m>x = 2\arctan(-3) + 2\pi</m>.
+                Starting with the inequality <m>-\pi \lt  2\arctan(-3) \lt  0</m>,
+                we add <m>2\pi</m>  and get <m>\pi \lt  2\arctan(-3) +2\pi \lt  2\pi</m>.
+                This means <m>x = 2\arctan(-3) + 2\pi</m> lies in <m>[0,2\pi)</m>.
+                Advancing <m>k</m> to <m>2</m> produces <m>x = 2\arctan(-3) + 4\pi</m>.
+                Once again,
+                we get from <m>-\pi \lt  2\arctan(-3) \lt  0</m> that <m>3\pi \lt  2\arctan(-3) + 4\pi \lt  4\pi</m>.
+                Since this is outside the interval <m>[0,2\pi)</m>,
+                we discard <m>x = 2\arctan(-3) + 4\pi</m> and all solutions of the form <m>x = 2\arctan(-3) + 2\pi k</m> for <m>k > 2</m>.
+                Graphically, we see in <xref ref="fig_trigeg1-5">Figure</xref>
+                that <m>y = \tan\left(\frac{x}{2}\right)</m> and <m>y = -3</m> intersect only once on
+                <m>[0,2\pi)</m> at <m>x = 2\arctan(-3) + 2\pi\approx 3.7851</m>.
+
+                <figure xml:id="fig_trigeg1-5">
+                  <caption>Solving <m>\tan(\frac{x}{2})=-3</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq05.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>\sin(2x) = 0.87</m>,
+                we first note that it has the form <m>\sin(u) = 0.87</m>,
+                which has the family of solutions <m>u = \arcsin(0.87) + 2\pi k</m> or
+                <m>u =\pi -  \arcsin(0.87) + 2\pi k</m> for integers <m>k</m>.
+                Since the argument of sine here is <m>2x</m>,
+                we get <m>2x = \arcsin(0.87) + 2\pi k</m> or
+                <m>2x =\pi -  \arcsin(0.87) + 2\pi k</m> which gives <m>x = \frac{1}{2} \arcsin(0.87) + \pi k</m> or
+                <m>x =\frac{\pi}{2} -  \frac{1}{2}\arcsin(0.87) + \pi k</m> for integers <m>k</m>.
+                To check,
+                <md>
+                  <mrow>\sin\left(2\left[\frac{1}{2} \arcsin(0.87) + \pi k\right]\right)  \amp   =  \sin\left(\arcsin(0.87) + 2\pi k\right)</mrow>
+                  <mrow>\amp  =   \sin\left(\arcsin(0.87)\right)  \tag{the period of sine is $2\pi$}</mrow>
+                  <mrow>\amp  =   0.87 \tag{See <xref ref="arccosinesinefunctionprops">Theorem</xref>}</mrow>
+                </md>
+                For the family <m>x =\frac{\pi}{2} -  \frac{1}{2}\arcsin(0.87) + \pi k</m> , we get
+                <md>
+                  <mrow>\sin\left(2\left[\frac{\pi}{2} - \frac{1}{2} \arcsin(0.87) + \pi k\right]\right)  \amp   =  \sin\left(\pi - \arcsin(0.87) + 2\pi k\right)</mrow>
+                  <mrow>\amp  =   \sin\left(\pi - \arcsin(0.87)\right)  \tag{the period of sine is $2\pi$}</mrow>
+                  <mrow>\amp  =   \sin\left(\arcsin(0.87)\right)  \tag{$\sin(\pi - t) = \sin(t)$}</mrow>
+                  <mrow>\amp  =  0.87 \tag{See <xref ref="arccosinesinefunctionprops">Theorem</xref>}</mrow>
+                </md>
+                To determine which of these solutions lie in <m>[0,2\pi)</m>,
+                we first need to get an idea of the value of <m>x=\frac{1}{2} \arcsin(0.87)</m>.
+                Once again, we could use the calculator,
+                but we adopt an analytic route here.  
+
+                By definition,
+                <m>0 \lt  \arcsin(0.87) \lt  \frac{\pi}{2}</m> so that multiplying through by
+                <m>\frac{1}{2}</m> gives us <m>0 \lt  \frac{1}{2} \arcsin(0.87) \lt  \frac{\pi}{4}</m>.
+                Starting with the family of solutions <m>x = \frac{1}{2} \arcsin(0.87) + \pi k</m>,
+                we use the same kind of arguments as in our solution to <xref ref="arctanin02pi">number</xref>
+                above and find only the solutions corresponding to <m>k =0</m> and <m>k=1</m> lie in <m>[0,2\pi)</m>:
+                <m>x = \frac{1}{2} \arcsin(0.87)</m> and <m>x = \frac{1}{2} \arcsin(0.87) + \pi</m>.
+                Next, we move to the family
+                <m>x =\frac{\pi}{2} -  \frac{1}{2}\arcsin(0.87) + \pi k</m> for integers <m>k</m>.
+                Here,
+          we need to get a better estimate of <m>\frac{\pi}{2} - \frac{1}{2} \arcsin(0.87)</m>.
+                From the inequality <m>0 \lt  \frac{1}{2}\arcsin(0.87) \lt  \frac{\pi}{4}</m>,
+                we first multiply through by <m>-1</m> and then add
+                <m>\frac{\pi}{2}</m> to get <m>\frac{\pi}{2} > \frac{\pi}{2} -\frac{1}{2} \arcsin(0.87) >  \frac{\pi}{4}</m>,
+                or <m>\frac{\pi}{4} \lt  \frac{\pi}{2} -\frac{1}{2} \arcsin(0.87) \lt  \frac{\pi}{2}</m>.
+                Proceeding with the usual arguments,
+                we find the only solutions which lie in
+                <m>[0,2\pi)</m> correspond to <m>k = 0</m> and <m>k=1</m>,
+                namely <m>x =\frac{\pi}{2} -  \frac{1}{2}\arcsin(0.87)</m> and  <m>x = \frac{3\pi}{2} - \frac{1}{2}\arcsin(0.87)</m>.
+                All told,
+          we have found four solutions to <m>\sin(2x) = 0.87</m> in <m>[0,2\pi)</m>:
+                <m>x =\frac{1}{2} \arcsin(0.87)</m>,
+                <m>x=\frac{1}{2} \arcsin(0.87) + \pi</m>,
+                <m>x =\frac{\pi}{2} -  \frac{1}{2}\arcsin(0.87)</m> and  <m>x = \frac{3\pi}{2} - \frac{1}{2}\arcsin(0.87)</m>.
+                By graphing <m>y = \sin(2x)</m> and
+                <m>y = 0.87</m> in <xref ref="fig_trigeg1-6">Figure</xref>,
+                we confirm our results.
+
+                <figure xml:id="fig_trigeg1-6">
+                  <caption>Solving <m>\sin(2x)=0.87</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq06.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Each of the problems in <xref ref="TrigEqnEx1">Example</xref>
+      featured one trigonometric function.
+      If an equation involves two different trigonometric functions or if the equation contains the same trigonometric function but with different arguments,
+      we will need to use identities and Algebra to reduce the equation to the same form as those given on <xref ref="trigeqnstrategy1">page</xref>.
+    </p>
+
+    <example xml:id="TrigEqIdEx1">
+      <title>Solving trigonometric equations using identities</title>
+      <statement>
+        <p>
+          Solve the following equations and list the solutions which lie in the interval <m>[0,2\pi)</m>.
+          Verify your solutions on <m>[0,2\pi)</m> graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>3\sin^{3}(x) = \sin^{2}(x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sec^{2}(x) = \tan(x) + 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\cos(2x) = 3\cos(x) - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\cos(3x) = 2- \cos(x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\cos(3x) = \cos(5x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sin(2x) =\sqrt{3} \cos(x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sin(x)\cos\left(\frac{x}{2}\right) + \cos(x)\sin\left(\frac{x}{2}\right) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\cos(x) - \sqrt{3} \sin(x) = 2</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We resist the temptation to divide both sides of <m>3\sin^{3}(x) = \sin^{2}(x)</m> by
+                <m>\sin^{2}(x)</m> (What goes wrong if you do?) and instead gather all of the terms to one side of the equation and factor.
+                <md>
+                  <mrow>3\sin^{3}(x) \amp  =   \sin^{2}(x)</mrow>
+                  <mrow>3\sin^{3}(x) -  \sin^{2}(x) \amp  =  0</mrow>
+                  <mrow>\sin^{2}(x) (3 \sin(x) - 1) \amp  =  0  \tag{Factor out $\sin^{2}(x)$ from both terms.}</mrow>
+                </md>
+                We get <m>\sin^{2}(x) = 0</m> or <m>3\sin(x) - 1 = 0</m>.
+                Solving for <m>\sin(x)</m>,
+                we find  <m>\sin(x) = 0</m> or <m>\sin(x) = \frac{1}{3}</m>.
+                The solution to the first equation is <m>x = \pi k</m>,
+                with <m>x = 0</m> and <m>x = \pi</m> being the two solutions which lie in <m>[0,2\pi)</m>.
+                To solve <m>\sin(x) = \frac{1}{3}</m>,
+                we use the arcsine function to get <m>x = \arcsin\left(\frac{1}{3}\right) + 2\pi k</m> or
+                <m>x = \pi - \arcsin\left(\frac{1}{3}\right) + 2\pi k</m> for integers <m>k</m>.
+                We find the two solutions here which lie in <m>[0,2\pi)</m> to be
+                <m>x = \arcsin\left(\frac{1}{3}\right)</m> and <m>x = \pi - \arcsin\left(\frac{1}{3}\right)</m>.
+                To check graphically, we plot <m>y = 3(\sin(x))^3</m> and
+                <m>y = (\sin(x))^2</m> and find the  <m>x</m>-coordinates of the intersection points of these two curves in <xref ref="fig_trigeg2-1a">Figure</xref>.
+                Some extra zooming is required near <m>x=0</m> and <m>x=\pi</m> to verify that these two curves do in fact intersect four times:
+                see <xref ref="fig_trigeg2-1b">Figure</xref>. (Note that we are <em>not</em>
+                counting the point <m>(2\pi,0)</m> in our solution set since
+                <m>x = 2\pi</m> is not in the interval <m>[0,2\pi)</m>.
+                In the forthcoming solutions,
+                remember that while 
+          <m>x = 2\pi</m> may be a solution to the equation,
+                it isn't counted among the solutions in <m>[0,2\pi)</m>.)
+
+                <figure xml:id="fig_trigeg2-1a">
+                  <caption>Solving <m>3\sin^3(x)=\sin^2(x)</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq07.pdf"/>
+                </figure>
+
+                <figure xml:id="fig_trigeg2-1b">
+                  <caption>Zooming in on the first two solutions for <xref ref="TrigEqIdEx1">Example</xref>.1</caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq08.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Analysis of  <m>\sec^{2}(x) = \tan(x) + 3</m> reveals two different trigonometric functions,
+                so an identity is in order.
+                Since <m>\sec^{2}(x) = 1 + \tan^{2}(x)</m>, we get
+                <md>
+                  <mrow>\sec^{2}(x) \amp   =  \tan(x) + 3</mrow>
+                  <mrow>1 + \tan^{2}(x) \amp  =  \tan(x) + 3 \tag{Since $\sec^{2}(x) = 1 + \tan^{2}(x)$.}</mrow>
+                  <mrow>\tan^{2}(x) - \tan(x) -2 \amp  =  0</mrow>
+                  <mrow>u^2 - u - 2 \amp  =  0  \tag{Let $u = \tan(x)$.}</mrow>
+                  <mrow>(u + 1)(u - 2) \amp  = 0</mrow>
+                </md>
+                This gives <m>u = -1</m> or <m>u = 2</m>.
+                Since <m>u = \tan(x)</m>, we have
+                <m>\tan(x) = -1</m> or <m>\tan(x) = 2</m>.
+                From <m>\tan(x) = -1</m>,
+                we get <m>x = -\frac{\pi}{4} + \pi k</m> for integers <m>k</m>.
+                To solve <m>\tan(x) = 2</m>,
+                we employ the arctangent function and get
+                <m>x = \arctan(2) + \pi k</m> for integers <m>k</m>.
+                From the first set of solutions,
+                we get <m>x = \frac{3\pi}{4}</m> and
+                <m>x = \frac{7\pi}{4}</m> as our answers which lie in <m>[0,2\pi)</m>.
+                Using the same sort of argument we saw in <xref ref="TrigEqnEx1">Example</xref>,
+                we get  <m>x=\arctan(2)</m> and
+                <m>x = \pi + \arctan(2)</m> as answers from our second set of solutions which lie in <m>[0,2\pi)</m>.
+                We confirm our answers by plotting
+                <m>y=\sec^2(x)</m> and <m>y=\tan(x)+3</m> in GeoGebra;
+                see <xref ref="fig_trigeg2-2">Figure</xref>. (Again,
+                if you are using a graphing calculator rather than software,
+                you may need to use a reciprocal identity and rewrite the secant as a cosine and graph  <m>y = \frac{1}{(\cos(x))^2}</m> and
+                <m>y = \tan(x) + 3</m> to find the <m>x</m>-values of the points where they intersect.)
+
+                <figure xml:id="fig_trigeg2-2">
+                  <caption>Solving <m>\sec^2(x)=\tan(x)+3</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq09.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In the equation <m>\cos(2x) = 3\cos(x) - 2</m>,
+                we have the same circular function,
+                namely cosine, on both sides but the arguments differ.
+                Using the identity <m>\cos(2x) = 2\cos^{2}(x) - 1</m>,
+                we obtain a <q>quadratic in disguise</q>
+                and proceed as we have done in the past.
+                <md>
+                  <mrow>\cos(2x) \amp  =  3\cos(x) - 2</mrow>
+                  <mrow>2\cos^{2}(x) -1 \amp  =  3\cos(x) -2  \tag{Since $\cos(2x) = 2\cos^{2}(x) -1$.}</mrow>
+                  <mrow>2\cos^{2}(x) - 3\cos(x) +1 \amp  =  0</mrow>
+                  <mrow>2 u^2 - 3 u + 1 \amp  =  0  \tag{Let $u = \cos(x)$.}</mrow>
+                  <mrow>(2u - 1)(u - 1) \amp  =  0</mrow>
+                </md>
+                This gives <m>u = \frac{1}{2}</m> or <m>u = 1</m>.
+                Since <m>u = \cos(x)</m>,
+                we get <m>\cos(x) = \frac{1}{2}</m> or <m>\cos(x) = 1</m>.
+                Solving  <m>\cos(x) = \frac{1}{2}</m>,
+                we get <m>x = \frac{\pi}{3} + 2\pi k</m> or
+                <m>x = \frac{5\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                From <m>\cos(x) = 1</m>, we get
+                <m>x = 2\pi k</m> for integers <m>k</m>.
+                The answers which lie in <m>[0,2\pi)</m> are <m>x =0</m>,
+                <m>\frac{\pi}{3}</m>, and <m>\frac{5\pi}{3}</m>.
+                Graphing <m>y = \cos(2x)</m> and
+                <m>y = 3\cos(x) - 2</m> in <xref ref="fig_trigeg2-3">Figure</xref>, we find,
+                after a little extra effort,
+                that the curves intersect in three places on <m>[0,2\pi)</m>,
+                and  the <m>x</m>-coordinates of these points confirm our results.
+
+                <figure xml:id="fig_trigeg2-3">
+                  <caption>Solving <m>\cos(2x)=3\cos(x)-2</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq10.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>\cos(3x) = 2- \cos(x)</m>,
+                we use the same technique as in the previous problem.
+                From <xref ref="doubleangleex">Example</xref>,
+                <xref ref="cosinepolynomial">number</xref>,
+                we know that <m>\cos(3x) = 4\cos^{3}(x) - 3\cos(x)</m>.
+                This transforms the equation into a polynomial in terms of <m>\cos(x)</m>.
+                <md>
+                  <mrow>\cos(3x) \amp  = 2- \cos(x)</mrow>
+                  <mrow>4\cos^{3}(x) - 3\cos(x) \amp  =  2- \cos(x)</mrow>
+                  <mrow>2\cos^{3}(x) - 2\cos(x) -2  \amp  =  0</mrow>
+                  <mrow>4 u^3 - 2 u -2  \amp  =  0  \tag{Let $u = \cos(x)$.}</mrow>
+                </md>
+                To solve <m>4u^3-2u-2=0</m>,
+                we need the techniques in <xref ref="Polynomials">Chapter</xref>
+                to factor <m>4u^3-2u-2</m> into <m>(u-1)\left(4u^2+4u+2\right)</m>.
+                We get either <m>u-1 = 0</m> or  <m>4u^2+2u+2=0</m>,
+                and since the discriminant of the latter is negative,
+                the only real solution to <m>4u^3-2u-2=0</m> is <m>u = 1</m>.
+                Since <m>u = \cos(x)</m>,
+                we get <m>\cos(x) = 1</m>, so
+                <m>x = 2\pi k</m> for integers <m>k</m>.
+                The only solution which lies in <m>[0,2\pi)</m> is <m>x = 0</m>.
+                Graphing <m>y = \cos(3x)</m> and
+                <m>y = 2- \cos(x)</m> on the same set of axes over
+                <m>[0,2\pi)</m> shows that the graphs intersect at  <m>(0,1)</m>,
+                as required:
+                see <xref ref="fig_trigeg2-4">Figure</xref>.
+
+                <figure xml:id="fig_trigeg2-4">
+                  <caption>Solving <m>\cos(3x)=2-\cos(x)</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq11.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                While we could approach
+          <m>\cos(3x) = \cos(5x)</m> in the same manner as we did the previous two problems,
+                we choose instead to showcase the utility of the Sum to Product Identities.
+                From <m>\cos(3x) = \cos(5x)</m>,
+                we get <m>\cos(5x) - \cos(3x) = 0</m>,
+                and it is the presence of <m>0</m> on the right hand side that indicates a switch to a product would be a good move. (As always,
+                experience is the greatest teacher here!) Using <xref ref="sumtoproduct">Theorem</xref>,
+                we have that <m>\cos(5x) - \cos(3x) = - 2 \sin\left( \frac{5x + 3x}{2}\right)\sin\left( \frac{5x - 3x}{2}\right) = -2 \sin(4x)\sin(x)</m>.
+                Hence, the equation
+          <m>\cos(5x) = \cos(3x)</m> is equivalent to <m>-2 \sin(4x) \sin(x) = 0</m>.
+                From this, we get <m>\sin(4x) = 0</m> or <m>\sin(x)</m> = 0.
+                Solving <m>\sin(4x) = 0</m> gives
+                <m>x = \frac{\pi}{4} k</m> for integers <m>k</m>,
+                and the solution to <m>\sin(x) = 0</m> is
+                <m>x = \pi k</m> for integers <m>k</m>.
+                The second set of solutions is contained in the first set of solutions,
+                (when in doubt, write it out!)
+                so our final solution to <m>\cos(5x) = \cos(3x)</m> is
+                <m>x = \frac{\pi}{4} k</m> for integers <m>k</m>.
+                There are eight of these answers which lie in <m>[0,2\pi)</m>:
+                <m>x = 0</m>, <m>\frac{\pi}{4}</m>,
+                <m>\frac{\pi}{2}</m>, <m>\frac{3\pi}{4}</m>, <m>\pi</m>,
+                <m>\frac{5\pi}{4}</m>,
+          <m>\frac{3\pi}{2}</m> and <m>\frac{7\pi}{4}</m>.
+                Our plot of the graphs of <m>y = \cos(3x)</m> and
+                <m>y = \cos(5x)</m> in <xref ref="fig_trigeg2-5">Figure</xref>
+                bears this out. <figure xml:id="fig_trigeg2-5"> <caption>Solving
+                <m>\cos(3x)=\cos(5x)</m></caption> <img src="figures/IntroTrigGraphics/TrigEquIneq12.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In examining the equation   <m>\sin(2x) =\sqrt{3} \cos(x)</m>,
+                not only do we have different circular functions involved,
+                namely sine and cosine,
+                we also have different arguments to contend with,
+                namely <m>2x</m> and <m>x</m>.
+                Using the identity <m>\sin(2x) = 2 \sin(x) \cos(x)</m> makes all of the arguments the same and we proceed as we would solving any nonlinear equation <mdash /> gather all of the nonzero terms on one side of the equation and factor.
+                <md>
+                  <mrow>\sin(2x) \amp  =  \sqrt{3} \cos(x)</mrow>
+                  <mrow>2 \sin(x) \cos(x) \amp  =  \sqrt{3} \cos(x)   \tag{($\sin(2x) = 2\sin(x) \cos(x)$)}</mrow>
+                  <mrow>2\sin(x) \cos(x) - \sqrt{3} \cos(x) \amp  =  0</mrow>
+                  <mrow>\cos(x) (2 \sin(x) - \sqrt{3}) \amp  =  0</mrow>
+                </md>
+                from which we get <m>\cos(x) = 0</m> or <m>\sin(x) = \frac{\sqrt{3}}{2}</m>.
+                From <m>\cos(x) = 0</m>,
+                we obtain <m>x = \frac{\pi}{2} + \pi k</m> for integers <m>k</m>.
+                From <m>\sin(x) = \frac{\sqrt{3}}{2}</m>,
+                we get <m>x = \frac{\pi}{3} + 2\pi k</m> or
+                <m>x = \frac{2\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                The answers which lie in
+          <m>[0,2\pi)</m> are <m>x = \frac{\pi}{2}</m>,
+                <m>\frac{3\pi}{2}</m>,
+          <m>\frac{\pi}{3}</m> and <m>\frac{2\pi}{3}</m>.
+                We graph <m>y = \sin(2x)</m> and
+                <m>y = \sqrt{3} \cos(x)</m> in <xref ref="fig_trigeg2-6">Figure</xref> to  verify our answers.
+
+                <figure xml:id="fig_trigeg2-6">
+                  <caption>Solving <m>\sin(2x)-\sqrt{3}\cos(x)</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq13.pdf"/>
+                </figure>
+
+                <figure xml:id="fig_trigeg2-7">
+                  <caption>Solving <m>\sin(x)\cos(\frac{x}{2})+\cos(x)\sin(\frac{x}{2})=1</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq14.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Unlike the previous problem,
+                there seems to be no quick way to get the circular functions or their arguments to match in the equation <m>\sin(x)\cos\left(\frac{x}{2}\right) + \cos(x)\sin\left(\frac{x}{2}\right) = 1</m>.
+                If we stare at it long enough, however,
+                we realize that the left hand side is the expanded form of the sum formula for <m>\sin\left(x + \frac{x}{2}\right)</m>.
+                Hence,
+          our original equation is equivalent to <m>\sin\left(\frac{3}{2} x\right) = 1</m>.
+                Solving, we find <m>x = \frac{\pi}{3} + \frac{4\pi}{3} k</m> for integers <m>k</m>.
+                Two of these solutions lie in <m>[0,2\pi)</m>:
+                <m>x = \frac{\pi}{3}</m> and <m>x = \frac{5\pi}{3}</m>.
+                Graphing <m>y = \sin(x)\cos\left(\frac{x}{2}\right) + \cos(x)\sin\left(\frac{x}{2}\right)</m> and <m>y = 1</m> in <xref ref="fig_trigeg2-7">Figure</xref> validates our solutions.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                With the absence of double angles or squares,
+                there doesn't seem to be much we can do.
+                However,
+          since the arguments of the cosine and sine are the same,
+                we can rewrite the left hand side of this equation as a sinusoid. (We are essentially <q>undoing</q>
+                the sum / difference formula for cosine or sine,
+                depending on which form we use,
+                so this problem is actually closely related to the previous one!) To fit
+                <m>f(x) = \cos(x) - \sqrt{3} \sin(x)</m> to the form <m>A\sin(\omega t + \phi) + B</m>,
+                we use what we learned in <xref ref="expandedsinusoidex1">Example</xref>
+                and find <m>A = 2</m>, <m>B = 0</m>,
+                <m>\omega = 1</m> and <m>\phi = \frac{5\pi}{6}</m>.
+                Hence, we can rewrite the equation
+                <m>\cos(x) - \sqrt{3} \sin(x) = 2</m> as <m>2 \sin\left(x + \frac{5\pi}{6}\right) = 2</m>,
+                or <m>\sin\left(x + \frac{5\pi}{6}\right) = 1</m>.
+                Solving the latter, we get
+                <m>x = - \frac{\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                Only one of these solutions,
+                <m>x = \frac{5\pi}{3}</m>,
+                which corresponds to <m>k=1</m>, lies in <m>[0,2\pi)</m>.
+                Geometrically, we see in <xref ref="fig_trigeg2-8">Figure</xref>
+                that <m>y = \cos(x) - \sqrt{3} \sin(x)</m> and <m>y = 2</m> intersect just once,
+                supporting our answer. <figure xml:id="fig_trigeg2-8"> <caption>Solving
+                <m>\cos(x)-\sqrt{3}\sin(x)=2</m></caption> <img src="figures/IntroTrigGraphics/TrigEquIneq15.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Unfortunately there is no systematic approach to solving trigonometric equations.
+      When it comes to solving equations involving the trigonometric functions,
+      it helps to just try something.
+    </p>
+
+    <p>
+      Next, we focus on solving inequalities involving the trigonometric functions.
+      Since these functions are continuous on their domains,
+      we may use the sign diagram technique we've used in the past to solve the inequalities.
+    </p>
+
+    <aside>
+      <p>
+        See <xref ref="firstsigndiagram">page</xref>,
+        <xref ref="polygraphex">Example</xref>,
+        <xref ref="rationalsigndiagram">page</xref>,
+        <xref ref="algebraicsigndiagram">page</xref>,
+        <xref ref="expineq">Example</xref>
+        and <xref ref="logineq">Example</xref>
+        for discussion of the use of sign diagrams in solving inequalities.
+      </p>
+    </aside>
+    <example xml:id="TrigIneqEx1">
+      <title>Solving trigonometric inequalities</title>
+      <statement>
+        <p>
+          Solve the following inequalities on <m>[0,2\pi)</m>.
+          Express your answers using interval notation and verify your answers graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>2\sin(x) \leq 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\sin(2x) > \cos(x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\tan(x) \geq 3</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We begin solving <m>2\sin(x) \leq 1</m> by collecting all of the terms on one side of the equation and zero on the other to get <m>2\sin(x) - 1 \leq 0</m>.
+                Next,
+          we let <m>f(x) = 2\sin(x) - 1</m> and note that our original inequality is equivalent to solving <m>f(x) \leq 0</m>.
+                We now look to see where,
+                if ever, <m>f</m> is undefined and where <m>f(x) = 0</m>.
+                Since the domain of <m>f</m> is all real numbers,
+                we can immediately set about finding the zeros of <m>f</m>.
+                Solving <m>f(x) = 0</m>,
+                we have <m>2\sin(x) - 1=0</m> or <m>\sin(x) = \frac{1}{2}</m>.
+                The solutions here are <m>x = \frac{\pi}{6} + 2\pi k</m> and
+                <m>x = \frac{5\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+                Since we are restricting our attention to <m>[0,2\pi)</m>,
+                only <m>x = \frac{\pi}{6}</m> and
+                <m>x = \frac{5\pi}{6}</m> are of concern to us.
+                Next, we choose test values in
+                <m>[0,2\pi)</m> other than the zeros and determine if <m>f</m> is positive or negative there.
+                For <m>x = 0</m> we have <m>f(0) = -1</m>,
+                for <m>x = \frac{\pi}{2}</m> we get
+                <m>f\left(\frac{\pi}{2}\right) = 1</m> and for <m>x = \pi</m> we get <m>f(\pi) = -1</m>.
+                Since our original inequality is equivalent to <m>f(x) \leq 0</m>,
+                we are looking for where the function is negative <m>(-)</m> or <m>0</m>,
+                and we get the intervals <m>\left[0, \frac{\pi}{6}\right] \cup \left[\frac{5\pi}{6}, 2\pi \right)</m>.
+                We can confirm our answer graphically by seeing where the graph of
+                <m>y = 2\sin(x)</m> crosses or is below the graph of <m>y = 1</m>:
+                see <xref ref="fig_trigeg3-1">Figure</xref>. <table xml:id="fig_trigeg3-1"> <caption>Solving
+                <m>2\sin(x)\leq 1</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-1.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq16.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We first rewrite <m>\sin(2x) > \cos(x)</m> as
+                <m>\sin(2x) - \cos(x) > 0</m> and let <m>f(x) = \sin(2x) - \cos(x)</m>.
+                Our original inequality is thus equivalent to <m>f(x) > 0</m>.
+                The domain of <m>f</m> is all real numbers,
+                so we can advance to finding the zeros of <m>f</m>.
+                Setting <m>f(x) = 0</m> yields <m>\sin(2x) - \cos(x) = 0</m>, which,
+                by way of the double angle identity for sine,
+                becomes <m>2\sin(x)\cos(x) - \cos(x) = 0</m> or <m>\cos(x) (2\sin(x) - 1) = 0</m>.
+                From <m>\cos(x) = 0</m>,
+                we get <m>x = \frac{\pi}{2} + \pi k</m> for integers <m>k</m> of which only <m>x = \frac{\pi}{2}</m> and
+                <m>x = \frac{3\pi}{2}</m> lie in <m>[0,2\pi)</m>.
+                For <m>2\sin(x) - 1 = 0</m>,
+                we get <m>\sin(x) = \frac{1}{2}</m> which gives <m>x = \frac{\pi}{6} + 2\pi k</m> or
+                <m>x = \frac{5\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+                Of those, only <m>x = \frac{\pi}{6}</m> and
+                <m>x = \frac{5\pi}{6}</m> lie in <m>[0,2\pi)</m>.
+                Next, we choose our test values.
+                For <m>x =0</m> we find <m>f(0) = -1</m>;
+                when <m>x = \frac{\pi}{4}</m> we get <m>f\left(\frac{\pi}{4}\right) =1 - \frac{\sqrt{2}}{2} = \frac{2 - \sqrt{2}}{2}</m>;
+                for <m>x = \frac{3\pi}{4}</m> we get <m>f\left(\frac{3\pi}{4}\right) =-1 + \frac{\sqrt{2}}{2} = \frac{\sqrt{2} - 2}{2}</m>;
+                when <m>x=\pi</m> we have <m>f(\pi) = 1</m>, and lastly,
+                for <m>x = \frac{7\pi}{4}</m> we get <m>f\left(\frac{7\pi}{4}\right) = -1 - \frac{\sqrt{2}}{2} = \frac{-2 - \sqrt{2}}{2}</m>.
+                We see <m>f(x) > 0</m> on
+                <m>\left(\frac{\pi}{6}, \frac{\pi}{2}\right) \cup \left(\frac{5\pi}{6}, \frac{3\pi}{2}\right)</m>,
+                so this is our answer.
+                We can use GeoGebra to check that the graph of
+                <m>y = \sin(2x)</m> is indeed above the graph of <m>y = \cos(x)</m> on those intervals;
+                see <xref ref="fig_trigeg3-2">Figure</xref>. <table xml:id="fig_trigeg3-2"> <caption>Solving
+                <m>\sin(2x)>\cos(x)</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-2.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq17.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Proceeding as in the last two problems,
+                we rewrite <m>\tan(x) \geq 3</m> as
+                <m>\tan(x) - 3 \geq 0</m> and let <m>f(x) = \tan(x) - 3</m>.
+                We note that on <m>[0,2\pi)</m>,
+                <m>f</m> is undefined at
+          <m>x =\frac{\pi}{2}</m> and <m>\frac{3\pi}{2}</m>,
+                so those values will need the usual disclaimer on the sign diagram. (See <xref ref="rationalsigndiagram">page</xref>
+                for a discussion of the non-standard character known as the interrobang.) Moving along to zeros,
+                solving <m>f(x) = \tan(x) - 3 = 0</m> requires the arctangent function.
+                We find <m>x = \arctan(3) + \pi k</m> for integers <m>k</m> and of these,
+                only <m>x = \arctan(3)</m> and
+                <m>x = \arctan(3) + \pi</m> lie in <m>[0,2\pi)</m>.
+                Since <m>3 > 0</m>, we know
+                <m>0 \lt \arctan(3) \lt \frac{\pi}{2}</m> which allows us to position these zeros correctly on the sign diagram.
+                To choose test values,
+                we begin with <m>x=0</m> and find <m>f(0) = -3</m>.
+                Finding a convenient test value in the interval
+                <m>\left(\arctan(3), \frac{\pi}{2}\right)</m> is a bit more challenging.
+                Keep in mind that the arctangent function is increasing and is bounded above by <m>\frac{\pi}{2}</m>.
+                This means that the number
+          <m>x = \arctan(117)</m> is guaranteed to lie between <m>\arctan(3)</m> and
+                <m>\frac{\pi}{2}</m>. (We could have chosen any value
+                <m>\arctan(t)</m> where <m>t > 3</m>.) We see that <m>f(\arctan(117)) = \tan(\arctan(117)) - 3 = 114</m>.
+                For our next test value,
+                we take <m>x = \pi</m> and find <m>f(\pi) = -3</m>.
+                To find our next test value,
+                we note that since <m>\arctan(3) \lt \arctan(117) \lt \frac{\pi}{2}</m>,
+                it follows
+                (by adding <m>\pi</m> through the inequality)
+                that <m>\arctan(3) + \pi \lt \arctan(117) + \pi \lt \frac{3\pi}{2}</m>.
+                Evaluating <m>f</m> at
+          <m>x = \arctan(117) + \pi</m> yields <m>f(\arctan(117)+\pi) = \tan(\arctan(117) + \pi) -3 = \tan(\arctan(117)) - 3 = 114</m>.
+                We choose our last test value to be
+                <m>x = \frac{7\pi}{4}</m> and find <m>f\left(\frac{7\pi}{4}\right) = -4</m>.
+                Since we want <m>f(x) \geq 0</m>,
+                we see that our answer is <m>\left[ \arctan(3), \frac{\pi}{2}\right) \cup \left[\arctan(3)+\pi, \frac{3\pi}{2}\right)</m>.
+                Using the graphs of <m>y = \tan(x)</m> and <m>y = 3</m>,
+                we see in <xref ref="fig_trigeg3-3">Figure</xref>
+                when the graph of the former is above
+                (or meets)
+                the graph of the latter. <table xml:id="fig_trigeg3-3"> <caption>Solving
+                <m>\tan(x)\geq 3</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-3.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq18.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example puts solving equations and inequalities to good use <mdash /> finding domains of functions.
+    </p>
+
+    <example xml:id="TrigDomainEx1">
+      <title>Determining domains of functions</title>
+      <statement>
+        <p>
+          Express the domain of the following functions using extended interval notation. (See <xref ref="extendedinterval">page</xref>
+          for details about this notation.)
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \csc\left(2x + \frac{\pi}{3}\right)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \dfrac{\sin(x)}{2\cos(x) - 1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \sqrt{1 - \cot(x)}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find the domain of <m>f(x) = \csc\left(2x + \frac{\pi}{3}\right)</m>,
+                we rewrite <m>f</m> in terms of sine as <m>f(x) = \dfrac{1}{\sin\left(2x + \frac{\pi}{3}\right)}</m>.
+                Since the sine function is defined everywhere,
+                our only concern comes from zeros in the denominator.
+                Solving <m>\sin\left(2x + \frac{\pi}{3}\right) = 0</m>,
+                we get <m>x = -\frac{\pi}{6} + \frac{\pi}{2} k</m> for integers <m>k</m>.
+                In set-builder notation,
+                our domain is  <m>\left\{ x : x \neq  -\frac{\pi}{6} + \frac{\pi}{2} k \, \text{ for integers \(k\) }  \right\}</m>.
+                To help visualize the domain,
+                we follow the old mantra
+          <q>When in doubt, write it out!</q> We get
+                <me>
+                  \left\{ x : x \neq  -\frac{\pi}{6}, \frac{2\pi}{6}, -\frac{4\pi}{6}, \frac{5\pi}{6}, -\frac{7\pi}{6}, \frac{8\pi}{6}, \ldots \right\}
+                </me>,
+                where we have kept the denominators <m>6</m> throughout to help see the pattern.
+                Graphing the situation on a number line, we have
+
+                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-4.pdf"/>
+
+                Proceeding as we did on <xref ref="extendedinterval">page</xref>
+                in <xref ref="circularfunctionsbeyond">Section</xref>,
+                we let <m>x_{k}</m> denote the <m>k</m>th number excluded from the domain and we have 
+                <m>x_{k} = -\frac{\pi}{6} + \frac{\pi}{2} k = \frac{(3k-1)\pi}{6}</m> for integers <m>k</m>.
+                The intervals which comprise the domain are of the form
+                <m>\left(x_{k}, x_{k+1}  \right) = \left(\frac{(3k-1)\pi}{6}, \frac{(3k+2)\pi}{6} \right)</m> as <m>k</m> runs through the integers.
+                Using extended interval notation,
+                we have that the domain is
+                <me>
+                  \bigcup_{k = -\infty}^{\infty}  \left(\dfrac{(3k-1)\pi}{6}, \dfrac{(3k+2)\pi}{6} \right)
+                </me>
+                We can check our answer by substituting in values of <m>k</m> to see that it matches our diagram.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the domains of <m>\sin(x)</m> and <m>\cos(x)</m> are all real numbers,
+                the only concern when finding the domain of 
+                <m>f(x) =  \frac{\sin(x)}{2\cos(x) - 1}</m> is division by zero so we set the denominator equal to zero and solve.
+                From <m>2\cos(x) - 1 = 0</m> we get
+          <m>\cos(x) = \frac{1}{2}</m> so that <m>x = \frac{\pi}{3} + 2\pi k</m> or
+                <m>x = \frac{5\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+                Using set-builder notation,
+                the domain is <m>\left\{ x : x \neq \frac{\pi}{3} + 2\pi k \, \text{ and }  \, x \neq \frac{5\pi}{3} + 2\pi k \, \text{ for integers \(k\) }  \right\}</m>,
+                or  <m>\left\{ x : x \neq \pm \frac{\pi}{3}, \pm \frac{5\pi}{3}, \pm \frac{7\pi}{3}, \pm \frac{11\pi}{3}, \ldots \right\}</m>,
+                so we have
+
+                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-5.pdf"/>
+
+                Unlike the previous example,
+                we have <em>two</em>
+                different families of points to consider,
+                and we present two ways of dealing with this kind of situation.
+                One way is to generalize what we did in the previous example and use the formulas we found in our domain work to describe the intervals.
+                To that end,
+                we let  <m>a_{k} = \frac{\pi}{3} + 2\pi k = \frac{(6k+1)\pi}{3}</m> and 
+                <m>b_{k} = \frac{5\pi}{3} + 2\pi k = \frac{(6k+5) \pi}{3}</m> for integers <m>k</m>.
+                The goal now is to write the domain in terms of the <m>a</m>'s an <m>b</m>'s.
+                We find <m>a_{0} =  \frac{\pi}{3}</m>,
+                <m>a_{1} =  \frac{7\pi}{3}</m>,
+                <m>a_{-1} =  -\frac{5\pi}{3}</m>,
+                <m>a_{2} =  \frac{13\pi}{3}</m>,
+                <m>a_{-2} =  -\frac{11\pi}{3}</m>,
+                <m>b_{0} =  \frac{5\pi}{3}</m>,
+                <m>b_{1} =  \frac{11\pi}{3}</m>,
+                <m>b_{-1} =  -\frac{\pi}{3}</m>,
+                <m>b_{2} =  \frac{17\pi}{3}</m>  and <m>b_{-2} =  -\frac{7\pi}{3}</m>.
+                Hence,
+          in terms of the <m>a</m>'s and <m>b</m>'s, our domain is
+                <me>
+                  \ldots  \left(a_{-2}, b_{-2}  \right) \cup \left(b_{-2}, a_{-1}  \right)\cup \left(a_{-1}, b_{-1}  \right)\cup \left(b_{-1}, a_{0}  \right)\cup \left(a_{0}, b_{0}  \right)\cup \left(b_{0}, a_{1}  \right)\cup \left(a_{1}, b_{1}  \right)\cup \dots
+                </me>
+                If we group these intervals in pairs,
+                <m>\left(a_{-2}, b_{-2}  \right) \cup \left(b_{-2}, a_{-1}  \right)</m>,
+                <m>\left(a_{-1}, b_{-1}  \right)\cup \left(b_{-1}, a_{0}  \right)</m>,
+                <m>\left(a_{0}, b_{0}  \right)\cup \left(b_{0}, a_{1}  \right)</m> and so forth,
+                we see a pattern emerge of the form 
+                <m>\left(a_{k}, b_{k}  \right)\cup \left(b_{k}, a_{k+1}  \right)</m> for integers <m>k</m> so that our domain can be written as
+                <md>
+                  \bigcup_{k = -\infty}^{\infty} \left(a_{k}, b_{k}  \right)\cup \left(b_{k}, a_{k+1}  \right) = \\ \bigcup_{k = -\infty}^{\infty} \left(\frac{(6k+1)\pi}{3}, \frac{(6k+5) \pi}{3}  \right)\cup \left(\frac{(6k+5) \pi}{3}, \frac{(6k+7)\pi}{3}  \right)
+                </md>
+                A second approach to the problem exploits the periodic nature of <m>f</m>.
+                Since <m>\cos(x)</m> and <m>\sin(x)</m> have period <m>2\pi</m>,
+                it's not too difficult to show the function <m>f</m> repeats itself every <m>2\pi</m> units. (This doesn't necessarily mean the period of <m>f</m> is <m>2\pi</m>.
+                The tangent function is comprised of <m>\cos(x)</m> and <m>\sin(x)</m>,
+                but its period is half theirs.
+                The reader is invited to investigate the period of <m>f</m>.)  This means if we can find a formula for the domain on an interval of length <m>2\pi</m>,
+                we can express the entire domain by translating our answer left and right on the <m>x</m>-axis by adding integer multiples of <m>2\pi</m>.
+                One such interval that arises from our domain work is  <m>\left[\frac{\pi}{3}, \frac{7\pi}{3}\right]</m>.
+                The portion of the domain here is  <m>\left(\frac{\pi}{3}, \frac{5\pi}{3}\right) \cup \left(\frac{5\pi}{3}, \frac{7\pi}{3}\right)</m>.
+                Adding integer multiples of <m>2\pi</m>,
+                we get the family of intervals 
+                <m>\left(\frac{\pi}{3} + 2\pi k, \frac{5\pi}{3} + 2\pi k \right) \cup \left(\frac{5\pi}{3} + 2\pi k, \frac{7\pi}{3} + 2\pi k\right)</m> for integers <m>k</m>.
+                We leave it to the reader to show that getting common denominators leads to our previous answer.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the domain of <m>f(x) = \sqrt{1-\cot(x)}</m>,
+                we first note that,
+                due to the presence of the <m>\cot(x)</m> term,
+                <m>x \neq \pi k</m> for integers <m>k</m>.
+                Next, we recall that for the square root to be defined,
+                we need <m>1 - \cot(x) \geq 0</m>.
+                Unlike the inequalities we solved in <xref ref="TrigIneqEx1">Example</xref>,
+                we are not restricted here to a given interval.
+                Our strategy is to solve this inequality over <m>(0,\pi)</m> 
+                (the same interval which generates a fundamental cycle of cotangent)
+                and then add integer multiples of the period, in this case,
+                <m>\pi</m>.
+                We let <m>g(x) = 1 - \cot(x)</m> and set about making a sign diagram for <m>g</m> over the interval <m>(0,\pi)</m> to find where <m>g(x) \geq 0</m>.
+                We note that <m>g</m> is undefined for
+                <m>x = \pi k</m> for integers <m>k</m>, in particular,
+                at the endpoints of our interval <m>x = 0</m> and <m>x = \pi</m>.
+                Next, we look for the zeros of <m>g</m>.
+                Solving <m>g(x) = 0</m>,
+                we get <m>\cot(x) = 1</m> or
+                <m>x = \frac{\pi}{4} + \pi k</m> for integers <m>k</m> and only one of these,
+                <m>x = \frac{\pi}{4}</m>, lies in <m>(0,\pi)</m>.
+                Choosing the test values
+          <m>x = \frac{\pi}{6}</m> and <m>x = \frac{\pi}{2}</m>,
+                we get <m>g\left(\frac{\pi}{6}\right) = 1 - \sqrt{3}</m>,
+                and <m>g\left(\frac{\pi}{2}\right) = 1</m>.
+
+                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-6.pdf"/>
+
+                We find <m>g(x) \geq 0</m> on <m>\left[\frac{\pi}{4}, \pi \right)</m>.
+                Adding multiples of the period we get our solution to consist of the intervals  <m>\left[\frac{\pi}{4} + \pi k, \pi + \pi k  \right) = \left[\frac{(4k+1)\pi}{4}, (k+1)\pi \right)</m>.
+                Using extended interval notation,
+                we express our final answer as
+                <me>
+                  \bigcup_{k = -\infty}^{\infty} \left[\dfrac{(4k+1)\pi}{4}, (k+1)\pi \right)
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We close this section with an example which demonstrates how to solve equations and inequalities involving the inverse trigonometric functions.
+    </p>
+
+    <example xml:id="ex_trigeglast">
+      <title>Using inverse trigonometric functions</title>
+      <statement>
+        <p>
+          Solve the following equations and inequalities analytically.
+          Check your answers using a graphing utility.
+
+          <ol>
+            <li>
+              <p>
+                <m>\arcsin(2x) = \frac{\pi}{3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4\arccos(x)-3\pi = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>3\operatorname{arcsec}(2x-1) + \pi = 2 \pi</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4\arctan^2(x)-3\pi \arctan(x)-\pi^2 = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\pi^2-4\arccos^{2}(x) \lt 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4\operatorname{arccot}(3x) > \pi</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To solve <m>\arcsin(2x) = \frac{\pi}{3}</m>,
+                we first note that <m>\frac{\pi}{3}</m> is in the range of the arcsine function
+                (so a solution exists!)
+                Next,
+          we exploit the inverse property of sine and arcsine from <xref ref="arccosinesinefunctionprops">Theorem</xref>.
+                <md>
+                  <mrow>\arcsin(2x) \amp  =  \frac{\pi}{3}</mrow>
+                  <mrow>\sin\left(\arcsin(2x)\right) \amp  =  \sin\left(\frac{\pi}{3}\right)</mrow>
+                  <mrow>2x \amp  =  \frac{\sqrt{3}}{2}  \tag{Since $\sin(\arcsin(u)) = u$}</mrow>
+                  <mrow>x \amp  =  \frac{\sqrt{3}}{4}</mrow>
+                </md>
+                Graphing <m>y = \arcsin(2x)</m> and the horizontal line
+                <m>y = \frac{\pi}{3}</m> in <xref ref="fig_trigeg4-1">Figure</xref>,
+                we see they intersect at <m>\frac{\sqrt{3}}{4} \approx 0.4430</m>.
+
+                <figure xml:id="fig_trigeg4-1">
+                  <caption>Solving <m>\arcsin(2x)=\frac{\pi}{3}</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq19.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Our first step in solving
+                <m>4\arccos(x)-3\pi = 0</m> is to isolate the arccosine.
+                Doing so, we get <m>\arccos(x) = \frac{3\pi}{4}</m>.
+                Since <m>\frac{3\pi}{4}</m> is in the range of arccosine,
+                we may apply <xref ref="arccosinesinefunctionprops">Theorem</xref>.
+                <md>
+                  <mrow>\arccos(x) \amp  =  \frac{3\pi}{4}</mrow>
+                  <mrow>\cos\left(\arccos(x)\right) \amp  =  \cos\left(\frac{3\pi}{4}\right)</mrow>
+                  <mrow>x \amp  =  -\frac{\sqrt{2}}{2} \tag{Since $\cos(\arccos(u)) = u$}</mrow>
+                </md>
+                <xref ref="fig_trigeg4-2">Figure</xref>
+                confirms <m>y = 4\arccos(x) - 3\pi</m> crosses <m>y = 0</m>
+                (the <m>x</m>-axis)
+                at <m>-\frac{\sqrt{2}}{2} \approx -0.7071</m>.
+
+                <figure xml:id="fig_trigeg4-2">
+                  <caption>Solving <m>4\arccos(x)-3\pi=0</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq20.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                From <m>3 \, \operatorname{arcsec}(2x-1) + \pi = 2 \pi</m>,
+                we get <m>\operatorname{arcsec}(2x-1) = \frac{\pi}{3}</m>.
+                As we saw in <xref ref="ArcTrig">Section</xref>,
+                there are two possible ranges for the arcsecant function.
+                Fortunately, both ranges contain <m>\frac{\pi}{3}</m>.
+                Applying <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>
+                / <xref ref="arcsecantcosecantfunctionprops2"></xref>, we get
+                <md>
+                  <mrow>\operatorname{arcsec}(2x-1)\amp  =  \frac{\pi}{3}</mrow>
+                  <mrow>\sec(\operatorname{arcsec}(2x-1)) \amp  =  \sec\left(\frac{\pi}{3}\right)</mrow>
+                  <mrow>2x -1 \amp  =  2  \tag{Since $\sec(\operatorname{arcsec}(u)) = u$}</mrow>
+                  <mrow>x \amp  = \frac{3}{2}</mrow>
+                </md>
+                To check graphically,
+                we need to graph <m>y=3 \, \operatorname{arcsec}(2x-1) + \pi</m>.
+                To do so, we make use of the identity
+                <m>\operatorname{arcsec}(u) = \arccos\left(\frac{1}{u}\right)</m> from <xref ref="arcsecantcosecantfunctionprops1">Theorems</xref>
+                and <xref ref="arcsecantcosecantfunctionprops2"></xref>.
+                Since we are checking for solutions where arcsecant is positive,
+                we know <m>u = 2x-1 \geq 1</m>,
+                and so the identity applies in both cases.
+                We see in <xref ref="fig_trigeg4-3">Figure</xref>
+                that the graph of <m>y=3 \arccos\left(\frac{1}{2x-1}\right) + \pi</m> and the horizontal line
+                <m>y = 2\pi</m> intersect at <m>\frac{3}{2} = 1.5</m>.
+
+                <figure xml:id="fig_trigeg4-3">
+                  <caption>Solving <m>3\operatorname{arcsec}(2x-1)+\pi=2\pi</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq21.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                With the presence of both <m>\arctan^{2}(x)</m> (
+                <m>= (\arctan(x))^2</m>) and <m>\arctan(x)</m>,
+                we substitute <m>u = \arctan(x)</m>.
+                The equation  <m>4\arctan^2(x)-3\pi \arctan(x)-\pi^2 = 0</m> becomes <m>4u^2 -3\pi u - \pi^2 = 0</m>.
+                Factoring, (it's not as bad as it looks...  don't let the <m>\pi</m> throw you!) we get <m>(4u+\pi)(u - \pi) = 0</m>,
+                so <m>u = \arctan(x) = -\frac{\pi}{4}</m> or <m>u = \arctan(x) = \pi</m>.
+                Since <m>-\frac{\pi}{4}</m> is in the range of arctangent,
+                but <m>\pi</m> is not,
+          we only get solutions from the first equation.
+                Using <xref ref="arctangentcotangentfunctionprops">Theorem</xref>, we get
+                <md>
+                  <mrow>\arctan(x) \amp  =  -\frac{\pi}{4}</mrow>
+                  <mrow>\tan(\arctan(x)) \amp  =  \tan\left(-\frac{\pi}{4}\right)</mrow>
+                  <mrow>x \amp  = -1  \tag{Since $\tan(\arctan(u)) = u$.}</mrow>
+                </md>
+                Plotting in GeoGebra verifies our result:
+                see <xref ref="fig_trigeg4-4">Figure</xref>.
+
+                <figure xml:id="fig_trigeg4-4">
+                  <caption>Solving <m>4\arctan^2(x)-3\pi\arctan(x)-\pi^2=0</m></caption>
+                  <img src="figures/IntroTrigGraphics/TrigEquIneq22.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the inverse trigonometric functions are continuous on their domains,
+                we can solve inequalities featuring these functions using sign diagrams.
+                Since all of the nonzero terms of
+                <m>\pi^2-4\arccos^{2}(x) \lt 0</m> are on one side of the inequality,
+                we let <m>f(x) = \pi^2-4\arccos^{2}(x)</m> and note the domain of <m>f</m> is limited by the <m>\arccos(x)</m> to <m>[-1,1]</m>.
+                Next,
+          we find the zeros of <m>f</m> by setting <m>f(x) = \pi^2-4\arccos^{2}(x) = 0</m>.
+                We get <m>\arccos(x) = \pm \frac{\pi}{2}</m>,
+                and since the range of arccosine is <m>[0,\pi]</m>,
+                we focus our attention on <m>\arccos(x) = \frac{\pi}{2}</m>.
+                Using <xref ref="arccosinesinefunctionprops">Theorem</xref>,
+                we get <m>x = \cos\left(\frac{\pi}{2}\right) = 0</m> as our only zero.
+                Hence, we have two test intervals,
+                <m>[-1,0)</m> and <m>(0,1]</m>.
+                Choosing test values <m>x = \pm 1</m>,
+                we get <m>f(-1) = -3\pi^2 \lt 0</m> and <m>f(1) = \pi^2 > 0</m>.
+                Since we are looking for where <m>f(x) = \pi^2-4\arccos^{2}(x) \lt 0</m>,
+                our answer is <m>[-1,0)</m>.
+                The plot from GeoGebra in <xref ref="fig_trigeg4-5">Figure</xref>
+                confirms that for these values of <m>x</m>,
+                the graph of <m>y = \pi^2-4\arccos^{2}(x)</m> is below <m>y = 0</m>
+                (the <m>x</m>-axis.)
+                <table xml:id="fig_trigeg4-5"> <caption>Solving
+                <m>\pi^2-4\arccos^2(x)\lt 0</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-7.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq23.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To begin, we rewrite
+          <m>4 \, \operatorname{arccot}(3x) > \pi</m> as <m>4 \, \operatorname{arccot}(3x) -  \pi > 0</m>.
+                We let <m>f(x) = 4 \, \operatorname{arccot}(3x) -  \pi</m>,
+                and note the domain of <m>f</m> is all real numbers,
+          <m>(-\infty, \infty)</m>.
+                To find the zeros of <m>f</m>,
+                we set <m>f(x) = 4 \, \operatorname{arccot}(3x) -  \pi = 0</m> and solve.
+                We get <m>\operatorname{arccot}(3x) = \frac{\pi}{4}</m>,
+                and since <m>\frac{\pi}{4}</m> is in the range of arccotangent,
+                we may apply <xref ref="arctangentcotangentfunctionprops">Theorem</xref> and solve
+                <md>
+                  <mrow>\operatorname{arccot}(3x) \amp  =  \frac{\pi}{4}</mrow>
+                  <mrow>\cot(\operatorname{arccot}(3x)) \amp  = \cot\left(\frac{\pi}{4}\right)</mrow>
+                  <mrow>3x \amp  =  1  \tag{Since $\cot(\operatorname{arccot}(u)) = u$.}</mrow>
+                  <mrow>x \amp  = \frac{1}{3}</mrow>
+                </md>
+                Next, we make a sign diagram for <m>f</m>.
+                Since the domain of <m>f</m> is all real numbers,
+                and there is only one zero of <m>f</m>,
+                <m>x = \frac{1}{3}</m>,
+          we have two test intervals,
+                <m>\left(-\infty, \frac{1}{3}\right)</m> and  <m>\left(\frac{1}{3}, \infty \right)</m>.
+                Ideally,
+          we wish to find test values <m>x</m> in these intervals so that
+                <m>\operatorname{arccot}(4x)</m> corresponds to one of our oft-used <q>common</q> angles.
+                After a bit of computation,
+                (set <m>3x</m> equal to the cotangents of the
+                <q>common angles</q> and choose accordingly)
+                we choose <m>x=0</m> for
+          <m>x \lt  \frac{1}{3}</m> and for <m>x > \frac{1}{3}</m>,
+                we choose <m>x = \frac{\sqrt{3}}{3}</m>.
+                We find <m>f(0) = \pi > 0</m> and <m>f\left(\frac{\sqrt{3}}{3}\right) = -\frac{\pi}{3} \lt  0</m>.
+                Since we are looking for where <m>f(x) = 4 \, \operatorname{arccot}(3x) -  \pi > 0</m>,
+                we get our answer <m>\left(-\infty, \frac{1}{3}\right)</m>.
+                To check graphically,
+                we use the technique in <xref ref="arccotangentcalc">number</xref>
+          of <xref ref="arcstuffoncalc">Example</xref>
+                in <xref ref="ArcTrig">Section</xref>
+                to graph <m>y = 4 \, \operatorname{arccot}(3x)</m>  and we see it is above the horizontal line <m>y = \pi</m> on <m>\left(-\infty, \frac{1}{3}\right) = \left(-\infty, 0.\overline{3}\right)</m>:
+                see <xref ref="fig_trigeg4-6">Figure</xref>.
+
+                <table xml:id="fig_trigeg4-6">
+                  <caption>Solving <m>4\operatorname{arccot}(3x)>\pi</m></caption>
+                  <tabular>
+                    <row>
+                      <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-8.pdf"/></cell>
+                    </row>
+                    <row>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><img src="figures/IntroTrigGraphics/TrigEquIneq24.pdf"/></cell>
+                    </row>
+                  </tabular>
+                </table>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      find <em>all</em> of the exact solutions of the equation and then list those solutions which are in the interval <m>[0, 2\pi)</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 5x \right) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi k}{5}; \; x = 0, \dfrac{\pi}{5}, \dfrac{2\pi}{5}, \dfrac{3\pi}{5}, \dfrac{4\pi}{5}, \pi, \dfrac{6\pi}{5}, \dfrac{7\pi}{5}, \dfrac{8\pi}{5}, \dfrac{9\pi}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 3x \right) = \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{9} + \dfrac{2\pi k}{3}</m> or <m>x = \dfrac{5\pi}{9} + \dfrac{2\pi k}{3}; \; x = \dfrac{\pi}{9}, \dfrac{5\pi}{9}, \dfrac{7\pi}{9}, \dfrac{11\pi}{9}, \dfrac{13\pi}{9}, \dfrac{17\pi}{9}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( -2x \right) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{2\pi}{3} + \pi k</m> or <m>x = \dfrac{5\pi}{6} + \pi k; \; x = \dfrac{2\pi}{3}, \dfrac{5\pi}{6}, \dfrac{5\pi}{3}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( 6x \right) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{24} + \dfrac{\pi k}{6}; \; x = \dfrac{\pi}{24}, \dfrac{5\pi}{24}, \dfrac{3\pi}{8}, \dfrac{13\pi}{24}, \dfrac{17\pi}{24}, \dfrac{7\pi}{8}, \dfrac{25\pi}{24}, \dfrac{29\pi}{24}, \dfrac{11\pi}{8}, \dfrac{37\pi}{24}, \dfrac{41\pi}{24}, \dfrac{15\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc \left( 4x \right) = -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{3\pi}{8} + \dfrac{\pi k}{2}; \; x = \dfrac{3\pi}{8}, \dfrac{7\pi}{8}, \dfrac{11\pi}{8}, \dfrac{15\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec \left( 3x \right) = \sqrt{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{12} + \dfrac{2\pi k}{3}</m> or <m>x = \dfrac{7\pi}{12} + \dfrac{2\pi k}{3}; \; x = \dfrac{\pi}{12}, \dfrac{7\pi}{12}, \dfrac{3\pi}{4}, \dfrac{5\pi}{4}, \dfrac{17\pi}{12}, \dfrac{23\pi}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot \left( 2x \right) = -\dfrac{\sqrt{3}}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{3} + \dfrac{\pi k}{2}; \; x = \dfrac{\pi}{3}, \dfrac{5\pi}{6}, \dfrac{4\pi}{3}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 9x \right) = 9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( \dfrac{x}{3} \right) = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{3\pi}{4} + 6\pi k</m> or <m>x = \dfrac{9\pi}{4} + 6\pi k; \; x = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( x + \dfrac{5\pi}{6} \right) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\dfrac{\pi}{3} + \pi k; \; x = \dfrac{2\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 2x - \dfrac{\pi}{3} \right) = -\dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{3\pi}{4} + \pi k</m> or <m>x = \dfrac{13\pi}{12} + \pi k; \; x = \dfrac{\pi}{12}, \dfrac{3\pi}{4}, \dfrac{13\pi}{12}, \dfrac{7\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\cos \left( x + \dfrac{7\pi}{4} \right) = \sqrt{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\dfrac{19\pi}{12} + 2\pi k</m> or <m>x = \dfrac{\pi}{12} + 2\pi k; \; x = \dfrac{\pi}{12}, \dfrac{5\pi}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( 2x - \pi \right) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{5\pi}{8} + \dfrac{\pi k}{2}; \; x = \dfrac{\pi}{8}, \dfrac{5\pi}{8}, \dfrac{9\pi}{8}, \dfrac{13\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan^{2} \left( x \right) = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{3} + \pi k</m> or <m>x = \dfrac{2\pi}{3} + \pi k; \; x = \dfrac{\pi}{3}, \dfrac{2\pi}{3}, \dfrac{4\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec^{2} \left( x \right) = \dfrac{4}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6} + \pi k</m> or <m>x = \dfrac{5\pi}{6} + \pi k; \; x = \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos^{2} \left( x \right) = \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{4} + \dfrac{\pi k}{2}; \; x = \dfrac{\pi}{4}, \dfrac{3\pi}{4}, \dfrac{5\pi}{4}, \dfrac{7\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin^{2} \left( x \right) = \dfrac{3}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{3} + \pi k</m> or <m>x = \dfrac{2\pi}{3} + \pi k; \; x = \dfrac{\pi}{3}, \dfrac{2\pi}{3}, \dfrac{4\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the equation,
+      giving the exact solutions which lie in <m>[0, 2\pi)</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( x \right) = \cos \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{4}, \dfrac{5\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 2x \right) = \sin \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{3}, \pi, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 2x \right) = \cos \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{\pi}{2}, \dfrac{5\pi}{6}, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 2x \right) = \sin \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 2x \right) = \cos \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{2\pi}{3}, \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x) = 2 - 5\cos(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\dfrac{\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3\cos(2x) + \cos(x) + 2 = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{2\pi}{3}, \dfrac{4\pi}{3}, \arccos\left(\dfrac{1}{3}\right), 2\pi -\arccos\left(\dfrac{1}{3}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x) = 5\sin(x) - 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\dfrac{\pi}{6}, \dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3\cos(2x) = \sin(x) + 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{7\pi}{6}, \dfrac{11\pi}{6}, \arcsin\left(\dfrac{1}{3}\right), \pi - \arcsin\left(\dfrac{1}{3}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\sec^{2}(x) = 3 - \tan(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\dfrac{3\pi}{4}, \dfrac{7\pi}{4}, \arctan\left(\dfrac{1}{2}\right), \pi +\arctan\left(\dfrac{1}{2}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan^{2}(x) = 1-\sec(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=0, \dfrac{2\pi}{3}, \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot^{2}(x) = 3\csc(x) - 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec(x) = 2\csc(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\arctan(2), \pi + \arctan(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x)\csc(x)\cot(x) = 6-\cot^{2}(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{7\pi}{6}, \dfrac{5\pi}{6}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(2x) = \tan(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \pi, \dfrac{\pi}{4}, \dfrac{3\pi}{4}, \dfrac{5\pi}{4}, \dfrac{7\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot^{4}(x) = 4\csc^{2}(x) - 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{\pi}{4}, \dfrac{3\pi}{4}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{5\pi}{4}, \dfrac{7\pi}{4}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x) + \csc^{2}(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{2}, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan^{3} \left( x \right) = 3\tan \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{3}, \dfrac{2\pi}{3}, \pi, \dfrac{4\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan^{2} \left( x \right) = \dfrac{3}{2} \sec \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos^{3} \left( x \right) = -\cos \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{2}, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan (2x) - 2\cos(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{\pi}{2}, \dfrac{5\pi}{6}, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc^{3}(x) + \csc^{2}(x) = 4\csc(x) + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{5\pi}{6}, \dfrac{7\pi}{6}, \dfrac{3\pi}{2}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\tan(x) = 1 - \tan^{2}(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{8}, \dfrac{5\pi}{8}, \dfrac{9\pi}{8}, \dfrac{13\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( x \right) = \sec \left( x \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the equation,
+      giving the exact solutions which lie in <m>[0, 2\pi)</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(6x) \cos(x) = -\cos(6x) \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{7}, \dfrac{2\pi}{7}, \dfrac{3\pi}{7}, \dfrac{4\pi}{7}, \dfrac{5\pi}{7}, \dfrac{6\pi}{7}, \pi, \dfrac{8\pi}{7}, \dfrac{9\pi}{7}, \dfrac{10\pi}{7}, \dfrac{11\pi}{7}, \dfrac{12\pi}{7}, \dfrac{13\pi}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(3x)\cos(x) = \cos(3x) \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=0, \dfrac{\pi}{2}, \pi, \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x)\cos(x) + \sin(2x)\sin(x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(5x)\cos(3x) - \sin(5x)\sin(3x) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{48}, \dfrac{11\pi}{48}, \dfrac{13\pi}{48}, \dfrac{23\pi}{48}, \dfrac{25\pi}{48}, \dfrac{35\pi}{48}, \dfrac{37\pi}{48}, \dfrac{47\pi}{48}, \dfrac{49\pi}{48}, \dfrac{59\pi}{48}, \dfrac{61\pi}{48}, \dfrac{71\pi}{48}, \dfrac{73\pi}{48}, \dfrac{83\pi}{48}, \dfrac{85\pi}{48}, \dfrac{95\pi}{48}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) + \cos(x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) + \sqrt{3} \cos(x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{2}, \dfrac{11\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt{2} \cos(x) - \sqrt{2} \sin(x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{12}, \dfrac{17\pi}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sqrt{3} \sin(2x) + \cos(2x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x= 0, \pi, \dfrac{\pi}{3}, \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x) - \sqrt{3} \sin(2x) = \sqrt{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{17 \pi}{24}, \dfrac{41 \pi}{24}, \dfrac{23\pi}{24}, \dfrac{47\pi}{24}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3\sqrt{3}\sin(3x) - 3\cos(3x) = 3\sqrt{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{6}, \dfrac{5\pi}{18}, \dfrac{5\pi}{6}, \dfrac{17\pi}{18}, \dfrac{3\pi}{2}, \dfrac{29\pi}{18}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(3x) = \cos(5x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{4}, \dfrac{\pi}{2}, \dfrac{3\pi}{4}, \pi, \dfrac{5\pi}{4}, \dfrac{3\pi}{2}, \dfrac{7\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(4x) = \cos(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{3}, \dfrac{2\pi}{3}, \pi, \dfrac{4\pi}{3}, \dfrac{5\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(5x) = \sin(3x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{\pi}{8}, \dfrac{3\pi}{8}, \dfrac{5\pi}{8}, \dfrac{7\pi}{8}, \pi, \dfrac{9\pi}{8}, \dfrac{11\pi}{8}, \dfrac{13\pi}{8}, \dfrac{15\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(5x) = -\cos(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{\pi}{7}, \dfrac{\pi}{3}, \dfrac{3\pi}{7}, \dfrac{5\pi}{7}, \pi, \dfrac{9\pi}{7}, \dfrac{11\pi}{7}, \dfrac{5\pi}{3}, \dfrac{13\pi}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(6x) + \sin(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \dfrac{2\pi}{7}, \dfrac{4\pi}{7}, \dfrac{6\pi}{7}, \dfrac{8\pi}{7}, \dfrac{10\pi}{7}, \dfrac{12\pi}{7}, \dfrac{\pi}{5}, \dfrac{3\pi}{5}, \pi, \dfrac{7\pi}{5}, \dfrac{9\pi}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan(x) = \cos(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arcsin \left( \dfrac{-1 + \sqrt{5}}{2} \right) \approx 0.6662, \pi - \arcsin \left( \dfrac{-1 + \sqrt{5}}{2} \right) \approx 2.4754</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the equation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos(2x) = \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\pi - 2\arcsin(x) = 2\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4\arctan(3x-1)-\pi=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{2}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>6 \, \operatorname{arccot}(2x) - 5\pi = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-\frac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4 \,\operatorname{arcsec}\left(\frac{x}{2}\right) = \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 2\sqrt{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>12 \,\operatorname{arccsc}\left(\frac{x}{3}\right) = 2\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>9 \arcsin^{2}(x) - \pi^2 = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pm \frac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>9 \arccos^{2}(x) - \pi^2 = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>8 \, \operatorname{arccot}^{2}(x)+3\pi^2=10 \pi \, \operatorname{arccot}(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -1,0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>6 \arctan(x)^2= \pi \arctan(x)+\pi^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the inequality.
+      Express the exact answer in <em>interval</em> notation,
+      restricting your attention to <m>0 \leq x \leq 2\pi</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( x \right) \leq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \pi, 2\pi \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( x \right) \geq \sqrt{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \dfrac{\pi}{3}, \dfrac{\pi}{2} \right) \cup \left[ \dfrac{4\pi}{3}, \dfrac{3\pi}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec^{2} \left( x \right) \leq 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ 0, \dfrac{\pi}{3} \right] \cup \left[ \dfrac{2\pi}{3}, \dfrac{4\pi}{3} \right] \cup \left[ \dfrac{5\pi}{3}, 2\pi \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos^{2} \left( x \right) > \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ 0, \dfrac{\pi}{4} \right) \cup \left( \dfrac{3\pi}{4}, \dfrac{5\pi}{4} \right) \cup \left( \dfrac{7\pi}{4}, 2\pi \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 2x \right) \leq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \dfrac{\pi}{4}, \dfrac{3\pi}{4} \right] \cup \left[ \dfrac{5\pi}{4}, \dfrac{7\pi}{4} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( x + \dfrac{\pi}{3} \right) > \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ 0, \dfrac{\pi}{2} \right) \cup \left( \dfrac{11\pi}{6}, 2\pi \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot^{2} \left( x \right) \geq \dfrac{1}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( 0, \dfrac{\pi}{3} \right] \cup \left[ \dfrac{2\pi}{3}, \pi \right) \cup \left( \pi, \dfrac{4\pi}{3} \right] \cup \left[ \dfrac{5\pi}{3}, 2\pi \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\cos(x) \geq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[0, \dfrac{\pi}{3}\right] \cup \left[\dfrac{5\pi}{3}, 2\pi\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(5x) \geq 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(3x) \leq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, 2\pi]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec(x) \leq \sqrt{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[0, \dfrac{\pi}{4} \right] \cup \left(\dfrac{\pi}{2}, \dfrac{3\pi}{2}\right) \cup \left[\dfrac{7\pi}{4}, 2\pi\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot(x) \leq 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\operatorname{arccot}(4), \pi \right) \cup \left[ \pi + \operatorname{arccot}(4), 2\pi\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the inequality.
+      Express the exact answer in <em>interval</em> notation,
+      restricting your attention to <m>-\pi \leq x \leq \pi</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( x \right) > \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( -\dfrac{\pi}{6}, \dfrac{\pi}{6} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) > \dfrac{1}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( \arcsin\left(\dfrac{1}{3}\right), \pi - \arcsin\left(\dfrac{1}{3}\right) \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec \left( x \right) \leq 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -\pi, -\dfrac{\pi}{2} \right) \cup \left[ -\dfrac{\pi}{3}, \dfrac{\pi}{3} \right] \cup \left( \dfrac{\pi}{2}, \pi \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin^{2} \left( x \right) \lt \dfrac{3}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( -\dfrac{2\pi}{3}, -\dfrac{\pi}{3} \right) \cup \left( \dfrac{\pi}{3}, \dfrac{2\pi}{3} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot \left( x \right) \geq -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( -\pi, -\dfrac{\pi}{4} \right] \cup \left( 0, \dfrac{3\pi}{4} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) \geq \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -\dfrac{3\pi}{4}, \dfrac{\pi}{4} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the inequality.
+      Express the exact answer in <em>interval</em> notation,
+      restricting your attention to <m>-2\pi \leq x \leq 2\pi</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc \left( x \right) > 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( -2\pi, -\dfrac{3\pi}{2} \right) \cup \left( -\dfrac{3\pi}{2}, -\pi \right) \cup \left( 0, \dfrac{\pi}{2} \right) \cup \left( \dfrac{\pi}{2}, \pi \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) \leq \dfrac{5}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-2\pi, 2\pi]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot(x) \geq 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-2\pi, \operatorname{arccot}(5) - 2\pi\right] \cup \left(-\pi, \operatorname{arccot}(5) - \pi\right] \cup \left(0, \operatorname{arccot}(5)\right] \cup \left(\pi, \pi + \operatorname{arccot}(5)\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan^{2} \left( x \right) \geq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -\dfrac{7\pi}{4}, -\dfrac{3\pi}{2} \right) \cup \left( -\dfrac{3\pi}{2}, -\dfrac{5\pi}{4} \right] \cup \left[ -\dfrac{3\pi}{4}, -\dfrac{\pi}{2} \right) \cup \left( -\dfrac{\pi}{2}, -\dfrac{\pi}{4} \right] \cup \left[ \dfrac{\pi}{4}, \dfrac{\pi}{2} \right) \cup \left( \dfrac{\pi}{2}, \dfrac{3\pi}{4} \right] \cup \left[ \dfrac{5\pi}{4}, \dfrac{3\pi}{2} \right) \cup \left( \dfrac{3\pi}{2}, \dfrac{7\pi}{4} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(2x) \geq \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -2\pi, -\dfrac{5\pi}{3} \right] \cup \left[ -\pi, -\dfrac{\pi}{3} \right] \cup \left[ 0, \dfrac{\pi}{3} \right] \cup \left[ \pi, \dfrac{5\pi}{3} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2x) \leq \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -\dfrac{11\pi}{6}, -\dfrac{7\pi}{6} \right] \cup \left[ \dfrac{\pi}{6}, \dfrac{5\pi}{6} \right] \cup, \left\{ -\dfrac{\pi}{2}, \dfrac{3\pi}{2} \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the given inequality.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin(2x) > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(0, \frac{1}{2}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3 \arccos(x) \leq \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\frac{1}{2}, 1\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>6 \, \operatorname{arccot}(7x) \geq \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, \frac{\sqrt{3}}{7} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\pi > 2\arctan(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\arcsin(x)^2 > \pi \arcsin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-1,0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>12 \arccos(x)^2+2\pi^2>11\pi \arccos(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-1, -\frac{1}{2}\right) \cup \left( \frac{\sqrt{2}}{2}, 1\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the given inequality.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{\cos(x) - 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left( 2k\pi, (2k+2)\pi \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\cos(x)}{\sin(x) + 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left( \dfrac{(4k - 1)\pi}{2}, \dfrac{(4k + 3)\pi}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{\tan^{2}(x) - 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left\{ \left[ \dfrac{(4k + 1)\pi}{4}, \dfrac{(2k + 1)\pi}{2} \right) \cup \left( \dfrac{(2k + 1)\pi}{2}, \dfrac{(4k + 3)\pi}{4} \right] \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{2 - \sec(x)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left\{ \left[ \dfrac{(6k - 1)\pi}{3}, \dfrac{(6k + 1)\pi}{3} \right] \cup \left( \dfrac{(4k + 1)\pi}{2}, \dfrac{(4k + 3)\pi}{2} \right) \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \csc(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left( \dfrac{k\pi}{2}, \dfrac{(k+1)\pi}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sin(x)}{2 + \cos(x)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3\csc(x) + 4\sec(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left( \dfrac{k\pi}{2}, \dfrac{(k+1)\pi}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln\left( |\cos(x)| \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left( \dfrac{(2k - 1)\pi}{2}, \dfrac{(2k+1)\pi}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arcsin(\tan(x))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\displaystyle \bigcup_{k=-\infty}^{\infty} \left[ \dfrac{(4k - 1)\pi}{4}, \dfrac{(4k+1)\pi}{4} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          determine the number of solutions to <m>\sin(x) = \frac{1}{2}</m> in <m>[0,2\pi)</m>.
+          Then find the number of solutions to <m>\sin(2x) = \frac{1}{2}</m>,
+          <m>\sin(3x) = \frac{1}{2}</m> and <m>\sin(4x) = \frac{1}{2}</m> in <m>[0,2\pi)</m>.
+          A pattern should emerge.
+          Explain how this pattern would help you solve equations like <m>\sin(11x) = \frac{1}{2}</m>.
+          Now consider <m>\sin\left(\frac{x}{2}\right) = \frac{1}{2}</m>,
+          <m>\sin\left(\frac{3x}{2}\right) = \frac{1}{2}</m> and <m>\sin\left(\frac{5x}{2}\right) = \frac{1}{2}</m>.
+          What do you find?
+          Replace <m>\dfrac{1}{2}</m> with <m>-1</m> and repeat the whole exploration.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

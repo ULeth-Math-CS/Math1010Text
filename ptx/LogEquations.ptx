@@ -1,0 +1,1002 @@
+
+
+<section xml:id="LogEquations">
+  <title>Logarithmic Equations and Inequalities</title>
+  <introduction>
+    <p>
+      In <xref ref="ExpEquations">Section</xref>
+      we solved equations and inequalities involving exponential functions using one of two basic strategies.
+      We now turn our attention to equations and inequalities involving logarithmic functions,
+      and not surprisingly, there are two basic strategies to choose from.
+      For example,
+      suppose we wish to solve <m>\log_{2}(x) = \log_{2}(5)</m>.
+      <xref ref="explogsonetoone">Theorem</xref>
+      tells us that the <em>only</em>
+      solution to this equation is <m>x=5</m>.
+      Now suppose we wish to solve <m>\log_{2}(x) = 3</m>.
+      If we want to use <xref ref="explogsonetoone">Theorem</xref>,
+      we need to rewrite <m>3</m> as a logarithm base <m>2</m>.
+      We can use <xref ref="invpropslogs">Theorem</xref> to do just that:
+      <m>3 = \log_{2}\left(2^{3}\right) = \log_{2}(8)</m>.
+      Our equation then becomes
+      <m>\log_{2}(x) = \log_{2}(8)</m> so that <m>x = 8</m>.
+      However, we could have arrived at the same answer, in fewer steps,
+      by using <xref ref="invpropslogs">Theorem</xref>
+      to rewrite the equation <m>\log_{2}(x) = 3</m> as <m>2^{3} = x</m>,
+      or <m>x=8</m>.
+      We summarize the two common ways to solve log equations below.
+    </p>
+
+    <insight xml:id="idea_logeqn">
+      <title>Steps for Solving an Equation involving Logarithmic Functions</title>
+      <p>
+            <idx><h>logarithm </h><h> solving equations with</h></idx>
+      </p>
+
+      <ol>
+        <li>
+          <p>
+            Isolate the logarithmic function.
+          </p>
+        </li>
+
+        <li><ol>
+            <li>
+              <p>
+                If convenient,
+                express both sides as logs with the same base and equate the arguments of the log functions.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Otherwise, rewrite the log equation as an exponential equation.
+              </p>
+            </li>
+          </ol></li>
+      </ol>
+    </insight>
+
+    <example xml:id="LogEqnsEx1">
+      <title>Logarithmic equations</title>
+      <statement>
+        <p>
+          Solve the following equations.
+          Check your solutions graphically using a computer or calculator.
+          <ol cols="3">
+            <li>
+              <p>
+                <m>\log_{117}(1-3x) = \log_{117}\left(x^2-3\right)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 - \ln(x-3) = 1</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>\log_{6}(x+4) + \log_{6}(3-x) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{7}(1-2x) = 1 - \log_{7}(3-x)</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>\log_{2}(x+3) = \log_{2}(6-x)+3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>1 + 2 \log_{4}(x+1) = 2 \log_{2}(x)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since we have the same base on both sides of the equation <m>\log_{117}(1-3x) = \log_{117}\left(x^2-3\right)</m>,
+                we equate what's inside the logs to get <m>1-3x = x^2-3</m>.
+                Solving <m>x^2+3x-4 = 0</m> gives <m>x=-4</m> and <m>x=1</m>.
+                To check these answers using the calculator,
+                we make use of the change of base formula and graph <m>f(x) = \frac{\ln(1-3x)}{\ln(117)}</m> and
+                <m>g(x) = \frac{\ln\left(x^2-3\right)}{\ln(117)}</m> and we see they intersect only at <m>x=-4</m>.
+                To see what happened to the solution <m>x=1</m>,
+                we substitute it into our original equation to obtain <m>\log_{117}(-2) = \log_{117}(-2)</m>.
+                While these expressions look identical, neither is a real number,
+                which means <m>x=1</m> is not in the domain of the original equation,
+                and is not a solution.
+                Using GeoGebra to solve the equation graphically gives us <xref ref="fig_logeqn1">Figure</xref>. <figure xml:id="fig_logeqn1"> <caption>\color{red} <m>y=f(x)=\log_{117}(1-3x)</m> and {\color{blue}
+                <m>y=g(x)=\log_{117}(x^2-3)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs15.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Our first objective in solving
+                <m>2 - \ln(x-3) = 1</m> is to isolate the logarithm.
+                We get <m>\ln(x-3)=1</m>,
+                which, as an exponential equation, is <m>e^{1} = x-3</m>.
+                We get our solution <m>x=e+3</m>.
+                In <xref ref="fig_logeqn2">Figure</xref>,
+                we see the graph of
+          <m>f(x) = 2 - \ln(x-3)</m> intersects the graph of <m>g(x) = 1</m> at
+                <m>x = e+3 \approx 5.718</m>. <figure xml:id="fig_logeqn2"> <caption>\color{red} <m>y=f(x)=2-\ln(x-3)</m> and {\color{blue}
+                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs16.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We can start solving
+          <m>\log_{6}(x+4) + \log_{6}(3-x) = 1</m> by using the Product Rule for logarithms to rewrite the equation as <m>\log_{6}\left[(x+4)(3-x)\right] = 1</m>.
+                Rewriting this as an exponential equation,
+                we get <m>6^{1} = (x+4)(3-x)</m>.
+                This reduces to <m>x^2+x-6 = 0</m>,
+                which gives <m>x=-3</m> and <m>x=2</m>.
+                Graphing <m>y=f(x) = \frac{\ln(x+4)}{\ln(6)} + \frac{\ln(3-x)}{\ln(6)}</m> and <m>y=g(x) = 1</m>,
+                we see they intersect twice,
+                at <m>x=-3</m> and <m>x=2</m>
+                (<xref ref="fig_logeqn3">Figure</xref>).
+                <figure xml:id="fig_logeqn3"> <caption>\color{red} <m>y=f(x)=\log_6(x+4)+\log_6(3-x)</m> and {\color{blue}
+                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs17.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Taking a cue from the previous problem,
+                we begin solving <m>\log_{7}(1-2x) = 1 - \log_{7}(3-x)</m> by first collecting the logarithms on the same side,
+                <m>\log_{7}(1-2x) + \log_{7}(3-x) = 1</m>,
+                and then using the Product Rule to get <m>\log_{7}[(1-2x)(3-x)] = 1</m>.
+                Rewriting this as an exponential equation gives
+                <m>7^{1} = (1-2x)(3-x)</m> which gives the quadratic equation <m>2x^2-7x-4=0</m>.
+                Solving, we find <m>x = -\frac{1}{2}</m> and <m>x=4</m>.
+                Graphing,
+          we find <m>y = f(x) = \frac{\ln(1-2x)}{\ln(7)}</m> and
+                <m>y=g(x) = 1 - \frac{\ln(3-x)}{\ln(7)}</m> intersect only at <m>x=-\frac{1}{2}</m>:
+                see <xref ref="fig_logeqn4">Figure</xref>.
+                Checking <m>x=4</m> in the original equation produces <m>\log_{7}(-7) = 1 - \log_{7}(-1)</m>,
+                which is a clear domain violation. <figure xml:id="fig_logeqn4"> <caption>\color{red} <m>y=f(x)=\log_7(1-2x)</m> and {\color{blue}
+                <m>y=g(x)=1-\log_7(3-x)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs18.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Starting with  <m>\log_{2}(x+3) = \log_{2}(6-x)+3</m>,
+                we gather the logarithms to one side and get <m>\log_{2}(x+3) - \log_{2}(6-x) = 3</m>.
+                We then use the Quotient Rule and convert to an exponential equation
+                <me>
+                  \log_{2}\left(\frac{x+3}{6-x}\right) = 3 \iff 2^{3} = \frac{x+3}{6-x}
+                </me>
+                This reduces to the linear equation <m>8(6-x) = x+3</m>,
+                which gives us <m>x = 5</m>.
+                When we graph <m>f(x) = \frac{\ln(x+3)}{\ln(2)}</m> and <m>g(x) =  \frac{\ln(6-x)}{\ln(2)} + 3</m>,
+                we find they intersect at <m>x=5</m>:
+                see <xref ref="fig_logeqn5">Figure</xref>.
+
+                <figure xml:id="fig_logeqn5">
+                  <caption>\color{red} <m>y=f(x)=\log_2(x+3)</m> 
+                  and  {\color{blue} <m>y=g(x)=log_2(6-x)+3</m>}</caption>
+                  <img src="figures/ExpLogsGraphics/ExpLogs19.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Starting with <m>1 + 2 \log_{4}(x+1) = 2 \log_{2}(x)</m>,
+                we gather the logs to one side to get the equation <m>1 = 2 \log_{2}(x) - 2 \log_{4}(x+1)</m>.
+                Before we can combine the logarithms,
+                however, we need a common base.
+                Since <m>4</m> is a power of <m>2</m>,
+                we use change of base to convert
+                <me>
+                  \log_{4}(x+1) = \frac{\log_{2}(x+1)}{\log_{2}(4)} = \frac{1}{2} \log_{2}(x+1)
+                </me>
+                Hence, our original equation becomes
+                <md>
+                  <mrow>1 \amp  =  2 \log_{2}(x) - 2 \left(\frac{1}{2} \log_{2}(x+1)\right)</mrow>
+                  <mrow>1 \amp =  2\log_{2}(x) - \log_{2}(x+1)</mrow>
+                  <mrow>1 \amp  = \log_{2}\left(x^2\right) - \log_{2}(x+1) \tag{Power Rule}</mrow>
+                  <mrow>1 \amp  =  \log_{2}\left( \dfrac{x^{2}}{x+1}\right) \amp  \tag{Quotient Rule}</mrow>
+                </md>
+                Rewriting this in exponential form,
+                we get <m>\frac{x^{2}}{x+1} = 2</m> or <m>x^2 -2x-2 = 0</m>.
+                Using the quadratic formula,
+                we get <m>x = 1 \pm \sqrt{3}</m>.
+                Graphing <m>f(x) = 1 + \frac{2\ln(x+1)}{\ln(4)}</m> and <m>g(x) = \frac{2 \ln(x)}{\ln(2)}</m>,
+                we see in <xref ref="fig_logeqn6">Figure</xref>
+                that the graphs intersect only at <m>x = 1 + \sqrt{3} \approx 2.732</m>.
+                The solution <m>x = 1 - \sqrt{3} \lt  0</m>,
+                which means if substituted into the original equation,
+                the term <m>2 \log_{2}\left(1 - \sqrt{3}\right)</m> is undefined.
+
+                <figure xml:id="fig_logeqn6">
+                  <caption>\color{red} <m>y=f(x)=1+2\log_4(x+1)</m> 
+                  and {\color{blue} <m>y=g(x)=2\log_2(x)</m>}</caption>
+                  <img src="figures/ExpLogsGraphics/ExpLogs20.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      If nothing else, <xref ref="LogEqnsEx1">Example</xref>
+      demonstrates the importance of checking for extraneous solutions when solving equations involving logarithms. (Recall that an extraneous solution is an answer obtained analytically which does not satisfy the original equation.) Even though we checked our answers graphically,
+      extraneous solutions are easy to spot - any supposed solution which causes a negative number inside a logarithm needs to be discarded.
+      As with the equations in <xref ref="expeqnsex1">Example</xref>,
+      much can be learned from checking all of the answers in <xref ref="LogEqnsEx1">Example</xref> analytically.
+      We leave this to the reader and turn our attention to inequalities involving logarithmic functions.
+      Since logarithmic functions are continuous on their domains,
+      we can use sign diagrams.
+    </p>
+
+    <example xml:id="logineq">
+      <title>Logarithmic inequalities</title>
+      <statement>
+        <p>
+          Solve the following inequalities.
+          Check your answer graphically using a computer or calculator.
+
+          <ol>
+            <li>
+              <p>
+                <m>\dfrac{1}{\ln(x)+1} \leq 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\log_{2}(x)\right)^2 \lt 2 \log_{2}(x) + 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x \log(x+1) \geq x</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We start solving <m>\dfrac{1}{\ln(x)+1} \leq 1</m> by getting <m>0</m> on one side of the inequality:
+                <m>\dfrac{1}{\ln(x)+1} - 1 \leq 0</m>.
+                Getting a common denominator yields
+                <m>\dfrac{1}{\ln(x)+1} - \dfrac{\ln(x)+1}{\ln(x)+1} \leq 0</m> which reduces to <m>\dfrac{-\ln(x)}{\ln(x)+1} \leq 0</m>,
+                or <m>\dfrac{\ln(x)}{\ln(x)+1} \geq 0</m>.
+                We define <m>r(x) = \dfrac{\ln(x)}{\ln(x)+1}</m> and set about finding the domain and the zeros of <m>r</m>.
+                Due to the appearance of the term <m>\ln(x)</m>,
+          we require <m>x > 0</m>.
+                In order to keep the denominator away from zero,
+                we solve <m>\ln(x)+1 = 0</m> so <m>\ln(x) = -1</m>,
+                so <m>x = e^{-1} = \frac{1}{e}</m>.
+                Hence,
+          the domain of <m>r</m> is <m>\left(0, \frac{1}{e}\right) \cup \left(\frac{1}{e}, \infty\right)</m>.
+                To find the zeros of <m>r</m>,
+                we set <m>r(x) = \dfrac{\ln(x)}{\ln(x)+1} = 0</m> so that <m>\ln(x) = 0</m>,
+                and we find <m>x = e^{0} = 1</m>.
+                In order to determine test values for <m>r</m> without resorting to the calculator,
+                we need to find numbers between <m>0</m>,
+                <m>\frac{1}{e}</m>, and <m>1</m> which have a base of <m>e</m>.
+                Since <m>e \approx 2.718 > 1</m>,
+                <m>0 \lt \frac{1}{e^2} \lt \frac{1}{e} \lt \frac{1}{\sqrt{e}} \lt 1 \lt e</m>.
+                To determine the sign of <m>r\left( \frac{1}{e^2} \right)</m>,
+                we use the fact that <m>\ln\left(\frac{1}{e^2}\right) = \ln\left(e^{-2}\right) = -2</m>,
+                and find <m>r\left( \frac{1}{e^2} \right) = \frac{-2}{-2+1} = 2</m>,
+                which is <m>(+)</m>.
+                The rest of the test values are determined similarly.
+                From our sign diagram,
+                we find the solution to be <m>\left(0, \frac{1}{e}\right) \cup [1, \infty)</m>.
+                Graphing <m>f(x) = \frac{1}{\ln(x)+1}</m> and <m>g(x) = 1</m>,
+                we see in <xref ref="fig_logineq1">Figure</xref>
+                the graph of <m>f</m> is below the graph of <m>g</m> on the solution intervals,
+                and that the graphs intersect at <m>x=1</m>. <figure xml:id="fig_logineq1"> <caption>Solving
+          <m>\dfrac{1}{\ln(x)+1}\leq 1</m></caption> <sidebyside> <figure> <caption>Sign diagram for
+          <m>r(x)=\dfrac{\ln(x)}{\ln(x)+1}</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-1.pdf"/> </figure> <figure> <caption>and {\color{blue}
+                <m>y=g(x)=1</m>}</caption> {\color{red}
+                <m>y=f(x)=\dfrac{1}{\ln(x)+1}</m>} </figure> </sidebyside> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Moving all of the nonzero terms of
+                <m>\left(\log_{2}(x)\right)^2 \lt 2 \log_{2}(x) + 3</m> to one side of the inequality,
+                we have <m>\left(\log_{2}(x)\right)^2 - 2 \log_{2}(x) - 3 \lt 0</m>.
+                Defining <m>r(x) = \left(\log_{2}(x)\right)^2 - 2 \log_{2}(x) - 3</m>,
+                we get the domain of <m>r</m> is <m>(0, \infty)</m>,
+                due to the presence of the logarithm.
+                To find the zeros of <m>r</m>,
+                we set <m>r(x) =\left(\log_{2}(x)\right)^2 - 2 \log_{2}(x) - 3= 0</m> which results in a
+                <q>quadratic in disguise.</q>
+                We set <m>u = \log_{2}(x)</m> so our equation becomes
+                <m>u^2-2u-3 = 0</m> which gives us <m>u=-1</m> and <m>u=3</m>.
+                Since <m>u = \log_{2}(x)</m>,
+                we get <m>\log_{2}(x) = -1</m>,
+                which gives us <m>x = 2^{-1} = \frac{1}{2}</m>,
+                and <m>\log_{2}(x) = 3</m>,
+          which yields <m>x = 2^{3} = 8</m>.
+                We use test values which are powers of <m>2</m>:
+                <m>0 \lt \frac{1}{4} \lt \frac{1}{2} \lt 1 \lt 8 \lt 16</m>,
+                and from our sign diagram,
+                we see <m>r(x)\lt 0</m> on <m>\left(\frac{1}{2}, 8 \right)</m>.
+                Geometrically, we see the graph of
+                <m>f(x)= \left(\frac{\ln(x)}{\ln(2)}\right)^2</m> is below the graph of
+                <m>y = g(x) = \frac{2 \ln(x)}{\ln(2)} + 3</m> on the solution interval:
+                see <xref ref="fig_logineq2">Figure</xref>. <table xml:id="fig_logineq2"> <caption>Solving
+          <m>(\log_2(x))^2\lt 2\log_2(x)+3</m></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/LogEquations-2.pdf"/></cell> </row> <row> <cell>Sign diagram for</cell> </row> <row> <cell><m>r(x)=(\log_2(x))^2-2\log_2(x)-3</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/ExpLogs22.pdf"/></cell> </row> <row> <cell>{\color{red}
+          <m>y=f(x)=(\log_2(x))^2</m>} and</cell> </row> <row> <cell>{\color{blue}
+                <m>y=g(x)=2\log_2(x)+3</m>}</cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We begin to solve <m>x \log(x+1) \geq x</m> by subtracting <m>x</m> from both sides to get <m>x \log(x+1) - x \geq 0</m>.
+                We define <m>r(x) = x \log(x+1) - x</m> and due to the presence of the logarithm,
+                we require <m>x+1 > 0</m>, or <m>x > -1</m>.
+                To find the zeros of <m>r</m>,
+                we set <m>r(x) = x \log(x+1) - x = 0</m>.
+                Factoring, we get <m>x \left(\log(x+1) - 1\right) = 0</m>,
+                which gives <m>x=0</m> or <m>\log(x+1) - 1=0</m>.
+                The latter gives <m>\log(x+1) = 1</m>, or <m>x+1 = 10^{1}</m>,
+                which admits <m>x = 9</m>.
+                We select test values <m>x</m> so that <m>x+1</m> is a power of <m>10</m>,
+                and we obtain <m>-1 \lt -0.9 \lt 0 \lt \sqrt{10} -1 \lt 9 \lt 99</m>.
+                Our sign diagram gives the solution to be <m>(-1,0] \cup [9, \infty)</m>.
+                <xref ref="fig_logineq3">Figure</xref>
+                indicates the graph of <m>y= f(x) = x \log(x+1)</m> is above
+                <m>y=g(x) = x</m> on the solution intervals,
+                and the graphs intersect at <m>x=0</m> and <m>x=9</m>. <figure xml:id="fig_logineq3"> <caption>Solving <m>x\log(x+1)\geq x</m></caption> <sidebyside> <figure> <caption>Sign diagram for
+          <m>r(x)=x\log(x+1)-x</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-3.pdf"/> </figure> <figure> <caption>and {\color{blue}
+          <m>y=g(x)=x</m>}</caption> {\color{red}
+                <m>y=f(x)=x\log(x+1)</m>} </figure> </sidebyside> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example revisits the concept of pH first seen in <xref ref="pHexercise">Exercise</xref>
+      in <xref ref="IntroExpLogs">Section</xref>.
+    </p>
+
+    <example xml:id="ex_fishph">
+      <title>Calculating pH range</title>
+      <statement>
+        <p>
+          In order to successfully breed Ippizuti fish the pH of a freshwater tank must be at least 7.8 but can be no more than 8.5.
+          Determine the corresponding range of hydrogen ion concentration,
+          and check your answer using a calculator.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Recall from <xref ref="pHexercise">Exercise</xref>
+          in <xref ref="IntroExpLogs">Section</xref>
+          that <m>\mbox{pH} = -\log[\mbox{H} ^{+}]</m> where
+          <m>[\mbox{H} ^{+}]</m> is the hydrogen ion concentration in moles per liter.
+          We require <m>7.8 \leq -\log[\mbox{H} ^{+}] \leq 8.5</m> or <m>-7.8 \geq \log[\mbox{H} ^{+}] \geq -8.5</m>.
+          To solve this compound inequality we solve <m>-7.8 \geq \log[\mbox{H} ^{+}]</m> and
+          <m>\log[\mbox{H} ^{+}] \geq -8.5</m> and take the intersection of the solution sets. (Refer to <xref ref="intersectionunion">page</xref>
+          for a discussion of what this means.) The former inequality yields
+          <m>0 \lt [\mbox{H} ^{+}] \leq 10^{-7.8}</m> and the latter yields <m>[\mbox{H} ^{+}] \geq 10^{-8.5}</m>.
+          Taking the intersection gives us our final answer <m>10^{-8.5} \leq [\mbox{H} ^{+}] \leq 10^{-7.8}</m>. (Your Chemistry professor may want the answer written as <m>3.16 \times 10^{-9} \leq [\mbox{H} ^{+}] \leq 1.58 \times 10^{-8}</m>.) After carefully adjusting the viewing window on GeoGebra we see that the graph of
+          <m>f(x) = -\log(x)</m> lies between the lines <m>y = 7.8</m> and <m>y = 8.5</m> on the interval <m>[3.16 \times 10^{-9}, 1.58 \times 10^{-8}]</m>:
+          see <xref ref="fig_pHlog">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_pHlog">
+          <caption>The graphs of {\color{red} <m>y = f(x) = -\log(x)</m>}, {\color{green} <m>y = 7.8</m>} and {\color{orange} <m>y = 8.5</m>}</caption>
+          <img src="figures/ExpLogsGraphics/ExpLogs24.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      We close this section by finding an inverse of a one-to-one function which involves logarithms.
+    </p>
+
+    <example xml:id="logfracinverse">
+      <title>Inverting a fractional logarithmic function</title>
+      <statement>
+        <p>
+          The function <m>f(x) = \dfrac{\log(x)}{1-\log(x)}</m> is one-to-one.
+          Find a formula for <m>f^{-1}(x)</m> and check your answer graphically using your calculator.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We first write <m>y=f(x)</m> then interchange the <m>x</m> and <m>y</m> and solve for <m>y</m>.
+          <md>
+            <mrow>y \amp  =  f(x)</mrow>
+            <mrow>y  \amp  =  \dfrac{\log(x)}{1-\log(x)}</mrow>
+            <mrow>x  \amp  =  \dfrac{\log(y)}{1-\log(y)}  \tag{Interchange $x$ and $y$.}</mrow>
+            <mrow>x\left(1-\log(y)\right) \amp  =  \log(y)</mrow>
+            <mrow>x - x\log(y)  \amp  =  \log(y)</mrow>
+            <mrow>x \amp  =  x \log(y) + \log(y)</mrow>
+            <mrow>x \amp  =  (x+1) \log(y)</mrow>
+            <mrow>\dfrac{x}{x+1}  \amp  =  \log(y)</mrow>
+            <mrow>y \amp  =  10^{\frac{x}{x+1}}  \tag{Rewrite as an exponential equation.}</mrow>
+          </md>
+        </p>
+
+        <p>
+          We have <m>f^{-1}(x) = 10^{\frac{x}{x+1}}</m>.
+          Graphing <m>f</m> and <m>f^{-1}</m> in GeoGebra gives us <xref ref="fig_loginverse">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_loginverse">
+          <caption>\color{red} <m>y=f(x)=\dfrac{\log(x)}{1-\log(x)}</m>
+          and {\color{blue} <m>y=g(x)=10^{\frac{x}{x+1}}</m>}</caption>
+          <img src="figures/ExpLogsGraphics/ExpLogs25.pdf"/>
+        </figure>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the equation analytically.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log(3x-1) = \log(4-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{5}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{2}\left(x^{3}\right) = \log_{2}(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln\left(8-x^2\right)=\ln(2-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{5}\left(18-x^2\right) = \log_{5}(6-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-3,\, 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{3}(7-2x) = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{\frac{1}{2}} (2x-1) = -3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{9}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln\left(x^2-99\right) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\pm 10</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log(x^2-3x) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-2,\, 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{125} \left(\dfrac{3x-2}{2x+3}\right)=\dfrac{1}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{17}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourRichterequ">
+      <statement>
+        <p>
+          <m>\log\left(\dfrac{x}{10^{-3}}\right) = 4.7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 10^{1.7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourpHequ">
+      <statement>
+        <p>
+          <m>-\log(x) = 5.4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 10^{-5.4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourdecibelequ">
+      <statement>
+        <p>
+          <m>10\log\left(\dfrac{x}{10^{-12}}\right) = 150</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 10^{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>6-3\log_{5}(2x)=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{25}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3\ln(x)-2=1-\ln(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=e^{3/4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{3}(x - 4) + \log_{3}(x + 4) = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{5}(2x + 1) + \log_{5}(x + 2) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{169}(3x + 7) - \log_{169}(5x - 9) = \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x+1) - \ln(x) = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{1}{e^3-1}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\log_{7}(x) = \log_{7}(2) + \log_{7}(x+12)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log(x) - \log(2) = \log(x+8) - \log(x+2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{3}(x) = \log_{\frac{1}{3}}(x) + 8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 81</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(\ln(x)) = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = e^{e^3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\log(x)\right)^2=2\log(x)+15</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=10^{-3}, \, 10^{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x^{2}) = (\ln(x))^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 1, \, x = e^{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the inequality analytically.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{1 - \ln(x)}{x^{2}} \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(e, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x\ln(x) - x > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(e, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourdecibelineq">
+      <statement>
+        <p>
+          <m>10\log\left(\dfrac{x}{10^{-12}}\right) \geq 90</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[10^{-3}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourRichterineq">
+      <statement>
+        <p>
+          <m>5.6 \leq \log\left(\dfrac{x}{10^{-3}}\right) \leq 7.1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[10^{2.6}, 10^{4.1}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="sixfourpHineq">
+      <statement>
+        <p>
+          <m>2.3 \lt -\log(x) \lt 5.4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(10^{-5.4}, 10^{-2.3}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x^{2}) \leq (\ln(x))^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0, 1] \cup [e^{2}, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use your calculator or computer to help you solve the equation or inequality.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x) = e^{-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x \approx 1.3098</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x) = \sqrt[4]{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x \approx 4.177, \, x \approx 5503.665</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(x^{2} + 1) \geq 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\approx (-\infty, -12.1414) \cup (12.1414, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(-2x^{3} - x^{2} + 13x - 6) \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\approx (-3.0281, -3) \cup (0.5, 0.5991) \cup (1.9299, 2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="onetooneexpexercise">
+      <statement>
+        <p>
+          Since <m>f(x) = e^{x}</m> is a strictly increasing function,
+          if <m>a \lt b</m> then <m>e^{a} \lt e^{b}</m>.
+          Use this fact to solve the inequality
+          <m>\ln(2x + 1) \lt 3</m> without a sign diagram.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{1}{2} \lt x \lt \dfrac{e^{3} - 1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use the technique from <xref ref="onetooneexpexercise">Exercise</xref> to solve the inequalities in <xref ref="sixfourdecibelineq">Exercises</xref>
+          - <xref ref="sixfourpHineq"></xref>. (Compare this to <xref ref="onetoonelogexercise">Exercise</xref>
+          in <xref ref="ExpEquations">Section</xref>.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>\ln(3 - y) - \ln(y) = 2x + \ln(5)</m> for <m>y</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \dfrac{3}{5e^{2x} + 1}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="logfracinverse">Example</xref>
+          we found the inverse of <m>f(x) = \dfrac{\log(x)}{1-\log(x)}</m> to be <m>f^{-1}(x) = 10^{\frac{x}{x+1}}</m>.
+
+          <ol>
+            <li>
+              <p>
+                Show that <m>\left(f^{-1} \circ f\right)(x) = x</m> for all <m>x</m> in the domain of <m>f</m> and that
+                <m>\left(f \circ f^{-1}\right)(x) = x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the range of <m>f</m> by finding the domain of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Let <m>g(x) = \dfrac{x}{1 - x}</m> and <m>h(x) = \log(x)</m>.
+                Show that <m>f = g \circ h</m> and
+                <m>(g \circ h)^{-1} = h^{-1} \circ g^{-1}</m>. (We know this is true in general by <xref ref="fcircginverse">Exercise</xref>
+                in <xref ref="InverseFunctions">Section</xref>,
+                but it's nice to see a specific example of the property.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="inversehyptangent">
+      <statement>
+        <p>
+          Let <m>f(x) = \dfrac{1}{2}\ln\left(\dfrac{1 + x}{1 - x}\right)</m>.
+          Compute <m>f^{-1}(x)</m> and find its domain and range.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{e^{2x} - 1}{e^{2x} + 1} = \dfrac{e^{x} - e^{-x}}{e^{x} + e^{-x}}</m>.
+          The domain of <m>f^{-1}</m> is
+          <m>(-\infty, \infty)</m> and its range is the same as the domain of <m>f</m>,
+          namely <m>(-1, 1)</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Explain the equation in <xref ref="sixfourRichterequ">Exercise</xref> and the inequality in <xref ref="sixfourRichterineq">Exercise</xref>
+          above in terms of the Richter scale for earthquake magnitude. (See <xref ref="Richterexercise">Exercise</xref>
+          in <xref ref="IntroExpLogs">Section</xref>.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Explain the equation in <xref ref="sixfourdecibelequ">Exercise</xref> and the inequality in <xref ref="sixfourdecibelineq">Exercise</xref>
+          above in terms of sound intensity level as measured in decibels. (See <xref ref="decibelexercise">Exercise</xref>
+          in <xref ref="IntroExpLogs">Section</xref>.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Explain the equation in <xref ref="sixfourpHequ">Exercise</xref> and the inequality in <xref ref="sixfourpHineq">Exercise</xref>
+          above in terms of the pH of a solution. (See <xref ref="pHexercise">Exercise</xref>
+          in <xref ref="IntroExpLogs">Section</xref>.)
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

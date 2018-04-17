@@ -1,0 +1,1891 @@
+
+
+<section xml:id="AbsoluteValueFunctions">
+  <title>Absolute Value Functions</title>
+  <introduction>
+    <p>
+      There are a few ways to describe what is meant by the absolute value <m>|x|</m> of a real number <m>x</m>.
+      You may have been taught that <m>|x|</m> is the distance from the real number <m>x</m> to <m>0</m> on the number line.
+      So, for example, <m>|5| = 5</m> and <m>|-5| = 5</m>,
+      since each is <m>5</m> units from <m>0</m> on the number line.
+    </p>
+
+    <p>
+      <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1.pdf"/>
+    </p>
+
+    <p>
+      Another way to define absolute value is by the equation <m>|x| = \sqrt{x^2}</m>.
+      Using this definition, we have
+      <m>|5| = \sqrt{(5)^2} = \sqrt{25} = 5</m> and <m>|-5| = \sqrt{(-5)^2} = \sqrt{25} = 5</m>.
+      The long and short of both of these procedures is that <m>|x|</m> takes negative real numbers and assigns them to their positive counterparts while it leaves positive numbers alone.
+      This last description is the one we shall adopt,
+      and is summarized in the following definition.
+    </p>
+
+    <definition xml:id="absolutevalue">
+      <title>Absolute value function</title>
+      <statement>
+        <p>
+          The
+              <idx><h>absolute value </h><h> definition of</h></idx><idx><h>function </h><h> absolute value</h></idx>
+          <term>absolute value</term> of a real number <m>x</m>,
+          denoted <m>|x|</m>, is given by
+          <me>
+            |x| = \begin{cases}-x, \amp  \mbox{ if }   x \lt  0  \\
+            x, \amp  \mbox{ if }   x \geq 0
+            \end{cases}
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In <xref ref="absolutevalue">Definition</xref>,
+      we define <m>|x|</m> using a piecewise-defined function. (See <xref ref="piecewisefunction">page</xref>
+      in <xref ref="FunctionNotation">Section</xref>.) To check that this definition agrees with what we previously understood as absolute value,
+      note that since <m>5 \geq 0</m>,
+      to find <m>|5|</m> we use the rule <m>|x| = x</m>, so <m>|5|=5</m>.
+      Similarly, since <m>-5 \lt 0</m>,
+      we use the rule <m>|x| = -x</m>,
+      so that <m>|-5| = -(-5) = 5</m>.
+      This is one of the times when it's best to interpret the expression <q><m>-x</m></q>
+      as <q>the opposite of <m>x</m></q>
+      as opposed to <q>negative <m>x</m></q>.
+      Before we begin studying absolute value functions,
+      we remind ourselves of the properties of absolute value.
+    </p>
+
+    <theorem xml:id="absolutevalueprops">
+      <title>Properties of Absolute Value</title>
+      <statement>
+        <p>
+          Let <m>a</m>,
+          <m>b</m> and <m>x</m> be real numbers and let <m>n</m> be an integer.
+          Then
+              <idx><h>absolute value </h><h> properties of</h></idx>
+
+          <ul>
+            <li>
+              <p>
+                <em>Product Rule:</em> <m>|ab|= |a||b|</m>
+                    <idx><h>product rule </h><h> for absolute value</h></idx>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <em>Power Rule:</em>
+                <m>\left| a^{n} \right| = |a|^{n}</m> whenever <m>a^{n}</m> is defined
+                    <idx><h>power rule </h><h> for absolute value</h></idx>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <em>Quotient Rule:</em>
+                <m>\left| \dfrac{a}{b} \right| = \dfrac{|a|}{|b|}</m>,
+                provided <m>b \neq 0</m>
+                    <idx><h>quotient rule </h><h> for absolute value</h></idx>
+          </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <em>Equality Properties:</em>
+
+          <ul>
+            <li>
+              <p>
+                <m>|x| = 0</m> if and only if <m>x = 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c > 0</m>,
+                <m>|x| = c</m> if and only if <m>x = c</m> or <m>-x = c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c \lt 0</m>, <m>|x| = c</m> has no solution.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The proofs of the Product and Quotient Rules in <xref ref="absolutevalueprops">Theorem</xref>
+      boil down to checking four cases:
+      when both <m>a</m> and <m>b</m> are positive;
+      when they are both negative;
+      when one is positive and the other is negative;
+      and when one or both are zero.
+    </p>
+
+    <p>
+      For example, suppose we wish to show that <m>|ab| = |a||b|</m>.
+      We need to show that this equation is true for all real numbers <m>a</m> and <m>b</m>.
+      If <m>a</m> and <m>b</m> are both positive, then so is <m>ab</m>.
+      Hence, <m>|a| = a</m>, <m>|b| = b</m> and <m>|ab| = ab</m>.
+      Hence, the equation <m>|ab| = |a||b|</m> is the same as <m>ab = ab</m> which is true.
+      If both <m>a</m> and <m>b</m> are negative,
+      then <m>ab</m> is positive.
+      Hence, <m>|a| = -a</m>, <m>|b| = -b</m> and <m>|ab| = ab</m>.
+      The equation <m>|ab| = |a||b|</m> becomes <m>ab = (-a)(-b)</m>,
+      which is true.
+      Suppose <m>a</m> is positive and <m>b</m> is negative.
+      Then <m>ab</m> is negative,
+      and we have <m>|ab| = -ab</m>,
+      <m>|a| = a</m> and <m>|b| = -b</m>.
+      The equation <m>|ab| = |a||b|</m> reduces to <m>-ab = a(-b)</m> which is true.
+      A symmetric argument shows the equation
+      <m>|ab| = |a||b|</m> holds when <m>a</m> is negative and <m>b</m> is positive.
+      Finally, if either <m>a</m> or <m>b</m>
+      (or both)
+      are zero, then both sides of <m>|ab| = |a||b|</m> are zero,
+      so the equation holds in this case, too.
+      All of this rhetoric has shown that the equation
+      <m>|ab| = |a||b|</m> holds true in all cases.
+    </p>
+
+    <p>
+      The proof of the Quotient Rule is very similar,
+      with the exception that <m>b \neq 0</m>.
+      The Power Rule can be shown by repeated application of the Product Rule.
+      The <q>Equality Properties</q>
+      can be proved using <xref ref="absolutevalue">Definition</xref>
+      and by looking at the cases when <m>x\geq 0</m>,
+      in which case <m>|x| = x</m>,
+      or when <m>x\lt 0</m>, in which case <m>|x| = -x</m>.
+      For example, if <m>c>0</m>, and <m>|x| = c</m>,
+      then if <m>x \geq 0</m>, we have <m>x = |x| = c</m>.
+      If, on the other hand, <m>x \lt 0</m>,
+      then <m>-x = |x| = c</m>, so <m>x = -c</m>.
+      The remaining properties are proved similarly and are left for the Exercises.
+      Our first example reviews how to solve basic equations involving absolute value using the properties listed in <xref ref="absolutevalueprops">Theorem</xref>.
+    </p>
+
+    <example xml:id="absvalueeqnex">
+      <title>Solving equations with absolute values</title>
+      <statement>
+        <p>
+          Solve each of the following equations.
+          <ol cols="2">
+            <li>
+              <p>
+                <m>|3x-1| = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>3 - |x+5| = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>3|2x+1| - 5 = 0</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>4 - |5x+3| = 5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>|x| = x^2-6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>|x-2| + 1 = x</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The equation <m>|3x-1| = 6</m> is of the form <m>|x| = c</m> for <m>c>0</m>,
+                so by the Equality Properties,
+                <m>|3x-1| = 6</m> is equivalent to <m>3x-1=6</m> or <m>3x-1 = -6</m>.
+                Solving the former, we arrive at <m>x = \frac{7}{3}</m>,
+                and solving the latter,
+          we get <m>x = -\frac{5}{3}</m>.
+                We may check both of these solutions by substituting them into the original equation and showing that the arithmetic works out.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To use the Equality Properties to solve <m>3 - |x+5| = 1</m>,
+                we first isolate the absolute value.
+                <md>
+                  <mrow>3 - |x+5| \amp  =  1</mrow>
+                  <mrow>-|x+5| \amp  =  -2  \tag{subtract $3$}</mrow>
+                  <mrow>|x+5| \amp  =  2 \tag{divide by $-1$}</mrow>
+                </md>
+                From the Equality Properties,
+                we have <m>x+5 = 2</m> or <m>x+5 = -2</m>,
+                and get our solutions to be <m>x = -3</m> or <m>x = -7</m>.
+                We leave it to the reader to check both answers in the original equation.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As in the previous example,
+                we first isolate the absolute value in the equation
+                <m>3|2x+1| - 5 = 0</m> and get <m>|2x+1| = \frac{5}{3}</m>.
+                Using the Equality Properties,
+                we have <m>2x+1 = \frac{5}{3}</m> or <m>2x+1 = -\frac{5}{3}</m>.
+                Solving the former gives
+          <m>x = \frac{1}{3}</m> and solving the latter gives <m>x = -\frac{4}{3}</m>.
+                As usual,
+          we may substitute both answers in the original equation to check.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Upon isolating the absolute value in the equation <m>4 - |5x+3| = 5</m>,
+                we get <m>|5x+3| = -1</m>.
+                At this point,
+                we know there cannot be any real solution, since,
+          by definition,
+                the absolute value of <em>anything</em> is never negative.
+                We are done.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The equation <m>|x| = x^2-6</m> presents us with some difficulty,
+                since <m>x</m> appears both inside and outside of the absolute value.
+                Moreover,
+          there are values of <m>x</m> for which <m>x^2-6</m> is positive,
+                negative and zero,
+                so we cannot use the Equality Properties without the risk of introducing extraneous solutions,
+                or worse, losing solutions.
+                For this reason,
+                we break equations like this into cases by rewriting the term in absolute values,
+                <m>|x|</m>, using <xref ref="absolutevalue">Definition</xref>.
+                For <m>x \lt 0</m>,
+          <m>|x| = -x</m>, so for <m>x \lt 0</m>,
+                the equation <m>|x| = x^2-6</m> is equivalent to <m>-x = x^2-6</m>.
+                Rearranging this gives us
+                <m>x^2+x-6 = 0</m>, or <m>(x+3)(x-2) = 0</m>.
+                We get <m>x = -3</m> or <m>x=2</m>.
+                Since only <m>x=-3</m> satisfies <m>x\lt 0</m>,
+                this is the answer we keep.
+                For <m>x \geq 0</m>, <m>|x| = x</m>,
+                so the equation <m>|x| = x^2-6</m> becomes <m>x = x^2-6</m>.
+                From this, we get <m>x^2-x-6 =0</m> or <m>(x-3)(x+2) = 0</m>.
+                Our solutions are <m>x=3</m> or <m>x = -2</m>,
+                and since only <m>x=3</m> satisfies
+                <m>x \geq 0</m>, this is the one we keep.
+                Hence, our two solutions to
+                <m>|x| = x^2-6</m> are <m>x=-3</m> and <m>x=3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>|x-2| + 1 = x</m>,
+                we first isolate the absolute value and get <m>|x-2| = x-1</m>.
+                Since we see <m>x</m> both inside and outside of the absolute value,
+                we break the equation into cases.
+                The term with absolute values here is <m>|x-2|</m>,
+                so we replace <q><m>x</m></q>
+                with the quantity <q><m>(x-2)</m></q>
+                in <xref ref="absolutevalue">Definition</xref> to get
+                <me>
+                  |x-2| = \begin{cases}-(x-2), \amp  \mbox{ if }   (x-2) \lt  0  \\
+                  (x-2), \amp  \mbox{ if }   (x-2) \geq 0
+                  \end{cases}
+                </me>.
+                Simplifying yields
+                <me>
+                  |x-2| = \begin{cases}-x+2, \amp  \mbox{ if }   x \lt  2 \\
+                  x-2, \amp  \mbox{ if }   x \geq 2
+                  \end{cases}
+                </me>.
+                So, for <m>x\lt 2</m>,
+          <m>|x-2| = -x+2</m> and our equation 
+                <m>|x-2| = x-1</m> becomes <m>-x+2 = x-1</m>,
+                which gives <m>x = \frac{3}{2}</m>.
+                Since this solution satisfies <m>x \lt  2</m>, we keep it.
+                Next, for <m>x \geq 2</m>, <m>|x-2| = x-2</m>,
+                so the equation <m>|x-2| = x-1</m> becomes <m>x-2 = x-1</m>.
+                Here, the equation reduces to <m>-2 = -1</m>,
+                which signifies we have no solutions here.
+                Hence, our only solution is <m>x = \frac{3}{2}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Next, we turn our attention to graphing absolute value functions.
+      Our strategy in the next example is to make liberal use of <xref ref="absolutevalue">Definition</xref>
+      along with what we know about graphing linear functions
+      (from <xref ref="LinearFunctions">Section</xref>)
+      and piecewise-defined functions (from <xref ref="FunctionNotation">Section</xref>).
+    </p>
+
+    <example xml:id="absvaluegraph1">
+      <title>Graphing absolute value functions</title>
+      <statement>
+        <p>
+          Graph each of the following functions.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = |x|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = |x-3|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = |x| -3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>i(x) = 4 - 2|3x+1|</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          Find the zeros of each function and the <m>x</m>- and <m>y</m>-intercepts of each graph,
+          if any exist.
+          From the graph, determine the domain and range of each function,
+          list the intervals on which the function is increasing,
+          decreasing or constant,
+          and find the relative and absolute extrema, if they exist.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find the zeros of <m>f</m>, we set <m>f(x)= 0</m>.
+                We get <m>|x|=0</m>, which,
+                by <xref ref="absolutevalueprops">Theorem</xref> gives us <m>x=0</m>.
+                Since the zeros of <m>f</m> are the <m>x</m>-coordinates of the <m>x</m>-intercepts of the graph of <m>y=f(x)</m>,
+                we get <m>(0,0)</m> as our only <m>x</m>-intercept.
+                To find the <m>y</m>-intercept,
+                we set <m>x=0</m>, and find <m>y = f(0) = 0</m>,
+                so that <m>(0,0)</m> is our <m>y</m>-intercept as well.
+                Using <xref ref="absolutevalue">Definition</xref>, we get
+                <me>
+                  f(x) = |x| =  \begin{cases}-x, \amp  \mbox{ if }   x \lt  0  \\
+                  x, \amp  \mbox{ if }   x \geq 0
+                  \end{cases}
+                </me>.
+                Hence, for <m>x \lt  0</m>,
+          we are graphing the line <m>y = -x</m>;
+                for <m>x \geq 0</m>, we have the line <m>y = x</m>.
+                Proceeding as we did in <xref ref="GraphsofFunctions">Section</xref>,
+                we get the first two graphs in <xref ref="fig_absvalgraph">Figure</xref>.
+
+                <aside>
+                  <p>
+                    Since functions can have at most one <m>y</m>-intercept (Do you know why?), as soon as we found <m>(0,0)</m> as the <m>x</m>-intercept for <m>f(x)</m> in <xref ref="absvaluegraph1">Example</xref>,
+                    we knew this was also the <m>y</m>-intercept.
+                  </p>
+                </aside>
+                <figure xml:id="fig_absvalgraph">
+                <caption>Constructing the graph of <m>f(x)=\lvert x\rvert</m></caption>
+                <sidebyside>
+                  <figure>
+                    <caption><m>f(x) = |x|</m>, <m>x \lt  0</m></caption>
+                    <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-2.pdf"/>
+                  </figure>
+
+                  <figure>
+                    <m>f(x) = |x|</m>, <m>x \geq 0</m>
+                  </figure>
+
+                  <figure>
+                    <caption><m>f(x)=\lvert x\rvert</m></caption>
+                    <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4.pdf"/>
+                  </figure>
+                </sidebyside>
+                </figure>
+
+                Notice that we have an <q>open circle</q>
+                at <m>(0,0)</m> in the graph when <m>x\lt 0</m>.
+                As we have seen before,
+                this is due to the fact that the points on <m>y = -x</m> approach <m>(0,0)</m> as the <m>x</m>-values approach <m>0</m>.
+                Since <m>x</m> is required to be strictly less than zero on this stretch,
+                the open circle is drawn at the origin.
+                However, notice that when <m>x \geq 0</m>,
+                we get to fill in the point at <m>(0,0)</m>,
+                which effectively <q>plugs</q>
+                the hole indicated by the open circle.
+                Thus our final result is the graph at the bottom of <xref ref="fig_absvalgraph">Figure</xref>.
+
+
+                By projecting the graph to the <m>x</m>-axis,
+                we see that the domain is <m>(-\infty, \infty)</m>.
+                Projecting to the <m>y</m>-axis gives us the range <m>[0,\infty)</m>.
+                The function is increasing on
+                <m>[0,\infty)</m> and decreasing on <m>(-\infty,0]</m>.
+                The relative minimum value of <m>f</m> is the same as the absolute minimum,
+                namely <m>0</m> which occurs at <m>(0,0)</m>.
+                There is no relative maximum value of <m>f</m>.
+                There is also no absolute maximum value of <m>f</m>,
+                since the <m>y</m> values on the graph extend infinitely upwards.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the zeros of <m>g</m>,
+                we set <m>g(x) = |x-3|=0</m>.
+                By <xref ref="absolutevalueprops">Theorem</xref>,
+                we get <m>x-3=0</m> so that <m>x=3</m>.
+                Hence, the <m>x</m>-intercept is <m>(3,0)</m>.
+                To find our <m>y</m>-intercept,
+                we set <m>x=0</m> so that <m>y = g(0) = |0-3| = 3</m>,
+                which yields <m>(0,3)</m> as our <m>y</m>-intercept.
+                To graph <m>g(x) = |x-3|</m>,
+                we use <xref ref="absolutevalue">Definition</xref> to rewrite <m>g</m> as
+                <me>
+                  g(x) = |x-3| =  \begin{cases}-(x-3), \amp  \mbox{ if }   (x-3) \lt  0  \\
+                  (x-3), \amp  \mbox{ if }   (x-3) \geq 0
+                  \end{cases}
+                </me>.
+                Simplifying, we get
+                <me>
+                  g(x) = \begin{cases}-x+3, \amp  \mbox{ if }   x\lt 3  \\
+                  x-3, \amp  \mbox{ if }   x \geq 3
+                  \end{cases}
+                </me>.
+                As before,
+          the open circle we introduce at <m>(3,0)</m> from the graph of
+                <m>y = -x+3</m> is filled by the point <m>(3,0)</m> from the line <m>y = x-3</m>.
+                We determine the domain as
+                <m>(-\infty, \infty)</m> and the range as <m>[0,\infty)</m>.
+                The function <m>g</m> is increasing on
+                <m>[3,\infty)</m> and decreasing on <m>(-\infty,3]</m>.
+                The relative and absolute minimum value of <m>g</m> is <m>0</m> which occurs at <m>(3,0)</m>.
+                As before,
+          there is no relative or absolute maximum value of <m>g</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Setting <m>h(x) = 0</m> to look for zeros gives <m>|x|-3=0</m>.
+                As in <xref ref="absvalueeqnex">Example</xref>,
+                we isolate the absolute value to get  <m>|x| = 3</m> so that <m>x =3</m> or <m>x=-3</m>.
+                As a result, we have a pair of <m>x</m>-intercepts:
+                <m>(-3,0)</m> and <m>(3,0)</m>.
+                Setting <m>x=0</m> gives <m>y = h(0) = |0|-3 = -3</m>,
+                so our <m>y</m>-intercept is <m>(0,-3)</m>.
+                As before, we rewrite the absolute value in <m>h</m> to get
+                <me>
+                  h(x) = \begin{cases}-x-3, \amp  \mbox{ if }   x\lt 0  \\
+                  x-3, \amp  \mbox{ if }   x \geq 0
+                  \end{cases}
+                </me>.
+                <figure xml:id="fig_absvalgr2">
+                  <caption><m>g(x) = |x-3|</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5.pdf"/>
+                </figure>
+
+                Once again,
+                the open circle at <m>(0,-3)</m> from one piece of the graph of <m>h</m> is filled by the point <m>(0,-3)</m> from the other piece of <m>h</m>.
+                From the graph, we determine the domain of <m>h</m> is
+                <m>(-\infty, \infty)</m> and the range is <m>[-3,\infty)</m>.
+                On <m>[0,\infty)</m>, <m>h</m> is increasing;
+                on <m>(-\infty,0]</m> it is decreasing.
+                The relative minimum occurs at the point <m>(0,-3)</m> on the graph,
+                and we see <m>-3</m> is both the relative and absolute minimum value of <m>h</m>.
+                Also,
+          <m>h</m> has no relative or absolute maximum value.
+
+                <figure xml:id="fig_absvalgr3">
+                  <caption><m>h(x) = |x|-3</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-6.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As before,
+          we set <m>i(x)=0</m> to find the zeros of <m>i</m> and get <m>4 - 2|3x+1|=0</m>.
+                Isolating the absolute value term gives <m>|3x+1|=2</m>,
+                so either  <m>3x+1 = 2</m> or <m>3x+1=-2</m>.
+                We get <m>x=\frac{1}{3}</m> or <m>x=-1</m>,
+                so our <m>x</m>-intercepts are <m>\left(\frac{1}{3},0\right)</m> and <m>(-1,0)</m>.
+                Substituting <m>x=0</m> gives <m>y = i(0) = 4-2|3(0)+1| = 2</m>,
+                for a <m>y</m>-intercept of <m>(0,2)</m>.
+                Rewriting the formula for <m>i(x)</m> without absolute values gives
+                <md>
+                  <mrow>i(x) \amp  = \begin{cases}
+                  4-2(-(3x+1)), \amp  \mbox{ if }   (3x+1) \lt 0</mrow>
+                  <mrow>4-2(3x+1), \amp  \mbox{ if }   (3x+1) \geq 0 
+                  \end{cases}</mrow>
+                  <mrow>\amp  = \begin{cases}
+                  6x+6, \amp  \mbox{ if }   x \lt  -\frac{1}{3}</mrow>
+                  <mrow>-6x+2, \amp  \mbox{ if }   x \geq - \frac{1}{3}
+                  \end{cases}</mrow>
+                </md>.
+                The usual analysis near the trouble spot
+                <m>x=-\frac{1}{3}</m> gives that the <q>corner</q>
+                of this graph is  <m>\left( -\frac{1}{3}, 4\right)</m>,
+                and we get the distinctive
+          <q><m>\vee</m></q> shape:
+                see <xref ref="fig_absvalgr4">Figure</xref>.
+
+                <figure xml:id="fig_absvalgr4">
+                  <caption><m>i(x) = 4-2|3x+1|</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-7.pdf"/>
+                </figure>
+
+                The domain of <m>i</m> is
+                <m>(-\infty, \infty)</m> while the range is <m>(-\infty, 4]</m>.
+                The function <m>i</m> is increasing on
+                <m>\left(-\infty, -\frac{1}{3}\right]</m> and decreasing on <m>\left[ -\frac{1}{3}, \infty\right)</m>.
+                The relative maximum occurs at the point
+                <m>\left(-\frac{1}{3}, 4\right)</m> and the relative and absolute maximum value of <m>i</m> is <m>4</m>.
+                Since the graph of <m>i</m> extends downwards forever more,
+                there is no absolute minimum value.
+                As we can see from the graph,
+                there is no relative minimum, either.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Note that all of the functions in the previous example bear the characteristic <q><m>\vee</m></q>
+      shape of the graph of <m>y=|x|</m>.
+      We could have graphed the functions <m>g</m>,
+      <m>h</m> and <m>i</m> in <xref ref="absvaluegraph1">Example</xref>
+      starting with the graph of
+      <m>f(x)=|x|</m> and applying transformations as in <xref ref="Transformations">Section</xref>
+      as our next example illustrates.
+    </p>
+
+    <example xml:id="ex_absvaltrans">
+      <title>Graphing using transformations</title>
+      <statement>
+        <p>
+          Graph the following functions starting with the graph of
+          <m>f(x) = |x|</m> and using transformations.
+
+          <ol>
+            <li>
+              <p>
+                <m>g(x) = |x-3|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = |x| - 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>i(x) = 4-2|3x+1|</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by graphing <m>f(x) = |x|</m> and labelling three points,
+          <m>(-1,1)</m>,
+          <m>(0,0)</m> and <m>(1,1)</m>,
+          as in <xref ref="fig_absvalgr5">Figure</xref>
+        </p>
+
+        <figure xml:id="fig_absvalgr5">
+          <caption><m>f(x) = \lvert x\rvert</m> with three labelled points</caption>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-8.pdf"/>
+        </figure>
+
+        <ol>
+          <li>
+            <p>
+              Since <m>g(x) = |x-3| = f(x-3)</m>,
+              <xref ref="transformationsthm">Theorem</xref> tells us to <em>add</em>
+              <m>3</m> to each of the <m>x</m>-values of the points on the graph of <m>y=f(x)</m> to obtain the graph of <m>y=g(x)</m>.
+              This shifts the graph of <m>y=f(x)</m> to the <em>right</em>
+              <m>3</m> units and moves the point <m>(-1,1)</m> to <m>(2,1)</m>,
+              <m>(0,0)</m> to <m>(3,0)</m> and <m>(1,1)</m> to <m>(4,1)</m>.
+              Connecting these points in the classic <q><m>\vee</m></q>
+              fashion produces the graph of
+              <m>y = g(x)</m> in <xref ref="fig_absvalgr6">Figure</xref>. <figure xml:id="fig_absvalgr6"> <caption><m>g(x) = |x-3| = f(x-3)</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-10.pdf"/> </figure>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <m>h(x) = |x| - 3 = f(x) -3</m>,
+              <xref ref="transformationsthm">Theorem</xref> tells us to <em>subtract</em>
+              <m>3</m> from each of the <m>y</m>-values of the points on the graph of <m>y=f(x)</m> to obtain the graph of <m>y = h(x)</m>.
+              This shifts the graph of <m>y=f(x)</m> <em>down</em>
+              <m>3</m> units and moves <m>(-1,1)</m> to <m>(-1,-2)</m>,
+              <m>(0,0)</m> to <m>(0,-3)</m> and <m>(1,1)</m> to <m>(1,-2)</m>.
+              Connecting these points with the <q><m>\vee</m></q>
+              shape produces our graph of <m>y=h(x)</m>:
+              see <xref ref="fig_absvalgr7">Figure</xref>. <figure xml:id="fig_absvalgr7"> <caption><m>h(x)=\lvert x\rvert -3 = f(x)-3</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-12.pdf"/> </figure>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We re-write <m>i(x) = 4-2|3x+1| = 4-2f(3x+1) = -2f(3x+1) + 4</m> and apply <xref ref="transformationsthm">Theorem</xref>.
+              First, we take care of the changes on the
+              <q>inside</q> of the absolute value.
+              Instead of <m>|x|</m>, we have <m>|3x+1|</m>, so,
+              in accordance with <xref ref="transformationsthm">Theorem</xref>,
+              we first <em>subtract</em>
+              <m>1</m> from each of the <m>x</m>-values of points on the graph of <m>y = f(x)</m>,
+              then <em>divide</em>
+              each of those new values by <m>3</m>.
+              This effects a horizontal shift <em>left</em>
+              <m>1</m> unit followed by a horizontal
+              <em>shrink</em> by a factor of <m>3</m>.
+              These transformations move <m>(-1,1)</m> to <m>\left(-\frac{2}{3}, 1 \right)</m>,
+              <m>(0,0)</m> to <m>\left(-\frac{1}{3}, 0 \right)</m> and <m>(1,1)</m> to <m>\left(0,1\right)</m>.
+              Next, we take care of what's happening
+              <q>outside of</q> the absolute value.
+              <xref ref="transformationsthm">Theorem</xref>
+              instructs us to first <em>multiply</em>
+              each <m>y</m>-value of these new points by <m>-2</m> then <em>add</em> <m>4</m>.
+              Geometrically, this corresponds to a vertical
+              <em>stretch</em> by a factor of <m>2</m>,
+              a reflection across the <m>x</m>-axis and finally,
+              a vertical shift <em>up</em> <m>4</m> units.
+              These transformations move
+              <m>\left(-\frac{2}{3}, 1 \right)</m> to <m>\left(-\frac{2}{3}, 2 \right)</m>,
+              <m>\left(-\frac{1}{3}, 0 \right)</m> to <m>\left(-\frac{1}{3}, 4 \right)</m>,
+              and <m>\left(0,1\right)</m> to <m>\left(0, 2\right)</m>.
+              Connecting these points with the usual <q><m>\vee</m></q>
+              shape produces our graph of
+              <m>y = i(x)</m>. <figure xml:id="fig_absvalgr8"> <caption><m>i(x) = 4-2|3x+1| = -2f(3x+1)+4</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-14.pdf"/> </figure>
+            </p>
+          </li>
+        </ol>
+      </solution>
+    </example>
+
+    <p>
+      While the methods in <xref ref="Transformations">Section</xref>
+      can be used to graph an entire family of absolute value functions,
+      not all functions involving absolute values posses the characteristic
+      <q><m>\vee</m></q> shape.
+      As the next example illustrates,
+      often there is no substitute for appealing directly to the definition.
+    </p>
+
+    <example xml:id="ex_absgraphhard">
+      <title>A more complicated example</title>
+      <statement>
+        <p>
+          Graph each of the following functions.
+          Find the zeros of each function and the <m>x</m>- and <m>y</m>-intercepts of each graph,
+          if any exist.
+          From the graph, determine the domain and range of each function,
+          list the intervals on which the function is increasing,
+          decreasing or constant,
+          and find the relative and absolute extrema, if they exist.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{|x|}{x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = |x+2| - |x-3|+1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              We first note that,
+              due to the fraction in the formula of <m>f(x)</m>, <m>x \neq 0</m>.
+              Thus the domain is <m>(-\infty, 0) \cup (0, \infty)</m>.
+              To find the zeros of <m>f</m>,
+              we set <m>f(x) = \frac{|x|}{x} = 0</m>.
+              This last equation implies <m>|x|=0</m>, which,
+              from <xref ref="absolutevalueprops">Theorem</xref>, implies <m>x=0</m>.
+              However, <m>x=0</m> is not in the domain of <m>f</m>,
+              which means we have, in fact, no <m>x</m>-intercepts.
+              We have no <m>y</m>-intercepts either,
+              since <m>f(0)</m> is undefined.
+              Re-writing the absolute value in the function gives
+              <me>
+                f(x) = \begin{cases}\dfrac{-x}{x}, \amp  \mbox{ if }   x \lt 0  \\
+                \dfrac{x}{x},  \amp  \mbox{ if }   x > 0
+                \end{cases}   = 
+                \begin{cases}-1, \amp  \mbox{ if }   x \lt  0 \\
+                1, \amp  \mbox{ if }   x >0
+                \end{cases}
+              </me>.
+              To graph this function, we graph two horizontal lines:
+              <m>y = -1</m> for <m>x \lt  0</m> and <m>y = 1</m> for <m>x > 0</m>.
+              We have open circles at <m>(0,-1)</m> and <m>(0,1)</m> (Can you explain why?) so we get the graph in <xref ref="fig_absvalgr9">figure</xref>.
+
+              <figure xml:id="fig_absvalgr9">
+                <caption><m>f(x) = \dfrac{\lvert x\rvert}{x}</m></caption>
+                <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15.pdf"/>
+              </figure>
+
+              As we found earlier, the domain is <m>(-\infty, 0)\cup(0,\infty)</m>.
+              The range consists of just two <m>y</m>-values: <m>\{-1,1\}</m>.
+              The function <m>f</m> is constant on
+              <m>(-\infty,0)</m> and <m>(0,\infty)</m>.
+              The local minimum value of <m>f</m> is the absolute minimum value of <m>f</m>,
+              namely <m>-1</m>;
+              the local maximum and absolute maximum values for <m>f</m> also coincide <m>-</m> they both are <m>1</m>.
+              Every point on the graph of <m>f</m> is simultaneously a relative maximum and a relative minimum. (Can you remember why in light of <xref ref="maxmindefn">Definition</xref>?
+              This was explored in the Exercises in <xref ref="GraphsofFunctions">Section</xref>.)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To find the zeros of <m>g</m>, we set <m>g(x) = 0</m>.
+              The result is <m>|x+2|-|x-3| +1 = 0</m>.
+              Attempting to isolate the absolute value term is complicated by the fact that there are
+              <em>two</em> terms with absolute values.
+              In this case,
+              it easier to proceed using cases by re-writing the function <m>g</m> with two separate applications of <xref ref="absolutevalue">Definition</xref>
+              to remove each instance of the absolute values, one at a time.
+              In the first round we get
+              <md>
+                <mrow>g(x) \amp = \begin{cases}
+                -(x+2) - |x-3|+1, \amp  \mbox{ if }   (x+2) \lt 0</mrow>
+                <mrow>(x+2) - |x-3|+1, \amp  \mbox{ if }   (x+2) \geq 0
+                \end{cases}</mrow>
+                <mrow>\amp  = \begin{cases}
+                -x-1 - |x-3|, \amp  \mbox{ if }   x\lt -2</mrow>
+                <mrow>x+3 - |x-3|, \amp  \mbox{ if }   x \geq -2
+                \end{cases}</mrow>
+              </md>.
+              Given that
+              <me>
+                |x-3| = \begin{cases}-(x-3), \amp  \mbox{ if }   (x-3) \lt 0  \\
+                x-3, \amp  \mbox{ if }   (x-3) \geq 0
+                \end{cases}   = 
+                \begin{cases}-x+3, \amp  \mbox{ if }   x\lt 3 \\
+                x-3, \amp  \mbox{ if }   x \geq 3
+                \end{cases}
+              </me>,
+              we need to break up the domain again at <m>x=3</m>.
+              Note that if <m>x \lt  -2</m>, then <m>x \lt  3</m>,
+              so we replace <m>|x-3|</m> with <m>-x+3</m> for that part of the domain, too.
+              Our completed revision of the form of <m>g</m> yields
+              <md>
+                <mrow>g(x) \amp = \begin{cases} 
+                -x-1 - (-x+3), \amp  \mbox{ if }   x\lt -2</mrow>
+                <mrow>x+3 - (-x+3), \amp  \mbox{ if }   x \geq -2 \, \mbox{ and }  \, x \lt  3</mrow>
+                <mrow>x+3 - (x-3), \amp  \mbox{ if }   x \geq 3  
+                \end{cases}</mrow>
+                <mrow>\amp = \begin{cases}
+                -4, \amp  \mbox{ if }   x\lt -2</mrow>
+                <mrow>2x, \amp  \mbox{ if }   -2 \leq x \lt  3</mrow>
+                <mrow>6, \amp  \mbox{ if }   x \geq 3
+                \end{cases}</mrow>
+              </md>.
+            </p>
+          </li>
+        </ol>
+
+        <p>
+          To solve <m>g(x)=0</m>,
+          we see that the only piece which contains a variable is
+          <m>g(x) = 2x</m> for <m>-2 \leq x \lt 3</m>.
+          Solving <m>2x=0</m> gives <m>x=0</m>.
+          Since <m>x=0</m> is in the interval <m>[-2,3)</m>,
+          we keep this solution and have <m>(0,0)</m> as our only <m>x</m>-intercept.
+          Accordingly, the <m>y</m>-intercept is also <m>(0,0)</m>.
+          To graph <m>g</m>, we start with
+          <m>x \lt -2</m> and graph the horizontal line <m>y=-4</m> with an open circle at <m>(-2,-4)</m>.
+          For <m>-2 \leq x \lt 3</m>,
+          we graph the line <m>y=2x</m> and the point <m>(-2,-4)</m> patches the hole left by the previous piece.
+          An open circle at <m>(3,6)</m> completes the graph of this part.
+          Finally, we graph the horizontal line <m>y=6</m> for <m>x \geq 3</m>,
+          and the point <m>(3,6)</m> fills in the open circle left by the previous part of the graph.
+          The finished graph is given in <xref ref="fig_absvalgrlast">Figure</xref>
+        </p>
+
+        <figure xml:id="fig_absvalgrlast">
+          <caption><m>g(x) = \lvert x+2\rvert -\lvert x-3\rvert +1</m></caption>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-16.pdf"/>
+        </figure>
+
+        <p>
+          The domain of <m>g</m> is all real numbers, <m>(-\infty, \infty)</m>,
+          and the range of <m>g</m> is all real numbers between <m>-4</m> and <m>6</m> inclusive,
+          <m>[-4,6]</m>.
+          The function is increasing on <m>[-2,3]</m> and constant on
+          <m>(-\infty, -2]</m> and <m>[3,\infty)</m>.
+          The relative minimum value of <m>f</m> is <m>-4</m> which matches the absolute minimum.
+          The relative and absolute maximum values also coincide at <m>6</m>.
+          Every point on the graph of <m>y=g(x)</m> for <m>x\lt -2</m> and <m>x> 3</m> yields both a relative minimum and relative maximum.
+          The point <m>(-2,-4)</m>, however,
+          gives only a relative minimum and the point <m>(3,6)</m> yields only a relative maximum. (Recall the Exercises in <xref ref="GraphsofFunctions">Section</xref>
+          which dealt with constant functions.)
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Many of the applications that the authors are aware of involving absolute values also involve absolute value inequalities.
+      For that reason,
+      we save our discussion of applications for <xref ref="Inequalities">Section</xref>.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the equation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x| = 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -6</m> or <m>x=6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3x-1| = 10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -3</m> or <m>x= \frac{11}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|4-x| = 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -3</m> or <m>x= 11</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4 - |x| = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -1</m> or <m>x= 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2|5x+1| - 3 = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-\frac{1}{2}</m> or <m>x= \frac{1}{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|7x-1| + 2 = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          no solutions
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5 - |x|}{2} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-3</m> or <m>x= 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\frac{2}{3} |5-2x| - \frac{1}{2} = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{13}{8}</m> or <m>x= \frac{53}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x| = x + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-\frac{3}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|2x-1| = x+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=0</m> or <m>x= 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4 - |x| = 2x+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x-4| = x-5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          no solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x| = x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-1</m>, <m>x= 0</m> or <m>x= 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x| = 12 - x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-3</m> or <m>x=3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x^2 - 1| = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-2</m> or <m>x=2</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      Prove that if <m>|f(x)| = |g(x)|</m> then either
+      <m>f(x) = g(x)</m> or <m>f(x) = -g(x)</m>.
+      Use that result to solve the equations in the following exercises.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3x - 2| = |2x + 7|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -1</m> or <m>x = 9</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3x+1| = |4x|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{1}{7}</m> or <m>x = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|1-2x| = |x+1|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0</m> or <m>x = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|4-x| - |x+2| = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|2-5x| = 5 |x+1|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{3}{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3|x-1| = 2|x+1|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{1}{5}</m> or <m>x = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, graph the function.
+      Find the zeros of each function and the <m>x</m>- and <m>y</m>-intercepts of each graph,
+      if any exist.
+      From the graph, determine the domain and range of each function,
+      list the intervals on which the function is increasing,
+      decreasing or constant,
+      and find the relative and absolute extrema, if they exist.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |x + 4|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = |x + 4|</m>
+        </p>
+
+        <p>
+          <m>f(-4) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>(-4, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 4)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, -4]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[-4, \infty)</m>
+        </p>
+
+        <p>
+          Relative and absolute min.<nbsp />at<nbsp /><m>(-4,0)</m>
+        </p>
+
+        <p>
+          No relative or absolute maximum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-18.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |x| + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = |x| + 4</m>
+        </p>
+
+        <p>
+          No zeros
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 4)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[4, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Relative and absolute minimum at <m>(0, 4)</m>
+        </p>
+
+        <p>
+          No relative or absolute maximum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |4x|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = |4x|</m>
+        </p>
+
+        <p>
+          <m>f(0) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Relative and absolute minimum at <m>(0, 0)</m>
+        </p>
+
+        <p>
+          No relative or absolute maximum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -3|x|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -3|x|</m>
+        </p>
+
+        <p>
+          <m>f(0) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Increasing on <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Relative and absolute maximum at <m>(0, 0)</m>
+        </p>
+
+        <p>
+          No relative or absolute minimum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =3|x + 4| - 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 3|x + 4| - 4</m>
+        </p>
+
+        <p>
+          <m>f\left(-\frac{16}{3}\right) = 0</m>,
+          <m>f\left(-\frac{8}{3}\right) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts <m>\left(-\frac{16}{3}, 0\right)</m>,
+          <m>\left(-\frac{8}{3}, 0\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 8)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[-4, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, -4]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[-4, \infty)</m>
+        </p>
+
+        <p>
+          Relative and absolute min.<nbsp />at<nbsp /><m>(-4,-4)</m>
+        </p>
+
+        <p>
+          No relative or absolute maximum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =\frac{1}{3}|2x - 1|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{1}{3}|2x - 1|</m>
+        </p>
+
+        <p>
+          <m>f\left(\frac{1}{2}\right) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts <m>\left(\frac{1}{2}, 0\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>\left(0, \frac{1}{3}\right)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>\left(-\infty, \frac{1}{2}\right]</m>
+        </p>
+
+        <p>
+          Increasing on <m>\left[\frac{1}{2}, \infty\right)</m>
+        </p>
+
+        <p>
+          Relative and absolute min. at <m>\left(\frac{1}{2},0\right)</m>
+        </p>
+
+        <p>
+          No relative or absolute maximum
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{|x + 4|}{x + 4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{|x + 4|}{x + 4}</m>
+        </p>
+
+        <p>
+          No zeros
+        </p>
+
+        <p>
+          No <m>x</m>-intercept
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 1)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, -4) \cup (-4, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>\{-1, 1\}</m>
+        </p>
+
+        <p>
+          Constant on <m>(-\infty, -4)</m>
+        </p>
+
+        <p>
+          Constant on <m>(-4, \infty)</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x, -1)</m> where <m>x \lt -4</m>
+        </p>
+
+        <p>
+          Absolute maximum at every point <m>(x, 1)</m> where <m>x > -4</m>
+        </p>
+
+        <p>
+          Relative maximum AND minimum at every point on the graph
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{|2 - x|}{2 - x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{|2 - x|}{2 - x}</m>
+        </p>
+
+        <p>
+          No zeros
+        </p>
+
+        <p>
+          No <m>x</m>-intercept
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 1)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>\{-1, 1\}</m>
+        </p>
+
+        <p>
+          Constant on <m>(-\infty, 2)</m>
+        </p>
+
+        <p>
+          Constant on <m>(2, \infty)</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x, -1)</m> where <m>x > 2</m>
+        </p>
+
+        <p>
+          Absolute maximum at every point <m>(x, 1)</m> where <m>x \lt 2</m>
+        </p>
+
+        <p>
+          Relative maximum AND minimum at every point on the graph
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x+|x| - 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Re-write <m>f(x) = x+|x| - 3</m> as
+        </p>
+
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -3 \amp \mbox{ if } \amp x \lt 0\\ 2x -3 \amp \mbox{ if } \amp x \geq 0 \end{array} \right. }</m>
+        </p>
+
+        <p>
+          <m>f\left(\frac{3}{2}\right) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>\left(\frac{3}{2}, 0\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0,-3)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[-3, \infty)</m>
+        </p>
+
+        <p>
+          Increasing on <m>[0,\infty)</m>
+        </p>
+
+        <p>
+          Constant on <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x,-3)</m> where <m>x \leq 0</m>
+        </p>
+
+        <p>
+          No absolute maximum
+        </p>
+
+        <p>
+          Relative minimum at every point <m>(x, -3)</m> where <m>x \leq 0</m>
+        </p>
+
+        <p>
+          Relative maximum at every point <m>(x, -3)</m> where <m>x \lt 0</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |x+2| - x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Re-write <m>f(x) = |x+2| - x</m> as
+        </p>
+
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -2x-2 \amp \mbox{ if } \amp x \lt -2\\ 2 \amp \mbox{ if } \amp x \geq -2 \end{array} \right. }</m>
+        </p>
+
+        <p>
+          No zeros
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0,2)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[2, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, -2]</m>
+        </p>
+
+        <p>
+          Constant on <m>[-2,\infty)</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x,2)</m> where <m>x \geq -2</m>
+        </p>
+
+        <p>
+          No absolute maximum
+        </p>
+
+        <p>
+          Relative minimum at every point <m>(x, 2)</m> where <m>x \geq -2</m>
+        </p>
+
+        <p>
+          Relative maximum at every point <m>(x, 2)</m> where <m>x > -2</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |x+2|-|x|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Re-write <m>f(x) = |x+2|-|x|</m> as
+        </p>
+
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -2 \amp \mbox{ if } \amp x \lt -2\\ 2x+2 \amp \mbox{ if } \amp -2 \leq x \lt 0 \\ 2 \amp \mbox{ if } \amp x \geq 0 \end{array} \right. }</m>
+        </p>
+
+        <p>
+          <m>f\left(-1\right) = 0</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>\left(-1, 0\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0,2)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[-2,2]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[-2,0]</m>
+        </p>
+
+        <p>
+          Constant on <m>(-\infty, -2]</m>
+        </p>
+
+        <p>
+          Constant on <m>[0,\infty)</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x,-2)</m> where <m>x \leq -2</m>
+        </p>
+
+        <p>
+          Absolute maximum at every point <m>(x,2)</m> where <m>x \geq 0</m>
+        </p>
+
+        <p>
+          Relative minimum at every point <m>(x, -2)</m> where
+          <m>x \leq -2</m> and at every point <m>(x,2)</m> where <m>x>0</m>
+        </p>
+
+        <p>
+          Relative maximum at every point <m>(x, -2)</m> where
+          <m>x \lt -2</m> and at every point <m>(x,2)</m> where <m>x \geq 0</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = |x + 4| + |x - 2|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Re-write <m>f(x) = |x + 4| + |x - 2|</m> as
+        </p>
+
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -2x - 2 \amp \mbox{ if } \amp x \lt -4\\ 6 \amp \mbox{ if } \amp -4 \leq x \lt 2\\ 2x + 2 \amp \mbox{ if } \amp x \geq 2 \end{array} \right. }</m>
+        </p>
+
+        <p>
+          No zeros
+        </p>
+
+        <p>
+          No <m>x</m>-intercept
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 6)</m>
+        </p>
+
+        <p>
+          Domain <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range <m>[6, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, -4]</m>
+        </p>
+
+        <p>
+          Constant on <m>[-4, 2]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[2, \infty)</m>
+        </p>
+
+        <p>
+          Absolute minimum at every point <m>(x, 6)</m> where <m>-4 \leq x \leq 2</m>
+        </p>
+
+        <p>
+          No absolute maximum
+        </p>
+
+        <p>
+          Relative minimum at every point <m>(x, 6)</m> where <m>-4 \leq x \leq 2</m>
+        </p>
+
+        <p>
+          Relative maximum at every point <m>(x, 6)</m> where <m>-4 \lt x \lt 2</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          find an absolute value function whose graph is given below.
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = ||x| - 4|</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With help from your classmates, prove the second,
+          third and fifth parts of <xref ref="absolutevalueprops">Theorem</xref>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="triangleinequalityreals">
+      <statement>
+        <p>
+          Prove
+              <idx><h>Triangle Inequality</h></idx>
+          <em>The Triangle Inequality:</em>
+          For all real numbers <m>a</m> and <m>b,\;\;</m> <m>|a+b| \leq |a| + |b|</m>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

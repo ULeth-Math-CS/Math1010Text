@@ -1,0 +1,2281 @@
+
+
+<section xml:id="TheUnitCircle">
+  <title>The Unit Circle: Sine and Cosine</title>
+  <introduction>
+    <p>
+      In <xref ref="circularmotion">Section</xref>,
+      we introduced circular motion and derived a formula which describes the linear velocity of an object moving on a circular path at a constant angular velocity.
+      One of the goals of this section is describe the
+      <em>position</em> of such an object.
+      To that end,
+      consider an angle <m>\theta</m> in standard position and let <m>P</m> denote the point where the terminal side of <m>\theta</m> intersects the Unit Circle,
+      as in <xref ref="fig_circle1">Figure</xref>.
+      By associating the point <m>P</m> with the angle <m>\theta</m>,
+      we are assigning a <em>position</em>
+      on the Unit Circle to the angle <m>\theta</m>.
+      The <m>x</m>-coordinate of <m>P</m> is called the
+          <idx><h>cosine </h><h> of an angle</h></idx>
+      <em>cosine</em> of <m>\theta</m>,
+      written <m>\cos(\theta)</m>,
+      while the <m>y</m>-coordinate of <m>P</m> is called the <idx><h>sine </h><h> of an angle</h></idx>
+      <em>sine</em> of <m>\theta</m>,
+      written <m>\sin(\theta)</m>.
+      The reader is encouraged to verify that these rules used to match an angle with its cosine and sine do, in fact,
+      satisfy the definition of a function.
+      That is, for each angle <m>\theta</m>,
+      there is only one associated value of
+      <m>\cos(\theta)</m> and only one associated value of <m>\sin(\theta)</m>.
+    </p>
+
+    <figure xml:id="fig_circle1">
+      <caption>Defining <m>\cos(\theta)</m> and <m>\sin(\theta)</m></caption>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-2.pdf"/>
+    </figure>
+
+    <aside>
+      <p>
+        The etymology of the name <q>sine</q> is quite colourful,
+        and the interested reader is invited to research it;
+        the <q>co</q> in <q>cosine</q>
+        is explained in <xref ref="Identities">Section</xref>.
+      </p>
+    </aside>
+    <example xml:id="cosinesineviaunitcircle">
+      <title>Evaluating $\cos(\theta)$ and $\sin(\theta)$</title>
+      <statement>
+        <p>
+          Find the cosine and sine of the following angles.
+
+          <ol>
+            <li>
+              <p>
+                <m>\theta = 270^{\circ}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = - \pi</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = \frac{\pi}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = \frac{\pi}{6}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = \frac{\pi}{3}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>\cos\left(270^{\circ}\right)</m> and <m>\sin\left(270^{\circ}\right)</m>,
+                we plot the angle <m>\theta =270^{\circ}</m> in standard position in <xref ref="fig_circle2">Figure</xref>
+                and find the point on the terminal side of <m>\theta</m> which lies on the Unit Circle.
+                Since <m>270^{\circ}</m> represents
+                <m>\frac{3}{4}</m> of a counter-clockwise revolution,
+                the terminal side of <m>\theta</m> lies along the negative <m>y</m>-axis.
+                Hence,
+          the point we seek is <m>(0,-1)</m> so that <m>\cos\left(270^{\circ}\right) = 0</m> and
+                <m>\sin\left(270^{\circ}\right) = -1</m>. <figure xml:id="fig_circle2"> <caption>Finding <m>\cos(270^\circ)</m> and
+                <m>\sin(270^\circ)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-3.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The angle <m>\theta=-\pi</m> represents one half of a clockwise revolution so its terminal side lies on the negative <m>x</m>-axis.
+                The point on the Unit Circle that lies on the negative <m>x</m>-axis is <m>(-1,0)</m> which means <m>\cos(-\pi) = -1</m> and
+                <m>\sin(-\pi) = 0</m>. <figure xml:id="fig_circle3"> <caption>Finding <m>\cos(-\pi)</m> and
+                <m>\sin(-\pi)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-4.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li xml:id="fig_circle4">
+
+            <p>
+              When we sketch <m>\theta = \frac{\pi}{4}</m> in standard position,
+              we see in <xref ref="fig_circle4">Figure</xref>
+              that its terminal does not lie along any of the coordinate axes which makes our job of finding the cosine and sine values a bit more difficult.
+              Let <m>P(x,y)</m> denote the point on the terminal side of <m>\theta</m> which lies on the Unit Circle.
+              By definition,
+              <m>x = \cos\left(\frac{\pi}{4}\right)</m> and <m>y = \sin\left(\frac{\pi}{4}\right)</m>.
+              If we drop a perpendicular line segment from <m>P</m> to the <m>x</m>-axis,
+              we obtain a <m>45^{\circ} - 45^{\circ} - 90^{\circ}</m> right triangle whose legs have lengths <m>x</m> and <m>y</m> units.
+              From Geometry,
+              we get <m>y=x</m>. (Can you show this?) Since <m>P(x,y)</m> lies on the Unit Circle,
+              we have <m>x^2+y^2 = 1</m>.
+              Substituting <m>y=x</m> into this equation yields <m>2x^2 = 1</m>,
+              or <m>x =\pm \sqrt{\frac{1}{2}} = \pm \frac{\sqrt{2}}{2}</m>.
+              Since <m>P(x,y)</m> lies in the first quadrant, <m>x>0</m>,
+              so <m>x = \cos\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m> and with <m>y=x</m> we have
+              <m>y = \sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{4}\right)</m> and
+              <m>\sin\left(\frac{\pi}{4}\right)</m></caption> --> <sidebyside> <tabular> {m{0.6\textwidth}m{0.4\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-5.pdf"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-6.pdf"/>\\
+              <m>\theta=\frac{\pi}{4}</m> in standard position &amp;
+              <m>45^{\circ} - 45^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
+            </p>
+            </li>
+
+            <li xml:id="fig_circle5">
+
+            <p>
+              As before, the terminal side of
+              <m>\theta = \frac{\pi}{6}</m> does not lie on any of the coordinate axes,
+              so we proceed using a triangle approach.
+              Letting <m>P(x,y)</m> denote the point on the terminal side of <m>\theta</m> which lies on the Unit Circle,
+              we drop a perpendicular line segment from <m>P</m> to the <m>x</m>-axis to form a <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> right triangle:
+              see <xref ref="fig_circle5">Figure</xref>.
+              After a bit of Geometry (again,
+              can you show this?) we find
+              <m>y = \frac{1}{2}</m> so <m>\sin\left(\frac{\pi}{6}\right) = \frac{1}{2}</m>.
+              Since <m>P(x,y)</m> lies on the Unit Circle,
+              we substitute <m>y = \frac{1}{2}</m> into
+              <m>x^2 + y^2 = 1</m> to get <m>x^{2} = \frac{3}{4}</m>,
+              or <m>x = \pm \frac{\sqrt{3}}{2}</m>.
+              Here, <m>x > 0</m> so
+          <m>x = \cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{6}\right)</m> and
+              <m>\sin\left(\frac{\pi}{6}\right)</m></caption> --> <sidebyside> <tabular> {m{0.5\textwidth}m{0.5\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-7.pdf"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-8.pdf"/>\\
+              <m>\theta=\frac{\pi}{6}</m> in standard position &amp;
+              <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
+            </p>
+            </li>
+
+            <li xml:id="fig_circle6">
+
+            <p>
+              Plotting <m>\theta = \frac{\pi}{3}</m> in standard position,
+              we find it is not a quadrantal angle and set about using a triangle approach.
+              Once again,
+              we get a <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> right triangle and,
+              after the usual computations,
+              find <m>x = \cos\left(\frac{\pi}{3}\right) = \frac{1}{2}</m> and
+              <m>y = \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{3}\right)</m> and
+              <m>\sin\left(\frac{\pi}{3}\right)</m></caption> --> <sidebyside> <tabular> {m{0.65\textwidth}m{0.35\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-9.pdf"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-10.pdf"/>\\
+              <m>\theta=\frac{\pi}{3}</m> in standard position &amp;
+              <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
+            </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In <xref ref="cosinesineviaunitcircle">Example</xref>,
+      it was quite easy to find the cosine and sine of the quadrantal angles,
+      but for non-quadrantal angles,
+      the task was much more involved.
+      In these latter cases, we made good use of the fact that the point
+      <m>P(x,y) = (\cos(\theta), \sin(\theta))</m> lies on the Unit Circle,
+      <m>x^2+y^2 = 1</m>.
+      If we substitute <m>x=\cos(\theta)</m> and
+      <m>y = \sin(\theta)</m> into <m>x^2+y^2=1</m>,
+      we get <m>\left(\cos(\theta)\right)^2 + \left(\sin(\theta)\right)^2 = 1</m>.
+      An unfortunate convention, which the authors are compelled to perpetuate,
+      is to write <m>\left(\cos(\theta)\right)^2</m> as
+      <m>\cos^{2}(\theta)</m> and <m>\left(\sin(\theta)\right)^2</m> as
+      <m>\sin^{2}(\theta)</m>. (This is unfortunate from a
+      <q>function notation</q> perspective,
+      as you will see once you encounter the inverse trigonometric functions.) Rewriting the identity using this convention results in the following theorem,
+      which is without a doubt one of the most important results in Trigonometry.
+    </p>
+
+    <theorem xml:id="cosinesinepythid">
+      <title>The Pythagorean Identity</title>
+      <statement>
+        <p>
+          For any angle <m>\theta</m>,
+          <m>\cos^{2}(\theta) + \sin^{2}(\theta) = 1</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The moniker <q>Pythagorean</q>
+      brings to mind the Pythagorean Theorem,
+      from which both the Distance Formula and the equation for a circle are ultimately derived.
+      The word <q>Identity</q> reminds us that,
+      regardless of the angle <m>\theta</m>,
+      the equation in <xref ref="cosinesinepythid">Theorem</xref> is always true.
+      If one of <m>\cos(\theta)</m> or <m>\sin(\theta)</m> is known,
+      <xref ref="cosinesinepythid">Theorem</xref>
+      can be used to determine the other,
+      up to a (<m>\pm</m>) sign.
+      If, in addition,
+      we know where the terminal side of <m>\theta</m> lies when in standard position,
+      then we can remove the ambiguity of the (<m>\pm</m>) and completely determine the missing value as the next example illustrates.
+    </p>
+
+    <example xml:id="cosinesinepythidex">
+      <title>Using the Pythagorean Identity</title>
+      <statement>
+        <p>
+          Using the given information about <m>\theta</m>, find the indicated value.
+
+          <ol>
+            <li>
+              <p>
+                If <m>\theta</m> is a Quadrant II angle with
+                <m>\sin(\theta) = \frac{3}{5}</m>, find <m>\cos(\theta)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>\pi \lt \theta \lt \frac{3\pi}{2}</m> with
+                <m>\cos(\theta) = -\frac{\sqrt{5}}{5}</m>, find <m>\sin(\theta)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>\sin(\theta) = 1</m>, find <m>\cos(\theta)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                When we substitute <m>\sin(\theta) = \frac{3}{5}</m> into The Pythagorean Identity,
+                <m>\cos^{2}(\theta) + \sin^{2}(\theta) = 1</m>,
+                we obtain <m>\cos^{2}(\theta) + \frac{9}{25} = 1</m>.
+                Solving, we find <m>\cos(\theta) = \pm \frac{4}{5}</m>.
+                Since <m>\theta</m> is a Quadrant II angle,
+                its terminal side, when plotted in standard position,
+                lies in Quadrant II. Since the <m>x</m>-coordinates are negative in Quadrant II, <m>\cos(\theta)</m> is too.
+                Hence, <m>\cos(\theta) = - \frac{4}{5}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Substituting <m>\cos(\theta) = -\frac{\sqrt{5}}{5}</m> into
+                <m>\cos^{2}(\theta) + \sin^{2}(\theta) = 1</m> gives <m>\sin(\theta) = \pm \frac{2}{\sqrt{5}} = \pm \frac{2 \sqrt{5}}{5}</m>.
+                Since we are given that <m>\pi \lt \theta \lt \frac{3\pi}{2}</m>,
+                we know <m>\theta</m> is a Quadrant III angle.
+                Hence both its sine and cosine are negative and we conclude <m>\sin(\theta) = -\frac{2 \sqrt{5}}{5}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When we substitute <m>\sin(\theta) = 1</m> into <m>\cos^{2}(\theta) + \sin^{2}(\theta) = 1</m>,
+                we find <m>\cos(\theta) = 0</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Another tool which helps immensely in determining cosines and sines of angles is the symmetry inherent in the Unit Circle.
+      Suppose, for instance,
+      we wish to know the cosine and sine of <m>\theta = \frac{5 \pi}{6}</m>.
+      We plot <m>\theta</m> in standard position below and,
+      as usual,
+      let <m>P(x,y)</m> denote the point on the terminal side of <m>\theta</m> which lies on the Unit Circle.
+      Note that the terminal side of <m>\theta</m> lies
+      <m>\frac{\pi}{6}</m> radians short of one half revolution.
+      In <xref ref="cosinesineviaunitcircle">Example</xref>,
+      we determined that <m>\cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}</m> and <m>\sin\left( \frac{\pi}{6} \right) = \frac{1}{2}</m>.
+      This means that the point on the terminal side of the angle <m>\frac{\pi}{6}</m>,
+      when plotted in standard position,
+      is <m>\left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)</m>.
+      From <xref ref="fig_circle7">Figure</xref>,
+      it is clear that the point <m>P(x,y)</m> we seek can be obtained by reflecting that point about the <m>y</m>-axis.
+      Hence, <m>\cos\left(\frac{5\pi}{6}\right) = -\frac{\sqrt{3}}{2}</m> and <m>\sin\left( \frac{5\pi}{6} \right) = \frac{1}{2}</m>.
+    </p>
+
+    <!--
+    <caption>Refelcting <m>P(x,y)</m> across the <m>y</m>-axis to obtain a Quadrant I angle</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-11.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-12.pdf"/></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      In the above scenario, the angle <m>\frac{\pi}{6}</m> is called the
+          <idx><h>angle </h><h> reference</h></idx><idx><h>reference angle</h></idx>
+      <em>reference angle</em>
+      for the angle <m>\frac{5 \pi}{6}</m>.
+      In general, for a non-quadrantal angle <m>\theta</m>,
+      the reference angle for <m>\theta</m>
+      (usually denoted <m>\alpha</m>)
+      is the <em>acute</em> angle made between the terminal side of <m>\theta</m> and the <m>x</m>-axis.
+      If <m>\theta</m> is a Quadrant I or IV angle,
+      <m>\alpha</m> is the angle between the terminal side of <m>\theta</m> and the
+      <em>positive</em> <m>x</m>-axis;
+      if <m>\theta</m> is a Quadrant II or III angle,
+      <m>\alpha</m> is the angle between the terminal side of <m>\theta</m> and the
+      <em>negative</em> <m>x</m>-axis.
+      If we let <m>P</m> denote the point <m>(\cos(\theta), \sin(\theta))</m>,
+      then <m>P</m> lies on the Unit Circle.
+      Since the Unit Circle possesses symmetry with respect to the <m>x</m>-axis,
+      <m>y</m>-axis and origin,
+      regardless of where the terminal side of <m>\theta</m> lies,
+      there is a point <m>Q</m> symmetric with <m>P</m> which determines <m>\theta</m>'s reference angle,
+      <m>\alpha</m> as seen below.
+    </p>
+
+    <figure xml:id="fig_circle8">
+      <caption>Reference angle <m>\alpha</m> for a Quadrant I angle</caption>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-13.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_circle9">
+      <caption>Reference angle <m>\alpha</m> for a Quadrant II angle</caption>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-14.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_circle10">
+      <caption>Reference angle <m>\alpha</m> for a Quadrant III angle</caption>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-15.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_circle11">
+      <caption>Reference angle <m>\alpha</m> for a Quadrant IV angle</caption>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-16.pdf"/>
+    </figure>
+
+    <p>
+      We have just outlined the proof of the following theorem.
+    </p>
+
+    <theorem xml:id="refanglethm">
+      <title>Reference Angle Theorem</title>
+      <statement>
+        <p>
+          Suppose <m>\alpha</m> is the reference angle for <m>\theta</m>.
+          Then <m>\cos(\theta) = \pm \cos(\alpha)</m> and <m>\sin(\theta) = \pm \sin(\alpha)</m>,
+          where the choice of the (<m>\pm</m>) depends on the quadrant in which the terminal side of <m>\theta</m> lies.
+              <idx><h>Reference Angle Theorem </h><h> for cosine and sine</h></idx>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      In light of <xref ref="refanglethm">Theorem</xref>,
+      it pays to know the cosine and sine values for certain common angles.
+      In the table below,
+      we summarize the values which we consider essential and must be memorized.
+    </p>
+
+    <p>
+      \phantomsection <em>Cosine and Sine Values of Common Angles</em>
+      <me>
+        \begin{array}{|c|c||c|c|} \hline
+        \theta (\mbox{degrees} ) \amp   \theta (\mbox{radians} ) \amp  \cos(\theta) \amp  \sin(\theta) \\ \hline
+        0^{\circ} \amp  0 \amp  1 \amp  0 \\ \hline
+        30^{\circ} \amp  \frac{\pi}{6} \amp  \frac{\sqrt{3}}{2} \amp  \frac{1}{2} \\ \hline
+        45^{\circ} \amp  \frac{\pi}{4} \amp  \frac{\sqrt{2}}{2} \amp  \frac{\sqrt{2}}{2} \\ \hline
+        60^{\circ} \amp  \frac{\pi}{3} \amp  \frac{1}{2} \amp  \frac{\sqrt{3}}{2} \\ \hline
+        90^{\circ} \amp  \frac{\pi}{2} \amp  0 \amp  1 \\ \hline
+        \end{array}
+      </me>
+    </p>
+
+    <example xml:id="refangleex">
+      <title>Using reference angles</title>
+      <statement>
+        <p>
+          Find the cosine and sine of the following angles.
+
+          <ol>
+            <li>
+              <p>
+                <m>\theta = \frac{5\pi}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = \frac{11 \pi}{6}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = -\frac{5 \pi}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\theta = \frac{7 \pi}{3}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We begin by plotting
+          <m>\theta = \frac{5\pi}{4}</m> in standard position and find its terminal side overshoots the negative <m>x</m>-axis to land in Quadrant III. Hence,
+                we obtain <m>\theta</m>'s reference angle <m>\alpha</m> by subtracting:
+                <m>\alpha = \theta - \pi = \frac{5\pi}{4} - \pi = \frac{\pi}{4}</m>.
+                Since <m>\theta</m> is a Quadrant III angle,
+                both <m>\cos(\theta) \lt 0</m> and <m>\sin(\theta) \lt 0</m>.
+                The Reference Angle Theorem yields:
+                <m>\cos\left(\frac{5\pi}{4}\right) = -\cos\left(\frac{\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m> and <m>\sin\left(\frac{5\pi}{4}\right) = - \sin\left(\frac{\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The terminal side of <m>\theta = \frac{11\pi}{6}</m>,
+                when plotted in standard position,
+                lies in Quadrant IV, just shy of the positive <m>x</m>-axis.
+                To find <m>\theta</m>'s reference angle <m>\alpha</m>,
+                we subtract:
+                <m>\alpha = 2\pi - \theta = 2\pi - \frac{11 \pi}{6} = \frac{\pi}{6}</m>.
+                Since <m>\theta</m> is a Quadrant IV angle,
+                <m>\cos(\theta) > 0</m> and <m>\sin(\theta) \lt 0</m>,
+                so the Reference Angle Theorem gives:
+                <m>\cos\left(\frac{11 \pi}{6} \right) = \cos\left(\frac{\pi}{6} \right) = \frac{\sqrt{3}}{2}</m> and
+          <m>\sin\left(\frac{11\pi}{6}\right) = -\sin\left(\frac{\pi}{6}\right) = -\frac{1}{2}</m>. <figure xml:id="fig_circle12"> <caption>Finding <m>\cos\left(\frac{5\pi}{4}\right)</m> and
+          <m>\sin\left(\frac{5\pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-17.pdf"/> </figure> <figure xml:id="fig_circle13"> <caption>Finding <m>\cos\left(\frac{11 \pi}{6}\right)</m> and
+                <m>\sin\left(\frac{11 \pi}{6}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-18.pdf"/> </figure> <figure xml:id="fig_circle14"> <caption>Finding <m>\cos\left(-\frac{5 \pi}{4}\right)</m> and
+                <m>\sin\left(-\frac{5 \pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-19.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To plot <m>\theta = -\frac{5\pi}{4}</m>,
+                we rotate <em>clockwise</em>
+                an angle of <m>\frac{5 \pi}{4}</m> from the positive <m>x</m>-axis.
+                The terminal side of <m>\theta</m>, therefore,
+                lies in Quadrant II making an angle of
+                <m>\alpha = \frac{5 \pi}{4} - \pi = \frac{\pi}{4}</m> radians with respect to the negative <m>x</m>-axis.
+                Since <m>\theta</m> is a Quadrant II angle,
+                the Reference Angle Theorem gives:
+                <m>\cos\left(-\frac{5 \pi}{4}\right) = -\cos\left(\frac{\pi}{4}\right) = -\frac{\sqrt{2}}{2}</m> and <m>\sin\left(-\frac{5 \pi}{4}\right) = \sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the angle <m>\theta = \frac{7 \pi}{3}</m> measures more than <m>2 \pi = \frac{6 \pi}{3}</m>,
+                we find the terminal side of <m>\theta</m> by rotating one full revolution followed by an additional <m>\alpha = \frac{7 \pi}{3} - 2\pi = \frac{\pi}{3}</m> radians.
+                Since <m>\theta</m> and <m>\alpha</m> are coterminal,
+                <m>\cos\left(\frac{7\pi}{3}\right) = \cos\left(\frac{\pi}{3}\right) = \frac{1}{2}</m> and
+                <m>\sin\left(\frac{7\pi}{3}\right) = \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>. <figure xml:id="fig_circle15"> <caption>Finding <m>\cos\left(\frac{7 \pi}{3}\right)</m> and
+                <m>\sin\left(\frac{7 \pi}{3}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-20.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The reader may have noticed that when expressed in radian measure,
+      the reference angle for a non-quadrantal angle is easy to spot.
+      Reduced fraction multiples of <m>\pi</m> with a denominator of <m>6</m> have
+      <m>\frac{\pi}{6}</m> as a reference angle,
+      those with a denominator of <m>4</m> have
+      <m>\frac{\pi}{4}</m> as their reference angle,
+      and those with a denominator of <m>3</m> have
+      <m>\frac{\pi}{3}</m> as their reference angle. (For once,
+      we have something convenient about using radian measure in contrast to the abstract theoretical nonsense about using them as a <q>natural</q>
+      way to match oriented angles with real numbers!) The Reference Angle Theorem in conjunction with the table of cosine and sine values on <xref ref="CosineSineFacts">Page</xref>
+      can be used to generate the following figure,
+      which the authors feel should be committed to memory. (At the very least,
+      one should memorize the first quadrant and learn to make use of <xref ref="refanglethm">Theorem</xref>.)
+    </p>
+
+    <!--
+    <caption>Important Points on the Unit Circle</caption>
+    -->
+
+    <sidebyside>
+      <idx><h>Unit Circle </h><h> important points</h></idx>
+
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-21.pdf"/>
+    </sidebyside>
+    <p>
+      The next example summarizes all of the important ideas discussed thus far in the section.
+    </p>
+
+    <example xml:id="advancedrefangleex">
+      <title>Using reference angles</title>
+      <statement>
+        <p>
+          Suppose <m>\alpha</m> is an acute angle with <m>\cos(\alpha) = \frac{5}{13}</m>.
+        </p>
+
+        <ol>
+          <li>
+            <p>
+              Find <m>\sin(\alpha)</m> and use this to plot <m>\alpha</m> in standard position.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the sine and cosine of the following angles:
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <m>\theta = \pi + \alpha</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\theta = 2\pi - \alpha</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\theta = 3\pi - \alpha</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\theta = \frac{\pi}{2} + \alpha</m>
+                </p>
+              </li>
+            </ol></li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Proceeding as in <xref ref="cosinesinepythidex">Example</xref>,
+                we substitute <m>\cos(\alpha) = \frac{5}{13}</m> into
+                <m>\cos^{2}(\alpha) + \sin^{2}(\alpha) = 1</m> and find <m>\sin(\alpha) = \pm \frac{12}{13}</m>.
+                Since <m>\alpha</m> is an acute
+                (and therefore Quadrant I)
+                angle, <m>\sin(\alpha)</m> is positive.
+                Hence, <m>\sin(\alpha) = \frac{12}{13}</m>.
+                To plot <m>\alpha</m> in standard position,
+                we begin our rotation on the positive <m>x</m>-axis to the ray which contains the point <m>(\cos(\alpha), \sin(\alpha)) = \left(\frac{5}{13}, \frac{12}{13}\right)</m>:
+                see <xref ref="fig_circle16">Figure</xref>. <figure xml:id="fig_circle16"> <caption>Sketching <m>\alpha</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-22.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li><ol>
+                <li xml:id="fig_circle17">
+
+                <p>
+                  To find the cosine and sine of <m>\theta = \pi + \alpha</m>,
+                  we first plot <m>\theta</m> in standard position.
+                  We can imagine the sum of the angles
+                  <m>\pi + \alpha</m> as a sequence of two rotations:
+                  a rotation of <m>\pi</m> radians followed by a rotation of <m>\alpha</m> radians. (Since <m>\pi + \alpha = \alpha + \pi</m>,
+                  <m>\theta</m> may be plotted by reversing the order of rotations given here.
+                  You should do this.) We see that <m>\alpha</m> is the reference angle for <m>\theta</m>,
+                  so by The Reference Angle Theorem,
+                  <m>\cos(\theta) = \pm \cos(\alpha) = \pm \frac{5}{13}</m> and <m>\sin(\theta) = \pm \sin(\alpha) = \pm \frac{12}{13}</m>.
+                  Since the terminal side of <m>\theta</m> falls in Quadrant III, both
+                  <m>\cos(\theta)</m> and <m>\sin(\theta)</m> are negative, hence,
+                  <m>\cos(\theta) = - \frac{5}{13}</m> and
+          <m>\sin(\theta) = - \frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
+          <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-23.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-24.pdf"/></cell> </row> <row> <cell>Visualizing
+                  <m>\theta = \pi+\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
+                </p>
+              </li>
+
+              <li xml:id="fig_circle18">
+
+              <p>
+                Rewriting <m>\theta = 2\pi - \alpha</m> as <m>\theta = 2\pi + (-\alpha)</m>,
+                we can plot <m>\theta</m> by visualizing one complete revolution counter-clockwise followed by a
+                <em>clockwise</em> revolution,
+                or <q>backing up,</q> of <m>\alpha</m> radians.
+                We see that <m>\alpha</m> is <m>\theta</m>'s reference angle,
+                and since <m>\theta</m> is a Quadrant IV angle,
+                the Reference Angle Theorem gives:
+                <m>\cos(\theta) = \frac{5}{13}</m> and
+          <m>\sin(\theta) = -\frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(b)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-25.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-26.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\theta = 2\pi-\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
+              </p>
+              </li>
+
+              <li xml:id="fig_circle19">
+
+              <p>
+                Taking a cue from the previous problem,
+                we rewrite <m>\theta = 3\pi - \alpha</m> as <m>\theta = 3\pi + (-\alpha)</m>.
+                The angle <m>3\pi</m> represents one and a half revolutions counter-clockwise,
+                so that when we <q>back up</q> <m>\alpha</m> radians,
+                we end up in Quadrant II. Using the Reference Angle Theorem,
+                we get <m>\cos(\theta) = -\frac{5}{13}</m> and
+          <m>\sin(\theta) = \frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(c)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-27.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-28.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\theta = 3\pi-\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
+              </p>
+              </li>
+
+              <li xml:id="fig_circle20">
+
+              <p>
+                To plot <m>\theta = \frac{\pi}{2} + \alpha</m>,
+                we first rotate <m>\frac{\pi}{2}</m> radians and follow up with <m>\alpha</m> radians.
+                The reference angle here is
+          <em>not</em> <m>\alpha</m>,
+                so The Reference Angle Theorem is not immediately applicable. (It's important that you see why this is the case.
+                Take a moment to think about this before reading on.) Let <m>Q(x,y)</m> be the point on the terminal side of <m>\theta</m> which lies on the Unit Circle so that
+                <m>x = \cos(\theta)</m> and <m>y = \sin(\theta)</m>.
+                Once we graph <m>\alpha</m> in standard position,
+                we use the fact that equal angles subtend equal chords to show that the dotted lines in the figure below are equal.
+                Hence, <m>x = \cos(\theta) = -\frac{12}{13}</m>.
+                Similarly,
+          we find <m>y = \sin(\theta) = \frac{5}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-29.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-30.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\theta = \frac{\pi}{2}+\alpha</m></cell> <cell>Using symmetry to determine <m>Q(x,y)</m></cell> </row> </tabular> </sidebyside>
+              </p>
+              </li>
+            </ol>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example asks us to solve some very basic trigonometric equations.
+    </p>
+
+    <example xml:id="solveforangle">
+      <title>Solving basic trigonometric equations</title>
+      <statement>
+        <p>
+          Find all of the angles which satisfy the given equation.
+
+          <ol>
+            <li xml:id="cosineishalf">
+
+            <p>
+              <m>\cos(\theta) = \dfrac{1}{2}</m>
+            </p>
+            </li>
+
+            <li xml:id="sineisnegativehalf">
+
+            <p>
+              <m>\sin(\theta) = -\dfrac{1}{2}</m>
+            </p>
+            </li>
+
+            <li xml:id="cosineiszero">
+
+            <p>
+              <m>\cos(\theta) = 0</m>.
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since there is no context in the problem to indicate whether to use degrees or radians,
+          we will default to using radian measure in our answers to each of these problems.
+          This choice will be justified later in the text when we study what is known as Analytic Trigonometry.
+          In those sections to come,
+          radian measure will be the <em>only</em>
+          appropriate angle measure so it is worth the time to become
+          <q>fluent in radians</q> now.
+
+          <ol>
+            <li xml:id="fig_circle21">
+
+            <p>
+              If <m>\cos(\theta) = \frac{1}{2}</m>,
+              then the terminal side of <m>\theta</m>,
+              when plotted in standard position,
+              intersects the Unit Circle at <m>x = \frac{1}{2}</m>.
+              This means <m>\theta</m> is a Quadrant I or IV angle with reference angle <m>\frac{\pi}{3}</m>.
+
+
+
+
+              <!--
+              <caption>Angles with <m>\cos(\theta)=\frac{1}{2}</m></caption>
+              -->
+
+              <sidebyside>
+                <tabular>
+                  <row>
+                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-31.pdf"/></cell>
+                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-32.pdf"/></cell>
+                  </row>
+                </tabular>
+              </sidebyside>
+              One solution in  Quadrant I is  <m>\theta = \frac{\pi}{3}</m>,
+              and since all other Quadrant I solutions must be coterminal with <m>\frac{\pi}{3}</m>,
+              we find <m>\theta = \frac{\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+              Proceeding similarly for the Quadrant IV case,
+              we find the solution to
+          <m>\cos(\theta) = \frac{1}{2}</m> here is <m>\frac{5 \pi}{3}</m>,
+              so our answer in this Quadrant  is
+              <m>\theta = \frac{5\pi}{3} + 2\pi k</m> for integers <m>k</m>.
+
+              <aside>
+                <p>
+                  Recall from <xref ref="Angles">Section</xref>
+                  that two angles in radian measure are coterminal if and only if they differ by an integer multiple of <m>2\pi</m>.
+                  Hence to describe all angles coterminal with a given angle,
+                  we add <m>2\pi k</m> for integers <m>k = 0</m>,
+                  <m>\pm 1</m>, <m>\pm 2</m>, <ellipsis />.
+                </p>
+              </aside>
+            </p>
+            </li>
+
+            <li xml:id="fig_circle22">
+
+            <p>
+              If <m>\sin(\theta) = -\frac{1}{2}</m>,
+              then when <m>\theta</m> is plotted in standard position,
+              its terminal side intersects the Unit Circle at <m>y=-\frac{1}{2}</m>.
+              From this,
+          we determine <m>\theta</m> is a Quadrant III or Quadrant IV angle with reference angle
+              <m>\frac{\pi}{6}</m>. <!-- <caption>Angles with
+              <m>\sin(\theta)=-\frac{1}{2}</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-33.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-34.pdf"/></cell> </row> </tabular> </sidebyside> In Quadrant III, one solution is <m>\frac{7\pi}{6}</m>,
+              so we capture all Quadrant III solutions by adding integer multiples of <m>2\pi</m>:
+              <m>\theta = \frac{7\pi}{6} + 2\pi k</m>.
+              In Quadrant IV, one solution is
+              <m>\frac{11\pi}{6}</m> so all the solutions here are of the form
+              <m>\theta = \frac{11\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+            </p>
+            </li>
+
+            <li xml:id="fig_circle23">
+
+            <p>
+              The angles with <m>\cos(\theta) = 0</m> are quadrantal angles whose terminal sides,
+              when plotted in standard position,
+              lie along the <m>y</m>-axis. <!-- <caption>Angles with
+              <m>\cos(\theta)=0</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-35.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-36.pdf"/></cell> </row> </tabular> </sidebyside> While,
+              technically speaking,
+              <m>\frac{\pi}{2}</m> isn't a reference angle we can nonetheless use it to find our answers.
+              If we follow the procedure set forth in the previous examples,
+              we find <m>\theta = \frac{\pi}{2} + 2\pi k</m> and
+              <m>\theta = \frac{3\pi}{2} + 2\pi k</m> for integers,
+              <m>k</m>.
+              While this solution is correct,
+              it can be shortened to
+          <m>\theta = \frac{\pi}{2} + \pi k</m> for integers <m>k</m>. (Can you see why this works from the diagram?)
+            </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      One of the key items to take from <xref ref="solveforangle">Example</xref> is that,
+      in general,
+      solutions to trigonometric equations consist of infinitely many answers.
+      The reader is encouraged write out as many of these answers as necessary to get a feel for them.
+      This is especially important when checking answers to the exercises.
+      For example, another Quadrant IV solution to
+      <m>\sin(\theta) = -\frac{1}{2}</m> is <m>\theta = -\frac{\pi}{6}</m>.
+      Hence, the family of Quadrant IV answers to <xref ref="sineisnegativehalf">number</xref>
+      above could just have easily been written
+      <m>\theta = -\frac{\pi}{6} + 2\pi k</m> for integers <m>k</m>.
+      While on the surface,
+      this family may look different than the stated solution of
+      <m>\theta = \frac{11\pi}{6} + 2\pi k</m> for integers <m>k</m>,
+      we leave it to the reader to show they represent the same list of angles.
+    </p>
+  </introduction>
+
+  <subsection xml:id="cosinesinebeyond">
+    <title>Beyond the Unit Circle</title>
+    <p>
+      We began the section with a quest to describe the position of a particle experiencing circular motion.
+      In defining the cosine and sine functions,
+      we assigned to each angle a position on the <em>Unit</em> Circle.
+      In this subsection,
+      we broaden our scope to include circles of radius <m>r</m> centered at the origin.
+      Consider for the moment the <em>acute</em>
+      angle <m>\theta</m> drawn below in standard position.
+      Let <m>Q(x,y)</m> be the point on the terminal side of <m>\theta</m> which lies on the circle <m>x^2+y^2 = r^2</m>,
+      and let <m>P(x',y')</m> be the point on the terminal side of <m>\theta</m> which lies on the Unit Circle.
+      Now consider dropping perpendiculars from <m>P</m> and <m>Q</m> to create two right triangles,
+      <m>\Delta OPA</m> and <m>\Delta OQB</m>.
+      These triangles are similar,
+      (do you remember why?)
+      thus it follows that <m>\frac{x}{x'} = \frac{r}{1} = r</m>,
+      so <m>x = r x'</m> and, similarly, we find <m>y = r y'</m>.
+      Since, by definition,
+      <m>x' = \cos(\theta)</m> and <m>y' = \sin(\theta)</m>,
+      we get the coordinates of <m>Q</m> to be
+      <m>x = r \cos(\theta)</m> and <m>y = r \sin(\theta)</m>.
+      By reflecting these points through the <m>x</m>-axis,
+      <m>y</m>-axis and origin,
+      we obtain the result for all non-quadrantal angles <m>\theta</m>,
+      and we leave it to the reader to verify these formulas hold for the quadrantal angles.
+    </p>
+
+    <!--
+    <caption>Determining coordinates of <m>Q(x,y)</m> in terms of <m>\cos(\theta)</m> and <m>\sin(\theta)</m></caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-37.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-38.pdf"/></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Not only can we describe the coordinates of <m>Q</m> in terms of <m>\cos(\theta)</m> and
+      <m>\sin(\theta)</m> but since the radius of the circle is <m>r = \sqrt{x^2 + y^2}</m>,
+      we can also express <m>\cos(\theta)</m> and
+      <m>\sin(\theta)</m> in terms of the coordinates of <m>Q</m>.
+      These results are summarized in the following theorem.
+    </p>
+
+    <theorem xml:id="cosinesinecircle">
+      <title>Generalized sine and cosine</title>
+      <statement>
+        <p>
+          If <m>Q(x,y)</m> is the point on the terminal side of an angle <m>\theta</m>,
+          plotted in standard position,
+          which lies on the circle <m>x^2+y^2 = r^2</m> then
+          <m>x = r \cos(\theta)</m> and <m>y = r \sin(\theta)</m>.
+          Moreover,
+              <idx><h>cosine </h><h> of an angle</h></idx> <idx><h>sine </h><h> of an angle</h></idx>
+          <me>
+            \begin{array}{ccc} \cos(\theta)= \dfrac{x}{r}  = \dfrac{x}{\sqrt{x^2+y^2}} \amp  \text{ and }  \amp   \sin(\theta) = \dfrac{y}{r} = \dfrac{y}{\sqrt{x^2+y^2}}
+            \end{array}
+          </me>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Note that in the case of the Unit Circle we have <m>r = \sqrt{x^2+y^2} = 1</m>,
+      so <xref ref="cosinesinecircle">Theorem</xref>
+      reduces to our definitions of
+      <m>\cos(\theta)</m> and <m>\sin(\theta)</m>.
+    </p>
+
+    <example xml:id="cosinesinecircleex">
+      <title>Finding $cos(\theta)$ and $\sin(\theta)$ beyond the unit circle</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Suppose that the terminal side of an angle <m>\theta</m>,
+              when plotted in standard position,
+              contains the point <m>Q(4,-2)</m>.
+              Find <m>\sin(\theta)</m> and <m>\cos(\theta)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In <xref ref="EarthRotationEx">Example</xref>
+              in <xref ref="Angles">Section</xref>,
+              we approximated the radius of the earth at
+              <m>41.628^{\circ}</m> north latitude to be <m>2960</m> miles.
+              Justify this approximation if the radius of the Earth at the Equator is approximately <m>3960</m> miles.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Using <xref ref="cosinesinecircle">Theorem</xref>
+                with <m>x = 4</m> and <m>y = -2</m>,
+                we find <m>r = \sqrt{(4)^2 + (-2)^2} = \sqrt{20} = 2 \sqrt{5}</m> so that
+                <m>\cos(\theta) = \frac{x}{r} = \frac{4}{2 \sqrt{5}} = \frac{2 \sqrt{5}}{5}</m> and <m>\sin(\theta) = \frac{y}{r} = \frac{-2}{2 \sqrt{5}} = -\frac{\sqrt{5}}{5}</m>:
+                see <xref ref="fig_circle25">Figure</xref>. <figure xml:id="fig_circle25"> <caption>The terminal side of <m>\theta</m> contains <m>Q(4,-2)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-39.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Assuming the Earth is a sphere,
+                a cross-section through the poles produces a circle of radius <m>3960</m> miles.
+                Viewing the Equator as the <m>x</m>-axis,
+                the value we seek is the <m>x</m>-coordinate of the point <m>Q(x,y)</m> indicated in <xref ref="fig_circle26">Figure</xref>
+                <figure xml:id="fig_circle26"> <caption>A point on the Earth at
+                <m>41.628^\circ</m>N</caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-40.pdf"/> </figure> Using <xref ref="cosinesinecircle">Theorem</xref>,
+                we get <m>x = 3960 \cos\left(41.628^{\circ}\right)</m>.
+                Using a calculator in <q>degree</q> mode,
+                we find <m>3960 \cos\left(41.628^{\circ}\right) \approx 2960</m>.
+                Hence, the radius of the Earth at North Latitude
+                <m>41.628^{\circ}</m> is approximately <m>2960</m> miles.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      <xref ref="cosinesinecircle">Theorem</xref>
+      gives us what we need to describe the position of an object traveling in a circular path of radius <m>r</m> with constant angular velocity <m>\omega</m>.
+      Suppose that at time <m>t</m>,
+      the object has swept out an angle measuring <m>\theta</m> radians.
+      If we assume that the object is at the point <m>(r,0)</m> when <m>t=0</m>,
+      the angle <m>\theta</m> is in standard position.
+      By definition,
+      <m>\omega = \frac{\theta}{t}</m> which we rewrite as <m>\theta = \omega t</m>.
+      According to <xref ref="cosinesinecircle">Theorem</xref>,
+      the location of the object <m>Q(x,y)</m> on the circle is found using the equations
+      <m>x = r \cos(\theta) = r \cos(\omega t)</m> and <m>y = r \sin(\theta) = r \sin(\omega t)</m>.
+      Hence, at time <m>t</m>,
+      the object is at the point <m>(r \cos(\omega t), r \sin(\omega t))</m>.
+      We have just argued the following.
+    </p>
+
+    <theorem xml:id="equationsforcircularmotion">
+      <title>Equations for circular motion</title>
+      <statement>
+        <p>
+          Suppose an object is travelling in a circular path of radius <m>r</m> centred at the origin with constant angular velocity <m>\omega</m>.
+          If <m>t=0</m> corresponds to the point <m>(r,0)</m>,
+          then the <m>x</m> and <m>y</m> coordinates of the object are functions of <m>t</m> and are given by
+          <m>x = r \cos(\omega t)</m> and <m>y = r \sin(\omega t)</m>.
+          Here, <m>\omega > 0</m> indicates a counter-clockwise direction and
+          <m>\omega \lt 0</m> indicates a clockwise direction.
+        </p>
+      </statement>
+    </theorem>
+
+    <!--
+    <caption>Equations for circular motion</caption>
+    -->
+
+    <sidebyside>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-41.pdf"/>
+    </sidebyside>
+    <example xml:id="Lakelandrotates">
+      <title>Motion on the Earth's surface</title>
+      <statement>
+        <p>
+          Suppose we are in the situation of <xref ref="EarthRotationEx">Example</xref>.
+          Find the equations of motion of Lakeland Community College as the earth rotates.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From <xref ref="EarthRotationEx">Example</xref>,
+          we take <m>r = 2960</m> miles and and <m>\omega = \frac{\pi}{12 \, \text{ hours } }</m>.
+          Hence, the equations of motion are
+          <m>x = r \cos(\omega t) = 2960 \cos\left(\frac{\pi}{12} t\right)</m> and <m>y = r \sin(\omega t) = 2960 \sin\left(\frac{\pi}{12} t\right)</m>,
+          where <m>x</m> and <m>y</m> are measured in miles and <m>t</m> is measured in hours.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In addition to circular motion,
+      <xref ref="cosinesinecircle">Theorem</xref>
+      is also the key to developing what is usually called <q>right triangle</q>
+      trigonometry. (You were probably exposed to this in High School.) As we shall see in the sections to come,
+      many applications in trigonometry involve finding the measures of the angles in,
+      and lengths of the sides of, right triangles.
+      Indeed, we made good use of some properties of right triangles to find the exact values of the cosine and sine of many of the angles in <xref ref="cosinesineviaunitcircle">Example</xref>,
+      so the following development shouldn't be that much of a surprise.
+      Consider the generic right triangle below with corresponding acute angle <m>\theta</m>.
+      The side with length <m>a</m> is called the side of the triangle
+      <em>adjacent</em> to <m>\theta</m>;
+      the side with length <m>b</m> is called the side of the triangle <em>opposite</em> <m>\theta</m>;
+      and the remaining side of length <m>c</m>
+      (the side opposite the right angle)
+      is called the hypotenuse.
+      We now imagine drawing this triangle in Quadrant I so that the angle <m>\theta</m> is in standard position with the adjacent side to <m>\theta</m> lying along the positive <m>x</m>-axis.
+    </p>
+
+    <table xml:id="fig_tritrig1">
+      <caption>Relating triangular and circular trigonometry</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-42.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-43.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      According to the Pythagorean Theorem, <m>a^2+b^2=c^2</m>,
+      so that the point <m>P(a,b)</m> lies on a circle of radius <m>c</m>.
+      <xref ref="cosinesinecircle">Theorem</xref>
+      tells us that <m>\cos(\theta) = \frac{a}{c}</m> and <m>\sin(\theta) = \frac{b}{c}</m>,
+      so we have determined the cosine and sine of <m>\theta</m> in terms of the lengths of the sides of the right triangle.
+      Thus we have the following theorem.
+    </p>
+
+    <theorem xml:id="cosinesinetriangle">
+      <title>Sine and cosine for right triangles</title>
+      <statement>
+        <p>
+          Suppose <m>\theta</m> is an acute angle residing in a right triangle.
+          If the length of the side adjacent to <m>\theta</m> is <m>a</m>,
+          the length of the side opposite <m>\theta</m> is <m>b</m>,
+          and the length of the hypotenuse is <m>c</m>,
+          then <m>\cos(\theta) = \dfrac{a}{c}</m> and <m>\sin(\theta) = \dfrac{b}{c}</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <example xml:id="righttriangleex">
+      <title>Using triangular trigonometry</title>
+      <statement>
+        <p>
+          Find the measure of the missing angle and the lengths of the missing sides of the triangle in <xref ref="fig_tritrig2">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_tritrig2">
+          <caption>The triangle for <xref ref="righttriangleex">Example</xref></caption>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-44.pdf"/>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          The first and easiest task is to find the measure of the missing angle.
+          Since the sum of angles of a triangle is <m>180^{\circ}</m>,
+          we know that the missing angle has measure <m>180^{\circ} - 30^{\circ} - 90^{\circ} = 60^{\circ}</m>.
+          We now proceed to find the lengths of the remaining two sides of the triangle.
+          Let <m>c</m> denote the length of the hypotenuse of the triangle.
+          By <xref ref="cosinesinetriangle">Theorem</xref>,
+          we have <m>\cos\left(30^{\circ}\right) = \frac{7}{c}</m>,
+          or <m>c = \frac{7}{\cos\left(30^{\circ}\right)}</m>.
+          Since <m>\cos\left(30^{\circ}\right) = \frac{\sqrt{3}}{2}</m>, we have,
+          after the usual fraction gymnastics,
+          <m>c = \frac{14 \sqrt{3}}{3}</m>.
+          At this point,
+          we have two ways to proceed to find the length of the side opposite the <m>30^{\circ}</m> angle,
+          which we'll denote <m>b</m>.
+          We know the length of the adjacent side is <m>7</m> and the length of the hypotenuse is <m>\frac{14 \sqrt{3}}{3}</m>,
+          so we could use the Pythagorean Theorem to find the missing side and solve <m>(7)^2 + b^2 = \left( \frac{14 \sqrt{3}}{3} \right)^{2}</m> for <m>b</m>.
+          Alternatively,
+          we could use <xref ref="cosinesinetriangle">Theorem</xref>,
+          namely that <m>\sin\left(30^{\circ}\right) = \frac{b}{c}</m>.
+          Choosing the latter,
+          we find <m>b = c \sin\left(30^{\circ}\right) = \frac{14 \sqrt{3}}{3} \cdot \frac{1}{2} = \frac{7 \sqrt{3}}{3}</m>.
+          The triangle with all of its data is recorded in <xref ref="fig_tritrig3">Figure</xref>
+        </p>
+
+        <figure xml:id="fig_tritrig3">
+          <caption>The completed triangle for <xref ref="righttriangleex">Example</xref></caption>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-45.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      We close this section by noting that we can easily extend the functions cosine and sine to real numbers by identifying a real number <m>t</m> with the angle <m>\theta = t</m> radians.
+      Using this identification,
+      we define <m>\cos(t) = \cos(\theta)</m> and <m>\sin(t) = \sin(\theta)</m>.
+      In practice this means expressions like
+      <m>\cos(\pi)</m> and <m>\sin(2)</m> can be found by regarding the inputs as angles in radian measure or real numbers;
+      the choice is the reader's.
+      If we trace the identification of real numbers <m>t</m> with angles <m>\theta</m> in radian measure to its roots on <xref ref="wrappingfunction">page</xref>,
+      we can spell out this correspondence more precisely.
+      For each real number <m>t</m>,
+      we associate an oriented arc <m>t</m> units in length with initial point <m>(1,0)</m> and endpoint <m>P(\cos(t), \sin(t))</m>.
+    </p>
+
+    <p>
+      In the same way we studied polynomial, rational,
+      exponential, and logarithmic functions,
+      we will study the trigonometric functions
+      <m>f(t) = \cos(t)</m> and <m>g(t) = \sin(t)</m>.
+      The first order of business is to find the domains and ranges of these functions.
+      Whether we think of identifying the real number <m>t</m> with the angle <m>\theta = t</m> radians,
+      or think of wrapping an oriented arc around the Unit Circle to find coordinates on the Unit Circle,
+      it should be clear that both the cosine and sine functions are defined for all real numbers <m>t</m>.
+      In other words, the domain of <m>f(t) = \cos(t)</m> and of
+      <m>g(t) = \sin(t)</m> is <m>(-\infty, \infty)</m>.
+      Since <m>\cos(t)</m> and <m>\sin(t)</m> represent <m>x</m>- and <m>y</m>-coordinates,
+      respectively, of points on the Unit Circle,
+      they both take on all of the values between <m>-1</m> an <m>1</m>,
+      inclusive.
+      In other words, the range of <m>f(t) = \cos(t)</m> and of
+      <m>g(t) = \sin(t)</m> is the interval <m>[-1,1]</m>.
+      To summarize:
+    </p>
+
+    <table xml:id="fig_circle28">
+      <caption>Defining <m>\cos(t)</m> and <m>\sin(t)</m> as functions of a real variable</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-46.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-47.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <theorem xml:id="cosinesinefunctiondomainrange">
+      <title>Domain and Range of the Cosine and Sine Functions</title>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              The function <m>f(t)=\cos(t)</m>
+
+              <ul>
+                <li>
+                  <p>
+                    has domain <m>(-\infty,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    has range <m>[-1,1]</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The function <m>g(t)=\sin(t)</m>
+
+              <ul>
+                <li>
+                  <p>
+                    has domain <m>(-\infty,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    has range <m>[-1,1]</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <p>
+      \phantomsection Suppose, as in the Exercises,
+      we are asked to solve an equation such as <m>\sin(t) = -\frac{1}{2}</m>.
+      As we have already mentioned,
+      the distinction between <m>t</m> as a real number and as an angle
+      <m>\theta = t</m> radians is often blurred.
+      Indeed, we solve <m>\sin(t) = -\frac{1}{2}</m> in the exact same manner as we did in <xref ref="solveforangle">Example</xref>
+      <xref ref="sineisnegativehalf">number</xref>.
+      Our solution is only cosmetically different in that the variable used is <m>t</m> rather than <m>\theta</m>:
+      <m>t = \frac{7\pi}{6} + 2\pi k</m> or
+      <m>t = \frac{11\pi}{6} + 2\pi k</m> for integers, <m>k</m>.
+      We will study the cosine and sine functions in greater detail in <xref ref="TrigGraphs">Section</xref>.
+      Until then,
+      keep in mind that any properties of cosine and sine developed in the following sections which regard them as functions of
+      <em>angles</em> in <em>radian</em>
+      measure apply equally well if the inputs are regarded as <em>real numbers</em>.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      find the exact value of the cosine and sine of the given angle.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(0) = 1</m>, <m>\; \sin(0) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{\pi}{4} \right) = \dfrac{\sqrt{2}}{2}</m>,
+          <m>\; \sin \left(\dfrac{\pi}{4} \right) = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{\pi}{3}\right) = \dfrac{1}{2}</m>,
+          <m>\; \sin \left(\dfrac{\pi}{3}\right) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{\pi}{2}\right) = 0</m>,
+          <m>\; \sin \left(\dfrac{\pi}{2}\right) = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{2\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{2\pi}{3}\right) = -\dfrac{1}{2}</m>,
+          <m>\; \sin \left(\dfrac{2\pi}{3}\right) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{3\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{3\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>,
+          <m>\; \sin \left(\dfrac{3\pi}{4} \right) = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\pi) = -1</m>, <m>\; \sin(\pi) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{7\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{7\pi}{6}\right) = -\dfrac{\sqrt{3}}{2}</m>,
+          <m>\; \sin\left(\dfrac{7\pi}{6}\right) = -\dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{5\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{5\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>,
+          <m>\; \sin \left(\dfrac{5\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{4\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{4\pi}{3}\right) = -\dfrac{1}{2}</m>,
+          <m>\; \sin \left(\dfrac{4\pi}{3}\right) = -\dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{3\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{3\pi}{2}\right) = 0</m>,
+          <m>\; \sin \left(\dfrac{3\pi}{2}\right) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{5\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{5\pi}{3}\right) = \dfrac{1}{2}</m>,
+          <m>\; \sin \left(\dfrac{5\pi}{3}\right) = -\dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{7\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(\dfrac{7\pi}{4} \right) = \dfrac{\sqrt{2}}{2}</m>,
+          <m>\; \sin \left(\dfrac{7\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{23\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{23\pi}{6}\right) = \dfrac{\sqrt{3}}{2}</m>,
+          <m>\; \sin\left(\dfrac{23\pi}{6}\right) = -\dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = -\dfrac{13\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(-\dfrac{13\pi}{2}\right) = 0</m>,
+          <m>\; \sin \left(-\dfrac{13\pi}{2}\right) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = -\dfrac{43\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(-\dfrac{43\pi}{6}\right) = -\dfrac{\sqrt{3}}{2}</m>,
+          <m>\; \sin\left(-\dfrac{43\pi}{6}\right) = \dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = -\dfrac{3\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left(-\dfrac{3\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>,
+          <m>\; \sin \left(-\dfrac{3\pi}{4} \right) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = -\dfrac{\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(-\dfrac{\pi}{6}\right) = \dfrac{\sqrt{3}}{2}</m>,
+          <m>\; \sin\left(-\dfrac{\pi}{6}\right) = -\dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{10\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\dfrac{10\pi}{3}\right) = -\dfrac{1}{2}</m>,
+          <m>\; \sin \left(\dfrac{10\pi}{3}\right) = -\dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = 117\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(117\pi) = -1</m>, <m>\; \sin(117\pi) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the results developed throughout the section to find the requested value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = -\dfrac{7}{25}</m> with <m>\theta</m> in Quadrant IV, what is <m>\cos(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = -\dfrac{7}{25}</m> with <m>\theta</m> in Quadrant IV, then <m>\cos(\theta) = \dfrac{24}{25}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\cos(\theta) = \dfrac{4}{9}</m> with <m>\theta</m> in Quadrant I, what is <m>\sin(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\cos(\theta) = \dfrac{4}{9}</m> with <m>\theta</m> in Quadrant I, then <m>\sin(\theta) = \dfrac{\sqrt{65}}{9}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = \dfrac{5}{13}</m> with <m>\theta</m> in Quadrant II, what is <m>\cos(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = \dfrac{5}{13}</m> with <m>\theta</m> in Quadrant II, then <m>\cos(\theta) = -\dfrac{12}{13}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\cos(\theta) = -\dfrac{2}{11}</m> with <m>\theta</m> in Quadrant III, what is <m>\sin(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\cos(\theta) = -\dfrac{2}{11}</m> with <m>\theta</m> in Quadrant III, then <m>\sin(\theta) = -\dfrac{\sqrt{117}}{11}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = -\dfrac{2}{3}</m> with <m>\theta</m> in Quadrant III, what is <m>\cos(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = -\dfrac{2}{3}</m> with <m>\theta</m> in Quadrant III, then <m>\cos(\theta) = -\dfrac{\sqrt{5}}{3}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\cos(\theta) = \dfrac{28}{53}</m> with <m>\theta</m> in Quadrant IV, what is <m>\sin(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\cos(\theta) = \dfrac{28}{53}</m> with <m>\theta</m> in Quadrant IV, then <m>\sin(\theta) = -\dfrac{45}{53}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = \dfrac{2\sqrt{5}}{5}</m> and <m>\dfrac{\pi}{2} \lt \theta \lt \pi</m>,
+          what is <m>\cos(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = \dfrac{2\sqrt{5}}{5}</m> and <m>\dfrac{\pi}{2} \lt \theta \lt \pi</m>,
+          then <m>\cos(\theta) = -\dfrac{\sqrt{5}}{5}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\cos(\theta) = \dfrac{\sqrt{10}}{10}</m> and <m>2\pi \lt \theta \lt \dfrac{5\pi}{2}</m>,
+          what is <m>\sin(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\cos(\theta) = \dfrac{\sqrt{10}}{10}</m> and <m>2\pi \lt \theta \lt \dfrac{5\pi}{2}</m>,
+          then <m>\sin(\theta) = \dfrac{3 \sqrt{10}}{10}</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = -0.42</m> and <m>\pi \lt \theta \lt \dfrac{3\pi}{2}</m>,
+          what is <m>\cos(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = -0.42</m> and <m>\pi \lt \theta \lt \dfrac{3\pi}{2}</m>,
+          then <m>\cos(\theta) = -\sqrt{0.8236} \approx -0.9075</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\cos(\theta) = -0.98</m> and <m>\dfrac{\pi}{2} \lt \theta \lt \pi</m>,
+          what is <m>\sin(\theta)</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\cos(\theta) = -0.98</m> and <m>\dfrac{\pi}{2} \lt \theta \lt \pi</m>,
+          then <m>\sin(\theta) = \sqrt{0.0396} \approx 0.1990</m>.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find all of the angles which satisfy the given equation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(\theta) = \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(\theta) = \dfrac{1}{2}</m> when <m>\theta = \dfrac{\pi}{6} + 2\pi k</m> or
+          <m>\theta = \dfrac{5\pi}{6} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(\theta) = -\dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = -\dfrac{\sqrt{3}}{2}</m> when <m>\theta = \dfrac{5\pi}{6} + 2\pi k</m> or
+          <m>\theta = \dfrac{7\pi}{6} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(\theta) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(\theta) = 0</m> when
+          <m>\theta = \pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(\theta) = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = \dfrac{\sqrt{2}}{2}</m> when <m>\theta = \dfrac{\pi}{4} + 2\pi k</m> or
+          <m>\theta = \dfrac{7\pi}{4} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(\theta) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(\theta) = \dfrac{\sqrt{3}}{2}</m> when <m>\theta = \dfrac{\pi}{3} + 2\pi k</m> or
+          <m>\theta = \dfrac{2\pi}{3} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(\theta) = -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = -1</m> when
+          <m>\theta = (2k + 1)\pi</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(\theta) = -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(\theta) = -1</m> when
+          <m>\theta = \dfrac{3\pi}{2} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(\theta) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = \dfrac{\sqrt{3}}{2}</m> when <m>\theta = \dfrac{\pi}{6} + 2\pi k</m> or
+          <m>\theta = \dfrac{11\pi}{6} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(\theta) = -1.001</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = -1.001</m> never happens
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      solve the equation for <m>t</m>. (See the comments following <xref ref="cosinesinefunctiondomainrange">Theorem</xref>.)
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(t) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(t) = 0</m> when <m>t = \dfrac{\pi}{2} + \pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(t) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(t) = -\dfrac{\sqrt{2}}{2}</m> when <m>t = \dfrac{5\pi}{4} + 2\pi k</m> or
+          <m>t = \dfrac{7\pi}{4} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(t) = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(t) = 3</m> never happens.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(t) = -\dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(t) = -\dfrac{1}{2}</m> when <m>t = \dfrac{7\pi}{6} + 2\pi k</m> or
+          <m>t = \dfrac{11\pi}{6} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(t) = \dfrac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(t) = \dfrac{1}{2}</m> when <m>t = \dfrac{\pi}{3} + 2\pi k</m> or
+          <m>t = \dfrac{5\pi}{3} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(t) = -2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(t) = -2</m> never happens
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(t) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(t) = 1</m> when <m>t = 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(t) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(t) = 1</m> when <m>t = \dfrac{\pi}{2} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(t) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(t) = -\dfrac{\sqrt{2}}{2}</m> when <m>t = \dfrac{3\pi}{4} + 2\pi k</m> or
+          <m>t = \dfrac{5\pi}{4} + 2\pi k</m> for any integer <m>k</m>.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use your calculator to approximate the given value to three decimal places.
+      Make sure your calculator is in the proper angle measurement mode!
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(78.95^{\circ})</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(78.95^{\circ}) \approx 0.981</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(-2.01)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(-2.01) \approx -0.425</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(392.994)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(392.994) \approx -0.291</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(207^{\circ})</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(207^{\circ}) \approx -0.891</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left( \pi^{\circ} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left( \pi^{\circ} \right) \approx 0.055</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(e)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(e) \approx -0.912</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the measurement of the missing angle and the lengths of the missing sides. (See <xref ref="righttriangleex">Example</xref>)
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find <m>\theta</m>, <m>b</m>, and <m>c</m>.
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-48.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta = 60^{\circ}</m>,
+          <m>b = \dfrac{ \sqrt{3}}{3}</m>,
+          <m>c=\dfrac{2 \sqrt{3}}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find <m>\theta</m>, <m>a</m>, and <m>c</m>.
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-49.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\theta = 45^{\circ}</m>, <m>a = 3</m>, <m>c = 3\sqrt{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find <m>\alpha</m>, <m>a</m>, and <m>b</m>.
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-50.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\alpha = 57^{\circ}</m>,
+          <m>a = 8 \cos(33^{\circ}) \approx 6.709</m>,
+          <m>b = 8 \sin(33^{\circ}) \approx 4.357</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find <m>\beta</m>, <m>a</m>, and <m>c</m>.
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-48.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\beta = 42^{\circ}</m>,
+          <m>c = \dfrac{6}{\sin(48^{\circ})} \approx 8.074</m>,
+          <m>a = \sqrt{c^2 - 6^2} \approx 5.402</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      assume that <m>\theta</m> is an acute angle in a right triangle and use <xref ref="cosinesinetriangle">Theorem</xref> to find the requested side.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 12^{\circ}</m> and the side adjacent to <m>\theta</m> has length 4, how long is the hypotenuse?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The hypotenuse has length <m>\dfrac{4}{\cos(12^{\circ})}\approx 4.089</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 78.123^{\circ}</m> and the hypotenuse has length 5280,
+          how long is the side adjacent to <m>\theta</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The side adjacent to <m>\theta</m> has length <m>5280\cos(78.123^{\circ}) \approx 1086.68</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 59^{\circ}</m> and the side opposite <m>\theta</m> has length 117.42, how long is the hypotenuse?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The hypotenuse has length <m>\dfrac{117.42}{\sin(59^{\circ})}\approx 136.99</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 5^{\circ}</m> and the hypotenuse has length 10,
+          how long is the side opposite <m>\theta</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The side opposite <m>\theta</m> has length <m>10\sin(5^{\circ}) \approx 0.872</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 5^{\circ}</m> and the hypotenuse has length 10,
+          how long is the side adjacent to <m>\theta</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The side adjacent to <m>\theta</m> has length <m>10\cos(5^{\circ}) \approx 9.962</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\theta = 37.5^{\circ}</m> and the side opposite <m>\theta</m> has length 306,
+          how long is the side adjacent to <m>\theta</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The hypotenuse has length <m>c = \dfrac{306}{\sin(37.5^{\circ})}\approx 502.660</m>,
+          so the side adjacent to <m>\theta</m> has length <m>\sqrt{c^2 - 306^{2}} \approx 398.797</m>.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      let <m>\theta</m> be the angle in standard position whose terminal side contains the given point then compute
+      <m>\cos(\theta)</m> and <m>\sin(\theta)</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(-7, 24)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = -\dfrac{7}{25}, \; \sin(\theta) = \dfrac{24}{25}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>Q(3, 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = \dfrac{3}{5}, \; \sin(\theta) = \dfrac{4}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R(5, -9)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = \dfrac{5\sqrt{106}}{106}, \; \sin(\theta) = -\dfrac{9\sqrt{106}}{106}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>T(-2, -11)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(\theta) = -\dfrac{2\sqrt{5}}{25}, \; \sin(\theta) = -\dfrac{11\sqrt{5}}{25}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the equations of motion for the given scenario.
+      Assume that the center of the motion is the origin,
+      the motion is counter-clockwise and that <m>t = 0</m> corresponds to a position along the positive <m>x</m>-axis. (See <xref ref="equationsforcircularmotion">Equation</xref>
+      and <xref ref="EarthRotationEx">Example</xref>.)
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          A point on the edge of the spinning yo-yo in <xref ref="spinningyoyo">Exercise</xref>
+          from <xref ref="Angles">Section</xref>.
+        </p>
+
+        <p>
+          Recall: The diameter of the yo-yo is 2.25 inches and it spins at 4500 revolutions per minute.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = 1.125</m> inches,
+          <m>\omega = 9000 \pi \, \frac{\text{ radians } }{\text{ minute } }</m>,
+          <m>x = 1.125 \cos(9000 \pi \, t)</m>,
+          <m>y = 1.125 \sin(9000 \pi \, t)</m>.
+          Here <m>x</m> and <m>y</m> are measured in inches and <m>t</m> is measured in minutes.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The yo-yo in <xref ref="yoyotrick">exercise</xref>
+          from <xref ref="Angles">Section</xref>.
+        </p>
+
+        <p>
+          Recall: The radius of the circle is 28 inches and it completes one revolution in 3 seconds.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = 28</m> inches,
+          <m>\omega = \frac{2\pi}{3} \, \frac{\text{ radians } }{\text{ second } }</m>,
+          <m>x = 28 \cos\left(\frac{2\pi}{3} \, t \right)</m>,
+          <m>y = 28 \sin\left(\frac{2\pi}{3} \, t \right)</m>.
+          Here <m>x</m> and <m>y</m> are measured in inches and <m>t</m> is measured in seconds.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A point on the edge of the hard drive in <xref ref="harddrive">Exercise</xref>
+          from <xref ref="Angles">Section</xref>.
+        </p>
+
+        <p>
+          Recall: The diameter of the hard disk is 2.5 inches and it spins at 7200 revolutions per minute.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = 1.25</m> inches,
+          <m>\omega = 14400 \pi \, \frac{\text{ radians } }{\text{ minute } }</m>,
+          <m>x = 1.25 \cos(14400 \pi \, t)</m>,
+          <m>y = 1.25 \sin(14400 \pi \, t)</m>.
+          Here <m>x</m> and <m>y</m> are measured in inches and <m>t</m> is measured in minutes.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A passenger on the Big Wheel in <xref ref="giantwheelmotion">Exercise</xref>
+          from <xref ref="Angles">Section</xref>.
+        </p>
+
+        <p>
+          Recall: The diameter is 128 feet and completes 2 revolutions in 2 minutes, 7 seconds.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = 64</m> feet,
+          <m>\omega = \frac{4\pi}{127} \, \frac{\text{ radians } }{\text{ second } }</m>,
+          <m>x = 64 \cos\left(\frac{4\pi}{127} \, t \right)</m>,
+          <m>y = 64 \sin\left(\frac{4\pi}{127} \, t \right)</m>.
+          Here <m>x</m> and <m>y</m> are measured in feet and <m>t</m> is measured in seconds.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A passenger on the Big Wheel in <xref ref="giantwheelmotion">Exercise</xref>
+          from <xref ref="Angles">Section</xref>.
+        </p>
+
+        <p>
+          Recall: The diameter is 128 feet and completes 2 revolutions in 2 minutes, 7 seconds.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>r = 64</m> feet,
+          <m>\omega = \frac{4\pi}{127} \, \frac{\text{ radians } }{\text{ second } }</m>,
+          <m>x = 64 \cos\left(\frac{4\pi}{127} \, t \right)</m>,
+          <m>y = 64 \sin\left(\frac{4\pi}{127} \, t \right)</m>.
+          Here <m>x</m> and <m>y</m> are measured in feet and <m>t</m> is measured in seconds.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="cofunctionforeshadowing">
+      <statement>
+        <p>
+          Let <m>\alpha</m> and <m>\beta</m> be the two acute angles of a right triangle. (Thus <m>\alpha</m> and <m>\beta</m> are complementary angles.) Show that
+          <m>\sin(\alpha) = \cos(\beta)</m> and <m>\sin(\beta) = \cos(\alpha)</m>.
+          The fact that co-functions of complementary angles are equal in this case is not an accident and a more general result will be given in <xref ref="Identities">Section</xref>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In the scenario of <xref ref="equationsforcircularmotion">Theorem</xref>,
+          we assumed that at <m>t=0</m>,
+          the object was at the point <m>(r,0)</m>.
+          If this is not the case,
+          we can adjust the equations of motion by introducing a <q>time delay.</q>
+          If <m>t_{0} > 0</m> is the first time the object passes through the point <m>(r,0)</m>, show,
+          with the help of your classmates,
+          the equations of motion are
+          <m>x = r \cos(\omega (t - t_{0}))</m> and <m>y = r \sin(\omega (t-t_{0}))</m>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

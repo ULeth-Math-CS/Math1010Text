@@ -1,0 +1,1183 @@
+
+
+<section xml:id="CartesianPlane">
+  <title>The Cartesian Coordinate Plane</title>
+  <introduction>
+    <p>
+      In order to visualize the pure excitement that is Precalculus,
+      we need to unite Algebra and Geometry.
+      Simply put, we must find a way to draw algebraic things.
+      Let's start with possibly the greatest mathematical achievement of all time: the
+          <idx><h>Cartesian coordinate plane</h></idx>
+      <em>Cartesian Coordinate Plane</em>.
+      Imagine two real number lines crossing at a right angle at <m>0</m> as drawn below.
+    </p>
+
+    <aside>
+      <p>
+        The Cartesian Plane is named in honour of <url href="http://en.wikipedia.org/wiki/Descartes"><em>Ren&#xe9; Descartes</em></url>.
+      </p>
+    </aside>
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-21.pdf"/>
+    </p>
+
+    <p>
+      The horizontal number line is usually called the
+          <idx><h><m>x</m>-axis</h></idx> <em> <m>x</m>-axis</em>
+      while the vertical number line is usually called the <idx><h><m>y</m>-axis</h></idx>
+      <em> <m>y</m>-axis</em>.
+      As with the usual number line,
+      we imagine these axes extending off indefinitely in both directions.
+      Having two number lines allows us to locate the positions of points off of the number lines as well as points on the lines themselves.
+    </p>
+
+    <aside>
+      <p>
+        Usually extending off towards infinity is indicated by arrows,
+        but here,
+        the arrows are used to indicate the <em>direction</em>
+        of increasing values of <m>x</m> and <m>y</m>.
+      </p>
+    </aside>
+    <aside>
+      <p>
+        The names of the coordinates can vary depending on the context of the application.
+        If, for example,
+        the horizontal axis represented time we might choose to call it the <m>t</m>-axis.
+        The first number in the ordered pair would then be the <m>t</m>-coordinate.
+      </p>
+    </aside>
+    <p>
+      For example, consider the point <m>P</m> on the next page.
+      To use the numbers on the axes to label this point,
+      we imagine dropping a vertical line from the <m>x</m>-axis to <m>P</m> and extending a horizontal line from the <m>y</m>-axis to <m>P</m>.
+      This process is sometimes called <q>projecting</q>
+      the point <m>P</m> to the <m>x</m>-
+      (respectively <m>y</m>-)
+      axis.
+      We then describe the point <m>P</m> using the
+          <idx><h>ordered pair</h></idx>
+      <em>ordered pair</em> <m>(2,-4)</m>.
+      The first number in the ordered pair is called the
+          <idx><h>abscissa</h></idx> <em>abscissa</em>
+      or <idx><h><m>x</m>-coordinate</h></idx>
+      <em> <m>x</m>-coordinate</em>
+      and the second is called the <idx><h>ordinate</h></idx> <em>ordinate</em>
+      or <idx><h><m>y</m>-coordinate</h></idx>
+      <em> <m>y</m>-coordinate</em>.
+      Taken together, the ordered pair <m>(2,-4)</m> comprise the
+          <idx><h>coordinates </h><h> Cartesian</h></idx><idx><h>Cartesian coordinates</h></idx>
+      <em>Cartesian coordinates</em> of the point <m>P</m>.
+      In practice,
+      the distinction between a point and its coordinates is blurred;
+      for example, we often speak of
+      <q>the point <m>(2,-4)</m>.</q>
+      We can think of <m>(2,-4)</m> as instructions on how to reach <m>P</m> from the
+          <idx><h>origin</h></idx>
+      <em>origin</em> <m>(0, 0)</m> by moving <m>2</m> units to the right and <m>4</m> units downwards.
+      Notice that the order in the <em>ordered</em>
+      pair is important <m>-</m> if we wish to plot the point <m>(-4,2)</m>,
+      we would move to the left <m>4</m> units from the origin and then move upwards <m>2</m> units,
+      as below on the right.
+    </p>
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-22.pdf"/></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-23.pdf"/></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      When we speak of the Cartesian Coordinate Plane,
+      we mean the set of all possible ordered pairs <m>(x,y)</m> as <m>x</m> and <m>y</m> take values from the real numbers.
+      Below is a summary of important facts about Cartesian coordinates.
+    </p>
+
+    <aside>
+      <p>
+        Cartesian coordinates are sometimes referred to as
+        <em>rectangular coordinates</em>,
+        to distinguish them from other coordinate systems such as <em>polar coordinates</em>.
+      </p>
+    </aside>
+    <insight xml:id="idea_cartfacts">
+      <title>Important Facts about the Cartesian Coordinate Plane</title>
+      <ul>
+        <li>
+          <p>
+            <m>(a,b)</m> and <m>(c,d)</m> represent the same point in the plane if and only if <m>a = c</m> and <m>b = d</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(x,y)</m> lies on the <m>x</m>-axis if and only if <m>y = 0</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(x,y)</m> lies on the <m>y</m>-axis if and only if <m>x=0</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The origin is the point <m>(0,0)</m>.
+            It is the only point common to both axes.
+          </p>
+        </li>
+      </ul>
+    </insight>
+
+    <aside>
+      <p>
+        The letter <m>O</m> is almost always reserved for the origin.
+      </p>
+    </aside>
+    <example xml:id="ex_cartplot">
+      <title>Plotting points in the Cartesian Plane</title>
+      <statement>
+        <p>
+          Plot the following points: <m>A(5,8)</m>,
+          <m>B\left(-\frac{5}{2}, 3\right)</m>,
+          <m>C(-5.8, -3)</m>, <m>D(4.5, -1)</m>, <m>E(5,0)</m>,
+          <m>F(0,5)</m>, <m>G(-7,0)</m>,
+          <m>H(0, -9)</m>, <m>O(0,0)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To plot these points,
+          we start at the origin and move to the right if the <m>x</m>-coordinate is positive;
+          to the left if it is negative.
+          Next, we move up if the <m>y</m>-coordinate is positive or down if it is negative.
+          If the <m>x</m>-coordinate is <m>0</m>,
+          we start at the origin and move along the <m>y</m>-axis only.
+          If the <m>y</m>-coordinate is <m>0</m> we move along the <m>x</m>-axis only.
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-24.pdf"/>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The axes divide the plane into four regions called
+          <idx><h>quadrants</h></idx>
+      <em>quadrants</em>.
+      They are labelled with Roman numerals and proceed counterclockwise around the plane:
+      see <xref ref="quadrant">Figure</xref>.
+    </p>
+
+    <table xml:id="quadrant">
+      <caption>The four quadrants of the Cartesian plane</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-25.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      For example,
+      <m>(1,2)</m> lies in Quadrant I, <m>(-1,2)</m> in Quadrant II, <m>(-1,-2)</m> in Quadrant III and <m>(1,-2)</m> in Quadrant IV. If a point other than the origin happens to lie on the axes,
+      we typically refer to that point as lying on the positive or negative <m>x</m>-axis
+      (if <m>y = 0</m>)
+      or on the positive or negative <m>y</m>-axis (if <m>x = 0</m>).
+      For example,
+      <m>(0,4)</m> lies on the positive <m>y</m>-axis whereas
+      <m>(-117,0)</m> lies on the negative <m>x</m>-axis.
+      Such points do not belong to any of the four quadrants.
+    </p>
+
+    <p>
+      One of the most important concepts in all of Mathematics is <em>symmetry</em>.
+      There are many types of symmetry in Mathematics,
+      but three of them can be discussed easily using Cartesian Coordinates.
+    </p>
+
+    <definition xml:id="symmetrydefn">
+      <title>Symmetry in the Cartesian Plane</title>
+      <statement>
+        <p>
+          Two points <m>(a,b)</m> and <m>(c,d)</m> in the plane are said to be
+
+          <ul>
+            <li>
+              <p>
+              <idx><h>symmetry </h><h> about the <m>x</m>-axis</h></idx>
+                <em>symmetric about the <m>x</m>-axis</em>
+                if <m>a = c</m> and <m>b = -d</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                    <idx><h>symmetry </h><h> about the <m>y</m>-axis</h></idx>
+                <em>symmetric about the <m>y</m>-axis</em>
+                if <m>a = -c</m> and <m>b = d</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                    <idx><h>symmetry </h><h> about the origin</h></idx>
+          <em>symmetric about the origin</em>
+                if <m>a = -c</m> and <m>b = -d</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In <xref ref="fig_plansymm">Figure</xref>,
+      <m>P</m> and <m>S</m> are symmetric about the <m>x</m>-axis,
+      as are <m>Q</m> and <m>R</m>;
+      <m>P</m> and <m>Q</m> are symmetric about the <m>y</m>-axis,
+      as are <m>R</m> and <m>S</m>;
+      and <m>P</m> and <m>R</m> are symmetric about the origin,
+      as are <m>Q</m> and <m>S</m>.
+    </p>
+
+    <table xml:id="fig_plansymm">
+      <caption>The three types of symmetry in the plane</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-26.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex_planesymm">
+      <title>Finding points exhibiting symmetry</title>
+      <statement>
+        <p>
+          Let <m>P</m> be the point <m>(-2,3)</m>.
+          Find the points which are symmetric to <m>P</m> about the:
+
+          <ol>
+            <li>
+              <p>
+                <m>x</m>-axis
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y</m>-axis
+              </p>
+            </li>
+
+            <li>
+              <p>
+                origin
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          Check your answer by plotting the points.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The figure after <xref ref="symmetrydefn">Definition</xref>
+          gives us a good way to think about finding symmetric points in terms of taking the opposites of the <m>x</m>- and/or <m>y</m>-coordinates of <m>P(-2,3)</m>.
+
+          <ol>
+            <li>
+              <p>
+                To find the point symmetric about the <m>x</m>-axis,
+                we replace the <m>y</m>-coordinate with its opposite to get <m>(-2,-3)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the point symmetric about the <m>y</m>-axis,
+                we replace the <m>x</m>-coordinate with its opposite to get <m>(2,3)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the point symmetric about the origin,
+                we replace the <m>x</m>- and <m>y</m>-coordinates with their opposites to get <m>(2,-3)</m>.
+                The points are plotted in <xref ref="fig_pointsymm">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <figure xml:id="fig_pointsymm">
+          <caption>The point <m>P(-2,3)</m> and its three reflections</caption>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-27.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      One way to visualize the processes in the previous example is with the concept of a
+          <idx><h>reflection </h><h> of a point</h></idx>
+      <em>reflection</em>.
+      If we start with our point <m>(-2,3)</m> and pretend that the <m>x</m>-axis is a mirror,
+      then the reflection of <m>(-2,3)</m> across the <m>x</m>-axis would lie at <m>(-2,-3)</m>.
+      If we pretend that the <m>y</m>-axis is a mirror,
+      the reflection of <m>(-2,3)</m> across that axis would be <m>(2,3)</m>.
+      If we reflect across the <m>x</m>-axis and then the <m>y</m>-axis,
+      we would go from <m>(-2,3)</m> to <m>(-2,-3)</m> then to <m>(2,-3)</m>,
+      and so we would end up at the point symmetric to <m>(-2,3)</m> about the origin.
+      We summarize and generalize this process below.
+    </p>
+
+    <insight xml:id="idea_planereflect">
+      <title>Reflections in the Cartesian Plane</title>
+      <p>
+        To reflect a point <m>(x,y)</m> about the:
+
+        <ul>
+          <li>
+            <p>
+              <m>x</m>-axis, replace <m>y</m> with <m>-y</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y</m>-axis, replace <m>x</m> with <m>-x</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              origin,
+        replace <m>x</m> with <m>-x</m> and <m>y</m> with <m>-y</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+  </introduction>
+
+  <subsection xml:id="inversemidpoint">
+    <title>Distance in the Plane</title>
+    <p>
+      Another important concept in Geometry is the notion of length.
+      If we are going to unite Algebra and Geometry using the Cartesian Plane,
+      then we need to develop an algebraic understanding of what distance in the plane means.
+      Suppose we have two points,
+      <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m>,
+      in the plane.
+      By the
+          <idx><h>distance </h><h> definition</h></idx>
+      <em>distance</em> <m>d</m> between <m>P</m> and <m>Q</m>,
+      we mean the length of the line segment joining <m>P</m> with <m>Q</m>. (Remember,
+      given any two distinct points in the plane,
+      there is a unique line containing both points.) Our goal now is to create an algebraic formula to compute the distance between these two points.
+      Consider the generic situation in <xref ref="fig_cartdist">Figure</xref>.
+    </p>
+
+    <table xml:id="fig_cartdist">
+      <caption>Distance between <m>P</m> and <m>Q</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-28.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-29.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      With a little more imagination,
+      we can envision a right triangle whose hypotenuse has length <m>d</m> as drawn above on the right.
+      From the latter figure,
+      we see that the lengths of the legs of the triangle are <m>\left|x_{1} - x_{0}\right|</m> and
+      <m>\left|y_{1} - y_{0}\right|</m> so the <url href="http://en.wikipedia.org/wiki/Pythagorean_Theorem"><em>Pythagorean Theorem</em></url> gives us
+      <me>
+        \left|x_{1} - x_{0}\right|^2 + \left|y_{1} - y_{0}\right|^2 = d^2
+      </me>
+      <me>
+        \left(x_{1} - x_{0}\right)^2 + \left(y_{1} - y_{0}\right)^2 = d^2
+      </me>
+    </p>
+
+    <p>
+      (Do you remember why we can replace the absolute value notation with parentheses?) By extracting the square root of both sides of the second equation and using the fact that distance is never negative, we get
+    </p>
+
+    <insight xml:id="distanceformula">
+      <title>The Distance Formula</title>
+      <p>
+            <idx><h>distance </h><h> distance formula</h></idx>
+        The distance <m>d</m> between the points
+        <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
+        <me>
+          d = \sqrt{ \left(x_{1} - x_{0}\right)^2 + \left(y_{1} - y_{0}\right)^2}
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      It is not always the case that the points <m>P</m> and <m>Q</m> lend themselves to constructing such a triangle.
+      If the points <m>P</m> and <m>Q</m> are arranged vertically or horizontally,
+      or describe the exact same point,
+      we cannot use the above geometric argument to derive the distance formula.
+      It is left to the reader in <xref ref="distanceothercases">Exercise</xref>
+      to verify <xref ref="distanceformula">Equation</xref> for these cases.
+    </p>
+
+    <example xml:id="ex_twoptdist">
+      <title>Distance between two points</title>
+      <statement>
+        <p>
+          Find and simplify the distance between <m>P(-2,3)</m> and <m>Q(1,-3)</m>.
+        </p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>d \amp  =  \sqrt{\left(x_{1} - x_{0} \right)^2 + \left(y_{1} - y_{0} \right)^2}</mrow>
+          <mrow>\amp  =  \sqrt{ (1-(-2))^2 + (-3-3)^2}</mrow>
+          <mrow>\amp  =  \sqrt{9 + 36}</mrow>
+          <mrow>\amp  =  3 \sqrt{5}</mrow>
+        </md>
+        <p>
+          So the distance is <m>3 \sqrt{5}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="ex_pointwithdist">
+      <title>Finding points at a given distance</title>
+      <statement>
+        <p>
+          Find all of the points with <m>x</m>-coordinate <m>1</m> which are <m>4</m> units from the point <m>(3,2)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We shall soon see that the points we wish to find are on the line <m>x=1</m>,
+          but for now we'll just view them as points of the form <m>(1,y)</m>.
+        </p>
+
+        <p>
+          We require that the distance from <m>(3,2)</m> to <m>(1,y)</m> be <m>4</m>.
+          The Distance Formula,
+          <xref ref="distanceformula">Equation</xref>, yields
+          <md>
+            <mrow>d \amp   =  \sqrt{\left(x_{1}-x_{0}\right)^2+\left(y_{1}-y_{0}\right)^2}</mrow>
+            <mrow>4 \amp   =  \sqrt{(1-3)^2+(y-2)^2}</mrow>
+            <mrow>4  \amp  =  \sqrt{4+(y-2)^2}</mrow>
+            <mrow>4^2 \amp  =  \left(\sqrt{4+(y-2)^2}\right)^2   \tag{squaring both sides}</mrow>
+            <mrow>16 \amp  =  4+(y-2)^2</mrow>
+            <mrow>12 \amp  =  (y-2)^2</mrow>
+            <mrow>(y-2)^2 \amp  =  12</mrow>
+            <mrow>y - 2 \amp  =  \pm \sqrt{12} \tag{extracting the square root}</mrow>
+            <mrow>y-2 \amp  =  \pm 2 \sqrt{3}</mrow>
+            <mrow>y \amp  =  2 \pm 2 \sqrt{3}</mrow>
+          </md>
+        </p>
+
+        <p>
+          We obtain two answers:
+          <m>(1, 2 + 2 \sqrt{3})</m> and <m>(1, 2-2 \sqrt{3})</m>.
+          The reader is encouraged to think about why there are two answers.
+        </p>
+      </solution>
+    </example>
+
+    <table xml:id="fig_pointdist">
+      <caption>Diagram for <xref ref="ex_pointwithdist">Example</xref></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-30.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Related to finding the distance between two points is the problem of finding the
+          <idx><h>midpoint </h><h> definition of</h></idx>
+      <em>midpoint</em> of the line segment connecting two points.
+      Given two points,
+      <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m>,
+      the <em>midpoint</em> <m>M</m> of <m>P</m> and <m>Q</m> is defined to be the point on the line segment connecting <m>P</m> and <m>Q</m> whose distance from <m>P</m> is equal to its distance from <m>Q</m>.
+    </p>
+
+    <table xml:id="fig_midptseg">
+      <caption>The midpoint of a line segment</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-31.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      If we think of reaching <m>M</m> by going <q>halfway over</q>
+      and <q>halfway up</q> we get the following formula.
+    </p>
+
+    <insight xml:id="midpointformula">
+      <title>The Midpoint Formula</title>
+      <p>
+            <idx><h>midpoint </h><h> midpoint formula</h></idx>
+        The midpoint <m>M</m> of the line segment connecting
+        <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
+        <me>
+          M = \left( \dfrac{x_{0} + x_{1}}{2} , \dfrac{y_{0} + y_{1}}{2} \right)
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      If we let <m>d</m> denote the distance between <m>P</m> and <m>Q</m>,
+      we leave it as <xref ref="verifymidpointformula">Exercise</xref>
+      to show that the distance between <m>P</m> and <m>M</m> is <m>d/2</m> which is the same as the distance between <m>M</m> and <m>Q</m>.
+      This suffices to show that <xref ref="midpointformula">Key Idea</xref>
+      gives the coordinates of the midpoint.
+    </p>
+
+    <example xml:id="ex_findmidpoint">
+      <title>Finding the midpoint of a line segment</title>
+      <statement>
+        <p>
+          Find the midpoint of the line segment connecting <m>P(-2,3)</m> and <m>Q(1,-3)</m>.
+        </p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>M \amp  = \left( \dfrac{x_{0}+x_{1}}{2},  \dfrac{y_{0}+y_{1}}{2} \right)</mrow>
+          <mrow>\amp  = \left( \dfrac{(-2)+1}{2},  \dfrac{3+(-3)}{2} \right)  = \left(- \dfrac{1}{2}, \dfrac{0}{2} \right)</mrow>
+          <mrow>\amp  = \left(- \dfrac{1}{2}, 0 \right)</mrow>
+        </md>
+        <p>
+          The midpoint is <m>\left(- \frac{1}{2}, 0 \right)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      \phantomsection We close with a more abstract application of the Midpoint Formula.
+      We will revisit the following example in <xref ref="inversemidpointex2">Exercise</xref>
+      in <xref ref="LinearFunctions">Section</xref>.
+    </p>
+
+    <example xml:id="inversemidpointex1">
+      <title>An abstract midpoint problem</title>
+      <statement>
+        <p>
+          If <m>a \neq b</m>,
+          prove that the line <m>y = x</m> equally divides the line segment with endpoints <m>(a,b)</m> and <m>(b,a)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To prove the claim,
+          we use <xref ref="midpointformula">Equation</xref> to find the midpoint
+          <md>
+            <mrow>M \amp  =  \left( \dfrac{a+b}{2},  \dfrac{b+a}{2} \right)</mrow>
+            <mrow>\amp  =  \left( \dfrac{a+b}{2},  \dfrac{a+b}{2} \right)</mrow>
+          </md>
+        </p>
+
+        <p>
+          Since the <m>x</m> and <m>y</m> coordinates of this point are the same,
+          we find that the midpoint lies on the line <m>y=x</m>,
+          as required.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <exercise xml:id="cartexerciseone">
+      <statement>
+        <p>
+          Plot and label the points <m>\;A(-3, -7)</m>,
+          <m>\;B(1.3, -2)</m>, <m>\;C(\pi, \sqrt{10})</m>,
+          <m>\;D(0, 8)</m>, <m>\;E(-5.5, 0)</m>, <m>\;F(-8, 4)</m>,
+          <m>\;G(9.2, -7.8)</m> and <m>H(7, 5)</m> in the Cartesian Coordinate Plane given below. <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-35.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The required points <m>\;A(-3, -7)</m>,
+          <m>\;B(1.3, -2)</m>, <m>\;C(\pi, \sqrt{10})</m>, <m>\;D(0, 8)</m>,
+          <m>\;E(-5.5, 0)</m>, <m>\;F(-8, 4)</m>, <m>\;G(9.2, -7.8)</m>,
+          and <m>H(7, 5)</m> are plotted in the Cartesian Coordinate Plane below.
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-46.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          For each point given in <xref ref="cartexerciseone">Exercise</xref> above
+
+          <ul>
+            <li>
+              <p>
+                Identify the quadrant or axis in/on which the point lies.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the point symmetric to the given point about the <m>x</m>-axis.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the point symmetric to the given point about the <m>y</m>-axis.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the point symmetric to the given point about the origin.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The point <m>A(-3, -7)</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant III
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(-3, 7)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(3, -7)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(3, 7)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>B(1.3, -2)</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant IV
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(1.3, 2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(-1.3, -2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(-1.3, 2)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>C(\pi, \sqrt{10})</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant I
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with { <m>(\pi, -\sqrt{10})</m>}
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with { <m>(-\pi, \sqrt{10})</m>}
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with { <m>(-\pi, -\sqrt{10})</m>}
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>D(0, 8)</m> is
+
+          <ul>
+            <li>
+              <p>
+                on the positive <m>y</m>-axis
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(0, -8)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(0, 8)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(0, -8)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>E(-5.5, 0)</m> is
+
+          <ul>
+            <li>
+              <p>
+                on the negative <m>x</m>-axis
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(-5.5, 0)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(5.5, 0)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(5.5, 0)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>F(-8, 4)</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant II
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(-8, -4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(8, 4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(8, -4)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>G(9.2, -7.8)</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant IV
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(9.2, 7.8)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with { <m>(-9.2, -7.8)</m>}
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(-9.2, 7.8)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The point <m>H(7, 5)</m> is
+
+          <ul>
+            <li>
+              <p>
+                in Quadrant I
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>x</m>-axis with <m>(7, -5)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about <m>y</m>-axis with <m>(-7, 5)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetric about origin with <m>(-7, -5)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the distance <m>d</m> between the points and the midpoint <m>M</m> of the line segment which connects them.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>(1,2)</m>, <m>(-3,5)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = 5</m>, <m>M = \left(-1, \frac{7}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(3, -10)</m>, <m>(-1, 2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = 4 \sqrt{10}</m>, <m>M = \left(1, -4 \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left( \dfrac{1}{2}, 4\right)</m>,
+          <m>\left(\dfrac{3}{2}, -1\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = \sqrt{26}</m>, <m>M = \left(1, \frac{3}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(- \dfrac{2}{3}, \dfrac{3}{2} \right)</m>,
+          <m>\left(\dfrac{7}{3}, 2\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d= \frac{\sqrt{37}}{2}</m>,
+          <m>M = \left(\frac{5}{6}, \frac{7}{4} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left( \dfrac{24}{5}, \dfrac{6}{5} \right)</m>,
+          <m>\left( -\dfrac{11}{5}, -\dfrac{19}{5} \right)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = \sqrt{74}</m>,
+          <m>M = \left(\frac{13}{10}, -\frac{13}{10} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\sqrt{2}, \sqrt{3}\right)</m>,
+          <m>\left(-\sqrt{8}, -\sqrt{12}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d= 3\sqrt{5}</m>,
+          <m>M = \left(-\frac{\sqrt{2}}{2}, -\frac{\sqrt{3}}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(2 \sqrt{45}, \sqrt{12} \right)</m>,
+          <m>\left(\sqrt{20}, \sqrt{27} \right)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = \sqrt{83}</m>,
+          <m>M = \left(4 \sqrt{5}, \frac{5 \sqrt{3}}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(0, 0)</m>, <m>(x, y)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d = \sqrt{x^2 + y^2}</m>,
+          <m>M = \left( \frac{x}{2}, \frac{y}{2}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points of the form <m>(x, -1)</m> which are <m>4</m> units from the point <m>(3,2)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(3 + \sqrt{7}, -1)</m>, <m>(3-\sqrt{7}, -1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points on the <m>y</m>-axis which are <m>5</m> units from the point <m>(-5,3)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0,3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points on the <m>x</m>-axis which are <m>2</m> units from the point <m>(-1,1)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1+\sqrt{3},0)</m>, <m>(-1-\sqrt{3},0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points of the form <m>(x,-x)</m> which are <m>1</m> unit from the origin.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2} \right)</m>,
+          <m>\left(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let's assume for a moment that we are standing at the origin and the positive <m>y</m>-axis points due North while the positive <m>x</m>-axis points due East.
+          Our Sasquatch-o-meter tells us that Sasquatch is 3 miles West and 4 miles South of our current position.
+          What are the coordinates of his position?
+          How far away is he from us?
+          If he runs 7 miles due East what would his new position be?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-3, -4)</m>, <m>5</m> miles, <m>(4, -4)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="distanceothercases">
+      <statement>
+        <p>
+          Verify the Distance <xref ref="distanceformula">Formula</xref> for the cases when:
+
+          <ol>
+            <li>
+              <p>
+                The points are arranged vertically. (Hint: Use <m>P(a, y_{\mbox{\tiny<m>0</m>} })</m> and <m>Q(a, y_{\mbox{\tiny<m>1</m>} })</m>.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The points are arranged horizontally. (Hint: Use <m>P(x_{\mbox{\tiny<m>0</m>} }, b)</m> and <m>Q(x_{\mbox{\tiny<m>1</m>} }, b)</m>.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The points are actually the same point. (You shouldn't need a hint for this one.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="verifymidpointformula">
+      <statement>
+        <p>
+          Verify the Midpoint Formula by showing the distance between <m>P(x_{\mbox{\tiny<m>1</m>} }, y_{\mbox{\tiny<m>1</m>} })</m> and <m>M</m> and the distance between <m>M</m> and <m>Q(x_{\mbox{\tiny<m>2</m>} }, y_{\mbox{\tiny<m>2</m>} })</m> are both half of the distance between <m>P</m> and <m>Q</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that the points <m>A</m>,
+          <m>\;B</m> and <m>C</m> below are the vertices of a right triangle.
+
+          <ol>
+            <li>
+              <p>
+                <m>A(-3,2)</m>, <m>\;B(-6,4)</m>, and <m>C(1,8)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A(-3, 1)</m>, <m>\;B(4, 0)</m> and <m>C(0, -3)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              The distance from <m>A</m> to <m>B</m> is <m>|AB| = \sqrt{13}</m>,
+              the distance from <m>A</m> to <m>C</m> is <m>|AC| = \sqrt{52}</m>,
+              and the distance from <m>B</m> to <m>C</m> is <m>|BC| = \sqrt{65}</m>.
+              Since <m>\left(\sqrt{13}\right)^2 + \left( \sqrt{52} \right)^2 = \left( \sqrt{65} \right)^2</m>,
+              we are guaranteed by the <url href="http://en.wikipedia.org/wiki/Pythagorean_theorem#Converse"><em>converse of the Pythagorean Theorem</em></url> that the triangle is a right triangle.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Show that <m>|AC|^{2} + |BC|^{2} = |AB|^{2}</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find a point <m>D(x, y)</m> such that the points <m>A(-3, 1)</m>,
+          <m>\;B(4, 0)</m>,
+          <m>\;C(0, -3)</m> and <m>D</m> are the corners of a square.
+          Justify your answer.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates how many numbers are in the interval <m>(0,1)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="orderedtripleexercise">
+      <statement>
+        <p>
+          The world is not flat. (There are those who disagree with this statement.
+          Look them up on the Internet some time when you're bored.) Thus the Cartesian Plane cannot possibly be the end of the story.
+          Discuss with your classmates how you would extend Cartesian Coordinates to represent the three dimensional world.
+          What would the Distance and Midpoint formulas look like,
+          assuming those concepts make sense at all?
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

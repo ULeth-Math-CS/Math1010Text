@@ -1,0 +1,1548 @@
+
+
+<section xml:id="Inequalities">
+  <title>Inequalities with Absolute Value and Quadratic Functions</title>
+  <introduction>
+    <p>
+      In this section,
+      not only do we develop techniques for solving various classes of inequalities analytically,
+      we also look at them graphically.
+      The first example motivates the core ideas.
+    </p>
+
+    <example xml:id="ex_motineq">
+      <title>Inequalities with linear functions</title>
+      <statement>
+        <p>
+          Let <m>f(x) = 2x-1</m> and <m>g(x)=5</m>.
+
+          <ol>
+            <li>
+              <p>
+                Solve <m>f(x) = g(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve <m>f(x) \lt g(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve <m>f(x) > g(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Graph <m>y=f(x)</m> and <m>y=g(x)</m> on the same set of axes and interpret your solutions to parts 1 through 3 above.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To solve <m>f(x) = g(x)</m>,
+                we replace <m>f(x)</m> with <m>2x-1</m> and <m>g(x)</m> with <m>5</m> to get <m>2x-1 = 5</m>.
+                Solving for <m>x</m>, we get <m>x=3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The inequality <m>f(x) \lt g(x)</m> is equivalent to <m>2x-1 \lt 5</m>.
+                Solving gives <m>x \lt 3</m> or <m>(-\infty, 3)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find where <m>f(x) > g(x)</m>, we solve <m>2x-1 > 5</m>.
+                We get <m>x > 3</m>, or <m>(3, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y=f(x)</m>, we graph <m>y = 2x-1</m>,
+                which is a line with a <m>y</m>-intercept of <m>(0,-1)</m> and a slope of <m>2</m>.
+                The graph of <m>y=g(x)</m> is <m>y=5</m> which is a horizontal line through <m>(0,5)</m>. <figure xml:id="fig_linearineq"> <caption>Graphical interpretation of <xref ref="ex_motineq">Example</xref></caption> <sidebyside> <figure> <caption>Intersecting graphs <m>y=f(x)</m> and <m>y=g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-1.pdf"/> </figure> <figure> <m>f(x)\lt g(x)</m> on
+                <m>(-\infty, 3)</m> </figure> <figure> <caption><m>f(x)>g(x)</m> on
+                <m>(3,\infty)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-3.pdf"/> </figure> </sidebyside> </figure> To see the connection between the graph and the Algebra,
+                we recall the Fundamental Graphing Principle for Functions in <xref ref="GraphsofFunctions">Section</xref>:
+                the point <m>(a,b)</m> is on the graph of <m>f</m> if and only if <m>f(a)=b</m>.
+                In other words,
+                a generic point on the graph of <m>y=f(x)</m> is <m>(x,f(x))</m>,
+                and a generic point on the graph of <m>y=g(x)</m> is <m>(x,g(x))</m>.
+                When we seek solutions to <m>f(x)=g(x)</m>,
+                we are looking for <m>x</m> values whose <m>y</m> values on the graphs of <m>f</m> and <m>g</m> are the same.
+                In part 1, we found <m>x=3</m> is the solution to <m>f(x)=g(x)</m>.
+                Sure enough, <m>f(3) = 5</m> and
+                <m>g(3) = 5</m> so that the point <m>(3,5)</m> is on both graphs.
+                In other words, the graphs of <m>f</m> and <m>g</m>
+                <em>intersect</em> at <m>(3,5)</m>.
+                In part 2, we set <m>f(x) \lt g(x)</m> and solved to find <m>x \lt 3</m>.
+                For <m>x \lt 3</m>, the point <m>(x,f(x))</m> is <em>below</em>
+                <m>(x,g(x))</m> since the <m>y</m> values on the graph of <m>f</m> are less than the <m>y</m> values on the graph of <m>g</m> there.
+                Analogously, in part 3, we solved
+                <m>f(x) > g(x)</m> and found <m>x > 3</m>.
+                For <m>x > 3</m>, note that the graph of <m>f</m> is
+                <em>above</em> the graph of <m>g</m>,
+                since the <m>y</m> values on the graph of <m>f</m> are greater than the <m>y</m> values on the graph of <m>g</m> for those values of <m>x</m>:
+                see <xref ref="fig_linearineq">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The preceding example demonstrates the following,
+      which is a consequence of the Fundamental Graphing Principle for Functions.
+    </p>
+
+    <insight xml:id="idea_graphineq">
+      <title>Graphical Interpretation of Equations and Inequalities</title>
+      <p>
+        Suppose <m>f</m> and <m>g</m> are functions.
+            <idx><h>inequality </h><h> graphical interpretation</h></idx>
+        <ul>
+          <li>
+            <p>
+              The solutions to <m>f(x)=g(x)</m> are the <m>x</m> values where the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> intersect.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The solution to <m>f(x) \lt g(x)</m> is the set of <m>x</m> values where the graph of <m>y=f(x)</m> is
+              <em>below</em> the graph of <m>y=g(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The solution to <m>f(x) > g(x)</m> is the set of <m>x</m> values where the graph of <m>y=f(x)</m>
+              <em>above</em> the graph of <m>y=g(x)</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
+    <p>
+      The next example turns the tables and furnishes the graphs of two functions and asks for solutions to equations and inequalities.
+    </p>
+
+    <example xml:id="ex_solvewithgraph">
+      <title>Using graphs to solve equations and inequalities</title>
+      <statement>
+        <p>
+          The graphs of <m>f</m> and <m>g</m> are shown in <xref ref="fig_graphineq">Figure</xref>. (The graph of <m>y=g(x)</m> is in bold.) Use these graphs to answer the following questions.
+        </p>
+
+        <figure xml:id="fig_graphineq">
+          <caption>The graphs <m>y=f(x)</m> and <m>y=g(x)</m> for <xref ref="ex_solvewithgraph">Example</xref></caption>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-4.pdf"/>
+        </figure>
+
+        <ol>
+          <li>
+            <p>
+              Solve <m>f(x) = g(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>f(x) \lt g(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>f(x) \geq g(x)</m>.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To solve <m>f(x)=g(x)</m>,
+                we look for where the graphs of <m>f</m> and <m>g</m> intersect.
+                These appear to be at the points <m>(-1,2)</m> and <m>(1,2)</m>,
+                so our solutions to
+          <m>f(x) = g(x)</m> are <m>x = -1</m> and <m>x=1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>f(x) \lt g(x)</m>,
+                we look for where the graph of <m>f</m> is below the graph of <m>g</m>.
+                This appears to happen for the <m>x</m> values less than <m>-1</m> and greater than <m>1</m>.
+                Our solution is <m>(-\infty, -1) \cup (1,\infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>f(x) \geq g(x)</m>,
+                we look for solutions to
+          <m>f(x)=g(x)</m> as well as <m>f(x) > g(x)</m>.
+                We solved the former equation and found <m>x = \pm 1</m>.
+                To solve <m>f(x) > g(x)</m>,
+                we look for where the graph of <m>f</m> is above the graph of <m>g</m>.
+                This appears to happen between <m>x=-1</m> and <m>x=1</m>,
+                on the interval <m>(-1,1)</m>.
+                Hence, our solution to
+          <m>f(x) \geq g(x)</m> is <m>[-1,1]</m>. <figure xml:id="fig_graphineq1"> <caption>The solution to
+                <m>f(x)\lt g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-5.pdf"/> </figure> <figure xml:id="fig_graphineq2"> <caption>The solution to
+                <m>f(x) \geq g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-6.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to solving inequalities involving the absolute value.
+      We have the following theorem to help us.
+    </p>
+
+    <theorem xml:id="absolutevalueineq">
+      <title>Inequalities Involving the Absolute Value</title>
+      <statement>
+        <p>
+          Let <m>c</m> be a real number.
+              <idx><h>inequality </h><h> absolute value</h></idx> <idx><h>absolute value </h><h> inequality</h></idx>
+          <ul>
+            <li>
+              <p>
+                For <m>c > 0</m>,
+                <m>|x| \lt c</m> is equivalent to <m>-c\lt x\lt c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c > 0</m>,
+                <m>|x| \leq c</m> is equivalent to <m>-c \leq x \leq c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c \leq 0</m>, <m>|x| \lt c</m> has no solution,
+                and for <m>c \lt 0</m>,
+          <m>|x| \leq c</m> has no solution.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c \geq 0</m>,
+                <m>|x| > c</m> is equivalent to <m>x\lt -c</m> or <m>x>c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c \geq 0</m>,
+                <m>|x| \geq c</m> is equivalent to <m>x \leq -c</m> or <m>x \geq c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>c \lt 0</m>, <m>|x| > c</m> and
+                <m>|x| \geq c</m> are true for all real numbers.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      As with <xref ref="absolutevalueprops">Theorem</xref>
+      in <xref ref="AbsoluteValueFunctions">Section</xref>,
+      we could argue <xref ref="absolutevalueineq">Theorem</xref> using cases.
+      However, in light of what we have developed in this section,
+      we can understand these statements graphically.
+      For instance, if <m>c > 0</m>,
+      the graph of <m>y=c</m> is a horizontal line which lies above the <m>x</m>-axis through <m>(0,c)</m>.
+      To solve <m>|x| \lt c</m>,
+      we are looking for the <m>x</m> values where the graph of <m>y=|x|</m> is below the graph of <m>y=c</m>.
+      We know that the graphs intersect when <m>|x|=c</m>, which,
+      from <xref ref="AbsoluteValueFunctions">Section</xref>,
+      we know happens when <m>x=c</m> or <m>x=-c</m>.
+    </p>
+
+    <figure xml:id="fig_absvalineq">
+      <caption>Solving <m>\lvert x\rvert \lt c</m> graphically</caption>
+      <img src="figures/LinearQuadraticGraphics/Inequalities-7.pdf"/>
+    </figure>
+
+    <p>
+      In <xref ref="fig_absvalineq">Figure</xref>
+      we see that the graph of <m>y=|x|</m> is below <m>y=c</m> for <m>x</m> between <m>-c</m> and <m>c</m>,
+      and hence we get <m>|x| \lt c</m> is equivalent to <m>-c \lt x \lt c</m>.
+      The other properties in <xref ref="absolutevalueineq">Theorem</xref> can be shown similarly.
+    </p>
+
+    <example xml:id="ex_absvalineq">
+      <title>Solving absolute value inequalities</title>
+      <statement>
+        <p>
+          Solve the following inequalities analytically;
+          check your answers graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>|x-1| \geq 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4 - 3|2x+1| > -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 \lt |x-1| \leq 5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>|x+1|\geq \dfrac{x+4}{2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                From <xref ref="absolutevalueineq">Theorem</xref>,
+                <m>|x-1|\geq 3</m> is equivalent to
+                <m>x-1 \leq -3</m> or <m>x-1 \geq 3</m>.
+                Solving, we get <m>x \leq -2</m> or <m>x \geq 4</m>, which,
+                in interval notation is <m>(-\infty,-2] \cup [4,\infty)</m>.
+                Graphically,
+                we have <xref ref="fig_absvalineqeg1">Figure</xref>. <figure xml:id="fig_absvalineqeg1"> <caption>Solving
+                <m>\lvert x-1\rvert \geq 3</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-8.pdf"/> </figure> We see that the graph of <m>y=|x-1|</m> is above the horizontal line <m>y=3</m> for
+                <m>x \lt -2</m> and <m>x > 4</m> hence this is where <m>|x-1| > 3</m>.
+                The two graphs intersect when <m>x=-2</m> and <m>x=4</m>,
+                so we have graphical confirmation of our analytic solution.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>4 - 3|2x+1| > -2</m> analytically,
+                we first isolate the absolute value before applying <xref ref="absolutevalueineq">Theorem</xref>.
+                To that end, we get
+          <m>-3|2x+1|>-6</m> or <m>|2x+1|\lt 2</m>.
+                Rewriting, we now have
+          <m>-2 \lt 2x+1 \lt 2</m> so that <m>-\frac{3}{2} \lt x \lt \frac{1}{2}</m>.
+                In interval notation,
+                we write <m>\left(-\frac{3}{2}, \frac{1}{2}\right)</m>.
+                Graphically we see in <xref ref="fig_absvalineqeg2">Figure</xref>
+                that the graph of <m>y=4-3|2x+1|</m> is above <m>y=-2</m> for <m>x</m> values between <m>-\frac{3}{2}</m> and
+                <m>\frac{1}{2}</m>. <figure xml:id="fig_absvalineqeg2"> <caption>Solving
+                <m>4 - 3|2x+1| > -2</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-9.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Rewriting the compound inequality <m>2 \lt |x-1| \leq 5</m> as
+                <q><m>2 \lt |x-1|</m> and <m>|x-1| \leq 5</m></q>
+                allows us to solve each piece using <xref ref="absolutevalueineq">Theorem</xref>.
+                The first inequality,
+                <m>2 \lt |x-1|</m> can be re-written as <m>|x-1|>2</m> so <m>x-1 \lt -2</m> or <m>x-1 > 2</m>.
+                We get <m>x\lt -1</m> or <m>x>3</m>.
+                Our solution to the first inequality is then <m>(-\infty, -1) \cup (3, \infty)</m>.
+                For <m>|x-1| \leq 5</m>,
+                we combine results in <xref ref="absolutevalueprops">Theorems</xref>
+                and <xref ref="absolutevalueineq"></xref>
+                to get <m>-5 \leq x-1 \leq 5</m> so that <m>-4 \leq x \leq 6</m>,
+                or <m>[-4,6]</m>.
+                Our solution to <m>2 \lt |x-1| \leq 5</m> is comprised of values of <m>x</m> which satisfy both parts of the inequality,
+                so we take the intersection of
+                <m>(-\infty, -1) \cup (3, \infty)</m> and <m>[-4,6]</m> to get <m>[-4,-1) \cup (3,6]</m>.
+                (see <xref ref="intersectionunion">Definition</xref>
+                in <xref ref="SetsofNumbers">Section</xref>.)
+                Graphically,
+                we see that the graph of <m>y=|x-1|</m> is <q>between</q>
+                the horizontal lines <m>y=2</m> and <m>y=5</m> for <m>x</m> values between <m>-4</m> and <m>-1</m> as well as those between <m>3</m> and <m>6</m>.
+                Including the <m>x</m> values where <m>y=|x-1|</m> and <m>y=5</m> intersect,
+                we get <xref ref="fig_absvalineqeg3">Figure</xref>. <figure xml:id="fig_absvalineqeg3"> <caption>Solving
+                <m>2 \lt |x-1| \leq 5</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-10.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We need to exercise some special caution when solving <m>|x+1|\geq \frac{x+4}{2}</m>.
+                As we saw in <xref ref="absvalueeqnex">Example</xref>
+                in <xref ref="AbsoluteValueFunctions">Section</xref>,
+                when variables are both inside and outside of the absolute value,
+                it's usually best to refer to the definition of absolute value,
+                <xref ref="absolutevalue">Definition</xref>,
+                to remove the absolute values and proceed from there.
+                To that end, we have <m>|x+1| = -(x+1)</m> if
+                <m>x \lt -1</m> and <m>|x+1| = x+1</m> if <m>x \geq -1</m>.
+                We break the inequality into cases,
+                the first case being when <m>x\lt -1</m>.
+                For these values of <m>x</m>,
+                our inequality becomes <m>-(x+1) \geq \frac{x+4}{2}</m>.
+                Solving, we get <m>-2x-2 \geq x+4</m>,
+                so that <m>-3x \geq 6</m>,
+          which means <m>x \leq -2</m>.
+                Since all of these solutions fall into the category <m>x \lt -1</m>,
+                we keep them all.
+                For the second case, we assume <m>x \geq -1</m>.
+                Our inequality becomes <m>x+1 \geq \frac{x+4}{2}</m>,
+                which gives <m>2x+2 \geq x+4</m> or <m>x \geq 2</m>.
+                Since all of these values of <m>x</m> are greater than or equal to <m>-1</m>,
+                we accept all of these solutions as well.
+                Our final answer is
+          <m>(-\infty, -2] \cup [2,\infty)</m>. <figure xml:id="fig_absvalineqeg4"> <caption>Solving
+                <m>|x+1|\geq \dfrac{x+4}{2}</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-11.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to quadratic inequalities.
+      In the last example of <xref ref="QuadraticFunctions">Section</xref>,
+      we needed to determine the solution to <m>x^2 - x -6 \lt 0</m>.
+      We will now re-visit this problem using some of the techniques developed in this section not only to reinforce our solution in <xref ref="QuadraticFunctions">Section</xref>,
+      but to also help formulate a general analytic procedure for solving all quadratic inequalities.
+      If we consider <m>f(x) = x^2-x-6</m> and <m>g(x)=0</m>,
+      then solving <m>x^2 - x -6 \lt 0</m> corresponds graphically to finding the values of <m>x</m> for which the graph of <m>y=f(x)=x^2-x-6</m>
+      (the parabola)
+      is below the graph of <m>y=g(x)=0</m> (the <m>x</m>-axis).
+      See <xref ref="fig_parabineq0">Figure</xref> for reference.
+    </p>
+
+    <figure xml:id="fig_parabineq0">
+      <caption><m>y=x^2-x-6</m></caption>
+      <img src="figures/LinearQuadraticGraphics/Inequalities-12.pdf"/>
+    </figure>
+
+    <p>
+      \phantomsection We can see that the graph of <m>f</m> does dip below the <m>x</m>-axis between its two <m>x</m>-intercepts.
+      The zeros of <m>f</m> are <m>x=-2</m> and <m>x=3</m> in this case and they divide the domain
+      (the <m>x</m>-axis)
+      into three intervals:
+      <m>(-\infty, -2)</m>, <m>(-2,3)</m> and <m>(3, \infty)</m>.
+      For every number in <m>(-\infty, -2)</m>,
+      the graph of <m>f</m> is above the <m>x</m>-axis;
+      in other words,
+      <m>f(x) > 0</m> for all <m>x</m> in <m>(-\infty, -2)</m>.
+      Similarly, <m>f(x) \lt 0</m> for all <m>x</m> in <m>(-2,3)</m>,
+      and <m>f(x) > 0</m> for all <m>x</m> in <m>(3, \infty)</m>.
+      We can schematically represent this with the <em>sign diagram</em>
+          <idx><h>inequality </h><h> sign diagram</h></idx><idx><h>sign diagram </h><h> for quadratic inequality</h></idx>
+      below.
+    </p>
+
+    <p>
+      <img src="figures/LinearQuadraticGraphics/Inequalities-13.pdf"/>
+    </p>
+
+    <p>
+      Here, the <m>(+)</m> above a portion of the number line indicates
+      <m>f(x) > 0</m> for those values of <m>x</m>;
+      the <m>(-)</m> indicates <m>f(x) \lt 0</m> there.
+      The numbers labeled on the number line are the zeros of <m>f</m>,
+      so we place <m>0</m> above them.
+      We see at once that the solution to <m>f(x) \lt 0</m> is <m>(-2,3)</m>.
+    </p>
+
+    <p>
+      Our next goal is to establish a procedure by which we can generate the sign diagram without graphing the function.
+      An important property of quadratic functions is that if the function is positive at one point and negative at another,
+      the function must have at least one zero in between.
+      Graphically,
+      this means that a parabola can't be above the <m>x</m>-axis at one point and below the <m>x</m>-axis at another point without crossing the <m>x</m>-axis.
+      This allows us to determine the sign of <em>all</em>
+      of the function values on a given interval by testing the function at just
+      <em>one</em> value in the interval.
+      This gives us the following.
+    </p>
+
+    <insight xml:id="idea_quadineq">
+      <title>Steps for Solving a Quadratic Inequality</title>
+      <p>
+            <idx><h>inequality </h><h> quadratic</h></idx> <idx><h>quadratic function </h><h> inequality</h></idx>
+        <ol>
+          <li>
+            <p>
+              Rewrite the inequality, if necessary,
+              as a quadratic function <m>f(x)</m> on one side of the inequality and <m>0</m> on the other.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the zeros of <m>f</m> and place them on the number line with the number <m>0</m> above them.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Choose a real number, called a <em>test value</em>,
+              in each of the intervals determined in step 2.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine the sign of <m>f(x)</m> for each test value in step 3, and write that sign above the corresponding interval.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Choose the intervals which correspond to the correct sign to solve the inequality.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </insight>
+
+    <example xml:id="ex_quadineq">
+      <title>Solving quadratic inequalities</title>
+      <statement>
+        <p>
+          Solve the following inequalities analytically using sign diagrams.
+          Verify your answer graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>2x^2 \leq 3-x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x^2 - 2x > 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x^2+1 \leq 2x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2x-x^2 \geq |x-1|-1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To solve <m>2x^2 \leq 3-x</m>,
+                we first get <m>0</m> on one side of the inequality which yields <m>2x^2+x-3 \leq 0</m>.
+                We find the zeros of
+          <m>f(x) = 2x^2 + x - 3</m> by solving <m>2x^2 + x - 3 = 0</m> for <m>x</m>.
+                Factoring gives <m>(2x+3)(x-1)=0</m>,
+                so <m>x = -\frac{3}{2}</m> or <m>x = 1</m>.
+                We place these values on the number line with <m>0</m> above them and choose test values in the intervals <m>\left(-\infty, -\frac{3}{2}\right)</m>,
+                <m>\left(-\frac{3}{2},1\right)</m> and <m>(1,\infty)</m>.
+                For the interval  <m>\left(-\infty, -\frac{3}{2}\right)</m>,
+                we choose <m>x=-2</m>;
+                for <m>\left(-\frac{3}{2},1\right)</m>, we pick <m>x=0</m>;
+                and for <m>(1,\infty)</m>, <m>x=2</m>.
+                Evaluating the function at the three test values gives us <m>f(-2) = 3 > 0</m>,
+                so we place <m>(+)</m> above
+                <m>\left(-\infty, -\frac{3}{2}\right)</m>;  <m>f(0)=-3 \lt  0</m>,
+                so <m>(-)</m> goes above the interval
+                <m>\left(-\frac{3}{2},1\right)</m>;  and, <m>f(2) = 7</m>,
+                which means <m>(+)</m> is placed above <m>(1,\infty)</m>.
+                Since we are solving <m>2x^2+x-3 \leq 0</m>,
+                we look for solutions to
+          <m>2x^2+x-3 \lt  0</m> as well as solutions for <m>2x^2+x-3 =0</m>.
+                For <m>2x^2+x-3 \lt  0</m>,
+          we need the intervals which we have a <m>(-)</m>.
+                Checking the sign diagram,
+          we see this is <m>\left(-\frac{3}{2},1\right)</m>.
+                We know <m>2x^2+x-3 =0</m> when <m>x=-\frac{3}{2}</m> and <m>x=1</m>,
+                so our final answer is <m>\left[-\frac{3}{2},1\right]</m>.
+
+                <aside>
+                  <p>
+                    We have to choose a test value in each interval to construct the sign diagram.
+                    You'll get the same sign chart if you choose different test values than the ones chosen here.
+                  </p>
+                </aside>
+                <figure xml:id="fig_quadineqeg1">
+                  <caption>The sign diagram for <m>f(x)=2x^2+x-3</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/Inequalities-14.pdf"/>
+                </figure>
+
+                <figure xml:id="fig_quadineqeg2">
+                  <caption>Verifying the solution to
+                <m>2x^2\leq 3-x</m> graphically</caption>
+                  <img src="figures/LinearQuadraticGraphics/Inequalities-15.pdf"/>
+                </figure>
+
+                To verify our solution graphically,
+                we refer to the original inequality, <m>2x^2 \leq 3-x</m>.
+                We let <m>g(x) = 2x^2</m> and <m>h(x)=3-x</m>.
+                We are looking for the <m>x</m> values where the graph of <m>g</m> is below that of <m>h</m> (the solution to
+                <m>g(x) \lt  h(x)</m>) as well as the points of intersection (the solutions to <m>g(x)=h(x)</m>).
+                See <xref ref="fig_quadineqeg2">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Once again, we re-write <m>x^2-2x > 1</m> as
+                <m>x^2-2x-1>0</m> and we identify <m>f(x)=x^2-2x-1</m>.
+                When we go to find the zeros of <m>f</m>, we find,
+          to our chagrin,
+                that the quadratic <m>x^2-2x-1</m> doesn't factor nicely.
+                Hence,
+          we resort to the quadratic formula to solve <m>x^2-2x-1=0</m>,
+                and arrive at <m>x=1 \pm \sqrt{2}</m>.
+                As before,
+          these zeros divide the number line into three pieces.
+                To help us decide on test values,
+                we approximate <m>1 - \sqrt{2} \approx -0.4</m> and <m>1 + \sqrt{2} \approx 2.4</m>.
+                We choose <m>x=-1</m>,
+                <m>x=0</m> and <m>x=3</m> as our test values and find <m>f(-1)= 2</m>,
+                which is <m>(+)</m>; <m>f(0)=-1</m> which is <m>(-)</m>;
+                and <m>f(3)=2</m> which is <m>(+)</m> again.
+                Our solution to <m>x^2-2x-1>0</m> is where we have <m>(+)</m>, so,
+                in interval notation <m>\left(-\infty, 1-\sqrt{2}\right) \cup \left(1+\sqrt{2},\infty\right)</m>.
+                To check the inequality <m>x^2 - 2x > 1</m> graphically,
+                we set <m>g(x) = x^2-2x</m> and <m>h(x)=1</m>.
+                We are looking for the <m>x</m> values where the graph of <m>g</m> is above the graph of <m>h</m>:
+                see <xref ref="fig_quadineqeg4">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>x^2+1 \leq 2x</m>, as before,
+                we solve <m>x^2-2x+1 \leq 0</m>.
+                Setting <m>f(x) = x^2-2x+1=0</m>,
+                we find the only one zero of <m>f</m>, <m>x = 1</m>.
+                This one <m>x</m> value divides the number line into two intervals,
+                from which we choose <m>x=0</m> and <m>x=2</m> as test values.
+                We find <m>f(0)=1 > 0</m> and <m>f(2) = 1 > 0</m>.
+                Since we are looking for solutions to <m>x^2-2x+1 \leq 0</m>,
+                we are looking for <m>x</m> values where
+                <m>x^2-2x+1 \lt 0</m> as well as where <m>x^2-2x+1 = 0</m>.
+                Looking at our sign diagram,
+                there are no places where
+                <m>x^2-2x+1 \lt 0</m> (there are no <m>(-)</m>),
+                so our solution is only <m>x=1</m> (where <m>x^2-2x+1 = 0</m>).
+                We write this as <m>\left\{1\right\}</m>.
+                Graphically,
+                we solve <m>x^2+1 \leq 2x</m> by graphing <m>g(x) = x^2+1</m> and <m>h(x)=2x</m>.
+                We are looking for the <m>x</m> values where the graph of <m>g</m> is below the graph of <m>h</m>
+                (for <m>x^2+1 \lt 2x</m>)
+                and where the two graphs intersect (<m>x^2+1 = 2x</m>);
+                see <xref ref="fig_quadineqeg6">Figure</xref>.
+                Notice that the line and the parabola touch at <m>\left(1, 2\right)</m>,
+                but the parabola is always above the line otherwise.
+                In this case, we say the line <m>y=2x</m> is <em>tangent</em>
+                to <m>y=x^2+1</m> at <m>\left(1, 2\right)</m>.
+                Finding tangent lines to arbitrary functions is a fundamental problem solved,
+                in general,
+                with Calculus. <figure xml:id="fig_quadineqeg3"> <caption>The sign diagram for
+          <m>f(x)=x^2-2x-1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-16.pdf"/> </figure> <figure xml:id="fig_quadineqeg4"> <caption>Verifying the solution to
+          <m>x^2-2x > 1</m> graphically</caption> <img src="figures/LinearQuadraticGraphics/Inequalities-17.pdf"/> </figure> <figure xml:id="fig_quadineqeg5"> <caption>The sign diagram for
+                <m>f(x)=x^2-2x+1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-18.pdf"/> </figure> <figure xml:id="fig_quadineqeg6"> <caption>Verifying the solution to
+                <m>x^2+1\leq 2x</m> graphically</caption> <img src="figures/LinearQuadraticGraphics/Inequalities-19.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve our last inequality,
+                <m>2x-x^2 \geq |x-1|-1</m>,
+          we re-write the absolute value using cases.
+                For <m>x \lt 1</m>, <m>|x-1| = -(x-1) = 1-x</m>,
+                so we get <m>2x-x^2 \geq 1-x-1</m>, or <m>x^2-3x \leq 0</m>.
+                Finding the zeros of <m>f(x) = x^2-3x</m>,
+                we get <m>x=0</m> and <m>x=3</m>.
+                However,
+          we are only concerned with the portion of the number line where <m>x \lt 1</m>,
+                so the only zero that we concern ourselves with is <m>x=0</m>.
+                This divides the interval <m>x\lt 1</m> into two intervals:
+                <m>(-\infty, 0)</m> and <m>(0,1)</m>.
+                We choose <m>x=-1</m> and <m>x=\frac{1}{2}</m> as our test values.
+                We find <m>f(-1) = 4</m> and <m>f\left(\frac{1}{2}\right) = -\frac{5}{4}</m>,
+                giving us the signs in <xref ref="fig_quadineqeg7">Figure</xref>.
+                Hence, our solution to
+          <m>x^2-3x \leq 0</m> for <m>x \lt 1</m> is <m>[0,1)</m>.
+                Next, we turn our attention to the case <m>x \geq 1</m>.
+                Here, <m>|x-1| = x-1</m>,
+                so our original inequality becomes
+                <m>2x-x^2 \geq x-1-1</m>, or <m>x^2-x-2 \leq 0</m>.
+                Setting <m>g(x) = x^2-x-2</m>,
+                we find the zeros of <m>g</m> to be <m>x=-1</m> and <m>x=2</m>.
+                Of these, only <m>x=2</m> lies in the region
+                <m>x \geq 1</m>, so we ignore <m>x=-1</m>.
+                Our test intervals are now <m>[1,2)</m> and <m>(2,\infty)</m>.
+                We choose <m>x=1</m> and <m>x=3</m> as our test values and find <m>g(1) = -2</m> and <m>g(3) = 4</m>,
+                yielding the sign diagram in <xref ref="fig_quadineqeg8">Figure</xref>.
+                Hence, our solution to <m>g(x) = x^2-x-2 \leq 0</m>,
+                in this region is <m>[1,2)</m>. <figure xml:id="fig_quadineqeg7"> <caption>The sign diagram for <m>f(x)=x^2-3x</m>,
+                where <m>x\lt 1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-20.pdf"/> </figure> <figure xml:id="fig_quadineqeg8"> <caption>The sign diagram for <m>g(x)=x^2-x-2</m>,
+                where <m>x\geq 1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-21.pdf"/> </figure> Combining these into one sign diagram,
+                we have that our solution is <m>[0,2]</m>.
+                Graphically, to check <m>2x-x^2 \geq |x-1|-1</m>,
+                we set <m>h(x) = 2x-x^2</m> and
+                <m>i(x) = |x-1|-1</m> and look for the <m>x</m> values where the graph of <m>h</m> is above the the graph of <m>i</m> (the solution of
+                <m>h(x) > i(x)</m>) as well as the <m>x</m>-coordinates of the intersection points of both graphs (where <m>h(x)=i(x)</m>).
+                The combined sign chart is given in <xref ref="fig_quadineqeg9">Figure</xref>
+                and the graphs are plotted in <xref ref="fig_quadineqeglast">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      One of the classic applications of inequalities is the notion of tolerances.
+      Recall that for real numbers <m>x</m> and <m>c</m>,
+      the quantity <m>|x-c|</m> may be interpreted as the distance from <m>x</m> to <m>c</m>.
+      Solving inequalities of the form <m>|x-c| \leq d</m> for
+      <m>d \geq 0</m> can then be interpreted as finding all numbers <m>x</m> which lie within <m>d</m> units of <m>c</m>.
+      We can think of the number <m>d</m> as a <q>tolerance</q>
+      and our solutions <m>x</m> as being within an accepted tolerance of <m>c</m>.
+      We use this principle in the next example.
+    </p>
+
+    <figure xml:id="fig_quadineqeg9">
+      <caption>The overall sign diagram for Problem 4 in <xref ref="ex_quadineq">Example</xref></caption>
+      <img src="figures/LinearQuadraticGraphics/Inequalities-22.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_quadineqeglast">
+      <caption>Verifying the inequality <m>2x-x^2\geq \lvert x-1\rvert -1</m> graphically</caption>
+      <img src="figures/LinearQuadraticGraphics/Inequalities-23.pdf"/>
+    </figure>
+
+    <example xml:id="ex_tolerance">
+      <title>Computing tolerance</title>
+      <statement>
+        <p>
+          The area <m>A</m>
+          (in square inches)
+          of a square piece of particle board which measures <m>x</m> inches on each side is <m>A(x) = x^2</m>.
+          Suppose a manufacturer needs to produce a <m>24</m> inch by <m>24</m> inch square piece of particle board as part of a home office desk kit.
+          How close does the side of the piece of particle board need to be cut to <m>24</m> inches to guarantee that the area of the piece is within a tolerance of <m>0.25</m> square inches of the target area of <m>576</m> square inches?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Mathematically,
+          we express the desire for the area <m>A(x)</m> to be within <m>0.25</m> square inches of <m>576</m> as <m>|A - 576| \leq 0.25</m>.
+          Since <m>A(x) = x^2</m>, we get <m>|x^2 - 576| \leq 0.25</m>,
+          which is equivalent to <m>-0.25 \leq x^2 - 576 \leq 0.25</m>.
+          One way to proceed at this point is to solve the two inequalities <m>-0.25 \leq x^2 - 576</m> and
+          <m>x^2 - 576 \leq 0.25</m> individually using sign diagrams and then taking the intersection of the solution sets.
+          While this way will (eventually) lead to the correct answer,
+          we take this opportunity to showcase the increasing property of the square root:
+          if <m>0 \leq a \leq b</m>, then <m>\sqrt{a} \leq \sqrt{b}</m>.
+          To use this property, we proceed as follows
+          <md>
+            <mrow>-0.25  \leq \amp  x^2 - 576  \leq 0.25</mrow>
+            <mrow>575.75 \leq \amp  x^2  \leq 576.25  \tag{(add $576$ across the inequalities.)}</mrow>
+            <mrow>\sqrt{575.75} \leq \amp  \sqrt{x^2}  \leq \sqrt{576.25}  \tag{(take square roots.)}</mrow>
+            <mrow>\sqrt{575.75} \leq \amp  |x|  \leq \sqrt{576.25}  \tag{($\sqrt{x^2} = |x|$)}</mrow>
+          </md>
+        </p>
+
+        <p>
+          By <xref ref="absolutevalueineq">Theorem</xref>,
+          we find the solution to <m>\sqrt{575.75} \leq |x|</m> to be
+          <me>
+            \left(-\infty, -\sqrt{575.75} \, \right] \cup \left[\sqrt{575.75}, \infty \right)
+          </me>
+          and the solution to <m>|x| \leq \sqrt{576.25}</m> to be <m>\left[-\sqrt{576.25}, \sqrt{576.25} \, \right]</m>.
+          To solve <m>\sqrt{575.75} \leq  |x|  \leq \sqrt{576.25}</m>,
+          we intersect these two sets to get
+          <me>
+            [-\sqrt{576.25}, -\sqrt{575.75}] \cup [\sqrt{575.75},\sqrt{576.25}]
+          </me>.
+        </p>
+
+        <p>
+          Since <m>x</m> represents a length,
+          we discard the negative answers and get the interval <m>[\sqrt{575.75},\sqrt{576.25}]</m>.
+          This means that the side of the piece of particle board must be cut between
+          <m>\sqrt{575.75} \approx 23.995</m> and <m>\sqrt{576.25} \approx 24.005</m> inches,
+          a tolerance of (approximately) <m>0.005</m> inches of the target length of <m>24</m> inches.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our last example in the section demonstrates how inequalities can be used to describe regions in the plane,
+      as we saw earlier in <xref ref="Relations">Section</xref>.
+    </p>
+
+    <example xml:id="ex_ineqrels">
+      <title>Relations determined by inequalities</title>
+      <statement>
+        <p>
+          Sketch the following relations.
+
+          <ol>
+            <li>
+              <p>
+                <m>R = \{ (x,y) : y > |x| \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>S = \{ (x,y) : y \leq 2-x^2 \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>T = \{ (x,y) : |x| \lt y \leq 2-x^2 \}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The relation <m>R</m> consists of all points <m>(x,y)</m> whose <m>y</m>-coordinate is greater than <m>|x|</m>.
+                If we graph <m>y=|x|</m>,
+                then we want all of the points in the plane
+                <em>above</em> the points on the graph.
+                Dotting the graph of <m>y=|x|</m> as we have done before to indicate that the points on the graph itself are not in the relation,
+                we get the shaded region in <xref ref="fig_ineqrel1">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For a point to be in <m>S</m>,
+                its <m>y</m>-coordinate must be less than or equal to the <m>y</m>-coordinate on the parabola <m>y=2-x^2</m>.
+                This is the set of all points <em>below</em>
+                or <em>on</em> the parabola <m>y=2-x^2</m>:
+                see <xref ref="fig_ineqrel2">Figure</xref>. <figure xml:id="fig_ineqrel1"> <caption>Graph of the relation <m>R</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-24.pdf"/> </figure> <figure xml:id="fig_ineqrel2"> <caption>Graph of the relation <m>S</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-25.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Finally,
+          the relation <m>T</m> takes the points whose <m>y</m>-coordinates satisfy both the conditions given in <m>R</m> and those of <m>S</m>.
+                Thus we shade the region between <m>y=|x|</m> and <m>y=2-x^2</m>,
+                keeping those points on the parabola,
+                but not the points on <m>y=|x|</m>.
+                To get an accurate graph,
+                we need to find where these two graphs intersect,
+                so we set <m>|x| = 2-x^2</m>.
+                Proceeding as before,
+                breaking this equation into cases, we get <m>x=-1,1</m>.
+                Graphing yields <xref ref="fig_ineqrel3">Figure</xref>. <figure xml:id="fig_ineqrel3"> <caption>Graph of the relation <m>T</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-26.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the inequality.
+      Write your answer using interval notation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3x - 5| \leq 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\frac{1}{3}, 3\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|7x + 2| > 10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, -\frac{12}{7} \right) \cup \left(\frac{8}{7}, \infty\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|2x+1| - 5 \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-3,2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|2-x| - 4 \geq -3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty,1] \cup [3,\infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3x+5| + 2 \lt 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2|7-x| +4 > 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2 \leq |4-x| \lt 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-3,2] \cup [6,11)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>1 \lt |2x - 9| \leq 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[3, 4) \cup (5, 6]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x + 3| \geq |6x + 9|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\frac{12}{7}, -\frac{6}{5}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|x-3| - |2x+1| \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -4) \cup \left( \frac{2}{3}, \infty\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|1-2x| \geq x + 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, -\frac{4}{3} \right] \cup [6, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x + 5 \lt |x+5|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -5)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x \geq |x+1|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No Solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|2x + 1| \leq 6-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ -7, \frac{5}{3}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x + |2x-3| \lt 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( 1, \frac{5}{3} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>|3-x| \geq x-5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} + 2x - 3 \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3] \cup [1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>16x^2+8x+1 > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, -\frac{1}{4}\right) \cup \left(-\frac{1}{4}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+9 \lt 6x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>9x^2 + 16 \geq 24x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2+4 \leq 4x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left\{2 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} + 1 \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3x^{2} \leq 11x + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\frac{1}{3}, 4 \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x > x^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0, 1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2x^2-4x-1 > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, 1-\frac{\sqrt{6}}{2} \right) \cup \left(1+\frac{\sqrt{6}}{2}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5x+4 \leq 3x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, \frac{5 - \sqrt{73}}{6} \right] \cup \left[\frac{5 + \sqrt{73}}{6}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2\leq \lvert x^2-9\rvert \lt 9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-3\sqrt{2},-\sqrt{11}]\cup[-\sqrt{7},0)\cup (0,\sqrt{7}]\cup [\sqrt{11},3\sqrt{2})</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} \leq |4x - 3|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-2-\sqrt{7}, -2+\sqrt{7} \right] \cup [1, 3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} + x + 1 \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^2 \geq |x|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -1] \cup \left\{ 0 \right\} \cup [1,\infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x |x+5| \geq -6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-6,-3] \cup [-2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x |x-3| \lt 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 1) \cup \left(2, \frac{3+\sqrt{17}}{2}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The profit, in dollars,
+          made by selling <m>x</m> bottles of <m>100 \%</m> All-Natural Certified Free-Trade Organic Sasquatch Tonic is given by <m>P(x) = -x^2+25x-100</m>,
+          for <m>0 \leq x \leq 35</m>.
+          How many bottles of tonic must be sold to make at least <m>\dollar50</m> in profit?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(x) \geq 50</m> on <m>[10,15]</m>.
+          This means anywhere between 10 and 15 bottles of tonic need to be sold to earn at least <m>\dollar50</m> in profit.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>C(x) = x^2-10x+27</m>,
+          <m>x \geq 0</m> represents the costs,
+          in <em>hundreds</em> of dollars,
+          to produce <m>x</m> <em>thousand</em> pens.
+          Find the number of pens which can be produced for no more than <m>\dollar1100</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C(x) \leq 11</m> on <m>[2,8]</m>.
+          This means anywhere between 2000 and 8000 pens can be produced and the cost will not exceed <m>\dollar1100</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The temperature <m>T</m>, in degrees Fahrenheit,
+          <m>t</m> hours after 6 AM is given by <m>T(t) = -\frac{1}{2} t^2 + 8t+32</m>,
+          for <m>0 \leq t \leq 12</m>.
+          When is it warmer than <m>42^{\circ}</m> Fahrenheit?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>T(t) > 42</m> on <m>(8-2\sqrt{11}, 8+2\sqrt{11}) \approx (1.37, 14.63)</m>,
+          which corresponds to between 7:22 AM (1.37 hours after 6 AM) to 8:38 PM (14.63 hours after 6 AM.) However,
+          since the model is valid only for <m>t</m>, <m>0 \leq t \leq 12</m>,
+          we restrict our answer and find it is warmer than
+          <m>42^{\circ}</m> Fahrenheit from 7:22 AM to 6 PM.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The height <m>h</m> in feet of a model rocket above the ground <m>t</m> seconds after lift-off is given by <m>h(t) = -5t^2+100t</m>,
+          for <m>0 \leq t \leq 20</m>.
+          When is the rocket at least <m>250</m> feet off the ground?
+          Round your answer to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(t) \geq 250</m> on <m>[10-5\sqrt{2}, 10+5\sqrt{2}] \approx [2.93, 17.07]</m>.
+          This means the rocket is at least 250 feet off the ground between 2.93 and 17.07 seconds after lift off.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If a slingshot is used to shoot a marble straight up into the air from 2 meters above the ground with an initial velocity of 30 meters per second,
+          for what values of time <m>t</m> will the marble be over 35 meters above the ground? (Refer to <xref ref="whatgoesup">Exercise</xref>
+          in <xref ref="QuadraticFunctions">Section</xref>
+          for assistance if needed.) Round your answers to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>s(t) = -4.9t^2 + 30t + 2</m>.
+          <m>s(t) > 35</m> on (approximately) <m>(1.44, 4.68)</m>.
+          This means between 1.44 and 4.68 seconds after it is launched into the air,
+          the marble is more than 35 feet off the ground.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What temperature values in degrees Celsius are equivalent to the temperature range <m>50^{\circ}F</m> to
+          <m>95^{\circ}F</m>? (Refer to <xref ref="celsiustofahr">Exercise</xref>
+          in <xref ref="LinearFunctions">Section</xref> for assistance if needed.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          From our previous work <m>C(F) = \frac{5}{9}(F - 32)</m> so
+          <m>50 \leq F \leq 95</m> becomes <m>10 \leq C \leq 35</m>.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      write and solve an inequality involving absolute values for the given statement.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find all real numbers <m>x</m> so that <m>x</m> is within <m>4</m> units of <m>2</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>|x-2| \leq 4</m>, <m>[-2,6]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all real numbers <m>x</m> so that <m>3x</m> is within <m>2</m> units of <m>-1</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>|3x+1| \leq 2</m>, <m>\left[-1, \frac{1}{3}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all real numbers <m>x</m> so that <m>x^2</m> is within <m>1</m> unit of <m>3</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>|x^2-3| \leq 1</m>, <m>[-2, -\sqrt{2} \,] \cup [\sqrt{2}, 2]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all real numbers <m>x</m> so that <m>x^2</m> is at least <m>7</m> units away from <m>4</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>|x^2 -4| \geq 7</m>,
+          <m>(-\infty, -\sqrt{11} \,] \cup [\sqrt{11}, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The surface area <m>S</m> of a cube with edge length <m>x</m> is given by <m>S(x) = 6x^{2}</m> for <m>x > 0</m>.
+          Suppose the cubes your company manufactures are supposed to have a surface area of exactly 42 square centimetres,
+          but the machines you own are old and cannot always make a cube with the precise surface area desired.
+          Write an inequality using absolute value that says the surface area of a given cube is no more than 3 square centimetres away
+          (high or low)
+          from the target of 42 square centimetres.
+          Solve the inequality and write your answer using interval notation.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Solving <m>|S(x) - 42| \leq 3</m>,
+          and disregarding the negative solutions yields <m>\left[\sqrt{\frac{13}{2}}, \sqrt{\frac{15}{2}}\right] \approx [2.550, 2.739]</m>.
+          The edge length must be within <m>2.550</m> and <m>2.739</m> centimetres.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a function,
+          <m>L</m> is a real number and
+          <m>\varepsilon</m> is a positive number.
+          Discuss with your classmates what the inequality
+          <m>|f(x) - L| \lt \varepsilon</m> means algebraically and graphically.(Understanding this type of inequality is really important in Calculus.)
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      In the following exercises, sketch the graph of the relation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : y \leq x-1 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : y > x^2 +1 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : -1 \lt y \leq 2x + 1 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : x^2 \leq y \lt x+2 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : |x|-4 \lt y \lt 2-x \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>R = \left\{ (x,y) : x^{2} \lt y \leq |4x - 3| \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/Inequalities-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+  </subsection>
+</section>
+

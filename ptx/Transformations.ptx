@@ -1,0 +1,2640 @@
+
+
+<section xml:id="Transformations">
+  <title>Transformations</title>
+  <introduction>
+    <p>
+      In this section,
+      we study how the graphs of functions change, or <em>transform</em>,
+      when certain specialized modifications are made to their formulas.
+      The transformations we will study fall into three broad categories:
+      shifts, reflections and scalings,
+      and we will present them in that order.
+      Suppose that <xref ref="fig_tran1">Figure</xref>
+      the complete graph of a function <m>f</m>.
+          <idx><h>transformations of function graphs</h></idx><idx><h>function </h><h> transformation of graphs</h></idx>
+    </p>
+
+    <figure xml:id="fig_tran1">
+      <caption>The graph of a function <m>f</m></caption>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-1.pdf"/>
+    </figure>
+
+    <p>
+      The Fundamental Graphing Principle for Functions says that for a point <m>(a,b)</m> to be on the graph,
+      <m>f(a) = b</m>.
+      In particular, we know <m>f(0) = 1</m>, <m>f(2)=3</m>,
+      <m>f(4)=3</m> and <m>f(5)=5</m>.
+      Suppose we wanted to graph the function defined by the formula <m>g(x) = f(x) + 2</m>.
+      Let's take a minute to remind ourselves of what <m>g</m> is doing.
+      We start with an input <m>x</m> to the function <m>f</m> and we obtain the output <m>f(x)</m>.
+      The function <m>g</m> takes the output <m>f(x)</m> and adds <m>2</m> to it.
+      In order to graph <m>g</m>, we need to graph the points <m>(x,g(x))</m>.
+      How are we to find the values for <m>g(x)</m> without a formula for <m>f(x)</m>?
+      The answer is that we don't need a
+      <em>formula</em> for <m>f(x)</m>,
+      we just need the <em>values</em> of <m>f(x)</m>.
+      The values of <m>f(x)</m> are the <m>y</m> values on the graph of <m>y=f(x)</m>.
+      For example,
+      using the points indicated on the graph of <m>f</m>,
+      we can make the following table.
+      <me>
+        \begin{array}{|c||c|c|c|c|}  
+
+        \hline
+
+        x \amp  (x,f(x)) \amp  f(x) \amp  g(x)=f(x)+2 \amp  (x, g(x)) \\ \hline
+        0  \amp  (0,1)\amp  1 \amp  3 \amp (0, 3) \\  \hline
+        2 \amp  (2,3) \amp  3 \amp   5 \amp (2,5) \\  \hline
+        4 \amp  (4,3) \amp  3 \amp   5 \amp (4, 5) \\  \hline
+        5 \amp  (5,5) \amp  5 \amp   7 \amp ( 5 ,7) \\  \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      In general, if <m>(a,b)</m> is on the graph of <m>y=f(x)</m>,
+      then <m>f(a) = b</m>, so <m>g(a) = f(a) +2 = b+2</m>.
+      Hence, <m>(a,b+2)</m> is on the graph of <m>g</m>.
+      In other words, to obtain the graph of <m>g</m>,
+      we add <m>2</m> to the <m>y</m>-coordinate of each point on the graph of <m>f</m>.
+      Geometrically,
+      adding <m>2</m> to the <m>y</m>-coordinate of a point moves the point <m>2</m> units above its previous location.
+      Adding <m>2</m> to every <m>y</m>-coordinate on a graph <em>en masse</em>
+      is usually described as <q>shifting the graph up <m>2</m> units</q>.
+      Notice that the graph retains the same basic shape as before,
+      it is just <m>2</m> units above its original location.
+      In other words,
+      we connect the four points we moved in the same manner in which they were connected before:
+      see <xref ref="fig_shiftupf">Figure</xref>.
+    </p>
+
+    <!--
+    <caption>Shifting the graph of <m>f</m> up by 2 units</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-2.pdf"/></cell>
+          <cell></cell>
+          <cell><m>\stackrel{\stackrel{\mbox{\scriptsize shift up <m>2</m> units} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize add <m>2</m> to each <m>y</m>-coordinate} }</m></cell>
+          <cell></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-3.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=f(x)</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>y=g(x) = f(x)+2</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      You'll note that the domain of <m>f</m> and the domain of <m>g</m> are the same,
+      namely <m>[0,5]</m>,
+      but that the range of <m>f</m> is <m>[1,5]</m> while the range of <m>g</m> is <m>[3,7]</m>.
+      In general,
+      shifting a function vertically like this will leave the domain unchanged,
+      but could very well affect the range.
+      You can easily imagine what would happen if we wanted to graph the function <m>j(x) = f(x) - 2</m>.
+      Instead of adding <m>2</m> to each of the <m>y</m>-coordinates on the graph of <m>f</m>,
+      we'd be subtracting <m>2</m>.
+      Geometrically, we would be moving the graph down <m>2</m> units.
+      We leave it to the reader to verify that the domain of <m>j</m> is the same as <m>f</m>,
+      but the range of <m>j</m> is <m>[-1,3]</m>.
+      What we have discussed is generalized in the following theorem.
+    </p>
+
+    <theorem xml:id="vshifts">
+      <title>Vertical Shifts</title>
+      <statement>
+        <p>
+              <idx><h>graph </h><h> vertical shift</h></idx>
+          Suppose <m>f</m> is a function and <m>k</m> is a positive number.
+
+          <ul>
+            <li>
+              <p>
+                To graph <m>y=f(x)+k</m>,
+                shift the graph of <m>y=f(x)</m> up <m>k</m> units by adding <m>k</m> to the <m>y</m>-coordinates of the points on the graph of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y=f(x)-k</m>,
+                shift the graph of <m>y=f(x)</m> down <m>k</m> units by subtracting <m>k</m> from the <m>y</m>-coordinates of the points on the graph of <m>f</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The key to understanding <xref ref="vshifts">Theorem</xref> and, indeed,
+      all of the theorems in this section comes from an understanding of the Fundamental Graphing Principle for Functions.
+      If <m>(a,b)</m> is on the graph of <m>f</m>, then <m>f(a) = b</m>.
+      Substituting <m>x=a</m> into the equation
+      <m>y=f(x)+k</m> gives <m>y=f(a)+k = b+k</m>.
+      Hence, <m>(a,b+k)</m> is on the graph of
+      <m>y=f(x)+k</m>, and we have the result.
+      In the language of <q>inputs</q> and <q>outputs</q>,
+      <xref ref="vshifts">Theorem</xref>
+      can be paraphrased as <q>Adding to, or subtracting from,
+      the <em>output</em> of a function causes the graph to shift up or down,
+      respectively.</q> So what happens if we add to or subtract from the
+      <em>input</em> of the function?
+    </p>
+
+    <p>
+      Keeping with the graph of <m>y=f(x)</m> above,
+      suppose we wanted to graph <m>g(x) = f(x+2)</m>.
+      In other words,
+      we are looking to see what happens when we add <m>2</m> to the input of the function Let's try to generate a table of values of <m>g</m> based on those we know for <m>f</m>.
+      We quickly find that we run into some difficulties.
+    </p>
+
+    <aside>
+      <p>
+        We have spent a lot of time in this text showing you that <m>f(x+2)</m> and <m>f(x)+2</m> are,
+        in general,
+        wildly different algebraic animals.
+        We will see momentarily that their geometry is also dramatically different.
+      </p>
+    </aside>
+    <me>
+      \begin{array}{|c||c|c|c|c|}  
+
+      \hline
+
+      x \amp  (x,f(x)) \amp  f(x)\amp  g(x)=f(x+2) \amp  (x, g(x)) \\ \hline
+      0  \amp  (0,1)\amp  1 \amp  f(0+2) = f(2) = 3   \amp (0, 3) \\  \hline
+      2 \amp  (2,3) \amp  3 \amp  f(2+2) = f(4) = 3  \amp (2,3) \\  \hline
+      4 \amp  (4,3) \amp  3 \amp   f(4+2) = f(6) = ? \amp   \\  \hline
+      5 \amp  (5,5) \amp  5 \amp  f(5+2) = f(7) = ?  \amp   \\  \hline
+      \end{array}
+    </me>
+    <p>
+      When we substitute <m>x=4</m> into the formula <m>g(x)=f(x+2)</m>,
+      we are asked to find <m>f(4+2)=f(6)</m> which doesn't exist because the domain of <m>f</m> is only <m>[0,5]</m>.
+      The same thing happens when we attempt to find <m>g(5)</m>.
+      What we need here is a new strategy.
+      We know, for instance, <m>f(0) = 1</m>.
+      To determine the corresponding point on the graph of <m>g</m>,
+      we need to figure out what value of <m>x</m> we must substitute into
+      <m>g(x) = f(x+2)</m> so that the quantity <m>x+2</m>,
+      works out to be <m>0</m>.
+      Solving <m>x+2=0</m> gives <m>x=-2</m>,
+      and <m>g(-2) = f((-2)+2) = f(0) = 1</m> so <m>(-2,1)</m> is on the graph of <m>g</m>.
+      To use the fact <m>f(2) = 3</m>,
+      we set <m>x+2 = 2</m> to get <m>x=0</m>.
+      Substituting gives <m>g(0) = f(0+2) = f(2) = 3</m>.
+      Continuing in this fashion, we get
+      <me>
+        \begin{array}{|r||c|c|c|}  
+
+        \hline
+
+        x \amp  x+2 \amp  g(x)=f(x+2) \amp  (x, g(x)) \\ \hline
+        -2 \amp  0 \amp  g(-2)=f(0) = 1   \amp (-2, 1) \\  \hline
+        0 \amp   2 \amp   g(0)=f(2) = 3  \amp (0,3) \\  \hline
+        2 \amp  4  \amp  g(2)=f(4) = 3 \amp   (2,3)\\  \hline
+        3 \amp  5 \amp  g(3)=f(5) = 5  \amp  (3,5) \\  \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      In summary, the points <m>(0,1)</m>, <m>(2,3)</m>,
+      <m>(4,3)</m> and <m>(5,5)</m> on the graph of <m>y=f(x)</m> give rise to the points <m>(-2,1)</m>,
+      <m>(0,3)</m>,
+      <m>(2,3)</m> and <m>(3,5)</m> on the graph of <m>y=g(x)</m>, respectively.
+      In general,
+      if <m>(a,b)</m> is on the graph of <m>y=f(x)</m>, then <m>f(a) = b</m>.
+      Solving <m>x+2 = a</m> gives <m>x = a-2</m> so that <m>g(a-2) = f((a-2)+2) = f(a) = b</m>.
+      As such, <m>(a-2,b)</m> is on the graph of <m>y=g(x)</m>.
+      The point <m>(a-2,b)</m> is exactly <m>2</m> units to the <em>left</em>
+      of the point <m>(a,b)</m> so the graph of <m>y=g(x)</m> is obtained by shifting the graph <m>y=f(x)</m> to the left <m>2</m> units,
+      as pictured below.
+    </p>
+
+    <!--
+    <caption>Shifting the graph of <m>f</m> left by 2 units</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-4.pdf"/></cell>
+          <cell></cell>
+          <cell><m>\stackrel{\stackrel{\mbox{\scriptsize shift left <m>2</m> units} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize subtract <m>2</m> from each <m>x</m>-coordinate} }</m></cell>
+          <cell></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-5.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=f(x)</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>y=g(x)=f(x+2)</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Note that while the ranges of <m>f</m> and <m>g</m> are the same,
+      the domain of <m>g</m> is <m>[-2,3]</m> whereas the domain of <m>f</m> is <m>[0,5]</m>.
+      In general, when we shift the graph horizontally,
+      the range will remain the same,
+      but the domain could change.
+      If we set out to graph <m>j(x) = f(x-2)</m>,
+      we would find ourselves <em>adding</em>
+      <m>2</m> to all of the <m>x</m> values of the points on the graph of <m>y=f(x)</m> to effect a shift to the
+      <em>right</em> <m>2</m> units.
+      Generalizing these notions produces the following result.
+    </p>
+
+    <theorem xml:id="hshifts">
+      <title>Horizontal Shifts</title>
+      <statement>
+        <p>
+              <idx><h>graph </h><h> horizontal shift</h></idx>
+          Suppose <m>f</m> is a function and <m>h</m> is a positive number.
+
+          <ul>
+            <li>
+              <p>
+                To graph <m>y=f(x+h)</m>,
+                shift the graph of <m>y=f(x)</m> left <m>h</m> units by subtracting <m>h</m> from the <m>x</m>-coordinates of the points on the graph of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y=f(x-h)</m>,
+                shift the graph of <m>y=f(x)</m> right <m>h</m> units by adding <m>h</m> to the <m>x</m>-coordinates of the points on the graph of <m>f</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      In other words, <xref ref="hshifts">Theorem</xref>
+      says that adding to or subtracting from the <em>input</em>
+      to a function amounts to shifting the graph left or right,
+      respectively.
+      <xref ref="vshifts">Theorems</xref>
+      and <xref ref="hshifts"></xref>
+      present a theme which will run common throughout the section:
+      changes to the outputs from a function affect the <m>y</m>-coordinates of the graph,
+      resulting in some kind of vertical change;
+      changes to the inputs to a function affect the <m>x</m>-coordinates of the graph,
+      resulting in some kind of horizontal change.
+    </p>
+
+    <example xml:id="transformationex1">
+      <title>Transforming with vertical and horizontal shifts</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Graph <m>f(x) = \sqrt{x}</m>.
+              Plot at least three points.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use your graph in 1 to graph <m>g(x) = \sqrt{x}-1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use your graph in 1 to graph <m>j(x) = \sqrt{x-1}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use your graph in 1 to graph <m>m(x) = \sqrt{x+3} - 2</m>.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              Owing to the square root,
+              the domain of <m>f</m> is
+              <m>x \geq 0</m>, or <m>[0,\infty)</m>.
+              We choose perfect squares to build our table and graph below.
+              From the graph we verify the domain of <m>f</m> is
+              <m>[0,\infty)</m> and the range of <m>f</m> is also <m>[0, \infty)</m>.
+              The original function is plotted in <xref ref="fig_origf">Figure</xref>
+              <table xml:id="fig_origf"> <caption>The graph
+              <m>y=f(x)=\sqrt{x}</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell><m>x</m></cell> <cell><m>f(x)</m></cell> <cell><m>(x,f(x))</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>0</cell> <cell>0</cell> <cell><m>(0,0)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>1</cell> <cell>1</cell> <cell><m>(1,1)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>4</cell> <cell>2</cell> <cell><m>(4,2)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> </tabular> <img src="figures/RelationsandFunctionsGraphics/Transformations-6.pdf"/> </table>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The domain of <m>g</m> is the same as the domain of <m>f</m>,
+              since the only condition on both functions is that <m>x \geq 0</m>.
+              If we compare the formula for <m>g(x)</m> with <m>f(x)</m>,
+              we see that <m>g(x) = f(x) - 1</m>.
+              In other words,
+              we have subtracted <m>1</m> from the output of the function <m>f</m>.
+              By <xref ref="vshifts">Theorem</xref>,
+              we know that in order to graph <m>g</m>,
+              we shift the graph of <m>f</m> down one unit by subtracting <m>1</m> from each of the <m>y</m>-coordinates of the points on the graph of <m>f</m>.
+              Applying this to the three points we have specified on the graph,
+              we move <m>(0,0)</m> to <m>(0,-1)</m>,
+              <m>(1,1)</m> to <m>(1,0)</m>,
+              and <m>(4,2)</m> to <m>(4,1)</m>.
+              The rest of the points follow suit,
+              and we connect them with the same basic shape as before.
+              We confirm the domain of <m>g</m> is
+              <m>[0, \infty)</m> and find the range of <m>g</m> to be <m>[-1, \infty)</m>.
+              The graph of <m>g</m> is given in <xref ref="fig_transeg1-1">Figure</xref>. <figure xml:id="fig_transeg1-1"> <caption>Graphing
+              <m>g(x)=\sqrt{x}-1</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-8.pdf"/> </figure>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solving <m>x-1 \geq 0</m> gives <m>x \geq 1</m>,
+              so the domain of <m>j</m> is <m>[1,\infty)</m>.
+              To graph <m>j</m>, we note that <m>j(x) = f(x-1)</m>.
+              In other words, we are subtracting <m>1</m> from the
+              <em>input</em> of <m>f</m>.
+              According to <xref ref="hshifts">Theorem</xref>,
+              this induces a shift to the right of the graph of <m>f</m>.
+              We add <m>1</m> to the <m>x</m>-coordinates of the points on the graph of <m>f</m> and get the result below.
+              The graph reaffirms that the domain of <m>j</m> is <m>[1,\infty)</m> and tells us that the range of <m>j</m> is
+              <m>[0,\infty)</m>. <figure xml:id="fig_transeg1-2"> <caption>Graphing
+              <m>j(x)=\sqrt{x}-1</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-10.pdf"/> </figure>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To find the domain of <m>m</m>,
+              we solve <m>x+3 \geq 0</m> and get <m>[-3, \infty)</m>.
+              Comparing the formulas of <m>f(x)</m> and <m>m(x)</m>,
+              we have <m>m(x) = f(x+3) - 2</m>.
+              We have <m>3</m> being added to an input,
+              indicating a horizontal shift,
+              and <m>2</m> being subtracted from an output,
+              indicating a vertical shift.
+              We leave it to the reader to verify that, in this particular case,
+              the order in which we perform these transformations is immaterial;
+              we will arrive at the same graph regardless as to which transformation we apply first. (We shall see in the next example that order is generally important when applying more than one transformation to a graph.) We follow the convention <q>inputs first</q>,
+              and to that end we first tackle the horizontal shift.
+              Letting <m>m_{1}(x) = f(x+3)</m> denote this intermediate step,
+              <xref ref="hshifts">Theorem</xref>
+              tells us that the graph of
+              <m>y=m_{1}(x)</m> is the graph of <m>f</m> shifted to the left <m>3</m> units.
+              Hence, we subtract <m>3</m> from each of the <m>x</m>-coordinates of the points on the graph of <m>f</m>. <figure xml:id="fig_transeg1-3"> <caption>Graphing <m>m_1(x)=\sqrt{x+3}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-12.pdf"/> </figure> Since
+              <m>m(x) = f(x+3)-2</m> and <m>f(x+3) = m_{1}(x)</m>,
+              we have <m>m(x) = m_{1}(x) - 2</m>.
+              We can apply <xref ref="vshifts">Theorem</xref>
+              and obtain the graph of <m>m</m> by subtracting <m>2</m> from the <m>y</m>-coordinates of each of the points on the graph of <m>m_{1}(x)</m>.
+              The graph verifies that the domain of <m>m</m> is <m>[-3, \infty)</m> and we find the range of <m>m</m> to be
+              <m>[-2, \infty)</m>. <figure xml:id="fig_transeg1-4"> <caption>Graphing
+              <m>m(x)=\sqrt{x+3}-2</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-14.pdf"/> </figure>
+            </p>
+          </li>
+        </ol>
+
+        <p>
+          Keep in mind that we can check our answer to any of these kinds of problems by showing that any of the points we've moved lie on the graph of our final answer.
+          For example,
+          we can check that <m>(-3,-2)</m> is on the graph of <m>m</m> by computing <m>m(-3) = \sqrt{(-3)+3} - 2 = \sqrt{0}-2 = -2\, \checkmark</m>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to reflections.
+      We know from <xref ref="CartesianPlane">Section</xref>
+      that to reflect a point <m>(x,y)</m> across the <m>x</m>-axis,
+      we replace <m>y</m> with <m>-y</m>.
+      If <m>(x,y)</m> is on the graph of <m>f</m>, then <m>y=f(x)</m>,
+      so replacing <m>y</m> with <m>-y</m> is the same as replacing <m>f(x)</m> with <m>-f(x)</m>.
+      Hence, the graph of <m>y=-f(x)</m> is the graph of <m>f</m> reflected across the <m>x</m>-axis.
+      Similarly, the graph of <m>y=f(-x)</m> is the graph of <m>f</m> reflected across the <m>y</m>-axis.
+      Returning to the language of inputs and outputs,
+      multiplying the output from a function by <m>-1</m> reflects its graph across the <m>x</m>-axis,
+      while multiplying the input to a function by <m>-1</m> reflects the graph across the <m>y</m>-axis.
+    </p>
+
+    <theorem xml:id="reflections">
+      <title>Reflections</title>
+      <statement>
+        <p>
+              <idx><h>graph </h><h> reflection about an axis</h></idx><idx><h>reflection </h><h> of a function graph</h></idx>
+          Suppose <m>f</m> is a function.
+
+          <ul>
+            <li>
+              <p>
+                To graph <m>y=-f(x)</m>,
+                reflect the graph of <m>y=f(x)</m> across the <m>x</m>-axis by multiplying the <m>y</m>-coordinates of the points on the graph of <m>f</m> by <m>-1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y=f(-x)</m>,
+                reflect the graph of <m>y=f(x)</m> across the <m>y</m>-axis by multiplying the <m>x</m>-coordinates of the points on the graph of <m>f</m> by <m>-1</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <aside>
+      <p>
+        The expressions <m>-f(x)</m> and <m>f(-x)</m> should look familiar - they are the quantities we used in <xref ref="GraphsofFunctions">Section</xref>
+        to test if a function was even, odd or neither.
+        The interested reader is invited to explore the role of reflections and symmetry of functions.
+        What happens if you reflect an even function across the <m>y</m>-axis?
+        What happens if you reflect an odd function across the <m>y</m>-axis?
+        What about the <m>x</m>-axis?
+      </p>
+    </aside>
+    <p>
+      Applying <xref ref="reflections">Theorem</xref>
+      to the graph of <m>y=f(x)</m> given at the beginning of the section,
+      we can graph <m>y=-f(x)</m> by reflecting the graph of <m>f</m> about the <m>x</m>-axis:
+    </p>
+
+    <!--
+    <caption>Reflecting the graph of <m>f</m> across the <m>x</m>-axis</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-15.pdf"/></cell>
+          <cell></cell>
+          <cell><m>\stackrel{\stackrel{\mbox{\scriptsize reflect across <m>x</m>-axis} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize multiply each <m>y</m>-coordinate by <m>-1</m>} }</m></cell>
+          <cell></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-16.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=f(x)</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>y=-f(x)</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      By reflecting the graph of <m>f</m> across the <m>y</m>-axis,
+      we obtain the graph of <m>y=f(-x)</m>:
+    </p>
+
+    <!--
+    <caption>Reflecting the graph of <m>f</m> across the <m>y</m>-axis</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-17.pdf"/></cell>
+          <cell></cell>
+          <cell><m>\stackrel{\stackrel{\mbox{\scriptsize reflect across <m>y</m>-axis} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize multiply each <m>x</m>-coordinate by <m>-1</m>} }</m></cell>
+          <cell></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-18.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=f(x)</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell><m>y=f(-x)</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      With the addition of reflections,
+      it is now more important than ever to consider the order of transformations,
+      as the next example illustrates.
+    </p>
+
+    <example xml:id="ex_reflecteg">
+      <title>Graphing reflections</title>
+      <statement>
+        <p>
+          Let <m>f(x) = \sqrt{x}</m>.
+          Use the graph of <m>f</m> from <xref ref="transformationex1">Example</xref>
+          to graph the following functions.
+          Also, state their domains and ranges.
+        </p>
+
+        <figure xml:id="fig_sqrtagain">
+          <caption>The graph <m>y=f(x)</m> from <xref ref="transformationex1">Example</xref></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-19.pdf"/>
+        </figure>
+
+        <ol>
+          <li>
+            <p>
+              <m>g(x) = \sqrt{-x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>j(x) = \sqrt{3-x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>m(x) = 3 - \sqrt{x}</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The mere sight of <m>\sqrt{-x}</m> usually causes alarm,
+                if not panic.
+                When we discussed domains in <xref ref="FunctionNotation">Section</xref>,
+                we clearly banished negatives from the radicands of even roots.
+                However, we must remember that <m>x</m> is a variable,
+                and as such, the quantity <m>-x</m> isn't always negative.
+                For example, if <m>x=-4</m>, <m>-x = 4</m>,
+                thus <m>\sqrt{-x} = \sqrt{-(-4)} = 2</m> is perfectly well-defined.
+                To find the domain analytically,
+                we set <m>-x \geq 0</m> which gives <m>x \leq 0</m>,
+                so that the domain of <m>g</m> is <m>(-\infty, 0]</m>.
+                Since <m>g(x) = f(-x)</m>,
+                <xref ref="reflections">Theorem</xref>
+                tells us that the graph of <m>g</m> is the reflection of the graph of <m>f</m> across the <m>y</m>-axis.
+                We accomplish this by multiplying each <m>x</m>-coordinate on the graph of <m>f</m> by <m>-1</m>,
+                so that the points <m>(0,0)</m>, <m>(1,1)</m>,
+                and <m>(4,2)</m> move to <m>(0,0)</m>, <m>(-1,1)</m>,
+                and <m>(-4,2)</m>, respectively.
+                Graphically, we see that the domain of <m>g</m> is
+                <m>(-\infty, 0]</m> and the range of <m>g</m> is the same as the range of <m>f</m>,
+                namely <m>[0,\infty)</m>. <figure xml:id="fig_reflecteg1"> <caption>Reflecting <m>y=f(x)</m> across the <m>y</m>-axis to obtain the graph of <m>g(x)=\sqrt{-x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-20.pdf"/> </figure> <figure xml:id="fig_reflecteg2"> <caption>The intermediate function
+          <m>j_1(x)=f(x+3)</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-22.pdf"/> </figure> <figure xml:id="fig_reflecteg3"> <caption>Reflecting
+          <m>y=j_1(x)</m> across the <m>y</m>-axis to obtain the graph of
+                <m>j(x)=\sqrt{3-x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-24.pdf"/> </figure> If we had done the reflection first,
+                then <m>j_{1}(x) = f(-x)</m>.
+                Following this by a shift left would give us
+                <m>j(x) = j_{1}(x+3) = f(-(x+3)) = f(-x-3) = \sqrt{-x-3}</m> which isn't what we want.
+                However,
+          if we did the reflection first and followed it by a shift to the right <m>3</m> units,
+                we would have arrived at the function <m>j(x)</m>.
+                We leave it to the reader to verify the details.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the domain of <m>j(x) = \sqrt{3-x}</m>,
+                we solve <m>3-x \geq 0</m> and get
+                <m>x \leq 3</m>, or <m>(-\infty, 3]</m>.
+                To determine which transformations we need to apply to the graph of <m>f</m> to obtain the graph of <m>j</m>,
+                we rewrite <m>j(x) = \sqrt{-x+3} = f(-x+3)</m>.
+                Comparing this formula with <m>f(x) = \sqrt{x}</m>,
+                we see that not only are we multiplying the input <m>x</m> by <m>-1</m>,
+                which results in a reflection across the <m>y</m>-axis,
+                but also we are adding <m>3</m>,
+                which indicates a horizontal shift to the left.
+                Does it matter in which order we do the transformations?
+                If so, which order is the correct order?
+                Let's consider the point <m>(4,2)</m> on the graph of <m>f</m>.
+                We refer to the discussion leading up to <xref ref="hshifts">Theorem</xref>.
+                We know <m>f(4) = 2</m> and wish to find the point on
+                <m>y=j(x) = f(-x+3)</m> which corresponds to <m>(4,2)</m>.
+                We set <m>-x+3 = 4</m> and solve.
+                Our first step is to subtract <m>3</m> from both sides to get <m>-x=1</m>.
+                Subtracting <m>3</m> from the <m>x</m>-coordinate <m>4</m> is shifting the point <m>(4,2)</m> to the left.
+                From <m>-x=1</m>,
+                we then multiply both sides by <m>-1</m> to get <m>x=-1</m>.
+                Multiplying the <m>x</m>-coordinate by <m>-1</m> corresponds to reflecting the point about the <m>y</m>-axis.
+                Hence, we perform the horizontal shift first,
+                then follow it with the reflection about the <m>y</m>-axis.
+                Starting with <m>f(x) = \sqrt{x}</m>,
+                we let <m>j_{1}(x)</m> be the intermediate function which shifts the graph of <m>f</m> <m>3</m> units to the left,
+                <m>j_{1}(x) = f(x+3)</m>.
+                To obtain the function <m>j</m>,
+                we reflect the graph of <m>j_{1}</m> about <m>y</m>-axis.
+                <xref ref="reflections">Theorem</xref>
+                tells us we have <m>j(x) = j_{1}(-x)</m>.
+                Putting it all together,
+                we have <m>j(x) = j_{1}(-x) = f(-x+3) = \sqrt{-x+3}</m>,
+                which is what we want.
+                From the graph, we confirm the domain of <m>j</m> is
+                <m>(-\infty, 3]</m> and we get that the range is <m>[0, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The domain of <m>m</m> works out to be the domain of <m>f</m>,
+                <m>[0, \infty)</m>.
+                Rewriting <m>m(x) = -\sqrt{x} + 3</m>,
+                we see <m>m(x) = -f(x) + 3</m>.
+                Since we are multiplying the output of <m>f</m> by <m>-1</m> and then adding <m>3</m>,
+                we once again have two transformations to deal with:
+                a reflection across the <m>x</m>-axis and a vertical shift.
+                To determine the correct order in which to apply the transformations,
+                we imagine trying to determine the point on the graph of <m>m</m> which corresponds to <m>(4,2)</m> on the graph of <m>f</m>.
+                Since in the formula for <m>m(x)</m>,
+                the input to <m>f</m> is just <m>x</m>,
+                we substitute to find <m>m(4) = -f(4)+3 = -2+3=1</m>.
+                Hence,
+          <m>(4,1)</m> is the corresponding point on the graph of <m>m</m>.
+                If we closely examine the arithmetic,
+                we see that we first multiply <m>f(4)</m> by <m>-1</m>,
+                which corresponds to the reflection across the <m>x</m>-axis,
+                and then we add <m>3</m>,
+          which corresponds to the vertical shift.
+                If we define an intermediate function
+                <m>m_{1}(x) = -f(x)</m> to take care of the reflection,
+                we get the graph in <xref ref="fig_reflecteg4">Figure</xref>. <figure xml:id="fig_reflecteg4"> <caption>Reflecting <m>y=f(x)</m> across the <m>x</m>-axis to obtain the graph of
+                <m>m_1(x)=-\sqrt{x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-26.pdf"/> </figure> To shift the graph of <m>m_{1}</m> up <m>3</m> units,
+                we set <m>m(x) = m_{1}(x)+3</m>.
+                Since <m>m_{1}(x) = -f(x)</m>,
+                when we put it all together,
+                we get <m>m(x) = m_{1}(x)+3 = -f(x) + 3 = -\sqrt{x}+3</m>.
+                We see from the graph that the range of <m>m</m> is
+          <m>(-\infty, 3]</m>. <figure xml:id="fig_reflecteg5"> <caption>Shifting
+                <m>y=m_1(x)</m> up by three units to obtain the graph of
+                <m>m(x)=3-\sqrt{x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-28.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to our last class of transformations known as <em>scalings</em>.
+      A thorough discussion of scalings can get complicated because they are not as straight-forward as the previous transformations.
+      A quick review of what we've covered so far,
+      namely vertical shifts, horizontal shifts and reflections,
+      will show you why those transformations are known as
+          <idx><h>transformation </h><h> rigid</h></idx>
+      <em>rigid transformations</em>.
+      Simply put, they do not change the
+      <em>shape</em> of the graph,
+      only its position and orientation in the plane.
+      If, however,
+      we wanted to make a new graph twice as tall as a given graph,
+      or one-third as wide, we would be changing the shape of the graph.
+      This type of transformation is called <em>non-rigid</em>
+          <idx><h>transformation </h><h> non-rigid</h></idx>
+      for obvious reasons.
+      Not only will it be important for us to differentiate between modifying inputs versus outputs,
+      we must also pay close attention to the magnitude of the changes we make.
+      As you will see shortly,
+      the Mathematics turns out to be easier than the associated grammar.
+    </p>
+
+    <p>
+      Suppose we wish to graph the function
+      <m>g(x) =2 f(x)</m> where <m>f(x)</m> is the function whose graph is given in <xref ref="fig_tran1">Figure</xref> the beginning of the section.
+      From its graph,
+      we can build a table of values for <m>g</m> as before:
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>x</m></cell>
+        <cell><m>(x,f(x))</m></cell>
+        <cell><m>f(x)</m></cell>
+        <cell><m>g(x)=2f(x)</m></cell>
+        <cell><m>(x, g(x))</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>0</cell>
+        <cell><m>(0,1)</m></cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell><m>(0, 2)</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>2</cell>
+        <cell><m>(2,3)</m></cell>
+        <cell>3</cell>
+        <cell>6</cell>
+        <cell><m>(2,6)</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>4</cell>
+        <cell><m>(4,3)</m></cell>
+        <cell>3</cell>
+        <cell>6</cell>
+        <cell><m>(4, 6)</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>5</cell>
+        <cell><m>(5,5)</m></cell>
+        <cell>5</cell>
+        <cell>10</cell>
+        <cell><m>( 5 ,10)</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+
+    <table xml:id="fig_scalef">
+      <caption>Graphing <m>g(x) = 2f(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-29.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=f(x)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-31.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>y=2f(x)=g(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In general, if <m>(a,b)</m> is on the graph of <m>f</m>,
+      then <m>f(a) = b</m> so that
+      <m>g(a) = 2 f(a) = 2b</m> puts <m>(a,2b)</m> on the graph of <m>g</m>.
+      In other words, to obtain the graph of <m>g</m>,
+      we multiply all of the <m>y</m>-coordinates of the points on the graph of <m>f</m> by <m>2</m>.
+      Multiplying all of the <m>y</m>-coordinates of all of the points on the graph of <m>f</m> by <m>2</m> causes what is known as a `vertical scaling
+      (or <q>vertical stretching</q>,
+      or <q>vertical expansion</q> or
+      <q>vertical dilation</q>)
+      by a factor of <m>2</m>', and the results are given in <xref ref="fig_scalef">Figure</xref>
+    </p>
+
+    <p>
+      If we wish to graph <m>y = \frac{1}{2} f(x)</m>,
+      we multiply the all of the <m>y</m>-coordinates of the points on the graph of <m>f</m> by <m>\frac{1}{2}</m>.
+      This creates a <q>vertical scaling by a factor of <m>\frac{1}{2}</m></q>
+      (also called <q>vertical shrinking</q>,
+      <q>vertical compression</q>
+      or <q>vertical contraction</q> by a factor of <m>2</m>)
+      as seen in <xref ref="fig_scalefhalf">Figure</xref>
+    </p>
+
+    <p>
+      These results are generalized in the following theorem.
+    </p>
+
+    <theorem xml:id="vscalings">
+      <title>Vertical Scalings</title>
+      <statement>
+        <p>
+              <idx><h>graph </h><h> vertical scaling</h></idx>
+          Suppose <m>f</m> is a function and <m>a>0</m>.
+          To graph <m>y=a f(x)</m>,
+          multiply all of the <m>y</m>-coordinates of the points on the graph of <m>f</m> by <m>a</m>.
+          We say the graph of <m>f</m> has been vertically scaled by a factor of <m>a</m>.
+
+          <ul>
+            <li>
+              <p>
+                If <m>a > 1</m>,
+                we say the graph of <m>f</m> has undergone a vertical stretching (expansion,
+                dilation) by a factor of <m>a</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>0 \lt a \lt 1</m>,
+                we say the graph of <m>f</m> has undergone a vertical shrinking (compression,
+                contraction) by a factor of <m>\frac{1}{a}</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig_scalefhalf">
+      <caption>Vertical scaling by  <m>\frac{1}{2}</m></caption>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-33.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_graphscale">
+    <caption>The effect of horizontal scaling on a graph</caption>
+    <sidebyside>
+      <figure>
+        <caption>The graph <m>y=f(x)</m> from <xref ref="fig_tran1">Figure</xref></caption>
+        <img src="figures/RelationsandFunctionsGraphics/Transformations-34.pdf"/>
+      </figure>
+
+      <figure>
+        The graph <m>y=g(x)=f(2x)</m>
+      </figure>
+
+      <figure>
+        <caption>The graph <m>y=h(x)=f(\frac{1}{2}x)</m></caption>
+        <img src="figures/RelationsandFunctionsGraphics/Transformations-37.pdf"/>
+      </figure>
+    </sidebyside>
+    </figure>
+
+    <p>
+      A few remarks about <xref ref="vscalings">Theorem</xref> are in order.
+      First, a note about the verbiage.
+      To the authors, the words <q>stretching</q>, <q>expansion</q>,
+      and <q>dilation</q> all indicate something getting bigger.
+      Hence, <q>stretched by a factor of <m>2</m></q>
+      makes sense if we are scaling something by multiplying it by <m>2</m>.
+      Similarly, we believe words like <q>shrinking</q>,
+      <q>compression</q> and <q>contraction</q>
+      all indicate something getting smaller,
+      so if we scale something by a factor of <m>\frac{1}{2}</m>,
+      we would say it <q>shrinks by a factor of <m>2</m></q>
+      - not <q>shrinks by a factor of <m>\frac{1}{2}</m></q>.
+      This is why we have written the descriptions
+      <q>stretching by a factor of <m>a</m></q>
+      and <q>shrinking by a factor of <m>\frac{1}{a}</m></q>
+      in the statement of the theorem.
+      Second, in terms of inputs and outputs,
+      <xref ref="vscalings">Theorem</xref>
+      says multiplying the <em>outputs</em>
+      from a function by positive number <m>a</m> causes the graph to be vertically scaled by a factor of <m>a</m>.
+      It is natural to ask what would happen if we multiply the <em>inputs</em>
+      of a function by a positive number.
+      This leads us to our last transformation of the section.
+    </p>
+
+    <p>
+      Referring to the graph of <m>f</m> given at the beginning of this section,
+      suppose we want to graph <m>g(x) = f(2x)</m>.
+      In other words,
+      we are looking to see what effect multiplying the inputs to <m>f</m> by <m>2</m> has on its graph.
+      If we attempt to build a table directly,
+      we quickly run into the same problem we had in our discussion leading up to <xref ref="hshifts">Theorem</xref>,
+      as seen in the table below.
+      <me>
+        \begin{array}{|c||c|c|c|c|}  
+
+        \hline
+
+        x \amp  (x,f(x)) \amp  f(x)\amp  g(x)=f(2x) \amp  (x, g(x)) \\ \hline
+        0  \amp  (0,1)\amp  1 \amp  f(2 \cdot 0) = f(0) = 1   \amp (0, 1) \\  \hline
+        2 \amp  (2,3) \amp  3 \amp  f(2\cdot2) = f(4) = 3  \amp (2,3) \\  \hline
+        4 \amp  (4,3) \amp  3 \amp   f(2 \cdot 4) = f(8) = ? \amp   \\  \hline
+        5 \amp  (5,5) \amp  5 \amp  f(2 \cdot 5) = f(10) = ?  \amp   \\  \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      We solve this problem in the same way we solved this problem before.
+      For example,
+      if we want to determine the point on <m>g</m> which corresponds to the point <m>(2,3)</m> on the graph of <m>f</m>,
+      we set <m>2x =2</m> so that <m>x=1</m>.
+      Substituting <m>x=1</m> into <m>g(x)</m>,
+      we obtain <m>g(1) = f(2 \cdot 1) = f(2) = 3</m>,
+      so that <m>(1,3)</m> is on the graph of <m>g</m>.
+      Continuing in this fashion, we can complete our table as follows:
+      <me>
+        \begin{array}{|r||c|c|c|}  
+
+        \hline
+
+        x \amp  2x \amp  g(x)=f(2x) \amp  (x, g(x)) \\ \hline
+        0 \amp  0 \amp  g(0)=f(0) = 1   \amp (0, 0) \\  \hline
+        1 \amp   2 \amp   g(1)=f(2) = 3  \amp (1,3) \\  \hline
+        2 \amp  4  \amp  g(2)=f(4) = 3 \amp   (2,3)\\  \hline
+        \frac{5}{2}  \amp  5 \amp  g\left(\frac{5}{2}\right)=f(5) = 5  \amp  \left(\frac{5}{2},5\right) \\ \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      In general,
+      if <m>(a,b)</m> is on the graph of <m>f</m>, then <m>f(a) = b</m>.
+      Hence <m>g\left(\frac{a}{2}\right) = f\left(2 \cdot \frac{a}{2}\right) = f(a) = b</m> so that
+      <m>\left(\frac{a}{2}, b\right)</m> is on the graph of <m>g</m>.
+      In other words,
+      to graph <m>g</m> we divide the <m>x</m>-coordinates of the points on the graph of <m>f</m> by <m>2</m>.
+      This results in a horizontal scaling by a factor of <m>\frac{1}{2}</m> (also called
+      <q>horizontal shrinking</q>,
+      <q>horizontal compression</q>
+      or <q>horizontal contraction</q> by a factor of <m>2</m>).
+    </p>
+
+    <p>
+      If, on the other hand,
+      we wish to graph <m>y = f\left( \frac{1}{2} x\right)</m>,
+      we end up multiplying the <m>x</m>-coordinates of the points on the graph of <m>f</m> by <m>2</m> which results in a horizontal scaling by a factor of <m>2</m>. (Also called
+      <q>horizontal stretching</q>,
+      <q>horizontal expansion</q> or <q>horizontal dilation</q>
+      by a factor of <m>2</m>.) The effect of both horizontal scalings is shown in <xref ref="fig_graphscale">Figure</xref>.
+    </p>
+
+    <p>
+      We have the following theorem.
+    </p>
+
+    <theorem xml:id="hscalings">
+      <title>Horizontal Scalings.</title>
+      <statement>
+        <p>
+              <idx><h>graph </h><h> horizontal scaling</h></idx>
+          Suppose <m>f</m> is a function and <m>b>0</m>.
+          To graph <m>y= f(bx)</m>,
+          divide all of the <m>x</m>-coordinates of the points on the graph of <m>f</m> by <m>b</m>.
+          We say the graph of <m>f</m> has been horizontally scaled by a factor of <m>\frac{1}{b}</m>.
+
+          <ul>
+            <li>
+              <p>
+                If <m>0 \lt b \lt 1</m>,
+                we say the graph of <m>f</m> has undergone a horizontal stretching (expansion,
+                dilation) by a factor of <m>\frac{1}{b}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>b>1</m>,
+                we say the graph of <m>f</m> has undergone a horizontal shrinking (compression,
+                contraction) by a factor of <m>b</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      <xref ref="hscalings">Theorem</xref>
+      tells us that if we multiply the input to a function by <m>b</m>,
+      the resulting graph is scaled horizontally by a factor of
+      <m>\frac{1}{b}</m> since the <m>x</m>-values are divided by <m>b</m> to produce corresponding points on the graph of <m>y = f(bx)</m>.
+      The next example explores how vertical and horizontal scalings sometimes interact with each other and with the other transformations introduced in this section.
+    </p>
+
+    <example xml:id="transformationex3">
+      <title>Applying vertical and horizontal scalings</title>
+      <statement>
+        <p>
+          Let <m>f(x)= \sqrt{x}</m>.
+          Use the graph of <m>f</m> from <xref ref="transformationex1">Example</xref>
+          (see <xref ref="fig_sqrtoncemore">Figure</xref>)
+          to graph the following functions.
+          Also, state their domains and ranges.
+        </p>
+
+        <figure xml:id="fig_sqrtoncemore">
+          <caption>The graph <m>y=\sqrt{x}</m></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-40.pdf"/>
+        </figure>
+
+        <figure xml:id="fig_scaleeg1">
+          <caption>The graph <m>y=g(x) = 3\sqrt{x}</m></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-39.pdf"/>
+        </figure>
+
+        <figure xml:id="fig_scaleeg2">
+          <caption>The graph <m>y=j(x) = \sqrt{9x}</m></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-41.pdf"/>
+        </figure>
+
+        <ol>
+          <li>
+            <p>
+              <m>g(x) = 3 \sqrt{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>j(x) = \sqrt{9x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>m(x) =1 - \sqrt{\dfrac{x+3}{2}}</m>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                First we note that the domain of <m>g</m> is
+                <m>[0, \infty)</m> for the usual reason.
+                Next,
+          we have <m>g(x) = 3 f(x)</m> so by <xref ref="vscalings">Theorem</xref>,
+                we obtain the graph of <m>g</m> by multiplying all of the <m>y</m>-coordinates of the points on the graph of <m>f</m> by <m>3</m>.
+                The result is a vertical scaling of the graph of <m>f</m> by a factor of <m>3</m>.
+                We find the range of <m>g</m> is also <m>[0, \infty)</m>.
+                The graph of <m>g</m> is given in <xref ref="fig_scaleeg1">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the domain of <m>j</m>,
+                we solve <m>9x \geq 0</m> to find <m>x \geq 0</m>.
+                Our domain is once again <m>[0,\infty)</m>.
+                We recognize <m>j(x) = f(9x)</m> and by <xref ref="hscalings">Theorem</xref>,
+                we obtain the graph of <m>j</m> by dividing the <m>x</m>-coordinates of the points on the graph of <m>f</m> by <m>9</m>.
+                From the graph in <xref ref="fig_scaleeg2">Figure</xref>,
+                we see the range of <m>j</m> is also <m>[0,\infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solving <m>\frac{x+3}{2} \geq 0</m> gives <m>x \geq -3</m>,
+                so the domain of <m>m</m> is <m>[-3, \infty)</m>.
+                To take advantage of what we know of transformations,
+                we rewrite <m>m(x) = - \sqrt{\frac{1}{2} x + \frac{3}{2}} + 1</m>,
+                or <m>m(x) =- f\left(\frac{1}{2} x + \frac{3}{2}\right) + 1</m>.
+                Focusing on the inputs first,
+                we note that the input to <m>f</m> in the formula for <m>m(x)</m> is <m>\frac{1}{2} x + \frac{3}{2}</m>.
+                Multiplying the <m>x</m> by
+                <m>\frac{1}{2}</m> corresponds to a horizontal stretching by a factor of <m>2</m>,
+                and adding the <m>\frac{3}{2}</m> corresponds to a shift to the left by <m>\frac{3}{2}</m>.
+                As before,
+          we resolve which to perform first by thinking about how we would find the point on <m>m</m> corresponding to a point on <m>f</m>,
+                in this case, <m>(4,2)</m>.
+                To use <m>f(4) = 2</m>,
+          we solve <m>\frac{1}{2} x + \frac{3}{2} = 4</m>.
+                Our first step is to subtract the <m>\frac{3}{2}</m>
+                (the horizontal shift)
+                to obtain <m>\frac{1}{2} x = \frac{5}{2}</m>.
+                Next, we multiply by <m>2</m>
+                (the horizontal stretching)
+                and obtain <m>x = 5</m>.
+                We define two intermediate functions to handle first the shift,
+                then the stretching.
+                In accordance with <xref ref="hshifts">Theorem</xref>,
+                <m>m_{1}(x) = f\left(x+ \frac{3}{2}\right) = \sqrt{x+\frac{3}{2}}</m> will shift the graph of <m>f</m> to the left <m>\frac{3}{2}</m> units:
+                see <xref ref="fig_scaleeg3">Figure</xref>
+                <figure xml:id="fig_scaleeg3"> <caption>The graph
+                <m>y=m_1(x) = f(x+\frac{3}{2})=\sqrt{x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-43.pdf"/> </figure> Next,
+                <m>m_{2}(x) = m_{1}\left(\frac{1}{2} x\right) = \sqrt{\frac{1}{2} x + \frac{3}{2}}</m> will,
+                according to <xref ref="hscalings">Theorem</xref>,
+                horizontally stretch the graph of <m>m_{1}</m> by a factor of <m>2</m>:
+                see <xref ref="fig_scaleeg4">Figure</xref>
+                <figure xml:id="fig_scaleeg4"> <caption>The graph
+                <m>y=m_2(x) = m_1(\frac{1}{2}x) = \sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-45.pdf"/> </figure> We now examine what's happening to the outputs.
+                From <m>m(x) = - f\left(\frac{1}{2} x + \frac{3}{2}\right) + 1</m>,
+                we see that the output from <m>f</m> is being multiplied by <m>-1</m> (a reflection about the <m>x</m>-axis) and then a <m>1</m> is added (a vertical shift up <m>1</m>).
+                As before,
+          we can determine the correct order by looking at how the point <m>(4,2)</m> is moved.
+                We already know that to make use of the equation <m>f(4)=2</m>,
+                we need to substitute <m>x=5</m>.
+                We get <m>m(5) = - f\left(\frac{1}{2} (5) + \frac{3}{2}\right) + 1= - f(4)+1 = -2+1 = -1</m>.
+                We see that <m>f(4)</m>
+                (the output from <m>f</m>)
+                is first multiplied by <m>-1</m> then the <m>1</m> is added meaning we first reflect the graph about the <m>x</m>-axis then shift up <m>1</m>.
+                <xref ref="reflections">Theorem</xref>
+                tells us <m>m_{3}(x) = - m_{2}(x)</m> will handle the reflection. <figure xml:id="fig_scaleeg5"> <caption>The graph
+                <m>y=m_3(x) = -m_2(x)=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-47.pdf"/> </figure> Finally,
+                to handle the vertical shift,
+                <xref ref="vshifts">Theorem</xref>
+                gives <m>m(x) = m_{3}(x) +1</m>,
+                and we see that the range of <m>m</m> is <m>(-\infty,1]</m>.
+                The graph of <m>m</m> is given in <xref ref="fig_scaleeg6">Figure</xref>. <figure xml:id="fig_scaleeg6"> <caption>The graph
+                <m>y=m(x) = m_3(x)+1=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-49.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Some comments about <xref ref="transformationex3">Example</xref> are in order.
+      First, recalling the properties of radicals from Intermediate Algebra,
+      we know that the functions <m>g</m> and <m>j</m> are the same,
+      since <m>j</m> and <m>g</m> have the same domains and
+      <m>j(x) = \sqrt{9x} = \sqrt{9} \sqrt{x} = 3 \sqrt{x} = g(x)</m>. (We invite the reader to verify that all of the points we plotted on the graph of <m>g</m> lie on the graph of <m>j</m> and vice-versa.) Hence,
+      for <m>f(x) = \sqrt{x}</m>,
+      a vertical stretch by a factor of <m>3</m> and a horizontal shrinking by a factor of <m>9</m> result in the same transformation.
+      While this kind of phenomenon is not universal,
+      it happens commonly enough with some of the families of functions studied in College Algebra that it is worthy of note.
+      Secondly, to graph the function <m>m</m>,
+      we applied a series of four transformations.
+      While it would have been easier on the authors to simply inform the reader of which steps to take,
+      we have strived to explain why the order in which the transformations were applied made sense.
+      We generalize the procedure in the theorem below.
+    </p>
+
+    <theorem xml:id="transformationsthm">
+      <title>Transformations</title>
+      <statement>
+        <p>
+              <idx><h>transformations of function graphs</h></idx><idx><h>function </h><h> transformation of graphs</h></idx><idx><h>graph </h><h> transformations</h></idx>
+          Suppose <m>f</m> is a function.
+          If <m>A \neq 0</m> and <m>B \neq 0</m>, then to graph
+          <me>
+            g(x) = A f(Bx+H)+K
+          </me>
+          <ol>
+            <li>
+              <p>
+                Subtract <m>H</m> from each of the <m>x</m>-coordinates of the points on the graph of <m>f</m>.
+                This results in a horizontal shift to the left if <m>H > 0</m> or right if <m>H\lt 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Divide the <m>x</m>-coordinates of the points on the graph obtained in Step 1 by <m>B</m>.
+                This results in a horizontal scaling,
+                but may also include a reflection about the <m>y</m>-axis if <m>B \lt 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Multiply the <m>y</m>-coordinates of the points on the graph obtained in Step 2 by <m>A</m>.
+                This results in a vertical scaling,
+                but may also include a reflection about the <m>x</m>-axis if <m>A \lt 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Add <m>K</m> to each of the <m>y</m>-coordinates of the points on the graph obtained in Step 3.
+                This results in a vertical shift up if <m>K > 0</m> or down if <m>K\lt 0</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      <xref ref="transformationsthm">Theorem</xref>
+      can be established by generalizing the techniques developed in this section.
+      Suppose <m>(a,b)</m> is on the graph of <m>f</m>.
+      Then <m>f(a) = b</m>, and to make good use of this fact,
+      we set <m>Bx+H = a</m> and solve.
+      We first subtract the <m>H</m>
+      (causing the horizontal shift)
+      and then divide by <m>B</m>.
+      If <m>B</m> is a positive number,
+      this induces only a horizontal scaling by a factor of <m>\frac{1}{B}</m>.
+      If <m>B\lt 0</m>, then we have a factor of <m>-1</m> in play,
+      and dividing by it induces a reflection about the <m>y</m>-axis.
+      So we have <m>x = \frac{a-H}{B}</m> as the input to <m>g</m> which corresponds to the input <m>x=a</m> to <m>f</m>.
+      We now evaluate <m>g\left( \frac{a-H}{B}\right) = A f\left(B \cdot \frac{a-H}{B} + H\right) + K = A f(a)+K = A b + K</m>.
+      We notice that the output from <m>f</m> is first multiplied by <m>A</m>.
+      As with the constant <m>B</m>,
+      if <m>A > 0</m>, this induces only a vertical scaling.
+      If <m>A \lt 0</m>,
+      then the <m>-1</m> induces a reflection across the <m>x</m>-axis.
+      Finally, we add <m>K</m> to the result,
+      which is our vertical shift.
+      A less precise,
+      but more intuitive way to paraphrase <xref ref="transformationsthm">Theorem</xref>
+      is to think of the quantity <m>Bx+H</m> is the
+      <q>inside</q> of the function <m>f</m>.
+      What's happening inside <m>f</m> affects the inputs or <m>x</m>-coordinates of the points on the graph of <m>f</m>.
+      To find the <m>x</m>-coordinates of the corresponding points on <m>g</m>,
+      we undo what has been done to <m>x</m> in the same way we would solve an equation.
+      What's happening to the output can be thought of as things happening
+      <q>outside</q> the function, <m>f</m>.
+      Things happening outside affect the outputs or <m>y</m>-coordinates of the points on the graph of <m>f</m>.
+      Here, we follow the usual order of operations agreement:
+      we first multiply by <m>A</m> then add <m>K</m> to find the corresponding <m>y</m>-coordinates on the graph of <m>g</m>.
+    </p>
+
+    <example xml:id="transformationeg4">
+      <title>Graphing a general transformation</title>
+      <statement>
+        <p>
+          The complete graph of <m>y = f(x)</m> is shown in <xref ref="fig_gentransorig">Figure</xref>.
+          Use it to graph
+        </p>
+
+        <p>
+          <m>g(x) = \dfrac{4-3 f(1-2x)}{2}</m>.
+        </p>
+
+        <figure xml:id="fig_gentransorig">
+          <caption>The graph <m>y=f(x)</m> for <xref ref="transformationeg4">Example</xref></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-50.pdf"/>
+        </figure>
+      </statement>
+      <solution xml:id="fig_gentransresult">
+        <p>
+          We use <xref ref="transformationsthm">Theorem</xref>
+          to track the five <q>key points</q> <m>(-4,-3)</m>,
+          <m>(-2,0)</m>, <m>(0,3)</m>,
+          <m>(2,0)</m> and <m>(4,-3)</m> indicated on the graph of <m>f</m> to their new locations.
+          We first rewrite <m>g(x)</m> in the form presented in <xref ref="transformationsthm">Theorem</xref>,
+          <m>g(x) = -\frac{3}{2}f(-2x+1) +2</m>.
+          We set <m>-2x+1</m> equal to the <m>x</m>-coordinates of the key points and solve.
+          For example, solving <m>-2x+1 = -4</m>,
+          we first subtract <m>1</m> to get
+          <m>-2x = -5</m> then divide by <m>-2</m> to get <m>x = \frac{5}{2}</m>.
+          Subtracting the <m>1</m> is a horizontal shift to the left <m>1</m> unit.
+          Dividing by <m>-2</m> can be thought of as a two step process:
+          dividing by <m>2</m> which compresses the graph horizontally by a factor of <m>2</m> followed by dividing (multiplying) by <m>-1</m> which causes a reflection across the <m>y</m>-axis.
+          We summarize the results in the table in <xref ref="fig_transplotx">Figure</xref>
+        </p>
+
+        <table xml:id="fig_transplotx">
+          <caption>Tracking the <m>x</m> coordinates of transformed points</caption>
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(a,f(a))</m></cell>
+              <cell><m>-2x+1=a</m></cell>
+              <cell><m>x</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(-4,-3)</m></cell>
+              <cell><m>-2x+1 = -4</m></cell>
+              <cell><m>x = \frac{5}{2}</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(-2,0)</m></cell>
+              <cell><m>-2x+1 = -2</m></cell>
+              <cell><m>x = \frac{3}{2}</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(0,3)</m></cell>
+              <cell><m>-2x+1 = 0</m></cell>
+              <cell><m>x = \frac{1}{2}</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(2,0)</m></cell>
+              <cell><m>-2x+1 = 2</m></cell>
+              <cell><m>x = -\frac{1}{2}</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>(4,-3)</m></cell>
+              <cell><m>-2x+1 = 4</m></cell>
+              <cell><m>x = -\frac{3}{2}</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          Next, we take each of the <m>x</m> values and substitute them into
+          <m>g(x) = -\frac{3}{2}f(-2x+1) +2</m> to get the corresponding <m>y</m>-values.
+          Substituting <m>x=\frac{5}{2}</m>,
+          and using the fact that <m>f(-4)=-3</m>, we get
+          <me>
+            g\left(\frac{5}{2}\right) = -\frac{3}{2}f\left(-2\left(\frac{5}{2}\right) +1\right) +2 = -\frac{3}{2} f(-4) + 2 = -\frac{3}{2}(-3) + 2 = \frac{9}{2} + 2 = \frac{13}{2}
+          </me>
+        </p>
+
+        <p>
+          We see that the output from <m>f</m> is first multiplied by <m>-\frac{3}{2}</m>.
+          Thinking of this as a two step process,
+          multiplying by <m>\frac{3}{2}</m> then by <m>-1</m>,
+          we have a vertical stretching by a factor of
+          <m>\frac{3}{2}</m> followed by a reflection across the <m>x</m>-axis.
+          Adding <m>2</m> results in a vertical shift up <m>2</m> units.
+          Continuing in this manner,
+          we get the table in <xref ref="fig_transploty">Figure</xref>.
+        </p>
+
+        <table xml:id="fig_transploty">
+          <caption>Getting the corresponding <m>y</m> coordinates</caption>
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>x</m></cell>
+              <cell><m>g(x)</m></cell>
+              <cell><m>(x, g(x))</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>\frac{5}{2}</m></cell>
+              <cell><m>\frac{13}{2}</m></cell>
+              <cell><m>\left(\frac{5}{2}, \frac{13}{2} \right)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>\frac{3}{2}</m></cell>
+              <cell><m>2</m></cell>
+              <cell><m>\left(\frac{3}{2}, 2 \right)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>\frac{1}{2}</m></cell>
+              <cell><m>- \frac{5}{2}</m></cell>
+              <cell><m>\left(\frac{1}{2}, -\frac{5}{2} \right)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{1}{2}</m></cell>
+              <cell><m>2</m></cell>
+              <cell><m>\left(-\frac{1}{2}, 2 \right)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>-\frac{3}{2}</m></cell>
+              <cell><m>\frac{13}{2}</m></cell>
+              <cell><m>\left(-\frac{3}{2}, \frac{13}{2} \right)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          To graph <m>g</m>,
+          we plot each of the points in the table above and connect them in the same order and fashion as the points to which they correspond.
+          Plotting <m>f</m> and <m>g</m> side-by-side gives
+        </p>
+
+        <!--
+        <caption>Determining the graph of <m>g(x) = -\frac{3}{2}f(-2x+1) +2</m></caption>
+        -->
+
+        <sidebyside>
+          <tabular>
+            <row>
+              <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-51.pdf"/></cell>
+              <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-52.pdf"/></cell>
+            </row>
+            <row>
+              <cell><m>y=f(x)</m></cell>
+              <cell><m>y=g(x) = -\frac{3}{2}f(-2x+1) +2</m></cell>
+            </row>
+          </tabular>
+        </sidebyside>
+        <p>
+          The reader is strongly encouraged to graph the series of functions which shows the gradual transformation of the graph of <m>f</m> into the graph of <m>g</m>. (You really should do this once in your life.) We have outlined the sequence of transformations in the above exposition;
+          all that remains is to plot the five intermediate stages.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our last example turns the tables and asks for the formula of a function given a desired sequence of transformations.
+      If nothing else, it is a good review of function notation.
+    </p>
+
+    <example xml:id="graphingcalctrans">
+      <title>Determining the formula for a transformed function</title>
+      <statement>
+        <p>
+          Let <m>f(x) = x^2</m>.
+          Find and simplify the formula of the function <m>g(x)</m> whose graph is the result of <m>f</m> undergoing the following sequence of transformations.
+          Check your answer using a graphing utility.
+
+          <ol>
+            <li>
+              <p>
+                Vertical shift up <m>2</m> units
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Reflection across the <m>x</m>-axis
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Horizontal shift right <m>1</m> unit
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Horizontal stretching by a factor of <m>2</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We build up to a formula for <m>g(x)</m> using intermediate functions as we've seen in previous examples.
+          We let <m>g_{1}</m> take care of our first step.
+          <xref ref="vshifts">Theorem</xref>
+          tells us <m>g_{1}(x) = f(x) + 2 = x^2+2</m>.
+          Next, we reflect the graph of <m>g_{1}</m> about the <m>x</m>-axis using <xref ref="reflections">Theorem</xref>:
+          <m>g_{2}(x) = -g_{1}(x) = -\left(x^2+2\right) = -x^2-2</m>.
+          We shift the graph to the right <m>1</m> unit,
+          according to <xref ref="hshifts">Theorem</xref>,
+          by setting <m>g_{3}(x) = g_{2}(x-1) = -(x-1)^2-2 = -x^2+2x-3</m>.
+          Finally, we induce a horizontal stretch by a factor of <m>2</m> using <xref ref="hscalings">Theorem</xref>
+          to get <m>g(x) = g_{3}\left(\frac{1}{2} x\right) = -\left(\frac{1}{2} x\right)^2+2\left(\frac{1}{2} x\right)-3</m> which yields <m>g(x) = -\frac{1}{4} x^2 + x -3</m>.
+          We use GeoGebra to graph the stages in <xref ref="fig_gcalctr">Figure</xref> to confirm our result.
+        </p>
+
+        <figure xml:id="fig_gcalctr">
+        <caption>The sequence of transformations in <xref ref="graphingcalctrans">Example</xref></caption>
+        <sidebyside>
+          <figure>
+            <caption><m>y=f(x)=x^2</m></caption>
+            <img src="figures/RelationsandFunctionsGraphics/Transformations01.pdf"/>
+          </figure>
+
+          <figure>
+            <caption>(Shift up by 2)</caption>
+            <m>y = g_1(x)=f(x)+2 = x^2+2</m>
+          </figure>
+
+          <figure>
+            <caption>(Reflect across <m>x</m>-axis)</caption>
+            <m>y=g_2(x)=-g_1(x) = -x^2-2</m>
+          </figure>
+
+          <figure>
+            <caption>(Shift right one unit)</caption>
+            <m>y=g_3(x) = g_2(x-1) = -x^2+2x-3</m>
+          </figure>
+
+          <figure>
+            <caption>(Horizontal stretch by a factor of 2)</caption>
+            <m>y=g(x) = g_3(\left(\frac{1}{2}x\right) = -\frac{1}{4}x^2+x-3</m>
+          </figure>
+        </sidebyside>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      This example brings our first chapter to a close.
+      In the chapters which lie ahead,
+      be on the lookout for the concepts developed here to resurface as we study different families of functions.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      Suppose <m>(2,-3)</m> is on the graph of <m>y = f(x)</m>.
+      In the following exercises,
+      use <xref ref="transformationsthm">Theorem</xref>
+      to find a point on the graph of the given transformed function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x)+3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(2,0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x+3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,-3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x)-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(2,-4)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x-1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(3,-3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 3f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(2,-9)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(3x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{2}{3}, -3\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(2,3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-2,-3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x-3)+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(5,-2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2f(x+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(1,-6)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 10 - f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(2,13)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 3f(2x) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = (1,-10)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{1}{2} f(4-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(2, -\frac{3}{2}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 5f(2x+1) + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{1}{2}, -12 \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2f(1-x) -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,-7)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y =f\left(\dfrac{7-2x}{4}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\frac{1}{2}, -3\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \dfrac{f(3x) - 1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{2}{3}, -2 \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \dfrac{4-f(3x-1)}{7}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(1,1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      The complete graph of <m>y = f(x)</m> is given below.
+      In the following exercises,
+      use it and <xref ref="transformationsthm">Theorem</xref>
+      to graph the given transformed function.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-53.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x) + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x) + 1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-59.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x) - 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x) - 2</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-60.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x+1)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-61.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x - 2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x - 2)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-62.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 2f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-63.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(2x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-64.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2 - f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 2 - f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-65.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(2-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(2-x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-66.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2-f(2-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 2-f(2-x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-67.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      The complete graph of <m>y = f(x)</m> is given below.
+      In the following exercises,
+      use it and <xref ref="transformationsthm">Theorem</xref>
+      to graph the given transformed function.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-54.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x) - 1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-68.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x + 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x + 1)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-69.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{1}{2} f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{1}{2} f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-70.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(2x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-71.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = - f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = - f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-72.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(-x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-73.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = f(x+1) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = f(x+1) - 1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-74.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 1 - f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 1 - f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-75.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{1}{2}f(x+1)-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{1}{2}f(x+1)-1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-76.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      The complete graph of <m>y = f(x)</m> is given below.
+      In the following exercises,
+      use it and <xref ref="transformationsthm">Theorem</xref>
+      to graph the given transformed function.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-55.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x) = f(x) + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = f(x) + 3</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-77.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>h(x) = f(x) - \frac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(x) = f(x) - \frac{1}{2}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-78.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>j(x) = f\left(x - \frac{2}{3}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>j(x) = f\left(x - \frac{2}{3}\right)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-79.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a(x) = f(x + 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>a(x) = f(x + 4)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-80.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>b(x) = f(x + 1) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>b(x) = f(x + 1) - 1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-81.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>c(x) = \frac{3}{5}f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>c(x) = \frac{3}{5}f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-82.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>d(x) = -2f(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d(x) = -2f(x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-83.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>k(x) = f\left(\frac{2}{3}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>k(x) = f\left(\frac{2}{3}x\right)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-84.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m(x) = -\frac{1}{4}f(3x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>m(x) = -\frac{1}{4}f(3x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-85.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>n(x) = 4f(x - 3) - 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>n(x) = 4f(x - 3) - 6</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-86.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>p(x) = 4 + f(1 - 2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>p(x) = 4 + f(1 - 2x)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-87.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>q(x) = -\frac{1}{2}f\left(\frac{x + 4}{2}\right) - 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>q(x) = -\frac{1}{2}f\left(\frac{x + 4}{2}\right) - 3</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-88.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      The complete graph of <m>y = S(x)</m> is given below.
+      The purpose of the following exercises is to graph
+      <m>y = \frac{1}{2}S(-x+1) + 1</m> by graphing each transformation,
+      one step at a time.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/Transformations-56.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = S_{\text{ \tiny \(1\) } }(x) = S(x + 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = S_{\text{ \tiny \(1\) } }(x) = S(x + 1)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-89.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = S_{\text{ \tiny \(2\) } }(x) = S_{\text{ \tiny \(1\) } }(-x) = S(-x + 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = S_{\text{ \tiny \(2\) } }(x) = S_{\text{ \tiny \(1\) } }(-x) = S(-x + 1)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-90.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = S_{\text{ \tiny \(3\) } }(x) = \frac{1}{2} S_{\text{ \tiny \(2\) } }(x) = \frac{1}{2}S(-x+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = S_{\text{ \tiny \(3\) } }(x) = \frac{1}{2} S_{\text{ \tiny \(2\) } }(x) = \frac{1}{2}S(-x+1)</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-91.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = S_{\text{ \tiny \(4\) } }(x) = S_{\text{ \tiny \(3\) } }(x) + 1 = \frac{1}{2}S(-x+1) + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = S_{\text{ \tiny \(4\) } }(x) = S_{\text{ \tiny \(3\) } }(x) + 1 = \frac{1}{2}S(-x+1) + 1</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-92.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      { Let <m>f(x) = \sqrt{x}</m>.
+      In Exercises} {, find a formula for a function <m>g</m> whose graph is obtained from <m>f</m> from the given sequence of transformations. }
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift right 2 units; (2) shift down 3 units
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{x-2} - 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift down 3 units; (2) shift right 2 units
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{x-2} - 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) reflect across the <m>x</m>-axis; (2) shift up 1 unit
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = -\sqrt{x} + 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift up 1 unit; (2) reflect across the <m>x</m>-axis
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{-x+1} + 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift left 1 unit; (2) reflect across the <m>y</m>-axis; (3) shift up 2 units
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{-(x+1)} + 2 = \sqrt{-x-1} + 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) reflect across the <m>y</m>-axis; (2) shift left 1 unit; (3) shift up 2 units
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 2\sqrt{x+3} - 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift left 3 units; (2) vertical stretch by a factor of 2; (3) shift down 4 units
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 2\left(\sqrt{x+3} - 4\right) = 2\sqrt{x+3} - 8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift left 3 units; (2) shift down 4 units; (3) vertical stretch by a factor of 2
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{2x-3} + 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) shift right 3 units; (2) horizontal shrink by a factor of 2; (3) shift up 1 unit
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = \sqrt{2(x-3)} + 1 = \sqrt{2x-6}+1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (1) horizontal shrink by a factor of 2; (2) shift right 3 units; (3) shift up 1 unit
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = -2\sqrt[3]{x + 3} - 1</m> or <m>g(x) = 2\sqrt[3]{-x - 3} - 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The graph of <m>y = f(x) = \sqrt[3]{x}</m> is given immediately below,
+          and the graph of <m>y = g(x)</m> is given below that of <m>y=f(x)</m>.
+          Find a formula for <m>g</m> based on transformations of the graph of <m>f</m>.
+          Check your answer by confirming that the points shown on the graph of <m>g</m> satisfy the equation <m>y = g(x)</m>.
+        </p>
+
+        <figure>
+          <caption><img src="figures/RelationsandFunctionsGraphics/Transformations-58.pdf"/></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Transformations-57.pdf"/>
+        </figure>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          For many common functions,
+          the properties of Algebra make a horizontal scaling the same as a vertical scaling by (possibly) a different factor.
+          For example,
+          we stated earlier that <m>\sqrt{9x} = 3\sqrt{x}</m>.
+          With the help of your classmates,
+          find the equivalent vertical scaling produced by the horizontal scalings <m>y = (2x)^{3}, \, y = |5x|, \, y = \sqrt[3]{27x} \</m>,
+          and <m>\, y = \left(\frac{1}{2} x\right)^{2}</m>.
+          What about <m>y = (-2x)^{3}, \, y = |-5x|, \, y = \sqrt[3]{-27x}\</m>,
+          and <m>\, y = \left(-\frac{1}{2} x\right)^{2}</m>?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          We mentioned earlier in the section that,
+          in general,
+          the order in which transformations are applied matters,
+          yet in our first example with two transformations the order did not matter. (You could perform the shift to the left followed by the shift down or you could shift down and then left to achieve the same result.) With the help of your classmates,
+          determine the situations in which order does matter and those in which it does not.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What happens if you reflect an even function across the <m>y</m>-axis?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Nothing.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What happens if you reflect an odd function across the <m>y</m>-axis?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The same thing as reflecting it across the <m>x</m>-axis.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What happens if you reflect an even function across the <m>x</m>-axis?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A vertical reflection.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What happens if you reflect an odd function across the <m>x</m>-axis?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The same thing as reflecting it across the <m>y</m>-axis.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How would you describe symmetry about the origin in terms of reflections?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          A horizontal reflection is the same as a vertical reflection. (Equivalently,
+          doing both types of reflection in sequence returns you to where you started.)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          As we saw in <xref ref="graphingcalctrans">Example</xref>,
+          the viewing window on the graphing calculator affects how we see the transformations done to a graph.
+          Using two different calculators,
+          find viewing windows so that
+          <m>f(x) = x^{2}</m> on the one calculator looks like <m>g(x) = 3x^{2}</m> on the other.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

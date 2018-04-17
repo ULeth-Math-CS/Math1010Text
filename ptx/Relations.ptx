@@ -1,0 +1,1821 @@
+
+
+<section xml:id="Relations">
+  <title>Relations</title>
+  <introduction>
+    <p>
+      From one point of view,
+      all of Precalculus can be thought of as studying sets of points in the plane.
+      With the Cartesian Plane now fresh in our memory we can discuss those sets in more detail and as usual,
+      we begin with a definition.
+    </p>
+
+    <definition xml:id="relatonsdefn">
+      <title>Relations in the Cartesian Plane</title>
+      <statement>
+        <p>
+          A
+              <idx><h>relation </h><h> definition</h></idx>
+          <term>relation</term> is a set of points in the plane.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Since relations are sets,
+      we can describe them using the techniques presented in <xref ref="SetTheory">Section</xref>.
+      That is, we can describe a relation verbally,
+      using the roster method, or using set-builder notation.
+      Since the elements in a relation are points in the plane,
+      we often try to describe the relation graphically or algebraically as well.
+      Depending on the situation,
+      one method may be easier or more convenient to use than another.
+      As an example,
+      consider the relation <m>R = \{ (-2,1),(4,3), (0,-3) \}</m>.
+      As written, <m>R</m> is described using the roster method.
+      Since <m>R</m> consists of points in the plane,
+      we follow our instinct and plot the points.
+      Doing so produces the
+          <idx><h>graph </h><h> of a relation</h></idx>
+      <em>graph</em> of <m>R</m>:
+      see <xref ref="fig_relgraph">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_relgraph">
+      <caption>The graph of the relation <m>R=\{(-2,1), (4,3), (0,-3)\}</m></caption>
+      <img src="figures/RelationsandFunctionsGraphics/Relations-1.pdf"/>
+    </figure>
+
+    <p>
+      In the following example, we graph a variety of relations.
+    </p>
+
+    <figure xml:id="fig_relgraphA">
+      <caption>The graph of <m>A</m></caption>
+      <img src="figures/RelationsandFunctionsGraphics/Relations-2.pdf"/>
+    </figure>
+
+    <example xml:id="relationgraphingexample">
+      <title>Graphing relations</title>
+      <statement>
+        <p>
+          Graph the following relations.
+
+          <ol>
+            <li>
+              <p>
+                <m>A = \{ (0,0), (-3,1), (4,2), (-3,2)\}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>HLS_{1} = \{ (x,3) \, | \, -2 \leq x \leq 4\}</m>
+              </p>
+            </li>
+
+            <li xml:id="opencircleintroduction">
+
+            <p>
+              <m>HLS_{2} = \{ (x,3) \, | \, -2 \leq x \lt 4\}</m>
+            </p>
+            </li>
+
+            <li>
+              <p>
+                <m>V = \{ (3,y) \, | \, \mbox{<m>y</m> is a real number} \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>H = \{ (x,y) \, | \, y = -2 \}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>R = \{ (x,y) \, | \, 1 \lt y \leq 3 \}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To graph <m>A</m>,
+                we simply plot all of the points which belong to <m>A</m>,
+                as shown below on the left.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Don't let the notation in this part fool you.
+                The name of this relation is <m>HLS_{1}</m>,
+                just like the name of the relation in number 1 was <m>A</m>.
+                The letters and numbers are just part of its name,
+                just like the numbers and letters of the phrase
+                <q>King George III</q> were part of George's name.
+                In words,  <m>\{ (x,3)\, | \, -2 \leq x \leq 4 \}</m>  reads
+          <q>the set of points <m>(x,3)</m> such that <m>-2 \leq x \leq 4</m>.</q>
+                All of these points have the same <m>y</m>-coordinate,
+                <m>3</m>,
+                but the <m>x</m>-coordinate is allowed to vary between <m>-2</m> and <m>4</m>,
+          inclusive.
+                Some of the points which belong to <m>HLS_{1}</m> include some friendly points like:
+                <m>(-2,3)</m>, <m>(-1,3)</m>, <m>(0,3)</m>,
+                <m>(1,3)</m>, <m>(2,3)</m>,
+          <m>(3,3)</m>, and <m>(4,3)</m>.
+                However,
+          <m>HLS_{1}</m> also contains the points <m>(0.829, 3)</m>,
+                <m>\left(-\frac{5}{6}, 3\right)</m>,
+                <m>( \sqrt{\pi}, 3)</m>, and so on.
+                It is impossible to list all of these points,
+                which is why the variable <m>x</m> is used.
+                Plotting several friendly representative points should convince you that <m>HLS_{1}</m> describes the horizontal line segment from the point <m>(-2,3)</m> up to and including the point <m>(4,3)</m>.
+
+                <aside>
+                  <p>
+                    Listing the points in a line segment is
+                    <em>really</em> impossible.
+                    The interested reader is encouraged to research <url href="http://en.wikipedia.org/wiki/Countable_set"><em><em>countable</em></em></url> versus <url href="http://en.wikipedia.org/wiki/Uncountable_set"><em><em>uncountable</em></em></url> sets.
+                  </p>
+                </aside>
+                <figure xml:id="fig_relgraphHLS">
+                  <caption>The graph of <m>HLS_1</m></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/Relations-3.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>HLS_{2}</m> is hauntingly similar to <m>HLS_{1}</m>.
+                In fact,
+          the only difference between the two is that instead of
+                <q><m>-2 \leq x \leq 4</m></q>
+                we have <q><m>-2 \leq x \lt 4</m></q>.
+                This means that we still get a horizontal line segment which includes <m>(-2,3)</m> and extends to <m>(4,3)</m>,
+                but we do <em>not</em>
+                include <m>(4,3)</m> because of the strict inequality <m>x \lt 4</m>.
+                How do we denote this on our graph?
+                It is a common mistake to make the graph start at <m>(-2,3)</m> end at <m>(3,3)</m> as pictured below on the left.
+                The problem with this graph is that we are forgetting about the points like <m>(3.1, 3)</m>,
+                <m>(3.5, 3)</m>, <m>(3.9, 3)</m>,
+                <m>(3.99, 3)</m>, and so forth.
+                There is no real number that comes
+                <q>immediately before</q> <m>4</m>,
+                so to describe the set of points we want,
+                we draw the horizontal line segment starting at <m>(-2,3)</m> and draw an open circle at <m>(4,3)</m> as depicted below on the right. <table xml:id="HLS2opencircle"> <caption>Getting the right graph for <m>HLS_2</m></caption> <tabular> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-4.pdf"/></cell> </row> <row> <cell>This is NOT the correct graph of <m>HLS_{2}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-5.pdf"/></cell> </row> <row> <cell>The graph of <m>HLS_{2}</m></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Next, we come to the relation <m>V</m>,
+                described as the set of points <m>(3,y)</m> such that <m>y</m> is a real number.
+                All of these points have an <m>x</m>-coordinate of <m>3</m>,
+                but the <m>y</m>-coordinate is free to be whatever it wants to be,
+                without restriction.
+                Plotting a few <q>friendly</q>
+                points of <m>V</m> should convince you that all the points of <m>V</m> lie on the vertical line <m>x = 3</m>.
+                Since there is no restriction on the <m>y</m>-coordinate,
+                we put arrows on the end of the portion of the line we draw to indicate it extends indefinitely in both directions.
+                The graph of <m>V</m> is below on the left.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Though written slightly differently,
+                the relation <m>H = \{ (x,y) \, | \, y = -2 \}</m> is similar to the relation <m>V</m> above in that only one of the coordinates,
+                in this case the <m>y</m>-coordinate, is specified,
+                leaving <m>x</m> to be <q>free</q>.
+                Plotting some representative points gives us the horizontal line <m>y=-2</m>. <figure xml:id="fig_relgraphV"> <caption>The graph of <m>V</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-6.pdf"/> </figure> <figure xml:id="fig_relgraphH"> <caption>The graph of <m>H</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-7.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For our last example,
+                we turn to <m>R = \{ (x,y) \, | \, 1 \lt  y \leq 3 \}</m>.
+                As in the previous example,
+          <m>x</m> is free to be whatever it likes.
+                The value of <m>y</m>, on the other hand,
+                while not completely free,
+                is permitted to roam between <m>1</m> and <m>3</m> excluding <m>1</m>,
+                but including <m>3</m>.
+                After plotting some friendly elements of <m>R</m>,
+                it should become clear that <m>R</m> consists of the region between the horizontal lines <m>y = 1</m> and <m>y = 3</m>.
+                Since <m>R</m> requires that the <m>y</m>-coordinates be greater than <m>1</m>,
+                but not equal to <m>1</m>,
+                we dash the line <m>y = 1</m> to indicate that those points do not belong to <m>R</m>.
+
+                <aside>
+                  <p>
+                    When we say you should plot some points in the relation <m>H</m>,
+                    the word <q>some</q> is a relative term.
+                    It may take <m>5</m>, <m>10</m>,
+                    or <m>50</m> points until you see the pattern,
+                    depending on the relation.
+                  </p>
+                </aside>
+                <!--
+                <caption>The graph of <m>R</m></caption>
+                -->
+
+                <sidebyside>
+                  <img src="figures/RelationsandFunctionsGraphics/Relations-8.pdf"/>
+                </sidebyside>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The relations <m>V</m> and <m>H</m> in the previous example lead us to our final way to describe relations:
+          <idx><h>relation </h><h> algebraic description</h></idx>
+      <em>algebraically</em>.
+      We can more succinctly describe the points in <m>V</m> as those points which satisfy the equation <q><m>x = 3</m></q>.
+      Most likely, you have seen equations like this before.
+      Depending on the context,
+      <q><m>x = 3</m></q> could mean we have solved an equation for <m>x</m> and arrived at the solution <m>x=3</m>.
+      In this case, however, <q><m>x = 3</m></q>
+      describes a set of points in the plane whose <m>x</m>-coordinate is <m>3</m>.
+      Similarly, the relation <m>H</m> above can be described by the equation <q><m>y = -2</m></q>.
+      At some point in your mathematical upbringing,
+      you probably learned the following.
+    </p>
+
+    <insight xml:id="idea_horvertline">
+      <title>Equations of Vertical and Horizontal Lines</title>
+      <ul>
+        <li>
+          <p>
+            The graph of the equation <m>x=a</m> is a
+            <em>vertical line</em> through <m>(a,0)</m>.
+                <idx><h>line </h><h> vertical</h></idx> <idx><h>vertical line</h></idx>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The graph of the equation <m>y=b</m> is a
+            <em>horizontal line</em> through <m>(0,b)</m>.
+                <idx><h>line </h><h> horizontal</h></idx> <idx><h>horizontal line</h></idx>
+          </p>
+        </li>
+      </ul>
+    </insight>
+
+    <p>
+      Given that the very simple equations <m>x = a</m> and <m>y = b</m> produced lines,
+      it's natural to wonder what shapes other equations might yield.
+      Thus our next objective is to study the graphs of equations in a more general setting as we continue to unite Algebra and Geometry.
+    </p>
+  </introduction>
+
+  <subsection xml:id="GraphsofEquations">
+    <title>Graphs of Equations</title>
+    <p>
+      In this section,
+      we delve more deeply into the connection between Algebra and Geometry by focusing on graphing relations described by equations.
+      The main idea of this section is the following.
+    </p>
+
+    <insight xml:id="fgp">
+      <title>The Fundamental Graphing Principle</title>
+      <p>
+            <idx><h>equation </h><h> graph of</h></idx> <idx><h>graph </h><h> of an equation</h></idx> <idx><h>Fundamental Graphing Principle </h><h> for equations</h></idx> <idx><h>relation </h><h> Fundamental Graphing Principle</h></idx>
+      </p>
+
+      <p>
+        The graph of an equation is the set of points which satisfy the equation.
+        That is, a point <m>(x,y)</m> is on the graph of an equation if and only if <m>x</m> and <m>y</m> satisfy the equation.
+      </p>
+    </insight>
+
+    <p>
+      Here, <q><m>x</m> and <m>y</m> satisfy the equation</q>
+      means <q><m>x</m> and <m>y</m> make the equation true</q>.
+      It is at this point that we gain some insight into the word <q>relation</q>.
+      If the equation to be graphed contains both <m>x</m> and <m>y</m>,
+      then the equation itself is what is relating the two variables.
+      More specifically, in the next two examples,
+      we consider the graph of the equation <m>x^2+y^3=1</m>.
+      Even though it is not specifically spelled out,
+      what we are doing is graphing the relation <m>R = \{ (x,y) \, | \, x^2+y^3 = 1\}</m>.
+      The points <m>(x,y)</m> we graph belong to the <em>relation</em>
+      <m>R</m> and are necessarily <em>related</em>
+      by the equation <m>x^2+y^3 = 1</m>,
+      since it is those pairs of <m>x</m> and <m>y</m> which make the equation true.
+    </p>
+
+    <example xml:id="ex_checkgraph">
+      <title>Checking to see if a point lies on a graph</title>
+      <statement>
+        <p>
+          Determine whether or not <m>(2,-1)</m> is on the graph of <m>x^2 + y^3 = 1</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We substitute <m>x=2</m> and <m>y=-1</m> into the equation to see if the equation is satisfied.
+          <md>
+            <mrow>(2)^2+(-1)^3 \amp  \stackrel{?}{=}  1</mrow>
+            <mrow>3 \amp  \neq  1</mrow>
+          </md>
+        </p>
+
+        <p>
+          Hence, <m>(2,-1)</m> is <em>not</em>
+          on the graph of <m>x^2 + y^3 = 1</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We could spend hours randomly guessing and checking to see if points are on the graph of the equation.
+      A more systematic approach is outlined in the following example.
+    </p>
+
+    <example xml:id="firstequgraph">
+      <title>Determining points on a graph systematically</title>
+      <statement>
+        <p>
+          Graph <m>x^2 + y^3 = 1</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To efficiently generate points on the graph of this equation,
+          we first solve for <m>y</m>
+          <md>
+            <mrow>x^2 + y^3 \amp  =  1</mrow>
+            <mrow>y^3 \amp  =  1 - x^2</mrow>
+            <mrow>\sqrt[3]{y^3} \amp  =  \sqrt[3]{1 - x^2}</mrow>
+            <mrow>y \amp  =  \sqrt[3]{1 - x^2}</mrow>
+          </md>
+        </p>
+
+        <p>
+          We now substitute a value in for <m>x</m>,
+          determine the corresponding value <m>y</m>,
+          and plot the resulting point <m>(x,y)</m>.
+          For example, substituting <m>x=-3</m> into the equation yields
+          <me>
+            y = \sqrt[3]{1 - x^2} = \sqrt[3]{1 - (-3)^2} = \sqrt[3]{-8} = - 2
+          </me>,
+          so the point <m>(-3, -2)</m> is on the graph.
+          Continuing in this manner,
+          we generate a table of points which are on the graph of the equation.
+          These points are then plotted in the plane as shown in <xref ref="fig_plotpoints">Figure</xref>.
+        </p>
+
+        <table xml:id="fig_plotpoints">
+          <caption>Points on the curve <m>x^2+y^3=1</m></caption>
+          <tabular>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><m>x</m></cell>
+              <cell><m>y</m></cell>
+              <cell><m>(x,y)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>-3</cell>
+              <cell>-2</cell>
+              <cell><m>(-3, -2)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>-2</cell>
+              <cell><m>-\sqrt[3]{3}</m></cell>
+              <cell><m>(-2,-\sqrt[3]{3})</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>-1</cell>
+              <cell>0</cell>
+              <cell><m>( -1, 0)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>0</cell>
+              <cell>1</cell>
+              <cell><m>( 0 , 1)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>1</cell>
+              <cell>0</cell>
+              <cell><m>( 1, 0)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>2</cell>
+              <cell><m>-\sqrt[3]{3}</m></cell>
+              <cell><m>(2,-\sqrt[3]{3})</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+            <row>
+              <cell>3</cell>
+              <cell>-2</cell>
+              <cell><m>(3, -2)</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell></cell>
+              <cell></cell>
+              <cell></cell>
+            </row>
+          </tabular>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-9.pdf"/>
+        </table>
+
+        <p>
+          Remember, these points constitute only a small sampling of the points on the graph of this equation.
+          To get a better idea of the shape of the graph,
+          we could plot more points until we feel comfortable
+          <q>connecting the dots</q>.
+          Doing so would result in a curve similar to the one pictured in <xref ref="fig_completecurve">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_completecurve">
+          <caption>The completed graph of <m>x^2+y^3=1</m></caption>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-10.pdf"/>
+        </figure>
+
+        <p>
+          Don't worry if you don't get all of the little bends and curves just right <m>-</m> Calculus is where the art of precise graphing takes center stage.
+          For now, we will settle with our naive
+          <q>plug and plot</q> approach to graphing.
+          If you feel like all of this tedious computation and plotting is beneath you,
+          then you can try inputting the equation into a graphing calculator or an online tool such as <url href="http://www.wolframalpha.com/">Wolfram Alpha</url>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Of all of the points on the graph of an equation,
+      the places where the graph crosses or touches the axes hold special significance.
+      These are called the <em>intercepts</em>
+          <idx><h>intercept </h><h> definition of</h></idx>
+      of the graph.
+      Intercepts come in two distinct varieties:
+      <m>x</m>-intercepts and <m>y</m>-intercepts.
+      They are defined below.
+    </p>
+
+    <definition xml:id="interceptsdefn">
+      <title>$x$- and $y$-intercepts</title>
+      <statement>
+        <p>
+          Suppose the graph of an equation is given.
+
+          <ul>
+            <li>
+              <p>
+                A point on a graph which is also on the <m>x</m>-axis is called an
+              <idx><h><m>x</m>-intercept</h></idx>
+          <em><m>x</m>-intercept</em> of the graph.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A point on a graph which is also on the <m>y</m>-axis is called an
+              <idx><h><m>y</m>-intercept</h></idx>
+          <em><m>y</m>-intercept</em> of the graph.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In our previous example the graph had two <m>x</m>-intercepts,
+      <m>(-1,0)</m> and <m>(1,0)</m>,
+      and one <m>y</m>-intercept, <m>(0,1)</m>.
+      The graph of an equation can have any number of intercepts,
+      including none at all!
+      Since <m>x</m>-intercepts lie on the <m>x</m>-axis,
+      we can find them by setting <m>y = 0</m> in the equation.
+      Similarly, since <m>y</m>-intercepts lie on the <m>y</m>-axis,
+      we can find them by setting <m>x = 0</m> in the equation.
+      Keep in mind, intercepts are <em>points</em>
+      and therefore must be written as ordered pairs.
+      To summarize,
+    </p>
+
+    <insight xml:id="idea_findintercepts">
+      <title>Finding the Intercepts of the Graph of an Equation</title>
+      <p>
+        Given an equation involving <m>x</m> and <m>y</m>,
+        we find the intercepts of the graph as follows:
+            <idx><h>intercept </h><h> location of</h></idx>
+        <ul>
+          <li>
+            <p>
+              <m>x</m>-intercepts have the form <m>(x,0)</m>;
+              set <m>y = 0</m> in the equation and solve for <m>x</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y</m>-intercepts have the form <m>(0,y)</m>;
+              set <m>x = 0</m> in the equation and solve for <m>y</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
+    <p>
+      Another fact which you may have noticed about the graph in the previous example is that it seems to be symmetric about the <m>y</m>-axis.
+      To actually prove this analytically,
+      we assume <m>(x,y)</m> is a generic point on the graph of the equation.
+      That is, we assume <m>x^2 + y^3 = 1</m> is true.
+      As we learned in <xref ref="CartesianPlane">Section</xref>,
+      the point symmetric to <m>(x,y)</m> about the <m>y</m>-axis is <m>(-x,y)</m>.
+      To show that the graph is symmetric about the <m>y</m>-axis,
+      we need to show that <m>(-x,y)</m> satisfies the equation <m>x^2 + y^3 = 1</m>, too.
+      Substituting <m>(-x,y)</m> into the equation gives
+      <md>
+        <mrow>(-x)^2+(y)^3 \amp  \stackrel{?}{=}  1</mrow>
+        <mrow>x^2 + y^3 \amp  \stackrel{\checkmark}{=}  1</mrow>
+      </md>
+    </p>
+
+    <p>
+      Since we are assuming the original equation <m>x^2 + y^3 = 1</m> is true,
+      we have shown that <m>(-x, y)</m> satisfies the equation
+      (since it leads to a true result)
+      and hence is on the graph.
+      In this way,
+      we can check whether the graph of a given equation possesses any of the symmetries discussed in <xref ref="CartesianPlane">Section</xref>.
+      We summarize the procedure in the following result.
+    </p>
+
+    <insight xml:id="symmetrytestequations">
+      <title>Testing the Graph of an Equation for Symmetry</title>
+      <p>
+        To test the graph of an equation for symmetry
+            <idx><h>symmetry </h><h> testing an equation for</h></idx>
+        <ul>
+          <li>
+            <p>
+              about the <m>y</m>-axis <m>\, - \</m>,
+              substitute <m>(-x,y)</m> into the equation and simplify.
+              If the result is equivalent to the original equation,
+              the graph is symmetric about the <m>y</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              about the <m>x</m>-axis <mdash /> substitute <m>(x,-y)</m> into the equation and simplify.
+              If the result is equivalent to the original equation,
+              the graph is symmetric about the <m>x</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              about the origin - substitute <m>(-x,-y)</m> into the equation and simplify.
+              If the result is equivalent to the original equation,
+              the graph is symmetric about the origin.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
+    <p>
+      Intercepts and symmetry are two tools which can help us sketch the graph of an equation analytically,
+      as demonstrated in the next example.
+    </p>
+
+    <example xml:id="secondequgraph">
+      <title>Finding intercepts and testing for symmetry</title>
+      <statement>
+        <p>
+          Find the <m>x</m>- and <m>y</m>-intercepts
+          (if any)
+          of the graph of <m>(x-2)^2 + y^2 = 1</m>.
+          Test for symmetry.
+          Plot additional points as needed to complete the graph.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To look for <m>x</m>-intercepts,
+          we set <m>y=0</m> and solve
+          <md>
+            <mrow>(x-2)^2 + y^2 \amp  =  1</mrow>
+            <mrow>(x-2)^2 + 0^2 \amp  =  1</mrow>
+            <mrow>(x-2)^2 \amp  =  1</mrow>
+            <mrow>\sqrt{(x-2)^2} \amp  =  \sqrt{1}  \tag{extract square roots}</mrow>
+            <mrow>x - 2 \amp  =  \pm 1</mrow>
+            <mrow>x  \amp  =  2 \pm 1</mrow>
+            <mrow>x  \amp  =  3, 1</mrow>
+          </md>
+        </p>
+
+        <p>
+          We get two answers for <m>x</m> which correspond to two <m>x</m>-intercepts:
+          <m>(1,0)</m> and <m>(3,0)</m>.
+          Turning our attention to <m>y</m>-intercepts,
+          we set <m>x=0</m> and solve
+          <md>
+            <mrow>(x-2)^2 + y^2 \amp  =  1</mrow>
+            <mrow>(0-2)^2 + y^2 \amp  =  1</mrow>
+            <mrow>4 + y^2 \amp  =  1</mrow>
+            <mrow>y^2 \amp  =  -3</mrow>
+          </md>
+        </p>
+
+        <p>
+          Since there is no real number which squares to a negative number (Do you remember why?), we are forced to conclude that the graph has no <m>y</m>-intercepts.
+          We plot our results so far in <xref ref="fig_interceptplot">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_interceptplot">
+          <caption>Plotting the data so far</caption>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-11.pdf"/>
+        </figure>
+
+        <p>
+          Moving along to symmetry,
+          we can immediately dismiss the possibility that the graph is symmetric about the <m>y</m>-axis or the origin.
+          If the graph possessed either of these symmetries,
+          then the fact that <m>(1,0)</m> is on the graph would mean <m>(-1,0)</m> would have to be on the graph. (Why?) Since <m>(-1,0)</m> would be another <m>x</m>-intercept
+          (and we've found all of these),
+          the graph can't have <m>y</m>-axis or origin symmetry.
+          The only symmetry left to test is symmetry about the <m>x</m>-axis.
+          To that end,
+          we substitute <m>(x,-y)</m> into the equation and simplify
+          <md>
+            <mrow>(x-2)^2 + y^2 \amp  =  1</mrow>
+            <mrow>(x-2)^2 + (-y)^2 \amp  \stackrel{?}{=}  1</mrow>
+            <mrow>(x-2)^2 + y^2 \amp  \stackrel{\checkmark}{=}  1</mrow>
+          </md>
+        </p>
+
+        <p>
+          Since we have obtained our original equation,
+          we know the graph is symmetric about the <m>x</m>-axis.
+          This means we can cut our <q>plug and plot</q> time in half:
+          whatever happens below the <m>x</m>-axis is reflected above the <m>x</m>-axis,
+          and vice-versa.
+          Proceeding as we did in the previous example,
+          we obtain the plot shown in <xref ref="fig_finalplot">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_finalplot">
+          <caption>The final result</caption>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-12.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      A couple of remarks are in order.
+      First, it is entirely possible to choose a value for <m>x</m> which does not correspond to a point on the graph.
+      For example, in the previous example,
+      if we solve for <m>y</m> as is our custom, we get
+      <me>
+        y = \pm \sqrt{1-(x-2)^2}
+      </me>.
+    </p>
+
+    <p>
+      Upon substituting <m>x=0</m> into the equation, we would obtain
+      <me>
+        y = \pm \sqrt{1 - (0-2)^2} = \pm \sqrt{1 - 4} = \pm \sqrt{-3}
+      </me>,
+      which is not a real number.
+      This means there are no points on the graph with an <m>x</m>-coordinate of <m>0</m>.
+      When this happens, we move on and try another point.
+      This is another drawback of the <q>plug-and-plot</q>
+      approach to graphing equations.
+      Luckily, we will devote much of the remainder of this book to developing techniques which allow us to graph entire families of equations quickly.
+      Second, it is instructive to show what would have happened had we tested the equation in the last example for symmetry about the <m>y</m>-axis.
+      Substituting <m>(-x,y)</m> into the equation yields
+    </p>
+
+    <aside>
+      <p>
+        By the end of this course,
+        you'll be able to accurately graph a wide variety of equations,
+        without the use of a calculator, if you can believe it!
+      </p>
+    </aside>
+    <md>
+      <mrow>(x-2)^2 + y^2 \amp  =  1</mrow>
+      <mrow>(-x-2)^2 + y^2 \amp  \stackrel{?}{=}  1</mrow>
+      <mrow>((-1)(x+2))^2 + y^2 \amp  \stackrel{?}{=}  1</mrow>
+      <mrow>(x+2)^2 + y^2 \amp  \stackrel{?}{=}  1</mrow>
+    </md>.
+    <p>
+      This last equation does not <em>appear</em>
+      to be equivalent to our original equation.
+      However, to actually prove that the graph is not symmetric about the <m>y</m>-axis,
+      we need to find a point <m>(x,y)</m> on the graph whose reflection <m>(-x,y)</m> is not.
+      Our <m>x</m>-intercept <m>(1,0)</m> fits this bill nicely,
+      since if we substitute <m>(-1,0)</m> into the equation we get
+      <md>
+        <mrow>(x-2)^2+y^2 \amp  \stackrel{?}{=}  1</mrow>
+        <mrow>(-1-2)^2 + 0^2 \amp  \neq  1</mrow>
+        <mrow>9 \amp  \neq  1</mrow>
+      </md>.
+    </p>
+
+    <p>
+      This proves that <m>(-1,0)</m> is not on the graph.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, graph the given relation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          \{<m>(-3, 9)</m>, <m>\;(-2, 4)</m>,
+          <m>\;(-1, 1)</m>, <m>\;(0, 0)</m>,
+          <m>\;(1, 1)</m>, <m>\;(2, 4)</m>, <m>\;(3, 9)\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          \{<m>(-2, 0)</m>, <m>\;(-1, 1)</m>,
+          <m>\;(-1, -1)</m>, <m>\;(0, 2)</m>,
+          <m>\;(0, -2)</m>, <m>\;(1, 3)</m>, <m>\;(1, -3)\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(m, 2m \right) \, | \, m = 0, \pm 1, \pm 2 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(\frac{6}{k}, k \right) \, | \, k = \pm 1, \pm 2, \pm 3, \pm 4, \pm 5, \pm 6 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(n, 4 - n^2\right) \, | \, n = 0, \pm 1, \pm 2 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(\sqrt{j}, j \right) \, | \, j = 0, 1, 4, 9 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x, -2 \right) \, | \, x > -4 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x, 3 \right) \, | \, x \leq 4 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(-1, y \right) \, | \, y > 1 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(2, y \right) \, | \, y \leq 5 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{ (-2, y) \, | \, -3 \lt y \leq 4\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-33.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(3,y \right) \, | \, -4 \leq y \lt 3 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-34.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{ (x, 2) \, | \, -2 \leq x \lt 3 \}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-35.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x,-3 \right) \, | \, -4 \lt x \leq 4 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-36.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{ (x, y) \, | \, x > -2 \}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-37.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x,y \right) \, | \, x \leq 3 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-38.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x,y \right) \, | \, y \lt 4 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-39.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x,y \right) \, | \, x \leq 3, \, y \lt 2 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-40.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left\{ \left(x,y \right) \, | \, x > 0, \, y \lt 4 \right\}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-41.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{ (x, y) \, | \, -\sqrt{2} \leq x \leq \frac{2}{3}, \; \pi \lt y \leq \frac{9}{2} \}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-42.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      describe the given relation using either the roster or set-builder method.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-14.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>A</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A = \{(-4, -1), (-2, 1), (0, 3), (1, 4)\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-15.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>B</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>B = \left\{ \left(x,3 \right) \, | \, x \geq -3 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-16.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>C</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C = \{ \left(2,y) \, | \, y > -3 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-17.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>D</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>D = \{ \left(-2,y) \, | \, -4 \leq y \lt 3 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-18.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>E</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>E = \left\{ \left(x,2 \right) \, | \, -4 \leq x \lt 3 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-19.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>F</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>F = \{ \left(x,y) \, | \, y \geq 0 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-20.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>G</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>G = \left\{ \left(x,y \right) \, | \, x > -2 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-21.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>H</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>H = \left\{ \left(x,y \right) \, | \, -3 \lt x \leq 2 \right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-22.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>I</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>I = \{ \left(x,y) \, | \, x \geq 0, \! y \geq 0\right\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-22.pdf"/>
+        </p>
+
+        <p>
+          Relation <m>J</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>J = \{(x, y) \, | \, -4 \lt x \lt 5, \; -3 \lt y \lt 2\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, graph the given line.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>x=-2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-43.pdf"/>
+        </p>
+
+        <p>
+          The line <m>x = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x=3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-44.pdf"/>
+        </p>
+
+        <p>
+          The line <m>x = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y=3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-45.pdf"/>
+        </p>
+
+        <p>
+          The line <m>y=3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y=-2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-46.pdf"/>
+        </p>
+
+        <p>
+          The line <m>y = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-47.pdf"/>
+        </p>
+
+        <p>
+          The line <m>x = 0</m> is the <m>y</m>-axis
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-48.pdf"/>
+        </p>
+
+        <p>
+          The line <m>y=0</m> is the <m>x</m>-axis
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      Some relations are fairly easy to describe in words or with the roster method but are rather difficult,
+      if not impossible, to graph.
+      For the following exercises,
+      discuss with your classmates how you might graph the given relation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{(x, y) \, | \, x \mbox{ is an odd integer,
+          and } y \mbox{ is an even integer.} \}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{(x, 1) \, | \, x \mbox{ is an irrational number } \}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{(1, 0), (2, 1), (4, 2), (8, 3), (16, 4), (32, 5), \ldots \}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\{\ldots, (-3, 9), (-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4), (3, 9), \ldots \}</m>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      For each equation given in the following exercises, (a) Find the <m>x</m> and <m>y</m> intercepts of the graph,
+      if any exist; (b) Follow the procedure in <xref ref="firstequgraph">Example</xref>
+      to create a table of sample points on the graph of the equation; (c) Plot the sample points and create a rough sketch of the graph of the equation; Test for symmetry.
+      If the equation appears to fail any of the symmetry tests,
+      find a point on the graph of the equation whose reflection fails to be on the graph as was done at the end of <xref ref="secondequgraph">Example</xref>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = x^{2} + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The graph has no <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 1)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -2 \amp 5 \amp (-2, 5) \\ \hline -1 \amp 2 \amp (-1, 2) \\ \hline 0 \amp 1 \amp (0, 1) \\ \hline 1 \amp 2 \amp (1, 2) \\ \hline 2 \amp 5 \amp (2, 5) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-49.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(2, 5)</m> is on the graph but <m>(2, -5)</m> is not)
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>y</m>-axis
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(2, 5)</m> is on the graph but <m>(-2, -5)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = x^2-2x-8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>(4,0)</m>, <m>(-2,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, -8)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -3 \amp 7 \amp (-3,7) \\ \hline -2 \amp 0 \amp (-2, 0) \\ \hline -1 \amp -5 \amp (-1, -5) \\ \hline 0 \amp -8 \amp (0, -8) \\ \hline 1 \amp -9 \amp (1, -9) \\ \hline 2 \amp -8 \amp (2, -8) \\ \hline 3 \amp -5 \amp (3,-5) \\ \hline 4 \amp 0 \amp (4,0) \\ \hline 5 \amp 7 \amp (5,7) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-50.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(-3, 7)</m> is on the graph but <m>(-3, -7)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(-3, 7)</m> is on the graph but <m>(3, 7)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(-3, 7)</m> is on the graph but <m>(3, -7)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = x^{3} - x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>(-1, 0), (0, 0), (1, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -2 \amp -6 \amp (-2, -6) \\ \hline -1 \amp 0 \amp (-1, 0) \\ \hline 0 \amp 0 \amp (0, 0) \\ \hline 1 \amp 0 \amp (1, 0) \\ \hline 2 \amp 6 \amp (2, 6) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-51.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis. (e.g. <m>(2, 6)</m> is on the graph but <m>(2, -6)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis. (e.g. <m>(2, 6)</m> is on the graph but <m>(-2, 6)</m> is not)
+        </p>
+
+        <p>
+          The graph is symmetric about the origin.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{x^3}{4} - 3x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>\left(\pm 2\sqrt{3}, 0\right), (0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -4 \amp -4 \amp (-4, -4) \\ \hline -3 \amp \frac{9}{4} \amp \left(-3, \frac{9}{4} \right) \\ \hline -2 \amp 4 \amp (-2, 4) \\ \hline -1 \amp \frac{11}{4} \amp \left(-1, \frac{11}{4}\right) \\ \hline 0 \amp 0 \amp (0,0) \\ \hline 1 \amp -\frac{11}{4} \amp \left(1, -\frac{11}{4}\right) \\ \hline 2 \amp -4 \amp (2, -4) \\ \hline 3 \amp -\frac{9}{4} \amp \left(3, -\frac{9}{4} \right) \\ \hline 4 \amp 4 \amp (4, 4) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-52.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g.
+          <m>(-4, -4)</m> is on the graph but <m>(-4, 4)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g.
+          <m>(-4, -4)</m> is on the graph but <m>(4, -4)</m> is not)
+        </p>
+
+        <p>
+          The graph is symmetric about the origin
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \sqrt{x - 2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercept: <m>(2, 0)</m>
+        </p>
+
+        <p>
+          The graph has no <m>y</m>-intercepts
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline 2 \amp 0 \amp (2, 0) \\ \hline 3 \amp 1 \amp (3, 1) \\ \hline 6 \amp 2 \amp (6, 2) \\ \hline 11 \amp 3 \amp (11, 3) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-53.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(3, 1)</m> is on the graph but <m>(3, -1)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(3, 1)</m> is on the graph but <m>(-3, 1)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(3, 1)</m> is on the graph but <m>(-3, -1)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2 \sqrt{x+4} - 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercept: <m>(-3,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,2)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -4 \amp -2 \amp (-4, -2) \\ \hline -3 \amp 0 \amp (-3,0 ) \\ \hline -2 \amp 2 \sqrt{2} -2 \amp \left(-2, \sqrt{2} -2 \right) \\ \hline -1 \amp 2 \sqrt{3} -2 \amp \left(-2, \sqrt{3} -2 \right) \\ \hline 0 \amp 2 \amp (0, 2) \\ \hline 1 \amp 2 \sqrt{5} -2 \amp \left(-2, \sqrt{5} -2 \right) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-54.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g.
+          <m>(-4, -2)</m> is on the graph but <m>(-4, 2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g.
+          <m>(-4, -2)</m> is on the graph but <m>(4, -2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g.
+          <m>(-4, -2)</m> is on the graph but <m>(4, 2)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3x - y = 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercept: <m>(\frac{7}{3}, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, -7)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -2 \amp -13 \amp (-2,-13) \\ \hline -1 \amp -10 \amp (-1,-10) \\ \hline 0 \amp -7 \amp (0, -7) \\ \hline 1 \amp -4 \amp (1, -4) \\ \hline 2 \amp -1 \amp (2, -1) \\ \hline 3 \amp 2 \amp (3, 2) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-55.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(3, 2)</m> is on the graph but <m>(3, -2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(3, 2)</m> is on the graph but <m>(-3, 2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(3, 2)</m> is on the graph but <m>(-3, -2)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3x-2y = 10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>\left(\frac{10}{3}, 0 \right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, -5)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -2 \amp -8 \amp (-2, -8) \\ \hline -1 \amp -\frac{13}{2} \amp \left(-1, -\frac{13}{2}\right) \\ \hline 0 \amp -5 \amp (0, -5) \\ \hline 1 \amp -\frac{7}{2} \amp \left(1, -\frac{7}{2} \right) \\ \hline 2 \amp -2 \amp (2, -2) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-56.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(2, -2)</m> is on the graph but <m>(2,2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(2, -2)</m> is on the graph but <m>(-2, -2)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(2, -2)</m> is on the graph but <m>(-2, 2)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(x+2)^2+y^2 = 16</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>(-6, 0)</m>, <m>(2,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercepts: <m>\left(0, \pm 2\sqrt{3}\right)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -6 \amp 0 \amp (-6,0) \\ \hline -4 \amp \pm 2 \sqrt{3} \amp \left(-4,\pm 2 \sqrt{3}\right) \\ \hline -2 \amp \pm 4 \amp (-2, \pm 4) \\ \hline 0 \amp \pm 2 \sqrt{3} \amp \left(0,\pm 2 \sqrt{3}\right) \\ \hline 2 \amp 0 \amp (2, 0) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-57.pdf"/>
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>x</m>-axis
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(-6, 0)</m> is on the graph but <m>(6, 0)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the origin (e.g. <m>(-6, 0)</m> is on the graph but <m>(6, 0)</m> is not)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} - y^{2} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x</m>-intercepts: <m>(-1, 0), (1, 0)</m>
+        </p>
+
+        <p>
+          The graph has no <m>y</m>-intercepts
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -3 \amp \pm \sqrt{8} \amp (-3, \pm \sqrt{8}) \\ \hline -2 \amp \pm \sqrt{3} \amp (-2, \pm \sqrt{3}) \\ \hline -1 \amp 0 \amp (-1, 0) \\ \hline 1 \amp 0 \amp (1, 0) \\ \hline 2 \amp \pm \sqrt{3} \amp (2, \pm \sqrt{3}) \\ \hline 3 \amp \pm \sqrt{8} \amp (3, \pm \sqrt{8}) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-58.pdf"/>
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>x</m>-axis
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>y</m>-axis
+        </p>
+
+        <p>
+          The graph is symmetric about the origin
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4y^2 - 9x^2 = 36</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4y^2-9x^2 = 36</m>
+        </p>
+
+        <p>
+          Re-write as: <m>y = \pm \frac{\sqrt{9x^2+36}}{2}</m>.
+        </p>
+
+        <p>
+          The graph has no <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercepts: <m>(0, \pm 3)</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -4 \amp \pm 3 \sqrt{5} \amp \left(-4,\pm 3 \sqrt{5}\right) \\ \hline -2 \amp \pm 3 \sqrt{2} \amp \left(-2,\pm 3 \sqrt{2}\right) \\ \hline 0 \amp \pm 3 \amp (0, \pm 3) \\ \hline 2 \amp \pm 3 \sqrt{2} \amp \left(2,\pm 3 \sqrt{2}\right) \\ \hline 4 \amp \pm 3 \sqrt{5} \amp \left(4,\pm 3 \sqrt{5}\right) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-59.pdf"/>
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>x</m>-axis
+        </p>
+
+        <p>
+          The graph is symmetric about the <m>y</m>-axis
+        </p>
+
+        <p>
+          The graph is symmetric about the origin
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{3}y = -4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The graph has no <m>x</m>-intercepts
+        </p>
+
+        <p>
+          The graph has no <m>y</m>-intercepts
+        </p>
+
+        <p>
+          <m>\begin{array}{|r||c|c|} \hline x \amp y \amp (x,y) \\ \hline -2 \amp \frac{1}{2} \amp (-2, \frac{1}{2}) \\ \hline -1 \amp 4 \amp (-1, 4) \\ \hline -\frac{1}{2} \amp 32 \amp (-\frac{1}{2}, 32) \\ \hline \frac{1}{2} \amp -32 \amp (\frac{1}{2}, -32)\\ \hline 1 \amp -4 \amp (1, -4) \\ \hline 2 \amp -\frac{1}{2} \amp (2, -\frac{1}{2}) \\ \hline \end{array}</m>
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-60.pdf"/>
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>x</m>-axis (e.g. <m>(1, -4)</m> is on the graph but <m>(1, 4)</m> is not)
+        </p>
+
+        <p>
+          The graph is not symmetric about the <m>y</m>-axis (e.g. <m>(1, -4)</m> is on the graph but <m>(-1, -4)</m> is not)
+        </p>
+
+        <p>
+          The graph is symmetric about the origin
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          find examples of equations whose graphs possess
+
+          <ul>
+            <li>
+              <p>
+                symmetry about the <m>x</m>-axis only
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetry about the <m>y</m>-axis only
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetry about the origin only
+              </p>
+            </li>
+
+            <li>
+              <p>
+                symmetry about the <m>x</m>-axis, <m>y</m>-axis,
+          and origin
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          Can you find an example of an equation whose graph possesses exactly <em>two</em>
+          of the symmetries listed above?
+          Why or why not?
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

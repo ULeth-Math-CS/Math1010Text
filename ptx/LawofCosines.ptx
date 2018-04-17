@@ -1,0 +1,781 @@
+
+
+<section xml:id="LawofCosines">
+  <title>Law of Cosines</title>
+  <introduction>
+    <p>
+      In <xref ref="LawofSines">Section</xref>,
+      we developed the Law of Sines
+      (<xref ref="lawofsines">Theorem</xref>)
+      to enable us to solve triangles in the
+      <q>Angle-Angle-Side</q>
+      (AAS), the <q>Angle-Side-Angle</q>
+      (ASA) and the ambiguous <q>Angle-Side-Side</q> (ASS) cases.
+      In this section,
+      we develop the Law of Cosines which handles solving triangles in the
+          <idx><h>Side-Angle-Side triangle</h></idx> <q>Side-Angle-Side</q>
+      (SAS) and <idx><h>Side-Side-Side triangle</h></idx>
+      <q>Side-Side-Side</q> (SSS) cases. (Here,
+      <q>Side-Angle-Side</q> means that we are given two sides and the
+      <q>included</q> angle - that is,
+      the given angle is adjacent to both of the given sides.) We state and prove the theorem below.
+    </p>
+
+    <theorem xml:id="lawofcosines">
+      <title>Law of Cosines</title>
+      <statement>
+        <p>
+              <idx><h>Law of Cosines</h></idx>
+          Given a triangle with angle-side opposite pairs <m>(\alpha, a)</m>,
+          <m>(\beta,
+          b)</m> and <m>(\gamma, c)</m>,
+          the following equations hold
+          <me>
+            a^2 = b^2 + c^2 - 2bc \cos(\alpha) \qquad  b^2 = a^2 + c^2 - 2ac \cos(\beta)  \qquad   c^2 = a^2 + b^2 - 2ab \cos(\gamma)
+          </me>
+          or, solving for the cosine in each equation, we have
+          <me>
+            \cos(\alpha) = \dfrac{b^2+c^2 - a^2}{2bc} \qquad \cos(\beta) = \dfrac{a^2+c^2 - b^2}{2ac} \qquad \cos(\gamma) = \dfrac{a^2+b^2 - c^2}{2ab}
+          </me>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      To prove the theorem,
+      we consider a generic triangle with the vertex of angle <m>\alpha</m> at the origin with side <m>b</m> positioned along the positive <m>x</m>-axis as in <xref ref="fig_cosines1">Figure</xref>.
+    </p>
+
+    <!--
+    <caption>Generic triangle for the proof of Theorem \ref{lawofcosines}</caption>
+    -->
+
+    <sidebyside>
+      <img src="figures/AppExtGraphics/LawofCosines-1.pdf"/>
+    </sidebyside>
+    <p>
+      From this set-up,
+      we immediately find that the coordinates of <m>A</m> and <m>C</m> are <m>A(0,0)</m> and <m>C(b,0)</m>.
+      From <xref ref="cosinesinecircle">Theorem</xref>,
+      we know that since the point <m>B(x,y)</m> lies on a circle of radius <m>c</m>,
+      the coordinates of <m>B</m> are
+      <m>B(x,y) = B(c \cos(\alpha),
+      c \sin(\alpha))</m>. (This would be true even if <m>\alpha</m> were an obtuse or right angle so although we have drawn the case when <m>\alpha</m> is acute,
+      the following computations hold for any angle <m>\alpha</m> drawn in standard position where
+      <m>0 \lt  \alpha \lt  180^{\circ}</m>.) We note that the distance between the points <m>B</m> and <m>C</m> is none other than the length of side <m>a</m>.
+      Using the distance formula,
+      <xref ref="distanceformula">Equation</xref>, we get
+      <md>
+        <mrow>a \amp  =  \sqrt{(c \cos(\alpha) - b)^{2} + (c \sin(\alpha) - 0)^2} \amp</mrow>
+        <mrow>a^{2} \amp  =  \left(\sqrt{(c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha)}\right)^2</mrow>
+        <mrow>a^2 \amp  =   (c \cos(\alpha) - b)^{2} + c^2 \sin^2(\alpha)</mrow>
+        <mrow>a^2 \amp  =  c^2 \cos^2(\alpha) - 2bc \cos(\alpha) + b^2 + c^2 \sin^2(\alpha)</mrow>
+        <mrow>a^2 \amp  =  c^2\left(\cos^2(\alpha) + \sin^2(\alpha)\right) + b^2 - 2bc \cos(\alpha)</mrow>
+        <mrow>a^2 \amp  =  c^2(1) + b^2 - 2bc \cos(\alpha)  \tag{Since $\cos^2(\alpha) + \sin^2(\alpha) = 1$}</mrow>
+        <mrow>a^2 \amp  =  c^2 + b^2 - 2bc \cos(\alpha)</mrow>
+      </md>
+    </p>
+
+    <p>
+      The remaining formulas given in <xref ref="lawofcosines">Theorem</xref>
+      can be shown by simply reorienting the triangle to place a different vertex at the origin.
+      We leave these details to the reader.
+      What's important about <m>a</m> and <m>\alpha</m> in the above proof is that
+      <m>(\alpha,a)</m> is an angle-side opposite pair and <m>b</m> and <m>c</m> are the sides adjacent to <m>\alpha</m> <mdash /> the same can be said of any other angle-side opposite pair in the triangle.
+      Notice that the proof of the Law of Cosines relies on the distance formula which has its roots in the Pythagorean Theorem.
+      That being said,
+      the Law of Cosines can be thought of as a generalization of the Pythagorean Theorem.
+      If we have a triangle in which <m>\gamma = 90^{\circ}</m>,
+      then <m>\cos(\gamma) = \cos\left(90^{\circ}\right) = 0</m> so we get the familiar relationship <m>c^2 = a^2 + b^2</m>.
+      What this means is that in the larger mathematical sense,
+      the Law of Cosines and the Pythagorean Theorem amount to pretty much the same thing. (This shouldn't come as too much of a shock.
+      All of the theorems in Trigonometry can ultimately be traced back to the definition of the circular functions along with the distance formula and hence,
+      the Pythagorean Theorem.)
+    </p>
+
+    <example xml:id="locex">
+      <title>Using the Law of Cosines</title>
+      <statement>
+        <p>
+          Solve the following triangles.
+          Give exact answers and decimal approximations
+          (rounded to hundredths)
+          and sketch the triangle.
+
+          <ol>
+            <li xml:id="locsas">
+
+            <p>
+              <m>\beta = 50^{\circ}</m>,
+          <m>a = 7</m> units, <m>c=2</m> units
+            </p>
+            </li>
+
+            <li xml:id="locsss">
+
+            <p>
+              <m>a=4</m> units, <m>b=7</m> units, <m>c = 5</m> units
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li xml:id="fig_cosines2">
+
+            <p>
+              We are given the lengths of two sides,
+              <m>a=7</m> and <m>c = 2</m>,
+              and the measure of the included angle,
+              <m>\beta = 50^{\circ}</m>.
+              With no angle-side opposite pair to use,
+              we apply  the Law of Cosines.
+              We get  <m>b^2 = 7^2 + 2^2 - 2(7)(2)\cos\left(50^{\circ}\right)</m> which yields <m>b = \sqrt{53-28\cos\left(50^{\circ}\right)} \approx 5.92</m> units.
+              In order to determine the measures of the remaining angles <m>\alpha</m> and <m>\gamma</m>,
+              we are forced to used the derived value for <m>b</m>.
+              There are two ways to proceed at this point.
+              We could use the Law of Cosines again, or,
+              since  we have the angle-side opposite pair
+              <m>(\beta,
+              b)</m> we could use the Law of Sines.
+              The advantage to using the Law of Cosines over the Law of Sines in cases like this is that unlike the sine function,
+              the cosine function distinguishes between acute and obtuse angles.
+              The cosine of an acute is positive,
+              whereas the cosine of an obtuse angle is negative.
+              Since the sine of both acute and obtuse angles are positive,
+              the sine of an angle alone is not enough to determine if the angle in question is acute or obtuse.
+              Since both authors of the textbook prefer the Law of Cosines,
+              we proceed with this method first.
+              When using the Law of Cosines,
+              it's always best to find the measure of the largest unknown angle first,
+              since this will give us the obtuse angle of the triangle if there is one.
+              Since the largest angle is opposite the longest side,
+              we choose to find <m>\alpha</m> first.
+              To that end, we use the formula
+              <m>\cos(\alpha) = \frac{b^2+c^2-a^2}{2bc}</m> and substitute <m>a = 7</m>,
+              <m>b =  \sqrt{53-28\cos\left(50^{\circ}\right)}</m> and <m>c = 2</m>.
+              We get (after simplifying)
+              <me>
+                \cos(\alpha) = \frac{2-7\cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ}\right)}}
+              </me>
+              Since <m>\alpha</m> is an angle in a triangle,
+              we know the radian measure of <m>\alpha</m> must lie between <m>0</m> and <m>\pi</m> radians.
+              This matches the range of the arccosine function,
+          so we have
+              <me>
+                \alpha = \arccos\left(\frac{2-7\cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ} \right)}}\right) \, \text{ radians }  \, \approx  114.99^{\circ}
+              </me>
+              At this point,
+              we could find <m>\gamma</m> using <m>\gamma = 180^{\circ} - \alpha - \beta \approx 180^{\circ} - 114.99^{\circ} - 50^{\circ} = 15.01^{\circ}</m>,
+              that is if we trust our approximation for <m>\alpha</m>.
+              To minimize propagation of error, however,
+              we could use the Law of Cosines again,
+              in this case using <m>\cos(\gamma) = \frac{a^2+b^2-c^2}{2ab}</m>.
+              Plugging in <m>a = 7</m>,
+              <m>b = \sqrt{53-28\cos\left(50^{\circ} \right)}</m> and <m>c=2</m>,
+              we get  <m>\gamma = \arccos\left(\frac{7-2 \cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ} \right)}} \right)</m> radians <m>\approx 15.01^{\circ}</m>.
+              We sketch the triangle in <xref ref="fig_cosines2">Figure</xref> below.
+
+
+
+
+
+
+              <!--
+              <caption>Triangle for Example \ref{locex}.\ref{locsas}</caption>
+              -->
+
+              <sidebyside>
+                <img src="figures/AppExtGraphics/LawofCosines-2.pdf"/>
+              </sidebyside>
+              As we mentioned earlier,
+              once we've determined <m>b</m> it is possible to use the Law of Sines to find the remaining angles.
+              Here, however,
+              we must proceed with caution as we are in the ambiguous (ASS) case.
+              It is advisable to first find the
+              <em>smallest</em> of the unknown angles,
+              since we are guaranteed it will be acute. (There can only be one
+          <em>obtuse</em> angle in the triangle,
+              and if there is one, it must be the largest.)  In this case,
+              we would find <m>\gamma</m> since the side opposite <m>\gamma</m> is smaller than the side opposite the other unknown angle,
+              <m>\alpha</m>.
+              Using the angle-side opposite pair <m>(\beta, b)</m>,
+              we get <m>\frac{\sin(\gamma)}{2} = \frac{\sin(50^{\circ})}{ \sqrt{53-28\cos\left(50^{\circ}\right)}}</m>.
+              The usual calculations produces
+              <m>\gamma \approx  15.01^{\circ}</m> and <m>\alpha = 180^{\circ} - \beta - \gamma \approx 180^{\circ} - 50^{\circ} - 15.01^{\circ} = 114.99^{\circ}</m>.
+            </p>
+            </li>
+
+            <li xml:id="fig_cosines3">
+
+            <p>
+              Since all three sides and no angles are given,
+              we are forced to use the Law of Cosines.
+              Following our discussion in the previous problem,
+              we find <m>\beta</m> first,
+          since it is opposite the longest side,
+              <m>b</m>.
+              We get <m>\cos(\beta) = \frac{a^2+c^2-b^2}{2ac} = -\frac{1}{5}</m>,
+              so we get <m>\beta = \arccos\left(-\frac{1}{5}\right)</m> radians <m>\approx 101.54^{\circ}</m>.
+              As in the previous problem,
+              now that we have obtained an angle-side opposite pair <m>(\beta, b)</m>,
+              we could proceed using the Law of Sines.
+              The Law of Cosines, however,
+              offers us a rare opportunity to find the remaining angles using <em>only</em>
+              the data given to us in the statement of the problem.
+              Using this,
+              we get <m>\gamma = \arccos\left(\frac{5}{7}\right)</m> radians
+              <m>\approx 44.42^{\circ}</m> and <m>\alpha = \arccos\left(\frac{29}{35}\right)</m> radians
+              <m>\approx 34.05^{\circ}</m>. <!-- <caption>Triangle for Example \ref{locex}.\ref{locsss}</caption> --> <sidebyside> <img src="figures/AppExtGraphics/LawofCosines-3.pdf"/> </sidebyside>
+            </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We note that,
+      depending on how many decimal places are carried through successive calculations,
+      and depending on which approach is used to solve the problem,
+      the approximate answers you obtain may differ slightly from those the authors obtain in the Examples and the Exercises.
+      A great example of this is <xref ref="locsss">number</xref>
+      in <xref ref="locex">Example</xref>,
+      where the <em>approximate</em>
+      values we record for the measures of the angles sum to <m>180.01^{\circ}</m>,
+      which is geometrically impossible.
+      Next, we have an application of the Law of Cosines.
+    </p>
+
+    <example xml:id="locapplication">
+      <title>Applying the Law of Cosines</title>
+      <statement>
+        <p>
+          A researcher wishes to determine the width of a vernal pond as drawn in <xref ref="fig_cosines4">Figure</xref>.
+          From a point <m>P</m>,
+          he finds the distance to the eastern-most point of the pond to be <m>950</m> feet,
+          while the distance to the western-most point of the pond from <m>P</m> is <m>1000</m> feet.
+          If the angle between the two lines of sight is <m>60^{\circ}</m>,
+          find the width of the pond.
+        </p>
+
+        <figure xml:id="fig_cosines4">
+          <caption>The pond in <xref ref="locapplication">Example</xref></caption>
+          <img src="figures/AppExtGraphics/LawofCosines-4.pdf"/>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          We are given the lengths of two sides and the measure of an included angle,
+          so we may apply the Law of Cosines to find the length of the missing side opposite the given angle.
+          Calling this length <m>w</m>
+          (for <em>width</em>),
+          we get <m>w^2 = 950^2 + 1000^2 - 2(950)(1000)\cos\left(60^{\circ}\right) = 952500</m> from which we get <m>w = \sqrt{952500} \approx 976</m> feet.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In <xref ref="LawofSines">Section</xref>,
+      we used the proof of the Law of Sines to develop <xref ref="areaformulasine">Theorem</xref>
+      as an alternate formula for the area enclosed by a triangle.
+      In this section,
+      we use the Law of Cosines to derive another such formula - Heron's Formula.
+    </p>
+
+    <theorem xml:id="HeronsFormula">
+      <title>Heron's Formula</title>
+      <statement>
+        <p>
+              <idx><h>Heron's Formula</h></idx>
+          Suppose <m>a</m>,
+          <m>b</m> and <m>c</m> denote the lengths of the three sides of a triangle.
+          Let <m>s</m> be the semiperimeter of the triangle, that is,
+          let <m>s = \frac{1}{2}(a + b + c)</m>.
+          Then the area <m>A</m> enclosed by the triangle is given by
+          <me>
+            A = \sqrt{s (s-a) (s-b) (s-c)}
+          </me>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      We prove <xref ref="HeronsFormula">Theorem</xref>
+      using <xref ref="areaformulasine">Theorem</xref>.
+      Using the convention that the angle <m>\gamma</m> is opposite the side <m>c</m>,
+      we have <m>A = \frac{1}{2} ab \sin(\gamma)</m> from <xref ref="areaformulasine">Theorem</xref>.
+      In order to simplify computations,
+      we start by manipulating the expression for <m>A^2</m>.
+      <md>
+        <mrow>A^2 \amp  =  \left(\dfrac{1}{2} ab \sin(\gamma)\right)^2</mrow>
+        <mrow>\amp  =  \dfrac{1}{4} a^2 b^2 \sin^{2}(\gamma)</mrow>
+        <mrow>\amp  =  \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right) \tag{Since $\sin^2(\gamma) = 1 - \cos^{2}(\gamma)$.}</mrow>
+      </md>
+    </p>
+
+    <p>
+      The Law of Cosines tells us <m>\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}</m>,
+      so substituting this into our equation for <m>A^2</m> gives
+      <md>
+        <mrow>A^2 \amp  =   \dfrac{a^2b^2}{4} \left(1 - \cos^{2}(\gamma)\right)</mrow>
+        <mrow>\amp  =  \dfrac{a^2b^2}{4} \left[1 - \left( \dfrac{a^2 + b^2 - c^2}{2ab} \right)^2\right]</mrow>
+        <mrow>\amp  =  \dfrac{a^2b^2}{4} \left[1 - \dfrac{\left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right]</mrow>
+        <mrow>\amp  =  \dfrac{a^2b^2}{4} \left[\dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{4a^2b^2} \right]</mrow>
+        <mrow>\amp  =  \dfrac{4a^2 b^2  - \left(a^2 + b^2 - c^2\right)^2}{16}</mrow>
+        <mrow>\amp  =  \dfrac{(2ab)^2  - \left(a^2 + b^2 - c^2\right)^2}{16}</mrow>
+        <mrow>\amp  =  \dfrac{\left( 2ab - \left[a^2+b^2 - c^2\right]\right)  \left( 2ab + \left[a^2+b^2 - c^2\right]\right)}{16}  \tag{difference of squares.}</mrow>
+        <mrow>\amp  =  \dfrac{\left(c^2 - a^2 + 2ab - b^2 \right)\left( a^2 + 2ab + b^2- c^2\right)}{16}</mrow>
+        <mrow>\amp  =  \dfrac{\left(c^2 - \left[a^2 - 2ab + b^2\right] \right)  \left( \left[a^2 + 2ab + b^2\right]- c^2\right)}{16}</mrow>
+        <mrow>\amp  =  \dfrac{\left(c^2 - (a-b)^2 \right)  \left( (a+b)^2- c^2\right)}{16}    \tag{perfect square trinomials.}</mrow>
+        <mrow>\amp  =  \dfrac{ (c-(a-b))(c+(a-b))((a+b) -c)((a+b)+c)}{16}    \tag{difference of squares.}</mrow>
+        <mrow>\amp  =  \dfrac{ (b+c-a)(a+c-b)(a+b-c)(a+b+c)}{16}</mrow>
+        <mrow>\amp  =  \dfrac{(b+c-a)}{2} \cdot \dfrac{(a+c-b)}{2} \cdot \dfrac{(a+b-c)}{2} \cdot \dfrac{(a+b+c)}{2}</mrow>
+      </md>
+    </p>
+
+    <p>
+      At this stage, we recognize the last factor as the semiperimeter,
+      <me>
+        s = \frac{1}{2}(a+b+c) = \dfrac{a+b+c}{2}
+      </me>.
+    </p>
+
+    <p>
+      To complete the proof, we note that
+      <me>
+        (s - a) = \dfrac{a+b+c}{2} - a = \dfrac{a+b+c-2a}{2} = \dfrac{b+c-a}{2}
+      </me>.
+    </p>
+
+    <p>
+      Similarly, we find <m>(s-b) = \dfrac{a+c-b}{2}</m> and <m>(s-c) = \dfrac{a+b-c}{2}</m>.
+      Hence, we get
+      <md>
+        <mrow>A^2 \amp  =  \dfrac{(b+c-a)}{2} \cdot \dfrac{(a+c-b)}{2} \cdot \dfrac{(a+b-c)}{2} \cdot \dfrac{(a+b+c)}{2}</mrow>
+        <mrow>\amp  =  (s-a) (s-b) (s-c) s</mrow>
+      </md>
+      so that <m>A = \sqrt{s(s-a)(s-b)(s-c)}</m> as required.
+    </p>
+
+    <p>
+      We close with an example of Heron's Formula.
+    </p>
+
+    <example xml:id="heronex">
+      <title>Using Heron's Fomrula</title>
+      <statement>
+        <p>
+          Find the area enclosed of the triangle in <xref ref="locex">Example</xref>
+          <xref ref="locsss">number</xref>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are given <m>a = 4</m>, <m>b=7</m> and <m>c = 5</m>.
+          Using these values, we find <m>s = \frac{1}{2}(4+7+5) = 8</m>,
+          <m>(s - a) = 8 - 4 = 4</m>,
+          <m>(s-b) = 8-7 =1</m> and <m>(s-c) = 8-5=3</m>.
+          Using Heron's Formula,
+          we get <m>A = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{(8)(4)(1)(3)} = \sqrt{96} = 4\sqrt{6} \approx 9.80</m> square units.
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      use the Law of Cosines to find the remaining side(s) and angle(s) if possible.
+    </p>
+    <exercise xml:id="firstlawofcosines">
+      <statement>
+        <p>
+          <m>a = 7, \; b = 12, \; \gamma = 59.3^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 35.54^{\circ} \amp \beta \approx 85.16^{\circ} \amp \gamma = 59.3^{\circ} \\a = 7 \amp b = 12 \amp c \approx 10.36 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 104^{\circ}, \; b = 25, \; c = 37</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 104^{\circ} \amp \beta \approx 29.40^{\circ} \amp \gamma \approx 46.60^{\circ} \\a \approx 49.41 \amp b = 25 \amp c = 37 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a = 153, \; \beta = 8.2^{\circ}, \; c = 153</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 85.90^{\circ} \amp \beta = 8.2^{\circ} \amp \gamma \approx 85.90^{\circ} \\a = 153 \amp b \approx 21.88 \amp c = 153 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a = 3, \; b = 4, \; \gamma = 90^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 36.87^{\circ} \amp \beta \approx 53.13^{\circ} \amp \gamma = 90^{\circ} \\a = 3 \amp b = 4 \amp c = 5 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 120^{\circ}, \; b = 3, \; c = 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 120^{\circ} \amp \beta \approx 25.28^{\circ} \amp \gamma \approx 34.72^{\circ} \\a = \sqrt{37} \amp b = 3 \amp c = 4 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="firstherons">
+      <statement>
+        <p>
+          <m>a = 7, \; b = 10, \; c = 13</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 32.31^{\circ} \amp \beta \approx 49.58^{\circ} \amp \gamma \approx 98.21^{\circ} \\a = 7 \amp b = 10 \amp c = 13 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a = 1, \; b = 2, \; c = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="secondherons">
+      <statement>
+        <p>
+          <m>a = 300, \; b = 302, \; c = 48</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 83.05^{\circ} \amp \beta \approx 87.81^{\circ} \amp \gamma \approx 9.14^{\circ} \\a = 300 \amp b = 302 \amp c = 48 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a = 5, \; b = 5, \; c = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 60^{\circ} \amp \beta = 60^{\circ} \amp \gamma = 60^{\circ} \\a = 5 \amp b = 5 \amp c = 5 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="thirdherons">
+      <statement>
+        <p>
+          <m>a = 5, \; b = 12,; c = 13</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 22.62^{\circ} \amp \beta \approx 67.38^{\circ} \amp \gamma = 90^{\circ} \\a = 5 \amp b = 12 \amp c = 13 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      solve for the remaining side(s) and angle(s), if possible,
+      using any appropriate technique.
+    </p>
+    <exercise xml:id="ambigfirst">
+      <statement>
+        <p>
+          <m>a = 18, \; \alpha = 63^{\circ}, \; b = 20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 63^{\circ} \amp \beta \approx 98.11^{\circ} \amp \gamma \approx 18.89^{\circ} \\a = 18 \amp b = 20 \amp c \approx 6.54 \end{array}</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{lll}\alpha = 63^{\circ} \amp \beta \approx 81.89^{\circ} \amp \gamma \approx 35.11^{\circ} \\a = 18 \amp b = 20 \amp c \approx 11.62 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>a = 37, \; b = 45, \; c = 26</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 55.30^{\circ} \amp \beta \approx 89.40^{\circ} \amp \gamma \approx 35.30^{\circ} \\a = 37 \amp b = 45 \amp c = 26 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="ambigsecond">
+      <statement>
+        <p>
+          <m>a = 16, \; \alpha = 63^{\circ}, \; b = 20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="ambigthird">
+      <statement>
+        <p>
+          <m>a = 22, \; \alpha = 63^{\circ}, \; b = 20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 63^{\circ} \amp \beta \approx 54.1^{\circ} \amp \gamma \approx 62.9^{\circ} \\a = 22 \amp b = 20 \amp c \approx 21.98 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 42^{\circ}, \; b = 117, \; c = 88</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 42^{\circ} \amp \beta \approx 89.23^{\circ} \amp \gamma \approx 48.77^{\circ} \\a \approx 78.30 \amp b = 117 \amp c = 88 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="anylawlast">
+      <statement>
+        <p>
+          <m>\beta = 7^{\circ}, \; \gamma = 170^{\circ}, \; c = 98.6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 3^{\circ} \amp \beta = 7^{\circ} \amp \gamma = 170^{\circ} \\a \approx 29.72 \amp b \approx 69.2 \amp c = 98.6 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the area of the triangles given in <xref ref="firstherons">Exercises</xref>,
+          <xref ref="secondherons"></xref>
+          and <xref ref="thirdherons"></xref> above.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The area of the triangle given in <xref ref="firstherons">Exercise</xref>
+          is <m>\sqrt{1200} = 20\sqrt{3} \approx 34.64</m> square units.
+        </p>
+
+        <p>
+          The area of the triangle given in <xref ref="secondherons">Exercise</xref>
+          is <m>\sqrt{51764375} \approx 7194.75</m> square units.
+        </p>
+
+        <p>
+          The area of the triangle given in <xref ref="thirdherons">Exercise</xref>
+          is exactly <m>30</m> square units.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The hour hand on my antique Seth Thomas schoolhouse clock in 4 inches long and the minute hand is 5.5 inches long.
+          Find the distance between the ends of the hands when the clock reads four o'clock.
+          Round your answer to the nearest hundredth of an inch.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The distance between the ends of the hands at four o'clock is about <m>8.26</m> inches.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A geologist wants to measure the diameter of a crater.
+          From her camp,
+          it is 4 miles to the northern-most point of the crater and 2 miles to the southern-most point.
+          If the angle between the two lines of sight is <m>117^{\circ}</m>,
+          what is the diameter of the crater?
+          Round your answer to the nearest hundredth of a mile.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The diameter of the crater is about 5.22 miles.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="lofcosinesbearingexercise">
+      <statement>
+        <p>
+          From the Pedimaxus International Airport a tour helicopter can fly to Cliffs of Insanity Point by following a bearing of N<m>8.2^{\circ}</m>E for 192 miles and it can fly to Bigfoot Falls by following a bearing of S<m>68.5^{\circ}</m>E for 207 miles.<fn>Please refer to <xref ref="bearings">Page</xref>
+          in <xref ref="LawofSines">Section</xref>
+          for an introduction to bearings.</fn>Find the distance between Cliffs of Insanity Point and Bigfoot Falls.
+          Round your answer to the nearest mile.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 313 miles
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Cliffs of Insanity Point and Bigfoot Falls from <xref ref="lofcosinesbearingexercise">Exericse</xref>
+          above both lie on a straight stretch of the Great Sasquatch Canyon.
+          What bearing would the tour helicopter need to follow to go directly from Bigfoot Falls to Cliffs of Insanity Point?
+          Round your angle to the nearest tenth of a degree.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          N<m>31.8^{\circ}</m>W
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A naturalist sets off on a hike from a lodge on a bearing of S<m>80^{\circ}</m>W. After 1.5 miles,
+          she changes her bearing to S<m>17^{\circ}</m>W and continues hiking for 3 miles.
+          Find her distance from the lodge at this point.
+          Round your answer to the nearest hundredth of a mile.
+          What bearing should she follow to return to the lodge?
+          Round your angle to the nearest degree.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          She is about 3.92 miles from the lodge and her bearing to the lodge is N<m>37^{\circ}</m>E.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The HMS Sasquatch leaves port on a bearing of N<m>23^{\circ}</m>E and travels for 5 miles.
+          It then changes course and follows a heading of S<m>41^{\circ}</m>E for 2 miles.
+          How far is it from port?
+          Round your answer to the nearest hundredth of a mile.
+          What is its bearing to port?
+          Round your angle to the nearest degree.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          It is about 4.50 miles from port and its heading to port is S<m>47^{\circ}</m>W.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The SS Bigfoot leaves a harbor bound for Nessie Island which is 300 miles away at a bearing of N<m>32^{\circ}</m>E. A storm moves in and after 100 miles,
+          the captain of the Bigfoot finds he has drifted off course.
+          If his bearing to the harbor is now S<m>70^{\circ}</m>W, how far is the SS Bigfoot from Nessie Island?
+          Round your answer to the nearest hundredth of a mile.
+          What course should the captain set to head to the island?
+          Round your angle to the nearest tenth of a degree.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          It is about 229.61 miles from the island and the captain should set a course of N<m>16.4^{\circ}</m>E to reach the island.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          From a point 300 feet above level ground in a firetower,
+          a ranger spots two fires in the Yeti National Forest.
+          The angle of depression<fn>See <xref ref="angleofdepression">Exercise</xref>
+          in <xref ref="CircularFunctions">Section</xref>
+          for the definition of this angle.</fn>made by the line of sight from the ranger to the first fire is
+          <m>2.5^{\circ}</m> and the angle of depression made by line of sight from the ranger to the second fire is <m>1.3^{\circ}</m>.
+          The angle formed by the two lines of sight is <m>117^{\circ}</m>.
+          Find the distance between the two fires.
+          Round your answer to the nearest foot. (Hint: In order to use the
+          <m>117^{\circ}</m> angle between the lines of sight,
+          you will first need to use right angle Trigonometry to find the lengths of the lines of sight.
+          This will give you a Side-Angle-Side case in which to apply the Law of Cosines.)
+        </p>
+
+        <p>
+          <img src="figures/AppExtGraphics/LawofCosines-5.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The fires are about 17456 feet apart. (Try to avoid rounding errors.)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If you apply the Law of Cosines to the ambiguous Angle-Side-Side (ASS) case,
+          the result is a quadratic equation whose variable is that of the missing side.
+          If the equation has no positive real zeros then the information given does not yield a triangle.
+          If the equation has only one positive real zero then exactly one triangle is formed and if the equation has two distinct positive real zeros then two distinct triangles are formed.
+          Apply the Law of Cosines to <xref ref="ambigfirst">Exercises</xref>,
+          <xref ref="ambigsecond"></xref> and <xref ref="ambigthird"></xref>
+          above in order to demonstrate this result.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates why Heron's Formula yields an area in square units even though four lengths are being multiplied together.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+
