@@ -1,0 +1,2253 @@
+
+
+<section xml:id="IntroRational">
+  <title>Introduction to Rational Functions</title>
+  <introduction>
+    <p>
+      If we add, subtract or multiply polynomial functions according to the function arithmetic rules defined in <xref ref="FunctionArithmetic">Section</xref>,
+      we will produce another polynomial function.
+      If, on the other hand, we divide two polynomial functions,
+      the result may not be a polynomial.
+      In this chapter we study
+          <idx><h>rational functions</h></idx>
+      <em>rational functions</em>
+      - functions which are ratios of polynomials.
+    </p>
+
+    <definition xml:id="rationalfunction">
+      <title>Rational Function</title>
+      <statement>
+        <p>
+          A <term>rational function</term>
+          is a function which is the ratio of polynomial functions.
+          Said differently,
+          <m>r</m> is a rational function if it is of the form
+              <idx><h>function</h><h>rational</h></idx>
+          <me>
+            r(x) = \dfrac{p(x)}{q(x)}
+          </me>,
+          where <m>p</m> and <m>q</m> are polynomial functions.
+        </p>
+      </statement>
+    </definition>
+
+    <aside>
+      <p>
+        According to <xref ref="rationalfunction">Definition</xref>,
+        all polynomial functions are also rational functions,
+        since we can take <m>q(x)=1</m>.
+      </p>
+    </aside>
+    <p>
+      As we recall from <xref ref="FunctionNotation">Section</xref>,
+      we have domain issues any time the denominator of a fraction is zero.
+      In the example below,
+      we review this concept as well as some of the arithmetic of rational expressions.
+    </p>
+
+    <example xml:id="ratfuncex">
+      <title>Domain of rational functions</title>
+      <statement>
+        <p>
+          Find the domain of the following rational functions.
+          Write them in the form <m>\dfrac{p(x)}{q(x)}</m> for polynomial functions <m>p</m> and <m>q</m> and simplify.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{2x-1}{x+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = 2 - \dfrac{3}{x+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = \dfrac{2x^2-1}{x^2-1} - \dfrac{3x-2}{x^2-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>r(x) = \dfrac{2x^2-1}{x^2-1} \div \dfrac{3x-2}{x^2-1}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find the domain of <m>f</m>,
+                we proceed as we did in <xref ref="FunctionNotation">Section</xref>:
+                we find the zeros of the denominator and exclude them from the domain.
+                Setting <m>x+1=0</m> results in <m>x=-1</m>.
+                Hence,
+          our domain is <m>(-\infty, -1) \cup (-1,\infty)</m>.
+                The expression <m>f(x)</m> is already in the form requested and when we check for common factors among the numerator and denominator we find none,
+                so we are done.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Proceeding as before,
+                we determine the domain of <m>g</m> by solving <m>x+1=0</m>.
+                As before,
+          we find the domain of <m>g</m> is <m>(-\infty, -1) \cup (-1,\infty)</m>.
+                To write <m>g(x)</m> in the form requested,
+                we need to get a common denominator
+                <me>
+                  \begin{array}{rclclcl}
+                  g(x) \amp  = \amp  2 - \dfrac{3}{x+1} \amp  = \amp  \dfrac{2}{1} - \dfrac{3}{x+1} \amp  = \amp  \dfrac{(2)(x+1)}{(1)(x+1)} - \dfrac{3}{x+1} \\ [.15in]
+                  \amp  = \amp  \dfrac{(2x+2) - 3}{x+1} \amp  = \amp  \dfrac{2x-1}{x+1} \amp  \amp 
+                  \end{array}
+                </me>
+                This formula is now completely simplified.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The denominators in the formula for <m>h(x)</m> are both <m>x^2-1</m> whose zeros are  <m>x = \pm 1</m>.
+                As a result,
+                the domain of <m>h</m> is <m>(-\infty, -1) \cup (-1,1) \cup (1, \infty)</m>.
+                We now proceed to simplify <m>h(x)</m>.
+                Since we have the same denominator in both terms,
+                we subtract the numerators.
+                We then factor the resulting numerator and denominator,
+                and cancel out the common factor.
+                <me>
+                  \begin{array}{rclcl}
+
+                  h(x) \amp  = \amp  \dfrac{2x^2-1}{x^2-1} - \dfrac{3x-2}{x^2-1} \amp  = \amp  \dfrac{\left(2x^2-1\right) - \left(3x-2\right)}{x^2-1} \\ [.15in]
+                  \amp  = \amp  \dfrac{2x^2-1 - 3x+2}{x^2-1} \amp  = \amp   \dfrac{2x^2 - 3x+1}{x^2-1} \\ [.15in]
+                  \amp  = \amp  \dfrac{(2x-1)(x-1)}{(x+1)(x-1)} \amp  = \amp  \dfrac{(2x-1)\cancel{(x-1)}}{(x+1)\cancel{(x-1)}} \\ [.15in]
+                  \amp  = \amp  \dfrac{2x-1}{x+1} \amp  \amp 
+                  \end{array}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the domain of <m>r</m>,
+                it may help to temporarily rewrite <m>r(x)</m> as
+                <me>
+                  r(x) = \dfrac{\dfrac{2x^2-1}{x^2-1} }{\dfrac{3x-2}{x^2-1}}
+                </me>
+                We need to set all of the denominators equal to zero which means we need to solve not only  <m>x^2-1= 0</m>,
+                but also <m>\dfrac{3x-2}{x^2-1}=0</m>.
+                We find <m>x = \pm 1</m> for the former and <m>x= \frac{2}{3}</m> for the latter.
+                Our domain is <m>(-\infty, -1) \cup \left(-1,\frac{2}{3}\right) \cup \left(\frac{2}{3},1\right) \cup (1, \infty)</m>.
+                We simplify <m>r(x)</m> by rewriting the division as multiplication by the reciprocal and then by cancelling the common factor
+                <me>
+                  \begin{array}{rclcl}
+
+                  r(x) \amp  = \amp  \dfrac{2x^2-1}{x^2-1} \div \dfrac{3x-2}{x^2-1} \amp  = \amp  \dfrac{2x^2-1}{x^2-1} \cdot \dfrac{x^2-1}{3x-2}\\[.15in]
+                  \amp  = \amp  \dfrac{\left(2x^2-1\right)\left(x^2-1\right)}{\left(x^2-1\right)(3x-2)} \amp  = \amp  \dfrac{\left(2x^2-1\right)\cancel{\left(x^2-1\right)}}{\cancel{\left(x^2-1\right)}(3x-2)}\\[.15in]
+                  \amp  = \amp  \dfrac{2x^2-1}{3x-2}   \amp  \amp 
+                  \end{array}
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few remarks about <xref ref="ratfuncex">Example</xref> are in order.
+      Note that the expressions for <m>f(x)</m>,
+      <m>g(x)</m> and <m>h(x)</m> work out to be the same.
+      However, only two of these functions are actually equal.
+      Recall that functions are ultimately sets of ordered pairs
+      (you should review <xref ref="Relations">Sections</xref>
+      and <xref ref="IntrotoFunctions"></xref>
+      if this statement caught you off guard),
+      so for two functions to be equal,
+      they need, among other things, to have the same domain.
+      Since <m>f(x) = g(x)</m> and <m>f</m> and <m>g</m> have the same domain,
+      they are equal functions.
+      Even though the formula <m>h(x)</m> is the same as <m>f(x)</m>,
+      the domain of <m>h</m> is different than the domain of <m>f</m>,
+      and thus they are different functions.
+    </p>
+
+    <p>
+      We now turn our attention to the graphs of rational functions.
+      Consider the function <m>f(x) = \dfrac{2x-1}{x+1}</m> from <xref ref="ratfuncex">Example</xref>.
+      Using GeoGebra calculator,
+      we obtain the graph in <xref ref="fig_ratgr1">Figure</xref>
+    </p>
+
+    <p>
+      Two behaviours of the graph are worthy of further discussion.
+      First, note that the graph appears to
+      <q>break</q> at <m>x=-1</m>.
+      We know from our last example that <m>x=-1</m> is not in the domain of <m>f</m> which means <m>f(-1)</m> is undefined.
+      When we make a table of values to study the behaviour of <m>f</m> <em>near</em>
+      <m>x=-1</m> we see that we can get <q>near</q>
+      <m>x=-1</m> from two directions.
+      We can choose values a little less than <m>-1</m>,
+      for example <m>x=-1.1</m>, <m>x=-1.01</m>,
+      <m>x=-1.001</m>, and so on.
+      These values are said to <q>approach <m>-1</m> from the <em>left</em>.</q>
+      Similarly, the values <m>x=-0.9</m>,
+      <m>x=-0.99</m>, <m>x=-0.999</m>,
+      etc., are said to <q>approach <m>-1</m> from the <em>right</em>.</q>
+      If we make the two tables in <xref ref="fig_rattab1">Figure</xref>,
+      we find that the numerical results confirm what we see graphically.
+    </p>
+
+    <figure xml:id="fig_ratgr1">
+      <caption>The graph of <m>f(x) = \dfrac{2x-1}{x+1}</m></caption>
+      <img src="figures/RationalsGraphics/Rationals01.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_rattab1">
+      <caption>Values of <m>f(x)=\frac{2x-1}{x+1}</m> near <m>x=-1</m></caption>
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  f(x)\amp  (x,f(x)) \\ \hline
+      -1.1 \amp  32 \amp  (-1.1, 32) \\  \hline
+      -1.01 \amp  302 \amp  (-1.01, 302) \\  \hline 
+      -1.001 \amp  3002 \amp  ( -1.001, 3002) \\  \hline 
+      -1.0001 \amp  30002 \amp  ( -1.001, 30002) \\  \hline
+      \end{array}</m>
+
+
+
+      <m>\begin{array}{|r||c|c|}  \hline 
+      x \amp  f(x) \amp  (x,f(x)) \\ \hline
+      -0.9 \amp  -28 \amp  ( -0.9 , -28) \\  \hline
+      -0.99 \amp  -298 \amp  ( -0.99, -298) \\  \hline
+      -0.999 \amp  -2998\amp  (-0.999,-2998) \\  \hline
+      -0.9999 \amp  -29998\amp  (-0.9999,-29998) \\  \hline
+      \end{array}</m>
+    </figure>
+
+    <p>
+      As the <m>x</m> values approach <m>-1</m> from the left,
+      the function values become larger and larger positive numbers. (We would need Calculus to confirm this analytically.) We express this symbolically by stating as <m>x \rightarrow -1^{-}</m>,
+      <m>f(x) \rightarrow \infty</m>.
+      Similarly, using analogous notation,
+      we conclude from the table that as <m>x \rightarrow -1^{+}</m>,
+      <m>f(x) \rightarrow -\infty</m>.
+      For this type of unbounded behaviour,
+      we say the graph of <m>y=f(x)</m> has a
+          <idx><h>asymptote</h><h>vertical ! intuitive definition of</h></idx><idx><h>vertical asymptote</h><h>intuitive definition of</h></idx>
+      <em>vertical asymptote</em> of <m>x = -1</m>.
+      Roughly speaking, this means that near <m>x=-1</m>,
+      the graph looks very much like the vertical line <m>x=-1</m>.
+    </p>
+
+    <p>
+      The other feature worthy of note about the graph of <m>y=f(x)</m> is that it seems to <q>level off</q>
+      on the left and right hand sides of the screen.
+      This is a statement about the end behaviour of the function.
+      As we discussed in <xref ref="GraphsofPolynomials">Section</xref>,
+      the end behaviour of a function is its behaviour as <m>x</m> attains larger and larger negative values without bound (here,
+      the word <q>larger</q> means larger in absolute value),
+      <m>x \rightarrow -\infty</m>,
+      and as <m>x</m> becomes large without bound,
+      <m>x \rightarrow \infty</m>.
+    </p>
+
+    <figure xml:id="fig_rattab2">
+      <caption>Values of <m>f(x)=\dfrac{2x-1}{x+1}</m> for large negative and positive values of <m>x</m></caption>
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  f(x)\approx \amp  (x,f(x))\approx \\ \hline
+      -10 \amp   2.3333 \amp   (-10,  2.3333) \\  \hline
+      -100 \amp   2.0303 \amp   (-100, 2.0303) \\  \hline 
+      -1000 \amp    2.0030 \amp   ( -1000,  2.0030) \\  \hline 
+      -10000 \amp    2.0003 \amp   ( -10000, 2.0003) \\  \hline
+      \end{array}</m>
+
+
+
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  f(x) \approx \amp  (x,f(x)) \approx \\ \hline
+      10 \amp   1.7273 \amp   (10,  1.7273) \\  \hline
+      100 \amp   1.9703 \amp   (100, 1.9703) \\  \hline 
+      1000 \amp    1.9970 \amp   ( 1000,  1.9970) \\  \hline 
+      10000 \amp    1.9997 \amp   ( 10000, 1.9997) \\  \hline
+      \end{array}</m>
+    </figure>
+
+    <p>
+      From the tables in <xref ref="fig_rattab2">Figure</xref>,
+      we see that as <m>x \rightarrow -\infty</m>,
+      <m>f(x) \rightarrow 2^{+}</m> and as <m>x \rightarrow \infty</m>,
+      <m>f(x) \rightarrow 2^{-}</m>.
+      Here the <q><m>+</m></q> means <q>from above</q>
+      and the <q><m>-</m></q> means <q>from below</q>.
+      In this case, we say the graph of <m>y=f(x)</m> has a
+          <idx><h>asymptote</h><h>horizontal ! intuitive definition of</h></idx><idx><h>horizontal asymptote</h><h>intuitive definition of</h></idx>
+      <em>horizontal asymptote</em> of <m>y=2</m>.
+      This means that the end behaviour of <m>f</m> resembles the horizontal line <m>y=2</m>,
+      which explains the <q>levelling off</q>
+      behaviour we see in <xref ref="fig_ratgr1">Figure</xref>.
+      We formalize the concepts of vertical and horizontal asymptotes in the following definitions.
+    </p>
+
+    <definition xml:id="va">
+      <title>Vertical Asymptote</title>
+      <statement>
+        <p>
+          The line <m>x=c</m> is called a
+              <idx><h>asymptote</h><h>vertical ! formal definition of</h></idx><idx><h>vertical asymptote</h><h>formal definition of</h></idx>
+          <term>vertical asymptote</term>
+          of the graph of a function <m>y=f(x)</m> if as
+          <m>x \rightarrow c^{-}</m> or as <m>x \rightarrow c^{+}</m>,
+          either <m>f(x) \rightarrow \infty</m> or <m>f(x) \rightarrow -\infty</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <definition xml:id="ha">
+      <title>Horizontal Asymptote</title>
+      <statement>
+        <p>
+          The line <m>y=c</m> is called a
+              <idx><h>asymptote</h><h>horizontal ! formal definition of</h></idx><idx><h>horizontal asymptote</h><h>formal definition of</h></idx>
+          <term>horizontal asymptote</term>
+          of the graph of a function <m>y=f(x)</m> if as
+          <m>x \rightarrow -\infty</m> or as <m>x \rightarrow \infty</m>,
+          <m>f(x) \rightarrow c</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Note that in <xref ref="ha">Definition</xref>,
+      we write <m>f(x) \rightarrow c</m> (not <m>f(x) \rightarrow c^{+}</m> or
+      <m>f(x) \rightarrow c^{-}</m>) because we are unconcerned from which direction the values <m>f(x)</m> approach the value <m>c</m>,
+      just as long as they do so.
+    </p>
+
+    <aside>
+      <p>
+        As we shall see in the next section,
+        the graphs of rational functions may,
+        in fact, <em>cross</em> their horizontal asymptotes.
+        If this happens, however, it does so only a
+        <em>finite</em> number of times,
+        and so for each choice of
+        <m>x \rightarrow -\infty</m> and <m>x \rightarrow \infty</m>,
+        <m>f(x)</m> will approach <m>c</m> from either below (in the case <m>f(x) \rightarrow c^{-}</m>) or above (in the case <m>f(x) \rightarrow c^{+}</m>.) We leave
+        <m>f(x) \rightarrow c</m> generic in our definition, however,
+        to allow this concept to apply to less tame specimens in the Precalculus zoo,
+        such as <xref ref="exploregraphslast">Exercise</xref>
+        in <xref ref="TrigGraphs">Section</xref>.
+      </p>
+    </aside>
+    <p>
+      In our discussion following <xref ref="ratfuncex">Example</xref>,
+      we determined that,
+      despite the fact that the formula for <m>h(x)</m> reduced to the same formula as <m>f(x)</m>,
+      the functions <m>f</m> and <m>h</m> are different,
+      since <m>x=1</m> is in the domain of <m>f</m>,
+      but <m>x=1</m> is not in the domain of <m>h</m>.
+      If we graph <m>h(x)=\dfrac{2x^2-1}{x^2-1} - \dfrac{3x-2}{x^2-1}</m> using a graphing calculator,
+      we are surprised to find that the graph looks identical to the graph of <m>y=f(x)</m>.
+      There is a vertical asymptote at <m>x=-1</m>,
+      but near <m>x=1</m>, everything seem fine.
+      Tables of values provide numerical evidence which supports the graphical observation:
+      see <xref ref="fig_rattab3">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_rattab3">
+      <caption>Values of <m>h(x)=\frac{2x^2-1}{x^2-1}-\frac{3x-2}{x^2-1}</m> near <m>x=1</m></caption>
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  h(x)\approx \amp  (x,h(x))\approx \\ \hline
+      0.9 \amp   0.4210 \amp   (0.9, 0.4210) \\  \hline
+      0.99 \amp   0.4925 \amp   (0.99, 0.4925) \\  \hline
+      0.999 \amp   0.4992 \amp   (0.999, 0.4992) \\  \hline
+      0.9999 \amp   0.4999 \amp   (0.9999, 0.4999) \\  \hline
+      \end{array}</m> 
+
+
+
+      <m>\begin{array}{|r||c|c|}  \hline 
+      x \amp  h(x)\approx \amp  (x,h(x))\approx \\ \hline
+      1.1 \amp   0.5714 \amp   (1.1, 0.5714) \\  \hline
+      1.01 \amp    0.5075 \amp   (1.01, 0.5075) \\  \hline
+      1.001 \amp   0.5007 \amp   (1.001, 0.5007) \\  \hline
+      1.0001 \amp   0.5001 \amp   (1.0001, 0.5001) \\  \hline
+      \end{array}</m>
+    </figure>
+
+    <p>
+      We see that as <m>x \rightarrow 1^{-}</m>,
+      <m>h(x) \rightarrow 0.5^{-}</m> and as <m>x \rightarrow 1^{+}</m>,
+      <m>h(x) \rightarrow 0.5^{+}</m>.
+      In other words,
+      the points on the graph of <m>y=h(x)</m> are approaching <m>(1,0.5)</m>,
+      but since <m>x=1</m> is not in the domain of <m>h</m>,
+      it would be inaccurate to fill in a point at <m>(1,0.5)</m>.
+      As we've done in past sections when something like this occurs
+      (for instance,
+      graphing piecewise defined functions in <xref ref="GraphsofFunctions">Section</xref>),
+      we put an open circle
+      (also called a <em>hole</em>
+          <idx><h>hole</h><h>in a graph</h></idx><idx><h>graph</h><h>hole in</h></idx>
+      in this case)
+      at <m>(1,0.5)</m>.
+      <xref ref="fig_ratgr3">Figure</xref>
+      is a detailed graph of <m>y=h(x)</m>,
+      with the vertical and horizontal asymptotes as dashed lines.
+    </p>
+
+    <aside>
+      <p>
+        In Calculus, we will see how these <q>holes</q>
+        in graphs can be <q>plugged</q>
+        once we've made a more advanced study of continuity.
+      </p>
+    </aside>
+    <figure xml:id="fig_ratgr3">
+      <caption>The graph <m>y=h(x)</m> showing asymptotes and the <q>hole</q></caption>
+      <img src="figures/RationalsGraphics/IntroRational-1.pdf"/>
+    </figure>
+
+    <p>
+      Neither <m>x=-1</m> nor <m>x=1</m> are in the domain of <m>h</m>,
+      yet the behaviour of the graph of <m>y=h(x)</m> is drastically different near these <m>x</m>-values.
+      The reason for this lies in the second to last step when we simplified the formula for <m>h(x)</m> in <xref ref="ratfuncex">Example</xref>,
+      where we had <m>h(x) = \dfrac{(2x-1)(x-1)}{(x+1)(x-1)}</m>.
+      The reason <m>x=-1</m> is not in the domain of <m>h</m> is because the factor <m>(x+1)</m> appears in the denominator of <m>h(x)</m>;
+      similarly, <m>x=1</m> is not in the domain of <m>h</m> because of the factor <m>(x-1)</m> in the denominator of <m>h(x)</m>.
+      The major difference between these two factors is that <m>(x-1)</m> cancels with a factor in the numerator whereas <m>(x+1)</m> does not.
+      Loosely speaking,
+      the trouble caused by <m>(x-1)</m> in the denominator is cancelled away while the factor <m>(x+1)</m> remains to cause mischief.
+      This is why the graph of <m>y=h(x)</m> has a vertical asymptote at <m>x=-1</m> but only a hole at <m>x=1</m>.
+      These observations are generalized and summarized in the theorem below,
+      whose proof is found in Calculus.
+    </p>
+
+    <theorem xml:id="vavshole">
+      <title>Location of Vertical Asymptotes and Holes</title>
+      <statement>
+        <p>
+          Suppose <m>r</m> is a rational function which can be written as
+          <m>r(x) = \dfrac{p(x)}{q(x)}</m> where <m>p</m> and <m>q</m> have no common zeros (in other words,
+          <m>r(x)</m> is in lowest terms).
+          Let <m>c</m> be a real number which is not in the domain of <m>r</m>.
+              <idx><h>hole</h><h>location of</h></idx> <idx><h>asymptote</h><h>vertical ! location of</h></idx> <idx><h>vertical asymptote</h><h>location of</h></idx>
+          <ul>
+            <li>
+              <p>
+                If <m>q(c) \neq 0</m>,
+                then the graph of <m>y=r(x)</m> has a hole at <m>\left(c, \dfrac{p(c)}{q(c)}\right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>q(c) = 0</m>,
+                then the line <m>x=c</m> is a vertical asymptote of the graph of <m>y=r(x)</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <aside>
+      <p>
+        In English, <xref ref="vavshole">Theorem</xref>
+        says that if <m>x=c</m> is not in the domain of <m>r</m> but,
+        when we simplify <m>r(x)</m>,
+        it no longer makes the denominator <m>0</m>,
+        then we have a hole at <m>x=c</m>.
+        Otherwise, the line <m>x=c</m> is a vertical asymptote of the graph of <m>y=r(x)</m>.
+        In other words, <xref ref="vavshole">Theorem</xref>
+        tells us <q>How to tell your asymptote from a hole in the graph.</q>
+      </p>
+    </aside>
+    <example xml:id="vavsholeexample">
+      <title>Finding vertical asymptotes</title>
+      <statement>
+        <p>
+          Find the vertical asymptotes of,
+          and/or holes in, the graphs of the following rational functions.
+          Verify your answers using software or a graphing calculator,
+          and describe the behaviour of the graph near them using proper notation.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{2x}{x^2-3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \dfrac{x^2-x-6}{x^2-9}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = \dfrac{x^2-x-6}{x^2+9}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>r(x) = \dfrac{x^2-x-6}{x^2+4x+4}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To use <xref ref="vavshole">Theorem</xref>,
+                we first find all of the real numbers which aren't in the domain of <m>f</m>.
+                To do so,
+          we solve <m>x^2 - 3 = 0</m> and get <m>x = \pm \sqrt{3}</m>.
+                Since the expression <m>f(x)</m> is in lowest terms,
+                there is no cancellation possible,
+                and we conclude that the lines <m>x = -\sqrt{3}</m> and
+                <m>x=\sqrt{3}</m> are vertical asymptotes to the graph of <m>y=f(x)</m>.
+                Plotting the function in GeoGebra verifies this claim,
+                and from the graph in <xref ref="fig_ratgr4">Figure</xref>,
+                we see that as <m>x \rightarrow -\sqrt{3}^{\, -}</m>,
+                <m>f(x) \rightarrow -\infty</m>,
+                as <m>x\rightarrow -\sqrt{3}^{\, +}</m>,
+                <m>f(x) \rightarrow \infty</m>,
+                as <m>x \rightarrow \sqrt{3}^{\, -}</m>,
+                <m>f(x) \rightarrow -\infty</m>,
+                and finally as <m>x\rightarrow \sqrt{3}^{\, +}</m>,
+                <m>f(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgr4"> <caption>The graph <m>y=f(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals02.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solving <m>x^2 - 9 = 0</m> gives <m>x = \pm 3</m>.
+                In lowest terms <m>g(x) = \dfrac{x^2-x-6}{x^2-9} = \dfrac{(x-3)(x+2)}{(x-3)(x+3)} = \dfrac{x+2}{x+3}</m>.
+                Since <m>x=-3</m> continues to make trouble in the denominator,
+                we know the line <m>x=-3</m> is a vertical asymptote of the graph of <m>y=g(x)</m>.
+                Since <m>x=3</m> no longer produces a <m>0</m> in the denominator,
+                we have a hole at <m>x=3</m>.
+                To find the <m>y</m>-coordinate of the hole,
+                we substitute <m>x=3</m> into
+                <m>\dfrac{x+2}{x+3}</m> and find the hole is at <m>\left(3, \frac{5}{6}\right)</m>.
+                When we graph <m>y=g(x)</m> using GeoGebra,
+                we clearly see the vertical asymptote at <m>x=-3</m>,
+                but everything seems calm near <m>x=3</m>:
+                see <xref ref="fig_ratgr5">Figure</xref>.
+                Hence, as <m>x \rightarrow -3^{-}</m>,
+                <m>g(x) \rightarrow \infty</m>,
+                as <m>x \rightarrow -3^{+}</m>,
+                <m>g(x) \rightarrow -\infty</m>,
+                as <m>x \rightarrow 3^{-}</m>,
+                <m>g(x) \rightarrow \frac{5}{6}^{-}</m>,
+                and as <m>x \rightarrow 3^{+}</m>,
+                <m>g(x) \rightarrow \frac{5}{6}^{+}</m>. <figure xml:id="fig_ratgr5"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals03.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The domain of <m>h</m> is all real numbers,
+                since <m>x^2+9 = 0</m> has no real solutions.
+                Accordingly,
+                the graph of <m>y=h(x)</m> is devoid of both vertical asymptotes and holes,
+                as see in <xref ref="fig_ratgr6">Figure</xref>. <figure xml:id="fig_ratgr6"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals04.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Setting <m>x^2+4x+4 = 0</m> gives us <m>x=-2</m> as the only real number of concern.
+                Simplifying,
+                we see <m>r(x) = \dfrac{x^2-x-6}{x^2+4x+4} = \dfrac{(x-3)(x+2)}{(x+2)^2} = \dfrac{x-3}{x+2}</m>.
+                Since <m>x=-2</m> continues to produce a <m>0</m> in the denominator of the reduced function,
+                we know <m>x=-2</m> is a vertical asymptote to the graph.
+                The graph in <xref ref="fig_ratgr7">Figure</xref>
+                bears this out, and, moreover,
+                we see that as <m>x\rightarrow -2^{-}</m>,
+                <m>r(x) \rightarrow \infty</m> and as <m>x \rightarrow -2^{+}</m>,
+                <m>r(x) \rightarrow -\infty</m>. <figure xml:id="fig_ratgr7"> <caption>The graph <m>y=r(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals05.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example gives us a physical interpretation of a vertical asymptote.
+      This type of model arises from a family of equations cheerily named <q>doomsday</q>
+      equations. (These functions arise in Differential Equations.
+      The unfortunate name will make sense shortly.)
+    </p>
+
+    <example xml:id="ex_doomsday">
+      <title>Doomsday population model</title>
+      <statement>
+        <p>
+          A mathematical model for the population <m>P</m>, in thousands,
+          of a certain species of bacteria,
+          <m>t</m> days after it is introduced to an environment is given by
+          <m>P(t) = \dfrac{100}{(5-t)^{2}}</m>, <m>0 \leq t \lt  5</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>P(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When will the population reach <m>100,\!000</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Determine the behaviour of <m>P</m> as <m>t \rightarrow 5^{-}</m>.
+                Interpret this result graphically and within the context of the problem.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Substituting <m>t=0</m> gives <m>P(0) = \dfrac{100}{(5-0)^2} = 4</m>,
+                which means <m>4000</m> bacteria are initially introduced into the environment.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find when the population reaches <m>100,\! 000</m>,
+                we first need to remember that <m>P(t)</m> is measured in <em>thousands</em>.
+                In other words,
+                <m>100,\! 000</m> bacteria corresponds to <m>P(t) = 100</m>.
+                Substituting for <m>P(t)</m> gives the equation <m>\dfrac{100}{(5-t)^2} = 100</m>.
+                Clearing denominators and dividing by <m>100</m> gives <m>(5-t)^2=1</m>, which,
+                after extracting square roots,
+                produces <m>t = 4</m> or <m>t=6</m>.
+                Of these two solutions,
+                only <m>t=4</m> in our domain,
+                so this is the solution we keep.
+                Hence,
+          it takes <m>4</m> days for the population of bacteria to reach <m>100,\! 000</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the behaviour of <m>P</m> as <m>t \rightarrow 5^{-}</m>,
+                we make the table in <xref ref="fig_rattab4">Figure</xref>. <table xml:id="fig_rattab4"> <caption>The behaviour of <m>P</m> as
+                <m>t\to 5^-</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell><m>t</m></cell> <cell><m>P(t)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.9</cell> <cell>10000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.99</cell> <cell>1000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.999</cell> <cell>100000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.9999</cell> <cell>10000000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> </tabular> </table> <figure xml:id="fig_doomsday"> <caption>The graph of <m>P(t)</m>,
+                for <m>0\leq t\lt 5</m></caption> <img src="figures/RationalsGraphics/Doomsday.pdf"/> </figure> In other words,
+                as <m>t \rightarrow 5^{-}</m>,
+                <m>P(t) \rightarrow \infty</m>.
+                Graphically,
+                the line <m>t=5</m> is a vertical asymptote of the graph of <m>y=P(t)</m>:
+                see <xref ref="fig_doomsday">Figure</xref>.
+                Physically,
+                this means that the population of bacteria is increasing without bound as we near 5 days,
+                which cannot actually happen.
+                For this reason, <m>t=5</m> is called the
+                <q>doomsday</q> for this population.
+                There is no way any environment can support infinitely many bacteria,
+                so shortly before <m>t = 5</m> the environment would collapse.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Now that we have thoroughly investigated vertical asymptotes,
+      we can turn our attention to horizontal asymptotes.
+      The next theorem tells us when to expect horizontal asymptotes.
+    </p>
+
+    <theorem xml:id="hathm">
+      <title>Location of Horizontal Asymptotes</title>
+      <statement>
+        <p>
+              <idx><h>asymptote</h><h>horizontal ! location of</h></idx><idx><h>horizontal asymptote</h><h>location of</h></idx>
+          Suppose <m>r</m> is a rational function and <m>r(x) = \dfrac{p(x)}{q(x)}</m>,
+          where <m>p</m> and <m>q</m> are polynomial functions with leading coefficients <m>a</m> and <m>b</m>,
+          respectively.
+
+          <ul>
+            <li>
+              <p>
+                If the degree of <m>p(x)</m> is the same as the degree of <m>q(x)</m>,
+                then <m>y=\frac{a}{b}</m> is the horizontal asymptote of the graph of <m>y=r(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the degree of <m>p(x)</m> is less than the degree of <m>q(x)</m>,
+                then <m>y=0</m> is the horizontal asymptote of the graph of <m>y=r(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the degree of <m>p(x)</m> is greater than the degree of <m>q(x)</m>,
+                then the graph of <m>y=r(x)</m> has no horizontal asymptotes.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Like <xref ref="vavshole">Theorem</xref>,
+      <xref ref="hathm">Theorem</xref> is proved using Calculus.
+      Nevertheless,
+      we can understand the idea behind it using our example <m>f(x) = \dfrac{2x-1}{x+1}</m>.
+      If we interpret <m>f(x)</m> as a division problem, <m>(2x-1) \div (x+1)</m>,
+      we find that the quotient is <m>2</m> with a remainder of <m>-3</m>.
+      Using what we know about polynomial division,
+      specifically <xref ref="polydiv">Theorem</xref>,
+      we get <m>2x-1 = 2(x+1) -3</m>.
+      Dividing both sides by <m>(x+1)</m> gives
+      <m>\dfrac{2x-1}{x+1} = 2 - \dfrac{3}{x+1}</m>. (You may remember this as the formula for <m>g(x)</m> in <xref ref="ratfuncex">Example</xref>.) As <m>x</m> becomes unbounded in either direction,
+      the quantity <m>\dfrac{3}{x+1}</m> gets closer and closer to <m>0</m> so that the values of <m>f(x)</m> become closer and closer
+      (as seen in the tables in <xref ref="fig_rattab2">Figure</xref>)
+      to <m>2</m>.
+      In symbols, as <m>x \rightarrow \pm \infty</m>,
+      <m>f(x) \rightarrow 2</m>, and we have the result.
+    </p>
+
+    <aside>
+      <p>
+        More specifically, as <m>x \rightarrow -\infty</m>,
+        <m>f(x) \rightarrow 2^{+}</m>,
+        and as <m>x \rightarrow \infty</m>,
+        <m>f(x) \rightarrow 2^{-}</m>.
+        Notice that the graph gets close to the same <m>y</m> value as
+        <m>x \rightarrow -\infty</m> or <m>x \rightarrow \infty</m>.
+        This means that the graph can have only <em>one</em>
+        horizontal asymptote if it is going to have one at all.
+        Thus we were justified in using
+        <q>the</q> in the previous theorem.
+      </p>
+    </aside>
+    <p>
+      Alternatively,
+      we can use what we know about end behaviour of polynomials to help us understand this theorem.
+      From <xref ref="EBPolynomials">Theorem</xref>,
+      we know the end behaviour of a polynomial is determined by its leading term.
+      Applying this to the numerator and denominator of <m>f(x)</m>,
+      we get that as <m>x \rightarrow \pm \infty</m>,
+      <m>f(x) = \dfrac{2x-1}{x+1} \approx \dfrac{2x}{x} = 2</m>.
+      This last approach is useful in Calculus, and, indeed,
+      is made rigorous there. (Keep this in mind for the remainder of this paragraph.) Applying this reasoning to the general case,
+      suppose <m>r(x) = \dfrac{p(x)}{q(x)}</m> where <m>a</m> is the leading coefficient of <m>p(x)</m> and <m>b</m> is the leading coefficient of <m>q(x)</m>.
+      As <m>x \rightarrow \pm \infty</m>,
+      <m>r(x) \approx \dfrac{ax^n}{bx^m}</m>,
+      where <m>n</m> and <m>m</m> are the degrees of <m>p(x)</m> and <m>q(x)</m>,
+      respectively.
+      If the degree of <m>p(x)</m> and the degree of <m>q(x)</m> are the same,
+      then <m>n=m</m> so that <m>r(x) \approx \frac{a}{b}</m>,
+      which means <m>y=\frac{a}{b}</m> is the horizontal asymptote in this case.
+      If the degree of <m>p(x)</m> is less than the degree of <m>q(x)</m>,
+      then <m>n \lt m</m>, so <m>m-n</m> is a positive number,
+      and hence,
+      <m>r(x) \approx \dfrac{a}{bx^{m-n}} \rightarrow 0</m> as <m>x \rightarrow \pm \infty</m>.
+      If the degree of <m>p(x)</m> is greater than the degree of <m>q(x)</m>,
+      then <m>n > m</m>,
+      and hence <m>n-m</m> is a positive number and <m>r(x) \approx \dfrac{ax^{n-m}}{ b}</m>,
+      which becomes unbounded as <m>x \rightarrow \pm \infty</m>.
+      As we said before, if a rational function has a horizontal asymptote,
+      then it will have only one. (This is not true for other types of functions we shall see in later chapters.)
+    </p>
+
+    <example xml:id="haexample">
+      <title>Finding horizontal asymptotes</title>
+      <statement>
+        <p>
+          List the horizontal asymptotes, if any,
+          of the graphs of the following functions.
+          Verify your answers using a graphing calculator,
+          and describe the behaviour of the graph near them using proper notation.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{5x}{x^2+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \dfrac{x^2-4}{x+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = \dfrac{6x^3-3x+1}{5-2x^3}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The numerator of <m>f(x)</m> is <m>5x</m>,
+                which has degree <m>1</m>.
+                The denominator of <m>f(x)</m> is <m>x^2+1</m>,
+                which has degree <m>2</m>.
+                Applying <xref ref="hathm">Theorem</xref>,
+                <m>y=0</m> is the horizontal asymptote.
+                Sure enough,
+                we see from the graph that as <m>x \rightarrow - \infty</m>,
+                <m>f(x) \rightarrow 0^{-}</m> and as <m>x \rightarrow \infty</m>,
+                <m>f(x) \rightarrow 0^{+}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The numerator of <m>g(x)</m>,
+                <m>x^2-4</m>, has degree <m>2</m>,
+                but the degree of the denominator,
+                <m>x+1</m>, has degree <m>1</m>.
+                By <xref ref="hathm">Theorem</xref>,
+                there is no horizontal asymptote.
+                From the graph,
+                we see that the graph of <m>y=g(x)</m> doesn't appear to level off to a constant value,
+                so there is no horizontal asymptote. (Sit tight!
+                We'll revisit this function and its end behaviour shortly.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The degrees of the numerator and denominator of <m>h(x)</m> are both three,
+                so <xref ref="hathm">Theorem</xref>
+                tells us <m>y = \frac{6}{-2} = -3</m> is the horizontal asymptote.
+                We see from the calculator's graph that as <m>x \rightarrow -\infty</m>,
+                <m>h(x) \rightarrow -3^{+}</m>,
+                and as <m>x \rightarrow \infty</m>,
+                <m>h(x) \rightarrow -3^{-}</m>. <figure xml:id="fig_ratgr8"> <caption>Graphs of the three functions in <xref ref="haexample">Example</xref></caption> <sidebyside> <figure> <caption><m>y=f(x)</m></caption> <img src="figures/RationalsGraphics/Rationals06.pdf"/> </figure> <figure> <m>y=g(x)</m> </figure> <figure> <caption><m>y=h(x)</m></caption> <img src="figures/RationalsGraphics/Rationals08.pdf"/> </figure> </sidebyside> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example of the section gives us a real-world application of a horizontal asymptote.
+    </p>
+
+    <aside>
+      <p>
+        Though the population in <xref ref="ex_fluspread">Example</xref>
+        is more accurately modelled with the functions in <xref ref="ExpLogs">Chapter</xref>,
+        we can approximate it
+        (using Calculus, of course!)
+        using a rational function.
+      </p>
+    </aside>
+    <example xml:id="ex_fluspread">
+      <title>Spread of the flu virus</title>
+      <statement>
+        <p>
+          The number of students <m>N</m> at local college who have had the flu <m>t</m> months after the semester begins can be modelled by the formula <m>N(t) = 500 - \dfrac{450}{1+3t}</m> for <m>t \geq 0</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>N(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How long will it take until <m>300</m> students will have had the flu?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Determine the behaviour of <m>N</m> as <m>t \rightarrow \infty</m>.
+                Interpret this result graphically and within the context of the problem.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>N(0) = 500 - \dfrac{450}{1+3(0)} = 50</m>.
+                This means that at the beginning of the semester,
+                <m>50</m> students have had the flu.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We set <m>N(t) = 300</m> to get <m>500 - \dfrac{450}{1+3t} = 300</m> and solve.
+                Isolating the fraction gives <m>\dfrac{450}{1+3t} = 200</m>.
+                Clearing denominators gives <m>450 = 200(1+3t)</m>.
+                Finally, we get <m>t = \frac{5}{12}</m>.
+                This means it will take <m>\frac{5}{12}</m> months,
+                or about 13 days, for <m>300</m> students to have had the flu.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the behaviour of <m>N</m> as <m>t\rightarrow \infty</m>,
+                we can use the table in <xref ref="fig_rattab5">Figure</xref>. <table xml:id="fig_rattab5"> <caption>The long-term behaviour of <m>N(t)</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell><m>t</m></cell> <cell><m>N(t)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>10</cell> <cell><m>\approx 485.48</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>100</cell> <cell><m>\approx 498.50</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>1000</cell> <cell><m>\approx 499.85</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>10000</cell> <cell><m>\approx 499.98</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> </tabular> </table> The table suggests that as <m>t \rightarrow \infty</m>,
+                <m>N(t) \rightarrow 500</m>. (More specifically,
+                <m>500^{-}</m>.) This means as time goes by,
+                only a total of 500 students will have ever had the flu.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We close this section with a discussion of the <em>third</em>
+      (and final!)
+      kind of asymptote which can be associated with the graphs of rational functions.
+      Let us return to the function
+      <m>g(x) = \dfrac{x^2-4}{x+1}</m> in <xref ref="haexample">Example</xref>.
+      Performing long division,
+      (see the remarks following <xref ref="hathm">Theorem</xref>)
+      we get <m>g(x) = \dfrac{x^2-4}{x+1} = x-1 - \dfrac{3}{x+1}</m>.
+      Since the term <m>\dfrac{3}{x+1} \rightarrow 0</m> as <m>x \rightarrow \pm \infty</m>,
+      it stands to reason that as <m>x</m> becomes unbounded,
+      the function values <m>g(x) = x-1 - \dfrac{3}{x+1} \approx x-1</m>.
+      Geometrically,
+      this means that the graph of <m>y=g(x)</m> should resemble the line <m>y = x-1</m> as <m>x \rightarrow \pm \infty</m>.
+      We see this play out both numerically and graphically in <xref ref="fig_slantas1">Figures</xref>
+      and <xref ref="fig_slantas2"></xref>.
+    </p>
+
+    <figure xml:id="fig_slantas1">
+      <caption>The graph <m>y=\dfrac{x^2-4}{x+1}</m> as <m>x\to -\infty</m></caption>
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  g(x) \amp  x-1 \\ \hline
+      -10 \amp  \approx -10.6667 \amp  -11 \\  \hline
+      -100 \amp  \approx -100.9697 \amp  -101 \\  \hline 
+      -1000 \amp   \approx -1000.9970\amp    -1001 \\ \hline 
+      -10000 \amp   \approx -10000.9997 \amp   -10001 \\ \hline
+      \end{array}</m>
+
+
+
+      <img src="figures/RationalsGraphics/SA01.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_slantas2">
+    <caption>The graph <m>y=\dfrac{x^2-4}{x+1}</m> as <m>x\to +\infty</m></caption>
+    <sidebyside>
+      <figure>
+      <m>\begin{array}{|r||c|c|}  \hline
+
+      x \amp  g(x) \amp  x-1 
+
+      \end{figure}
+
+      <figure>
+        \hline
+        100 &amp; \approx 98.9703 &amp;   99
+      </figure>
+
+      \begin{figure}
+      \hline 
+      10000 \amp   \approx 9998.9997 \amp    9999 
+      \caption{ \hline
+      \end{array}</m> }
+      </figure>
+    </sidebyside>
+    </figure>
+
+    <p>
+      The way we symbolize the relationship between the end behaviour of <m>y=g(x)</m> with that of the line <m>y=x-1</m> is to write
+      <q>as <m>x \rightarrow \pm \infty</m>,
+      <m>g(x) \to x-1</m>.</q> In this case,
+      we say the line <m>y=x-1</m> is a
+          <idx><h>asymptote</h><h>slant (oblique)</h></idx> <idx><h>slant asymptote</h></idx> <idx><h>oblique asymptote</h></idx>
+      <em>slant asymptote</em>
+      (or <q>oblique</q> asymptote)
+      to the graph of <m>y=g(x)</m>.
+      Informally,
+      the graph of a rational function has a slant asymptote if,
+      as <m>x \rightarrow \infty</m> or as <m>x \rightarrow -\infty</m>,
+      the graph resembles a non-horizontal, or <q>slanted</q> line.
+      Formally, we define a slant asymptote as follows.
+    </p>
+
+    <definition xml:id="sa">
+      <title>Slant Asymptote</title>
+      <statement>
+        <p>
+          The line <m>y = mx+b</m> where <m>m \neq 0</m> is called a
+              <idx><h>asymptote</h><h>slant ! formal definition of</h></idx><idx><h>slant asymptote</h><h>formal definition of</h></idx>
+          <term>slant asymptote</term>
+          of the graph of a function <m>y=f(x)</m> if as
+          <m>x \rightarrow -\infty</m> or as <m>x \rightarrow \infty</m>,
+          <m>f(x) \rightarrow mx+b</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      A few remarks are in order.
+      First, note that the stipulation
+      <m>m \neq 0</m> in <xref ref="sa">Definition</xref>
+      is what makes the <q>slant</q> asymptote <q>slanted</q>
+      as opposed to the case when <m>m=0</m> in which case we'd have a horizontal asymptote.
+      Secondly, while we have motivated what me mean intuitively by the notation
+      <q><m>f(x) \rightarrow mx+b</m>,</q>
+      like so many ideas in this section,
+      the formal definition requires Calculus.
+      Another way to express this sentiment, however,
+      is to rephrase <q><m>f(x) \rightarrow mx+b</m></q>
+      as <q><m>f(x) - (mx+b) \rightarrow 0</m>.</q> In other words,
+      the graph of <m>y=f(x)</m> has the <em>slant</em>
+      asymptote <m>y = mx+b</m> if and only if the graph of <m>y = f(x) - (mx+b)</m> has a
+      <em>horizontal</em> asymptote <m>y=0</m>.
+    </p>
+
+    <p>
+      Our next task is to determine the conditions under which the graph of a rational function has a slant asymptote,
+      and if it does, how to find it.
+      In the case of <m>g(x) = \dfrac{x^2-4}{x+1}</m>,
+      the degree of the numerator <m>x^2-4</m> is <m>2</m>,
+      which is <em>exactly one more</em>
+      than the degree if its denominator <m>x+1</m> which is <m>1</m>.
+      This results in a <em>linear</em> quotient polynomial,
+      and it is this quotient polynomial which is the slant asymptote.
+      Generalizing this situation gives us the following theorem. (Once again,
+      this theorem is brought to you courtesy of <xref ref="polydiv">Theorem</xref> and Calculus.)
+    </p>
+
+    <theorem xml:id="sathm">
+      <title>Determination of Slant Asymptotes</title>
+      <statement>
+        <p>
+          Suppose <m>r</m> is a rational function and <m>r(x) = \dfrac{p(x)}{q(x)}</m>,
+          where the degree of <m>p</m> is <em>exactly</em>
+          one more than the degree of <m>q</m>.
+          Then the graph of <m>y=r(x)</m> has
+              <idx><h>asymptote</h><h>slant ! determination of</h></idx><idx><h>slant asymptote</h><h>determination of</h></idx>
+          the slant asymptote <m>y=L(x)</m> where <m>L(x)</m> is the quotient obtained by dividing <m>p(x)</m> by <m>q(x)</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      In the same way that <xref ref="hathm">Theorem</xref>
+      gives us an easy way to see if the graph of a rational function
+      <m>r(x) = \dfrac{p(x)}{q(x)}</m> has a horizontal asymptote by comparing the degrees of the numerator and denominator,
+      <xref ref="sathm">Theorem</xref>
+      gives us an easy way to check for slant asymptotes.
+      Unlike <xref ref="hathm">Theorem</xref>,
+      which gives us a quick way to <em>find</em> the horizontal asymptotes
+      (if any exist),
+      <xref ref="sathm">Theorem</xref>
+      gives us no such <q>short-cut</q>.
+      If a slant asymptote exists,
+      we have no recourse but to use long division to find it. (That's OK, though.
+      In the next section,
+      we'll use long division to analyze end behaviour and it's worth the effort!)
+    </p>
+
+    <example xml:id="saexample">
+      <title>Finding slant asymptotes</title>
+      <statement>
+        <p>
+          Find the slant asymptotes of the graphs of the following functions if they exist.
+          Verify your answers using software or a graphing calculator and describe the behaviour of the graph near them using proper notation.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{x^2-4x+2}{1-x}</m>
+              </p>
+            </li>
+
+            <li xml:id="sacancel">
+
+            <p>
+              <m>g(x) = \dfrac{x^2-4}{x-2}</m>
+            </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = \dfrac{x^3+1}{x^2-4}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The degree of the numerator is <m>2</m> and the degree of the denominator is <m>1</m>,
+                so <xref ref="sathm">Theorem</xref>
+                guarantees us a slant asymptote.
+                To find it, we divide <m>1-x = -x+1</m> into
+                <m>x^2-4x+2</m> and get a quotient of <m>-x+3</m>,
+                so our slant asymptote is <m>y=-x+3</m>.
+                We confirm this graphically in <xref ref="fig_ratgr9">Figure</xref>,
+                and we see that as <m>x \rightarrow -\infty</m>,
+                the graph of <m>y=f(x)</m> approaches the asymptote from below,
+                and as <m>x \rightarrow \infty</m>,
+                the graph of <m>y=f(x)</m> approaches the asymptote from above.
+
+                <figure xml:id="fig_ratgr9">
+                  <caption>The graph <m>y=f(x)</m> in <xref ref="saexample">Example</xref></caption>
+                  <img src="figures/RationalsGraphics/SAEX01.pdf"/>
+                </figure>
+
+                <aside>
+                  <p>
+                    Note that we are purposefully avoiding notation like `as <m>x\rightarrow \infty</m>,
+                    <m>f(x) \rightarrow (-x+3)^{+}</m>.
+                    While it is possible to define these notions formally with Calculus,
+                    it is not standard to do so.
+                    Besides, with the introduction of the symbol
+                    <q>\textinterrobang</q> in the next section,
+                    the authors feel we are in enough trouble already.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As with the previous example,
+                the degree of the numerator
+                <m>g(x) = \dfrac{x^2-4}{x-2}</m> is <m>2</m> and the degree of the denominator is <m>1</m>,
+                so <xref ref="sathm">Theorem</xref> applies.
+                In this case,
+                <me>
+                  g(x) = \dfrac{x^2-4}{x-2} = \dfrac{(x+2)(x-2)}{(x-2)} = \dfrac{(x+2) \cancel{(x-2)}}{\cancelto{1}{(x-2)}} = x+2,  x \neq 2
+                </me>
+                so we have that the slant asymptote <m>y=x+2</m> is identical to the graph of <m>y=g(x)</m> except at <m>x=2</m> (where the latter has a
+                <q>hole</q> at <m>(2,4)</m>.)  The graph
+                (using GeoGebra)
+                in <xref ref="fig_ratgr10">Figure</xref> supports this claim.
+
+                <figure xml:id="fig_ratgr10">
+                  <caption>The graph <m>y=g(x)</m> in <xref ref="saexample">Example</xref></caption>
+                  <img src="figures/RationalsGraphics/SAEX02.pdf"/>
+                </figure>
+
+                <aside>
+                  <p>
+                    Note that in part 2 of <xref ref="saexample">Example</xref>
+                    the graph of <m>g</m> actually coincides with its slant asymptote.
+                    While the word <q>asymptote</q>
+                    has the connotation of
+          <q>approaching but not equalling,</q>
+                    <xref ref="ha">Definitions</xref> and <xref ref="sa"></xref>
+                    invite the same kind of pathologies we saw with <xref ref="maxmindefn">Definitions</xref>
+                    in <xref ref="GraphsofFunctions">Section</xref>.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>h(x) = \dfrac{x^3+1}{x^2-4}</m>,
+                the degree of the numerator is <m>3</m> and the degree of the denominator is <m>2</m> so again,
+                we are guaranteed the existence of a slant asymptote.
+                The long division <m>\left(x^3+1 \right) \div \left(x^2-4\right)</m> gives a quotient of just <m>x</m>,
+                so our slant asymptote is the line <m>y=x</m>.
+                The graph confirms this,
+          and we find that as <m>x \rightarrow -\infty</m>,
+                the graph of <m>y=h(x)</m> approaches the asymptote from below,
+                and as <m>x \rightarrow \infty</m>,
+                the graph of <m>y=h(x)</m> approaches the asymptote from above:
+                see <xref ref="fig_ratgr11">Figure</xref>. <figure xml:id="fig_ratgr11"> <caption>The graph <m>y=h(x)</m> in <xref ref="saexample">Example</xref></caption> <img src="figures/RationalsGraphics/SAEX03.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The reader may be a bit disappointed with the authors at this point owing to the fact that in <xref ref="vavsholeexample">Examples</xref>,
+      <xref ref="haexample"></xref>,
+      and <xref ref="saexample"></xref>,
+      we used the <em>calculator</em>
+      to determine function behaviour near asymptotes.
+      We rectify that in the next section where we, in excruciating detail,
+      demonstrate the usefulness of <q>number sense</q>
+      to reveal this behaviour analytically.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, for the given rational function <m>f</m>:
+
+      <ul>
+        <li>
+          <p>
+            Find the domain of <m>f</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Identify any vertical asymptotes of the graph of <m>y = f(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Identify any holes in the graph.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the horizontal asymptote, if it exists.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the slant asymptote, if it exists.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Graph the function using a graphing utility and describe the behaviour near the asymptotes.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{3x - 6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x}{3x - 6}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = \frac{1}{3}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow \frac{1}{3}^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow \frac{1}{3}^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3 + 7x}{5 - 2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{3 + 7x}{5 - 2x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \frac{5}{2}) \cup (\frac{5}{2}, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = \frac{5}{2}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \frac{5}{2}^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \frac{5}{2}^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = -\frac{7}{2}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow -\frac{7}{2}^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow -\frac{7}{2}^{-}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + x - 12}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + x - 12} = \dfrac{x}{(x + 4)(x - 3)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -4) \cup (-4, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -4, x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + 1}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x + 7}{(x + 3)^{2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x + 7}{(x + 3)^{2}}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = -3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^{3} + 1}{x^{2} - 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^{3} + 1}{x^{2} - 1} = \dfrac{x^{2} - x+ 1}{x-1}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -1) \cup (-1, 1) \cup (1, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Hole at <m>(-1, -\frac{3}{2})</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y=x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is below <m>y=x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is above <m>y=x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^2+4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^{2} + 4}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^2-4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^{2} -4} = \dfrac{4x}{(x + 2)(x - 2)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -2) \cup (-2, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -2, x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-12}{x^2+x-6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-12}{x^{2} +x - 6} = \dfrac{x-4}{x - 2}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Hole at <m>\left(-3, \frac{7}{5} \right)</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 1^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 1^{-}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x^2-5x-2}{x^2-9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{3x^2-5x-2}{x^{2} -9} = \dfrac{(3x+1)(x-2)}{(x + 3)(x - 3)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -3, x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 3^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 3^{-}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^3+2x^2+x}{x^2-x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3+2x^2+x}{x^{2} -x-2} = \dfrac{x(x+1)}{x - 2}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -1) \cup (-1, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Hole at <m>(-1,0)</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y=x+3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is below <m>y=x+3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is above <m>y=x+3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^{3} - 3x + 1}{x^{2} + 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3-3x+1}{x^2+1}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Slant asymptote: <m>y=x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x^{2} + 5x - 3}{3x + 2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{2x^{2} + 5x - 3}{3x + 2}</m>
+        </p>
+
+        <p>
+          Domain: <m>\left(-\infty, -\frac{2}{3}\right) \cup \left(-\frac{2}{3}, \infty\right)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = -\frac{2}{3}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\frac{2}{3}^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\frac{2}{3}^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = \frac{2}{3}x + \frac{11}{9}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y = \frac{2}{3}x + \frac{11}{9}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y = \frac{2}{3}x + \frac{11}{9}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{-x^{3} + 4x}{x^{2} - 9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{-x^{3} + 4x}{x^{2} - 9} = \dfrac{-x^{3} + 4x}{(x-3)(x+3)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -3</m>, <m>x=3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Slant asymptote: <m>y=-x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=-x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=-x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{-5x^{4} - 3x^{3} + x^{2} - 10}{x^{3} - 3x^{2} + 3x - 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{-5x^{4} - 3x^{3} + x^{2} - 10}{x^{3} - 3x^{2} + 3x - 1}</m>
+        </p>
+
+        <p>
+          <m>= \dfrac{-5x^{4} - 3x^{3} + x^{2} - 10}{(x-1)^3}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 1) \cup (1, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = 1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Slant asymptote: <m>y=-5x-18</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=-5x-18</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=-5x-18</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^3}{1-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3}{1-x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 1) \cup (1, \infty)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x=1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 1^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          No horizontal or slant asymptote
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          <m>f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          <m>f(x) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{18-2x^2}{x^2-9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{18-2x^2}{x^2-9} = -2</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3,3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          Holes in the graph at <m>(-3,-2)</m> and <m>(3,-2)</m>
+        </p>
+
+        <p>
+          Horizontal asymptote <m>y = -2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \pm \infty</m>, <m>f(x) = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^3-4x^2-4x-5}{x^2+x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3-4x^2-4x-5}{x^2+x+1} = x-5</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = x-5</m>
+        </p>
+
+        <p>
+          <m>f(x) = x-5</m> everywhere.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost <m>C</m> in dollars to remove <m>p</m><percent /> of the invasive species of Ippizuti fish from Sasquatch Pond is given by
+          <me>
+            C(p) = \frac{1770p}{100 - p},  0 \leq p \lt  100
+          </me>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>C(25)</m> and <m>C(95)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What does the vertical asymptote at <m>x = 100</m> mean within the context of the problem?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What percentage of the Ippizuti fish can you remove for <dollar />40000?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>C(25) = 590</m> means it costs <dollar />590 to remove 25<percent /> of the fish and and
+              <m>C(95)= 33630</m> means it would cost <dollar />33630 to remove 95<percent /> of the fish from the pond.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The vertical asymptote at <m>x = 100</m> means that as we try to remove 100<percent /> of the fish from the pond,
+              the cost increases without bound;
+              i.e., it's impossible to remove all of the fish.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <dollar />40000 you could remove about 95.76<percent /> of the fish.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="Sasquatchfunc1">Exercise</xref>
+          in <xref ref="FunctionNotation">Section</xref>,
+          the population of Sasquatch in Portage County was modeled by the function
+          <me>
+            P(t) = \frac{150t}{t + 15}
+          </me>,
+          where <m>t = 0</m> represents the year 1803.
+          Find the horizontal asymptote of the graph of
+          <m>y = P(t)</m> and explain what it means.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The horizontal asymptote of the graph of
+          <m>P(t) = \frac{150t}{t + 15}</m> is <m>y = 150</m> and it means that the model predicts the population of Sasquatch in Portage County will never exceed 150.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Recall from <xref ref="costrevenueprofitex1">Example</xref> that the cost <m>C</m>
+          (in dollars)
+          to make <m>x</m> dOpi media players is <m>C(x) = 100x+2000</m>,
+          <m>x \geq 0</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find a formula for the average cost <m>\overline{C}(x)</m>.
+                Recall: <m>\overline{C}(x) = \frac{C(x)}{x}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret <m>\overline{C}(1)</m> and <m>\overline{C}(100)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How many dOpis need to be produced so that the average cost per dOpi is <m>\dollar 200</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret the behaviour of <m>\overline{C}(x)</m> as
+                <m>x \rightarrow 0^{+}</m>. (HINT: You may want to find the fixed cost <m>C(0)</m> to help in your interpretation.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret the behaviour of <m>\overline{C}(x)</m> as
+                <m>x \rightarrow \infty</m>. (HINT: You may want to find the variable cost
+                (defined in <xref ref="PortaBoyCost">Example</xref>
+                in <xref ref="LinearFunctions">Section</xref>)
+                to help in your interpretation.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>\overline{C}(x) = \frac{100x+2000}{x}</m>, <m>x > 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(1) = 2100</m> and <m>\overline{C}(100) = 120</m>.
+              When just <m>1</m> dOpi is produced,
+              the cost per dOpi is <m>\dollar2100</m>,
+              but when <m>100</m> dOpis are produced,
+              the cost per dOpi is <m>\dollar120</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(x) = 200</m> when <m>x = 20</m>.
+              So to get the cost per dOpi to <m>\dollar200</m>,
+              <m>20</m> dOpis need to be produced.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As <m>x \rightarrow 0^{+}</m>,
+              <m>\overline{C}(x) \rightarrow \infty</m>.
+              This means that as fewer and fewer dOpis are produced,
+              the cost per dOpi becomes unbounded.
+              In this situation, there is a fixed cost of
+              <m>\dollar2000</m> (<m>C(0) = 2000</m>),
+              we are trying to spread that
+              <m>\dollar2000</m> over fewer and fewer dOpis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As <m>x \rightarrow \infty</m>,
+              <m>\overline{C}(x) \rightarrow 100^{+}</m>.
+              This means that as more and more dOpis are produced,
+              the cost per dOpi approaches <m>\dollar100</m>,
+              but is always a little more than <m>\dollar100</m>.
+              Since <m>\dollar100</m> is the variable cost per dOpi (<m>C(x) = \underline{100}x+2000</m>),
+              it means that no matter how many dOpis are produced,
+              the average cost per dOpi will always be a bit higher than the variable cost to produce a dOpi.
+              As before, we can attribute this to the <m>\dollar2000</m> fixed cost,
+              which factors into the average cost per dOpi no matter how many dOpis are produced.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+  </subsection>
+</section>
+

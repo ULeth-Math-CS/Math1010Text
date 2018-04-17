@@ -1,0 +1,2113 @@
+
+
+<section xml:id="QuadraticFunctions">
+  <title>Quadratic Functions</title>
+  <introduction>
+    <p>
+      You may recall studying quadratic equations in high school.
+      In this section,
+      we review those equations in the context of our next family of functions:
+      the quadratic functions.
+    </p>
+
+    <definition xml:id="quadraticfunction">
+      <title>Quadratic function</title>
+      <statement>
+        <p>
+          A
+              <idx><h>function</h><h>quadratic</h></idx> <idx><h>quadratic function</h><h>definition of</h></idx>
+          <term>quadratic function</term> is a function of the form
+          <me>
+            f(x) = ax^2 + bx + c
+          </me>,
+          where <m>a</m>,
+          <m>b</m> and <m>c</m> are real numbers with <m>a \neq 0</m>.
+          The domain of a quadratic function is <m>(-\infty, \infty)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The most basic quadratic function is <m>f(x) = x^2</m>,
+      whose graph appears below.
+      Its shape should look familiar from high school <mdash /> it is called a
+          <idx><h>parabola</h><h>graph of a quadratic function</h></idx>
+      <em>parabola</em>.
+      The point <m>(0,0)</m> is called the
+          <idx><h>parabola</h><h>vertex</h></idx><idx><h>vertex</h><h>of a parabola</h></idx>
+      <em>vertex</em> of the parabola.
+      In this case,
+      the vertex is a relative minimum and is also the where the absolute minimum value of <m>f</m> can be found.
+    </p>
+
+    <figure xml:id="fig_parabstd">
+      <caption>The graph of the basic quadratic function <m>f(x)=x^2</m></caption>
+      <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-1.pdf"/>
+    </figure>
+
+    <p>
+      Much like many of the absolute value functions in <xref ref="AbsoluteValueFunctions">Section</xref>,
+      knowing the graph of <m>f(x) = x^2</m> enables us to graph an entire family of quadratic functions using transformations.
+    </p>
+
+    <example xml:id="parabolaex1">
+      <title>Graphics quadratic functions</title>
+      <statement>
+        <p>
+          Graph the following functions starting with the graph of
+          <m>f(x) = x^2</m> and using transformations.
+          Find the vertex,
+          state the range and find the <m>x</m>- and <m>y</m>-intercepts,
+          if any exist.
+
+          <ol>
+            <li>
+              <p>
+                <m>g(x) = (x+2)^2 - 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = -2(x-3)^2+1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <figure xml:id="fig_parabgr1">
+              <caption>The graph <m>y=x^2</m> with points labelled</caption>
+              <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-2.pdf"/>
+            </figure>
+
+            <li>
+              <p>
+                Since <m>g(x) = (x+2)^2 - 3 = f(x+2) - 3</m>,
+                <xref ref="transformationsthm">Theorem</xref>
+                instructs us to first <em>subtract</em>
+                <m>2</m> from each of the <m>x</m>-values of the points on <m>y=f(x)</m>.
+                This shifts the graph of <m>y = f(x)</m> to the <em>left</em>
+                <m>2</m> units and moves <m>(-2,4)</m> to <m>(-4,4)</m>,
+                <m>(-1,1)</m> to <m>(-3,1)</m>,
+                <m>(0,0)</m> to <m>(-2,0)</m>,
+                <m>(1,1)</m> to <m>(-1,1)</m> and <m>(2,4)</m> to <m>(0,4)</m>.
+                Next, we <em>subtract</em>
+                <m>3</m> from each of the <m>y</m>-values of these new points.
+                This moves the graph <em>down</em>
+                <m>3</m> units and moves <m>(-4,4)</m> to <m>(-4,1)</m>,
+                <m>(-3,1)</m> to <m>(-3,-2)</m>,
+                <m>(-2,0)</m> to <m>(-2,3)</m>,
+                <m>(-1,1)</m> to <m>(-1,-2)</m> and <m>(0,4)</m> to <m>(0,1)</m>.
+                We connect the dots in parabolic fashion to get the graph in <xref ref="fig_parabgr2">Figure</xref>. <figure xml:id="fig_parabgr2"> <caption><m>g(x)=f(x+2)-3 = (x+2)^2-3</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-3.pdf"/> </figure> From the graph,
+                we see that the vertex has moved from <m>(0,0)</m> on the graph of
+                <m>y = f(x)</m> to <m>(-2,-3)</m> on the graph of <m>y = g(x)</m>.
+                This sets <m>[-3, \infty)</m> as the range of <m>g</m>.
+                We see that the graph of <m>y=g(x)</m> crosses the <m>x</m>-axis twice,
+                so we expect two <m>x</m>-intercepts.
+                To find these, we set <m>y = g(x) = 0</m> and solve.
+                Doing so yields the equation
+                <m>(x+2)^2 - 3 = 0</m>, or <m>(x+2)^2 = 3</m>.
+                Extracting square roots gives <m>x + 2 = \pm \sqrt{3}</m>,
+                or <m>x = -2 \pm \sqrt{3}</m>.
+                Our <m>x</m>-intercepts are
+                <m>(-2-\sqrt{3}, 0) \approx (-3.73, 0)</m> and <m>(-2+\sqrt{3}, 0) \approx (-0.27, 0)</m>.
+                The <m>y</m>-intercept of the graph,
+                <m>(0,1)</m> was one of the points we originally plotted,
+                so we are done.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Following <xref ref="transformationsthm">Theorem</xref> once more,
+                to graph <m>h(x) = -2(x-3)^2+1 = -2f(x-3)+1</m>,
+                we first start by <em>adding</em>
+                <m>3</m> to each of the <m>x</m>-values of the points on the graph of <m>y=f(x)</m>.
+                This effects a horizontal shift <em>right</em>
+                <m>3</m> units and moves <m>(-2,4)</m> to <m>(1,4)</m>,
+                <m>(-1,1)</m> to <m>(2,1)</m>,
+                <m>(0,0)</m> to <m>(3,0)</m>,
+                <m>(1,1)</m> to <m>(4,1)</m> and <m>(2,4)</m> to <m>(5,4)</m>.
+                Next, we <em>multiply</em>
+                each of our <m>y</m>-values first by <m>-2</m> and then
+                <em>add</em> <m>1</m> to that result.
+                Geometrically,
+                this is a vertical <em>stretch</em> by a factor of <m>2</m>,
+                followed by a reflection about the <m>x</m>-axis,
+                followed by a vertical shift
+          <em>up</em> <m>1</m> unit.
+                This moves <m>(1,4)</m> to <m>(1,-7)</m>,
+                <m>(2,1)</m> to <m>(2,-1)</m>,
+                <m>(3,0)</m> to <m>(3,1)</m>,
+                <m>(4,1)</m> to <m>(4,-1)</m> and <m>(5,4)</m> to <m>(5,-7)</m>,
+                giving us the graph in <xref ref="fig_parabgr3">Figure</xref>. <figure xml:id="fig_parabgr3"> <caption><m>h(x) = -2f(x-3)+1 = -2(x-3)^2+1</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-5.pdf"/> </figure> The vertex is <m>(3,1)</m> which makes the range of <m>h</m> <m>(-\infty, 1]</m>.
+                From our graph, we know that there are two <m>x</m>-intercepts,
+                so we set <m>y = h(x) = 0</m> and solve.
+                We get <m>-2(x-3)^2+1 = 0</m> which gives <m>(x-3)^2 = \frac{1}{2}</m>.
+                Extracting square roots
+                (and rationalizing denominators!)
+                gives <m>x - 3 = \pm \frac{\sqrt{2}}{2}</m>,
+                so that when we add <m>3</m> to each side,
+                (and get common denominators!)
+                we get <m>x = \frac{6 \pm \sqrt{2}}{2}</m>.
+                Hence, our <m>x</m>-intercepts are
+                <m>\left(\frac{6 - \sqrt{2}}{2}, 0 \right) \approx (2.29, 0)</m> and <m>\left(\frac{6 + \sqrt{2}}{2}, 0 \right) \approx (3.71, 0)</m>.
+                Although our graph doesn't show it,
+                there is a <m>y</m>-intercept which can be found by setting <m>x=0</m>.
+                With <m>h(0) = -2(0-3)^2+1 = -17</m>,
+                we have that our <m>y</m>-intercept is <m>(0,-17)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few remarks about <xref ref="parabolaex1">Example</xref> are in order.
+      First note that neither the formula given for <m>g(x)</m> nor the one given for <m>h(x)</m> match the form given in <xref ref="quadraticfunction">Definition</xref>.
+      We could, of course,
+      convert both <m>g(x)</m> and <m>h(x)</m> into that form by expanding and collecting like terms.
+      Doing so, we find <m>g(x) = (x+2)^2 - 3 = x^2 + 4x+1</m> and <m>h(x) = -2(x-3)^2+1 = -2x^2+12x-17</m>.
+      While these <q>simplified</q>
+      formulas for <m>g(x)</m> and <m>h(x)</m> satisfy <xref ref="quadraticfunction">Definition</xref>,
+      they do not lend themselves to graphing easily.
+      For that reason,
+      the form of <m>g</m> and <m>h</m> presented in <xref ref="parabolaex2">Example</xref>
+      is given a special name, which we list below,
+      along with the form presented in <xref ref="quadraticfunction">Definition</xref>.
+    </p>
+
+    <definition xml:id="standardgeneralformofparabolas">
+      <title>Standard and General Form of Quadratic Functions</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a quadratic function.
+
+          <ul>
+            <li>
+              <p>
+                The
+              <idx><h>quadratic function</h><h>general form</h></idx>
+          <em>general form</em>
+                of the quadratic function <m>f</m> is <m>f(x) = ax^2+bx+c</m>,
+                where <m>a</m>,
+                <m>b</m> and <m>c</m> are real numbers with <m>a \neq 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The
+              <idx><h>quadratic function</h><h>standard form</h></idx>
+          <em>standard form</em>
+                of the quadratic function <m>f</m> is <m>f(x) = a(x-h)^2 + k</m>,
+                where <m>a</m>,
+                <m>h</m> and <m>k</m> are real numbers with <m>a\neq 0</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      It is important to note at this stage that we have no guarantees that <em>every</em>
+      quadratic function can be written in standard form.
+      This is actually true, and we prove this later in the exposition,
+      but for now we celebrate the advantages of the standard form,
+      starting with the following theorem.
+    </p>
+
+    <theorem xml:id="standardformvertex">
+      <title>Vertex Formula for Quadratics in Standard Form</title>
+      <statement>
+        <p>
+          For the quadratic function <m>f(x) = a(x-h)^2 + k</m>,
+          where <m>a</m>,
+          <m>h</m> and <m>k</m> are real numbers with <m>a\neq 0</m>,
+          the vertex of the graph of <m>y = f(x)</m> is <m>(h,k)</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      We can readily verify the formula given <xref ref="standardformvertex">Theorem</xref>
+      with the two functions given in <xref ref="parabolaex1">Example</xref>.
+      After a (slight) rewrite,
+      <m>g(x) = (x+2)^2 - 3 = (x-(-2))^2+(-3)</m>,
+      and we identify <m>h=-2</m> and <m>k=-3</m>.
+      Sure enough,
+      we found the vertex of the graph of <m>y=g(x)</m> to be <m>(-2,-3)</m>.
+      For <m>h(x) = -2(x-3)^{2}+1</m>, no rewrite is needed.
+      We can directly identify <m>h=3</m> and <m>k=1</m> and,
+      sure enough,
+      we found the vertex of the graph of <m>y=h(x)</m> to be <m>(3,1)</m>.
+    </p>
+
+    <p>
+      To see why the formula in <xref ref="standardformvertex">Theorem</xref> produces the vertex,
+      consider the graph of the equation <m>y = a(x-h)^2 + k</m>.
+      When we substitute <m>x=h</m>,
+      we get <m>y=k</m>, so <m>(h,k)</m> is on the graph.
+      If <m>x \neq h</m>,
+      then <m>x-h \neq 0</m> so <m>(x-h)^2</m> is a positive number.
+      If <m>a>0</m>, then <m>a(x-h)^2</m> is positive,
+      thus <m>y = a(x-h)^2 + k</m> is always a number larger than <m>k</m>.
+      This means that when <m>a>0</m>,
+      <m>(h,k)</m> is the lowest point on the graph and thus the parabola must open upwards,
+      making <m>(h,k)</m> the vertex.
+      A similar argument shows that if <m>a\lt 0</m>,
+      <m>(h,k)</m> is the highest point on the graph,
+      so the parabola opens downwards,
+      and <m>(h,k)</m> is also the vertex in this case.
+    </p>
+
+    <p>
+      Alternatively,
+      we can apply the machinery in <xref ref="Transformations">Section</xref>.
+      Since the vertex of <m>y = x^2</m> is <m>(0,0)</m>,
+      we can determine the vertex of
+      <m>y = a(x-h)^2+k</m> by determining the final destination of <m>(0,0)</m> as it is moved through each transformation.
+      To obtain the formula <m>f(x)= a(x-h)^2+k</m>,
+      we start with <m>g(x)=x^2</m> and first define <m>g_{1}(x) = a g(x) = ax^2</m>.
+      This is results in a vertical scaling and/or reflection. (Just a scaling if <m>a>0</m>.
+      If <m>a\lt 0</m>,
+      there is a reflection involved.) Since we multiply the output by <m>a</m>,
+      we multiply the <m>y</m>-coordinates on the graph of <m>g</m> by <m>a</m>,
+      so the point <m>(0,0)</m> remains <m>(0,0)</m> and remains the vertex.
+      Next, we define <m>g_{2}(x) = g_{1}(x-h) = a(x-h)^2</m>.
+      This induces a horizontal shift right or left <m>h</m> units
+      (right if <m>h>0</m>, left if <m>h\lt 0</m>.)
+      moves the vertex, in either case, to <m>(h,0)</m>.
+      Finally, <m>f(x) = g_{2}(x)+k = a(x-h)^2+k</m> which effects a vertical shift up or down <m>k</m> units
+      (up if <m>k>0</m>, down if <m>k\lt 0</m>)
+      resulting in the vertex moving from <m>(h,0)</m> to <m>(h,k)</m>.
+    </p>
+
+    <p>
+      In addition to verifying <xref ref="standardformvertex">Theorem</xref>,
+      the arguments in the two preceding paragraphs have also shown us the role of the number <m>a</m> in the graphs of quadratic functions.
+      The graph of <m>y = a(x-h)^2 + k</m> is a parabola
+      <q>opening upwards</q> if <m>a > 0</m>,
+      and <q>opening downwards</q> if <m>a \lt 0</m>.
+      Moreover, the symmetry enjoyed by the graph of <m>y = x^2</m> about the <m>y</m>-axis is translated to a symmetry about the vertical line <m>x=h</m> which is the vertical line through the vertex. (You should use transformations to verify this!) This line is called the
+          <idx><h>parabola</h><h>axis of symmetry</h></idx><idx><h>axis of symmetry</h></idx>
+      <em>axis of symmetry</em>
+      of the parabola and is shown as the dashed line in <xref ref="fig_parabaxis">Figure</xref>
+    </p>
+
+    <table xml:id="fig_parabaxis">
+      <caption>The axis of symmetry of a parabola</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-6.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-7.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Without a doubt, the standard form of a quadratic function,
+      coupled with the machinery in <xref ref="Transformations">Section</xref>,
+      allows us to list the attributes of the graphs of such functions quickly and elegantly.
+      What remains to be shown, however,
+      is the fact that every quadratic function
+      <em>can be written</em> in standard form.
+      To convert a quadratic function given in general form into standard form,
+      we employ the ancient rite of <q>Completing the Square</q>.
+      We remind the reader how this is done in our next example.
+    </p>
+
+    <example xml:id="parabolaex2">
+      <title>Converting from general to standard form</title>
+      <statement>
+        <p>
+          Convert the functions below from general form to standard form.
+          Find the vertex,
+          axis of symmetry and any <m>x</m>- or <m>y</m>-intercepts.
+          Graph each function and determine its range.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = x^2-4x+3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = 6-x-x^2</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To convert from general form to standard form, we complete the square.
+                First,
+          we verify that the coefficient of <m>x^2</m> is <m>1</m>.
+                Next, we find the coefficient of <m>x</m>, in this case <m>-4</m>,
+                and take half of it to get <m>\frac{1}{2}(-4) = -2</m>.
+                This tells us that our target perfect square quantity is <m>(x-2)^2</m>.
+                To get an expression equivalent to <m>(x-2)^2</m>,
+                we need to add <m>(-2)^2 = 4</m> to the <m>x^2-4x</m> to create a perfect square trinomial,
+                but to keep the balance, we must also subtract it.
+                We collect the terms which create the perfect square and gather the remaining constant terms.
+                Putting it all together, we get
+
+                <aside>
+                  <p>
+                    If you forget why we do what we do to complete the square,
+                    start with <m>a(x-h)^2 + k</m>,
+                    multiply it out, step by step,
+                    and then reverse the process.
+                  </p>
+                </aside>
+                <md>
+                  <mrow>f(x) \amp  =  x^2-4x+3  \tag{(Compute $\frac{1}{2} (-4) = -2$.)}</mrow>
+                  <mrow>\amp  =  \left(x^2 - 4x + \underline{4}  - \underline{4}\right) + 3  \tag{(Add and subtract $(-2)^2 = 4$.)}</mrow>
+                  <mrow>\amp  =  \left(x^2 - 4x + 4\right)  - 4 + 3  \tag{(Group the perfect square trinomial.)}</mrow>
+                  <mrow>\amp  =  (x-2)^2 - 1  \tag{(Factor the perfect square trinomial.)}</mrow>
+                </md>
+
+                <figure xml:id="fig_parabgr4">
+                  <caption><m>f(x) = x^2-4x+3</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-8.pdf"/>
+                </figure>
+
+                Of course, we can always check our answer by multiplying out
+                <m>f(x) = (x-2)^2 -1</m> to see that it simplifies to <m>f(x) = x^2 - 4x - 1</m>.
+                In the form <m>f(x) = (x-2)^2-1</m>,
+                we readily find the vertex to be <m>(2,-1)</m> which makes the axis of symmetry <m>x = 2</m>.
+                To find the <m>x</m>-intercepts,
+                we set <m>y = f(x) = 0</m>.
+                We are spoiled for choice,
+                since we have <em>two</em> formulas for <m>f(x)</m>.
+                Since we recognize <m>f(x) = x^2-4x+3</m> to be easily factorable,
+                (experience pays off, here!)
+                we proceed to solve <m>x^2-4x+3 = 0</m>.
+                Factoring gives <m>(x-3)(x-1) = 0</m> so that <m>x = 3</m> or <m>x=1</m>.
+                The <m>x</m>-intercepts are then <m>(1,0)</m> and <m>(3,0)</m>.
+                To find the <m>y</m>-intercept, we set <m>x=0</m>.
+                Once again, the general form
+                <m>f(x) = x^2-4x+3</m> is easiest to work with here,
+                and we find <m>y = f(0) = 3</m>.
+                Hence, the <m>y</m>-intercept is <m>(0,3)</m>.
+                With the vertex, axis of symmetry and the intercepts,
+                we get a pretty good graph without the need to plot additional points.
+                We see that the range of <m>f</m> is <m>[-1,\infty)</m> and we are done.
+                The graph of <m>f</m> is given in <xref ref="fig_parabgr4">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To get started, we rewrite
+                <m>g(x) = 6-x-x^2 = -x^2-x+6</m> and note that the coefficient of <m>x^2</m> is <m>-1</m>,
+                not <m>1</m>.
+                This means our first step is to factor out the <m>(-1)</m> from both the <m>x^2</m> and <m>x</m> terms.
+                We then follow the completing the square recipe as above.
+                <md>
+                  <mrow>g(x) \amp  =  -x^2-x+6</mrow>
+                  <mrow>\amp  = (-1)\left(x^2 + x \right) + 6  \tag{(Factor the coefficient of $x^2$ from $x^2$ and $x$.)}</mrow>
+                  <mrow>\amp  = (-1)\left(x^2 + x + \underline{\frac{1}{4}} - \underline{\frac{1}{4}} \right) + 6</mrow>
+                  <mrow>\amp  =  (-1)\left(x^2 + x + \frac{1}{4}\right) + (-1)\left(-\frac{1}{4}\right) + 6  \tag{(Group the perfect square trinomial.)}</mrow>
+                  <mrow>\amp  =  -\left(x +\frac{1}{2}\right)^2 + \frac{25}{4}</mrow>
+                </md>
+
+                <figure xml:id="fig_parabgr5">
+                  <caption><m>g(x) = 6-x-x^2</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-9.pdf"/>
+                </figure>
+
+                From <m>g(x) =  -\left(x +\frac{1}{2}\right)^2 + \frac{25}{4}</m>,
+                we get the vertex to be
+          <m>\left(-\frac{1}{2}, \frac{25}{4}\right)</m> and the axis of symmetry to be <m>x = -\frac{1}{2}</m>.
+                To get the <m>x</m>-intercepts,
+                we opt to set the given formula <m>g(x) = 6-x-x^2 = 0</m>.
+                Solving,
+          we get <m>x = -3</m> and <m>x=2</m> , so the <m>x</m>-intercepts are <m>(-3,0)</m> and <m>(2,0)</m>.
+                Setting <m>x=0</m>, we find <m>g(0) = 6</m>,
+                so the <m>y</m>-intercept is <m>(0,6)</m>.
+                Plotting these points gives us the graph in <xref ref="fig_parabgr5">Figure</xref>.
+                We see that the range of <m>g</m> is <m>\left(-\infty, \frac{25}{4}\right]</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      With <xref ref="parabolaex2">Example</xref> fresh in our minds,
+      we are now in a position to show that every quadratic function can be written in standard form.
+      We begin with <m>f(x) = ax^2+bx+c</m>, assume <m>a \neq 0</m>,
+      and complete the square in <em>complete</em> generality.
+      <md>
+        <mrow>f(x) \amp  =  ax^2 + bx + c</mrow>
+        <mrow>\amp  =  a\left(x^2 + \dfrac{b}{a} x\right) + c  \tag{(Factor out coefficient of $x^2$ from $x^2$ and $x$.)}</mrow>
+        <mrow>\amp  =   a\left(x^2 + \dfrac{b}{a} x + \underline{\dfrac{b^{2}}{4a^2}} - \underline{\dfrac{b^{2}}{4a^2}} \right) + c</mrow>
+        <mrow>\amp  =   a\left(x^2 + \dfrac{b}{a} x + \dfrac{b^{2}}{4a^2} \right)  - a \left(\dfrac{b^{2}}{4a^2}\right) + c   \tag{(Group the perfect square trinomial.)}</mrow>
+        <mrow>\amp  =  a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a}  \tag{(Factor and get a common denominator.)}</mrow>
+      </md>
+    </p>
+
+    <p>
+      Comparing this last expression with the standard form,
+      we identify <m>(x-h)</m> with
+      <m>\left(x+\frac{b}{2a}\right)</m> so that <m>h = -\frac{b}{2a}</m>.
+      Instead of memorizing the value <m>k = \frac{4ac - b^2}{4a}</m>,
+      we see that <m>f\left(-\frac{b}{2a}\right) = \frac{4ac - b^2}{4a}</m>.
+      As such, we have derived a vertex formula for the general form.
+      We summarize both vertex formulas in the box at the top of the next page.
+    </p>
+
+    <theorem xml:id="vertexofquadraticfunctions">
+      <title>Vertex Formulas for Quadratic Functions</title>
+      <statement>
+        <p>
+          Suppose <m>a</m>, <m>b</m>, <m>c</m>,
+          <m>h</m> and <m>k</m> are real numbers with <m>a \neq 0</m>.
+              <idx><h>parabola</h><h>vertex formulas</h></idx>
+          <ul>
+            <li>
+              <p>
+                If <m>f(x) = a(x-h)^2 + k</m>,
+                the vertex of the graph of <m>y=f(x)</m> is the point <m>(h,k)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>f(x) = ax^2+bx+c</m>,
+                the vertex of the graph of <m>y=f(x)</m> is the point <m>\left(-\dfrac{b}{2a}, f\left(-\dfrac{b}{2a}\right)\right)</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      There are two more results which can be gleaned from the completed-square form of the general form of a quadratic function,
+      <me>
+        f(x) = ax^2 + bx + c =  a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a}
+      </me>
+    </p>
+
+    <p>
+      We have seen that the number <m>a</m> in the standard form of a quadratic function determines whether the parabola opens upwards
+      (if <m>a>0</m>)
+      or downwards (if <m>a \lt  0</m>).
+      We see here that this number <m>a</m> is none other than the coefficient of <m>x^2</m> in the general form of the quadratic function.
+      In other words,
+      it is the coefficient of <m>x^2</m> alone which determines this behavior <mdash /> a result that is generalized in <xref ref="GraphsofPolynomials">Section</xref>.
+      The second treasure is a re-discovery of the
+          <idx><h>quadratic formula</h></idx>
+      <em>quadratic formula</em>.
+    </p>
+
+    <theorem xml:id="quadraticformula">
+      <title>The Quadratic Formula</title>
+      <statement>
+        <p>
+          If <m>a</m>,
+          <m>b</m> and <m>c</m> are real numbers with <m>a \neq 0</m>,
+          then the solutions to <m>ax^2 + bx + c = 0</m> are
+          <me>
+            x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}
+          </me>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Assuming the conditions of <xref ref="quadraticformula">Equation</xref>,
+      the solutions to <m>ax^2+bx+c = 0</m> are precisely the zeros of <m>f(x) = ax^2 + bx + c</m>.
+      Since
+      <me>
+        f(x) = ax^2+bx+c = a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a}
+      </me>
+      the equation <m>ax^2 + bx + c = 0</m> is equivalent to
+      <me>
+        a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a} = 0
+      </me>.
+    </p>
+
+    <p>
+      Solving gives
+      <md>
+        <mrow>a\left(x+\dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a} \amp  =  0</mrow>
+        <mrow>a\left(x+\dfrac{b}{2a}\right)^2  \amp  =  - \dfrac{4ac - b^2}{4a}</mrow>
+        <mrow>\dfrac{1}{a} \left[a\left(x+\dfrac{b}{2a}\right)^2\right] \amp  =  \dfrac{1}{a} \left(\dfrac{b^2-4ac}{4a}\right)</mrow>
+        <mrow>\left(x+\dfrac{b}{2a}\right)^2 \amp  =  \dfrac{b^2-4ac}{4a^2}</mrow>
+        <mrow>x+\dfrac{b}{2a} \amp  =  \pm \sqrt{\dfrac{b^2-4ac}{4a^2}}  \tag{extract square roots}</mrow>
+        <mrow>x+\dfrac{b}{2a} \amp  =  \pm \dfrac{\sqrt{b^2-4ac}}{2a}</mrow>
+        <mrow>x \amp  =  -\dfrac{b}{2a} \pm \dfrac{\sqrt{b^2-4ac}}{2a}</mrow>
+        <mrow>\amp  =  \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+      </md>
+    </p>
+
+    <p>
+      In our discussions of domain,
+      we were warned against having negative numbers underneath the square root.
+      Given that <m>\sqrt{b^{2} - 4ac}</m> is part of the Quadratic Formula,
+      we will need to pay special attention to the radicand <m>b^{2} - 4ac</m>.
+      It turns out that the quantity <m>b^2-4ac</m> plays a critical role in determining the nature of the solutions to a quadratic equation.
+      It is given a special name.
+    </p>
+
+    <definition xml:id="discriminant">
+      <title>Discriminant</title>
+      <statement>
+        <p>
+          If <m>a</m>,
+          <m>b</m> and <m>c</m> are real numbers with <m>a \neq 0</m>, then the
+              <idx><h>discriminant</h><h>of a quadratic equation</h></idx>
+          <term>discriminant</term>
+          of the quadratic equation
+          <m>ax^2+bx+c=0</m> is the quantity <m>b^2 - 4ac</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The discriminant <q>discriminates</q>
+      between the kinds of solutions we get from a quadratic equation.
+      These cases,
+      and their relation to the discriminant, are summarized below.
+    </p>
+
+    <theorem xml:id="discriminanttrichotomy">
+      <title>Discriminant Trichotomy</title>
+      <statement>
+        <p>
+              <idx><h>discriminant</h><h>trichotomy</h></idx>
+          Let <m>a</m>,
+          <m>b</m> and <m>c</m> be real numbers with <m>a \neq 0</m>.
+
+          <ul>
+            <li>
+              <p>
+                If <m>b^2 - 4ac \lt 0</m>,
+                the equation <m>ax^2 + bx + c = 0</m> has no real solutions.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>b^2 - 4ac = 0</m>,
+                the equation <m>ax^2 + bx + c = 0</m> has exactly one real solution.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>b^2 - 4ac > 0</m>,
+                the equation <m>ax^2 + bx + c = 0</m> has exactly two real solutions.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The proof of <xref ref="discriminanttrichotomy">Theorem</xref>
+      stems from the position of the discriminant in the quadratic equation,
+      and is left as a good mental exercise for the reader.
+      The next example exploits the fruits of all of our labor in this section thus far.
+    </p>
+
+    <example xml:id="PortaBoyProfit">
+      <title>Computing and maximizing profit</title>
+      <statement>
+        <p>
+          Recall that the profit
+          (defined on <xref ref="pricerevenuecostprofit">page</xref>)
+          for a product is defined by the equation <m>\mbox{Profit}  = \mbox{Revenue}  - \mbox{Cost}</m>,
+          or <m>P(x) = R(x) - C(x)</m>.
+          In <xref ref="PortaBoyRevenue">Example</xref>
+          the weekly revenue, in dollars,
+          made by selling <m>x</m> PortaBoy Game Systems was found to be <m>R(x) = -1.5x^2+250x</m> with the restriction
+          (carried over from the price-demand function)
+          that <m>0 \leq x \leq 166</m>.
+          The cost, in dollars,
+          to produce <m>x</m> PortaBoy Game Systems is given in <xref ref="PortaBoyCost">Example</xref>
+          as <m>C(x) = 80x + 150</m> for <m>x \geq 0</m>.
+
+          <ol>
+            <li>
+              <p>
+                Determine the weekly profit function <m>P(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Graph <m>y = P(x)</m>.
+                Include the <m>x</m>- and <m>y</m>-intercepts as well as the vertex and axis of symmetry.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret the zeros of <m>P</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret the vertex of the graph of <m>y = P(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Recall that the weekly price-demand equation for PortaBoys is <m>p(x) = -1.5x+250</m>,
+                where <m>p(x)</m> is the price per PortaBoy, in dollars,
+                and <m>x</m> is the weekly sales.
+                What should the price per system be in order to maximize profit?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find the profit function <m>P(x)</m>, we subtract
+                <me>
+                  P(x) = R(x) - C(x) = \left(-1.5x^2+250x\right) - \left(80x + 150\right) = -1.5x^2+170x-150
+                </me>.
+                Since the revenue function is valid when <m>0 \leq x \leq 166</m>,
+                <m>P</m> is also restricted to these values.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the <m>x</m>-intercepts,
+                we set <m>P(x) = 0</m> and solve  <m>-1.5x^2+170x-150=0</m>.
+                The mere thought of trying to factor the left hand side of this equation could do serious psychological damage,
+                so we resort to the quadratic formula,
+                <xref ref="quadraticformula">Equation</xref>.
+                Identifying <m>a = -1.5</m>, <m>b=170</m>,
+                and <m>c=-150</m>, we obtain
+                <md>
+                  <mrow>x \amp  = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a}</mrow>
+                  <mrow>\amp  = \dfrac{-170 \pm \sqrt{170^2 - 4(-1.5)(-150)}}{2(-1.5)}</mrow>
+                  <mrow>\amp  = \dfrac{-170 \pm \sqrt{28000}}{-3}</mrow>
+                  <mrow>\amp  = \dfrac{170 \pm 20 \sqrt{70}}{3}</mrow>
+                </md>.
+                We get two <m>x</m>-intercepts:
+                <m>\left( \frac{170 - 20 \sqrt{70}}{3},0\right)</m> and <m>\left( \frac{170 + 20 \sqrt{70}}{3},0\right)</m>.
+                To find the <m>y</m>-intercept,
+                we set <m>x=0</m> and find
+                <m>y=P(0)=-150</m> for a <m>y</m>-intercept of <m>(0,-150)</m>.
+                To find the vertex, we use the fact that
+                <m>P(x)=-1.5x^2+170x-150</m> is in the general form of a quadratic function and appeal to <xref ref="vertexofquadraticfunctions">Equation</xref>.
+                Substituting <m>a = -1.5</m> and <m>b=170</m>,
+                we get <m>x = -\frac{170}{2(-1.5)} = \frac{170}{3}</m>.
+                To find the <m>y</m>-coordinate of the vertex,
+                we compute <m>P\left( \frac{170}{3} \right) = \frac{14000}{3}</m> and find that our vertex is <m>\left(\frac{170}{3}, \frac{14000}{3}\right)</m>.
+                The axis of symmetry is the vertical line passing through the vertex so it is the line <m>x=\frac{170}{3}</m>.
+                To sketch a reasonable graph,
+                we approximate the <m>x</m>-intercepts,
+                <m>(0.89,0)</m> and <m>(112.44,0)</m>, and the vertex,
+                <m>(56.67,4666.67)</m>.  (Note that in order to get the <m>x</m>-intercepts and the vertex to show up in the same picture,
+                we had to scale the <m>x</m>-axis differently than the <m>y</m>-axis in <xref ref="fig_parabprofit">Figure</xref>.
+                This results in the left-hand <m>x</m>-intercept and the <m>y</m>-intercept being uncomfortably close to each other and to the origin in the picture.)
+
+                <figure xml:id="fig_parabprofit">
+                  <caption>The graph of the profit function <m>P(x)</m></caption>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-10.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The zeros of <m>P</m> are the solutions to <m>P(x)=0</m>,
+                which we have found to be approximately <m>0.89</m> and <m>112.44</m>.
+                As we saw in <xref ref="costrevenueprofitex1">Example</xref>,
+                these are the <q>break-even</q>
+                points of the profit function,
+                where enough product is sold to recover the cost spent to make the product.
+                More importantly,
+                we see from the graph that as long as <m>x</m> is between <m>0.89</m> and <m>112.44</m>,
+                the graph <m>y=P(x)</m> is above the <m>x</m>-axis,
+                meaning <m>y = P(x) > 0</m> there.
+                This means that for these values of <m>x</m>, a profit is being made.
+                Since <m>x</m> represents the weekly sales of PortaBoy Game Systems,
+                we round the zeros to positive integers and have that as long as <m>1</m>,
+                but no more than <m>112</m> game systems are sold weekly,
+                the retailer will make a profit.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                From the graph,
+                we see that the maximum value of <m>P</m> occurs at the vertex,
+                which is approximately <m>(56.67,4666.67)</m>.
+                As above,
+          <m>x</m> represents the weekly sales of PortaBoy systems,
+                so we can't sell <m>56.67</m> game systems.
+                Comparing <m>P(56) = 4666</m> and <m>P(57)=4666.5</m>,
+                we conclude that we will make a maximum profit of
+                <m>\dollar 4666.50</m> if we sell <m>57</m> game systems.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In the previous part,
+                we found that we need to sell <m>57</m> PortaBoys per week to maximize profit.
+                To find the price per PortaBoy,
+                we substitute <m>x=57</m> into the price-demand function to get <m>p(57) = -1.5(57)+250 = 164.5</m>.
+                The price should be set at <m>\dollar164.50</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example is another classic application of quadratic functions.
+    </p>
+
+    <example xml:id="donniealpaca">
+      <title>Optimizing pasture dimensions</title>
+      <statement>
+        <p>
+          Much to Donnie's surprise and delight,
+          he inherits a large parcel of land in Ashtabula County from one of his (e)strange(d) relatives.
+          The time is finally right for him to pursue his dream of farming alpaca.
+          He wishes to build a rectangular pasture,
+          and estimates that he has enough money for 200 linear feet of fencing material.
+          If he makes the pasture adjacent to a stream
+          (so no fencing is required on that side),
+          what are the dimensions of the pasture which maximize the area?
+          What is the maximum area?
+          If an average alpaca needs 25 square feet of grazing area,
+          how many alpaca can Donnie keep in his pasture?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          It is always helpful to sketch the problem situation,
+          so we do so in <xref ref="fig_parabalpaca">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_parabalpaca">
+          <caption>A diagram of pasture dimensions</caption>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-11.pdf"/>
+        </figure>
+
+        <p>
+          We are tasked to find the dimensions of the pasture which would give a maximum area.
+          We let <m>w</m> denote the width of the pasture and we let <m>l</m> denote the length of the pasture.
+          Since the units given to us in the statement of the problem are feet,
+          we assume <m>w</m> and <m>l</m> are measured in feet.
+          The area of the pasture, which we'll call <m>A</m>,
+          is related to <m>w</m> and <m>l</m> by the equation <m>A = wl</m>.
+          Since <m>w</m> and <m>l</m> are both measured in feet,
+          <m>A</m> has units of <m>\text{ feet } ^2</m>, or square feet.
+          We are given the total amount of fencing available is <m>200</m> feet,
+          which means <m>w + l + w = 200</m>, or, <m>l+2w = 200</m>.
+          We now have two equations, <m>A = wl</m> and <m>l+2w = 200</m>.
+          In order to use the tools given to us in this section to
+          <em>maximize</em> <m>A</m>,
+          we need to use the information given to write <m>A</m> as a function of just <em>one</em> variable,
+          either <m>w</m> or <m>l</m>.
+          This is where we use the equation <m>l+2w = 200</m>.
+          Solving for <m>l</m>, we find <m>l = 200-2w</m>,
+          and we substitute this into our equation for <m>A</m>.
+          We get <m>A = wl = w(200-2w) = 200w-2w^2</m>.
+          We now have <m>A</m> as a function of <m>w</m>,
+          <m>A(w) = 200w-2w^2 = -2w^2+200w</m>.
+        </p>
+
+        <p>
+          Before we go any further,
+          we need to find the applied domain of <m>A</m> so that we know what values of <m>w</m> make sense in this problem situation. (Donnie would be very upset if,
+          for example,
+          we told him the width of the pasture needs to be <m>-50</m> feet.) Since <m>w</m> represents the width of the pasture, <m>w > 0</m>.
+          Likewise, <m>l</m> represents the length of the pasture,
+          so <m>l = 200-2w > 0</m>.
+          Solving this latter inequality, we find <m>w \lt 100</m>.
+          Hence, the function we wish to maximize is
+          <m>A(w) = -2w^2 + 200w</m> for <m>0 \lt w \lt 100</m>.
+          Since <m>A</m> is a quadratic function
+          (of <m>w</m>),
+          we know that the graph of <m>y = A(w)</m> is a parabola.
+          Since the coefficient of <m>w^2</m> is <m>-2</m>,
+          we know that this parabola opens downwards.
+          This means that there is a maximum value to be found,
+          and we know it occurs at the vertex.
+          Using the vertex formula,
+          we find <m>w = -\frac{200}{2(-2)} = 50</m>,
+          and <m>A(50) = -2(50)^2 + 200(50) = 5000</m>.
+          Since <m>w=50</m> lies in the applied domain, <m>0 \lt w \lt 100</m>,
+          we have that the area of the pasture is maximized when the width is <m>50</m> feet.
+          To find the length, we use
+          <m>l = 200-2w</m> and find <m>l = 200-2(50) = 100</m>,
+          so the length of the pasture is <m>100</m> feet.
+          The maximum area is <m>A(50) = 5000</m>,
+          or <m>5000</m> square feet.
+          If an average alpaca requires 25 square feet of pasture, Donnie can raise <m>\frac{5000}{25} = 200</m> average alpaca.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We conclude this section with the graph of a more complicated absolute value function.
+    </p>
+
+    <example xml:id="ex_parababsgr">
+      <title>Graphing the absolute value of a quadratic function</title>
+      <statement>
+        <p>
+          Graph <m>f(x) = |x^2 - x - 6|</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the definition of absolute value,
+          <xref ref="absolutevalue">Definition</xref>, we have
+          <me>
+            f(x) = \begin{cases}-\left(x^2 - x - 6\right), \amp  \mbox{ if }  x^2 - x - 6 \lt  0  \\
+            x^2 - x - 6, \amp  \mbox{ if }  x^2 - x - 6 \geq 0
+            \end{cases}
+          </me>.
+        </p>
+
+        <p>
+          The trouble is that we have yet to develop any analytic techniques to solve nonlinear inequalities such as <m>x^2 - x - 6 \lt 0</m>.
+          You won't have to wait long;
+          this is one of the main topics of <xref ref="Inequalities">Section</xref>.
+          Nevertheless, we can attack this problem graphically.
+          To that end,
+          we graph <m>y = g(x) = x^2 - x-6</m> using the intercepts and the vertex.
+          To find the <m>x</m>-intercepts,
+          we solve <m>x^2 - x - 6 = 0</m>.
+          Factoring gives <m>(x-3)(x+2)=0</m> so <m>x=-2</m> or <m>x=3</m>.
+          Hence, <m>(-2,0)</m> and <m>(3,0)</m> are <m>x</m>-intercepts.
+          The <m>y</m>-intercept <m>(0,-6)</m> is found by setting <m>x=0</m>.
+          To plot the vertex,
+          we find <m>x = -\frac{b}{2a} = -\frac{-1}{2(1)} = \frac{1}{2}</m>,
+          and <m>y = \left(\frac{1}{2}\right)^2 - \left(\frac{1}{2}\right)-6 = -\frac{25}{4} = -6.25</m>.
+          Plotting, we get the parabola seen below on the left.
+          To obtain points on the graph of <m>y = f(x) = |x^2-x-6|</m>,
+          we can take points on the graph of
+          <m>g(x) = x^2-x-6</m> and apply the absolute value to each of the <m>y</m> values on the parabola.
+          We see from the graph of <m>g</m> that for <m>x \leq -2</m> or <m>x \geq 3</m>,
+          the <m>y</m> values on the parabola are greater than or equal to zero
+          (since the graph is on or above the <m>x</m>-axis),
+          so the absolute value leaves these portions of the graph alone.
+          For <m>x</m> between <m>-2</m> and <m>3</m>,
+          however, the <m>y</m> values on the parabola are negative.
+          For example, the point <m>(0,-6)</m> on
+          <m>y = x^2-x-6</m> would result in the point
+          <m>(0,|-6|) = (0,-(-6))= (0,6)</m> on the graph of <m>f(x) = |x^2-x-6|</m>.
+          Proceeding in this manner for all points with <m>x</m>-coordinates between <m>-2</m> and <m>3</m> results in the graph seen at the bottom of <xref ref="fig_parabgrlast">Figure</xref>.
+        </p>
+
+        <table xml:id="fig_parabgrlast">
+          <caption>Obtaining the graph of <m>f(x)=\lvert x^2-x-6\rvert</m></caption>
+          <tabular>
+            <row>
+              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-12.pdf"/></cell>
+            </row>
+            <row>
+              <cell><m>y=x^2-x-6</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-13.pdf"/></cell>
+            </row>
+            <row>
+              <cell><m>y=\lvert x^2-x-6</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </solution>
+    </example>
+
+    <p>
+      If we take a step back and look at the graphs of <m>g</m> and <m>f</m> in the last example,
+      we notice that to obtain the graph of <m>f</m> from the graph of <m>g</m>,
+      we reflect a <em>portion</em>
+      of the graph of <m>g</m> about the <m>x</m>-axis.
+      We can see this analytically by substituting
+      <m>g(x) = x^2-x-6</m> into the formula for <m>f(x)</m> and calling to mind <xref ref="reflections">Theorem</xref>
+      from <xref ref="Transformations">Section</xref>.
+      <me>
+        f(x) = \begin{cases}-g(x), \amp  \mbox{ if }   g(x) \lt  0  \\
+        g(x), \amp  \mbox{ if }   g(x) \geq 0
+        \end{cases}
+      </me>.
+    </p>
+
+    <p>
+      The function <m>f</m> is defined so that when <m>g(x)</m> is negative (i.e., when its graph is below the <m>x</m>-axis),
+      the graph of <m>f</m> is its refection across the <m>x</m>-axis.
+      This is a general template to graph functions of the form <m>f(x) = |g(x)|</m>.
+      From this perspective, the graph of
+      <m>f(x) = |x|</m> can be obtained by reflecting the portion of the line <m>g(x) =x</m> which is below the <m>x</m>-axis back above the <m>x</m>-axis creating the characteristic
+      <q><m>\vee</m></q> shape.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, graph the quadratic function.
+      Find the <m>x</m>- and <m>y</m>-intercepts of each graph,
+      if any exist.
+      If it is given in general form,
+      convert it into standard form;
+      if it is given in standard form,
+      convert it into general form.
+      Find the domain and range of the function and list the intervals on which the function is increasing or decreasing.
+      Identify the vertex and the axis of symmetry and determine whether the vertex yields a relative and absolute maximum or minimum.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{2} + 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^{2} + 2</m> (this is both forms!)
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 2)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>[2, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[0, \infty)</m>
+        </p>
+
+        <p>
+          Vertex <m>(0, 2)</m> is a minimum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = 0</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-14.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -(x + 2)^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -(x + 2)^{2} = -x^2-4x-4</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept <m>(-2, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, -4)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>(-\infty, 0]</m>
+        </p>
+
+        <p>
+          Increasing on <m>(-\infty, -2]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[-2, \infty)</m>
+        </p>
+
+        <p>
+          Vertex <m>(-2, 0)</m> is a maximum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = -2</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-15.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =x^{2} - 2x - 8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^{2} - 2x - 8 = (x - 1)^{2} - 9</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts <m>(-2, 0)</m> and <m>(4, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, -8)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>[-9, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, 1]</m>
+        </p>
+
+        <p>
+          Increasing on <m>[1, \infty)</m>
+        </p>
+
+        <p>
+          Vertex <m>(1, -9)</m> is a minimum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = 1</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-16.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -2(x + 1)^{2} + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -2(x + 1)^{2} + 4 = -2x^2-4x+2</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts { <m>(-1 - \sqrt{2}, 0)</m> and <m>(-1 + \sqrt{2}, 0)</m>}
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 2)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>(-\infty, 4]</m>
+        </p>
+
+        <p>
+          Increasing on <m>(-\infty, -1]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[-1, \infty)</m>
+        </p>
+
+        <p>
+          Vertex <m>(-1, 4)</m> is a maximum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = -1</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-17.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x^2 - 4x - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 2x^2-4x-1 = 2(x-1)^2-3</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts { <m>\left(\frac{2-\sqrt{6}}{2}, 0\right)</m> and <m>\left(\frac{2+\sqrt{6}}{2}, 0\right)</m>}
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, -1)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>[-3, \infty)</m>
+        </p>
+
+        <p>
+          Increasing on <m>[1,\infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty,1]</m>
+        </p>
+
+        <p>
+          Vertex <m>(1, -3)</m> is a minimum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = 1</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-18.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -3x^{2} + 4x - 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -3x^{2} + 4x - 7 = -3\left(x - \frac{2}{3} \right)^{2} - \frac{17}{3}</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, -7)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>\left(-\infty, -\frac{17}{3}\right]</m>
+        </p>
+
+        <p>
+          Increasing on <m>\left(-\infty, \frac{2}{3}\right]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>\left[\frac{2}{3}, \infty\right)</m>
+        </p>
+
+        <p>
+          Vertex <m>\left(\frac{2}{3}, -\frac{17}{3}\right)</m> is a maximum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = \frac{2}{3}</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-19.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 + x + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^2+x+1 = \left(x + \frac{1}{2}\right)^{2} + \frac{3}{4}</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 1)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>\left[ \frac{3}{4}, \infty\right)</m>
+        </p>
+
+        <p>
+          Increasing on <m>\left[-\frac{1}{2}, \infty\right)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>\left(-\infty, -\frac{1}{2}\right]</m>
+        </p>
+
+        <p>
+          Vertex <m>\left(-\frac{1}{2}, \frac{3}{4}\right)</m> is a minimum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = -\frac{1}{2}</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -3x^2+5x+4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -3x^2+5x+4 = -3\left(x-\frac{5}{6}\right)^2 + \frac{73}{12}</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts { <m>\left(\frac{5 - \sqrt{73}}{6}, 0\right)</m> and <m>\left(\frac{5+\sqrt{73}}{6}, 0\right)</m>}
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, 4)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>\left(-\infty, \frac{73}{12} \right]</m>
+        </p>
+
+        <p>
+          Increasing on <m>\left(-\infty, \frac{5}{6}\right]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>\left[ \frac{5}{6}, \infty\right)</m>
+        </p>
+
+        <p>
+          Vertex <m>\left(\frac{5}{6}, \frac{73}{12} \right)</m> is a maximum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = \frac{5}{6}</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{2} - \dfrac{1}{100} x - 1</m><fn>We have already seen the graph of this function.
+          It was used as an example in <xref ref="GraphsofFunctions">Section</xref> to show how the graphing calculator can be misleading.</fn></p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^{2} - \frac{1}{100} x - 1 = \left(x - \frac{1}{200}\right)^{2} - \frac{40001}{40000}</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts <m>\left(\frac{1 + \sqrt{40001}}{200}\right)</m> and <m>\left(\frac{1 - \sqrt{40001}}{200}\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept <m>(0, -1)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range: <m>\left[-\frac{40001}{40000}, \infty \right)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>\left(-\infty, \frac{1}{200}\right]</m>
+        </p>
+
+        <p>
+          Increasing on <m>\left[\frac{1}{200}, \infty \right)</m>
+        </p>
+
+        <p>
+          Vertex <m>\left(\frac{1}{200}, -\frac{40001}{40000}\right)</m> is a minimum
+        </p>
+
+        <p>
+          Axis of symmetry <m>x = \frac{1}{200}</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-22.pdf"/>
+        </p>
+
+        <p>
+          <em>Note: You'll need to plot this on a computer to zoom in far enough to see that the vertex is not the <m>y</m>-intercept.</em>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      the cost and price-demand functions are given for different scenarios.
+      For each scenario,
+
+      <ul>
+        <li>
+          <p>
+            Find the profit function <m>P(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the number of items which need to be sold in order to maximize profit.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the maximum profit.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the price to charge per item in order to maximize profit.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and interpret break-even points.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in dollars, to produce <m>x</m>
+          <q>I'd rather be a Sasquatch</q>
+          T-Shirts is <m>C(x) = 2x+26</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per shirt, is <m>p(x) = 30 - 2x</m>, <m>0 \leq x \leq 15</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>P(x) = -2x^2+28x-26</m>, for <m>0 \leq x \leq 15</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>7</m> T-shirts should be made and sold to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The maximum profit is <m>\dollar72</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price per T-shirt should be set at <m>\dollar16</m> to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The break even points are <m>x=1</m> and <m>x=13</m>,
+              so to make a profit,
+              between 1 and 13 T-shirts need to be made and sold.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in dollars,
+          to produce <m>x</m> bottles of <m>100 \%</m> All-Natural Certified Free-Trade Organic Sasquatch Tonic is <m>C(x) = 10x+100</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per bottle, is
+          <m>p(x) = 35 - x</m>, <m>0 \leq x \leq 35</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>P(x) = -x^2+25x-100</m>, for <m>0 \leq x \leq 35</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since the vertex occurs at <m>x=12.5</m>,
+              and it is impossible to make or sell <m>12.5</m> bottles of tonic,
+              maximum profit occurs when either <m>12</m> or <m>13</m> bottles of tonic are made and sold.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The maximum profit is <m>\dollar56</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price per bottle can be either <m>\dollar23</m>
+              (to sell 12 bottles)
+              or <m>\dollar22</m>
+              (to sell 13 bottles.)
+              Both will result in the maximum profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The break even points are <m>x=5</m> and <m>x=20</m>,
+              so to make a profit,
+              between 5 and 20 bottles of tonic need to be made and sold.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in cents,
+          to produce <m>x</m> cups of Mountain Thunder Lemonade at Junior's Lemonade Stand is <m>C(x) = 18x + 240</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in cents per cup, is <m>p(x) = 90-3x</m>, <m>0 \leq x \leq 30</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>P(x) = -3x^2+72x-240</m>,
+              for <m>0 \leq x \leq 30</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>12</m> cups of lemonade need to be made and sold to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The maximum profit is <m>192</m>\textcent or <m>\dollar1.92</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price per cup should be set at <m>54</m>\textcent per cup to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The break even points are <m>x=4</m> and <m>x=20</m>,
+              so to make a profit,
+              between 4 and 20 cups of lemonade need to be made and sold.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The daily cost, in dollars,
+          to produce <m>x</m> Sasquatch Berry Pies is <m>C(x) = 3x + 36</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per pie, is <m>p(x) = 12-0.5x</m>, <m>0 \leq x \leq 24</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>P(x) = -0.5 x^2+9x-36</m>,
+              for <m>0 \leq x \leq 24</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>9</m> pies should be made and sold to maximize the daily profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The maximum daily profit is <m>\dollar4.50</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price per pie should be set at <m>\dollar7.50</m> to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The break even points are <m>x=6</m> and <m>x=12</m>,
+              so to make a profit,
+              between 6 and 12 pies need to be made and sold daily.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The monthly cost, in <em>hundreds</em> of dollars,
+          to produce <m>x</m> custom built electric scooters is <m>C(x) = 20x + 1000</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in <em>hundreds</em> of dollars per scooter,
+          is <m>p(x) = 140-2x</m>, <m>0 \leq x \leq 70</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>P(x) = -2x^2+120x-1000</m>,
+              for <m>0 \leq x \leq 70</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>30</m> scooters need to be made and sold to maximize profit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The maximum monthly profit is <m>800</m> hundred dollars,
+              or <m>\dollar80,\!000</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price per scooter should be set at <m>80</m> hundred dollars,
+              or <m>\dollar8000</m> per scooter.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The break even points are <m>x=10</m> and <m>x=50</m>,
+              so to make a profit,
+              between 10 and 50 scooters need to be made and sold monthly.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The International Silver Strings Submarine Band holds a bake sale each year to fund their trip to the National Sasquatch Convention.
+          It has been determined that the cost in dollars of baking <m>x</m> cookies is
+          <m>C(x) = 0.1x + 25</m> and that the demand function for their cookies is <m>p = 10 - .01x</m>.
+          How many cookies should they bake in order to maximize their profit?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          495 cookies
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Using data from <url href="http://www.bts.gov/publications/national_transportation_statistics/html/table_04_23.html"><em>Bureau of Transportation Statistics</em></url>,
+          the average fuel economy <m>F</m> in miles per gallon for passenger cars in the US can be modelled by
+          <m>F(t) = -0.0076t^2+0.45t + 16</m>, <m>0 \leq t \leq 28</m>,
+          where <m>t</m> is the number of years since <m>1980</m>.
+          Find and interpret the coordinates of the vertex of the graph of <m>y = F(t)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The vertex is (approximately) <m>(29.60, 22.66)</m>,
+          which corresponds to a maximum fuel economy of 22.66 miles per gallon,
+          reached sometime between 2009 and 2010 (29 <mdash /> 30 years after 1980.) Unfortunately,
+          the model is only valid up until 2008 (28 years after 1908.) So, at this point,
+          we are using the model to <em>predict</em> the maximum fuel economy.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The temperature <m>T</m>,
+          in degrees Fahrenheit, <m>t</m> hours after 6 AM is given by:
+          <me>
+            T(t) = -\frac{1}{2} t^2 + 8t+32,  0 \leq t \leq 12
+          </me>
+        </p>
+
+        <p>
+          What is the warmest temperature of the day?
+          When does this happen?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>64^{\circ}</m> at 2 PM (8 hours after 6 AM.)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>C(x) = x^2-10x+27</m> represents the costs,
+          in <em>hundreds</em>, to produce <m>x</m> <em>thousand</em> pens.
+          How many pens should be produced to minimize the cost?
+          What is this minimum cost?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          5000 pens should be produced for a cost of <m>\dollar200</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="fixedperimetermaxareagarden">
+      <statement>
+        <p>
+          Skippy wishes to plant a vegetable garden along one side of his house.
+          In his garage, he found 32 linear feet of fencing.
+          Since one side of the garden will border the house, Skippy doesn't need fencing along that side.
+          What are the dimensions of the garden which will maximize the area of the garden?
+          What is the maximum area of the garden?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          8 feet by 16 feet; maximum area is 128 square feet.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In the situation of <xref ref="donniealpaca">Example</xref>, Donnie has a nightmare that one of his alpaca herd fell into the river and drowned.
+          To avoid this, he wants to move his rectangular pasture
+          <em>away</em> from the river.
+          This means that all four sides of the pasture require fencing.
+          If the total amount of fencing available is still 200 linear feet,
+          what dimensions maximize the area of the pasture now?
+          What is the maximum area?
+          Assuming an average alpaca requires 25 square feet of pasture,
+          how many alpaca can he raise now?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          50 feet by 50 feet; maximum area is 2500 feet;
+          he can raise 100 average alpacas.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What is the largest rectangular area one can enclose with 14 inches of string?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The largest rectangle has area <m>12.25</m> square inches.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The height of an object dropped from the roof of an eight story building is modelled by
+          <m>h(t) = -16t^2 + 64</m>, <m>0 \leq t \leq 2</m>.
+          Here, <m>h</m> is the height of the object off the ground,
+          in feet, <m>t</m> seconds after the object is dropped.
+          How long before the object hits the ground?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2</m> seconds.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The height <m>h</m> in feet of a model rocket above the ground <m>t</m> seconds after lift-off is given by <m>h(t) = -5t^2+100t</m>,
+          for <m>0 \leq t \leq 20</m>.
+          When does the rocket reach its maximum height above the ground?
+          What is its maximum height?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The rocket reaches its maximum height of <m>500</m> feet <m>10</m> seconds after lift-off.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Carl's friend Jason participates in the Highland Games.
+          In one event, the hammer throw,
+          the height <m>h</m> in feet of the hammer above the ground <m>t</m> seconds after Jason lets it go is modeled by <m>h(t) = -16t^2 + 22.08t + 6</m>.
+          What is the hammer's maximum height?
+          What is the hammer's total time in the air?
+          Round your answers to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The hammer reaches a maximum height of approximately <m>13.62</m> feet.
+          The hammer is in the air approximately <m>1.61</m> seconds.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="whatgoesup">
+      <statement>
+        <p>
+          Assuming no air resistance or forces other than the Earth's gravity,
+          the height above the ground at time <m>t</m> of a falling object is given by
+          <m>s(t) = -4.9t^{2} + v_{0}t + s_{0}</m> where <m>s</m> is in meters,
+          <m>t</m> is in seconds,
+          <m>v_{0}</m> is the object's initial velocity in meters per second and <m>s_{0}</m> is its initial position in meters.
+
+          <ol>
+            <li>
+              <p>
+                What is the applied domain of this function?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Discuss with your classmates what each of
+                <m>v_{0} > 0, \; v_{0} = 0</m> and <m>v_{0} \lt 0</m> would mean.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Come up with a scenario in which <m>s_{0} \lt 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Let's say a slingshot is used to shoot a marble straight up from the ground
+                <m>(s_{0} = 0)</m> with an initial velocity of 15 meters per second.
+                What is the marble's maximum height above the ground?
+                At what time will it hit the ground?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Now shoot the marble from the top of a tower which is 25 meters tall.
+                When does it hit the ground?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What would the height function be if instead of shooting the marble up off of the tower,
+                you were to shoot it straight DOWN from the top of the tower?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              The applied domain is <m>[0, \infty)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The height function is this case is <m>s(t) = -4.9t^{2} + 15t</m>.
+              The vertex of this parabola is approximately
+              <m>(1.53, 11.48)</m> so the maximum height reached by the marble is <m>11.48</m> meters.
+              It hits the ground again when <m>t \approx 3.06</m> seconds.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The revised height function is <m>s(t) = -4.9t^{2} + 15t + 25</m> which has zeros at
+              <m>t \approx -1.20</m> and <m>t \approx 4.26</m>.
+              We ignore the negative value and claim that the marble will hit the ground after <m>4.26</m> seconds.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Shooting down means the initial velocity is negative so the height functions becomes <m>s(t) = -4.9t^{2} - 15t + 25</m>.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="parabolicbridgecable">
+      <statement>
+        <p>
+          The two towers of a suspension bridge are 400 feet apart.
+          The parabolic cable<fn>The weight of the bridge deck forces the bridge cable into a parabola and a free hanging cable such as a power line forms not a parabola,
+          but a <em>catenary</em>,
+          a curve that is defined using exponential functions.</fn>attached to the tops of the towers is 10 feet above the point on the bridge deck that is midway between the towers.
+          If the towers are 100 feet tall,
+          find the height of the cable directly above a point of the bridge deck that is 50 feet to the right of the left-hand tower.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Make the vertex of the parabola <m>(0, 10)</m> so that the point on the top of the left-hand tower where the cable connects is
+          <m>(-200, 100)</m> and the point on the top of the right-hand tower is <m>(200, 100)</m>.
+          Then the parabola is given by <m>p(x) = \frac{9}{4000}x^{2} + 10</m>.
+          Standing <m>50</m> feet to the right of the left-hand tower means you're standing at <m>x= -150</m> and <m>p(-150) = 60.625</m>.
+          So the cable is 60.625 feet above the bridge deck there.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Graph <m>f(x) = |1 - x^{2}|</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points on the line <m>y=1-x</m> which are <m>2</m> units from <m>(1,-1)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{3 - \sqrt{7}}{2}, \dfrac{-1 + \sqrt{7}}{2} \right)</m>,
+          <m>\left(\dfrac{3 + \sqrt{7}}{2}, \dfrac{-1 - \sqrt{7}}{2} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>L</m> be the line <m>y = 2x+1</m>.
+          Find a function <m>D(x)</m> which measures the distance <em>squared</em>
+          from a point on <m>L</m> to <m>(0,0)</m>.
+          Use this to find the point on <m>L</m> closest to <m>(0,0)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>D(x) = x^2 + (2x+1)^2 = 5x^2+4x+1</m>,
+          <m>D</m> is minimized when <m>x=-\frac{2}{5}</m>,
+          so the point on <m>y=2x+1</m> closest to <m>(0,0)</m> is <m>\left(-\frac{2}{5}, \frac{1}{5}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          show that if a quadratic function
+          <m>f(x) = ax^{2} + bx + c</m> has two real zeros then the <m>x</m>-coordinate of the vertex is the midpoint of the zeros.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      In the following exercises,
+      solve the quadratic equation for the indicated variable.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} - 10y^{2} = 0</m> for <m>x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pm y\sqrt{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y^{2} - 4y = x^{2} - 4</m> for <m>x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pm (y - 2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x^{2} - mx = 1</m> for <m>x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \dfrac{m \pm \sqrt{m^{2} + 4}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y^{2} - 3y = 4x</m> for <m>y</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \dfrac{3 \pm \sqrt{16x + 9}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y^{2} - 4y = x^{2} - 4</m> for <m>y</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 2 \pm x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-gt^{2} + v_{0}t + s_{0} = 0</m> for <m>t</m> (Assume <m>g \neq 0</m>.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = \dfrac{v_{0} \pm \sqrt{v_{0}^{2} + 4gs_{0}}}{2g}</m>
+        </p>
+      </answer>
+    </exercise>
+  </subsection>
+</section>
+

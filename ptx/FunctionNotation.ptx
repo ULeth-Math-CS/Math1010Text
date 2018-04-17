@@ -1,0 +1,3194 @@
+
+
+<section xml:id="FunctionNotation">
+  <title>Function Notation</title>
+  <introduction>
+    <p>
+      In <xref ref="functiondefn">Definition</xref>,
+      we described a function as a special kind of relation <m>-</m> one in which each <m>x</m>-coordinate is matched with only one <m>y</m>-coordinate.
+      In this section, we focus more on the <em>process</em>
+          <idx><h>function</h><h>as a process</h></idx>
+      by which the <m>x</m> is matched with the <m>y</m>.
+      If we think of the domain of a function as a set of <em>inputs</em>
+      and the range as a set of <em>outputs</em>,
+      we can think of a function <m>f</m> as a process by which each input <m>x</m> is matched with only one output <m>y</m>.
+      Since the output is completely determined by the input <m>x</m> and the process <m>f</m>,
+      we symbolize the output with
+          <idx><h>function</h><h>notation</h></idx>
+      <em>function notation</em>:
+      <q><m>f(x)</m></q>, read <q><m>f</m>
+      <em>of</em> <m>x</m>.</q> In other words,
+      <m>f(x)</m> is the output which results by applying the process <m>f</m> to the input <m>x</m>.
+      In this case,
+      the parentheses here do not indicate multiplication,
+      as they do elsewhere in Algebra.
+      This can cause confusion if the context is not clear,
+      so you must read carefully.
+      This relationship is typically visualized using a diagram similar to the one in <xref ref="fig_functpic">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_functpic">
+      <caption>Graphical depiction of a function</caption>
+      <img src="figures/RelationsandFunctionsGraphics/FunctionNotation-1.pdf"/>
+    </figure>
+
+    <p>
+      The value of <m>y</m> is completely dependent on the choice of <m>x</m>.
+      For this reason, <m>x</m> is often called the
+      <em>independent variable</em>,
+          <idx><h>variable</h><h>independent</h></idx><idx><h>independent variable</h></idx><idx><h>function</h><h>independent variable of</h></idx> or <em>argument</em><idx><h>function</h><h>argument</h></idx><idx><h>argument</h><h>of a function</h></idx>
+      of <m>f</m>, whereas <m>y</m> is often called the
+      <em>dependent variable</em>.
+          <idx><h>variable</h><h>dependent</h></idx><idx><h>dependent variable</h></idx><idx><h>function</h><h>dependent variable of</h></idx>
+      As we shall see,
+      the process of a function <m>f</m> is usually described using an algebraic formula.
+      For example, suppose a function <m>f</m> takes a real number and performs the following two steps,
+      in sequence
+
+      <ol>
+        <li>
+          <p>
+            Multiply by 3
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Add 4
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      If we choose <m>5</m> as our input,
+      in Step 1 we multiply by <m>3</m> to get <m>(5)(3) = 15</m>.
+      In Step 2, we add 4 to our result from Step 1 which yields <m>15 + 4 = 19</m>.
+      Using function notation,
+      we would write <m>f(5) = 19</m> to indicate that the result of applying the process <m>f</m> to the input <m>5</m> gives the output <m>19</m>.
+      In general, if we use <m>x</m> for the input,
+      applying Step 1 produces <m>3x</m>.
+      Following with Step 2 produces <m>3x+4</m> as our final output.
+      Hence for an input <m>x</m>,
+      we get the output <m>f(x) = 3x + 4</m>.
+      Notice that to check our formula for the case <m>x=5</m>,
+      we replace the occurrence of <m>x</m> in the formula for <m>f(x)</m> with <m>5</m> to get <m>f(5) = 3(5) + 4 = 15 + 4 = 19</m>,
+      as required.
+    </p>
+
+    <example xml:id="ex_functionformula">
+      <title>Finding a forumula for a function</title>
+      <statement>
+        <p>
+          Suppose a function <m>g</m> is described by applying the following steps,
+          in sequence
+
+          <ol>
+            <li>
+              <p>
+                add 4
+              </p>
+            </li>
+
+            <li>
+              <p>
+                multiply by 3
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          Determine <m>g(5)</m> and find an expression for <m>g(x)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Starting with <m>5</m>, Step 1 gives <m>5+4 = 9</m>.
+          Continuing with Step 2, we get <m>(3)(9) = 27</m>.
+          To find a formula for <m>g(x)</m>,
+          we start with our input <m>x</m>.
+          Step 1 produces <m>x+4</m>.
+          We now wish to multiply this entire quantity by <m>3</m>,
+          so we use a parentheses: <m>3(x+4) = 3x + 12</m>.
+          Hence, <m>g(x) = 3x + 12</m>.
+          We can check our formula by replacing <m>x</m> with <m>5</m> to get <m>g(5) = 3(5) + 12 = 15 + 12 = 27 \, \checkmark</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Most of the functions we will encounter in Math 1010 will be described using formulas like the ones we developed for <m>f(x)</m> and <m>g(x)</m> above.
+      Evaluating formulas using this function notation is a key skill for success in this and many other Math courses.
+    </p>
+
+    <example xml:id="funcnotatex1">
+      <title>Using function notation</title>
+      <statement>
+        <p>
+          Let <m>f(x) = -x^2 + 3x + 4</m>
+        </p>
+
+        <ol>
+          <li>
+            <p>
+              Find and simplify the following.
+            </p>
+
+            <ol>
+              <li>
+                <p>
+                  <m>f(-1)</m>, <m>f(0)</m>, <m>f(2)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>f(2x)</m>, <m>2 f(x)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>f(x+2)</m>, <m>f(x)+2</m>, <m>f(x) + f(2)</m>
+                </p>
+              </li>
+            </ol></li>
+
+          <li>
+            <p>
+              Solve <m>f(x) = 4</m>.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    To find <m>f(-1)</m>,
+                    we replace every occurrence of <m>x</m> in the expression <m>f(x)</m> with <m>-1</m>
+                    <me>
+                      \begin{array}{rclr}  
+                      f(-1) \amp  = \amp  -(-1)^2 + 3(-1) + 4 \amp  \\
+                      \amp  = \amp  -(1) + (-3) + 4 \amp  \\ 
+                      \amp  = \amp  0 \amp 
+                      \end{array}
+                    </me>
+                    Similarly, <m>f(0) = -(0)^2 + 3(0) + 4 = 4</m>,
+                    and <m>f(2) = -(2)^2 + 3(2) + 4 = -4+6+4 = 6</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To find <m>f(2x)</m>,
+                    we replace every occurrence of <m>x</m> with the quantity <m>2x</m>
+                    <me>
+                      \begin{array}{rclr}  
+                      f(2x) \amp  = \amp  -(2x)^2 + 3(2x) + 4 \amp  \\
+                      \amp  = \amp  -(4x^2) + (6x) + 4 \amp  \\
+                      \amp  = \amp  -4x^2+6x+4 \amp 
+                      \end{array}
+                    </me>
+                    The expression <m>2f(x)</m> means we multiply the expression <m>f(x)</m> by <m>2</m>
+                    <me>
+                      \begin{array}{rclr}  
+                      2f(x) \amp  = \amp  2\left(-x^2 + 3x + 4\right) \amp  \\
+                      \amp  = \amp  -2x^2 + 6x + 8
+                      \end{array}
+                    </me>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To find <m>f(x+2)</m>,
+                    we replace every occurrence of <m>x</m> with the quantity <m>x+2</m>
+                    <me>
+                      \begin{array}{rclr}  
+                      f(x+2) \amp  = \amp  -(x+2)^2 + 3(x+2) + 4 \amp  \\
+                      \amp  = \amp  -\left(x^2 + 4x + 4\right) + (3x+6) + 4 \amp  \\
+                      \amp  = \amp  -x^2-4x-4+3x+6+4 \amp   \\
+                      \amp  = \amp  -x^2-x+6 \amp 
+                      \end{array}
+                    </me>
+                    To find <m>f(x)+2</m>,
+          we add <m>2</m> to the expression for <m>f(x)</m>
+                    <me>
+                      \begin{array}{rclr}  
+                      f(x) + 2 \amp  = \amp  \left(-x^2 + 3x + 4\right) + 2  \amp  \\
+                      \amp  = \amp  -x^2 + 3x + 6
+                      \end{array}
+                    </me>
+                    From our work above,
+          we see <m>f(2) = 6</m> so that
+                    <me>
+                      \begin{array}{rclr}  
+                      f(x) + f(2) \amp  = \amp  \left(-x^2 + 3x + 4\right) + 6  \amp  \\
+                      \amp  = \amp  -x^2 + 3x + 10
+                      \end{array}
+                    </me>
+                  </p>
+                </li>
+              </ol></li>
+
+            <li>
+              <p>
+                Since <m>f(x) = -x^2 + 3x + 4</m>,
+                the equation <m>f(x) = 4</m> is equivalent to <m>-x^2+3x+4 = 4</m>.
+                Solving we get <m>-x^2+3x = 0</m>, or <m>x(-x+3) = 0</m>.
+                We get <m>x=0</m> or <m>x=3</m>,
+                and we can verify these answers by checking that <m>f(0) = 4</m> and <m>f(3) = 4</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few notes about <xref ref="funcnotatex1">Example</xref> are in order.
+      First note the difference between the answers for <m>f(2x)</m> and <m>2f(x)</m>.
+      For <m>f(2x)</m>, we are multiplying the
+      <em>input</em> by <m>2</m>;
+      for <m>2 f(x)</m>,
+      we are multiplying the <em>output</em> by <m>2</m>.
+      As we see, we get entirely different results.
+      Along these lines, note that <m>f(x+2)</m>,
+      <m>f(x) + 2</m> and <m>f(x) + f(2)</m> are three
+      <em>different</em> expressions as well.
+      Even though function notation uses parentheses, as does multiplication,
+      there is <em>no</em> general <q>distributive property</q> of function notation.
+      Finally, note the practice of using parentheses when substituting one algebraic expression into another;
+      we highly recommend this practice as it will reduce careless errors.
+    </p>
+
+    <p>
+      Suppose now we wish to find <m>r(3)</m> for <m>r(x) = \dfrac{2x}{x^2 - 9}</m>.
+      Substitution gives
+      <me>
+        r(3) = \dfrac{2(3)}{(3)^2-9} = \dfrac{6}{0}
+      </me>,
+      which is undefined. (Why is this,
+      again?) The number <m>3</m> is not an allowable input to the function <m>r</m>;
+      in other words, <m>3</m> is not in the domain of <m>r</m>.
+      Which other real numbers are forbidden in this formula?
+      We think back to arithmetic.
+      The reason <m>r(3)</m> is undefined is because substitution results in a division by <m>0</m>.
+      To determine which other numbers result in such a transgression,
+      we set the denominator equal to <m>0</m> and solve
+      <md>
+        <mrow>x^2 - 9 \amp  =  0</mrow>
+        <mrow>x^2 \amp  =  9</mrow>
+        <mrow>\sqrt{x^2} \amp  =  \sqrt{9}  \tag{extract square roots}</mrow>
+        <mrow>x \amp  =  \pm 3</mrow>
+      </md>
+    </p>
+
+    <p>
+      As long as we substitute numbers other than <m>3</m> and <m>-3</m>,
+      the expression <m>r(x)</m> is a real number.
+      Hence, we write our domain in interval notation
+      (see the Exercises for <xref ref="CartesianPlane">Section</xref>)
+      as <m>(-\infty, -3) \cup (-3,3) \cup (3, \infty)</m>.
+      When a formula for a function is given,
+      we assume that the function is valid for all real numbers which make arithmetic sense when substituted into the formula.
+      This set of numbers is often called the
+          <idx><h>domain</h><h>implied</h></idx><idx><h>implied domain of a function</h></idx>
+      <em>implied domain</em>
+      (or <q>implicit domain</q>)
+      of the function.
+      At this stage,
+      there are only two mathematical sins we need to avoid:
+      division by <m>0</m> and extracting even roots of negative numbers.
+      The following example illustrates these concepts.
+    </p>
+
+    <example xml:id="ex_implieddom">
+      <title>Determining an implied domain</title>
+      <statement>
+        <p>
+          Find the domain of the following functions.
+
+          <ol>
+            <li>
+              <p>
+                <m>g(x) = \sqrt{4 - 3x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = \sqrt[5]{4 - 3x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \dfrac{2}{1 - \dfrac{4x}{x-3}}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>F(x) = \dfrac{\sqrt[4]{2x+1}}{x^2-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>r(t) = \dfrac{4}{6 - \sqrt{t+3}}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>I(x) = \dfrac{3x^2}{x}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <aside>
+              <p>
+                The <q>radicand</q>
+                is the expression <q>inside</q> the radical.
+              </p>
+            </aside>
+            <li>
+              <p>
+                The potential disaster for <m>g</m> is if the radicand is negative.
+                To avoid this, we set <m>4 - 3x \geq 0</m>.
+                From this,
+          we get <m>3x \leq 4</m> or <m>x \leq \frac{4}{3}</m>.
+                What this shows is that as long as <m>x \leq \frac{4}{3}</m>,
+                the expression <m>4 - 3x \geq 0</m>,
+                and the formula <m>g(x)</m> returns a real number.
+                Our domain is <m>\left(-\infty, \frac{4}{3}\right]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The formula for <m>h(x)</m> is hauntingly close to that of <m>g(x)</m> with one key difference <m>-</m> whereas the expression for <m>g(x)</m> includes an even indexed root
+                (namely a square root),
+                the formula for <m>h(x)</m> involves an odd indexed root (the fifth root).
+                Since odd roots of real numbers
+                (even negative real numbers)
+                are real numbers, there is no restriction on the inputs to <m>h</m>.
+                Hence, the domain is <m>(-\infty, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In the expression for <m>f</m>,
+                there are two denominators.
+                We need to make sure neither of them is <m>0</m>.
+                To that end,
+                we set each denominator equal to <m>0</m> and solve.
+                For the <q>small</q> denominator,
+                we get <m>x - 3 = 0</m> or <m>x=3</m>.
+                For the <q>large</q> denominator
+                <md>
+                  <mrow>1 - \dfrac{4x}{x-3} \amp  =  0  \amp</mrow>
+                  <mrow>1 \amp  =  \dfrac{4x}{x-3}</mrow>
+                  <mrow>(1)(x-3) \amp  =  \left(\dfrac{4x}{\cancel{x-3}}\right)\cancel{(x-3)}  \tag{clear denominators}</mrow>
+                  <mrow>x - 3 \amp  =   4x</mrow>
+                  <mrow>-3 \amp  =  3x</mrow>
+                  <mrow>-1 \amp  =  x</mrow>
+                </md>
+                So we get two real numbers which make denominators <m>0</m>,
+                namely <m>x = -1</m> and <m>x=3</m>.
+                Our domain is all real numbers except <m>-1</m> and <m>3</m>:
+                <me>
+                  (-\infty, -1) \cup (-1,3) \cup (3, \infty)
+                </me>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In finding the domain of <m>F</m>,
+                we notice that we have two potentially hazardous issues:
+                not only do we have a denominator,
+                we have a fourth (even-indexed) root.
+                Our strategy is to determine the restrictions imposed by each part and select the real numbers which satisfy both conditions.
+                To satisfy the fourth root,
+          we require <m>2x+1 \geq 0</m>.
+                From this we get <m>2x \geq -1</m> or <m>x \geq -\frac{1}{2}</m>.
+                Next,
+          we round up the values of <m>x</m> which could cause trouble in the denominator by setting the denominator equal to <m>0</m>.
+                We get <m>x^2 - 1=0</m>, or <m>x = \pm 1</m>.
+                Hence,
+          in order for a real number <m>x</m> to be in the domain of <m>F</m>,
+                <m>x \geq -\frac{1}{2}</m> but <m>x \neq \pm 1</m>.
+                In interval notation,
+                this set is <m>\left[ -\frac{1}{2}, 1 \right) \cup (1, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Don't be put off by the <q><m>t</m></q> here.
+                It is an independent variable representing a real number,
+                just like <m>x</m> does,
+          and is subject to the same restrictions.
+                As in the previous problem,
+          we have double danger here:
+                we have a square root and a denominator.
+                To satisfy the square root,
+                we need a non-negative radicand so we set
+                <m>t + 3 \geq 0</m> to get <m>t \geq -3</m>.
+                Setting the denominator equal to zero gives
+                <m>6 - \sqrt{t+3} =0</m>, or <m>\sqrt{t+3} = 6</m>.
+                Squaring both sides gives <m>t+3 = 36</m>, or <m>t = 33</m>.
+                Since we squared both sides in the course of solving this equation,
+                we need to check our answer.
+                Sure enough, when <m>t=33</m>,
+                <m>6 - \sqrt{t+3} = 6 - \sqrt{36} = 0</m>,
+                so <m>t=33</m> will cause problems in the denominator.
+                At last we can find the domain of <m>r</m>:
+                we need <m>t \geq -3</m>, but <m>t \neq 33</m>.
+                Our final answer is  <m>[-3, 33) \cup (33, \infty)</m>.
+
+                <aside>
+                  <p>
+                    Squaring both sides of an equation can introduce
+                    <em>extraneous solutions</em>.
+                    Do you remember why?
+                    Consider squaring both sides to
+                    <q>solve</q> <m>\sqrt{t+1} = -2</m>.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                It's tempting to simplify <m>I(x) = \dfrac{3x^2}{x} = 3x</m>, and,
+                since there are no longer any denominators,
+                claim that there are no longer any restrictions.
+                However, in simplifying <m>I(x)</m>,
+                we are assuming <m>x \neq 0</m>,
+                since <m>\frac{0}{0}</m> is undefined.
+                Proceeding as before,
+                we find the domain of <m>I</m> to be all real numbers except <m>0</m>:
+                <m>(-\infty, 0) \cup (0, \infty)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      It is worth reiterating the importance of finding the domain of a function
+      <em>before</em> simplifying,
+      as evidenced by the function <m>I</m> in the previous example.
+      Even though the formula <m>I(x)</m> simplifies to <m>3x</m>,
+      it would be inaccurate to write
+      <m>I(x) = 3x</m> without adding the stipulation that <m>x \neq 0</m>.
+      It would be analogous to not reporting taxable income or some other sin of omission.
+    </p>
+  </introduction>
+
+  <subsection xml:id="modeling">
+    <title>Modelling with Functions</title>
+    <p>
+      The importance of Mathematics to our society lies in its value to approximate,
+      or <em>model</em>
+          <idx><h>mathematical model</h></idx><idx><h>model</h><h>mathematical</h></idx>
+      real-world phenomenon.
+      Whether it be used to predict the high temperature on a given day,
+      determine the hours of daylight on a given day,
+      or predict population trends of various and sundry real and mythical beasts, Mathematics is second only to literacy in the importance humanity's development.
+    </p>
+
+    <p>
+      It is important to keep in mind that any time Mathematics is used to approximate reality,
+      there are always limitations to the model.
+      For example,
+      suppose grapes are on sale at the local market for <m>\dollar1.50</m> per pound.
+      Then one pound of grapes costs <m>\dollar1.50</m>,
+      two pounds of grapes cost <m>\dollar3.00</m>, and so forth.
+      Suppose we want to develop a formula which relates the cost of buying grapes to the amount of grapes being purchased.
+      Since these two quantities vary from situation to situation,
+      we assign them variables.
+      Let <m>c</m> denote the cost of the grapes and let <m>g</m> denote the amount of grapes purchased.
+      To find the cost <m>c</m> of the grapes,
+      we multiply the amount of grapes <m>g</m> by the price
+      <m>\dollar1.50</m> dollars per pound to get
+      <me>
+        c = 1.5 g
+      </me>
+    </p>
+
+    <p>
+      In order for the units to be correct in the formula,
+      <m>g</m> must be measured in <em>pounds</em>
+      of grapes in which case the computed value of <m>c</m> is measured in <em>dollars</em>.
+      Since we're interested in finding the cost <m>c</m> given an amount <m>g</m>,
+      we think of <m>g</m> as the independent variable and <m>c</m> as the dependent variable.
+      Using the language of function notation, we write
+      <me>
+        c(g) = 1.5 g
+      </me>
+      where <m>g</m> is the amount of grapes purchased
+      (in pounds)
+      and <m>c(g)</m> is the cost (in dollars).
+      For example, <m>c(5)</m> represents the cost, in dollars,
+      to purchase <m>5</m> pounds of grapes.
+      In this case, <m>c(5) = 1.5(5) = 7.5</m>,
+      so it would cost <m>\dollar 7.50</m>.
+      If, on the other hand, we wanted to find the <em>amount</em>
+      of grapes we can purchase for <m>\dollar5</m>,
+      we would need to set <m>c(g) = 5</m> and solve for <m>g</m>.
+      In this case, <m>c(g)=1.5g</m>,
+      so solving <m>c(g) = 5</m> is equivalent to solving
+      <m>1.5g = 5</m> Doing so gives <m>g = \frac{5}{1.5} = 3.\overline{3}</m>.
+      This means we can purchase exactly
+      <m>3.\overline{3}</m> pounds of grapes for <m>\dollar5</m>.
+      Of course, you would be hard-pressed to buy exactly <m>3.\overline{3}</m> pounds of grapes,
+      (you could get close... within a certain specified margin of error, perhaps)
+      and this leads us to our next topic of discussion, the
+          <idx><h>domain</h><h>applied</h></idx><idx><h>applied domain of a function</h></idx>
+      <em>applied domain</em>, or <q>explicit domain</q> of a function.
+    </p>
+
+    <p>
+      Even though, mathematically,
+      <m>c(g) = 1.5g</m> has no domain restrictions
+      (there are no denominators and no even-indexed radicals),
+      there are certain values of <m>g</m> that don't make any physical sense.
+      For example, <m>g = -1</m> corresponds to <q>purchasing</q>
+      <m>-1</m> pounds of grapes. (Maybe this means
+      <em>returning</em> a pound of grapes?) Also,
+      unless the <q>local market</q>
+      mentioned is the State of California
+      (or some other exporter of grapes),
+      it also doesn't make much sense for <m>g = 500,\!000,\!000</m>, either.
+      So the reality of the situation limits what <m>g</m> can be,
+      and these limits determine the applied domain of <m>g</m>.
+      Typically, an applied domain is stated explicitly.
+      In this case, it would be common to see something like
+      <m>c(g) = 1.5g</m>, <m>0 \leq g \leq 100</m>,
+      meaning the number of pounds of grapes purchased is limited from <m>0</m> up to <m>100</m>.
+      The upper bound here,
+      <m>100</m> may represent the inventory of the market,
+      or some other limit as set by local policy or law.
+      Even with this restriction, our model has its limitations.
+      As we saw above, it is virtually impossible to buy exactly
+      <m>3.\overline{3}</m> pounds of grapes so that our cost is exactly <m>\dollar5</m>.
+      In this case, being sensible shoppers,
+      we would most likely <q>round down</q>
+      and purchase <m>3</m> pounds of grapes or however close the market scale can read to <m>3.\overline{3}</m> without being over.
+      It is time for a more sophisticated example.
+    </p>
+
+    <example xml:id="heightofrocketmodel">
+      <title>Height of a model rocket</title>
+      <statement>
+        <p>
+          The height <m>h</m> in feet of a model rocket above the ground <m>t</m> seconds after lift-off is given by
+          <me>
+            h(t) = \begin{cases}-5t^2 + 100t, \amp  \mbox{if}    0 \leq t \leq 20 \\ 0, \amp  \mbox{if}   t > 20
+            \end{cases}
+          </me>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>h(10)</m> and <m>h(60)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve <m>h(t) = 375</m> and interpret your answers.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We first note that the independent variable here is <m>t</m>,
+                chosen because it represents time.
+                Secondly, the function is broken up into two rules:
+                one formula for values of <m>t</m> between <m>0</m> and <m>20</m> inclusive,
+                and another for values of <m>t</m> greater than 20.
+                Since <m>t=10</m> satisfies the inequality <m>0 \leq t \leq 20</m>,
+                we use the first formula listed,
+                <m>h(t) = -5t^2 + 100t</m>, to find <m>h(10)</m>.
+                We get <m>h(10) = -5(10)^2 + 100(10) = 500</m>.
+                Since <m>t</m> represents the number of seconds since lift-off and <m>h(t)</m> is the height above the ground in feet,
+                the equation <m>h(10) = 500</m> means that <m>10</m> seconds after lift-off,
+                the model rocket is <m>500</m> feet above the ground.
+                To find <m>h(60)</m>, we note that <m>t=60</m> satisfies <m>t > 20</m>,
+                so we use the rule <m>h(t) = 0</m>.
+                This function returns a value of <m>0</m> regardless of what value is substituted in for <m>t</m>,
+                so <m>h(60) = 0</m>.
+                This means that <m>60</m> seconds after lift-off,
+                the rocket is <m>0</m> feet above the ground;
+                in other words, a minute after lift-off,
+                the rocket has already returned to Earth.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the function <m>h</m> is defined in pieces,
+                we need to solve <m>h(t) = 375</m> in pieces.
+                For <m>0 \leq t \leq 20</m>,
+                <m>h(t) =  -5t^2 + 100t</m>,
+                so for these values of <m>t</m>,
+                we solve <m>-5t^2 + 100t = 375</m>.
+                Rearranging terms, we get <m>5t^2 - 100t + 375 = 0</m>,
+                and factoring gives <m>5(t-5)(t-15) = 0</m>.
+                Our answers are  <m>t=5</m> and <m>t=15</m>,
+                and since both of these values of <m>t</m> lie between <m>0</m> and <m>20</m>,
+                we keep both solutions.
+                For <m>t>20</m>, <m>h(t) = 0</m>,
+                and in this case, there are no solutions to <m>0=375</m>.
+                In terms of the model rocket,
+                solving <m>h(t) = 375</m> corresponds to finding when, if ever,
+                the rocket reaches <m>375</m> feet above the ground.
+                Our two answers,
+                <m>t=5</m> and <m>t=15</m> correspond to the rocket reaching this altitude <em>twice</em>
+                <mdash /> once <m>5</m> seconds after launch,
+                and again <m>15</m> seconds after launch.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The type of function in the previous example is called a
+      <em>piecewise-defined</em> function,
+      or <q>piecewise</q> function for short.
+      Many real-world phenomena,
+      income tax formulas for example,
+      are modelled by such functions.
+    </p>
+
+    <p>
+      \phantomsection
+          <idx><h>function</h><h>piecewise-defined</h></idx><idx><h>piecewise-defined function</h></idx>
+    </p>
+
+    <p>
+      By the way,
+      if we wanted to avoid using a piecewise function in <xref ref="heightofrocketmodel">Example</xref>,
+      we could have used <m>h(t) = -5t^2 + 100t</m> on the explicit domain
+      <m>0 \leq t \leq 20</m> because after 20 seconds,
+      the rocket is on the ground and stops moving.
+      In many cases, though, piecewise functions are your only choice,
+      so it's best to understand them well.
+    </p>
+
+    <p>
+      Mathematical modelling is not a one-section topic.
+      It's not even a one-<em>course</em>
+      topic as is evidenced by undergraduate and graduate courses in mathematical modelling being offered at many universities.
+      Thus our goal in this section cannot possibly be to tell you the whole story.
+      What we can do is get you started.
+      As we study new classes of functions,
+      we will see what phenomena they can be used to model.
+      In that respect,
+      mathematical modelling cannot be a topic in a book,
+      but rather, must be a theme of the book.
+      For now, we have you explore some very basic models in the Exercises because you need to crawl to walk to run.
+      As we learn more about functions,
+      we'll help you build your own models and get you on your way to applying Mathematics to your world.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      find an expression for <m>f(x)</m> and state its domain.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) multiply by 2; (2) add 3; (3) divide by 4.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{2x+3}{4}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) add 3; (2) multiply by 2; (3) divide by 4.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{2(x+3)}{4} = \frac{x+3}{2}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) divide by 4; (2) add 3; (3) multiply by 2.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 2\left(\frac{x}{4} + 3\right) = \frac{1}{2} x + 6</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) multiply by 2; (2) add 3; (3) take the square root.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{2x+3}</m>
+        </p>
+
+        <p>
+          Domain: <m>\left[ -\frac{3}{2}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) add 3; (2) multiply by 2; (3) take the square root.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{2(x+3)} = \sqrt{2x+6}</m>
+        </p>
+
+        <p>
+          Domain: <m>[-3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) add 3; (2) take the square root; (3) multiply by 2.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 2\sqrt{x+3}</m>
+        </p>
+
+        <p>
+          Domain: <m>[-3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) take the square root; (2) subtract 13; (3) make the quantity the denominator of a fraction with numerator 4.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{4}{\sqrt{x} - 13}</m>
+        </p>
+
+        <p>
+          Domain: <m>[0, 169) \cup (169, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) subtract 13; (2) take the square root; (3) make the quantity the denominator of a fraction with numerator 4.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{4}{\sqrt{x - 13}}</m>
+        </p>
+
+        <p>
+          Domain: <m>(13, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) take the square root; (2) make the quantity the denominator of a fraction with numerator 4; (3) subtract 13.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{4}{\sqrt{x}} - 13</m>
+        </p>
+
+        <p>
+          Domain: <m>(0, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f</m> is a function that takes a real number <m>x</m> and performs the following three steps in the order given: (1) make the quantity the denominator of a fraction with numerator 4; (2) take the square root; (3) subtract 13.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{\frac{4}{x}} - 13 = \frac{2}{\sqrt{x}} - 13</m>
+        </p>
+
+        <p>
+          Domain: <m>(0, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the given function <m>f</m> to find and simplify the following:
+
+      <ul>
+        <li>
+          <p>
+            <m>f(3)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(-1)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f\left(\frac{3}{2} \right)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(4x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>4f(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(-x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(x-4)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(x) - 4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f\left(x^2\right)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x+1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = 7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = 4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 8x+1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 8x+4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = -2x+1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = 2x-7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = 2x-3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = 2x^2+1</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3 - 4x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 3-4x</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = -9</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = 7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = -3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 3-16x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 12-16x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = 4x+3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = 19-4x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = -4x-1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = 3-4x^2</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2 - x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2 - x^2</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = -7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = -\frac{1}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 2-16x^2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 8-4x^2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = 2-x^2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = -x^2+8x-14</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = -x^{2} - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = 2-x^4</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 - 3x + 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2 - 3x + 2</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = -\frac{1}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 16x^2-12x+2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 4x^2-12x+8</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = x^2+3x+2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = x^2-11x+30</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = x^2-3x-2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = x^4-3x^2+2</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \dfrac{x}{x-1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = \dfrac{3}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = \dfrac{1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\dfrac{3}{2} \right) = 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = \dfrac{4x}{4x-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = \dfrac{4x}{x-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = \dfrac{x}{x+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = \dfrac{x-4}{x-5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = \dfrac{x}{x-1} - 4 = \frac{4-3x}{x-1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = \dfrac{x^2}{x^2-1}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2}{x^{3}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{2}{x^3}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = \dfrac{2}{27}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) = -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\dfrac{3}{2} \right) = \dfrac{16}{27}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = \dfrac{1}{32x^3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = \dfrac{8}{x^3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = -\dfrac{2}{x^3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = \dfrac{2}{(x-4)^3}=\dfrac{2}{x^3-12x^2+48x-64}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = \dfrac{2}{x^3} - 4= \frac{2-4x^3}{x^3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = \dfrac{2}{x^6}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 6</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) =6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 24</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = 6</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 0</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(3) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1) =0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(\frac{3}{2} \right) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(4x) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4f(x) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-x) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x-4) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) - 4 = -4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f\left(x^2\right) = 0</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the given function <m>f</m> to find and simplify the following:
+
+      <ul>
+        <li>
+          <p>
+            <m>f(2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(-2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(2a)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>2 f(a)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(a+2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(a) + f(2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f \left( \frac{2}{a} \right)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\frac{f(a)}{2}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(a + h)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x-5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x-5</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = -9</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = 4a-5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 4a-10</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = 2a-1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = 2a-6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = \frac{4}{a} - 5 = \frac{4-5a}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} =\frac{2a-5}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = 2a + 2h - 5</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 5-2x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          \item For <m>f(x) = 5-2x</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = 9</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = 5-4a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 10-4a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = 1-2a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = 6-2a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = 5 - \frac{4}{a} = \frac{5a-4}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{5-2a}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = 5-2a-2h</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x^2 - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x^2-1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = 7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = 8a^2-1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 4a^2-2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = 2a^2+8a+7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = 2a^2+6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = \frac{8}{a^2} - 1 = \frac{8-a^2}{a^2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{2a^2-1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = 2a^2+4ah+2h^2-1</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x^2+3x-2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 3x^2+3x-2</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 16</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = 4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = 12a^2+6a-2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 6a^2+6a-4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = 3a^2+15a+16</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = 3a^2+3a+14</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = \frac{12}{a^2} + \frac{6}{a} - 2 = \frac{12+6a-2a^2}{a^2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{3a^2+3a-2}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = 3a^2 + 6ah + 3h^2+3a+3h-2</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{2x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{2x+1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = \sqrt{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2)</m> is not real
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = \sqrt{4a+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 2\sqrt{2a+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = \sqrt{2a+5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) =\sqrt{2a+1} + \sqrt{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = \sqrt{\frac{4}{a} + 1} = \sqrt{\frac{a+4}{a}}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{\sqrt{2a+1}}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = \sqrt{2a+2h+1}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 117</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 117</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 117</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = 117</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = 117</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = 234</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = 117</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = 234</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = 117</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{117}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = 117</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{x}{2}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = \frac{a+2}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = \frac{a}{2}+ 1 = \frac{a+2}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = \frac{1}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{a}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = \frac{a+h}{2}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2}{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{2}{x}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>f(2) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-2) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2a) = \frac{1}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 f(a) = \frac{4}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a+2) = \frac{2}{a+2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) + f(2) = \frac{2}{a}+1 = \frac{a+2}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f \left( \frac{2}{a} \right) = a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{f(a)}{2} = \frac{1}{a}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + h) = \frac{2}{a+h}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the given function <m>f</m> to find <m>f(0)</m> and solve <m>f(x) = 0</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x-1</m>,
+          <m>f(0) = -1</m> and <m>f(x) = 0</m> when <m>x = \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3 - \frac{2}{5} x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 3 - \frac{2}{5} x</m>,
+          <m>f(0) = 3</m> and <m>f(x) = 0</m> when <m>x = \frac{15}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x^2 - 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x^2-6</m>,
+          <m>f(0) = -6</m> and <m>f(x) = 0</m> when <m>x = \pm \sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 - x - 12</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2-x-12</m>,
+          <m>f(0) = -12</m> and <m>f(x) = 0</m> when <m>x = -3</m> or <m>x=4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{x+4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{x+4}</m>,
+          <m>f(0) = 2</m> and <m>f(x) = 0</m> when <m>x =-4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{1-2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{1-2x}</m>,
+          <m>f(0) = 1</m> and <m>f(x) = 0</m> when <m>x = \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3}{4-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{3}{4-x}</m>,
+          <m>f(0) = \frac{3}{4}</m> and <m>f(x)</m> is never equal to <m>0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x^2-12x}{4-x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{3x^2-12x}{4-x^2}</m>,
+          <m>f(0) =0</m> and <m>f(x) = 0</m> when <m>x=0</m> or <m>x=4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>f(x) = \left\{  \begin{array}{rcr} x + 5 \amp  \mbox{ if }  \amp  x \leq -3 \\ \sqrt{9-x^2} \amp  \mbox{ if }  \amp  -3 \lt  x \leq 3 \\ -x+5 \amp  \mbox{ if }  \amp  x > 3
+          \end{array}         \right</m>.
+          Compute the following function values.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(-4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(3.001)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-3.001)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>f(-4) = 1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(-3) = 2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(3) = 0</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(3.001) = 1.999</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(-3.001) = 1.999</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(2) = \sqrt{5}</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>{\displaystyle f(x) = \left\{ \begin{array}{rcr}
+          x^{2} \amp  \mbox{ if }  \amp  x \leq -1\\
+          \sqrt{1 - x^{2}} \amp  \mbox{ if }  \amp  -1 \lt  x \leq 1\\
+          x \amp  \mbox{ if }  \amp  x > 1
+          \end{array}  \right. }</m> Compute the following function values.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(0)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-0.999)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>f(4) = 4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(-3) = 9</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(1) = 0</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(0) = 1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(-1) = 1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(-0.999) \approx 0.0447</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, find the (implied) domain of the function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{4} - 13x^{3} + 56x^{2} - 19</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x-2}{x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -1) \cup (-1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x}{x^2+x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty,-2) \cup (-2,1) \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x}{x^2+3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x}{x^2-3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -\sqrt{3}) \cup (-\sqrt{3}, \sqrt{3}) \cup (\sqrt{3}, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x+4}{x^2 - 36}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -6) \cup (-6,6) \cup (6, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x-2}{x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 2) \cup (2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{3-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{2x+5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\frac{5}{2}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 9x\sqrt{x+3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sqrt{7-x}}{x^2+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 7]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{6x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \frac{1}{3}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{6}{\sqrt{6x-2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( \frac{1}{3}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[3]{6x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{6}{4 - \sqrt{6x-2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \frac{1}{3}, 3 \right) \cup (3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sqrt{6x-2}}{x^2-36}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[ \frac{1}{3}, 6 \right) \cup (6, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sqrt[3]{6x-2}}{x^2+36}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>s(t) = \dfrac{t}{t - 8}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 8) \cup (8, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>Q(r) = \dfrac{\sqrt{r}}{r - 8}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, 8) \cup (8, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>b(\theta) = \dfrac{\theta}{\sqrt{\theta - 8}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(8, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>A(x) = \sqrt{x - 7} + \sqrt{9 - x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[7, 9]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha(y) = \sqrt[3]{\dfrac{y}{y - 8}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 8) \cup (8, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(v) = \dfrac{1}{4 - \dfrac{1}{v^{2}}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left( -\infty, -\frac{1}{2} \right) \cup \left( -\frac{1}{2}, 0 \right) \cup \left(0, \frac{1}{2} \right) \cup \left( \frac{1}{2}, \infty\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>T(t) = \dfrac{\sqrt{t} - 8}{5-t}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, 5) \cup (5,\infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>u(w) = \dfrac{w - 8}{5 - \sqrt{w}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, 25) \cup (25, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The area <m>A</m> enclosed by a square, in square inches,
+          is a function of the length of one of its sides <m>x</m>,
+          when measured in inches.
+          This relation is expressed by the formula <m>A(x) = x^2</m> for <m>x > 0</m>.
+          Find <m>A(3)</m> and solve <m>A(x) = 36</m>.
+          Interpret your answers to each.
+          Why is <m>x</m> restricted to <m>x > 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A(3) = 9</m>,
+          so the area enclosed by a square with a side of length <m>3</m> inches is <m>9</m> square inches.
+          The solutions to <m>A(x) = 36</m> are <m>x = \pm 6</m>.
+          Since <m>x</m> is restricted to <m>x > 0</m>,
+          we only keep <m>x = 6</m>.
+          This means for the area enclosed by the square to be <m>36</m> square inches,
+          the length of the side needs to be <m>6</m> inches.
+          Since <m>x</m> represents a length, <m>x > 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The area <m>A</m> enclosed by a circle, in square meters,
+          is a function of its radius <m>r</m>, when measured in meters.
+          This relation is expressed by the formula <m>A(r) = \pi r^2</m> for <m>r > 0</m>.
+          Find <m>A(2)</m> and solve <m>A(r) = 16\pi</m>.
+          Interpret your answers to each.
+          Why is <m>r</m> restricted to <m>r > 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A(2) = 4\pi</m>,
+          so the area enclosed by a circle with radius <m>2</m> meters is <m>4\pi</m> square meters.
+          The solutions to <m>A(r) = 16\pi</m> are <m>r = \pm 4</m>.
+          Since <m>r</m> is restricted to <m>r > 0</m>,
+          we only keep <m>r = 4</m>.
+          This means for the area enclosed by the circle to be <m>16\pi</m> square meters,
+          the radius needs to be <m>4</m> meters.
+          Since <m>r</m> represents a radius (length), <m>r > 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The volume <m>V</m> enclosed by a cube, in cubic centimeters,
+          is a function of the length of one of its sides <m>x</m>,
+          when measured in centimeters.
+          This relation is expressed by the formula <m>V(x) = x^3</m> for <m>x > 0</m>.
+          Find <m>V(5)</m> and solve <m>V(x) = 27</m>.
+          Interpret your answers to each.
+          Why is <m>x</m> restricted to <m>x > 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V(5) = 125</m>,
+          so the volume enclosed by a cube with a side of length <m>5</m> centimeters is <m>125</m> cubic centimeters.
+          The solution to <m>V(x) = 27</m> is <m>x = 3</m>.
+          This means for the volume enclosed by the cube to be <m>27</m> cubic centimeters,
+          the length of the side needs to <m>3</m> centimeters.
+          Since <m>x</m> represents a length, <m>x > 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The volume <m>V</m> enclosed by a sphere, in cubic feet,
+          is a function of the radius of the sphere <m>r</m>, when measured in feet.
+          This relation is expressed by the formula <m>V(r) =\frac{4\pi}{3} r^{3}</m> for <m>r > 0</m>.
+          Find <m>V(3)</m> and solve <m>V(r) = \frac{32\pi}{3}</m>.
+          Interpret your answers to each.
+          Why is <m>r</m> restricted to <m>r > 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V(3) = 36\pi</m>,
+          so the volume enclosed by a sphere with radius <m>3</m> feet is <m>36\pi</m> cubic feet.
+          The solution to <m>V(r) = \frac{32\pi}{3}</m> is <m>r = 2</m>.
+          This means for the volume enclosed by the sphere to be <m>\frac{32\pi}{3}</m> cubic feet,
+          the radius needs to <m>2</m> feet.
+          Since <m>r</m> represents a radius (length), <m>r > 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The volume <m>V</m> enclosed by a sphere, in cubic feet,
+          is a function of the radius of the sphere <m>r</m>, when measured in feet.
+          This relation is expressed by the formula <m>V(r) =\frac{4\pi}{3} r^{3}</m> for <m>r > 0</m>.
+          Find <m>V(3)</m> and solve <m>V(r) = \frac{32\pi}{3}</m>.
+          Interpret your answers to each.
+          Why is <m>r</m> restricted to <m>r > 0</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V(3) = 36\pi</m>,
+          so the volume enclosed by a sphere with radius <m>3</m> feet is <m>36\pi</m> cubic feet.
+          The solution to <m>V(r) = \frac{32\pi}{3}</m> is <m>r = 2</m>.
+          This means for the volume enclosed by the sphere to be <m>\frac{32\pi}{3}</m> cubic feet,
+          the radius needs to <m>2</m> feet.
+          Since <m>r</m> represents a radius (length), <m>r > 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The height of an object dropped from the roof of an eight story building is modeled by:
+          <m>h(t) = -16t^2 + 64</m>, <m>0 \leq t \leq 2</m>.
+          Here, <m>h</m> is the height of the object off the ground,
+          in feet, <m>t</m> seconds after the object is dropped.
+          Find <m>h(0)</m> and solve <m>h(t) = 0</m>.
+          Interpret your answers to each.
+          Why is <m>t</m> restricted to <m>0 \leq t \leq 2</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(0) = 64</m>,
+          so at the moment the object is dropped off the building,
+          the object is <m>64</m> feet off of the ground.
+          The solutions to <m>h(t) = 0</m> are <m>t = \pm 2</m>.
+          Since we restrict <m>0 \leq t \leq 2</m>,
+          we only keep <m>t = 2</m>.
+          This means <m>2</m> seconds after the object is dropped off the building,
+          it is <m>0</m> feet off the ground.
+          Said differently, the object hits the ground after <m>2</m> seconds.
+          The restriction <m>0 \leq t \leq 2</m> restricts the time to be between the moment the object is released and the moment it hits the ground.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The temperature <m>T</m> in degrees Fahrenheit <m>t</m> hours after 6 AM is given by
+          <m>T(t) = -\frac{1}{2} t^2 + 8t+3</m> for <m>0 \leq t \leq 12</m>.
+          Find and interpret <m>T(0)</m>,
+          <m>T(6)</m> and <m>T(12)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>T(0) = 3</m>, so at 6 AM (<m>0</m> hours after 6 AM), it is
+          <m>3^{\circ}</m> Fahrenheit. <m>T(6) = 33</m>,
+          so at noon (<m>6</m> hours after 6 AM), the temperature is
+          <m>33^{\circ}</m> Fahrenheit. <m>T(12) = 27</m>,
+          so at 6 PM (<m>12</m> hours after 6 AM), it is <m>27^{\circ}</m> Fahrenheit.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The function <m>C(x) = x^2-10x+27</m> models the cost,
+          in <em>hundreds</em> of dollars,
+          to produce <m>x</m> <em>thousand</em> pens.
+          Find and interpret <m>C(0)</m>,
+          <m>C(2)</m> and <m>C(5)</m>.
+        </p>
+
+        <p>
+          (The value <m>C(0)</m> is called the
+          <q>fixed</q> or <q>start-up</q> cost.
+          We'll revisit this concept on <xref ref="pricerevenuecostprofit">page</xref>.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C(0) = 27</m>, so to make <m>0</m> pens,
+          it costs <m>\dollar 2700</m>. <m>C(2) = 11</m>,
+          so to make <m>2000</m> pens,
+          it costs <m>\dollar1100</m>. <m>C(5) = 2</m>,
+          so to make <m>5000</m> pens,
+          it costs <m>\dollar2000</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Using data from the <url href="http://www.bts.gov/publications/national_transportation_statistics/html/table_04_23.html"><em>Bureau of Transportation Statistics</em></url>,
+          the average fuel economy <m>F</m> in miles per gallon for passenger cars in the US can be modelled by
+          <m>F(t) = -0.0076t^2+0.45t + 16</m>, <m>0 \leq t \leq 28</m>,
+          where <m>t</m> is the number of years since <m>1980</m>.
+          Use your calculator to find <m>F(0)</m>,
+          <m>F(14)</m> and <m>F(28)</m>.
+          Round your answers to two decimal places and interpret your answers to each.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>F(0) = 16.00</m>, so in 1980 (<m>0</m> years after 1980),
+          the average fuel economy of passenger cars in the US was <m>16.00</m> miles per gallon. <m>F(14) = 20.81</m>,
+          so in 1994 (<m>14</m> years after 1980),
+          the average fuel economy of passenger cars in the US was <m>20.81</m> miles per gallon. <m>F(28) = 22.64</m>,
+          so in 2008 (<m>28</m> years after 1980),
+          the average fuel economy of passenger cars in the US was <m>22.64</m> miles per gallon.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="Sasquatchfunc1">
+      <statement>
+        <p>
+          The population of Sasquatch in Portage County can be modeled by the function <m>P(t) = \frac{150t}{t + 15}</m>,
+          where <m>t</m> represents the number of years since 1803.
+          Find and interpret <m>P(0)</m> and <m>P(205)</m>.
+          Discuss with your classmates what the applied domain and range of <m>P</m> should be.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(0) = 0</m> which means in 1803 (<m>0</m> years after 1803),
+          there are no Sasquatch in Portage County. <m>P(205) = \frac{3075}{22} \approx 139.77</m>,
+          so in 2008 (<m>205</m> years after 1803),
+          there were between 139 and 140 Sasquatch in Portage County.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="piecewiseordering">
+      <statement>
+        <p>
+          For <m>n</m> copies of the book
+          <em>Me and my Sasquatch</em>,
+          a print on-demand company charges <m>C(n)</m> dollars,
+          where <m>C(n)</m> is determined by the formula
+          <me>
+            {\displaystyle C(n) = \left\{ \begin{array}{rcl}  15n \amp  \mbox{ if }  \amp  1 \leq n \leq 25  \\
+            13.50n  \amp  \mbox{ if }  \amp  25 \lt  n \leq 50 \\
+            12n \amp  \mbox{ if }  \amp  n > 50
+            \end{array}  \right. }
+          </me>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>C(20)</m>.
+              </p>
+            </li>
+
+            <li xml:id="x50vs51">
+
+            <p>
+              How much does it cost to order 50 copies of the book?
+              What about 51 copies?
+            </p>
+            </li>
+
+            <li>
+              <p>
+                Your answer to <xref ref="x50vs51"></xref> should get you thinking.
+                Suppose a bookstore estimates it will sell 50 copies of the book.
+                How many books can, in fact,
+                be ordered for the same price as those 50 copies? (Round your answer to a whole number of books.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>C(20) = 300</m>.
+              It costs <m>\dollar300</m> for 20 copies of the book.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>C(50) = 675</m>, so it costs
+              <m>\dollar 675</m> for 50 copies of the book. <m>C(51) = 612</m>,
+              so it costs <m>\dollar 612</m> for 51 copies of the book.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>56</m> books.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="piecewiseshipping">
+      <statement>
+        <p>
+          An on-line comic book retailer charges shipping costs according to the following formula
+          <me>
+            {\displaystyle S(n) = \left\{ \begin{array}{rcl}  1.5 n + 2.5 \amp  \mbox{ if }  \amp  1 \leq n \leq 14  \\
+            0  \amp  \mbox{ if }  \amp  n \geq 15
+            \end{array}  \right. }
+          </me>
+          where <m>n</m> is the number of comic books purchased and <m>S(n)</m> is the shipping cost in dollars.
+
+          <ol>
+            <li>
+              <p>
+                What is the cost to ship 10 comic books?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What is the significance of the formula
+                <m>S(n) = 0</m> for <m>n \geq 15</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>S(10) = 17.5</m>, so it costs
+              <m>\dollar 17.50</m> to ship 10 comic books.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There is free shipping on orders of <m>15</m> or more comic books.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="piecewisemobile">
+      <statement>
+        <p>
+          The cost <m>C</m>
+          (in dollars)
+          to talk <m>m</m> minutes a month on a mobile phone plan is modeled by
+          <me>
+            {\displaystyle C(m) = \left\{ \begin{array}{rcl} 25 \amp  \mbox{ if }  \amp  0 \leq m \leq 1000 \\
+            25+0.1(m-1000) \amp  \mbox{ if }  \amp  m > 1000
+            \end{array}  \right. }
+          </me>
+          <ol>
+            <li>
+              <p>
+                How much does it cost to talk <m>750</m> minutes per month with this plan?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How much does it cost to talk <m>20</m> hours a month with this plan?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Explain the terms of the plan verbally.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>C(750) = 25</m>, so it costs
+              <m>\dollar 25</m> to talk 750 minutes per month with this plan.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since <m>20 \, \text{ hours } = 1200 \, \text{ minutes }</m>,
+              we substitute <m>m = 1200</m> and get <m>C(1200) = 45</m>.
+              It costs <m>\dollar 45</m> to talk 20 hours per month with this plan.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It costs <m>\dollar25</m> for up to <m>1000</m> minutes and <m>10</m> cents per minute for each minute over <m>1000</m> minutes.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="greatestinteger">
+      <statement>
+        <p>
+          In <xref ref="SetsofNumbers">Section</xref> we defined the set of
+              <idx><h>integer</h><h>greatest integer function</h></idx>
+          <em>integers</em> as <m>\mathbb{Z} = \{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}</m>.
+          The
+              <idx><h>greatest integer function</h></idx>
+          <em>greatest integer of {<m>x</m>}</em>,
+          denoted by <m>\lfloor x \rfloor</m>,
+          is defined to be the largest integer <m>k</m> with <m>k \leq x</m>.
+        </p>
+
+        <p>
+          <em>Note:</em> The use of the letter
+          <m>\mathbb{Z}</m> for the integers is ostensibly because the German word
+          <em>zahlen</em> means <q>to count.</q>
+
+          <ol>
+            <li>
+              <p>
+                Find <m>\lfloor 0.785 \rfloor</m>,
+                <m>\lfloor 117 \rfloor</m>,
+                <m>\lfloor -2.001 \rfloor</m>,
+                and <m>\lfloor \pi + 6 \rfloor</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Discuss with your classmates how
+                <m>\lfloor x \rfloor</m> may be described as a piecewise defined function. <em>HINT:</em>
+                There are infinitely many pieces!
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Is <m>\lfloor a + b \rfloor = \lfloor a \rfloor + \lfloor b \rfloor</m> always true?
+                What if <m>a</m> or <m>b</m> is an integer?
+                Test some values, make a conjecture, and explain your result.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>\lfloor 0.785 \rfloor = 0</m>,
+              <m>\lfloor 117 \rfloor = 117</m>,
+              <m>\lfloor -2.001 \rfloor = -3</m>,
+              and <m>\lfloor \pi + 6 \rfloor = 9</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          \item We have through our examples tried to convince you that,
+          in general,
+          <m>f(a + b) \neq f(a) + f(b)</m>.
+          It has been our experience that students refuse to believe us so we'll try again with a different approach.
+          With the help of your classmates,
+          find a function <m>f</m> for which the following properties are always true.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(0) = f(-1 + 1) = f(-1) + f(1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(5) = f(2 + 3) = f(2) + f(3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(-6) = f(0 - 6) = f(0) - f(6)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a + b) = f(a) + f(b)\;</m> regardless of what two numbers we give you for <m>a</m> and <m>b</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          How many functions did you find that failed to satisfy the conditions above?
+          Did <m>f(x) = x^{2}</m> work?
+          What about <m>f(x) = \sqrt{x}</m> or
+          <m>f(x) = 3x + 7</m> or <m>f(x) = \dfrac{1}{x}</m>?
+          Did you find an attribute common to those functions that did succeed?
+          You should have,
+          because there is only one extremely special family of functions that actually works here.
+          Thus we return to our previous statement,
+          <em>in general</em>, <m>f(a + b) \neq f(a) + f(b)</m>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

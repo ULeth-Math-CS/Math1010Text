@@ -1,0 +1,2320 @@
+
+
+<section xml:id="LinearFunctions">
+  <title>Linear Functions</title>
+  <introduction>
+    <p>
+      We now begin the study of families of functions.
+      Our first family, linear functions,
+      are old friends as we shall soon see.
+      Recall from Geometry that two distinct points in the plane determine a unique line containing those points,
+      as indicated in <xref ref="fig_linfun1">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_linfun1">
+      <caption>The line between two points <m>P</m> and <m>Q</m></caption>
+      <img src="figures/LinearQuadraticGraphics/LinearFunctions-1.pdf"/>
+    </figure>
+
+    <p>
+      To give a sense of the <q>steepness</q> of the line,
+      we recall that we can compute the <em>slope</em>
+      of the line using the formula below.
+    </p>
+
+    <definition xml:id="slope">
+      <title>Slope</title>
+      <statement>
+        <p>
+          The
+              <idx><h>slope</h><h>definition</h></idx> <term>slope</term>
+          <m>m</m> of the line containing the points
+          <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
+          <idx><h>line</h><h>slope of</h></idx> <idx><h>slope</h><h>of a line</h></idx>
+          <me>
+            m  = \dfrac{y_{1} - y_{0}}{x_{1} - x_{0}}
+          </me>,
+          provided <m>x_{1} \neq x_{0}</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      A couple of notes about <xref ref="slope">Definition</xref> are in order.
+      First, don't ask why we use the letter
+      <q><m>m</m></q> to represent slope.
+      There are many explanations out there,
+      but apparently no one really knows for sure.
+      Secondly, the stipulation
+      <m>x_{1} \neq x_{0}</m> ensures that we aren't trying to divide by zero.
+      The reader is invited to pause to think about what is happening geometrically;
+      the anxious reader can skip along to the next example.
+    </p>
+
+    <aside>
+      <p>
+        See <url href="http://mathforum.org/dr.math/faq/faq.terms.html"><em>www.mathforum.org</em></url> or <url href="http://mathworld.wolfram.com/Slope.html"><em>www.mathworld.wolfram.com</em></url> for discussions on the use of the letter <m>m</m> to indicate slope.
+      </p>
+    </aside>
+    <example xml:id="slopeex">
+      <title>Finding the slope of a line</title>
+      <statement>
+        <p>
+          Find the slope of the line containing the following pairs of points,
+          if it exists.
+          Plot each pair of points and the line containing them.
+          <ol cols="3">
+            <li>
+              <p>
+                <m>P(0,0)</m>, <m>Q(2,4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>P(-1,2)</m>, <m>Q(3,4)</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>P(-2,3)</m>, <m>Q(2,-3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>P(-3,2)</m>, <m>Q(4,2)</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>P(2,3)</m>, <m>Q(2,-1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>P(2,3)</m>, <m>Q(2.1, -1)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In each of these examples,
+          we apply the slope formula, from <xref ref="slope">Definition</xref>.
+
+          <ol>
+            <li>
+              <p>
+                <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{4 - 0}{2 - 0} = \dfrac{4}{2} = 2</m> &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-2.pdf"/> </tabular>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{4 - 2}{3 - (-1)} = \dfrac{2}{4} = \dfrac{1}{2}</m> &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-3.pdf"/> </tabular>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{-3 - 3}{2 - (-2)} = \dfrac{-6}{4} = -\dfrac{3}{2}</m> &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-4.pdf"/> </tabular>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{2 - 2}{4 - (-3)} = \dfrac{0}{7} = 0</m> &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-5.pdf"/> </tabular>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <tabular> {m{3in}m{2in}} <m>m = \dfrac{-1 - 3}{2 - 2} = \dfrac{-4}{0}</m>,
+                which is undefined &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-6.pdf"/> </tabular>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <tabular> {m{3in}m{2in}} <m>m = \dfrac{-1 - 3}{2.1 - 2} = \dfrac{-4}{0.1}=-40</m> &amp;
+                <img src="figures/LinearQuadraticGraphics/LinearFunctions-7.pdf"/> </tabular>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few comments about <xref ref="slopeex">Example</xref> are in order.
+      First, for reasons which will be made clear soon,
+      if the slope is positive then the resulting line is said to be increasing.
+      If it is negative, we say the line is decreasing.
+      A slope of <m>0</m> results in a horizontal line which we say is constant,
+      and an undefined slope results in a vertical line.
+      Second, the larger the slope is in absolute value, the steeper the line.
+      You may recall from high school that slope can be described as the ratio
+      <q><m>\frac{\mbox{ rise} }{\mbox{ run} }</m></q>.
+      For example,
+      in the second part of <xref ref="slopeex">Example</xref>,
+      we found the slope to be <m>\frac{1}{2}</m>.
+      We can interpret this as a rise of 1 unit upward for every <m>2</m> units to the right we travel along the line,
+      as shown in <xref ref="fig_riserun">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_riserun">
+      <caption>Slope as <q>rise over run</q></caption>
+      <img src="figures/LinearQuadraticGraphics/LinearFunctions-8.pdf"/>
+    </figure>
+
+    <p>
+      Using more formal notation,
+      given points <m>\left(x_{0}, y_{0}\right)</m> and <m>\left(x_{1}, y_{1}\right)</m>,
+      we use the Greek letter delta <q><m>\Delta</m></q>
+      to write <m>\Delta y = y_{1} - y_{0}</m> and <m>\Delta x = x_{1} - x_{0}</m>.
+      In most scientific circles, the symbol <m>\Delta</m> means <q>change in</q>.
+    </p>
+
+    <p>
+      Hence, we may write
+      <me>
+        m = \dfrac{\Delta y}{\Delta x}
+      </me>,
+      which describes the slope as the
+          <idx><h>slope</h><h>rate of change</h></idx><idx><h>rate of change</h><h>slope of a line</h></idx>
+      <em>rate of change</em> of <m>y</m> with respect to <m>x</m>.
+      Rates of change abound in the <q>real world</q>,
+      as the next example illustrates.
+    </p>
+
+    <example xml:id="ex_tempchange">
+      <title>Temperature rate of change</title>
+      <statement>
+        <p>
+          Suppose that two separate temperature readings were taken at the ranger station on the top of Mt.
+          Sasquatch: at <m>6</m> AM the temperature was
+          <m>2^{\circ}</m>C and at <m>10</m> AM it was <m>8^{\circ}</m>C.
+
+          <ol>
+            <li>
+              <p>
+                Find the slope of the line containing the points <m>(6,2)</m> and <m>(10, 8)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret your answer to the first part in terms of temperature and time.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Predict the temperature at noon.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                For the slope,
+                we have <m>m = \frac{8 - 2}{10 - 6} = \frac{6}{4} = \frac{3}{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the values in the numerator correspond to the temperatures in
+                <m>^{\circ}</m>C, and the values in the denominator correspond to time in hours,
+                we can interpret the slope as <m>\dfrac{3}{2} = \dfrac{3^{\circ} \, \mbox{ C} }{2 \, \mbox{ hour} }</m>,
+                or <m>1.5^{\circ}</m>C per hour.
+                Since the slope is positive,
+                we know this corresponds to an increasing line.
+                Hence,
+          the temperature is increasing at a rate of <m>1.5^{\circ}</m>C per hour.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Noon is two hours after <m>10</m> AM. Assuming a temperature increase of <m>1.5^{\circ}</m>C per hour,
+                in two hours the temperature should rise
+                <m>3^{\circ}</m>C. Since the temperature at <m>10</m> AM is
+                <m>8^{\circ}</m>C, we would expect the temperature at noon to be <m>8+3=11^{\circ}</m>C.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Now it may well happen that in the previous scenario,
+      at noon the temperature is only
+      <m>10^{\circ}</m>C. This doesn't mean our calculations are incorrect, rather,
+      it means that the temperature change throughout the day isn't a constant <m>1.5^{\circ}</m>C per hour.
+      As discussed in <xref ref="modeling">Section</xref>,
+      mathematical models are just that: models.
+      The predictions we get out of the models may be mathematically accurate,
+      but may not resemble what happens in the real world.
+    </p>
+
+    <p>
+      In <xref ref="Relations">Section</xref>,
+      we discussed the equations of vertical and horizontal lines.
+      Using the concept of slope,
+      we can develop equations for the other varieties of lines.
+      Suppose a line has a slope of <m>m</m> and contains the point <m>\left(x_{0}, y_{0}\right)</m>.
+      Suppose <m>(x,y)</m> is another point on the line,
+      as indicated in <xref ref="fig_linfun2">Figure</xref>.
+    </p>
+
+    <p>
+      <xref ref="slope">Definition</xref> yields
+      <md>
+        <mrow>m \amp  = \dfrac{y - y_{0}}{x-x_{0}}</mrow>
+        <mrow>m\left(x - x_{0}\right) \amp  =  y - y_{0}</mrow>
+        <mrow>y - y_{0} \amp  = m\left(x - x_{0}\right)</mrow>
+      </md>
+    </p>
+
+    <p>
+      We have just derived the <em>point-slope form</em> of a line.
+    </p>
+
+    <figure xml:id="fig_linfun2">
+      <caption>Deriving the point-slope formula</caption>
+      <img src="figures/LinearQuadraticGraphics/LinearFunctions-9.pdf"/>
+    </figure>
+
+    <insight xml:id="pointslope">
+      <title>The point-slope form of a line</title>
+      <p>
+        The
+            <idx><h>line</h><h>point-slope form</h></idx>
+        <term>point-slope form</term>
+        of the equation of a line with slope <m>m</m> containing the point
+        <m>\left(x_{0}, y_{0}\right)</m> is the equation <m>y - y_{0} = m\left(x - x_{0}\right)</m>.
+            <idx><h>point-slope form of a line</h></idx>
+      </p>
+    </insight>
+
+    <example xml:id="ex_pointslope">
+      <title>Using the point-slope form</title>
+      <statement>
+        <p>
+          Write the equation of the line containing the points <m>(-1,3)</m> and <m>(2,1)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In order to use <xref ref="pointslope">Key Idea</xref>
+          we need to find the slope of the line in question so we use <xref ref="slope">Definition</xref>
+          to get <m>m = \frac{\Delta y}{\Delta x} = \frac{1 - 3}{2 - (-1)} = -\frac{2}{3}</m>.
+          We are spoiled for choice for a point <m>\left(x_{0}, y_{0}\right)</m>.
+          We'll use <m>(-1,3)</m> and leave it to the reader to check that using <m>(2,1)</m> results in the same equation.
+          Substituting into the point-slope form of the line, we get
+          <md>
+            <mrow>y - y_{0} \amp  = m\left(x - x_{0}\right)</mrow>
+            <mrow>y - 3 \amp  =  -\dfrac{2}{3} \left(x - (-1)\right)</mrow>
+            <mrow>y - 3 \amp  =  -\dfrac{2}{3} \left(x +1 \right)</mrow>
+            <mrow>y - 3 \amp  =  -\dfrac{2}{3}x - \dfrac{2}{3}</mrow>
+            <mrow>y     \amp  =  -\dfrac{2}{3} x + \dfrac{7}{3}</mrow>
+          </md>.
+        </p>
+
+        <p>
+          We can check our answer by showing that both <m>(-1,3)</m> and <m>(2,1)</m> are on the graph of <m>y = -\frac{2}{3} x + \frac{7}{3}</m> algebraically,
+          as we did in <xref ref="GraphsofEquations">Section</xref>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In simplifying the equation of the line in the previous example,
+      we produced another form of a line,
+      the <em>slope-intercept form</em>.
+      This is the familiar <m>y = mx + b</m> form you have probably seen in high school.
+      The <q>intercept</q> in <q>slope-intercept</q>
+      comes from the fact that if we set <m>x=0</m>, we get <m>y = b</m>.
+      In other words,
+      the <m>y</m>-intercept of the line <m>y = mx + b</m> is <m>(0,b)</m>.
+    </p>
+
+    <insight xml:id="slopeintercept">
+      <title>Slope intercept form of a line</title>
+      <p>
+        The
+            <idx><h>line</h><h>slope-intercept form</h></idx>
+        <term>slope-intercept form</term>
+        of the line with slope <m>m</m> and <m>y</m>-intercept <m>(0,b)</m> is the equation <m>y = mx + b</m>.
+            <idx><h>slope-intercept form of a line</h></idx>
+      </p>
+    </insight>
+
+    <p>
+      Note that if we have slope <m>m = 0</m>,
+      we get the equation <m>y = b</m> which matches our formula for a horizontal line given in <xref ref="Relations">Section</xref>.
+      The formula given in <xref ref="slopeintercept">Key Idea</xref>
+      can be used to describe all lines except vertical lines.
+      All lines except vertical lines are functions (Why is this?) so we have finally reached a good point to introduce
+      <em>linear functions</em>.
+    </p>
+
+    <definition xml:id="linearfunction">
+      <title>Linear function</title>
+      <statement>
+        <p>
+          A
+              <idx><h>function</h><h>linear</h></idx><idx><h>line</h><h>linear function</h></idx><idx><h>linear function</h></idx>
+          <term>linear function</term> is a function of the form
+          <me>
+            f(x) = mx + b
+          </me>,
+          where <m>m</m> and <m>b</m> are real numbers with <m>m \neq 0</m>.
+          The domain of a linear function is <m>(-\infty, \infty)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      For the case <m>m=0</m>, we get <m>f(x) = b</m>.
+      These are given their own classification.
+    </p>
+
+    <definition xml:id="constantfunction">
+      <title>Constant function</title>
+      <statement>
+        <p>
+          A
+              <idx><h>function</h><h>constant</h></idx><idx><h>constant function</h><h>as a horizontal line</h></idx>
+          <term>constant function</term> is a function of the form
+          <me>
+            f(x) =  b
+          </me>,
+          where <m>b</m> is real number.
+          The domain of a constant function is <m>(-\infty, \infty)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Recall that to graph a function, <m>f</m>,
+      we graph the equation <m>y=f(x)</m>.
+      Hence, the graph of a linear function is a line with slope <m>m</m> and <m>y</m>-intercept <m>(0,b)</m>;
+      the graph of a constant function is a horizontal line (a line with slope <m>m = 0</m>) and a <m>y</m>-intercept of <m>(0,b)</m>.
+      Now think back to <xref ref="genfuncbehavior">Section</xref>,
+      specifically <xref ref="incdeccnstdefn">Definition</xref> concerning increasing,
+      decreasing and constant functions.
+      A line with positive slope was called an increasing line because a linear function with <m>m > 0</m> is an increasing function.
+      Similarly, a line with a negative slope was called a decreasing line because a linear function with <m>m \lt 0</m> is a decreasing function.
+      And horizontal lines were called constant because, well,
+      we hope you've already made the connection.
+    </p>
+
+    <example xml:id="ex_linfungraph">
+      <title>Graphing linear functions</title>
+      <statement>
+        <p>
+          Graph the following functions.
+          Identify the slope and <m>y</m>-intercept.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = 3x - 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \dfrac{3 - 2x}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \dfrac{x^2 - 4}{x-2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To graph <m>f(x) = 3</m>, we graph <m>y=3</m>.
+                This is a horizontal line (<m>m=0</m>) through <m>(0,3)</m>:
+                see <xref ref="fig_linfun3">Figure</xref>. <figure xml:id="fig_linfun3"> <caption>The graph of <m>f(x)=3</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-10.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The graph of <m>f(x) = 3x-1</m> is the graph of the line <m>y = 3x-1</m>.
+                Comparison of this equation with <xref ref="slopeintercept">Equation</xref>
+                yields <m>m=3</m> and <m>b = -1</m>.
+                Hence,
+          our slope is <m>3</m> and our <m>y</m>-intercept is <m>(0,-1)</m>.
+                To get another point on the line,
+                we can plot <m>(1,f(1)) = (1,2)</m>.
+                Constructing the line through these points gives us <xref ref="fig_linfun4">Figure</xref>. <figure xml:id="fig_linfun4"> <caption>The graph of
+                <m>f(x)=3x-1</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-11.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                At first glance, the function
+                <m>f(x) = \dfrac{3 - 2x}{4}</m> does not fit the form in <xref ref="linearfunction">Definition</xref>
+                but after some rearranging we get <m>f(x) = \frac{3 - 2x}{4} = \frac{3}{4} - \frac{2x}{4} = -\frac{1}{2} x + \frac{3}{4}</m>.
+                We identify <m>m = -\frac{1}{2}</m> and <m>b = \frac{3}{4}</m>.
+                Hence, our graph is a line with a slope of
+                <m>-\frac{1}{2}</m> and a <m>y</m>-intercept of <m>\left(0, \frac{3}{4}\right)</m>.
+                Plotting an additional point,
+                we can choose <m>(1,f(1))</m> to get <m>\left(1, \frac{1}{4}\right)</m>:
+                see <xref ref="fig_linfun5">Figure</xref>. <figure xml:id="fig_linfun5"> <caption>The graph of
+                <m>f(x)=\dfrac{3-2x}{4}</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-12.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If we simplify the expression for <m>f</m>, we get
+                <me>
+                  f(x) = \dfrac{x^2-4}{x-2} = \dfrac{\cancel{(x-2)}(x+2)}{\cancel{(x-2)}} = x+2
+                </me>.
+                If we were to state <m>f(x) = x+2</m>,
+                we would be committing a sin of omission.
+                Remember, to find the domain of a function,
+                we do so <em>before</em> we simplify!
+                In this case,
+                <m>f</m> has big problems when <m>x=2</m>, and as such,
+                the domain of <m>f</m> is <m>(-\infty, 2) \cup (2,\infty)</m>.
+                To indicate this, we write <m>f(x) = x+2</m>, <m>x \neq 2</m>.
+                So, except at <m>x=2</m>,
+          we graph the line <m>y = x+2</m>.
+                The slope <m>m =1</m> and the <m>y</m>-intercept is <m>(0,2)</m>.
+                A second point on the graph is <m>(1,f(1)) = (1,3)</m>.
+                Since our function <m>f</m> is not defined at <m>x=2</m>,
+                we put an open circle at the point that would be on the line <m>y=x+2</m> when <m>x=2</m>,
+                namely <m>(2,4)</m>, as shown in <xref ref="fig_linfun6">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <figure xml:id="fig_linfun6">
+      <caption>The graph of <m>f(x)=\dfrac{x^2-4}{x-2}</m></caption>
+      <img src="figures/LinearQuadraticGraphics/LinearFunctions-13.pdf"/>
+    </figure>
+
+    <p>
+      The last two functions in the previous example showcase some of the difficulty in defining a linear function using the phrase <q>of the form</q>
+      as in <xref ref="linearfunction">Definition</xref>,
+      since some algebraic manipulations may be needed to rewrite a given function to match <q>the form</q>.
+      Keep in mind that the domains of linear and constant functions are all real numbers <m>(-\infty, \infty)</m>,
+      so while <m>f(x) = \frac{x^2-4}{x-2}</m> simplified to a formula <m>f(x) = x+2</m>,
+      <m>f</m> is not considered a linear function since its domain excludes <m>x=2</m>.
+      However, we would consider
+      <me>
+        f(x) = \dfrac{2x^2 + 2}{x^2+1}
+      </me>
+      to be a constant function since its domain is all real numbers (Can you tell us why?) and
+      <me>
+        f(x) = \dfrac{2x^2 + 2}{x^2+1} = \dfrac{2\cancel{\left(x^2+1\right)}}{\cancel{\left(x^2+1\right)}} = 2
+      </me>
+    </p>
+
+    <p>
+      The following example uses linear functions to model some basic economic relationships.
+    </p>
+
+    <example xml:id="PortaBoyCost">
+      <title>Pricing for a game system</title>
+      <statement>
+        <p>
+          The cost <m>C</m>, in dollars,
+          to produce <m>x</m> PortaBoy game systems for a local retailer is given by <m>C(x) = 80x + 150</m> for <m>x \geq 0</m>.
+        </p>
+
+        <aside>
+          <p>
+            The similarity of this name to <url href="http://www.toilets.com"><em>PortaJohn</em></url> is deliberate.
+          </p>
+        </aside>
+        <ol>
+          <li>
+            <p>
+              Find and interpret <m>C(10)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How many PortaBoys can be produced for <m>\dollar15,\! 000</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain the significance of the restriction on the domain,
+              <m>x \geq 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret <m>C(0)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret the slope of the graph of <m>y = C(x)</m>.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>C(10)</m>,
+                we replace every occurrence of <m>x</m> with <m>10</m> in the formula for <m>C(x)</m> to get <m>C(10) = 80(10)+150 = 950</m>.
+                Since <m>x</m> represents the number of PortaBoys produced,
+                and <m>C(x)</m> represents the cost, in dollars,
+                <m>C(10) = 950</m> means it costs
+                <m>\dollar950</m> to produce <m>10</m> PortaBoys for the local retailer.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find how many PortaBoys can be produced for <m>\dollar15, \! 000</m>,
+                we solve <m>C(x) = 15000</m>,
+                or <m>80x+150 = 15000</m>.
+                Solving, we get <m>x = \frac{14850}{80} = 185.625</m>.
+                Since we can only produce a whole number amount of PortaBoys,
+                we can produce <m>185</m> PortaBoys for <m>\dollar15, \! 000</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The restriction <m>x \geq 0</m> is the applied domain,
+                as discussed in <xref ref="modeling">Section</xref>.
+                In this context,
+                <m>x</m> represents the number of PortaBoys produced.
+                It makes no sense to produce a negative quantity of game systems.
+
+                <aside>
+                  <p>
+                    It makes no sense to produce either a fractional part of a game system,
+                    or a negative number of game systems,
+                    which is why it's always a good idea to pay attention to the applied domain.
+                    Such absurdities seems quite forgiveable in some textbooks but not to us.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We find <m>C(0) = 80(0)+150 = 150</m>.
+                This means it costs
+          <m>\dollar150</m> to produce <m>0</m> PortaBoys.
+                As mentioned on <xref ref="pricerevenuecostprofit">page</xref>,
+                this is the fixed, or start-up cost of this venture.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If we were to graph <m>y = C(x)</m>,
+                we would be graphing the portion of the line <m>y = 80x + 150</m> for <m>x \geq 0</m>.
+                We recognize the slope, <m>m = 80</m>.
+                Like any slope, we can interpret this as a rate of change.
+                Here, <m>C(x)</m> is the cost in dollars,
+                while <m>x</m> measures the number of PortaBoys so
+                <me>
+                  m = \dfrac{\Delta y}{\Delta x} = \dfrac{\Delta C}{\Delta x} = 80 = \dfrac{80}{1} = \dfrac{\dollar 80}{1 \, \mbox{PortaBoy} }
+                </me>.
+                In other words,  the cost is increasing at a rate of
+                <m>\dollar80</m> per PortaBoy produced.
+                This is often called the
+              <idx><h>cost</h><h>variable</h></idx><idx><h>variable cost</h></idx>
+          <em>variable cost</em> for this venture.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The next example asks us to find a linear function to model a related economic problem.
+    </p>
+
+    <example xml:id="PortaBoyDemand">
+      <title>Modelling demand</title>
+      <statement>
+        <p>
+          The local retailer in <xref ref="PortaBoyCost">Example</xref>
+          has determined that the number <m>x</m> of PortaBoy game systems sold in a week is related to the price <m>p</m> in dollars of each system.
+          When the price was <m>\dollar220</m>,
+          <m>20</m> game systems were sold in a week.
+          When the systems went on sale the following week,
+          <m>40</m> systems were sold at <m>\dollar190</m> a piece.
+
+          <ol>
+            <li>
+              <p>
+                Find a linear function which fits this data.
+                Use the weekly sales <m>x</m> as the independent variable and the price <m>p</m> as the dependent variable.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find a suitable applied domain.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Interpret the slope.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the retailer wants to sell <m>150</m> PortaBoys next week,
+                what should the price be?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What would the weekly sales be if the price were set at <m>\dollar150</m> per system?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We recall from <xref ref="FunctionNotation">Section</xref>
+                the meaning of <q>independent</q>
+                and <q>dependent</q> variable.
+                Since <m>x</m> is to be the independent variable,
+                and <m>p</m> the dependent variable,
+                we treat <m>x</m> as the input variable and <m>p</m> as the output variable.
+                Hence,
+          we are looking for a function of the form <m>p(x) = mx + b</m>.
+                To determine <m>m</m> and <m>b</m>,
+                we use the fact that <m>20</m> PortaBoys were sold during the week when the price was <m>220</m> dollars and <m>40</m> units were sold when the price was <m>190</m> dollars.
+                Using function notation,
+                these two facts can be translated as
+                <m>p(20)=220</m> and <m>p(40)=190</m>.
+                Since <m>m</m> represents the rate of change of <m>p</m> with respect to <m>x</m>, we have
+                <me>
+                  m = \dfrac{\Delta p}{\Delta x} = \dfrac{190-220}{40-20} = \dfrac{-30}{20} = -1.5
+                </me>.
+                We now have determined <m>p(x) = -1.5 x + b</m>.
+                To determine <m>b</m>,
+          we can use our given data again.
+                Using <m>p(20) = 220</m>,
+                we substitute <m>x=20</m> into
+                <m>p(x) = 1.5x + b</m> and set the result equal to <m>220</m>:
+                <m>-1.5(20)+b = 220</m>.
+                Solving, we get  <m>b = 250</m>.
+                Hence, we get <m>p(x) = -1.5x + 250</m>.
+                We can check our formula by computing <m>p(20)</m> and <m>p(40)</m> to see if we get <m>220</m> and <m>190</m>,
+                respectively.
+                You may recall from <xref ref="pricerevenuecostprofit">page</xref>
+                that the function <m>p(x)</m> is called the price-demand
+                (or simply demand)
+                function for this venture.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the applied domain,
+                we look at the physical constraints of the problem.
+                Certainly, we can't sell a negative number of PortaBoys,
+                so <m>x \geq 0</m>.
+                However,
+          we also note that the slope of this linear function is negative,
+                and as such, the price is decreasing as more units are sold.
+                Thus another constraint on the price is <m>p(x)\geq 0</m>.
+                Solving <m>-1.5 x + 250 \geq 0</m> results in
+                <m>-1.5 x \geq -250</m> or <m>x \leq \dfrac{500}{3} = 166.\overline{6}</m>.
+                Since <m>x</m> represents the number of PortaBoys sold in a week,
+                we round down to <m>166</m>.
+                As a result,
+                a reasonable applied domain for <m>p</m> is <m>[0,166]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The slope <m>m = -1.5</m>, once again,
+                represents the rate of change of the price of a system with respect to weekly sales of PortaBoys.
+                Since the slope is negative,
+                we have that the price is decreasing at a rate of
+                <m>\dollar1.50</m> per PortaBoy sold. (Said differently,
+                you can sell one more PortaBoy for every <m>\dollar1.50</m> drop in price.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine the price which will move <m>150</m> PortaBoys,
+                we find <m>p(150) = -1.5(150) + 250 = 25</m>.
+                That is, the price would have to be <m>\dollar25</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the price of a PortaBoy were set at <m>\dollar150</m>,
+                we have <m>p(x) = 150</m>,
+          or, <m>-1.5x + 250 = 150</m>.
+                Solving,
+          we get <m>-1.5x = -100</m> or <m>x = 66.\overline{6}</m>.
+                This means you would be able to sell <m>66</m> PortaBoys a week if the price were <m>\dollar150</m> per system.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Not all real-world phenomena can be modelled using linear functions.
+      Nevertheless,
+      it is possible to use the concept of slope to help analyze non-linear functions using the following.
+    </p>
+
+    <definition xml:id="arc">
+      <title>Average rate of change</title>
+      <statement>
+        <p>
+          Let <m>f</m> be a function defined on the interval <m>[a,b]</m>.
+          The
+              <idx><h>average rate of change</h></idx><idx><h>rate of change</h><h>average</h></idx>
+          <term>average rate of change</term>
+          of <m>f</m> over <m>[a,b]</m> is defined as:
+          <me>
+            \dfrac{\Delta f}{\Delta x} = \dfrac{f(b) - f(a)}{b-a}
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Geometrically, if we have the graph of <m>y=f(x)</m>,
+      the average rate of change over <m>[a,b]</m> is the slope of the line which connects <m>(a,f(a))</m> and <m>(b,f(b))</m>.
+      This is called the
+          <idx><h>secant line</h></idx>
+      <em>secant line</em> through these points.
+      For that reason, some textbooks use the notation
+      <m>m_{\sec}</m> for the average rate of change of a function.
+      Note that for a linear function <m>m = m_{\sec}</m>, or in other words,
+      its rate of change over an interval is the same as its average rate of change.
+    </p>
+
+    <figure xml:id="fig_avsecant">
+      <caption>The graph of <m>y=f(x)</m> and its secant line through <m>(a,f(a))</m> and <m>(b,f(b))</m></caption>
+      <img src="figures/LinearQuadraticGraphics/LinearFunctions-14.pdf"/>
+    </figure>
+
+    <p>
+      The interested reader may question the adjective <q>average</q>
+      in the phrase <q>average rate of change</q>.
+      In the figure above,
+      we can see that the function changes wildly on <m>[a,b]</m>,
+      yet the slope of the secant line only captures a snapshot of the action at <m>a</m> and <m>b</m>.
+      This situation is entirely analogous to the average speed on a trip.
+      Suppose it takes you <m>2</m> hours to travel <m>100</m> kilometres.
+      Your average speed is <m>\frac{100 \, \mbox{ km} }{2 \, \mbox{ h} } = 50 \, \mbox{km/h}</m>.
+      However, it is entirely possible that at the start of your journey,
+      you travelled <m>25</m> kilometres per hour,
+      then sped up to <m>65</m> kilometres per hour, and so forth.
+      The average rate of change is akin to your average speed on the trip.
+      Your speedometer measures your speed at any one instant along the trip, your
+          <idx><h>rate of change</h><h>instantaneous</h></idx><idx><h>instantaneous rate of change</h></idx>
+      <em>instantaneous rate of change</em>,
+      and this is one of the central themes of Calculus.
+    </p>
+
+    <p>
+      \phantomsection When interpreting rates of change,
+      we interpret them the same way we did slopes.
+      In the context of functions,
+      it may be helpful to think of the average rate of change as:
+      <me>
+        \dfrac{\mbox{change in outputs} }{\mbox{change in inputs} }
+      </me>
+    </p>
+
+    <example xml:id="PortaBoyRevenue">
+      <title>A non-linear revenue model</title>
+      <statement>
+        <p>
+          Recall from <xref ref="pricerevenuecostprofit">page</xref>,
+          the revenue from selling <m>x</m> units at a price <m>p</m> per unit is given by the formula <m>R=xp</m>.
+          Suppose we are in the scenario of <xref ref="PortaBoyCost">Examples</xref>
+          and <xref ref="PortaBoyDemand"></xref>.
+
+          <ol>
+            <li>
+              <p>
+                Find and simplify an expression for the weekly revenue <m>R(x)</m> as a function of weekly sales <m>x</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of <m>R(x)</m> over the interval <m>[0,50]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of <m>R(x)</m> as <m>x</m> changes from <m>50</m> to <m>100</m> and compare that to your result in part 2.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of weekly revenue as weekly sales increase from <m>100</m> PortaBoys to <m>150</m> PortaBoys.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>R = xp</m>, we substitute
+                <m>p(x) = -1.5x + 250</m> from <xref ref="PortaBoyDemand">Example</xref>
+                to get <m>R(x) = x (-1.5x + 250) = -1.5x^2+250x</m>.
+                Since we determined the price-demand function <m>p(x)</m> is restricted to <m>0 \leq x \leq 166</m>,
+                <m>R(x)</m> is restricted to these values of <m>x</m> as well.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using <xref ref="arc">Definition</xref>,
+                we get that the average rate of change is
+                <me>
+                  \dfrac{\Delta R}{\Delta x} = \dfrac{R(50) - R(0)}{50 - 0} = \dfrac{8750 - 0}{50 - 0} = 175
+                </me>.
+                Interpreting this slope as we have in similar situations,
+                we conclude that for every additional PortaBoy sold during a given week,
+                the weekly revenue increases <m>\dollar 175</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The wording of this part is slightly different than that in <xref ref="arc">Definition</xref>,
+                but its meaning is to find the average rate of change of <m>R</m> over the interval <m>[50,100]</m>.
+                To find this rate of change, we compute
+                <me>
+                  \dfrac{\Delta R}{\Delta x} = \dfrac{R(100) - R(50)}{100-50} = \dfrac{10000 - 8750}{50} = 25
+                </me>.
+                In other words, for each additional PortaBoy sold,
+                the revenue increases by <m>\dollar25</m>.
+                Note that while the revenue is still increasing by selling more game systems,
+                we aren't getting as much of an increase as we did in part 2 of this example. (Can you think of why this would happen?)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Translating the English to the mathematics,
+                we are being asked to find the average rate of change of <m>R</m> over the interval <m>[100,150]</m>.
+                We find
+                <me>
+                  \dfrac{\Delta R}{\Delta x} = \dfrac{R(150) - R(100)}{150-100} = \dfrac{3750 - 10000}{50} = -125
+                </me>.
+                This means that we are losing
+                <m>\dollar125</m> dollars of weekly revenue for each additional PortaBoy sold.  (Can you think why this is possible?)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We close this section with a new look at difference quotients which were first introduced in <xref ref="FunctionNotation">Section</xref>.
+      If we wish to compute the average rate of change of a function <m>f</m> over the interval <m>[x, x+h]</m>,
+      then we would have
+      <me>
+        \dfrac{\Delta f}{\Delta x} = \dfrac{f(x+h) - f(x)}{(x+h) - x} = \dfrac{f(x+h) - f(x)}{h}
+      </me>
+    </p>
+
+    <p>
+      As we have indicated, the rate of change of a function
+      (average or otherwise)
+      is of great importance in Calculus. (So we are not torturing you with these for nothing.) Also,
+      we have the geometric interpretation of difference quotients which was promised to you back on <xref ref="diffquotgeompromise">page</xref>
+      <mdash /> a difference quotient yields the slope of a secant line.
+    </p>
+  </introduction>
+
+  <subsection xml:id="parallellines">
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      find both the point-slope form and the slope-intercept form of the line with the given slope which passes through the given point.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = 3, \;\; P(3, -1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y+1 = 3(x-3)</m>
+        </p>
+
+        <p>
+          <m>y = 3x-10</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = -2, \;\; P(-5, 8)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y-8 = -2(x+5)</m>
+        </p>
+
+        <p>
+          <m>y = -2x-2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = -1, \;\; P(-7, -1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y + 1 = -(x+7)</m>
+        </p>
+
+        <p>
+          <m>y = -x-8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = \frac{2}{3}, \;\; P(-2, 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y - 1 = \frac{2}{3} (x+2)</m>
+        </p>
+
+        <p>
+          <m>y = \frac{2}{3} x + \frac{7}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = \frac{2}{3}, \;\; P(-2, 1)</m>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      {<m>y - 4 = -\frac{1}{5} (x-10)</m>
+    </p>
+
+    <p>
+      <m>y = -\frac{1}{5} x + 6</m>}
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = \frac{1}{7}, \;\; P(-1, 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y - 4 = \frac{1}{7}(x + 1)</m>
+        </p>
+
+        <p>
+          <m>y = \frac{1}{7}x + \frac{29}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = 0, \;\; P(3, 117)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y - 117 = 0</m>
+        </p>
+
+        <p>
+          <m>y = 117</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = -\sqrt{2}, \;\; P(0, -3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y + 3 = -\sqrt{2}(x - 0)</m>
+        </p>
+
+        <p>
+          <m>y = -\sqrt{2}x - 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = -5, \;\; P(\sqrt{3}, 2\sqrt{3})</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y - 2\sqrt{3} = -5(x - \sqrt{3})</m>
+        </p>
+
+        <p>
+          <m>y = -5x + 7\sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>m = 678, \;\; P(-1, -12)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y + 12 = 678(x + 1)</m>
+        </p>
+
+        <p>
+          <m>y = 678x + 666</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the slope-intercept form of the line which passes through the given points.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(0, 0), \; Q(-3, 5)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -\frac{5}{3}x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(-1, -2), \; Q(3, -2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(5, 0), \; Q(0, -8)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{8}{5}x - 8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(3, -5), \; Q(7, 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{9}{4}x - \frac{47}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(-1,5), \; Q(7, 5)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y =5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(4, -8), \; Q(5, -8)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y =-8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P\left(\frac{1}{2}, \frac{3}{4} \right), \; Q\left(\frac{5}{2}, -\frac{7}{4} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -\frac{5}{4} x + \frac{11}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P\left(\frac{2}{3}, \frac{7}{2} \right), \; Q\left(-\frac{1}{3}, \frac{3}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 2x + \frac{13}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P\left(\sqrt{2}, -\sqrt{2} \right), \; Q\left(-\sqrt{2}, \sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P\left(-\sqrt{3}, -1 \right), \; Q\left(\sqrt{3}, 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{\sqrt{3}}{3} x</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, graph the function.
+      Find the slope,
+      <m>y</m>-intercept and <m>x</m>-intercept, if any exist.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) =2x-1</m>
+        </p>
+
+        <p>
+          slope: <m>m = 2</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,-1)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>\left(\frac{1}{2}, 0 \right)</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-17.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) =3-x</m>
+        </p>
+
+        <p>
+          slope: <m>m = -1</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,3)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(3, 0)</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-18.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 3</m>
+        </p>
+
+        <p>
+          slope: <m>m =0</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,3)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: none
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-19.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 0</m>
+        </p>
+
+        <p>
+          slope: <m>m =0</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept:
+          <m>\{ (x,0) \, | \, \text{ \(x\) is a real number } \}</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \frac{2}{3} x + \frac{1}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \frac{2}{3} x + \frac{1}{3}</m>
+        </p>
+
+        <p>
+          slope: <m>m = \frac{2}{3}</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, \frac{1}{3}\right)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>\left(-\frac{1}{2}, 0\right)</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1-x}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{1-x}{2}</m>
+        </p>
+
+        <p>
+          slope: <m>m = -\frac{1}{2}</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, \frac{1}{2}\right)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>\left(1, 0\right)</m>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find all of the points on the line <m>y=2x+1</m> which are <m>4</m> units from the point <m>(-1,3)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,-1)</m> and <m>\left(\frac{11}{5}, \frac{27}{5}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Jeff can walk comfortably at <m>3</m> miles per hour.
+          Find a linear function <m>d</m> that represents the total distance Jeff can walk in <m>t</m> hours,
+          assuming he doesn't take any breaks.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d(t) = 3t</m>, <m>t \geq 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Carl can stuff <m>6</m> envelopes per <em>minute</em>.
+          Find a linear function <m>E</m> that represents the total number of envelopes Carl can stuff after <m>t</m> <em>hours</em>,
+          assuming he doesn't take any breaks.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>E(t) = 360t</m>, <m>t \geq 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A landscaping company charges
+          <m>\dollar45</m> per cubic yard of mulch plus a delivery charge of <m>\dollar20</m>.
+          Find a linear function which computes the total cost <m>C</m>
+          (in dollars)
+          to deliver <m>x</m> cubic yards of mulch.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C(x) = 45x+20</m>, <m>x \geq 0</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A plumber charges <m>\dollar50</m> for a service call plus <m>\dollar80</m> per hour.
+          If she spends no longer than 8 hours a day at any one site,
+          find a linear function that represents her total daily charges <m>C</m>
+          (in dollars)
+          as a function of time <m>t</m>
+          (in hours)
+          spent at any one given location.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C(t) = 80t + 50</m>, <m>0 \leq t \leq 8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A salesperson is paid <dollar />200 per week plus 5<percent /> commission on her weekly sales of <m>x</m> dollars.
+          Find a linear function that represents her total weekly pay, <m>W</m>
+          (in dollars)
+          in terms of <m>x</m>.
+          What must her weekly sales be in order for her to earn <dollar />475.00 for the week?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>W(x) = 200 + .05x,\, x \geq 0\;\;</m> She must make <dollar />5500 in weekly sales.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          An on-demand publisher charges
+          <m>\dollar22.50</m> to print a 600 page book and
+          <m>\dollar15.50</m> to print a 400 page book.
+          Find a linear function which models the cost of a book <m>C</m> as a function of the number of pages <m>p</m>.
+          Interpret the slope of the linear function and find and interpret <m>C(0)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>C(p) = 0.035p + 1.5 \;</m> The slope <m>0.035</m> means it costs <m>3.5</m>\textcent per page.
+          <m>C(0) = 1.5</m> means there is a fixed,
+          or start-up, cost of <m>\dollar1.50</m> to make each book.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The Topology Taxi Company charges
+          <m>\dollar2.50</m> for the first fifth of a mile and
+          <m>\dollar0.45</m> for each additional fifth of a mile.
+          Find a linear function which models the taxi fare <m>F</m> as a function of the number of miles driven,
+          <m>m</m>.
+          Interpret the slope of the linear function and find and interpret <m>F(0)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>F(m) = 2.25m + 2.05 \;</m> The slope <m>2.25</m> means it costs an additional
+          <m>\dollar2.25</m> for each mile beyond the first 0.2 miles. <m>F(0) = 2.05</m>,
+          so according to the model,
+          it would cost <m>\dollar2.05</m> for a trip of <m>0</m> miles.
+          Would this ever really happen?
+          Depends on the driver and the passenger, we suppose.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="celsiustofahr">
+      <statement>
+        <p>
+          Water freezes at <m>0^{\circ}</m> Celsius and
+          <m>32^{\circ}</m> Fahrenheit and it boils at
+          <m>100^{\circ}</m>C and <m>212^{\circ}</m>F.
+
+          <ol>
+            <li>
+              <p>
+                Find a linear function <m>F</m> that expresses temperature in the Fahrenheit scale in terms of degrees Celsius.
+                Use this function to convert <m>20^{\circ}</m>C into Fahrenheit.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find a linear function <m>C</m> that expresses temperature in the Celsius scale in terms of degrees Fahrenheit.
+                Use this function to convert <m>110^{\circ}</m>F into Celsius.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Is there a temperature <m>n</m> such that <m>F(n) = C(n)</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>F(C) = \frac{9}{5}C + 32</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>C(F) = \frac{5}{9}(F - 32) = \frac{5}{9}F - \frac{160}{9}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>F(-40) = -40 = C(-40)</m>.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Legend has it that a bull Sasquatch in rut will howl approximately 9 times per hour when it is
+          <m>40^{\circ}F</m> outside and only 5 times per hour if it's <m>70^{\circ}F</m>.
+          Assuming that the number of howls per hour, <m>N</m>,
+          can be represented by a linear function of temperature Fahrenheit,
+          find the number of howls per hour he'll make when it's only <m>20^{\circ}F</m> outside.
+          What is the applied domain of this function?
+          Why?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>N(T) = -\frac{2}{15}T + \frac{43}{3}</m> and <m>N(20) = \frac{35}{3} \approx 12</m> howls per hour.
+        </p>
+
+        <p>
+          Having a negative number of howls makes no sense and since
+          <m>N(107.5) = 0</m> we can put an upper bound of <m>107.5^{\circ}F</m> on the domain.
+          The lower bound is trickier because there's nothing other than common sense to go on.
+          As it gets colder, he howls more often.
+          At some point it will either be so cold that he freezes to death or he's howling non-stop.
+          So we're going to say that he can withstand temperatures no lower than
+          <m>-60^{\circ}F</m> so that the applied domain is <m>[-60, 107.5]</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="exerredoportaboy">
+      <statement>
+        <p>
+          Economic forces beyond anyone's control have changed the cost function for PortaBoys to <m>C(x) = 105x + 175</m>.
+          Rework <xref ref="PortaBoyCost">Example</xref> with this new cost function.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In response to the economic forces in <xref ref="exerredoportaboy">Exercise</xref> above,
+          the local retailer sets the selling price of a PortaBoy at <dollar />250.
+          Remarkably, 30 units were sold each week.
+          When the systems went on sale for <dollar />220, 40 units per week were sold.
+          Rework <xref ref="PortaBoyDemand">Examples</xref>
+          and <xref ref="PortaBoyRevenue"></xref> with this new data.
+          What difficulties do you encounter?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A local pizza store offers medium two-topping pizzas delivered for <m>\dollar6.00</m> per pizza plus a
+          <m>\dollar1.50</m> delivery charge per order.
+          On weekends, the store runs a <q>game day</q> special:
+          if six or more medium two-topping pizzas are ordered,
+          they are <m>\dollar5.50</m> each with no delivery charge.
+          Write a piecewise-defined linear function which calculates the cost <m>C</m>
+          (in dollars)
+          of <m>p</m> medium two-topping pizzas delivered during a weekend.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>{\displaystyle C(p) = \left\{ \begin{array}{rcl} 6p + 1.5 \amp \mbox{ if } \amp 1 \leq p \leq 5 \\ 5.5p \amp \mbox{ if } \amp p\geq 6 \end{array} \right. }</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A restaurant offers a buffet which costs <m>\dollar15</m> per person.
+          For parties of <m>10</m> or more people,
+          a group discount applies, and the cost is <m>\dollar12.50</m> per person.
+          Write a piecewise-defined linear function which calculates the total bill <m>T</m> of a party of <m>n</m> people who all choose the buffet.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>{\displaystyle T(n) = \left\{ \begin{array}{rcl} 15n \amp \mbox{ if } \amp 1 \leq n \leq 9 \\ 12.5n \amp \mbox{ if } \amp n \geq 10 \end{array} \right. }</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A mobile plan charges a base monthly rate of
+          <m>\dollar10</m> for the first <m>500</m> minutes of air time plus a charge of <m>15</m>\textcent for each additional minute.
+          Write a piecewise-defined linear function which calculates the monthly cost <m>C</m>
+          (in dollars)
+          for using <m>m</m> minutes of air time.
+        </p>
+
+        <p>
+          <em>HINT:</em> You may want to revisit <xref ref="piecewisemobile">Exercise</xref>
+          in <xref ref="FunctionNotation">Section</xref>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>{\displaystyle C(m) = \left\{ \begin{array}{rcl} 10 \amp \mbox{ if } \amp 0 \leq m \leq 500 \\ 10+0.15(m-500) \amp \mbox{ if } \amp m > 500 \end{array} \right. }</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The local pet shop charges <m>12</m>\textcent per cricket up to 100 crickets,
+          and <m>10</m>\textcent per cricket thereafter.
+          Write a piecewise-defined linear function which calculates the price <m>P</m>,
+          in dollars,
+          of purchasing <m>c</m> crickets.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>{\displaystyle P(c) = \left\{ \begin{array}{rcl} 0.12c \amp \mbox{ if } \amp 1 \leq c \leq 100 \\ 12 + 0.1(c-100) \amp \mbox{ if } \amp c > 100 \end{array} \right. }</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cross-section of a swimming pool is below.
+          Write a piecewise-defined linear function which describes the depth of the pool, <m>D</m>
+          (in feet)
+          as a function of:
+
+          <ol>
+            <li>
+              <p>
+                the distance
+                (in feet)
+                from the edge of the shallow end of the pool, <m>d</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                the distance
+                (in feet)
+                from the edge of the deep end of the pool, <m>s</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Graph each of the functions in (a) and (b).
+                Discuss with your classmates how to transform one into the other and how they relate to the diagram of the pool.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          <img src="figures/LinearQuadraticGraphics/LinearFunctions-15.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <me>
+                {\displaystyle D(d) = \left\{ \begin{array}{rcl} 8 \amp  \mbox{ if }  \amp  0 \leq d \leq 15 \\
+                -\frac{1}{2} \, d + \frac{31}{2} \amp  \mbox{ if }  \amp  15 \leq d \leq 27 \\
+                2 \amp  \mbox{ if }  \amp  27 \leq d \leq 37
+                \end{array}  \right. }
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <me>
+                {\displaystyle D(s) = \left\{ \begin{array}{rcl} 2 \amp  \mbox{ if }  \amp  0 \leq s \leq 10 \\
+                \frac{1}{2} \, s -3 \amp  \mbox{ if }  \amp  10 \leq s \leq 22 \\
+                8 \amp  \mbox{ if }  \amp  22 \leq s \leq 37
+                \end{array}  \right. }
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>~</m> <tabular> <row> <cell><img src="figures/LinearQuadraticGraphics/LinearFunctions-23.pdf"/></cell> </row> <row> <cell><m>y=D(d)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/LinearQuadraticGraphics/LinearFunctions-24.pdf"/></cell> </row> <row> <cell><m>y=D(s)</m></cell> </row> </tabular>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      compute the average rate of change of the function over the specified interval.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{3}, \; [-1, 2]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{2^{3} - (-1)^{3}}{2 - (-1)} = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x}, \; [1, 5]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\frac{1}{5} - \frac{1}{1}}{5 - 1} = -\dfrac{1}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{x}, \; [0, 16]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\sqrt{16} - \sqrt{0}}{16 - 0} = \dfrac{1}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{2}, \; [-3, 3]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3^{2} - (-3)^{2}}{3 - (-3)} = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x + 4}{x - 3}, \; [5, 7]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\frac{7 + 4}{7 - 3} - \frac{5 + 4}{5 - 3}}{7 - 5} = -\dfrac{7}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x^{2} + 2x - 7, \; [-4, 2]</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{(3(2)^{2}+2(2)-7)-(3(-4)^{2}+2(-4)-7)}{2-(-4)}=-4</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      compute the average rate of change of the given function over the interval <m>[x, x + h]</m>.
+      Here we assume <m>[x, x + h]</m> is in the domain of the function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3x^{2} + 3xh + h^{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-1}{x(x + h)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x + 4}{x - 3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-7}{(x - 3)(x + h - 3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x^{2} + 2x - 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6x + 3h + 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Using data from <url href="http://www.bts.gov/publications/national_transportation_statistics/html/table_04_23.html"><em>Bureau of Transportation Statistics</em></url>,
+          the average fuel economy <m>F</m> in miles per gallon for passenger cars in the US can be modeled by
+          <m>F(t) = -0.0076t^2+0.45t + 16</m>, <m>0 \leq t \leq 28</m>,
+          where <m>t</m> is the number of years since <m>1980</m>.
+          Find and interpret the average rate of change of <m>F</m> over the interval <m>[0,28]</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The average rate of change is <m>\frac{F(28) - F(0)}{28-0}=0.2372</m>.
+          During the years from 1980 to 2008,
+          the average fuel economy of passenger cars in the US increased,
+          on average,
+          at a rate of <m>0.2372</m> miles per gallon per year.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The temperature <m>T</m> in degrees Fahrenheit <m>t</m> hours after 6 AM is given by:
+          <me>
+            T(t) = -\frac{1}{2} t^2 + 8t+32,  0 \leq t \leq 12
+          </me>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>T(4)</m>,
+                <m>T(8)</m> and <m>T(12)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of <m>T</m> over the interval <m>[4,8]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of <m>T</m> from <m>t=8</m> to <m>t=12</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of temperature change between 10 AM and 6 PM.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>T(4) = 56</m>,
+              so at 10 AM (4 hours after 6 AM), it is <m>56^{\circ}</m>F. <m>T(8) = 64</m>,
+              so at 2 PM (8 hours after 6 AM), it is <m>64^{\circ}</m>F. <m>T(12) = 56</m>,
+              so at 6 PM (12 hours after 6 AM), it is <m>56^{\circ}</m>F.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change is <m>\frac{T(8)-T(4)}{8-4}=2</m>.
+              Between 10 AM and 2 PM, the temperature increases,
+              on average, at a rate of <m>2^{\circ}</m>F per hour.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change is <m>\frac{T(12)-T(8)}{12-8}=-2</m>.
+              Between 2 PM and 6 PM, the temperature decreases,
+              on average, at a rate of <m>2^{\circ}</m>F per hour.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change is <m>\frac{T(12)-T(4)}{12-4}=0</m>.
+              Between 10 AM and 6 PM, the temperature,
+              on average, remains constant.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>C(x) = x^2-10x+27</m> represents the costs,
+          in <em>hundreds</em>, to produce <m>x</m> <em>thousand</em> pens.
+          Find and interpret the average rate of change as production is increased from making 3000 to 5000 pens.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The average rate of change is <m>\frac{C(5)-C(3)}{5-3}=-2</m>.
+          As production is increased from 3000 to 5000 pens,
+          the cost decreases at an average rate of
+          <m>\dollar200</m> per 1000 pens produced (20\textcent per pen.)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates find several other <q>real-world</q>
+          examples of rates of change that are used to describe non-linear phenomena.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates find several other <q>real-world</q>
+          examples of rates of change that are used to describe non-linear phenomena.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      {\phantomsection (Parallel Lines)
+          <idx><h>line</h><h>parallel</h></idx>
+      Recall from high school that parallel lines have the same slope. (Please note that two vertical lines are also parallel to one another even though they have an undefined slope.) In Exercises} {, you are given a line and a point which is not on that line.
+      Find the line parallel to the given line which passes through the given point. }
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 3x + 2, \; P(0, 0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 3x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -6x + 5, \; P(3, 2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -6x + 20</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{2}{3} x - 7, \; P(6, 0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{2}{3} x - 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \dfrac{4-x}{3}, \; P(1, -1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -\frac{1}{3} x - \frac{2}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 6, \; P(3, -2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y=-2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x=1, \; P(-5,0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-5</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      {\phantomsection (Perpendicular Lines)
+          <idx><h>line</h><h>perpendicular</h></idx>
+      Recall from high school that two non-vertical lines are perpendicular if and only if they have negative reciprocal slopes.
+      That is to say,
+      if one line has slope <m>m_{1}</m> and the other has slope <m>m_{2}</m> then
+      <m>m_{1} \cdot m_{2} = -1</m>. (You will be guided through a proof of this result in <xref ref="perpendicularlineproof">Exercise</xref>.) Please note that a horizontal line is perpendicular to a vertical line and vice versa,
+      so we assume <m>m_{1} \neq 0</m> and <m>m_{2} \neq 0</m>.
+      In Exercises} {, you are given a line and a point which is not on that line.
+      Find the line perpendicular to the given line which passes through the given point. }
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{1}{3}x + 2, \; P(0, 0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -3x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -6x + 5, \; P(3, 2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = \frac{1}{6}x + \frac{3}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{2}{3} x - 7, \; P(6, 0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = -\frac{3}{2} x +9</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \dfrac{4-x}{3}, \; P(1, -1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y = 3x-4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 6, \; P(3, -2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>x=1, \; P(-5,0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>y=0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="perpendicularlineproof">
+      <statement>
+        <p>
+          We shall now prove that <m>y = m_{1}x + b_{1}</m> is perpendicular to
+          <m>y = m_{2}x + b_{2}</m> if and only if <m>m_{1} \cdot m_{2} = -1</m>.
+          To make our lives easier we shall assume that
+          <m>m_{1} > 0</m> and <m>m_{2} \lt 0</m>.
+          We can also <q>move</q>
+          the lines so that their point of intersection is the origin without messing things up,
+          so we'll assume <m>b_{1} = b_{2} = 0</m>. (Take a moment with your classmates to discuss why this is okay.) Graphing the lines and plotting the points <m>O(0, 0)\;</m>,
+          <m>P(1, m_{1})\;</m> and <m>Q(1, m_{2})</m> gives us the following set up. <img src="figures/LinearQuadraticGraphics/LinearFunctions-16.pdf"/>
+        </p>
+
+        <p>
+          The line <m>y = m_{1}x</m> will be perpendicular to the line
+          <m>y = m_{2}x</m> if and only if <m>\bigtriangleup OPQ</m> is a right triangle.
+          Let <m>d_{1}</m> be the distance from <m>O</m> to <m>P</m>,
+          let <m>d_{2}</m> be the distance from <m>O</m> to <m>Q</m> and let <m>d_{3}</m> be the distance from <m>P</m> to <m>Q</m>.
+          Use the Pythagorean Theorem to show that
+          <m>\bigtriangleup OPQ</m> is a right triangle if and only if <m>m_{1} \cdot m_{2} = -1</m> by showing
+          <m>d_{1}^{2} + d_{2}^{2} = d_{3}^2</m> if and only if <m>m_{1} \cdot m_{2} = -1</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="inversemidpointex2">
+      <statement>
+        <p>
+          Show that if <m>a \neq b</m>,
+          the line containing the points <m>(a,b)</m> and <m>(b,a)</m> is perpendicular to the line <m>y = x</m>. (Coupled with the result from <xref ref="inversemidpointex1">Example</xref>
+          on <xref ref="inversemidpoint">page</xref>,
+          we have now shown that the line <m>y = x</m> is a <em>perpendicular</em>
+          bisector of the line segment connecting <m>(a,b)</m> and <m>(b,a)</m>.
+          This means the points <m>(a,b)</m> and <m>(b,a)</m> are symmetric about the line <m>y = x</m>.
+          We will revisit this symmetry in <xref ref="InverseFunctions">section</xref>.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="identityexercise">
+      <statement>
+        <p>
+          The function defined by <m>I(x) = x</m> is called the
+              <idx><h>function</h><h>identity</h></idx>
+          Identity Function.
+
+          <ol>
+            <li>
+              <p>
+                Discuss with your classmates why this name makes sense.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Show that the point-slope form of a line
+                (<xref ref="pointslope">Equation</xref>)
+                can be obtained from <m>I</m> using a sequence of the transformations defined in <xref ref="Transformations">Section</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

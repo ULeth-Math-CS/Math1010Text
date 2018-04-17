@@ -1,0 +1,1359 @@
+
+
+<section xml:id="LawofSines">
+  <title>Law of Sines</title>
+  <introduction>
+    <p>
+      Trigonometry literally means <q>measuring triangles</q>
+      and with <xref ref="IntroTrig">Chapter</xref> under our belts,
+      we are more than prepared to do just that.
+      The main goal of this section and the next is to develop theorems which allow us to
+      <q>solve</q> triangles <mdash /> that is,
+      find the length of each side of a triangle and the measure of each of its angles.
+      In <xref ref="TheUnitCircle">Sections</xref>,
+      <xref ref="CircularFunctions"></xref>
+      and <xref ref="ArcTrig"></xref>,
+      we've had some experience solving right triangles.
+      The following example reviews what we know.
+    </p>
+
+    <example xml:id="righttrianglereviewex">
+      <title>Right triangle trigonometry</title>
+      <statement>
+        <p>
+          Given a right triangle with a hypotenuse of length <m>7</m> units and one leg of length <m>4</m> units,
+          find the length of the remaining side and the measures of the remaining angles.
+          Express the angles in decimal degrees,
+          rounded to the nearest hundredth of a degree.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For definitiveness,
+          we label the triangle in <xref ref="fig_sines1">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_sines1">
+          <caption>The triangle in <xref ref="righttrianglereviewex">Example</xref></caption>
+          <img src="figures/AppExtGraphics/LawofSines-1.pdf"/>
+        </figure>
+
+        <p>
+          To find the length of the missing side <m>a</m>,
+          we use the Pythagorean Theorem to get
+          <m>a^2 + 4^2 = 7^2</m> which then yields <m>a = \sqrt{33}</m> units.
+          Now that all three sides of the triangle are known,
+          there are several ways we can find <m>\alpha</m> using the inverse trigonometric functions.
+          To decrease the chances of propagating error, however,
+          we stick to using the data given to us in the problem.
+          In this case, the lengths <m>4</m> and <m>7</m> were given,
+          so we want to relate these to <m>\alpha</m>.
+          According to <xref ref="cosinesinetriangle">Theorem</xref>,
+          <m>\cos(\alpha) = \frac{4}{7}</m>.
+          Since <m>\alpha</m> is an acute angle,
+          <m>\alpha = \arccos\left(\frac{4}{7}\right)</m> radians.
+          Converting to degrees, we find <m>\alpha \approx 55.15^{\circ}</m>.
+          Now that we have the measure of angle <m>\alpha</m>,
+          we could find the measure of angle <m>\beta</m> using the fact that <m>\alpha</m> and <m>\beta</m> are complements so <m>\alpha + \beta = 90^{\circ}</m>.
+          Once again, we opt to use the data given to us in the problem.
+          According to <xref ref="cosinesinetriangle">Theorem</xref>,
+          we have that <m>\sin(\beta) = \frac{4}{7}</m> so
+          <m>\beta = \arcsin\left(\frac{4}{7}\right)</m> radians and we have <m>\beta \approx 34.85^{\circ}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few remarks about <xref ref="righttrianglereviewex">Example</xref> are in order.
+      First, we adhere to the convention that a lower case Greek letter denotes an angle
+      (as well as the measure of said angle)
+      and the corresponding lower case English letter represents the side
+      (as well as the length of said side)
+      opposite that angle.
+      Thus, <m>a</m> is the side opposite <m>\alpha</m>,
+      <m>b</m> is the side opposite <m>\beta</m> and <m>c</m> is the side opposite <m>\gamma</m>.
+      Taken together, the pairs <m>(\alpha, a)</m>,
+      <m>(\beta, b)</m> and <m>(\gamma, c)</m> are called
+          <idx><h>angle side opposite pairs</h></idx>
+      <em>angle-side opposite pairs</em>.
+      Second, as mentioned earlier,
+      we will strive to solve for quantities using the original data given in the problem whenever possible.
+      While this is not always the easiest or fastest way to proceed,
+      it minimizes the chances of propagated error.
+      Third, since many of the applications which require solving triangles
+      <q>in the wild</q> rely on degree measure,
+      we shall adopt this convention for the time being. (Don't worry!
+      Radians will be back before you know it!) The Pythagorean Theorem along with <xref ref="cosinesinetriangle">Theorems</xref>
+      and <xref ref="circularfunctionstriangle"></xref>
+      allow us to easily handle any given right triangle problem,
+      but what if the triangle isn't a right triangle?
+      In certain cases, we can use the
+      <em>Law of Sines</em> to help.
+    </p>
+
+    <theorem xml:id="lawofsines">
+      <title>The Law of Sines</title>
+      <statement>
+        <p>
+              <idx><h>Law of Sines</h></idx>
+          Given a triangle with angle-side opposite pairs <m>(\alpha, a)</m>,
+          <m>(\beta,
+          b)</m> and <m>(\gamma, c)</m>, the following ratios hold
+          <me>
+            \frac{\sin(\alpha)}{a} = \frac{\sin(\beta)}{b} = \frac{\sin(\gamma)}{c}
+          </me>
+          or, equivalently,
+          <me>
+            \frac{a}{\sin(\alpha)} = \frac{b}{\sin(\beta)}  = \frac{c}{\sin(\gamma)}
+          </me>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The proof of the Law of Sines can be broken into three cases.
+      For our first case, consider the triangle
+      <m>\triangle ABC</m> in <xref ref="fig_sines2">Figure</xref> below,
+      all of whose angles are acute,
+      with angle-side opposite pairs <m>(\alpha, a)</m>,
+      <m>(\beta, b)</m> and <m>(\gamma, c)</m>.
+      If we drop an altitude from vertex <m>B</m>,
+      we divide the triangle into two right triangles:
+      <m>\triangle ABQ</m> and <m>\triangle BCQ</m>.
+      If we call the length of the altitude <m>h</m>
+      (for height),
+      we get from <xref ref="cosinesinetriangle">Theorem</xref>
+      that <m>\sin(\alpha) = \frac{h}{c}</m> and
+      <m>\sin(\gamma) = \frac{h}{a}</m> so that <m>h = c\sin(\alpha) = a \sin(\gamma)</m>.
+      After some rearrangement of the last equation,
+      we get <m>\frac{\sin(\alpha)}{a} = \frac{\sin(\gamma)}{c}</m>.
+      If we drop an altitude from vertex <m>A</m>,
+      we can proceed as above using the triangles <m>\triangle ABQ</m> and
+      <m>\triangle ACQ</m> to get <m>\frac{\sin(\beta)}{b} = \frac{\sin(\gamma)}{c}</m>,
+      completing the proof for this case.
+    </p>
+
+    <!--
+    <caption><m>\triangle ABC</m> for the first case of the proof of Theorem \ref{lawofsines}</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/AppExtGraphics/LawofSines-2.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-3.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-4.pdf"/></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      For our next case consider the triangle
+      <m>\triangle ABC</m> in <xref ref="fig_sines3">Figure</xref>
+      below with <em>obtuse</em> angle <m>\alpha</m>.
+      Extending an altitude from vertex <m>A</m> gives two right triangles,
+      as in the previous case:
+      <m>\triangle ABQ</m> and <m>\triangle ACQ</m>.
+      Proceeding as before, we get <m>h = b \sin(\gamma)</m> and
+      <m>h = c \sin(\beta)</m> so that <m>\frac{\sin(\beta)}{b} = \frac{\sin(\gamma)}{c}</m>.
+    </p>
+
+    <!--
+    <caption><m>\triangle ABC</m> for the second case of the proof of Theorem \ref{lawofsines}</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/AppExtGraphics/LawofSines-5.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-6.pdf"/></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Dropping an altitude from vertex B also generates two right triangles,
+      <m>\triangle ABQ</m> and <m>\triangle BCQ</m>.
+      We know that <m>\sin(\alpha') = \frac{h'}{c}</m> so that <m>h' = c \sin(\alpha')</m>.
+      Since <m>\alpha' = 180^{\circ} - \alpha</m>,
+      <m>\sin(\alpha') = \sin(\alpha)</m>, so in fact,
+      we have <m>h' = c\sin(\alpha)</m>.
+      Proceeding to <m>\triangle BCQ</m>,
+      we get <m>\sin(\gamma) = \frac{h'}{a}</m> so <m>h' = a \sin(\gamma)</m>.
+      Putting this together with the previous equation,
+      we get <m>\frac{\sin(\gamma)}{c} = \frac{\sin(\alpha)}{a}</m>,
+      and we are finished with this case.
+    </p>
+
+    <p>
+      The remaining case is when <m>\triangle ABC</m> is a right triangle.
+      In this case,
+      the Law of Sines reduces to the formulas given in <xref ref="cosinesinetriangle">Theorem</xref>
+      and is left to the reader. (Refer to <xref ref="fig_sines4">Figure</xref>.)
+    </p>
+
+    <!--
+    <caption><m>\triangle ABC</m> for the third case of the proof of Theorem \ref{lawofsines}</caption>
+    -->
+
+    <sidebyside>
+      <img src="figures/AppExtGraphics/LawofSines-7.pdf"/>
+    </sidebyside>
+    <p>
+      In order to use the Law of Sines to solve a triangle,
+      we need at least one angle-side opposite pair.
+      The next example showcases some of the power,
+      and the pitfalls, of the Law of Sines.
+    </p>
+
+    <example xml:id="losex">
+      <title>Using the Law of Sines</title>
+      <statement>
+        <p>
+          Solve the following triangles.
+          Give exact answers and decimal approximations
+          (rounded to hundredths)
+          and sketch the triangle.
+
+          <ol>
+            <li xml:id="losaas">
+
+            <p>
+              <m>\alpha = 120^{\circ}</m>,
+              <m>a = 7</m> units, <m>\beta = 45^{\circ}</m>
+            </p>
+            </li>
+
+            <li xml:id="losasa">
+
+            <p>
+              <m>\alpha = 85^{\circ}</m>,
+              <m>\beta = 30^{\circ}</m>, <m>c = 5.25</m> units
+            </p>
+            </li>
+
+            <li xml:id="losnotriangleex">
+
+            <p>
+              <m>\alpha = 30^{\circ}</m>,
+          <m>a=1</m> units, <m>c = 4</m> units
+            </p>
+            </li>
+
+            <li xml:id="losrighttriangleex">
+
+            <p>
+              <m>\alpha = 30^{\circ}</m>,
+          <m>a=2</m> units, <m>c = 4</m> units
+            </p>
+            </li>
+
+            <li xml:id="lostwotriangleex">
+
+            <p>
+              <m>\alpha = 30^{\circ}</m>,
+          <m>a=3</m> units, <m>c = 4</m> units
+            </p>
+            </li>
+
+            <li xml:id="losonetriangleex">
+
+            <p>
+              <m>\alpha = 30^{\circ}</m>,
+          <m>a=4</m> units, <m>c = 4</m> units
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Knowing an angle-side opposite pair,
+                namely <m>\alpha</m> and <m>a</m>,
+                we may proceed in using the Law of Sines.
+                Since <m>\beta = 45^{\circ}</m>,
+                we use <m>\frac{b}{\sin\left(45^{\circ}\right)} = \frac{7}{\sin\left(120^{\circ}\right)}</m> so <m>b = \frac{7\sin\left(45^{\circ}\right)}{\sin\left(120^{\circ}\right)} = \frac{7\sqrt{6}}{3} \approx 5.72</m> units.
+                Now that we have two angle-side pairs,
+                it is time to find the third.
+                To find <m>\gamma</m>,
+                we use the fact that the sum of the measures of the angles in a triangle is <m>180^{\circ}</m>.
+                Hence,
+          <m>\gamma = 180^{\circ} - 120^{\circ} - 45^{\circ} = 15^{\circ}</m>.
+                To find <m>c</m>,
+                we have no choice but to used the derived value <m>\gamma = 15^{\circ}</m>,
+                yet we can minimize the propagation of error here by using the given angle-side opposite pair <m>(\alpha, a)</m>.
+                The Law of Sines gives us
+                <m>\frac{c}{\sin\left(15^{\circ}\right)} = \frac{7}{\sin\left(120^{\circ}\right)}</m> so that <m>c = \frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)} \approx 2.09</m> units.
+                The exact value of <m>\sin(15^{\circ})</m> could be found using the difference identity for sine or a half-angle formula,
+                but that becomes unnecessarily messy for the discussion at hand.
+                Thus <q>exact</q>
+                here means <m>\frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)}</m>. <figure xml:id="fig_sineseg1"> <caption>Triangle for <xref ref="losex">Example</xref>
+                <xref ref="losaas">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-8.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In this example,
+                we are not immediately given an angle-side opposite pair,
+                but as we have the measures of <m>\alpha</m> and <m>\beta</m>,
+                we can solve for <m>\gamma</m> since <m>\gamma = 180^{\circ} - 85^{\circ} - 30^{\circ} = 65^{\circ}</m>.
+                As in the previous example,
+                we are forced to use a derived value in our computations since the only angle-side pair available is <m>(\gamma, c)</m>.
+                The Law of Sines gives <m>\frac{a}{\sin\left(85^{\circ}\right)} = \frac{5.25}{\sin\left(65^{\circ}\right)}</m>.
+                After the usual rearrangement,
+                we get <m>a = \frac{5.25\sin\left(85^{\circ}\right)}{\sin\left(65^{\circ}\right)} \approx 5.77</m> units.
+                To find <m>b</m> we use the angle-side pair
+                <m>(\gamma,c)</m> which yields <m>\frac{b}{\sin\left(30^{\circ}\right)} = \frac{5.25}{\sin\left(65^{\circ}\right)}</m> hence
+                <m>b = \frac{5.25\sin\left(30^{\circ}\right)}{\sin\left(65^{\circ}\right)} \approx 2.90</m> units. <figure xml:id="fig_sineseg2"> <caption>Triangle for <xref ref="losex">Example</xref>
+                <xref ref="losasa">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-9.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since we are given <m>(\alpha,a)</m> and <m>c</m>,
+                we use the Law of Sines to find the measure of <m>\gamma</m>.
+                We start with <m>\frac{\sin(\gamma)}{4} = \frac{\sin\left(30^{\circ}\right)}{1}</m> and get <m>\sin(\gamma) = 4 \sin\left(30^{\circ}\right) = 2</m>.
+                Since the range of the sine function is <m>[-1,1]</m>,
+                there is no real number with <m>\sin(\gamma) = 2</m>.
+                Geometrically,
+                we see that side <m>a</m> is just too short to make a triangle.
+                The next three examples keep the same values for the measure of <m>\alpha</m> and the length of <m>c</m> while varying the length of <m>a</m>.
+                We will discuss this case in more detail after we see what happens in those examples. <figure xml:id="fig_sineseg3"> <caption>Triangle for <xref ref="losex">Example</xref>
+                <xref ref="losnotriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-10.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In this case, we have the measure of <m>\alpha = 30^{\circ}</m>,
+                <m>a = 2</m> and <m>c=4</m>.
+                Using the Law of Sines,
+                we get <m>\frac{\sin(\gamma)}{4} = \frac{\sin\left(30^{\circ}\right)}{2}</m> so <m>\sin(\gamma) = 2 \sin\left(30^{\circ}\right) = 1</m>.
+                Now <m>\gamma</m> is an angle in a triangle which also contains <m>\alpha = 30^{\circ}</m>.
+                This means that <m>\gamma</m> must measure between <m>0^{\circ}</m> and
+                <m>150^{\circ}</m> in order to fit inside the triangle with <m>\alpha</m>.
+                The only angle that satisfies this requirement and has
+                <m>\sin(\gamma) = 1</m> is <m>\gamma = 90^{\circ}</m>.
+                In other words, we have a right triangle.
+                We find the measure of <m>\beta</m> to be
+                <m>\beta = 180^{\circ} - 30^{\circ} - 90^{\circ} = 60^{\circ}</m> and then determine <m>b</m> using the Law of Sines.
+                We find <m>b = \frac{2 \sin\left(60^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 2 \sqrt{3} \approx 3.46</m> units.
+                In this case,
+                the side <m>a</m> is precisely long enough to form a unique right triangle. <figure xml:id="fig_sineseg4"> <caption>Triangle for <xref ref="losex">Example</xref>
+                <xref ref="losrighttriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-11.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li xml:id="fig_sineseg5">
+
+            <p>
+              Proceeding as we have in the previous two examples,
+              we use the Law of Sines to find <m>\gamma</m>.
+              In this case,
+              we have <m>\frac{\sin(\gamma)}{4} = \frac{\sin\left(30^{\circ}\right)}{3}</m> or <m>\sin(\gamma) = \frac{4\sin\left(30^{\circ}\right)}{3} = \frac{2}{3}</m>.
+              Since <m>\gamma</m> lies in a triangle with <m>\alpha = 30^{\circ}</m>,
+              we must have that <m>0^{\circ} \lt \gamma \lt 150^{\circ}</m>.
+              There are two angles <m>\gamma</m> that fall in this range and have <m>\sin(\gamma) = \frac{2}{3}</m>:
+              <m>\gamma = \arcsin\left(\frac{2}{3}\right)</m> radians <m>\approx 41.81^{\circ}</m> and
+              <m>\gamma = \pi - \arcsin\left(\frac{2}{3}\right)</m> radians <m>\approx 138.19^{\circ}</m>.
+              At this point,
+              we pause to see if it makes sense that we actually have two viable cases to consider.
+              As we have discussed,
+          both candidates for <m>\gamma</m> are <q>compatible</q>
+              with the given angle-side pair
+              <m>(\alpha,
+              a) = \left(30^{\circ}, 3\right)</m> in that both choices for <m>\gamma</m> can fit in a triangle with <m>\alpha</m> and both have a sine of <m>\frac{2}{3}</m>.
+              The only other given piece of information is that <m>c = 4</m> units.
+              Since <m>c > a</m>, it must be true that <m>\gamma</m>,
+              which is opposite <m>c</m>,
+              has greater measure than <m>\alpha</m> which is opposite <m>a</m>.
+              In both cases, <m>\gamma > \alpha</m>,
+              so both candidates for <m>\gamma</m> are compatible with this last piece of given information as well.
+              Thus have two triangles on our hands.
+              In the case <m>\gamma = \arcsin\left(\frac{2}{3}\right)</m> radians <m>\approx 41.81^{\circ}</m>,
+              we find <m>\beta \approx 180^{\circ} - 30^{\circ} - 41.81^{\circ} = 108.19^{\circ}</m>. (To find an exact expression for <m>\beta</m>,
+              we convert everything back to radians:
+              <m>\alpha = 30^{\circ} = \frac{\pi}{6}</m> radians,
+              <m>\gamma = \arcsin\left(\frac{2}{3}\right)</m> radians and <m>180^{\circ} = \pi</m> radians.
+              Hence, <m>\beta = \pi - \frac{\pi}{6} - \arcsin\left(\frac{2}{3}\right) = \frac{5\pi}{6} - \arcsin\left(\frac{2}{3}\right)</m> radians
+              <m>\approx 108.19^{\circ}</m>.) Using the Law of Sines with the angle-side opposite pair <m>(\alpha,
+              a)</m> and <m>\beta</m>,
+              we find <m>b \approx \frac{3 \sin\left(108.19^{\circ}\right)}{\sin\left(30^{\circ}\right)} \approx 5.70</m> units.
+              In the case <m>\gamma = \pi - \arcsin\left(\frac{2}{3}\right)</m> radians <m>\approx 138.19^{\circ}</m>,
+              we repeat the exact same steps and find <m>\beta \approx 11.81^{\circ}</m> and
+              <m>b \approx 1.23</m> units. (An exact answer for <m>\beta</m> in this case is <m>\beta = \arcsin\left(\frac{2}{3}\right) - \frac{\pi}{6}</m> radians
+              <m>\approx 11.81^{\circ}</m>.) Both triangles are drawn in <xref ref="fig_sineseg5">Figure</xref>
+              below. <!-- <caption>Triangle for Example \ref{losex} number \ref{lostwotriangleex}</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/AppExtGraphics/LawofSines-12.pdf"/></cell> <cell><img src="figures/AppExtGraphics/LawofSines-13.pdf"/></cell> </row> </tabular> </sidebyside>
+            </p>
+            </li>
+
+            <li>
+              <p>
+                For this last problem,
+                we repeat the usual Law of Sines routine to find that
+                <m>\frac{\sin(\gamma)}{4} = \frac{\sin\left(30^{\circ}\right)}{4}</m> so that <m>\sin(\gamma) = \frac{1}{2}</m>.
+                Since <m>\gamma</m> must inhabit a triangle with <m>\alpha = 30^{\circ}</m>,
+                we must have <m>0^{\circ} \lt \gamma \lt 150^{\circ}</m>.
+                Since the measure of <m>\gamma</m> must be
+                <em>strictly</em> less than <m>150^{\circ}</m>,
+                there is just one angle which satisfies both required conditions,
+                namely <m>\gamma = 30^{\circ}</m>.
+                So <m>\beta = 180^{\circ} - 30^{\circ} - 30^{\circ} = 120^{\circ}</m> and,
+                using the Law of Sines one last time,
+                <m>b = \frac{4\sin\left(120^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 4\sqrt{3} \approx 6.93</m> units. <figure xml:id="fig_sineseg6"> <caption>Triangle for <xref ref="losex">Example</xref>
+                <xref ref="losonetriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-14.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Some remarks about <xref ref="losex">Example</xref> are in order.
+      We first note that if we are given the measures of two of the angles in a triangle,
+      say <m>\alpha</m> and <m>\beta</m>,
+      the measure of the third angle <m>\gamma</m> is uniquely determined using the equation <m>\gamma = 180^{\circ} - \alpha - \beta</m>.
+      Knowing the measures of all three angles of a triangle completely determines its <em>shape</em>.
+      If in addition we are given the length of one of the sides of the triangle,
+      we can then use the Law of Sines to find the lengths of the remaining two sides to determine the
+      <em>size</em> of the triangle.
+      Such is the case in <xref ref="losaas">numbers</xref>
+      and <xref ref="losasa"></xref> above.
+      In <xref ref="losaas">number</xref>,
+      the given side is adjacent to just one of the angles <mdash /> this is called the
+      <q>Angle-Angle-Side</q> (AAS) case.
+      In <xref ref="losasa">number</xref>,
+      the given side is adjacent to both angles which means we are in the so-called
+      <q>Angle-Side-Angle</q> (ASA) case.
+      If, on the other hand,
+      we are given the measure of just one of the angles in the triangle along with the length of two sides,
+      only one of which is adjacent to the given angle,
+      we are in the <q>Angle-Side-Side</q>
+      (ASS) case.(In more reputable books,
+      this is called the <q>Side-Side-Angle</q>
+      or SSA case.) In <xref ref="losnotriangleex">number</xref>,
+      the length of the one given side <m>a</m> was too short to even form a triangle;
+      in <xref ref="losrighttriangleex">number</xref>,
+      the length of <m>a</m> was just long enough to form a right triangle;
+      in <xref ref="lostwotriangleex"></xref>, <m>a</m> was long enough,
+      but not too long, so that two triangles were possible;
+      and in <xref ref="losonetriangleex">number</xref>,
+      side <m>a</m> was long enough to form a triangle but too long to swing back and form two.
+      These four cases exemplify all of the possibilities in the Angle-Side-Side case which are summarized in the following theorem.
+    </p>
+
+    <theorem xml:id="ASScase">
+      <title>Possible Angle-Side-Side cases</title>
+      <statement>
+        <p>
+          Suppose <m>(\alpha,a)</m> and
+          <m>(\gamma,
+          c)</m> are intended to be angle-side pairs in a triangle where <m>\alpha</m>,
+          <m>a</m> and <m>c</m> are given.
+          Let <m>h = c\sin(\alpha)</m>
+
+          <ul>
+            <li>
+              <p>
+                If <m>a \lt h</m>,
+                then no triangle exists which satisfies the given criteria.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>a = h</m>,
+                then <m>\gamma = 90^{\circ}</m> so exactly one (right) triangle exists which satisfies the criteria.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>h \lt a \lt c</m>,
+                then two distinct triangles exist which satisfy the given criteria.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>a \geq c</m>,
+                then <m>\gamma</m> is acute and exactly one triangle exists which satisfies the given criteria
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      <xref ref="ASScase">Theorem</xref>
+      is proved on a case-by-case basis.
+      If <m>a \lt h</m>, then <m>a \lt c\sin(\alpha)</m>.
+      If a triangle were to exist,
+      the Law of Sines would have <m>\frac{\sin(\gamma)}{c} = \frac{\sin(\alpha)}{a}</m> so that
+      <m>\sin(\gamma) = \frac{c \sin(\alpha)}{a} > \frac{a}{a} = 1</m>,
+      which is impossible.
+      In <xref ref="fig_asasines">Figure</xref> below,
+      we see geometrically why this is the case.
+    </p>
+
+    <!--
+    <caption>Illustrating the first two cases in Theorem \ref{ASScase}</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/AppExtGraphics/LawofSines-15.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-16.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>a\lt h</m>, no triangle</cell>
+          <cell><m>a=h</m>, <m>\gamma = 90^\circ</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Simply put,
+      if <m>a \lt h</m> the side <m>a</m> is too short to connect to form a triangle.
+      This means if <m>a \geq h</m>,
+      we are always guaranteed to have at least one triangle,
+      and the remaining parts of the theorem tell us what kind and how many triangles to expect in each case.
+      If <m>a = h</m>,
+      then <m>a = c\sin(\alpha)</m> and the Law of Sines gives
+      <m>\frac{\sin(\alpha)}{a} = \frac{\sin(\gamma)}{c}</m> so that <m>\sin(\gamma) = \frac{c \sin(\alpha)}{a} = \frac{a}{a} = 1</m>.
+      Here, <m>\gamma = 90^{\circ}</m> as required.
+      Moving along, now suppose <m>h \lt a \lt c</m>.
+      As before, the Law of Sines gives <m>\sin(\gamma) = \frac{c \sin(\alpha)}{a}</m>. (Remember,
+      we have already argued that a triangle exists in this case!) Since <m>h \lt a</m>,
+      <m>c \sin(\alpha) \lt a</m> or
+      <m>\frac{c\sin(\alpha)}{a} \lt 1</m> which means there are two solutions to <m>\sin(\gamma) = \frac{c \sin(\alpha)}{a}</m>:
+      an acute angle which we'll call <m>\gamma_{0}</m>,
+      and its supplement, <m>180^{\circ} - \gamma_{0}</m>.
+      We need to argue that each of these angles <q>fit</q>
+      into a triangle with <m>\alpha</m>.
+      Since <m>(\alpha, a)</m> and
+      <m>(\gamma_{0},c)</m> are angle-side opposite pairs,
+      the assumption <m>c > a</m> in this case gives us <m>\gamma_{0} > \alpha</m>.
+      Since <m>\gamma_{0}</m> is acute,
+      we must have that <m>\alpha</m> is acute as well.
+      This means one triangle can contain both <m>\alpha</m> and <m>\gamma_{0}</m>,
+      giving us one of the triangles promised in the theorem.
+      If we manipulate the inequality <m>\gamma_{0} > \alpha</m> a bit,
+      we have <m>180^{\circ} - \gamma_{0} \lt 180^{\circ} - \alpha</m> which gives <m>\left(180^{\circ} - \gamma_{0}\right) + \alpha \lt 180^{\circ}</m>.
+      This proves a triangle can contain both of the angles <m>\alpha</m> and <m>\left(180^{\circ} - \gamma_{0}\right)</m>,
+      giving us the second triangle predicted in the theorem.
+      To prove the last case in the theorem,
+      we assume <m>a \geq c</m>.
+      Then <m>\alpha \geq \gamma</m>,
+      which forces <m>\gamma</m> to be an acute angle.
+      Hence, we get only one triangle in this case, completing the proof.
+    </p>
+
+    <!--
+    <caption>Illustrating the last two cases in Theorem \ref{ASScase}</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/AppExtGraphics/LawofSines-17.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-18.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>h \lt  a \lt  c</m>, two triangles</cell>
+          <cell><m>a \geq c</m>, one triangle</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      One last comment before we use the Law of Sines to solve an application problem.
+      In the Angle-Side-Side case,
+      if you are given an obtuse angle to begin with then it is impossible to have the two triangle case.
+      Think about this before reading further.
+    </p>
+
+    <example xml:id="losapplication">
+      <title>Applying the Law of Sines</title>
+      <statement>
+        <p>
+          Sasquatch Island lies off the coast of Ippizuti Lake.
+          Two sightings, taken 5 miles apart, are made to the island.
+          The angle between the shore and the island at the first observation point is
+          <m>30^{\circ}</m> and at the second point the angle is <m>45^{\circ}</m>.
+          Assuming a straight coastline,
+          find the distance from the second observation point to the island.
+          What point on the shore is closest to the island?
+          How far is the island from this point?
+        </p>
+
+        <table xml:id="fig_sinesappeg">
+          <caption>Diagrams for <xref ref="losapplication">Example</xref></caption>
+          <tabular>
+            <row>
+              <cell><img src="figures/AppExtGraphics/LawofSines-19.pdf"/></cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><img src="figures/AppExtGraphics/LawofSines-20.pdf"/></cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>
+          We sketch the problem in <xref ref="fig_sinesappeg">Figure</xref>
+          with the first observation point labelled as <m>P</m> and the second as <m>Q</m>.
+          In order to use the Law of Sines to find the distance <m>d</m> from <m>Q</m> to the island,
+          we first need to find the measure of <m>\beta</m> which is the angle opposite the side of length <m>5</m> miles.
+          To that end,
+          we note that the angles <m>\gamma</m> and <m>45^{\circ}</m> are supplemental,
+          so that <m>\gamma = 180^{\circ} - 45^{\circ} = 135^{\circ}</m>.
+          We can now find <m>\beta = 180^{\circ} - 30^{\circ} - \gamma = 180^{\circ} - 30^{\circ} - 135^{\circ} = 15^{\circ}</m>.
+          By the Law of Sines, we have
+          <m>\frac{d}{\sin\left(30^{\circ}\right)} = \frac{5}{\sin\left(15^{\circ}\right)}</m> which gives <m>d = \frac{5\sin\left(30^{\circ}\right)}{\sin\left(15^{\circ}\right)} \approx 9.66</m> miles.
+          Next, to find the point on the coast closest to the island,
+          which we've labelled as <m>C</m>,
+          we need to find the perpendicular distance from the island to the coast. (Do you see why <m>C</m> must lie to the right of <m>Q</m>?) Let <m>x</m> denote the distance from the second observation point <m>Q</m> to the point <m>C</m> and let <m>y</m> denote the distance from <m>C</m> to the island.
+          Using <xref ref="cosinesinetriangle">Theorem</xref>,
+          we get <m>\sin\left(45^{\circ}\right) = \frac{y}{d}</m>.
+          After some rearranging,
+          we find <m>y = d \sin\left(45^{\circ}\right) \approx 9.66 \left(\frac{\sqrt{2}}{2}\right) \approx 6.83</m> miles.
+          Hence, the island is approximately <m>6.83</m> miles from the coast.
+          To find the distance from <m>Q</m> to <m>C</m>,
+          we note that <m>\beta = 180^{\circ} - 90^{\circ} - 45^{\circ} = 45^{\circ}</m> so by symmetry,(or by <xref ref="cosinesinetriangle">Theorem</xref>
+          again <ellipsis />) we get <m>x = y \approx 6.83</m> miles.
+          Hence, the point on the shore closest to the island is approximately <m>6.83</m> miles down the coast from the second observation point.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We close this section with a new formula to compute the area enclosed by a triangle.
+      Its proof uses the same cases and diagrams as the proof of the Law of Sines and is left as an exercise.
+    </p>
+
+    <theorem xml:id="areaformulasine">
+      <title>Formula for area of a triangle</title>
+      <statement>
+        <p>
+          Suppose <m>(\alpha, a)</m>, <m>(\beta, b)</m> and
+          <m>(\gamma,
+          c)</m> are the angle-side opposite pairs of a triangle.
+          Then the area <m>A</m> enclosed by the triangle is given by
+          <me>
+            A = \frac{1}{2}bc\sin(\alpha) =  \frac{1}{2}ac\sin(\beta) =  \frac{1}{2}ab\sin(\gamma)
+          </me>
+        </p>
+      </statement>
+    </theorem>
+
+    <example xml:id="areaformulasineex">
+      <title>Using <xref ref="areaformulasine">Theorem</xref></title>
+      <statement>
+        <p>
+          Find the area of the triangle in <xref ref="losex">Example</xref>.
+          <xref ref="losaas"></xref>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From our work in <xref ref="losex">Example</xref>
+          <xref ref="losaas">number</xref>,
+          we have all three angles and all three sides to work with.
+          However, to minimize propagated error,
+          we choose <m>A = \frac{1}{2} ac \sin(\beta)</m> from <xref ref="areaformulasine">Theorem</xref>
+          because it uses the most pieces of given information.
+          We are given <m>a = 7</m> and <m>\beta = 45^{\circ}</m>,
+          and we calculated <m>c = \frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)}</m>.
+          Using these values,
+          we find <m>A = \frac{1}{2}(7)\left(\frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)} \right) \sin\left(45^{\circ}\right) = \approx 5.18</m> square units.
+          The reader is encouraged to check this answer against the results obtained using the other formulas in <xref ref="areaformulasine">Theorem</xref>.
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection xml:id="gradeofroad">
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      solve for the remaining side(s) and angle(s) if possible.
+      As in the text, <m>(\alpha, a)</m>,
+      <m>(\beta,
+      b)</m> and <m>(\gamma, c)</m> are angle-side opposite pairs.
+    </p>
+    <exercise xml:id="firstlawofsines">
+      <statement>
+        <p>
+          <m>\alpha = 13^{\circ}, \; \beta = 17^{\circ}, \; a = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 13^{\circ} \amp \beta = 17^{\circ} \amp \gamma = 150^{\circ} \\a = 5 \amp b \approx 6.50 \amp c \approx 11.11 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 73.2^{\circ}, \; \beta = 54.1^{\circ}, \; a = 117</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 73.2^{\circ} \amp \beta = 54.1^{\circ} \amp \gamma = 52.7^{\circ} \\a = 117 \amp b \approx 99.00 \amp c \approx 97.22 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 95^{\circ}, \; \beta = 85^{\circ}, \; a = 33.33</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 95^{\circ}, \; \beta = 62^{\circ}, \; a = 33.33</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 95^{\circ} \amp \beta = 62^{\circ} \amp \gamma = 23^{\circ} \\a = 33.33 \amp b \approx 29.54 \amp c \approx 13.07 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 117^{\circ}, \; a = 35, \; b = 42</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 117^{\circ}, \; a = 45, \; b = 42</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 117^{\circ} \amp \beta \approx 56.3^{\circ} \amp \gamma \approx 6.7^{\circ} \\a = 45 \amp b = 42 \amp c \approx 5.89 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 68.7^{\circ}, \; a = 88, \; b = 92</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 68.7^{\circ} \amp \beta \approx 76.9^{\circ} \amp \gamma \approx 34.4^{\circ} \\a = 88 \amp b = 92 \amp c \approx 53.36 \end{array}</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{lll}\alpha = 68.7^{\circ} \amp \beta \approx 103.1^{\circ} \amp \gamma \approx 8.2^{\circ} \\a = 88 \amp b = 92 \amp c \approx 13.47 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 42^{\circ}, \; a = 17, \; b = 23.5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 42^{\circ} \amp \beta \approx 67.66^{\circ} \amp \gamma \approx 70.34^{\circ} \\a = 17 \amp b = 23.5 \amp c \approx 23.93 \end{array}</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{lll}\alpha = 42^{\circ} \amp \beta \approx 112.34^{\circ} \amp \gamma \approx 25.66^{\circ} \\a = 17 \amp b = 23.5 \amp c \approx 11.00 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 68.7^{\circ}, \; a = 70, \; b = 90</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 30^{\circ}, \; a = 7, \; b = 14</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 30^{\circ} \amp \beta = 90^{\circ} \amp \gamma = 60^{\circ} \\a = 7 \amp b = 14 \amp c = 7\sqrt{3} \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 42^{\circ}, \; a = 39, \; b = 23.5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 42^{\circ} \amp \beta \approx 23.78^{\circ} \amp \gamma \approx 114.22^{\circ} \\a = 39 \amp b = 23.5 \amp c \approx 53.15 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="secondarea">
+      <statement>
+        <p>
+          <m>\gamma = 53^{\circ}, \; \alpha = 53^{\circ}, \; c = 28.01</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 53^{\circ} \amp \beta = 74^{\circ} \amp \gamma = 53^{\circ} \\a = 28.01 \amp b \approx 33.71 \amp c = 28.01 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\alpha = 6^{\circ}, \; a = 57, \; b = 100</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 6^{\circ} \amp \beta \approx 169.43^{\circ} \amp \gamma \approx 4.57^{\circ} \\a = 57 \amp b = 100 \amp c \approx 43.45 \end{array}</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{lll}\alpha = 6^{\circ} \amp \beta \approx 10.57^{\circ} \amp \gamma \approx 163.43^{\circ} \\a = 57 \amp b = 100 \amp c \approx 155.51 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\gamma = 74.6^{\circ}, \; c = 3, \; a = 3.05</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 78.59^{\circ} \amp \beta \approx 26.81^{\circ} \amp \gamma = 74.6^{\circ} \\a = 3.05 \amp b \approx 1.40 \amp c = 3 \end{array}</m>
+        </p>
+
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 101.41^{\circ} \amp \beta \approx 3.99^{\circ} \amp \gamma = 74.6^{\circ} \\a = 3.05 \amp b \approx 0.217 \amp c = 3 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\beta = 102^{\circ}, \; b = 16.75, \; c = 13</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha \approx 28.61^{\circ} \amp \beta = 102^{\circ} \amp \gamma \approx 49.39^{\circ} \\a \approx 8.20 \amp b = 16.75 \amp c = 13 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\beta = 102^{\circ}, \; b = 16.75, \; c = 18</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\beta = 102^{\circ}, \; \gamma = 35^{\circ}, \; b = 16.75</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 43^{\circ} \amp \beta = 102^{\circ} \amp \gamma = 35^{\circ} \\a \approx 11.68 \amp b = 16.75 \amp c \approx 9.82 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\beta = 29.13^{\circ}, \; \gamma = 83.95^{\circ}, \; b = 314.15</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 66.92^{\circ} \amp \beta = 29.13^{\circ} \amp \gamma = 83.95^{\circ} \\a \approx 593.69 \amp b = 314.15 \amp c \approx 641.75 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\gamma = 120^{\circ}, \; \beta = 61^{\circ}, \; c = 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Information does not produce a triangle
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="lastlawofsines">
+      <statement>
+        <p>
+          <m>\alpha = 50^{\circ}, \; a = 25, \; b = 12.5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\begin{array}{lll}\alpha = 50^{\circ} \amp \beta \approx 22.52^{\circ} \amp \gamma \approx 107.48^{\circ} \\a = 25 \amp b = 12.5 \amp c \approx 31.13 \end{array}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the area of the triangles given in <xref ref="firstlawofsines">Exercises</xref>,
+          <xref ref="secondarea"></xref> and <xref ref="lastlawofsines"></xref> above.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The area of the triangle from <xref ref="firstlawofsines">Exercise</xref> is about 8.1 square units.
+          The area of the triangle from <xref ref="secondarea">Exercise</xref> is about 377.1 square units.
+          The area of the triangle from <xref ref="lastlawofsines">Exercise</xref> is about 149 square units.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      { \phantomsection (Another Classic Application: Grade of a Road) The grade of a road is much like the pitch of a roof (See <xref ref="roofpitchex">Example</xref>) in that it expresses the ratio of rise/run.
+      In the case of a road,
+      this ratio is always positive because it is measured going uphill and it is usually given as a percentage.
+      For example, a road which rises 7 feet for every 100 feet of (horizontal) forward progress is said to have a 7<percent /> grade.
+      However, if we want to apply any Trigonometry to a story problem involving roads going uphill or downhill,
+      we need to view the grade as an angle with respect to the horizontal.
+      In Exercises}
+      {, we first have you change road grades into angles and then use the Law of Sines in an application.}
+    </p>
+    <exercise xml:id="firstroadgrade">
+      <statement>
+        <p>
+          Using a right triangle with a horizontal leg of length 100 and vertical leg with length 7, show that a 7<percent /> grade means that the road (hypotenuse) makes about a
+          <m>4^{\circ}</m> angle with the horizontal. (It will not be exactly
+          <m>4^{\circ}</m>, but it's pretty close.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\frac{7}{100}\right) \approx 0.699</m> radians,
+          which is equivalent to <m>4.004^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What grade is given by a <m>9.65^{\circ}</m> angle made by the road and the horizontal?<fn>I have friends who live in Pacifica, CA and their road is actually this steep.
+          It's not a nice road to drive.</fn></p>
+      </statement>
+      <answer>
+        <p>
+          About 17
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="lastroadgrade">
+      <statement>
+        <p>
+          Along a long,
+          straight stretch of mountain road with a 7<percent /> grade,
+          you see a tall tree standing perfectly plumb alongside the road.<fn>The word <q>plumb</q>
+          here means that the tree is perpendicular to the horizontal.</fn>From a point 500 feet downhill from the tree,
+          the angle of inclination from the road to the top of the tree is <m>6^{\circ}</m>.
+          Use the Law of Sines to find the height of the tree. (Hint: First show that the tree makes a
+          <m>94^{\circ}</m> angle with the road.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 53 feet
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Skippy and Sally decide to hunt UFOs.
+          One night, they position themselves 2 miles apart on an abandoned stretch of desert runway.
+          An hour into their investigation, Skippy spies a UFO hovering over a spot on the runway directly between him and Sally.
+          He records the angle of inclination from the ground to the craft to be
+          <m>75^{\circ}</m> and radios Sally immediately to find the angle of inclination from her position to the craft is <m>50^{\circ}</m>.
+          How high off the ground is the UFO at this point?
+          Round your answer to the nearest foot. (Recall: 1 mile is 5280 feet.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The UFO is hovering about 9539 feet above the ground.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The angle of depression from an observer in an apartment complex to a gargoyle on the building next door is <m>55^{\circ}</m>.
+          From a point five stories below the original observer,
+          the angle of inclination to the gargoyle is <m>20^{\circ}</m>.
+          Find the distance from each observer to the gargoyle and the distance from the gargoyle to the apartment complex.
+          Round your answers to the nearest foot. (Use the rule of thumb that one story of a building is 9 feet.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The gargoyle is about 44 feet from the observer on the upper floor.
+          The gargoyle is about 27 feet from the observer on the lower floor.
+          The gargoyle is about 25 feet from the other building.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Prove that the Law of Sines holds when <m>\triangle ABC</m> is a right triangle.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      {\phantomsection
+          <idx><h>bearings</h></idx>
+      (Another Classic Application: Bearings) In Exercises} {, we introduce and work with the navigation tool known as bearings.
+      Simply put,
+      a bearing is the direction you are heading according to a compass.
+      The classic nomenclature for bearings, however,
+      is not given as an angle in standard position,
+      so we must first understand the notation.
+      A bearing is given as an acute angle of rotation
+      (to the east or to the west)
+      away from the north-south
+      (up and down)
+      line of a compass rose.
+      For example, N<m>40^{\circ}</m>E
+      (read <q><m>40^{\circ}</m> east of north</q>)
+      is a bearing which is rotated clockwise <m>40^{\circ}</m> from due north.
+      If we imagine standing at the origin in the Cartesian Plane,
+      this bearing would have us heading into Quadrant I along the terminal side of <m>\theta = 50^{\circ}</m>.
+      Similarly, S<m>50^{\circ}</m>W would point into Quadrant III along the terminal side of
+      <m>\theta = 220^{\circ}</m> because we started out pointing due south
+      (along <m>\theta = 270^{\circ}</m>)
+      and rotated clockwise <m>50^{\circ}</m> back to <m>220^{\circ}</m>.
+      Counter-clockwise rotations would be found in the bearings N<m>60^{\circ}</m>W
+      (which is on the terminal side of <m>\theta = 150^{\circ}</m>)
+      and S<m>27^{\circ}</m>E (which lies along the terminal side of <m>\theta = 297^{\circ}</m>).
+      These four bearings are drawn in the plane below.
+    </p>
+
+    <p>
+      <img src="figures/AppExtGraphics/LawofSines-21.pdf"/>
+    </p>
+
+    <p>
+      The cardinal directions north, south,
+      east and west are usually not given as bearings in the fashion described above,
+      but rather,
+      one just refers to them as <q>due north</q>,
+      <q>due south</q>, <q>due east</q>
+      and <q>due west</q>, respectively,
+      and it is assumed that you know which quadrantal angle goes with each cardinal direction. (Hint: Look at the diagram above.) }
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find the angle <m>\theta</m> in standard position with
+          <m>0^{\circ} \leq \theta \lt  360^{\circ}</m> which corresponds to each of the bearings given below.
+
+          <ol>
+            <li>
+              <p>
+                due west
+              </p>
+            </li>
+
+            <li>
+              <p>
+                S<m>83^{\circ}</m>E
+              </p>
+            </li>
+
+            <li>
+              <p>
+                N<m>5.5^{\circ}</m>E
+              </p>
+            </li>
+
+            <li>
+              <p>
+                due south
+              </p>
+            </li>
+
+            <li>
+              <p>
+                N<m>31.25^{\circ}</m>W
+              </p>
+            </li>
+
+            <li>
+              <p>
+                S<m>72^{\circ}41'12''</m>W
+              </p>
+            </li>
+
+            <li>
+              <p>
+                N<m>45^{\circ}</m>E
+              </p>
+            </li>
+
+            <li>
+              <p>
+                S<m>45^{\circ}</m>W
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>\theta = 180^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 353^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 84.5^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 270^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 121.25^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 197^{\circ} 18' 48''</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 45^{\circ}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\theta = 225^{\circ}</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The Colonel spots a campfire at a of bearing N<m>42^{\circ}</m>E from his current position.
+          Sarge, who is positioned 3000 feet due east of the Colonel,
+          reckons the bearing to the fire to be N<m>20^{\circ}</m>W from his current position.
+          Determine the distance from the campfire to each man,
+          rounded to the nearest foot.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The Colonel is about 3193 feet from the campfire.
+        </p>
+
+        <p>
+          Sarge is about 2525 feet to the campfire.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A hiker starts walking due west from Sasquatch Point and gets to the Chupacabra Trailhead before she realizes that she hasn't reset her pedometer.
+          From the Chupacabra Trailhead she hikes for 5 miles along a bearing of N<m>53^{\circ}</m>W which brings her to the Muffin Ridge Observatory.
+          From there,
+          she knows a bearing of S<m>65^{\circ}</m>E will take her straight back to Sasquatch Point.
+          How far will she have to walk to get from the Muffin Ridge Observatory to Sasquach Point?
+          What is the distance between Sasquatch Point and the Chupacabra Trailhead?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The distance from the Muffin Ridge Observatory to Sasquach Point is about 7.12 miles.
+          The distance from Sasquatch Point to the Chupacabra Trailhead is about 2.46 miles.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The captain of the SS Bigfoot sees a signal flare at a bearing of N<m>15^{\circ}</m>E from her current location.
+          From his position,
+          the captain of the HMS Sasquatch finds the signal flare to be at a bearing of N<m>75^{\circ}</m>W. If the SS Bigfoot is 5 miles from the HMS Sasquatch and the bearing from the SS Bigfoot to the HMS Sasquatch is N<m>50^{\circ}</m>E, find the distances from the flare to each vessel,
+          rounded to the nearest tenth of a mile.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The SS Bigfoot is about 4.1 miles from the flare.
+          The HMS Sasquatch is about 2.9 miles from the flare.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Carl spies a potential Sasquatch nest at a bearing of N<m>10^{\circ}</m>E and radios Jeff,
+          who is at a bearing of N<m>50^{\circ}</m>E from Carl's position.
+          From Jeff's position,
+          the nest is at a bearing of S<m>70^{\circ}</m>W. If Jeff and Carl are 500 feet apart,
+          how far is Jeff from the Sasquatch nest?
+          Round your answer to the nearest foot.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Jeff is about 371 feet from the nest.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A hiker determines the bearing to a lodge from her current position is S<m>40^{\circ}</m>W. She proceeds to hike 2 miles at a bearing of S<m>20^{\circ}</m>E at which point she determines the bearing to the lodge is S<m>75^{\circ}</m>W. How far is she from the lodge at this point?
+          Round your answer to the nearest hundredth of a mile.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          She is about 3.02 miles from the lodge
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A watchtower spots a ship off shore at a bearing of N<m>70^{\circ}</m>E. A second tower,
+          which is 50 miles from the first at a bearing of S<m>80^{\circ}</m>E from the first tower,
+          determines the bearing to the ship to be N<m>25^{\circ}</m>W. How far is the boat from the second tower?
+          Round your answer to the nearest tenth of a mile.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The boat is about 25.1 miles from the second tower.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates why knowing only the three angles of a triangle is not enough to determine any of the sides.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Given <m>\alpha = 30^{\circ}</m> and <m>b = 10</m>,
+          choose four different values for <m>a</m> so that
+
+          <ol>
+            <li>
+              <p>
+                the information yields no triangle
+              </p>
+            </li>
+
+            <li>
+              <p>
+                the information yields exactly one right triangle
+              </p>
+            </li>
+
+            <li>
+              <p>
+                the information yields two distinct triangles
+              </p>
+            </li>
+
+            <li>
+              <p>
+                the information yields exactly one obtuse triangle
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          Explain why you cannot choose <m>a</m> in such a way as to have <m>\alpha = 30^{\circ}</m>,
+          <m>b = 10</m> and your choice of <m>a</m> yield only one triangle where that unique triangle has three acute angles.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

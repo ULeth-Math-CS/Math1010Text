@@ -1,0 +1,2199 @@
+
+
+<section xml:id="GraphsofPolynomials">
+  <title>Graphs of Polynomial Functions</title>
+  <introduction>
+    <p>
+      Three of the families of functions studied thus far <mdash /> constant,
+      linear and quadratic <mdash /> belong to a much larger group of functions called <em>polynomials</em>.
+      We begin our formal study of general polynomials with a definition and some examples.
+    </p>
+
+    <definition xml:id="polynomialfunction">
+      <title>Polynomial function</title>
+      <statement>
+        <p>
+          A
+              <idx><h>function</h><h>polynomial</h></idx><idx><h>polynomial function</h><h>definition of</h></idx>
+          <term>polynomial function</term> is a function of the form
+          <me>
+            f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}
+          </me>,
+          where <m>a_{0}</m>, <m>a_{1}</m>,
+          <ellipsis />, <m>a_{n}</m> are real numbers and <m>n \geq 1</m> is a natural number.
+          The domain of a polynomial function is <m>(-\infty, \infty)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      There are several things about <xref ref="polynomialfunction">Definition</xref>
+      that may be off-putting or downright frightening.
+      The best thing to do is look at an example.
+      Consider <m>f(x) = 4x^5 - 3x^2 + 2x - 5</m>.
+      Is this a polynomial function?
+      We can re-write the formula for <m>f</m> as <m>f(x)= 4x^5 + 0 x^{4} + 0 x^{3} + (-3)x^2 + 2 x + (-5)</m>.
+      Comparing this with <xref ref="polynomialfunction">Definition</xref>,
+      we identify <m>n=5</m>,
+      <m>a_{5} = 4</m>, <m>a_{4} = 0</m>, <m>a_{3} = 0</m>,
+      <m>a_{2} = -3</m>, <m>a_{1} = 2</m> and <m>a_{0} = -5</m>.
+      In other words, <m>a_{5}</m> is the coefficient of <m>x^{5}</m>,
+      <m>a_{4}</m> is the coefficient of <m>x^{4}</m>, and so forth;
+      the subscript on the <m>a</m>'s merely indicates to which power of <m>x</m> the coefficient belongs.
+      The business of restricting <m>n</m> to be a natural number lets us focus on well-behaved algebraic animals. (Yes,
+      there are examples of worse behaviour still to come!)
+    </p>
+
+    <example xml:id="intropolyexample">
+      <title>Identifying polynomial functions</title>
+      <statement>
+        <p>
+          Determine if the following functions are polynomials.
+          Explain your reasoning.
+
+          <ol>
+            <li>
+              <p>
+                <m>g(x) = \dfrac{4+x^3}{x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>p(x) = \dfrac{4x+x^3}{x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>q(x) = \dfrac{4x+x^3}{x^2+4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) =\sqrt[3]{x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = |x|</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>z(x) = 0</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We note directly that the domain of <m>g(x) = \dfrac{x^3+4}{x}</m> is <m>x \neq 0</m>.
+                By definition, a polynomial has all real numbers as its domain.
+                Hence, <m>g</m> can't be a polynomial.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Even though <m>p(x) = \dfrac{x^3+4x}{x}</m> simplifies to <m>p(x) = x^2+4</m>,
+                which certainly looks like the form given in <xref ref="polynomialfunction">Definition</xref>,
+                the domain of <m>p</m>, which, as you may recall,
+                we determine <em>before</em>
+                we simplify, excludes <m>0</m>.
+                Alas,
+          <m>p</m> is not a polynomial function for the same reason <m>g</m> isn't.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                After what happened with <m>p</m> in the previous part,
+                you may be a little shy about simplifying <m>q(x) = \dfrac{x^3+4x}{x^2+4}</m> to <m>q(x) = x</m>,
+                which certainly fits <xref ref="polynomialfunction">Definition</xref>.
+                If we look at the domain of <m>q</m> before we simplified,
+                we see that it is, indeed, all real numbers.
+                A function which can be written in the form of <xref ref="polynomialfunction">Definition</xref>
+                whose domain is all real numbers is, in fact, a polynomial.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We can rewrite <m>f(x) =\sqrt[3]{x}</m> as <m>f(x) = x^{\frac{1}{3}}</m>.
+                Since <m>\frac{1}{3}</m> is not a natural number,
+                <m>f</m> is not a polynomial.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The function <m>h(x) = |x|</m> isn't a polynomial,
+                since it can't be written as a combination of powers of <m>x</m> even though it can be written as a piecewise function involving polynomials.
+                As we shall see in this section,
+                graphs of polynomials possess a quality that the graph of <m>h</m> does not.
+
+                <aside>
+                  <p>
+                    Once we get to calculus,
+                    we'll see that the absolute value function is the classic example of a function which is continuous everywhere,
+                    but fails to have a derivative everywhere:
+                    the graph of <m>h(x)=\lvert x\rvert</m> fails to be
+                    <q>smooth</q> at the origin.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There's nothing in <xref ref="polynomialfunction">Definition</xref>
+                which prevents all the coefficients <m>a_{n}</m>,
+                etc., from being <m>0</m>.
+                Hence, <m>z(x) = 0</m>,
+          is an honest-to-goodness polynomial.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <definition xml:id="degreeandallthat">
+      <title>Polynomial terminology</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a polynomial function.
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Given <m>f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}</m> with <m>a_{n} \neq 0</m>, we say
+            </p>
+
+            <ul>
+              <li>
+                <p>
+                  The natural number <m>n</m> is called the
+                      <idx><h>polynomial function</h><h>degree</h></idx><idx><h>degree of a polynomial</h></idx>
+                  <em>degree</em> of the polynomial <m>f</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The term <m>a_{n} x^{n}</m> is called the
+                      <idx><h>polynomial function</h><h>leading term</h></idx><idx><h>leading term of a polynomial</h></idx>
+                  <em>leading term</em> of the polynomial <m>f</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The real number <m>a_{n}</m> is called the
+                      <idx><h>polynomial function</h><h>leading coefficient</h></idx><idx><h>leading coefficient of a polynomial</h></idx>
+                  <em>leading coefficient</em> of the polynomial <m>f</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The real number <m>a_{0}</m> is called the
+                      <idx><h>polynomial function</h><h>constant term</h></idx><idx><h>constant term of a polynomial</h></idx>
+                  <em>constant term</em> of the polynomial <m>f</m>.
+                </p>
+              </li>
+            </ul></li>
+
+          <li>
+            <p>
+              If <m>f(x) = a_{0}</m>,
+              and <m>a_{0} \neq 0</m>, we say <m>f</m> has degree <m>0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>f(x) = 0</m>, we say <m>f</m> has no degree.
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </definition>
+
+    <p>
+      The reader may well wonder why we have chosen to separate off constant functions from the other polynomials in <xref ref="degreeandallthat">Definition</xref>.
+      Why not just lump them all together and,
+      instead of forcing <m>n</m> to be a natural number, <m>n = 1, 2, \ldots</m>,
+      allow <m>n</m> to be a whole number,
+      <m>n = 0, 1, 2, \ldots</m>.
+      We could unify all of the cases, since, after all,
+      isn't <m>a_{0}x^{0} = a_{0}</m>?
+      The answer is <q>yes, as long as <m>x\neq 0</m>.</q>
+      The function <m>f(x) = 3</m> and <m>g(x) = 3x^{0}</m> are different,
+      because their domains are different.
+      The number <m>f(0) = 3</m> is defined,
+      whereas <m>g(0) = 3(0)^{0}</m> is not. \phantomsection Indeed,
+      much of the theory we will develop in this chapter doesn't include the constant functions,
+      so we might as well treat them as outsiders from the start.
+      One good thing that comes from <xref ref="degreeandallthat">Definition</xref>
+      is that we can now think of linear functions as degree <m>1</m>
+      (or <q>first degree</q>)
+      polynomial functions and quadratic functions as degree <m>2</m>
+      (or <q>second degree</q>)
+      polynomial functions.
+    </p>
+
+    <aside>
+      <p>
+        In the context of limits,
+        results such as <m>0^{0}</m> are known as
+        <em>indeterminant forms</em>.
+        These are cases where the function fails to be defined,
+        but the methods of calculus might still be able to extract information.
+      </p>
+    </aside>
+    <example xml:id="ex_degreeetc">
+      <title>Using polynomial terminiology</title>
+      <statement>
+        <p>
+          Find the degree, leading term,
+          leading coefficient and constant term of the following polynomial functions.
+          <ol cols="2">
+            <li>
+              <p>
+                <m>f(x) = 4x^5 - 3x^2 + 2x - 5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = 12x +x^3</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                <m>h(x) = \dfrac{4-x}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>p(x) = (2x-1)^{3}(x-2)(3x+2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                There are no surprises with <m>f(x) = 4x^5 - 3x^2 + 2x - 5</m>.
+                It is written in the form of <xref ref="degreeandallthat">Definition</xref>,
+                and we see that the degree is <m>5</m>,
+                the leading term is <m>4x^5</m>,
+                the leading coefficient is <m>4</m> and the constant term is <m>-5</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The form given in <xref ref="degreeandallthat">Definition</xref>
+                has the highest power of <m>x</m> first.
+                To that end, we re-write <m>g(x) = 12x +x^3 = x^3+12x</m>,
+                and see that the degree of <m>g</m> is <m>3</m>,
+                the leading term is <m>x^3</m>,
+                the leading coefficient is <m>1</m> and the constant term is <m>0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We need to rewrite the formula for <m>h</m> so that it resembles the form given in <xref ref="degreeandallthat">Definition</xref>:
+                <m>h(x) = \frac{4-x}{5} = \frac{4}{5} - \frac{x}{5} = -\frac{1}{5} x + \frac{4}{5}</m>.
+                The degree of <m>h</m> is <m>1</m>,
+                the leading term is <m>-\frac{1}{5} x</m>,
+                the leading coefficient is
+                <m>-\frac{1}{5}</m> and the constant term is <m>\frac{4}{5}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                It may seem that we have some work ahead of us to get <m>p</m> in the form of <xref ref="degreeandallthat">Definition</xref>.
+                However,
+          it is possible to glean the information requested about <m>p</m> without multiplying out the entire expression <m>(2x-1)^{3}(x-2)(3x+2)</m>.
+                The leading term of <m>p</m> will be the term which has the highest power of <m>x</m>.
+                The way to get this term is to multiply the terms with the highest power of <m>x</m> from each factor together - in other words,
+                the leading term of <m>p(x)</m> is the product of the leading terms of the factors of <m>p(x)</m>.
+                Hence,
+          the leading term of <m>p</m> is <m>(2x)^3(x)(3x) = 24x^5</m>.
+                This means that the degree of <m>p</m> is <m>5</m> and the leading coefficient is <m>24</m>.
+                As for the constant term,
+          we can perform a similar trick.
+                The constant term is obtained by multiplying the constant terms from each of the factors <m>(-1)^3(-2)(2) = 4</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example shows how polynomials of higher degree arise <q>naturally</q>
+      in even the most basic geometric applications.
+    </p>
+
+    <example xml:id="boxnotopex">
+      <title>Optimizing a box construction</title>
+      <statement>
+        <p>
+          A box with no top is to be fashioned from a <m>10</m> inch <times /> <m>12</m> inch piece of cardboard by cutting out congruent squares from each corner of the cardboard and then folding the resulting tabs.
+          Let <m>x</m> denote the length of the side of the square which is removed from each corner:
+          see <xref ref="fig_boxnotop">Figure</xref>.
+
+          <ol>
+            <li>
+              <p>
+                Find the volume <m>V</m> of the box as a function of <m>x</m>.
+                Include an appropriate applied domain.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use software or a graphing calculator to graph <m>y=V(x)</m> on the domain you found in part 1 and approximate the dimensions of the box with maximum volume to two decimal places.
+                What is the maximum volume? <table xml:id="fig_boxnotop"> <caption>Constructing the box in <xref ref="boxnotopex">Example</xref></caption> <tabular> <row> <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-1.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-2.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                From Geometry,
+                we know that <m>\mbox{Volume}  = \mbox{width}  \times \mbox{height}  \times \mbox{depth}</m>.
+                The key is to find each of these quantities in terms of <m>x</m>.
+                From the figure,
+                we see that the height of the box is <m>x</m> itself.
+                The cardboard piece is initially <m>10</m> inches wide.
+                Removing squares with a side length of <m>x</m> inches from each corner leaves <m>10-2x</m> inches for the width.
+                As for the depth, the cardboard is initially <m>12</m> inches long,
+                so after cutting out <m>x</m> inches from each side,
+                we would have <m>12-2x</m> inches remaining.
+                As a function of <m>x</m>, the volume is
+                <me>
+                  V(x) = x(10-2x)(12-2x) = 4x^3-44x^2+120x
+                </me>
+                To find a suitable applied domain,
+                we note that to make a box at all we need <m>x > 0</m>.
+                Also the shorter of the two dimensions of the cardboard is <m>10</m> inches,
+                and since we are removing <m>2x</m> inches from this dimension,
+                we also require <m>10 - 2x > 0</m> or <m>x \lt  5</m>.
+                Hence, our applied domain is <m>0 \lt  x \lt  5</m>.
+
+                <aside>
+                  <p>
+                    When we write <m>V(x)</m>,
+                it is in the context of function notation,
+                    not the volume <m>V</m> times the quantity <m>x</m>.
+                    There's no harm in taking the time here to make sure that our definition of <m>V(x)</m> makes sense.
+                    If we chopped out a <m>1</m> inch square from each side,
+                    then the width would be <m>8</m> inches,
+                    so chopping out <m>x</m> inches would leave <m>10-2x</m> inches.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using GeoGebra to plot <m>V(x)</m>,
+                we see that the graph of <m>y=V(x)</m> has a relative maximum.
+                The graph of <m>V</m> is shown in <xref ref="fig_boxnotop2">Figure</xref>;
+                note that we had to rescale the <m>y</m>-axis significantly to get everything to fit on the screen.
+                For <m>0 \lt x \lt 5</m>,
+          this is also the absolute maximum.
+                Using the <q>Max</q> command,
+                we get <m>x \approx 1.81</m>, <m>y \approx 96.77</m>.
+                This yields a height of <m>x \approx 1.81</m> inches,
+                a width of <m>10 - 2x \approx 6.38</m> inches,
+                and a depth of <m>12 - 2x \approx 8.38</m> inches.
+                The <m>y</m>-coordinate is the maximum volume,
+                which is approximately <m>96.77</m> cubic inches (also written <m>\mbox{in} ^3</m>).
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <table xml:id="fig_boxnotop2">
+      <caption>Optimizing the volume of the box in <xref ref="boxnotopex">Example</xref></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/BoxNoTopV.pdf"/></cell>
+        </row>
+        <row>
+          <cell>The graph <m>y=V(x)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/BoxNoTopVmax.pdf"/></cell>
+        </row>
+        <row>
+          <cell>The graph <m>y=V(x)</m> with maximum shown</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In order to solve <xref ref="boxnotopex">Example</xref>,
+      we made good use of the graph of the polynomial <m>y=V(x)</m>,
+      so we ought to turn our attention to graphs of polynomials in general.
+      In <xref ref="fig_graphevenpowers">Figure</xref> the graphs of <m>y=x^2</m>,
+      <m>y=x^4</m> and <m>y=x^6</m>, are shown.
+      We have omitted the axes to allow you to see that as the exponent increases,
+      the <q>bottom</q> becomes <q>flatter</q>
+      and the <q>sides</q> become <q>steeper.</q>
+      If you take the the time to graph these functions by hand,
+      (make sure you choose some <m>x</m>-values between <m>-1</m> and <m>1</m>.)
+      you will see why.
+    </p>
+
+    <p>
+      All of these functions are even, (Do you remember how to show this?) and it is exactly because the exponent is even. (Herein lies one of the possible origins of the term <q>even</q>
+      when applied to functions.) This symmetry is important,
+      but we want to explore a different yet equally important feature of these functions which we can be seen graphically <mdash /> their
+          <idx><h>polynomial function</h><h>end behaviour</h></idx><idx><h>end behaviour</h><h>of a function graph</h></idx>
+      <em>end behaviour</em>.
+    </p>
+
+    <p>
+      The end behaviour of a function is a way to describe what is happening to the function values
+      (the <m>y</m>-values)
+      as the <m>x</m>-values approach the <q>ends</q>
+      of the <m>x</m>-axis. (Of course,
+      there are no ends to the <m>x</m>-axis.) That is,
+      what happens to <m>y</m> as <m>x</m> becomes small without bound
+      (written <m>x \rightarrow -\infty</m>)
+      and, on the flip side,
+      as <m>x</m> becomes large without bound (written <m>x \rightarrow \infty</m>).
+    </p>
+
+    <aside>
+      <p>
+        When <m>x\to\infty</m> we think of <m>x</m> as moving far to the right of zero and becoming a very large
+        <em>positive</em> number.
+        When <m>x\to -\infty</m> we think of <m>x</m> as becoming a very large
+        (in the sense of its absolute value)
+        <em>negative</em> number far to the left of zero.
+      </p>
+    </aside>
+    <p>
+      For example, given <m>f(x) = x^2</m>,
+      as <m>x \rightarrow -\infty</m>,
+      we imagine substituting <m>x=-100</m>, <m>x=-1000</m>,
+      etc., into <m>f</m> to get <m>f(-100)=10000</m>,
+      <m>f(-1000)=1000000</m>, and so on.
+      Thus the function values are becoming larger and larger positive numbers (without bound).
+      To describe this behaviour, we write:
+      as <m>x \rightarrow -\infty</m>,
+      <m>f(x) \rightarrow \infty</m>.
+      If we study the behaviour of <m>f</m> as <m>x \rightarrow \infty</m>,
+      we see that in this case, too,
+      <m>f(x) \rightarrow \infty</m>. (We told you that the symmetry was important!) The same can be said for any function of the form
+      <m>f(x) = x^n</m> where <m>n</m> is an even natural number.
+      If we generalize just a bit to include vertical scalings and reflections across the <m>x</m>-axis, we have
+    </p>
+
+    <aside>
+      <p>
+        See <xref ref="reflections">Theorems</xref> and <xref ref="vscalings"></xref>
+        in <xref ref="Transformations">Section</xref>
+        if you need a reminder on the effect of scalings and reflections on the graph of a function.
+      </p>
+    </aside>
+    <insight xml:id="idea_endbehaveven">
+      <title>End behaviour of functions $f(x) = ax^{n}$, $n$ even.</title>
+      <p>
+        Suppose <m>f(x) = a x^{n}</m> where
+        <m>a \neq 0</m> is a real number and <m>n</m> is an even natural number.
+        The end behaviour of the graph of <m>y=f(x)</m> matches one of the following:
+            <idx><h>end behaviour</h><h>of <m>f(x) = ax^{n}, n</m> even</h></idx>
+        <ul>
+          <li>
+            <p>
+              for <m>a > 0</m>, as <m>x \rightarrow -\infty</m>,
+              <m>f(x) \rightarrow \infty</m> and as <m>x \rightarrow \infty</m>,
+              <m>f(x) \rightarrow \infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              for <m>a \lt 0</m>, as <m>x \rightarrow -\infty</m>,
+              <m>f(x) \rightarrow -\infty</m> and as <m>x \rightarrow \infty</m>,
+              <m>f(x) \rightarrow -\infty</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        This is illustrated graphically below:
+      </p>
+      <tabular>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-6.pdf"/></cell>
+          <cell>\hspace{2cm}</cell>
+          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-7.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>a>0</m></cell>
+          <cell></cell>
+          <cell><m>a\lt 0</m></cell>
+        </row>
+      </tabular>
+    </insight>
+
+    <p>
+      We now turn our attention to functions of the form <m>f(x) = x^{n}</m> where
+      <m>n \geq 3</m> is an odd natural number. (We ignore the case when <m>n=1</m>,
+      since the graph of <m>f(x)=x</m> is a line and doesn't fit the general pattern of higher-degree odd polynomials.) In <xref ref="fig_graphoddpowers">Figure</xref> we have graphed <m>y=x^3</m>,
+      <m>y=x^5</m>, and <m>y=x^7</m>.
+      The <q>flattening</q> and <q>steepening</q>
+      that we saw with the even powers presents itself here as well, and,
+      it should come as no surprise that all of these functions are odd. (And are, perhaps,
+      the inspiration for the moniker
+      <q>odd function</q>.) The end behaviour of these functions is all the same,
+      with <m>f(x) \rightarrow -\infty</m> as <m>x \rightarrow -\infty</m> and
+      <m>f(x) \rightarrow \infty</m> as <m>x \rightarrow \infty</m>.
+    </p>
+
+    <figure xml:id="fig_graphevenpowers">
+    <caption>Graphing even powers of <m>x</m></caption>
+    <sidebyside>
+      <figure>
+        <caption><m>y=x^2</m></caption>
+        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-3.pdf"/>
+      </figure>
+
+      <figure>
+        <m>y=x^4</m>
+      </figure>
+
+      <figure>
+        <caption><m>y=x^6</m></caption>
+        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-5.pdf"/>
+      </figure>
+    </sidebyside>
+    </figure>
+
+    <figure xml:id="fig_graphoddpowers">
+    <caption>Graphing odd powers of <m>x</m></caption>
+    <sidebyside>
+      <figure>
+        <caption><m>y=x^3</m></caption>
+        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-8.pdf"/>
+      </figure>
+
+      <figure>
+        <m>y=x^5</m>
+      </figure>
+
+      <figure>
+        <caption><m>y=x^7</m></caption>
+        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-10.pdf"/>
+      </figure>
+    </sidebyside>
+    </figure>
+
+    <p>
+      As with the even degreed functions we studied earlier,
+      we can generalize their end behaviour.
+    </p>
+
+    <insight xml:id="idea_endbehavodd">
+      <title>End behaviour of functions $f(x) = ax^{n}$, $n$ odd.</title>
+      <p>
+        Suppose <m>f(x) = a x^{n}</m> where <m>a \neq 0</m> is a real number and
+        <m>n \geq 3</m> is an odd natural number.
+        The end behaviour of the graph of <m>y=f(x)</m> matches one of the following:
+            <idx><h>end behaviour</h><h>of <m>f(x) = ax^{n}, n</m> odd</h></idx>
+        <ul>
+          <li>
+            <p>
+              for <m>a > 0</m>, as <m>x \rightarrow -\infty</m>,
+              <m>f(x) \rightarrow -\infty</m> and as <m>x \rightarrow \infty</m>,
+              <m>f(x) \rightarrow \infty</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              for <m>a \lt 0</m>, as <m>x \rightarrow -\infty</m>,
+              <m>f(x) \rightarrow \infty</m> and as <m>x \rightarrow \infty</m>,
+              <m>f(x) \rightarrow -\infty</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        This is illustrated graphically as follows:
+      </p>
+      <tabular>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-11.pdf"/></cell>
+          <cell>\hspace{2cm}</cell>
+          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-12.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>a>0</m></cell>
+          <cell></cell>
+          <cell><m>a\lt 0</m></cell>
+        </row>
+      </tabular>
+    </insight>
+
+    <p>
+      Despite having different end behaviour,
+      all functions of the form
+      <m>f(x) = ax^{n}</m> for natural numbers <m>n</m> share two properties which help distinguish them from other animals in the algebra zoo: they are
+          <idx><h>continuous</h></idx><idx><h>function</h><h>continuous</h></idx><em>continuous</em>
+      and <idx><h>smooth</h></idx><idx><h>function</h><h>smooth</h></idx>
+      <em>smooth</em>.
+      While these concepts are formally defined using Calculus,
+      informally,
+      graphs of continuous functions have no
+      <q>breaks</q> or <q>holes</q> in them,
+      and the graphs of smooth functions have no <q>sharp turns</q>.
+      It turns out that these traits are preserved when functions are added together,
+      so general polynomial functions inherit these qualities.
+      In <xref ref="cusppicture">Figure</xref>,
+      we find the graph of a function which is neither smooth nor continuous,
+      and to its right we have a graph of a polynomial, for comparison.
+      The function whose graph appears on the left fails to be continuous where it has a <q>break</q> or
+      <q>hole</q> in the graph;
+      everywhere else, the function is continuous.
+      The function is continuous at the
+      <q>corner</q> and the <q>cusp</q>,
+      but we consider these <q>sharp turns</q>,
+      so these are places where the function fails to be smooth.
+      Apart from these four places,
+      the function is smooth and continuous.
+      Polynomial functions are smooth and continuous everywhere,
+      as exhibited in <xref ref="fig_polygraphgen">Figure</xref>.
+    </p>
+
+    <aside>
+      <p>
+        In fact, when we get to Calculus,
+        you'll find that smooth functions are automatically continuous,
+        so that saying <q>polynomials are continuous and smooth</q> is redundant.
+      </p>
+    </aside>
+    <figure xml:id="cusppicture">
+      <caption>Pathologies not found on graphs of polynomials</caption>
+      <img src="figures/PolynomialsGraphics/GraphsofPolynomials-13.pdf"/>
+    </figure>
+
+    <p>
+      The notion of smoothness is what tells us graphically that,
+      for example, <m>f(x) = |x|</m>,
+      whose graph is the characteristic <q><m>\vee</m></q>
+      shape, cannot be a polynomial.
+      The notion of continuity is what allowed us to construct the sign diagram for quadratic inequalities as we did in <xref ref="Inequalities">Section</xref>.
+      This last result is formalized in the following theorem.
+    </p>
+
+    <theorem xml:id="IVT">
+      <title>The Intermediate Value Theorem (Zero Version)</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a continuous function on an interval containing <m>x=a</m> and <m>x=b</m> with <m>a\lt b</m>.
+          If <m>f(a)</m> and <m>f(b)</m> have different signs,
+          then <m>f</m> has at least one zero between <m>x = a</m> and <m>x = b</m>;
+          that is, for at least one real number <m>c</m> such that
+          <m>a \lt c \lt b</m>, we have <m>f(c) = 0</m>.
+              <idx><h>Intermediate Value Theorem</h><h>polynomial zero version</h></idx>
+        </p>
+      </statement>
+    </theorem>
+
+    <figure xml:id="fig_polygraphgen">
+      <caption>The graph of a polynomial</caption>
+      <img src="figures/PolynomialsGraphics/GraphsofPolynomials-14.pdf"/>
+    </figure>
+
+    <p>
+      The Intermediate Value Theorem is extremely profound;
+      it gets to the heart of what it means to be a real number,
+      and is one of the most often used and under appreciated theorems in Mathematics.
+      With that being said,
+      most students see the result as common sense since it says,
+      geometrically,
+      that the graph of a polynomial function cannot be above the <m>x</m>-axis at one point and below the <m>x</m>-axis at another point without crossing the <m>x</m>-axis somewhere in between.
+      We'll return to the Intermediate Value Theorem later in the Calculus portion of the course,
+      when we study continuity in general.
+      The following example uses the Intermediate Value Theorem to establish a fact that that most students take for granted.
+      Many students, and sadly some instructors, will find it silly.
+    </p>
+
+    <example xml:id="ex_squareroot2">
+      <title>Existence of $\sqrt{2}$</title>
+      <statement>
+        <p>
+          Use the Intermediate Value Theorem to establish that <m>\sqrt{2}</m> is a real number.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Consider the polynomial function <m>f(x) = x^2 - 2</m>.
+          Then <m>f(1) = -1</m> and <m>f(3) = 7</m>.
+          Since <m>f(1)</m> and <m>f(3)</m> have different signs,
+          the Intermediate Value Theorem guarantees us a real number <m>c</m> between <m>1</m> and <m>3</m> with <m>f(c) = 0</m>.
+          If <m>c^2 - 2 = 0</m> then <m>c = \pm \sqrt{2}</m>.
+          Since <m>c</m> is between <m>1</m> and <m>3</m>,
+          <m>c</m> is positive, so <m>c = \sqrt{2}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <aside>
+      <p>
+        The validity of the result in <xref ref="ex_squareroot2">Example</xref>
+        of course relies on having a rigorous proof of <xref ref="IVT">Theorem</xref>.
+        Although intuitive,
+        its proof is one of the most difficult in single variable calculus.
+        At most universities, you don't see a proof until a first course in Analysis,
+        like Math 3500.
+      </p>
+    </aside>
+    <p>
+      Our primary use of the Intermediate Value Theorem is in the construction of sign diagrams,
+      as in <xref ref="Inequalities">Section</xref>,
+      since it guarantees us that polynomial functions are always positive <m>(+)</m> or always negative <m>(-)</m> on intervals which do not contain any of its zeros.
+      The general algorithm for polynomials is given below.
+    </p>
+
+    <insight xml:id="idea_polysigndiag">
+      <title>Steps for Constructing a Sign Diagram for a Polynomial Function</title>
+      <p>
+        Suppose <m>f</m> is a polynomial function.
+            <idx><h>sign diagram</h><h>polynomial function</h></idx>
+        <ol>
+          <li>
+            <p>
+              Find the zeros of <m>f</m> and place them on the number line with the number <m>0</m> above them.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Choose a real number, called a <em>test value</em>,
+              in each of the intervals determined in step 1.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine the sign of <m>f(x)</m> for each test value in step 2, and write that sign above the corresponding interval.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </insight>
+
+    <example xml:id="polygraphex">
+      <title>Using a sign diagram to sketch a polynomial</title>
+      <statement>
+        <p>
+          Construct a sign diagram for <m>f(x) = x^3 (x-3)^2 (x+2) \left(x^2+1\right)</m>.
+          Use it to give a rough sketch of the graph of <m>y=f(x)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, we find the zeros of <m>f</m> by solving <m>x^3 (x-3)^2 (x+2)\left(x^2+1\right)=0</m>.
+          We get <m>x=0</m>,
+          <m>x=3</m> and <m>x=-2</m>. (The equation <m>x^2+1=0</m> produces no real solutions.) These three points divide the real number line into four intervals:
+          <m>(-\infty, -2)</m>, <m>(-2,0)</m>,
+          <m>(0,3)</m> and <m>(3,\infty)</m>.
+          We select the test values <m>x=-3</m>, <m>x=-1</m>,
+          <m>x=1</m> and <m>x=4</m>.
+          We find <m>f(-3)</m> is <m>(+)</m>,
+          <m>f(-1)</m> is <m>(-)</m> and <m>f(1)</m> is <m>(+)</m> as is <m>f(4)</m>.
+          Wherever <m>f</m> is <m>(+)</m>,
+          its graph is above the <m>x</m>-axis;
+          wherever <m>f</m> is <m>(-)</m>,
+          its graph is below the <m>x</m>-axis.
+          The <m>x</m>-intercepts of the graph of <m>f</m> are <m>(-2,0)</m>,
+          <m>(0,0)</m> and <m>(3,0)</m>.
+          Knowing <m>f</m> is smooth and continuous allows us to sketch its graph in <xref ref="fig_polygraph1">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_polysign1">
+          <caption>The sign diagram of <m>f</m> in <xref ref="polygraphex">Example</xref></caption>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-15.pdf"/>
+        </figure>
+
+        <figure xml:id="fig_polygraph1">
+          <caption>The graph <m>y=f(x)</m> for <xref ref="polygraphex">Example</xref></caption>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-16.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      A couple of notes about the <xref ref="polygraphex">Example</xref> are in order.
+      First, note that we purposefully did not label the <m>y</m>-axis in the sketch of the graph of <m>y=f(x)</m>.
+      This is because the sign diagram gives us the zeros and the relative position of the graph - it doesn't give us any information as to how high or low the graph strays from the <m>x</m>-axis.
+      Furthermore,
+      as we have mentioned earlier in the text, without Calculus,
+      the values of the relative maximum and minimum can only be found approximately using a calculator.
+      If we took the time to find the leading term of <m>f</m>,
+      we would find it to be <m>x^8</m>.
+      Looking at the end behaviour of <m>f</m>,
+      we notice that it matches the end behaviour of <m>y=x^8</m>.
+      This is no accident, as we find out in the next theorem.
+    </p>
+
+    <theorem xml:id="EBPolynomials">
+      <title>End behaviour for Polynomial Functions</title>
+      <statement>
+        <p>
+              <idx><h>end behaviour</h><h>polynomial</h></idx>
+          The end behaviour of a polynomial <m>f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}</m> with
+          <m>a_{n} \neq 0</m> matches the end behaviour of <m>y = a_{n} x^{n}</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      To see why <xref ref="EBPolynomials">Theorem</xref> is true,
+      let's first look at a specific example.
+      Consider <m>f(x) = 4x^3 - x + 5</m>.
+      If we wish to examine end behaviour,
+      we look to see the behaviour of <m>f</m> as <m>x \rightarrow \pm \infty</m>.
+      Since we're concerned with <m>x</m>'s far down the <m>x</m>-axis,
+      we are far away from <m>x=0</m> so can rewrite <m>f(x)</m> for these values of <m>x</m> as
+      <me>
+        f(x) = 4x^3 \left( 1 - \dfrac{1}{4x^2} + \dfrac{5}{4x^3}\right)
+      </me>
+    </p>
+
+    <p>
+      As <m>x</m> becomes unbounded
+      (in either direction),
+      the terms <m>\dfrac{1}{4x^2}</m> and
+      <m>\dfrac{5}{4x^3}</m> become closer and closer to <m>0</m>,
+      as the table below indicates.
+      <me>
+        \begin{array}{|r||r|r|}  
+
+        \hline 
+
+        x \amp  \frac{1}{4x^2} \amp  \frac{5}{4x^3}  \\ \hline
+        -1000  \amp  0.00000025 \amp  -0.00000000125 \\  \hline
+        -100  \amp  0.000025 \amp  -0.00000125 \\  \hline
+        -10 \amp  0.0025 \amp  -0.00125 \\  \hline
+        10  \amp  0.0025 \amp  0.00125 \\  \hline
+        100 \amp  0.000025 \amp  0.00000125 \\  \hline
+        1000 \amp  0.00000025 \amp  0.00000000125 \\  \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      In other words, as <m>x \rightarrow \pm \infty</m>,
+      <m>f(x) \approx 4x^3\left( 1 - 0 +0\right) = 4x^3</m>,
+      which is the leading term of <m>f</m>.
+      The formal proof of <xref ref="EBPolynomials">Theorem</xref> works in much the same way.
+      Factoring out the leading term leaves
+      <me>
+        f(x) = a_{n} x^{n} \left( 1 + \dfrac{a_{n-1}}{a_{n} x}+ \ldots + \dfrac{a_{2}}{a_{n} x^{n-2}} + \dfrac{a_{1}}{a_{n} x^{n-1}}+\dfrac{a_{0}}{a_{n} x^{n}}\right)
+      </me>
+    </p>
+
+    <p>
+      As <m>x \rightarrow \pm \infty</m>,
+      any term with an <m>x</m> in the denominator becomes closer and closer to <m>0</m>,
+      and we have <m>f(x) \approx a_{n} x^{n}</m>.
+      Geometrically, <xref ref="EBPolynomials">Theorem</xref>
+      says that if we graph <m>y=f(x)</m> using a graphing calculator,
+      and continue to <q>zoom out</q>,
+      the graph of it and its leading term become indistinguishable.
+      In <xref ref="fig_leadingterm">Figure</xref>
+      the graphs of <m>y=4x^3-x+5</m> and <m>y=4x^3</m> ) in two different windows.
+    </p>
+
+    <table xml:id="fig_leadingterm">
+      <caption>Two views of the polynomials <m>f(x)</m> and <m>g(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/EndBehaviour_near.pdf"/></cell>
+        </row>
+        <row>
+          <cell>A view close to the origin</cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/PolynomialsGraphics/EndBehaviour_far.pdf"/></cell>
+        </row>
+        <row>
+          <cell>A <q>zoomed out</q> view</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Let's return to the function in <xref ref="polygraphex">Example</xref>,
+      <m>f(x) = x^3 (x-3)^2 (x+2)\left(x^2+1\right)</m>,
+      whose sign diagram and graph are given in <xref ref="fig_polysign1">Figures</xref>
+      and <xref ref="fig_polygraph1"></xref>.
+      <xref ref="EBPolynomials">Theorem</xref>
+      tells us that the end behaviour is the same as that of its leading term <m>x^{8}</m>.
+      This tells us that the graph of <m>y=f(x)</m> starts and ends above the <m>x</m>-axis.
+      In other words,
+      <m>f(x)</m> is <m>(+)</m> as <m>x \rightarrow \pm \infty</m>,
+      and as a result,
+      we no longer need to evaluate <m>f</m> at the test values <m>x=-3</m> and <m>x=4</m>.
+      Is there a way to eliminate the need to evaluate <m>f</m> at the other test values?
+      What we would really need to know is how the function behaves near its zeros - does it cross through the <m>x</m>-axis at these points,
+      as it does at <m>x=-2</m> and <m>x=0</m>,
+      or does it simply touch and rebound like it does at <m>x=3</m>.
+      From the sign diagram,
+      the graph of <m>f</m> will cross the <m>x</m>-axis whenever the signs on either side of the zero switch (like they do at <m>x=-2</m> and <m>x=0</m>);
+      it will touch when the signs are the same on either side of the zero (as is the case with <m>x=3</m>).
+      What we need to determine is the reason behind whether or not the sign change occurs.
+    </p>
+
+    <p>
+      Fortunately, <m>f</m> was given to us in factored form:
+      <m>f(x) = x^3 (x-3)^2 (x+2)</m>.
+      When we attempt to determine the sign of <m>f(-4)</m>,
+      we are attempting to find the sign of the number <m>(-4)^3 (-7)^2 (-2)</m>,
+      which works out to be <m>(-)(+)(-)</m> which is <m>(+)</m>.
+      If we move to the other side of <m>x=-2</m>,
+      and find the sign of <m>f(-1)</m>,
+      we are determining the sign of <m>(-1)^3 (-4)^2 (+1)</m>,
+      which is <m>(-)(+)(+)</m> which gives us the <m>(-)</m>.
+      Notice that signs of the first two factors in both expressions are the same in <m>f(-4)</m> and <m>f(-1)</m>.
+      The only factor which switches sign is the third factor,
+      <m>(x+2)</m>,
+      precisely the factor which gave us the zero <m>x=-2</m>.
+      If we move to the other side of <m>0</m> and look closely at <m>f(1)</m>,
+      we get the sign pattern <m>(+1)^3(-2)^2(+3)</m> or
+      <m>(+)(+)(+)</m> and we note that, once again,
+      going from <m>f(-1)</m> to <m>f(1)</m>,
+      the only factor which changed sign was the first factor,
+      <m>x^3</m>, which corresponds to the zero <m>x=0</m>.
+      Finally, to find <m>f(4)</m>,
+      we substitute to get <m>(+4)^3(+2)^2(+5)</m> which is <m>(+)(+)(+)</m> or <m>(+)</m>.
+      The sign didn't change for the middle factor <m>(x-3)^2</m>.
+      Even though this is the factor which corresponds to the zero <m>x=3</m>,
+      the fact that the quantity is <em>squared</em>
+      kept the sign of the middle factor the same on either side of <m>3</m>.
+      If we look back at the exponents on the factors <m>(x+2)</m> and <m>x^3</m>,
+      we see that they are both odd,
+      so as we substitute values to the left and right of the corresponding zeros,
+      the signs of the corresponding factors change which results in the sign of the function value changing.
+      This is the key to the behaviour of the function near the zeros.
+      We need a definition and then a theorem.
+    </p>
+
+    <definition xml:id="multiplicity">
+      <title>Multiplicity of a zero</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a polynomial function and <m>m</m> is a natural number.
+          If <m>(x-c)^{m}</m> is a factor of <m>f(x)</m> but <m>(x-c)^{m+1}</m> is not,
+          then we say <m>x=c</m> is a zero of
+              <idx><h>polynomial function</h><h>zero ! multiplicity</h></idx><idx><h>multiplicity</h><h>of a zero</h></idx><idx><h>zero</h><h>multiplicity of</h></idx>
+          <term>multiplicity</term> <m>m</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Hence, rewriting <m>f(x) = x^3 (x-3)^2 (x+2)</m> as <m>f(x) = (x-0)^3 (x-3)^2 (x-(-2))^{1}</m>,
+      we see that <m>x=0</m> is a zero of multiplicity <m>3</m>,
+      <m>x=3</m> is a zero of multiplicity <m>2</m> and <m>x=-2</m> is a zero of multiplicity <m>1</m>.
+    </p>
+
+    <theorem xml:id="roleofmultiplicity">
+      <title>The Role of Multiplicity</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a polynomial function and <m>x=c</m> is a zero of multiplicity <m>m</m>.
+              <idx><h>multiplicity</h><h>effect on the graph of a polynomial</h></idx>
+          <ul>
+            <li>
+              <p>
+                If <m>m</m> is even,
+                the graph of <m>y=f(x)</m> touches and rebounds from the <m>x</m>-axis at <m>(c,0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>m</m> is odd,
+                the graph of <m>y=f(x)</m> crosses through the <m>x</m>-axis at <m>(c,0)</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Our last example shows how end behaviour and multiplicity allow us to sketch a decent graph without appealing to a sign diagram.
+    </p>
+
+    <example xml:id="ex_multiplicity">
+      <title>Using end behaviour and multiplicity</title>
+      <statement>
+        <p>
+          Sketch the graph of <m>f(x) = -3(2x-1)(x+1)^2</m> using end behaviour and the multiplicity of its zeros.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The end behaviour of the graph of <m>f</m> will match that of its leading term.
+          To find the leading term,
+          we multiply by the leading terms of each factor to get <m>(-3)(2x)(x)^2 = -6x^3</m>.
+          This tells us that the graph will start above the <m>x</m>-axis,
+          in Quadrant II, and finish below the <m>x</m>-axis,
+          in Quadrant IV. Next, we find the zeros of <m>f</m>.
+          Fortunately for us,
+          <m>f</m> is factored. (Obtaining the factored form of a polynomial is the main focus of the next few sections.) Setting each factor equal to zero gives is
+          <m>x = \frac{1}{2}</m> and <m>x=-1</m> as zeros.
+          To find the multiplicity of
+          <m>x=\frac{1}{2}</m> we note that it corresponds to the factor <m>(2x-1)</m>.
+          This isn't strictly in the form required in <xref ref="multiplicity">Definition</xref>.
+          If we factor out the <m>2</m>, however,
+          we get <m>(2x-1) = 2\left(x-\frac{1}{2}\right)</m>,
+          and we see that the multiplicity of <m>x = \frac{1}{2}</m> is <m>1</m>.
+          Since <m>1</m> is an odd number,
+          we know from <xref ref="roleofmultiplicity">Theorem</xref>
+          that the graph of <m>f</m> will cross through the <m>x</m>-axis at <m>\left(\frac{1}{2},0\right)</m>.
+          Since the zero <m>x=-1</m> corresponds to the factor <m>(x+1)^2 = (x-(-1))^2</m>,
+          we find its multiplicity to be <m>2</m> which is an even number.
+          As such, the graph of <m>f</m> will touch and rebound from the <m>x</m>-axis at <m>(-1,0)</m>.
+          Though we're not asked to,
+          we can find the <m>y</m>-intercept by finding <m>f(0) = -3(2(0)-1)(0+1)^2 = 3</m>.
+          Thus <m>(0,3)</m> is an additional point on the graph.
+          Putting this together gives us the graph in <xref ref="fig_polygraph2">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_polygraph2">
+          <caption>The graph <m>y=f(x)</m> for <xref ref="ex_multiplicity">Example</xref></caption>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-19.pdf"/>
+        </figure>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection xml:id="polygraphexercise">
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the inequality.
+      Write your answer using interval notation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 4-x-3x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 4-x-3x^2</m>
+        </p>
+
+        <p>
+          Degree 2
+        </p>
+
+        <p>
+          Leading term <m>-3x^{2}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>-3</m>
+        </p>
+
+        <p>
+          Constant term <m>4</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x) = 3x^5 - 2x^2 + x + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 3x^5 - 2x^2 + x + 1</m>
+        </p>
+
+        <p>
+          Degree 5
+        </p>
+
+        <p>
+          Leading term <m>3x^5</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>3</m>
+        </p>
+
+        <p>
+          Constant term <m>1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; g(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; g(x) \rightarrow \infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>q(r) = 1 - 16r^{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>q(r) = 1 - 16r^{4}</m>
+        </p>
+
+        <p>
+          Degree 4
+        </p>
+
+        <p>
+          Leading term <m>-16r^{4}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>-16</m>
+        </p>
+
+        <p>
+          Constant term <m>1</m>
+        </p>
+
+        <p>
+          As <m>r \rightarrow -\infty, \; q(r) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>r \rightarrow \infty, \; q(r) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>Z(b) = 42b - b^{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>Z(b) = 42b - b^{3}</m>
+        </p>
+
+        <p>
+          Degree 3
+        </p>
+
+        <p>
+          Leading term <m>-b^{3}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>-1</m>
+        </p>
+
+        <p>
+          Constant term <m>0</m>
+        </p>
+
+        <p>
+          As <m>b \rightarrow -\infty, \; Z(b) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>b \rightarrow \infty, \; Z(b) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{3}x^{17} + 22.5x^{10} - \pi x^{7} + \frac{1}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{3}x^{17} + 22.5x^{10} - \pi x^{7} + \frac{1}{3}</m>
+        </p>
+
+        <p>
+          Degree 17
+        </p>
+
+        <p>
+          Leading term <m>\sqrt{3}x^{17}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>\sqrt{3}</m>
+        </p>
+
+        <p>
+          Constant term <m>\frac{1}{3}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow \infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>s(t) = -4.9t^{2} + v_{0}t + s_{0}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>s(t) = -4.9t^{2} + v_{0}t + s_{0}</m>
+        </p>
+
+        <p>
+          Degree 2
+        </p>
+
+        <p>
+          Leading term <m>-4.9t^{2}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>-4.9</m>
+        </p>
+
+        <p>
+          Constant term <m>s_{0}</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow -\infty, \; s(t) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow \infty, \; s(t) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(x) = (x - 1)(x - 2)(x - 3)(x - 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(x) = (x - 1)(x - 2)(x - 3)(x - 4)</m>
+        </p>
+
+        <p>
+          Degree 4
+        </p>
+
+        <p>
+          Leading term <m>x^{4}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>1</m>
+        </p>
+
+        <p>
+          Constant term <m>24</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; P(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; P(x) \rightarrow \infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>p(t) = -t^2(3 - 5t)(t^{2} + t + 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>p(t) = -t^2(3 - 5t)(t^{2} + t + 4)</m>
+        </p>
+
+        <p>
+          Degree 5
+        </p>
+
+        <p>
+          Leading term <m>5t^{5}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>5</m>
+        </p>
+
+        <p>
+          Constant term <m>0</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow -\infty, \; p(t) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow \infty, \; p(t) \rightarrow \infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -2x^3(x+1)(x+2)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -2x^3(x+1)(x+2)^2</m>
+        </p>
+
+        <p>
+          Degree 6
+        </p>
+
+        <p>
+          Leading term <m>-2x^{6}</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>-2</m>
+        </p>
+
+        <p>
+          Constant term <m>0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow -\infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>G(t) = 4(t-2)^2\left(t+\frac{1}{2}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>G(t) = 4(t-2)^2\left(t+\frac{1}{2}\right)</m>
+        </p>
+
+        <p>
+          Degree 3
+        </p>
+
+        <p>
+          Leading term <m>4t^3</m>
+        </p>
+
+        <p>
+          Leading coefficient <m>4</m>
+        </p>
+
+        <p>
+          Constant term <m>8</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow -\infty, \; G(t) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>t \rightarrow \infty, \; G(t) \rightarrow \infty</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the real zeros of the given polynomial and their corresponding multiplicities.
+      Use this information along with a sign chart to provide a rough sketch of the graph of the polynomial.
+      Compare your answer with the result from a graphing utility.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>a(x) = x(x + 2)^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>a(x) = x(x + 2)^{2}</m>
+        </p>
+
+        <p>
+          <m>x = 0</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>x = -2</m> multiplicity 2
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x) = x(x + 2)^{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = x(x + 2)^{3}</m>
+        </p>
+
+        <p>
+          <m>x = 0</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>x = -2</m> multiplicity 3
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -2(x-2)^2(x+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -2(x-2)^2(x+1)</m>
+        </p>
+
+        <p>
+          <m>x=2</m> multiplicity 2
+        </p>
+
+        <p>
+          <m>x=-1</m> multiplicity 1
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x) = (2x+1)^2(x-3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = (2x+1)^2(x-3)</m>
+        </p>
+
+        <p>
+          <m>x=-\frac{1}{2}</m> multiplicity 2
+        </p>
+
+        <p>
+          <m>x=3</m> multiplicity 1
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>F(x) = x^{3}(x + 2)^{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>F(x) = x^{3}(x + 2)^{2}</m>
+        </p>
+
+        <p>
+          <m>x = 0</m> multiplicity 3
+        </p>
+
+        <p>
+          <m>x = -2</m> multiplicity 2
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>P(x) = (x - 1)(x - 2)(x - 3)(x - 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(x) = (x - 1)(x - 2)(x - 3)(x - 4)</m>
+        </p>
+
+        <p>
+          <m>x = 1</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>x = 2</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>x = 3</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>x = 4</m> multiplicity 1
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>Q(x) = (x + 5)^{2}(x - 3)^{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>Q(x) = (x + 5)^{2}(x - 3)^{4}</m>
+        </p>
+
+        <p>
+          <m>x = -5</m> multiplicity 2
+        </p>
+
+        <p>
+          <m>x = 3</m> multiplicity 4
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>h(x) = x^2(x-2)^2(x+2)^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(x) = x^2(x-2)^2(x+2)^2</m>
+        </p>
+
+        <p>
+          <m>x = -2</m> multiplicity 2
+        </p>
+
+        <p>
+          <m>x = 0</m> multiplicity 2
+        </p>
+
+        <p>
+          <m>x = 2</m> multiplicity 2
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>H(t) = (3-t)(t^2+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>H(t) = (3-t)\left(t^2+1\right)</m>
+        </p>
+
+        <p>
+          <m>x =3</m> multiplicity 1
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>Z(b) = b(42 - b^{2})</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>Z(b) = b(42 - b^{2})</m>
+        </p>
+
+        <p>
+          <m>b = -\sqrt{42}</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>b = 0</m> multiplicity 1
+        </p>
+
+        <p>
+          <m>b = \sqrt{42}</m> multiplicity 1
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, given the pair of functions <m>f</m> and <m>g</m>,
+      sketch the graph of <m>y=g(x)</m> by starting with the graph of
+      <m>y = f(x)</m> and using transformations.
+      Track at least three points of your choice through the transformations.
+      State the domain and range of <m>g</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^3</m>, <m>g(x) = (x + 2)^{3} + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = (x + 2)^{3} + 1</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^4</m>, <m>g(x) = (x + 2)^{4} + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = (x + 2)^{4} + 1</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>[1, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^4</m>, <m>g(x) = 2 - 3(x - 1)^{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 2 - 3(x - 1)^{4}</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>(-\infty, 2]</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-33.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^5</m>, <m>g(x) = -x^{5} - 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = -x^{5} - 3</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-34.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^5</m>, <m>g(x) = (x+1)^5+10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = (x+1)^5+10</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-35.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^6</m>, <m>g(x) = 8-x^6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 8-x^{6}</m>
+        </p>
+
+        <p>
+          domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          range: <m>(-\infty, 8]</m>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-36.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use the Intermediate Value Theorem to prove that
+          <m>f(x) = x^{3} - 9x + 5</m> has a real zero in each of the following intervals:
+          <m>[-4, -3], [0, 1]</m> and <m>[2, 3]</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          We have <m>f(-4)=-23,\; f(-3)=5,\; f(0)=5,\; f(1)=-3,\; f(2)=-5\;</m> and <m>f(3)=5</m> so the Intermediate Value Theorem tells us that
+          <m>f(x) = x^{3} - 9x + 5</m> has real zeros in the intervals <m>[-4, -3], [0, 1]</m> and <m>[2, 3]</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Rework <xref ref="boxnotopex">Example</xref>
+          assuming the box is to be made from an 8.5 inch by 11 inch sheet of paper.
+          Using scissors and tape, construct the box.
+          Are you surprised?<fn>Consider decorating the box and presenting it to your instructor.
+          If done well enough,
+          maybe your instructor will issue you some bonus points.
+          Or maybe not.</fn></p>
+      </statement>
+      <answer>
+        <p>
+          <m>V(x) = x(8.5-2x)(11-2x) = 4x^3-39x^2+93.5x</m>, <m>0 \lt x \lt 4.25</m>.
+          Volume is maximized when <m>x \approx 1.58</m>,
+          so the dimensions of the box with maximum volume are:
+          height <m>\approx</m> 1.58 inches,
+          width <m>\approx</m> 5.34 inches,
+          and depth <m>\approx</m> 7.84 inches.
+          The maximum volume is <m>\approx</m> 66.15 cubic inches.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      suppose the revenue <m>R</m>,
+      in <em>thousands</em> of dollars,
+      from producing and selling <m>x</m> <em>hundred</em>
+      LCD TVs is given by <m>R(x) = -5x^3+35x^2+155x</m> for <m>0 \leq x \leq 10.07</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Use a graphing utility to graph
+          <m>y = R(x)</m> and determine the number of TVs which should be sold to maximize revenue.
+          What is the maximum revenue?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The calculator gives the location of the absolute maximum
+          (rounded to three decimal places)
+          as <m>x \approx 6.305</m> and <m>y \approx 1115.417</m>.
+          Since <m>x</m> represents the number of TVs sold in hundreds,
+          <m>x = 6.305</m> corresponds to <m>630.5</m> TVs.
+          Since we can't sell half of a TV, we compare
+          <m>R(6.30) \approx 1115.415</m> and <m>R(6.31) \approx 1115.416</m>,
+          so selling <m>631</m> TVs results in a (slightly) higher revenue.
+          Since <m>y</m> represents the revenue in
+          <em>thousands</em> of dollars,
+          the maximum revenue is <m>\dollar 1,\!115,\!416</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Assume that the cost, in <em>thousands</em> of dollars,
+          to produce <m>x</m> <em>hundred</em>
+          LCD TVs is given by <m>C(x) = 200x + 25</m> for <m>x \geq 0</m>.
+          Find and simplify an expression for the profit function <m>P(x)</m>. (Remember: Profit = Revenue - Cost.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(x) = R(x) - C(x) = -5x^3+35x^2-45x-25</m>,
+          <m>0 \leq x \leq 10.07</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use a graphing utility to graph
+          <m>y = P(x)</m> and determine the number of TVs which should be sold to maximize profit.
+          What is the maximum profit?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The calculator gives the location of the absolute maximum
+          (rounded to three decimal places)
+          as <m>x \approx 3.897</m> and <m>y \approx 35.255</m>.
+          Since <m>x</m> represents the number of TVs sold in hundreds,
+          <m>x = 3.897</m> corresponds to <m>389.7</m> TVs.
+          Since we can't sell <m>0.7</m> of a TV, we compare
+          <m>P(3.89) \approx 35.254</m> and <m>P(3.90) \approx 35.255</m>,
+          so selling <m>390</m> TVs results in a (slightly) higher revenue.
+          Since <m>y</m> represents the revenue in
+          <em>thousands</em> of dollars,
+          the maximum revenue is <m>\dollar 35,\!255</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="newportaboycost">
+      <statement>
+        <p>
+          While developing their newest game, Sasquatch Attack!, the makers of the PortaBoy
+          (from <xref ref="PortaBoyCost">Example</xref>)
+          revised their cost function and now use
+          <m>C(x) = .03x^{3} - 4.5x^{2} + 225x + 250</m>, for <m>x \geq 0</m>.
+          As before, <m>C(x)</m> is the cost to make <m>x</m> PortaBoy Game Systems.
+          Market research indicates that the demand function <m>p(x) = -1.5x + 250</m> remains unchanged.
+          Use a graphing utility to find the production level <m>x</m> that maximizes the <em>profit</em>
+          made by producing and selling <m>x</m> PortaBoy game systems.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Making and selling 71 PortaBoys yields a maximized profit of <dollar />5910.67.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          According to US Postal regulations,
+          a rectangular shipping box must satisfy the inequality
+          <q>Length + Girth <m>\leq</m> 130 inches</q>
+          for Parcel Post and <q>Length + Girth <m>\leq</m> 108 inches</q> for other services.
+          Let's assume we have a closed rectangular box with a square face of side length <m>x</m> as drawn below.
+          The length is the longest side and is clearly labeled.
+          The girth is the distance around the box in the other two dimensions so in our case it is the sum of the four sides of the square,
+          <m>4x</m>.
+
+          <ol>
+            <li xml:id="girthbox1">
+
+            <p>
+              Assuming that we'll be mailing a box via Parcel Post where Length + Girth <m>=</m> 130 inches,
+              express the length of the box in terms of <m>x</m> and then express the volume <m>V</m> of the box in terms of <m>x</m>.
+            </p>
+            </li>
+
+            <li xml:id="girthbox2">
+
+            <p>
+              Find the dimensions of the box of maximum volume that can be shipped via Parcel Post.
+            </p>
+            </li>
+
+            <li>
+              <p>
+                Repeat <xref ref="girthbox1">parts</xref>
+                and <xref ref="girthbox2"></xref>
+                if the box is shipped using <q>other services</q>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-20.pdf"/>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              Our ultimate goal is to maximize the volume,
+              so we'll start with the maximum Length <m>+</m> Girth of <m>130</m>.
+              This means the length is <m>130 - 4x</m>.
+              The volume of a rectangular box is always length <times /> width <times /> height so we get <m>V(x) = x^{2}(130 - 4x) = -4x^{3} + 130x^{2}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Graphing <m>y = V(x)</m> on <m>[0, 33] \times [0, 21000]</m> shows a maximum at
+              <m>(21.67, 20342.59)</m> so the dimensions of the box with maximum volume are
+              <m>21.67\mbox{in.} \times 21.67\mbox{in.} \times 43.32\mbox{in.}</m> for a volume of <m>20342.59\mbox{in.} ^{3}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If we start with Length <m>+</m> Girth <m>= 108</m> then the length is
+              <m>108 - 4x</m> and the volume is <m>V(x) = -4x^{3} + 108x^{2}</m>.
+              Graphing <m>y = V(x)</m> on <m>[0, 27] \times [0, 11700]</m> shows a maximum at <m>(18.00, 11664.00)</m> so the dimensions of the box with maximum volume are <m>18.00\mbox{in.} \times 18.00\mbox{in.} \times 36\mbox{in.}</m> for a volume of
+              <m>11664.00\mbox{in.} ^{3}</m>. (Calculus will confirm that the measurements which maximize the volume are <em>exactly</em>
+              18in. by 18in. by 36in., however,
+              as I'm sure you are aware by now,
+              we treat all calculator results as approximations and list them as such.)
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that the end behaviour of a linear function
+          <m>f(x) = mx + b</m> is as it should be according to the results we've established in the section for polynomials of odd degree.<fn>Remember,
+          to be a linear function, <m>m \neq 0</m>.</fn>(That is,
+          show that the graph of a linear function is
+          <q>up on one side and down on the other</q>
+          just like the graph of <m>y = a_{n}x^{n}</m> for odd numbers <m>n</m>.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+              <idx><h>multiplicity</h><h>effect on the graph of a polynomial</h></idx>
+          There is one subtlety about the role of multiplicity that we need to discuss further;
+          specifically we need to see <q>how</q>
+          the graph crosses the <m>x</m>-axis at a zero of odd multiplicity.
+          In the section,
+          we deliberately excluded the function <m>f(x) = x</m> from the discussion of the end behaviour of
+          <m>f(x) = x^{n}</m> for odd numbers <m>n</m> and we said at the time that it was due to the fact that
+          <m>f(x) = x</m> didn't fit the pattern we were trying to establish.
+          You just showed in the previous exercise that the end behaviour of a linear function behaves like every other polynomial of odd degree,
+          so what doesn't <m>f(x) = x</m> do that <m>g(x) = x^{3}</m> does?
+          It's the <q>flattening</q>
+          for values of <m>x</m> near zero.
+          It is this local behaviour that will distinguish between a zero of multiplicity 1 and one of higher odd multiplicity.
+          Look again closely at the graphs of <m>a(x) = x(x + 2)^{2}</m> and
+          <m>F(x) = x^{3}(x + 2)^{2}</m> from <xref ref="polygraphexercise">Exercise</xref>.
+          Discuss with your classmates how the graphs are fundamentally different at the origin.
+          It might help to use a graphing calculator to zoom in on the origin to see the different crossing behaviour.
+          Also compare the behaviour of <m>a(x) = x(x + 2)^{2}</m> to that of
+          <m>g(x) = x(x + 2)^{3}</m> near the point <m>(-2, 0)</m>.
+          What do you predict will happen at the zeros of <m>f(x) = (x - 1)(x - 2)^2(x - 3)^{3}(x - 4)^{4}(x - 5)^{5}</m>?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Here are a few other questions for you to discuss with your classmates.
+
+          <ol>
+            <li>
+              <p>
+                How many local extrema could a polynomial of degree <m>n</m> have?
+                How few local extrema can it have?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Could a polynomial have two local maxima but no local minima?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If a polynomial has two local maxima and two local minima,
+                can it be of odd degree?
+                Can it be of even degree?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Can a polynomial have local extrema without having any real zeros?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Why must every polynomial of odd degree have at least one real zero?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Can a polynomial have two distinct real zeros and no local extrema?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Can an <m>x</m>-intercept yield a local extrema?
+                Can it yield an absolute extrema?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the <m>y</m>-intercept yields an absolute minimum,
+                what can we say about the degree of the polynomial and the sign of the leading coefficient?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

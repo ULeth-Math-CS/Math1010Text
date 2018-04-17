@@ -1,0 +1,1581 @@
+
+
+<section xml:id="RationalIneq">
+  <title>Rational Inequalities and Applications</title>
+  <introduction>
+    <p>
+      In this section,
+      we solve equations and inequalities involving rational functions and explore associated application problems.
+      Our first example showcases the critical difference in procedure between solving a rational equation and a rational inequality.
+    </p>
+
+    <example xml:id="ex_ratineq">
+      <title>Rational equation and inequality</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Solve <m>\dfrac{x^3-2x+1}{x-1} = \dfrac{1}{2}x-1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>\dfrac{x^3-2x+1}{x-1} \geq \dfrac{1}{2}x-1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use your computer or calculator to graphically check your answers to 1 and 2.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To solve the equation, we clear denominators
+                <me>
+                  \begin{array}{rclr}
+
+                  \dfrac{x^3-2x+1}{x-1} \amp  = \amp  \dfrac{1}{2}x-1 \amp  \\
+
+                  \left(\dfrac{x^3-2x+1}{x-1}\right) \cdot 2(x-1) \amp  = \amp  \left( \dfrac{1}{2}x-1 \right) \cdot 2(x-1) \amp  \\
+
+                  2x^3 - 4x + 2 \amp  = \amp  x^2-3x+2 \amp  \mbox{expand}  \\
+
+                  2x^3 -x^2 - x \amp  = \amp  0 \amp  \\
+
+                  x(2x+1)(x-1) \amp  = \amp  0 \amp  \mbox{factor} \\
+
+                  x \amp  = \amp  -\frac{1}{2}, \, 0, \, 1 \amp 
+                  \end{array}
+                </me>
+                Since we cleared denominators,
+                we need to check for extraneous solutions.
+                Sure enough,
+                we see that <m>x=1</m> does not satisfy the original equation and must be discarded.
+                Our solutions are <m>x=-\frac{1}{2}</m> and <m>x=0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve the inequality,
+                it may be tempting to begin as we did with the equation <m>-</m> namely by multiplying both sides by the quantity <m>(x-1)</m>.
+                The problem is that, depending on <m>x</m>,
+                <m>(x-1)</m> may be positive
+                (which doesn't affect the inequality)
+                or <m>(x-1)</m> could be negative (which would reverse the inequality).
+                Instead of working by cases,
+                we collect all of the terms on one side of the inequality with <m>0</m> on the other and make a sign diagram using the technique given on <xref ref="rationalsigndiagram">page</xref>
+                in <xref ref="RationalGraphs">Section</xref>.
+                <md>
+                  <mrow>\dfrac{x^3-2x+1}{x-1} \amp  \geq \dfrac{1}{2}x-1</mrow>
+                  <mrow>\dfrac{x^3-2x+1}{x-1}  - \dfrac{1}{2} x + 1\amp  \geq  0</mrow>
+                  <mrow>\dfrac{2\left(x^3-2x+1\right)-x(x-1)+1(2(x-1))}{2(x-1)} \amp  \geq  0  \tag{get a common denominator}</mrow>
+                  <mrow>\dfrac{2x^3-x^2-x}{2x-2} \amp  \geq  0  \tag{expand}</mrow>
+                </md>
+                Viewing the left hand side as a rational function <m>r(x)</m> we make a sign diagram.
+                The only value excluded from the domain of <m>r</m> is <m>x=1</m> which is the solution to <m>2x-2=0</m>.
+                The zeros of <m>r</m> are the solutions to <m>2x^3-x^2-x=0</m>,
+                which we have already found to be <m>x=0</m>,
+                <m>x=-\frac{1}{2}</m> and <m>x=1</m>,
+                the latter was discounted as a zero because it is not in the domain.
+                Choosing test values in each test interval,
+                we obtain the sign diagram in <xref ref="fig_ratineq1">Figure</xref>.
+
+                <figure xml:id="fig_ratineq1">
+                  <caption>The sign diagram for the inequality in <xref ref="ex_ratineq">Example</xref></caption>
+                  <img src="figures/RationalsGraphics/RationalIneq-1.pdf"/>
+                </figure>
+
+                We are interested in where <m>r(x) \geq 0</m>.
+                We find <m>r(x) > 0</m>, or <m>(+)</m>,
+                on the intervals <m>\left(-\infty, -\frac{1}{2}\right)</m>,
+                <m>(0,1)</m> and <m>(1, \infty)</m>.
+                We add to these intervals the zeros of <m>r</m>,
+                <m>-\frac{1}{2}</m> and <m>0</m>,
+                to get our final solution:
+                <m>\left( - \infty, -\frac{1}{2} \right] \cup [0,1) \cup (1, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Geometrically,
+                if we set <m>f(x) = \dfrac{x^3-2x+1}{x-1}</m> and <m>g(x) = \frac{1}{2} x -1</m>,
+                the solutions to <m>f(x)=g(x)</m> are the <m>x</m>-coordinates of the points where the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> intersect.
+                The solution to <m>f(x) \geq g(x)</m> represents not only where the graphs meet,
+                but the intervals over which the graph of <m>y=f(x)</m> is above (<m>></m>) the graph of <m>g(x)</m>.
+                Entering these two functions into GeoGebra gives us <xref ref="fig_ratineq2">Figure</xref>. <figure xml:id="fig_ratineq2"> <caption>The initial plot of <m>f(x)</m> and <m>g(x)</m></caption> <img src="figures/RationalsGraphics/Rationals10.pdf"/> </figure> <figure xml:id="fig_ratineq3"> <caption>Zooming in to find the intersection points</caption> <img src="figures/RationalsGraphics/Rationals11.pdf"/> </figure> Zooming in and using the Intersect tool,
+                we see in <xref ref="fig_ratineq3">Figure</xref>
+                that the graphs cross when <m>x=-\frac{1}{2}</m> and <m>x=0</m>.
+                It is clear from the calculator that the graph of <m>y=f(x)</m> is above the graph of <m>y=g(x)</m> on
+                <m>\left(-\infty, -\frac{1}{2}\right)</m> as well as on <m>(0,\infty)</m>.
+                According to the calculator,
+                our solution is then
+          <m>\left(-\infty, -\frac{1}{2}\right] \cup [0, \infty)</m> which <em>almost</em>
+                matches the answer we found analytically.
+                We have to remember that <m>f</m> is not defined at <m>x=1</m>, and,
+                even though it isn't shown on the calculator,
+                there is a hole in the graph of <m>y=f(x)</m> when <m>x=1</m> which is why <m>x=1</m> is not part of our final answer. (There is no asymptote at <m>x=1</m> since the graph is well behaved near <m>x=1</m>.
+                According to <xref ref="vavshole">Theorem</xref>,
+                there must be a hole there.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Next, we explore how rational equations can be used to solve some classic problems involving rates.
+    </p>
+
+    <example xml:id="upstreamdownstreamex">
+      <title>Calculating the speed of a river</title>
+      <statement>
+        <p>
+          Carl decides to explore the Meander River,
+          where several recent Sasquatch sightings were located.
+          From camp, he canoes downstream five miles to check out a purported Sasquatch nest.
+          Finding nothing, he immediately turns around, retraces his route
+          (this time travelling upstream),
+          and returns to camp 3 hours after he left.
+          If Carl canoes at a rate of 6 miles per hour in still water,
+          how fast was the Meander River flowing on that day?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We are given information about distances, rates (speeds) and times.
+          The basic principle relating these quantities is:
+          <me>
+            \text{ distance }  = \text{ rate }  \cdot \text{ time }
+          </me>
+        </p>
+
+        <p>
+          The first observation to make,
+          however, is that the distance,
+          rate and time given to us aren't <q>compatible</q>:
+          the distance given is the distance for only
+          <em>part</em> of the trip,
+          the rate given is the speed Carl can canoe in still water,
+          not in a flowing river,
+          and the time given is the duration of the <em>entire</em> trip.
+          Ultimately, we are after the speed of the river,
+          so let's call that <m>R</m> measured in miles per hour to be consistent with the other rate given to us.
+          To get started, let's divide the trip into its two parts:
+          the initial trip downstream and the return trip upstream.
+          For the downstream trip,
+          all we know is that the distance travelled is <m>5</m> miles.
+          <me>
+            \begin{array}{rcl}
+
+            \text{ distance downstream }  \amp  = \amp  \text{ speed downstream }  \cdot \text{ time travelling downstream }  \\
+
+            5 \, \text{ miles }  \amp  = \amp  \text{ speed downstream }  \cdot \text{ time travelling downstream } 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          Since the return trip upstream followed the same route as the trip downstream,
+          we know that the distance travelled upstream is also 5 miles.
+          <me>
+            \begin{array}{rcl}
+
+            \text{ distance upstream }  \amp  = \amp  \text{ speed upstream }  \cdot \text{ time travelling upstream }  \\
+
+            5 \, \text{ miles }  \amp  = \amp  \text{ speed upstream }  \cdot \text{ time travelling upstream } 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          We are told Carl can canoe at a rate of <m>6</m> miles per hour in still water.
+          How does this figure into the rates travelling upstream and downstream?
+          The speed the canoe travels in the river is a combination of the speed at which Carl can propel the canoe in still water, 6 miles per hour,
+          and the speed of the river, which we're calling <m>R</m>.
+          When travelling downstream,
+          the river is helping Carl along,
+          so we <em>add</em> these two speeds:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ speed downstream }  \amp  = \amp  \text{ rate Carl propels the canoe }  + \text{ speed of the river }  \\
+
+            \amp  = \amp  6 \frac{\text{ miles } }{\text{ hour } } + R \frac{\text{ miles } }{\text{ hour } }
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          So our downstream speed is <m>(6+R) \frac{\text{ miles } }{\text{ hour } }</m>.
+          Substituting this into our <q>distance-rate-time</q>
+          equation for the downstream part of the trip, we get:
+          <me>
+            \begin{array}{rcl}
+
+            5 \, \text{ miles }  \amp  = \amp  \text{ speed downstream }  \cdot \text{ time traveling downstream }  \\ 
+
+            5 \, \text{ miles }  \amp  = \amp  (6+R) \frac{\text{ miles } }{\text{ hour } } \cdot \text{ time traveling downstream } 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          When travelling upstream, Carl works against the current.
+          Since the canoe manages to travel upstream,
+          the speed Carl can canoe in still water is greater than the river's speed,
+          so we <em>subtract</em>
+          the river's speed <em>from</em> Carl's canoeing speed to get:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ speed upstream }  \amp  = \amp  \text{ rate Carl propels the canoe }  - \text{ river speed }  \\
+
+            \amp  = \amp  6 \frac{\text{ miles } }{\text{ hour } } - R \frac{\text{ miles } }{\text{ hour } }
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          Proceeding as before, we get
+          <me>
+            \begin{array}{rcl}
+
+            5 \, \text{ miles }  \amp  = \amp  \text{ speed upstream }  \cdot \text{ time traveling upstream }  \\ 
+
+            5 \, \text{ miles }  \amp  = \amp  (6 - R) \frac{\text{ miles } }{\text{ hour } } \cdot \text{ time traveling upstream } 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          The last piece of information given to us is that the total trip lasted <m>3</m> hours.
+          If we let <m>t_{\text{ down } }</m> denote the time of the downstream trip and
+          <m>t_{\text{ up } }</m> the time of the upstream trip, we have:
+          <m>t_{\text{ down } } + t_{\text{ up } } = 3 \, \text{ hours }</m>.
+          Substituting <m>t_{\text{ down } }</m> and <m>t_{\text{ up } }</m> into the
+          <q>distance-rate-time</q> equations, we get
+          (suppressing the units)
+          <em>three</em> equations in <em>three</em> unknowns:
+          <me>
+            \left\{\begin{array}{lrcl}   E1 \amp  (6+R) \, t_{\text{ down } } \amp  = \amp  5 \\ E2 \amp  (6-R) \, t_{\text{ up } } \amp  = \amp  5 \\ E3 \amp  t_{\text{ down } } + t_{\text{ up } } \amp  = \amp  3
+            \end{array}  \right
+          </me>.
+        </p>
+
+        <aside>
+          <p>
+            This is an example of a <em>system</em> of equations.
+            If you didn't encounter such creatures in high school,
+            don't worry:
+            you won't need to solve any systems in this course.
+            If you're wondering if there's a general procedure for tackling such problems,
+            you might want to check out Math 1410.
+          </p>
+        </aside>
+        <aside>
+          <p>
+            Although we usually discourage dividing both sides of an equation by a variable expression,
+            we know <m>(6+R) \neq 0</m> since otherwise we couldn't possibly multiply it by <m>t_{\text{ down } }</m> and get <m>5</m>.
+          </p>
+        </aside>
+        <p>
+          Since we are ultimately after <m>R</m>,
+          we need to use these three equations to get at least one equation involving only <m>R</m>.
+          To that end, we solve <m>E1</m> for
+          <m>t_{\text{ down } }</m> by dividing both sides by the quantity <m>(6+R)</m> to get <m>t_{\text{ down } } = \dfrac{5}{6+R}</m>.
+          Similarly, we solve <m>E2</m> for
+          <m>t_{\text{ up } }</m> and get <m>t_{\text{ up } } = \dfrac{5}{6-R}</m>.
+          Substituting these into <m>E3</m>, we get:
+          <me>
+            \dfrac{5}{6+R} + \dfrac{5}{6 - R} = 3
+          </me>.
+        </p>
+
+        <p>
+          (The reader is encouraged to verify that the units in this equation are the same on both sides.
+          To get you started, the units on the <q>3</q>
+          is <q>hours.</q>) Clearing denominators,
+          we get <m>5(6-R) + 5(6+R) = 3(6+R)(6-R)</m> which reduces to <m>R^2 = 16</m>.
+          We find <m>R = \pm 4</m>,
+          and since <m>R</m> represents the speed of the river,
+          we choose <m>R = 4</m>.
+          On the day in question,
+          the Meander River is flowing at a rate of <m>4</m> miles per hour.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      One of the important lessons to learn from <xref ref="upstreamdownstreamex">Example</xref> is that speeds,
+      and more generally, rates, are additive.
+      As we see in our next example,
+      the concept of rate and its associated principles can be applied to a wide variety of problems - not just
+      <q>distance-rate-time</q> scenarios.
+    </p>
+
+    <example xml:id="workex">
+      <title>Calculating work rates</title>
+      <statement>
+        <p>
+          Working alone, Taylor can weed the garden in 4 hours.
+          If Carl helps, they can weed the garden in 3 hours.
+          How long would it take for Carl to weed the garden on his own?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The key relationship between work and time which we use in this problem is:
+          <me>
+            \text{ amount of work done }  = \text{ rate of work }  \cdot \text{ time spent working }
+          </me>
+        </p>
+
+        <p>
+          We are told that,
+          working alone, Taylor can weed the garden in 4 hours.
+          In Taylor's case then:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ work done by Taylor }  \amp  = \amp  \text{ rate of Taylor working }  \cdot \text{ time Taylor spent working }  \\
+
+            1 \, \text{ garden }  \amp  = \amp  (\text{ rate of Taylor working } ) \cdot (4 \, \text{ hours } )
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          So we have that the rate Taylor works is <m>\frac{1 \, \text{ garden } }{ 4 \, \text{ hours } } = \frac{1}{4} \frac{\text{ garden } }{\text{ hour } }</m>.
+          We are also told that when working together, Taylor and Carl can weed the garden in just 3 hours.
+          We have:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ work done together }  \amp  = \amp  \text{ rate of working together }  \cdot \text{ time  working together }  \\
+
+            1 \, \text{ garden }  \amp  = \amp  (\text{ rate of working together } ) \cdot (3 \, \text{ hours } )
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          From this, we find that the rate of Taylor and Carl working together is equal to <m>\frac{1 \, \text{ garden } }{3 \, \text{ hours } } = \frac{1}{3} \frac{\text{ garden } }{\text{ hour } }</m>.
+          We are asked to find out how long it would take for Carl to weed the garden on his own.
+          Let us call this unknown <m>t</m>,
+          measured in hours to be consistent with the other times given to us in the problem.
+          Then:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ work done by Carl }  \amp  = \amp  \text{ rate of Carl working }  \cdot \text{ time Carl spent working }  \\
+
+            1 \, \text{ garden }  \amp  = \amp  (\text{ rate of Carl working } ) \cdot (t \, \text{ hours } )
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          In order to find <m>t</m>,
+          we need to find the rate of Carl working,
+          so let's call this quantity <m>R</m>,
+          with units <m>\frac{\text{ garden } }{\text{ hour } }</m>.
+          Using the fact that rates are additive, we have:
+          <me>
+            \begin{array}{rcl}
+
+            \text{ rate working together }  \amp  = \amp  \text{ rate of Taylor working }  + \text{ rate of Carl working }  \\
+
+            \frac{1}{3} \frac{\text{ garden } }{\text{ hour } } \amp  = \amp  \frac{1}{4} \frac{\text{ garden } }{\text{ hour } } + R \frac{\text{ garden } }{\text{ hour } }
+            \end{array}
+          </me>
+          so that <m>R = \frac{1}{12} \frac{\text{ garden } }{\text{ hour } }</m>.
+          Substituting this into our <q>work-rate-time</q> equation for Carl, we get:
+          <me>
+            \begin{array}{rcl}
+
+            1 \, \text{ garden }  \amp  = \amp  (\text{ rate of Carl working } ) \cdot (t \, \text{ hours } ) \\ 
+
+            1 \, \text{ garden }  \amp  = \amp  \left(\frac{1}{12} \frac{\text{ garden } }{\text{ hour } } \right) \cdot (t \, \text{ hours } )
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          Solving <m>1 = \frac{1}{12} t</m>, we get <m>t = 12</m>,
+          so it takes Carl 12 hours to weed the garden on his own. (Carl would much rather spend his time writing open-source Mathematics texts than gardening anyway.)
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As is common with <q>word problems</q>
+      like <xref ref="upstreamdownstreamex">Examples</xref>
+      and <xref ref="workex"></xref>,
+      there is no short-cut to the answer.
+      We encourage the reader to carefully think through and apply the basic principles of rate to each
+      (potentially different!)
+      situation.
+      It is time well spent.
+      We also encourage the tracking of units,
+      especially in the early stages of the problem.
+      Not only does this promote uniformity in the units,
+      it also serves as a quick means to check if an equation makes sense. (In other words,
+      make sure you don't try to add apples to oranges!)
+    </p>
+
+    <p>
+      Our next example deals with the average cost function,
+      first introduced on <xref ref="pricerevenuecostprofit">page</xref>,
+      as applied to PortaBoy Game systems from <xref ref="PortaBoyCost">Example</xref>
+      in <xref ref="LinearFunctions">Section</xref>.
+    </p>
+
+    <example xml:id="ex_ratcost">
+      <title>A rational cost function</title>
+      <statement>
+        <p>
+          Given a cost function <m>C(x)</m>,
+          which returns the total cost of producing <m>x</m> items,
+          recall that the
+              <idx><h>cost</h><h>average</h></idx><idx><h>average cost</h></idx>
+          average cost function,
+          <m>\overline{C}(x) = \frac{C(x)}{x}</m> computes the cost per item when <m>x</m> items are produced.
+          Suppose the cost <m>C</m>, in dollars,
+          to produce <m>x</m> PortaBoy game systems for a local retailer is <m>C(x) = 80x + 150</m>,
+          <m>x \geq 0</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find an expression for the average cost function <m>\overline{C}(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve <m>\overline{C}(x) \lt 100</m> and interpret.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Determine the behaviour of
+                <m>\overline{C}(x)</m> as <m>x \rightarrow \infty</m> and interpret.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                From <m>\overline{C}(x) = \dfrac{C(x)}{x}</m>,
+                we obtain <m>\overline{C}(x) = \dfrac{80x+150}{x}</m>.
+                The domain of <m>C</m> is <m>x \geq 0</m>,
+                but since <m>x=0</m> causes problems for <m>\overline{C}(x)</m>,
+                we get our domain to be <m>x>0</m>, or <m>(0, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solving <m>\overline{C}(x) \lt  100</m> means we solve <m>\dfrac{80x+150}{x} \lt  100</m>.
+                We proceed as in the previous example.
+                <me>
+                  \begin{array}{rclr}
+
+                  \dfrac{80x+150}{x} \amp  \lt  \amp  100 \amp  \\
+
+                  \dfrac{80x+150}{x} - 100 \amp  \lt  \amp  0 \amp  \\
+
+                  \dfrac{80x + 150 - 100x}{x} \amp  \lt  \amp  0 \amp  \mbox{common denominator}  \\
+
+                  \dfrac{150 - 20x}{x} \amp  \lt  \amp  0 \amp 
+                  \end{array}
+                </me>
+                If we take the left hand side to be a rational function <m>r(x)</m>,
+                we need to keep in mind that the applied domain of the problem is <m>x > 0</m>.
+                This means we consider only the positive half of the number line for our sign diagram.
+                On <m>(0, \infty)</m>,
+                <m>r</m> is defined everywhere so we need only look for zeros of <m>r</m>.
+                Setting <m>r(x)=0</m> gives <m>150-20x =0</m>,
+                so that <m>x = \frac{15}{2}= 7.5</m>.
+                The test intervals on our domain are
+                <m>(0, 7.5)</m> and <m>(7.5, \infty)</m>.
+                We find <m>r(x) \lt  0</m> on <m>(7.5, \infty)</m>,
+                giving us the sign diagram in <xref ref="fig_ratineqsd">Figure</xref>.
+
+                <figure xml:id="fig_ratineqsd">
+                  <caption>The sign digram for <m>r(x)</m></caption>
+                  <img src="figures/RationalsGraphics/RationalIneq-2.pdf"/>
+                </figure>
+
+                In the context of the problem,
+                <m>x</m> represents the number of PortaBoy games systems produced and
+                <m>\overline{C}(x)</m> is the average cost to produce each system.
+                Solving <m>\overline{C}(x) \lt  100</m> means we are trying to find how many systems we need to produce so that the average cost is less than <m>\dollar100</m> per system.
+                Our solution,
+                <m>(7.5, \infty)</m> tells us that we need to produce more than <m>7.5</m> systems to achieve this.
+                Since it doesn't make sense to produce half a system,
+                our final answer is <m>[8, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When we apply <xref ref="hathm">Theorem</xref>
+                to <m>\overline{C}(x)</m> we find that <m>y=80</m> is a horizontal asymptote to the graph of <m>y=\overline{C}(x)</m>.
+                To more precisely determine the behaviour of
+                <m>\overline{C}(x)</m> as <m>x \rightarrow \infty</m>,
+                we first use long division and rewrite <m>\overline{C}(x) = 80+\dfrac{150}{x}</m>. (In this case,
+                long division amounts to term-by-term division.) As <m>x \rightarrow \infty</m>,
+                <m>\dfrac{150}{x} \rightarrow 0^{+}</m>,
+                which means <m>\overline{C}(x) \approx 80 + \mbox{very small <m>(+)</m>}</m>.
+                Thus the average cost per system is getting closer to <m>\dollar 80</m> per system.
+                If we set <m>\overline{C}(x) = 80</m>,
+                we get <m>\dfrac{150}{x} = 0</m>, which is impossible,
+                so we conclude that
+          <m>\overline{C}(x) > 80</m> for all <m>x > 0</m>.
+                This means that the average cost per system is always greater than <m>\dollar 80</m> per system,
+                but the average cost is approaching this amount as more and more systems are produced.
+                Looking back at <xref ref="PortaBoyCost">Example</xref>,
+                we realize <m>\dollar 80</m> is the variable cost per system <m>-</m> the cost per system above and beyond the fixed initial cost of <m>\dollar150</m>.
+                Another way to interpret our answer is that <q>infinitely</q>
+                many systems would need to be produced to effectively
+                <q>zero out</q> the fixed cost.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example is another classic
+      <q>box with no top</q> problem.
+    </p>
+
+    <example xml:id="boxnotopfixedvolume">
+      <title>Minimizing surface area</title>
+      <statement>
+        <p>
+          A box with a square base and no top is to be constructed so that it has a volume of <m>1000</m> cubic centimetres.
+          Let <m>x</m> denote the width of the box,
+          in centimetres as seen in <xref ref="fig_ratineq4">Figure</xref>.
+        </p>
+
+        <figure xml:id="fig_ratineq4">
+          <caption>The box in <xref ref="boxnotopfixedvolume">Example</xref></caption>
+          <img src="figures/RationalsGraphics/RationalIneq-3.pdf"/>
+        </figure>
+
+        <ol>
+          <li>
+            <p>
+              Express the height <m>h</m> in centimetres as a function of the width <m>x</m> and state the applied domain.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>h(x) \geq x</m> and interpret.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret the behaviour of <m>h(x)</m> as
+              <m>x \rightarrow 0^{+}</m> and as <m>x \rightarrow \infty</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Express the surface area <m>S</m> of the box as a function of <m>x</m> and state the applied domain.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use a calculator to approximate
+              (to two decimal places)
+              the dimensions of the box which minimize the surface area.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We are told that the volume of the box is <m>1000</m> cubic centimetres and that <m>x</m> represents the width,
+                in centimetres.
+                From geometry,
+                we know <m>\mbox{Volume} = \mbox{width} \times \mbox{height} \times \mbox{depth}</m>.
+                Since the base of the box is a square,
+                the width and the depth are both <m>x</m> centimetres.
+                Using <m>h</m> for the height,
+                we have <m>1000 = x^2h</m>,
+          so that <m>h = \dfrac{1000}{x^2}</m>.
+                Using function notation, (that is,
+                <m>h(x)</m> means <q><m>h</m> of <m>x</m></q>,
+                not <q><m>h</m> times <m>x</m></q>
+                here) <m>h(x) = \dfrac{1000}{x^2}</m>.
+                As for the applied domain,
+                in order for there to be a box at all, <m>x > 0</m>,
+                and since every such choice of <m>x</m> will return a positive number for the height <m>h</m> we have no other restrictions and conclude our domain is <m>(0, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>h(x) \geq x</m>,
+                we proceed as before and collect all nonzero terms on one side of the inequality in order to use a sign diagram.
+                <me>
+                  \begin{array}{rclr}
+
+                  h(x) \amp  \geq \amp  x \amp  \\
+
+                  \dfrac{1000}{x^2} \amp  \geq \amp  x \amp  \\
+
+                  \dfrac{1000}{x^2} - x \amp  \geq \amp  0 \\
+
+                  \dfrac{1000-x^3}{x^2} \amp  \geq \amp  0 \amp  \mbox{common denominator} 
+                  \end{array}
+                </me>
+                We consider the left hand side of the inequality as our rational function <m>r(x)</m>.
+                We see <m>r</m> is undefined at <m>x=0</m>, but,
+                as in the previous example,
+          the applied domain of the problem is <m>x > 0</m>,
+                so we are considering only the behaviour of <m>r</m> on <m>(0, \infty)</m>.
+                The sole zero of <m>r</m> comes when
+                <m>1000-x^3 = 0</m>, which is <m>x=10</m>.
+                Choosing test values in the intervals <m>(0,10)</m> and
+                <m>(10, \infty)</m> gives the diagram in <xref ref="fig_ratineqsd2">Figure</xref>.
+
+                <figure xml:id="fig_ratineqsd2">
+                  <caption>The sign digram for <m>h(x)</m></caption>
+                  <img src="figures/RationalsGraphics/RationalIneq-4.pdf"/>
+                </figure>
+
+                We see <m>r(x) > 0</m> on <m>(0,10)</m>,
+                and since <m>r(x) = 0</m> at <m>x=10</m>,
+                our solution is <m>(0,10]</m>.
+                In the context of the problem,
+                <m>h</m> represents the height of the box while <m>x</m> represents the width
+                (and depth)
+                of the box.
+                Solving <m>h(x) \geq x</m> is tantamount to finding the values of <m>x</m> which result in a box where the height is at least as big as the width (and,
+                in this case,
+                depth.)  Our answer tells us the width of the box can be at most <m>10</m> centimetres for this to happen.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As <m>x \rightarrow 0^{+}</m>,
+                <m>h(x) = \dfrac{1000}{x^2} \rightarrow \infty</m>.
+                This means that the smaller the width <m>x</m> (and,
+          in this case, depth),
+                the larger the height <m>h</m> has to be in order to maintain a volume of <m>1000</m> cubic centimetres.
+                As <m>x \rightarrow \infty</m>,
+                we find <m>h(x) \rightarrow 0^{+}</m>,
+                which means that in order to maintain a volume of <m>1000</m> cubic centimetres,
+                the width and depth must get bigger as the height becomes smaller.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the box has no top,
+                the surface area can be found by adding the area of each of the sides to the area of the base.
+                The base is a square of dimensions <m>x</m> by <m>x</m>,
+                and each side has dimensions <m>x</m> by <m>h</m>.
+                We get the surface area, <m>S = x^2+4xh</m>.
+                To get <m>S</m> as a function of <m>x</m>,
+                we substitute <m>h = \dfrac{1000}{x^2}</m> to obtain <m>S = x^2+4x \left( \dfrac{1000}{x^2}\right)</m>.
+                Hence, as a function of <m>x</m>,
+                <m>S(x) = x^2 + \dfrac{4000}{x}</m>.
+                The domain of <m>S</m> is the same as <m>h</m>,
+                namely <m>(0, \infty)</m>,
+          for the same reasons as above.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A first attempt at the graph of <m>y=S(x)</m> on the calculator or computer may lead to frustration.
+                On the calculator,
+                chances are good that the first window chosen to view the graph will suggest <m>y=S(x)</m> has the <m>x</m>-axis as a horizontal asymptote. (On GeoGebra,
+                you'll probably have to zoom out a long way before you can even see the graph!) From the formula <m>S(x) = x^2 + \dfrac{4000}{x}</m>, however,
+                we get <m>S(x) \approx x^2</m> as <m>x \rightarrow \infty</m>,
+                so <m>S(x) \rightarrow \infty</m>.
+                Readjusting the window,
+                we find <m>S</m> does possess a relative minimum at <m>x \approx 12.60</m>.
+                As far as we can tell,
+                (without Calculus, that is)
+                this is the only relative extremum,
+                so it is the absolute minimum as well.
+                This means that the width and depth of the box should each measure approximately <m>12.60</m> centimetres.
+                To determine the height,
+          we find <m>h(12.60) \approx 6.30</m>,
+                so the height of the box should be approximately <m>6.30</m> centimetres. <figure xml:id="fig_ratineqlast"> <caption>Minimizing the surface area in <xref ref="boxnotopfixedvolume">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals12.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection xml:id="Variation">
+    <title>Variation</title>
+    <p>
+      In many instances in the sciences,
+      rational functions are encountered as a result of fundamental natural laws which are typically a result of assuming certain basic relationships between variables.
+      These basic relationships are summarized in the definition below.
+    </p>
+
+    <definition xml:id="variation">
+      <title>Variation</title>
+      <statement>
+        <p>
+          Suppose <m>x</m>, <m>y</m> and <m>z</m> are variable quantities.
+          We say
+
+          <ul>
+            <li>
+              <p>
+                <m>y</m>
+              <idx><h>variation</h><h>direct</h></idx><idx><h>direct variation</h></idx>
+          <em>varies directly with</em>
+                (or is <em>directly proportional to</em>)
+                <m>x</m> if there is a constant <m>k</m> such that <m>y=kx</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y</m>
+              <idx><h>variation</h><h>inverse</h></idx><idx><h>inverse variation</h></idx>
+          <em>varies inversely with</em>
+                (or is <em>inversely proportional to</em>)
+                <m>x</m> if there is a constant <m>k</m> such that <m>y=\dfrac{k}{x}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>z</m>
+              <idx><h>variation</h><h>joint</h></idx><idx><h>joint variation</h></idx>
+          <em>varies jointly with</em>
+                (or is <em>jointly proportional to</em>)
+                <m>x</m> and <m>y</m> if there is a constant <m>k</m> such that <m>z = kxy</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          The constant <m>k</m> in the above definitions is called the
+              <idx><h>variation</h><h>constant of proportionality</h></idx><idx><h>constant of proportionality</h></idx>
+          <term>constant of proportionality</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="ex_ratvariation">
+      <title>Some famous variational relationships</title>
+      <statement>
+        <p>
+          Translate the following into mathematical equations using <xref ref="variation">Definition</xref>.
+
+          <ol>
+            <li>
+              <p>
+                <url href="http://en.wikipedia.org/wiki/Hooke's_law"><em>Hooke's Law</em></url>:
+              <idx><h>Hooke's Law</h></idx>
+          The force <m>F</m> exerted on a spring is directly proportional the extension <m>x</m> of the spring.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="http://en.wikipedia.org/wiki/Boyle's_law"><em>Boyle's Law</em></url>:
+              <idx><h>Boyle's Law</h></idx>
+          At a constant temperature,
+                the pressure <m>P</m> of an ideal gas is inversely proportional to its volume <m>V</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The volume <m>V</m> of a right circular cone varies jointly with the height <m>h</m> of the cone and the square of the radius <m>r</m> of the base.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="http://en.wikipedia.org/wiki/Ohm's_law"><em>Ohm's Law</em></url>:
+              <idx><h>Ohm's Law</h></idx>
+          The current <m>I</m> through a conductor between two points is directly proportional to the voltage <m>V</m> between the two points and inversely proportional to the resistance <m>R</m> between the two points.
+              </p>
+            </li>
+
+            <li xml:id="gravitylaw">
+
+            <p>
+              <url href="http://en.wikipedia.org/wiki/Law_of_universal_gravitation"><em>Newton's Law of Universal Gravitation</em></url>:
+              <idx><h>Newton's Law of Universal Gravitation</h></idx>
+          Suppose two objects, one of mass <m>m</m> and one of mass <m>M</m>,
+              are positioned so that the distance between their centers of mass is <m>r</m>.
+              The gravitational force <m>F</m> exerted on the two objects varies directly with the product of the two masses and inversely with the square of the distance between their centers of mass.
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Applying the definition of direct variation,
+                we get <m>F = k x</m> for some constant <m>k</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>P</m> and <m>V</m> are inversely proportional,
+                we write <m>P = \dfrac{k}{V}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There is a bit of ambiguity here.
+                It's clear that the volume and the height of the cone are represented by the quantities <m>V</m> and <m>h</m>,
+                respectively,
+                but does <m>r</m> represent the radius of the base or the square of the radius of the base?
+                It is the former.
+                Usually, if an algebraic operation is specified
+                (like squaring),
+                it is meant to be expressed in the formula.
+                We apply <xref ref="variation">Definition</xref> to get <m>V = k h r^{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Even though the problem doesn't use the phrase <q>varies jointly</q>,
+                it is implied by the fact that the current <m>I</m> is related to two different quantities.
+                Since <m>I</m> varies directly with <m>V</m> but inversely with <m>R</m>,
+                we write <m>I = \dfrac{k V}{R}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We write the product of the masses <m>mM</m> and the square of the distance as <m>r^2</m>.
+                We have that <m>F</m> varies directly with <m>mM</m> and inversely with <m>r^2</m>,
+                so <m>F = \dfrac{kmM}{r^2}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the rational equation.
+      Be sure to check for extraneous solutions.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x}{5x + 4} = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{6}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{3x - 1}{x^{2} + 1} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 1, \; x = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{1}{x + 3} + \dfrac{1}{x - 3} = \dfrac{x^{2} - 3}{x^{2} - 9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{2x + 17}{x + 1} = x + 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -6, \; x = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x^{2} - 2x + 1}{x^{3} + x^{2} - 2x} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{-x^{3} + 4x}{x^{2} - 9} = 4x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0, \; x = \pm 2\sqrt{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the rational inequality.
+      Express your answer using interval notation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{1}{x + 2} \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x - 3}{x + 2} \leq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-2, 3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x}{x^{2} - 1} > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1, 0) \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{4x}{x^2+4} \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x^2-x-12}{x^2+x-6} > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3) \cup (-3,2) \cup (4, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{3x^2-5x-2}{x^2-9} \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-3, -\frac{1}{3} \right) \cup (2,3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x^3+2x^2+x}{x^2-x-2} \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-1,0] \cup (2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x^{2} + 5x + 6}{x^{2} - 1} > 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3) \cup (-2, -1) \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{3x - 1}{x^{2} + 1} \leq 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 1] \cup [2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{2x + 17}{x + 1} > x + 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -6) \cup (-1, 2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{-x^{3} + 4x}{x^{2} - 9} \geq 4x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3) \cup \left[-2\sqrt{2}, 0\right] \cup \left[2\sqrt{2}, 3\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{1}{x^{2} + 1} \lt 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{x^4-4x^3+x^2-2x-15}{x^3-4x^2} \geq x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-3,0) \cup (0,4) \cup [5, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5x^3-12x^2+9x+10}{x^2-1}\geq 3x-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-1,-\frac{1}{2}\right] \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Carl and Mike start a 3 mile race at the same time.
+          If Mike ran the race at 6 miles per hour and finishes the race 10 minutes before Carl,
+          how fast does Carl run?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          4.5 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          One day, Donnie observes that the wind is blowing at 6 miles per hour.
+          A unladen swallow nesting near Donnie's house flies three quarters of a mile down the road
+          (in the direction of the wind),
+          turns around, and returns exactly 4 minutes later.
+          What is the airspeed of the unladen swallow? (Here,
+          <q>airspeed</q> is the speed that the swallow can fly in still air.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          24 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In order to remove water from a flooded basement,
+          two pumps, each rated at 40 gallons per minute, are used.
+          After half an hour, the one pump burns out,
+          and the second pump finishes removing the water half an hour later.
+          How many gallons of water were removed from the basement?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          3600 gallons
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A faucet can fill a sink in 5 minutes while a drain will empty the same sink in 8 minutes.
+          If the faucet is turned on and the drain is left open,
+          how long will it take to fill the sink?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\frac{40}{3} \approx 13.33</m> minutes
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Working together, Daniel and Donnie can clean the llama pen in 45 minutes.
+          On his own, Daniel can clean the pen in an hour.
+          How long does it take Donnie to clean the llama pen on his own?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          3 hours
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="newportaboycost">Exercise</xref>,
+          the function <m>C(x) = .03x^{3} - 4.5x^{2} + 225x + 250</m>,
+          for <m>x \geq 0</m> was used to model the cost
+          (in dollars)
+          to produce <m>x</m> PortaBoy game systems.
+          Using this cost function,
+          find the number of PortaBoys which should be produced to minimize the average cost <m>\overline{C}</m>.
+          Round your answer to the nearest number of systems.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The absolute minimum of <m>y=\overline{C}(x)</m> occurs at <m>\approx (75.73, 59.57)</m>.
+          Since <m>x</m> represents the number of game systems,
+          we check <m>\overline{C}(75) \approx 59.58</m> and <m>\overline{C}(76) \approx 59.57</m>.
+          Hence, to minimize the average cost,
+          <m>76</m> systems should be produced at an average cost of <m>\dollar59.57</m> per system.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose we are in the same situation as <xref ref="boxnotopfixedvolume">Example</xref>.
+          If the volume of the box is to be <m>500</m> cubic centimetres,
+          use your calculator or computer to find the dimensions of the box which minimize the surface area.
+          What is the minimum surface area?
+          Round your answers to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The width (and depth) should be <m>10.00</m> centimetres,
+          the height should be <m>5.00</m> centimetres.
+          The minimum surface area is <m>300.00</m> square centimetres.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The box for the new Sasquatch-themed cereal,
+          <q>Crypt-Os</q>, is to have a volume of <m>140</m> cubic inches.
+          For aesthetic reasons,
+          the height of the box needs to be <m>1.62</m> times the width of the base of the box.<fn>1.62 is a crude approximation of the so-called <q>Golden Ratio</q>
+          <m>\phi = \frac{1 + \sqrt{5}}{2}</m>.</fn>Find the dimensions of the box which will minimize the surface area of the box.
+          What is the minimum surface area?
+          Round your answers to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The width of the base of the box should be <m>\approx 4.12</m> inches,
+          the height of the box should be <m>\approx 6.67</m> inches,
+          and the depth of the base of the box should be <m>\approx 5.09</m> inches;
+          minimum surface area <m>\approx 164.91</m> square inches.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="fixedareaminperimetergarden">
+      <statement>
+        <p>
+          Sally is Skippy's neighbour from <xref ref="fixedperimetermaxareagarden">Exercise</xref>
+          in <xref ref="QuadraticFunctions">Section</xref>.
+          Sally also wants to plant a vegetable garden along the side of her home.
+          She doesn't have any fencing,
+          but wants to keep the size of the garden to 100 square feet.
+          What are the dimensions of the garden which will minimize the amount of fencing she needs to buy?
+          What is the minimum amount of fencing she needs to buy?
+          Round your answers to the nearest foot. (Note: Since one side of the garden will border the house, Sally doesn't need fencing along that side.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The dimensions are <m>\approx 7</m> feet by <m>\approx 14</m> feet;
+          minimum amount of fencing required <m>\approx 28</m> feet.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Another Classic Problem: A can is made in the shape of a right circular cylinder and is to hold one pint. (For dry goods,
+          one pint is equal to <m>33.6</m> cubic inches.)<fn>According to <url href="http://dictionary.reference.com/browse/pint"><em>www.dictionary.com</em></url>,
+          there are different values given for this conversion.
+          We will stick with <m>33.6 \mbox{in} ^{3}</m> for this problem.</fn><ol>
+            <li>
+              <p>
+                Find an expression for the volume <m>V</m> of the can in terms of the height <m>h</m> and the base radius <m>r</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find an expression for the surface area <m>S</m> of the can in terms of the height <m>h</m> and the base radius <m>r</m>. (Hint: The top and bottom of the can are circles of radius <m>r</m> and the side of the can is really just a rectangle that has been bent into a cylinder.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the fact that <m>V = 33.6</m>,
+                write <m>S</m> as a function of <m>r</m> and state its applied domain.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use your graphing calculator to find the dimensions of the can which has minimal surface area.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>V = \pi r^{2}h</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>S = 2 \pi r^{2} + 2\pi r h</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>S(r) = 2\pi r^{2} + \frac{67.2}{r}, \;</m> Domain <m>r > 0</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>r \approx 1.749\</m>,in. and <m>h \approx 3.498\</m>,in.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A right cylindrical drum is to hold 7.35 cubic feet of liquid.
+          Find the dimensions
+          (radius of the base and height)
+          of the drum which would minimize the surface area.
+          What is the minimum surface area?
+          Round your answers to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The radius of the drum should be
+          <m>\approx 1.05</m> feet and the height of the drum should be <m>\approx 2.12</m> feet.
+          The minimum surface area of the drum is <m>\approx 20.93</m> cubic feet.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="Sasquatchfunc1">Exercise</xref>
+          in <xref ref="FunctionNotation">Section</xref>,
+          the population of Sasquatch in Portage County was modeled by the function <m>P(t) = \frac{150t}{t + 15}</m>,
+          where <m>t = 0</m> represents the year 1803.
+          When were there fewer than 100 Sasquatch in Portage County?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P(t) \lt 100</m> on <m>(-15, 30)</m>,
+          and the portion of this which lies in the applied domain is <m>[0,30)</m>.
+          Since <m>t=0</m> corresponds to the year 1803,
+          from 1803 through the end of 1832,
+          there were fewer than 100 Sasquatch in Portage County.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      translate the following into mathematical equations.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          At a constant pressure,
+          the temperature <m>T</m> of an ideal gas is directly proportional to its volume <m>V</m>. (This is <url href="http://en.wikipedia.org/wiki/Charles's_law"><em>Charles's Law</em></url>)
+              <idx><h>Charles's Law</h></idx>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>T = k V</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The frequency of a wave <m>f</m> is inversely proportional to the wavelength of the wave<fn>The character <m>\lambda</m> is the lower case Greek letter
+          <q>lambda.</q></fn><m>\lambda</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f = \dfrac{k}{\lambda}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The density <m>d</m> of a material is directly proportional to the mass of the object <m>m</m> and inversely proportional to its volume <m>V</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>d=\frac{km}{V}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The square of the orbital period of a planet <m>P</m> is directly proportional to the cube of the semi-major axis of its orbit <m>a</m>. (This is <url href="http://en.wikipedia.org/wiki/Kepler"><em>Kepler's Third Law of Planetary Motion </em></url>)
+              <idx><h>Kepler's Third Law of Planetary Motion</h></idx>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P^2 = k a^3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The drag of an object travelling through a fluid <m>D</m> varies jointly with the density of the fluid<fn>The characters <m>\rho</m> and <m>\nu</m> are the lower case Greek letters
+          <q>rho</q> and <q>nu,</q>
+          respectively.</fn><m>\rho</m> and the square of the velocity of the object <m>\nu</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>D = k \rho \nu^2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose two electric point charges,
+          one with charge <m>q</m> and one with charge <m>Q</m>,
+          are positioned <m>r</m> units apart.
+          The electrostatic force <m>F</m> exerted on the charges varies directly with the product of the two charges and inversely with the square of the distance between the charges.<fn>Note the similarity to this formula and Newton's Law of Universal Gravitation as discussed in <xref ref="gravitylaw">Example</xref>.</fn>(This is <url href="http://en.wikipedia.org/wiki/Electrostatic#Coulomb.27s_law"><em>Coulomb's Law</em></url>)
+              <idx><h>Coulomb's Law</h></idx>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>F = \dfrac{kqQ}{r^2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          According to <url href="http://en.wikipedia.org/wiki/Vibrating_string"><em>this webpage</em></url>,
+          the frequency <m>f</m> of a vibrating string is given by
+          <m>f = \dfrac{1}{2L} \sqrt{\dfrac{T}{\mu}}</m> where <m>T</m> is the tension,
+          <m>\mu</m> is the linear mass<fn>Also known as the linear density.
+          It is simply a measure of mass per unit length.</fn>of the string and <m>L</m> is the length of the vibrating part of the string.
+          Express this relationship using the language of variation.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Rewriting <m>f = \dfrac{1}{2L} \sqrt{\dfrac{T}{\mu}}</m> as
+          <m>f = \dfrac{\frac{1}{2} \sqrt{T}}{L \sqrt{\mu}}</m> we see that the frequency <m>f</m> varies directly with the square root of the tension and varies inversely with the length and the square root of the linear mass.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          According to the Centers for Disease Control and Prevention <url href="http://www.cdc.gov"><em>www.cdc.gov</em></url>,
+          a person's Body Mass Index <m>B</m> is directly proportional to his weight <m>W</m> in pounds and inversely proportional to the square of his height <m>h</m> in inches.
+              <idx><h>BMI, body mass index</h></idx>
+          <ol>
+            <li xml:id="BMIfirst">
+
+            <p>
+              Express this relationship as a mathematical equation.
+            </p>
+            </li>
+
+            <li xml:id="BMIsecond">
+
+            <p>
+              If a person who was <m>5</m> feet,
+              <m>10</m> inches tall weighed 235 pounds had a Body Mass Index of 33.7, what is the value of the constant of proportionality?
+            </p>
+            </li>
+
+            <li>
+              <p>
+                Rewrite the mathematical equation found in <xref ref="BMIfirst">part</xref>
+                to include the value of the constant found in <xref ref="BMIsecond">part</xref>
+                and then find your Body Mass Index.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>B = \dfrac{kW}{h^{2}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k = 702.68</m> (The CDC uses 703.)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>B = \dfrac{702.68W}{h^{2}}</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          We know that the circumference of a circle varies directly with its radius with <m>2\pi</m> as the constant of proportionality. (That is,
+          we know <m>C = 2\pi r</m>.) With the help of your classmates,
+          compile a list of other basic geometric relationships which can be seen as variations.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

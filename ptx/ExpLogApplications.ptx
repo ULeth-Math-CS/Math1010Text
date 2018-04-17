@@ -1,0 +1,2142 @@
+
+
+<section xml:id="ExpLogApplications">
+  <title>Applications of Exponential and Logarithmic Functions</title>
+  <introduction>
+    <p>
+      As we mentioned in <xref ref="IntroExpLogs">Section</xref>,
+      exponential and logarithmic functions are used to model a wide variety of behaviours in the real world.
+      In the examples that follow,
+      note that while the applications are drawn from many different disciplines,
+      the mathematics remains essentially the same.
+      Due to the applied nature of the problems we will examine in this section,
+      the calculator is often used to express our answers as decimal approximations.
+    </p>
+  </introduction>
+
+  <subsection xml:id="expapp">
+    <title>Applications of Exponential Functions</title>
+    <p>
+      Perhaps the most well-known application of exponential functions comes from the financial world.
+      Suppose you have <m>\dollar 100</m> to invest at your local bank and they are offering a whopping <m>5 \, \%</m> annual percentage interest rate.
+      This means that after one year,
+      the bank will pay <em>you</em>
+      <m>5 \%</m> of that <m>\dollar100</m>,
+      or <m>\dollar 100(0.05) =\dollar 5</m> in interest,
+      so you now have <m>\dollar105</m>. (How generous of them!) This is in accordance with the formula for
+      <em>simple interest</em>
+      which you have undoubtedly run across at some point before.
+    </p>
+
+    <insight xml:id="simpleinterest">
+      <title>Simple Interest</title>
+      <p>
+            <idx><h>interest</h><h>simple</h></idx> <idx><h>simple interest</h></idx> The amount of interest <m>I</m> accrued at an annual rate <m>r</m> on an investment
+        (called the <idx><h>principal</h></idx>
+        <term>principal</term>)
+        <m>P</m> after <m>t</m> years is
+        <me>
+          I = Prt
+        </me>
+      </p>
+
+      <p>
+        The amount <m>A</m> in the account after <m>t</m> years is given by
+        <me>
+          A = P + I = P + Prt = P(1+rt)
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      Suppose, however, that six months into the year,
+      you hear of a better deal at a rival bank. (Some restrictions may apply.) Naturally,
+      you withdraw your money and try to invest it at the higher rate there.
+      Since six months is one half of a year,
+      that initial <m>\dollar100</m> yields <m>\dollar100(0.05)\left(\frac{1}{2}\right) = \dollar 2.50</m> in interest.
+      You take your <m>\dollar102.50</m> off to the competitor and find out that those restrictions which <em>may</em>
+      apply actually <em>do</em> apply to you,
+      and you return to your bank which happily accepts your
+      <m>\dollar102.50</m> for the remaining six months of the year.
+      To your surprise and delight,
+      at the end of the year your statement reads <m>\dollar105.06</m>,
+      not <m>\dollar105</m> as you had expected. (Actually,
+      the final balance should be
+      <m>\dollar105.0625</m>.) Where did those extra six cents come from?
+      For the first six months of the year,
+      interest was earned on the original principal of <m>\dollar100</m>,
+      but for the second six months,
+      interest was earned on <m>\dollar102.50</m>, that is,
+      you earned interest on your interest.
+      This is the basic concept behind
+      <em>compound interest</em>.
+      In the previous discussion,
+      we would say that the interest was compounded twice,
+      or semiannually. (Using this convention,
+      simple interest after one year is the same as compounding the interest only once.) If more money can be earned by earning interest on interest already earned,
+      a natural question to ask is what happens if the interest is compounded more often,
+      say <m>4</m> times a year,
+      which is every three months,
+      or <q>quarterly.</q> In this case,
+      the money is in the account for three months,
+      or <m>\frac{1}{4}</m> of a year, at a time.
+      After the first quarter,
+      we have <m>A = P(1+rt) = \dollar100 \left(1 + 0.05 \cdot \frac{1}{4} \right) = \dollar101.25</m>.
+      We now invest the <m>\dollar101.25</m> for the next three months and find that at the end of the second quarter,
+      we have <m>A = \dollar101.25 \left(1 + 0.05 \cdot \frac{1}{4} \right)\approx \dollar102.51</m>.
+      Continuing in this manner,
+      the balance at the end of the third quarter is <m>\dollar103.79</m>,
+      and, at last,
+      we obtain <m>\dollar105.08</m>.
+      The extra two cents hardly seems worth it,
+      but we see that we do in fact get more money the more often we compound.
+      In order to develop a formula for this phenomenon,
+      we need to do some abstract calculations.
+      Suppose we wish to invest our principal <m>P</m> at an annual rate <m>r</m> and compound the interest <m>n</m> times per year.
+      This means the money sits in the account
+      <m>\frac{1}{n}^{\text{ th } }</m> of a year between compoundings.
+      Let <m>A_{k}</m> denote the amount in the account after the <m>k^{\text{ th } }</m> compounding.
+      Then <m>A_{1} = P\left(1 + r\left(\frac{1}{n}\right)\right)</m> which simplifies to <m>A_{1} = P \left(1 + \frac{r}{n}\right)</m>.
+      After the second compounding,
+      we use <m>A_{1}</m> as our new principal and get <m>A_{2} = A_{1} \left(1 + \frac{r}{n}\right) = \left[P \left(1 + \frac{r}{n}\right)\right]\left(1 + \frac{r}{n}\right) = P \left(1 + \frac{r}{n}\right)^2</m>.
+      Continuing in this fashion,
+      we get <m>A_{3} =P \left(1 + \frac{r}{n}\right)^3</m>,
+      <m>A_{4} =P \left(1 + \frac{r}{n}\right)^4</m>, and so on,
+      so that <m>A_{k} = P \left(1 + \frac{r}{n}\right)^k</m>.
+      Since we compound the interest <m>n</m> times per year,
+      after <m>t</m> years, we have <m>nt</m> compoundings.
+      We have just derived the general formula for compound interest below.
+    </p>
+
+    <insight xml:id="compoundinterest">
+      <title>Compounded Interest</title>
+      <p>
+            <idx><h>interest</h><h>compound</h></idx> <idx><h>compound interest</h></idx>
+        If an initial principal <m>P</m> is invested at an annual rate <m>r</m> and the interest is compounded <m>n</m> times per year,
+        the amount <m>A</m> in the account after <m>t</m> years is
+        <me>
+          A(t) = P \left(1 + \frac{r}{n}\right)^{nt}
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      If we take <m>P = 100</m>, <m>r = 0.05</m>, and <m>n = 4</m>,
+      <xref ref="compoundinterest">Equation</xref>
+      becomes <m>A(t) = 100\left(1+ \frac{0.05}{4}\right)^{4t}</m> which reduces to <m>A(t) = 100(1.0125)^{4t}</m>.
+      To check this new formula against our previous calculations,
+      we find <m>A\left(\frac{1}{4}\right) = 100(1.0125)^{4 \left(\frac{1}{4}\right)} = 101.25</m>,
+      <m>A\left(\frac{1}{2}\right) \approx \dollar102.51</m>,
+      <m>A\left(\frac{3}{4}\right) \approx \dollar103.79</m>,
+      and <m>A(1) \approx \dollar105.08</m>.
+    </p>
+
+    <example xml:id="compoundinterestex">
+      <title>Computing compound interest</title>
+      <statement>
+        <p>
+          Suppose <m>\dollar2000</m> is invested in an account which offers <m>7.125 \%</m> compounded monthly.
+
+          <ol>
+            <li>
+              <p>
+                Express the amount <m>A</m> in the account as a function of the term of the investment <m>t</m> in years.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How much is in the account after <m>5</m> years?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How long will it take for the initial investment to double?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the average rate of change of the amount in the account from the end of the fourth year to the end of the fifth year,
+                and from the end of the thirty-fourth year to the end of the thirty-fifth year. (See <xref ref="arc">Definition</xref>
+                in <xref ref="LinearFunctions">Section</xref>.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Substituting <m>P = 2000</m>,
+                <m>r = 0.07125</m>, and <m>n = 12</m>
+                (since interest is compounded <em>monthly</em>)
+                into <xref ref="compoundinterest">Equation</xref>
+                yields <m>A(t) = 2000\left(1 + \frac{0.07125}{12}\right)^{12t}=2000 (1.0059375)^{12t}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>t</m> represents the length of the investment in years,
+                we substitute <m>t=5</m> into <m>A(t)</m> to find <m>A(5) = 2000 (1.0059375)^{12(5)} \approx 2852.92</m>.
+                After <m>5</m> years, we have approximately <m>\dollar2852.92</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Our initial investment is <m>\dollar2000</m>,
+                so to find the time it takes this to double,
+                we need to find <m>t</m> when <m>A(t) = 4000</m>.
+                We get <m>2000 (1.0059375)^{12t}=4000</m>,
+                or <m>(1.0059375)^{12t}=2</m>.
+                Taking natural logs as in <xref ref="ExpEquations">Section</xref>,
+                we get <m>t = \frac{\ln(2)}{12 \ln(1.0059375)} \approx 9.75</m>.
+                Hence,
+          it takes approximately <m>9</m> years <m>9</m> months for the investment to double.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the average rate of change of <m>A</m> from the end of the fourth year to the end of the fifth year,
+                we compute <m>\frac{A(5)-A(4)}{5-4} \approx 195.63</m>.
+                Similarly,
+          the average rate of change of <m>A</m> from the end of the thirty-fourth year to the end of the thirty-fifth year is <m>\frac{A(35)-A(34)}{35-34} \approx 1648.21</m>.
+                This means that the value of the investment is increasing at a rate of approximately
+                <m>\dollar195.63</m> per year between the end of the fourth and fifth years,
+                while that rate jumps to
+          <m>\dollar1648.21</m> per year between the end of the thirty-fourth and thirty-fifth years.
+                So, not only is it true that the longer you wait,
+          the more money you have,
+                but also the longer you wait,
+                the faster the money increases.
+
+                <aside>
+                  <p>
+                    In fact,
+                the rate of increase of the amount in the account is exponential as well.
+                    This is the quality that really defines exponential functions.
+                    We'll have more to say about this once we reach Calculus.
+                  </p>
+                </aside>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We have observed that the more times you compound the interest per year,
+      the more money you will earn in a year.
+      Let's push this notion to the limit.
+      Consider an investment of
+      <m>\dollar 1</m> invested at <m>100 \%</m> interest for <m>1</m> year compounded <m>n</m> times a year.
+      <xref ref="compoundinterest">Equation</xref>
+      tells us that the amount of money in the account after <m>1</m> year is <m>A = \left(1+\frac{1}{n}\right)^{n}</m>.
+      Below is a table of values relating <m>n</m> and <m>A</m>.
+      <me>
+        \begin{array}{|r||r|}  
+
+        \hline
+
+        n \amp  A   \\ \hline
+        1  \amp  2  \\  \hline
+        2  \amp  2.25  \\  \hline
+        4 \amp  \approx 2.4414  \\  \hline
+        12 \amp  \approx 2.6130  \\  \hline
+        360  \amp  \approx  2.7145 \\  \hline
+        1000  \amp  \approx 2.7169 \\  \hline
+        10000  \amp  \approx 2.7181  \\  \hline
+        100000 \amp  \approx 2.7182  \\  \hline
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      As promised, the more compoundings per year,
+      the more money there is in the account,
+      but we also observe that the increase in money is greatly diminishing.
+      We are witnessing a mathematical <q>tug of war</q>.
+      While we are compounding more times per year,
+      and hence getting interest on our interest more often,
+      the amount of time between compoundings is getting smaller and smaller,
+      so there is less time to build up additional interest.
+      With Calculus, we can show
+      (or define, depending on your point of view)
+      that as <m>n \rightarrow \infty</m>,
+      <m>A = \left(1+\frac{1}{n}\right)^{n} \rightarrow e</m>,
+      where <m>e</m> is the natural base first presented in <xref ref="IntroExpLogs">Section</xref>.
+      Taking the number of compoundings per year to infinity results in what is called
+      <em>continuously</em> compounded interest.
+    </p>
+
+    <theorem xml:id="whatise">
+      <title>An interesting definition of $e$</title>
+      <statement>
+        <p>
+          If you invest <m>\dollar1</m> at <m>100 \%</m> interest compounded continuously,
+          then you will have <m>\dollar e</m> at the end of one year.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Using this definition of <m>e</m> and a little Calculus,
+      we can take <xref ref="compoundinterest">Equation</xref>
+      and produce a formula for continuously compounded interest.
+    </p>
+
+    <insight xml:id="continuouscompoundinterest">
+      <title>Continuously Compounded Interest</title>
+      <p>
+            <idx><h>interest</h><h>compounded continuously</h></idx> <idx><h>continuously compounded interest</h></idx>
+        If an initial principal <m>P</m> is invested at an annual rate <m>r</m> and the interest is compounded continuously,
+        the amount <m>A</m> in the account after <m>t</m> years is
+        <me>
+          A(t) = P e^{rt}
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      If we take the scenario of <xref ref="compoundinterestex">Example</xref>
+      and compare monthly compounding to continuous compounding over <m>35</m> years,
+      we find that monthly compounding yields
+      <m>A(35) = 2000 (1.0059375)^{12(35)}</m> which is about <m>\dollar 24,\!035.28</m>,
+      whereas continuously compounding gives <m>A(35) = 2000e^{0.07125 (35)}</m> which is about
+      <m>\dollar 24,\!213.18</m> - a difference of less than <m>1 \%</m>.
+    </p>
+
+    <p>
+      <xref ref="compoundinterest">Equations</xref>
+      and <xref ref="continuouscompoundinterest"></xref>
+      both use exponential functions to describe the growth of an investment.
+      Curiously enough,
+      the same principles which govern compound interest are also used to model short term growth of populations.
+      In Biology, <em>The Law of Uninhibited Growth</em>
+      states as its premise that the <em>instantaneous</em>
+          <idx><h>instantaneous rate of change</h></idx> <idx><h>rate of change</h><h>instantaneous</h></idx>
+      rate at which a population increases at any time is directly proportional to the population at that time.
+      In other words, the more organisms there are at a given moment,
+      the faster they reproduce.
+      Formulating the law as stated results in a differential equation,
+      which requires Calculus to solve.
+      Its solution is stated below.
+    </p>
+
+    <aside>
+      <p>
+        The average rate of change of a function over an interval was first introduced in <xref ref="LinearFunctions">Section</xref>. <em>Instantaneous</em>
+        rates of change are the business of Calculus,
+        as is mentioned on <xref ref="instantaneousrateofchange">Page</xref>.
+      </p>
+    </aside>
+    <insight xml:id="lawofuninhibitedgrowth">
+      <title>Uninhibited growth</title>
+      <p>
+            <idx><h>growth model</h><h>uninhibited</h></idx> <idx><h>uninhibited growth</h></idx>
+        If a population increases according to The Law of Uninhibited Growth,
+        the number of organisms <m>N</m> at time <m>t</m> is given by the formula
+        <me>
+          N(t) = N_{0}e^{kt}
+        </me>,
+        where <m>N(0) = N_{0}</m>
+        (read <q><m>N</m> nought</q>)
+        is the initial number of organisms and <m>k>0</m> is the constant of proportionality which satisfies the equation
+        <me>
+          \left(\mbox{instantaneous rate of change of \(N(t)\) at time \(t\)} \right) = k \, N(t)
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      It is worth taking some time to compare <xref ref="continuouscompoundinterest">Equations</xref>
+      and <xref ref="lawofuninhibitedgrowth"></xref>.
+      In <xref ref="continuouscompoundinterest">Equation</xref>,
+      we use <m>P</m> to denote the initial investment;
+      in <xref ref="lawofuninhibitedgrowth">Equation</xref>,
+      we use <m>N_{0}</m> to denote the initial population.
+      In <xref ref="continuouscompoundinterest">Equation</xref>,
+      <m>r</m> denotes the annual interest rate,
+      and so it shouldn't be too surprising that the <m>k</m> in <xref ref="lawofuninhibitedgrowth">Equation</xref>
+      corresponds to a growth rate as well.
+      While <xref ref="continuouscompoundinterest">Equations</xref>
+      and <xref ref="lawofuninhibitedgrowth"></xref> look entirely different,
+      they both represent the same mathematical concept.
+    </p>
+
+    <example xml:id="ex_athero">
+      <title>Modelling cell growth</title>
+      <statement>
+        <p>
+          In order to perform atherosclerosis research,
+          epithelial cells are harvested from discarded umbilical tissue and grown in the laboratory.
+          A technician observes that a culture of twelve thousand cells grows to five million cells in one week.
+          Assuming that the cells follow The Law of Uninhibited Growth,
+          find a formula for the number of cells, <m>N</m>,
+          in thousands, after <m>t</m> days.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin with <m>N(t) = N_{0}e^{kt}</m>.
+          Since <m>N</m> is to give the number of cells <em>in thousands</em>,
+          we have <m>N_{0} = 12</m>, so <m>N(t) = 12e^{kt}</m>.
+          In order to complete the formula,
+          we need to determine the growth rate <m>k</m>.
+          We know that after one week,
+          the number of cells has grown to five million.
+          Since <m>t</m> measures days and the units of <m>N</m> are in thousands,
+          this translates mathematically to <m>N(7) = 5000</m>.
+          We get the equation <m>12e^{7k} = 5000</m> which gives <m>k = \frac{1}{7} \ln\left(\frac{1250}{3}\right)</m>.
+          Hence, <m>N(t) = 12e^{ \frac{t}{7} \ln\left(\frac{1250}{3}\right)}</m>.
+          Of course, in practice,
+          we would approximate <m>k</m> to some desired accuracy,
+          say <m>k \approx 0.8618</m>,
+          which we can interpret as an
+          <m>86.18 \%</m> daily growth rate for the cells.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Whereas <xref ref="continuouscompoundinterest">Equations</xref>
+      and <xref ref="lawofuninhibitedgrowth"></xref>
+      model the growth of quantities,
+      we can use equations like them to describe the decline of quantities.
+      One example we've seen already is <xref ref="cardepreciationex">Example</xref>
+      in <xref ref="IntroExpLogs">Section</xref>.
+      There, the value of a car declined from its purchase price of <m>\dollar25,\!000</m> to nothing at all.
+      Another real world phenomenon which follows suit is radioactive decay.
+      There are elements which are unstable and emit energy spontaneously.
+      In doing so, the amount of the element itself diminishes.
+      The assumption behind this model is that the rate of decay of an element at a particular time is directly proportional to the amount of the element present at that time.
+      In other words, the more of the element there is,
+      the faster the element decays.
+      This is precisely the same kind of hypothesis which drives The Law of Uninhibited Growth,
+      and as such,
+      the equation governing radioactive decay is hauntingly similar to <xref ref="lawofuninhibitedgrowth">Equation</xref>
+      with the exception that the rate constant <m>k</m> is negative.
+    </p>
+
+    <insight xml:id="radioactivedecay">
+      <title>Radioactive Decay</title>
+      <p>
+            <idx><h>radioactive decay</h></idx>
+        The amount of a radioactive element <m>A</m> at time <m>t</m> is given by the formula
+        <me>
+          A(t) = A_{0}e^{kt}
+        </me>,
+        where <m>A(0) = A_{0}</m> is the initial amount of the element and <m>k\lt 0</m> is the constant of proportionality which satisfies the equation
+        <me>
+          \left(\mbox{instantaneous rate of change of \(A(t)\) at time \(t\)} \right) = k \, A(t)
+        </me>
+      </p>
+    </insight>
+
+    <example xml:id="ex_iodine">
+      <title>Radioactive decay of iodine</title>
+      <statement>
+        <p>
+          Iodine-131 is a commonly used radioactive isotope used to help detect how well the thyroid is functioning.
+          Suppose the decay of Iodine-131 follows the model given in <xref ref="radioactivedecay">Equation</xref>,
+          and that the half-life
+          (the time it takes for half of the substance to decay)
+          of Iodine-131 is approximately <m>8</m> days.
+          If <m>5</m> grams of Iodine-131 is present initially,
+          find a function which gives the amount of Iodine-131,
+          <m>A</m>, in grams, <m>t</m> days later.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since we start with <m>5</m> grams initially,
+          <xref ref="radioactivedecay">Equation</xref> gives <m>A(t) = 5e^{kt}</m>.
+          Since the half-life is <m>8</m> days,
+          it takes <m>8</m> days for half of the Iodine-131 to decay,
+          leaving half of it behind.
+          Hence, <m>A(8) = 2.5</m> which means <m>5e^{8k} = 2.5</m>.
+          Solving, we get <m>k = \frac{1}{8} \ln\left(\frac{1}{2}\right) = -\frac{\ln(2)}{8} \approx -0.08664</m>,
+          which we can interpret as a loss of material at a rate of <m>8.664 \%</m> daily.
+          Hence, <m>A(t) = 5 e^{-\frac{t\ln(2)}{8}} \approx 5 e^{-0.08664t}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now turn our attention to some more mathematically sophisticated models.
+      One such model is Newton's Law of Cooling,
+      which we first encountered in <xref ref="exptempex">Example</xref>
+      of <xref ref="IntroExpLogs">Section</xref>.
+      In that example we had a cup of coffee cooling from <m>160^{\circ}\mbox{F}</m> to room temperature
+      <m>70^{\circ}\mbox{F}</m> according to the formula <m>T(t) = 70 + 90 e^{-0.1 t}</m>,
+      where <m>t</m> was measured in minutes.
+      In this situation,
+      we know the physical limit of the temperature of the coffee is room temperature,
+      and the differential equation which gives rise to our formula for <m>T(t)</m> takes this into account.
+      Whereas the radioactive decay model had a rate of decay at time <m>t</m> directly proportional to the amount of the element which remained at time <m>t</m>, Newton's Law of Cooling states that the rate of cooling of the coffee at a given time <m>t</m> is directly proportional to how much of a temperature <em>gap</em>
+      exists between the coffee at time <m>t</m> and room temperature,
+      not the temperature of the coffee itself.
+      In other words, the coffee cools faster when it is first served,
+      and as its temperature nears room temperature,
+      the coffee cools ever more slowly.
+      Of course, if we take an item from the refrigerator and let it sit out in the kitchen,
+      the object's temperature will rise to room temperature,
+      and since the physics behind warming and cooling is the same,
+      we combine both cases in the equation below.
+    </p>
+
+    <aside>
+      <p>
+        The Second Law of Thermodynamics states that heat can spontaneously flow from a hotter object to a colder one,
+        but not the other way around.
+        Thus, the coffee could not continue to release heat into the air so as to cool below room temperature.
+      </p>
+    </aside>
+    <insight xml:id="newtonslawofcooling">
+      <title>Newton's Law of Cooling (Warming)</title>
+      <p>
+            <idx><h>Newton's Law of Cooling</h></idx>
+        The temperature <m>T</m> of an object at time <m>t</m> is given by the formula
+        <me>
+          T(t) = T_{a} + \left(T_{0} - T_{a}\right) e^{-kt}
+        </me>,
+        where <m>T(0) = T_{0}</m> is the initial temperature of the object,
+        <m>T_{a}</m> is the ambient temperature
+        (that is, the temperature of the surroundings)
+        and <m>k>0</m> is the constant of proportionality which satisfies the equation
+        <me>
+          \left(\mbox{instantaneous rate of change of \(T(t)\) at time \(t\)} \right) = k \, \left(T(t) - T_{a}\right)
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      If we re-examine the situation in <xref ref="exptempex">Example</xref> with <m>T_{0} = 160</m>,
+      <m>T_{a} = 70</m>, and <m>k = 0.1</m>, we get,
+      according to <xref ref="newtonslawofcooling">Equation</xref>,
+      <m>T(t) = 70 + (160 - 70)e^{-0.1t}</m> which reduces to the original formula given.
+      The rate constant <m>k = 0.1</m> indicates the coffee is cooling at a rate equal to <m>10 \%</m> of the difference between the temperature of the coffee and its surroundings.
+      Note in <xref ref="newtonslawofcooling">Equation</xref>
+      that the constant <m>k</m> is positive for both the cooling and warming scenarios.
+      What determines if the function <m>T(t)</m> is increasing or decreasing is if <m>T_{0}</m>
+      (the initial temperature of the object)
+      is greater than <m>T_{a}</m>
+      (the ambient temperature)
+      or vice-versa, as we see in our next example.
+    </p>
+
+    <example xml:id="exptempex2">
+      <title>Newton's Law of warming</title>
+      <statement>
+        <p>
+          A <m>40^{\circ}\mbox{F}</m> roast is cooked in a <m>350^{\circ}\mbox{F}</m> oven.
+          After <m>2</m> hours,
+          the temperature of the roast is <m>125^{\circ}\mbox{F}</m>.
+
+          <ol>
+            <li>
+              <p>
+                Assuming the temperature of the roast follows Newton's Law of Warming,
+                find a formula for the temperature of the roast <m>T</m> as a function of its time in the oven,
+          <m>t</m>,
+                in hours.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The roast is done when the internal temperature reaches <m>165^{\circ}\mbox{F}</m>.
+                When will the roast be done?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The initial temperature of the roast is
+                <m>40^{\circ}\mbox{F}</m>, so <m>T_{0} = 40</m>.
+                The environment in which we are placing the roast is the
+                <m>350^{\circ}\mbox{F}</m> oven, so <m>T_{a} = 350</m>.
+                Newton's Law of Warming tells us <m>T(t) = 350 + (40-350)e^{-kt}</m>,
+                or <m>T(t) = 350 - 310e^{-kt}</m>.
+                To determine <m>k</m>,
+          we use the fact that after <m>2</m> hours,
+                the roast is  <m>125^{\circ}\mbox{F}</m>,
+                which means <m>T(2) = 125</m>.
+                This gives rise to the equation
+                <m>350 - 310e^{-2k} = 125</m> which yields <m>k = -\frac{1}{2} \ln \left( \frac{45}{62}  \right) \approx 0.1602</m>.
+                The temperature function is
+                <me>
+                  T(t) = 350 - 310 e^{\frac{t}{2} \ln \left( \frac{45}{62}  \right)} \approx 350- 310 e^{-0.1602 t}
+                </me>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine when the roast is done, we set <m>T(t) = 165</m>.
+                This gives <m>350- 310 e^{-0.1602 t} = 165</m> whose solution is <m>t = -\frac{1}{0.1602} \ln \left( \frac{37}{62} \right) \approx 3.22</m>.
+                It takes roughly <m>3</m> hours and <m>15</m> minutes to cook the roast completely.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      If we had taken the time to graph <m>y=T(t)</m> in <xref ref="exptempex2">Example</xref>,
+      we would have found the horizontal asymptote to be <m>y = 350</m>,
+      which corresponds to the temperature of the oven.
+      We can also arrive at this conclusion by applying a bit of <q>number sense</q>.
+      As <m>t \rightarrow \infty</m>,
+      <m>-0.1602 t \approx \mbox{very big <m>(-)</m>}</m> so that <m>e^{-0.1602 t} \approx \mbox{very small <m>(+)</m>}</m>.
+      The larger the value of <m>t</m>,
+      the smaller <m>e^{-0.1602 t}</m> becomes so that <m>T(t) \approx 350 -\mbox{very small <m>(+)</m>}</m>,
+      which indicates the graph of <m>y=T(t)</m> is approaching its horizontal asymptote <m>y=350</m> from below.
+      Physically, this means the roast will eventually warm up to
+      <m>350^{\circ}\mbox{F}</m> (at which point it would be more toast than roast).
+      The function <m>T</m> is sometimes called a
+          <idx><h>growth model</h><h>limited</h></idx>
+      <em>limited</em> growth model,
+      since the function <m>T</m> remains bounded as <m>t \rightarrow \infty</m>.
+      If we apply the principles behind Newton's Law of Cooling to a biological example,
+      it says the growth rate of a population is directly proportional to how much room the population has to grow.
+      In other words, the more room for expansion,
+      the faster the growth rate.
+      The <em>logistic</em> growth model combines The Law of Uninhibited Growth with limited growth and states that the rate of growth of a population varies jointly with the population itself as well as the room the population has to grow.
+    </p>
+
+    <insight xml:id="logisticgrowth">
+      <title>Logistic Growth</title>
+      <p>
+            <idx><h>growth model</h><h>logistic</h></idx> <idx><h>logistic growth</h></idx>
+        If a population behaves according to the assumptions of logistic growth,
+        the number of organisms <m>N</m> at time <m>t</m> is given by the equation
+        <me>
+          N(t) =\dfrac{L}{1 + Ce^{-kLt}}
+        </me>,
+        where <m>N(0) = N_{0}</m> is the initial population,
+        <m>L</m> is the limiting population, (that is,
+        as <m>t \rightarrow \infty</m>,
+        <m>N(t) \rightarrow L</m>) <m>C</m> is a measure of how much room there is to grow given by
+        <me>
+          C = \dfrac{L}{N_{0}} - 1
+        </me>.
+        and <m>k > 0</m> is the constant of proportionality which satisfies the equation
+        <me>
+          \left(\mbox{instantaneous rate of change of \(N(t)\) at time \(t\)} \right) = k \, N(t) \left(L - N(t)\right)
+        </me>
+      </p>
+    </insight>
+
+    <p>
+      The logistic function is used not only to model the growth of organisms,
+      but is also often used to model the spread of disease and rumours.
+    </p>
+
+    <example xml:id="ex_rumour">
+      <title>Modelling spread of rumours</title>
+      <statement>
+        <p>
+          The number of people <m>N</m>, in hundreds,
+          at a local community college who have heard the rumour
+          <q>Carl is afraid of Virginia Woolf</q>
+          can be modelled using the logistic equation
+          <me>
+            N(t) = \dfrac{84}{1+2799e^{-t}}
+          </me>,
+          where <m>t\geq 0</m> is the number of days after April 1, 2009.
+
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>N(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the end behaviour of <m>N(t)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How long until <m>4200</m> people have heard the rumour?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Check your answers to 2 and 3 using your computer or calculator.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We find <m>N(0) = \frac{84}{1+2799e^{0}} = \frac{84}{2800} = \frac{3}{100}</m>.
+                Since <m>N(t)</m> measures the number of people who have heard the rumour in hundreds,
+                <m>N(0)</m> corresponds to <m>3</m> people.
+                Since <m>t=0</m> corresponds to April 1, 2009,
+          we may conclude that on that day,
+                <m>3</m> people have heard the rumour.(Or, more likely,
+                three people started the rumour.
+                I'd wager Jeff, Jamie, and Jason started it.
+                So much for telling your best friends something in confidence!)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We could simply note that <m>N(t)</m> is written in the form of <xref ref="logisticgrowth">Equation</xref>,
+                and identify <m>L = 84</m>.
+                However,
+          to see why the answer is <m>84</m>, we proceed analytically.
+                Since the domain of <m>N</m> is restricted to <m>t \geq 0</m>,
+                the only end behaviour of significance is <m>t \rightarrow \infty</m>.
+                As we've seen before, (see, for example,
+                <xref ref="exptempex">Example</xref>) as <m>t \rightarrow \infty</m>,
+                we have <m>1997 e^{-t} \rightarrow 0^{+}</m> and so <m>N(t) \approx \frac{84}{1 + \mbox{very small <m>(+)</m>} } \approx 84</m>.
+                Hence, as <m>t \rightarrow \infty</m>,
+                <m>N(t) \rightarrow 84</m>.
+                This means that as time goes by,
+                the number of people who will have heard the rumour approaches <m>8400</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find how long it takes until <m>4200</m> people have heard the rumour,
+                we set <m>N(t) = 42</m>.
+                Solving <m>\frac{84}{1+2799e^{-t}} = 42</m> gives <m>t = \ln(2799) \approx 7.937</m>.
+                It takes around <m>8</m> days until <m>4200</m> people have heard the rumour.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We graph <m>y=N(x)</m> using the calculator and see in <xref ref="fig_expapp1">Figure</xref>
+                that the line <m>y=84</m> is the horizontal asymptote of the graph,
+                confirming our answer to part 2, and the graph intersects the line <m>y=42</m> at
+                <m>x = \ln(2799) \approx 7.937</m> in <xref ref="fig_expapp2">Figure</xref>,
+                which confirms our answer to part 3. <figure xml:id="fig_expapp1"> <caption>\color{red}
+          <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=84</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs26.pdf"/> </figure> <figure xml:id="fig_expapp2"> <caption>\color{red}
+                <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=42</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs27.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      If we take the time to analyze the graph of <m>y=N(x)</m> above,
+      we can see graphically how logistic growth combines features of uninhibited and limited growth.
+      The curve seems to rise steeply,
+      then at some point, begins to level off.
+      The point at which this happens is called an
+          <idx><h>inflection point</h></idx> <idx><h>point of diminishing returns</h></idx>
+      <em>inflection point</em>
+      or is sometimes called the <q>point of diminishing returns</q>.
+      At this point, even though the function is still increasing,
+      the rate at which it does so begins to decline.
+      It turns out the point of diminishing returns always occurs at half the limiting population. (In our case,
+      when <m>y=42</m>.) While these concepts are more precisely quantified using Calculus,
+      <xref ref="fig_expapp3">Figures</xref>
+      and <xref ref="fig_expapp4"></xref>
+      give two views of the graph of <m>y=N(x)</m>,
+      one on the interval <m>[0,8]</m>,
+      the other on <m>[8,15]</m>.
+      The former looks strikingly like uninhibited growth;
+      the latter like limited growth.
+    </p>
+
+    <figure xml:id="fig_expapp3">
+      <caption><m>y=\dfrac{84}{1+2799e^{-x}}</m>
+      for <m>0\leq x\leq 8</m></caption>
+      <img src="figures/ExpLogsGraphics/ExpLogs28.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_expapp4">
+      <caption><m>y=\dfrac{84}{1+2799e^{-x}}</m>
+      for <m>8\leq x\leq 16</m></caption>
+      <img src="figures/ExpLogsGraphics/ExpLogs29.pdf"/>
+    </figure>
+  </subsection>
+
+  <subsection>
+    <title>Applications of Logarithms</title>
+    <p>
+      Just as many physical phenomena can be modelled by exponential functions,
+      the same is true of logarithmic functions.
+      In <xref ref="Richterexercise">Exercises</xref>,
+      <xref ref="decibelexercise"></xref>
+      and <xref ref="pHexercise"></xref>
+      of <xref ref="IntroExpLogs">Section</xref>,
+      we showed that logarithms are useful in measuring the intensities of earthquakes
+      (the Richter scale),
+      sound (decibels) and acids and bases (pH).
+      We now present yet a different use of the a basic logarithm function,
+      <url href="http://en.wikipedia.org/wiki/Password_strength"><em>password strength</em></url>.
+    </p>
+
+    <example xml:id="ex_password">
+      <title>Password strengh</title>
+      <statement>
+        <p>
+          The <url href="http://en.wikipedia.org/wiki/Information_entropy"><em>information entropy</em></url> <m>H</m>, in bits,
+          of a randomly generated password consisting of <m>L</m> characters is given by <m>H = L \log_{2}(N)</m>,
+          where <m>N</m> is the number of possible symbols for each character in the password.
+          In general, the higher the entropy,
+          the stronger the password.
+              <idx><h>password strength</h></idx> <idx><h>information entropy</h></idx>
+          <ol>
+            <li>
+              <p>
+                If a <m>7</m> character case-sensitive
+                (that is,
+          upper and lower case letters are treated as different characters)
+                password is comprised of letters and numbers only,
+                find the associated information entropy.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How many possible symbol options per character is required to produce a <m>7</m> character password with an information entropy of <m>50</m> bits?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                There are <m>26</m> letters in the alphabet,
+                <m>52</m> if upper and lower case letters are counted as different.
+                There are <m>10</m> digits (<m>0</m> through <m>9</m>) for a total of <m>N=62</m> symbols.
+                Since the password is to be <m>7</m> characters long,
+                <m>L = 7</m>.
+                Thus,
+          <m>H = 7 \log_{2}(62) = \frac{7 \ln(62)}{\ln(2)} \approx 41.68</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We have <m>L = 7</m> and <m>H=50</m> and we need to find <m>N</m>.
+                Solving the equation
+          <m>50 = 7 \log_{2}(N)</m> gives <m>N = 2^{50/7} \approx 141.323</m>,
+                so we would need <m>142</m> different symbols to choose from. (Since there are only <m>94</m> distinct ASCII keyboard characters,
+                to achieve this strength,
+                the number of characters in the password should be increased.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Chemical systems known as <url href="http://en.wikipedia.org/wiki/Buffer_solutions"><em>buffer solutions</em></url>
+          <idx><h>buffer solution</h></idx>
+      have the ability to adjust to small changes in acidity to maintain a range of pH values.
+      Buffer solutions have a wide variety of applications from maintaining a healthy fish tank to regulating the pH levels in blood.
+      Our next example shows how the pH in a buffer solution is a little more complicated than the pH we first encountered in <xref ref="pHexercise">Exercise</xref>
+      in <xref ref="IntroExpLogs">Section</xref>.
+    </p>
+
+    <example xml:id="ex_bloodbuffer">
+      <title>Buffer solutions</title>
+      <statement>
+        <p>
+          Blood is a buffer solution.
+          When carbon dioxide is absorbed into the bloodstream it produces carbonic acid and lowers the pH. The body compensates by producing bicarbonate,
+          a weak base to partially neutralize the acid.
+          The equation which models blood pH in this situation is <m>\mbox{pH} = 6.1 + \log\left(\frac{800}{x} \right)</m>,
+          where <m>x</m> is the partial pressure of carbon dioxide in arterial blood,
+          measured in torr.
+          Find the partial pressure of carbon dioxide in arterial blood if the pH is <m>7.4</m>.
+        </p>
+
+        <aside>
+          <p>
+            The equation for blood pH in <xref ref="ex_bloodbuffer">Example</xref>
+            is derived from the <url href="http://en.wikipedia.org/wiki/Henderson-Hasselbalch_equation"><em>Henderson-Hasselbalch Equation</em></url>.
+            See <xref ref="HendersonHasselbalch">Exercise</xref>
+            in <xref ref="LogProperties">Section</xref>.
+            Hasselbalch himself was studying carbon dioxide dissolving in blood - a process called <url href="http://en.wikipedia.org/wiki/Metabolic_acidosis"><em>metabolic acidosis</em></url>.
+          </p>
+        </aside>
+      </statement>
+      <solution>
+        <p>
+          We set <m>\mbox{pH} = 7.4</m> and get <m>7.4 = 6.1 + \log\left(\frac{800}{x} \right)</m>,
+          or <m>\log\left(\frac{800}{x} \right) = 1.3</m>.
+          Solving, we find <m>x = \frac{800}{10^{1.3}} \approx 40.09</m>.
+          Hence, the partial pressure of carbon dioxide in the blood is about <m>40</m> torr.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      For each of the scenarios given in the following exercises,
+
+      <ul>
+        <li>
+          <p>
+            Find the amount <m>A</m> in the account as a function of the term of the investment <m>t</m> in years.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine how much is in the account after <m>5</m> years,
+            <m>10</m> years, <m>30</m> years and <m>35</m> years.
+            Round your answers to the nearest cent.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine how long will it take for the initial investment to double.
+            Round your answer to the nearest year.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and interpret the average rate of change of the amount in the account from the end of the fourth year to the end of the fifth year,
+            and from the end of the thirty-fourth year to the end of the thirty-fifth year.
+            Round your answer to two decimal places.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise xml:id="basicinterestexfirst">
+      <statement>
+        <p>
+          <m>\dollar500</m> is invested in an account which offers <m>0.75 \%</m>,
+          compounded monthly.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 500\left(1 + \frac{0.0075}{12}\right)^{12t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 519.10</m>,
+              <m>A(10) \approx \dollar 538.93</m>,
+              <m>A(30) \approx \dollar 626.12</m>,
+              <m>A(35) \approx \dollar 650.03</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>92</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>3.88</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar3.88</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>4.85</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar4.85</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dollar500</m> is invested in an account which offers <m>0.75 \%</m>,
+          compounded continuously.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 500e^{0.0075t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 519.11</m>,
+              <m>A(10) \approx \dollar 538.94</m>,
+              <m>A(30) \approx \dollar 626.16</m>,
+              <m>A(35) \approx \dollar 650.09</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>92</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>3.88</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar3.88</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>4.86</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar4.86</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dollar1000</m> is invested in an account which offers <m>1.25 \%</m>,
+          compounded monthly.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 1000\left(1 + \frac{0.0125}{12}\right)^{12t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 1064.46</m>,
+              <m>A(10) \approx \dollar 1133.07</m>,
+              <m>A(30) \approx \dollar 1454.71</m>,
+              <m>A(35) \approx \dollar 1548.48</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>55</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>13.22</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar13.22</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>19.23</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar19.23</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dollar1000</m> is invested in an account which offers <m>1.25 \%</m>,
+          compounded continuously.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 1000e^{0.0125t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 1064.49</m>,
+              <m>A(10) \approx \dollar 1133.15</m>,
+              <m>A(30) \approx \dollar 1454.99</m>,
+              <m>A(35) \approx \dollar 1548.83</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>55</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>13.22</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar13.22</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>19.24</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar19.24</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dollar5000</m> is invested in an account which offers <m>2.125 \%</m>,
+          compounded monthly.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 5000\left(1 + \frac{0.02125}{12}\right)^{12t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 5559.98</m>,
+              <m>A(10) \approx \dollar 6182.67</m>,
+              <m>A(30) \approx \dollar 9453.40</m>,
+              <m>A(35) \approx \dollar 10512.13</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>33</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>116.80</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar116.80</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>220.83</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar220.83</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise xml:id="basicinterestexlast">
+      <statement>
+        <p>
+          <m>\dollar5000</m> is invested in an account which offers
+          <m>2.125 \%</m>, compounded continuously.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>A(t) = 5000e^{0.02125t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(5) \approx \dollar 5560.50</m>,
+              <m>A(10) \approx \dollar 6183.83</m>,
+              <m>A(30) \approx \dollar 9458.73</m>,
+              <m>A(35) \approx \dollar 10519.05</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It will take approximately <m>33</m> years for the investment to double.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change from the end of the fourth year to the end of the fifth year is approximately <m>116.91</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar116.91</m> per year at this point.
+              The average rate of change from the end of the thirty-fourth year to the end of the thirty-fifth year is approximately <m>221.17</m>.
+              This means that the investment is growing at an average rate of
+              <m>\dollar221.17</m> per year at this point.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Look back at your answers to <xref ref="basicinterestexfirst">Exercises</xref>
+          - <xref ref="basicinterestexlast"></xref>.
+          What can be said about the difference between monthly compounding and continuously compounding the interest in those situations?
+          With the help of your classmates,
+          discuss scenarios where the difference between monthly and continuously compounded interest would be more dramatic.
+          Try varying the interest rate,
+          the term of the investment and the principal.
+          Use computations to support your answer.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How much money needs to be invested now to obtain
+          <m>\dollar2000</m> in 3 years if the interest rate in a savings account is <m>0.25 \%</m>,
+          compounded continuously?
+          Round your answer to the nearest cent.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P = \frac{2000}{e^{0.0025 \cdot 3}} \approx \dollar 1985.06</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How much money needs to be invested now to obtain
+          <m>\dollar5000</m> in 10 years if the interest rate in a CD is <m>2.25 \%</m>,
+          compounded monthly?
+          Round your answer to the nearest cent.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>P = \frac{5000}{\left(1 + \frac{0.0225}{12}\right)^{12 \cdot 10}} \approx \dollar 3993.42</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          On May, 31, 2009, the Annual Percentage Rate listed at Jeff's bank for regular savings accounts was <m>0.25\%</m> compounded monthly.
+          Use <xref ref="compoundinterest">Equation</xref> to answer the following.
+
+          <ol>
+            <li>
+              <p>
+                If <m>P = 2000</m> what is <m>A(8)</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve the equation <m>A(t) = 4000</m> for <m>t</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What principal <m>P</m> should be invested so that the account balance is <dollar />2000 is three years?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>A(8) = 2000\left(1 + \frac{0.0025}{12}\right)^{12 \cdot 8} \approx \dollar2040.40</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \dfrac{\ln(2)}{12 \ln\left(1 + \frac{0.0025}{12}\right)} \approx 277.29</m> years
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P = \dfrac{2000}{\left(1 + \frac{0.0025}{12}\right)^{36}} \approx \dollar1985.06</m>
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Jeff's bank also offers a 36-month Certificate of Deposit (CD) with an APR of <m>2.25\%</m>.
+
+          <ol>
+            <li>
+              <p>
+                If <m>P = 2000</m> what is <m>A(8)</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Solve the equation <m>A(t) = 4000</m> for <m>t</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What principal <m>P</m> should be invested so that the account balance is <dollar />2000 in three years?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The Annual Percentage Yield is the <em>simple</em>
+                interest rate that returns the same amount of interest after one year as the compound interest does.
+                With the help of your classmates,
+                compute the APY for this investment.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>A(8) = 2000\left(1 + \frac{0.0225}{12}\right)^{12 \cdot 8} \approx \dollar2394.03</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \dfrac{\ln(2)}{12 \ln\left(1 + \frac{0.0225}{12}\right)} \approx 30.83</m> years
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P = \dfrac{2000}{\left(1 + \frac{0.0225}{12}\right)^{36}} \approx \dollar1869.57</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\left(1 + \frac{0.0225}{12}\right)^{12} \approx 1.0227</m> so the APY is 2.27<percent />
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A finance company offers a promotion on <m>\dollar5000</m> loans.
+          The borrower does not have to make any payments for the first three years,
+          however interest will continue to be charged to the loan at <m>29.9 \%</m> compounded continuously.
+          What amount will be due at the end of the three year period,
+          assuming no payments are made?
+          If the promotion is extended an additional three years,
+          and no payments are made, what amount would be due?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A(3) = 5000e^{0.299 \cdot 3} \approx \dollar12,226.18</m>,
+          <m>A(6) = 5000e^{0.299 \cdot 6} \approx \dollar30,067.29</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use <xref ref="compoundinterest">Equation</xref>
+          to show that the time it takes for an investment to double in value does <em>not</em>
+          depend on the principal <m>P</m>, but rather,
+          depends only on the APR and the number of compoundings per year.
+          Let <m>n = 12</m> and with the help of your classmates compute the doubling time for a variety of rates <m>r</m>.
+          Then look up the Rule of 72 and compare your answers to what that rule says.
+          If you're really interested
+          (pun intended!)
+          in Financial Mathematics,
+          you could also compare and contrast the Rule of 72 with the Rule of 70 and the Rule of 69.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      In the following exercises,
+      we list some radioactive isotopes and their associated half-lives.
+      Assume that each decays according to the formula <m>A(t) = A_{\text{ \tiny \(0\) } }e^{kt}</m> where
+      <m>A_{\text{ \tiny \(0\) } }</m> is the initial amount of the material and <m>k</m> is the decay constant.
+      For each isotope:
+
+      <ul>
+        <li>
+          <p>
+            Find the decay constant <m>k</m>.
+            Round your answer to four decimal places.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find a function which gives the amount of isotope <m>A</m> which remains after time <m>t</m>. (Keep the units of <m>A</m> and <m>t</m> the same as the given data.)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determine how long it takes for <m>90 \%</m> of the material to decay.
+            Round your answer to two decimal places. (HINT: If <m>90 \%</m> of the material decays,
+            how much is left?)
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise xml:id="radioactivefirst">
+      <statement>
+        <p>
+          Cobalt 60, used in food irradiation,
+          initial amount 50 grams, half-life of <m>5.27</m> years.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>k = \frac{\ln(1/2)}{5.27} \approx -0.1315</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(t) = 50e^{-0.1315t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(0.1)}{-0.1315} \approx 17.51</m> years.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Phosphorus 32, used in agriculture,
+          initial amount 2 milligrams, half-life <m>14</m> days.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>k = \frac{\ln(1/2)}{14} \approx -0.0495</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(t) = 2e^{-0.0495t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(0.1)}{-0.0495} \approx 46.52</m> days.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Chromium 51, used to track red blood cells,
+          initial amount 75 milligrams,
+          half-life <m>27.7</m> days.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>k = \frac{\ln(1/2)}{27.7} \approx -0.0250</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(t) = 75e^{-0.0250t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(0.1)}{-0.025} \approx 92.10</m> days.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Americium 241, used in smoke detectors,
+          initial amount 0.29 micrograms,
+          half-life <m>432.7</m> years.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>k = \frac{\ln(1/2)}{432.7} \approx -0.0016</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(t) = 0.29e^{-0.0016t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(0.1)}{-0.0016} \approx 1439.11</m> years.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise xml:id="radioactivelast">
+      <statement>
+        <p>
+          Uranium 235, used for nuclear power,
+          initial amount <m>1</m> kg grams,
+          half-life <m>704</m> million years.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>k = \frac{\ln(1/2)}{704} \approx -0.0010</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(t) = e^{-0.0010t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(0.1)}{-0.0010} \approx 2302.58</m> million years,
+              or <m>2.30</m> billion years.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          show that the time it takes for <m>90 \%</m> of each isotope listed in <xref ref="radioactivefirst">Exercises</xref>
+          - <xref ref="radioactivelast"></xref>
+          to decay does not depend on the initial amount of the substance,
+          but rather,
+          on only the decay constant <m>k</m>.
+          Find a formula, in terms of <m>k</m> only,
+          to determine how long it takes for <m>90 \%</m> of a radioactive isotope to decay.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = \frac{\ln(0.1)}{k} = -\frac{\ln(10)}{k}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="cardepreciationex">Example</xref>
+          in <xref ref="IntroExpLogs">Section</xref>,
+          the exponential function <m>V(x) = 25 \left(\frac{4}{5}\right)^{x}</m> was used to model the value of a car over time.
+          Use the properties of logs and/or exponents to rewrite the model in the form <m>V(t) = 25e^{kt}</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>V(t) = 25e^{\ln\left(\frac{4}{5}\right)t} \approx 25e^{-0.22314355t}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The Gross Domestic Product (GDP) of the US
+          (in billions of dollars)
+          <m>t</m> years after the year 2000 can be modelled by:
+          <me>
+            G(t) = 9743.77 e^{0.0514t}
+          </me>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>G(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                According to the model,
+          what should have been the GDP in 2007?
+                In 2010? (According to the <url href="http://1.usa.gov/iimT40"><em>US Department of Commerce</em></url>,
+                the 2007 GDP was <m>\dollar14,369.1</m> billion and the 2010 GDP was <m>\dollar14,657.8</m> billion.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>G(0) = 9743.77</m> This means that the GDP of the US in 2000 was <m>\dollar9743.77</m> billion dollars.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>G(7) = 13963.24</m> and <m>G(10) = 16291.25</m>,
+              so the model predicted a GDP of
+              <m>\dollar 13,963.24</m> billion in 2007 and <m>\dollar 16,291.25</m> billion in 2010.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The diameter <m>D</m> of a tumour,
+          in millimetres, <m>t</m> days after it is detected is given by:
+          <me>
+            D(t) = 15e^{0.0277t}
+          </me>
+          <ol>
+            <li>
+              <p>
+                What was the diameter of the tumour when it was originally detected?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How long until the diameter of the tumour doubles?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>D(0) = 15</m>,
+              so the tumour was 15 millimetres in diameter when it was first detected.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(2)}{0.0277} \approx 25</m> days.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Under optimal conditions,
+          the growth of a certain strain of <em>E. Coli</em>
+          is modelled by the Law of Uninhibited Growth <m>N(t) = N_{\text{ \tiny \(0\) } } e^{kt}</m> where
+          <m>N_{\text{ \tiny \(0\) } }</m> is the initial number of bacteria and <m>t</m> is the elapsed time,
+          measured in minutes.
+          From numerous experiments,
+          it has been determined that the doubling time of this organism is 20 minutes.
+          Suppose 1000 bacteria are present initially.
+
+          <ol>
+            <li>
+              <p>
+                Find the growth constant <m>k</m>.
+                Round your answer to four decimal places.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find a function which gives the number of bacteria <m>N(t)</m> after <m>t</m> minutes.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How long until there are 9000 bacteria?
+                Round your answer to the nearest minute.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>k = \frac{\ln(2)}{20} \approx 0.0346</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>N(t) = 1000e^{0.0346 t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(9)}{0.0346} \approx 63</m> minutes
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Yeast is often used in biological experiments.
+          A research technician estimates that a sample of yeast suspension contains 2.5 million organisms per cubic centimetre (cc).
+          Two hours later,
+          she estimates the population density to be 6 million organisms per cc.
+          Let <m>t</m> be the time elapsed since the first observation,
+          measured in hours.
+          Assume that the yeast growth follows the Law of Uninhibited Growth <m>N(t) = N_{\text{ \tiny \(0\) } } e^{kt}</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find the growth constant <m>k</m>.
+                Round your answer to four decimal places.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find a function which gives the number of yeast
+                (in millions)
+                per cc <m>N(t)</m> after <m>t</m> hours.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What is the doubling time for this strain of yeast?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>k = \frac{1}{2}\frac{\ln(6)}{2.5} \approx 0.4377</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>N(t) = 2.5e^{0.4377 t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = \frac{\ln(2)}{0.4377} \approx 1.58</m> hours
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The Law of Uninhibited Growth also applies to situations where an animal is re-introduced into a suitable environment.
+          Such a case is the reintroduction of wolves to Yellowstone National Park.
+          According to the <url href="http://www.nps.gov/yell/naturescience/wolves.htm"><em>National Park Service</em></url>,
+          the wolf population in Yellowstone National Park was 52 in 1996 and 118 in 1999.
+          Using these data, find a function of the form
+          <m>N(t) = N_{\text{ \tiny \(0\) } } e^{kt}</m> which models the number of wolves <m>t</m> years after 1996. (Use <m>t = 0</m> to represent the year 1996.
+          Also, round your value of <m>k</m> to four decimal places.) According to the model,
+          how many wolves were in Yellowstone in 2002? (The recorded number is 272.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>N_{\text{ \tiny \(0\) } } = 52</m>,
+          <m>k = \frac{1}{3} \ln\left( \frac{118}{52}\right) \approx 0.2731</m>,
+          <m>N(t) = 52e^{0.2731t}</m>. <m>N(6) \approx 268</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="PainesvillePopulationTwoPoint">
+      <statement>
+        <p>
+          During the early years of a community,
+          it is not uncommon for the population to grow according to the Law of Uninhibited Growth.
+          According to the Painesville Wikipedia entry, in 1860,
+          the Village of Painesville had a population of 2649.
+          In 1920, the population was 7272.
+          Use these two data points to fit a model of the form
+          <m>N(t) = N_{\text{ \tiny \(0\) } } e^{kt}</m> were <m>N(t)</m> is the number of Painesville Residents <m>t</m> years after 1860. (Use <m>t = 0</m> to represent the year 1860.
+          Also, round the value of <m>k</m> to four decimal places.) According to this model,
+          what was the population of Painesville in 2010? (The 2010 census gave the population as 19,563) What could be some causes for such a vast discrepancy?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>N_{\text{ \tiny \(0\) } } = 2649</m>,
+          <m>k = \frac{1}{60} \ln\left( \frac{7272}{2649}\right) \approx 0.0168</m>,
+          <m>N(t) = 2649e^{0.0168t}</m>. <m>N(150) \approx 32923</m>,
+          so the population of Painesville in 2010 based on this model would have been 32,923.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The population of Sasquatch in Bigfoot county is modelled by
+          <me>
+            P(t) = \dfrac{120}{1 + 3.167e^{-0.05t}}
+          </me>
+          where <m>P(t)</m> is the population of Sasquatch <m>t</m> years after <m>2010</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>P(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the population of Sasquatch in Bigfoot county in 2013.
+                Round your answer to the nearest Sasquatch.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When will the population of Sasquatch in Bigfoot county reach 60?
+                Round your answer to the nearest year.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the end behaviour of the graph of <m>y = P(t)</m>.
+                Check your answer using a graphing utility.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>P(0) = \frac{120}{4.167} \approx 29</m>.
+              There are 29 Sasquatch in Bigfoot County in 2010.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(3) = \frac{120}{1+3.167e^{-0.05(3)}} \approx 32</m> Sasquatch.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t = 20 \ln(3.167) \approx 23</m> years.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As <m>t \rightarrow \infty</m>,
+              <m>P(t) \rightarrow 120</m>.
+              As time goes by,
+              the Sasquatch Population in Bigfoot County will approach 120.
+              Graphically, <m>y = P(x)</m> has a horizontal asymptote <m>y=120</m>.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The half-life of the radioactive isotope Carbon-14 is about 5730 years.
+
+          <ol>
+            <li>
+              <p>
+                Use <xref ref="radioactivedecay">Equation</xref>
+                to express the amount of Carbon-14 left from an initial <m>N</m> milligrams as a function of time <m>t</m> in years.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What percentage of the original amount of Carbon-14 is left after 20,000 years?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If an old wooden tool is found in a cave and the amount of Carbon-14 present in it is estimated to be only 42<percent /> of the original amount,
+                approximately how old is the tool?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Radiocarbon dating is not as easy as these exercises might lead you to believe.
+                With the help of your classmates,
+                research radiocarbon dating and discuss why our model is somewhat over-simplified.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>A(t) = Ne^{-\left(\frac{\ln(2)}{5730}\right)t} \approx Ne^{-0.00012097t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>A(20000) \approx 0.088978 \cdot N</m> so about 8.9<percent /> remains
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t \approx \dfrac{\ln(.42)}{-0.00012097} \approx 7171</m> years old
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Carbon-14 cannot be used to date inorganic material such as rocks,
+          but there are many other methods of radiometric dating which estimate the age of rocks.
+          One of them, Rubidium-Strontium dating,
+          uses Rubidium-87 which decays to Strontium-87 with a half-life of 50 billion years.
+          Use <xref ref="radioactivedecay">Equation</xref>
+          to express the amount of Rubidium-87 left from an initial 2.3 micrograms as a function of time <m>t</m> in
+          <em>billions</em> of years.
+          Research this and other radiometric techniques and discuss the margins of error for various methods with your classmates.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>A(t) = 2.3e^{-0.0138629t}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use <xref ref="radioactivedecay">Equation</xref>
+          to show that <m>k = -\dfrac{\ln(2)}{h}</m> where <m>h</m> is the half-life of the radioactive isotope.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A pork roast<fn>This roast was enjoyed by Jeff and his family on June 10, 2009.
+          This is real data,
+          folks!</fn>was taken out of a hardwood smoker when its internal temperature had reached <m>180^{\circ}</m>F and it was allowed to rest in a
+          <m>75^{\circ}</m>F house for 20 minutes after which its internal temperature had dropped to
+          <m>170^{\circ}</m>F. Assuming that the temperature of the roast follows Newton's Law of Cooling (<xref ref="newtonslawofcooling">Equation</xref>),
+
+          <ol>
+            <li>
+              <p>
+                Express the temperature <m>T</m>
+                (in <m>^{\circ}</m>F)
+                as a function of time <m>t</m> (in minutes).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the time at which the roast would have dropped to
+                <m>140^{\circ}</m>F had it not been carved and eaten.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>T(t) = 75 + 105e^{-0.005005t}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The roast would have cooled to
+              <m>140^{\circ}</m>F in about 95 minutes.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="pursuitlog">
+      <statement>
+        <p>
+          In reference to <xref ref="pursuitfurther">Exercise</xref>
+          in <xref ref="AlgebraicFunctions">Section</xref>,
+          if Fritzy the Fox's speed is the same as Chewbacca the Bunny's speed, Fritzy's pursuit curve is given by
+          <me>
+            y(x) = \frac{1}{4} x^2-\frac{1}{4} \ln(x)-\frac{1}{4}
+          </me>
+        </p>
+
+        <p>
+          Use your calculator to graph this path for <m>x > 0</m>.
+          Describe the behaviour of <m>y</m> as
+          <m>x \rightarrow 0^{+}</m> and interpret this physically.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          From the graph, it appears that as <m>x \rightarrow 0^{+}</m>,
+          <m>y \rightarrow \infty</m>.
+          This is due to the presence of the <m>\ln(x)</m> term in the function.
+          This means that Fritzy will never catch Chewbacca,
+          which makes sense since Chewbacca has a head start and Fritzy only runs as fast as he does.
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/PURSUIT03.jpg.pdf"/>
+        </p>
+
+        <p>
+          <m>y(x) = \frac{1}{4} x^2-\frac{1}{4} \ln(x)-\frac{1}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="explogsappcircuitone">
+      <statement>
+        <p>
+          The current <m>i</m> measured in amps in a certain electronic circuit with a constant impressed voltage of 120 volts is given by <m>i(t) = 2 - 2e^{-10t}</m> where
+          <m>t \geq 0</m> is the number of seconds after the circuit is switched on.
+          Determine the value of <m>i</m> as <m>t \rightarrow \infty</m>. (This is called the
+          <em>steady state</em> current.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          The steady state current is 2 amps.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If the voltage in the circuit in <xref ref="explogsappcircuitone">Exercise</xref>
+          above is switched off after 30 seconds,
+          the current is given by the piecewise-defined function
+          <me>
+            i(t) = \left\{ \begin{array}{rcl} 2 - 2e^{-10t} \amp  \mbox{if}  \amp  0 \leq t \lt  30 \\
+            \left(2 - 2e^{-300}\right) e^{-10t+300} \amp  \mbox{if}  \amp  t \geq 30
+            \end{array}  \right
+          </me>.
+        </p>
+
+        <p>
+          With the help of your calculator,
+          graph <m>y = i(t)</m> and discuss with your classmates the physical significance of the two parts of the graph
+          <m>0 \leq t \lt 30</m> and <m>t \geq 30</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="catenary">
+      <statement>
+        <p>
+          In <xref ref="parabolicbridgecable">Exercise</xref>
+          in <xref ref="QuadraticFunctions">Section</xref>,
+          we stated that the cable of a suspension bridge formed a parabola but that a free hanging cable did not.
+          A free hanging cable forms a <em>catenary</em>
+          and its basic shape is given by <m>y = \frac{1}{2}\left(e^{x} + e^{-x}\right)</m>.
+          Use your calculator to graph this function.
+          What are its domain and range?
+          What is its end behaviour?
+          Is it invertible?
+          How do you think it is related to the function given in <xref ref="hyperbolicsine">Exercise</xref> in <xref ref="ExpEquations">Section</xref>
+          and the one given in the answer to <xref ref="inversehyptangent">Exercise</xref>
+          in <xref ref="LogEquations">Section</xref>?
+          When flipped upside down, the catenary makes an arch.
+          The Gateway Arch in St.
+          Louis, Missouri has the shape
+          <me>
+            y = 757.7 - \frac{127.7}{2}\left(e^{\frac{x}{127.7}} + e^{-\frac{x}{127.7}}\right)
+          </me>
+          where <m>x</m> and <m>y</m> are measured in feet and <m>-315 \leq x \leq 315</m>.
+          Find the highest point on the arch.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

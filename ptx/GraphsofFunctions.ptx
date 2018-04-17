@@ -1,0 +1,2940 @@
+
+
+<section xml:id="GraphsofFunctions">
+  <title>Graphs of Functions</title>
+  <introduction>
+    <p>
+      In <xref ref="IntrotoFunctions">Section</xref>
+      we defined a function as a special type of relation;
+      one in which each <m>x</m>-coordinate was matched with only one <m>y</m>-coordinate.
+      We spent most of our time in that section looking at functions graphically because they were,
+      after all,
+      just sets of points in the plane.
+      Then in <xref ref="FunctionNotation">Section</xref>
+      we described a function as a process and defined the notation necessary to work with functions algebraically.
+      So now it's time to look at functions graphically again,
+      only this time we'll do so with the notation defined in <xref ref="FunctionNotation">Section</xref>.
+      We start with what should not be a surprising connection.
+    </p>
+
+    <insight xml:id="fgpff">
+      <title>The Fundamental Graphing Principle for Functions</title>
+      <p>
+            <idx><h>function</h><h>Fundamental Graphing Principle</h></idx> <idx><h>graph</h><h>of a function</h></idx> <idx><h>Fundamental Graphing Principle</h><h>for functions</h></idx>
+      </p>
+
+      <p>
+        The graph of a function <m>f</m> is the set of points which satisfy the equation <m>y=f(x)</m>.
+        That is, the point <m>(x,y)</m> is on the graph of <m>f</m> if and only if <m>y=f(x)</m>.
+      </p>
+    </insight>
+
+    <example xml:id="ex_fungraph1">
+      <title>Graphing a function</title>
+      <statement>
+        <p>
+          Graph <m>f(x) = x^2 - x - 6</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To graph <m>f</m>, we graph the equation <m>y = f(x)</m>.
+          To this end,
+          we use the techniques outlined in <xref ref="GraphsofEquations">Section</xref>.
+          Specifically, we check for intercepts,
+          test for symmetry, and plot additional points as needed.
+          To find the <m>x</m>-intercepts, we set <m>y=0</m>.
+          Since <m>y = f(x)</m>, this means <m>f(x) = 0</m>.
+          <me>
+            \begin{array}{rclr}   
+            f(x) \amp  = \amp  x^2 - x - 6 \amp  \\ 
+            0 \amp  = \amp  x^2 - x - 6 \amp  \\ 
+            0 \amp  = \amp  (x-3)(x+2) \amp  \mbox{factor}  \\ 
+            x-3 = 0 \amp  \mbox{or}  \amp  x+2 = 0 \amp  \\
+            x \amp  = \amp  -2, 3 \amp 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          So we get <m>(-2,0)</m> and <m>(3,0)</m> as <m>x</m>-intercepts.
+          To find the <m>y</m>-intercept, we set <m>x=0</m>.
+          Using function notation,
+          this is the same as finding <m>f(0)</m> and <m>f(0) = 0^2 - 0 - 6 = -6</m>.
+          Thus the <m>y</m>-intercept is <m>(0,-6)</m>.
+          As far as symmetry is concerned,
+          we can tell from the intercepts that the graph possesses none of the three symmetries discussed thus far. (You should verify this.) We can make a table analogous to the ones we made in <xref ref="GraphsofEquations">Section</xref>,
+          plot the points and connect the dots in a somewhat pleasing fashion to get the graph shown in <xref ref="fig_fgraph1">Figure</xref>.
+        </p>
+      </solution>
+    </example>
+
+    <table xml:id="fig_fgraph1">
+      <caption>Graphing the function <m>f(x) = x^2-x-6</m></caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>f(x)</m></cell>
+          <cell><m>(x,f(x))</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>-3</cell>
+          <cell>6</cell>
+          <cell><m>(-3, 6)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>-2</cell>
+          <cell>0</cell>
+          <cell><m>(-2,0)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>-1</cell>
+          <cell>-4</cell>
+          <cell><m>( -1, -4)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell>-6</cell>
+          <cell><m>( 0 ,-6)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>-6</cell>
+          <cell><m>( 1, -6)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>-4</cell>
+          <cell><m>(2,-4)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>0</cell>
+          <cell><m>(3, 0)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>6</cell>
+          <cell><m>(4, 6)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-1.pdf"/>
+    </table>
+
+    <p>
+      Graphing piecewise-defined functions is a bit more of a challenge.
+    </p>
+
+    <example xml:id="ex_pwgraph">
+      <title>Graphing a piecewise-defined function</title>
+      <statement>
+        <p>
+          Graph: <m>f(x) = \begin{cases}4-x^2 \amp \text{ if } x \lt 1 \\ x - 3, \amp \text{ if } x \geq 1 \end{cases}</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We proceed as before <mdash /> finding intercepts,
+          testing for symmetry and then plotting additional points as needed.
+          To find the <m>x</m>-intercepts,
+          as before, we set <m>f(x)=0</m>.
+          The twist is that we have two formulas for <m>f(x)</m>.
+          For <m>x\lt 1</m>, we use the formula <m>f(x) = 4-x^2</m>.
+          Setting <m>f(x) = 0</m> gives
+          <m>0 = 4 - x^2</m>, so that <m>x = \pm 2</m>.
+          However, of these two answers,
+          only <m>x = -2</m> fits in the domain <m>x \lt  1</m> for this piece.
+          This means the only <m>x</m>-intercept for the
+          <m>x \lt  1</m> region of the <m>x</m>-axis is <m>(-2,0)</m>.
+          For <m>x \geq 1</m>, <m>f(x) = x-3</m>.
+          Setting <m>f(x) = 0</m> gives <m>0 = x-3</m>, or <m>x=3</m>.
+          Since <m>x=3</m> satisfies the inequality <m>x \geq 1</m>,
+          we get <m>(3,0)</m> as another <m>x</m>-intercept.
+          Next, we seek the <m>y</m>-intercept.
+          Notice that <m>x=0</m> falls in the domain <m>x \lt  1</m>.
+          Thus <m>f(0) = 4 - 0^2 = 4</m> yields the <m>y</m>-intercept <m>(0,4)</m>.
+          As far as symmetry is concerned,
+          you can check that the equation
+          <m>y = 4 - x^2</m> is symmetric about the <m>y</m>-axis;
+          unfortunately, this equation
+          (and its symmetry)
+          is valid only for <m>x \lt  1</m>.
+          You can also verify <m>y = x - 3</m> possesses none of the symmetries discussed in the <xref ref="GraphsofEquations">Section</xref>.
+          When plotting additional points,
+          it is important to keep in mind the restrictions on <m>x</m> for each piece of the function.
+          The sticking point for this function is <m>x=1</m>,
+          since this is where the equations change.
+          When <m>x=1</m>, we use the formula <m>f(x) = x-3</m>,
+          so the point on the graph <m>(1, f(1))</m> is <m>(1,-2)</m>.
+          However, for all values less than <m>1</m>,
+          we use the formula <m>f(x) = 4 - x^2</m>.
+          As we have discussed earlier in <xref ref="Relations">Section</xref>,
+          there is no real number which immediately precedes <m>x=1</m> on the number line.
+          Thus for the values <m>x = 0.9</m>,
+          <m>x = 0.99</m>, <m>x=0.999</m>, and so on,
+          we find the corresponding <m>y</m> values using the formula <m>f(x) = 4 - x^2</m>.
+          Making a table as before,
+          we see that as the <m>x</m> values sneak up to <m>x=1</m> in this fashion,
+          the <m>f(x)</m> values inch closer and closer to <m>4 - 1^2 = 3</m>.
+          To indicate this graphically,
+          we use an open circle at the point <m>(1,3)</m>.
+          Putting all of this information together and plotting additional points,
+          we get the result in <xref ref="fig_pwgraph">Figure</xref>.
+        </p>
+      </solution>
+    </example>
+
+    <table xml:id="fig_pwgraph">
+      <caption>The graph of <m>f(x)</m> from <xref ref="ex_pwgraph">Example</xref></caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>f(x)</m></cell>
+          <cell><m>(x,f(x))</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0.9</cell>
+          <cell>3.19</cell>
+          <cell><m>(0.9, 3.19)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0.99</cell>
+          <cell><m>\approx 3.02</m></cell>
+          <cell><m>(0.99,3.02)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0.999</cell>
+          <cell><m>\approx 3.002</m></cell>
+          <cell><m>( 0.999, 3.002)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-2.pdf"/>
+    </table>
+
+    <p>
+      In the previous two examples,
+      the <m>x</m>-coordinates of the <m>x</m>-intercepts of the graph of <m>y=f(x)</m> were found by solving <m>f(x) = 0</m>.
+      For this reason, they are called the
+          <idx><h>function</h><h>zero</h></idx>
+      <em>zeros</em> of <m>f</m>.
+    </p>
+
+    <definition xml:id="zerosofafunction">
+      <title>Zeros of a function</title>
+      <statement>
+        <p>
+              <idx><h>zero</h><h>of a function</h></idx>
+        </p>
+
+        <p>
+          The <term>zeros</term>
+          of a function <m>f</m> are the solutions to the equation <m>f(x) = 0</m>.
+          In other words,
+          <m>x</m> is a zero of <m>f</m> if and only if <m>(x,0)</m> is an <m>x</m>-intercept of the graph of <m>y=f(x)</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Of the three symmetries discussed in <xref ref="GraphsofEquations">Section</xref>,
+      only two are of significance to functions:
+      symmetry about the <m>y</m>-axis and symmetry about the origin.
+      Recall that we can test whether the graph of an equation is symmetric about the <m>y</m>-axis by replacing <m>x</m> with <m>-x</m> and checking to see if an equivalent equation results.
+      If we are graphing the equation <m>y=f(x)</m>,
+      substituting <m>-x</m> for <m>x</m> results in the equation <m>y=f(-x)</m>.
+      In order for this equation to be equivalent to the original equation <m>y=f(x)</m> we need <m>f(-x) = f(x)</m>.
+      In a similar fashion,
+      we recall that to test an equation's graph for symmetry about the origin,
+      we replace <m>x</m> and <m>y</m> with <m>-x</m> and <m>-y</m>,
+      respectively.
+      Doing this substitution in the equation
+      <m>y = f(x)</m> results in <m>-y = f(-x)</m>.
+      Solving the latter equation for <m>y</m> gives <m>y = -f(-x)</m>.
+      In order for this equation to be equivalent to the original equation <m>y=f(x)</m> we need <m>-f(-x) = f(x)</m>, or,
+      equivalently, <m>f(-x) = -f(x)</m>.
+      These results are summarized below.
+    </p>
+
+    <aside>
+      <p>
+        Note that for graphs of functions,
+        we don't bother to discuss symmetry about the <m>x</m>-axis.
+        Why do you suppose this is?
+      </p>
+    </aside>
+    <insight xml:id="idea_symmtest">
+      <title>Testing the Graph of a Function for Symmetry</title>
+      <p>
+        The graph of a function <m>f</m> is symmetric
+            <idx><h>symmetry</h><h>testing a function graph for</h></idx>
+        <ul>
+          <li>
+            <p>
+              about the <m>y</m>-axis if and only if
+              <m>f(-x) = f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              about the origin if and only if
+              <m>f(-x) = -f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
+    <p>
+      For reasons which won't become clear until we study polynomials,
+      we call a function
+          <idx><h>function</h><h>even</h></idx><idx><h>even function</h></idx><em>even</em>
+      if its graph is symmetric about the <m>y</m>-axis or <idx><h>function</h><h>odd</h></idx><idx><h>odd function</h></idx>
+      <em>odd</em> if its graph is symmetric about the origin.
+      Apart from a very specialized family of functions which are both even and odd,
+      (any ideas?)
+      functions fall into one of three distinct categories:
+      even, odd, or neither even nor odd.
+    </p>
+
+    <example xml:id="ex_evenodd">
+      <title>Even and odd functions</title>
+      <statement>
+        <p>
+          Determine analytically if the following functions are even,
+          odd, or neither even nor odd.
+          Verify your result with a graphing calculator or computer software.
+        </p>
+
+        <aside>
+          <p>
+            A good resource when you need to quickly check something like the graph of a function is <url href="http://www.wolframalpha.com/">Wolfram Alpha</url>.
+          </p>
+
+          <p>
+            If you want a good
+            (and free!)
+            program you can run locally on a computer or tablet,
+            we recommend trying <url href="http://www.geogebra.org/">Geogebra</url>.
+            It's free to download, works on all major operating systems,
+            and it's pretty easy to figure out the basics.
+          </p>
+        </aside>
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = \dfrac{5}{2 - x^2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x) = \dfrac{5x}{2 - x^2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = \dfrac{5x}{2 - x^3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>i(x) = \dfrac{5x}{2x - x^3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>j(x) = x^2 - \dfrac{x}{100}-1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(x) = \begin{cases}x+3 \amp \text{ if } x \lt 0 \\ -x+3, \amp \text{ if } x \geq 0 \end{cases} </m>. \setcounter{HW}{\value{enumi}}
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          The first step in all of these problems is to replace <m>x</m> with <m>-x</m> and simplify.
+
+          <ol>
+            <li>
+              <p>
+                <md>
+                  <mrow>f(x) \amp  =  \dfrac{5}{2 - x^2}</mrow>
+                  <mrow>f(-x) \amp  =  \dfrac{5}{2 - (-x)^2}</mrow>
+                  <mrow>f(-x) \amp  =  \dfrac{5}{2 - x^2}</mrow>
+                  <mrow>f(-x) \amp  =  f(x)</mrow>
+                </md>
+                Hence, <m>f</m> is <em>even</em>.
+                A plot of <m>f(x)</m> using GeoGebra is given in <xref ref="fig_evenodd1">Figure</xref>.
+
+                <figure xml:id="fig_evenodd1">
+                  <caption>The graph of <m>f(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/GoF-1.pdf"/>
+                </figure>
+
+                This suggests that the graph of <m>f</m> is symmetric about the <m>y</m>-axis,
+                as expected.
+
+                <aside>
+                  <p>
+                    While the plot provided by the software can provide us with visual evidence that a function is even or odd,
+                    this evidence is never conclusive.
+                    The only way to know for sure is to check analytically using the definitions of even and odd functions.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>g(x) \amp  =  \dfrac{5x}{2 - x^2}</mrow>
+                  <mrow>g(-x) \amp  =  \dfrac{5(-x)}{2 - (-x)^2}</mrow>
+                  <mrow>g(-x) \amp  =  \dfrac{-5x}{2 - x^2}</mrow>
+                </md>
+                It doesn't appear that <m>g(-x)</m> is equivalent to <m>g(x)</m>.
+                To prove this, we check with an <m>x</m> value.
+                After some trial and error,
+                we see that <m>g(1) = 5</m> whereas <m>g(-1) = -5</m>.
+                This proves that <m>g</m> is not even,
+                but it doesn't rule out the possibility that <m>g</m> is odd. (Why not?)  To check if <m>g</m> is odd,
+                we compare <m>g(-x)</m> with <m>-g(x)</m>
+                <md>
+                  <mrow>- g(x) \amp  =  - \dfrac{5x}{2 - x^2}</mrow>
+                  <mrow>\amp  =   \dfrac{-5x}{2 - x^2}</mrow>
+                  <mrow>-g(x) \amp  =  g(-x)</mrow>
+                </md>
+                Hence, <m>g</m> is odd:
+          see <xref ref="fig_evenodd2">Figure</xref>.
+
+                <figure xml:id="fig_evenodd2">
+                  <caption>The graph of <m>g(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_02.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>h(x) \amp  =  \dfrac{5x}{2 - x^3}</mrow>
+                  <mrow>h(-x) \amp  =  \dfrac{5(-x)}{2 - (-x)^3}</mrow>
+                  <mrow>h(-x) \amp  =  \dfrac{-5x}{2 + x^3}</mrow>
+                </md>
+                Once again,
+                <m>h(-x)</m> doesn't appear to be equivalent to <m>h(x)</m>.
+                We check with an <m>x</m> value,
+                for example, <m>h(1) = 5</m> but <m>h(-1) = -\frac{5}{3}</m>.
+                This proves that <m>h</m> is not even and it also shows <m>h</m> is not odd. (Why?)
+
+                <figure xml:id="fig_evenodd3">
+                  <caption>The graph of <m>h(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_03.pdf"/>
+                </figure>
+
+                In <xref ref="fig_evenodd3">Figure</xref>,
+                the graph of <m>h</m> appears to be neither symmetric about the <m>y</m>-axis nor the origin.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>i(x) \amp  =  \dfrac{5x}{2x - x^3}</mrow>
+                  <mrow>i(-x) \amp  =  \dfrac{5(-x)}{2(-x) - (-x)^3}</mrow>
+                  <mrow>i(-x) \amp  =  \dfrac{-5x}{-2x + x^3}</mrow>
+                </md>
+                The expression  <m>i(-x)</m> doesn't appear to be equivalent to <m>i(x)</m>.
+                However, after checking some <m>x</m> values,
+                for example <m>x=1</m> yields
+                <m>i(1) = 5</m> and <m>i(-1 )= 5</m>,
+                it appears that <m>i(-x)</m> does,
+                in fact, equal <m>i(x)</m>.
+                However, while this suggests  <m>i</m> is even,
+                it doesn't prove it.  (It does,
+                however,
+          prove <m>i</m> is not odd.)  To prove <m>i(-x) = i(x)</m>,
+                we need to manipulate our expressions for <m>i(x)</m> and <m>i(-x)</m> and show that they are equivalent.
+                A clue as to how to proceed is in the numerators:
+                in the formula for <m>i(x)</m>,
+                the numerator is <m>5x</m> and in <m>i(-x)</m> the numerator is <m>-5x</m>.
+                To re-write <m>i(x)</m> with a numerator of <m>-5x</m>,
+                we need to multiply its numerator by <m>-1</m>.
+                To keep the value of the fraction the same,
+                we need to multiply the denominator by <m>-1</m> as well.
+                Thus
+                <md>
+                  <mrow>i(x) \amp  =  \dfrac{5x}{2x - x^3}</mrow>
+                  <mrow>\amp  =  \dfrac{(-1) 5x}{(-1)\left(2x - x^3\right)}</mrow>
+                  <mrow>\amp  =  \dfrac{-5x}{-2x + x^3}</mrow>
+                </md>
+                Hence, <m>i(x) = i(-x)</m>, so <m>i</m> is even.
+                See <xref ref="fig_evenodd4">Figure</xref> for the graph.
+
+                <figure xml:id="fig_evenodd4">
+                  <caption>The graph of <m>i(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_04.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>j(x) \amp  =  x^2 - \dfrac{x}{100} - 1</mrow>
+                  <mrow>j(-x) \amp  =  (-x)^2 - \dfrac{-x}{100} - 1</mrow>
+                  <mrow>j(-x) \amp  =  x^2 + \dfrac{x}{100} - 1</mrow>
+                </md>
+                The expression for <m>j(-x)</m> doesn't seem to be equivalent to <m>j(x)</m>,
+                so we check using <m>x = 1</m> to get
+                <m>j(1) = -\frac{1}{100}</m> and <m>j(-1) = \frac{1}{100}</m>.
+                This rules out <m>j</m> being even.
+                However, it doesn't rule out <m>j</m> being odd.
+                Examining <m>-j(x)</m> gives
+                <md>
+                  <mrow>j(x) \amp  =  x^2 - \dfrac{x}{100} - 1</mrow>
+                  <mrow>-j(x) \amp  =  -\left(x^2 - \dfrac{x}{100} - 1\right)</mrow>
+                  <mrow>-j(x) \amp  =  -x^2 + \dfrac{x}{100} + 1</mrow>
+                </md>
+                The expression <m>-j(x)</m> doesn't seem to match <m>j(-x)</m> either.
+                Testing <m>x = 2</m> gives
+                <m>j(2) = \frac{149}{50}</m> and <m>j(-2) = \frac{151}{50}</m>,
+                so <m>j</m> is not odd, either.
+
+                <figure xml:id="fig_evenodd5">
+                  <caption>The graph of <m>j(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
+                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_05.pdf"/>
+                </figure>
+
+                Notice in <xref ref="fig_evenodd5">Figure</xref>
+                that the computer plot seems to suggests that the graph of <m>j</m> is symmetric about the <m>y</m>-axis which would imply that <m>j</m> is even.
+                However, we have proven that is not the case.
+                The problem is that the effect of the <m>x/100</m> term is so small,
+                our eyes don't detect it in the graph.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Testing the graph of <m>y=p(x)</m> for symmetry is complicated by the fact <m>p(x)</m> is a piecewise-defined function.
+                As always,
+          we handle this by checking the condition for symmetry by checking it on each piece of the domain.
+                We first consider the case when <m>x \lt 0</m> and set about finding the correct expression for <m>p(-x)</m>.
+                Even though <m>p(x) = x+3</m> for <m>x \lt 0</m>,
+                <m>p(-x) \neq -x + 3</m> here.
+                The reason for this is that since <m>x \lt 0</m>,
+                <m>-x > 0</m> which means to find <m>p(-x)</m>,
+                we need to use the <em>other</em> formula for <m>p(x)</m>,
+                namely <m>p(x) = -x+3</m>.
+                Hence, for <m>x \lt 0</m>,
+          <m>p(-x) = -(-x)+3 = x+3 = p(x)</m>.
+                For <m>x \geq 0</m>,
+          <m>p(x) = -x+3</m> and we have two cases.
+                If <m>x > 0</m>,
+                then <m>-x \lt 0</m> so <m>p(-x) = (-x)+3 = -x+3 = p(x)</m>.
+                If <m>x = 0</m>, then <m>p(0) = 3 = p(-0)</m>.
+                Hence, in all cases,
+          <m>p(-x) = p(x)</m>, so <m>p</m> is even.
+                Since <m>p(0) = 3</m> but <m>p(-0) = p(0) = 3 \neq -3</m>,
+                we also have <m>p</m> is not odd. <figure xml:id="fig_evenodd6"> <caption>The graph of <m>p(x)</m> in <xref ref="ex_evenodd">Example</xref></caption> <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_06.pdf"/> </figure> In <xref ref="fig_evenodd6">Figure</xref>,
+                we see that the graph appears to be symmetric about the <m>y</m>-axis.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      There are two lessons to be learned from the last example.
+      The first is that sampling function values at particular <m>x</m> values is not enough to prove that a function is even or odd <m>-</m> despite the fact that <m>j(-1) = - j(1)</m>,
+      <m>j</m> turned out not to be odd.
+      Secondly, while the calculator may
+      <em>suggest</em> mathematical truths,
+      it is the Algebra which <em>proves</em>
+      mathematical truths. (Or, in other words,
+      don't rely too heavily on the machine!)
+    </p>
+  </introduction>
+
+  <subsection xml:id="genfuncbehavior">
+    <title>General Function Behaviour</title>
+    <p>
+      The last topic we wish to address in this section is general function behaviour.
+      As you shall see in the next several chapters,
+      each family of functions has its own unique attributes and we will study them all in great detail.
+      The purpose of this section's discussion, then,
+      is to lay the foundation for that further study by investigating aspects of function behaviour which apply to all functions.
+      To start, we will examine the concepts of
+          <idx><h>increasing function</h><h>intuitive definition of</h></idx> <em>increasing</em>,
+      <idx><h>decreasing function</h><h>intuitive definition of</h></idx> <em>decreasing</em>
+      and <idx><h>constant function</h><h>intuitive definition of</h></idx>
+      <em>constant</em>.
+      Before defining the concepts algebraically,
+      it is instructive to first look at them graphically.
+      Consider the graph of the function <m>f</m> in <xref ref="fig_genbehav">Figure</xref>.
+    </p>
+
+    <p>
+      Reading from left to right,
+      the graph <q>starts</q>
+      at the point <m>(-4,-3)</m> and
+      <q>ends</q> at the point <m>(6,5.5)</m>.
+      If we imagine walking from left to right on the graph,
+      between <m>(-4,-3)</m> and <m>(-2,4.5)</m>,
+      we are walking <q>uphill</q>;
+      then between <m>(-2,4.5)</m> and <m>(3,-8)</m>,
+      we are walking <q>downhill</q>;
+      and between <m>(3,-8)</m> and <m>(4,-6)</m>,
+      we are walking <q>uphill</q> once more.
+      From <m>(4,-6)</m> to <m>(5, -6)</m>, we <q>level off</q>,
+      and then resume walking <q>uphill</q>
+      from <m>(5,-6)</m> to <m>(6,5.5)</m>.
+      In other words,
+      for the <m>x</m> values between <m>-4</m> and <m>-2</m> (inclusive),
+      the <m>y</m>-coordinates on the graph are getting larger, or
+          <idx><h>function</h><h>increasing</h></idx>
+      <em>increasing</em>, as we move from left to right.
+      Since <m>y = f(x)</m>,
+      the <m>y</m> values on the graph are the function values,
+      and we say that the function <m>f</m> is <em>increasing</em>
+      on the interval <m>[-4,-2]</m>.
+      Analogously, we say that <m>f</m> is
+          <idx><h>function</h><h>decreasing</h></idx> <em>decreasing</em>
+      on the interval <m>[-2,3]</m> increasing once more on the interval <m>[3,4]</m>,
+      <idx><h>function</h><h>constant</h></idx>
+      <em>constant</em> on <m>[4,5]</m>,
+      and finally increasing once again on <m>[5,6]</m>.
+      It is extremely important to notice that the behaviour (increasing,
+      decreasing or constant) occurs on an interval on the <m>x</m>-axis.
+      When we say that the function <m>f</m> is increasing on
+      <m>[-4, -2]</m> we do not mention the actual <m>y</m> values that <m>f</m> attains along the way.
+      Thus, we report <em>where</em> the behaviour occurs,
+      not to what extent the behaviour occurs.
+      Also notice that we do not say that a function is increasing,
+      decreasing or constant at a single <m>x</m> value.
+      In fact, we would run into serious trouble in our previous example if we tried to do so because <m>x = -2</m> is contained in an interval on which <m>f</m> was increasing and one on which it is decreasing. (There's more on this issue <mdash /> and many others <mdash /> in the Exercises.)
+    </p>
+
+    <aside>
+      <p>
+        The notions of how quickly or how slowly a function increases or decreases are explored in Calculus.
+      </p>
+    </aside>
+    <table xml:id="fig_genbehav">
+      <caption>The graph <m>y=f(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-3.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We're now ready for the more formal algebraic definitions of what it means for a function to be increasing,
+      decreasing or constant.
+    </p>
+
+    <definition xml:id="incdeccnstdefn">
+      <title>Increasing, decreasing, and constant functions</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a function defined on an interval <m>I</m>.
+          We say <m>f</m> is:
+
+          <ul>
+            <li>
+              <p>
+              <idx><h>increasing function</h><h>formal definition of</h></idx>
+          <em>increasing</em>
+                on <m>I</m> if and only if
+                <m>f(a) \lt f(b)</m> for all real numbers <m>a</m>,
+                <m>b</m> in <m>I</m> with <m>a \lt b</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+              <idx><h>decreasing function</h><h>formal definition of</h></idx>
+          <em>decreasing</em>
+                on <m>I</m> if and only if
+                <m>f(a) > f(b)</m> for all real numbers <m>a</m>,
+                <m>b</m> in <m>I</m> with <m>a \lt b</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+              <idx><h>constant function</h><h>formal definition of</h></idx>
+          <em>constant</em>
+                on <m>I</m> if and only if
+                <m>f(a) = f(b)</m> for all real numbers <m>a</m>,
+          <m>b</m> in <m>I</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      It is worth taking some time to see that the algebraic descriptions of increasing,
+      decreasing and constant as stated in <xref ref="incdeccnstdefn">Definition</xref>
+      agree with our graphical descriptions given earlier.
+      You should look back through the examples and exercise sets in previous sections where graphs were given to see if you can determine the intervals on which the functions are increasing,
+      decreasing or constant.
+      Can you find an example of a function for which none of the concepts in <xref ref="incdeccnstdefn">Definition</xref> apply?
+    </p>
+
+    <aside>
+      <p>
+        Typically, in (pre)calculus,
+        whenever you're told that something occurs
+        <q>near</q> a given point,
+        you should read this as <q>on some open interval <m>I</m> containing that point</q>.
+      </p>
+    </aside>
+    <p>
+      Now let's turn our attention to a few of the points on the graph.
+      Clearly the point <m>(-2, 4.5)</m> does not have the largest <m>y</m> value of all of the points on the graph of <m>f\; -</m> indeed that honour goes to <m>(6, 5.5)\; -</m> but
+      <m>(-2, 4.5)</m> should get some sort of consolation prize for being
+      <q>the top of the hill</q>
+      between <m>x = -4</m> and <m>x = 3</m>.
+      We say that the function <m>f</m> has a
+          <idx><h>function</h><h>local (relative) maximum</h></idx><idx><h>local maximum</h><h>intuitive definition of</h></idx>
+      <em>local maximum</em>
+      (or <em>relative maximum</em>)
+      at the point <m>(-2,4.5)</m>,
+      because the <m>y</m>-coordinate <m>4.5</m> is the largest <m>y</m>-value (hence,
+      function value) on the curve <q>near</q> <m>x=-2</m>.
+      Similarly, we say that the function <m>f</m> has a
+          <idx><h>function</h><h>local (relative) minimum</h></idx><idx><h>local minimum</h><h>intuitive definition of</h></idx>
+      <em>local minimum</em>
+      (or <em>relative minimum</em>)
+      at the point <m>(3,-8)</m>,
+      since the <m>y</m>-coordinate <m>-8</m> is the smallest function value near <m>x=3</m>.
+      Although it is tempting to say that local extrema occur when the function changes from increasing to decreasing or vice versa,
+      it is not a precise enough way to define the concepts for the needs of Calculus.
+      At the risk of being pedantic,
+      we will present the traditional definitions and thoroughly vet the pathologies they induce in the Exercises.
+      We have one last observation to make before we proceed to the algebraic definitions and look at a fairly tame,
+      yet helpful, example.
+    </p>
+
+    <p>
+      If we look at the entire graph,
+      we see that the largest <m>y</m> value
+      (the largest function value)
+      is <m>5.5</m> at <m>x=6</m>.
+      In this case, we say the
+          <idx><h>function</h><h>(absolute) maximum</h></idx><idx><h>maximum</h><h>intuitive definition of</h></idx>
+      <em>maximum</em>
+      (often called the <q>absolute</q> or <q>global</q> maximum)
+      of <m>f</m> is <m>5.5</m>; similarly, the
+          <idx><h>function</h><h>(absolute,
+      global) minimum</h></idx><idx><h>minimum</h><h>intuitive definition of</h></idx>
+      <em>minimum</em> (again,
+      <q>absolute</q> or <q>global</q>
+      minimum can be used.) of <m>f</m> is<nbsp /><m>-8</m>.
+    </p>
+
+    <aside>
+      <p>
+        <q>Maxima</q> is the plural of
+        <q>maximum</q> and <q>mimima</q>
+        is the plural of <q>minimum</q>. <q>Extrema</q>
+        is the plural of <q>extremum</q>
+        which combines maximum and minimum.
+      </p>
+    </aside>
+    <p>
+      We formalize these concepts in the following definitions.
+    </p>
+
+    <definition xml:id="maxmindefn">
+      <title>Local maximum and minimum</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a function with <m>f(a) = b</m>.
+
+          <ul>
+            <li>
+              <p>
+                We say <m>f</m> has a <em>local maximum</em>
+                at the point <m>(a,b)</m> if and only if there is an open interval <m>I</m> containing <m>a</m> for which
+                <m>f(a) \geq f(x)</m> for all <m>x</m> in <m>I</m>.
+                The value <m>f(a) = b</m> is called
+                <q>a local maximum value of <m>f</m></q> in this case.
+              <idx><h>local maximum</h><h>formal definition of</h></idx>
+          </p>
+            </li>
+
+            <li>
+              <p>
+                We say <m>f</m> has a <em>local minimum</em>
+                at the point <m>(a,b)</m> if and only if there is an open interval <m>I</m> containing <m>a</m> for which
+                <m>f(a) \leq f(x)</m> for all <m>x</m> in <m>I</m>.
+                The value <m>f(a) = b</m> is called
+                <q>a local minimum value of <m>f</m></q> in this case.
+              <idx><h>local minimum</h><h>formal definition of</h></idx>
+          </p>
+            </li>
+
+            <li>
+              <p>
+                The value <m>b</m> is called the <em>maximum</em>
+                of <m>f</m> if <m>b \geq f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+              <idx><h>maximum</h><h>formal definition of</h></idx>
+          </p>
+            </li>
+
+            <li>
+              <p>
+                The value <m>b</m> is called the <em>minimum</em>
+                of <m>f</m> if <m>b \leq f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+              <idx><h>minimum</h><h>formal definition of</h></idx>
+          </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      It's important to note that not every function will have all of these features.
+      Indeed, it is possible to have a function with no local or absolute extrema at all! (Any ideas of what such a function's graph would have to look like?) We shall see examples of functions in the Exercises which have one or two,
+      but not all, of these features,
+      some that have instances of each type of extremum and some functions that seem to defy common sense.
+      In all cases, though,
+      we shall adhere to the algebraic definitions above as we explore the wonderful diversity of graphs that functions provide us.
+    </p>
+
+    <p>
+      Here is the <q>tame</q>
+      example which was promised earlier.
+      It summarizes all of the concepts presented in this section as well as some from previous sections so you should spend some time thinking deeply about it before proceeding to the Exercises.
+    </p>
+
+    <example xml:id="tame">
+      <title>A <q>tame</q> example</title>
+      <statement>
+        <p>
+          Given the graph of <m>y = f(x)</m> in <xref ref="fig_tamegraph">Figure</xref>,
+          answer all of the following questions.
+        </p>
+
+        <table xml:id="fig_tamegraph">
+          <caption>The graph for <xref ref="tame">Example</xref></caption>
+          <tabular>
+            <row>
+              <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-4.pdf"/></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <ol>
+          <li>
+            <p>
+              Find the domain of <m>f</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the range of <m>f</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the <m>x</m>-intercepts, if any exist.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the <m>y</m>-intercepts, if any exist.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the zeros of <m>f</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>f(x) \lt 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine <m>f(2)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>f(x) = -3</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the number of solutions to <m>f(x) = 1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Does <m>f</m> appear to be even, odd, or neither?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the intervals on which <m>f</m> is increasing.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the intervals on which <m>f</m> is decreasing.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the local maximums, if any exist.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              List the local minimums, if any exist.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the maximum, if it exists.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the minimum, if it exists.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find the domain of <m>f</m>,
+                we proceed as in <xref ref="IntrotoFunctions">Section</xref>.
+                By projecting the graph to the <m>x</m>-axis,
+                we see that the portion of the <m>x</m>-axis which corresponds to a point on the graph is everything from <m>-4</m> to <m>4</m>,
+                inclusive.
+                Hence, the domain is <m>[-4,4]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the range, we project the graph to the <m>y</m>-axis.
+                We see that the <m>y</m> values from <m>-3</m> to <m>3</m>,
+                inclusive,
+                constitute the range of <m>f</m>.
+                Hence, our answer is <m>[-3,3]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The <m>x</m>-intercepts are the points on the graph with <m>y</m>-coordinate <m>0</m>,
+                namely <m>(-2,0)</m> and <m>(2,0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The <m>y</m>-intercept is the point on the graph with <m>x</m>-coordinate <m>0</m>,
+                namely <m>(0,3)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The zeros of <m>f</m> are the <m>x</m>-coordinates of the <m>x</m>-intercepts of the graph of <m>y=f(x)</m> which are <m>x=-2, 2</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>f(x) \lt 0</m>,
+                we look for the <m>x</m> values of the points on the graph where the <m>y</m>-coordinate is less than <m>0</m>.
+                Graphically,
+                we are looking for where the graph is below the <m>x</m>-axis.
+                This happens for the <m>x</m> values from <m>-4</m> to <m>-2</m> and again from <m>2</m> to <m>4</m>.
+                So our answer is <m>[-4,-2) \cup (2,4]</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since the graph of <m>f</m> is the graph of the equation <m>y=f(x)</m>,
+                <m>f(2)</m> is the <m>y</m>-coordinate of the point which corresponds to <m>x = 2</m>.
+                Since the point <m>(2,0)</m> is on the graph, we have <m>f(2) = 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To solve <m>f(x) = -3</m>,
+          we look where <m>y = f(x) = -3</m>.
+                We find two points with a <m>y</m>-coordinate of <m>-3</m>,
+                namely <m>(-4,-3)</m> and <m>(4,-3)</m>.
+                Hence, the solutions to
+          <m>f(x) = -3</m> are <m>x = \pm 4</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As in the previous problem, to solve <m>f(x)=1</m>,
+                we look for points on the graph where the <m>y</m>-coordinate is <m>1</m>.
+                Even though these points aren't specified,
+                we see that the curve has two points with a <m>y</m> value of <m>1</m>,
+                as seen in the graph below.
+                That means there are two solutions to <m>f(x) = 1</m>:
+                see <xref ref="fig_tamey1">Figure</xref>. <figure xml:id="fig_tamey1"> <caption>Solving <m>f(x)=1</m> in <xref ref="tame">Example</xref>.9</caption> <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-5.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The graph appears to be symmetric about the <m>y</m>-axis.
+                This suggests
+                (but does not prove)
+                that <m>f</m> is even.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As we move from left to right,
+                the graph rises from <m>(-4,-3)</m> to <m>(0,3)</m>.
+                This means <m>f</m> is increasing on the interval <m>[-4,0]</m>. (Remember,
+                the answer here is an interval on the <m>x</m>-axis.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As we move from left to right,
+                the graph falls from <m>(0,3)</m> to <m>(4,-3)</m>.
+                This means <m>f</m> is decreasing on the interval <m>[0,4]</m>. (Remember,
+                the answer here is an interval on the <m>x</m>-axis.)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The function has its only local maximum at <m>(0,3)</m> so
+                <m>f(0) = 3</m> is the local minimum value.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There are no local minima.
+                Why don't <m>(-4, -3)</m> and <m>(4, -3)</m> count?
+                Let's consider the point <m>(-4, -3)</m> for a moment.
+                Recall that, in the definition of local minimum,
+                there needs to be an open interval <m>I</m> which contains <m>x = -4</m> such that
+                <m>f(-4) \lt f(x)</m> for all <m>x</m> in <m>I</m> different from <m>-4</m>.
+                But if we put an open interval around <m>x= -4</m> a portion of that interval will lie outside of the domain of <m>f</m>.
+                Because we are unable to satisfy the requirements of the definition for a local minimum,
+                we cannot claim that <m>f</m> has one at <m>(-4, -3)</m>.
+                The point <m>(4, -3)</m> fails for the same reason <m>-</m> no open interval around <m>x = 4</m> stays within the domain of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The maximum value of <m>f</m> is the largest <m>y</m>-coordinate which is <m>3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The minimum value of <m>f</m> is the smallest <m>y</m>-coordinate which is <m>-3</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      In general, the problem of finding maximum and minimum values,
+      requires the techniques of Calculus.
+      In the meantime, we'll have to rely on technology to assist us.
+      Most graphing calculators and many mathematics software programs have
+      <q>Minimum</q> and <q>Maximum</q>
+      features which can be used to approximate these values,
+      as we now demonstrate.
+    </p>
+
+    <figure xml:id="fig_maxmincomp1">
+      <caption>The local maximum and minimum of <m>f(x) = \dfrac{15x}{x^2+3}</m> in <xref ref="ex_maxmincomp">Example</xref></caption>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_07.pdf"/>
+    </figure>
+
+    <example xml:id="ex_maxmincomp">
+      <title>Using the computer to find maxima and minima</title>
+      <statement>
+        <p>
+          Let <m>f(x) = \dfrac{15x}{x^2+3}</m>.
+          Use the computer or a graphing calculator to approximate the intervals on which <m>f</m> is increasing and those on which it is decreasing.
+          Approximate all extrema.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using GeoGebra,
+          we enter <c>f(x) = 15x/(x\string^2+3)</c> to plot the graph of <m>f</m>.
+          The command <c>Max[f,-3,3]</c> then calculates the maximum value of <m>f</m> on the interval <m>[-3,3]</m>.
+          Similarly, <c>Min[f,-3,3]</c> gives the minimum value of <m>f</m> on the interval <m>[-3,3]</m>.
+          The graph of <m>f</m>, together with the local maximum and local minimum,
+          are plotted in <xref ref="fig_maxmincomp1">Figure</xref>.
+        </p>
+
+        <p>
+          To two decimal places,
+          <m>f</m> appears to have its only local minimum at the point
+          <m>(-1.73, -4.33)</m> and its only local maximum at <m>(1.73, 4.33)</m>.
+          Given the symmetry about the origin suggested by the graph,
+          the relation between these points shouldn't be too surprising.
+          The function appears to be increasing on the interval
+          <m>[-1.73, 1.73]</m> and decreasing on <m>(-\infty, -1.73] \cup [1.73,\infty)</m>.
+          This makes <m>-4.33</m> the (absolute) minimum and <m>4.33</m> the (absolute) maximum.
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="distancefunctionex">
+      <title>Minimizing distance from a graph to the origin</title>
+      <statement>
+        <p>
+          Find the points on the graph of
+          <m>y = (x-3)^2</m> which are closest to the origin.
+          Round your answers to two decimal places.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Suppose a point <m>(x,y)</m> is on the graph of <m>y = (x-3)^2</m>.
+          Its distance to the origin <m>(0,0)</m> is given by
+          <me>
+            \begin{array}{rclr} 
+
+            d \amp  = \amp   \sqrt{(x-0)^2+(y-0)^2} \amp  \\
+            \amp  = \amp   \sqrt{x^2+y^2} \amp   \\
+            \amp = \amp  \sqrt{x^2 + \left[(x-3)^2\right]^2} \amp  \mbox{Since \(y = (x-3)^2\)}  \\
+            \amp  = \amp  \sqrt{x^2 + (x-3)^4} \amp 
+            \end{array}
+          </me>
+        </p>
+
+        <p>
+          Given a value for <m>x</m>,
+          the formula <m>d = \sqrt{x^2 + (x-3)^4}</m> is the distance from <m>(0,0)</m> to the point <m>(x,y)</m> on the curve <m>y = (x-3)^2</m>.
+          What we have defined, then,
+          is a function <m>d(x)</m> which we wish to minimize over all values of <m>x</m>.
+          To accomplish this task analytically would require Calculus so as we've mentioned before,
+          we can use a graphing calculator to find an approximate solution.
+          Using Geogebra,
+          we enter the function <m>d(x)</m> as shown below and graph.
+        </p>
+
+        <figure xml:id="fig_distfunctex">
+          <caption>Minimizing <m>d(x)</m> in <xref ref="distancefunctionex">Example</xref></caption>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_08.pdf"/>
+        </figure>
+
+        <p>
+          Using the Minimum feature,
+          we see above on the right that the (absolute) minimum occurs near <m>x=2</m>.
+          Rounding to two decimal places,
+          we get that the minimum distance occurs when <m>x = 2.00</m>.
+          To find the <m>y</m> value on the parabola associated with <m>x = 2.00</m>,
+          we substitute <m>2.00</m> into the equation to get <m>y = (x-3)^2 = (2.00-3)^2 = 1.00</m>.
+          So, our final answer is <m>(2.00,1.00)</m>.
+        </p>
+      </solution>
+    </example>
+
+    <aside>
+      <p>
+        It seems silly to list a final answer as <m>(2.00, 1.00)</m>.
+        Indeed, Calculus confirms that the <em>exact</em>
+        answer to this problem is, in fact, <m>(2,1)</m>.
+        As you are well aware by now,
+        the authors are overly pedantic, and as such,
+        use the decimal places to remind the reader that <em>any</em>
+        result garnered from a calculator in this fashion is an approximation,
+        and should be treated as such. (What does the <m>y</m> value calculated by GeoGebra in <xref ref="fig_distfunctex">Figure</xref> mean in this problem?)
+      </p>
+    </aside>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, sketch the graph of the given function.
+      State the domain of the function,
+      identify any intercepts and test for symmetry.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) =2-x</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(2, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, 2\right)</m>
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-17.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x - 2}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x - 2}{3}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(2, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, -\frac{2}{3}\right)</m>
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-18.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^2+1</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: None
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, 1 \right)</m>
+        </p>
+
+        <p>
+          Even
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-19.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 4-x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 4-x^2</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>(-2,0)</m>, <m>(2,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, 4 \right)</m>
+        </p>
+
+        <p>
+          Even
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 2</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: None
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, 2 \right)</m>
+        </p>
+
+        <p>
+          Even
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x^3</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Odd
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x(x-1)(x+2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = x(x-1)(x+2)</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>(-2,0)</m>,
+          <m>(0,0)</m>, <m>(1,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, 0 \right)</m>
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{x-2}</m>
+        </p>
+
+        <p>
+          Domain: <m>[2, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(2,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: None
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{5 - x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt{5 - x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 5]</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(5, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, \sqrt{5})</m>
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3-2\sqrt{x+2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 3-2\sqrt{x+2}</m>
+        </p>
+
+        <p>
+          Domain: <m>[-2,\infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>\left(\frac{1}{4}, 0\right)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 3-2\sqrt{2})</m>
+        </p>
+
+        <p>
+          No symmetry
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[3]{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \sqrt[3]{x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Odd
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2} + 1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2} + 1}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: None
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 1)</m>
+        </p>
+
+        <p>
+          Even
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      sketch the graph of the given piecewise-defined function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} 4-x \amp \mbox{ if } \amp x \leq 3 \\ 2 \amp \mbox{ if } \amp x > 3 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} x^2 \amp \mbox{ if } \amp x \leq 0 \\ 2x \amp \mbox{ if } \amp x > 0 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -3 \amp \mbox{ if } \amp x \lt 0 \\ 2x-3 \amp \mbox{ if } \amp 0 \leq x \leq 3 \\ 3 \amp \mbox{ if } \amp x > 3 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} x^2 - 4 \amp \mbox{ if } \amp x \leq -2\\ 4-x^2 \amp \mbox{ if } \amp -2 \lt x \lt 2 \\ x^2-4 \amp \mbox{ if } \amp x \geq 2 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} -2x - 4 \amp \mbox{ if } \amp x \lt 0 \\ 3x \amp \mbox{ if } \amp x \geq 0 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-33.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} \sqrt{x + 4} \amp \mbox{ if } \amp -4 \leq x \lt 5 \\ \sqrt{x - 1} \amp \mbox{ if } \amp x \geq 5 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-34.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} x^{2} \amp \mbox{ if } \amp x \leq -2 \\ 3 - x \amp \mbox{ if } \amp -2 \lt x \lt 2 \\ 4 \amp \mbox{ if } \amp x \geq 2 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-35.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>{\displaystyle f(x) = \left\{ \begin{array}{rcl} \dfrac{1}{x} \amp \mbox{ if } \amp -6 \lt x \lt -1\\ x \amp \mbox{ if } \amp -1 \lt x \lt 1 \\ \sqrt{x} \amp \mbox{ if } \amp 1 \lt x \lt 9 \end{array} \right. }</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-36.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      determine analytically if the following functions are even,
+      odd or neither.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 7x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 7x+2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 7</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x^2-4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 4-x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2-x-6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =2x^3-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =-x^5+2x^3-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{6} - x^{4} + x^{2} + 9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^3 + x^2 + x + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{1-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{1-x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even <em>and</em> odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[3]{x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[3]{x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3}{x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x-1}{x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x}{x^2+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2-3}{x-4x^3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          odd
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{9}{\sqrt{4-x^2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sqrt[3]{x^3+x}}{5x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          even
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the graph of <m>y = f(x)</m> given below to answer the question.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-6.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find the domain of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the range of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,4]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>f(-2)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-2) = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>f(x) = 4</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the <m>x</m>-intercepts, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-4,0)</m>, <m>(-1,0)</m>, <m>(1,0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the <m>y</m>-intercepts, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0,-1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the zeros of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-4</m>, <m>-1</m>, <m>1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>f(x) \geq 0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-4,-1] \cup [1,3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the number of solutions to <m>f(x) = 1</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Does <m>f</m> appear to be even, odd, or neither?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the intervals where <m>f</m> is increasing.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,-3]</m>, <m>[0,2]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the intervals where <m>f</m> is decreasing.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-3,0]</m>, <m>[2,3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the local maximums, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-3) = 4</m>, <m>f(2) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the local minimums, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(0) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the maximum, if it exists.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-3) = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the minimum, if it exists.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-5) = -5</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the graph of <m>y = f(x)</m> given below to answer the question.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-7.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find the domain of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-4,4]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the range of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-5,5)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Determine <m>f(2)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(2) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>f(x) = -5</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the <m>x</m>-intercepts, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-4,0)</m>, <m>(0,0)</m>, <m>(4,0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the <m>y</m>-intercepts, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0,0)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the zeros of <m>f</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-4</m>, <m>0</m>, <m>4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>f(x) \leq 0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-4,0] \cup \{4\}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the number of solutions to <m>f(x) = 3</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Does <m>f</m> appear to be even, odd, or neither?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          neither
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the intervals where <m>f</m> is increasing.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-2,2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the intervals where <m>f</m> is decreasing.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[-4, -2]</m>, <m>(2,4]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the local maximums, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          none
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the local minimums, if any exist.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-2) = -5</m>, <m>f(2) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the maximum, if it exists.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          none
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Find the minimum, if it exists.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(-2)=-5</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, use a graphing calculator or software
+      (such as GeoGebra)
+      to approximate the local and absolute extrema of the given function.
+      Approximate the intervals on which the function is increasing and those on which it is decreasing.
+      Round your answers to two decimal places.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{4} - 3x^{3} - 24x^{2} + 28x + 48</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No absolute maximum
+        </p>
+
+        <p>
+          Absolute minimum <m>f(4.55) \approx -175.46</m>
+        </p>
+
+        <p>
+          Local minimum at <m>(-2.84, -91.32)</m>
+        </p>
+
+        <p>
+          Local maximum at <m>(0.54, 55.73)</m>
+        </p>
+
+        <p>
+          Local minimum at <m>(4.55, -175.46)</m>
+        </p>
+
+        <p>
+          Increasing on <m>[-2.84, 0.54], [4.55, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>(-\infty, -2.84], [0.54, 4.55]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{2/3}(x - 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No absolute maximum
+        </p>
+
+        <p>
+          No absolute minimum
+        </p>
+
+        <p>
+          Local maximum at <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Local minimum at <m>(1.60, -3.28)</m>
+        </p>
+
+        <p>
+          Increasing on <m>(-\infty, 0], [1.60, \infty)</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[0, 1.60]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{9 - x^{2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Absolute maximum <m>f(0) = 3</m>
+        </p>
+
+        <p>
+          Absolute minimum <m>f(\pm 3) = 0</m>
+        </p>
+
+        <p>
+          Local maximum at <m>(0, 3)</m>
+        </p>
+
+        <p>
+          No local minimum
+        </p>
+
+        <p>
+          Increasing on <m>[-3, 0]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[0, 3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x\sqrt{9 - x^{2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Absolute maximum <m>f(2.12) \approx 4.50</m>
+        </p>
+
+        <p>
+          Absolute minimum <m>f(-2.12) \approx -4.50</m>
+        </p>
+
+        <p>
+          Local maximum <m>(2.12, 4.50)</m>
+        </p>
+
+        <p>
+          Local minimum <m>(-2.12, -4.50)</m>
+        </p>
+
+        <p>
+          Increasing on <m>[-2.12, 2.12]</m>
+        </p>
+
+        <p>
+          Decreasing on <m>[-3, -2.12], [2.12, 3]</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> below to find the function value.
+    </p>
+    <tabular>
+      <row>
+        <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-8.pdf"/></cell>
+        <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-9.pdf"/></cell>
+      </row>
+      <row>
+        <cell><m>y=f(x)</m></cell>
+        <cell><m>y=g(x)</m></cell>
+      </row>
+    </tabular>
+    <exercise>
+      <statement>
+        <p>
+          <m>(f+g)(0)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(f+g)(0) = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(f+g)(1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(f+g)(1) = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(f-g)(1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(f-g)(1) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(g-f)(2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(g-f)(2) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(fg)(2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(fg)(2) = 9</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(fg)(1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(fg)(1) = 6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{f}{g}\right)(4) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{g}{f}\right)(2) = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      The graph below represents the height <m>h</m> of a Sasquatch
+      (in feet)
+      as a function of its age <m>N</m> in years.
+      Use it to answer the questions in the following exercises.
+    </p>
+
+    <p>
+      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-10.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Find and interpret <m>h(0)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(0) = 2</m>, so the Sasquatch is 2 feet tall at birth.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How tall is the Sasquatch when she is 15 years old?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(15) = 6</m>,
+          so the Saquatch is 6 feet tall when she is 15 years old.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Solve <m>h(N) = 6</m> and interpret.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(N) = 6</m> when <m>N = 15</m> and <m>N=60</m>.
+          This means the Sasquatch is 6 feet tall when she is 15 and 60 years old.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the interval over which <m>h</m> is constant and interpret your answer.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h</m> is constant on <m>[30,45]</m>.
+          This means the Sasquatch's height is constant (at 8 feet) for these years.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List the interval over which <m>h</m> is decreasing and interpret your answer.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h</m> is decreasing on <m>[45,60]</m>.
+          This means the Sasquatch is getting shorter from the age of 45 to the age of 60. (Sasquatchteoporosis,
+          perhaps?)
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      For the following exercises,
+      let <m>f(x) = \lfloor x \rfloor</m> be the greatest integer function as defined in <xref ref="greatestinteger">Exercise</xref>
+      in <xref ref="FunctionNotation">Section</xref>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Graph <m>y = f(x)</m>.
+          Be careful to correctly describe the behaviour of the graph near the integers.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-37.pdf"/>
+        </p>
+
+        <p>
+          The graph of <m>f(x) = \lfloor x \rfloor</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Is <m>f</m> even, odd, or neither?
+          Explain.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Note that <m>f(1.1) = 1</m>,
+          but <m>f(-1.1)=-2</m>, so <m>f</m> is neither even nor odd.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates which points on the graph are local minimums,
+          local maximums or both.
+          Is <m>f</m> ever increasing?
+          Decreasing?
+          Constant?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="Sasquatchfunc1">Exercise</xref>
+          in <xref ref="FunctionNotation">Section</xref>,
+          we saw that the population of Sasquatch in Portage County could be modeled by the function <m>P(t) = \dfrac{150t}{t + 15}</m>,
+          where <m>t = 0</m> represents the year 1803.
+          Use your graphing calculator to analyze the general function behaviour of <m>P</m>.
+          Will there ever be a time when 200 Sasquatch roam Portage County?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>f</m> and <m>g</m> are both even functions.
+          What can be said about the functions <m>f+g</m>, <m>f-g</m>,
+          <m>fg</m> and <m>\frac{f}{g}</m>?
+          What if <m>f</m> and <m>g</m> are both odd?
+          What if <m>f</m> is even but <m>g</m> is odd?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          One of the most important aspects of the Cartesian Coordinate Plane is its ability to put Algebra into geometric terms and Geometry into algebraic terms.
+          We've spent most of this chapter looking at this very phenomenon and now you should spend some time with your classmates reviewing what we've done.
+          What major results do we have that tie Algebra and Geometry together?
+          What concepts from Geometry have we not yet described algebraically?
+          What topics from Intermediate Algebra have we not yet discussed geometrically?
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      It's now time to <q>thoroughly vet the pathologies induced</q>
+      by the precise definitions of local maximum and local minimum.
+      You and your classmates should carefully discuss the following exercises.
+      You will need to refer back to <xref ref="incdeccnstdefn">Definition</xref>
+      (Increasing, Decreasing and Constant) and <xref ref="maxmindefn">Definition</xref>
+      (Maximum and Minimum) during the discussion.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          Consider the graph of the function <m>f</m> given below.
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-11.pdf"/>
+
+          <ol>
+            <li>
+              <p>
+                Show that <m>f</m> has a local maximum but not a local minimum at the point <m>(-1, 1)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Show that <m>f</m> has a local minimum but not a local maximum at the point <m>(1, 1)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Show that <m>f</m> has a local maximum AND a local minimum at the point <m>(0, 1)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Show that <m>f</m> is constant on the interval <m>[-1, 1]</m> and thus has both a local maximum AND a local minimum at every point
+                <m>(x, f(x))</m> where <m>-1 \lt x \lt 1</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Using <xref ref="tame">Example</xref> as a guide,
+          show that the function <m>g</m> whose graph is given below does <em>not</em>
+          have a local maximum at <m>(-3, 5)</m> nor does it have a local minimum at <m>(3, -3)</m>.
+          Find its extrema, both local and absolute.
+          What's unique about the point <m>(0, -4)</m> on this graph?
+          Also find the intervals on which <m>g</m> is increasing and those on which <m>g</m> is decreasing.
+        </p>
+
+        <p>
+          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-12.pdf"/>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          We said earlier in the section that it is not good enough to say local extrema exist where a function changes from increasing to decreasing or vice versa.
+          As a previous exercise showed,
+          we could have local extrema when a function is constant so now we need to examine some functions whose graphs do indeed change direction.
+          Consider the functions graphed below.
+          Notice that all four of them change direction at an open circle on the graph.
+          Examine each for local extrema.
+          What is the effect of placing the <q>dot</q>
+          on the <m>y</m>-axis above or below the open circle?
+          What could you say if no function value were assigned to <m>x = 0</m>?
+
+          <ol>
+            <li>
+              <p>
+                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-13.pdf"/>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-14.pdf"/>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-15.pdf"/>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-16.pdf"/>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

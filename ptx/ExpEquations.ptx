@@ -1,0 +1,1249 @@
+
+
+<section xml:id="ExpEquations">
+  <title>Exponential Equations and Inequalities</title>
+  <introduction>
+    <p>
+      In this section we will develop techniques for solving equations involving exponential functions.
+      Suppose, for instance,
+      we wanted to solve the equation <m>2^{x} = 128</m>.
+      After a moment's calculation,
+      we find <m>128 = 2^{7}</m>, so we have <m>2^{x} = 2^{7}</m>.
+      The one-to-one property of exponential functions,
+      detailed in <xref ref="explogsonetoone">Theorem</xref>,
+      tells us that <m>2^{x} = 2^{7}</m> if and only if <m>x=7</m>.
+      This means that not only is <m>x=7</m> a solution to <m>2^{x} = 2^{7}</m>,
+      it is the <em>only</em> solution.
+      Now suppose we change the problem ever so slightly to <m>2^{x} = 129</m>.
+      We could use one of the inverse properties of exponentials and logarithms listed in <xref ref="invpropslogs">Theorem</xref>
+      to write <m>129 = 2^{\log_{2}(129)}</m>.
+      We'd then have <m>2^{x} = 2^{\log_{2}(129)}</m>,
+      which means our solution is <m>x = \log_{2}(129)</m>.
+      This makes sense because, after all,
+      the definition of <m>\log_{2}(129)</m> is
+      <q>the exponent we put on <m>2</m> to get <m>129</m>.</q>
+      Indeed we could have obtained this solution directly by rewriting the equation
+      <m>2^{x} = 129</m> in its logarithmic form <m>\log_{2}(129) = x</m>.
+      Either way,
+      in order to get a reasonable decimal approximation to this number,
+      we'd use the change of base formula,
+      <xref ref="changeofbase">Theorem</xref>,
+      to give us something more calculator friendly,
+      say <m>\log_{2}(129) = \frac{\ln(129)}{\ln(2)}</m>. (You can use natural logs or common logs.
+      We choose natural logs.
+      When we reach Calculus we'll see that natural logs are the easiest to work with.) Another way to arrive at this answer is as follows
+      <md>
+        <mrow>2^{x} \amp  =  129</mrow>
+        <mrow>\ln\left(2^{x}\right) \amp  =  \ln(129) \tag{Take the natural log of both sides.}</mrow>
+        <mrow>x \ln(2) \amp  =  \ln(129)  \tag{Power Rule}</mrow>
+        <mrow>x \amp  = \dfrac{\ln(129)}{\ln(2)}</mrow>
+      </md>
+    </p>
+
+    <p>
+      <q>Taking the natural log</q>
+      of both sides is akin to squaring both sides:
+      since <m>f(x) = \ln(x)</m> is a <em>function</em>,
+      as long as two quantities are equal,
+      their natural logs are equal. (This is also the <q>if</q>
+      part of the statement <m>\log_{b}(u) = \log_{b}(w)</m> if and only if <m>u=w</m> in <xref ref="explogsonetoone">Theorem</xref>.) Also note that we treat <m>\ln(2)</m> as any other non-zero real number and divide it through to isolate the variable <m>x</m>.
+      We summarize below the two common ways to solve exponential equations,
+      motivated by our examples.
+    </p>
+
+    <aside>
+      <p>
+        Please resist the temptation to divide both sides by
+        <q><m>\ln</m></q> instead of <m>\ln(2)</m>.
+        Just like it wouldn't make sense to divide both sides by the square root symbol <q><m>\sqrt{ \,}</m></q>
+        when solving <m>x \sqrt{2} = 5</m>,
+        it makes no sense to divide by <q><m>\ln</m></q>.
+      </p>
+    </aside>
+    <insight xml:id="idea_expeqns">
+      <title>Steps for Solving an Equation involving Exponential Functions</title>
+      <p>
+            <idx><h>exponential function</h><h>solving equations with</h></idx>
+      </p>
+
+      <ol>
+        <li>
+          <p>
+            Isolate the exponential function.
+          </p>
+        </li>
+
+        <li><ol>
+            <li>
+              <p>
+                If convenient,
+                express both sides with a common base and equate the exponents.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Otherwise, take the natural log of both sides of the equation and use the Power Rule.
+              </p>
+            </li>
+          </ol></li>
+      </ol>
+    </insight>
+
+    <example xml:id="expeqnsex1">
+      <title>Solving exponential equations</title>
+      <statement>
+        <p>
+          Solve the following equations.
+          Check your answer graphically using a computer or calculator.
+
+          <ol>
+            <li>
+              <p>
+                <m>2^{3x} = 16^{1-x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2000 = 1000 \cdot 3^{-0.1 t}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>9 \cdot 3^{x} = 7^{2x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>75 = \frac{100}{1 + 3e^{-2t}}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>25^{x} = 5^{x} + 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\frac{e^{x} - e^{-x}}{2} = 5</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>16</m> is a power of <m>2</m>,
+                we can rewrite <m>2^{3x} = 16^{1-x}</m> as <m>2^{3x} = \left(2^4\right)^{1-x}</m>.
+                Using properties of exponents,
+                we get <m>2^{3x} = 2^{4(1-x)}</m>.
+                Using the one-to-one property of exponential functions,
+                we get <m>3x = 4(1-x)</m> which gives <m>x=\frac{4}{7}</m>.
+                To check graphically, we set <m>f(x) = 2^{3x}</m> and
+                <m>g(x) = 16^{1-x}</m> and see that they intersect at <m>x=\frac{4}{7} \approx 0.5714</m>:
+                see <xref ref="fig_expeqn1">Figure</xref>. <figure xml:id="fig_expeqn1"> <caption>\color{red} <m>y=f(x)=2^{3x}</m> and {\color{blue}
+                <m>y=g(x)=16^{1-x}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs05.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We begin solving <m>2000 = 1000 \cdot 3^{-0.1 t}</m> by dividing both sides by <m>1000</m> to isolate the exponential which yields <m>3^{-0.1t} = 2</m>.
+                Since it is inconvenient to write <m>2</m> as a power of <m>3</m>,
+                we use the natural log to get <m>\ln\left(3^{-0.1t}\right) = \ln(2)</m>.
+                Using the Power Rule, we get <m>-0.1 t \ln(3) = \ln(2)</m>,
+                so we divide both sides by
+                <m>-0.1 \ln(3)</m> to get <m>t = -\frac{\ln(2)}{0.1 \ln(3)} = -\frac{10\ln(2)}{\ln(3)}</m>.
+                Using GeoGebra, we graph <m>f(x) = 2000</m> and
+                <m>g(x) = 1000 \cdot 3^{-0.1 x}</m> and find that they intersect at <m>x = -\frac{10\ln(2)}{\ln(3)} \approx -6.3093</m>:
+                see <xref ref="fig_expeqn2">Figure</xref>. <figure xml:id="fig_expeqn2"> <caption>\color{red} <m>y=f(x)=2000</m> and {\color{blue}
+                <m>y=g(x)=1000\cdot e^{-0.1x}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs06.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We first note that we can rewrite the equation <m>9 \cdot 3^{x} = 7^{2x}</m> as
+                <m>3^2 \cdot 3^x = 7^{2x}</m> to obtain <m>3^{x+2} = 7^{2x}</m>.
+                Since it is not convenient to express both sides as a power of <m>3</m>
+                (or <m>7</m> for that matter)
+                we use the natural log:
+                <m>\ln\left(3^{x+2}\right) = \ln\left(7^{2x}\right)</m>.
+                The power rule gives <m>(x+2) \ln(3) = 2x \ln(7)</m>.
+                Even though this equation appears very complicated,
+                keep in mind that <m>\ln(3)</m> and <m>\ln(7)</m> are just constants.
+                The equation <m>(x+2) \ln(3) = 2x \ln(7)</m> is actually a linear equation and as such we gather all of the terms with <m>x</m> on one side,
+                and the constants on the other.
+                We then divide both sides by the coefficient of <m>x</m>,
+                which we obtain by factoring.
+                <me>
+                  \begin{array}{rclr}
+                  (x+2) \ln(3) \amp  = \amp  2x \ln(7) \amp  \\
+
+                  x \ln(3) + 2 \ln(3) \amp  = \amp  2x \ln(7) \amp  \\
+                  2 \ln(3) \amp  = \amp  2x \ln(7) - x \ln(3) \amp  \\
+                  2 \ln(3) \amp  = \amp  x (2 \ln(7) - \ln(3)) \amp  \mbox{Factor.} \\
+                  x \amp  = \amp  \frac{2 \ln(3)}{2\ln(7) - \ln(3)} \amp 
+                  \end{array}
+                </me>
+                Graphing <m>f(x) = 9 \cdot 3^{x}</m> and <m>g(x) = 7^{2x}</m> in GeoGebra,
+                we see that these two graphs intersect at <m>x = \frac{2 \ln(3)}{2\ln(7) - \ln(3)}  \approx 0.7866</m>:
+                see <xref ref="fig_expeqn3">Figure</xref>.
+
+                <figure xml:id="fig_expeqn3">
+                  <caption>\color{red} <m>y=f(x)=9\cdot 3^x</m> and
+                  {\color{blue} <m>y=g(x)=7^{2x}</m>}</caption>
+                  <img src="figures/ExpLogsGraphics/ExpLogs07.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Our objective in solving
+          <m>75 = \frac{100}{1 + 3e^{-2t}}</m> is to first isolate the exponential.
+                To that end,
+                we clear denominators and get <m>75\left(1 + 3e^{-2t}\right) = 100</m>.
+                From this we get <m>75 + 225e^{-2t} =100</m>,
+                which leads to <m>225e^{-2t} = 25</m>,
+                and finally, <m>e^{-2t} = \frac{1}{9}</m>.
+                Taking the natural log of both sides gives <m>\ln\left(e^{-2t}\right) = \ln\left( \frac{1}{9} \right)</m>.
+                Since natural log is log base <m>e</m>,
+                <m>\ln\left(e^{-2t}\right) = -2t</m>.
+                We can also use the Power Rule to write <m>\ln\left( \frac{1}{9} \right) = -\ln(9)</m>.
+                Putting these two steps together,
+                we simplify <m>\ln\left(e^{-2t}\right) = \ln\left( \frac{1}{9} \right)</m> to <m>-2t = -\ln(9)</m>.
+                We arrive at our solution,
+                <m>t = \frac{\ln(9)}{2}</m> which simplifies to
+                <m>t = \ln(3)</m>. (Can you explain why?) GeoGebra confirms the graphs of <m>f(x) = 75</m> and
+                <m>g(x) = \frac{100}{1 + 3e^{-2x}}</m> intersect at <m>x = \ln(3) \approx 1.099</m>:
+                see <xref ref="fig_expeqn4">Figure</xref>. <figure xml:id="fig_expeqn4"> <caption>\color{red} <m>y=f(x)=75</m> and {\color{blue}
+                <m>y=g(x)=\frac{100}{1+3e^{-2x}}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs08.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We start solving <m>25^{x} = 5^{x} + 6</m> by rewriting
+                <m>25 = 5^2</m> so that we have <m>\left(5^2\right)^{x} = 5^{x} + 6</m>,
+                or <m>5^{2x} = 5^{x} + 6</m>.
+                Even though we have a common base,
+                having two terms on the right hand side of the equation foils our plan of equating exponents or taking logs.
+                If we stare at this long enough,
+                we notice that we have three terms with the exponent on one term exactly twice that of another.
+                To our surprise and delight,
+                we have a <q>quadratic in disguise</q>.
+                Letting <m>u = 5^{x}</m>,
+                we have <m>u^2 = \left(5^{x}\right)^2 = 5^{2x}</m> so the equation
+                <m>5^{2x} = 5^{x} + 6</m> becomes <m>u^2 = u + 6</m>.
+                Solving this as <m>u^2 - u - 6=0</m> gives <m>u = -2</m> or <m>u = 3</m>.
+                Since <m>u = 5^{x}</m>,
+          we have <m>5^{x} = -2</m> or <m>5^{x} = 3</m>.
+                Since <m>5^{x} = -2</m> has no real solution, (Why not?) we focus on <m>5^{x} = 3</m>.
+                Since it isn't convenient to express <m>3</m> as a power of <m>5</m>,
+                we take natural logs and get <m>\ln\left(5^{x}\right) = \ln(3)</m> so that
+                <m>x \ln(5) = \ln(3)</m> or <m>x = \frac{\ln(3)}{\ln(5)}</m>.
+                Using GeoGebra, we see the graphs of <m>f(x) = 25^{x}</m> and
+                <m>g(x) = 5^{x} + 6</m> intersect at <m>x=\frac{\ln(3)}{\ln(5)} \approx 0.6826</m>:
+                see <xref ref="fig_expeqn5">Figure</xref>. <figure xml:id="fig_expeqn5"> <caption>\color{red} <m>y=f(x)=25^x</m> and {\color{blue}
+                <m>y=g(x)=5^x+6</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs09.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                At first,
+          it's unclear how to proceed with <m>\frac{e^{x} - e^{-x}}{2} = 5</m>,
+                besides clearing the denominator to obtain <m>e^{x} - e^{-x} = 10</m>.
+                Of course, if we rewrite <m>e^{-x} = \frac{1}{e^{x}}</m>,
+                we see we have another denominator lurking in the problem:
+                <m>e^{x} - \frac{1}{e^{x}} = 10</m>.
+                Clearing this denominator gives us <m>e^{2x} - 1 = 10e^{x}</m>,
+                and once again,
+                we have an equation with three terms where the exponent on one term is exactly twice that of another - a
+                <q>quadratic in disguise.</q> If we let <m>u = e^{x}</m>,
+                then <m>u^2 = e^{2x}</m> so the equation
+                <m>e^{2x} - 1 = 10e^{x}</m> can be viewed as <m>u^2-1 = 10u</m>.
+                Solving <m>u^2 - 10u - 1 = 0</m>,
+                we obtain by the quadratic formula <m>u = 5 \pm \sqrt{26}</m>.
+                From this, we have <m>e^{x} = 5 \pm \sqrt{26}</m>.
+                Since <m>5 - \sqrt{26} \lt 0</m>,
+                we get no real solution to <m>e^{x} = 5 - \sqrt{26}</m>,
+                but for <m>e^{x} = 5 + \sqrt{26}</m>,
+                we take natural logs to obtain <m>x = \ln\left(5 + \sqrt{26}\right)</m>.
+                If we graph <m>f(x) = \frac{e^{x} - e^{-x}}{2}</m> and <m>g(x) = 5</m>,
+                we see in <xref ref="fig_expeqn6">Figure</xref>
+                that the graphs intersect at
+                <m>x = \ln\left(5 + \sqrt{26}\right) \approx 2.312</m>. <figure xml:id="fig_expeqn6"> <caption>\color{red} <m>y=f(x)=\dfrac{e^x-e^{-x}}{2}</m> and {\color{blue}
+                <m>y=g(x)=5</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs10.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The authors would be remiss not to mention that <xref ref="expeqnsex1">Example</xref>
+      still holds great educational value.
+      Much can be learned about logarithms and exponentials by verifying the solutions obtained in <xref ref="expeqnsex1">Example</xref> analytically.
+      For example,
+      to verify our solution to <m>2000 = 1000 \cdot 3^{-0.1 t}</m>,
+      we substitute <m>t = -\frac{10\ln(2)}{\ln(3)}</m> and obtain
+      <me>
+        \begin{array}{rclr}
+
+        2000 \amp  \stackrel{?}{=} \amp  1000 \cdot 3^{-0.1 \left(-\frac{10\ln(2)}{\ln(3)}\right)} \amp  \\
+        2000 \amp  \stackrel{?}{=} \amp  1000 \cdot 3^{\frac{\ln(2)}{\ln(3)}} \amp  \\
+        2000 \amp  \stackrel{?}{=} \amp  1000 \cdot 3^{\log_{3}(2)} \amp  \mbox{Change of Base} \\
+        2000 \amp  \stackrel{?}{=} \amp  1000 \cdot 2 \amp  \mbox{Inverse Property} \\
+        2000 \amp  \stackrel{\checkmark}{=} \amp  2000 \amp 
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      The other solutions can be verified by using a combination of log and inverse properties.
+      Some fall out quite quickly,
+      while others are more involved.
+      We leave them to the reader.
+    </p>
+
+    <p>
+      Since exponential functions are continuous on their domains,
+      the Intermediate Value <xref ref="IVT">Theorem</xref> applies.
+      As with the algebraic functions in <xref ref="AlgebraicFunctions">Section</xref>,
+      this allows us to solve inequalities using sign diagrams as demonstrated below.
+    </p>
+
+    <example xml:id="expineq">
+      <title>Exponential inequalities</title>
+      <statement>
+        <p>
+          Solve the following inequalities.
+          Check your answer graphically using a computer or calculator.
+
+          <ol>
+            <li>
+              <p>
+                <m>2^{x^2-3x} - 16 \geq 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\dfrac{e^{x}}{e^{x}-4} \leq 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>x e^{2x} \lt 4x</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since we already have <m>0</m> on one side of the inequality,
+                we set <m>r(x) = 2^{x^2-3x} - 16</m>.
+                The domain of <m>r</m> is all real numbers,
+                so in order to construct our sign diagram,
+                we need to find the zeros of <m>r</m>.
+                Setting <m>r(x) = 0</m> gives
+                <m>2^{x^2-3x} - 16 = 0</m> or <m>2^{x^2-3x} = 16</m>.
+                Since <m>16 = 2^{4}</m> we have <m>2^{x^2-3x} = 2^{4}</m>,
+                so by the one-to-one property of exponential functions,
+                <m>x^2 -3x = 4</m>.
+                Solving <m>x^2 -3x - 4 = 0</m> gives <m>x=4</m> and <m>x=-1</m>.
+                From the sign diagram, we see
+                <m>r(x) \geq 0</m> on <m>(-\infty, -1] \cup [4, \infty)</m>,
+                which corresponds to where the graph of <m>y=r(x) = 2^{x^2-3x} - 16</m>,
+                is on or above the <m>x</m>-axis:
+                see <xref ref="fig_expineq1">Figure</xref>. <table xml:id="fig_expineq1"> <caption>Solving
+                <m>2^{x^2-3x}-16\geq 0</m></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/ExpEquations-1.pdf"/></cell> </row> <row> <cell>Sign diagram for
+                <m>r(x)=2^{x^2-3x}-16</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/ExpLogs11.pdf"/></cell> </row> <row> <cell><m>y=r(x)=2^{x^2-3x}-16</m></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The first step we need to take to solve 
+                <m>\frac{e^{x}}{e^{x}-4} \leq 3</m> is to get <m>0</m> on one side of the inequality.
+                To that end,
+                we subtract <m>3</m> from both sides and get a common denominator.
+                <md>
+                  <mrow>\dfrac{e^{x}}{e^{x}-4} \amp  \leq  3</mrow>
+                  <mrow>\dfrac{e^{x}}{e^{x}-4} - 3 \amp  \leq  0</mrow>
+                  <mrow>\dfrac{e^{x}}{e^{x}-4} - \dfrac{3 \left(e^{x}-4\right)}{e^{x}-4} \amp  \leq  0  \tag{Common denomintors.}</mrow>
+                  <mrow>\dfrac{12 - 2e^{x}}{e^{x}-4} \amp  \leq  0</mrow>
+                </md>
+                We set <m>r(x) = \frac{12 - 2e^{x}}{e^{x}-4}</m> and we note that <m>r</m> is undefined when its denominator
+                <m>e^{x}-4=0</m>, or when <m>e^{x} = 4</m>.
+                Solving this gives <m>x = \ln(4)</m>,
+                so the domain of <m>r</m> is <m>(-\infty, \ln(4)) \cup (\ln(4), \infty)</m>.
+                To find the zeros of <m>r</m>,
+                we solve <m>r(x) = 0</m> and obtain <m>12 - 2e^{x} = 0</m>.
+                Solving for <m>e^{x}</m>, we find
+                <m>e^{x} = 6</m>, or <m>x = \ln(6)</m>.
+                When we build our sign diagram,
+                finding test values may be a little tricky since we need to check values around <m>\ln(4)</m> and <m>\ln(6)</m>.
+                Recall that the function <m>\ln(x)</m> is increasing  which means
+                <m>\ln(3) \lt  \ln(4) \lt  \ln(5) \lt  \ln(6) \lt  \ln(7)</m>. (This is because the base of <m>\ln(x)</m> is <m>e > 1</m>.
+                If the base <m>b</m> were in the interval <m>0 \lt  b \lt  1</m>,
+                then <m>\log_{b}(x)</m> would decreasing.) While the prospect of determining the sign of
+                <m>r\left(\ln(3)\right)</m> may be very unsettling,
+                remember that <m>e^{\ln(3)} = 3</m>, so
+                <me>
+                  r\left(\ln(3)\right) = \frac{12 - 2e^{\ln(3)}}{e^{\ln(3)}-4} = \frac{12-2(3)}{3-4} = -6
+                </me>
+                We determine the signs of <m>r\left(\ln(5)\right)</m> and
+                <m>r\left(\ln(7)\right)</m> similarly. (We could,
+                of course, use the calculator,
+                but what fun would that be?) From the sign diagram,
+                we find our answer to be <m>(-\infty,\ln(4)) \cup [\ln(6), \infty)</m>.
+                Using GeoGebra, we see the graph of
+                <m>f(x) = \frac{e^{x}}{e^{x}-4}</m> is below the graph of
+                <m>g(x) = 3</m> on <m>(-\infty,\ln(4)) \cup (\ln(6), \infty)</m>,
+                and they intersect at <m>x = \ln(6) \approx 1.792</m>.
+
+                <figure xml:id="fig_expineq2">
+                <caption>Solving <m>\dfrac{e^x}{e^x-4}\leq 3</m></caption>
+                <sidebyside>
+                  <figure>
+                    <caption>Sign diagram for <m>r(x)=\dfrac{12-2e^x}{e^x-4}</m></caption>
+                    <img src="figures/ExpLogsGraphics/ExpEquations-2.pdf"/>
+                  </figure>
+
+                  <figure>
+                    <caption>{\color{blue} <m>y=g(x)=3</m>}</caption>
+                    {\color{red} <m>y=f(x)=\dfrac{e^x}{e^{x}-4}</m>}
+                  </figure>
+                </sidebyside>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As before, we start solving
+                <m>x e^{2x} \lt  4x</m> by getting <m>0</m> on one side of the inequality,
+                <m>x e^{2x} - 4x \lt  0</m>.
+                We set <m>r(x) = xe^{2x} - 4x</m> and since there are no denominators,
+                even-indexed radicals,
+                or logs, the domain of <m>r</m> is all real numbers.
+                Setting <m>r(x) = 0</m>  produces <m>x e^{2x} - 4x  = 0</m>.
+                We factor to get <m>x \left(e^{2x} - 4\right)  = 0</m> which gives <m>x=0</m> or <m>e^{2x} - 4 = 0</m>.
+                To solve the latter,
+                we isolate the exponential and take logs to get <m>2x = \ln(4)</m>,
+                or <m>x = \frac{\ln(4)}{2} = \ln(2)</m>.  (Can you explain the last equality using properties of logs?)  As in the previous example,
+                we need to be careful about choosing test values.
+                Since <m>\ln(1) = 0</m>,
+          we choose <m>\ln\left(\frac{1}{2}\right)</m>,
+                <m>\ln\left(\frac{3}{2}\right)</m> and <m>\ln(3)</m>.
+                Evaluating, we get
+                <md>
+                  <mrow>r\left(\ln\left(\frac{1}{2}\right)\right) \amp  =  \ln\left(\frac{1}{2}\right) e^{2\ln\left(\frac{1}{2}\right)} - 4\ln\left(\frac{1}{2}\right)</mrow>
+                  <mrow>\amp =  \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{2}\right)^2}- 4\ln\left(\frac{1}{2}\right)  \tag{Power Rule}</mrow>
+                  <mrow>\amp  =  \ln\left(\frac{1}{2}\right)e^{\ln\left(\frac{1}{4}\right)}- 4\ln\left(\frac{1}{2}\right)</mrow>
+                  <mrow>\amp  =  \frac{1}{4}  \ln\left(\frac{1}{2}\right) - 4  \ln\left(\frac{1}{2}\right) =  -\frac{15}{4} \ln\left(\frac{1}{2}\right)</mrow>
+                </md>
+                Since <m>\frac{1}{2} \lt  1</m>,
+                <m>\ln\left(\frac{1}{2}\right) \lt  0</m> and we get <m>r(\ln\left(\frac{1}{2}\right))</m> is <m>(+)</m>,
+                so <m>r(x) \lt  0</m> on <m>(0 ,\ln(2))</m>.
+                Plotting in GeoGebra confirms that the graph of
+                <m>f(x) = x e^{2x}</m> is below the graph of <m>g(x) = 4x</m> on these intervals:
+                see <xref ref="fig_expineq3">Figure</xref>. (Note:
+                <m>\ln(2) \approx 0.693</m>.)
+
+                <figure xml:id="fig_expineq3">
+                <caption>Solving <m>xe^{2x}\lt 4x</m></caption>
+                <sidebyside>
+                  <figure>
+                    <caption>Sign diagram for <m>r(x)=xe^{2x}-4x</m></caption>
+                    <img src="figures/ExpLogsGraphics/ExpEquations-3.pdf"/>
+                  </figure>
+
+                  <figure>
+                    <caption>{\color{blue} <m>y=g(x)=4x</m>}</caption>
+                    {\color{red} <m>y=f(x)=xe^{2x}</m>}
+                  </figure>
+                </sidebyside>
+                </figure>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="ex_newtoncool2">
+      <title>Newton's Law of Cooling</title>
+      <statement>
+        <p>
+          Recall from <xref ref="exptempex">Example</xref>
+          that the temperature of coffee <m>T</m>
+          (in degrees Fahrenheit)
+          <m>t</m> minutes after it is served can be modelled by <m>T(t) = 70 + 90 e^{-0.1 t}</m>.
+          When will the coffee be warmer than <m>100^{\circ}\mbox{F}</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to find when <m>T(t) > 100</m>, or in other words,
+          we need to solve the inequality <m>70 + 90 e^{-0.1 t} > 100</m>.
+          Getting <m>0</m> on one side of the inequality,
+          we have <m>90 e^{-0.1 t} - 30 > 0</m>,
+          and we set <m>r(t) = 90 e^{-0.1 t} - 30</m>.
+          The domain of <m>r</m> is artificially restricted due to the context of the problem to <m>[0, \infty)</m>,
+          so we proceed to find the zeros of <m>r</m>.
+          Solving <m>90 e^{-0.1 t} - 30=0</m> results in
+          <m>e^{-0.1t} = \frac{1}{3}</m> so that <m>t = -10\ln\left(\frac{1}{3}\right)</m> which,
+          after a quick application of the Power Rule leaves us with <m>t = 10 \ln(3)</m>.
+          If we wish to avoid using the calculator to choose test values,
+          we note that since <m>1 \lt 3</m>,
+          <m>0 = \ln(1) \lt \ln(3)</m> so that <m>10\ln(3) > 0</m>.
+          So we choose <m>t = 0</m> as a test value in <m>[0, 10 \ln(3))</m>.
+          Since <m>3 \lt 4</m>, <m>10 \ln(3) \lt 10 \ln(4)</m>,
+          so the latter is our choice of a test value for the interval <m>(10 \ln(3), \infty)</m>.
+          Our sign diagram is given in <xref ref="fig_expnewton">Figure</xref>,
+          along with our graph of <m>y=T(t)</m> from <xref ref="exptempex">Example</xref>
+          with the horizontal line <m>y = 100</m> shown.
+        </p>
+
+        <table xml:id="fig_expnewton">
+          <caption>Solving <m>T(t)=100</m> in <xref ref="ex_newtoncool2">Example</xref></caption>
+          <tabular>
+            <row>
+              <cell><img src="figures/ExpLogsGraphics/ExpEquations-4.pdf"/></cell>
+            </row>
+            <row>
+              <cell>Sign diagram for <m>r(t)=90e^{-0.1t}-30</m></cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><img src="figures/ExpLogsGraphics/ExpEquations-5.pdf"/></cell>
+            </row>
+            <row>
+              <cell><m>y=T(t)</m> and <m>y=100</m></cell>
+            </row>
+          </tabular>
+        </table>
+
+        <p>
+          In order to interpret what this means in the context of the real world,
+          we need a reasonable approximation of the number <m>10 \ln(3) \approx 10.986</m>.
+          This means it takes approximately <m>11</m> minutes for the coffee to cool to <m>100^{\circ}\mbox{F}</m>.
+          Until then, the coffee is warmer than that.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We close this section by finding the inverse of a function which is a composition of a rational function with an exponential function.
+    </p>
+
+    <example xml:id="expfracinverse">
+      <title>Inverting a fractional exponential function</title>
+      <statement>
+        <p>
+          The function <m>f(x) = \dfrac{5e^{x}}{e^{x}+1}</m> is one-to-one.
+          Find a formula for <m>f^{-1}(x)</m> and check your answer graphically using your calculator.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We start by writing <m>y=f(x)</m>,
+          and interchange the roles of <m>x</m> and <m>y</m>.
+          To solve for <m>y</m>,
+          we first clear denominators and then isolate the exponential function.
+          <md>
+            <mrow>y \amp  =  \dfrac{5e^{x}}{e^{x}+1}</mrow>
+            <mrow>x \amp  =  \dfrac{5e^{y}}{e^{y}+1}  \tag{Switch $x$ and $y$}</mrow>
+            <mrow>x \left(e^{y}+1\right) \amp  =  5e^{y}</mrow>
+            <mrow>x e^{y}+x \amp  = 5e^{y}</mrow>
+            <mrow>x \amp  =  5e^{y} - x e^{y}</mrow>
+            <mrow>x \amp  =  e^{y}(5 - x)</mrow>
+            <mrow>e^{y}\amp  =  \dfrac{x}{5-x}</mrow>
+            <mrow>\ln\left(e^{y}\right) \amp  =  \ln\left(\dfrac{x}{5-x}\right)</mrow>
+            <mrow>y \amp  =  \ln\left(\dfrac{x}{5-x}\right)</mrow>
+          </md>
+        </p>
+
+        <p>
+          We claim <m>f^{-1}(x) = \ln\left(\frac{x}{5-x}\right)</m>.
+          To verify this analytically,
+          we would need to verify the compositions
+          <m>\left(f^{-1} \circ f\right)(x) = x</m> for all <m>x</m> in the domain of <m>f</m> and that
+          <m>\left(f \circ f^{-1}\right)(x) = x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
+          We leave this to the reader.
+          To verify our solution graphically,
+          we graph <m>y = f(x) = \frac{5e^{x}}{e^{x}+1}</m> and
+          <m>y = g(x) = \ln\left(\frac{x}{5-x}\right)</m> on the same set of axes and observe the symmetry about the line <m>y=x</m> in <xref ref="fig_expinverse">Figure</xref>.
+          Note the domain of <m>f</m> is the range of <m>g</m> and vice-versa.
+        </p>
+
+        <figure xml:id="fig_expinverse">
+          <caption>\color{red} <m>y=f(x)=\frac{5e^x}{e^x+1}</m>
+          {\color{blue} <m>y=g(x)=\ln\left(\frac{x}{5-x}\right)</m>}</caption>
+          <img src="figures/ExpLogsGraphics/ExpLogs14.pdf"/>
+        </figure>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, solve the equation analytically.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>2^{4x} = 8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{3}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{(x - 1)} = 27</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5^{2x-1} = 125</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4^{2x} = \frac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{1}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>8^{x} = \frac{1}{128}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{7}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2^{(x^{3} - x)} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -1, \, 0, \, 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{7x} = 81^{4-2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{16}{15}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>9 \cdot 3^{7x} = \left(\frac{1}{9}\right)^{2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-\frac{2}{11}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{2x} = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln(5)}{2\ln(3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5^{-x} = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{\ln(2)}{\ln(5)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5^{x} = -2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No solution.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{(x - 1)} = 29</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln(29) + \ln(3)}{\ln(3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(1.005)^{12x} = 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln(3)}{12\ln(1.005)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{-5730k} = \frac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>k = \frac{\ln\left(\frac{1}{2}\right)}{-5730} = \frac{\ln(2)}{5730}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2000e^{0.1t} = 4000</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t=\frac{\ln(2)}{0.1} = 10\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>500\left(1-e^{2x}\right) = 250</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{1}{2}\ln\left(\frac{1}{2}\right) = -\frac{1}{2}\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>70 + 90e^{-0.1t} = 75</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = \frac{\ln\left(\frac{1}{18}\right)}{-0.1} =10 \ln(18)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>30-6e^{-0.1x}=20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=-10\ln\left(\frac{5}{3}\right) = 10\ln\left(\frac{3}{5}\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{100e^{x}}{e^{x}+2}=50</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5000}{1+2e^{-3t}}=2500</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t=\frac{1}{3}\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{150}{1 + 29e^{-0.8t}} = 75</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = \frac{\ln\left(\frac{1}{29}\right)}{-0.8} = \frac{5}{4}\ln(29)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>25\left(\frac{4}{5}\right)^{x} = 10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln\left(\frac{2}{5}\right)}{\ln\left(\frac{4}{5}\right)} = \frac{\ln(2)-\ln(5)}{\ln(4) - \ln(5)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{2x} = 2e^{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>7e^{2x} = 28e^{-6x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = -\frac{1}{8} \ln\left(\frac{1}{4} \right) = \frac{1}{4}\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{(x - 1)} = 2^{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln(3)}{\ln(3) - \ln(2)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{(x - 1)} = \left(\frac{1}{2}\right)^{(x + 5)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{\ln(3) + 5\ln\left(\frac{1}{2}\right)}{\ln(3) - \ln\left(\frac{1}{2}\right)} = \frac{\ln(3)-5\ln(2)}{\ln(3)+\ln(2)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>7^{3+7x} = 3^{4-2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \frac{4 \ln(3) - 3 \ln(7)}{7 \ln(7) + 2 \ln(3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{2x} - 3e^{x}-10=0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\ln(5)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{2x} = e^{x}+6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\ln(2)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4^{x} + 2^{x} = 12</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{\ln(3)}{\ln(2)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{x}-3e^{-x}=2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\ln(3)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{x}+15e^{-x}=8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\ln(2)</m>, <m>\ln(5)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{x}+25\cdot3^{-x}=10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x=\frac{\ln(5)}{\ln(3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, solve the inequality analytically.
+    </p>
+    <exercise xml:id="expineqfirst">
+      <statement>
+        <p>
+          <m>e^{x} > 53</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(\ln(53), \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>1000\left(1.005\right)^{12t} \geq 3000</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\frac{\ln(3)}{12\ln(1.005)}, \infty\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>2^{(x^{3} - x)} \lt 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -1) \cup (0, 1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>25\left(\frac{4}{5}\right)^{x} \geq 10</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, \frac{\ln\left(\frac{2}{5}\right)}{\ln\left(\frac{4}{5}\right)} \right] = \left(-\infty, \frac{\ln(2)-\ln(5)}{\ln(4)-\ln(5)} \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{150}{1 + 29e^{-0.8t}} \leq 130</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, \frac{\ln\left(\frac{2}{377}\right)}{-0.8} \right] = \left(-\infty, \frac{5}{4}\ln\left(\frac{377}{2}\right) \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="expineqlast">
+      <statement>
+        <p>
+          <m>70 + 90e^{-0.1t} \leq 75</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\frac{\ln\left(\frac{1}{18}\right)}{-0.1}, \infty\right) = [10\ln(18), \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use your computer or calculator to help you solve the equation or inequality.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>2^{x} = x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x \approx -0.76666, \, x = 2, \, x = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{x} = \ln(x) + 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x \approx 0.01866, \, x \approx 1.7115</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{\sqrt{x}} = x + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{-x} - xe^{-x} \geq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, 1]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3^{(x - 1)} \lt 2^{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\approx (-\infty, 2.7095)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{x} \lt x^{3} - x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\approx (2.3217, 4.3717)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="onetoonelogexercise">
+      <statement>
+        <p>
+          Since <m>f(x) = \ln(x)</m> is a strictly increasing function,
+          if <m>0 \lt a \lt b</m> then <m>\ln(a) \lt \ln(b)</m>.
+          Use this fact to solve the inequality
+          <m>e^{(3x - 1)} > 6</m> without a sign diagram.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x > \frac{1}{3}(\ln(6) + 1)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use the technique in <xref ref="onetoonelogexercise">Exercise</xref>
+          to solve the inequalities in <xref ref="expineqfirst">Exercises</xref>
+          - <xref ref="expineqlast"></xref>. (NOTE: Isolate the exponential function first!)
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="hyperbolicsine">
+      <statement>
+        <p>
+          Compute the inverse of <m>f(x) = \dfrac{e^{x} - e^{-x}}{2}</m>.
+          State the domain and range of both <m>f</m> and <m>f^{-1}</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \ln\left(x + \sqrt{x^{2} + 1}\right)</m>.
+          Both <m>f</m> and <m>f^{-1}</m> have domain
+          <m>(-\infty, \infty)</m> and range <m>(-\infty, \infty)</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="expfracinverse">Example</xref>,
+          we found that the inverse of <m>f(x) = \dfrac{5e^{x}}{e^{x}+1}</m> was
+          <m>f^{-1}(x) = \ln\left(\dfrac{x}{5-x}\right)</m> but we left a few loose ends for you to tie up.
+
+          <ol>
+            <li>
+              <p>
+                Show that <m>\left(f^{-1} \circ f\right)(x) = x</m> for all <m>x</m> in the domain of <m>f</m> and that
+                <m>\left(f \circ f^{-1}\right)(x) = x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the range of <m>f</m> by finding the domain of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Let <m>g(x) = \dfrac{5x}{x+1}</m> and <m>h(x) = e^{x}</m>.
+                Show that <m>f = g \circ h</m> and that
+                <m>(g \circ h)^{-1} = h^{-1} \circ g^{-1}</m>. (We know this is true in general by <xref ref="fcircginverse">Exercise</xref>
+                in <xref ref="InverseFunctions">Section</xref>,
+                but it's nice to see a specific example of the property.)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          solve the inequality <m>e^{x} > x^{n}</m> for a variety of natural numbers <m>n</m>.
+          What might you conjecture about the <q>speed</q>
+          at which <m>f(x) = e^{x}</m> grows versus any polynomial?
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

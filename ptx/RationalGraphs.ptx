@@ -1,0 +1,2146 @@
+
+
+<section xml:id="RationalGraphs">
+  <title>Graphs of Rational Functions</title>
+  <introduction>
+    <p>
+      In this section,
+      we take a closer look at graphing rational functions.
+      In <xref ref="IntroRational">Section</xref>,
+      we learned that the graphs of rational functions may have holes in them and could have vertical,
+      horizontal and slant asymptotes.
+      <xref ref="vavshole">Theorems</xref>,
+      <xref ref="hathm"></xref> and <xref ref="sathm"></xref>
+      tell us exactly when and where these behaviours will occur,
+      and if we combine these results with what we already know about graphing functions,
+      we will quickly be able to generate reasonable graphs of rational functions.
+    </p>
+
+    <p>
+      One of the standard tools we will use is the sign diagram which was first introduced in <xref ref="Inequalities">Section</xref>,
+      and then revisited in <xref ref="GraphsofPolynomials">Section</xref>.
+      In those sections,
+      we operated under the belief that a function couldn't change its sign without its graph crossing through the <m>x</m>-axis.
+      The major theorem we used to justify this belief was the Intermediate Value Theorem,
+      <xref ref="IVT">Theorem</xref>.
+      It turns out the Intermediate Value Theorem applies to all <em>continuous</em>
+      functions, not just polynomials.
+      Although rational functions are continuous on their domains,
+      (another result from Calculus)
+      <xref ref="vavshole">Theorem</xref>
+      tells us that vertical asymptotes and holes occur at the values excluded from their domains.
+      In other words,
+      rational functions aren't continuous at these excluded values which leaves open the possibility that the function could change sign <em>without</em>
+      crossing through the <m>x</m>-axis.
+      Consider the graph of <m>y=h(x)</m> from <xref ref="ratfuncex">Example</xref>,
+      reproduced in <xref ref="fig_ratgraph1">Figure</xref> for convenience.
+      We have added its <m>x</m>-intercept at
+      <m>\left(\frac{1}{2},0\right)</m> for the discussion that follows.
+      Suppose we wish to construct a sign diagram for <m>h(x)</m>.
+      Recall that the intervals where <m>h(x)>0</m>, or <m>(+)</m>,
+      correspond to the <m>x</m>-values where the graph of <m>y=h(x)</m> is
+      <em>above</em> the <m>x</m>-axis;
+      the intervals on which <m>h(x) \lt 0</m>,
+      or <m>(-)</m> correspond to where the graph is
+      <em>below</em> the <m>x</m>-axis.
+    </p>
+
+    <aside>
+      <p>
+        Recall that at this stage
+        (prior to discussing calculus),
+        continuity of a function means that its graph is devoid of any breaks,
+        jumps or holes.
+        We'll define continuity more carefully once we've introduced limits.
+      </p>
+    </aside>
+    <figure xml:id="fig_ratgraph1">
+      <caption>The graph <m>y=h(x)</m> from <xref ref="ratfuncex">Example</xref></caption>
+      <img src="figures/RationalsGraphics/RationalGraphs-1.pdf"/>
+    </figure>
+
+    <p>
+      As we examine the graph of <m>y=h(x)</m>,
+      reading from left to right, we note that from <m>(-\infty,-1)</m>,
+      the graph is above the <m>x</m>-axis,
+      so <m>h(x)</m> is <m>(+)</m> there.
+      At <m>x=-1</m>, we have a vertical asymptote,
+      at which point the graph <q>jumps</q> across the <m>x</m>-axis.
+      On the interval <m>\left(-1,\frac{1}{2}\right)</m>,
+      the graph is below the <m>x</m>-axis,
+      so <m>h(x)</m> is <m>(-)</m> there.
+      The graph crosses through the <m>x</m>-axis at
+      <m>\left(\frac{1}{2},0\right)</m> and remains above the <m>x</m>-axis until <m>x=1</m>,
+      where we have a <q>hole</q> in the graph.
+      Since <m>h(1)</m> is undefined, there is no sign here.
+      So we have <m>h(x)</m> as <m>(+)</m> on the interval <m>\left(\frac{1}{2}, 1\right)</m>.
+      Continuing, we see that on <m>(1, \infty)</m>,
+      the graph of <m>y=h(x)</m> is above the <m>x</m>-axis,
+      so we mark <m>(+)</m> there.
+      To construct a sign diagram from this information,
+      we not only need to denote the zero of <m>h</m>,
+      but also the places not in the domain of <m>h</m>.
+      As is our custom, we write <q><m>0</m></q>
+      above <m>\frac{1}{2}</m> on the sign diagram to remind us that it is a zero of <m>h</m>.
+      We need a different notation for <m>-1</m> and <m>1</m>,
+      and we have chosen to use <q>\textinterrobang</q>
+      - a nonstandard symbol called the <url href="http://en.wikipedia.org/wiki/Interrobang"><em>interrobang</em></url>.
+          <idx><h>interrobang</h></idx>
+      We use this symbol to convey a sense of surprise,
+      caution and wonderment - an appropriate attitude to take when approaching these points.
+      The moral of the story is that when constructing sign diagrams for rational functions,
+      we include the zeros as well as the values excluded from the domain.
+      The final result is shown in <xref ref="fig_ratsd1">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_ratsd1">
+      <caption>The sign diagram for the function <m>h(x)</m> from <xref ref="ratfuncex">Example</xref></caption>
+      <img src="figures/RationalsGraphics/RationalGraphs-2.pdf"/>
+    </figure>
+
+    <insight xml:id="rationalsigndiagram">
+      <title>Steps for Constructing a Sign Diagram for a  Rational Function</title>
+      <p>
+        Suppose <m>r</m> is a rational function.
+            <idx><h>sign diagram</h><h>rational function</h></idx>
+        <ol>
+          <li>
+            <p>
+              Place any values excluded from the domain of <m>r</m> on the number line with an
+              <q>\textinterrobang</q> above them.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the zeros of <m>r</m> and place them on the number line with the number <m>0</m> above them.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Choose a test value in each of the intervals determined in steps 1 and 2.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine the sign of <m>r(x)</m> for each test value in step 3, and write that sign above the corresponding interval.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </insight>
+
+    <p>
+      We now present our procedure for graphing rational functions and apply it to a few exhaustive examples.
+      Please note that we decrease the amount of detail given in the explanations as we move through the examples.
+      The reader should be able to fill in any details in those steps which we have abbreviated.
+    </p>
+
+    <insight xml:id="idea_ratgraph">
+      <title>Steps for Graphing Rational Functions</title>
+      <p>
+        Suppose <m>r</m> is a rational function.
+            <idx><h>graph</h><h>rational function</h></idx>
+        To plot the graph <m>y=r(x)</m>,
+        we use the following steps:
+
+        <ol>
+          <li>
+            <p>
+              Find the domain of <m>r</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Reduce <m>r(x)</m> to lowest terms, if applicable.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the <m>x</m>- and <m>y</m>-intercepts of the graph of <m>y=r(x)</m>,
+              if they exist.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Determine the location of any vertical asymptotes or holes in the graph,
+              if they exist.
+              Analyze the behaviour of <m>r</m> on either side of the vertical asymptotes,
+        if applicable.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Analyze the end behaviour of <m>r</m>.
+              Find the horizontal or slant asymptote, if one exists.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use a sign diagram and plot additional points, as needed,
+              to sketch the graph of <m>y=r(x)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </insight>
+
+    <example xml:id="ex_ratgraph1">
+      <title>Graphing a rational function</title>
+      <statement>
+        <p>
+          Sketch a detailed graph of <m>f(x) = \dfrac{3x}{x^2-4}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We follow the six step procedure outlined in <xref ref="idea_ratgraph">Key Idea</xref>.
+
+          <ol>
+            <li>
+              <p>
+                As usual,
+          we set the denominator equal to zero to get <m>x^2 - 4 = 0</m>.
+                We find <m>x = \pm 2</m>,
+                so our domain is <m>(-\infty, -2) \cup (-2,2) \cup (2,\infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To reduce <m>f(x)</m> to lowest terms,
+                we factor the numerator and denominator which yields <m>f(x) = \dfrac{3x}{(x-2)(x+2)}</m>.
+                There are no common factors which means <m>f(x)</m> is already in lowest terms.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the <m>x</m>-intercepts of the graph of <m>y=f(x)</m>,
+                we set <m>y=f(x) = 0</m>.
+                Solving <m>\dfrac{3x}{(x-2)(x+2)} = 0</m> results in <m>x=0</m>.
+                Since <m>x=0</m> is in our domain,
+                <m>(0,0)</m> is the <m>x</m>-intercept.
+                To find the <m>y</m>-intercept,
+                we set <m>x=0</m> and find <m>y = f(0) = 0</m>,
+                so that <m>(0,0)</m> is our <m>y</m>-intercept as well.
+
+                <aside>
+                  <p>
+                    As we mentioned at least once earlier,
+                    since functions can have at most one <m>y</m>-intercept,
+                    once we find that <m>(0,0)</m> is on the graph,
+                    we know it is the <m>y</m>-intercept as well as an <m>x</m>-intercept.
+                  </p>
+                </aside>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The two numbers excluded from the domain of <m>f</m> are <m>x = -2</m> and <m>x=2</m>.
+                Since <m>f(x)</m> didn't reduce at all,
+                both of these values of <m>x</m> still cause trouble in the denominator.
+                Thus by <xref ref="vavshole">Theorem</xref>,
+                <m>x=-2</m> and <m>x=2</m> are vertical asymptotes of the graph.
+                We can actually go a step further at this point and determine exactly how the graph approaches the asymptote near each of these values.
+                Though not absolutely necessary,
+                it is good practice for when we reach calculus.
+                For the discussion that follows,
+                it is best to use the factored form of <m>f(x) = \dfrac{3x}{(x-2)(x+2)}</m>.
+
+                <aside>
+                  <p>
+                    It's worth going through the analysis below to make sure we understand what's going on near the vertical asymptotes,
+                    but it's not 100<percent /> necessary.
+                    The sign diagram we construct in step 6 is the easiest way to determine the behaviour near the vertical asymptotes:
+                    once we know the value of <m>f(x)</m> is going to be infinite,
+                    it only remains to determine if it will be <m>+\infty</m> or <m>-\infty</m>.
+                    Keep this in mind <mdash /> it will come in handy once we reach the discussion of infinite limits in our Calculus material.
+                  </p>
+                </aside>
+                <ul>
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=f(x)</m> as <m>x \rightarrow -2</m>:</em>
+                      Suppose <m>x \rightarrow -2^{-}</m>.
+                      If we were to build a table of values,
+                      we'd use <m>x</m>-values a little less than <m>-2</m>,
+                      say <m>-2.1</m>,
+                      <m>-2.01</m> and <m>-2.001</m>.
+                      While there is no harm in actually building a table like we did in <xref ref="IntroRational">Section</xref>,
+                      we want to develop a
+          <q>number sense</q> here.
+                      Let's think about each factor in the formula of <m>f(x)</m> as we imagine substituting a number like <m>x=-2.000001</m> into <m>f(x)</m>.
+                      The quantity <m>3x</m> would be very close to <m>-6</m>,
+                      the quantity <m>(x-2)</m> would be very close to <m>-4</m>,
+                      and the factor <m>(x+2)</m> would be very close to <m>0</m>.
+                      More specifically,
+          <m>(x+2)</m> would be a little less than <m>0</m>,
+                      in this case, <m>-0.000001</m>.
+                      We will call such a number a
+                <q>very small <m>(-)</m></q>,
+                      <q>very small</q>
+                      meaning close to zero in absolute value.
+                      So, mentally, as <m>x \rightarrow -2^{-}</m>,
+          we estimate
+                      <md>
+                        <mrow>f(x)  \amp  = \dfrac{3x}{(x-2)(x+2)} \approx \dfrac{-6}{(-4)\left( \mbox{very small \((-)\)} \right)}</mrow>
+                        <mrow>\amp  = \dfrac{3}{2 \left( \mbox{very small \((-)\)} \right)}</mrow>
+                      </md>
+                      Now, the closer <m>x</m> gets to <m>-2</m>,
+                      the smaller <m>(x+2)</m> will become,
+                      so even though we are multiplying our
+                      <q>very small <m>(-)</m></q> by <m>2</m>,
+                      the denominator will continue to get smaller and smaller,
+                      and remain negative.
+                      The result is a fraction whose numerator is positive,
+                      but whose denominator is very small and negative.
+                      Mentally,
+                      <me>
+                        f(x) \approx \dfrac{3}{2 \left( \mbox{very small \((-)\)} \right)} \approx \dfrac{3}{\mbox{very small \((-)\)} } \approx \mbox{very big \((-)\)}
+                      </me>
+                      The term <q>very big <m>(-)</m></q>
+                      means a number with a large absolute value which is negative. (The actual retail value of <m>f(-2.000001)</m> is approximately
+                      <m>-1,\!500,\!000</m>.)  What all of this means is that as <m>x \rightarrow -2^{-}</m>,
+                      <m>f(x) \rightarrow -\infty</m>.
+                      Now suppose we wanted to determine the behaviour of <m>f(x)</m> as <m>x \rightarrow -2^{+}</m>.
+                      If we imagine substituting something a little larger than <m>-2</m> in for <m>x</m>,
+                      say <m>-1.999999</m>, we mentally estimate
+                      <md>
+                        <mrow>f(x) \amp  \approx \dfrac{-6}{(-4)\left( \mbox{very small \((+)\)} \right)} = \dfrac{3}{2 \left( \mbox{very small \((+)\)} \right)}</mrow>
+                        <mrow>\amp   \approx \dfrac{3}{\mbox{very small \((+)\)} } \approx \mbox{very big \((+)\)}</mrow>
+                      </md>
+                      We conclude that as <m>x \rightarrow -2^{+}</m>,
+                      <m>f(x) \rightarrow \infty</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=f(x)</m> as <m>x \rightarrow 2</m>:</em>
+                      Consider <m>x \rightarrow 2^{-}</m>.
+                      We imagine substituting <m>x = 1.999999</m>.
+                      Approximating <m>f(x)</m> as we did above, we get
+                      <md>
+                        <mrow>f(x) \amp \approx \dfrac{6}{\left( \mbox{very small \((-)\)} \right)(4)} = \dfrac{3}{2 \left( \mbox{very small \((-)\)} \right)}</mrow>
+                        <mrow>\amp \approx \dfrac{3}{\mbox{very small \((-)\)} } \approx \mbox{very big \((-)\)}</mrow>
+                      </md>
+                      We conclude that as <m>x \rightarrow 2^{-}</m>,
+                      <m>f(x) \rightarrow -\infty</m>.
+                      Similarly, as <m>x \rightarrow 2^{+}</m>,
+                      we imagine substituting
+                <m>x = 2.000001</m> to get <m>f(x) \approx \frac{3}{\mbox{\scriptsize very small <m>(+)</m>} } \approx \mbox{very big (+)}</m>.
+                      So as <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+
+              The appearance of the graph <m>y=f(x)</m>  near <m>x=-2</m> and <m>x=2</m> is shown in <xref ref="fig_ratgraph2">Figure</xref>.
+
+              <aside>
+                <p>
+                  We have deliberately left off the labels on the <m>y</m>-axis because we know only the behaviour near <m>x=\pm 2</m>,
+                  not the actual function values.
+                </p>
+              </aside>
+              <figure xml:id="fig_ratgraph2">
+                <caption>The graph <m>y=\frac{3x}{x^2-4}</m> near its vertical asymptotes</caption>
+                <img src="figures/RationalsGraphics/RationalGraphs-3.pdf"/>
+              </figure>
+
+            </li>
+
+            <li>
+              <p>
+                Next,
+          we determine the end behaviour of the graph of <m>y=f(x)</m>.
+                Since the degree of the numerator is <m>1</m>,
+                and the degree of the denominator is <m>2</m>,
+                <xref ref="hathm">Theorem</xref>
+                tells us that <m>y=0</m> is the horizontal asymptote.
+                As with the vertical asymptotes,
+                we can glean more detailed information using <q>number sense</q>.
+                For the discussion below,
+                we use the formula <m>f(x) = \dfrac{3x}{x^2-4}</m>.
+
+                <ul>
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=f(x)</m> as <m>x \rightarrow -\infty</m>:</em>
+                      If we were to make a table of values to discuss the behaviour of <m>f</m> as <m>x \rightarrow -\infty</m>,
+                      we would substitute very <q>large</q>
+                      negative numbers in for <m>x</m>,
+                      say for example,
+          <m>x = \mbox{<m>-1</m> billion}</m>.
+                      The numerator <m>3x</m> would then be <m>-3 \, \mbox{billion}</m>,
+                      whereas the denominator <m>x^2-4</m> would be <m>(\mbox{<m>-1</m> billion} )^2 - 4</m>,
+                      which is pretty much the same as  <m>1(\mbox{billion} )^2</m>.
+                      Hence,
+                      <me>
+                        f\left(\mbox{\(-1\) billion} \right) \approx \dfrac{-3 \, \mbox{billion} }{1(\mbox{billion} )^2} \approx - \dfrac{3}{\mbox{billion} } \approx \mbox{very small \((-)\)}
+                      </me>
+                      Notice that if we substituted in <m>x = \mbox{<m>-1</m> trillion}</m>,
+                      essentially the same kind of cancellation would happen,
+                      and we would be left with an even
+                      <q>smaller</q> negative number.
+                      This not only confirms the fact that as <m>x \rightarrow -\infty</m>,
+                      <m>f(x) \rightarrow 0</m>,
+                it tells us that <m>f(x) \rightarrow 0^{-}</m>.
+                      In other words,
+                      the graph of <m>y=f(x)</m> is a little bit <em>below</em>
+                      the <m>x</m>-axis as we move to the far left.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=f(x)</m> as
+                      <m>x \rightarrow \infty</m>:</em>  On the flip side,
+                      we can imagine substituting very large positive numbers in for <m>x</m> and looking at the behaviour of <m>f(x)</m>.
+                      For example, let <m>x = \mbox{<m>1</m> billion}</m>.
+                      Proceeding as before, we get
+                      <me>
+                        f\left(\mbox{\(1\) billion} \right) \approx \dfrac{3 \, \mbox{billion} }{1(\mbox{billion} )^2} \approx \dfrac{3}{\mbox{billion} } \approx \mbox{very small \((+)\)}
+                      </me>
+                      The larger the number we put in,
+                      the smaller the positive number we would get out.
+                      In other words, as <m>x \rightarrow \infty</m>,
+                      <m>f(x) \rightarrow 0^{+}</m>,
+                      so the graph of <m>y=f(x)</m> is a little bit <em>above</em>
+                      the <m>x</m>-axis as we look toward the far right.
+                      See <xref ref="fig_ratgraph3">Figure</xref>
+                    </p>
+                  </li>
+                </ul>
+              </p>
+
+              <aside>
+                <p>
+                  As with the vertical asymptotes in the previous step,
+                  we know only the behaviour of the graph as <m>x \rightarrow \pm \infty</m>.
+                  For that reason, we provide no <m>x</m>-axis labels.
+                </p>
+              </aside>
+              <figure xml:id="fig_ratgraph3">
+                <caption>The end behavhiour of the graph <m>y=\frac{3x}{x^2-4}</m></caption>
+                <img src="figures/RationalsGraphics/RationalGraphs-4.pdf"/>
+              </figure>
+
+            </li>
+
+            <li>
+              <p>
+                Lastly, we construct a sign diagram for <m>f(x)</m>.
+                The <m>x</m>-values excluded from the domain of <m>f</m> are <m>x = \pm 2</m>,
+                and the only zero of <m>f</m> is <m>x=0</m>.
+                Displaying these appropriately on the number line gives us four test intervals,
+                and we choose the test values <m>x=-3</m>,
+                <m>x=-1</m>, <m>x=1</m> and <m>x=3</m>.
+                We find <m>f(-3)</m> is <m>(-)</m>,
+                <m>f(-1)</m> is <m>(+)</m>,
+                <m>f(1)</m> is <m>(-)</m> and <m>f(3)</m> is <m>(+)</m>.
+                Combining this with our previous work,
+                we get the graph of <m>y=f(x)</m> in <xref ref="fig_ratgraph4">Figure</xref>. <figure xml:id="fig_ratsd2"> <caption>The sign diagram for
+                <m>f(x)=\frac{3x}{x^2-4}</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-5.pdf"/> </figure> <figure xml:id="fig_ratgraph4"> <caption>The complete graph
+                <m>y=\frac{3x}{x^2-4}</m> for <xref ref="ex_ratgraph1">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-6.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A couple of notes are in order.
+      First, the graph of <m>y=f(x)</m> certainly seems to possess symmetry with respect to the origin.
+      In fact, we can check <m>f(-x) = -f(x)</m> to see that <m>f</m> is an odd function.
+      In some textbooks,
+      checking for symmetry is part of the standard procedure for graphing rational functions;
+      but since it happens comparatively rarely we'll just point it out when we see it.
+      Also note that while <m>y=0</m> is the horizontal asymptote,
+      the graph of <m>f</m> actually crosses the <m>x</m>-axis at <m>(0,0)</m>.
+      The myth that graphs of rational functions can't cross their horizontal asymptotes is completely false, (that's why we called it a MYTH!) as we shall see again in our next example.
+    </p>
+
+    <example xml:id="ex_ratgraph2">
+      <title>Graphing a rational function</title>
+      <statement>
+        <p>
+          Sketch a detailed graph of <m>g(x) = \dfrac{2x^2-3x-5}{x^2-x-6}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Setting <m>x^2-x-6 = 0</m> gives <m>x = -2</m> and <m>x=3</m>.
+                Our domain is <m>(-\infty, -2) \cup (-2,3) \cup (3,\infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Factoring <m>g(x)</m> gives <m>g(x) = \dfrac{(2x-5)(x+1)}{(x-3)(x+2)}</m>.
+                There is no cancellation,
+          so <m>g(x)</m> is in lowest terms.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the <m>x</m>-intercept we set <m>y = g(x) = 0</m>.
+                Using the factored form of <m>g(x)</m> above,
+                we find the zeros to be the solutions of <m>(2x-5)(x+1)=0</m>.
+                We obtain <m>x = \frac{5}{2}</m> and <m>x=-1</m>.
+                Since both of these numbers are in the domain of <m>g</m>,
+                we have two <m>x</m>-intercepts,
+                <m>\left( \frac{5}{2},0\right)</m> and <m>(-1,0)</m>.
+                To find the <m>y</m>-intercept,
+                we set <m>x=0</m> and find <m>y = g(0) = \frac{5}{6}</m>,
+                so our <m>y</m>-intercept is <m>\left(0, \frac{5}{6}\right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>g(x)</m> was given to us in lowest terms, we have,
+                once again by <xref ref="vavshole">Theorem</xref>
+                vertical asymptotes <m>x=-2</m> and <m>x=3</m>.
+                Keeping in mind <m>g(x) = \dfrac{(2x-5)(x+1)}{(x-3)(x+2)}</m>,
+                we proceed to our analysis near each of these values.
+
+                <ul>
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=g(x)</m> as <m>x \rightarrow -2</m>:</em>
+                      As <m>x \rightarrow -2^{-}</m>,
+                      we imagine substituting a number a little bit less than <m>-2</m>.
+                      We have
+                      <me>
+                        g(x) \approx \frac{(-9)(-1)}{(-5)(\mbox{very small \((-)\)} )} \approx \frac{9}{\mbox{very small \((+)\)} } \approx \mbox{very big (+)}
+                      </me>
+                      so as <m>x \rightarrow -2^{-}</m>,
+                      <m>g(x) \rightarrow \infty</m>.
+                      On the flip side,
+          as <m>x \rightarrow -2^{+}</m>, we get
+                      <me>
+                        g(x) \approx \frac{9}{\mbox{ very small \((-)\)} } \approx \mbox{very big \((-)\)}
+                      </me>
+                      so <m>g(x) \rightarrow -\infty</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=g(x)</m> as <m>x \rightarrow 3</m>:</em>
+                      As <m>x \rightarrow 3^{-}</m>,
+                      we imagine plugging in a number just shy  of <m>3</m>.
+                      We have
+                      <me>
+                        g(x) \approx \frac{(1)(4)}{(\mbox{ very small \((-)\)} ) (5)} \approx \frac{4}{\mbox{very small \((-)\)} } \approx \mbox{very big \((-)\)}
+                      </me>
+                      Hence, as <m>x \rightarrow 3^{-}</m>,
+                      <m>g(x) \rightarrow -\infty</m>.
+                      As <m>x \rightarrow 3^{+}</m>, we get
+                      <me>
+                        g(x) \approx \frac{4}{\mbox{ very small \((+)\)} } \approx \mbox{very big \((+)\)}
+                      </me>
+                      so <m>g(x) \rightarrow \infty</m>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+
+              Our results are given graphically (again,
+          without labels on the <m>y</m>-axis) in <xref ref="fig_ratgraph5">Figure</xref>.
+
+              <figure xml:id="fig_ratgraph5">
+                <caption>The graph <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m> near the vertical asymptotes</caption>
+                <img src="figures/RationalsGraphics/RationalGraphs-7.pdf"/>
+              </figure>
+
+            </li>
+
+            <li>
+              <p>
+                Since the degrees of the numerator and denominator of <m>g(x)</m> are the same,
+                we know from <xref ref="hathm">Theorem</xref>
+                that we can find the horizontal asymptote of the graph of <m>g</m> by taking the ratio of the leading terms coefficients,
+                <m>y = \frac{2}{1} = 2</m>.
+                However,
+          if we take the time to do a more detailed analysis,
+                we will be able to reveal some <q>hidden</q>
+                behaviour which would be lost otherwise.(That is,
+                if you use a calculator to graph.
+                Once again, Calculus is the ultimate graphing power tool.)  As in the discussion following <xref ref="hathm">Theorem</xref>,
+                we use the result of the long division <m>\left(2x^2-3x-5\right) \div \left(x^2-x-6\right)</m> to rewrite
+                <m>g(x) = \dfrac{2x^2-3x-5}{x^2-x-6}</m> as <m>g(x) = 2 - \dfrac{x-7}{x^2-x-6}</m>.
+                We focus our attention on the term <m>\dfrac{x-7}{x^2-x-6}</m>.
+
+                <ul>
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=g(x)</m> as <m>x \rightarrow -\infty</m>:</em>
+                      If imagine substituting <m>x = \mbox{<m>-1</m> billion}</m> into <m>\dfrac{x-7}{x^2-x-6}</m>,
+                      we estimate <m>\dfrac{x-7}{x^2-x-6} \approx \dfrac{\mbox{\scriptsize <m>-1</m> billion} }{1 \mbox{\scriptsize billion} ^2} \approx \mbox{very small <m>(-)</m>}</m>.
+                      Hence,
+                      <me>
+                        g(x) =  2 - \dfrac{x-7}{x^2-x-6} \approx 2 - \mbox{very small \((-)\)}  = 2 + \mbox{very small \((+)\)}
+                      </me>
+                      In other words, as <m>x \rightarrow -\infty</m>,
+                      the graph of <m>y=g(x)</m> is a little bit
+                      <em>above</em> the line <m>y=2</m>.
+
+                      <aside>
+                        <p>
+                          In the denominator for <m>g(-1000000000)</m>,
+                          we would have <m>(1 \mbox{billion} )^2 - 1 \mbox{billion} - 6</m>.
+                          It's easy to see why the <m>6</m> is insignificant,
+                          but to ignore the <m>1</m> billion seems criminal.
+                          However, compared to (<m>1</m> billion)<m>^{2}</m>,
+                          it's on the insignificant side;
+                          it's <m>10^{18}</m> versus <m>10^9</m>.
+                          We are once again using the fact that for polynomials,
+                          end behaviour is determined by the leading term,
+                so in the denominator,
+                          the <m>x^2</m> term wins out over the <m>x</m> term.
+                        </p>
+                      </aside>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <em>The behaviour of <m>y=g(x)</m> as <m>x \rightarrow \infty</m>.</em>
+                      To consider <m>\dfrac{x-7}{x^2-x-6}</m> as <m>x \rightarrow \infty</m>,
+                      we imagine substituting <m>x = \mbox{<m>1</m> billion}</m> and,
+                      going through the usual mental routine, find
+                      <me>
+                        \dfrac{x-7}{x^2-x-6} \approx \mbox{very small \((+)\)}
+                      </me>
+                      Hence,
+                <m>g(x) \approx 2 - \ \mbox{very small <m>(+)</m>}</m>,
+                      in other words,
+                      the graph of <m>y=g(x)</m> is just <em>below</em>
+                      the line <m>y=2</m> as <m>x \rightarrow \infty</m>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+
+              Our end behaviour (again,
+          without labels on the <m>x</m>-axis) is given in <xref ref="fig_ratgraph6">Figure</xref>.
+
+              <figure xml:id="fig_ratgraph6">
+                <caption>The end behaviour of <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m></caption>
+                <img src="figures/RationalsGraphics/RationalGraphs-8.pdf"/>
+              </figure>
+
+              <figure xml:id="fig_ratsd3">
+                <caption>The sign diagram for <m>g(x)=\frac{2x^2-3x-5}{x^2-x-6}</m></caption>
+                <img src="figures/RationalsGraphics/RationalGraphs-9.pdf"/>
+              </figure>
+
+            </li>
+
+            <li>
+              <p>
+                Finally we construct our sign diagram.
+                We place an <q>\textinterrobang</q>
+                above <m>x=-2</m> and <m>x=3</m>,
+                and a <q><m>0</m></q>
+                above <m>x = \frac{5}{2}</m> and <m>x=-1</m>.
+                Choosing test values in the test intervals gives us <m>f(x)</m> is <m>(+)</m> on the intervals <m>(-\infty, -2)</m>,
+                <m>\left(-1, \frac{5}{2}\right)</m> and <m>(3, \infty)</m>,
+                and <m>(-)</m> on the intervals <m>(-2,-1)</m> and <m>\left(\frac{5}{2}, 3\right)</m>,
+                giving us the sign diagram in <xref ref="fig_ratsd3">Figure</xref>.
+                As we piece together all of the information,
+                we note that the graph must cross the horizontal asymptote at some point after <m>x=3</m> in order for it to approach <m>y=2</m> from underneath.
+                This is the subtlety that we would have missed had we skipped the long division and subsequent end behaviour analysis.
+                We can,
+          in fact, find exactly when the graph crosses <m>y=2</m>.
+                As a result of the long division,
+                we have <m>g(x) = 2 - \dfrac{x-7}{x^2-x-6}</m>.
+                For <m>g(x) = 2</m>, we would need <m>\dfrac{x-7}{x^2-x-6} = 0</m>.
+                This gives <m>x-7= 0</m>, or <m>x=7</m>.
+                Note that <m>x-7</m> is the remainder when
+                <m>2x^2-3x-5</m> is divided by <m>x^2-x-6</m>,
+                so it makes sense that for <m>g(x)</m> to equal the quotient <m>2</m>,
+                the remainder from the division must be <m>0</m>.
+                Sure enough, we find <m>g(7)=2</m>.
+                Moreover,
+          it stands to reason that <m>g</m> must attain a relative minimum at some point past <m>x=7</m>.
+                Calculus verifies that at <m>x=13</m>,
+                we have such a minimum at exactly
+                <m>(13, 1.96)</m>. <figure xml:id="fig_ratgraph7"> <caption>The complete graph
+                <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m> for <xref ref="ex_ratgraph2">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-10.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our next example gives us an opportunity to more thoroughly analyze a slant asymptote.
+    </p>
+
+    <example xml:id="ex_ratgraph3">
+      <title>A graph with a slant asymptote</title>
+      <statement>
+        <p>
+          Sketch a detailed graph of <m>h(x) = \dfrac{2x^3+5x^2+4x+1}{x^2+3x+2}</m>.
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              For domain, you know the drill.
+              Solving <m>x^2+3x+2 = 0</m> gives <m>x = -2</m> and <m>x=-1</m>.
+              Our answer is <m>(-\infty, -2) \cup (-2, -1) \cup (-1, \infty)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To reduce <m>h(x)</m>, we need to factor the numerator and denominator.
+              To factor the numerator,
+              we use the techniques set forth in <xref ref="RealZeros">Section</xref> and we get
+              <md>
+                <mrow>h(x) \amp  =  \dfrac{2x^3+5x^2+4x+1}{x^2+3x+2} = \dfrac{(2x+1)(x+1)^2}{(x+2)(x+1)}</mrow>
+                <mrow>\amp  = \dfrac{ (2x+1) (x+1)^{\cancelto{1}{2}}  }{(x+2)\cancel{(x+1)}} = \dfrac{(2x+1)(x+1)}{x+2}</mrow>
+              </md>
+              We will use this reduced formula for <m>h(x)</m> as long as we're not substituting <m>x=-1</m>.
+              To make this exclusion specific,
+              we write <m>h(x) = \dfrac{(2x+1)(x+1)}{x+2}</m>, <m>x \neq -1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To find the <m>x</m>-intercepts, as usual,
+              we set <m>h(x) = 0</m> and solve.
+              Solving <m>\dfrac{(2x+1)(x+1)}{x+2}=0</m> yields <m>x=-\frac{1}{2}</m> and <m>x=-1</m>.
+              The latter isn't in the domain of <m>h</m>, so we exclude it.
+              Our only <m>x</m>-intercept is <m>\left(-\frac{1}{2}, 0\right)</m>.
+              To find the <m>y</m>-intercept, we set <m>x=0</m>.
+              Since <m>0 \neq -1</m>,
+              we can use the reduced formula for <m>h(x)</m> and we get
+              <m>h(0) = \frac{1}{2}</m> for a <m>y</m>-intercept of <m>\left(0,\frac{1}{2}\right)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              From <xref ref="vavshole">Theorem</xref>,
+              we know that since <m>x=-2</m> still poses a threat in the denominator of the reduced function,
+              we have a vertical asymptote there.
+              As for <m>x=-1</m>,
+              the factor <m>(x+1)</m> was cancelled from the denominator when we reduced <m>h(x)</m>,
+              so it no longer causes trouble there.
+              This means that we get a hole when <m>x=-1</m>.
+              To find the <m>y</m>-coordinate of the hole,
+              we substitute <m>x=-1</m> into <m>\dfrac{(2x+1)(x+1)}{x+2}</m>,
+              per <xref ref="vavshole">Theorem</xref> and get <m>0</m>.
+              Hence, we have a hole on the <m>x</m>-axis at <m>(-1,0)</m>.
+              It should make you uncomfortable plugging <m>x=-1</m> into the reduced formula for <m>h(x)</m>,
+              especially since we've made such a big deal concerning the stipulation about not letting <m>x=-1</m> for that formula.
+              What we are really doing is taking a Calculus short-cut to the more detailed kind of analysis near <m>x=-1</m> which we will show below.
+              Speaking of which, for the discussion that follows,
+              we will use the formula <m>h(x) = \dfrac{(2x+1)(x+1)}{x+2}</m>,
+              <m>x \neq -1</m>.
+
+              <ul>
+                <li>
+                  <p>
+                    <em>The behaviour of <m>y=h(x)</m> as <m>x \rightarrow -2</m>:</em>
+                    As <m>x \rightarrow -2^{-}</m>,
+                    we imagine substituting a number a little bit less than <m>-2</m>.
+                    We have <m>h(x) \approx \frac{(-3)(-1)}{(\mbox{\scriptsize very small <m>(-)</m>} )} \approx \frac{3}{(\mbox{\scriptsize very small <m>(-)</m>} )}\approx \mbox{very big <m>(-)</m>}</m> thus as <m>x \rightarrow -2^{-}</m>,
+                    <m>h(x) \rightarrow -\infty</m>.
+                    On the other side of <m>-2</m>,
+                    as <m>x \rightarrow -2^{+}</m>,
+                    we find that <m>h(x) \approx \frac{3}{\mbox{\scriptsize very small <m>(+)</m>} } \approx \mbox{very big <m>(+)</m>}</m>,
+                    so <m>h(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgraph8"> <caption>The behaviour of <m>y=h(x)</m> near the hole and vertical asymptote</caption> <img src="figures/RationalsGraphics/RationalGraphs-11.pdf"/> </figure>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <em>The behaviour of <m>y=h(x)</m> as <m>x \rightarrow -1</m>.</em>
+                    As <m>x \rightarrow -1^{-}</m>,
+                    we imagine plugging in a number a bit less than <m>x=-1</m>.
+                    We have <m>h(x) \approx \frac{(-1)(\mbox{\scriptsize very small <m>(-)</m>} )}{1} = \mbox{very small <m>(+)</m>}</m> Hence,
+                    as <m>x \rightarrow -1^{-}</m>,
+                    <m>h(x) \rightarrow 0^{+}</m>.
+                    This means that as <m>x \rightarrow -1^{-}</m>,
+                    the graph is a bit above the point <m>(-1,0)</m>.
+                    As <m>x \rightarrow -1^{+}</m>,
+                    we get <m>h(x) \approx \frac{(-1)(\mbox{\scriptsize very small <m>(+)</m>} )}{1} = \mbox{very small <m>(-)</m>}</m>.
+                    This gives us that as <m>x \rightarrow -1^{+}</m>,
+                    <m>h(x) \rightarrow 0^{-}</m>,
+                    so the graph is a little bit lower than <m>(-1,0)</m> here.
+                    Our results are shown graphically in <xref ref="fig_ratgraph8">Figure</xref>.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For end behaviour,
+              we note that the degree of the numerator of <m>h(x)</m>,
+              <m>2x^3+5x^2+4x+1</m>,
+              is <m>3</m> and the degree of the denominator, <m>x^2+3x+2</m>,
+              is <m>2</m> so by <xref ref="sathm">Theorem</xref>,
+              the graph of <m>y = h(x)</m> has a slant asymptote.
+              For <m>x\rightarrow \pm \infty</m>,
+              we are far enough away from <m>x=-1</m> to use the reduced formula,
+              <m>h(x) = \dfrac{(2x+1)(x+1)}{x+2}</m>, <m>x \neq -1</m>.
+              To perform long division,
+              we multiply out the numerator and get <m>h(x) = \dfrac{2x^2+3x+1}{x+2}</m>,
+              <m>x \neq -1</m>,
+              and rewrite <m>h(x) = 2x-1+\dfrac{3}{x+2}</m>, <m>x \neq -1</m>.
+              By <xref ref="sathm">Theorem</xref>,
+              the slant asymptote is <m>y = 2x-1</m>,
+              and to better see <em>how</em>
+              the graph approaches the asymptote,
+              we focus our attention on the term generated from the remainder,
+              <m>\dfrac{3}{x+2}</m>.
+
+              <ul>
+                <li>
+                  <p>
+                    <em>The behaviour of <m>y=h(x)</m> as <m>x \rightarrow -\infty</m>:</em>
+                    Substituting <m>x = \mbox{<m>-1</m> billion}</m> into <m>\dfrac{3}{x+2}</m>,
+                    we get the estimate <m>\frac{3}{\mbox{\scriptsize <m>-1</m> billion} } \approx \mbox{very small <m>(-)</m>}</m>.
+                    Hence,
+              <m>h(x) = 2x-1+\dfrac{3}{x+2} \approx 2x-1 + \mbox{very small <m>(-)</m>}</m>.
+                    This means the graph of <m>y=h(x)</m> is a little bit <em>below</em>
+                    the line <m>y=2x-1</m> as <m>x \rightarrow -\infty</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <em>The behaviour of <m>y=h(x)</m> as <m>x \rightarrow \infty</m>:</em>
+                    If <m>x \rightarrow \infty</m>,
+                    then <m>\dfrac{3}{x+2} \approx \mbox{very small <m>(+)</m>}</m>.
+                    This means <m>h(x) \approx 2x-1 + \mbox{very small <m>(+)</m>}</m>,
+                    or that the graph of <m>y=h(x)</m> is a little bit <em>above</em>
+                    the line <m>y=2x-1</m> as <m>x \rightarrow \infty</m>.
+                    The end behaviour is shown in <xref ref="fig_ratgraph9">Figure</xref>
+                  </p>
+                </li>
+              </ul>
+            </p>
+
+            <figure xml:id="fig_ratgraph9">
+              <caption>End behaviour for <m>y=h(x)</m></caption>
+              <img src="figures/RationalsGraphics/RationalGraphs-12.pdf"/>
+            </figure>
+
+          </li>
+
+          <li>
+            <p>
+              To make our sign diagram,
+              we place an <q>\textinterrobang</q>
+              above <m>x=-2</m> and <m>x=-1</m> and a
+              <q><m>0</m></q> above <m>x=-\frac{1}{2}</m>.
+              On our four test intervals,
+              we find <m>h(x)</m> is <m>(+)</m> on <m>(-2,-1)</m> and
+              <m>\left(-\frac{1}{2}, \infty\right)</m> and <m>h(x)</m> is <m>(-)</m> on
+              <m>(-\infty, -2)</m> and <m>\left(-1,-\frac{1}{2}\right)</m>,
+              giving us the sign diagram in <xref ref="fig_ratsd4">Figure</xref>.
+              Putting all of our work together yields the graph in <xref ref="fig_ratgraph10">Figure</xref>.
+            </p>
+          </li>
+        </ol>
+
+        <figure xml:id="fig_ratsd4">
+          <caption>The sign diagram for
+          <m>h(x)=\frac{2x^3+5x^2+4x+1}{x^2+3x+2}</m></caption>
+          <img src="figures/RationalsGraphics/RationalGraphs-13.pdf"/>
+        </figure>
+
+        <figure xml:id="fig_ratgraph10">
+          <caption>The graph <m>y=h(x)</m> for <xref ref="ex_ratgraph3">Example</xref></caption>
+          <img src="figures/RationalsGraphics/RationalGraphs-14.pdf"/>
+        </figure>
+
+        <p>
+          We could ask whether the graph of <m>y=h(x)</m> crosses its slant asymptote.
+          From the formula <m>h(x) = 2x-1+\dfrac{3}{x+2}</m>, <m>x \neq -1</m>,
+          we see that if <m>h(x) = 2x-1</m>,
+          we would have <m>\dfrac{3}{x+2} = 0</m>.
+          Since this will never happen,
+          we conclude the graph never crosses its slant asymptote. (But rest assured,
+          some graphs do!)
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We end this section with an example that shows it's not all pathological weirdness when it comes to rational functions and technology still has a role to play in studying their graphs at this level (that is,
+      prior to introducing the techniques of Calculus).
+    </p>
+
+    <example xml:id="calcisneededhere">
+      <title>A graph requiring calculus for the details</title>
+      <statement>
+        <p>
+          Sketch the graph of <m>r(x) = \dfrac{x^4+1}{x^2+1}</m>.
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              The denominator <m>x^2+1</m> is never zero so the domain is <m>(-\infty, \infty)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              With no real zeros in the denominator,
+              <m>x^2+1</m> is an irreducible quadratic.
+              Our only hope of reducing <m>r(x)</m> is if <m>x^2+1</m> is a factor of <m>x^4+1</m>.
+              Performing long division gives us
+              <me>
+                \dfrac{x^4+1}{x^2+1} = x^2-1+\dfrac{2}{x^2+1}
+              </me>
+              The remainder is not zero so <m>r(x)</m> is already reduced.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To find the <m>x</m>-intercept, we'd set <m>r(x) = 0</m>.
+              Since there are no real solutions to <m>\dfrac{x^4+1}{x^2+1}=0</m>,
+              we have no <m>x</m>-intercepts.
+              Since <m>r(0) = 1</m>, we get <m>(0,1)</m> as the <m>y</m>-intercept.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              This step doesn't apply to <m>r</m>,
+              since its domain is all real numbers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For end behaviour,
+              we note that since the degree of the numerator is exactly <em>two</em>
+              more than the degree of the denominator,
+              neither <xref ref="hathm">Theorems</xref>
+              <xref ref="sathm">nor</xref> apply.
+              We know from our attempt to reduce <m>r(x)</m> that we can rewrite <m>r(x) = x^2-1+\dfrac{2}{x^2+1}</m>,
+              so we focus our attention on the term corresponding to the remainder,
+              <m>\dfrac{2}{x^2+1}</m> It should be clear that as <m>x \rightarrow \pm \infty</m>,
+              <m>\dfrac{2}{x^2+1} \approx \mbox{very small <m>(+)</m>}</m>,
+              which means <m>r(x) \approx x^2-1 + \mbox{very small <m>(+)</m>}</m>.
+              So the graph <m>y=r(x)</m> is a little bit <em>above</em>
+              the graph of the parabola <m>y=x^2-1</m> as <m>x \rightarrow \pm \infty</m>.
+              Graphically,
+              we have <xref ref="fig_ratgraph11">Figure</xref>. <figure xml:id="fig_ratgraph11"> <caption>Comparing <m>y=r(x)</m> to <m>y=x^2-1</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-15.pdf"/> </figure>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There isn't much work to do for a sign diagram for <m>r(x)</m>,
+              since its domain is all real numbers and it has no zeros.
+              Our sole test interval is <m>(-\infty, \infty)</m>,
+              and since we know <m>r(0) = 1</m>,
+              we conclude <m>r(x)</m> is <m>(+)</m> for all real numbers.
+              At this point, we don't have much to go on for a graph.
+              We leave it to the reader to show
+              <m>r(-x) = r(x)</m> so <m>r</m> is even, and,
+              hence, its graph is symmetric about the <m>y</m>-axis.
+              <xref ref="fig_ratgraph12">Figure</xref>
+              shows a comparison of what we have determined analytically versus what the computer shows us.
+              We have no way to detect the relative extrema analytically
+              (without appealing to Calculus, of course)
+              apart from brute force plotting of points,
+              which is done more efficiently by the computer.
+            </p>
+          </li>
+        </ol>
+
+        <table xml:id="fig_ratgraph12">
+          <caption>The limitations of our Precalculus methods</caption>
+          <tabular>
+            <row>
+              <cell><img src="figures/RationalsGraphics/RationalGraphs-16.pdf"/></cell>
+            </row>
+            <row>
+              <cell>Plotting by hand (without calculus)</cell>
+            </row>
+            <row>
+              <cell></cell>
+            </row>
+            <row>
+              <cell><img src="figures/RationalsGraphics/Rationals09.pdf"/></cell>
+            </row>
+            <row>
+              <cell>Plotting with GeoGebra</cell>
+            </row>
+          </tabular>
+        </table>
+      </solution>
+    </example>
+
+    <p>
+      As usual, the authors offer no apologies for what may be construed as
+      <q>pedantry</q> in this section.
+      We feel that the detail presented in this section is necessary to obtain a firm grasp of the concepts presented here and it also serves as an introduction to the methods employed in Calculus.
+      As we have said many times in the past,
+      your instructor will decide how much, if any,
+      of the kinds of details presented here are
+      <q>mission critical</q>
+      to your understanding of Precalculus.
+      Without further delay, we present you with this section's Exercises.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      use the six-step procedure from <xref ref="idea_ratgraph">Key Idea</xref>
+      to graph the rational function.
+      Be sure to draw any asymptotes as dashed lines.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4}{x + 2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{4}{x + 2}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -2) \cup (-2, \infty)</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 2)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = -2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{-}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-17.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{5x}{6 - 2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{5x}{6 - 2x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = -\frac{5}{2}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow -\frac{5}{2}^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow -\frac{5}{2}^{-}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-18.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2}}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2}}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 0) \cup (0, \infty)</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          No <m>y</m>-intercepts
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 0^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 0^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-19.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2} + x - 12}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2} + x - 12} = \dfrac{1}{(x - 3)(x + 4)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -4) \cup (-4, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, -\frac{1}{12})</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -4</m> and <m>x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x - 1}{-2x^{2} - 5x + 3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{2x - 1}{-2x^{2} - 5x + 3} = -\dfrac{2x - 1}{(2x - 1)(x + 3)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, \frac{1}{2}) \cup (\frac{1}{2}, \infty)</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, -\frac{1}{3})</m>
+        </p>
+
+        <p>
+          <m>f(x) = \dfrac{-1}{x + 3}, \; x \neq \frac{1}{2}</m>
+        </p>
+
+        <p>
+          Hole in the graph at <m>(\frac{1}{2}, -\frac{2}{7})</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = -3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + x - 12}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + x - 12} = \dfrac{x}{(x - 3)(x + 4)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -4) \cup (-4, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -4</m> and <m>x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{-}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -4^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^2+4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^{2} + 4}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          No vertical asymptotes
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^2-4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{4x}{x^{2} -4} = \dfrac{4x}{(x + 2)(x - 2)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -2) \cup (-2, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -2, x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-12}{x^2+x-6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-12}{x^{2} +x - 6} = \dfrac{x-4}{x - 2} \, x \neq -3</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(4,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,2)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Hole at <m>\left(-3, \frac{7}{5} \right)</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 1^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 1^{-}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x^2-5x-2}{x^2-9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{3x^2-5x-2}{x^{2} -9} = \dfrac{(3x+1)(x-2)}{(x + 3)(x - 3)}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>\left(-\frac{1}{3}, 0 \right)</m>,
+          <m>(2,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>\left(0, \frac{2}{9} \right)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -3, x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          No holes in the graph
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty,
+          f(x) \rightarrow 3^{+}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, f(x) \rightarrow 3^{-}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-6}{x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^2-x-6}{x+1} = \dfrac{(x-3)(x+2)}{x+1}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -1) \cup (-1, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>(-2,0)</m>, <m>(3,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,-6)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = -1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -1^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -1^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = x-2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=x-2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=x-2</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2-x}{3-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^2-x}{3-x} = \dfrac{x(x-1)}{3-x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>(0,0)</m>, <m>(1,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = -x-2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=-x-2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=-x-2</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^3+2x^2+x}{x^2-x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3+2x^2+x}{x^{2} -x-2} = \dfrac{x(x+1)}{x - 2} \, x \neq -1</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -1) \cup (-1, 2) \cup (2, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          Vertical asymptote: <m>x = 2</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{-}, f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 2^{+}, f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          Hole at <m>(-1,0)</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = x+3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is below <m>y=x+3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is above <m>y=x+3</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{-x^{3} + 4x}{x^{2} - 9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{-x^{3} + 4x}{x^{2} - 9}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -3) \cup (-3, 3) \cup (3, \infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercepts: <m>(-2, 0), (0, 0), (2, 0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0, 0)</m>
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -3, x = 3</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -3^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 3^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = -x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is above <m>y=-x</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is below <m>y=-x</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^3-2x^2+3x}{2x^2+2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^3-2x^2+3x}{2x^2+2}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty,\infty)</m>
+        </p>
+
+        <p>
+          <m>x</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          <m>y</m>-intercept: <m>(0,0)</m>
+        </p>
+
+        <p>
+          Slant asymptote: <m>y = \frac{1}{2}x-1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty</m>,
+          the graph is below <m>y = \frac{1}{2}x-1</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty</m>,
+          the graph is above <m>y = \frac{1}{2}x-1</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p><fn>Once you've done the six-step procedure, use a computer or graphing calculator to graph this function on the viewing window <m>[0, 12] \times [0, 0.25]</m>.  What do you see?</fn><m>f(x) = \dfrac{x^{2} - 2x + 1}{x^{3} + x^{2} - 2x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{x^{2} - 2x + 1}{x^{3} + x^{2} - 2x}</m>
+        </p>
+
+        <p>
+          Domain: <m>(-\infty, -2) \cup (-2, 0) \cup (0, 1) \cup (1, \infty)</m>
+        </p>
+
+        <p>
+          <m>f(x) = \dfrac{x - 1}{x(x + 2)}, \; x \neq 1</m>
+        </p>
+
+        <p>
+          No <m>x</m>-intercepts
+        </p>
+
+        <p>
+          No <m>y</m>-intercepts
+        </p>
+
+        <p>
+          Vertical asymptotes: <m>x = -2</m> and <m>x = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{-}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -2^{+}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 0^{-}, \; f(x) \rightarrow \infty</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow 0^{+}, \; f(x) \rightarrow -\infty</m>
+        </p>
+
+        <p>
+          Hole in the graph at <m>(1, 0)</m>
+        </p>
+
+        <p>
+          Horizontal asymptote: <m>y = 0</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow -\infty, \; f(x) \rightarrow 0^{-}</m>
+        </p>
+
+        <p>
+          As <m>x \rightarrow \infty, \; f(x) \rightarrow 0^{+}</m>
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      graph the rational function by applying transformations to the graph of <m>y = \dfrac{1}{x}</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x - 2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \dfrac{1}{x - 2}</m>
+        </p>
+
+        <p>
+          Shift the graph of <m>y = \dfrac{1}{x}</m>
+        </p>
+
+        <p>
+          to the right 2 units.
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-33.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>g(x) = 1 - \dfrac{3}{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>g(x) = 1 - \dfrac{3}{x}</m>
+        </p>
+
+        <p>
+          Vertically stretch the graph of <m>y = \dfrac{1}{x}</m>
+        </p>
+
+        <p>
+          by a factor of 3.
+        </p>
+
+        <p>
+          Reflect the graph of <m>y = \dfrac{3}{x}</m>
+        </p>
+
+        <p>
+          about the <m>x</m>-axis.
+        </p>
+
+        <p>
+          Shift the graph of <m>y = -\dfrac{3}{x}</m>
+        </p>
+
+        <p>
+          up 1 unit.
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-34.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>h(x) = \dfrac{-2x + 1}{x}</m> (Hint: Divide)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>h(x) = \dfrac{-2x + 1}{x} = -2 + \dfrac{1}{x}</m>
+        </p>
+
+        <p>
+          Shift the graph of <m>y = \dfrac{1}{x}</m>
+        </p>
+
+        <p>
+          down 2 units.
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-35.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>j(x) = \dfrac{3x - 7}{x - 2}</m> (Hint: Divide)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>j(x) = \dfrac{3x - 7}{x - 2} = 3 - \dfrac{1}{x - 2}</m>
+        </p>
+
+        <p>
+          Shift the graph of <m>y = \dfrac{1}{x}</m>
+        </p>
+
+        <p>
+          to the right 2 units.
+        </p>
+
+        <p>
+          Reflect the graph of <m>y = \dfrac{1}{x - 2}</m>
+        </p>
+
+        <p>
+          about the <m>x</m>-axis.
+        </p>
+
+        <p>
+          Shift the graph of <m>y = -\dfrac{1}{x - 2}</m>
+        </p>
+
+        <p>
+          up 3 units.
+        </p>
+
+        <p>
+          <img src="figures/RationalsGraphics/RationalGraphs-36.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates how you would graph <m>f(x) = \dfrac{ax + b}{cx + d}</m>.
+          What restrictions must be placed on
+          <m>a,
+          b, c</m> and <m>d</m> so that the graph is indeed a transformation of <m>y = \dfrac{1}{x}</m>?
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="intropolyexample">Example</xref>
+          in <xref ref="GraphsofPolynomials">Section</xref>
+          we showed that <m>p(x) = \frac{4x+x^3}{x}</m> is not a polynomial even though its formula reduced to <m>4 + x^{2}</m> for <m>x \neq 0</m>.
+          However, it is a rational function similar to those studied in the section.
+          With the help of your classmates, graph <m>p(x)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>g(x) = \displaystyle \frac{x^{4} - 8x^{3} + 24x^{2} - 72x + 135}{x^{3} - 9x^{2} + 15x - 7}.\;</m> With the help of your classmates,
+          find the <m>x</m>- and <m>y</m>- intercepts of the graph of <m>g</m>.
+          Find the intervals on which the function is increasing,
+          the intervals on which it is decreasing and the local extrema.
+          Find all of the asymptotes of the graph of <m>g</m> and any holes in the graph,
+          if they exist.
+          Be sure to show all of your work including any polynomial or synthetic division.
+          Sketch the graph of <m>g</m>,
+          using more than one picture if necessary to show all of the important features of the graph.
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      { <xref ref="calcisneededhere">Example</xref>
+      showed us that the six-step procedure cannot tell us everything of importance about the graph of a rational function.
+      Without Calculus,
+      we need to use technology to reveal the hidden mysteries of rational function behaviour.
+      Working with your classmates,
+      use a computer or graphing calculator to examine the graphs of the rational functions given in Exercises} {. Compare and contrast their features.
+      Which features can the six-step process reveal and which features cannot be detected by it?}
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x^{2} + 1}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x^{2} + 1}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^{2}}{x^{2} + 1}</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^{3}}{x^{2} + 1}</m>
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

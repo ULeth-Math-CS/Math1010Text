@@ -1,0 +1,1615 @@
+
+
+<section xml:id="InverseFunctions">
+  <title>Inverse Functions</title>
+  <introduction>
+    <p>
+      Thinking of a function as a process like we did in <xref ref="FunctionNotation">Section</xref>,
+      in this section we seek another function which might reverse that process.
+      As in real life, we will find that some processes
+      (like putting on socks and shoes)
+      are reversible while some
+      (like cooking a steak)
+      are not.
+      We start by discussing a very basic function which is reversible,
+      <m>f(x) = 3x+4</m>.
+      Thinking of <m>f</m> as a process,
+      we start with an input <m>x</m> and apply two steps,
+      as we saw in <xref ref="FunctionNotation">Section</xref>
+          <idx><h>function</h><h>as a process</h></idx>
+      <ol>
+        <li>
+          <p>
+            multiply by <m>3</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            add <m>4</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      To reverse this process,
+      we seek a function <m>g</m> which will undo each of these steps and take the output from <m>f</m>,
+      <m>3x+4</m>, and return the input <m>x</m>.
+      If we think of the real-world reversible two-step process of first putting on socks then putting on shoes,
+      to reverse the process,
+      we first take off the shoes,
+      and then we take off the socks.
+      In much the same way,
+      the function <m>g</m> should undo the second step of <m>f</m> first.
+      That is, the function <m>g</m> should
+
+      <ol>
+        <li>
+          <p>
+            <em>subtract</em> <m>4</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>divide</em> by <m>3</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Following this procedure, we get <m>g(x) = \frac{x-4}{3}</m>.
+      Let's check to see if the function <m>g</m> does the job.
+      If <m>x=5</m>, then <m>f(5) = 3(5)+4 = 15+4 = 19</m>.
+      Taking the output <m>19</m> from <m>f</m>,
+      we substitute it into <m>g</m> to get <m>g(19) = \frac{19-4}{3} = \frac{15}{3} = 5</m>,
+      which is our original input to <m>f</m>.
+      To check that <m>g</m> does the job for all <m>x</m> in the domain of <m>f</m>,
+      we take the generic output from <m>f</m>,
+      <m>f(x) = 3x+4</m>, and substitute that into <m>g</m>.
+      That is, <m>g(f(x)) = g(3x+4) = \frac{(3x+4)-4}{3} = \frac{3x}{3} = x</m>,
+      which is our original input to <m>f</m>.
+      If we carefully examine the arithmetic as we simplify <m>g(f(x))</m>,
+      we actually see <m>g</m> first
+      <q>undoing</q> the addition of <m>4</m>,
+      and then <q>undoing</q>
+      the multiplication by <m>3</m>.
+      Not only does <m>g</m> undo <m>f</m>,
+      but <m>f</m> also undoes <m>g</m>.
+      That is, if we take the output from <m>g</m>,
+      <m>g(x) = \frac{x-4}{3}</m>,
+      and put that into <m>f</m>,
+      we get <m>f(g(x)) = f\left(\frac{x-4}{3}\right) = 3 \left(\frac{x-4}{3}\right) + 4 = (x-4) + 4 = x</m>.
+      Using the language of function composition developed in <xref ref="FunctionComposition">Section</xref>,
+      the statements <m>g(f(x)) = x</m> and <m>f(g(x)) = x</m> can be written as
+      <m>(g \circ f)(x) = x</m> and <m>(f \circ g)(x) = x</m>,
+      respectively.
+      Abstractly,
+      we can visualize the relationship between <m>f</m> and <m>g</m> in <xref ref="fig_inverse1">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_inverse1">
+      <caption>The relationship between a function and its inverse</caption>
+      <img src="figures/FurtherGraphics/InverseFunctions-1.pdf"/>
+    </figure>
+
+    <p>
+      The main idea to get from <xref ref="fig_inverse1">Figure</xref>
+      is that <m>g</m> takes the outputs from <m>f</m> and returns them to their respective inputs,
+      and conversely,
+      <m>f</m> takes outputs from <m>g</m> and returns them to their respective inputs.
+      We now have enough background to state the central definition of the section.
+    </p>
+
+    <definition xml:id="inversefunctiondefn">
+      <title>Inverse of a function</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> and <m>g</m> are two functions such that
+
+          <ol>
+            <li>
+              <p>
+                <m>(g \circ f)(x) = x</m> for all <m>x</m> in the domain of <m>f</m> <em>and</em>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f \circ g)(x) = x</m> for all <m>x</m> in the domain of <m>g</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          then <m>f</m> and <m>g</m> are
+              <idx><h>function</h><h>inverse ! definition of</h></idx><idx><h>inverse</h><h>of a function ! definition of</h></idx>
+          <term>inverses</term> of each other and the functions <m>f</m> and <m>g</m> are said to be <term>invertible</term>.
+              <idx><h>invertible</h><h>function</h></idx>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      We now formalize the concept that inverse functions exchange inputs and outputs.
+    </p>
+
+    <theorem xml:id="inversefunctionprops">
+      <title>Properties of Inverse Functions</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> and <m>g</m> are inverse functions.
+              <idx><h>inverse</h><h>of a function ! properties of</h></idx> <idx><h>function</h><h>inverse ! properties of</h></idx>
+          <ul>
+            <li>
+              <p>
+                The range
+          (recall this is the set of all outputs of a function)
+          of <m>f</m> is the domain of <m>g</m> and the domain of <m>f</m> is the range of <m>g</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(a) = b</m> if and only if <m>g(b) = a</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(a,b)</m> is on the graph of <m>f</m> if and only if <m>(b,a)</m> is on the graph of <m>g</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      <xref ref="inversefunctionprops">Theorem</xref>
+      is a consequence of <xref ref="inversefunctiondefn">Definition</xref>
+      and the Fundamental Graphing Principle for Functions.
+      We note the third property in <xref ref="inversefunctionprops">Theorem</xref>
+      tells us that the graphs of inverse functions are reflections about the line <m>y=x</m>.
+      For a proof of this,
+      see <xref ref="inversemidpointex1">Example</xref> in <xref ref="CartesianPlane">Section</xref> and <xref ref="inversemidpointex2">Exercise</xref>
+      in <xref ref="LinearFunctions">Section</xref>.
+      For example,
+      we plot the inverse functions <m>f(x) = 3x+4</m> and
+      <m>g(x) = \dfrac{x-4}{3}</m> in <xref ref="fig_inverse2">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_inverse2">
+      <caption>Reflecting <m>y=f(x)</m> across <m>y=x</m> to obtain <m>y=g(x)</m></caption>
+      <img src="figures/FurtherGraphics/InverseFunctions-2.pdf"/>
+    </figure>
+
+    <p>
+      If we abstract one step further,
+      we can express the sentiment in <xref ref="inversefunctiondefn">Definition</xref>
+      by saying that <m>f</m> and <m>g</m> are inverses if and only if <m>g \circ f = I_{1}</m> and
+      <m>f \circ g = I_{2}</m> where <m>I_{1}</m> is the identity function restricted to the domain of <m>f</m> and <m>I_{2}</m> is the identity function restricted to the domain of <m>g</m>.
+      In other words,
+      <m>I_{1}(x) = x</m> for all <m>x</m> in the domain of <m>f</m> and
+      <m>I_{2}(x) = x</m> for all <m>x</m> in the domain of <m>g</m>.
+      Using this description of inverses along with the properties of function composition listed in <xref ref="functioncompprops">Theorem</xref>,
+      we can show that function inverses are unique. (In other words,
+      invertible functions have exactly one inverse.) Suppose <m>g</m> and <m>h</m> are both inverses of a function <m>f</m>.
+      By <xref ref="inversefunctionprops">Theorem</xref>,
+      the domain of <m>g</m> is equal to the domain of <m>h</m>,
+      since both are the range of <m>f</m>.
+      This means the identity function <m>I_{2}</m> applies both to the domain of <m>h</m> and the domain of <m>g</m>.
+      Thus <m>h = h \circ I_{2} = h \circ (f \circ g) = (h \circ f) \circ g = I_{1} \circ g = g</m>,
+      as required. (It is an excellent exercise to explain each step in this string of equalities.) We summarize the discussion of the last two paragraphs in the following theorem.
+    </p>
+
+    <aside>
+      <p>
+        The identity function <m>I</m>,
+        which was introduced in <xref ref="LinearFunctions">Section</xref>
+        and mentioned in <xref ref="functioncompprops">Theorem</xref>,
+        has a domain of all real numbers.
+        Since the domains of <m>f</m> and <m>g</m> may not be all real numbers,
+        we need the restrictions listed here.
+      </p>
+    </aside>
+    <aside>
+      <p>
+        In the interests of full disclosure,
+        the authors would like to admit that much of the discussion in the previous paragraphs could have easily been avoided had we appealed to the description of a function as a set of ordered pairs.
+        We make no apology for our discussion from a function composition standpoint, however,
+        since it exposes the reader to more abstract ways of thinking of functions and inverses.
+      </p>
+    </aside>
+    <p>
+      \phantomsection
+    </p>
+
+    <theorem xml:id="inverseuniquegraph">
+      <title>Uniqueness of Inverse Functions and Their Graphs</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is an invertible function.
+              <idx><h>inverse</h><h>of a function ! uniqueness of</h></idx> <idx><h>function</h><h>inverse ! uniqueness of</h></idx>
+          <ul>
+            <li>
+              <p>
+                There is exactly one inverse function for <m>f</m>,
+                denoted <m>f^{-1}</m> (read <m>f</m>-inverse)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The graph of <m>y=f^{-1}(x)</m> is the reflection of the graph of <m>y=f(x)</m> across the line <m>y=x</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The notation <m>f^{-1}</m> is an unfortunate choice since you've been programmed since Elementary Algebra to think of this as <m>\frac{1}{f}</m>.
+      This is most definitely <em>not</em> the case since, for instance,
+      <m>f(x) = 3x+4</m> has as its inverse <m>f^{-1}(x) = \frac{x-4}{3}</m>,
+      which is certainly different than <m>\frac{1}{f(x)} = \frac{1}{3x+4}</m>.
+      Why does this confusing notation persist?
+      As we mentioned in <xref ref="FunctionComposition">Section</xref>,
+      the identity function <m>I</m> is to function composition what the real number <m>1</m> is to real number multiplication.
+      The choice of notation <m>f^{-1}</m> alludes to the property that
+      <m>f^{-1} \circ f = I_{1}</m> and <m>f \circ f^{-1} = I_{2}</m>,
+      in much the same way as <m>3^{-1} \cdot 3 = 1</m> and <m>3 \cdot 3^{-1} = 1</m>.
+    </p>
+
+    <p>
+      Let's turn our attention to the function <m>f(x) = x^2</m>.
+      Is <m>f</m> invertible?
+      A likely candidate for the inverse is the function <m>g(x) = \sqrt{x}</m>.
+      Checking the composition yields <m>(g\circ f)(x) = g(f(x)) = \sqrt{x^2} = |x|</m>,
+      which is not equal to <m>x</m> for all <m>x</m> in the domain <m>(-\infty, \infty)</m>.
+      For example, when <m>x=-2</m>,
+      <m>f(-2)= (-2)^2 = 4</m>, but <m>g(4) = \sqrt{4}=2</m>,
+      which means <m>g</m> failed to return the input <m>-2</m> from its output <m>4</m>.
+      What <m>g</m> did, however,
+      is match the output <m>4</m> to a
+      <em>different</em> input, namely <m>2</m>,
+      which satisfies <m>f(2) = 4</m>.
+      This issue is presented schematically in <xref ref="fig_inverse3">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_inverse3">
+      <caption>The function <m>f(x)=x^2</m> is not invertible</caption>
+      <img src="figures/FurtherGraphics/InverseFunctions-3.pdf"/>
+    </figure>
+
+    <p>
+      We see from the diagram that since both <m>f(-2)</m> and <m>f(2)</m> are <m>4</m>,
+      it is impossible to construct a <em>function</em>
+      which takes <m>4</m> back to <em>both</em>
+      <m>x=2</m> and <m>x=-2</m>. (By definition,
+      a function matches a real number with exactly one other real number.) From a graphical standpoint,
+      we know that if <m>y=f^{-1}(x)</m> exists,
+      its graph can be obtained by reflecting <m>y=x^2</m> about the line <m>y=x</m>,
+      in accordance with <xref ref="inverseuniquegraph">Theorem</xref>.
+      Doing so takes the graph in <xref ref="fig_inverse4">Figure</xref>
+      (a) to the one in <xref ref="fig_inverse4">Figure</xref> (b).
+    </p>
+
+    <table xml:id="fig_inverse4">
+      <caption>Reflecting <m>y=x^2</m> across the line <m>y=x</m> does not produce a function</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-4.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(a) <m>y=f(x)=x^2</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-5.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(b) <m>y=f^{-1}(x)</m>?</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We see that the line <m>x=4</m> intersects the graph of the supposed inverse twice - meaning the graph fails the Vertical Line Test,
+      <xref ref="VLT">Theorem</xref>, and as such,
+      does not represent <m>y</m> as a function of <m>x</m>.
+      The vertical line <m>x=4</m> on the graph on the right corresponds to the
+      <em>horizontal line</em>
+      <m>y=4</m> on the graph of <m>y=f(x)</m>.
+      The fact that the horizontal line <m>y=4</m> intersects the graph of <m>f</m> twice means two
+      <em>different</em> inputs,
+      namely <m>x=-2</m> and <m>x=2</m>,
+      are matched with the <em>same</em> output,
+      <m>4</m>, which is the cause of all of the trouble.
+      In general, for a function to have an inverse,
+      <em>different</em> inputs must go to
+      <em>different</em> outputs,
+      or else we will run into the same problem we did with <m>f(x) = x^2</m>.
+      We give this property a name.
+    </p>
+
+    <definition xml:id="onetoone">
+      <title>One-to-one function</title>
+      <statement>
+        <p>
+          A function <m>f</m> is said to be
+              <idx><h>function</h><h>one-to-one</h></idx>
+          <term>one-to-one</term>
+          if <m>f</m> matches different inputs to different outputs.
+          Equivalently,
+          <m>f</m> is one-to-one if and only if whenever <m>f(c) = f(d)</m>,
+          then <m>c=d</m>.
+              <idx><h>one-to-one function</h></idx>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Graphically,
+      we detect one-to-one functions using the test below.
+    </p>
+
+    <theorem xml:id="HLT">
+      <title>The Horizontal Line Test</title>
+      <statement>
+        <p>
+          \index {Horizontal Line Test (HLT)} A function <m>f</m> is one-to-one if and only if no horizontal line intersects the graph of <m>f</m> more than once.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      We say that the graph of a function <em>passes</em>
+      the Horizontal Line Test if no horizontal line intersects the graph more than once;
+      otherwise, we say the graph of the function
+      <em>fails</em> the Horizontal Line Test.
+      We have argued that if <m>f</m> is invertible,
+      then <m>f</m> must be one-to-one,
+      otherwise the graph given by reflecting the graph of
+      <m>y = f(x)</m> about the line <m>y = x</m> will fail the Vertical Line Test.
+      It turns out that being one-to-one is also enough to guarantee invertibility.
+      To see this,
+      we think of <m>f</m> as the set of ordered pairs which constitute its graph.
+      If switching the <m>x</m>- and <m>y</m>-coordinates of the points results in a function,
+      then <m>f</m> is invertible and we have found <m>f^{-1}</m>.
+      This is precisely what the Horizontal Line Test does for us:
+      it checks to see whether or not a set of points describes <m>x</m> as a function of <m>y</m>.
+      We summarize these results below.
+    </p>
+
+    <theorem xml:id="inversefunctionequivalency">
+      <title>Equivalent Conditions for Invertibility</title>
+      <statement>
+        <p>
+          Suppose <m>f</m> is a function.
+          The following statements are equivalent.
+              <idx><h>invertibility</h><h>function</h></idx>
+          <ul>
+            <li>
+              <p>
+                <m>f</m> is invertible
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> is one-to-one
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The graph of <m>f</m> passes the Horizontal Line Test
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      We put this result to work in the next example.
+    </p>
+
+    <example xml:id="inversefunctiononetooneex">
+      <title>Finding one-to-one functions</title>
+      <statement>
+        <p>
+          Determine if the following functions are one-to-one in two ways: (a) analytically using <xref ref="onetoone">Definition</xref>
+          and (b) graphically using the Horizontal Line Test.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{1-2x}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \dfrac{2x}{1-x}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>h(x) = x^2 - 2x+4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>F = \{(-1,1), (0,2), (2,1)\}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li><ol>
+              <li>
+                <p>
+                  To determine if <m>f</m> is one-to-one analytically,
+                  we assume <m>f(c) = f(d)</m> and attempt to deduce that <m>c=d</m>.
+                  <me>
+                    \begin{array}{rclr}
+
+                    f(c) \amp  = \amp  f(d) \amp  \\
+                    \dfrac{1-2c}{5} \amp  = \amp  \dfrac{1-2d}{5} \amp  \\
+                    1-2c \amp  = \amp  1-2d \amp  \\
+                    -2c \amp  = \amp  -2d \amp  \\
+                    c \amp  = \amp  d \, \, \checkmark \amp 
+                    \end{array}
+                  </me>
+                  Hence, <m>f</m> is one-to-one.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  To check if <m>f</m> is one-to-one graphically,
+                  we look to see if the graph of <m>y=f(x)</m> passes the Horizontal Line Test.
+                  We have that <m>f</m> is a non-constant linear function,
+                  which means its graph is a non-horizontal line.
+                  Thus the graph of <m>f</m> passes the Horizontal Line Test:
+                  see <xref ref="fig_inverse5">Figure</xref>. <figure xml:id="fig_inverse5"> <caption>The function <m>f</m> is one-to-one</caption> <img src="figures/FurtherGraphics/InverseFunctions-6.pdf"/> </figure>
+                </p>
+              </li>
+            </ol></li>
+
+          <li><ol>
+              <li>
+                <p>
+                  We begin with the assumption that
+                  <m>g(c) = g(d)</m> and try to show <m>c=d</m>.
+                  <me>
+                    \begin{array}{rclr}
+                    g(c) \amp  = \amp  g(d) \amp  \\
+                    \dfrac{2c}{1-c} \amp  = \amp  \dfrac{2d}{1-d} \amp  \\
+                    2c(1-d) \amp  = \amp  2d(1-c) \amp  \\
+                    2c - 2cd \amp  = \amp  2d - 2dc \amp  \\
+                    2c \amp  = \amp  2d \amp  \\
+                    c \amp  = \amp  d \, \, \checkmark
+                    \end{array}
+                  </me>
+                  We have shown that <m>g</m> is one-to-one.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We can graph <m>g</m> using the six step procedure outlined in <xref ref="RationalGraphs">Section</xref>.
+                  We get the sole intercept at <m>(0,0)</m>,
+                  a vertical asymptote <m>x=1</m> and a horizontal asymptote
+                  (which the graph never crosses)
+                  <m>y = -2</m>.
+                  We see from that the graph of <m>g</m> in <xref ref="fig_inverse6">Figure</xref>
+                  that <m>g</m> passes the Horizontal Line Test.
+                </p>
+              </li>
+            </ol>
+
+            <figure xml:id="fig_inverse6">
+              <caption>The function <m>g</m> is one-to-one</caption>
+              <img src="figures/FurtherGraphics/InverseFunctions-7.pdf"/>
+            </figure>
+
+          </li>
+
+          <li><ol>
+              <li>
+                <p>
+                  We begin with <m>h(c) = h(d)</m>.
+                  As we work our way through the problem,
+                  we encounter a nonlinear equation.
+                  We move the non-zero terms to the left,
+                  leave a <m>0</m> on the right and factor accordingly.
+                  <me>
+                    \begin{array}{rclr}
+
+                    h(c) \amp  = \amp  h(d) \amp  \\
+                    c^2 - 2c+4 \amp  = \amp  d^2 - 2d+4 \amp  \\
+
+                    c^2 - 2c \amp  = \amp  d^2 - 2d \amp  \\
+
+                    c^2 - d^2 - 2c + 2d \amp  = \amp  0 \amp  \\
+
+                    (c+d)(c-d) - 2(c-d) \amp  = \amp  0 \amp  \\
+
+                    (c-d)((c+d) -2) \amp  = \amp  0 \amp  \mbox{factor by grouping}  \\
+
+                    c-d = 0 \amp  \mbox{or}  \amp  c+d -2 = 0 \amp  \\
+
+                    c = d \amp  \mbox{or}  \amp  c = 2-d \amp 
+                    \end{array}
+                  </me>
+                  We get <m>c=d</m> as one possibility,
+                  but we also get the possibility that <m>c=2-d</m>.
+                  This suggests that <m>f</m> may not be one-to-one.
+                  Taking <m>d=0</m>, we get <m>c = 0</m> or <m>c = 2</m>.
+                  With <m>h(0) = 4</m> and <m>h(2) = 4</m>,
+                  we have produced two different inputs with the same output meaning <m>h</m> is not one-to-one.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  We note that <m>h</m> is a quadratic function and we graph <m>y=h(x)</m> using the techniques presented in <xref ref="QuadraticFunctions">Section</xref>.
+                  The vertex is <m>(1,3)</m> and the parabola opens upwards.
+                  We see immediately from the graph in <xref ref="fig_inverse7">Figure</xref>
+                  that <m>h</m> is not one-to-one,
+                  since there are several horizontal lines which cross the graph more than once.
+                </p>
+              </li>
+            </ol>
+
+            <figure xml:id="fig_inverse7">
+              <caption>The function <m>h</m> is not one-to-one</caption>
+              <img src="figures/FurtherGraphics/InverseFunctions-8.pdf"/>
+            </figure>
+
+          </li>
+
+          <li><ol>
+              <li>
+                <p>
+                  The function <m>F</m> is given to us as a set of ordered pairs.
+                  The condition <m>F(c)=F(d)</m> means the outputs from the function
+                  (the <m>y</m>-coordinates of the ordered pairs)
+                  are the same.
+                  We see that the points <m>(-1,1)</m> and <m>(2,1)</m> are both elements of <m>F</m> with <m>F(-1)=1</m> and <m>F(2) = 1</m>.
+                  Since <m>-1 \neq 2</m>,
+                  we have established that <m>F</m> is
+                  <em>not</em> one-to-one.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Graphically, we see in <xref ref="fig_inverse8">Figure</xref>
+                  that the horizontal line <m>y=1</m> crosses the graph more than once.
+                  Hence, the graph of <m>F</m> fails the Horizontal Line Test.
+                </p>
+              </li>
+            </ol></li>
+        </ol>
+
+        <figure xml:id="fig_inverse8">
+          <caption>The function <m>F</m> is not one-to-one</caption>
+          <img src="figures/FurtherGraphics/InverseFunctions-9.pdf"/>
+        </figure>
+      </solution>
+    </example>
+
+    <p>
+      We have shown that the functions <m>f</m> and <m>g</m> in <xref ref="inversefunctiononetooneex">Example</xref> are one-to-one.
+      This means they are invertible,
+      so it is natural to wonder what
+      <m>f^{-1}(x)</m> and <m>g^{-1}(x)</m> would be.
+      For <m>f(x) = \frac{1-2x}{5}</m>,
+      we can think our way through the inverse since there is only one occurrence of <m>x</m>.
+      We can track step-by-step what is done to <m>x</m> and reverse those steps as we did at the beginning of the chapter.
+      The function <m>g(x) = \frac{2x}{1-x}</m> is a bit trickier since <m>x</m> occurs in two places.
+      When one evaluates <m>g(x)</m> for a specific value of <m>x</m>,
+      which is first,
+      the <m>2x</m> or the <m>1-x</m>?
+      We can imagine functions more complicated than these so we need to develop a general methodology to attack this problem.
+      <xref ref="inversefunctionprops">Theorem</xref>
+      tells us equation <m>y = f^{-1}(x)</m> is equivalent to
+      <m>f(y) = x</m> and this is the basis of our algorithm.
+    </p>
+
+    <insight xml:id="inverseprocedure">
+      <title>Steps for finding the Inverse of a One-to-one Function</title>
+      <p>
+            <idx><h>inverse</h><h>of a function ! solving for</h></idx> <idx><h>function</h><h>inverse ! solving for</h></idx>
+        <ol>
+          <li>
+            <p>
+              Write <m>y=f(x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Interchange <m>x</m> and <m>y</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>x = f(y)</m> for <m>y</m> to obtain <m>y=f^{-1}(x)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </insight>
+
+    <p>
+      Note that we could have simply written
+      <q>Solve <m>x=f(y)</m> for <m>y</m></q> and be done with it.
+      The act of interchanging the <m>x</m> and <m>y</m> is there to remind us that we are finding the inverse function by switching the inputs and outputs.
+    </p>
+
+    <example xml:id="ex_inverse1">
+      <title>Computing inverse functions</title>
+      <statement>
+        <p>
+          Find the inverse of the following one-to-one functions.
+          Check your answers analytically using function composition and graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \dfrac{1-2x}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \dfrac{2x}{1-x}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                As we mentioned earlier,
+                it is possible to think our way through the inverse of <m>f</m> by recording the steps we apply to <m>x</m> and the order in which we apply them and then reversing those steps in the reverse order.
+                We encourage the reader to do this.
+                We, on the other hand,
+          will practice the algorithm.
+                We write <m>y=f(x)</m> and proceed to switch <m>x</m> and <m>y</m>
+                <me>
+                  \begin{array}{rclr}
+
+                  y \amp  = \amp  f(x) \amp  \\
+                  y \amp  = \amp   \dfrac{1-2x}{5} \amp  \\
+                  x \amp  = \amp  \dfrac{1-2y}{5} \amp  \mbox{switch \(x\) and \(y\)}  \\
+                  5x \amp  = \amp  1 - 2y \amp  \\
+                  5x-1 \amp  = \amp  -2y \amp  \\ 
+                  \dfrac{5x-1}{-2} \amp  = \amp  y \amp  \\ 
+                  y \amp  = \amp  -\dfrac{5}{2} x + \dfrac{1}{2} \amp 
+                  \end{array}
+                </me>
+                We have <m>f^{-1}(x) = -\frac{5}{2} x + \frac{1}{2}</m>.
+                To check this answer analytically,
+                we first check that
+          <m>\left(f^{-1} \circ f \right)(x) = x</m> for all <m>x</m> in the domain of <m>f</m>,
+                which is all real numbers.
+                <me>
+                  \begin{array}{rclr}
+                  \left(f^{-1} \circ f \right)(x) \amp  = \amp  f^{-1}(f(x)) \amp  \\ 
+                  \amp  = \amp  -\dfrac{5}{2} f(x) + \dfrac{1}{2} \amp  \\
+                  \amp  = \amp  -\dfrac{5}{2} \left(\dfrac{1-2x}{5}\right) + \dfrac{1}{2} \amp  \\ 
+                  \amp  = \amp  -\dfrac{1}{2} (1-2x) + \dfrac{1}{2} \amp  \\
+                  \amp  = \amp  -\dfrac{1}{2} + x + \dfrac{1}{2} \amp  \\ 
+                  \amp  = \amp  x \, \, \checkmark
+                  \end{array}
+                </me>
+                We now check that <m>\left(f \circ f^{-1} \right)(x) = x</m> for all <m>x</m> in the range of <m>f</m> which is also all real numbers.  (Recall that the domain of <m>f^{-1}</m>) is the range of <m>f</m>.)
+                <md>
+                  <mrow>\left(f \circ f^{-1} \right)(x) \amp  =  f(f^{-1}(x)) = \dfrac{1-2f^{-1}(x)}{5}</mrow>
+                  <mrow>\amp  = \dfrac{1-2\left(  -\frac{5}{2} x + \frac{1}{2} \right)}{5}  = \dfrac{1+5x-1}{5}</mrow>
+                  <mrow>\amp  = \dfrac{5x}{5}  = x \, \, \checkmark</mrow>
+                </md>
+                To check our answer graphically,
+                we graph <m>y=f(x)</m> and
+                <m>y=f^{-1}(x)</m> on the same set of axes in <xref ref="fig_inverse9">Figure</xref>.
+                They appear to be reflections across the line <m>y=x</m>.
+
+                <figure xml:id="fig_inverse9">
+                  <caption>The graphs of <m>f</m> and <m>f^{-1}</m> from <xref ref="ex_inverse1">Example</xref></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-10.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find <m>g^{-1}(x)</m>,
+          we start with <m>y=g(x)</m>.
+                We note that the domain of <m>g</m> is <m>(-\infty,1) \cup (1, \infty)</m>.
+                <md>
+                  <mrow>y \amp  = g(x)  \dfrac{2x}{1-x}</mrow>
+                  <mrow>x \amp  = \dfrac{2y}{1-y}  \tag{switch $x$ and $y$}</mrow>
+                  <mrow>x(1-y) \amp  =  2y</mrow>
+                  <mrow>x-xy \amp  = 2y</mrow>
+                  <mrow>x \amp  =  xy + 2y = y(x+2)  \tag{factor}</mrow>
+                  <mrow>y \amp  = \dfrac{x}{x+2}</mrow>
+                </md>
+                We obtain <m>g^{-1}(x) = \dfrac{x}{x+2}</m>.
+                To check this analytically,
+                we first check <m>\left(g^{-1} \circ g \right)(x) = x</m> for all <m>x</m> in the domain of <m>g</m>,
+                that is, for all <m>x \neq 1</m>.
+                <md>
+                  <mrow>\left(g^{-1} \circ g \right)(x) \amp  =  g^{-1}(g(x)) = g^{-1} \left(\dfrac{2x}{1-x}\right)</mrow>
+                  <mrow>\amp  = \dfrac{ \left(\dfrac{2x}{1-x}\right)}{ \left(\dfrac{2x}{1-x}\right)+2}</mrow>
+                  <mrow>\amp  = \dfrac{ \left(\dfrac{2x}{1-x}\right)}{ \left(\dfrac{2x}{1-x}\right)+2} \cdot \dfrac{(1-x)}{(1-x)} \tag{clear denominators}</mrow>
+                  <mrow>\amp  = \dfrac{ 2x}{ 2x + 2(1-x)} = \dfrac{2x}{2x+2-2x}</mrow>
+                  <mrow>\amp  = \dfrac{2x}{2} = x \, \, \checkmark</mrow>
+                </md>
+                Next,
+          we check <m>g\left(g^{-1}(x)\right)= x</m> for all <m>x</m> in the range of <m>g</m>.
+                From the graph of <m>g</m> in <xref ref="inversefunctiononetooneex">Example</xref>,
+                we have that the range of <m>g</m> is <m>(-\infty, -2) \cup (-2,\infty)</m>.
+                This matches the domain we get from the formula <m>g^{-1}(x) = \frac{x}{x+2}</m>,
+                as it should.
+                <md>
+                  <mrow>\left(g \circ g^{-1} \right)(x) \amp  =  g\left(g^{-1}(x)\right) = g \left(\dfrac{x}{x+2}\right)</mrow>
+                  <mrow>\amp  = \dfrac{ 2\left(\dfrac{x}{x+2}\right)}{ 1-\left(\dfrac{x}{x+2}\right)}</mrow>
+                  <mrow>\amp  =  \dfrac{ 2\left(\dfrac{x}{x+2}\right)}{ 1-\left(\dfrac{x}{x+2}\right)} \cdot \dfrac{(x+2)}{(x+2)}   \tag{clear denominators}</mrow>
+                  <mrow>\amp  =  \dfrac{ 2x}{ (x+2) -x} =  \dfrac{2x}{2}</mrow>
+                  <mrow>\amp  =  x \, \, \checkmark</mrow>
+                </md>
+                Graphing <m>y=g(x)</m> and 
+                <m>y = g^{-1}(x)</m> on the same set of axes is busy,
+                but we can see the symmetric relationship if we thicken the curve for <m>y=g^{-1}(x)</m>.
+                Note that the vertical asymptote <m>x=1</m> of the graph of <m>g</m> corresponds to the horizontal asymptote <m>y=1</m> of the graph of <m>g^{-1}</m>,
+                as it should since <m>x</m> and <m>y</m> are switched.
+                Similarly,
+          the horizontal asymptote <m>y=-2</m> of the graph of <m>g</m> corresponds to the vertical asymptote <m>x=-2</m> of the graph of <m>g^{-1}</m>.
+                See <xref ref="fig_inverse10">Figure</xref>
+
+                <figure xml:id="fig_inverse10">
+                  <caption>The graphs of <m>g</m> and <m>g^{-1}</m> from <xref ref="ex_inverse1">Example</xref></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-11.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      We now return to <m>f(x) = x^2</m>.
+      We know that <m>f</m> is not one-to-one,
+      and thus, is not invertible.
+      However, if we restrict the domain of <m>f</m>,
+      we can produce a new function <m>g</m> which is one-to-one.
+      If we define <m>g(x) = x^2</m>, <m>x \geq 0</m>,
+      then we have the graph in <xref ref="fig_inverse11">Figure</xref> (b).
+    </p>
+
+    <table xml:id="fig_inverse11">
+      <caption>Restricting the domain of <m>f(x)=x^2</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-12.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(a) <m>y=f(x)=x^2</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-13.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(b) <m>y=g(x)=x^2, x\geq 0</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      The graph of <m>g</m> passes the Horizontal Line Test.
+      To find an inverse of <m>g</m>, we proceed as usual
+      <me>
+        \begin{array}{rclr}
+        y \amp  = \amp  g(x) \amp  \\
+        y \amp  = \amp  x^2, \, \, \, x \geq 0 \amp  \\
+        x \amp  = \amp  y^2, \, \, \, y \geq 0 \amp  \mbox{switch \(x\) and \(y\)} \\
+        y \amp  = \amp  \pm \sqrt{x}  \amp  \\
+        y \amp  = \amp  \sqrt{x} \amp  \mbox{since \(y \geq 0\)} 
+        \end{array}
+      </me>
+    </p>
+
+    <p>
+      We get <m>g^{-1}(x) = \sqrt{x}</m>.
+      At first it looks like we'll run into the same trouble as before,
+      but when we check the composition,
+      the domain restriction on <m>g</m> saves the day.
+      We get <m>\left(g^{-1} \circ g\right) (x) = g^{-1}(g(x)) = g^{-1}\left(x^2\right) = \sqrt{x^2} = |x| = x</m>,
+      since <m>x \geq 0</m>.
+      Checking <m>\left( g \circ g^{-1}\right)(x) = g\left(g^{-1}(x)\right) = g\left(\sqrt{x}\right) = \left(\sqrt{x}\right)^2 = x</m>.
+      Graphing <m>g</m> and <m>g^{-1}</m> on the same set of axes in <xref ref="fig_inverse12">Figure</xref>
+      shows that they are reflections about the line <m>y=x</m>.
+    </p>
+
+    <p>
+      Our next example continues the theme of domain restriction.
+    </p>
+
+    <example xml:id="inverserestrictionex">
+      <title>Inverting restricted functions</title>
+      <statement>
+        <p>
+          Graph the following functions to show they are one-to-one and find their inverses.
+          Check your answers analytically using function composition and graphically.
+
+          <ol>
+            <li>
+              <p>
+                <m>j(x) = x^2 - 2x + 4</m>, <m>x \leq 1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>k(x) = \sqrt{x+2} - 1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The function <m>j</m> is a restriction of the function <m>h</m> from <xref ref="inversefunctiononetooneex">Example</xref>.
+                Since the domain of <m>j</m> is restricted to <m>x \leq 1</m>,
+                we are selecting only the
+          <q>left half</q> of the parabola.
+                We see in <xref ref="fig_inverse13">Figure</xref>
+                that the graph of <m>j</m> passes the Horizontal Line Test and thus <m>j</m> is invertible.
+
+                <figure xml:id="fig_inverse12">
+                  <caption>The restricted function <m>g</m> and its inverse</caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-14.pdf"/>
+                </figure>
+
+                We now use our algorithm to find <m>j^{-1}(x)</m>. (Here,
+                we use the Quadratic Formula to solve for <m>y</m>.
+                For <q>completeness,</q> we note you can
+                (and should!)
+                also consider solving for <m>y</m> by
+                <q>completing</q> the square.)
+                <me>
+                  \begin{array}{rclr}
+                  y \amp  = \amp  j(x) \amp  \\
+                  y \amp  = \amp  x^2-2x+4, \, \, \, x \leq 1 \\
+                  x \amp  = \amp  y^2 - 2y+4, \, \, \, y \leq 1 \amp  \mbox{switch \(x\) and \(y\)}  \\
+                  0 \amp  = \amp  y^2 - 2y + 4-x \amp  \\
+                  y \amp  = \amp  \dfrac{2 \pm \sqrt{(-2)^2-4(1)(4-x)}}{2(1)} \amp  \mbox{quadratic formula, \(c=4-x\)}  \\
+                  y \amp  = \amp  \dfrac{2 \pm \sqrt{4x-12}}{2} \amp  \\
+                  y \amp  = \amp  \dfrac{2 \pm \sqrt{4(x-3)}}{2} \amp  \\
+                  y \amp  = \amp  \dfrac{2 \pm 2\sqrt{x-3}}{2} \amp  \\
+                  y \amp  = \amp  \dfrac{2\left(1 \pm \sqrt{x-3}\right)}{2} \amp  \\
+                  y \amp  = \amp  1 \pm \sqrt{x-3} \amp  \\
+                  y \amp  = \amp  1 - \sqrt{x-3} \amp  \mbox{since \(y \leq 1\).} 
+                  \end{array}
+                </me>
+
+                <figure xml:id="fig_inverse13">
+                  <caption><m>y=x^2-2x+4</m>,
+                for <m>x\leq 1</m></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-15.pdf"/>
+                </figure>
+
+                We have <m>j^{-1}(x) = 1 - \sqrt{x-3}</m>.
+                When we simplify <m>\left(j^{-1} \circ j\right)(x)</m>,
+                we need to remember that  the domain of <m>j</m> is <m>x \leq 1</m>.
+                <me>
+                  \begin{array}{rclr}
+
+                  \left(j^{-1} \circ j \right)(x) \amp  = \amp  j^{-1}(j(x)) \amp  \\ 
+
+                  \amp  = \amp  j^{-1}\left(x^2-2x+4\right), \, \, \, x \leq 1 \amp  \\
+                  \amp  = \amp  1 - \sqrt{\left(x^2-2x+4\right)-3} \amp  \\
+                  \amp  = \amp  1 - \sqrt{x^2-2x+1} \amp  \\
+                  \amp  = \amp  1 - \sqrt{(x-1)^2} \amp  \\
+                  \amp  = \amp  1 - |x-1|\amp  \\
+                  \amp  = \amp  1 - (-(x-1)) \amp  \mbox{since \(x \leq 1\)} \\
+                  \amp  = \amp  x \, \, \checkmark \amp 
+                  \end{array}
+                </me>
+                Checking <m>j \circ j^{-1}</m>, we get
+                <md>
+                  <mrow>\left(j \circ j^{-1} \right)(x) \amp  =  j\left(j^{-1}(x)\right) =  j\left(1 - \sqrt{x-3}\right)</mrow>
+                  <mrow>\amp  =  \left(1 - \sqrt{x-3}\right)^2-2\left(1 - \sqrt{x-3}\right)+4</mrow>
+                  <mrow>\amp  =  1 - 2\sqrt{x-3} + \left(\sqrt{x-3}\right)^2 -2 + 2\sqrt{x-3}+4</mrow>
+                  <mrow>\amp  =  3+ x-3  =   x \, \, \checkmark</mrow>
+                </md>
+                Using what we know from <xref ref="Transformations">Section</xref>,
+                we graph <m>y=j^{-1}(x)</m> and <m>y=j(x)</m> in <xref ref="fig_inverse14">Figure</xref>.
+
+                <figure xml:id="fig_inverse14">
+                  <caption>The graphs of <m>j</m> and <m>j^{-1}</m> from <xref ref="inverserestrictionex">Example</xref></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-16.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We graph <m>y=k(x) =\sqrt{x+2} - 1</m> in <xref ref="fig_inverse15">Figure</xref>
+                using what we learned in <xref ref="Transformations">Section</xref>
+                and see <m>k</m> is one-to-one.
+
+                <figure xml:id="fig_inverse15">
+                  <caption><m>y=\sqrt{x+2}-1</m></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-17.pdf"/>
+                </figure>
+
+                We now try to find <m>k^{-1}</m>.
+                <me>
+                  \begin{array}{rclr}
+
+                  y \amp  = \amp  k(x) \amp  \\
+
+                  y \amp  = \amp  \sqrt{x+2}-1 \amp  \\
+
+                  x \amp  = \amp  \sqrt{y+2} - 1 \amp  \mbox{switch \(x\) and \(y\)}  \\
+
+                  x+1 \amp  = \amp  \sqrt{y+2} \amp  \\
+
+                  (x+1)^2 \amp  = \amp  \left(\sqrt{y+2}\right)^2 \amp  \\
+
+                  x^2 + 2x + 1 \amp  = \amp  y + 2 \amp  \\
+
+                  y \amp  = \amp  x^2 + 2x - 1 \amp 
+                  \end{array}
+                </me>
+                We have <m>k^{-1}(x) = x^2+2x-1</m>.
+                Based on our experience,
+          we know something isn't quite right.
+                We determined <m>k^{-1}</m> is a quadratic function,
+                and we have seen several times in this section that these are not one-to-one unless their domains are suitably restricted.
+                <xref ref="inversefunctionprops">Theorem</xref>
+                tells us that the domain of <m>k^{-1}</m> is the range of <m>k</m>.
+                From the graph of <m>k</m>,
+          we see that the range is <m>[-1, \infty)</m>,
+                which means we restrict the domain of <m>k^{-1}</m> to <m>x \geq -1</m>.
+                We now check that this works in our compositions.
+                <me>
+                  \begin{array}{rclr}
+
+                  \left(k^{-1} \circ k \right)(x) \amp  = \amp  k^{-1}(k(x)) \amp  \\ 
+
+                  \amp  = \amp  k^{-1}\left(\sqrt{x+2}-1\right), \, \, \, x \geq -2 \amp  \\
+                  \amp  = \amp  \left(\sqrt{x+2}-1\right)^2 + 2\left(\sqrt{x+2}-1\right) - 1\amp  \\
+                  \amp  = \amp  \left(\sqrt{x+2}\right)^2 - 2\sqrt{x+2} + 1 + 2 \sqrt{x+2} - 2 - 1 \amp  \\
+                  \amp  = \amp x+2 -2  \amp  \\
+                  \amp  = \amp  x \, \, \checkmark \amp 
+                  \end{array}
+                </me>
+                and
+                <me>
+                  \begin{array}{rclr}
+
+                  \left(k \circ k^{-1} \right)(x) \amp  = \amp  k\left( x^2+2x-1 \right) \, \, \, x \geq -1 \amp  \\ 
+
+                  \amp  = \amp  \sqrt{\left(x^2+2x-1\right)+2}-1 \amp  \\
+
+                  \amp  = \amp  \sqrt{x^2+2x+1}-1 \amp  \\
+
+                  \amp  = \amp  \sqrt{(x+1)^2}-1 \amp  \\
+
+                  \amp  = \amp  |x+1| -1 \amp  \\
+
+                  \amp  = \amp  x+1 -1 \amp  \mbox{since \(x \geq -1\)} \\
+
+                  \amp  = \amp  x \, \, \checkmark \amp 
+                  \end{array}
+                </me>
+                Graphically,
+                everything checks out as well in <xref ref="fig_inverse16">Figure</xref>,
+                provided that we remember the domain restriction on <m>k^{-1}</m> means we take the right half of the parabola.
+
+                <figure xml:id="fig_inverse16">
+                  <caption>The graphs of <m>k</m> and <m>k^{-1}</m> from <xref ref="inverserestrictionex">Example</xref></caption>
+                  <img src="figures/FurtherGraphics/InverseFunctions-18.pdf"/>
+                </figure>
+
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Our last example of the section gives an application of inverse functions.
+    </p>
+
+    <example xml:id="demandfunctionofprice">
+      <title>Inverting a price function</title>
+      <statement>
+        <p>
+          Recall from <xref ref="LinearFunctions">Section</xref>
+          that the price-demand equation for the PortaBoy game system is
+          <m>p(x) = -1.5x + 250</m> for <m>0 \leq x \leq 166</m>,
+          where <m>x</m> represents the number of systems sold weekly and <m>p</m> is the price per system in dollars.
+
+          <ol>
+            <li>
+              <p>
+                Explain why <m>p</m> is one-to-one and find a formula for <m>p^{-1}(x)</m>.
+                State the restricted domain.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret <m>p^{-1}(220)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Recall from <xref ref="QuadraticFunctions">Section</xref>
+                that the weekly profit <m>P</m>, in dollars,
+                as a result of selling <m>x</m> systems is given by <m>P(x)= -1.5x^2+170x-150</m>.
+                Find and interpret <m>\left( P \circ p^{-1}\right)(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use your answer to part 3 to determine the price per PortaBoy which would yield the maximum profit.
+                Compare with <xref ref="PortaBoyProfit">Example</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We leave to the reader to show the graph of
+                <m>p(x) = -1.5x + 250</m>, <m>0 \leq x \leq 166</m>,
+                is a line segment from <m>(0,250)</m> to <m>(166,1)</m>,
+                and as such passes the Horizontal Line Test.
+                Hence, <m>p</m> is one-to-one.
+                We find the expression for
+                <m>p^{-1}(x)</m> as usual and get <m>p^{-1}(x) = \frac{500-2x}{3}</m>.
+                The domain of <m>p^{-1}</m> should match the range of <m>p</m>,
+                which is <m>[1,250]</m>, and as such,
+                we restrict the domain of <m>p^{-1}</m> to <m>1 \leq x \leq 250</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We find <m>p^{-1}(220) = \frac{500-2(220)}{3} = 20</m>.
+                Since the function <m>p</m> took as inputs the weekly sales and furnished the price per system as the output,
+                <m>p^{-1}</m> takes the price per system and returns the weekly sales as its output.
+                Hence,
+          <m>p^{-1}(220) = 20</m> means <m>20</m> systems will be sold in a week if the price is set at <m>\dollar 220</m> per system.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We compute <m>\left( P \circ p^{-1}\right)(x) = P \left(p^{-1}(x)\right) = P\left(\frac{500-2x}{3}\right) = -1.5\left(\frac{500-2x}{3}\right)^2+170\left(\frac{500-2x}{3}\right)-150</m>.
+                After a hefty amount of Elementary Algebra,
+                (it is good review to actually do this!)
+                we obtain <m>\left( P \circ p^{-1}\right)(x) = -\frac{2}{3} x^2 +220x - \frac{40450}{3}</m>.
+                To understand what this means,
+                recall that the original profit function <m>P</m> gave us the weekly profit as a function of the weekly sales.
+                The function <m>p^{-1}</m> gives us the weekly sales as a function of the price.
+                Hence, <m>P \circ p^{-1}</m> takes as its input a price.
+                The function <m>p^{-1}</m> returns the weekly sales,
+                which in turn is fed into <m>P</m> to return the weekly profit.
+                Hence,
+          <m>\left(P \circ p^{-1}\right)(x)</m> gives us the weekly profit
+                (in dollars)
+                as a function of the price per system, <m>x</m>,
+                using the weekly sales
+          <m>p^{-1}(x)</m> as the <q>middle man</q>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We know from <xref ref="QuadraticFunctions">Section</xref>
+                that the graph of <m>y = \left( P \circ p^{-1}\right)(x)</m> is a parabola opening downwards.
+                The maximum profit is realized at the vertex.
+                Since we are concerned only with the price per system,
+                we need only find the <m>x</m>-coordinate of the vertex.
+                Identifying <m>a = -\frac{2}{3}</m> and <m>b = 220</m>,
+                we get, by the Vertex Formula,
+                <xref ref="vertexofquadraticfunctions">Equation</xref>,
+                <m>x = -\frac{b}{2a} = 165</m>.
+                Hence,
+          weekly profit is maximized if we set the price at <m>\dollar165</m> per system.
+                Comparing this with our answer from <xref ref="PortaBoyProfit">Example</xref>,
+                there is a slight discrepancy to the tune of <m>\dollar0.50</m>.
+                We leave it to the reader to balance the books appropriately.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      show that the given function is one-to-one and find its inverse.
+      Check your answers algebraically and graphically.
+      Verify that the range of <m>f</m> is the domain of <m>f^{-1}</m> and vice-versa.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 6x - 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{x + 2}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 42-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = 42-x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x-2}{3} + 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = 3x-10</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 1 - \dfrac{4+3x}{5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = -\frac{5}{3} x + \frac{1}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{3x-1}+5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \frac{1}{3}(x-5)^2+\frac{1}{3}</m>, <m>x \geq 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2-\sqrt{x - 5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = (x - 2)^{2} + 5, \; x \leq 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3\sqrt{x-1}-4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \frac{1}{9}(x+4)^2+1</m>, <m>x \geq -4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 1 - 2\sqrt{2x+5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \frac{1}{8}(x-1)^2-\frac{5}{2}</m>, <m>x \leq 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[5]{3x-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \frac{1}{3} x^{5} + \frac{1}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3-\sqrt[3]{x-2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = -(x-3)^3+2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 - 10x</m>, <m>x \geq 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = 5 + \sqrt{x+25}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3(x + 4)^{2} - 5, \; x \leq -4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = -\sqrt{\frac{x + 5}{3}} - 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2-6x+5, \; x \leq 3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = 3 - \sqrt{x+4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 4x^2 + 4x + 1</m>, <m>x \lt -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) =-\frac{\sqrt{x}+1}{2}</m>, <m>x > 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3}{4-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{4x-3}{x}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{1-3x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{x}{3x+1}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2x-1}{3x+4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{4x+1}{2-3x}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{4x + 2}{3x - 6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{6x + 2}{3x - 4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{-3x - 2}{x + 3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{-3x - 2}{x + 3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x-2}{2x-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f^{-1}(x) = \dfrac{x-2}{2x-1}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      With help from your classmates,
+      find the inverses of the functions in the following exercises.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = ax + b, \; a \neq 0</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = a\sqrt{x - h} + k, \; a \neq 0, x \geq h</m>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = ax^{2} + bx + c</m> where <m>a \neq 0, \, x \geq -\dfrac{b}{2a}</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="genericinverselast">
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{ax + b}{cx + d},\;</m> (See <xref ref="whatconditions">Exercise</xref> below.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In <xref ref="costrevenueprofitex1">Example</xref>,
+          the price of a dOpi media player, in dollars per dOpi,
+          is given as a function of the weekly sales <m>x</m> according to the formula
+          <m>p(x) = 450-15x</m> for <m>0 \leq x \leq 30</m>.
+
+          <ol>
+            <li>
+              <p>
+                Find <m>p^{-1}(x)</m> and state its domain.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret <m>p^{-1}(105)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In <xref ref="costrevenueprofitex1">Example</xref>,
+                we determined that the profit
+                (in dollars)
+                made from producing and selling <m>x</m> dOpis per week is <m>P(x)= -15x^2+350x-2000</m>,
+                for <m>0 \leq x \leq 30</m>.
+                Find <m>\left(P \circ p^{-1}\right)(x)</m> and determine what price per dOpi would yield the maximum profit.
+                What is the maximum profit?
+                How many dOpis need to be produced and sold to achieve the maximum profit?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>p^{-1}(x) = \frac{450-x}{15}</m>.
+              The domain of <m>p^{-1}</m> is the range of <m>p</m> which is <m>[0,450]</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p^{-1}(105) = 23</m>.
+              This means that if the price is set to
+              <m>\dollar105</m> then <m>23</m> dOpis will be sold.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\left(P\circ p^{-1}\right)(x) = -\frac{1}{15} x^2 + \frac{110}{3} x - 5000</m>,
+              <m>0 \leq x \leq 450</m>.
+              The graph of <m>y = \left(P\circ p^{-1}\right)(x)</m> is a parabola opening downwards with vertex <m>\left(275, \frac{125}{3}\right) \approx (275, 41.67)</m>.
+              This means that the maximum profit is a whopping
+              <m>\dollar41.67</m> when the price per dOpi is set to <m>\dollar275</m>.
+              At this price,
+              we can produce and sell <m>p^{-1}(275) = 11.\overline{6}</m> dOpis.
+              Since we cannot sell part of a system,
+              we need to adjust the price to sell either <m>11</m> dOpis or <m>12</m> dOpis.
+              We find <m>p(11) = 285</m> and <m>p(12) = 270</m>,
+              which means we set the price per dOpi at either
+              <m>\dollar285</m> or <m>\dollar270</m>, respectively.
+              The profits at these prices are
+              <m>\left(P\circ p^{-1}\right)(285) = 35</m> and <m>\left(P\circ p^{-1}\right)(270) = 40</m>,
+              so it looks as if the maximum profit is
+              <m>\dollar40</m> and it is made by producing and selling <m>12</m> dOpis a week at a price of <m>\dollar270</m> per dOpi.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that the Fahrenheit to Celsius conversion function found in <xref ref="celsiustofahr">Exercise</xref>
+          in <xref ref="LinearFunctions">Section</xref>
+          is invertible and that its inverse is the Celsius to Fahrenheit conversion function.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Analytically show that the function <m>f(x) = x^3 + 3x + 1</m> is one-to-one.
+          Since finding a formula for its inverse is beyond the scope of this textbook,
+          use <xref ref="inversefunctionprops">Theorem</xref>
+          to help you compute <m>f^{-1}(1), \; f^{-1}(5), \;</m> and <m>f^{-1}(-3)</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Given that <m>f(0) = 1</m>, we have <m>f^{-1}(1) = 0</m>.
+          Similarly <m>f^{-1}(5) = 1</m> and <m>f^{-1}(-3) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>f(x) = \dfrac{2x}{x^2-1}</m>.
+          Using the techniques in <xref ref="RationalGraphs">Section</xref>,
+          graph <m>y=f(x)</m>.
+          Verify that <m>f</m> is one-to-one on the interval <m>(-1,1)</m>.
+          Use the procedure outlined on <xref ref="inverseprocedure">Page</xref>
+          and your graphing calculator to find the formula for <m>f^{-1}(x)</m>.
+          Note that since <m>f(0) = 0</m>,
+          it should be the case that <m>f^{-1}(0) = 0</m>.
+          What goes wrong when you attempt to substitute <m>x=0</m> into <m>f^{-1}(x)</m>?
+          Discuss with your classmates how this problem arose and possible remedies.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          explain why a function which is either strictly increasing or strictly decreasing on its entire domain would have to be one-to-one,
+          hence invertible.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>f</m> is odd and invertible,
+          prove that <m>f^{-1}</m> is also odd.
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="fcircginverse">
+      <statement>
+        <p>
+          Let <m>f</m> and <m>g</m> be invertible functions.
+          With the help of your classmates show that
+          <m>(f \circ g)</m> is one-to-one, hence invertible,
+          and that <m>(f \circ g)^{-1}(x) = (g^{-1} \circ f^{-1})(x)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What graphical feature must a function <m>f</m> possess for it to be its own inverse?
+        </p>
+      </statement>
+    </exercise>
+    <exercise xml:id="whatconditions">
+      <statement>
+        <p>
+          What conditions must you place on the values of
+          <m>a,
+          b, c</m> and <m>d</m> in <xref ref="genericinverselast">Exercise</xref>
+          in order to guarantee that the function is invertible?
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

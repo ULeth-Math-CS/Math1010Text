@@ -1,0 +1,5219 @@
+
+
+<section xml:id="ArcTrig">
+  <title>Inverse Trigonometric Functions</title>
+  <introduction>
+    <p>
+      As the title indicates,
+      in this section we concern ourselves with finding inverses of the (circular) trigonometric functions.
+      Our immediate problem is that,
+      owing to their periodic nature,
+      none of the six circular functions is one-to-one.
+      To remedy this,
+      we restrict the domains of the circular functions in the same way we restricted the domain of the quadratic function in <xref ref="inverserestrictionex">Example</xref>
+      in <xref ref="InverseFunctions">Section</xref>
+      to obtain a one-to-one function.
+      We first consider <m>f(x) = \cos(x)</m>.
+      Choosing the interval <m>[0,\pi]</m> allows us to keep the range as <m>[-1,1]</m> as well as the properties of being smooth and continuous.
+    </p>
+
+    <!--
+    <caption>Restricting the domain of <m>f(x) = \cos(x)</m> to <m>[0,\pi]</m>.</caption>
+    -->
+
+    <sidebyside>
+      <img src="figures/IntroTrigGraphics/ArcTrig-1.pdf"/>
+    </sidebyside>
+    <p>
+      Recall from <xref ref="InverseFunctions">Section</xref>
+      that the inverse of a function <m>f</m> is typically denoted <m>f^{-1}</m>.
+      For this reason, some textbooks use the notation
+      <m>f^{-1}(x) = \cos^{-1}(x)</m> for the inverse of <m>f(x) = \cos(x)</m>.
+      The obvious pitfall here is our convention of writing
+      <m>(\cos(x))^2</m> as <m>\cos^{2}(x)</m>,
+      <m>(\cos(x))^3</m> as <m>\cos^{3}(x)</m> and so on.
+      It is far too easy to confuse <m>\cos^{-1}(x)</m> with
+      <m>\frac{1}{\cos(x)} = \sec(x)</m> so we will not use this notation in our text. (But be aware that many books do!
+      As always, be sure to check the context!) Instead,
+      we use the notation <m>f^{-1}(x) = \arccos(x)</m>,
+      read <q>arc-cosine of <m>x</m></q>.
+      To understand the <q>arc</q> in <q>arccosine</q>,
+      recall that an inverse function,
+      by definition, reverses the process of the original function.
+      The function <m>f(t) = \cos(t)</m> takes a real number input <m>t</m>,
+      associates it with the angle <m>\theta = t</m> radians,
+      and returns the value <m>\cos(\theta)</m>.
+      Digging deeper, we have that
+      <m>\cos(\theta) = \cos(t)</m> is the <m>x</m>-coordinate of the terminal point on the Unit Circle of an oriented arc of length <m>|t|</m> whose initial point is <m>(1, 0)</m>.
+      Hence, we may view the inputs to
+      <m>f(t) = \cos(t)</m> as oriented arcs and the outputs as <m>x</m>-coordinates on the Unit Circle.
+      The function <m>f^{-1}</m>, then,
+      would take <m>x</m>-coordinates on the Unit Circle and return oriented arcs,
+      hence the <q>arc</q> in arccosine.
+      <xref ref="fig_arctrig2">Figure</xref>
+      shows the graphs of <m>f(x) = \cos(x)</m> and <m>f^{-1}(x) = \arccos(x)</m>,
+      where we obtain the latter from the former by reflecting it across the line <m>y=x</m>,
+      in accordance with <xref ref="inverseuniquegraph">Theorem</xref>.
+          <idx><h>arccosine</h><h>graph of</h></idx>
+    </p>
+
+    <table xml:id="fig_arctrig2">
+      <caption>Reflecting <m>y=\cos(x)</m> across <m>y=x</m> yields <m>y=\arccos(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-2.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f(x) = \cos(x)</m>, <m>0 \leq x \leq \pi</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-3.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f^{-1}(x) = \arccos(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We restrict <m>g(x) = \sin(x)</m> in a similar manner,
+      although the interval of choice is <m>\left[ -\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.
+    </p>
+
+    <!--
+    <caption>Restricting the domain of <m>f(x) = \sin(x)</m> to <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.</caption>
+    -->
+
+    <sidebyside>
+      <img src="figures/IntroTrigGraphics/ArcTrig-4.pdf"/>
+    </sidebyside>
+    <p>
+      It should be no surprise that we call <m>g^{-1}(x) = \arcsin(x)</m>,
+      which is read <q>arc-sine of <m>x</m></q>.
+          <idx><h>arcsine</h><h>graph of</h></idx>
+    </p>
+
+    <p>
+      We list some important facts about the arccosine and arcsine functions in the following theorem.
+    </p>
+
+    <theorem xml:id="arccosinesinefunctionprops">
+      <title>Properties of the Arccosine and Arcsine Functions</title>
+      <statement>
+        <p>
+              <idx><h>arccosine</h><h>definition of</h></idx> <idx><h>arccosine</h><h>properties of</h></idx> <idx><h>arcsine</h><h>definition of</h></idx> <idx><h>arcsine</h><h>properties of</h></idx>
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Properties of <m>F(x)= \arccos(x)</m>
+            </p>
+
+            <ul>
+              <li>
+                <p>
+                  Domain: <m>[-1,1]</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Range: <m>[0,\pi]</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\arccos(x) = t</m> if and only if
+                  <m>0 \leq t \leq \pi</m> and <m>\cos(t) = x</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\cos(\arccos(x)) = x</m> provided <m>-1 \leq x \leq 1</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\arccos(\cos(x)) = x</m> provided <m>0 \leq x \leq \pi</m>
+                </p>
+              </li>
+            </ul></li>
+
+          <li>
+            <p>
+              Properties of <m>G(x) = \arcsin(x)</m>
+
+              <ul>
+                <li>
+                  <p>
+                    Domain: <m>[-1,1]</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range: <m>\left[ -\frac{\pi}{2}, \frac{\pi}{2}\right]</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arcsin(x) = t</m> if and only if
+                    <m>-\frac{\pi}{2} \leq t \leq \frac{\pi}{2}</m> and <m>\sin(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\sin(\arcsin(x)) = x</m> provided <m>-1 \leq x \leq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arcsin(\sin(x)) = x</m> provided <m>-\frac{\pi}{2} \leq x \leq \frac{\pi}{2}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    additionally, arcsine is odd
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <table xml:id="fig_arctrig4">
+      <caption>Reflecting <m>y=\sin(x)</m> across <m>y=x</m> yields <m>y=\arcsin(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-5.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g(x) = \sin(x)</m>,  <m>-\frac{\pi}{2} \leq x \leq  \frac{\pi}{2}</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-6.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g^{-1}(x) = \arcsin(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Everything in <xref ref="arccosinesinefunctionprops">Theorem</xref>
+      is a direct consequence of the facts that <m>f(x) = \cos(x)</m> for <m>0 \leq x \leq \pi</m> and
+      <m>F(x) = \arccos(x)</m> are inverses of each other as are <m>g(x) = \sin(x)</m> for
+      <m>-\frac{\pi}{2} \leq x \leq \frac{\pi}{2}</m> and <m>G(x) = \arcsin(x)</m>.
+      It's about time for an example.
+    </p>
+
+    <example xml:id="arccosinesineex">
+      <title>Evaluating the arcsine and arccosine functions</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Find the exact values of the following.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\arccos\left(\frac{1}{2}\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arcsin\left(\frac{\sqrt{2}}{2}\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arccos\left(-\frac{\sqrt{2}}{2}\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arcsin\left(-\frac{1}{2}\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arccos\left( \cos\left(\frac{\pi}{6}\right)\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\arccos\left( \cos\left(\frac{11\pi}{6}\right)\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cos\left(\arccos\left(-\frac{3}{5}\right)\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\sin\left(\arccos\left(-\frac{3}{5}\right)\right)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li xml:id="algarcsincos">
+
+          <p>
+            Rewrite the following as algebraic expressions of <m>x</m> and state the domain on which the equivalence is valid.
+
+            <ol>
+              <li xml:id="tanarccos">
+
+              <p>
+                <m>\tan\left(\arccos\left(x \right)\right)</m>
+              </p>
+              </li>
+
+              <li xml:id="cosarcsin">
+
+              <p>
+                <m>\cos\left(2 \arcsin(x)\right)</m>
+              </p>
+              </li>
+            </ol>
+          </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    To find <m>\arccos\left(\frac{1}{2}\right)</m>,
+                    we need to find the real number <m>t</m> (or,
+          equivalently,
+                    an angle measuring <m>t</m> radians) which lies between <m>0</m> and <m>\pi</m> with <m>\cos(t) = \frac{1}{2}</m>.
+                    We know <m>t = \frac{\pi}{3}</m> meets these criteria,
+                    so <m>\arccos\left(\frac{1}{2}\right)= \frac{\pi}{3}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The value of <m>\arcsin\left(\frac{\sqrt{2}}{2}\right)</m> is a real number <m>t</m> between <m>-\frac{\pi}{2}</m> and
+                    <m>\frac{\pi}{2}</m> with <m>\sin(t) = \frac{\sqrt{2}}{2}</m>.
+                    The number we seek is <m>t = \frac{\pi}{4}</m>.
+                    Hence,
+          <m>\arcsin\left(\frac{\sqrt{2}}{2}\right) = \frac{\pi}{4}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The number <m>t = \arccos\left(-\frac{\sqrt{2}}{2}\right)</m> lies in the interval <m>[0,\pi]</m> with <m>\cos(t) = -\frac{\sqrt{2}}{2}</m>.
+                    Our answer is <m>\arccos\left(-\frac{\sqrt{2}}{2}\right) = \frac{3\pi}{4}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To find <m>\arcsin\left(-\frac{1}{2}\right)</m>,
+                    we seek the number <m>t</m> in the interval
+                    <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m> with <m>\sin(t) = -\frac{1}{2}</m>.
+                    The answer is <m>t = -\frac{\pi}{6}</m> so that <m>\arcsin\left(-\frac{1}{2}\right) = -\frac{\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>0 \leq \frac{\pi}{6} \leq \pi</m>,
+                    one option would be to simply invoke <xref ref="arccosinesinefunctionprops">Theorem</xref>
+                    to get <m>\arccos\left( \cos\left(\frac{\pi}{6}\right)\right) = \frac{\pi}{6}</m>.
+                    However, in order to make sure we understand
+                    <em>why</em> this is the case,
+                    we choose to work the example through using the definition of arccosine.
+                    Working from the inside out,
+                    <m>\arccos\left( \cos\left(\frac{\pi}{6}\right)\right) = \arccos\left( \frac{\sqrt{3}}{2}\right)</m>.
+                    Now,
+          <m>\arccos\left( \frac{\sqrt{3}}{2}\right)</m> is the real number <m>t</m> with
+                    <m>0 \leq t \leq \pi</m> and <m>\cos(t) = \frac{\sqrt{3}}{2}</m>.
+                    We find <m>t = \frac{\pi}{6}</m>,
+                    so that <m>\arccos\left( \cos\left(\frac{\pi}{6}\right)\right) = \frac{\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>\frac{11\pi}{6}</m> does not fall between <m>0</m> and <m>\pi</m>,
+                    <xref ref="arccosinesinefunctionprops">Theorem</xref> does not apply.
+                    We are forced to work through from the inside out starting with <m>\arccos\left( \cos\left(\frac{11\pi}{6}\right)\right) = \arccos\left(\frac{\sqrt{3}}{2}\right)</m>.
+                    From the previous problem,
+                    we know <m>\arccos\left(\frac{\sqrt{3}}{2}\right) = \frac{\pi}{6}</m>.
+                    Hence,
+          <m>\arccos\left( \cos\left(\frac{11\pi}{6}\right)\right) = \frac{\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    One way to simplify
+          <m>\cos\left(\arccos\left(-\frac{3}{5}\right)\right)</m> is to use <xref ref="arccosinesinefunctionprops">Theorem</xref> directly.
+                    Since <m>-\frac{3}{5}</m> is between <m>-1</m> and <m>1</m>,
+                    we have that <m>\cos\left(\arccos\left(-\frac{3}{5}\right)\right) = -\frac{3}{5}</m> and we are done.
+                    However, as before, to really understand
+                    <em>why</em> this cancellation occurs,
+                    we let <m>t = \arccos\left(-\frac{3}{5}\right)</m>.
+                    Then, by definition,
+          <m>\cos(t) = -\frac{3}{5}</m>.
+                    Hence,
+          <m>\cos\left(\arccos\left(-\frac{3}{5}\right)\right) = \cos(t) = -\frac{3}{5}</m>,
+                    and we are finished in (nearly) the same amount of time.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As in the previous example,
+                    we let <m>t = \arccos\left(-\frac{3}{5}\right)</m> so that
+                    <m>\cos(t) = -\frac{3}{5}</m> for some <m>t</m> where <m>0 \leq t \leq \pi</m>.
+                    Since <m>\cos(t) \lt 0</m>,
+                    we can narrow this down a bit and conclude that <m>\frac{\pi}{2} \lt t \lt \pi</m>,
+                    so that <m>t</m> corresponds to an angle in Quadrant II. In terms of <m>t</m>, then,
+                    we need to find <m>\sin\left(\arccos\left(-\frac{3}{5}\right)\right) = \sin(t)</m>.
+                    Using the Pythagorean Identity <m>\cos^{2}(t) + \sin^{2}(t) = 1</m>,
+                    we get <m>\left(-\frac{3}{5}\right)^2 + \sin^{2}(t) = 1</m> or <m>\sin(t) = \pm \frac{4}{5}</m>.
+                    Since <m>t</m> corresponds to a Quadrants II angle,
+                    we choose <m>\sin(t) = \frac{4}{5}</m>.
+                    Hence,
+          <m>\sin\left(\arccos\left(-\frac{3}{5}\right)\right) = \frac{4}{5}</m>.
+                  </p>
+                </li>
+              </ol></li>
+
+            <li><ol>
+                <aside>
+                  <p>
+                    An alternative approach to finding <m>\tan(t)</m> is to use the identity <m>1 + \tan^{2}(t) = \sec^{2}(t)</m>.
+                    Since <m>x = \cos(t)</m>,
+          <m>\sec(t) = \frac{1}{\cos(t)} = \frac{1}{x}</m>.
+                    The reader is invited to work through this approach to see what,
+                    if any, difficulties arise.
+                  </p>
+                </aside>
+                <li>
+                  <p>
+                    We begin this problem in the same manner we began the previous two problems.
+                    To help us see the forest for the trees,
+                    we let  <m>t = \arccos(x)</m>,
+                    so our goal is to find a way to express
+                    <m>\tan\left(\arccos\left(x \right)\right) = \tan(t)</m> in terms of <m>x</m>.
+                    Since <m>t = \arccos(x)</m>,
+                    we know <m>\cos(t) = x</m> where <m>0 \leq t \leq \pi</m>,
+                    but since we are after an expression for <m>\tan(t)</m>,
+                    we know we need to throw out <m>t = \frac{\pi}{2}</m> from consideration.
+                    Hence, either <m>0 \leq t \lt  \frac{\pi}{2}</m> or
+                    <m>\frac{\pi}{2} \lt  t \leq \pi</m> so that,
+          geometrically,
+                    <m>t</m> corresponds to an angle in Quadrant I or Quadrant II.  One approach to finding <m>\tan(t)</m> is to use the quotient identity <m>\tan(t) = \frac{\sin(t)}{\cos(t)}</m>.
+                    Substituting <m>\cos(t) = x</m> into the Pythagorean Identity
+                    <m>\cos^{2}(t) + \sin^{2}(t) = 1</m> gives <m>x^2 + \sin^{2}(t) = 1</m>,
+                    from which we get <m>\sin(t) = \pm \sqrt{1-x^2}</m>.
+                    Since <m>t</m> corresponds to angles in Quadrants I and II,   <m>\sin(t) \geq 0</m>,
+                    so we choose <m>\sin(t) = \sqrt{1-x^2}</m>.
+                    Thus,
+                    <me>
+                      \tan(t) = \dfrac{\sin(t)}{\cos(t)} = \dfrac{\sqrt{1-x^2}}{x}
+                    </me>
+                    To determine the values of <m>x</m> for which this equivalence is valid,
+                    we consider our substitution <m>t = \arccos(x)</m>.
+                    Since the domain of <m>\arccos(x)</m> is <m>[-1,1]</m>,
+                    we know we must restrict <m>-1 \leq x \leq 1</m>.
+                    Additionally, since we had to discard <m>t = \frac{\pi}{2}</m>,
+                    we need to discard <m>x = \cos\left(\frac{\pi}{2}\right) = 0</m>.
+                    Hence,
+          <m>\tan\left(\arccos\left(x \right)\right) =\frac{\sqrt{1-x^2}}{x}</m>  is valid for <m>x</m> in <m>[-1,0)\cup(0,1]</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    We proceed as in the previous problem by writing
+                    <m>t = \arcsin(x)</m> so that <m>t</m> lies in the interval
+                    <m>\left[ -\frac{\pi}{2}, \frac{\pi}{2}\right]</m> with <m>\sin(t) = x</m>.
+                    We aim to express
+          <m>\cos\left(2 \arcsin(x)\right) = \cos(2t)</m> in terms of <m>x</m>.
+                    Since <m>\cos(2t)</m> is defined everywhere,
+                    we get no additional restrictions on <m>t</m> as we did in the previous problem.
+                    We have three choices for rewriting <m>\cos(2t)</m>:
+                    <m>\cos^{2}(t) - \sin^{2}(t)</m>,
+                    <m>2\cos^{2}(t) - 1</m> and <m>1 - 2\sin^{2}(t)</m>.
+                    Since we know <m>x = \sin(t)</m>,
+                    it is easiest to use the last form:
+                    <me>
+                      \cos\left(2 \arcsin(x)\right) = \cos(2t)  = 1 - 2\sin^{2}(t) = 1 - 2x^2
+                    </me>
+                    To find the restrictions on <m>x</m>,
+                    we once again appeal to our substitution <m>t = \arcsin(x)</m>.
+                    Since <m>\arcsin(x)</m> is defined only for <m>-1 \leq x \leq 1</m>,
+                    the equivalence
+          <m>\cos\left(2 \arcsin(x)\right) = 1-2x^2</m> is valid only on <m>[-1,1]</m>.
+                  </p>
+                </li>
+              </ol></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      A few remarks about <xref ref="arccosinesineex">Example</xref> are in order.
+      Most of the common errors encountered in dealing with the inverse circular functions come from the need to restrict the domains of the original functions so that they are one-to-one.
+      One instance of this phenomenon is the fact that
+      <m>\arccos\left( \cos\left(\frac{11\pi}{6}\right)\right) = \frac{\pi}{6}</m> as opposed to <m>\frac{11\pi}{6}</m>.
+      This is the exact same phenomenon discussed in <xref ref="InverseFunctions">Section</xref>
+      when we saw <m>\sqrt{(-2)^2} = 2</m> as opposed to <m>-2</m>.
+      Additionally,
+      even though the expression we arrived at in <xref ref="cosarcsin">part</xref> above,
+      namely <m>1 - 2x^2</m>, is defined for all real numbers,
+      the equivalence <m>\cos\left(2 \arcsin(x)\right) = 1-2x^2</m> is valid for only <m>-1 \leq x \leq 1</m>.
+      This is akin to the fact that while the expression <m>x</m> is defined for all real numbers,
+      the equivalence <m>\left( \sqrt{x} \right)^2 = x</m> is valid only for <m>x \geq 0</m>.
+      For this reason,
+      it pays to be careful when we determine the intervals where such equivalences are valid.
+    </p>
+
+    <p>
+      The next pair of functions we wish to discuss are the inverses of tangent and cotangent,
+      which are named arctangent and arccotangent, respectively.
+      First, we restrict <m>f(x) = \tan(x)</m> to its fundamental cycle on
+      <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m> to obtain <m>f^{-1}(x) = \arctan(x)</m>.
+      Among other things, note that the <em>vertical</em>
+      asymptotes <m>x = -\frac{\pi}{2}</m> and <m>x = \frac{\pi}{2}</m> of the graph of
+      <m>f(x) = \tan(x)</m> become the <em>horizontal</em>
+      asymptotes <m>y = -\frac{\pi}{2}</m> and
+      <m>y = \frac{\pi}{2}</m> of the graph of <m>f^{-1}(x) = \arctan(x)</m>:
+      see <xref ref="fig_arctrig5">Figure</xref>.
+          <idx><h>arctangent</h><h>graph of</h></idx>
+    </p>
+
+    <table xml:id="fig_arctrig5">
+      <caption>Reflecting <m>y=\tan(x)</m> across <m>y=x</m> yields <m>y=\arctan(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-7.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f(x) = \tan(x)</m>,  <m>-\frac{\pi}{2} \lt  x \lt   \frac{\pi}{2}</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-8.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f^{-1}(x) = \arctan(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Next, we restrict <m>g(x) = \cot(x)</m> to its fundamental cycle on <m>(0,\pi)</m> to obtain <m>g^{-1}(x) = \operatorname{arccot}(x)</m>.
+      Once again,
+      the vertical asymptotes <m>x=0</m> and <m>x=\pi</m> of the graph of
+      <m>g(x) = \cot(x)</m> become the horizontal asymptotes <m>y = 0</m> and <m>y = \pi</m> of the graph of <m>g^{-1}(x) = \operatorname{arccot}(x)</m>.
+      We show these graphs in <xref ref="fig_arctrig5a">Figure</xref>;
+          <idx><h>arccotangent</h><h>graph of</h></idx>
+      the basic properties of the arctangent and arccotangent functions are given in the following theorem.
+    </p>
+
+    <theorem xml:id="arctangentcotangentfunctionprops">
+      <title>Properties of the Arctangent and Arccotangent Functions</title>
+      <statement>
+        <p>
+              <idx><h>arctangent</h><h>definition of</h></idx> <idx><h>arctangent</h><h>properties of</h></idx> <idx><h>arccotangent</h><h>definition of</h></idx> <idx><h>arccotangent</h><h>properties of</h></idx>
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Properties of <m>F(x)= \arctan(x)</m>
+            </p>
+
+            <ul>
+              <li>
+                <p>
+                  Domain: <m>(-\infty, \infty)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Range: <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  as <m>x \rightarrow -\infty</m>,
+                  <m>\arctan(x) \rightarrow -\frac{\pi}{2}^{+}</m>;
+                  as <m>x \rightarrow \infty</m>,
+                  <m>\arctan(x) \rightarrow \frac{\pi}{2}^{-}</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\arctan(x) = t</m> if and only if
+                  <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m> and <m>\tan(t) = x</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\arctan(x) = \operatorname{arccot}\left(\frac{1}{x}\right)</m> for <m>x > 0</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\tan\left(\arctan(x)\right) = x</m> for all real numbers <m>x</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\arctan(\tan(x)) = x</m> provided <m>-\frac{\pi}{2} \lt x \lt \frac{\pi}{2}</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  additionally, arctangent is odd
+                </p>
+              </li>
+            </ul></li>
+
+          <li>
+            <p>
+              Properties of <m>G(x) = \operatorname{arccot}(x)</m>
+
+              <ul>
+                <li>
+                  <p>
+                    Domain: <m>(-\infty, \infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range: <m>(0, \pi)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    as <m>x \rightarrow -\infty</m>,
+                    <m>\operatorname{arccot}(x) \rightarrow \pi^{-}</m>;
+                    as <m>x \rightarrow \infty</m>,
+                    <m>\operatorname{arccot}(x) \rightarrow 0^{+}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccot}(x) = t</m> if and only if
+                    <m>0 \lt t \lt \pi</m> and <m>\cot(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccot}(x) =\arctan\left(\frac{1}{x}\right)</m> for <m>x > 0</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cot\left(\operatorname{arccot}(x)\right) = x</m> for all real numbers <m>x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccot}(\cot(x)) = x</m> provided <m>0 \lt x \lt \pi</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <table xml:id="fig_arctrig5a">
+      <caption>Reflecting <m>y=\cot(x)</m> across <m>y=x</m> yields <m>y=\operatorname{arccot}(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-9.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g(x) = \cot(x)</m>,  <m>0 \lt  x \lt   \pi</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-10.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>gf^{-1}(x) = \operatorname{arccot}(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example xml:id="ex_arctan">
+      <title>Evaluating the arctangent and arccotangent functions</title>
+      <statement>
+        <ol cols="2">
+          <li>
+            <p>
+              Find the exact values of the following.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\arctan(\sqrt{3})</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccot}(-\sqrt{3})</m> \setcounter{HW}{\value{enumii}}
+                  </p>
+                </li>
+
+                \setcounter{enumii}{\value{HW}}
+
+                <li>
+                  <p>
+                    <m>\cot(\operatorname{arccot}(-5))</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\sin\left(\arctan\left(-\frac{3}{4}\right)\right)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rewrite the following as algebraic expressions of <m>x</m> and state the domain on which the equivalence is valid.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\tan(2 \arctan(x))</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cos(\operatorname{arccot}(2x))</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    We know <m>\arctan(\sqrt{3})</m> is the real number <m>t</m> between <m>-\frac{\pi}{2}</m> and
+                    <m>\frac{\pi}{2}</m> with <m>\tan(t) = \sqrt{3}</m>.
+                    We find <m>t = \frac{\pi}{3}</m>,
+                    so <m>\arctan(\sqrt{3}) = \frac{\pi}{3}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The real number
+          <m>t = \operatorname{arccot}(-\sqrt{3})</m> lies in the interval <m>(0,\pi)</m> with <m>\cot(t) = -\sqrt{3}</m>.
+                    We get <m>\operatorname{arccot}(-\sqrt{3}) = \frac{5\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    We can apply <xref ref="arctangentcotangentfunctionprops">Theorem</xref>
+                    directly and obtain <m>\cot(\operatorname{arccot}(-5)) = -5</m>.
+                    However,
+          working it through provides us with yet another opportunity to understand why this is the case.
+                    Letting <m>t = \operatorname{arccot}(-5)</m>,
+                    we have that <m>t</m> belongs to the interval <m>(0,\pi)</m> and <m>\cot(t)=-5</m>.
+                    Hence,
+          <m>\cot(\operatorname{arccot}(-5)) = \cot(t)=-5</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    We start simplifying
+          <m>\sin\left(\arctan\left(-\frac{3}{4}\right)\right)</m> by letting <m>t = \arctan\left(-\frac{3}{4}\right)</m>.
+                    Then <m>\tan(t) = -\frac{3}{4}</m> for some <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m>.
+                    Since <m>\tan(t) \lt 0</m>,
+                    we know, in fact, <m>-\frac{\pi}{2} \lt t \lt 0</m>.
+                    One way to proceed is to use The Pythagorean Identity,
+                    <m>1 + \cot^{2}(t) = \csc^{2}(t)</m>,
+                    since this relates the reciprocals of <m>\tan(t)</m> and <m>\sin(t)</m> and is valid for all <m>t</m> under consideration.
+                    From <m>\tan(t) = -\frac{3}{4}</m>,
+                    we get <m>\cot(t) = -\frac{4}{3}</m>.
+                    Substituting,
+                    we get <m>1 + \left(-\frac{4}{3}\right)^2 = \csc^{2}(t)</m> so that <m>\csc(t) = \pm \frac{5}{3}</m>.
+                    Since <m>-\frac{\pi}{2} \lt t \lt 0</m>,
+                    we choose <m>\csc(t) = -\frac{5}{3}</m>,
+                    so <m>\sin(t) = -\frac{3}{5}</m>.
+                    Hence,
+          <m>\sin\left(\arctan\left(-\frac{3}{4}\right)\right) = -\frac{3}{5}</m>.
+                  </p>
+                </li>
+              </ol>
+
+              <aside>
+                <p>
+                  It's always a good idea to make sure the identities used in these situations are valid for all values <m>t</m> under consideration.
+                  Check our work back in <xref ref="arccosinesineex">Example</xref>.
+                  Were the identities we used there valid for all <m>t</m> under consideration?
+                  A pedantic point, to be sure,
+                  but what else do you expect from this book?
+                </p>
+              </aside>
+            </li>
+
+            <li><ol>
+                <li>
+                  <p>
+                    If we let <m>t = \arctan(x)</m>,
+                    then <m>-\frac{\pi}{2} \lt  t \lt  \frac{\pi}{2}</m> and <m>\tan(t) = x</m>.
+                    We look for a way to express
+                    <m>\tan(2 \arctan(x)) = \tan(2t)</m> in terms of <m>x</m>.
+                    Before we get started using identities,
+                    we note that <m>\tan(2t)</m> is undefined when
+                    <m>2t = \frac{\pi}{2} + \pi k</m> for integers <m>k</m>.
+                    Dividing both sides of this equation by <m>2</m> tells us we need to exclude values of <m>t</m> where <m>t = \frac{\pi}{4} + \frac{\pi}{2} k</m>,
+                    where <m>k</m> is an integer.
+                    The only members of this family which lie in
+                    <m>\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)</m> are <m>t = \pm \frac{\pi}{4}</m>,
+                    which means the values of <m>t</m> under consideration are <m>\left(-\frac{\pi}{2}, -\frac{\pi}{4}\right) \cup \left(-\frac{\pi}{4}, \frac{\pi}{4}\right) \cup \left(\frac{\pi}{4}, \frac{\pi}{2}\right)</m>.
+                    Returning to <m>\arctan(2t)</m>,
+                    we note the double angle identity <m>\tan(2t) = \frac{2 \tan(t)}{1 - \tan^{2}(t)}</m>,
+                    is valid for all the values of <m>t</m> under consideration,
+                    hence we get
+                    <me>
+                      \tan(2 \arctan(x)) = \tan(2t) = \frac{2 \tan(t)}{1 - \tan^{2}(t)}= \frac{2x}{1-x^2}
+                    </me>
+                    To find where this equivalence is valid we check back with our substitution <m>t = \arctan(x)</m>.
+                    Since the domain of <m>\arctan(x)</m> is all real numbers,
+                    the only exclusions come from the values of <m>t</m> we discarded earlier,
+                    <m>t = \pm \frac{\pi}{4}</m>.
+                    Since <m>x =\tan(t)</m>,
+                    this means we exclude <m>x = \tan\left(\pm \frac{\pi}{4}\right) = \pm 1</m>.
+                    Hence, the equivalence 
+          <m>\tan(2 \arctan(x)) =  \frac{2x}{1-x^2}</m> holds for all <m>x</m> in  <m>(-\infty, -1) \cup (-1,1) \cup (1,\infty)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To get started,
+                    we let <m>t = \operatorname{arccot}(2x)</m> so that 
+                    <m>\cot(t) = 2x</m> where <m>0 \lt  t \lt  \pi</m>.
+                    In terms of <m>t</m>,
+          <m>\cos(\operatorname{arccot}(2x)) = \cos(t)</m>,
+                    and our goal is to express the latter in terms of <m>x</m>.
+                    Since <m>\cos(t)</m> is always defined,
+                    there are no additional restrictions on <m>t</m>,
+                    so we can begin using identities to relate <m>\cot(t)</m> to <m>\cos(t)</m>.
+                    The identity <m>\cot(t) = \frac{\cos(t)}{\sin(t)}</m> is valid for <m>t</m> in <m>(0,\pi)</m>,
+                    so our strategy is to obtain <m>\sin(t)</m> in terms of <m>x</m>,
+                    then write <m>\cos(t) = \cot(t) \sin(t)</m>.
+                    The identity <m>1 + \cot^{2}(t) = \csc^{2}(t)</m> holds for all <m>t</m> in <m>(0,\pi)</m> and relates <m>\cot(t)</m> and <m>\csc(t) = \frac{1}{\sin(t)}</m>.
+                    Substituting <m>\cot(t) =2x</m>,
+                    we get  <m>1 + (2x)^2 = \csc^{2}(t)</m>,
+                    or <m>\csc(t) =  \pm \sqrt{4x^2+1}</m>.
+                    Since <m>t</m> is between <m>0</m> and <m>\pi</m>,
+          <m>\csc(t) > 0</m>,
+                    so <m>\csc(t) =\sqrt{4x^2+1}</m> which gives <m>\sin(t) = \frac{1}{\sqrt{4x^2+1}}</m>.
+                    Hence,
+                    <me>
+                      \cos(\operatorname{arccot}(2x)) = \cos(t) = \cot(t) \sin(t) = \frac{2x}{\sqrt{4x^2+1}}
+                    </me>
+                    Since <m>\operatorname{arccot}(2x)</m> is defined for all real numbers <m>x</m> and we encountered no additional restrictions on <m>t</m>,
+                    we have  <m>\cos\left(\operatorname{arccot}(2x)\right) = \frac{2x}{\sqrt{4x^2+1}}</m> for all real numbers <m>x</m>.
+                  </p>
+                </li>
+              </ol></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The last two functions to invert are secant and cosecant.
+      A portion of each of their graphs,
+      which were first discussed in <xref ref="secantcosecantgraphsection">Subsection</xref>,
+      are given in <xref ref="fig_arctrig6">Figure</xref>
+      below with the fundamental cycles highlighted.
+    </p>
+
+    <!--
+    <caption>The fundamental cycles of <m>f(x)=\sec(x)</m> and <m>g(x)=\csc(x)</m></caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-11.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-12.pdf"/></cell>
+        </row>
+        <row>
+          <cell>The graph <m>y=\sec(x)</m></cell>
+          <cell>The graph <m>y=\csc(x)</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      It is clear from the graph of secant that we cannot find one single continuous piece of its graph which covers its entire range of
+      <m>(-\infty, -1] \cup [1, \infty)</m> and restricts the domain of the function so that it is one-to-one.
+      The same is true for cosecant.
+      Thus in order to define the arcsecant and arccosecant functions,
+      we must settle for a piecewise approach wherein we choose one piece to cover the top of the range,
+      namely <m>[1, \infty)</m>,
+      and another piece to cover the bottom,
+      namely <m>(-\infty, -1]</m>.
+      There are two generally accepted ways make these choices which restrict the domains of these functions so that they are one-to-one.
+      One approach simplifies the Trigonometry associated with the inverse functions,
+      but complicates the Calculus;
+      the other makes the Calculus easier,
+      but the Trigonometry less so.
+      We present both points of view.
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Inverses of Secant and Cosecant: Trigonometry Friendly Approach</title>
+    <p>
+      In this subsection,
+      we restrict the secant and cosecant functions to coincide with the restrictions on cosine and sine,
+      respectively.
+      For <m>f(x) = \sec(x)</m>,
+      we restrict the domain to
+      <m>\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]</m> (<xref ref="fig_arctrig7">Figure</xref>)
+          <idx><h>arcsecant</h><h>trigonometry friendly ! graph of</h></idx>
+      and we restrict <m>g(x) = \csc(x)</m> to
+      <m>\left[-\frac{\pi}{2}, 0\right) \cup \left(0, \frac{\pi}{2}\right]</m> (<xref ref="fig_arctrig8">Figure</xref>.
+          <idx><h>arccosecant</h><h>trigonometry friendly ! graph of</h></idx>
+    </p>
+
+    <p>
+      Note that for both arcsecant and arccosecant,
+      the domain is <m>(-\infty, -1] \cup [1, \infty)</m>.
+      Taking a page from <xref ref="AbsoluteValueFunctions">Section</xref>,
+      we can rewrite this as <m>\left\{ x : |x| \geq 1\right\}</m>.
+      This is often done in Calculus textbooks,
+      so we include it here for completeness.
+      Using these definitions,
+      we get the following properties of the arcsecant and arccosecant functions.
+    </p>
+
+    <theorem xml:id="arcsecantcosecantfunctionprops1">
+      <title>Properties of the Arcsecant and Arccosecant Functions (<q>Trigonometry Friendly</q> version)</title>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              Properties of <m>F(x)= \operatorname{arcsec}(x)</m>
+                  <idx><h>arcsecant</h><h>trigonometry friendly ! definition of</h></idx> <idx><h>arcsecant</h><h>trigonometry friendly ! properties of</h></idx>
+              <ul>
+                <li>
+                  <p>
+                    Domain:
+              <m>\left\{ x : |x| \geq 1 \right\} = (-\infty, -1] \cup [1,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range:
+              <m>\left[0, \frac{\pi}{2} \right) \cup \left(\frac{\pi}{2}, \pi\right]</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    as <m>x \rightarrow -\infty</m>,
+                    <m>\operatorname{arcsec}(x) \rightarrow \frac{\pi}{2}^{+}</m>;
+                    as <m>x \rightarrow \infty</m>,
+                    <m>\operatorname{arcsec}(x) \rightarrow \frac{\pi}{2}^{-}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(x) = t</m> if and only if <m>0 \leq t \lt \frac{\pi}{2}</m> or
+                    <m>\frac{\pi}{2} \lt t \leq \pi</m> and <m>\sec(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(x) = \arccos\left(\frac{1}{x}\right)</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\sec\left(\operatorname{arcsec}(x)\right) = x</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(\sec(x)) = x</m> provided
+                    <m>0 \leq x \lt \frac{\pi}{2}</m> or <m>\frac{\pi}{2} \lt x \leq \pi</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Properties of <m>G(x) = \operatorname{arccsc}(x)</m>
+                  <idx><h>arccosecant</h><h>trigonometry friendly ! definition of</h></idx> <idx><h>arccosecant</h><h>trigonometry friendly ! properties of</h></idx>
+              <ul>
+                <li>
+                  <p>
+                    Domain:
+              <m>\left\{ x : |x| \geq 1 \right\} = (-\infty, -1] \cup [1,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range:
+              <m>\left[-\frac{\pi}{2}, 0 \right) \cup \left(0, \frac{\pi}{2} \right]</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    as <m>x \rightarrow -\infty</m>,
+                    <m>\operatorname{arccsc}(x) \rightarrow 0^{-}</m>;
+                    as <m>x \rightarrow \infty</m>,
+                    <m>\operatorname{arccsc}(x) \rightarrow 0^{+}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(x) = t</m> if and only if <m>-\frac{\pi}{2} \leq t \lt 0</m> or
+                    <m>0 \lt t \leq \frac{\pi}{2}</m> and <m>\csc(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(x) = \arcsin\left(\frac{1}{x}\right)</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\csc\left(\operatorname{arccsc}(x)\right) = x</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(\csc(x)) = x</m> provided
+                    <m>-\frac{\pi}{2} \leq x \lt 0</m> or <m>0 \lt x \leq \frac{\pi}{2}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    additionally, arccosecant is odd
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <table xml:id="fig_arctrig7">
+      <caption>The <q>Trigonometry Friendly</q> definition of <m>\operatorname{arcsec}(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-13.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f(x) = \sec(x)</m> on  <m>\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-14.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f^{-1}(x)=\operatorname{arcsec}(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <table xml:id="fig_arctrig8">
+      <caption>The <q>Trigonometry Friendly</q> definition of <m>\operatorname{arccsc}(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-15.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g(x) = \csc(x)</m> on  <m>\left[-\frac{\pi}{2}, 0\right) \cup \left(0,  \frac{\pi}{2}\right]</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-16.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g^{-1}(x)=\operatorname{arccsc}(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example xml:id="arcsecantcosecantex1">
+      <title>Evaluating the arcsecant and arccosecant functions</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Find the exact values of the following.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(2)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(-2)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}\left( \sec\left( \frac{5\pi}{4} \right) \right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rewrite the following as algebraic expressions of <m>x</m> and state the domain on which the equivalence is valid.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\tan(\operatorname{arcsec}(x))</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cos(\operatorname{arccsc}(4x))</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    Using <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>,
+                    we have <m>\operatorname{arcsec}(2) = \arccos\left(\frac{1}{2}\right) = \frac{\pi}{3}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Once again,
+                    <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>
+                    gives us <m>\operatorname{arccsc}(-2) = \arcsin\left(-\frac{1}{2}\right) = -\frac{\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>\frac{5\pi}{4}</m> doesn't fall between <m>0</m> and
+                    <m>\frac{\pi}{2}</m> or <m>\frac{\pi}{2}</m> and <m>\pi</m>,
+                    we cannot use the inverse property stated in <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>.
+                    We can, nevertheless,
+          begin by working <q>inside out</q>
+                    which yields <m>\operatorname{arcsec}\left( \sec\left( \frac{5\pi}{4} \right) \right) = \operatorname{arcsec}(-\sqrt{2}) = \arccos\left(-\frac{\sqrt{2}}{2}\right) = \frac{3\pi}{4}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    One way to begin to simplify
+                    <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right)</m> is to let <m>t = \operatorname{arccsc}(-3)</m>.
+                    Then, <m>\csc(t) = -3</m> and, since this is negative,
+                    we have that <m>t</m> lies in the interval <m>\left[ -\frac{\pi}{2},0\right)</m>.
+                    We are after <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right) = \cot(t)</m>,
+                    so we use the Pythagorean Identity <m>1 + \cot^{2}(t) = \csc^{2}(t)</m>.
+                    Substituting, we have <m>1 + \cot^{2}(t) = (-3)^2</m>,
+                    or <m>\cot(t) = \pm \sqrt{8} = \pm 2 \sqrt{2}</m>.
+                    Since <m>-\frac{\pi}{2} \leq t \lt 0</m>, <m>\cot(t) \lt 0</m>,
+                    so we get <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right) = -2\sqrt{2}</m>.
+                  </p>
+                </li>
+              </ol></li>
+
+            <li><ol>
+                <li>
+                  <p>
+                    We begin simplifying 
+          <m>\tan(\operatorname{arcsec}(x))</m> by letting <m>t = \operatorname{arcsec}(x)</m>.
+                    Then,
+          <m>\sec(t) = x</m> for <m>t</m> in <m>\left[0, \frac{\pi}{2}\right) \cup \left(\frac{\pi}{2}, \pi \right]</m>,
+                    and we seek a formula for <m>\tan(t)</m>.
+                    Since <m>\tan(t)</m> is defined for all <m>t</m> values under consideration,
+                    we have no additional restrictions on <m>t</m>.
+                    To relate <m>\sec(t)</m> to <m>\tan(t)</m>,
+                    we use the identity <m>1 + \tan^{2}(t) = \sec^{2}(t)</m>.
+                    This is valid for all values of <m>t</m> under consideration,
+                    and when we substitute <m>\sec(t) = x</m>,
+                    we get <m>1 + \tan^{2}(t) = x^2</m>.
+                    Hence, <m>\tan(t) = \pm \sqrt{x^2-1}</m>.
+                    If <m>t</m> belongs to
+          <m>\left[0, \frac{\pi}{2}\right)</m> then <m>\tan(t) \geq 0</m>;
+                    if, on the the other hand,
+                    <m>t</m> belongs to 
+          <m>\left(\frac{\pi}{2}, \pi \right]</m> then <m>\tan(t) \leq 0</m>.
+                    As a result,
+                    we get a piecewise defined function for <m>\tan(t)</m>
+                    <me>
+                      \tan(t) = \left\{\begin{array}{rr} \sqrt{x^2-1}, \amp  \text{ if }  0 \leq t \lt  \frac{\pi}{2} \\ -\sqrt{x^2-1}, \amp  \text{ if }  \frac{\pi}{2} \lt  t \leq \pi
+                      \end{array} \right
+                    </me>.
+                    Now we need to determine what these conditions on <m>t</m> mean for <m>x</m>.
+                    Since <m>x = \sec(t)</m>,
+                    when <m>0 \leq t \lt  \frac{\pi}{2}</m>, <m>x \geq 1</m>,
+                    and when <m>\frac{\pi}{2} \lt  t \leq \pi</m>,
+          <m>x \leq -1</m>.
+                    Since we encountered no further restrictions on <m>t</m>,
+                    the  equivalence below holds for all <m>x</m> in <m>(-\infty, -1] \cup [1, \infty)</m>.
+                    <me>
+                      \tan(\operatorname{arcsec}(x)) = \left\{ \begin{array}{rr} \sqrt{x^2-1}, \amp  \text{ if \(x \geq 1\) }  \\  -\sqrt{x^2-1}, \amp  \text{ if \(x \leq -1\) } 
+                      \end{array} \right
+                    </me>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To simplify <m>\cos(\operatorname{arccsc}(4x))</m>,
+                    we start by letting <m>t = \operatorname{arccsc}(4x)</m>.
+                    Then <m>\csc(t) = 4x</m> for <m>t</m> in <m>\left[-\frac{\pi}{2}, 0 \right) \cup \left(0, \frac{\pi}{2}\right]</m>,
+                    and we now set about finding an expression for  <m>\cos(\operatorname{arccsc}(4x)) = \cos(t)</m>.
+                    Since <m>\cos(t)</m> is defined for all <m>t</m>,
+                    we do not encounter any additional restrictions on <m>t</m>.
+                    From <m>\csc(t) = 4x</m>,
+                    we get <m>\sin(t) = \frac{1}{4x}</m>,
+                    so to find <m>\cos(t)</m>,
+                    we can make use if the identity <m>\cos^{2}(t) + \sin^{2}(t) = 1</m>.
+                    Substituting <m>\sin(t) = \frac{1}{4x}</m>  gives <m>\cos^{2}(t) + \left(\frac{1}{4x}\right)^2 = 1</m>.
+                    Solving, we get
+                    <me>
+                      \cos(t) = \pm \sqrt{\frac{16x^2-1}{16x^2}} = \pm \frac{\sqrt{16x^2-1}}{4|x|}
+                    </me>
+                    Since <m>t</m> belongs to <m>\left[-\frac{\pi}{2}, 0 \right) \cup \left(0, \frac{\pi}{2}\right]</m>,
+                    we know <m>\cos(t) \geq 0</m>,
+                    so we choose <m>\cos(t) = \frac{\sqrt{16-x^2}}{4|x|}</m>. (The absolute values here are necessary,
+                    since <m>x</m> could be negative.)  To find the values for which this equivalence is valid,
+                    we look back at our original substution,
+                    <m>t = \operatorname{arccsc}(4x)</m>.
+                    Since the domain of
+          <m>\operatorname{arccsc}(x)</m> requires its argument <m>x</m> to satisfy <m>|x| \geq 1</m>,
+                    the domain of <m>\operatorname{arccsc}(4x)</m> requires <m>|4x| \geq 1</m>.
+                    Using <xref ref="absolutevalueineq">Theorem</xref>,
+                    we rewrite this inequality and solve to get
+                    <m>x \leq -\frac{1}{4}</m> or <m>x \geq \frac{1}{4}</m>.
+                    Since we had no additional restrictions on <m>t</m>,
+                    the equivalence 
+          <m>\cos(\operatorname{arccsc}(4x)) = \frac{\sqrt{16x^2-1}}{4|x|}</m>  holds for all <m>x</m> in <m>\left(-\infty, -\frac{1}{4} \right] \cup \left[\frac{1}{4}, \infty \right)</m>.
+                  </p>
+                </li>
+              </ol></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Inverses of Secant and Cosecant: Calculus Friendly Approach</title>
+    <p>
+      In this subsection, we restrict
+      <m>f(x) = \sec(x)</m> to <m>\left[0, \frac{\pi}{2}\right) \cup \left[\pi, \frac{3\pi}{2}\right)</m>,
+          <idx><h>arcsecant</h><h>calculus friendly ! graph of</h></idx>
+      and we restrict <m>g(x) = \csc(x)</m> to <m>\left(0, \frac{\pi}{2}\right] \cup \left( \pi, \frac{3\pi}{2}\right]</m>.
+          <idx><h>arccosecant</h><h>calculus friendly ! graph of</h></idx>
+    </p>
+
+    <p>
+      Using these definitions, we get the following result.
+    </p>
+
+    <theorem xml:id="arcsecantcosecantfunctionprops2">
+      <title>Properties of the Arcsecant and Arccosecant Functions (<q>Calculus Friendly</q> version)</title>
+      <statement>
+        <ul>
+          <li>
+            <p>
+              Properties of <m>F(x)= \operatorname{arcsec}(x)</m>
+                  <idx><h>arcsecant</h><h>calculus friendly ! definition of</h></idx> <idx><h>arcsecant</h><h>calculus friendly ! properties of</h></idx>
+              <ul>
+                <li>
+                  <p>
+                    Domain:
+              <m>\left\{ x : |x| \geq 1 \right\} = (-\infty, -1] \cup [1,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range:
+              <m>\left[0, \frac{\pi}{2} \right) \cup \left[\pi, \frac{3\pi}{2} \right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    as <m>x \rightarrow -\infty</m>,
+                    <m>\operatorname{arcsec}(x) \rightarrow \frac{3\pi}{2}^{-}</m>;
+                    as <m>x \rightarrow \infty</m>,
+                    <m>\operatorname{arcsec}(x) \rightarrow \frac{\pi}{2}^{-}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(x) = t</m> if and only if <m>0 \leq t \lt \frac{\pi}{2}</m> or
+                    <m>\pi \leq t \lt \frac{3\pi}{2}</m> and <m>\sec(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(x) = \arccos\left(\frac{1}{x}\right)</m> for
+                    <m>x \geq 1</m> only (Compare this with the similar result in <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>.)
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\sec\left(\operatorname{arcsec}(x)\right) = x</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(\sec(x)) = x</m> provided
+                    <m>0 \leq x \lt \frac{\pi}{2}</m> or <m>\pi \leq x \lt \frac{3\pi}{2}</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Properties of <m>G(x) = \operatorname{arccsc}(x)</m>
+                  <idx><h>arccosecant</h><h>calculus friendly ! definition of</h></idx> <idx><h>arccosecant</h><h>calculus friendly ! properties of</h></idx>
+              <ul>
+                <li>
+                  <p>
+                    Domain:
+              <m>\left\{ x : |x| \geq 1 \right\} = (-\infty, -1] \cup [1,\infty)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Range:
+              <m>\left(0, \frac{\pi}{2} \right] \cup \left( \pi, \frac{3\pi}{2} \right]</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    as <m>x \rightarrow -\infty</m>,
+                    <m>\operatorname{arccsc}(x) \rightarrow \pi^{+}</m>;
+                    as <m>x \rightarrow \infty</m>,
+                    <m>\operatorname{arccsc}(x) \rightarrow 0^{+}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(x) = t</m> if and only if <m>0 \lt t \leq \frac{\pi}{2}</m> or
+                    <m>\pi \lt t \leq \frac{3\pi}{2}</m> and <m>\csc(t) = x</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(x) = \arcsin\left(\frac{1}{x}\right)</m> for
+                    <m>x \geq 1</m> only (Compare this with the similar result in <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>.)
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\csc\left(\operatorname{arccsc}(x)\right) = x</m> provided <m>|x| \geq 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(\csc(x)) = x</m> provided
+                    <m>0 \lt x \leq \frac{\pi}{2}</m> or <m>\pi \lt x \leq \frac{3\pi}{2}</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <table xml:id="fig_arctrig9">
+      <caption>The <q>Calculus Friendly</q> definition of <m>\operatorname{arcsec}(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-17.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f(x) = \sec(x)</m> on  <m>\left[0, \frac{\pi}{2}\right) \cup \left[ \pi, \frac{3\pi}{2}\right)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-18.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>f^{-1}(x)=\operatorname{arcsec}(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <table xml:id="fig_arctrig10">
+      <caption>The ``Calculus Friendly definition of <m>\operatorname{arccsc}(x)</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-19.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g(x) = \csc(x)</m> on  <m>\left(0, \frac{\pi}{2}\right] \cup \left(\pi,  \frac{3\pi}{2}\right]</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/ArcTrig-20.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>g^{-1}(x)=\operatorname{arccsc}(x)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Our next example is a duplicate of <xref ref="arcsecantcosecantex1">Example</xref>.
+      The interested reader is invited to compare and contrast the solution to each.
+    </p>
+
+    <example xml:id="arcsecantcosecantex2">
+      <title>Evaluating the arcsecant and arccosecant functions</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Find the exact values of the following.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(2)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arccsc}(-2)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}\left( \sec\left( \frac{5\pi}{4} \right) \right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right)</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rewrite the following as algebraic expressions of <m>x</m> and state the domain on which the equivalence is valid.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\tan(\operatorname{arcsec}(x))</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\cos(\operatorname{arccsc}(4x))</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    Since <m>2 \geq 1</m>,
+                    we can use <xref ref="arcsecantcosecantfunctionprops2">Theorem</xref>
+                    to get <m>\operatorname{arcsec}(2) = \arccos\left(\frac{1}{2}\right) = \frac{\pi}{3}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Unfortunately, <m>-2</m> is not greater to or equal to <m>1</m>,
+                    so we cannot apply <xref ref="arcsecantcosecantfunctionprops2">Theorem</xref>
+                    to <m>\operatorname{arccsc}(-2)</m> and convert this into an arcsine problem.
+                    Instead, we appeal to the definition.
+                    The real number <m>t = \operatorname{arccsc}(-2)</m> lies in
+                    <m>\left(0,\frac{\pi}{2} \right] \cup \left(\pi, \frac{3\pi}{2}\right]</m> and satisfies <m>\csc(t) = -2</m>.
+                    The <m>t</m> we're after is <m>t = \frac{7\pi}{6}</m>,
+                    so <m>\operatorname{arccsc}(-2) = \frac{7\pi}{6}</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>\frac{5\pi}{4}</m> lies between <m>\pi</m> and <m>\frac{3\pi}{2}</m>,
+                    we may apply <xref ref="arcsecantcosecantfunctionprops2">Theorem</xref>
+                    directly to simplify <m>\operatorname{arcsec}\left( \sec\left( \frac{5\pi}{4} \right) \right) = \frac{5\pi}{4}</m>.
+                    We encourage the reader to work this through using the definition as we have done in the previous examples to see how it goes.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To help simplify <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right)</m> we define
+                    <m>t = \operatorname{arccsc}\left(-3\right)</m> so that <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right) = \cot(t)</m>.
+                    We know <m>\csc(t) = -3</m>,
+                    and since this is negative,
+                    <m>t</m> lies in <m>\left( \pi, \frac{3\pi}{2}\right]</m>.
+                    Using the identity <m>1 + \cot^{2}(t) = \csc^{2}(t)</m>,
+                    we find <m>1 + \cot^{2}(t) = (-3)^2</m> so that <m>\cot(t) = \pm \sqrt{8} = \pm 2 \sqrt{2}</m>.
+                    Since <m>t</m> is in the interval <m>\left(\pi, \frac{3\pi}{2}\right]</m>,
+                    we know <m>\cot(t) > 0</m>.
+                    Our answer is <m>\cot\left(\operatorname{arccsc}\left(-3\right)\right) = 2 \sqrt{2}</m>.
+                  </p>
+                </li>
+              </ol></li>
+
+            <li><ol>
+                <li>
+                  <p>
+                    We begin simplifying
+          <m>\tan(\operatorname{arcsec}(x))</m> by letting <m>t = \operatorname{arcsec}(x)</m>.
+                    Then,
+          <m>\sec(t) = x</m> for <m>t</m> in <m>\left[0, \frac{\pi}{2} \right) \cup \left[\pi, \frac{3\pi}{2} \right)</m>,
+                    and we seek a formula for <m>\tan(t)</m>.
+                    Since <m>\tan(t)</m> is defined for all <m>t</m> values under consideration,
+                    we have no additional restrictions on <m>t</m>.
+                    To relate <m>\sec(t)</m> to <m>\tan(t)</m>,
+                    we use the identity <m>1 + \tan^{2}(t) = \sec^{2}(t)</m>.
+                    This is valid for all values of <m>t</m> under consideration,
+                    and when we substitute <m>\sec(t) = x</m>,
+                    we get <m>1 + \tan^{2}(t) = x^2</m>.
+                    Hence, <m>\tan(t) = \pm \sqrt{x^2-1}</m>.
+                    Since <m>t</m> lies in <m>\left[0, \frac{\pi}{2} \right) \cup \left[\pi, \frac{3\pi}{2} \right)</m>,
+                    <m>\tan(t) \geq 0</m>,
+          so we choose <m>\tan(t) = \sqrt{x^2-1}</m>.
+                    Since we found no additional restrictions on <m>t</m>,
+                    the equivalence
+          <m>\tan(\operatorname{arcsec}(x)) = \sqrt{x^2-1}</m> holds for all <m>x</m> in the domain of <m>t = \operatorname{arcsec}(x)</m>,
+                    namely <m>(-\infty, -1] \cup [1,\infty)</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To simplify <m>\cos(\operatorname{arccsc}(4x))</m>,
+                    we start by letting <m>t = \operatorname{arccsc}(4x)</m>.
+                    Then <m>\csc(t) = 4x</m> for <m>t</m> in <m>\left(0, \frac{\pi}{2} \right] \cup \left(\pi, \frac{3\pi}{2} \right]</m>,
+                    and we now set about finding an expression for  <m>\cos(\operatorname{arccsc}(4x)) = \cos(t)</m>.
+                    Since <m>\cos(t)</m> is defined for all <m>t</m>,
+                    we do not encounter any additional restrictions on <m>t</m>.
+                    From <m>\csc(t) = 4x</m>,
+                    we get <m>\sin(t) = \frac{1}{4x}</m>,
+                    so to find <m>\cos(t)</m>,
+                    we can make use if the identity <m>\cos^{2}(t) + \sin^{2}(t) = 1</m>.
+                    Substituting <m>\sin(t) = \frac{1}{4x}</m>  gives <m>\cos^{2}(t) + \left(\frac{1}{4x}\right)^2 = 1</m>.
+                    Solving, we get
+                    <me>
+                      \cos(t) = \pm \sqrt{\frac{16x^2-1}{16x^2}} = \pm \frac{\sqrt{16x^2-1}}{4|x|}
+                    </me>
+                    If <m>t</m> lies in <m>\left(0, \frac{\pi}{2} \right]</m>,
+                    then <m>\cos(t) \geq 0</m>,
+                    and we choose  <m>\cos(t) = \frac{\sqrt{16x^2-1}}{4|x|}</m>.
+                    Otherwise, <m>t</m> belongs to
+                    <m>\left( \pi, \frac{3\pi}{2} \right]</m> in which case <m>\cos(t) \leq 0</m>, so,
+                    we choose <m>\cos(t) = -\frac{\sqrt{16x^2-1}}{4|x|}</m> This leads us to a (momentarily) piecewise defined function for <m>\cos(t)</m>
+                    <me>
+                      \cos(t) = \left\{ \begin{array}{rr}
+                      \dfrac{\sqrt{16x^2-1}}{4|x|}, \amp  \text{if \(0 \leq t \leq \frac{\pi}{2}\)}  \\
+                      -\dfrac{\sqrt{16x^2-1}}{4|x|}, \amp  \text{if \(\pi \lt  t \leq \frac{3\pi}{2}\)} 
+                      \end{array} \right
+                    </me>.
+                    We now see what these restrictions mean in terms of <m>x</m>.
+                    Since <m>4x = \csc(t)</m>,
+                    we get that for <m>0 \leq t \leq \frac{\pi}{2}</m>,
+                    <m>4x \geq 1</m>, or <m>x \geq \frac{1}{4}</m>.
+                    In this case, we can simplify <m>|x| = x</m> so
+                    <me>
+                      \cos(t) = \frac{\sqrt{16x^2-1}}{4|x|} = \frac{\sqrt{16x^2-1}}{4x}
+                    </me>
+                    Similarly, for <m>\pi \lt  t \leq \frac{3\pi}{2}</m>,
+                    we get <m>4x \leq -1</m>,
+          or <m>x \leq -\frac{1}{4}</m>.
+                    In this case, <m>|x| = -x</m>, so we also get
+                    <me>
+                      \cos(t) = -\frac{\sqrt{16x^2-1}}{4|x|}  = -\frac{\sqrt{16x^2-1}}{4(-x)} =  \frac{\sqrt{16x^2-1}}{4x}
+                    </me>
+                    Hence, in all cases,
+                    <m>\cos(\operatorname{arccsc}(4x)) =  \frac{\sqrt{16x^2-1}}{4x}</m>,
+                    and this equivalence is valid for all <m>x</m> in the domain of <m>t = \operatorname{arccsc}(4x)</m>, namely 
+                    <m>\left(-\infty, -\frac{1}{4}\right] \cup \left[ \frac{1}{4}, \infty \right)</m>
+                  </p>
+                </li>
+              </ol></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection xml:id="sectionarcstuffoncalc">
+    <title>Calculators and the Inverse Circular Functions.</title>
+    <p>
+      In the sections to come,
+      we will have need to approximate the values of the inverse circular functions.
+      On most calculators, only the arcsine,
+      arccosine and arctangent functions are available and they are usually labelled as
+      <m>\sin^{-1}, \cos^{-1}</m> and <m>\tan^{-1}</m>, respectively.
+      If we are asked to approximate these values,
+      it is a simple matter to punch up the appropriate decimal on the calculator.
+      If we are asked for an arccotangent,
+      arcsecant or arccosecant, however,
+      we often need to employ some ingenuity,
+      as our next example illustrates.
+    </p>
+
+    <example xml:id="arcstuffoncalc">
+      <title>Inverse trig functions not on the calculator</title>
+      <statement>
+        <ol>
+          <li>
+            <p>
+              Use a calculator to approximate the following values to four decimal places.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>\operatorname{arccot}(2)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>\operatorname{arcsec}(5)</m>
+                  </p>
+                </li>
+
+                <li xml:id="arccotneg2">
+
+                <p>
+                  <m>\operatorname{arccot}(-2)</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>\operatorname{arccsc}\left(-\dfrac{3}{2}\right)</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+          </li>
+
+          <li>
+            <p>
+              Find the domain and range of the following functions.
+              Check your answers using a calculator or computer.
+
+              <ol>
+                <li>
+                  <p>
+                    <m>f(x) = \dfrac{\pi}{2} - \arccos\left(\dfrac{x}{5}\right)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>f(x) = 3\arctan\left(4x \right)</m>.
+                  </p>
+                </li>
+
+                <li xml:id="arccotangentcalc">
+
+                <p>
+                  <m>f(x) = \operatorname{arccot}\left(\dfrac{x}{2} \right) + \pi</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+          </li>
+        </ol>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li><ol>
+                <li>
+                  <p>
+                    Since <m>2 > 0</m>,
+                    we can use the property listed in <xref ref="arctangentcotangentfunctionprops">Theorem</xref>
+                    to rewrite <m>\operatorname{arccot}(2)</m> as <m>\operatorname{arccot}(2) = \arctan\left(\frac{1}{2}\right)</m>.
+                    In <q>radian</q>
+                    mode,
+          we find <m>\operatorname{arccot}(2) = \arctan\left(\frac{1}{2}\right) \approx 0.4636</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>5 \geq 1</m>,
+                    we can use the property from either <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>
+                    or <xref ref="arcsecantcosecantfunctionprops2">Theorem</xref>
+                    to write <m>\operatorname{arcsec}(5) = \arccos\left(\frac{1}{5}\right) \approx 1.3694</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since the argument <m>-2</m> is negative,
+                    we cannot directly apply <xref ref="arctangentcotangentfunctionprops">Theorem</xref>
+                    to help us find <m>\operatorname{arccot}(-2)</m>.
+                    Let <m>t = \operatorname{arccot}(-2)</m>.
+                    Then <m>t</m> is a real number such that
+                    <m>0 \lt t \lt \pi</m> and <m>\cot(t) = -2</m>.
+                    Moreover, since <m>\cot(t) \lt 0</m>,
+                    we know <m>\frac{\pi}{2} \lt t \lt \pi</m>.
+                    Geometrically,
+                    this means <m>t</m> corresponds to a Quadrant II angle <m>\theta = t</m> radians.
+                    This allows us to proceed using a
+                    <q>reference angle</q> approach.
+                    Consider <m>\alpha</m>,
+          the reference angle for <m>\theta</m>,
+                    as pictured in <xref ref="fig_arctrig11">Figure</xref>.
+                    By definition,
+                    <m>\alpha</m> is an acute angle so <m>0 \lt \alpha \lt \frac{\pi}{2}</m>,
+                    and the Reference Angle Theorem,
+                    <xref ref="refanglethm">Theorem</xref>,
+                    tells us that <m>\cot(\alpha) = 2</m>.
+                    This means <m>\alpha = \operatorname{arccot}(2)</m> radians.
+                    Since the argument of arccotangent is now a
+                    <em>positive</em> <m>2</m>,
+                    we can use <xref ref="arctangentcotangentfunctionprops">Theorem</xref>
+                    to get <m>\alpha = \operatorname{arccot}(2) =\arctan\left(\frac{1}{2}\right)</m> radians.
+                    Since <m>\theta = \pi - \alpha = \pi - \arctan\left(\frac{1}{2}\right) \approx 2.6779</m> radians,
+                    we get <m>\operatorname{arccot}(-2) \approx 2.6779</m>. <figure xml:id="fig_arctrig11"> <caption>Evaluating
+                    <m>\operatorname{arccot}(-2)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-21.pdf"/> </figure> Another way to attack the problem is to use <m>\arctan\left(-\frac{1}{2}\right)</m>.
+                    By definition,
+                    the real number <m>t = \arctan\left(-\frac{1}{2}\right)</m> satisfies
+                    <m>\tan(t) = -\frac{1}{2}</m> with <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m>.
+                    Since <m>\tan(t)\lt 0</m>,
+                    we know more specifically that <m>-\frac{\pi}{2} \lt t \lt 0</m>,
+                    so <m>t</m> corresponds to an angle <m>\beta</m> in Quadrant IV. To find the value of <m>\operatorname{arccot}(-2)</m>,
+                    we once again visualize the angle
+                    <m>\theta = \operatorname{arccot}(-2)</m> radians and note that it is a Quadrant II angle with
+                    <m>\tan(\theta) = -\frac{1}{2}</m>. (See <xref ref="fig_arctrig12">Figure</xref>.) This means it is exactly <m>\pi</m> units away from <m>\beta</m>,
+                    and we get <m>\theta = \pi + \beta = \pi + \arctan\left(-\frac{1}{2}\right) \approx 2.6779</m> radians.
+                    Hence, as before,
+                    <m>\operatorname{arccot}(-2) \approx 2.6779</m>. <figure xml:id="fig_arctrig12"> <caption>Evaluating
+                    <m>\operatorname{arccot}(-2)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-22.pdf"/> </figure>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    If the range of arccosecant is taken to be <m>\left[-\frac{\pi}{2}, 0\right) \cup \left(0, \frac{\pi}{2}\right]</m>,
+                    we can use <xref ref="arcsecantcosecantfunctionprops1">Theorem</xref>
+                    to get <m>\operatorname{arccsc}\left(-\frac{3}{2}\right) = \arcsin\left(-\frac{2}{3}\right) \approx -0.7297</m>.
+                    If, on the other hand,
+                    the range of arccosecant is taken to be <m>\left(0, \frac{\pi}{2}\right] \cup \left(\pi, \frac{3\pi}{2}\right]</m>,
+                    then we proceed as in the previous problem by letting <m>t = \operatorname{arccsc}\left(-\frac{3}{2}\right)</m>.
+                    Then <m>t</m> is a real number with <m>\csc(t) = -\frac{3}{2}</m>.
+                    Since <m>\csc(t) \lt 0</m>,
+                    we have that <m>\pi \lt \theta \leq \frac{3\pi}{2}</m>,
+                    so <m>t</m> corresponds to a Quadrant III angle,
+          <m>\theta</m>,
+                    as pictured in <xref ref="fig_arctrig13">Figure</xref>.
+                    As above,
+          we let <m>\alpha</m> be the reference angle for <m>\theta</m>.
+                    Then <m>0 \lt \alpha \lt \frac{\pi}{2}</m> and <m>\csc(\alpha) =\frac{3}{2}</m>,
+                    which means <m>\alpha = \operatorname{arccsc}\left(\frac{3}{2}\right)</m> radians.
+                    Since the argument of arccosecant is now positive,
+                    we may use <xref ref="arcsecantcosecantfunctionprops2">Theorem</xref>
+                    to get <m>\alpha = \operatorname{arccsc}\left(\frac{3}{2}\right) = \arcsin\left(\frac{2}{3}\right)</m> radians.
+                    Since <m>\theta = \pi + \alpha = \pi + \arcsin\left(\frac{2}{3}\right) \approx 3.8713</m> radians,
+                    <m>\operatorname{arccsc}\left(-\frac{3}{2}\right) \approx 3.8713</m>. <figure xml:id="fig_arctrig13"> <caption>Evaluating
+                    <m>\operatorname{arccsc}\left(-\frac{3}{2}\right)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-23.pdf"/> </figure>
+                  </p>
+                </li>
+              </ol></li>
+
+            <li><ol>
+                <li>
+                  <p>
+                    Since the domain of
+          <m>F(x) = \arccos(x)</m> is <m>-1 \leq x \leq 1</m>,
+                    we can find the domain of
+                    <m>f(x) = \frac{\pi}{2} - \arccos\left(\frac{x}{5}\right)</m> by setting the argument of the arccosine,
+                    in this case <m>\frac{x}{5}</m>,
+                    between <m>-1</m> and <m>1</m>.
+                    Solving <m>-1 \leq \frac{x}{5} \leq 1</m> gives <m>-5 \leq x \leq 5</m>,
+                    so the domain is <m>[-5,5]</m>.
+                    To determine the range of <m>f</m>,
+                    we take a cue from <xref ref="Transformations">Section</xref>.
+                    Three <q>key</q>
+                    points on the graph of
+          <m>F(x) = \arccos(x)</m> are <m>(-1, \pi)</m>,
+                    <m>\left(0, \frac{\pi}{2}\right)</m> and <m>(1,0)</m> . Following the procedure outlined in <xref ref="transformationsthm">Theorem</xref>,
+                    we track these points to <m>\left(-5, -\frac{\pi}{2}\right)</m>,
+                    <m>(0, 0)</m> and <m>\left(5, \frac{\pi}{2}\right)</m>.
+                    Plotting these values tells us that the range of <m>f</m> is
+                    <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>. (It also confirms our domain!) The graph in <xref ref="fig_arctrig14">Figure</xref>
+                    confirms our results. <figure xml:id="fig_arctrig14"> <caption><m>y=f(x)=\dfrac{\pi}{2}-\arccos\left(\dfrac{x}{5}\right)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig1.pdf"/> </figure>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To find the domain and range of <m>f(x) = 3\arctan\left(4x \right)</m>,
+                    we note that since the domain of <m>F(x) = \arctan(x)</m> is all real numbers,
+                    the only restrictions, if any,
+                    on the domain of
+          <m>f(x) = 3\arctan\left(4x \right)</m> come from the argument of the arctangent,
+          in this case,
+                    <m>4x</m>.
+                    Since <m>4x</m> is defined for all real numbers,
+                    we have established that the domain of <m>f</m> is all real numbers.
+                    To determine the range of <m>f</m>, we can,
+          once again,
+                    appeal to <xref ref="transformationsthm">Theorem</xref>.
+                    Choosing our <q>key</q>
+                    point to be <m>(0,0)</m> and tracking the horizontal asymptotes
+                    <m>y = -\frac{\pi}{2}</m> and <m>y= \frac{\pi}{2}</m>,
+                    we find that the graph of
+          <m>y = f(x) = 3\arctan\left(4x \right)</m> differs from the graph of
+                    <m>y = F(x) = \arctan(x)</m> by a horizontal compression by a factor of <m>4</m> and a vertical stretch by a factor of <m>3</m>.
+                    It is the latter which affects the range,
+                    producing a range of <m>\left(-\frac{3\pi}{2}, \frac{3\pi}{2} \right)</m>.
+                    We confirm our findings using GeoGebra in <xref ref="fig_arctrig15">Figure</xref>. <figure xml:id="fig_arctrig15"> <caption><m>y=f(x)=3\arctan(4x)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig2.pdf"/> </figure>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    To find the domain of <m>g(x) = \operatorname{arccot}\left(\frac{x}{2}\right) + \pi</m>,
+                    we proceed as above.
+                    Since the domain of
+          <m>G(x) = \operatorname{arccot}(x)</m> is <m>(-\infty, \infty)</m>,
+                    and <m>\frac{x}{2}</m> is defined for all <m>x</m>,
+                    we get that the domain of <m>g</m> is <m>(-\infty, \infty)</m> as well.
+                    As for the range,
+                    we note that the range of <m>G(x)  = \operatorname{arccot}(x)</m>,
+                    like that of <m>F(x) = \arctan(x)</m>,
+                    is limited by a pair of horizontal asymptotes,
+                    in this case <m>y = 0</m> and <m>y = \pi</m>.
+                    Following  <xref ref="transformationsthm">Theorem</xref>,
+                    we graph <m>y =  g(x) = \operatorname{arccot}\left(\frac{x}{2}\right) + \pi</m> starting with
+                    <m>y = G(x) = \operatorname{arccot}(x)</m> and first performing a horizontal expansion by a factor of <m>2</m> and following that with a vertical shift upwards by <m>\pi</m>.
+                    This latter transformation is the one which affects the range,
+                    making it now <m>(\pi, 2\pi)</m>.
+                    To check this graphically,
+                    we encounter a bit of a problem,
+                    since on many calculators,
+                    there is no shortcut button corresponding to the arccotangent function.
+                    Taking a cue from <xref ref="arccotneg2">number</xref>,
+                    we attempt to rewrite
+          <m>g(x) = \operatorname{arccot}\left(\frac{x}{2}\right) + \pi</m> in terms of the arctangent function.
+                    Using <xref ref="arctangentcotangentfunctionprops">Theorem</xref>,
+                    we have that <m>\operatorname{arccot}\left(\frac{x}{2}\right) = \arctan\left(\frac{2}{x}\right)</m> when <m>\frac{x}{2} > 0</m>, or,
+                    in this case, when <m>x > 0</m>.
+                    Hence, for <m>x > 0</m>,
+                    we have <m>g(x) = \arctan\left(\frac{2}{x}\right) + \pi</m>.
+                    When <m>\frac{x}{2} \lt  0</m>,
+                    we can use the same argument in <xref ref="arccotneg2">number</xref>
+                    that gave us <m>\operatorname{arccot}(-2) = \pi + \arctan\left(-\frac{1}{2}\right)</m> to give us <m>\operatorname{arccot}\left(\frac{x}{2}\right) = \pi + \arctan\left(\frac{2}{x}\right)</m>.
+                    Hence, for <m>x \lt  0</m>,
+                    <m>g(x) = \pi + \arctan\left(\frac{2}{x}\right) + \pi = \arctan\left(\frac{2}{x}\right) + 2\pi</m>.
+                    What about <m>x=0</m>?
+                    We know <m>g(0) = \operatorname{arccot}(0) + \pi = \pi</m>,
+                    and neither of the formulas for <m>g</m> involving arctangent will produce this result.
+                    Hence, in order to graph
+          <m>y = g(x)</m> on our computer or calculator,
+                    we need to write it as a piecewise defined function:
+                    <me>
+                      g(x) = \operatorname{arccot}\left(\frac{x}{2}\right) + \pi = \left\{ \begin{array}{rr} \arctan\left(\frac{2}{x}\right) + 2\pi, \amp  \text{ if \(x\lt 0\) }  \\ \pi, \amp  \text{ if \(x=0\) }  \\ \arctan\left(\frac{2}{x}\right) + \pi, \amp  \text{ if \(x>0\) } 
+                      \end{array} \right
+                    </me>.
+                    The result is shown in <xref ref="fig_arctrig16">Figure</xref>.
+
+                    <figure xml:id="fig_arctrig16">
+                      <caption><m>y=g(x)=\operatorname{arccot}\left(\dfrac{\pi}{2}\right)+\pi</m></caption>
+                      <img src="figures/IntroTrigGraphics/ArcTrig3.pdf"/>
+                    </figure>
+
+                    <aside>
+                      <p>
+                        Note: as with a graphing calculator,
+                        the GeoGebra software does not have an arccotangent function.
+                        To input a piecewise-defined function in GeoGebra,
+                        we use the syntax <c>Function[function,
+                        start x value, end x value.]</c>.
+                      </p>
+                    </aside>
+                  </p>
+                </li>
+              </ol></li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The inverse trigonometric functions are typically found in applications whenever the measure of an angle is required.
+      One such scenario is presented in the following example. (The authors would like to thank Dan Stitz for this problem and associated graphics.)
+    </p>
+
+    <example xml:id="roofpitchex">
+      <title>Angle of a pitched roof</title>
+      <statement>
+        <p>
+          The roof on the house below has a
+          <q><m>6/12</m> pitch</q>.
+          This means that when viewed from the side,
+          the roof line has a rise of 6 feet over a run of 12 feet.
+          Find the angle of inclination from the bottom of the roof to the top of the roof.
+          Express your answer in decimal degrees,
+          rounded to the nearest hundredth of a degree.
+        </p>
+
+        <sidebyside>
+          <tabular>
+            <row>
+              <cell><img src="figures/IntroTrigGraphics/ArcTrig05.pdf"/></cell>
+              <cell><img src="figures/IntroTrigGraphics/ArcTrig06.pdf"/></cell>
+            </row>
+            <row>
+              <cell>Front View</cell>
+              <cell>Side View</cell>
+            </row>
+          </tabular>
+        </sidebyside>
+      </statement>
+      <solution>
+        <p>
+          If we divide the side view of the house down the middle,
+          we find that the roof line forms the hypotenuse of a right triangle with legs of length <m>6</m> feet and <m>12</m> feet.
+          Using <xref ref="circularfunctionstriangle">Theorem</xref>,
+          we find the angle of inclination,
+          labelled <m>\theta</m> in <xref ref="fig_arctrigappex">Figure</xref>,
+          satisfies <m>\tan(\theta) = \frac{6}{12} = \frac{1}{2}</m>.
+          Since <m>\theta</m> is an acute angle,
+          we can use the arctangent function and we find <m>\theta = \arctan\left(\frac{1}{2}\right)\, \text{ radians } \, \approx 26.56^{\circ}</m>.
+        </p>
+
+        <figure xml:id="fig_arctrigappex">
+          <caption>Angle of inclination <m>\theta</m> for <xref ref="roofpitchex">Example</xref></caption>
+          <img src="figures/IntroTrigGraphics/ArcTrig-24.pdf"/>
+        </figure>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection>
+    <title>Solving Equations Using the Inverse Trigonometric Functions.</title>
+    <p>
+      In <xref ref="TheUnitCircle">Sections</xref>
+      and <xref ref="CircularFunctions"></xref>,
+      we learned how to solve equations like
+      <m>\sin(\theta) = \frac{1}{2}</m> for angles <m>\theta</m> and
+      <m>\tan(t) = -1</m> for real numbers <m>t</m>.
+      In each case,
+      we ultimately appealed to the Unit Circle and relied on the fact that the answers corresponded to a set of <q>common angles</q>
+      listed on <xref ref="commonanglesunitcircle">page</xref>.
+      If, on the other hand,
+      we had been asked to find all angles with <m>\sin(\theta) = \frac{1}{3}</m> or solve
+      <m>\tan(t) = -2</m> for real numbers <m>t</m>,
+      we would have been hard-pressed to do so.
+      With the introduction of the inverse trigonometric functions,
+      however, we are now in a position to solve these equations.
+      A good parallel to keep in mind is how the square root function can be used to solve certain quadratic equations.
+      The equation <m>x^2 = 4</m> is a lot like
+      <m>\sin(\theta) = \frac{1}{2}</m> in that it has friendly,
+      <q>common value</q> answers <m>x = \pm 2</m>.
+      The equation <m>x^2 = 7</m>,
+      on the other hand, is a lot like <m>\sin(\theta) = \frac{1}{3}</m>.
+      We know there are answers
+      (how do we know this again?),
+      but we can't express them using
+      <q>friendly</q> numbers. (This is all,
+      of course, a matter of opinion.
+      For the record,
+      the authors find <m>\pm \sqrt{7}</m> just as <q>nice</q>
+      as <m>\pm 2</m>.) To solve <m>x^2 = 7</m>,
+      we make use of the square root function and write <m>x = \pm \sqrt{7}</m>.
+      We can certainly <em>approximate</em>
+      these answers using a calculator,
+      but as far as exact answers go,
+      we leave them as <m>x = \pm \sqrt{7}</m>.
+      In the same way,
+      we will use the arcsine function to solve <m>\sin(\theta) = \frac{1}{3}</m>,
+      as seen in the following example.
+    </p>
+
+    <example xml:id="basicinverseeqns">
+      <title>Solving trigonometric equations</title>
+      <statement>
+        <p>
+          Solve the following equations.
+
+          <ol>
+            <li xml:id="basicinverseeqnssine">
+
+            <p>
+              Find all angles <m>\theta</m> for which <m>\sin(\theta) = \frac{1}{3}</m>.
+            </p>
+            </li>
+
+            <li xml:id="basicinverseeqnstangent">
+
+            <p>
+              Find all real numbers <m>t</m> for which <m>\tan(t) = -2</m>
+            </p>
+            </li>
+
+            <li xml:id="basicinverseeqnssecant">
+
+            <p>
+              Solve <m>\, \sec(x) = -\frac{5}{3} \</m>, for <m>x</m>.
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If <m>\sin(\theta) = \frac{1}{3}</m>,
+                then the terminal side of <m>\theta</m>,
+                when plotted in standard position,
+                intersects the Unit Circle at <m>y = \frac{1}{3}</m>.
+                Geometrically, we see that this happens at two places:
+                in Quadrant I and Quadrant II. If we let <m>\alpha</m> denote the acute solution to the equation,
+                then all the solutions to this equation in Quadrant I are coterminal with <m>\alpha</m>,
+                and <m>\alpha</m> serves as the reference angle for all of the solutions to this equation in Quadrant II. <table xml:id="fig_trigeqn1"> <caption>Solving
+                <m>\sin(\theta)=\frac{1}{3}</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-25.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-26.pdf"/></cell> </row> </tabular> </table> Since
+                <m>\frac{1}{3}</m> isn't the sine of any of the
+                <q>common angles</q> discussed earlier,
+                we use the arcsine functions to express our answers.
+                The real number <m>t = \arcsin\left(\frac{1}{3}\right)</m> is defined so it satisfies
+                <m>0 \lt t \lt \frac{\pi}{2}</m> with <m>\sin(t) = \frac{1}{3}</m>.
+                Hence,
+          <m>\alpha = \arcsin\left(\frac{1}{3}\right)</m> radians.
+                Since the solutions in Quadrant I are all coterminal with <m>\alpha</m>,
+                we get part of our solution to be
+                <m>\theta = \alpha + 2\pi k = \arcsin\left(\frac{1}{3}\right) + 2\pi k</m> for integers <m>k</m>.
+                Turning our attention to Quadrant II, we get one solution to be <m>\pi - \alpha</m>.
+                Hence, the Quadrant II solutions are
+                <m>\theta = \pi - \alpha + 2\pi k = \pi - \arcsin\left(\frac{1}{3}\right) + 2\pi k</m>,
+                for integers <m>k</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We may visualize the solutions to
+                <m>\tan(t)=-2</m> as angles <m>\theta</m> with <m>\tan(\theta) = -2</m>.
+                Since tangent is negative only in Quadrants II and IV, we focus our efforts there. <table xml:id="fig_trigeqn2"> <caption>Solving
+                <m>\tan(t)=-2</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-27.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-28.pdf"/></cell> </row> </tabular> </table> Since <m>-2</m> isn't the tangent of any of the <q>common angles</q>,
+                we need to use the arctangent function to express our answers.
+                The real number <m>t = \arctan(-2)</m> satisfies
+                <m>\tan(t)=-2</m> and <m>-\frac{\pi}{2} \lt t \lt 0</m>.
+                If we let <m>\beta = \arctan(-2)</m> radians,
+                we see that all of the Quadrant IV solutions to
+                <m>\tan(\theta) = -2</m> are coterminal with <m>\beta</m>.
+                Moreover,
+          the solutions from Quadrant II differ by exactly <m>\pi</m> units from the solutions in Quadrant IV, so all the solutions to <m>\tan(\theta) = -2</m> are of the form
+                <m>\theta = \beta + \pi k = \arctan(-2) + \pi k</m> for some integer <m>k</m>.
+                Switching back to the variable <m>t</m>,
+                we record our final answer to <m>\tan(t) = -2</m> as
+                <m>t = \arctan(-2) + \pi k</m> for integers <m>k</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The last equation we are asked to solve,
+                <m>\sec(x) = -\frac{5}{3}</m>,
+                poses two immediate problems.
+                First,
+          we are not told whether or not <m>x</m> represents an angle or a real number.
+                We assume the latter,
+                but note that we will use angles and the Unit Circle to solve the equation regardless.
+                Second, as we have mentioned,
+                there is no universally accepted range of the arcsecant function.
+                For that reason,
+                we adopt the advice given in <xref ref="CircularFunctions">Section</xref>
+                and convert this to the cosine problem <m>\cos(x) = -\frac{3}{5}</m>.
+                Adopting an angle approach,
+                we consider the equation
+          <m>\cos(\theta) = -\frac{3}{5}</m> and note that our solutions lie in Quadrants II and III. Since
+                <m>-\frac{3}{5}</m> isn't the cosine of any of the <q>common angles</q>,
+                we'll need to express our solutions in terms of the arccosine function.
+                The real number <m>t = \arccos\left(-\frac{3}{5}\right)</m> is defined so that
+                <m>\frac{\pi}{2} \lt t \lt \pi</m> with <m>\cos(t) = -\frac{3}{5}</m>.
+                If we let <m>\beta = \arccos\left(-\frac{3}{5}\right)</m> radians,
+                we see that <m>\beta</m> is a Quadrant II angle.
+                To obtain a Quadrant III angle solution,
+                we may simply use <m>-\beta = -\arccos\left(-\frac{3}{5}\right)</m>.
+                Since all angle solutions are coterminal with <m>\beta</m> or <m>-\beta</m>,
+                we get our solutions to
+          <m>\cos(\theta) = -\frac{3}{5}</m> to be <m>\theta = \beta + 2\pi k = \arccos\left(-\frac{3}{5}\right) + 2\pi k</m> or
+                <m>\theta = -\beta + 2\pi k = -\arccos\left(-\frac{3}{5}\right) + 2\pi k</m> for integers <m>k</m>.
+                Switching back to the variable <m>x</m>,
+                we record our final answer to
+          <m>\sec(x) = -\frac{5}{3}</m> as <m>x = \arccos\left(-\frac{3}{5}\right) + 2\pi k</m> or
+                <m>x = -\arccos\left(-\frac{3}{5}\right) + 2\pi k</m> for integers <m>k</m>. <table xml:id="fig_trigeqn3"> <caption>Solving
+                <m>\sec(x)=-\frac{5}{3}</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-29.pdf"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-30.pdf"/></cell> </row> </tabular> </table>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The reader is encouraged to check the answers found in <xref ref="basicinverseeqns">Example</xref>
+      - both analytically and with the calculator (see <xref ref="sectionarcstuffoncalc">Section</xref>).
+      With practice,
+      the inverse trigonometric functions will become as familiar to you as the square root function.
+      Speaking of practice <ellipsis />
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, find the exact value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( -1 \right) = -\dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( -\dfrac{\sqrt{3}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( -\dfrac{\sqrt{3}}{2} \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( -\dfrac{\sqrt{2}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( -\dfrac{\sqrt{2}}{2} \right) = -\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( -\dfrac{1}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( -\dfrac{1}{2} \right) = -\dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( 0 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( 0 \right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( \dfrac{1}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( \dfrac{1}{2} \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( \dfrac{\sqrt{2}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( \dfrac{\sqrt{2}}{2} \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( \dfrac{\sqrt{3}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( \dfrac{\sqrt{3}}{2} \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin \left( 1 \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( -1 \right) = \pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( -\dfrac{\sqrt{3}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( -\dfrac{\sqrt{3}}{2} \right) = \dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( -\dfrac{\sqrt{2}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( -\dfrac{\sqrt{2}}{2} \right) = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( -\dfrac{1}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( -\dfrac{1}{2} \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( 0 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( 0 \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( \dfrac{1}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( \dfrac{1}{2} \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( \dfrac{\sqrt{2}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( \dfrac{\sqrt{2}}{2} \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( \dfrac{\sqrt{3}}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( \dfrac{\sqrt{3}}{2} \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos \left( 1 \right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( -\sqrt{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( -\sqrt{3} \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( -1 \right) = -\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( -\dfrac{\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( -\dfrac{\sqrt{3}}{3} \right) = -\dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( 0 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( 0 \right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( \dfrac{\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( \dfrac{\sqrt{3}}{3} \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( 1 \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan \left( \sqrt{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan \left( \sqrt{3} \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( -\sqrt{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( -\sqrt{3} \right) = \dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( -1 \right) = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( -\dfrac{\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( -\dfrac{\sqrt{3}}{3} \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( 0 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( 0 \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( \dfrac{\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( \dfrac{\sqrt{3}}{3} \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( 1 \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot} \left( \sqrt{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot} \left( \sqrt{3} \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( 2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( 2 \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( 2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( 2 \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( \sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( \sqrt{2} \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( \sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( \sqrt{2} \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( \dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( \dfrac{2\sqrt{3}}{3} \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( \dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( \dfrac{2\sqrt{3}}{3} \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( 1 \right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( 1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( 1 \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      assume that the range of arcsecant is
+      <m>\left[0, \frac{\pi}{2} \right) \cup \left[\pi, \frac{3\pi}{2} \right)</m> and that the range of arccosecant is
+      <m>\left(0, \frac{\pi}{2} \right] \cup \left( \pi, \frac{3\pi}{2} \right]</m> when finding the exact value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -2 \right) = \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -\sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -\sqrt{2} \right) = \dfrac{5\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -\dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -\dfrac{2\sqrt{3}}{3} \right) = \dfrac{7\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -1 \right) = \pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -2 \right) = \dfrac{7\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -\sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -\sqrt{2} \right) = \dfrac{5\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -\dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -\dfrac{2\sqrt{3}}{3} \right) = \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -1 \right) = \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      assume that the range of arcsecant is
+      <m>\left[0, \frac{\pi}{2} \right) \cup \left( \frac{\pi}{2}, \pi \right]</m> and that the range of arccosecant is
+      <m>\left[ -\frac{\pi}{2}, 0 \right) \cup \left(0, \frac{\pi}{2} \right]</m> when finding the exact value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -2 \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -\sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -\sqrt{2} \right) = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -\dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -\dfrac{2\sqrt{3}}{3} \right) = \dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec} \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec} \left( -1 \right) = \pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -2 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -2 \right) = -\dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -\sqrt{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -\sqrt{2} \right) = -\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -\dfrac{2\sqrt{3}}{3} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -\dfrac{2\sqrt{3}}{3} \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc} \left( -1 \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc} \left( -1 \right) = -\dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the exact value or state that it is undefined.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{1}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{1}{2}\right)\right) = \dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left(-\dfrac{\sqrt{2}}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left(-\dfrac{\sqrt{2}}{2}\right)\right) = -\dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{3}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{3}{5}\right)\right) = \dfrac{3}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left(-0.42\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left(-0.42\right)\right) = -0.42</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{5}{4}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left(\dfrac{5}{4}\right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arccos\left(\dfrac{\sqrt{2}}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arccos\left(\dfrac{\sqrt{2}}{2}\right)\right) = \dfrac{\sqrt{2}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arccos\left(-\dfrac{1}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arccos\left(-\dfrac{1}{2}\right)\right) = -\dfrac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arccos\left(\dfrac{5}{13}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arccos\left(\dfrac{5}{13}\right)\right) = \dfrac{5}{13}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arccos\left(-0.998\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arccos\left(-0.998\right)\right) = -0.998</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arccos\left(\pi \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arccos\left(\pi \right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arctan\left(-1\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arctan\left(-1\right)\right) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arctan\left(\sqrt{3}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arctan\left(\sqrt{3}\right)\right) = \sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arctan\left(\dfrac{5}{12}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arctan\left(\dfrac{5}{12}\right)\right) = \dfrac{5}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arctan\left(0.965\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arctan\left(0.965\right)\right) = 0.965</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arctan\left( 3\pi \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arctan\left( 3\pi \right)\right) = 3\pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(1\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(1\right)\right) = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-\sqrt{3}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-\sqrt{3}\right)\right) = -\sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-\dfrac{7}{24}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-\dfrac{7}{24}\right)\right) = -\dfrac{7}{24}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-0.001\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left(-0.001\right)\right) = -0.001</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left( \dfrac{17\pi}{4} \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccot}\left( \dfrac{17\pi}{4} \right)\right) = \dfrac{17\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(2\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(2\right)\right) = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(-1\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(-1\right)\right) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(\dfrac{1}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(\dfrac{1}{2}\right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(0.75\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left(0.75\right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left( 117\pi \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arcsec}\left( 117\pi \right)\right)= 117\pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(\sqrt{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(\sqrt{2}\right)\right) = \sqrt{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(-\dfrac{2\sqrt{3}}{3}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(-\dfrac{2\sqrt{3}}{3}\right)\right) = -\dfrac{2\sqrt{3}}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(\dfrac{\sqrt{2}}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(\dfrac{\sqrt{2}}{2}\right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(1.0001\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left(1.0001\right)\right) = 1.0001</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left( \dfrac{\pi}{4} \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccsc}\left( \dfrac{\pi}{4} \right)\right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the exact value or state that it is undefined.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{\pi}{6}\right) \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin\left(\sin\left(-\dfrac{\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin\left(\sin\left(-\dfrac{\pi}{3}\right) \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{3\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{3\pi}{4}\right) \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{11\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{11\pi}{6}\right) \right) = -\dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{4\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arcsin\left(\sin\left(\dfrac{4\pi}{3}\right) \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{\pi}{4}\right) \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{2\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{2\pi}{3}\right) \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{3\pi}{2}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{3\pi}{2}\right) \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos\left(\cos\left(-\dfrac{\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos\left(\cos\left(-\dfrac{\pi}{6}\right) \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{5\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arccos\left(\cos\left(\dfrac{5\pi}{4}\right) \right) = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{\pi}{3}\right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan\left(\tan\left(-\dfrac{\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\tan\left(-\dfrac{\pi}{4}\right) \right) = -\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan\left(\tan\left(\pi\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\tan\left(\pi\right) \right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{\pi}{2}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{\pi}{2}\right) \right)</m> is undefined
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{2\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\arctan\left(\tan\left(\dfrac{2\pi}{3}\right) \right) = -\dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{\pi}{3}\right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(-\dfrac{\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(-\dfrac{\pi}{4}\right) \right) = \dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\pi\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\pi\right) \right)</m> is undefined
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{\pi}{2}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{3\pi}{2}\right) \right) = \dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{2\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccot}\left(\cot\left(\dfrac{2\pi}{3}\right) \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      assume that the range of arcsecant is
+      <m>\left[0, \frac{\pi}{2} \right) \cup \left[\pi, \frac{3\pi}{2} \right)</m> and that the range of arccosecant is
+      <m>\left(0, \frac{\pi}{2} \right] \cup \left( \pi, \frac{3\pi}{2} \right]</m> when finding the exact value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{\pi}{4}\right) \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{4\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{4\pi}{3}\right) \right) = \dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left( \dfrac{5\pi}{6} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left( \dfrac{5\pi}{6} \right) \right) = \dfrac{7\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(-\dfrac{\pi}{2} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(-\dfrac{\pi}{2} \right) \right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{5\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{5\pi}{3}\right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{\pi}{6}\right) \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{5\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{5\pi}{4}\right) \right) = \dfrac{5\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left( \dfrac{2\pi}{3} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left( \dfrac{2\pi}{3} \right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(-\dfrac{\pi}{2} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(-\dfrac{\pi}{2} \right) \right) = \dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{11\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{11\pi}{6}\right) \right) = \dfrac{7\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{11\pi}{12}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{11\pi}{12}\right) \right) = \dfrac{13\pi}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{9\pi}{8}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{9\pi}{8}\right) \right) = \dfrac{9\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      assume that the range of arcsecant is
+      <m>\left[0, \frac{\pi}{2} \right) \cup \left( \frac{\pi}{2}, \pi \right]</m> and that the range of arccosecant is
+      <m>\left[ -\frac{\pi}{2}, 0 \right) \cup \left(0, \frac{\pi}{2} \right]</m> when finding the exact value.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{\pi}{4}\right) \right) = \dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{4\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{4\pi}{3}\right) \right) = \dfrac{2\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left( \dfrac{5\pi}{6} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left( \dfrac{5\pi}{6} \right) \right) = \dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(-\dfrac{\pi}{2} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(-\dfrac{\pi}{2} \right) \right)</m> is undefined.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{5\pi}{3}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{5\pi}{3}\right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{\pi}{6}\right) \right) = \dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{5\pi}{4}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{5\pi}{4}\right) \right) = -\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left( \dfrac{2\pi}{3} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left( \dfrac{2\pi}{3} \right) \right) = \dfrac{\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(-\dfrac{\pi}{2} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(-\dfrac{\pi}{2} \right) \right) = -\dfrac{\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{11\pi}{6}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{11\pi}{6}\right) \right) = -\dfrac{\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{11\pi}{12}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arcsec}\left(\sec\left(\dfrac{11\pi}{12}\right) \right) = \dfrac{11\pi}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{9\pi}{8}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\operatorname{arccsc}\left(\csc\left(\dfrac{9\pi}{8}\right) \right) = -\dfrac{\pi}{8}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the exact value or state that it is undefined.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arccos\left(-\dfrac{1}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arccos\left(-\dfrac{1}{2}\right)\right) = \dfrac{\sqrt{3}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arccos\left(\dfrac{3}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arccos\left(\dfrac{3}{5}\right)\right) = \dfrac{4}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arctan\left(-2\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arctan\left(-2\right)\right) = -\dfrac{2\sqrt{5}}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\operatorname{arccot}\left(\sqrt{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\operatorname{arccot}\left(\sqrt{5}\right)\right) = \dfrac{\sqrt{6}}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\operatorname{arccsc}\left(-3\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\operatorname{arccsc}\left(-3\right)\right) = -\dfrac{1}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arcsin\left(-\dfrac{5}{13}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arcsin\left(-\dfrac{5}{13}\right)\right) = \dfrac{12}{13}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arctan\left(\sqrt{7} \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arctan\left(\sqrt{7} \right)\right) = \dfrac{\sqrt{2}}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\operatorname{arccot}\left( 3 \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\operatorname{arccot}\left( 3 \right)\right) = \dfrac{3\sqrt{10}}{10}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\operatorname{arcsec}\left( 5 \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\operatorname{arcsec}\left( 5 \right)\right) = \dfrac{1}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arcsin\left(-\dfrac{2\sqrt{5}}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arcsin\left(-\dfrac{2\sqrt{5}}{5}\right)\right)=-2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\arccos\left(-\dfrac{1}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\arccos\left(-\dfrac{1}{2}\right)\right) = -\sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\operatorname{arcsec}\left(\dfrac{5}{3}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\operatorname{arcsec}\left(\dfrac{5}{3}\right)\right) = \dfrac{4}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left(\operatorname{arccot}\left( 12 \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left(\operatorname{arccot}\left( 12 \right)\right) = \dfrac{1}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\arcsin\left(\dfrac{12}{13}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\arcsin\left(\dfrac{12}{13}\right)\right) = \dfrac{5}{12}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\arccos\left(\dfrac{\sqrt{3}}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\arccos\left(\dfrac{\sqrt{3}}{2}\right)\right) = \sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\operatorname{arccsc}\left(\sqrt{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\operatorname{arccsc}\left(\sqrt{5}\right)\right) = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot\left(\arctan \left( 0.25 \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cot\left(\arctan \left( 0.25 \right)\right) = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\arccos\left(\dfrac{\sqrt{3}}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\arccos\left(\dfrac{\sqrt{3}}{2}\right)\right) = \dfrac{2\sqrt{3}}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\arcsin\left(-\dfrac{12}{13}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\arcsin\left(-\dfrac{12}{13}\right)\right) = \dfrac{13}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\arctan\left(10\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\arctan\left(10\right)\right) = \sqrt{101}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec\left(\operatorname{arccot}\left(-\dfrac{\sqrt{10}}{10}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec\left(\operatorname{arccot}\left(-\dfrac{\sqrt{10}}{10}\right)\right) = -\sqrt{11}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\operatorname{arccot}\left(9 \right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\operatorname{arccot}\left(9 \right)\right) = \sqrt{82}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\arcsin\left(\dfrac{3}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\arcsin\left(\dfrac{3}{5}\right)\right) = \dfrac{5}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc\left(\arctan\left(-\dfrac{2}{3}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc\left(\arctan\left(-\dfrac{2}{3}\right)\right) = -\dfrac{\sqrt{13}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the exact value or state that it is undefined.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arcsin\left( \dfrac{5}{13} \right) + \dfrac{\pi}{4}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arcsin\left( \dfrac{5}{13} \right) + \dfrac{\pi}{4}\right) = \dfrac{17\sqrt{2}}{26}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left( \operatorname{arcsec}(3) + \arctan(2) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left( \operatorname{arcsec}(3) + \arctan(2) \right) = \dfrac{\sqrt{5} - 4\sqrt{10}}{15}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan\left( \arctan(3) + \arccos\left(-\dfrac{3}{5}\right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan\left( \arctan(3) + \arccos\left(-\dfrac{3}{5}\right) \right) = \dfrac{1}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(2\arcsin\left(-\dfrac{4}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(2\arcsin\left(-\dfrac{4}{5}\right)\right)= -\dfrac{24}{25}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(2\operatorname{arccsc}\left(\dfrac{13}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(2\operatorname{arccsc}\left(\dfrac{13}{5}\right)\right) = \dfrac{120}{169}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(2\arctan\left(2\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(2\arctan\left(2\right)\right) = \dfrac{4}{5}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(2 \arcsin\left(\dfrac{3}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(2 \arcsin\left(\dfrac{3}{5}\right)\right) = \dfrac{7}{25}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(2 \operatorname{arcsec}\left(\dfrac{25}{7}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(2 \operatorname{arcsec}\left(\dfrac{25}{7}\right)\right) = -\dfrac{527}{625}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(2 \operatorname{arccot}\left(-\sqrt{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(2 \operatorname{arccot}\left(-\sqrt{5}\right)\right) = \dfrac{2}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left( \dfrac{\arctan(2)}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left( \dfrac{\arctan(2)}{2} \right) = \sqrt{\dfrac{5-\sqrt{5}}{10}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      rewrite the quantity as algebraic expressions of <m>x</m> and state the domain on which the equivalence is valid.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( \arccos \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin \left( \arccos \left( x \right) \right) = \sqrt{1 - x^{2}}</m> for <m>-1 \leq x \leq 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( \arctan \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left( \arctan \left( x \right) \right) = \dfrac{1}{\sqrt{1 + x^{2}}}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( \arcsin \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan \left( \arcsin \left( x \right) \right) = \dfrac{x}{\sqrt{1 - x^{2}}}</m> for <m>-1 \lt x \lt 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec \left( \arctan \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec \left( \arctan \left( x \right) \right) = \sqrt{1 + x^{2}}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc \left( \arccos \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\csc \left( \arccos \left( x \right) \right) = \dfrac{1}{\sqrt{1 - x^{2}}}</m> for <m>-1 \lt x \lt 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 2\arctan \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin \left( 2\arctan \left( x \right) \right) = \dfrac{2x}{x^{2} + 1}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( 2\arccos \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin \left( 2\arccos \left( x \right) \right) = 2x\sqrt{1-x^2}</m> for <m>-1 \leq x \leq 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( 2\arctan \left( x \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left( 2\arctan \left( x \right) \right) = \dfrac{1 - x^{2}}{1 + x^{2}}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(\arccos(2x))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(\arccos(2x)) = \sqrt{1-4x^2}</m> for <m>-\frac{1}{2} \leq x \leq \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(\arccos\left(\dfrac{x}{5}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(\arccos\left(\dfrac{x}{5}\right)\right) = \dfrac{\sqrt{25-x^2}}{5}</m> for <m>-5 \leq x \leq 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arcsin\left(\dfrac{x}{2}\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arcsin\left(\dfrac{x}{2}\right)\right) = \dfrac{\sqrt{4-x^2}}{2}</m> for <m>-2 \leq x \leq 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos\left(\arctan\left(3x\right)\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos\left(\arctan\left(3x\right)\right) = \dfrac{1}{\sqrt{1+9x^{2}}}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(2\arcsin(7x))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin(2\arcsin(7x)) = 14x \sqrt{1-49x^2}</m> for <m>-\dfrac{1}{7} \leq x \leq \dfrac{1}{7}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin\left(2 \arcsin\left( \dfrac{x\sqrt{3}}{3} \right) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin\left(2 \arcsin\left( \dfrac{x\sqrt{3}}{3} \right) \right) = \dfrac{2x\sqrt{3-x^2}}{3}</m> for <m>-\sqrt{3} \leq x \leq \sqrt{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(2 \arcsin(4x))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos(2 \arcsin(4x)) = 1 - 32x^2</m> for <m>-\dfrac{1}{4} \leq x \leq \dfrac{1}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec(\arctan(2x))\tan(\arctan(2x))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sec(\arctan(2x))\tan(\arctan(2x)) = 2x \sqrt{1+4x^2}</m> for all <m>x</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( \arcsin(x) + \arccos(x) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin \left( \arcsin(x) + \arccos(x) \right) = 1</m> for <m>-1 \leq x \leq 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos \left( \arcsin(x) + \arctan(x) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\cos \left( \arcsin(x) + \arctan(x) \right) = \dfrac{\sqrt{1 - x^{2}} - x^{2}}{\sqrt{1 + x^{2}}}</m> for <m>-1 \leq x \leq 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan \left( 2\arcsin(x) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\tan \left( 2\arcsin(x) \right) = \dfrac{2x\sqrt{1 - x^{2}}}{1 - 2x^{2}}</m> for <m>x</m> in
+          <m>\left(-1, -\dfrac{\sqrt{2}}{2}\right) \cup \left(-\dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2} \right) \cup \left(\dfrac{\sqrt{2}}{2}, 1\right)</m><fn>The equivalence for
+          <m>x = \pm 1</m> can be verified independently of the derivation of the formula,
+          but Calculus is required to fully understand what is happening at those <m>x</m> values.
+          You'll see what we mean when you work through the details of the identity for <m>\tan(2t)</m>.
+          For now, we exclude <m>x = \pm 1</m> from our answer.</fn></p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin \left( \dfrac{1}{2}\arctan(x) \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sin \left( \dfrac{1}{2}\arctan(x) \right) = \left\{ \begin{array}{rr} \sqrt{\dfrac{\sqrt{x^{2} + 1} - 1}{2\sqrt{x^{2} + 1}}} \amp \text{ for \(x \geq 0\) } \\ -\sqrt{\dfrac{\sqrt{x^{2} + 1} - 1}{2\sqrt{x^{2} + 1}}} \amp \text{ for \(x \lt 0\) } \end{array} \right</m>.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sin(\theta) = \dfrac{x}{2}</m> for <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m>,
+          find an expression for <m>\theta + \sin(2\theta)</m> in terms of <m>x</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sin(\theta) = \dfrac{x}{2}</m> for <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m>,
+          then <m>\theta + \sin(2\theta) = \arcsin \left( \dfrac{x}{2} \right) + \dfrac{x\sqrt{4 - x^{2}}}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\tan(\theta) = \dfrac{x}{7}</m> for <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m>,
+          find an expression for <m>\dfrac{1}{2}\theta - \dfrac{1}{2}\sin(2\theta)</m> in terms of <m>x</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\tan(\theta) = \dfrac{x}{7}</m> for <m>-\dfrac{\pi}{2} \lt \theta \lt \dfrac{\pi}{2}</m>,
+          then <m>\dfrac{1}{2}\theta - \dfrac{1}{2}\sin(2\theta) = \dfrac{1}{2} \arctan \left( \dfrac{x}{7} \right) - \dfrac{7x}{x^{2} + 49}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          If <m>\sec(\theta) = \dfrac{x}{4}</m> for <m>0 \lt \theta \lt \dfrac{\pi}{2}</m>,
+          find an expression for <m>4\tan(\theta) - 4\theta</m> in terms of <m>x</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          If <m>\sec(\theta) = \dfrac{x}{4}</m> for <m>0 \lt \theta \lt \dfrac{\pi}{2}</m>,
+          then <m>4\tan(\theta) - 4\theta = \sqrt{x^{2} - 16} - 4\operatorname{arcsec} \left( \dfrac{x}{4} \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      solve the equation using the techniques discussed in <xref ref="basicinverseeqns">Example</xref>
+      then approximate the solutions which lie in the interval
+      <m>[0, 2\pi)</m> to four decimal places.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = \dfrac{7}{11}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arcsin\left(\dfrac{7}{11}\right) + 2\pi k</m> or <m>x = \pi - \arcsin\left(\dfrac{7}{11}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.6898, \, 2.4518</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = -\dfrac{2}{9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos\left(-\dfrac{2}{9}\right) + 2\pi k</m> or <m>x = - \arccos\left(-\dfrac{2}{9}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 1.7949, \, 4.4883</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = -0.569</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pi + \arcsin(0.569) + 2\pi k</m> or <m>x = 2\pi - \arcsin(0.569) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 3.7469, \, 5.6779</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = 0.117</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos(0.117) + 2\pi k</m> or <m>x = 2\pi - \arccos(0.117) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 1.4535, \, 4.8297</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = 0.008</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arcsin(0.008) + 2\pi k</m> or <m>x = \pi - \arcsin(0.008) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.0080, \, 3.1336</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = \dfrac{359}{360}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos\left(\dfrac{359}{360}\right) + 2\pi k</m> or <m>x = 2\pi - \arccos\left(\dfrac{359}{360}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.0746, \, 6.2086</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan(x) = 117</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan(117) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 1.56225, \, 4.70384</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot(x) = -12</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan\left(-\dfrac{1}{12}\right) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 3.0585, \, 6.2000</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sec(x) = \dfrac{3}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos\left(\dfrac{2}{3}\right) + 2\pi k</m> or <m>x = 2\pi - \arccos\left(\dfrac{2}{3}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.8411, \, 5.4422</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\csc(x) = -\dfrac{90}{17}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pi + \arcsin\left(\dfrac{17}{90}\right) + 2\pi k</m> or <m>x = 2\pi - \arcsin\left(\dfrac{17}{90}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 3.3316, \, 6.0932</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan(x) = -\sqrt{10}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan\left(-\sqrt{10}\right) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 1.8771, \, 5.0187</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = \dfrac{3}{8}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arcsin\left(\dfrac{3}{8}\right) + 2\pi k</m> or <m>x = \pi - \arcsin\left(\dfrac{3}{8}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.3844, \, 2.7572</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = -\dfrac{7}{16}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos\left(-\dfrac{7}{16}\right) + 2\pi k</m> or <m>x = - \arccos\left(-\dfrac{7}{16}\right) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 2.0236, \, 4.2596</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan(x) = 0.03</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan(0.03) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.0300, \, 3.1716</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = 0.3502</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arcsin(0.3502) + 2\pi k</m> or <m>x = \pi - \arcsin(0.3502) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.3578, \,2.784</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\sin(x) = -0.721</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \pi + \arcsin(0.721) + 2\pi k</m> or <m>x = 2\pi - \arcsin(0.721) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 3.9468, \, 5.4780</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = 0.9824</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos(0.9824) + 2\pi k</m> or <m>x = 2\pi - \arccos(0.9824) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 0.1879, \, 6.0953</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cos(x) = -0.5637</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arccos(-0.5637) + 2\pi k</m> or <m>x = - \arccos(-0.5637) + 2\pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 2.1697, \, 4.1135</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\cot(x) = \dfrac{1}{117}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan(117) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 1.5622, \, 4.7038</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\tan(x) = -0.6109</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>x = \arctan(-0.6109) + \pi k</m>,
+          in <m>[0, 2\pi)</m>, <m>x \approx 2.5932, \, 5.7348</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the two acute angles in the right triangle whose sides have the given lengths.
+      Express your answers using degree measure rounded to two decimal places.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          3, 4 and 5
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>36.87^{\circ}</m> and <m>53.13^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          5, 12 and 13
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>22.62^{\circ}</m> and <m>67.38^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          336, 527 and 625
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>32.52^{\circ}</m> and <m>57.48^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A guy wire 1000 feet long is attached to the top of a tower.
+          When pulled taut it touches level ground 360 feet from the base of the tower.
+          What angle does the wire make with the ground?
+          Express your answer using degree measure rounded to one decimal place.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>68.9^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          At Cliffs of Insanity Point, The Great Sasquatch Canyon is 7117 feet deep.
+          From that point,
+          a fire is seen at a location known to be 10 miles away from the base of the sheer canyon wall.
+          What angle of depression is made by the line of sight from the canyon edge to the fire?
+          Express your answer using degree measure rounded to one decimal place.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>7.7^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Shelving is being built at the Utility Muffin Research Library which is to be 14 inches deep.
+          An 18-inch rod will be attached to the wall and the underside of the shelf at its edge away from the wall,
+          forming a right triangle under the shelf to support it.
+          What angle, to the nearest degree,
+          will the rod make with the wall?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>51^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A parasailor is being pulled by a boat on Lake Ippizuti.
+          The cable is 300 feet long and the parasailor is 100 feet above the surface of the water.
+          What is the angle of elevation from the boat to the parasailor?
+          Express your answer using degree measure rounded to one decimal place.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>19.5^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A tag-and-release program to study the Sasquatch population of the eponymous Sasquatch National Park is begun.
+          From a 200 foot tall tower,
+          a ranger spots a Sasquatch lumbering through the wilderness directly towards the tower.
+          Let <m>\theta</m> denote the angle of depression from the top of the tower to a point on the ground.
+          If the range of the rifle with a tranquillizer dart is 300 feet,
+          find the smallest value of <m>\theta</m> for which the corresponding point on the ground is in range of the rifle.
+          Round your answer to the nearest hundredth of a degree.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>41.81^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      rewrite the given function as a sinusoid of the form
+      <m>S(x) = A\sin(\omega x + \phi)</m> using <xref ref="sinusoidexercise1">Exercises</xref>
+      and <xref ref="sinusoidexercise2"></xref>
+      in <xref ref="TrigGraphs">Section</xref> for reference.
+      Approximate the value of <m>\phi</m>
+      (which is in radians, of course)
+      to four decimal places.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 5\sin(3x) + 12\cos(3x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 5\sin(3x) + 12\cos(3x) = 13\sin\left(3x + \arcsin\left(\dfrac{12}{13}\right)\right) \approx 13\sin(3x + 1.1760)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3\cos(2x) + 4\sin(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 3\cos(2x) + 4\sin(2x) = 5\sin\left(2x+\arcsin\left(\dfrac{3}{5}\right) \right) \approx 5\sin(2x+0.6435)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \cos(x) - 3\sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \cos(x) - 3\sin(x) = \sqrt{10} \sin\left(x + \arccos\left(-\dfrac{3\sqrt{10}}{10} \right)\right) \approx \sqrt{10} \sin(x + 2.8198)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 7\sin(10x) - 24\cos(10x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 7\sin(10x) - 24\cos(10x) = 25\sin\left( 10x + \arcsin\left(-\dfrac{24}{25}\right)\right) \approx 25 \sin(10x-1.2870)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -\cos(x) - 2\sqrt{2} \sin(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -\cos(x) - 2\sqrt{2} \sin(x) = 3\sin\left(x+\pi + \arcsin\left(\dfrac{1}{3}\right)\right) \approx 3\sin(x+3.4814)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2\sin(x) - \cos(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 2\sin(x) - \cos(x) = \sqrt{5}\sin\left(x + \arcsin\left(-\dfrac{\sqrt{5}}{5}\right)\right) \approx \sqrt{5}\sin(x -0.4636)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, find the domain of the given function.
+      Write your answers in interval notation.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arcsin(5x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\dfrac{1}{5}, \dfrac{1}{5}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arccos\left(\dfrac{3x-1}{2} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\dfrac{1}{3}, 1 \right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arcsin\left(2x^2\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[-\dfrac{\sqrt{2}}{2}, \dfrac{\sqrt{2}}{2}\right]</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arccos\left(\dfrac{1}{x^2-4}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -\sqrt{5}] \cup [-\sqrt{3}, \sqrt{3}] \cup [\sqrt{5}, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \arctan(4x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arccot}\left(\dfrac{2x}{x^2-9}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3) \cup (-3,3) \cup (3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =\arctan(\ln(2x-1))</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{1}{2}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arccot}(\sqrt{2x-1})</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left[\dfrac{1}{2}, \infty \right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arcsec}(12x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(-\infty, -\dfrac{1}{12}\right] \cup \left[\dfrac{1}{12}, \infty\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arccsc}(x+5)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -6] \cup [-4, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arcsec}\left(\dfrac{x^3}{8}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -2] \cup [2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \operatorname{arccsc}\left(e^{2x}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[0, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that <m>\operatorname{arcsec}(x) = \arccos \left( \dfrac{1}{x} \right)</m> for <m>|x| \geq 1</m> as long as we use
+          <m>\left[0, \dfrac{\pi}{2} \right) \cup \left( \dfrac{\pi}{2}, \pi \right]</m> as the range of <m>f(x) = \operatorname{arcsec}(x)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that <m>\operatorname{arccsc}(x) = \arcsin \left( \dfrac{1}{x} \right)</m> for <m>|x| \geq 1</m> as long as we use
+          <m>\left[ -\dfrac{\pi}{2}, 0 \right) \cup \left(0, \dfrac{\pi}{2} \right]</m> as the range of <m>f(x) = \operatorname{arccsc}(x)</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that <m>\arcsin(x) + \arccos(x) = \dfrac{\pi}{2}</m> for <m>-1 \leq x \leq 1</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Discuss with your classmates why <m>\arcsin\left(\dfrac{1}{2}\right) \neq 30^{\circ}</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Use the following picture and series of exercises to show that
+          <me>
+            \arctan(1) + \arctan(2) + \arctan(3) = \pi
+          </me>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/ArcTrig-31.pdf"/>
+
+          <ol>
+            <li>
+              <p>
+                Clearly <m>\triangle AOB</m> and
+                <m>\triangle BCD</m> are right triangles because the line through <m>O</m> and <m>A</m> and the line through <m>C</m> and <m>D</m> are perpendicular to the <m>x</m>-axis.
+                Use the distance formula to show that
+                <m>\triangle BAD</m> is also a right triangle
+                (with <m>\angle BAD</m> being the right angle)
+                by showing that the sides of the triangle satisfy the Pythagorean Theorem.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use <m>\triangle AOB</m> to show that <m>\alpha = \arctan(1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use <m>\triangle BAD</m> to show that <m>\beta = \arctan(2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use <m>\triangle BCD</m> to show that <m>\gamma = \arctan(3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the fact that <m>O</m>,
+                <m>B</m> and <m>C</m> all lie on the <m>x</m>-axis to conclude that <m>\alpha + \beta + \gamma = \pi</m>.
+                Thus <m>\arctan(1) + \arctan(2) + \arctan(3) = \pi</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

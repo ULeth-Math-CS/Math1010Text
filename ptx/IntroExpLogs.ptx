@@ -1,0 +1,2604 @@
+
+
+<section xml:id="IntroExpLogs">
+  <title>Introduction to Exponential and Logarithmic Functions</title>
+  <introduction>
+    <p>
+      Of all of the functions we study in this text,
+      exponential and logarithmic functions are possibly the ones which impact everyday life the most.
+      This section introduces us to these functions while the rest of the chapter will more thoroughly explore their properties.
+      Up to this point,
+      we have dealt with functions which involve terms like <m>x^2</m> or <m>x^{2/3}</m>,
+      in other words,
+      terms of the form <m>x^{p}</m> where the base of the term, <m>x</m>,
+      varies but the exponent of each term,
+      <m>p</m>, remains constant.
+      In this chapter, we study functions of the form
+      <m>f(x) = b^{x}</m> where the base <m>b</m> is a constant and the exponent <m>x</m> is the variable.
+      We start our exploration of these functions with
+      <m>f(x) = 2^{x}</m>. (Apparently this is a tradition.
+      Every textbook we have ever read starts with
+      <m>f(x) = 2^{x}</m>.) We make a table of values,
+      plot the points and connect the dots in a pleasing fashion:
+      see <xref ref="fig_introexp1">Figure</xref>
+    </p>
+
+    <aside>
+      <p>
+        Exponential and logarithmic functions frequently occur in solutions to differential equations,
+        which are used to produce mathematical models of phenomena throughout the physical,
+        life, and social sciences.
+        You'll see some examples if you continue on to Calculus I and II, and even more if you take Math 3600,
+        our first course in differential equations.
+      </p>
+    </aside>
+    <table xml:id="fig_introexp1">
+      <caption>Plotting <m>f(x)=2^x</m></caption>
+      <tabular>
+      <row>
+      <cell><tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>x</m></cell>
+          <cell><m>f(x)</m></cell>
+          <cell><m>(x,f(x))</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell><m>2^{-3} = \frac{1}{8}</m></cell>
+          <cell><m>\left(-3, \frac{1}{8} \right)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>-2</m></cell>
+          <cell><m>2^{-2} = \frac{1}{4}</m></cell>
+          <cell><m>\left(-2, \frac{1}{4} \right)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell><m>2^{-1} = \frac{1}{2}</m></cell>
+          <cell><m>\left(-1, \frac{1}{2} \right)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>2^{0} = 1</m></cell>
+          <cell><m>( 0 ,1)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>2^{1} = 2</m></cell>
+          <cell><m>( 1, 2)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell><m>2^{2} = 4</m></cell>
+          <cell><m>(2,4)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>3</m></cell>
+          <cell><m>2^{3} = 8</m></cell>
+          <cell><m>(3, 8)</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular></cell>
+      </row>
+      <row>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-1.pdf"/></cell>
+      </row>
+      </tabular>
+    </table>
+
+    <p>
+      A few remarks about the graph of
+      <m>f(x) = 2^{x}</m> which we have constructed are in order.
+      As <m>x \rightarrow -\infty</m> and attains values like <m>x = -100</m> or <m>x=-1000</m>,
+      the function <m>f(x) = 2^{x}</m> takes on values like
+      <m>f(-100) = 2^{-100} = \frac{1}{2^{100}}</m> or <m>f(-1000) = 2^{-1000} = \frac{1}{2^{1000}}</m>.
+      In other words, as <m>x \rightarrow -\infty</m>,
+      <me>
+        2^{x} \approx \frac{1}{\mbox{very big \((+)\)} }  \approx \mbox{very small \((+)\)}
+      </me>
+    </p>
+
+    <p>
+      So as <m>x \rightarrow -\infty</m>,
+      <m>2^{x} \rightarrow 0^{+}</m>.
+      This is represented graphically using the <m>x</m>-axis
+      (the line <m>y = 0</m>)
+      as a horizontal asymptote.
+      On the flip side, as <m>x \rightarrow \infty</m>,
+      we find <m>f(100) = 2^{100}</m>,
+      <m>f(1000) = 2^{1000}</m>, and so on,
+      thus <m>2^{x} \rightarrow \infty</m>.
+      As a result,
+      our graph suggests the range of <m>f</m> is <m>(0,\infty)</m>.
+      The graph of <m>f</m> passes the Horizontal Line Test which means <m>f</m> is one-to-one and hence invertible.
+      We also note that when we <q>connected the dots in a pleasing fashion</q>,
+      we have made the implicit assumption that <m>f(x) = 2^{x}</m> is continuous
+      (recall that this means there are no holes or other kinds of breaks in the graph)
+      and has a domain of all real numbers.
+      In particular, we have suggested that things like
+      <m>2^{\sqrt{3}}</m> exist as real numbers.
+      We should take a moment to discuss what something like <m>2^{\sqrt{3}}</m> might mean,
+      and refer the interested reader to a solid course in Calculus for a more rigorous explanation.
+      The number <m>\sqrt{3} = 1.73205 \ldots</m> is an irrational number and as such,
+      its decimal representation neither repeats nor terminates.
+      We can, however, approximate
+      <m>\sqrt{3}</m> by terminating decimals, and it stands to reason
+      (this is where Calculus and continuity come into play)
+      that we can use these to approximate <m>2^{\sqrt{3}}</m>.
+      For example, if we approximate <m>\sqrt{3}</m> by <m>1.73</m>,
+      we can approximate <m>2^{\sqrt{3}} \approx 2^{1.73} = 2^{\frac{173}{100}} = \sqrt[100]{2^{173}}</m>.
+      It is not, by any means, a pleasant number,
+      but it is at least a number that we understand in terms of powers and roots.
+      It also stands to reason that better and better approximations of
+      <m>\sqrt{3}</m> yield better and better approximations of <m>2^{\sqrt{3}}</m>,
+      so the value of <m>2^{\sqrt{3}}</m> should be the result of this sequence of approximations.
+    </p>
+
+    <aside>
+      <p>
+        You (yes, you) can actually prove that
+        <m>\sqrt{3}</m> is irrational by considering the polynomial
+        <m>p(x) = x^2-3</m> and showing it has no rational zeros by applying <xref ref="RZT">Theorem</xref>.
+      </p>
+    </aside>
+    <aside>
+      <p>
+        To fully understand the argument we used to define <m>2^x</m> when <m>x</m> is irrational,
+        you'll have to proceed far enough through the Calculus sequence (Calculus III should do it) to encounter the topic of convergence of infinite sequences.
+      </p>
+    </aside>
+    <p>
+      Suppose we wish to study the family of functions <m>f(x) = b^{x}</m>.
+      Which bases <m>b</m> make sense to study?
+      We find that we run into difficulty if <m>b \lt 0</m>.
+      For example, if <m>b = -2</m>,
+      then the function <m>f(x) = (-2)^{x}</m> has trouble,
+      for instance,
+      at <m>x = \frac{1}{2}</m> since
+      <m>(-2)^{1/2} = \sqrt{-2}</m> is not a real number.
+      In general,
+      if <m>x</m> is any rational number with an even denominator,
+      then <m>(-2)^{x}</m> is not defined,
+      so we must restrict our attention to bases <m>b \geq 0</m>.
+      What about <m>b = 0</m>?
+      The function <m>f(x) = 0^{x}</m> is undefined for
+      <m>x \leq 0</m> because we cannot divide by <m>0</m> and <m>0^{0}</m> is an indeterminant form.
+      For <m>x > 0</m>, <m>0^{x} = 0</m> so the function
+      <m>f(x) = 0^{x}</m> is the same as the function <m>f(x) = 0</m>,
+      <m>x > 0</m>. \phantomsection We know everything we can possibly know about this function,
+      so we exclude it from our investigations.
+      The only other base we exclude is <m>b=1</m>,
+      since the function <m>f(x) = 1^{x} = 1</m> is, once again,
+      a function we have already studied.
+      We are now ready for our definition of exponential functions.
+    </p>
+
+    <definition xml:id="expfcndefn">
+      <title>Exponential function</title>
+      <statement>
+        <p>
+          A function of the form <m>f(x) = b^{x}</m> where <m>b</m> is a fixed real number,
+          <m>b > 0</m>, <m>b \neq 1</m> is called a
+              <idx><h>function</h><h>exponential</h></idx><idx><h>exponential function</h><h>definition of</h></idx>
+          <term>base <term>b</term> exponential function</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      We leave it to the reader to verify
+      (by graphing some more examples on your own)
+      that if <m>b > 1</m>, then the exponential function
+      <m>f(x) = b^{x}</m> will share the same basic shape and characteristics as <m>f(x) = 2^{x}</m>.
+      What if <m>0 \lt b \lt 1</m>?
+      Consider <m>g(x) = \left(\frac{1}{2}\right)^{x}</m>.
+      We could certainly build a table of values and connect the points,
+      or we could take a step back and note that <m>g(x) = \left(\frac{1}{2}\right)^{x} = \left(2^{-1}\right)^{x} = 2^{-x} = f(-x)</m>,
+      where <m>f(x) = 2^{x}</m>.
+      Thinking back to <xref ref="Transformations">Section</xref>,
+      the graph of <m>f(-x)</m> is obtained from the graph of <m>f(x)</m> by reflecting it across the <m>y</m>-axis.
+      We get the graph in <xref ref="fig_introexp2">Figure</xref> (b).
+    </p>
+
+    <table xml:id="fig_introexp2">
+      <caption>Reflecting <m>y=2^x</m> across the <m>y</m>-axis to obtain the graph <m>y=2^{-x}</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-2.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(a) <m>y=f(x)=2^x</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-3.pdf"/></cell>
+        </row>
+        <row>
+          <cell>(b) <m>y=g(x)=f(-x)=2^{-x}</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      We see that the domain and range of <m>g</m> match that of <m>f</m>,
+      namely <m>(-\infty, \infty)</m> and <m>(0,\infty)</m>,
+      respectively.
+      Like <m>f</m>, <m>g</m> is also one-to-one.
+      Whereas <m>f</m> is always increasing,
+      <m>g</m> is always decreasing.
+      As a result, as <m>x \rightarrow -\infty</m>,
+      <m>g(x) \rightarrow \infty</m>, and on the flip side,
+      as <m>x \rightarrow \infty</m>,
+      <m>g(x) \rightarrow 0^{+}</m>.
+      It shouldn't be too surprising that for all choices of the base <m>0 \lt b \lt 1</m>,
+      the graph of <m>y=b^{x}</m> behaves similarly to the graph of <m>g</m>.
+      We summarize the basic properties of exponential functions in the following theorem. (The proof of which,
+      like many things discussed in the text, requires Calculus.)
+    </p>
+
+    <theorem xml:id="expfcnprops">
+      <title>Properties of Exponential Functions</title>
+      <statement>
+        <p>
+          Suppose <m>f(x) = b^{x}</m>.
+              <idx><h>exponential function</h><h>graphical properties of</h></idx>
+          <ul>
+            <li>
+              <p>
+                The domain of <m>f</m> is
+                <m>(-\infty, \infty)</m> and the range of <m>f</m> is <m>(0, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(0,1)</m> is on the graph of <m>f</m> and <m>y=0</m> is a horizontal asymptote to the graph of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> is one-to-one,
+                continuous and smooth (the graph of <m>f</m> has no sharp turns or corners).
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              If <m>b > 1</m>:
+
+              <ul>
+                <li>
+                  <p>
+                    <m>f</m> is always increasing
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow -\infty</m>,
+                    <m>f(x) \rightarrow 0^{+}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow \infty</m>,
+                    <m>f(x) \rightarrow \infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>f</m> resembles:
+                    <img src="figures/ExpLogsGraphics/IntroExpLogs-4.pdf"/> <m>y = b^{x}</m>,
+                    <m>b > 1</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <p>
+              If <m>0\lt b\lt 1</m>:
+
+              <ul>
+                <li>
+                  <p>
+                    <m>f</m> is always decreasing
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow -\infty</m>,
+                    <m>f(x) \rightarrow \infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow \infty</m>,
+                    <m>f(x) \rightarrow 0^{+}</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>f</m> resembles:
+                    <img src="figures/ExpLogsGraphics/IntroExpLogs-5.pdf"/>
+                    <m>y = b^{x}</m>, <m>0 \lt b \lt 1</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <p>
+      Of all of the bases for exponential functions,
+      two occur the most often in scientific circles.
+      The first, base <m>10</m>, is often called the
+          <idx><h>exponential function</h><h>common base</h></idx><idx><h>common base</h></idx>
+      <em>common base</em>.
+      The second base is an irrational number,
+      <m>e \approx 2.718</m>, called the
+          <idx><h>natural base</h></idx><idx><h>exponential function</h><h>natural base</h></idx>
+      <em>natural base</em>.
+      You may encounter a more formal discussion of the number <m>e</m> in later Calculus courses.
+      For now, it is enough to know that since <m>e > 1</m>,
+      <m>f(x) = e^{x}</m> is an increasing exponential function.
+      The following examples give us an idea how these functions are used in the wild.
+    </p>
+
+    <example xml:id="cardepreciationex">
+      <title>Modelling vehicle depreciation</title>
+      <statement>
+        <p>
+          The value of a car can be modelled by <m>V(x) = 25\left(\frac{4}{5}\right)^{x}</m>,
+          where <m>x \geq 0</m> is age of the car in years and <m>V(x)</m> is the value in thousands of dollars.
+              <idx><h>depreciation</h></idx>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>V(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Sketch the graph of <m>y=V(x)</m> using transformations.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the horizontal asymptote of the graph you found in 2.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>V(0)</m>,
+                we replace <m>x</m> with <m>0</m> to obtain <m>V(0) = 25\left(\frac{4}{5}\right)^{0} = 25</m>.
+                Since <m>x</m> represents the age of the car in years,
+                <m>x=0</m> corresponds to the car being brand new.
+                Since <m>V(x)</m> is measured in thousands of dollars,
+                <m>V(0)=25</m> corresponds to a value of <m>\dollar 25,\!000</m>.
+                Putting it all together,
+                we interpret <m>V(0)=25</m> to mean the purchase price of the car was <m>\dollar25,\!000</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y=25\left(\frac{4}{5}\right)^{x}</m>,
+                we start with the basic exponential function <m>f(x)=\left(\frac{4}{5}\right)^{x}</m>.
+                Since the base <m>b = \frac{4}{5}</m> is between <m>0</m> and <m>1</m>,
+                the graph of <m>y=f(x)</m> is decreasing.
+                We plot the <m>y</m>-intercept <m>(0,1)</m> and two other points,
+                <m>\left(-1, \frac{5}{4}\right)</m> and <m>\left(1, \frac{4}{5}\right)</m>,
+                and label the horizontal asymptote <m>y=0</m>.
+                To obtain <m>V(x) = 25\left(\frac{4}{5}\right)^{x}</m>,
+                <m>x \geq 0</m>,
+                we multiply the output from <m>f</m> by <m>25</m>,
+                in other words, <m>V(x) = 25 f(x)</m>.
+                In accordance with <xref ref="vscalings">Theorem</xref>,
+                this results in a vertical stretch by a factor of <m>25</m>.
+                We multiply all of the <m>y</m> values in the graph by <m>25</m>
+                (including the <m>y</m> value of the horizontal asymptote)
+                and obtain the points <m>\left(-1,\frac{125}{4}\right)</m>,
+                <m>(0,25)</m> and <m>(1,20)</m>.
+                The horizontal asymptote remains <m>y=0</m>.
+                Finally, we restrict the domain to
+                <m>[0,\infty)</m> to fit with the applied domain given to us.
+                We have the result in <xref ref="fig_introexp3">Figure</xref>. <table xml:id="fig_introexp3"> <caption>The graph <m>y=V(x)</m> in <xref ref="cardepreciationex">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-6.pdf"/></cell> </row> <row> <cell><m>y=f(x)=\left(\frac{4}{5}\right)^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-7.pdf"/></cell> </row> <row> <cell><m>y=V(x)=25f(x)</m>,
+                <m>x\geq 0</m></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We see from the graph of <m>V</m> that its horizontal asymptote is <m>y=0</m>. (We leave it to reader to verify this analytically by thinking about what happens as we take larger and larger powers of
+                <m>\frac{4}{5}</m>.) This means as the car gets older,
+                its value diminishes to <m>0</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The function in the previous example is often called a <q>decay curve</q>.
+      Increasing exponential functions are used to model <q>growth curves</q>
+      many examples of which are encountered in applications of exponential functions.
+      For now, we present another common decay curve which will serve as the basis for further study of exponential functions.
+      Although it may look more complicated than the previous example,
+      it is actually just a basic exponential function which has been modified by a few transformations from <xref ref="Transformations">Section</xref>.
+    </p>
+
+    <example xml:id="exptempex">
+      <title>Newton's Law of Cooling</title>
+      <statement>
+        <p>
+          According to <url href="http://en.wikipedia.org/wiki/Heat_transfer#Newton.27s_law_of_cooling"><em>Newton's Law of Cooling</em></url> the temperature of coffee <m>T</m>
+          (in degrees Fahrenheit)
+          <m>t</m> minutes after it is served can be modelled by <m>T(t) = 70 + 90 e^{-0.1 t}</m>.
+              <idx><h>Newton's Law of Cooling</h></idx>
+          <ol>
+            <li>
+              <p>
+                Find and interpret <m>T(0)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Sketch the graph of
+          <m>y = T(t)</m> using transformations.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find and interpret the horizontal asymptote of the graph.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>T(0)</m>,
+                we replace every occurrence of the independent variable <m>t</m> with <m>0</m> to obtain <m>T(0) =70 + 90 e^{-0.1 (0)} = 160</m>.
+                This means that the coffee was served at <m>160^{\circ}\mbox{F}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>y = T(t)</m> using transformations,
+                we start with the basic function, <m>f(t)=e^{t}</m>.
+                As we have already remarked,
+                <m>e \approx 2.718 > 1</m> so the graph of <m>f</m> is an increasing exponential with <m>y</m>-intercept <m>(0,1)</m> and horizontal asymptote <m>y = 0</m>.
+                The points <m>\left(-1, e^{-1}\right) \approx (-1,0.37)</m> and
+                <m>(1,e) \approx (1,2.72)</m> are also on the graph.
+                Since the formula <m>T(t)</m> looks rather complicated,
+                we rewrite <m>T(t)</m> in the form presented in <xref ref="transformationsthm">Theorem</xref>
+                and use that result to track the changes to our three points and the horizontal asymptote.
+                We have
+                <me>
+                  T(t) = 70 + 90e^{-0.1t} = 90e^{-0.1t}+70 = 90 f(-0.1t)+70
+                </me>
+                Multiplication of the input to <m>f</m>, <m>t</m>,
+                by <m>-0.1</m> results in a horizontal expansion by a factor of <m>10</m> as well as a reflection about the <m>y</m>-axis.
+                We divide each of the <m>x</m> values of our points by <m>-0.1</m>
+                (which amounts to multiplying them by <m>-10</m>)
+                to obtain <m>\left(10,e^{-1}\right)</m>, <m>(0,1)</m>,
+                and <m>\left(-10, e\right)</m>.
+                Since none of these changes affected the <m>y</m> values,
+                the horizontal asymptote remains <m>y = 0</m>.
+                Next,
+          we see that the output from <m>f</m> is being multiplied by <m>90</m>.
+                This results in a vertical stretch by a factor of <m>90</m>.
+                We multiply the <m>y</m>-coordinates by <m>90</m> to obtain <m>\left(10,90e^{-1}\right)</m>,
+                <m>(0,90)</m>,
+                and <m>\left(-10, 90e\right)</m>.
+                We also multiply the <m>y</m> value of the horizontal asymptote <m>y=0</m> by <m>90</m>,
+                and it remains <m>y=0</m>.
+                Finally,
+          we add <m>70</m> to all of the <m>y</m>-coordinates,
+                which shifts the graph upwards to obtain <m>\left(10,90e^{-1} + 70\right) \approx (10, 103.11)</m>,
+                <m>(0,160)</m>,
+                and <m>\left(-10, 90e+ 70\right) \approx (-10,314.64)</m>.
+                Adding <m>70</m> to the horizontal asymptote shifts it upwards as well to <m>y=70</m>.
+                We connect these three points using the same shape in the same direction as in the graph of <m>f</m> and,
+                last but not least,
+                we restrict the domain to match the applied domain <m>[0, \infty)</m>.
+                The result is given in <xref ref="fig_introexp4">Figure</xref>.
+
+                <table xml:id="fig_introexp4">
+                  <caption>Graphing <m>T(t)</m> in <xref ref="exptempex">Example</xref></caption>
+                  <tabular>
+                    <row>
+                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-8.pdf"/></cell>
+                    </row>
+                    <row>
+                      <cell><m>y=f(t)=e^t</m></cell>
+                    </row>
+                    <row>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><m>\boldsymbol{\downarrow}</m></cell>
+                    </row>
+                    <row>
+                      <cell></cell>
+                    </row>
+                    <row>
+                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-9.pdf"/></cell>
+                    </row>
+                    <row>
+                      <cell><m>y=T(t)</m></cell>
+                    </row>
+                  </tabular>
+                </table>
+
+              </p>
+            </li>
+
+            <li>
+              <p>
+                From the graph,
+                we see that the horizontal asymptote is <m>y = 70</m>.
+                It is worth a moment or two of our time to see how this happens analytically and to review some of the <q>number sense</q>
+                developed in <xref ref="Rationals">Chapter</xref>.
+                As <m>t \rightarrow \infty</m>, We get <m>T(t) = 70+90e^{-0.1t} \approx 70 +90e^{\text{ very big \((-)\) } }</m>.
+                Since <m>e > 1</m>,
+                <me>
+                  e^{\text{ very big \((-)\) } } = \frac{1}{e^{\text{ very big \((+)\) } }} \approx \frac{1}{\text{ very big \((+)\) } } \approx \text{ very small \((+)\) }
+                </me>
+                The larger <m>t</m> becomes,
+                the smaller <m>e^{-0.1t}</m> becomes,
+                so the term <m>90 e^{-0.1t} \approx \text{ very small \((+)\) }</m>.
+                Hence,
+          <m>T(t) \approx 70 + \text{ very small \((+)\) }</m> which means the graph is approaching the horizontal line <m>y=70</m> from above.
+                This means that as time goes by,
+                the temperature of the coffee is cooling to <m>70^{\circ}\mbox{F}</m>,
+                presumably room temperature.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As we have already remarked,
+      the graphs of <m>f(x) = b^{x}</m> all pass the Horizontal Line Test.
+      Thus the exponential functions are invertible.
+      We now turn our attention to these inverses,
+      the logarithmic functions, which are called <q>logs</q> for short.
+    </p>
+
+    <definition xml:id="logfcndefn">
+      <title>Logarithm function</title>
+      <statement>
+        <p>
+          The inverse of the exponential function <m>f(x) = b^{x}</m> is called the
+              <idx><h>function</h><h>logarithmic</h></idx>
+          <term>base <m>b</m> logarithm function</term>,
+          and is denoted <m>f^{-1}(x) = \log_{b}(x)</m> We read
+          <q><m>\log_{b}(x)</m></q>
+          as <q>log base <m>b</m> of <m>x</m>.</q>
+              <idx><h>logarithm</h><h>general,
+          <q>base <m>b</m></q></h></idx>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      We have special notations for the common base, <m>b=10</m>,
+      and the natural base, <m>b=e</m>.
+    </p>
+
+    <definition xml:id="def_natlog">
+      <title>Common and Natural Logarithms</title>
+      <statement>
+        <p>
+          The
+              <idx><h>logarithm</h><h>common</h></idx>
+          <term>common logarithm</term>
+          of a real number <m>x</m> is
+          <m>\log_{10}(x)</m> and is usually written <m>\log(x)</m>.
+          The
+              <idx><h>logarithm</h><h>natural</h></idx>
+          <term>natural logarithm</term>
+          of a real number <m>x</m> is
+          <m>\log_{e}(x)</m> and is usually written <m>\ln(x)</m>.
+              <idx><h>common logarithm</h></idx> <idx><h>natural logarithm</h></idx>
+        </p>
+      </statement>
+    </definition>
+
+    <aside>
+      <p>
+        The reader is cautioned that in more advanced mathematics textbooks,
+        the notation <m>\log(x)</m> is often used to denote the natural logarithm (or its generalization to the complex numbers).
+        In mathematics,
+        the natural logarithm is preferred since it is better behaved with respect to the operations of Calculus.
+        The base 10 logarithm tends to appear in other science fields.
+      </p>
+    </aside>
+    <p>
+      Since logs are defined as the inverses of exponential functions,
+      we can use <xref ref="inversefunctionprops">Theorems</xref>
+      and <xref ref="inverseuniquegraph"></xref>
+      to tell us about logarithmic functions.
+      For example,
+      we know that the domain of a log function is the range of an exponential function,
+      namely <m>(0, \infty)</m>,
+      and that the range of a log function is the domain of an exponential function,
+      namely <m>(-\infty, \infty)</m>.
+      Since we know the basic shapes of
+      <m>y = f(x) = b^{x}</m> for the different cases of <m>b</m>,
+      we can obtain the graph of
+      <m>y = f^{-1}(x) = \log_{b}(x)</m> by reflecting the graph of <m>f</m> across the line <m>y=x</m> as shown below.
+      The <m>y</m>-intercept <m>(0,1)</m> on the graph of <m>f</m> corresponds to an <m>x</m>-intercept of <m>(1,0)</m> on the graph of <m>f^{-1}</m>.
+      The horizontal asymptotes <m>y=0</m> on the graphs of the exponential functions become vertical asymptotes <m>x=0</m> on the log graphs:
+      see <xref ref="fig_introexp5">Figure</xref>.
+    </p>
+
+    <table xml:id="fig_introexp5">
+      <caption>The logarithm is the inverse of the exponential function</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-10.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-11.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      On a procedural level, logs undo the exponentials.
+      Consider the function <m>f(x) = 2^{x}</m>.
+      When we evaluate <m>f(3) = 2^{3} = 8</m>,
+      the input <m>3</m> becomes the exponent on the base <m>2</m> to produce the real number <m>8</m>.
+      The function <m>f^{-1}(x) = \log_{2}(x)</m> then takes the number <m>8</m> as its input and returns the exponent <m>3</m> as its output.
+      In symbols, <m>\log_{2}(8) = 3</m>.
+      More generally,
+      <m>\log_{2}(x)</m> is the exponent you put on <m>2</m> to get <m>x</m>.
+      Thus, <m>\log_{2}(16) = 4</m>,
+      because <m>2^{4} = 16</m>.
+      The following theorem summarizes the basic properties of logarithmic functions,
+      all of which come from the fact that they are inverses of exponential functions.
+    </p>
+
+    <theorem xml:id="logfcnprops">
+      <title>Properties of Logarithmic Functions</title>
+      <statement>
+        <p>
+          Suppose <m>f(x) = \log_{b}(x)</m>.
+              <idx><h>logarithm</h><h>graphical properties of</h></idx>
+          <ul>
+            <li>
+              <p>
+                The domain of <m>f</m> is
+                <m>(0, \infty)</m> and the range of <m>f</m> is <m>(-\infty, \infty)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(1,0)</m> is on the graph of <m>f</m> and <m>x=0</m> is a vertical asymptote of the graph of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f</m> is one-to-one, continuous and smooth
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>b^{a} = c</m> if and only if <m>\log_{b}(c) = a</m>.
+                That is,
+          <m>\log_{b}(c)</m> is the exponent you put on <m>b</m> to obtain <m>c</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b} \left(b^{x}\right) = x</m> for all <m>x</m> and <m>b^{\log_{b}(x)} = x</m> for all <m>x > 0</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              If <m>b > 1</m>:
+
+              <ul>
+                <li>
+                  <p>
+                    <m>f</m> is always increasing
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow 0^{+}</m>,
+                    <m>f(x) \rightarrow -\infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow \infty</m>,
+                    <m>f(x) \rightarrow \infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>f</m> resembles:
+                  </p>
+                </li>
+              </ul>
+            </p>
+
+            <img src="figures/ExpLogsGraphics/IntroExpLogs-12.pdf"/></li>
+        </ul>
+
+        <ul>
+          <li>
+            <p>
+              If <m>0\lt b\lt 1</m>:
+
+              <ul>
+                <li>
+                  <p>
+                    <m>f</m> is always decreasing
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow 0^{+}</m>,
+                    <m>f(x) \rightarrow \infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    As <m>x \rightarrow \infty</m>,
+                    <m>f(x) \rightarrow -\infty</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    The graph of <m>f</m> resembles:
+                  </p>
+                </li>
+              </ul>
+            </p>
+
+            <img src="figures/ExpLogsGraphics/IntroExpLogs-13.pdf"/></li>
+        </ul>
+      </statement>
+    </theorem>
+
+    <p>
+      As we have mentioned, <xref ref="logfcnprops">Theorem</xref>
+      is a consequence of <xref ref="inversefunctionprops">Theorems</xref>
+      and <xref ref="inverseuniquegraph"></xref>.
+      However, it is worth the reader's time to understand <xref ref="logfcnprops">Theorem</xref>
+      from an exponential perspective.
+      For instance, we know that the domain of
+      <m>g(x) = \log_{2}(x)</m> is <m>(0,\infty)</m>.
+      Why?
+      Because the range of <m>f(x) = 2^{x}</m> is <m>(0,\infty)</m>.
+      In a way, this says everything,
+      but at the same time, it doesn't.
+      For example, if we try to find <m>\log_{2}(-1)</m>,
+      we are trying to find the exponent we put on <m>2</m> to give us <m>-1</m>.
+      In other words,
+      we are looking for <m>x</m> that satisfies <m>2^{x} = -1</m>.
+      There is no such real number,
+      since all powers of <m>2</m> are positive.
+      While what we have said is exactly the same thing as saying
+      <q>the domain of <m>g(x) = \log_{2}(x)</m> is <m>(0,\infty)</m> because the range of
+      <m>f(x) = 2^{x}</m> is <m>(0,\infty)</m></q>,
+      we feel it is in a student's best interest to understand the statements in <xref ref="logfcnprops">Theorem</xref>
+      at this level instead of just merely memorizing the facts.
+    </p>
+
+    <example xml:id="ex_logprops">
+      <title>Using properties of logarithms</title>
+      <statement>
+        <p>
+          Simplify the following.
+
+          <ol>
+            <li>
+              <p>
+                <m>\log_{3}(81)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{2}\left(\dfrac{1}{8}\right)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{\sqrt{5}}(25)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ln\left(\sqrt[3]{e^2}\right)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log(0.001)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2^{\log_{2}(8)}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>117^{-\log_{117}(6)}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The number <m>\log_{3}(81)</m> is the exponent we put on <m>3</m> to get <m>81</m>.
+                As such, we want to write <m>81</m> as a power of <m>3</m>.
+                We find <m>81 = 3^{4}</m>,
+          so that <m>\log_{3}(81)=4</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find <m>\log_{2}\left(\frac{1}{8}\right)</m>,
+                we need rewrite <m>\frac{1}{8}</m> as a power of <m>2</m>.
+                We find <m>\frac{1}{8} = \frac{1}{2^{3}} = 2^{-3}</m>,
+                so <m>\log_{2}\left(\frac{1}{8}\right) = -3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To determine <m>\log_{\sqrt{5}}(25)</m>,
+                we need to express <m>25</m> as a power of <m>\sqrt{5}</m>.
+                We know <m>25 = 5^2</m>,
+          and <m>5 = \left(\sqrt{5}\right)^2</m>,
+                so we have <m>25 = \left(\left(\sqrt{5}\right)^2\right)^2 = \left(\sqrt{5}\right)^4</m>.
+                We get <m>\log_{\sqrt{5}}(25) = 4</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                First, recall that the notation
+                <m>\ln\left(\sqrt[3]{e^2}\right)</m> means <m>\log_{e}\left(\sqrt[3]{e^2}\right)</m>,
+                so we are looking for the exponent to put on <m>e</m> to obtain <m>\sqrt[3]{e^2}</m>.
+                Rewriting <m>\sqrt[3]{e^2} = e^{2/3}</m>,
+                we find <m>\ln\left(\sqrt[3]{e^2}\right) = \ln\left(e^{2/3}\right) = \frac{2}{3}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Rewriting <m>\log(0.001)</m> as <m>\log_{10} (0.001)</m>,
+                we see that we need to write <m>0.001</m> as a power of <m>10</m>.
+                We have <m>0.001 = \frac{1}{1000} = \frac{1}{10^3} = 10^{-3}</m>.
+                Hence,
+          <m>\log(0.001) = \log\left(10^{-3}\right) = -3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We can use <xref ref="logfcnprops">Theorem</xref>
+                directly to simplify <m>2^{\log_{2}(8)} = 8</m>.
+                We can also understand this problem by first finding <m>\log_{2}(8)</m>.
+                By definition,
+                <m>\log_{2}(8)</m> is the exponent we put on <m>2</m> to get <m>8</m>.
+                Since <m>8 = 2^3</m>, we have <m>\log_{2}(8) = 3</m>.
+                We now substitute to find <m>2^{\log_{2}(8)} = 2^3 = 8</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                From <xref ref="logfcnprops">Theorem</xref>,
+                we know <m>117^{\log_{117}(6)}=6</m>,
+                but we cannot directly apply this formula to the expression
+                <m>117^{-\log_{117}(6)}</m>.  (Can you see why?) At this point,
+                we use a property of exponents followed by <xref ref="logfcnprops">Theorem</xref> to get
+                <me>
+                  117^{-\log_{117}(6)} = \frac{1}{117^{\log_{117}(6)}} = \frac{1}{6}
+                </me>
+
+                <aside>
+                  <p>
+                    It is worth a moment of your time to think your way through why <m>117^{\log_{117}(6)}=6</m>.
+                    By definition,
+                    <m>\log_{117}(6)</m> is the exponent we put on <m>117</m> to get <m>6</m>.
+                    What are we doing with this exponent?
+                    We are putting it on <m>117</m>.
+                    By definition we get <m>6</m>.
+                    In other words, the exponential function
+                    <m>f(x) = 117^{x}</m> undoes the logarithmic function <m>g(x) = \log_{117}(x)</m>.
+                  </p>
+                </aside>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Up until this point,
+      restrictions on the domains of functions came from avoiding division by zero and keeping negative numbers from beneath even radicals.
+      With the introduction of logs,
+      we now have another restriction.
+      Since the domain of <m>f(x) = \log_{b}(x)</m> is <m>(0, \infty)</m>,
+      the argument of the log must be strictly positive.
+          <idx><h>argument</h><h>of a logarithm</h></idx>
+    </p>
+
+    <example xml:id="ex_logdomain">
+      <title>Domain for logarithmic functions</title>
+      <statement>
+        <p>
+          Find the domain of the following functions.
+          Check your answers graphically using the computer or calculator.
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = 2\log(3-x)-1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \ln \left(\dfrac{x}{x-1}\right)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We set <m>3-x > 0</m> to obtain <m>x\lt 3</m>, or <m>(-\infty, 3)</m>.
+                The graph in <xref ref="fig_introexp6">Figure</xref> verifies this.
+                Note that we could have graphed <m>f</m> using transformations.
+                Taking a cue from <xref ref="transformationsthm">Theorem</xref>,
+                we rewrite <m>f(x) = 2 \log_{10}(-x+3) -1</m> and find the main function involved is <m>y = h(x) = \log_{10}(x)</m>.
+                We select three points to track,
+                <m>\left(\frac{1}{10}, -1\right)</m>,
+                <m>(1,0)</m> and <m>(10,1)</m>,
+                along with the vertical asymptote <m>x=0</m>.
+                Since <m>f(x) = 2h(-x+3)-1</m>,
+                <xref ref="transformationsthm">Theorem</xref>
+                tells us that to obtain the destinations of these points,
+                we first subtract <m>3</m> from the <m>x</m>-coordinates
+                (shifting the graph left <m>3</m> units),
+                then divide (multiply) by the <m>x</m>-coordinates by <m>-1</m> (causing a reflection across the <m>y</m>-axis).
+                These transformations apply to the vertical asymptote <m>x = 0</m> as well.
+                Subtracting <m>3</m> gives us <m>x=-3</m> as our asymptote,
+                then multiplying by <m>-1</m> gives us the vertical asymptote <m>x=3</m>.
+                Next,
+          we multiply the <m>y</m>-coordinates by <m>2</m> which results in a vertical stretch by a factor of <m>2</m>,
+                then we finish by subtracting <m>1</m> from the <m>y</m>-coordinates which shifts the graph down <m>1</m> unit.
+                We leave it to the reader to perform the indicated arithmetic on the points themselves and to verify the graph produced by the calculator below. <figure xml:id="fig_introexp6"> <caption><m>y=f(x)=2\log(3-x)-1</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs01.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the domain of <m>g</m>,
+                we need to solve the inequality <m>\frac{x}{x-1} > 0</m>.
+                As usual, we proceed using a sign diagram.
+                If we define <m>r(x) = \dfrac{x}{x-1}</m>,
+                we find <m>r</m> is undefined at <m>x=1</m> and <m>r(x) = 0</m> when <m>x=0</m>.
+                Choosing some test values,
+                we generate the sign diagram in <xref ref="fig_introexpsd1">Figure</xref>. <figure xml:id="fig_introexpsd1"> <caption>Sign diagram for
+                <m>r(x) = \frac{x}{x-1}</m></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-14.pdf"/> </figure> We find <m>\frac{x}{x-1} > 0</m> on
+                <m>(-\infty, 0) \cup (1, \infty)</m> to get the domain of <m>g</m>.
+                The graph of <m>y=g(x)</m> in <xref ref="fig_introexp7">Figure</xref> confirms this.
+                We can tell from the graph of <m>g</m> that it is not the result of <xref ref="Transformations">Section</xref>
+                transformations being applied to the graph <m>y = \ln(x)</m>,
+                so barring a more detailed analysis using Calculus,
+                the calculator graph is the best we can do.
+                One thing worthy of note, however,
+                is the end behaviour of <m>g</m>.
+                The graph suggests that as <m>x \rightarrow \pm \infty</m>,
+                <m>g(x) \rightarrow 0</m>.
+                We can verify this analytically.
+                Using results from <xref ref="Rationals">Chapter</xref> and continuity,
+                we know that as <m>x \rightarrow \pm \infty</m>,
+                <m>\frac{x}{x-1} \approx 1</m>.
+                Hence, it makes sense that
+                <m>g(x) = \ln \left(\frac{x}{x-1}\right) \approx \ln(1) = 0</m>. <figure xml:id="fig_introexp7"> <caption><m>y=g(x)=\ln\left(\frac{x}{x-1}\right)</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs02.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      While logarithms have some interesting applications of their own which you'll explore in the exercises,
+      their primary use to us will be to undo exponential functions. (This is,
+      after all,
+      how they were defined.) Our last example solidifies this and reviews all of the material in the section.
+    </p>
+
+    <example xml:id="proceduralinverse">
+      <title>Inverting an exponential function</title>
+      <statement>
+        <p>
+          Let <m>f(x) = 2^{x-1} - 3</m>.
+
+          <ol>
+            <li>
+              <p>
+                Graph <m>f</m> using transformations and state the domain and range of <m>f</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Explain why <m>f</m> is invertible and find a formula for <m>f^{-1}(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Graph <m>f^{-1}</m> using transformations and state the domain and range of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Verify <m>\left(f^{-1} \circ f\right)(x) = x</m> for all <m>x</m> in the domain of <m>f</m> and
+                <m>\left(f \circ f^{-1} \right)(x) = x</m> for all <m>x</m> in the domain of <m>f^{-1}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Graph <m>f</m> and <m>f^{-1}</m> on the same set of axes and check the symmetry about the line <m>y = x</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If we identify <m>g(x) = 2^{x}</m>,
+                we see <m>f(x) = g(x-1)-3</m>.
+                We pick the points <m>\left(-1, \frac{1}{2}\right)</m>,
+                <m>(0,1)</m> and <m>(1, 2)</m> on the graph of <m>g</m> along with the horizontal asymptote <m>y=0</m> to track through the transformations.
+                By <xref ref="transformationsthm">Theorem</xref>
+                we first add <m>1</m> to the <m>x</m>-coordinates of the points on the graph of <m>g</m>
+                (shifting <m>g</m> to the right <m>1</m> unit)
+                to get <m>\left(0, \frac{1}{2}\right)</m>,
+                <m>(1,1)</m> and <m>(2, 2)</m>.
+                The horizontal asymptote remains <m>y=0</m>.
+                Next,
+          we subtract <m>3</m> from the <m>y</m>-coordinates,
+                shifting the graph down <m>3</m> units.
+                We get the points <m>\left(0, -\frac{5}{2}\right)</m>,
+                <m>(1,-2)</m> and <m>(2, -1)</m> with the horizontal asymptote now at <m>y=-3</m>.
+                Connecting the dots in the order and manner as they were on the graph of <m>g</m>,
+                we get the bottom graph in <xref ref="fig_introexp8">Figure</xref>.
+                We see that the domain of <m>f</m> is the same as <m>g</m>,
+                namely <m>(-\infty, \infty)</m>,
+                but that the range of <m>f</m> is
+                <m>(-3, \infty)</m>. <table xml:id="fig_introexp8"> <caption>Graphing
+                <m>f(x)=2^{x-1}-3</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-15.pdf"/></cell> </row> <row> <cell><m>y=h(x)=2^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-16.pdf"/></cell> </row> <row> <cell><m>y=f(x)=2^{x-1}-3</m></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The graph of <m>f</m> passes the Horizontal Line Test so <m>f</m> is one-to-one,
+                hence invertible.
+                To find a formula for <m>f^{-1}(x)</m>,
+                we normally set <m>y=f(x)</m>,
+                interchange the <m>x</m> and <m>y</m>,
+                then proceed to solve for <m>y</m>.
+                Doing so in this situation leads us to the equation <m>x = 2^{y-1}-3</m>.
+                We have yet to discuss how to solve this kind of equation,
+                so we will attempt to find the formula for <m>f^{-1}</m> from a procedural perspective.
+                If we break <m>f(x) = 2^{x-1}-3</m> into a series of steps,
+                we find <m>f</m> takes an input <m>x</m> and applies the steps
+
+                <ol>
+                  <li>
+                    <p>
+                      subtract <m>1</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      put as an exponent on <m>2</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      subtract <m>3</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+
+              Clearly,
+          to undo subtracting <m>1</m>, we will add <m>1</m>,
+          and similarly we undo subtracting <m>3</m> by adding <m>3</m>.
+          How do we undo the second step?
+          The answer is we use the logarithm.
+          By definition,
+          <m>\log_{2}(x)</m> undoes exponentiation by <m>2</m>.
+          Hence, <m>f^{-1}</m> should
+
+              <ol>
+                <li>
+                  <p>
+                    add <m>3</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    take the logarithm base <m>2</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    add <m>1</m>
+                  </p>
+                </li>
+              </ol>
+
+              In symbols, <m>f^{-1}(x) = \log_{2}(x+3)+1</m>.</li>
+
+            <li>
+              <p>
+                To graph <m>f^{-1}(x) = \log_{2}(x+3)+1</m> using transformations,
+                we start with <m>j(x) = \log_{2}(x)</m>.
+                We track the points <m>\left(\frac{1}{2},-1\right)</m>,
+                <m>(1,0)</m> and <m>(2, 1)</m> on the graph of <m>j</m> along with the vertical asymptote <m>x=0</m> through the transformations using <xref ref="transformationsthm">Theorem</xref>.
+                Since <m>f^{-1}(x) = j(x+3)+1</m>,
+                we first subtract <m>3</m> from each of the <m>x</m> values
+                (including the vertical asymptote)
+                to obtain <m>\left(-\frac{5}{2},-1\right)</m>,
+                <m>(-2,0)</m> and <m>(-1, 1)</m> with a vertical asymptote <m>x = -3</m>.
+                Next,
+          we add <m>1</m> to the <m>y</m> values on the graph and get <m>\left(-\frac{5}{2},0\right)</m>,
+                <m>(-2,1)</m> and <m>(-1, 2)</m>.
+                If you are experiencing <em>d&#xe9;j&#xe0;
+                vu</em>,
+          there is a good reason for it but we leave it to the reader to determine the source of this uncanny familiarity.
+                We obtain the graph below.
+                The domain of <m>f^{-1}</m> is <m>(-3, \infty)</m>,
+                which matches the range of <m>f</m>,
+                and the range of <m>f^{-1}</m> is <m>(-\infty, \infty)</m>,
+                which matches the domain of <m>f</m>. <table xml:id="fig_introexp9"> <caption>Graphing
+                <m>f^{-1}(x)=\log_2(x+3)+1</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-17.pdf"/></cell> </row> <row> <cell><m>y=j(x)=\log_2(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-18.pdf"/></cell> </row> <row> <cell><m>y=f^{-1}(x)=\log_2(x+3)+1</m></cell> </row> </tabular> </table>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We now verify that <m>f(x) = 2^{x-1}-3</m> and
+                <m>f^{-1}(x) = \log_{2}(x+3)+1</m> satisfy the composition requirement for inverses.
+                For all real numbers <m>x</m>,
+                <md>
+                  <mrow>\left(f^{-1}\circ f\right)(x) \amp  =  f^{-1}(f(x))</mrow>
+                  <mrow>\amp  =  f^{-1}\left(2^{x-1}-3 \right)</mrow>
+                  <mrow>\amp  =  \log_{2}\left( \left[2^{x-1}-3\right]+3 \right)+1</mrow>
+                  <mrow>\amp  =  \log_{2}\left( 2^{x-1} \right)+1</mrow>
+                  <mrow>\amp  =\amp  (x-1) +1  \tag{ Since $\log_{2}\left(2^{u}\right) = u$ for all real numbers $u$}</mrow>
+                  <mrow>\amp  =  x \, \, \checkmark</mrow>
+                </md>
+                For all real numbers <m>x > -3</m>,
+                we have (pay attention - can you spot in which step below we need <m>x > -3</m>?)
+                <md>
+                  <mrow>\left(f\circ f^{-1}\right)(x) \amp  =  f\left(f^{-1}(x)\right)</mrow>
+                  <mrow>\amp  =  f\left( \log_{2}(x+3)+1 \right)</mrow>
+                  <mrow>\amp  =  2^{\left( \log_{2}(x+3)+1 \right)-1} - 3</mrow>
+                  <mrow>\amp  =  2^{\log_{2}(x+3)} - 3</mrow>
+                  <mrow>\amp  =  (x+3) -3 \tag{ Since $2^{\log_{2}(u)} = u$ for all real numbers $u > 0$}</mrow>
+                  <mrow>\amp  =  x \, \, \checkmark</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Last, but certainly not least,
+                we graph <m>y=f(x)</m> and
+                <m>y=f^{-1}(x)</m> on the same set of axes and see the symmetry about the line <m>y=x</m> in <xref ref="fig_introexp10">Figure</xref>
+                <figure xml:id="fig_introexp10"> <caption>The graphs of <m>f</m> and <m>f^{-1}</m> in <xref ref="proceduralinverse">Example</xref></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-19.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection xml:id="logarithmicscales">
+    <title>Problems</title>
+    <p>
+      In the following exercises, use the property:
+      <m>b^{a} = c</m> if and only if
+      <m>\log_{b}(c) = a</m> from <xref ref="logfcnprops">Theorem</xref>
+      to rewrite the given equation in the other form.
+      That is, rewrite the exponential equations as logarithmic equations and rewrite the logarithmic equations as exponential equations.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>2^{3} = 8</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{2}(8) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>5^{-3} = \frac{1}{125}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{5}\left(\frac{1}{125}\right) = -3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>4^{5/2} = 32</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{4}(32) = \frac{5}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\frac{1}{3}\right)^{-2} = 9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{\frac{1}{3}}(9) = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\frac{4}{25}\right)^{-1/2} = \frac{5}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{\frac{4}{25}}\left(\frac{5}{2}\right) = -\frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>10^{-3} = 0.001</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log(0.001) = -3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>e^{0} = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln(1) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{5}(25) = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>5^{2} = 25</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{25} (5) = \frac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(25)^{\frac{1}{2}} = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{3} \left(\frac{1}{81} \right) = -4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3^{-4} = \frac{1}{81}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{\frac{4}{3}} \left(\frac{3}{4} \right) = -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\frac{4}{3} \right)^{-1} = \frac{3}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log(100) = 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>10^{2} = 100</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log (0.1) = -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>10^{-1} = 0.1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln(e) = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>e^{1} = e</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln\left(\frac{1}{\sqrt{e}}\right) = -\frac{1}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>e^{-\frac{1}{2}} = \frac{1}{\sqrt{e}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, evaluate the expression.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{3} (27)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{3} (27) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{6} (216)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{6} (216) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{2} (32)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{2} (32) = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{6} \left( \frac{1}{36} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{6} \left( \frac{1}{36} \right) = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{8} (4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{8} (4) = \frac{2}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{36} (216)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{36} (216) = \frac{3}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{\frac{1}{5}} (625)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{\frac{1}{5}} (625) = -4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{\frac{1}{6}} (216)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{\frac{1}{6}} (216) = -3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{36} (36)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{36} (36)=1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log \left(\frac{1}{1000000}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log \frac{1}{1000000} = -6</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log(0.01)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log(0.01) = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln\left(e^3\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln\left(e^3\right) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{4} (8)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{4} (8) = \frac{3}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{6} (1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{6} (1) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{13} \left(\sqrt{13}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{13} \left(\sqrt{13}\right) = \frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{36} \left(\sqrt[4]{36}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{36} \left(\sqrt[4]{36}\right) = \frac{1}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>7^{\log_{7} (3)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>7^{\log_{7} (3)} = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>36^{\log_{36}(216)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>36^{\log_{36}(216)} = 216</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{36} \left(36^{216}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{36} \left(36^{216}\right) = 216</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln \left(e^{5} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln(e^{5}) = 5</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log \left(\sqrt[9]{10^{11}}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log \left(\sqrt[9]{10^{11}}\right) = \frac{11}{9}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log\left( \sqrt[3]{10^5} \right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log\left( \sqrt[3]{10^5} \right) = \frac{5}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln \left( \frac{1}{\sqrt{e}}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln \left( \frac{1}{\sqrt{e}}\right) = -\frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{5} \left(3^{\log_{3} (5)}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{5} \left(3^{\log_{3} 5}\right) = 1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log\left(e^{\ln(100)}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log\left(e^{\ln(100)}\right) = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\log_{2}\left(3^{-\log_{3}(2)}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\log_{2}\left(3^{-\log_{3}(2)}\right) = -1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\ln\left(42^{6\log(1)}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\ln\left(42^{6\log(1)}\right) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, find the domain of the function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(x^{2} + 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log_{7}(4x + 8)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-2, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(4x-20)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(5, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log \left(x^2+9x+18\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -6) \cup (-3, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log \left(\dfrac{x + 2}{x^{2} - 1}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-2, -1) \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log\left(\dfrac{x^2+9x+18}{4x-20}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-6,-3) \cup (5, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(7 - x) + \ln(x - 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(4, 7)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(4x-20) + \ln\left(x^2+9x+18\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(5, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log\left(x^2+x+1\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[4]{\log_{4} (x)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>[1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log_{9}(|x + 3| - 4)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -7) \cup (1, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(\sqrt{x - 4} - 3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(13, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{3 - \log_{5} (x)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(0, 125) \cup (125, \infty)</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{\sqrt{-1 - x}}{\log_{\frac{1}{2}} (x)}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          No domain (or we could say the domain is the empty set!)
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(-2x^{3} - x^{2} + 13x - 6)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(-\infty, -3) \cup \left(\frac{1}{2}, 2\right)</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      sketch the graph of <m>y=g(x)</m> by starting with the graph of
+      <m>y = f(x)</m> and using transformations.
+      Track at least three points of your choice and the horizontal asymptote through the transformations.
+      State the domain and range of <m>g</m>.
+    </p>
+    <exercise xml:id="graphexpfirst">
+      <statement>
+        <p>
+          <m>f(x) = 2^{x}</m>, <m>g(x) = 2^{x} - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-1, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-20.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \left(\frac{1}{3}\right)^{x}</m>,
+          <m>g(x) = \left(\frac{1}{3}\right)^{x-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(0, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-21.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3^{x}</m>, <m>g(x) = 3^{-x}+2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(2, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-22.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 10^{x}</m>, <m>g(x) = 10^{\frac{x+1}{2}} - 20</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-20, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-23.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = e^{x}</m>, <m>g(x) = 8 - e^{-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, 8)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-24.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="graphexplast">
+      <statement>
+        <p>
+          <m>f(x) = e^{x}</m>, <m>g(x) = 10e^{-0.1x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(0, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-25.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      sketch the graph of <m>y=g(x)</m> by starting with the graph of
+      <m>y = f(x)</m> and using transformations.
+      Track at least three points of your choice and the vertical asymptote through the transformations.
+      State the domain and range of <m>g</m>.
+    </p>
+    <exercise xml:id="graphlogfirst">
+      <statement>
+        <p>
+          <m>f(x) = \log_{2}(x)</m>, <m>g(x) = \log_{2}(x+1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-1, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-26.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log_{\frac{1}{3}}(x)</m>,
+          <m>g(x) = \log_{\frac{1}{3}}(x)+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(0, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-27.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log_{3}(x)</m>, <m>g(x) = -\log_{3}(x-2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(2, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-28.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log(x)</m>, <m>g(x) = 2\log(x+20) -1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-20, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-29.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \ln(x)</m>, <m>g(x) = -\ln(8-x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(-\infty, 8)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>:<m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-30.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="graphloglast">
+      <statement>
+        <p>
+          <m>f(x) = \ln(x)</m>, <m>g(x) = -10\ln\left(\frac{x}{10}\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Domain of <m>g</m>: <m>(0, \infty)</m>
+        </p>
+
+        <p>
+          Range of <m>g</m>: <m>(-\infty, \infty)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-31.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Verify that each function in <xref ref="graphlogfirst">Exercises</xref> - <xref ref="graphloglast"></xref> is the inverse of the corresponding function in <xref ref="graphexpfirst">Exercises</xref>
+          - <xref ref="graphexplast"></xref>. (Match up <hash /> <xref ref="graphexpfirst"></xref>
+          and <hash /> <xref ref="graphlogfirst"></xref>, and so on.)
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      In the following exercises,
+      find the inverse of the function from the
+      <q>procedural perspective</q>
+      discussed in <xref ref="proceduralinverse">Example</xref>
+      and graph the function and its inverse on the same set of axes.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3^{x + 2} - 4</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 3^{x + 2} - 4</m>
+        </p>
+
+        <p>
+          <m>f^{-1}(x) = \log_{3}(x + 4) - 2</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-32.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \log_{4}(x - 1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = \log_{4}(x - 1)</m>
+        </p>
+
+        <p>
+          <m>f^{-1}(x) = 4^{x} + 1</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-33.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -2^{-x} + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = -2^{-x} + 1</m>
+        </p>
+
+        <p>
+          <m>f^{-1}(x) = -\log_{2}(1 - x)</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-34.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 5\log(x) - 2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f(x) = 5\log(x) - 2</m>
+        </p>
+
+        <p>
+          <m>f^{-1}(x) = 10^{\frac{x + 2}{5}}</m>
+        </p>
+
+        <p>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-35.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      (Logarithmic Scales) In the following exercises,
+      we introduce three widely used measurement scales which involve common logarithms:
+      the Richter scale, the decibel scale and the pH scale.
+      The computations involved in all three scales are nearly identical so pay attention to the subtle differences.
+          <idx><h>logarithmic scales</h></idx>
+    </p>
+    <exercise xml:id="Richterexercise">
+      <statement>
+        <p>
+              <idx><h>Richter Scale</h></idx> <idx><h>earthquake</h><h>Richter Scale</h></idx>
+          Earthquakes are complicated events and it is not our intent to provide a complete discussion of the science involved in them.
+          Instead, we refer the interested reader to a solid course in Geology<fn>Rock-solid,
+          perhaps?</fn>or the U.S. Geological Survey's Earthquake Hazards Program found <url href="http://earthquake.usgs.gov/"><em>here</em></url> and present only a simplified version of the <url href="http://en.wikipedia.org/wiki/Richter_scale"><em>Richter scale</em></url>.
+          The Richter scale measures the magnitude of an earthquake by comparing the amplitude of the seismic waves of the given earthquake to those of a
+          <q>magnitude 0 event</q>,
+          which was chosen to be a seismograph reading of <m>0.001</m> millimetres recorded on a seismometer 100 kilometres from the earthquake's epicentre.
+          Specifically, the magnitude of an earthquake is given by
+          <me>
+            M(x) = \log \left(\dfrac{x}{0.001}\right)
+          </me>
+          where <m>x</m> is the seismograph reading in millimetres of the earthquake recorded 100 kilometres from the epicentre.
+
+          <ol>
+            <li>
+              <p>
+                Show that <m>M(0.001) = 0</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Compute <m>M(80,000)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Show that an earthquake which registered 6.7 on the Richter scale had a seismograph reading ten times larger than one which measured 5.7.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find two news stories about recent earthquakes which give their magnitudes on the Richter scale.
+                How many times larger was the seismograph reading of the earthquake with larger magnitude?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>M(0.001) = \log \left(\frac{0.001}{0.001} \right) = \log(1) = 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>M(80,000) = \log \left(\frac{80,000}{0.001} \right) = \log(80,000,000) \approx 7.9</m>.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="decibelexercise">
+      <statement>
+        <p>
+              <idx><h>decibel</h></idx> <idx><h>sound intensity level</h><h>decibel</h></idx>
+          While the decibel scale can be used in many disciplines,<fn>See this  <url href="http://en.wikipedia.org/wiki/Decibel"><em>webpage</em></url> for more information.</fn>we shall restrict our attention to its use in acoustics,
+          specifically its use in measuring the intensity level of sound.<fn>As of the writing of this exercise,
+          the Wikipedia page given <url href="http://en.wikipedia.org/wiki/Sound_intensity_level"><em>here</em></url> states that it may not meet the
+          <q>general notability guideline</q>
+          nor does it cite any references or sources.
+          I find this odd because it is this very usage of the decibel scale which shows up in every College Algebra book I have read.
+          Perhaps those other books have been wrong all along and we're just blindly following tradition.</fn>The Sound Intensity Level <m>L</m>
+          (measured in decibels)
+          of a sound intensity <m>I</m>
+          (measured in watts per square meter)
+          is given by
+          <me>
+            L(I) = 10\log\left( \dfrac{I}{10^{-12}} \right)
+          </me>.
+        </p>
+
+        <p>
+          Like the Richter scale, this scale compares <m>I</m> to baseline:
+          <m>10^{-12} \frac{W}{m^{2}}</m> is the threshold of human hearing.
+
+          <ol>
+            <li>
+              <p>
+                Compute <m>L(10^{-6})</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Damage to your hearing can start with short term exposure to sound levels around 115 decibels.
+                What intensity <m>I</m> is needed to produce this level?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Compute <m>L(1)</m>.
+                How does this compare with the threshold of pain which is around 140 decibels?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              <m>L(10^{-6}) = 60</m> decibels.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>I = 10^{-.5} \approx 0.316</m> watts per square meter.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since <m>L(1) = 120</m> decibels and <m>L(100) = 140</m> decibels,
+              a sound with intensity level 140 decibels has an intensity 100 times greater than a sound with intensity level 120 decibels.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise xml:id="pHexercise">
+      <statement>
+        <p>
+              <idx><h>pH</h></idx> <idx><h>acidity of a solution</h><h>pH</h></idx> <idx><h>alkalinity of a solution</h><h>pH</h></idx>
+          The pH of a solution is a measure of its acidity or alkalinity.
+          Specifically, <m>\mbox{pH}  = -\log[\mbox{H} ^{+}]</m> where
+          <m>[\mbox{H} ^{+}]</m> is the hydrogen ion concentration in moles per litre.
+          A solution with a pH less than 7 is an acid,
+          one with a pH greater than 7 is a base (alkaline) and a pH of 7 is regarded as neutral.
+
+          <ol>
+            <li>
+              <p>
+                The hydrogen ion concentration of pure water is <m>[\mbox{H} ^{+}] = 10^{-7}</m>.
+                Find its pH.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the pH of a solution with <m>[\mbox{H} ^{+}] = 6.3 \times 10^{-13}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The pH of gastric acid
+                (the acid in your stomach)
+                is about <m>0.7</m>.
+                What is the corresponding hydrogen ion concentration?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <p>
+              The pH of pure water is 7.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If <m>[\mbox{H} ^{+}] = 6.3 \times 10^{-13}</m> then the solution has a pH of 12.2.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>[\mbox{H} ^{+}] = 10^{-0.7} \approx .1995</m> moles per liter.
+            </p>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that <m>\log_{b} 1 = 0</m> and
+          <m>\log_{b} b = 1</m> for every <m>b > 0, \; b \neq 1</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          (Crazy bonus question) Without using your calculator,
+          determine which is larger:
+          <m>e^{\pi}</m> or <m>\pi^{e}</m>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+

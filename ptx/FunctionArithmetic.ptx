@@ -1,0 +1,2428 @@
+
+
+<section xml:id="FunctionArithmetic">
+  <title>Function Arithmetic</title>
+  <introduction>
+    <p>
+      In the previous section we used the newly defined function notation to make sense of expressions such as
+      <q><m>f(x) + 2</m></q> and <q><m>2f(x)</m></q>
+      for a given function <m>f</m>.
+      It would seem natural, then,
+      that functions should have their own arithmetic which is consistent with the arithmetic of real numbers.
+      The following definitions allow us to add, subtract,
+      multiply and divide functions using the arithmetic we already know for real numbers.
+    </p>
+
+    <definition xml:id="def_functarith">
+      <title>Function Arithmetic</title>
+      <statement>
+        <p>
+              <idx><h>function</h><h>arithmetic</h></idx>
+          Suppose <m>f</m> and <m>g</m> are functions and <m>x</m> is in both the domain of <m>f</m> and the domain of <m>g</m>.
+        </p>
+
+        <aside>
+          <p>
+            Recall that if <m>x</m> is in the domains of both <m>f</m> and <m>g</m>,
+            then we can say that <m>x</m> is an element of the intersection of the two domains.
+          </p>
+        </aside>
+        <ul>
+          <li>
+            <p>
+              The
+                  <idx><h>function</h><h>sum</h></idx>
+              <em>sum</em> of <m>f</m> and <m>g</m>,
+              denoted <m>f+g</m>, is the function defined by the formula
+              <me>
+                (f+g)(x) = f(x) + g(x)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The
+                  <idx><h>function</h><h>difference</h></idx>
+              <em>difference</em> of <m>f</m> and <m>g</m>,
+              denoted <m>f-g</m>, is the function defined by the formula
+              <me>
+                (f-g)(x) = f(x) - g(x)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The
+                  <idx><h>function</h><h>product</h></idx>
+              <em>product</em> of <m>f</m> and <m>g</m>,
+              denoted <m>fg</m>, is the function defined by the formula
+              <me>
+                (fg)(x) = f(x)g(x)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The
+                  <idx><h>function</h><h>quotient</h></idx>
+              <em>quotient</em> of <m>f</m> and <m>g</m>,
+              denoted <m>\dfrac{f}{g}</m>,
+              is the function defined by the formula
+              <me>
+                \left(\dfrac{f}{g}\right)(x) = \dfrac{f(x)}{g(x)}
+              </me>,
+              provided <m>g(x) \neq 0</m>.
+            </p>
+          </li>
+        </ul>
+      </statement>
+    </definition>
+
+    <p>
+      In other words, to add two functions, we add their outputs;
+      to subtract two functions, we subtract their outputs,
+      and so on.
+      Note that while the formula
+      <m>(f+g)(x) = f(x) + g(x)</m> looks suspiciously like some kind of distributive property,
+      it is nothing of the sort;
+      the addition on the left hand side of the equation is
+      <em>function</em> addition,
+      and we are using this equation to <em>define</em>
+      the output of the new function <m>f+g</m> as the sum of the real number outputs from <m>f</m> and <m>g</m>.
+    </p>
+
+    <example xml:id="funcarithex">
+      <title>Arithmetic with functions</title>
+      <statement>
+        <p>
+          Let <m>f(x) = 6x^2 - 2x</m> and <m>g(x) = 3-\dfrac{1}{x}</m>.
+          <ol cols="2">
+            <li>
+              <p>
+                Find <m>(f+g)(-1)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find <m>(fg)(2)</m> \setcounter{HW}{\value{enumi}}
+              </p>
+            </li>
+
+            \setcounter{enumi}{\value{HW}}
+
+            <li>
+              <p>
+                Find the domain of <m>g-f</m> then find and simplify a formula for <m>(g-f)(x)</m>.
+              </p>
+            </li>
+
+            <li xml:id="quotdomainex">
+
+            <p>
+              Find the domain of <m>\left(\dfrac{g}{f}\right)</m> then find and simplify a formula for <m>\left(\dfrac{g}{f}\right)(x)</m>.
+            </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>(f+g)(-1)</m> we first find
+                <m>f(-1) = 8</m> and <m>g(-1) = 4</m>.
+                By definition,
+                we have that <m>(f+g)(-1) = f(-1) + g(-1) = 8+4 = 12</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find <m>(fg)(2)</m>,
+          we first need <m>f(2)</m> and <m>g(2)</m>.
+                Since <m>f(2) = 20</m> and <m>g(2) = \frac{5}{2}</m>,
+                our formula yields <m>(fg)(2) = f(2) g(2) = (20)\left(\frac{5}{2}\right) = 50</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                One method to find the domain of <m>g-f</m> is to find the domain of <m>g</m> and of <m>f</m> separately,
+                then find the intersection of these two sets.
+                Owing to the denominator in the expression <m>g(x) = 3 - \frac{1}{x}</m>,
+                we get that the domain of <m>g</m> is <m>(-\infty, 0) \cup (0, \infty)</m>.
+                Since <m>f(x) = 6x^2-2x</m> is valid for all real numbers,
+                we have no further restrictions.
+                Thus the domain of <m>g-f</m> matches the domain of <m>g</m>, namely,
+                <m>(-\infty, 0) \cup (0, \infty)</m>.
+
+                A second method is to analyze the formula for <m>(g-f)(x)</m>
+                <em>before simplifying</em>
+                and look for the usual domain issues.
+                In this case,
+                <me>
+                  (g-f)(x) = g(x) - f(x) = \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right)
+                </me>,
+                so we find, as before,
+                the domain is <m>(-\infty, 0) \cup (0, \infty)</m>.
+
+                Moving along, we need to simplify a formula for <m>(g-f)(x)</m>.
+                In this case,
+                we get common denominators and attempt to reduce the resulting fraction.
+                Doing so, we get
+                <md>
+                  <mrow>(g-f)(x) \amp  =  g(x) - f(x)</mrow>
+                  <mrow>\amp  =  \left(3-\dfrac{1}{x}\right) - \left(6x^2 - 2x\right)</mrow>
+                  <mrow>\amp  =  3 - \dfrac{1}{x} - 6x^2 + 2x</mrow>
+                  <mrow>\amp  =  \dfrac{3x}{x} - \dfrac{1}{x} - \dfrac{6x^3}{x} + \dfrac{2x^2}{x}  \tag{get common denominators}</mrow>
+                  <mrow>\amp  =  \dfrac{3x - 1 - 6x^3 - 2x^2}{x}</mrow>
+                  <mrow>\amp  =  \dfrac{-6x^3-2x^2+3x-1}{x}</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                As in the previous example,
+                we have two ways to approach finding the domain of <m>\frac{g}{f}</m>.
+                First,
+          we can find the domain of <m>g</m> and <m>f</m> separately,
+                and find the intersection of these two sets.
+                In addition,
+                since <m>\left(\frac{g}{f}\right)(x) = \frac{g(x)}{f(x)}</m>,
+                we are introducing a new denominator, namely <m>f(x)</m>,
+                so we need to guard against this being <m>0</m> as well.
+                Our previous work tells us that the domain of <m>g</m> is
+                <m>(-\infty, 0) \cup (0, \infty)</m> and the domain of <m>f</m> is <m>(-\infty, \infty)</m>.
+                Setting <m>f(x) = 0</m> gives
+                <m>6x^2 - 2x = 0</m> or <m>x = 0, \frac{1}{3}</m>.
+                As a result, the domain of
+                <m>\frac{g}{f}</m> is all real numbers except <m>x = 0</m> and <m>x = \frac{1}{3}</m>,
+                or <m>(-\infty, 0) \cup \left(0, \frac{1}{3} \right) \cup \left( \frac{1}{3}, \infty \right)</m>.
+
+                Alternatively,
+                we may proceed as above and analyze the expression <m>\left(\frac{g}{f}\right)(x) = \frac{g(x)}{f(x)}</m>
+                <em>before</em> simplifying.
+                In this case,
+                <me>
+                  \left(\dfrac{g}{f}\right)(x) = \dfrac{g(x)}{f(x)}  = \dfrac{3-\dfrac{1}{x}}{6x^2 - 2x}
+                </me>
+                We see immediately from the <q>little</q>
+                denominator that <m>x \neq 0</m>.
+                To keep the <q>big</q>
+                denominator away from <m>0</m>,
+                we solve <m>6x^2 - 2x = 0</m> and get <m>x = 0</m> or <m>x = \frac{1}{3}</m>.
+                Hence,
+          as before, we find the domain of <m>\dfrac{g}{f}</m> to be
+                <me>
+                  (-\infty, 0) \cup \left(0, \frac{1}{3}\right) \cup \left(\frac{1}{3}, \infty\right)
+                </me>.
+                Next,
+          we find and simplify a formula for <m>\left(\dfrac{g}{f}\right)(x)</m>.
+                <md>
+                  <mrow>\left( \dfrac{g}{f}\right)(x) \amp  = \dfrac{g(x)}{f(x)} = \dfrac{3-\dfrac{1}{x}}{6x^2 - 2x}</mrow>
+                  <mrow>\amp  = \dfrac{3-\dfrac{1}{x}}{6x^2 - 2x} \cdot \dfrac{x}{x} \tag{simplify compound fractions}</mrow>
+                  <mrow>\amp  = \dfrac{\left(3-\dfrac{1}{x}\right) x}{\left(6x^2 - 2x\right)x} = \dfrac{3x-1}{\left(6x^2 - 2x\right)x}</mrow>
+                  <mrow>\amp  = \dfrac{3x-1}{2x^2(3x-1)}  \tag{factor}</mrow>
+                  <mrow>\amp  = \dfrac{\cancelto{1}{(3x-1)}}{2x^2\cancel{(3x-1)}}  \tag{cancel}</mrow>
+                  <mrow>\amp  = \dfrac{1}{2x^2}</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Please note the importance of finding the domain of a function
+      <em>before</em> simplifying its expression.
+      In <xref ref="quotdomainex">number</xref>
+      in <xref ref="funcarithex">Example</xref> above,
+      had we waited to find the domain of
+      <m>\dfrac{g}{f}</m> until \text{ after } simplifying,
+      we'd just have the formula <m>\dfrac{1}{2x^2}</m> to go by,
+      and we would (incorrectly!) state the domain as <m>(-\infty, 0) \cup (0,\infty)</m>,
+      since the other troublesome number,
+      <m>x = \frac{1}{3}</m>, was cancelled away.
+    </p>
+
+    <aside>
+      <p>
+        We'll see what cancelling factors means geometrically in <xref ref="Rationals">Chapter</xref>.
+      </p>
+    </aside>
+    <p>
+      Next, we turn our attention to the
+      <em>difference quotient</em> of a function.
+    </p>
+
+    <definition xml:id="differencequotient">
+      <title>Difference quotient of a function</title>
+      <statement>
+        <p>
+          Given a function <m>f</m>, the
+              <idx><h>function</h><h>difference quotient</h></idx><idx><h>difference quotient</h></idx>
+          <term>difference quotient</term> of <m>f</m> is the expression
+          <me>
+            \dfrac{f(x+h) - f(x)}{h}
+          </me>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      We will revisit this concept in <xref ref="LinearFunctions">Section</xref>,
+      but for now,
+      we use it as a way to practice function notation and function arithmetic.
+      For reasons which will become clear in Calculus,
+      <q>simplifying</q> a difference quotient means rewriting it in a form where the <q><m>h</m></q>
+      in the definition of the difference quotient cancels from the denominator.
+      Once that happens, we consider our work to be done.
+    </p>
+
+    <example xml:id="differencequotientex">
+      <title>Computing difference quotients</title>
+      <statement>
+        <p>
+          Find and simplify the difference quotients for the following functions
+
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = x^2-x-2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = \dfrac{3}{2x+1}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>r(x) = \sqrt{x}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To find <m>f(x+h)</m>,
+                we replace every occurrence of <m>x</m> in the formula
+
+                <m>f(x) = x^2-x-2</m> with the quantity <m>(x+h)</m> to get
+                <md>
+                  <mrow>f(x+h) \amp  =  (x+h)^2 - (x+h) -2</mrow>
+                  <mrow>\amp  =  x^2 + 2xh + h^2 - x - h - 2</mrow>
+                </md>.
+                So the difference quotient is
+                <md>
+                  <mrow>\dfrac{f(x+h)-f(x)}{h} \amp  = \dfrac{\left(x^2+2xh+h^2-x-h-2 \right)-\left(x^{2}-x-2 \right)}{h}</mrow>
+                  <mrow>\amp  = \dfrac{x^2+2xh+h^2-x-h-2-x^2+x+2}{h}</mrow>
+                  <mrow>\amp  = \dfrac{2xh+h^2-h}{h}</mrow>
+                  <mrow>\amp  = \dfrac{h \left(2x+h-1\right)}{h} \tag{factor}</mrow>
+                  <mrow>\amp  = \dfrac{\cancel{h} \left(2x+h-1\right)}{\cancel{h}} \tag{cancel}</mrow>
+                  <mrow>\amp  = 2x+h-1</mrow>
+                </md>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find <m>g(x+h)</m>,
+                we replace every occurrence of <m>x</m> in the formula
+                <m>g(x) = \dfrac{3}{2x+1}</m> with the quantity <m>(x+h)</m> to get
+                <md>
+                  <mrow>g(x+h) \amp  =  \dfrac{3}{2(x+h)+1}</mrow>
+                  <mrow>\amp  =  \dfrac{3}{2x+2h+1}</mrow>
+                </md>,
+                which yields
+                <md>
+                  <mrow>\dfrac{g(x+h)-g(x)}{h} \amp  = \dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h}</mrow>
+                  <mrow>\amp  = \dfrac{\dfrac{3}{2x+2h+1}-\dfrac{3}{2x+1}}{h} \cdot \dfrac{(2x+2h+1)(2x+1)}{(2x+2h+1)(2x+1)}</mrow>
+                  <mrow>\amp  = \dfrac{3(2x+1)-3(2x+2h+1)}{h(2x+2h+1)(2x+1)}</mrow>
+                  <mrow>\amp  = \dfrac{6x+3-6x-6h-3}{h(2x+2h+1)(2x+1)}</mrow>
+                  <mrow>\amp  = \dfrac{-6h}{h(2x+2h+1)(2x+1)}</mrow>
+                  <mrow>\amp  = \dfrac{-6\cancel{h}}{\cancel{h}(2x+2h+1)(2x+1)}</mrow>
+                  <mrow>\amp  = \dfrac{-6}{(2x+2h+1)(2x+1)}</mrow>
+                </md>.
+                Since we have managed to cancel the original <q><m>h</m></q>
+                from the denominator, we are done.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>r(x) = \sqrt{x}</m>,
+                we get <m>r(x+h) = \sqrt{x+h}</m> so the difference quotient is
+                <me>
+                  \dfrac{r(x+h) - r(x)}{h} = \dfrac{\sqrt{x+h} - \sqrt{x}}{h}
+                </me>
+                In order to cancel the <q><m>h</m></q> from the denominator,
+                we rationalize the <em>numerator</em>
+                by multiplying by its conjugate.
+                <md>
+                  <mrow>\dfrac{r(x+h) - r(x)}{h} \amp  = \dfrac{\sqrt{x+h} - \sqrt{x}}{h}</mrow>
+                  <mrow>\amp  =  \dfrac{\left(\sqrt{x+h} - \sqrt{x}\right)}{h} \cdot \dfrac{\left(\sqrt{x+h} + \sqrt{x}\right)}{\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag{Multiply by the conjugate.}</mrow>
+                  <mrow>\amp  =   \dfrac{\left(\sqrt{x+h}\right)^2 - \left(\sqrt{x}\right)^2}{h\left(\sqrt{x+h} + \sqrt{x}\right)}  \tag{Difference of Squares.}</mrow>
+                  <mrow>\amp  =   \dfrac{(x+h) - x}{h\left(\sqrt{x+h} + \sqrt{x}\right)}</mrow>
+                  <mrow>\amp  =   \dfrac{h}{h\left(\sqrt{x+h} + \sqrt{x}\right)}</mrow>
+                  <mrow>\amp  =   \dfrac{\cancelto{1}{h}}{\cancel{h}\left(\sqrt{x+h} + \sqrt{x}\right)}</mrow>
+                  <mrow>\amp  =   \dfrac{1}{\sqrt{x+h} + \sqrt{x}}</mrow>
+                </md>
+                Since we have removed the original <q><m>h</m></q>
+                from the denominator, we are done.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      \phantomsection As mentioned before,
+      we will revisit difference quotients in <xref ref="LinearFunctions">Section</xref>
+      where we will explain them geometrically.
+      For now, we want to move on to some classic applications of function arithmetic from Economics and for that,
+      we need to think like an entrepreneur.
+    </p>
+
+    <p>
+      Suppose you are a manufacturer making a certain product.
+      Let <m>x</m> be the <em>production level</em>, that is,
+      the number of items produced in a given time period.
+      It is customary to let <m>C(x)</m> denote the function which calculates the total <em>cost</em>
+      of producing the <m>x</m> items.
+      The quantity <m>C(0)</m>,
+      which represents the cost of producing no items,
+      is called the <em>fixed</em> cost,
+      and represents the amount of money required to begin production.
+      Associated with the total cost <m>C(x)</m> is cost per item,
+      or <em>average cost</em>,
+      denoted <m>\overline{C}(x)</m> and read
+      <q><m>C</m>-bar</q> of <m>x</m>.
+      To compute <m>\overline{C}(x)</m>,
+      we take the total cost <m>C(x)</m> and divide by the number of items produced <m>x</m> to get
+      <me>
+        \overline{C}(x) = \dfrac{C(x)}{x}
+      </me>
+    </p>
+
+    <p>
+      On the retail end, we have the
+      <em>price</em> <m>p</m> charged per item.
+      To simplify the dialogue and computations in this text,
+      we assume that <em>the number of items sold equals the number of items produced</em>.
+      From a retail perspective,
+      it seems natural to think of the number of items sold,
+      <m>x</m>, as a function of the price charged, <m>p</m>.
+      After all, the retailer can easily adjust the price to sell more product.
+      In the language of functions,
+      <m>x</m> would be the <em>dependent</em>
+      variable and <m>p</m> would be the
+      <em>independent</em> variable or,
+      using function notation, we have a function <m>x(p)</m>.
+      While we will adopt this convention later in the text,
+      (see <xref ref="demandfunctionofprice">Example</xref>
+      in <xref ref="InverseFunctions">Section</xref>)
+      we will hold with tradition at this point and consider the price <m>p</m> as a function of the number of items sold,
+      <m>x</m>.
+      That is, we regard <m>x</m> as the independent variable and <m>p</m> as the dependent variable and speak of the
+      <em>price-demand</em> function, <m>p(x)</m>.
+      Hence, <m>p(x)</m> returns the price charged per item when <m>x</m> items are produced and sold.
+      Our next function to consider is the
+      <em>revenue</em> function, <m>R(x)</m>.
+      The function <m>R(x)</m> computes the amount of money collected as a result of selling <m>x</m> items.
+      Since <m>p(x)</m> is the price charged per item,
+      we have <m>R(x)= x p(x)</m>.
+      Finally, the <em>profit</em> function,
+      <m>P(x)</m> calculates how much money is earned after the costs are paid.
+      That is, <m>P(x) = (R-C)(x) = R(x) - C(x)</m>.
+      We summarize all of these functions below.
+    </p>
+
+    <insight xml:id="pricerevenuecostprofit">
+      <title>Summary of Common Economic Functions</title>
+      <p>
+        Suppose <m>x</m> represents the quantity of items produced and sold.
+
+        <ul>
+          <li>
+            <p>
+              The price-demand function <m>p(x)</m> calculates the price per item.
+            <idx><h>price-demand function</h></idx><idx><h>function</h><h>price-demand</h></idx>
+        </p>
+          </li>
+
+          <li>
+            <p>
+              The revenue function <m>R(x)</m> calculates the total money collected by selling <m>x</m> items at a price <m>p(x)</m>,
+              <m>R(x) = x \, p(x)</m>.
+            <idx><h>revenue function</h></idx><idx><h>function</h><h>revenue</h></idx>
+        </p>
+          </li>
+
+          <li>
+            <p>
+              The cost function <m>C(x)</m> calculates the cost to produce <m>x</m> items.
+              The value <m>C(0)</m> is called the fixed cost or start-up cost.
+            <idx><h>cost function</h></idx><idx><h>function</h><h>cost</h></idx><idx><h>cost</h><h>fixed,
+              start-up</h></idx><idx><h>fixed cost</h></idx><idx><h>start-up cost</h></idx>
+        </p>
+          </li>
+
+          <li>
+            <p>
+              The average cost function
+              <m>\overline{C}(x) = \frac{C(x)}{x}</m> calculates the cost per item when making <m>x</m> items.
+              Here, we necessarily assume <m>x > 0</m>.
+            <idx><h>average cost function</h></idx><idx><h>cost</h><h>average</h></idx><idx><h>function</h><h>average cost</h></idx>
+        </p>
+          </li>
+
+          <li>
+            <p>
+              The profit function <m>P(x)</m> calculates the money earned after costs are paid when <m>x</m> items are produced and sold,
+              <m>P(x) = (R-C)(x) = R(x) - C(x)</m>.
+            <idx><h>profit function</h></idx><idx><h>function</h><h>profit</h></idx>
+        </p>
+          </li>
+        </ul>
+      </p>
+    </insight>
+
+    <example xml:id="costrevenueprofitex1">
+      <title>Computing (and interpreting) cost and profit functions</title>
+      <statement>
+        <p>
+          Let <m>x</m> represent the number of dOpi media players produced and sold in a typical week.
+          Suppose the cost, in dollars,
+          to produce <m>x</m> dOpis is given by <m>C(x) = 100x + 2000</m>,
+          for <m>x \geq 0</m>, and the price, in dollars per dOpi,
+          is given by <m>p(x) = 450-15x</m> for <m>0 \leq x \leq 30</m>.
+        </p>
+
+        <aside>
+          <p>
+            <q>dOpis</q> <mdash /> pronounced
+            <q>dopeys</q> <ellipsis />
+          </p>
+        </aside>
+        <ol>
+          <li>
+            <p>
+              Find and interpret <m>C(0)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret <m>\overline{C}(10)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret <m>p(0)</m> and <m>p(20)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>p(x) = 0</m> and interpret the result.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and simplify expressions for the revenue function <m>R(x)</m> and the profit function <m>P(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret <m>R(0)</m> and <m>P(0)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve <m>P(x) = 0</m> and interpret the result.
+            </p>
+          </li>
+        </ol>
+      </statement>
+      <solution xml:id="fixedcostex">
+        <p>
+          \begin{enumerate}
+        </p>
+
+        <p>
+          \item We substitute <m>x=0</m> into the formula for <m>C(x)</m> and get <m>C(0) = 100(0) + 2000 = 2000</m>.
+          This means to produce <m>0</m> dOpis,
+          it costs <m>\dollar2000</m>.
+          In other words, the fixed
+          (or start-up)
+          costs are <m>\dollar2000</m>.
+          The reader is encouraged to contemplate what sorts of expenses these might be.
+        </p>
+
+        <p>
+          \item Since <m>\overline{C}(x) = \frac{C(x)}{x}</m>,
+          <m>\overline{C}(10) = \frac{C(10)}{10} = \frac{3000}{10} = 300</m>.
+          This means when <m>10</m> dOpis are produced,
+          the cost to manufacture them amounts to <m>\dollar 300</m> per dOpi.
+        </p>
+
+        <p>
+          \item Plugging <m>x=0</m> into the expression for <m>p(x)</m> gives <m>p(0) = 450 - 15(0) = 450</m>.
+          This means no dOpis are sold if the price is <m>\dollar450</m> per dOpi.
+          On the other hand,
+          <m>p(20) = 450-15(20) = 150</m> which means to sell <m>20</m> dOpis in a typical week,
+          the price should be set at <m>\dollar150</m> per dOpi.
+        </p>
+
+        <p>
+          \item Setting <m>p(x) = 0</m> gives <m>450-15x = 0</m>.
+          Solving gives <m>x = 30</m>.
+          This means in order to sell <m>30</m> dOpis in a typical week,
+          the price needs to be set to <m>\dollar 0</m>.
+          What's more,
+          this means that even if dOpis were given away for free,
+          the retailer would only be able to move <m>30</m> of them.
+        </p>
+
+        <p>
+          \item To find the revenue,
+          we compute <m>R(x) = x p(x) = x (450 - 15x) = 450x - 15x^2</m>.
+          Since the formula for <m>p(x)</m> is valid only for <m>0 \leq x \leq 30</m>,
+          our formula <m>R(x)</m> is also restricted to <m>0 \leq x \leq 30</m>.
+          For the profit, <m>P(x) = (R-C)(x) = R(x) - C(x)</m>.
+          Using the given formula for <m>C(x)</m> and the derived formula for <m>R(x)</m>,
+          we get <m>P(x) = \left(450x - 15x^2\right) -(100x+2000) = -15x^2+350x-2000</m>.
+          As before, the validity of this formula is for <m>0 \leq x \leq 30</m> only.
+        </p>
+
+        <p>
+          \item We find <m>R(0) = 0</m> which means if no dOpis are sold,
+          we have no revenue, which makes sense.
+          Turning to profit, <m>P(0) = -2000</m> since
+          <m>P(x) = R(x) - C(x)</m> and <m>P(0) = R(0) - C(0) = -2000</m>.
+          This means that if no dOpis are sold,
+          more money (<m>\dollar2000</m> to be exact!) was put into producing the dOpis than was recouped in sales.
+          In <xref ref="fixedcostex">number</xref>,
+          we found the fixed costs to be <m>\dollar2000</m>,
+          so it makes sense that if we sell no dOpis,
+          we are out those start-up costs.
+        </p>
+
+        <p>
+          \item Setting <m>P(x) = 0</m> gives <m>-15x^2+350x-2000 = 0</m>.
+          Factoring gives <m>-5(x-10)(3x-40) = 0</m> so <m>x = 10</m> or <m>x = \frac{40}{3}</m>.
+          What do these values mean in the context of the problem?
+          Since <m>P(x) = R(x) - C(x)</m>,
+          solving <m>P(x) = 0</m> is the same as solving <m>R(x) = C(x)</m>.
+          This means that the solutions to <m>P(x) = 0</m> are the production
+          (and sales)
+          figures for which the sales revenue exactly balances the total production costs.
+          These are the so-called <q><em>break even</em></q> points.
+          The solution <m>x=10</m> means <m>10</m> dOpis should be produced
+          (and sold)
+          during the week to recoup the cost of production.
+          For <m>x = \frac{40}{3} = 13.\overline{3}</m>,
+          things are a bit more complicated.
+          Even though <m>x = 13.\overline{3}</m> satisfies <m>0 \leq x \leq 30</m>,
+          and hence is in the domain of <m>P</m>,
+          it doesn't make sense in the context of this problem to produce a fractional part of a dOpi.
+          Evaluating <m>P(13) = 15</m> and <m>P(14) = -40</m>,
+          we see that producing and selling <m>13</m> dOpis per week makes a (slight) profit,
+          whereas producing just one more puts us back into the red.
+          While breaking even is nice,
+          we ultimately would like to find what production level
+          (and price)
+          will result in the largest profit,
+          and we'll do just that <ellipsis /> in <xref ref="QuadraticFunctions">Section</xref>.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      \end{enumerate}
+    </p>
+
+    <aside>
+      <p>
+        Recall from <xref ref="modeling">Section</xref>
+        that in problems such as this,
+        it is necessary to take the <em>applied domain</em> of the function into account.
+      </p>
+    </aside>
+  </introduction>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises,
+      use the pair of functions <m>f</m> and <m>g</m> to find the following values if they exist:
+
+      <ul>
+        <li>
+          <p>
+            <m>(f+g)(2)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(f-g)(-1)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(g-f)(1)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(fg)\left(\frac{1}{2}\right)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\left(\dfrac{f}{g}\right)(0)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\left(\dfrac{g}{f}\right)\left(-2\right)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x+1</m> and <m>g(x) = 4-x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 3x+1</m> and <m>g(x) = 4-x</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 9</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = -7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = \frac{35}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = \frac{1}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = -\frac{6}{5}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2</m> and <m>g(x) = -2x+1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2</m> and <m>g(x) = -2x+1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{5}{4}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2 - x</m> and <m>g(x) = 12-x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2 - x</m> and <m>g(x) = 12-x^2</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 10</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = -9</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = 11</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = -\frac{47}{16}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{4}{3}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x^3</m> and <m>g(x) = -x^2-2x-3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x^3</m> and <m>g(x) = -x^2-2x-3</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 5</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -8</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = -\frac{17}{16}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{3}{16}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{x+3}</m> and <m>g(x) = 2x-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{x+3}</m> and <m>g(x) = 2x-1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 3+\sqrt{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = 3+\sqrt{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = -\sqrt{3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = -5</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{4-x}</m> and <m>g(x) = \sqrt{x+2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{4-x}</m> and <m>g(x) = \sqrt{x+2}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 2+\sqrt{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = -1+\sqrt{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = \frac{\sqrt{35}}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = \sqrt{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = 0</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x</m> and <m>g(x) = \dfrac{1}{2x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x</m> and <m>g(x) = \dfrac{1}{2x+1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = \frac{21}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = -1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -\frac{5}{3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = \frac{1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{1}{12}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2</m> and <m>g(x) = \dfrac{3}{2x-3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2</m> and <m>g(x) = \dfrac{3}{2x-3}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) = 7</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = \frac{8}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) = -\frac{3}{8}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = -\frac{3}{28}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2</m> and <m>g(x) = \dfrac{1}{x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2</m> and <m>g(x) = \dfrac{1}{x^2}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) =\frac{17}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = 0</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) =1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0)</m> is undefined.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{1}{16}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2+1</m> and <m>g(x) = \dfrac{1}{x^2+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2+1</m> and <m>g(x) = \dfrac{1}{x^2+1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(2) =\frac{26}{5}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(-1) = \frac{3}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(g-f)(1) = -\frac{3}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)\left(\frac{1}{2}\right) =1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(0) = 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{g}{f}\right)\left(-2\right) = \frac{1}{25}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the pair of functions <m>f</m> and <m>g</m> to find the domain of the indicated function then find and simplify an expression for it.
+
+      <ul>
+        <li>
+          <p>
+            <m>(f+g)(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(f-g)(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>(fg)(x)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>\left(\frac{f}{g}\right)(x)</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x+1</m> and <m>g(x) = x-2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 2x+1</m> and <m>g(x) = x-2</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = 3x-1</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = x+3</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 2x^2-3x-2</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{2x+1}{x-2}</m> Domain:
+                <m>(-\infty, 2) \cup (2, \infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 1-4x</m> and <m>g(x) = 2x-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = 1-4x</m> and <m>g(x) = 2x-1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = -2x</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = 2-6x</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = -8x^2+6x-1</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{1-4x}{2x-1}</m> Domain:
+                <m>\left(-\infty, \frac{1}{2} \right) \cup \left(\frac{1}{2}, \infty \right)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2</m> and <m>g(x) = 3x-1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2</m> and <m>g(x) = 3x-1</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = x^2+3x-1</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = x^2-3x+1</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 3x^3-x^2</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{x^2}{3x-1}</m> Domain:
+                <m>\left(-\infty, \frac{1}{3} \right) \cup \left(\frac{1}{3}, \infty \right)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2-x</m> and <m>g(x) = 7x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2-x</m> and <m>g(x) = 7x</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = x^2+6x</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = x^2-8x</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 7x^3-7x^2</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{x-1}{7}</m> Domain:
+                <m>\left(-\infty, 0 \right) \cup \left(0, \infty \right)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^2-4</m> and <m>g(x) = 3x+6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = x^2-4</m> and <m>g(x) = 3x+6</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = x^2+3x+2</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = x^2-3x-10</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 3x^3+6x^2-12x-24</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{x-2}{3}</m> Domain:
+                <m>\left(-\infty, -2 \right) \cup \left(-2, \infty \right)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -x^2+x+6</m> and <m>g(x) = x^2-9</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = -x^2+x+6</m> and <m>g(x) = x^2-9</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = x-3</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = -2x^2+x+15</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = -x^4+x^3+15x^2-9x-54</m> Domain: <m>(-\infty, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = -\frac{x+2}{x+3}</m> Domain:
+                <m>\left(-\infty, -3 \right) \cup \left(-3, 3 \right) \cup (3, \infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{2}</m> and <m>g(x) = \dfrac{2}{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \frac{x}{2}</m> and <m>g(x) = \frac{2}{x}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = \frac{x^2+4}{2x}</m> Domain:
+                <m>(-\infty, 0) \cup (0, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = \frac{x^2-4}{2x}</m> Domain:
+                <m>(-\infty,0) \cup (0, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 1</m> Domain:
+          <m>(-\infty,0) \cup (0, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) = \frac{x^2}{4}</m> Domain:
+                <m>(-\infty,0) \cup (0, \infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =x-1</m> and <m>g(x) = \dfrac{1}{x-1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) =x-1</m> and <m>g(x) = \frac{1}{x-1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = \frac{x^2-2x+2}{x-1}</m> Domain:
+                <m>(-\infty, 1) \cup (1, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = \frac{x^2-2x}{x-1}</m> Domain:
+                <m>(-\infty,1) \cup (1, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = 1</m> Domain:
+          <m>(-\infty,1) \cup (1, \infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) =x^2-2x+1</m> Domain:
+                <m>(-\infty,1) \cup (1, \infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x</m> and <m>g(x) = \sqrt{x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) =x</m> and <m>g(x) = \sqrt{x+1}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = x+\sqrt{x+1}</m> Domain: <m>[-1,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) = x-\sqrt{x+1}</m> Domain: <m>[-1,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) = x\sqrt{x+1}</m> Domain: <m>[-1,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) =\frac{x}{\sqrt{x+1}}</m> Domain:
+                <m>(-1,\infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) =\sqrt{x-5}</m> and <m>g(x) = f(x) = \sqrt{x-5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          For <m>f(x) = \sqrt{x-5}</m> and <m>g(x) = f(x) = \sqrt{x-5}</m>
+
+          <ul>
+            <li>
+              <p>
+                <m>(f+g)(x) = 2\sqrt{x-5}</m> Domain: <m>[5,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(f-g)(x) =0</m> Domain: <m>[5,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(fg)(x) =x-5</m> Domain: <m>[5,\infty)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\left(\frac{f}{g}\right)(x) =1</m> Domain: <m>(5,\infty)</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      find and simplify the difference quotient
+      <m>\dfrac{f(x+h) - f(x)}{h}</m> for the given function.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 2x - 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -3x + 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 3x^2 - x</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6x+3h-1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = -x^2 + 2x - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-2x-h+2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = 4x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>8x+4h</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x-x^2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-2x-h+1</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x^{3} + 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3x^{2} + 3xh + h^{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = mx + b\;</m> where <m>m \neq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>m</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = ax^{2} + bx + c\;</m> where <m>a \neq 0</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>2ax + ah + b</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2}{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-2}{x(x+h)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3}{1-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3}{(1-x-h)(1-x)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{x^2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-(2x+h)}{x^2(x+h)^2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{2}{x+5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-2}{(x+5)(x+h+5)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{1}{4x-3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-4}{(4x-3)(4x+4h-3)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{3x}{x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3}{(x+1)(x+h+1)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x}{x - 9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-9}{(x - 9)(x + h - 9)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \dfrac{x^2}{2x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{2x^2+2xh+2x+h}{(2x+1)(2x+2h+1)}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{x-9}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{1}{\sqrt{x+h-9} + \sqrt{x-9}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{2x+1}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{2}{\sqrt{2x+2h+1} + \sqrt{2x+1}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{-4x+5}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-4}{\sqrt{-4x-4h+5} + \sqrt{-4x+5}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{4-x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{-1}{\sqrt{4-x-h} + \sqrt{4-x}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt{ax+b}</m>, where <m>a \neq 0</m>.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{a}{\sqrt{ax+ah+b} + \sqrt{ax+b}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = x \sqrt{x}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3x^2+3xh+h^2}{(x+h)^{3/2} + x^{3/2}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>f(x) = \sqrt[3]{x}</m>. <em>HINT:</em>
+          <m>(a-b)\left(a^2+ab+b^2\right) = a^3 - b^3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{1}{(x+h)^{2/3} + (x+h)^{1/3} x^{1/3} + x^{2/3}}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      <m>C(x)</m> denotes the cost to produce <m>x</m> items and <m>p(x)</m> denotes the price-demand function in the given economic scenario.
+      In each Exercise, do the following:
+
+      <ul>
+        <li>
+          <p>
+            Find and interpret <m>C(0)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and interpret <m>\overline{C}(10)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and interpret <m>p(5)</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and simplify <m>R(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find and simplify <m>P(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Solve <m>P(x) = 0</m> and interpret.
+          </p>
+        </li>
+      </ul>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in dollars, to produce <m>x</m>
+          <q>I'd rather be a Sasquatch</q>
+          T-Shirts is <m>C(x) = 2x+26</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per shirt, is <m>p(x) = 30 - 2x</m>, <m>0 \leq x \leq 15</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>C(0) = 26</m>, so the fixed costs are <m>\dollar26</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(10) = 4.6</m>,
+              so when 10 shirts are produced,
+              the cost per shirt is <m>\dollar4.60</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(5) = 20</m>, so to sell <m>5</m> shirts,
+              set the price at <m>\dollar20</m> per shirt.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>R(x) = -2x^2+30x</m>, <m>0 \leq x \leq 15</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = -2x^2+28x-26</m>, <m>0 \leq x \leq 15</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = 0</m> when <m>x = 1</m> and <m>x=13</m>.
+              These are the <q>break even</q> points,
+              so selling <m>1</m> shirt or <m>13</m> shirts will guarantee the revenue earned exactly recoups the cost of production.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in dollars,
+          to produce <m>x</m> bottles of <m>100 \%</m> All-Natural Certified Free-Trade Organic Sasquatch Tonic is <m>C(x) = 10x+100</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per bottle, is
+          <m>p(x) = 35 - x</m>, <m>0 \leq x \leq 35</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>C(0) = 100</m>, so the fixed costs are <m>\dollar100</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(10) = 20</m>,
+              so when 10 bottles of tonic are produced,
+              the cost per bottle is <m>\dollar20</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(5) = 30</m>, so to sell <m>5</m> bottles of tonic,
+              set the price at <m>\dollar30</m> per bottle.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>R(x) = -x^2+35x</m>, <m>0 \leq x \leq 35</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = -x^2+25x-100</m>, <m>0 \leq x \leq 35</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = 0</m> when <m>x = 5</m> and <m>x=20</m>.
+              These are the <q>break even</q> points,
+              so selling <m>5</m> bottles of tonic or <m>20</m> bottles of tonic will guarantee the revenue earned exactly recoups the cost of production.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The cost, in cents,
+          to produce <m>x</m> cups of Mountain Thunder Lemonade at Junior's Lemonade Stand is <m>C(x) = 18x + 240</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in cents per cup, is <m>p(x) = 90-3x</m>, <m>0 \leq x \leq 30</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>C(0) = 240</m>,
+              so the fixed costs are <m>240</m>\textcent or <m>\dollar2.40</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(10) = 42</m>,
+              so when 10 cups of lemonade are made,
+              the cost per cup is <m>42</m>\textcent.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(5) = 75</m>, so to sell <m>5</m> cups of lemonade,
+              set the price at <m>75</m>\textcent per cup.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>R(x) = -3x^2+90x</m>, <m>0 \leq x \leq 30</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = -3x^2+72x-240</m>, <m>0 \leq x \leq 30</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = 0</m> when <m>x = 4</m> and <m>x=20</m>.
+              These are the <q>break even</q> points,
+              so selling <m>4</m> cups of lemonade or <m>20</m> cups of lemonade will guarantee the revenue earned exactly recoups the cost of production.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The daily cost, in dollars,
+          to produce <m>x</m> Sasquatch Berry Pies <m>C(x) = 3x + 36</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in dollars per pie, is <m>p(x) = 12-0.5x</m>, <m>0 \leq x \leq 24</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>C(0) = 36</m>, so the daily fixed costs are <m>\dollar36</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(10) = 6.6</m>,
+              so when 10 pies are made, the cost per pie is <m>\dollar6.60</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(5) = 9.5</m>, so to sell <m>5</m> pies a day,
+              set the price at <m>\dollar9.50</m> per pie.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>R(x) = -0.5 x^2 + 12x</m>, <m>0 \leq x \leq 24</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = -0.5 x^2+9x-36</m>, <m>0 \leq x \leq 24</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = 0</m> when <m>x = 6</m> and <m>x=12</m>.
+              These are the <q>break even</q> points,
+              so selling <m>6</m> pies or <m>12</m> pies a day will guarantee the revenue earned exactly recoups the cost of production.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The monthly cost, in hundreds of dollars,
+          to produce <m>x</m> custom built electric scooters is <m>C(x) = 20x + 1000</m>,
+          <m>x \geq 0</m> and the price-demand function,
+          in hundreds of dollars per scooter,
+          is <m>p(x) = 140-2x</m>, <m>0 \leq x \leq 70</m>.
+        </p>
+      </statement>
+      <answer>
+        <ul>
+          <li>
+            <p>
+              <m>C(0) = 1000</m>, so the monthly fixed costs are <m>1000</m>
+              <em>hundred</em> dollars,
+              or <m>\dollar100,\!000</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\overline{C}(10) = 120</m>,
+              so when 10 scooters are made,
+              the cost per scooter is <m>120</m> hundred dollars,
+              or <m>\dollar12,\!000</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>p(5) = 130</m>, so to sell <m>5</m> scooters a month,
+              set the price at <m>130</m> hundred dollars,
+              or <m>\dollar13,\!000</m> per scooter.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>R(x) = -2x^2+140x</m>, <m>0 \leq x \leq 70</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = -2x^2+120x-1000</m>, <m>0 \leq x \leq 70</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>P(x) = 0</m> when <m>x = 10</m> and <m>x=50</m>.
+              These are the <q>break even</q> points,
+              so selling <m>10</m> scooters or <m>50</m> scooters a month will guarantee the revenue earned exactly recoups the cost of production.
+            </p>
+          </li>
+        </ul>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises, let <m>f</m> be the function defined by
+      <me>
+        f = \{(-3, 4), (-2, 2), (-1, 0), (0, 1), (1, 3), (2, 4), (3, -1)\}
+      </me>
+      and let <m>g</m> be the function defined
+      <me>
+        g = \{(-3, -2), (-2, 0), (-1, -4), (0, 0), (1, -3), (2, 1), (3, 2)\}
+      </me>.
+    </p>
+
+    <p>
+      Compute the indicated value if it exists.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>(f + g)(-3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(f + g)(-3) = 2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(f - g)(2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(f - g)(2) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(fg)(-1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(fg)(-1) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(g + f)(1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(g + f)(1) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(g - f)(3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(g - f)(3) = 3</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>(gf)(-3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>(gf)(-3) = -8</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(-2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(-2)</m> does not exist
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(-1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(-1) = 0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(2)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{f}{g}\right)(2) = 4</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(-1)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(-1)</m> does not exist
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(3) = -2</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(-3)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\left(\dfrac{g}{f}\right)(-3) = -\frac{1}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+  </subsection>
+</section>
+

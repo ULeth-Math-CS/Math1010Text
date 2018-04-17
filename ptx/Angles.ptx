@@ -1,0 +1,1897 @@
+
+
+<section xml:id="Angles">
+  <title>Angles and their Measure</title>
+  <introduction>
+    <p>
+      This section begins our study of Trigonometry and to get started,
+      we recall some basic definitions from Geometry.
+      A
+          <idx><h>ray</h><h>definition of</h></idx>
+      <em>ray</em> is usually described as a <q>half-line</q>
+      and can be thought of as a line segment in which one of the two endpoints is pushed off infinitely distant from the other,
+      as pictured in <xref ref="fig_angles1">Figure</xref>.
+      The point from which the ray originates is called the
+          <idx><h>ray</h><h>initial point</h></idx>
+      <em>initial point</em> of the ray.
+    </p>
+
+    <figure xml:id="fig_angles1">
+      <caption>A ray with initial point <m>P</m></caption>
+      <img src="figures/IntroTrigGraphics/Angles-1.pdf"/>
+    </figure>
+
+    <p>
+      When two rays share a common initial point they form an
+          <idx><h>angle</h><h>definition</h></idx> <em>angle</em>
+      and the common initial point is called the <idx><h>angle</h><h>vertex</h></idx><idx><h>vertex</h><h>of an angle</h></idx>
+      <em>vertex</em> of the angle.
+      Two examples of what are commonly thought of as angles are given in <xref ref="fig_angles2">Figure</xref>
+    </p>
+
+    <!--
+    <caption>Typical angles</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-2.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-3.pdf"/></cell>
+        </row>
+        <row>
+          <cell>An angle with vertex <m>P</m></cell>
+          <cell>An angle with vertex <m>Q</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      However, the two figures in <xref ref="fig_angles3">Figure</xref>
+      also depict angles - albeit these are,
+      in some sense, extreme cases.
+      In the first case,
+      the two rays are directly opposite each other forming what is known as a
+          <idx><h>angle</h><h>straight</h></idx><idx><h>straight angle</h></idx>
+      <em>straight angle</em>; in the second,
+      the rays are identical so the <q>angle</q>
+      is indistinguishable from the ray itself.
+    </p>
+
+    <!--
+    <caption>Less typical angles</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-4.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-5.pdf"/></cell>
+        </row>
+        <row>
+          <cell>A straight angle</cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      The
+          <idx><h>angle</h><h>measurement</h></idx><idx><h>measure of an angle</h></idx>
+      <em>measure of an angle</em>
+      is a number which indicates the amount of rotation that separates the rays of the angle.
+      There is one immediate problem with this,
+      as pictured in <xref ref="fig_angles4">Figure</xref>.
+    </p>
+
+    <table xml:id="fig_angles4">
+      <caption>Two ways to measure an angle</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-6.pdf"/></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-7.pdf"/></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Which amount of rotation are we attempting to quantify?
+      What we have just discovered is that we have at least two angles described by this diagram. (The phrase <q>at least</q>
+      will be justified in short order.) Clearly these two angles have different measures because one appears to represent a larger rotation than the other,
+      so we must label them differently.
+      In this book,
+      we use lower case Greek letters such as <m>\alpha</m> (alpha),
+      <m>\beta</m> (beta),
+      <m>\gamma</m> (gamma) and <m>\theta</m> (theta) to label angles.
+      So, for instance,
+      we have the labels in <xref ref="fig_angles5">Figure</xref>.
+    </p>
+
+    <figure xml:id="fig_angles5">
+      <caption>Labelling angles</caption>
+      <img src="figures/IntroTrigGraphics/Angles-8.pdf"/>
+    </figure>
+
+    <aside>
+      <p>
+        The choice of <q><m>360</m></q>
+        is most often attributed to the <url href="http://en.wikipedia.org/wiki/Degree_(angle)"><em>Babylonians</em></url>.
+      </p>
+    </aside>
+    <p>
+      One commonly used system to measure angles is
+          <idx><h>angle</h><h>degree</h></idx><idx><h>degree measure</h></idx>
+      <em>degree measure</em>.
+      Quantities measured in degrees are denoted by the familiar
+      <q><m>^{\circ}</m></q> symbol.
+      One complete revolution as shown below is <m>360^{\circ}</m>,
+      and parts of a revolution are measured proportionately.
+      Thus half of a revolution (a straight angle) measures <m>\frac{1}{2} \left(360^{\circ}\right) = 180^{\circ}</m>,
+      a quarter of a revolution (a
+          <idx><h>right angle</h></idx><idx><h>angle</h><h>right</h></idx>
+      <em>right angle</em>) measures <m>\frac{1}{4} \left(360^{\circ}\right) = 90^{\circ}</m> and so on.
+    </p>
+
+    <!--
+    <caption>Defining degree measure</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-9.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-10.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-11.pdf"/></cell>
+        </row>
+        <row>
+          <cell>One revolution <m>\leftrightarrow 360^\circ</m></cell>
+          <cell><m>180^\circ</m></cell>
+          <cell><m>90^\circ</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Note that in <xref ref="fig_angles6">Figure</xref> above,
+      we have used the small square <q><m>\! \! \! \! \! \!</m></q> to denote a right angle,
+      as is commonplace in Geometry.
+      Recall that if an angle measures strictly between
+      <m>0^{\circ}</m> and <m>90^{\circ}</m> it is called an
+          <idx><h>acute angle</h></idx><idx><h>angle</h><h>acute</h></idx><em>acute angle</em>
+      and if it measures strictly between <m>90^{\circ}</m> and
+      <m>180^{\circ}</m> it is called an <idx><h>obtuse angle</h></idx><idx><h>angle</h><h>obtuse</h></idx>
+      <em>obtuse angle</em>.
+      It is important to note that, theoretically,
+      we can know the measure of any angle as long as we know the proportion it represents of entire revolution.
+      For instance,
+      the measure of an angle which represents a rotation of
+      <m>\frac{2}{3}</m> of a revolution would measure <m>\frac{2}{3} \left(360^{\circ}\right) = 240^{\circ}</m>,
+      the measure of an angle which constitutes only <m>\frac{1}{12}</m> of a revolution measures
+      <m>\frac{1}{12} \left(360^{\circ}\right) = 30^{\circ}</m> and an angle which indicates no rotation at all is measured as <m>0^{\circ}</m>:
+      see <xref ref="fig_angles7">Figure</xref>.
+    </p>
+
+    <!--
+    <caption>Measuring angles in degrees</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-12.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-13.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-14.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>240^\circ</m></cell>
+          <cell><m>30^\circ</m></cell>
+          <cell><m>0^\circ</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <p>
+      Two acute angles are called
+          <idx><h>complementary angles</h></idx><idx><h>angle</h><h>complementary</h></idx>
+      <em>complementary angles</em>
+      if their measures add to <m>90^{\circ}</m>.
+      Two angles,
+      either a pair of right angles or one acute angle and one obtuse angle,
+      are called
+          <idx><h>supplementary angles</h></idx><idx><h>angle</h><h>supplementary</h></idx>
+      <em>supplementary angles</em>
+      if their measures add to <m>180^{\circ}</m>.
+      In <xref ref="fig_angles8">Figure</xref>,
+      the angles <m>\alpha</m> and <m>\beta</m> are supplementary angles while the pair <m>\gamma</m> and <m>\theta</m> are complementary angles.
+    </p>
+
+    <table xml:id="fig_angles8">
+      <caption>Supplementary and complementary angles</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-15.pdf"/></cell>
+        </row>
+        <row>
+          <cell>Supplementary angles</cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-16.pdf"/></cell>
+        </row>
+        <row>
+          <cell>Complementary angles</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      In practice,
+      the distinction between the angle itself and its measure is blurred so that the sentence
+      <q><m>\alpha</m> is an angle measuring <m>42^{\circ}</m></q>
+      is often abbreviated as <q><m>\alpha = 42^{\circ}</m>.</q>
+    </p>
+
+    <p>
+      Up to this point,
+      we have discussed only angles which measure between
+      <m>0^{\circ}</m> and <m>360^{\circ}</m>, inclusive.
+      Ultimately,
+      we want to use the arsenal of Algebra which we have stockpiled in <xref ref="RelationsandFunctions">Chapters</xref>
+      through <xref ref="Rationals"></xref>
+      to not only solve geometric problems involving angles,
+      but also to extend their applicability to other real-world phenomena.
+      A first step in this direction is to extend our notion of <q>angle</q>
+      from merely measuring an extent of rotation to quantities which can be associated with real numbers.
+      To that end, we introduce the concept of an
+          <idx><h>angle</h><h>oriented</h></idx><idx><h>oriented angle</h></idx>
+      <em>oriented angle</em>.
+      As its name suggests, in an oriented angle,
+      the direction of the rotation is important.
+      We imagine the angle being swept out starting from an
+          <idx><h>angle</h><h>initial side</h></idx><idx><h>initial side of an angle</h></idx><em>initial side</em>
+      and ending at a <idx><h>angle</h><h>terminal side</h></idx><idx><h>terminal side of an angle</h></idx>
+      <em>terminal side</em>, as shown in <xref ref="fig_angles9">Figure</xref>.
+      When the rotation is counter-clockwise from initial side to terminal side,
+      we say that the angle is
+          <idx><h>angle</h><h>positive</h></idx><idx><h>positive angle</h></idx><em>positive</em>;
+      when the rotation is clockwise,
+      we say that the angle is <idx><h>angle</h><h>negative</h></idx><idx><h>negative angle</h></idx>
+      <em>negative</em>.
+    </p>
+
+    <table xml:id="fig_angles9">
+      <caption>The sign of an angle</caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-17.pdf"/></cell>
+        </row>
+        <row>
+          <cell>A positive angle, <m>45^\circ</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-18.pdf"/></cell>
+        </row>
+        <row>
+          <cell>A negative angle, <m>-45^\circ</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <figure xml:id="fig_angles10">
+      <caption>Angles can comprise more than one revolution</caption>
+      <img src="figures/IntroTrigGraphics/Angles-19.pdf"/>
+    </figure>
+
+    <p>
+      At this point,
+      we also extend our allowable rotations to include angles which encompass more than one revolution.
+      For example, to sketch an angle with measure
+      <m>450^{\circ}</m> we start with an initial side,
+      rotate counter-clockwise one complete revolution
+      (to take care of the <q>first</q> <m>360^{\circ}</m>)
+      then continue with an additional
+      <m>90^{\circ}</m> counter-clockwise rotation,
+      as seen in <xref ref="fig_angles10">Figure</xref>.
+    </p>
+
+    <p>
+      To further connect angles with the Algebra which has come before,
+      we shall often overlay an angle diagram on the coordinate plane.
+      An angle is said to be in
+          <idx><h>angle</h><h>standard position</h></idx><idx><h>standard position of an angle</h></idx>
+      <em>standard position</em>
+      if its vertex is the origin and its initial side coincides with the positive <m>x</m>-axis.
+      Angles in standard position are classified according to where their terminal side lies.
+      For instance,
+      an angle in standard position whose terminal side lies in Quadrant I is called a
+      <q>Quadrant I angle</q>.
+      If the terminal side of an angle lies on one of the coordinate axes,
+      it is called a
+          <idx><h>angle</h><h>quadrantal</h></idx><idx><h>quadrantal angle</h></idx>
+      <em>quadrantal angle</em>.
+      Two angles in standard position are called
+          <idx><h>angle</h><h>coterminal</h></idx><idx><h>coterminal angle</h></idx>
+      <em>coterminal</em> if they share the same terminal side. (Note that by being in standard position they automatically share the same initial side which is the positive <m>x</m>-axis.) In <xref ref="fig_angles11">Figure</xref>,
+      <m>\alpha = 120^{\circ}</m> and
+      <m>\beta = -240^{\circ}</m> are two coterminal Quadrant II angles drawn in standard position.
+      Note that <m>\alpha = \beta + 360^{\circ}</m>,
+      or equivalently, <m>\beta = \alpha - 360^{\circ}</m>.
+      We leave it as an exercise to the reader to verify that coterminal angles always differ by a multiple of
+      <m>360^{\circ}</m>. (It is worth noting that all of the pathologies of Analytic Trigonometry result from this innocuous fact.) More precisely,
+      if <m>\alpha</m> and <m>\beta</m> are coterminal angles,
+      then <m>\beta = \alpha + 360^{\circ} \cdot k</m> where <m>k</m> is an integer.
+    </p>
+
+    <figure xml:id="fig_angles11">
+      <caption>Two coterminal angles, <m>\alpha = 120^{\circ}</m> and <m>\beta = -240^{\circ}</m>, in standard position.</caption>
+      <img src="figures/IntroTrigGraphics/Angles-20.pdf"/>
+    </figure>
+
+    <example xml:id="orientedcoterminaldegree">
+      <title>Plotting and classifying angles</title>
+      <statement>
+        <p>
+          Graph each of the (oriented) angles below in standard position and classify them according to where their terminal side lies.
+          Find three coterminal angles,
+          at least one of which is positive and one of which is negative.
+
+          <ol>
+            <li>
+              <p>
+                <m>\alpha = 60^{\circ}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\beta = -225^{\circ}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\gamma = 540^{\circ}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\phi = -750^{\circ}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                To graph <m>\alpha = 60^{\circ}</m>,
+                we draw an angle with its initial side on the positive <m>x</m>-axis and rotate counter-clockwise <m>\frac{60^{\circ}}{360^{\circ}} = \frac{1}{6}</m> of a revolution.
+                We see that <m>\alpha</m> is a Quadrant I angle.
+                To find angles which are coterminal,
+                we look for angles <m>\theta</m> of the form <m>\theta = \alpha + 360^{\circ} \cdot k</m>,
+                for some integer <m>k</m>.
+                When <m>k = 1</m>,
+                we get <m>\theta = 60^{\circ} + 360^{\circ} = 420^{\circ}</m>.
+                Substituting <m>k = -1</m> gives <m>\theta = 60^{\circ} - 360^{\circ} = -300^{\circ}</m>.
+                Finally, if we let <m>k = 2</m>,
+                we get <m>\theta = 60^{\circ} + 720^{\circ} = 780^{\circ}</m>:
+                see <xref ref="fig_angles12">Figure</xref>. <figure xml:id="fig_angles12"> <caption><m>\alpha = 60^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-21.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>\beta = - 225^{\circ}</m> is negative,
+                we start at the positive <m>x</m>-axis and rotate <em>clockwise</em>
+                <m>\frac{225^{\circ}}{360^{\circ}} = \frac{5}{8}</m> of a revolution.
+                We see that <m>\beta</m> is a Quadrant II angle.
+                To find coterminal angles,
+                we proceed as before and compute
+                <m>\theta = -225^{\circ} + 360^{\circ} \cdot k</m> for integer values of <m>k</m>.
+                We find <m>135^{\circ}</m>,
+                <m>-585^{\circ}</m> and
+          <m>495^{\circ}</m> are all coterminal with <m>-225^{\circ}</m>:
+                see <xref ref="fig_angles13">Figure</xref>. <figure xml:id="fig_angles13"> <caption><m>\beta = -225^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-22.pdf"/> </figure> <figure xml:id="fig_angles14"> <caption><m>\gamma = 540^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-23.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>\gamma = 540^{\circ}</m> is positive,
+                we rotate counter-clockwise from the positive <m>x</m>-axis.
+                One full revolution accounts for <m>360^{\circ}</m>,
+                with <m>180^{\circ}</m>, or
+                <m>\frac{1}{2}</m> of a revolution remaining.
+                Since the terminal side of <m>\gamma</m> lies on the negative <m>x</m>-axis,
+                <m>\gamma</m> is a quadrantal angle.
+                All angles coterminal with <m>\gamma</m> are of the form <m>\theta = 540^{\circ} + 360^{\circ} \cdot k</m>,
+                where <m>k</m> is an integer.
+                Working through the arithmetic,
+                we find three such angles:
+                <m>180^{\circ}</m>,
+          <m>-180^{\circ}</m> and <m>900^{\circ}</m>:
+                see <xref ref="fig_angles14">Figure</xref>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The Greek letter <m>\phi</m> is pronounced
+                <q>fee</q> or <q>fie</q>
+                and since <m>\phi</m> is negative,
+                we begin our rotation clockwise from the positive <m>x</m>-axis.
+                Two full revolutions account for <m>720^{\circ}</m>,
+                with just <m>30^{\circ}</m> or
+                <m>\frac{1}{12}</m> of a revolution to go.
+                We find that <m>\phi</m> is a Quadrant IV angle.
+                To find coterminal angles,
+                we compute <m>\theta = -750^{\circ} + 360^{\circ} \cdot k</m> for a few integers <m>k</m> and obtain <m>-390^{\circ}</m>,
+                <m>-30^{\circ}</m> and <m>330^{\circ}</m>:
+                see <xref ref="fig_angles15">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Note that since there are infinitely many integers,
+      any given angle has infinitely many coterminal angles,
+      and the reader is encouraged to plot the few sets of coterminal angles found in <xref ref="orientedcoterminaldegree">Example</xref> to see this.
+      We are now just one step away from completely marrying angles with the real numbers and the rest of Algebra.
+      To that end, we recall the following definition.
+    </p>
+
+    <figure xml:id="fig_angles15">
+      <caption><m>\phi = -750^{\circ}</m> in standard position</caption>
+      <img src="figures/IntroTrigGraphics/Angles-24.pdf"/>
+    </figure>
+
+    <definition xml:id="pidefn">
+      <title>The number $\pi$</title>
+      <statement>
+        <p>
+              <idx><h>pi, <m>\pi</m></h></idx>
+          The real number <m>\pi</m> is defined to be the ratio of a circle's circumference to its diameter.
+          In symbols,
+          given a circle of circumference <m>C</m> and diameter <m>d</m>,
+          <me>
+            \pi = \dfrac{C}{d}
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      While <xref ref="pidefn">Definition</xref>
+      is quite possibly the <q>standard</q> definition of <m>\pi</m>,
+      the authors would be remiss if we didn't mention that buried in this definition is actually a theorem.
+      As the reader is probably aware,
+      the number <m>\pi</m> is a mathematical constant - that is,
+      it doesn't matter <em>which</em> circle is selected,
+      the ratio of its circumference to its diameter will have the same value as any other circle.
+      While this is indeed true,
+      it is far from obvious. (If you think it <em>is</em> obvious,
+      try to come up with a rigorous proof of this fact!) Since the diameter of a circle is twice its radius,
+      we can quickly rearrange the equation in <xref ref="pidefn">Definition</xref>
+      to get a formula more useful for our purposes,
+      namely: <m>2 \pi = \dfrac{C}{r}</m>
+    </p>
+
+    <p>
+      This tells us that for any circle,
+      the ratio of its circumference to its radius is also always constant;
+      in this case the constant is <m>2\pi</m>.
+      Suppose now we take a <em>portion</em> of the circle,
+      so instead of comparing the entire circumference <m>C</m> to the radius,
+      we compare some arc measuring <m>s</m> units in length to the radius,
+      as depicted in <xref ref="fig_angles16">Figure</xref>.
+      Let <m>\theta</m> be the <em>central angle</em>
+          <idx><h>angle</h><h>central angle</h></idx><idx><h>central angle</h></idx>
+      subtended by this arc, that is,
+      an angle whose vertex is the center of the circle and whose determining rays pass through the endpoints of the arc.
+      Using proportionality arguments,
+      it stands to reason that the ratio
+      <m>\dfrac{s}{r}</m> should also be a constant among all circles,
+      and it is this ratio which defines the
+          <idx><h>angle</h><h>radian measure</h></idx><idx><h>radian measure</h></idx>
+      <em>radian measure</em> of an angle.
+    </p>
+
+    <figure xml:id="fig_angles16">
+      <caption>The radian measure of <m>\theta</m> is <m>\dfrac{s}{r}</m></caption>
+      <img src="figures/IntroTrigGraphics/Angles-25.pdf"/>
+    </figure>
+
+    <p>
+      To get a better feel for radian measure,
+      we note that an angle with radian measure <m>1</m> means the corresponding arc length <m>s</m> equals the radius of the circle <m>r</m>,
+      hence <m>s = r</m>.
+      When the radian measure is <m>2</m>, we have <m>s = 2r</m>;
+      when the radian measure is <m>3</m>,
+      <m>s = 3r</m>, and so forth.
+      Thus the radian measure of an angle <m>\theta</m> tells us how many <q>radius lengths</q>
+      we need to sweep out along the circle to subtend the angle <m>\theta</m>:
+      see <xref ref="fig_angles17">Figure</xref>.
+    </p>
+
+    <table xml:id="fig_angles17">
+      <caption>An angle of <m>k</m> radians subtends an arc of length <m>k\cdot r</m></caption>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-26.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>\alpha</m> has radian measure 1</cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-27.pdf"/></cell>
+        </row>
+        <row>
+          <cell><m>\beta</m> has radian measure 4</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Since one revolution sweeps out the entire circumference <m>2\pi r</m>,
+      one revolution has radian measure <m>\dfrac{2 \pi r}{r} = 2 \pi</m>.
+      From this we can find the radian measure of other central angles using proportions,
+      just like we did with degrees.
+      For instance,
+      half of a revolution has radian measure <m>\frac{1}{2} (2 \pi) = \pi</m>,
+      a quarter revolution has radian measure <m>\frac{1}{4} (2 \pi) = \frac{\pi}{2}</m>,
+      and so forth.
+      Note that, by definition,
+      the radian measure of an angle is a length divided by another length so that these measurements are actually dimensionless and are considered <q>pure</q> numbers.
+      For this reason,
+      we do not use any symbols to denote radian measure,
+      but we use the word <q>radians</q>
+      to denote these dimensionless units as needed.
+      For instance, we say one revolution measures
+      <q><m>2\pi</m> radians,</q>
+      half of a revolution measures <q><m>\pi</m> radians,</q> and so forth.
+    </p>
+
+    <p>
+      As with degree measure,
+      the distinction between the angle itself and its measure is often blurred in practice,
+      so when we write <q><m>\theta = \frac{\pi}{2}</m></q>,
+      we mean <m>\theta</m> is an angle which measures
+      <m>\frac{\pi}{2}</m> radians. (The authors are well aware that we are now identifying radians with real numbers.
+      We will justify this shortly.) We extend radian measure to oriented angles,
+      just as we did with degrees beforehand,
+      so that a positive measure indicates counter-clockwise rotation and a negative measure indicates clockwise rotation.
+      Much like before,
+      two positive angles <m>\alpha</m> and <m>\beta</m> are supplementary if
+      <m>\alpha + \beta = \pi</m> and complementary if <m>\alpha + \beta = \frac{\pi}{2}</m>.
+      Finally, we leave it to the reader to show that when using radian measure,
+      two angles <m>\alpha</m> and <m>\beta</m> are coterminal if and only if
+      <m>\beta = \alpha + 2\pi k</m> for some integer <m>k</m>.
+    </p>
+
+    <example xml:id="orientedcoterminalradian">
+      <title>Plotting and classifying angles</title>
+      <statement>
+        <p>
+          Graph each of the (oriented) angles below in standard position and classify them according to where their terminal side lies.
+          Find three coterminal angles,
+          at least one of which is positive and one of which is negative.
+
+          <ol>
+            <li>
+              <p>
+                <m>\alpha = \dfrac{\pi}{6}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\beta = -\dfrac{4\pi}{3}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\gamma = \dfrac{9 \pi}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\phi = - \dfrac{5 \pi}{2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The angle <m>\alpha = \frac{\pi}{6}</m> is positive,
+                so we draw an angle with its initial side on the positive <m>x</m>-axis and rotate counter-clockwise <m>\frac{\left( \pi / 6\right)}{2 \pi} = \frac{1}{12}</m> of a revolution.
+                Thus <m>\alpha</m> is a Quadrant I angle.
+                Coterminal angles <m>\theta</m> are of the form <m>\theta = \alpha + 2\pi \cdot k</m>,
+                for some integer <m>k</m>.
+                To make the arithmetic a bit easier,
+                we note that <m>2\pi = \frac{12 \pi}{6}</m>, thus when <m>k = 1</m>,
+                we get <m>\theta = \frac{\pi}{6} + \frac{12 \pi}{6} = \frac{13 \pi}{6}</m>.
+                Substituting <m>k = -1</m> gives
+                <m>\theta = \frac{\pi}{6} - \frac{12 \pi}{6} = -\frac{11 \pi}{6}</m> and when we let <m>k = 2</m>,
+                we get <m>\theta = \frac{\pi}{6} + \frac{24 \pi}{6} = \frac{25 \pi}{6}</m>:
+                see <xref ref="fig_angles18">Figure</xref>. <figure xml:id="fig_angles18"> <caption><m>\alpha = \frac{\pi}{6}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-28.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>\beta = - \frac{4\pi}{3}</m> is negative,
+                we start at the positive <m>x</m>-axis and rotate clockwise <m>\frac{\left(4 \pi / 3\right)}{2\pi} = \frac{2}{3}</m> of a revolution.
+                We find <m>\beta</m> to be a Quadrant II angle.
+                To find coterminal angles,
+                we proceed as before using <m>2\pi = \frac{6 \pi}{3}</m>,
+                and compute <m>\theta = -\frac{4 \pi}{3} + \frac{6 \pi}{3} \cdot k</m> for integer values of <m>k</m>.
+                We obtain <m>\frac{2\pi}{3}</m>,
+                <m>-\frac{10 \pi}{3}</m> and
+                <m>\frac{8 \pi}{3}</m> as coterminal angles:
+                see <xref ref="fig_angles19">Figure</xref>. <figure xml:id="fig_angles19"> <caption><m>\beta=-\frac{4\pi}{3}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-29.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>\gamma = \frac{9 \pi}{4}</m> is positive,
+                we rotate counter-clockwise from the positive <m>x</m>-axis.
+                One full revolution accounts for
+                <m>2 \pi = \frac{8 \pi}{4}</m> of the radian measure with <m>\frac{\pi}{4}</m> or
+                <m>\frac{1}{8}</m> of a revolution remaining.
+                We have <m>\gamma</m> as a Quadrant I angle.
+                All angles coterminal with <m>\gamma</m> are of the form <m>\theta = \frac{9 \pi}{4} + \frac{8\pi}{4} \cdot k</m>,
+                where <m>k</m> is an integer.
+                Working through the arithmetic, we find:
+                <m>\frac{\pi}{4}</m>,
+                <m>-\frac{7 \pi}{4}</m> and <m>\frac{17 \pi}{4}</m>:
+                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles20"> <caption><m>\gamma = \frac{9\pi}{4}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-30.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To graph <m>\phi = -\frac{5 \pi}{2}</m>,
+                we begin our rotation clockwise from the positive <m>x</m>-axis.
+                As <m>2 \pi = \frac{4 \pi}{2}</m>,
+                after one full revolution clockwise,
+                we have <m>\frac{\pi}{2}</m> or
+                <m>\frac{1}{4}</m> of a revolution remaining.
+                Since the terminal side of <m>\phi</m> lies on the negative <m>y</m>-axis,
+                <m>\phi</m> is a quadrantal angle.
+                To find coterminal angles,
+                we compute <m>\theta = -\frac{5 \pi}{2} + \frac{4 \pi}{2} \cdot k</m> for a few integers <m>k</m> and obtain <m>-\frac{\pi}{2}</m>,
+                <m>\frac{3 \pi}{2}</m> and <m>\frac{7 \pi}{2}</m>:
+                see <xref ref="fig_angles21">Figure</xref>. <figure xml:id="fig_angles21"> <caption><m>\phi = -\frac{5\pi}{2}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-31.pdf"/> </figure>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      It is worth mentioning that we could have plotted the angles in <xref ref="orientedcoterminalradian">Example</xref>
+      by first converting them to degree measure and following the procedure set forth in <xref ref="orientedcoterminaldegree">Example</xref>.
+      While converting back and forth from degrees and radians is certainly a good skill to have,
+      it is best that you learn to <q>think in radians</q>
+      as well as you can <q>think in degrees</q>.
+      The authors would, however,
+      be derelict in our duties if we ignored the basic conversion between these systems altogether.
+      Since one revolution counter-clockwise measures
+      <m>360^{\circ}</m> and the same angle measures <m>2 \pi</m> radians,
+      we can use the proportion <m>\frac{2 \pi \, \text{ radians } }{360^{\circ}}</m>,
+      or its reduced equivalent,
+      <m>\frac{\pi \, \text{ radians } }{180^{\circ}}</m>,
+      as the conversion factor between the two systems.
+      For example,
+      to convert <m>60^{\circ}</m> to radians we find <m>60^{\circ} \left( \frac{\pi \, \text{ radians } }{180^{\circ}}\right) = \frac{\pi}{3} \, \text{ radians }</m>,
+      or simply <m>\frac{\pi}{3}</m>.
+      To convert from radian measure back to degrees,
+      we multiply by the ratio <m>\frac{180^{\circ}}{\pi \, \text{ radian } }</m>.
+      For example,
+      <m>-\frac{5 \pi}{6} \, \text{ radians }</m> is equal to <m>\left(-\frac{5 \pi}{6} \, \text{ radians } \right) \left( \frac{180^{\circ}}{\pi \, \text{ radians } }\right) = -150^{\circ}</m>.
+      Of particular interest is the fact that an angle which measures <m>1</m> in radian measure is equal to <m>\frac{180^{\circ}}{\pi} \approx 57.2958^{\circ}</m>.
+    </p>
+
+    <p>
+      We summarize these conversions below.
+    </p>
+
+    <insight xml:id="degreenradianconversion">
+      <title>Degree  - Radian Conversion</title>
+      <ul>
+        <li>
+          <p>
+            To convert degree measure to radian measure,
+            multiply by <m>\dfrac{\pi \, \text{ radians } }{180^{\circ}}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            To convert radian measure to degree measure,
+            multiply by <m>\dfrac{180^{\circ}}{\pi \, \text{ radians } }</m>
+          </p>
+        </li>
+      </ul>
+    </insight>
+
+    <p>
+      In light of <xref ref="orientedcoterminalradian">Example</xref>
+      and <xref ref="degreenradianconversion">Equation</xref>,
+      the reader may well wonder what the allure of radian measure is.
+      The numbers involved are,
+      admittedly, much more complicated than degree measure.
+      The answer lies in how easily angles in radian measure can be identified with real numbers.
+      Consider the Unit Circle, <m>x^2 + y^2 = 1</m>, as drawn below,
+      the angle <m>\theta</m> in standard position and the corresponding arc measuring <m>s</m> units in length.
+      By definition,
+      and the fact that the Unit Circle has radius 1, the radian measure of <m>\theta</m> is <m>\dfrac{s}{r}=\dfrac{s}{1} = s</m> so that,
+      once again blurring the distinction between an angle and its measure,
+      we have <m>\theta = s</m>.
+      In order to identify real numbers with oriented angles,
+      we make good use of this fact by essentially <q>wrapping</q>
+          <idx><h>wrapping function</h></idx> the real number line around the Unit Circle and associating to each real number <m>t</m> an <em>oriented</em>
+      arc <idx><h>oriented arc</h></idx>
+      on the Unit Circle with initial point <m>(1,0)</m>.
+      This identification between angles and real numbers will also be essential once we begin our study of trigonometric functions in Calculus.
+    </p>
+
+    <p>
+      Viewing the vertical line <m>x=1</m> as another real number line demarcated like the <m>y</m>-axis,
+      given a real number <m>t>0</m>,
+      we <q>wrap</q> the (vertical) interval <m>[0,t]</m> around the Unit Circle in a counter-clockwise fashion.
+      The resulting arc has a length of <m>t</m> units and therefore the corresponding angle has radian measure equal to <m>t</m>.
+      If <m>t\lt 0</m>, we wrap the interval <m>[t,0]</m>
+      <em>clockwise</em> around the Unit Circle.
+      Since we have defined clockwise rotation as having negative radian measure,
+      the angle determined by this arc has radian measure equal to <m>t</m>.
+      If <m>t=0</m>,
+      we are at the point <m>(1,0)</m> on the <m>x</m>-axis which corresponds to an angle with radian measure <m>0</m>.
+      In this way, we identify each real number <m>t</m> with the corresponding angle with radian measure <m>t</m>.
+    </p>
+
+    <!--
+    <caption>Identifying real numnbers with angles</caption>
+    -->
+
+    <sidebyside>
+      <tabular>
+        <row>
+          <cell><img src="figures/IntroTrigGraphics/Angles-32.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-33.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-34.pdf"/></cell>
+        </row>
+        <row>
+          <cell>On the unit circle, <m>\theta = s</m></cell>
+          <cell>Identifying <m>t>0</m> with an angle</cell>
+          <cell>Identifying <m>t\lt 0</m> with an angle</cell>
+        </row>
+      </tabular>
+    </sidebyside>
+    <example xml:id="realwrap">
+      <title>Angles corresponding to real numbers</title>
+      <statement>
+        <p>
+          Sketch the oriented arc on the Unit Circle corresponding to each of the following real numbers.
+
+          <ol>
+            <li>
+              <p>
+                <m>t=\dfrac{3 \pi}{4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t = - 2 \pi</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t = -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t = 117</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The arc associated with
+          <m>t = \frac{3 \pi}{4}</m> is the arc on the Unit Circle which subtends the angle <m>\frac{3 \pi}{4}</m> in radian measure.
+                Since <m>\frac{3 \pi}{4}</m> is <m>\frac{3}{8}</m> of a revolution,
+                we have an arc which begins at the point <m>(1,0)</m> proceeds counter-clockwise up to midway through Quadrant II: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles22"> <caption><m>t=\frac{3\pi}{4}</m></caption> <img src="figures/IntroTrigGraphics/Angles-35.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since one revolution is <m>2\pi</m> radians,
+                and <m>t=-2\pi</m> is negative,
+                we graph the arc which begins at <m>(1,0)</m> and proceeds
+                <em>clockwise</em> for one full revolution:
+                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles23"> <caption><m>t=-2\pi</m></caption> <img src="figures/IntroTrigGraphics/Angles-36.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Like <m>t=-2\pi</m>, <m>t=-2</m> is negative,
+                so we begin our arc at <m>(1,0)</m> and proceed clockwise around the unit circle.
+                Since <m>\pi \approx 3.14</m> and <m>\frac{\pi}{2} \approx 1.57</m>,
+                we find that rotating <m>2</m> radians clockwise from the point <m>(1,0)</m> lands us in Quadrant III. To more accurately place the endpoint,
+                we successively halve the angle measure until we find
+                <m>\frac{5 \pi}{8} \approx 1.96</m> which tells us our arc extends just a bit beyond the quarter mark into Quadrant III: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles24"> <caption><m>t=-2</m></caption> <img src="figures/IntroTrigGraphics/Angles-37.pdf"/> </figure>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Since <m>117</m> is positive,
+                the arc corresponding to <m>t=117</m> begins at <m>(1,0)</m> and proceeds counter-clockwise.
+                As <m>117</m> is much greater than <m>2\pi</m>,
+                we wrap around the Unit Circle several times before finally reaching our endpoint.
+                We approximate <m>\frac{117}{2\pi}</m> as <m>18.62</m> which tells us we complete <m>18</m> revolutions counter-clockwise with <m>0.62</m>,
+                or just shy of <m>\frac{5}{8}</m> of a revolution to spare.
+                In other words,
+                the terminal side of the angle which measures <m>117</m> radians in standard position is just short of being midway through Quadrant III: see <xref ref="fig_angles20">Figure</xref>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </introduction>
+
+  <subsection xml:id="circularmotion">
+    <title>Applications of Radian Measure:  Circular Motion</title>
+    <p>
+      Now that we have paired angles with real numbers via radian measure,
+      a whole world of applications awaits us.
+      Our first excursion into this realm comes by way of circular motion.
+      Suppose an object is moving as pictured in <xref ref="fig_angles26">Figure</xref>
+      along a circular path of radius <m>r</m> from the point <m>P</m> to the point <m>Q</m> in an amount of time <m>t</m>.
+    </p>
+
+    <figure xml:id="fig_angles25">
+      <caption><m>t=117</m></caption>
+      <img src="figures/IntroTrigGraphics/Angles-38.pdf"/>
+    </figure>
+
+    <figure xml:id="fig_angles26">
+      <caption>Circular motion</caption>
+      <img src="figures/IntroTrigGraphics/Angles-39.pdf"/>
+    </figure>
+
+    <p>
+      Here <m>s</m> represents a <em>displacement</em>
+      so that <m>s > 0</m> means the object is travelling in a counter-clockwise direction and <m>s\lt 0</m> indicates movement in a clockwise direction.
+      Note that with this convention the formula we used to define radian measure,
+      namely <m>\theta = \dfrac{s}{r}</m>,
+      still holds since a negative value of <m>s</m> incurred from a clockwise displacement matches the negative we assign to <m>\theta</m> for a clockwise rotation.
+    </p>
+
+    <p>
+      Borrowing terminology from Physics,
+      if we imagine the circular motion of our object taking place over a duration of time <m>t</m>,
+      we can define the quantity <m>\dfrac{\theta}{t}</m>, called the
+          <idx><h>velocity</h><h>average angular</h></idx><idx><h>average angular velocity</h></idx>
+      <em>average angular velocity</em> of the object.
+      It is denoted by <m>\overline{\omega}</m> and is read <q>omega-bar</q>.
+      The quantity <m>\overline{\omega}</m> is the average rate of change of the angle <m>\theta</m> with respect to time and thus has units <m>\frac{\text{ radians } }{\text{ time } }</m>.
+      If the circular motion is <em>uniform</em>,
+      meaning that the rate at which the angle <m>\theta</m> changes with time is constant,
+      then the average angular velocity
+      <m>\overline{\omega}</m> is the same as the <em>instantaneous</em>
+      angular velocity <m>\omega</m>. (If the rate is not constant,
+      we can't define <m>\omega</m> without calculus.)
+    </p>
+
+    <p>
+      If the path of the object were <q>uncurled</q>
+      from a circle to form a line segment,
+      then we could discuss the average
+      <em>linear</em> velocity of the object,
+      given by <m>\overline{v} = \dfrac{s}{t}</m>.
+      Note that since <m>s = r\theta</m>, we obtain
+      <me>
+        \overline{v} = \frac{s}{t} = \frac{r\theta}{t} = r\left(\frac{\theta}{t}\right) = r\overline{\omega}
+      </me>.
+    </p>
+
+    <p>
+      One note of caution is needed here:
+      the true motion of our object is,
+      of course, <em>not</em> linear <mdash /> it's circular.
+      Lest we draw the ire of any students with high school Physics under their belts,
+      we should point out that motion in the plane is best described as a
+      <em>vector</em> quantity
+      (we will <em>not</em> be discussing vectors in this text),
+      and the relationship <m>\overline{v} = r\overline{\omega}</m> describes not the velocity of the object,
+      but its <em>speed</em>.
+    </p>
+
+    <example xml:id="EarthRotationEx">
+      <title>Finding speed of rotation</title>
+      <statement>
+        <p>
+          Assuming that the surface of the Earth is a sphere,
+          any point on the Earth can be thought of as an object travelling on a circle which completes one revolution in (approximately) 24 hours.
+          The path traced out by the point during this 24 hour period is the Latitude of that point.
+          Lakeland Community College is at <m>41.628^{\circ}</m> north latitude,
+          and it can be shown that the radius of the earth at this Latitude is approximately <m>2960</m> miles. (We will discuss how we arrived at this approximation in <xref ref="cosinesinecircleex">Example</xref>.) Find the linear speed,
+          in miles per hour, of Lakeland Community College as the world turns.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To use the formula <m>v = r \omega</m>,
+          we first need to compute the angular velocity <m>\omega</m>.
+          The earth makes one revolution in 24 hours,
+          and one revolution is <m>2 \pi</m> radians,
+          so <m>\omega = \frac{2 \pi \, \text{ radians } }{24 \, \text{ hours } } = \frac{\pi}{12 \, \text{ hours } }</m>, where,
+          once again,
+          we are using the fact that radians are real numbers and are dimensionless. (For simplicity's sake,
+          we are also assuming that we are viewing the rotation of the earth as counter-clockwise so
+          <m>\omega > 0</m>.) Hence, the linear velocity is
+          <me>
+            v = 2960 \, \text{ miles }  \cdot \frac{\pi}{12 \, \text{ hours } } \approx 775 \, \frac{\text{ miles } }{\text{ hour } }
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      It is worth noting that the quantity
+      <m>\frac{1 \, \text{ revolution } }{24 \, \text{ hours } }</m> in <xref ref="EarthRotationEx">Example</xref> is called the
+          <idx><h>frequency</h><h>ordinary</h></idx> <idx><h>ordinary frequency</h></idx>
+      <em>ordinary frequency</em>
+      of the motion and is usually denoted by the variable <m>f</m>.
+      The ordinary frequency is a measure of how often an object makes a complete cycle of the motion.
+      The fact that <m>\omega = 2\pi f</m> suggests that <m>\omega</m> is also a frequency.
+      Indeed, it is called the
+          <idx><h>frequency</h><h>angular</h></idx> <idx><h>angular frequency</h></idx>
+      <em>angular frequency</em> of the motion.
+      On a related note, the quantity <m>T = \dfrac{1}{f}</m> is called the
+          <idx><h>period</h><h>circular motion</h></idx>
+      <em>period</em> of the motion and is the amount of time it takes for the object to complete one cycle of the motion.
+      In the scenario of <xref ref="EarthRotationEx">Example</xref>,
+      the period of the motion is 24 hours, or one day.
+    </p>
+
+    <p>
+      The concepts of frequency and period help frame the equation <m>v = r \omega</m> in a new light.
+      That is, if <m>\omega</m> is fixed,
+      points which are farther from the center of rotation need to travel faster to maintain the same angular frequency since they have farther to travel to make one revolution in one period's time.
+      The distance of the object to the center of rotation is the radius of the circle,
+      <m>r</m>,
+      and is the <q>magnification factor</q>
+      which relates <m>\omega</m> and <m>v</m>.
+      While we have exhaustively discussed velocities associated with circular motion,
+      we have yet to discuss a more natural question:
+      if an object is moving on a circular path of radius <m>r</m> with a fixed angular velocity (frequency) <m>\omega</m>,
+      what is the position of the object at time <m>t</m>?
+      The answer to this question is the very heart of Trigonometry and is answered in the next section.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Problems</title>
+    <p>
+      In the following exercises, graph the oriented angle in standard position.
+      Classify each angle according to where its terminal side lies and then give two coterminal angles,
+      one of which is positive and the other negative.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>330^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>330^{\circ}</m> is a Quadrant IV angle
+        </p>
+
+        <p>
+          coterminal with <m>690^{\circ}</m> and <m>-30^{\circ}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-41.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-135^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-135^{\circ}</m> is a Quadrant III angle
+        </p>
+
+        <p>
+          coterminal with <m>225^{\circ}</m> and <m>-495^{\circ}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-42.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>120^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>120^{\circ}</m> is a Quadrant II angle
+        </p>
+
+        <p>
+          coterminal with <m>480^{\circ}</m> and <m>-240^{\circ}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-43.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>405^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>405^{\circ}</m> is a Quadrant I angle
+        </p>
+
+        <p>
+          coterminal with <m>45^{\circ}</m> and <m>-315^{\circ}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-44.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-270^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-270^{\circ}</m> lies on the positive <m>y</m>-axis
+        </p>
+
+        <p>
+          coterminal with <m>90^{\circ}</m> and <m>-630^{\circ}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-45.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{5\pi}{6}</m> is a Quadrant II angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{17\pi}{6}</m> and <m>-\dfrac{7\pi}{6}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-46.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{11\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{11\pi}{3}</m> is a Quadrant I angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{\pi}{3}</m> and <m>-\dfrac{5\pi}{3}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-47.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{5\pi}{4}</m> is a Quadrant III angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{13\pi}{4}</m> and <m>-\dfrac{3\pi}{4}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-48.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{3\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3\pi}{4}</m> is a Quadrant II angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{11\pi}{4}</m> and <m>-\dfrac{5\pi}{4}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-49.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{\pi}{3}</m> is a Quadrant IV angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{5\pi}{3}</m> and <m>-\dfrac{7\pi}{3}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-50.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{7\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{7\pi}{2}</m> lies on the negative <m>y</m>-axis
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{3\pi}{2}</m> and <m>-\dfrac{\pi}{2}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-51.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\pi}{4}</m> is a Quadrant I angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{9 \pi}{4}</m> and <m>-\dfrac{7\pi}{4}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-52.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{\pi}{2}</m> lies on the negative <m>y</m>-axis
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{3\pi}{2}</m> and <m>-\dfrac{5\pi}{2}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-53.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{7\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{7\pi}{6}</m> is a Quadrant III angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{19 \pi}{6}</m> and <m>-\dfrac{5\pi}{6}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-54.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{5\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{5\pi}{3}</m> is a Quadrant I angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{\pi}{3}</m> and <m>-\dfrac{11\pi}{3}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-55.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>3\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3\pi</m> lies on the negative <m>x</m>-axis
+        </p>
+
+        <p>
+          coterminal with <m>\pi</m> and <m>-\pi</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-56.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-2\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-2\pi</m> lies on the positive <m>x</m>-axis
+        </p>
+
+        <p>
+          coterminal with <m>2\pi</m> and <m>-4\pi</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-57.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{\pi}{4}</m> is a Quadrant IV angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{7 \pi}{4}</m> and <m>-\dfrac{9\pi}{4}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-58.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{15\pi}{4}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{15\pi}{4}</m> is a Quadrant IV angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{7\pi}{4}</m> and <m>-\dfrac{\pi}{4}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-59.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{13\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{13\pi}{6}</m> is a Quadrant IV angle
+        </p>
+
+        <p>
+          coterminal with <m>\dfrac{11\pi}{6}</m> and <m>-\dfrac{\pi}{6}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-60.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      convert the angle from degree measure into radian measure,
+      giving the exact value in terms of <m>\pi</m>.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>0^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>240^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{4\pi}{3}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>135^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{3\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-270^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{3\pi}{2}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-315^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{7\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>150^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{5\pi}{6}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>45^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-225^{\circ}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-\dfrac{5\pi}{4}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      convert the angle from radian measure into degree measure.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>180^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{2\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-120^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{7\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>210^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{11\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>330^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>60^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{5\pi}{3}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>300^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>-\dfrac{\pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>-30^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\dfrac{\pi}{2}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>90^{\circ}</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      In the following exercises,
+      sketch the oriented arc on the Unit Circle which corresponds to the given real number.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>t=\frac{5 \pi}{6}</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = \dfrac{5\pi}{6}</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-61.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>t=-\pi</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = -\pi</m>
+        </p>
+      </answer>
+    </exercise>
+    <p>
+      <img src="figures/IntroTrigGraphics/Angles-62.pdf"/>
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>t = 6</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = 6</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-63.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>t = -2</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = -2</m>
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-64.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>t = 12</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>t = 12</m> (between 1 and 2 revolutions)
+        </p>
+
+        <p>
+          <img src="figures/IntroTrigGraphics/Angles-65.pdf"/>
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="spinningyoyo">
+      <statement>
+        <p>
+          A yo-yo which is 2.25 inches in diameter spins at a rate of 4500 revolutions per minute.
+          How fast is the edge of the yo-yo spinning in miles per hour?
+          Round your answer to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 30.12 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          How many revolutions per minute would the yo-yo in <xref ref="spinningyoyo">exercise</xref>
+          have to complete if the edge of the yo-yo is to be spinning at a rate of 42 miles per hour?
+          Round your answer to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 6274.52 revolutions per minute
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="yoyotrick">
+      <statement>
+        <p>
+          In the yo-yo trick <q>Around the World,</q>
+          the performer throws the yo-yo so it sweeps out a vertical circle whose radius is the yo-yo string.
+          If the yo-yo string is 28 inches long and the yo-yo takes 3 seconds to complete one revolution of the circle,
+          compute the speed of the yo-yo in miles per hour.
+          Round your answer to two decimal places.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 3.33 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="harddrive">
+      <statement>
+        <p>
+          A computer hard drive contains a circular disk with diameter 2.5 inches and spins at a rate of 7200 RPM (revolutions per minute).
+          Find the linear speed of a point on the edge of the disk in miles per hour.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 53.55 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          A rock got stuck in the tread of my tire and when I was driving 70 miles per hour,
+          the rock came loose and hit the inside of the wheel well of the car.
+          How fast, in miles per hour,
+          was the rock travelling when it came out of the tread? (The tire has a diameter of 23 inches.)
+        </p>
+      </statement>
+      <answer>
+        <p>
+          70 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="giantwheelmotion">
+      <statement>
+        <p>
+          The Giant Wheel at Cedar Point is a circle with diameter 128 feet which sits on an 8 foot tall platform making its overall height is 136 feet.
+          It completes two revolutions in 2 minutes and 7 seconds.<fn>Source:
+          <url href="http://www.cedarpoint.com/public/park/rides/tranquil/giant_wheel.cfm"><em>Cedar Point's webpage</em></url>.</fn>Assuming the riders are at the edge of the circle,
+          how fast are they traveling in miles per hour?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          About 4.32 miles per hour
+        </p>
+      </answer>
+    </exercise>
+    <exercise xml:id="circularsectorarea">
+      <statement>
+        <p>
+          Consider the circle of radius <m>r</m> pictured below with central angle <m>\theta</m>,
+          measured in radians, and subtended arc of length <m>s</m>.
+          Prove that the area of the shaded sector is <m>A = \frac{1}{2} r^{2} \theta</m>.
+        </p>
+
+        <p>
+          (Hint: Use the proportion
+          <m>\frac{A}{\text{ area of the circle } } = \frac{s}{\text{ circumference of the circle } }</m>.) <img src="figures/IntroTrigGraphics/Angles-40.pdf"/>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      In the following exercises,
+      use the result of <xref ref="circularsectorarea">Exercise</xref>
+      to compute the areas of the circular sectors with the given central angles and radii.
+    </p>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{\pi}{6}, \; r = 12</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>12\pi</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = \dfrac{5\pi}{4}, \; r = 100</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6250\pi</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = 330^{\circ}, \; r = 9.3</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>79.2825\pi \approx 249.07</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta =\pi, \; r = 1</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{\pi}{2}</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = 240^{\circ}, \; r = 5</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\dfrac{50\pi}{3}</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>\theta = 1^{\circ}, \; r = 117</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>38.025 \pi \approx 119.46</m> square units
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Imagine a rope tied around the Earth at the equator.
+          Show that you need to add only <m>2\pi</m> feet of length to the rope in order to lift it one foot above the ground around the entire equator. (You do NOT need to know the radius of the Earth to show this.)
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          With the help of your classmates,
+          look for a proof that <m>\pi</m> is indeed a constant.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
+
