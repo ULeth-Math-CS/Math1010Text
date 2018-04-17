@@ -7,14 +7,14 @@
       In this section,
       we return to our study of complex numbers which were first introduced in <xref ref="ComplexZeros">Section</xref>.
       Recall that a
-          <idx><h>complex number </h><h> definition of</h></idx>
+          <idx><h>complex number</h><h>definition of</h></idx>
       <em>complex number</em> is a number of the form
       <m>z = a + bi</m> where <m>a</m> and <m>b</m> are real numbers and <m>i</m> is the imaginary unit defined by <m>i = \sqrt{-1}</m>.
       The number <m>a</m> is called the
-          <idx><h>complex number </h><h> real part</h></idx> <em>real part</em>
+          <idx><h>complex number</h><h>real part</h></idx> <em>real part</em>
       <idx><h>real part of a complex number</h></idx> of <m>z</m>,
       denoted <m>\operatorname{Re}(z)</m>,
-      while the real number <m>b</m> is called the <idx><h>imaginary part of a complex number</h></idx> <idx><h>complex number </h><h> imaginary part</h></idx>
+      while the real number <m>b</m> is called the <idx><h>imaginary part of a complex number</h></idx> <idx><h>complex number</h><h>imaginary part</h></idx>
       <em>imaginary part</em> of <m>z</m>,
       denoted <m>\operatorname{Im}(z)</m>.
       From Intermediate Algebra,
@@ -60,7 +60,7 @@
       Since the ordered pair <m>(a,b)</m> gives the <em>rectangular</em>
       coordinates associated with the complex number <m>z = a+bi</m>,
       the expression <m>z=a+bi</m> is called the
-          <idx><h>complex number </h><h> rectangular form</h></idx><idx><h>rectangular form of a complex number</h></idx>
+          <idx><h>complex number</h><h>rectangular form</h></idx><idx><h>rectangular form of a complex number</h></idx>
       <em>rectangular form</em> of <m>z</m>.
       Of course, we could just as easily associate <m>z</m> with a pair of <em>polar</em>
       coordinates <m>(r,\theta)</m>.
@@ -81,7 +81,7 @@
             <li>
               <p>
                 The
-              <idx><h>complex number </h><h> modulus ! definition of</h></idx><idx><h>modulus of a complex number </h><h> definition of</h></idx>
+              <idx><h>complex number</h><h>modulus ! definition of</h></idx><idx><h>modulus of a complex number</h><h>definition of</h></idx>
           <em>modulus</em> of <m>z</m>,
                 denoted <m>|z|</m>, is defined by <m>|z| = r</m>.
               </p>
@@ -90,7 +90,7 @@
             <li>
               <p>
                 The angle <m>\theta</m> is an
-              <idx><h>complex number </h><h> argument ! definition of</h></idx><idx><h>argument </h><h> of a complex number ! definition of</h></idx>
+              <idx><h>complex number</h><h>argument ! definition of</h></idx><idx><h>argument</h><h>of a complex number ! definition of</h></idx>
           <em>argument</em> of <m>z</m>.
                 The set of all arguments of <m>z</m> is denoted <m>\operatorname{arg}(z)</m>.
               </p>
@@ -100,7 +100,7 @@
               <p>
                 If <m>z \neq 0</m> and <m>-\pi \lt \theta \leq \pi</m>,
                 then <m>\theta</m> is the
-              <idx><h>complex number </h><h> principal argument</h></idx><idx><h>principal argument of a complex number</h></idx>
+              <idx><h>complex number</h><h>principal argument</h></idx><idx><h>principal argument of a complex number</h></idx>
           <em>principal argument</em> of <m>z</m>,
                 written <m>\theta = \operatorname{Arg}(z)</m>.
               </p>
@@ -281,7 +281,7 @@
       <statement>
         <p>
           Let <m>z</m> and <m>w</m> be complex numbers.
-              <idx><h>complex number </h><h> modulus ! properties of</h></idx> <idx><h>modulus of a complex number </h><h> properties of</h></idx>
+              <idx><h>complex number</h><h>modulus ! properties of</h></idx> <idx><h>modulus of a complex number</h><h>properties of</h></idx>
 
           <ul>
             <li>
@@ -305,7 +305,7 @@
             <li>
               <p>
                 <em>Product Rule:</em> <m>|zw| = |z||w|</m>
-                    <idx><h>product rule </h><h> for the modulus of a complex number</h></idx>
+                    <idx><h>product rule</h><h>for the modulus of a complex number</h></idx>
               </p>
             </li>
 
@@ -313,7 +313,7 @@
               <p>
                 <em>Power Rule:</em>
                 <m>\left|z^{n}\right| = |z|^{n}</m> for all natural numbers, <m>n</m>
-                    <idx><h>power rule </h><h> for the modulus of a complex number</h></idx>
+                    <idx><h>power rule</h><h>for the modulus of a complex number</h></idx>
               </p>
             </li>
 
@@ -322,7 +322,7 @@
                 <em>Quotient Rule:</em>
                 <m>\left| \dfrac{z}{w} \right| = \dfrac{|z|}{|w|}</m>,
                 provided <m>w \neq 0</m>
-                    <idx><h>quotient rule </h><h> for the modulus of a complex number</h></idx>
+                    <idx><h>quotient rule</h><h>for the modulus of a complex number</h></idx>
           </p>
             </li>
           </ul>
@@ -450,7 +450,7 @@
       <statement>
         <p>
           Let <m>z</m> be a complex number.
-              <idx><h>complex number </h><h> argument ! properties of</h></idx> <idx><h>argument </h><h> of a complex number ! properties of</h></idx>
+              <idx><h>complex number</h><h>argument ! properties of</h></idx> <idx><h>argument</h><h>of a complex number ! properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -533,7 +533,7 @@
       <title>A Polar Form of a Complex Number</title>
       <statement>
         <p>
-              <idx><h>complex number </h><h> polar form ! cis-notation</h></idx> <idx><h>polar form of a complex number</h></idx>
+              <idx><h>complex number</h><h>polar form ! cis-notation</h></idx> <idx><h>polar form of a complex number</h></idx>
           Suppose <m>z</m> is a complex number and <m>\theta \in \operatorname{arg}(z)</m>.
           The expression:
           <me>
@@ -749,7 +749,7 @@
               <p>
                 <em>Product Rule:</em>
                 <m>zw = |z||w| \operatorname{cis}(\alpha + \beta)</m>
-              <idx><h>product rule </h><h> for complex numbers</h></idx>
+              <idx><h>product rule</h><h>for complex numbers</h></idx>
               </p>
             </li>
 
@@ -759,7 +759,7 @@
                     <idx><h>DeMoivre's Theorem</h></idx>
           <em><url href="http://en.wikipedia.org/wiki/Abraham_de_Moivre"><em>DeMoivre's Theorem</em></url></em>) <em>:</em>
                 <m>z^{n} = |z|^{n} \operatorname{cis}(n \theta)</m> for every natural number <m>n</m>
-              <idx><h>power rule </h><h> for complex numbers</h></idx>
+              <idx><h>power rule</h><h>for complex numbers</h></idx>
               </p>
             </li>
 
@@ -768,7 +768,7 @@
                 <em>Quotient Rule:</em>
                 <m>\dfrac{z}{w} = \dfrac{|z|}{|w|} \operatorname{cis}(\alpha - \beta)</m>,
                 provided <m>|w| \neq 0</m>
-                    <idx><h>quotient rule </h><h> for complex numbers</h></idx>
+                    <idx><h>quotient rule</h><h>for complex numbers</h></idx>
           </p>
             </li>
           </ul>
@@ -1092,7 +1092,7 @@
           If there is a natural number <m>n</m> such that <m>w^{n} = z</m>,
           then <m>w</m> is an <m>n^{\textrm th}</m>
           <term>root</term> of <m>z</m>.
-              <idx><h><m>n^{\textrm{th} }</m> root </h><h> of a complex number</h></idx> <idx><h>complex number </h><h> <m>n^{\textrm{th} }</m> root</h></idx>
+              <idx><h><m>n^{\textrm{th} }</m> root</h><h>of a complex number</h></idx> <idx><h>complex number</h><h><m>n^{\textrm{th} }</m> root</h></idx>
         </p>
       </statement>
     </definition>
@@ -1175,7 +1175,7 @@
           which we denote by <m>w_{0}</m>, <m>w_{1}</m>,
           <ellipsis />, <m>w_{n-1}</m>,
           and they are given by the formula
-              <idx><h><m>n^{\textrm{th} }</m> root </h><h> of a complex number</h></idx> <idx><h>complex number </h><h> <m>n^{\textrm{th} }</m> root</h></idx>
+              <idx><h><m>n^{\textrm{th} }</m> root</h><h>of a complex number</h></idx> <idx><h>complex number</h><h><m>n^{\textrm{th} }</m> root</h></idx>
           <me>
             w_{k} = \sqrt[n]{r}\operatorname{cis}\left(\frac{\theta}{n} + \frac{2\pi}{n} k \right)
           </me>
@@ -2655,8 +2655,7 @@
           Given any natural number <m>n \geq 2</m>,
           the <m>n</m> complex <m>n^{\text{ th } }</m> roots of the number <m>z = 1</m> are called the
           <em> <m>n^{\mathbf{{\scriptsize th}}}</m> Roots of Unity</em>.
-              <idx><h><m>n^{\textrm{th} }</m> Roots of Unity</h></idx> <idx><h>complex number </h><h>
-          <m>n^{\textrm{th} }</m> Roots of Unity</h></idx> <idx><h>Roots of Unity</h></idx>
+              <idx><h><m>n^{\textrm{th} }</m> Roots of Unity</h></idx> <idx><h>complex number</h><h><m>n^{\textrm{th} }</m> Roots of Unity</h></idx> <idx><h>Roots of Unity</h></idx>
           In the following exercises, assume that <m>n</m> is a fixed,
           but arbitrary, natural number such that <m>n \geq 2</m>.
 

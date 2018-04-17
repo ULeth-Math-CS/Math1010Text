@@ -54,7 +54,7 @@
       shows the graphs of <m>f(x) = \cos(x)</m> and <m>f^{-1}(x) = \arccos(x)</m>,
       where we obtain the latter from the former by reflecting it across the line <m>y=x</m>,
       in accordance with <xref ref="inverseuniquegraph">Theorem</xref>.
-          <idx><h>arccosine </h><h> graph of</h></idx>
+          <idx><h>arccosine</h><h>graph of</h></idx>
     </p>
 
     <table xml:id="fig_arctrig2">
@@ -93,7 +93,7 @@
     <p>
       It should be no surprise that we call <m>g^{-1}(x) = \arcsin(x)</m>,
       which is read <q>arc-sine of <m>x</m></q>.
-          <idx><h>arcsine </h><h> graph of</h></idx>
+          <idx><h>arcsine</h><h>graph of</h></idx>
     </p>
 
     <p>
@@ -104,7 +104,7 @@
       <title>Properties of the Arccosine and Arcsine Functions</title>
       <statement>
         <p>
-              <idx><h>arccosine </h><h> definition of</h></idx> <idx><h>arccosine </h><h> properties of</h></idx> <idx><h>arcsine </h><h> definition of</h></idx> <idx><h>arcsine </h><h> properties of</h></idx>
+              <idx><h>arccosine</h><h>definition of</h></idx> <idx><h>arccosine</h><h>properties of</h></idx> <idx><h>arcsine</h><h>definition of</h></idx> <idx><h>arcsine</h><h>properties of</h></idx>
         </p>
 
         <ul>
@@ -517,7 +517,7 @@
       asymptotes <m>y = -\frac{\pi}{2}</m> and
       <m>y = \frac{\pi}{2}</m> of the graph of <m>f^{-1}(x) = \arctan(x)</m>:
       see <xref ref="fig_arctrig5">Figure</xref>.
-          <idx><h>arctangent </h><h> graph of</h></idx>
+          <idx><h>arctangent</h><h>graph of</h></idx>
     </p>
 
     <table xml:id="fig_arctrig5">
@@ -547,7 +547,7 @@
       the vertical asymptotes <m>x=0</m> and <m>x=\pi</m> of the graph of
       <m>g(x) = \cot(x)</m> become the horizontal asymptotes <m>y = 0</m> and <m>y = \pi</m> of the graph of <m>g^{-1}(x) = \operatorname{arccot}(x)</m>.
       We show these graphs in <xref ref="fig_arctrig5a">Figure</xref>;
-          <idx><h>arccotangent </h><h> graph of</h></idx>
+          <idx><h>arccotangent</h><h>graph of</h></idx>
       the basic properties of the arctangent and arccotangent functions are given in the following theorem.
     </p>
 
@@ -555,7 +555,7 @@
       <title>Properties of the Arctangent and Arccotangent Functions</title>
       <statement>
         <p>
-              <idx><h>arctangent </h><h> definition of</h></idx> <idx><h>arctangent </h><h> properties of</h></idx> <idx><h>arccotangent </h><h> definition of</h></idx> <idx><h>arccotangent </h><h> properties of</h></idx>
+              <idx><h>arctangent</h><h>definition of</h></idx> <idx><h>arctangent</h><h>properties of</h></idx> <idx><h>arccotangent</h><h>definition of</h></idx> <idx><h>arccotangent</h><h>properties of</h></idx>
         </p>
 
         <ul>
@@ -942,10 +942,10 @@
       For <m>f(x) = \sec(x)</m>,
       we restrict the domain to
       <m>\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]</m> (<xref ref="fig_arctrig7">Figure</xref>)
-          <idx><h>arcsecant </h><h> trigonometry friendly ! graph of</h></idx>
+          <idx><h>arcsecant</h><h>trigonometry friendly ! graph of</h></idx>
       and we restrict <m>g(x) = \csc(x)</m> to
       <m>\left[-\frac{\pi}{2}, 0\right) \cup \left(0, \frac{\pi}{2}\right]</m> (<xref ref="fig_arctrig8">Figure</xref>.
-          <idx><h>arccosecant </h><h> trigonometry friendly ! graph of</h></idx>
+          <idx><h>arccosecant</h><h>trigonometry friendly ! graph of</h></idx>
     </p>
 
     <p>
@@ -966,7 +966,7 @@
           <li>
             <p>
               Properties of <m>F(x)= \operatorname{arcsec}(x)</m>
-                  <idx><h>arcsecant </h><h> trigonometry friendly ! definition of</h></idx> <idx><h>arcsecant </h><h> trigonometry friendly ! properties of</h></idx>
+                  <idx><h>arcsecant</h><h>trigonometry friendly ! definition of</h></idx> <idx><h>arcsecant</h><h>trigonometry friendly ! properties of</h></idx>
               <ul>
                 <li>
                   <p>
@@ -1023,7 +1023,7 @@
           <li>
             <p>
               Properties of <m>G(x) = \operatorname{arccsc}(x)</m>
-                  <idx><h>arccosecant </h><h> trigonometry friendly ! definition of</h></idx> <idx><h>arccosecant </h><h> trigonometry friendly ! properties of</h></idx>
+                  <idx><h>arccosecant</h><h>trigonometry friendly ! definition of</h></idx> <idx><h>arccosecant</h><h>trigonometry friendly ! properties of</h></idx>
               <ul>
                 <li>
                   <p>
@@ -1318,9 +1318,9 @@
     <p>
       In this subsection, we restrict
       <m>f(x) = \sec(x)</m> to <m>\left[0, \frac{\pi}{2}\right) \cup \left[\pi, \frac{3\pi}{2}\right)</m>,
-          <idx><h>arcsecant </h><h> calculus friendly ! graph of</h></idx>
+          <idx><h>arcsecant</h><h>calculus friendly ! graph of</h></idx>
       and we restrict <m>g(x) = \csc(x)</m> to <m>\left(0, \frac{\pi}{2}\right] \cup \left( \pi, \frac{3\pi}{2}\right]</m>.
-          <idx><h>arccosecant </h><h> calculus friendly ! graph of</h></idx>
+          <idx><h>arccosecant</h><h>calculus friendly ! graph of</h></idx>
     </p>
 
     <p>
@@ -1334,7 +1334,7 @@
           <li>
             <p>
               Properties of <m>F(x)= \operatorname{arcsec}(x)</m>
-                  <idx><h>arcsecant </h><h> calculus friendly ! definition of</h></idx> <idx><h>arcsecant </h><h> calculus friendly ! properties of</h></idx>
+                  <idx><h>arcsecant</h><h>calculus friendly ! definition of</h></idx> <idx><h>arcsecant</h><h>calculus friendly ! properties of</h></idx>
               <ul>
                 <li>
                   <p>
@@ -1392,7 +1392,7 @@
           <li>
             <p>
               Properties of <m>G(x) = \operatorname{arccsc}(x)</m>
-                  <idx><h>arccosecant </h><h> calculus friendly ! definition of</h></idx> <idx><h>arccosecant </h><h> calculus friendly ! properties of</h></idx>
+                  <idx><h>arccosecant</h><h>calculus friendly ! definition of</h></idx> <idx><h>arccosecant</h><h>calculus friendly ! properties of</h></idx>
               <ul>
                 <li>
                   <p>

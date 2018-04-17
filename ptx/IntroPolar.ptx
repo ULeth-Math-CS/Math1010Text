@@ -19,15 +19,15 @@
       of course,
       the points in which one or both coordinates are <m>0</m>.) For this reason,
       the Cartesian coordinates of a point are often called
-          <idx><h>rectangular coordinates </h><h> also known as Cartesian coordinates</h></idx> <idx><h>coordinates </h><h> rectangular</h></idx>
+          <idx><h>rectangular coordinates</h><h>also known as Cartesian coordinates</h></idx> <idx><h>coordinates</h><h>rectangular</h></idx>
       <q>rectangular</q> coordinates.
       In this section,
       we introduce a new system for assigning coordinates to points in the plane <mdash />
-          <idx><h>polar coordinates </h><h> definition of</h></idx> <idx><h>coordinates </h><h> polar</h></idx>
+          <idx><h>polar coordinates</h><h>definition of</h></idx> <idx><h>coordinates</h><h>polar</h></idx>
       <em>polar coordinates</em>.
       We start with an origin point, called the
-          <idx><h>polar coordinates </h><h> pole</h></idx> <em>pole</em>,
-      and a ray called the <idx><h>polar coordinates </h><h> polar axis</h></idx>
+          <idx><h>polar coordinates</h><h>pole</h></idx> <em>pole</em>,
+      and a ray called the <idx><h>polar coordinates</h><h>polar axis</h></idx>
       <em>polar axis</em>.
       We then locate a point <m>P</m> using two coordinates,
       <m>(r,\theta)</m>,
@@ -325,7 +325,7 @@
     <insight xml:id="idea_polarrep">
       <title>Equivalent Representations of Points in Polar Coordinates</title>
       <p>
-            <idx><h>polar coordinates </h><h> equivalent representations of</h></idx>
+            <idx><h>polar coordinates</h><h>equivalent representations of</h></idx>
       </p>
 
       <p>
@@ -424,7 +424,7 @@
             <li>
               <p>
                 <m>x = r \cos(\theta)</m> and <m>y = r\sin(\theta)</m>
-              <idx><h>polar coordinates </h><h> conversion into rectangular</h></idx>
+              <idx><h>polar coordinates</h><h>conversion into rectangular</h></idx>
               </p>
             </li>
 
@@ -432,7 +432,7 @@
               <p>
                 <m>x^2+y^2 = r^2</m> and
           <m>\tan(\theta) = \dfrac{y}{x}</m> (provided <m>x \neq 0</m>)
-                    <idx><h>rectangular coordinates </h><h> conversion into polar</h></idx>
+                    <idx><h>rectangular coordinates</h><h>conversion into polar</h></idx>
           </p>
             </li>
           </ul>

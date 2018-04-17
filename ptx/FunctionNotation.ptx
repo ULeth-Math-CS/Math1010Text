@@ -7,14 +7,14 @@
       In <xref ref="functiondefn">Definition</xref>,
       we described a function as a special kind of relation <m>-</m> one in which each <m>x</m>-coordinate is matched with only one <m>y</m>-coordinate.
       In this section, we focus more on the <em>process</em>
-          <idx><h>function </h><h> as a process</h></idx>
+          <idx><h>function</h><h>as a process</h></idx>
       by which the <m>x</m> is matched with the <m>y</m>.
       If we think of the domain of a function as a set of <em>inputs</em>
       and the range as a set of <em>outputs</em>,
       we can think of a function <m>f</m> as a process by which each input <m>x</m> is matched with only one output <m>y</m>.
       Since the output is completely determined by the input <m>x</m> and the process <m>f</m>,
       we symbolize the output with
-          <idx><h>function </h><h> notation</h></idx>
+          <idx><h>function</h><h>notation</h></idx>
       <em>function notation</em>:
       <q><m>f(x)</m></q>, read <q><m>f</m>
       <em>of</em> <m>x</m>.</q> In other words,
@@ -36,10 +36,10 @@
       The value of <m>y</m> is completely dependent on the choice of <m>x</m>.
       For this reason, <m>x</m> is often called the
       <em>independent variable</em>,
-          <idx><h>variable </h><h> independent</h></idx><idx><h>independent variable</h></idx><idx><h>function </h><h> independent variable of</h></idx> or <em>argument</em><idx><h>function </h><h> argument</h></idx><idx><h>argument </h><h> of a function</h></idx>
+          <idx><h>variable</h><h>independent</h></idx><idx><h>independent variable</h></idx><idx><h>function</h><h>independent variable of</h></idx> or <em>argument</em><idx><h>function</h><h>argument</h></idx><idx><h>argument</h><h>of a function</h></idx>
       of <m>f</m>, whereas <m>y</m> is often called the
       <em>dependent variable</em>.
-          <idx><h>variable </h><h> dependent</h></idx><idx><h>dependent variable</h></idx><idx><h>function </h><h> dependent variable of</h></idx>
+          <idx><h>variable</h><h>dependent</h></idx><idx><h>dependent variable</h></idx><idx><h>function</h><h>dependent variable of</h></idx>
       As we shall see,
       the process of a function <m>f</m> is usually described using an algebraic formula.
       For example, suppose a function <m>f</m> takes a real number and performs the following two steps,
@@ -297,7 +297,7 @@
       When a formula for a function is given,
       we assume that the function is valid for all real numbers which make arithmetic sense when substituted into the formula.
       This set of numbers is often called the
-          <idx><h>domain </h><h> implied</h></idx><idx><h>implied domain of a function</h></idx>
+          <idx><h>domain</h><h>implied</h></idx><idx><h>implied domain of a function</h></idx>
       <em>implied domain</em>
       (or <q>implicit domain</q>)
       of the function.
@@ -504,7 +504,7 @@
     <p>
       The importance of Mathematics to our society lies in its value to approximate,
       or <em>model</em>
-          <idx><h>mathematical model</h></idx><idx><h>model </h><h> mathematical</h></idx>
+          <idx><h>mathematical model</h></idx><idx><h>model</h><h>mathematical</h></idx>
       real-world phenomenon.
       Whether it be used to predict the high temperature on a given day,
       determine the hours of daylight on a given day,
@@ -558,7 +558,7 @@
       Of course, you would be hard-pressed to buy exactly <m>3.\overline{3}</m> pounds of grapes,
       (you could get close... within a certain specified margin of error, perhaps)
       and this leads us to our next topic of discussion, the
-          <idx><h>domain </h><h> applied</h></idx><idx><h>applied domain of a function</h></idx>
+          <idx><h>domain</h><h>applied</h></idx><idx><h>applied domain of a function</h></idx>
       <em>applied domain</em>, or <q>explicit domain</q> of a function.
     </p>
 
@@ -684,7 +684,7 @@
 
     <p>
       \phantomsection
-          <idx><h>function </h><h> piecewise-defined</h></idx><idx><h>piecewise-defined function</h></idx>
+          <idx><h>function</h><h>piecewise-defined</h></idx><idx><h>piecewise-defined function</h></idx>
     </p>
 
     <p>
@@ -3084,7 +3084,7 @@
       <statement>
         <p>
           In <xref ref="SetsofNumbers">Section</xref> we defined the set of
-              <idx><h>integer </h><h> greatest integer function</h></idx>
+              <idx><h>integer</h><h>greatest integer function</h></idx>
           <em>integers</em> as <m>\mathbb{Z} = \{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}</m>.
           The
               <idx><h>greatest integer function</h></idx>

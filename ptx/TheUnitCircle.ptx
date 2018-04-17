@@ -15,10 +15,10 @@
       we are assigning a <em>position</em>
       on the Unit Circle to the angle <m>\theta</m>.
       The <m>x</m>-coordinate of <m>P</m> is called the
-          <idx><h>cosine </h><h> of an angle</h></idx>
+          <idx><h>cosine</h><h>of an angle</h></idx>
       <em>cosine</em> of <m>\theta</m>,
       written <m>\cos(\theta)</m>,
-      while the <m>y</m>-coordinate of <m>P</m> is called the <idx><h>sine </h><h> of an angle</h></idx>
+      while the <m>y</m>-coordinate of <m>P</m> is called the <idx><h>sine</h><h>of an angle</h></idx>
       <em>sine</em> of <m>\theta</m>,
       written <m>\sin(\theta)</m>.
       The reader is encouraged to verify that these rules used to match an angle with its cosine and sine do, in fact,
@@ -324,7 +324,7 @@
     </sidebyside>
     <p>
       In the above scenario, the angle <m>\frac{\pi}{6}</m> is called the
-          <idx><h>angle </h><h> reference</h></idx><idx><h>reference angle</h></idx>
+          <idx><h>angle</h><h>reference</h></idx><idx><h>reference angle</h></idx>
       <em>reference angle</em>
       for the angle <m>\frac{5 \pi}{6}</m>.
       In general, for a non-quadrantal angle <m>\theta</m>,
@@ -377,7 +377,7 @@
           Suppose <m>\alpha</m> is the reference angle for <m>\theta</m>.
           Then <m>\cos(\theta) = \pm \cos(\alpha)</m> and <m>\sin(\theta) = \pm \sin(\alpha)</m>,
           where the choice of the (<m>\pm</m>) depends on the quadrant in which the terminal side of <m>\theta</m> lies.
-              <idx><h>Reference Angle Theorem </h><h> for cosine and sine</h></idx>
+              <idx><h>Reference Angle Theorem</h><h>for cosine and sine</h></idx>
         </p>
       </statement>
     </theorem>
@@ -521,7 +521,7 @@
     -->
 
     <sidebyside>
-      <idx><h>Unit Circle </h><h> important points</h></idx>
+      <idx><h>Unit Circle</h><h>important points</h></idx>
 
       <img src="figures/IntroTrigGraphics/TheUnitCircle-21.pdf"/>
     </sidebyside>
@@ -879,7 +879,7 @@
           which lies on the circle <m>x^2+y^2 = r^2</m> then
           <m>x = r \cos(\theta)</m> and <m>y = r \sin(\theta)</m>.
           Moreover,
-              <idx><h>cosine </h><h> of an angle</h></idx> <idx><h>sine </h><h> of an angle</h></idx>
+              <idx><h>cosine</h><h>of an angle</h></idx> <idx><h>sine</h><h>of an angle</h></idx>
           <me>
             \begin{array}{ccc} \cos(\theta)= \dfrac{x}{r}  = \dfrac{x}{\sqrt{x^2+y^2}} \amp  \text{ and }  \amp   \sin(\theta) = \dfrac{y}{r} = \dfrac{y}{\sqrt{x^2+y^2}}
             \end{array}

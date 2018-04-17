@@ -7,12 +7,12 @@
       This section begins our study of Trigonometry and to get started,
       we recall some basic definitions from Geometry.
       A
-          <idx><h>ray </h><h> definition of</h></idx>
+          <idx><h>ray</h><h>definition of</h></idx>
       <em>ray</em> is usually described as a <q>half-line</q>
       and can be thought of as a line segment in which one of the two endpoints is pushed off infinitely distant from the other,
       as pictured in <xref ref="fig_angles1">Figure</xref>.
       The point from which the ray originates is called the
-          <idx><h>ray </h><h> initial point</h></idx>
+          <idx><h>ray</h><h>initial point</h></idx>
       <em>initial point</em> of the ray.
     </p>
 
@@ -23,8 +23,8 @@
 
     <p>
       When two rays share a common initial point they form an
-          <idx><h>angle </h><h> definition</h></idx> <em>angle</em>
-      and the common initial point is called the <idx><h>angle </h><h> vertex</h></idx><idx><h>vertex </h><h> of an angle</h></idx>
+          <idx><h>angle</h><h>definition</h></idx> <em>angle</em>
+      and the common initial point is called the <idx><h>angle</h><h>vertex</h></idx><idx><h>vertex</h><h>of an angle</h></idx>
       <em>vertex</em> of the angle.
       Two examples of what are commonly thought of as angles are given in <xref ref="fig_angles2">Figure</xref>
     </p>
@@ -51,7 +51,7 @@
       in some sense, extreme cases.
       In the first case,
       the two rays are directly opposite each other forming what is known as a
-          <idx><h>angle </h><h> straight</h></idx><idx><h>straight angle</h></idx>
+          <idx><h>angle</h><h>straight</h></idx><idx><h>straight angle</h></idx>
       <em>straight angle</em>; in the second,
       the rays are identical so the <q>angle</q>
       is indistinguishable from the ray itself.
@@ -75,7 +75,7 @@
     </sidebyside>
     <p>
       The
-          <idx><h>angle </h><h> measurement</h></idx><idx><h>measure of an angle</h></idx>
+          <idx><h>angle</h><h>measurement</h></idx><idx><h>measure of an angle</h></idx>
       <em>measure of an angle</em>
       is a number which indicates the amount of rotation that separates the rays of the angle.
       There is one immediate problem with this,
@@ -123,7 +123,7 @@
     </aside>
     <p>
       One commonly used system to measure angles is
-          <idx><h>angle </h><h> degree</h></idx><idx><h>degree measure</h></idx>
+          <idx><h>angle</h><h>degree</h></idx><idx><h>degree measure</h></idx>
       <em>degree measure</em>.
       Quantities measured in degrees are denoted by the familiar
       <q><m>^{\circ}</m></q> symbol.
@@ -131,7 +131,7 @@
       and parts of a revolution are measured proportionately.
       Thus half of a revolution (a straight angle) measures <m>\frac{1}{2} \left(360^{\circ}\right) = 180^{\circ}</m>,
       a quarter of a revolution (a
-          <idx><h>right angle</h></idx><idx><h>angle </h><h> right</h></idx>
+          <idx><h>right angle</h></idx><idx><h>angle</h><h>right</h></idx>
       <em>right angle</em>) measures <m>\frac{1}{4} \left(360^{\circ}\right) = 90^{\circ}</m> and so on.
     </p>
 
@@ -159,9 +159,9 @@
       as is commonplace in Geometry.
       Recall that if an angle measures strictly between
       <m>0^{\circ}</m> and <m>90^{\circ}</m> it is called an
-          <idx><h>acute angle</h></idx><idx><h>angle </h><h> acute</h></idx><em>acute angle</em>
+          <idx><h>acute angle</h></idx><idx><h>angle</h><h>acute</h></idx><em>acute angle</em>
       and if it measures strictly between <m>90^{\circ}</m> and
-      <m>180^{\circ}</m> it is called an <idx><h>obtuse angle</h></idx><idx><h>angle </h><h> obtuse</h></idx>
+      <m>180^{\circ}</m> it is called an <idx><h>obtuse angle</h></idx><idx><h>angle</h><h>obtuse</h></idx>
       <em>obtuse angle</em>.
       It is important to note that, theoretically,
       we can know the measure of any angle as long as we know the proportion it represents of entire revolution.
@@ -193,13 +193,13 @@
     </sidebyside>
     <p>
       Two acute angles are called
-          <idx><h>complementary angles</h></idx><idx><h>angle </h><h> complementary</h></idx>
+          <idx><h>complementary angles</h></idx><idx><h>angle</h><h>complementary</h></idx>
       <em>complementary angles</em>
       if their measures add to <m>90^{\circ}</m>.
       Two angles,
       either a pair of right angles or one acute angle and one obtuse angle,
       are called
-          <idx><h>supplementary angles</h></idx><idx><h>angle </h><h> supplementary</h></idx>
+          <idx><h>supplementary angles</h></idx><idx><h>angle</h><h>supplementary</h></idx>
       <em>supplementary angles</em>
       if their measures add to <m>180^{\circ}</m>.
       In <xref ref="fig_angles8">Figure</xref>,
@@ -246,19 +246,19 @@
       A first step in this direction is to extend our notion of <q>angle</q>
       from merely measuring an extent of rotation to quantities which can be associated with real numbers.
       To that end, we introduce the concept of an
-          <idx><h>angle </h><h> oriented</h></idx><idx><h>oriented angle</h></idx>
+          <idx><h>angle</h><h>oriented</h></idx><idx><h>oriented angle</h></idx>
       <em>oriented angle</em>.
       As its name suggests, in an oriented angle,
       the direction of the rotation is important.
       We imagine the angle being swept out starting from an
-          <idx><h>angle </h><h> initial side</h></idx><idx><h>initial side of an angle</h></idx><em>initial side</em>
-      and ending at a <idx><h>angle </h><h> terminal side</h></idx><idx><h>terminal side of an angle</h></idx>
+          <idx><h>angle</h><h>initial side</h></idx><idx><h>initial side of an angle</h></idx><em>initial side</em>
+      and ending at a <idx><h>angle</h><h>terminal side</h></idx><idx><h>terminal side of an angle</h></idx>
       <em>terminal side</em>, as shown in <xref ref="fig_angles9">Figure</xref>.
       When the rotation is counter-clockwise from initial side to terminal side,
       we say that the angle is
-          <idx><h>angle </h><h> positive</h></idx><idx><h>positive angle</h></idx><em>positive</em>;
+          <idx><h>angle</h><h>positive</h></idx><idx><h>positive angle</h></idx><em>positive</em>;
       when the rotation is clockwise,
-      we say that the angle is <idx><h>angle </h><h> negative</h></idx><idx><h>negative angle</h></idx>
+      we say that the angle is <idx><h>angle</h><h>negative</h></idx><idx><h>negative angle</h></idx>
       <em>negative</em>.
     </p>
 
@@ -304,7 +304,7 @@
       To further connect angles with the Algebra which has come before,
       we shall often overlay an angle diagram on the coordinate plane.
       An angle is said to be in
-          <idx><h>angle </h><h> standard position</h></idx><idx><h>standard position of an angle</h></idx>
+          <idx><h>angle</h><h>standard position</h></idx><idx><h>standard position of an angle</h></idx>
       <em>standard position</em>
       if its vertex is the origin and its initial side coincides with the positive <m>x</m>-axis.
       Angles in standard position are classified according to where their terminal side lies.
@@ -313,10 +313,10 @@
       <q>Quadrant I angle</q>.
       If the terminal side of an angle lies on one of the coordinate axes,
       it is called a
-          <idx><h>angle </h><h> quadrantal</h></idx><idx><h>quadrantal angle</h></idx>
+          <idx><h>angle</h><h>quadrantal</h></idx><idx><h>quadrantal angle</h></idx>
       <em>quadrantal angle</em>.
       Two angles in standard position are called
-          <idx><h>angle </h><h> coterminal</h></idx><idx><h>coterminal angle</h></idx>
+          <idx><h>angle</h><h>coterminal</h></idx><idx><h>coterminal angle</h></idx>
       <em>coterminal</em> if they share the same terminal side. (Note that by being in standard position they automatically share the same initial side which is the positive <m>x</m>-axis.) In <xref ref="fig_angles11">Figure</xref>,
       <m>\alpha = 120^{\circ}</m> and
       <m>\beta = -240^{\circ}</m> are two coterminal Quadrant II angles drawn in standard position.
@@ -497,14 +497,14 @@
       we compare some arc measuring <m>s</m> units in length to the radius,
       as depicted in <xref ref="fig_angles16">Figure</xref>.
       Let <m>\theta</m> be the <em>central angle</em>
-          <idx><h>angle </h><h> central angle</h></idx><idx><h>central angle</h></idx>
+          <idx><h>angle</h><h>central angle</h></idx><idx><h>central angle</h></idx>
       subtended by this arc, that is,
       an angle whose vertex is the center of the circle and whose determining rays pass through the endpoints of the arc.
       Using proportionality arguments,
       it stands to reason that the ratio
       <m>\dfrac{s}{r}</m> should also be a constant among all circles,
       and it is this ratio which defines the
-          <idx><h>angle </h><h> radian measure</h></idx><idx><h>radian measure</h></idx>
+          <idx><h>angle</h><h>radian measure</h></idx><idx><h>radian measure</h></idx>
       <em>radian measure</em> of an angle.
     </p>
 
@@ -907,7 +907,7 @@
       Borrowing terminology from Physics,
       if we imagine the circular motion of our object taking place over a duration of time <m>t</m>,
       we can define the quantity <m>\dfrac{\theta}{t}</m>, called the
-          <idx><h>velocity </h><h> average angular</h></idx><idx><h>average angular velocity</h></idx>
+          <idx><h>velocity</h><h>average angular</h></idx><idx><h>average angular velocity</h></idx>
       <em>average angular velocity</em> of the object.
       It is denoted by <m>\overline{\omega}</m> and is read <q>omega-bar</q>.
       The quantity <m>\overline{\omega}</m> is the average rate of change of the angle <m>\theta</m> with respect to time and thus has units <m>\frac{\text{ radians } }{\text{ time } }</m>.
@@ -976,16 +976,16 @@
     <p>
       It is worth noting that the quantity
       <m>\frac{1 \, \text{ revolution } }{24 \, \text{ hours } }</m> in <xref ref="EarthRotationEx">Example</xref> is called the
-          <idx><h>frequency </h><h> ordinary</h></idx> <idx><h>ordinary frequency</h></idx>
+          <idx><h>frequency</h><h>ordinary</h></idx> <idx><h>ordinary frequency</h></idx>
       <em>ordinary frequency</em>
       of the motion and is usually denoted by the variable <m>f</m>.
       The ordinary frequency is a measure of how often an object makes a complete cycle of the motion.
       The fact that <m>\omega = 2\pi f</m> suggests that <m>\omega</m> is also a frequency.
       Indeed, it is called the
-          <idx><h>frequency </h><h> angular</h></idx> <idx><h>angular frequency</h></idx>
+          <idx><h>frequency</h><h>angular</h></idx> <idx><h>angular frequency</h></idx>
       <em>angular frequency</em> of the motion.
       On a related note, the quantity <m>T = \dfrac{1}{f}</m> is called the
-          <idx><h>period </h><h> circular motion</h></idx>
+          <idx><h>period</h><h>circular motion</h></idx>
       <em>period</em> of the motion and is the amount of time it takes for the object to complete one cycle of the motion.
       In the scenario of <xref ref="EarthRotationEx">Example</xref>,
       the period of the motion is 24 hours, or one day.

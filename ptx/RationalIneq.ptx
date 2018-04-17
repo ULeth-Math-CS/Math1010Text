@@ -447,7 +447,7 @@
           Given a cost function <m>C(x)</m>,
           which returns the total cost of producing <m>x</m> items,
           recall that the
-              <idx><h>cost </h><h> average</h></idx><idx><h>average cost</h></idx>
+              <idx><h>cost</h><h>average</h></idx><idx><h>average cost</h></idx>
           average cost function,
           <m>\overline{C}(x) = \frac{C(x)}{x}</m> computes the cost per item when <m>x</m> items are produced.
           Suppose the cost <m>C</m>, in dollars,
@@ -760,7 +760,7 @@
             <li>
               <p>
                 <m>y</m>
-              <idx><h>variation </h><h> direct</h></idx><idx><h>direct variation</h></idx>
+              <idx><h>variation</h><h>direct</h></idx><idx><h>direct variation</h></idx>
           <em>varies directly with</em>
                 (or is <em>directly proportional to</em>)
                 <m>x</m> if there is a constant <m>k</m> such that <m>y=kx</m>.
@@ -770,7 +770,7 @@
             <li>
               <p>
                 <m>y</m>
-              <idx><h>variation </h><h> inverse</h></idx><idx><h>inverse variation</h></idx>
+              <idx><h>variation</h><h>inverse</h></idx><idx><h>inverse variation</h></idx>
           <em>varies inversely with</em>
                 (or is <em>inversely proportional to</em>)
                 <m>x</m> if there is a constant <m>k</m> such that <m>y=\dfrac{k}{x}</m>.
@@ -780,7 +780,7 @@
             <li>
               <p>
                 <m>z</m>
-              <idx><h>variation </h><h> joint</h></idx><idx><h>joint variation</h></idx>
+              <idx><h>variation</h><h>joint</h></idx><idx><h>joint variation</h></idx>
           <em>varies jointly with</em>
                 (or is <em>jointly proportional to</em>)
                 <m>x</m> and <m>y</m> if there is a constant <m>k</m> such that <m>z = kxy</m>.
@@ -791,7 +791,7 @@
 
         <p>
           The constant <m>k</m> in the above definitions is called the
-              <idx><h>variation </h><h> constant of proportionality</h></idx><idx><h>constant of proportionality</h></idx>
+              <idx><h>variation</h><h>constant of proportionality</h></idx><idx><h>constant of proportionality</h></idx>
           <term>constant of proportionality</term>.
         </p>
       </statement>

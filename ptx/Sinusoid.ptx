@@ -22,13 +22,13 @@
     <insight xml:id="sinesinusoidprops">
       <title>Properties of the Sinusoid $S(t) = A \sin(\omega t + \phi) + B$</title>
       <p>
-            <idx><h>sinusoid </h><h> properties of</h></idx>
+            <idx><h>sinusoid</h><h>properties of</h></idx>
 
         <ul>
           <li>
             <p>
               The <em>amplitude</em>
-                  <idx><h>sinusoid </h><h> amplitude</h></idx><idx><h>amplitude</h></idx>
+                  <idx><h>sinusoid</h><h>amplitude</h></idx><idx><h>amplitude</h></idx>
               is <m>|A|</m>
             </p>
           </li>
@@ -36,8 +36,8 @@
           <li>
             <p>
               The <em>angular frequency</em>
-                  <idx><h>sinusoid </h><h> frequency ! angular</h></idx><idx><h>frequency </h><h> angular</h></idx> is <m>\omega</m> and the
-              <em>ordinary frequency</em><idx><h>sinusoid </h><h> frequency ! ordinary</h></idx><idx><h>frequency </h><h> ordinary</h></idx>
+                  <idx><h>sinusoid</h><h>frequency ! angular</h></idx><idx><h>frequency</h><h>angular</h></idx> is <m>\omega</m> and the
+              <em>ordinary frequency</em><idx><h>sinusoid</h><h>frequency ! ordinary</h></idx><idx><h>frequency</h><h>ordinary</h></idx>
               is <m>f = \dfrac{\omega}{2\pi}</m>
             </p>
           </li>
@@ -45,7 +45,7 @@
           <li>
             <p>
               The <em>period</em>
-                  <idx><h>sinusoid </h><h> period</h></idx><idx><h>period </h><h> of a sinusoid</h></idx>
+                  <idx><h>sinusoid</h><h>period</h></idx><idx><h>period</h><h>of a sinusoid</h></idx>
               is <m>T = \dfrac{1}{f} = \dfrac{2\pi}{\omega}</m>
             </p>
           </li>
@@ -53,8 +53,8 @@
           <li>
             <p>
               The <em>phase</em>
-                  <idx><h>sinusoid </h><h> phase</h></idx><idx><h>phase</h></idx> is <m>\phi</m> and the
-              <em>phase shift</em><idx><h>sinusoid </h><h> phase shift</h></idx><idx><h>phase shift</h></idx>
+                  <idx><h>sinusoid</h><h>phase</h></idx><idx><h>phase</h></idx> is <m>\phi</m> and the
+              <em>phase shift</em><idx><h>sinusoid</h><h>phase shift</h></idx><idx><h>phase shift</h></idx>
               is <m>-\dfrac{\phi}{\omega}</m>
             </p>
           </li>
@@ -62,7 +62,7 @@
           <li>
             <p>
               The <em>vertical shift</em>
-                  <idx><h>sinusoid </h><h> vertical shift</h></idx><idx><h>sinusoid </h><h> baseline</h></idx>
+                  <idx><h>sinusoid</h><h>vertical shift</h></idx><idx><h>sinusoid</h><h>baseline</h></idx>
         or <em>baseline</em> is <m>B</m>
             </p>
           </li>
@@ -85,7 +85,7 @@
     </p>
 
     <figure xml:id="genericsinsuoidfigure">
-      <caption>Properties of a generic sinusoid <idx><h>sinusoid </h><h> graph of</h></idx></caption>
+      <caption>Properties of a generic sinusoid <idx><h>sinusoid</h><h>graph of</h></idx></caption>
       <img src="figures/AppExtGraphics/Sinusoid-1.pdf"/>
     </figure>
 

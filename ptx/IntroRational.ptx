@@ -22,7 +22,7 @@
           is a function which is the ratio of polynomial functions.
           Said differently,
           <m>r</m> is a rational function if it is of the form
-              <idx><h>function </h><h> rational</h></idx>
+              <idx><h>function</h><h>rational</h></idx>
           <me>
             r(x) = \dfrac{p(x)}{q(x)}
           </me>,
@@ -242,7 +242,7 @@
       <m>f(x) \rightarrow -\infty</m>.
       For this type of unbounded behaviour,
       we say the graph of <m>y=f(x)</m> has a
-          <idx><h>asymptote </h><h> vertical ! intuitive definition of</h></idx><idx><h>vertical asymptote </h><h> intuitive definition of</h></idx>
+          <idx><h>asymptote</h><h>vertical ! intuitive definition of</h></idx><idx><h>vertical asymptote</h><h>intuitive definition of</h></idx>
       <em>vertical asymptote</em> of <m>x = -1</m>.
       Roughly speaking, this means that near <m>x=-1</m>,
       the graph looks very much like the vertical line <m>x=-1</m>.
@@ -291,7 +291,7 @@
       Here the <q><m>+</m></q> means <q>from above</q>
       and the <q><m>-</m></q> means <q>from below</q>.
       In this case, we say the graph of <m>y=f(x)</m> has a
-          <idx><h>asymptote </h><h> horizontal ! intuitive definition of</h></idx><idx><h>horizontal asymptote </h><h> intuitive definition of</h></idx>
+          <idx><h>asymptote</h><h>horizontal ! intuitive definition of</h></idx><idx><h>horizontal asymptote</h><h>intuitive definition of</h></idx>
       <em>horizontal asymptote</em> of <m>y=2</m>.
       This means that the end behaviour of <m>f</m> resembles the horizontal line <m>y=2</m>,
       which explains the <q>levelling off</q>
@@ -304,7 +304,7 @@
       <statement>
         <p>
           The line <m>x=c</m> is called a
-              <idx><h>asymptote </h><h> vertical ! formal definition of</h></idx><idx><h>vertical asymptote </h><h> formal definition of</h></idx>
+              <idx><h>asymptote</h><h>vertical ! formal definition of</h></idx><idx><h>vertical asymptote</h><h>formal definition of</h></idx>
           <term>vertical asymptote</term>
           of the graph of a function <m>y=f(x)</m> if as
           <m>x \rightarrow c^{-}</m> or as <m>x \rightarrow c^{+}</m>,
@@ -318,7 +318,7 @@
       <statement>
         <p>
           The line <m>y=c</m> is called a
-              <idx><h>asymptote </h><h> horizontal ! formal definition of</h></idx><idx><h>horizontal asymptote </h><h> formal definition of</h></idx>
+              <idx><h>asymptote</h><h>horizontal ! formal definition of</h></idx><idx><h>horizontal asymptote</h><h>formal definition of</h></idx>
           <term>horizontal asymptote</term>
           of the graph of a function <m>y=f(x)</m> if as
           <m>x \rightarrow -\infty</m> or as <m>x \rightarrow \infty</m>,
@@ -400,7 +400,7 @@
       graphing piecewise defined functions in <xref ref="GraphsofFunctions">Section</xref>),
       we put an open circle
       (also called a <em>hole</em>
-          <idx><h>hole </h><h> in a graph</h></idx><idx><h>graph </h><h> hole in</h></idx>
+          <idx><h>hole</h><h>in a graph</h></idx><idx><h>graph</h><h>hole in</h></idx>
       in this case)
       at <m>(1,0.5)</m>.
       <xref ref="fig_ratgr3">Figure</xref>
@@ -443,7 +443,7 @@
           <m>r(x) = \dfrac{p(x)}{q(x)}</m> where <m>p</m> and <m>q</m> have no common zeros (in other words,
           <m>r(x)</m> is in lowest terms).
           Let <m>c</m> be a real number which is not in the domain of <m>r</m>.
-              <idx><h>hole </h><h> location of</h></idx> <idx><h>asymptote </h><h> vertical ! location of</h></idx> <idx><h>vertical asymptote </h><h> location of</h></idx>
+              <idx><h>hole</h><h>location of</h></idx> <idx><h>asymptote</h><h>vertical ! location of</h></idx> <idx><h>vertical asymptote</h><h>location of</h></idx>
           <ul>
             <li>
               <p>
@@ -693,7 +693,7 @@
       <title>Location of Horizontal Asymptotes</title>
       <statement>
         <p>
-              <idx><h>asymptote </h><h> horizontal ! location of</h></idx><idx><h>horizontal asymptote </h><h> location of</h></idx>
+              <idx><h>asymptote</h><h>horizontal ! location of</h></idx><idx><h>horizontal asymptote</h><h>location of</h></idx>
           Suppose <m>r</m> is a rational function and <m>r(x) = \dfrac{p(x)}{q(x)}</m>,
           where <m>p</m> and <m>q</m> are polynomial functions with leading coefficients <m>a</m> and <m>b</m>,
           respectively.
@@ -1006,7 +1006,7 @@
       <q>as <m>x \rightarrow \pm \infty</m>,
       <m>g(x) \to x-1</m>.</q> In this case,
       we say the line <m>y=x-1</m> is a
-          <idx><h>asymptote </h><h> slant (oblique)</h></idx> <idx><h>slant asymptote</h></idx> <idx><h>oblique asymptote</h></idx>
+          <idx><h>asymptote</h><h>slant (oblique)</h></idx> <idx><h>slant asymptote</h></idx> <idx><h>oblique asymptote</h></idx>
       <em>slant asymptote</em>
       (or <q>oblique</q> asymptote)
       to the graph of <m>y=g(x)</m>.
@@ -1022,7 +1022,7 @@
       <statement>
         <p>
           The line <m>y = mx+b</m> where <m>m \neq 0</m> is called a
-              <idx><h>asymptote </h><h> slant ! formal definition of</h></idx><idx><h>slant asymptote </h><h> formal definition of</h></idx>
+              <idx><h>asymptote</h><h>slant ! formal definition of</h></idx><idx><h>slant asymptote</h><h>formal definition of</h></idx>
           <term>slant asymptote</term>
           of the graph of a function <m>y=f(x)</m> if as
           <m>x \rightarrow -\infty</m> or as <m>x \rightarrow \infty</m>,
@@ -1070,7 +1070,7 @@
           where the degree of <m>p</m> is <em>exactly</em>
           one more than the degree of <m>q</m>.
           Then the graph of <m>y=r(x)</m> has
-              <idx><h>asymptote </h><h> slant ! determination of</h></idx><idx><h>slant asymptote </h><h> determination of</h></idx>
+              <idx><h>asymptote</h><h>slant ! determination of</h></idx><idx><h>slant asymptote</h><h>determination of</h></idx>
           the slant asymptote <m>y=L(x)</m> where <m>L(x)</m> is the quotient obtained by dividing <m>p(x)</m> by <m>q(x)</m>.
         </p>
       </statement>

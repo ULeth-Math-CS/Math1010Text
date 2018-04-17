@@ -14,7 +14,7 @@
       <statement>
         <p>
           A
-              <idx><h>function </h><h> polynomial</h></idx><idx><h>polynomial function </h><h> definition of</h></idx>
+              <idx><h>function</h><h>polynomial</h></idx><idx><h>polynomial function</h><h>definition of</h></idx>
           <term>polynomial function</term> is a function of the form
           <me>
             f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}
@@ -183,7 +183,7 @@
               <li>
                 <p>
                   The natural number <m>n</m> is called the
-                      <idx><h>polynomial function </h><h> degree</h></idx><idx><h>degree of a polynomial</h></idx>
+                      <idx><h>polynomial function</h><h>degree</h></idx><idx><h>degree of a polynomial</h></idx>
                   <em>degree</em> of the polynomial <m>f</m>.
                 </p>
               </li>
@@ -191,7 +191,7 @@
               <li>
                 <p>
                   The term <m>a_{n} x^{n}</m> is called the
-                      <idx><h>polynomial function </h><h> leading term</h></idx><idx><h>leading term of a polynomial</h></idx>
+                      <idx><h>polynomial function</h><h>leading term</h></idx><idx><h>leading term of a polynomial</h></idx>
                   <em>leading term</em> of the polynomial <m>f</m>.
                 </p>
               </li>
@@ -199,7 +199,7 @@
               <li>
                 <p>
                   The real number <m>a_{n}</m> is called the
-                      <idx><h>polynomial function </h><h> leading coefficient</h></idx><idx><h>leading coefficient of a polynomial</h></idx>
+                      <idx><h>polynomial function</h><h>leading coefficient</h></idx><idx><h>leading coefficient of a polynomial</h></idx>
                   <em>leading coefficient</em> of the polynomial <m>f</m>.
                 </p>
               </li>
@@ -207,7 +207,7 @@
               <li>
                 <p>
                   The real number <m>a_{0}</m> is called the
-                      <idx><h>polynomial function </h><h> constant term</h></idx><idx><h>constant term of a polynomial</h></idx>
+                      <idx><h>polynomial function</h><h>constant term</h></idx><idx><h>constant term of a polynomial</h></idx>
                   <em>constant term</em> of the polynomial <m>f</m>.
                 </p>
               </li>
@@ -483,7 +483,7 @@
       All of these functions are even, (Do you remember how to show this?) and it is exactly because the exponent is even. (Herein lies one of the possible origins of the term <q>even</q>
       when applied to functions.) This symmetry is important,
       but we want to explore a different yet equally important feature of these functions which we can be seen graphically <mdash /> their
-          <idx><h>polynomial function </h><h> end behaviour</h></idx><idx><h>end behaviour </h><h> of a function graph</h></idx>
+          <idx><h>polynomial function</h><h>end behaviour</h></idx><idx><h>end behaviour</h><h>of a function graph</h></idx>
       <em>end behaviour</em>.
     </p>
 
@@ -538,7 +538,7 @@
         Suppose <m>f(x) = a x^{n}</m> where
         <m>a \neq 0</m> is a real number and <m>n</m> is an even natural number.
         The end behaviour of the graph of <m>y=f(x)</m> matches one of the following:
-            <idx><h>end behaviour </h><h> of <m>f(x) = ax^{n}, n</m> even</h></idx>
+            <idx><h>end behaviour</h><h>of <m>f(x) = ax^{n}, n</m> even</h></idx>
         <ul>
           <li>
             <p>
@@ -638,7 +638,7 @@
         Suppose <m>f(x) = a x^{n}</m> where <m>a \neq 0</m> is a real number and
         <m>n \geq 3</m> is an odd natural number.
         The end behaviour of the graph of <m>y=f(x)</m> matches one of the following:
-            <idx><h>end behaviour </h><h> of <m>f(x) = ax^{n}, n</m> odd</h></idx>
+            <idx><h>end behaviour</h><h>of <m>f(x) = ax^{n}, n</m> odd</h></idx>
         <ul>
           <li>
             <p>
@@ -679,8 +679,8 @@
       Despite having different end behaviour,
       all functions of the form
       <m>f(x) = ax^{n}</m> for natural numbers <m>n</m> share two properties which help distinguish them from other animals in the algebra zoo: they are
-          <idx><h>continuous</h></idx><idx><h>function </h><h> continuous</h></idx><em>continuous</em>
-      and <idx><h>smooth</h></idx><idx><h>function </h><h> smooth</h></idx>
+          <idx><h>continuous</h></idx><idx><h>function</h><h>continuous</h></idx><em>continuous</em>
+      and <idx><h>smooth</h></idx><idx><h>function</h><h>smooth</h></idx>
       <em>smooth</em>.
       While these concepts are formally defined using Calculus,
       informally,
@@ -735,7 +735,7 @@
           then <m>f</m> has at least one zero between <m>x = a</m> and <m>x = b</m>;
           that is, for at least one real number <m>c</m> such that
           <m>a \lt c \lt b</m>, we have <m>f(c) = 0</m>.
-              <idx><h>Intermediate Value Theorem </h><h> polynomial zero version</h></idx>
+              <idx><h>Intermediate Value Theorem</h><h>polynomial zero version</h></idx>
         </p>
       </statement>
     </theorem>
@@ -800,7 +800,7 @@
       <title>Steps for Constructing a Sign Diagram for a Polynomial Function</title>
       <p>
         Suppose <m>f</m> is a polynomial function.
-            <idx><h>sign diagram </h><h> polynomial function</h></idx>
+            <idx><h>sign diagram</h><h>polynomial function</h></idx>
         <ol>
           <li>
             <p>
@@ -882,7 +882,7 @@
       <title>End behaviour for Polynomial Functions</title>
       <statement>
         <p>
-              <idx><h>end behaviour </h><h> polynomial</h></idx>
+              <idx><h>end behaviour</h><h>polynomial</h></idx>
           The end behaviour of a polynomial <m>f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}</m> with
           <m>a_{n} \neq 0</m> matches the end behaviour of <m>y = a_{n} x^{n}</m>.
         </p>
@@ -1031,7 +1031,7 @@
           Suppose <m>f</m> is a polynomial function and <m>m</m> is a natural number.
           If <m>(x-c)^{m}</m> is a factor of <m>f(x)</m> but <m>(x-c)^{m+1}</m> is not,
           then we say <m>x=c</m> is a zero of
-              <idx><h>polynomial function </h><h> zero ! multiplicity</h></idx><idx><h>multiplicity </h><h> of a zero</h></idx><idx><h>zero </h><h> multiplicity of</h></idx>
+              <idx><h>polynomial function</h><h>zero ! multiplicity</h></idx><idx><h>multiplicity</h><h>of a zero</h></idx><idx><h>zero</h><h>multiplicity of</h></idx>
           <term>multiplicity</term> <m>m</m>.
         </p>
       </statement>
@@ -1048,7 +1048,7 @@
       <statement>
         <p>
           Suppose <m>f</m> is a polynomial function and <m>x=c</m> is a zero of multiplicity <m>m</m>.
-              <idx><h>multiplicity </h><h> effect on the graph of a polynomial</h></idx>
+              <idx><h>multiplicity</h><h>effect on the graph of a polynomial</h></idx>
           <ul>
             <li>
               <p>
@@ -2109,7 +2109,7 @@
     <exercise>
       <statement>
         <p>
-              <idx><h>multiplicity </h><h> effect on the graph of a polynomial</h></idx>
+              <idx><h>multiplicity</h><h>effect on the graph of a polynomial</h></idx>
           There is one subtlety about the role of multiplicity that we need to discuss further;
           specifically we need to see <q>how</q>
           the graph crosses the <m>x</m>-axis at a zero of odd multiplicity.

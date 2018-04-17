@@ -1018,15 +1018,15 @@
         <p>
           Let <m>a</m> be a real number and let <m>n</m> be a natural number.
           If <m>n</m> is odd, then the
-              <idx><h><m>n^{\text{ th } }</m> root </h><h> principal</h></idx><idx><h>principal <m>n^{\text{ th } }</m> root</h></idx>
+              <idx><h><m>n^{\text{ th } }</m> root</h><h>principal</h></idx><idx><h>principal <m>n^{\text{ th } }</m> root</h></idx>
           <term>principal <m>n^{\textbf{th}}</m> root</term> of <m>a</m>
           (denoted <m>\sqrt[n]{a}</m>)
           is the unique real number satisfying <m>\left(\sqrt[n]{a}\right)^n = a</m>.
           If <m>n</m> is even, <m>\sqrt[n]{a}</m> is defined similarly provided
           <m>a \geq 0</m> and <m>\sqrt[n]{a} \geq 0</m>.
           The number <m>n</m> is called the
-              <idx><h>root </h><h> index</h></idx><idx><h>index of a root</h></idx><term>index</term>
-          of the root and the the number <m>a</m> is called the <idx><h>root </h><h> radicand</h></idx><idx><h>radicand</h></idx>
+              <idx><h>root</h><h>index</h></idx><idx><h>index of a root</h></idx><term>index</term>
+          of the root and the the number <m>a</m> is called the <idx><h>root</h><h>radicand</h></idx><idx><h>radicand</h></idx>
           <term>radicand</term>.
           For <m>n=2</m>,
           we write <m>\sqrt{a}</m> instead of <m>\sqrt[2]{a}</m>.
@@ -1096,14 +1096,14 @@
           Let <m>a</m> and <m>b</m> be real numbers and let <m>m</m> and <m>n</m> be natural numbers.
           If <m>\sqrt[n]{a}</m> and
           <m>\sqrt[n]{b}</m> are real numbers, then
-              <idx><h>radical </h><h> properties of</h></idx>
+              <idx><h>radical</h><h>properties of</h></idx>
 
           <ul>
             <li>
               <p>
                 <em>Product Rule:</em>
                 <m>\sqrt[n]{ab} = \sqrt[n]{a} \, \sqrt[n]{b}</m>
-                    <idx><h>product rule </h><h> for radicals</h></idx>
+                    <idx><h>product rule</h><h>for radicals</h></idx>
           </p>
             </li>
 
@@ -1112,7 +1112,7 @@
                 <em>Quotient Rule:</em>
                 <m>\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}</m>,
                 provided <m>b \neq 0</m>.
-              <idx><h>quotient rule </h><h> for radicals</h></idx>
+              <idx><h>quotient rule</h><h>for radicals</h></idx>
               </p>
             </li>
 
@@ -1120,7 +1120,7 @@
               <p>
                 <em>Power Rule:</em>
                 <m>\sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m</m>
-                    <idx><h>power rule </h><h> for radicals</h></idx>
+                    <idx><h>power rule</h><h>for radicals</h></idx>
           </p>
             </li>
           </ul>

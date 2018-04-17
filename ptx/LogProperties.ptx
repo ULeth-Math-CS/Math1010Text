@@ -22,7 +22,7 @@
       <statement>
         <p>
           Let <m>b > 0</m>, <m>b \neq 1</m>.
-              <idx><h>exponential function </h><h> inverse properties of</h></idx><idx><h>logarithm </h><h> inverse properties of</h></idx>
+              <idx><h>exponential function</h><h>inverse properties of</h></idx><idx><h>logarithm</h><h>inverse properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -51,7 +51,7 @@
           Let <m>f(x) = b^{x}</m> and
           <m>g(x) = \log_{b}(x)</m> where <m>b>0</m>, <m>b\neq 1</m>.
           Then <m>f</m> and <m>g</m> are one-to-one and
-              <idx><h>exponential function </h><h> one-to-one properties of</h></idx><idx><h>logarithm </h><h> one-to-one properties of</h></idx>
+              <idx><h>exponential function</h><h>one-to-one properties of</h></idx><idx><h>logarithm</h><h>one-to-one properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -86,13 +86,13 @@
         <p>
           Let <m>f(x) = b^{x}</m> be an exponential function (<m>b > 0</m>,
           <m>b\neq 1</m>) and let <m>u</m> and <m>w</m> be real numbers.
-              <idx><h>exponential function </h><h> algebraic properties of</h></idx>
+              <idx><h>exponential function</h><h>algebraic properties of</h></idx>
 
           <ul>
             <li>
               <p>
                 <em>Product Rule:</em>
-                    <idx><h>product rule </h><h> for exponential functions</h></idx>
+                    <idx><h>product rule</h><h>for exponential functions</h></idx>
           <m>f(u+w) = f(u) f(w)</m>.
                 In other words, <m>b^{u+w} = b^{u} b^{w}</m>
               </p>
@@ -101,7 +101,7 @@
             <li>
               <p>
                 <em>Quotient Rule:</em>
-              <idx><h>quotient rule </h><h> for exponential functions</h></idx>
+              <idx><h>quotient rule</h><h>for exponential functions</h></idx>
           <m>f(u-w) = \dfrac{f(u)}{f(w)}</m>.
                 In other words, <m>b^{u-w} = \dfrac{b^{u}}{b^{w}}</m>
               </p>
@@ -110,7 +110,7 @@
             <li>
               <p>
                 <em>Power Rule:</em>
-              <idx><h>power rule </h><h> for exponential functions</h></idx>
+              <idx><h>power rule</h><h>for exponential functions</h></idx>
           <m>\left(f(u)\right)^w = f(uw)</m>.
                 In other words, <m>\left(b^{u}\right)^{w} = b^{uw}</m>
               </p>
@@ -134,13 +134,13 @@
         <p>
           Let <m>g(x) =\log_{b}(x)</m> be a logarithmic function (<m>b > 0</m>,
           <m>b\neq 1</m>) and let <m>u>0</m> and <m>w>0</m> be real numbers.
-              <idx><h>logarithm </h><h> algebraic properties of</h></idx>
+              <idx><h>logarithm</h><h>algebraic properties of</h></idx>
 
           <ul>
             <li>
               <p>
                 <em>Product Rule:</em>
-                    <idx><h>product rule </h><h> for logarithms</h></idx>
+                    <idx><h>product rule</h><h>for logarithms</h></idx>
           <m>g(uw) = g(u)+ g(w)</m>.
                 In other words, <m>\log_{b}(uw) = \log_{b}(u) + \log_{b}(w)</m>
               </p>
@@ -149,7 +149,7 @@
             <li>
               <p>
                 <em>Quotient Rule:</em>
-              <idx><h>quotient rule </h><h> for logarithms</h></idx>
+              <idx><h>quotient rule</h><h>for logarithms</h></idx>
           <m>g\left(\dfrac{u}{w} \right) = g(u) - g(w)</m>.
                 In other words,
                 <m>\log_{b} \left( \dfrac{u}{w} \right) = \log_{b}(u) - \log_{b}(w)</m>
@@ -159,7 +159,7 @@
             <li>
               <p>
                 <em>Power Rule:</em>
-              <idx><h>power rule </h><h> for logarithms</h></idx>
+              <idx><h>power rule</h><h>for logarithms</h></idx>
           <m>g\left(u^{w}\right) =w g(u)</m>.
                 In other words, <m>\log_{b}\left(u^{w}\right) = w \log_{b}(u)</m>
               </p>
@@ -539,7 +539,7 @@
       <statement>
         <p>
           Let <m>a,b >0</m>, <m>a,b \neq 1</m>.
-              <idx><h>change of base formulas</h></idx> <idx><h>exponential function </h><h> change of base formula</h></idx> <idx><h>logarithm </h><h> change of base formula</h></idx>
+              <idx><h>change of base formulas</h></idx> <idx><h>exponential function</h><h>change of base formula</h></idx> <idx><h>logarithm</h><h>change of base formula</h></idx>
           <ul>
             <li>
               <p>

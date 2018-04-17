@@ -6,7 +6,7 @@
     <p>
       We conclude our first chapter with a review the set of
       <em>Complex Numbers</em>.
-          <idx><h>numbers </h><h> complex</h></idx><idx><h>complex numbers</h></idx>
+          <idx><h>numbers</h><h>complex</h></idx><idx><h>complex numbers</h></idx>
       As you may recall,
       the complex numbers fill an algebraic gap left by the real numbers.
       There is no real number <m>x</m> with <m>x^2 = -1</m>,
@@ -15,7 +15,7 @@
       We build the complex numbers by relabelling the quantity <m>\sqrt{-1}</m> as <m>i</m>,
       the unfortunately misnamed
           <idx><h>imaginary unit,
-      <m>i</m></h></idx><idx><h>complex number </h><h> imaginary unit,
+      <m>i</m></h></idx><idx><h>complex number</h><h>imaginary unit,
       <m>i</m></h></idx>
       <em>imaginary unit</em>.
       The number <m>i</m>, while not a real number,
@@ -103,7 +103,7 @@
       The moral of this story is that the general properties of radicals do not apply for even roots of negative quantities.
       With <xref ref="idefn">Definition</xref> in place,
       we are now in position to define the
-          <idx><h>complex number </h><h> definition of</h></idx>
+          <idx><h>complex number</h><h>definition of</h></idx>
       <em>complex numbers</em>.
     </p>
 
@@ -272,7 +272,7 @@
       In the previous example,
       we used the idea of a <q>conjugate</q>
       to divide two complex numbers. (You may recall using conjugates to rationalize expressions involving square roots.) More generally, the
-          <idx><h>complex number </h><h> complex conjugate ! definition of</h></idx><idx><h>conjugate </h><h> complex conjugate ! definition of</h></idx>
+          <idx><h>complex number</h><h>complex conjugate ! definition of</h></idx><idx><h>conjugate</h><h>complex conjugate ! definition of</h></idx>
       <em>complex conjugate</em>
       of a complex number <m>a+bi</m> is the number <m>a-bi</m>.
       The notation commonly used for complex conjugation is a <q>bar</q>:
@@ -297,7 +297,7 @@
       <title>Properties of the Complex Conjugate</title>
       <statement>
         <p>
-              <idx><h>complex number </h><h> conjugate ! properties of</h></idx><idx><h>conjugate of a complex number </h><h> properties of</h></idx>
+              <idx><h>complex number</h><h>conjugate ! properties of</h></idx><idx><h>conjugate of a complex number</h><h>properties of</h></idx>
           Let <m>z</m> and <m>w</m> be complex numbers.
 
           <ul>

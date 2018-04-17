@@ -17,7 +17,7 @@
       <statement>
         <p>
           A <term>set</term>
-              <idx><h>set </h><h> definition of</h></idx>
+              <idx><h>set</h><h>definition of</h></idx>
           is a well-defined collection of objects which are called the
           <q>elements</q> of the set.
           Here, <q>well-defined</q>
@@ -49,7 +49,7 @@
           <p>
             <em>The Verbal Method:</em>
             Use a sentence to define a set.
-                <idx><h>set </h><h> verbal description</h></idx>
+                <idx><h>set</h><h>verbal description</h></idx>
           </p>
         </li>
 
@@ -59,7 +59,7 @@
             Begin with a left brace <q><m>\{</m></q>,
             list each element of the set <em>only once</em>
             and then end with a right brace <q><m>\}</m></q>.
-                <idx><h>set </h><h> roster method</h></idx>
+                <idx><h>set</h><h>roster method</h></idx>
           </p>
         </li>
 
@@ -68,7 +68,7 @@
             <em>The Set-Builder Method:</em>
             A combination of the verbal and roster methods using a
             <q>dummy variable</q> such as <m>x</m>.
-                <idx><h>set </h><h> set-builder notation</h></idx><idx><h>set-builder notation</h></idx>
+                <idx><h>set</h><h>set-builder notation</h></idx><idx><h>set-builder notation</h></idx>
           </p>
         </li>
       </ol>
@@ -117,7 +117,7 @@
             <li>
               <p>
                 If <m>x</m> is an element of <m>A</m> then we write <m>x \in A</m>
-              <idx><h>set </h><h> inclusion</h></idx><idx><h><m>\in</m></h></idx>
+              <idx><h>set</h><h>inclusion</h></idx><idx><h><m>\in</m></h></idx>
           which is read <q><m>x</m> is in <m>A</m></q>.
               </p>
             </li>
@@ -126,7 +126,7 @@
               <p>
                 If <m>x</m> is <em>not</em>
                 an element of <m>A</m> then we write <m>x \notin A</m>
-              <idx><h>set </h><h> exclusion</h></idx><idx><h><m>\notin</m></h></idx>
+              <idx><h>set</h><h>exclusion</h></idx><idx><h><m>\notin</m></h></idx>
           which is read <q><m>x</m> is not in <m>A</m></q>.
               </p>
             </li>
@@ -151,7 +151,7 @@
         <p>
           Given sets <m>A</m> and <m>B</m>,
           we say that the set <m>A</m> is a <term>subset</term>
-              <idx><h>subset </h><h> definition of</h></idx>
+              <idx><h>subset</h><h>definition of</h></idx>
           of the set <m>B</m> and write <q><m>A \subseteq B</m></q>
           if every element in <m>A</m> is also an element of <m>B</m>.
         </p>
@@ -196,7 +196,7 @@
             <li>
               <p>
                 The <em>intersection</em>
-              <idx><h>set </h><h> intersection</h></idx><idx><h>intersection of two sets</h></idx>
+              <idx><h>set</h><h>intersection</h></idx><idx><h>intersection of two sets</h></idx>
                 of <m>A</m> and <m>B</m> is <m>A \cap B = \{ x \, | \, x \in A \, \text{ and } \,\, x \in B \}</m>
               </p>
             </li>
@@ -204,7 +204,7 @@
             <li>
               <p>
                 The <em>union</em>
-                    <idx><h>set </h><h> union</h></idx><idx><h>union of two sets</h></idx>
+                    <idx><h>set</h><h>union</h></idx><idx><h>union of two sets</h></idx>
           of <m>A</m> and <m>B</m> is <m>A \cup B = \{ x \, | \, x \in A \, \text{ or } \,\, x \in B \, \, \text{
                 (or both)
                 } \}</m>
@@ -244,7 +244,7 @@
         <p>
           The <term>Empty Set</term>
           <m>\emptyset</m> is the set which contains no elements.
-              <idx><h>set </h><h> empty</h></idx><idx><h>empty set</h></idx>
+              <idx><h>set</h><h>empty</h></idx><idx><h>empty set</h></idx>
           That is,
           <me>
             \emptyset=\{ \}=\{x\,|\,\mbox{\(x \neq x\)} \}
@@ -274,7 +274,7 @@
       Using this new bit of notation,
       we have for the sets <m>C</m> and <m>V</m> above that <m>C \cap V = \emptyset</m>.
       A nice way to visualize relationships between sets and set operations is to draw a <url href="http://en.wikipedia.org/wiki/Venn_diagram"><em><em>Venn Diagram</em></em></url>.
-          <idx><h>diagram </h><h> Venn Diagram</h></idx><idx><h>Venn Diagram</h></idx>
+          <idx><h>diagram</h><h>Venn Diagram</h></idx><idx><h>Venn Diagram</h></idx>
       A Venn Diagram for the sets <m>S</m>,
       <m>C</m> and <m>V</m> is drawn in <xref ref="venndiagram">Figure</xref>.
     </p>
@@ -355,7 +355,7 @@
       <statement>
         <p>
           A <term>real number</term>
-              <idx><h>real number </h><h> set of</h></idx><idx><h>real number </h><h> definition of</h></idx>
+              <idx><h>real number</h><h>set of</h></idx><idx><h>real number</h><h>definition of</h></idx>
           is any number which possesses a decimal representation.
           The set of real numbers is denoted by the character <m>\mathbb{R}</m>.
         </p>
@@ -379,13 +379,13 @@
       <title>Sets of Numbers</title>
       <statement>
         <p>
-              <idx><h>set </h><h> sets of numbers</h></idx>
+              <idx><h>set</h><h>sets of numbers</h></idx>
 
           <ol>
             <li>
               <p>
                 The <em>Empty Set</em>:
-                    <idx><h>set </h><h> empty</h></idx><idx><h>empty set</h></idx>
+                    <idx><h>set</h><h>empty</h></idx><idx><h>empty set</h></idx>
           <m>\emptyset=\{ \}=\{x\,|\,\mbox{<m>x \neq x</m>} \}</m>.
                 This is the set with no elements.
                 Like the number <q><m>0</m>,</q>
@@ -396,7 +396,7 @@
             <li>
               <p>
                 The <em>Natural Numbers</em>:
-              <idx><h>natural number </h><h> set of</h></idx><idx><h>natural number </h><h> definition of</h></idx>
+              <idx><h>natural number</h><h>set of</h></idx><idx><h>natural number</h><h>definition of</h></idx>
           <m>\mathbb N= \{ 1, 2, 3, \ldots\}</m> The periods of ellipsis here indicate that the natural numbers contain <m>1</m>,
                 <m>2</m>, <m>3</m>, <q>and so forth</q>.
               </p>
@@ -405,7 +405,7 @@
             <li>
               <p>
                 The <em>Integers</em>:
-              <idx><h>integer </h><h> set of</h></idx><idx><h>integer </h><h> definition of</h></idx>
+              <idx><h>integer</h><h>set of</h></idx><idx><h>integer</h><h>definition of</h></idx>
                 <m>\mathbb Z=\{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}</m>
               </p>
             </li>
@@ -413,7 +413,7 @@
             <li>
               <p>
                 The <em>Rational Numbers</em>:
-                    <idx><h>rational number </h><h> set of</h></idx><idx><h>rational number </h><h> definition of</h></idx>
+                    <idx><h>rational number</h><h>set of</h></idx><idx><h>rational number</h><h>definition of</h></idx>
           <m>\mathbb Q=\left\{\frac{a}{b} \, | \, a \in \mathbb Z \, \mbox{and}  \, b \in \mathbb Z \right\}</m>. 
           <em>Ratio</em>nal numbers are the
                 <em>ratio</em>s of integers
@@ -428,7 +428,7 @@
             <li>
               <p>
                 The <em>Real Numbers</em>:
-              <idx><h>real number </h><h> set of</h></idx><idx><h>real number </h><h> definition of</h></idx>
+              <idx><h>real number</h><h>set of</h></idx><idx><h>real number</h><h>definition of</h></idx>
           <m>\mathbb R = \{ x\,|\,\mbox{<m>x</m> possesses a decimal representation.} \}</m>
               </p>
             </li>
@@ -436,7 +436,7 @@
             <li>
               <p>
                 The <em>Irrational Numbers</em>:
-              <idx><h>irrational number </h><h> set of</h></idx><idx><h>irrational number </h><h> definition of</h></idx>
+              <idx><h>irrational number</h><h>set of</h></idx><idx><h>irrational number</h><h>definition of</h></idx>
           Real numbers that are not rational are called <em>irrational</em>.
                 As a set,
           we have <m>\{x\in\mathbb{R}\,|\, x\notin \mathbb{Q}\}</m>. (There is no standard symbol for this set.) Every
@@ -447,7 +447,7 @@
             <li>
               <p>
                 The <em>Complex Numbers</em>:
-              <idx><h>complex number </h><h> set of</h></idx><idx><h>complex number </h><h> definition of</h></idx>
+              <idx><h>complex number</h><h>set of</h></idx><idx><h>complex number</h><h>definition of</h></idx>
           <m>\mathbb C=\{a+bi\,|\,\mbox{<m>a</m>,<m>b \in \mathbb R</m> and
                 <m>i=\sqrt{-1}</m>} \}</m> (We will not deal with complex numbers in Math 1010,
                 although they usually make an appearance in Math 1410.)
@@ -736,11 +736,11 @@
     </aside>
     <p>
       Segments of the real number line are called <em>intervals</em>
-          <idx><h>interval </h><h> definition of</h></idx>
+          <idx><h>interval</h><h>definition of</h></idx>
       of numbers.
       Below is a summary of the so-called
       <em>interval notation</em>
-          <idx><h>interval </h><h> notation for</h></idx>
+          <idx><h>interval</h><h>notation for</h></idx>
       associated with given sets of numbers.
       For intervals with finite endpoints,
       we list the left endpoint, then the right endpoint.

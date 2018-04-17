@@ -31,7 +31,7 @@
     <insight xml:id="simpleinterest">
       <title>Simple Interest</title>
       <p>
-            <idx><h>interest </h><h> simple</h></idx> <idx><h>simple interest</h></idx> The amount of interest <m>I</m> accrued at an annual rate <m>r</m> on an investment
+            <idx><h>interest</h><h>simple</h></idx> <idx><h>simple interest</h></idx> The amount of interest <m>I</m> accrued at an annual rate <m>r</m> on an investment
         (called the <idx><h>principal</h></idx>
         <term>principal</term>)
         <m>P</m> after <m>t</m> years is
@@ -111,7 +111,7 @@
     <insight xml:id="compoundinterest">
       <title>Compounded Interest</title>
       <p>
-            <idx><h>interest </h><h> compound</h></idx> <idx><h>compound interest</h></idx>
+            <idx><h>interest</h><h>compound</h></idx> <idx><h>compound interest</h></idx>
         If an initial principal <m>P</m> is invested at an annual rate <m>r</m> and the interest is compounded <m>n</m> times per year,
         the amount <m>A</m> in the account after <m>t</m> years is
         <me>
@@ -295,7 +295,7 @@
     <insight xml:id="continuouscompoundinterest">
       <title>Continuously Compounded Interest</title>
       <p>
-            <idx><h>interest </h><h> compounded continuously</h></idx> <idx><h>continuously compounded interest</h></idx>
+            <idx><h>interest</h><h>compounded continuously</h></idx> <idx><h>continuously compounded interest</h></idx>
         If an initial principal <m>P</m> is invested at an annual rate <m>r</m> and the interest is compounded continuously,
         the amount <m>A</m> in the account after <m>t</m> years is
         <me>
@@ -321,7 +321,7 @@
       the same principles which govern compound interest are also used to model short term growth of populations.
       In Biology, <em>The Law of Uninhibited Growth</em>
       states as its premise that the <em>instantaneous</em>
-          <idx><h>instantaneous rate of change</h></idx> <idx><h>rate of change </h><h> instantaneous</h></idx>
+          <idx><h>instantaneous rate of change</h></idx> <idx><h>rate of change</h><h>instantaneous</h></idx>
       rate at which a population increases at any time is directly proportional to the population at that time.
       In other words, the more organisms there are at a given moment,
       the faster they reproduce.
@@ -340,7 +340,7 @@
     <insight xml:id="lawofuninhibitedgrowth">
       <title>Uninhibited growth</title>
       <p>
-            <idx><h>growth model </h><h> uninhibited</h></idx> <idx><h>uninhibited growth</h></idx>
+            <idx><h>growth model</h><h>uninhibited</h></idx> <idx><h>uninhibited growth</h></idx>
         If a population increases according to The Law of Uninhibited Growth,
         the number of organisms <m>N</m> at time <m>t</m> is given by the formula
         <me>
@@ -608,7 +608,7 @@
       Physically, this means the roast will eventually warm up to
       <m>350^{\circ}\mbox{F}</m> (at which point it would be more toast than roast).
       The function <m>T</m> is sometimes called a
-          <idx><h>growth model </h><h> limited</h></idx>
+          <idx><h>growth model</h><h>limited</h></idx>
       <em>limited</em> growth model,
       since the function <m>T</m> remains bounded as <m>t \rightarrow \infty</m>.
       If we apply the principles behind Newton's Law of Cooling to a biological example,
@@ -621,7 +621,7 @@
     <insight xml:id="logisticgrowth">
       <title>Logistic Growth</title>
       <p>
-            <idx><h>growth model </h><h> logistic</h></idx> <idx><h>logistic growth</h></idx>
+            <idx><h>growth model</h><h>logistic</h></idx> <idx><h>logistic growth</h></idx>
         If a population behaves according to the assumptions of logistic growth,
         the number of organisms <m>N</m> at time <m>t</m> is given by the equation
         <me>

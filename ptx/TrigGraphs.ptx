@@ -37,13 +37,13 @@
       <statement>
         <p>
           A function <m>f</m> is said to be <term>periodic</term>
-              <idx><h>function </h><h> periodic</h></idx><idx><h>periodic function</h></idx>
+              <idx><h>function</h><h>periodic</h></idx><idx><h>periodic function</h></idx>
           if there is a real number <m>c</m> so that
           <m>f(t+c) = f(t)</m> for all real numbers <m>t</m> in the domain of <m>f</m>.
           The smallest positive number <m>p</m> for which
           <m>f(t+p) = f(t)</m> for all real numbers <m>t</m> in the domain of <m>f</m>,
           if it exists, is called the <term>period</term> of <m>f</m>.
-              <idx><h>period </h><h> of a function</h></idx>
+              <idx><h>period</h><h>of a function</h></idx>
         </p>
       </statement>
     </definition>
@@ -103,7 +103,7 @@
       <title>Properties of the Cosine and Sine Functions</title>
       <statement>
         <p>
-              <idx><h>cosine </h><h> properties of</h></idx> <idx><h>sine </h><h> properties of</h></idx>
+              <idx><h>cosine</h><h>properties of</h></idx> <idx><h>sine</h><h>properties of</h></idx>
         </p>
 
         <ul>
@@ -200,9 +200,9 @@
       of <m>x</m> in the interval <m>[0,2\pi]</m>.
       This generates a <em>portion</em>
       of the cosine graph, which we call the
-          <idx><h>fundamental cycle </h><h> of <m>y = \cos(x)</m></h></idx>
+          <idx><h>fundamental cycle</h><h>of <m>y = \cos(x)</m></h></idx>
       <q><em>fundamental cycle</em></q> of <m>y = \cos(x)</m>.
-          <idx><h>cosine </h><h> graph of</h></idx>
+          <idx><h>cosine</h><h>graph of</h></idx>
     </p>
 
     <table xml:id="fig_triggraph1">
@@ -360,7 +360,7 @@
     <p>
       We can plot the fundamental cycle of the graph of
       <m>y = \sin(x)</m> similarly, with similar results.
-          <idx><h>sine </h><h> graph of</h></idx>
+          <idx><h>sine</h><h>graph of</h></idx>
     </p>
 
     <table xml:id="fig_triggraph2">
@@ -544,7 +544,7 @@
       Loosely stated,
       the argument of a trigonometric function is the expression
       <q>inside</q> the function.
-          <idx><h>argument </h><h> of a trigonometric function</h></idx>
+          <idx><h>argument</h><h>of a trigonometric function</h></idx>
     </p>
 
     <example xml:id="cosinesinegraphex1">
@@ -727,7 +727,7 @@
       <m>f(x) = \cos(x)</m> and <m>g(x) = \sin(x)</m> is <m>2\pi</m>,
       but horizontal scalings will change the period of the resulting sinusoid.
       The
-          <idx><h>amplitude</h></idx><idx><h>sinusoid </h><h> amplitude</h></idx>
+          <idx><h>amplitude</h></idx><idx><h>sinusoid</h><h>amplitude</h></idx>
       <em>amplitude</em> of the sinusoid is a measure of how
       <q>tall</q> the wave is,
       as indicated in the figure below.
@@ -753,9 +753,9 @@
 
     <p>
       The
-          <idx><h>phase shift</h></idx><idx><h>sinusoid </h><h> phase shift</h></idx>
+          <idx><h>phase shift</h></idx><idx><h>sinusoid</h><h>phase shift</h></idx>
       <em>phase shift</em> of the sinusoid is the horizontal shift experienced by the fundamental cycle.
-          <idx><h>sinusoid </h><h> graph of</h></idx>
+          <idx><h>sinusoid</h><h>graph of</h></idx>
       We have seen that a phase (horizontal) shift of
       <m>\frac{\pi}{2}</m> to the right takes <m>f(x) = \cos(x)</m> to
       <m>g(x) = \sin(x)</m> since <m>\cos\left(x - \frac{\pi}{2}\right) = \sin(x)</m>.
@@ -827,7 +827,7 @@
       The parameter <m>\omega</m>,
       which is stipulated to be positive,
       is called the (<em>angular</em>) <em>frequency</em>
-          <idx><h>frequency </h><h> of a sinusoid</h></idx>
+          <idx><h>frequency</h><h>of a sinusoid</h></idx>
       of the sinusoid and is the number of cycles the sinusoid completes over a <m>2\pi</m> interval.
       We can always ensure <m>\omega > 0</m> using the Even/Odd Identities. (Try using the formulas in <xref ref="sinusoidform">Theorem</xref>
       applied to <m>C(x) = \cos(-x+\pi)</m> to see why we need
@@ -1151,7 +1151,7 @@
       Since <m>\cos(x)</m> is periodic with period <m>2\pi</m>,
       it follows that <m>\sec(x)</m> is also.
       Below we graph a fundamental cycle of <m>y = \sec(x)</m>
-          <idx><h>secant </h><h> graph of</h></idx>
+          <idx><h>secant</h><h>graph of</h></idx>
       along with a more complete graph obtained by the usual
       <q>copying and pasting.</q>
     </p>
@@ -1216,7 +1216,7 @@
       Since <m>y = \sin(x)</m> and
       <m>y = \cos(x)</m> are merely phase shifts of each other,
       so too are <m>y = \csc(x)</m> and <m>y = \sec(x)</m>.
-          <idx><h>cosecant </h><h> graph of</h></idx>
+          <idx><h>cosecant</h><h>graph of</h></idx>
     </p>
 
     <!--
@@ -1282,7 +1282,7 @@
       <title>Properties of the Secant and Cosecant Functions</title>
       <statement>
         <p>
-              <idx><h>secant </h><h> properties of</h></idx> <idx><h>cosecant </h><h> properties of</h></idx>
+              <idx><h>secant</h><h>properties of</h></idx> <idx><h>cosecant</h><h>properties of</h></idx>
         </p>
 
         <ul>
@@ -1563,7 +1563,7 @@
       Plotting this information and performing the usual <q>copy and paste</q>
       produces <xref ref="fig_tangraph1">Figures</xref>
       and <xref ref="fig_tangraph2"></xref> below.
-          <idx><h>tangent </h><h> graph of</h></idx>
+          <idx><h>tangent</h><h>graph of</h></idx>
     </p>
 
     <!--
@@ -1632,7 +1632,7 @@
       <m>K(x) = \cot(x)</m> behaves similarly to <m>J(x) = \tan(x)</m>.
       Plotting <m>\cot(x)</m> over the interval
       <m>[0,2\pi]</m> results in the graph in <xref ref="fig_cotgraph1">Figure</xref> below.
-          <idx><h>cotangent </h><h> graph of</h></idx>
+          <idx><h>cotangent</h><h>graph of</h></idx>
     </p>
 
     <!--
@@ -1695,7 +1695,7 @@
       <title>Properties of the Tangent and Cotangent Functions</title>
       <statement>
         <p>
-              <idx><h>tangent </h><h> properties of</h></idx> <idx><h>cotangent </h><h> properties of</h></idx>
+              <idx><h>tangent</h><h>properties of</h></idx> <idx><h>cotangent</h><h>properties of</h></idx>
         </p>
 
         <ul>

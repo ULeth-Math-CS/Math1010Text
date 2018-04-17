@@ -17,7 +17,7 @@
       <title>Function Arithmetic</title>
       <statement>
         <p>
-              <idx><h>function </h><h> arithmetic</h></idx>
+              <idx><h>function</h><h>arithmetic</h></idx>
           Suppose <m>f</m> and <m>g</m> are functions and <m>x</m> is in both the domain of <m>f</m> and the domain of <m>g</m>.
         </p>
 
@@ -31,7 +31,7 @@
           <li>
             <p>
               The
-                  <idx><h>function </h><h> sum</h></idx>
+                  <idx><h>function</h><h>sum</h></idx>
               <em>sum</em> of <m>f</m> and <m>g</m>,
               denoted <m>f+g</m>, is the function defined by the formula
               <me>
@@ -43,7 +43,7 @@
           <li>
             <p>
               The
-                  <idx><h>function </h><h> difference</h></idx>
+                  <idx><h>function</h><h>difference</h></idx>
               <em>difference</em> of <m>f</m> and <m>g</m>,
               denoted <m>f-g</m>, is the function defined by the formula
               <me>
@@ -55,7 +55,7 @@
           <li>
             <p>
               The
-                  <idx><h>function </h><h> product</h></idx>
+                  <idx><h>function</h><h>product</h></idx>
               <em>product</em> of <m>f</m> and <m>g</m>,
               denoted <m>fg</m>, is the function defined by the formula
               <me>
@@ -67,7 +67,7 @@
           <li>
             <p>
               The
-                  <idx><h>function </h><h> quotient</h></idx>
+                  <idx><h>function</h><h>quotient</h></idx>
               <em>quotient</em> of <m>f</m> and <m>g</m>,
               denoted <m>\dfrac{f}{g}</m>,
               is the function defined by the formula
@@ -267,7 +267,7 @@
       <statement>
         <p>
           Given a function <m>f</m>, the
-              <idx><h>function </h><h> difference quotient</h></idx><idx><h>difference quotient</h></idx>
+              <idx><h>function</h><h>difference quotient</h></idx><idx><h>difference quotient</h></idx>
           <term>difference quotient</term> of <m>f</m> is the expression
           <me>
             \dfrac{f(x+h) - f(x)}{h}
@@ -461,7 +461,7 @@
           <li>
             <p>
               The price-demand function <m>p(x)</m> calculates the price per item.
-            <idx><h>price-demand function</h></idx><idx><h>function </h><h> price-demand</h></idx>
+            <idx><h>price-demand function</h></idx><idx><h>function</h><h>price-demand</h></idx>
         </p>
           </li>
 
@@ -469,7 +469,7 @@
             <p>
               The revenue function <m>R(x)</m> calculates the total money collected by selling <m>x</m> items at a price <m>p(x)</m>,
               <m>R(x) = x \, p(x)</m>.
-            <idx><h>revenue function</h></idx><idx><h>function </h><h> revenue</h></idx>
+            <idx><h>revenue function</h></idx><idx><h>function</h><h>revenue</h></idx>
         </p>
           </li>
 
@@ -477,7 +477,7 @@
             <p>
               The cost function <m>C(x)</m> calculates the cost to produce <m>x</m> items.
               The value <m>C(0)</m> is called the fixed cost or start-up cost.
-            <idx><h>cost function</h></idx><idx><h>function </h><h> cost</h></idx><idx><h>cost </h><h> fixed,
+            <idx><h>cost function</h></idx><idx><h>function</h><h>cost</h></idx><idx><h>cost</h><h>fixed,
               start-up</h></idx><idx><h>fixed cost</h></idx><idx><h>start-up cost</h></idx>
         </p>
           </li>
@@ -487,7 +487,7 @@
               The average cost function
               <m>\overline{C}(x) = \frac{C(x)}{x}</m> calculates the cost per item when making <m>x</m> items.
               Here, we necessarily assume <m>x > 0</m>.
-            <idx><h>average cost function</h></idx><idx><h>cost </h><h> average</h></idx><idx><h>function </h><h> average cost</h></idx>
+            <idx><h>average cost function</h></idx><idx><h>cost</h><h>average</h></idx><idx><h>function</h><h>average cost</h></idx>
         </p>
           </li>
 
@@ -495,7 +495,7 @@
             <p>
               The profit function <m>P(x)</m> calculates the money earned after costs are paid when <m>x</m> items are produced and sold,
               <m>P(x) = (R-C)(x) = R(x) - C(x)</m>.
-            <idx><h>profit function</h></idx><idx><h>function </h><h> profit</h></idx>
+            <idx><h>profit function</h></idx><idx><h>function</h><h>profit</h></idx>
         </p>
           </li>
         </ul>

@@ -15,7 +15,7 @@
       <statement>
         <p>
           A
-              <idx><h>function </h><h> quadratic</h></idx> <idx><h>quadratic function </h><h> definition of</h></idx>
+              <idx><h>function</h><h>quadratic</h></idx> <idx><h>quadratic function</h><h>definition of</h></idx>
           <term>quadratic function</term> is a function of the form
           <me>
             f(x) = ax^2 + bx + c
@@ -31,10 +31,10 @@
       The most basic quadratic function is <m>f(x) = x^2</m>,
       whose graph appears below.
       Its shape should look familiar from high school <mdash /> it is called a
-          <idx><h>parabola </h><h> graph of a quadratic function</h></idx>
+          <idx><h>parabola</h><h>graph of a quadratic function</h></idx>
       <em>parabola</em>.
       The point <m>(0,0)</m> is called the
-          <idx><h>parabola </h><h> vertex</h></idx><idx><h>vertex </h><h> of a parabola</h></idx>
+          <idx><h>parabola</h><h>vertex</h></idx><idx><h>vertex</h><h>of a parabola</h></idx>
       <em>vertex</em> of the parabola.
       In this case,
       the vertex is a relative minimum and is also the where the absolute minimum value of <m>f</m> can be found.
@@ -191,7 +191,7 @@
             <li>
               <p>
                 The
-              <idx><h>quadratic function </h><h> general form</h></idx>
+              <idx><h>quadratic function</h><h>general form</h></idx>
           <em>general form</em>
                 of the quadratic function <m>f</m> is <m>f(x) = ax^2+bx+c</m>,
                 where <m>a</m>,
@@ -202,7 +202,7 @@
             <li>
               <p>
                 The
-              <idx><h>quadratic function </h><h> standard form</h></idx>
+              <idx><h>quadratic function</h><h>standard form</h></idx>
           <em>standard form</em>
                 of the quadratic function <m>f</m> is <m>f(x) = a(x-h)^2 + k</m>,
                 where <m>a</m>,
@@ -295,7 +295,7 @@
       <q>opening upwards</q> if <m>a > 0</m>,
       and <q>opening downwards</q> if <m>a \lt 0</m>.
       Moreover, the symmetry enjoyed by the graph of <m>y = x^2</m> about the <m>y</m>-axis is translated to a symmetry about the vertical line <m>x=h</m> which is the vertical line through the vertex. (You should use transformations to verify this!) This line is called the
-          <idx><h>parabola </h><h> axis of symmetry</h></idx><idx><h>axis of symmetry</h></idx>
+          <idx><h>parabola</h><h>axis of symmetry</h></idx><idx><h>axis of symmetry</h></idx>
       <em>axis of symmetry</em>
       of the parabola and is shown as the dashed line in <xref ref="fig_parabaxis">Figure</xref>
     </p>
@@ -481,7 +481,7 @@
         <p>
           Suppose <m>a</m>, <m>b</m>, <m>c</m>,
           <m>h</m> and <m>k</m> are real numbers with <m>a \neq 0</m>.
-              <idx><h>parabola </h><h> vertex formulas</h></idx>
+              <idx><h>parabola</h><h>vertex formulas</h></idx>
           <ul>
             <li>
               <p>
@@ -576,7 +576,7 @@
         <p>
           If <m>a</m>,
           <m>b</m> and <m>c</m> are real numbers with <m>a \neq 0</m>, then the
-              <idx><h>discriminant </h><h> of a quadratic equation</h></idx>
+              <idx><h>discriminant</h><h>of a quadratic equation</h></idx>
           <term>discriminant</term>
           of the quadratic equation
           <m>ax^2+bx+c=0</m> is the quantity <m>b^2 - 4ac</m>.
@@ -595,7 +595,7 @@
       <title>Discriminant Trichotomy</title>
       <statement>
         <p>
-              <idx><h>discriminant </h><h> trichotomy</h></idx>
+              <idx><h>discriminant</h><h>trichotomy</h></idx>
           Let <m>a</m>,
           <m>b</m> and <m>c</m> be real numbers with <m>a \neq 0</m>.
 

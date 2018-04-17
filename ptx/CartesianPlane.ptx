@@ -24,9 +24,9 @@
 
     <p>
       The horizontal number line is usually called the
-          <idx><h><m>x</m>-axis</h></idx> <em> <m>x</m>-axis</em>
+          <idx><h><m>x</m>-axis</h></idx> <em><m>x</m>-axis</em>
       while the vertical number line is usually called the <idx><h><m>y</m>-axis</h></idx>
-      <em> <m>y</m>-axis</em>.
+      <em><m>y</m>-axis</em>.
       As with the usual number line,
       we imagine these axes extending off indefinitely in both directions.
       Having two number lines allows us to locate the positions of points off of the number lines as well as points on the lines themselves.
@@ -62,12 +62,12 @@
       The first number in the ordered pair is called the
           <idx><h>abscissa</h></idx> <em>abscissa</em>
       or <idx><h><m>x</m>-coordinate</h></idx>
-      <em> <m>x</m>-coordinate</em>
+      <em><m>x</m>-coordinate</em>
       and the second is called the <idx><h>ordinate</h></idx> <em>ordinate</em>
       or <idx><h><m>y</m>-coordinate</h></idx>
-      <em> <m>y</m>-coordinate</em>.
+      <em><m>y</m>-coordinate</em>.
       Taken together, the ordered pair <m>(2,-4)</m> comprise the
-          <idx><h>coordinates </h><h> Cartesian</h></idx><idx><h>Cartesian coordinates</h></idx>
+          <idx><h>coordinates</h><h>Cartesian</h></idx><idx><h>Cartesian coordinates</h></idx>
       <em>Cartesian coordinates</em> of the point <m>P</m>.
       In practice,
       the distinction between a point and its coordinates is blurred;
@@ -210,7 +210,7 @@
           <ul>
             <li>
               <p>
-              <idx><h>symmetry </h><h> about the <m>x</m>-axis</h></idx>
+              <idx><h>symmetry</h><h>about the <m>x</m>-axis</h></idx>
                 <em>symmetric about the <m>x</m>-axis</em>
                 if <m>a = c</m> and <m>b = -d</m>
               </p>
@@ -218,7 +218,7 @@
 
             <li>
               <p>
-                    <idx><h>symmetry </h><h> about the <m>y</m>-axis</h></idx>
+                    <idx><h>symmetry</h><h>about the <m>y</m>-axis</h></idx>
                 <em>symmetric about the <m>y</m>-axis</em>
                 if <m>a = -c</m> and <m>b = d</m>
               </p>
@@ -226,7 +226,7 @@
 
             <li>
               <p>
-                    <idx><h>symmetry </h><h> about the origin</h></idx>
+                    <idx><h>symmetry</h><h>about the origin</h></idx>
           <em>symmetric about the origin</em>
                 if <m>a = -c</m> and <m>b = -d</m>
               </p>
@@ -326,7 +326,7 @@
 
     <p>
       One way to visualize the processes in the previous example is with the concept of a
-          <idx><h>reflection </h><h> of a point</h></idx>
+          <idx><h>reflection</h><h>of a point</h></idx>
       <em>reflection</em>.
       If we start with our point <m>(-2,3)</m> and pretend that the <m>x</m>-axis is a mirror,
       then the reflection of <m>(-2,3)</m> across the <m>x</m>-axis would lie at <m>(-2,-3)</m>.
@@ -377,7 +377,7 @@
       <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m>,
       in the plane.
       By the
-          <idx><h>distance </h><h> definition</h></idx>
+          <idx><h>distance</h><h>definition</h></idx>
       <em>distance</em> <m>d</m> between <m>P</m> and <m>Q</m>,
       we mean the length of the line segment joining <m>P</m> with <m>Q</m>. (Remember,
       given any two distinct points in the plane,
@@ -421,7 +421,7 @@
     <insight xml:id="distanceformula">
       <title>The Distance Formula</title>
       <p>
-            <idx><h>distance </h><h> distance formula</h></idx>
+            <idx><h>distance</h><h>distance formula</h></idx>
         The distance <m>d</m> between the points
         <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
         <me>
@@ -509,7 +509,7 @@
 
     <p>
       Related to finding the distance between two points is the problem of finding the
-          <idx><h>midpoint </h><h> definition of</h></idx>
+          <idx><h>midpoint</h><h>definition of</h></idx>
       <em>midpoint</em> of the line segment connecting two points.
       Given two points,
       <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m>,
@@ -533,7 +533,7 @@
     <insight xml:id="midpointformula">
       <title>The Midpoint Formula</title>
       <p>
-            <idx><h>midpoint </h><h> midpoint formula</h></idx>
+            <idx><h>midpoint</h><h>midpoint formula</h></idx>
         The midpoint <m>M</m> of the line segment connecting
         <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
         <me>
@@ -1083,13 +1083,15 @@
           <ol>
             <li>
               <p>
-                The points are arranged vertically. (Hint: Use <m>P(a, y_{\mbox{\tiny<m>0</m>} })</m> and <m>Q(a, y_{\mbox{\tiny<m>1</m>} })</m>.)
+                The points are arranged vertically. (Hint: Use
+                <m>P(a, y_{0})</m> and <m>Q(a, y_{1})</m>.)
               </p>
             </li>
 
             <li>
               <p>
-                The points are arranged horizontally. (Hint: Use <m>P(x_{\mbox{\tiny<m>0</m>} }, b)</m> and <m>Q(x_{\mbox{\tiny<m>1</m>} }, b)</m>.)
+                The points are arranged horizontally. (Hint: Use
+                <m>P(x_{0}, b)</m> and <m>Q(x_{1}, b)</m>.)
               </p>
             </li>
 
@@ -1105,7 +1107,9 @@
     <exercise xml:id="verifymidpointformula">
       <statement>
         <p>
-          Verify the Midpoint Formula by showing the distance between <m>P(x_{\mbox{\tiny<m>1</m>} }, y_{\mbox{\tiny<m>1</m>} })</m> and <m>M</m> and the distance between <m>M</m> and <m>Q(x_{\mbox{\tiny<m>2</m>} }, y_{\mbox{\tiny<m>2</m>} })</m> are both half of the distance between <m>P</m> and <m>Q</m>.
+          Verify the Midpoint Formula by showing the distance between
+          <m>P(x_{1}, y_{1})</m> and <m>M</m> and the distance between <m>M</m> and
+          <m>Q(x_{2}, y_{2})</m> are both half of the distance between <m>P</m> and <m>Q</m>.
         </p>
       </statement>
     </exercise>

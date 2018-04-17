@@ -8,7 +8,7 @@
       we defined <m>\cos(\theta)</m> and
       <m>\sin(\theta)</m> for angles <m>\theta</m> using the coordinate values of points on the Unit Circle.
       As such, these functions earn the moniker
-          <idx><h>circular function</h></idx><idx><h>function </h><h> circular</h></idx>
+          <idx><h>circular function</h></idx><idx><h>function</h><h>circular</h></idx>
       <em>circular functions</em>.
       It turns out that cosine and sine are just two of the six commonly used circular functions which we define below.
     </p>
@@ -33,7 +33,7 @@
             <li>
               <p>
                 The
-              <idx><h>cosine </h><h> of an angle</h></idx>
+              <idx><h>cosine</h><h>of an angle</h></idx>
           <em>cosine</em> of <m>\theta</m>,
                 denoted <m>\cos(\theta)</m>,
                 is defined by <m>\cos(\theta) = x</m>.
@@ -43,7 +43,7 @@
             <li>
               <p>
                 The
-              <idx><h>sine </h><h> of an angle</h></idx>
+              <idx><h>sine</h><h>of an angle</h></idx>
           <em>sine</em> of <m>\theta</m>,
                 denoted <m>\sin(\theta)</m>,
                 is defined by <m>\sin(\theta) = y</m>.
@@ -53,7 +53,7 @@
             <li>
               <p>
                 The
-              <idx><h>secant </h><h> of an angle</h></idx>
+              <idx><h>secant</h><h>of an angle</h></idx>
           <em>secant</em> of <m>\theta</m>,
                 denoted <m>\sec(\theta)</m>,
                 is defined by <m>\sec(\theta) = \dfrac{1}{x}</m>,
@@ -64,7 +64,7 @@
             <li>
               <p>
                 The
-              <idx><h>cosecant </h><h> of an angle</h></idx>
+              <idx><h>cosecant</h><h>of an angle</h></idx>
           <em>cosecant</em> of <m>\theta</m>,
                 denoted <m>\csc(\theta)</m>,
                 is defined by <m>\csc(\theta) = \dfrac{1}{y}</m>,
@@ -75,7 +75,7 @@
             <li>
               <p>
                 The
-              <idx><h>tangent </h><h> of an angle</h></idx>
+              <idx><h>tangent</h><h>of an angle</h></idx>
           <em>tangent</em> of <m>\theta</m>,
                 denoted <m>\tan(\theta)</m>,
                 is defined by <m>\tan(\theta) = \dfrac{y}{x}</m>,
@@ -86,7 +86,7 @@
             <li>
               <p>
                 The
-              <idx><h>cotangent </h><h> of an angle</h></idx>
+              <idx><h>cotangent</h><h>of an angle</h></idx>
           <em>cotangent</em> of <m>\theta</m>,
                 denoted <m>\cot(\theta)</m>,
                 is defined by <m>\cot(\theta) = \dfrac{x}{y}</m>,
@@ -383,7 +383,7 @@
           <m>\csc(\theta) = \pm \csc(\alpha)</m>,
           <m>\tan(\theta) = \pm \tan(\alpha)</m> and <m>\cot(\theta) = \pm \cot(\alpha)</m>.
           The choice of the (<m>\pm</m>) depends on the quadrant in which the terminal side of <m>\theta</m> lies.
-              <idx><h>Reference Angle Theorem </h><h> for the circular functions</h></idx>
+              <idx><h>Reference Angle Theorem</h><h>for the circular functions</h></idx>
         </p>
       </statement>
     </theorem>
@@ -900,7 +900,7 @@
               <p>
                 <m>\sec(\theta) = \dfrac{r}{x} = \dfrac{\sqrt{x^2+y^2}}{x}</m>,
                 provided <m>x \neq 0</m>.
-              <idx><h>secant </h><h> of an angle</h></idx>
+              <idx><h>secant</h><h>of an angle</h></idx>
           </p>
             </li>
 
@@ -908,21 +908,21 @@
               <p>
                 <m>\csc(\theta) = \dfrac{r}{y} = \dfrac{\sqrt{x^2+y^2}}{y}</m>,
                 provided <m>y \neq 0</m>.
-              <idx><h>cosecant </h><h> of an angle</h></idx>
+              <idx><h>cosecant</h><h>of an angle</h></idx>
           </p>
             </li>
 
             <li>
               <p>
                 <m>\tan(\theta) = \dfrac{y}{x}</m>, provided <m>x \neq 0</m>.
-              <idx><h>tangent </h><h> of an angle</h></idx>
+              <idx><h>tangent</h><h>of an angle</h></idx>
           </p>
             </li>
 
             <li>
               <p>
                 <m>\cot(\theta) = \dfrac{x}{y}</m>, provided <m>y \neq 0</m>.
-              <idx><h>cotangent </h><h> of an angle</h></idx>
+              <idx><h>cotangent</h><h>of an angle</h></idx>
           </p>
             </li>
           </ul>
@@ -1030,8 +1030,8 @@
     <p>
       The following example uses <xref ref="circularfunctionstriangle">Theorem</xref>
       as well as the concept of an <q>angle of inclination.</q> The
-          <idx><h>angle </h><h> of inclination</h></idx> angle of inclination
-      (or <idx><h>angle </h><h> of elevation</h></idx>
+          <idx><h>angle</h><h>of inclination</h></idx> angle of inclination
+      (or <idx><h>angle</h><h>of elevation</h></idx>
       angle of elevation)
       of an object refers to the angle whose initial side is some kind of base-line (say,
       the ground),
@@ -1184,7 +1184,7 @@
 
     <p>
       The way we denote taking the union of infinitely many intervals like this is to use what we call in this text
-          <idx><h>extended interval notation</h></idx><idx><h>interval </h><h> notation,
+          <idx><h>extended interval notation</h></idx><idx><h>interval</h><h>notation,
       extended</h></idx>
       <em>extended interval notation</em>.
       The domain of <m>F(t) = \sec(t)</m> can now be written as
@@ -2132,7 +2132,7 @@
           we defined the angle of inclination
           (also known as the angle of elevation)
           and in this exercise we introduce a related angle -
-              <idx><h>angle </h><h> of depression</h></idx> the angle of depression (also known as <idx><h>angle </h><h> of declination</h></idx>
+              <idx><h>angle</h><h>of depression</h></idx> the angle of depression (also known as <idx><h>angle</h><h>of declination</h></idx>
           the angle of declination).
           The angle of depression of an object refers to the angle whose initial side is a horizontal line above the object and whose terminal side is the line-of-sight to the object below the horizontal.
           This is represented schematically below. <img src="figures/IntroTrigGraphics/CircularFunctions-15.pdf"/>

@@ -20,7 +20,7 @@
     <insight xml:id="fgpff">
       <title>The Fundamental Graphing Principle for Functions</title>
       <p>
-            <idx><h>function </h><h> Fundamental Graphing Principle</h></idx> <idx><h>graph </h><h> of a function</h></idx> <idx><h>Fundamental Graphing Principle </h><h> for functions</h></idx>
+            <idx><h>function</h><h>Fundamental Graphing Principle</h></idx> <idx><h>graph</h><h>of a function</h></idx> <idx><h>Fundamental Graphing Principle</h><h>for functions</h></idx>
       </p>
 
       <p>
@@ -290,7 +290,7 @@
       In the previous two examples,
       the <m>x</m>-coordinates of the <m>x</m>-intercepts of the graph of <m>y=f(x)</m> were found by solving <m>f(x) = 0</m>.
       For this reason, they are called the
-          <idx><h>function </h><h> zero</h></idx>
+          <idx><h>function</h><h>zero</h></idx>
       <em>zeros</em> of <m>f</m>.
     </p>
 
@@ -298,7 +298,7 @@
       <title>Zeros of a function</title>
       <statement>
         <p>
-              <idx><h>zero </h><h> of a function</h></idx>
+              <idx><h>zero</h><h>of a function</h></idx>
         </p>
 
         <p>
@@ -341,7 +341,7 @@
       <title>Testing the Graph of a Function for Symmetry</title>
       <p>
         The graph of a function <m>f</m> is symmetric
-            <idx><h>symmetry </h><h> testing a function graph for</h></idx>
+            <idx><h>symmetry</h><h>testing a function graph for</h></idx>
         <ul>
           <li>
             <p>
@@ -363,8 +363,8 @@
     <p>
       For reasons which won't become clear until we study polynomials,
       we call a function
-          <idx><h>function </h><h> even</h></idx><idx><h>even function</h></idx><em>even</em>
-      if its graph is symmetric about the <m>y</m>-axis or <idx><h>function </h><h> odd</h></idx><idx><h>odd function</h></idx>
+          <idx><h>function</h><h>even</h></idx><idx><h>even function</h></idx><em>even</em>
+      if its graph is symmetric about the <m>y</m>-axis or <idx><h>function</h><h>odd</h></idx><idx><h>odd function</h></idx>
       <em>odd</em> if its graph is symmetric about the origin.
       Apart from a very specialized family of functions which are both even and odd,
       (any ideas?)
@@ -650,9 +650,9 @@
       The purpose of this section's discussion, then,
       is to lay the foundation for that further study by investigating aspects of function behaviour which apply to all functions.
       To start, we will examine the concepts of
-          <idx><h>increasing function </h><h> intuitive definition of</h></idx> <em>increasing</em>,
-      <idx><h>decreasing function </h><h> intuitive definition of</h></idx> <em>decreasing</em>
-      and <idx><h>constant function </h><h> intuitive definition of</h></idx>
+          <idx><h>increasing function</h><h>intuitive definition of</h></idx> <em>increasing</em>,
+      <idx><h>decreasing function</h><h>intuitive definition of</h></idx> <em>decreasing</em>
+      and <idx><h>constant function</h><h>intuitive definition of</h></idx>
       <em>constant</em>.
       Before defining the concepts algebraically,
       it is instructive to first look at them graphically.
@@ -677,16 +677,16 @@
       In other words,
       for the <m>x</m> values between <m>-4</m> and <m>-2</m> (inclusive),
       the <m>y</m>-coordinates on the graph are getting larger, or
-          <idx><h>function </h><h> increasing</h></idx>
+          <idx><h>function</h><h>increasing</h></idx>
       <em>increasing</em>, as we move from left to right.
       Since <m>y = f(x)</m>,
       the <m>y</m> values on the graph are the function values,
       and we say that the function <m>f</m> is <em>increasing</em>
       on the interval <m>[-4,-2]</m>.
       Analogously, we say that <m>f</m> is
-          <idx><h>function </h><h> decreasing</h></idx> <em>decreasing</em>
+          <idx><h>function</h><h>decreasing</h></idx> <em>decreasing</em>
       on the interval <m>[-2,3]</m> increasing once more on the interval <m>[3,4]</m>,
-      <idx><h>function </h><h> constant</h></idx>
+      <idx><h>function</h><h>constant</h></idx>
       <em>constant</em> on <m>[4,5]</m>,
       and finally increasing once again on <m>[5,6]</m>.
       It is extremely important to notice that the behaviour (increasing,
@@ -729,7 +729,7 @@
           <ul>
             <li>
               <p>
-              <idx><h>increasing function </h><h> formal definition of</h></idx>
+              <idx><h>increasing function</h><h>formal definition of</h></idx>
           <em>increasing</em>
                 on <m>I</m> if and only if
                 <m>f(a) \lt f(b)</m> for all real numbers <m>a</m>,
@@ -739,7 +739,7 @@
 
             <li>
               <p>
-              <idx><h>decreasing function </h><h> formal definition of</h></idx>
+              <idx><h>decreasing function</h><h>formal definition of</h></idx>
           <em>decreasing</em>
                 on <m>I</m> if and only if
                 <m>f(a) > f(b)</m> for all real numbers <m>a</m>,
@@ -749,7 +749,7 @@
 
             <li>
               <p>
-              <idx><h>constant function </h><h> formal definition of</h></idx>
+              <idx><h>constant function</h><h>formal definition of</h></idx>
           <em>constant</em>
                 on <m>I</m> if and only if
                 <m>f(a) = f(b)</m> for all real numbers <m>a</m>,
@@ -785,14 +785,14 @@
       <q>the top of the hill</q>
       between <m>x = -4</m> and <m>x = 3</m>.
       We say that the function <m>f</m> has a
-          <idx><h>function </h><h> local (relative) maximum</h></idx><idx><h>local maximum </h><h> intuitive definition of</h></idx>
+          <idx><h>function</h><h>local (relative) maximum</h></idx><idx><h>local maximum</h><h>intuitive definition of</h></idx>
       <em>local maximum</em>
       (or <em>relative maximum</em>)
       at the point <m>(-2,4.5)</m>,
       because the <m>y</m>-coordinate <m>4.5</m> is the largest <m>y</m>-value (hence,
       function value) on the curve <q>near</q> <m>x=-2</m>.
       Similarly, we say that the function <m>f</m> has a
-          <idx><h>function </h><h> local (relative) minimum</h></idx><idx><h>local minimum </h><h> intuitive definition of</h></idx>
+          <idx><h>function</h><h>local (relative) minimum</h></idx><idx><h>local minimum</h><h>intuitive definition of</h></idx>
       <em>local minimum</em>
       (or <em>relative minimum</em>)
       at the point <m>(3,-8)</m>,
@@ -811,12 +811,12 @@
       (the largest function value)
       is <m>5.5</m> at <m>x=6</m>.
       In this case, we say the
-          <idx><h>function </h><h> (absolute) maximum</h></idx><idx><h>maximum </h><h> intuitive definition of</h></idx>
+          <idx><h>function</h><h>(absolute) maximum</h></idx><idx><h>maximum</h><h>intuitive definition of</h></idx>
       <em>maximum</em>
       (often called the <q>absolute</q> or <q>global</q> maximum)
       of <m>f</m> is <m>5.5</m>; similarly, the
-          <idx><h>function </h><h> (absolute,
-      global) minimum</h></idx><idx><h>minimum </h><h> intuitive definition of</h></idx>
+          <idx><h>function</h><h>(absolute,
+      global) minimum</h></idx><idx><h>minimum</h><h>intuitive definition of</h></idx>
       <em>minimum</em> (again,
       <q>absolute</q> or <q>global</q>
       minimum can be used.) of <m>f</m> is<nbsp /><m>-8</m>.
@@ -849,7 +849,7 @@
                 <m>f(a) \geq f(x)</m> for all <m>x</m> in <m>I</m>.
                 The value <m>f(a) = b</m> is called
                 <q>a local maximum value of <m>f</m></q> in this case.
-              <idx><h>local maximum </h><h> formal definition of</h></idx>
+              <idx><h>local maximum</h><h>formal definition of</h></idx>
           </p>
             </li>
 
@@ -860,7 +860,7 @@
                 <m>f(a) \leq f(x)</m> for all <m>x</m> in <m>I</m>.
                 The value <m>f(a) = b</m> is called
                 <q>a local minimum value of <m>f</m></q> in this case.
-              <idx><h>local minimum </h><h> formal definition of</h></idx>
+              <idx><h>local minimum</h><h>formal definition of</h></idx>
           </p>
             </li>
 
@@ -868,7 +868,7 @@
               <p>
                 The value <m>b</m> is called the <em>maximum</em>
                 of <m>f</m> if <m>b \geq f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
-              <idx><h>maximum </h><h> formal definition of</h></idx>
+              <idx><h>maximum</h><h>formal definition of</h></idx>
           </p>
             </li>
 
@@ -876,7 +876,7 @@
               <p>
                 The value <m>b</m> is called the <em>minimum</em>
                 of <m>f</m> if <m>b \leq f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
-              <idx><h>minimum </h><h> formal definition of</h></idx>
+              <idx><h>minimum</h><h>formal definition of</h></idx>
           </p>
             </li>
           </ul>

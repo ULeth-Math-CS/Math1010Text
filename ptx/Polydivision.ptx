@@ -89,13 +89,13 @@
       As you may recall,
       all of the polynomials in <xref ref="polydiv">Theorem</xref> have special names.
       The polynomial <m>p</m> is called the
-          <idx><h>polynomial division </h><h> dividend</h></idx> <em>dividend</em>;
-      <m>d</m> is the <idx><h>polynomial division </h><h> divisor</h></idx> <em>divisor</em>;
-      <m>q</m> is the <idx><h>polynomial division </h><h> quotient</h></idx> <em>quotient</em>;
-      <m>r</m> is the <idx><h>polynomial division </h><h> remainder</h></idx>
+          <idx><h>polynomial division</h><h>dividend</h></idx> <em>dividend</em>;
+      <m>d</m> is the <idx><h>polynomial division</h><h>divisor</h></idx> <em>divisor</em>;
+      <m>q</m> is the <idx><h>polynomial division</h><h>quotient</h></idx> <em>quotient</em>;
+      <m>r</m> is the <idx><h>polynomial division</h><h>remainder</h></idx>
       <em>remainder</em>.
       If <m>r(x)=0</m> then <m>d</m> is called a
-          <idx><h>polynomial division </h><h> factor</h></idx>
+          <idx><h>polynomial division</h><h>factor</h></idx>
       <em>factor</em> of <m>p</m>.
       The proof of <xref ref="polydiv">Theorem</xref>
       is usually relegated to a course in Abstract Algebra,
@@ -301,7 +301,7 @@
 
     <p>
       We have constructed a
-          <idx><h>polynomial division </h><h> synthetic division</h></idx><idx><h>synthetic division tableau</h></idx>
+          <idx><h>polynomial division</h><h>synthetic division</h></idx><idx><h>synthetic division tableau</h></idx>
       <em>synthetic division tableau</em>
       for this polynomial division problem.
       Let's re-work our division problem using this tableau to see how it greatly streamlines the division process.

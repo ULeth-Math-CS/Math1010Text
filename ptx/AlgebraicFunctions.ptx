@@ -23,14 +23,14 @@
         <p>
           Let <m>x</m> be a real number and <m>n</m> a natural number.
           If <m>n</m> is odd, the
-              <idx><h><m>n^{\textrm{th} }</m> root </h><h> principal</h></idx><idx><h>principal <m>n^{\textrm{th} }</m> root</h></idx>
+              <idx><h><m>n^{\textrm{th} }</m> root</h><h>principal</h></idx><idx><h>principal <m>n^{\textrm{th} }</m> root</h></idx>
           <term>principal <m>n^{\textrm{th} }</m> root</term> of <m>x</m>,
           denoted <m>\sqrt[n]{x}</m> is the unique real number satisfying <m>\left(\sqrt[n]{x}\right)^n = x</m>.
           If <m>n</m> is even, <m>\sqrt[n]{x}</m> is defined similarly provided
           <m>x \geq 0</m> and <m>\sqrt[n]{x} \geq 0</m>.
           The
-              <idx><h>root </h><h> index</h></idx><idx><h>index of a root</h></idx><term>index</term>
-          is the number <m>n</m> and the <idx><h>root </h><h> radicand</h></idx><idx><h>radicand</h></idx>
+              <idx><h>root</h><h>index</h></idx><idx><h>index of a root</h></idx><term>index</term>
+          is the number <m>n</m> and the <idx><h>root</h><h>radicand</h></idx><idx><h>radicand</h></idx>
           <term>radicand</term> is the number <m>x</m>.
           For <m>n=2</m>,
           we write <m>\sqrt{x}</m> instead of <m>\sqrt[2]{x}</m>.
@@ -123,14 +123,14 @@
         <p>
           Let <m>x</m> and <m>y</m> be real numbers and <m>m</m> and <m>n</m> be natural numbers.
           If <m>\sqrt[n]{x}</m>, <m>\sqrt[n]{y}</m> are real numbers, then
-              <idx><h>radical </h><h> properties of</h></idx>
+              <idx><h>radical</h><h>properties of</h></idx>
 
           <ul>
             <li>
               <p>
                 <em>Product Rule:</em>
                 <m>\sqrt[n]{xy} = \sqrt[n]{x} \, \sqrt[n]{y}</m>
-                    <idx><h>product rule </h><h> for radicals</h></idx>
+                    <idx><h>product rule</h><h>for radicals</h></idx>
               </p>
             </li>
 
@@ -138,7 +138,7 @@
               <p>
                 <em>Powers of Radicals:</em>
                 <m>\sqrt[n]{x^m} = \left(\sqrt[n]{x}\right)^m</m>
-                    <idx><h>power rule </h><h> for radicals</h></idx>
+                    <idx><h>power rule</h><h>for radicals</h></idx>
           </p>
             </li>
 
@@ -147,7 +147,7 @@
                 <em>Quotient Rule:</em>
                 <m>\sqrt[n]{\dfrac{x}{y}} = \dfrac{\sqrt[n]{x}}{\sqrt[n]{y}}</m>,
                 provided <m>y \neq 0</m>.
-              <idx><h>quotient rule </h><h> for radicals</h></idx>
+              <idx><h>quotient rule</h><h>for radicals</h></idx>
           </p>
             </li>
 
@@ -244,7 +244,7 @@
       so the Intermediate Value Theorem,
       <xref ref="IVT">Theorem</xref>, applies.
       This means that if we take combinations of radical functions with polynomial and rational functions to form what the authors consider
-          <idx><h>function </h><h> algebraic</h></idx>
+          <idx><h>function</h><h>algebraic</h></idx>
       the <em>algebraic functions</em>,
       we can make sign diagrams using the procedure set forth in <xref ref="RationalGraphs">Section</xref>.
     </p>
@@ -258,7 +258,7 @@
     <insight xml:id="algebraicsigndiagram">
       <title>Steps for Constructing a Sign Diagram for an Algebraic Function</title>
       <p>
-            <idx><h>sign diagram </h><h> algebraic function</h></idx>
+            <idx><h>sign diagram</h><h>algebraic function</h></idx>
       </p>
 
       <p>
@@ -1888,19 +1888,18 @@
           towards his warren.
           Fritzy, of course,
           takes chase and constantly adjusts his direction so that he is always running directly at Chewbacca.
-          If Chewbacca's speed is <m>v_{\mbox{\tiny<m>1</m>} }</m> and Fritzy's speed is <m>v_{\mbox{\tiny<m>2</m>} }</m>,
+          If Chewbacca's speed is <m>v_{1}</m> and Fritzy's speed is <m>v_{2}</m>,
           the path Fritzy will take to intercept Chewbacca,
-          provided <m>v_{\mbox{\tiny<m>2</m>} }</m> is directly proportional to,
-          but not equal to, <m>v_{\mbox{\tiny<m>1</m>} }</m> is modelled by
+          provided <m>v_{2}</m> is directly proportional to, but not equal to,
+          <m>v_{1}</m> is modelled by
           <me>
-            y = \dfrac{1}{2} \left(\dfrac{x^{1+ v_{1}/v_{2}}}{1+v_{\mbox{\tiny\(1\)} }/v_{\mbox{\tiny\(2\)} }}- \dfrac{x^{1-v_{\mbox{\tiny\(1\)} }/v_{\mbox{\tiny\(2\)} }}}{1-v_{\mbox{\tiny\(1\)} }/v_{\mbox{\tiny\(2\)} }}\right) + \dfrac{v_{\mbox{\tiny\(1\)} } v_{\mbox{\tiny\(2\)} }}{v_{\mbox{\tiny\(2\)} }^2-v_{\mbox{\tiny\(1\)} }^2}
+            y = \dfrac{1}{2} \left(\dfrac{x^{1+ v_{1}/v_{2}}}{1+v_{1}/v_{2}}- \dfrac{x^{1-v_{1}/v_{2}}}{1-v_{1}/v_{2}}\right) + \dfrac{v_{1} v_{2}}{v_{2}^2-v_{1}^2}
           </me>
           <ol>
             <li>
               <p>
                 Determine the path that Fritzy will take if he runs exactly twice as fast as Chewbacca;
-                that is,
-          <m>v_{\mbox{\tiny<m>2</m>} } = 2v_{\mbox{\tiny<m>1</m>} }</m>.
+                that is, <m>v_{2} = 2v_{1}</m>.
                 Use your calculator to graph this path for <m>x \geq 0</m>.
                 What is the significance of the <m>y</m>-intercept of the graph?
               </p>
@@ -1909,8 +1908,7 @@
             <li>
               <p>
                 Determine the path Fritzy will take if Chewbacca runs exactly twice as fast as he does;
-                that is,
-          <m>v_{\mbox{\tiny<m>1</m>} } = 2v_{\mbox{\tiny<m>2</m>} }</m>.
+                that is, <m>v_{1} = 2v_{2}</m>.
                 Use your calculator to graph this path for <m>x > 0</m>.
                 Describe the behaviour of <m>y</m> as
                 <m>x \rightarrow 0^{+}</m> and interpret this physically.
@@ -1921,8 +1919,9 @@
               <p>
                 With the help of your classmates,
                 generalize parts (a) and (b) to two cases:
-                <m>v_{\mbox{\tiny<m>2</m>} } > v_{\mbox{\tiny<m>1</m>} }</m> and <m>v_{\mbox{\tiny<m>2</m>} } \lt v_{\mbox{\tiny<m>1</m>} }</m>.
-                We will discuss the case of <m>v_{\mbox{\tiny<m>1</m>} } = v_{\mbox{\tiny<m>2</m>} }</m> in <xref ref="pursuitlog">Exercise</xref>
+                <m>v_{2} > v_{1}</m> and <m>v_{2} \lt v_{1}</m>.
+                We will discuss the case of
+                <m>v_{1} = v_{2}</m> in <xref ref="pursuitlog">Exercise</xref>
                 in <xref ref="ExpLogApplications">Section</xref>.
               </p>
             </li>

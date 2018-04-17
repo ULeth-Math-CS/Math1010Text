@@ -226,7 +226,7 @@
         <p>
           A function of the form <m>f(x) = b^{x}</m> where <m>b</m> is a fixed real number,
           <m>b > 0</m>, <m>b \neq 1</m> is called a
-              <idx><h>function </h><h> exponential</h></idx><idx><h>exponential function </h><h> definition of</h></idx>
+              <idx><h>function</h><h>exponential</h></idx><idx><h>exponential function</h><h>definition of</h></idx>
           <term>base <term>b</term> exponential function</term>.
         </p>
       </statement>
@@ -290,7 +290,7 @@
       <statement>
         <p>
           Suppose <m>f(x) = b^{x}</m>.
-              <idx><h>exponential function </h><h> graphical properties of</h></idx>
+              <idx><h>exponential function</h><h>graphical properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -396,11 +396,11 @@
       Of all of the bases for exponential functions,
       two occur the most often in scientific circles.
       The first, base <m>10</m>, is often called the
-          <idx><h>exponential function </h><h> common base</h></idx><idx><h>common base</h></idx>
+          <idx><h>exponential function</h><h>common base</h></idx><idx><h>common base</h></idx>
       <em>common base</em>.
       The second base is an irrational number,
       <m>e \approx 2.718</m>, called the
-          <idx><h>natural base</h></idx><idx><h>exponential function </h><h> natural base</h></idx>
+          <idx><h>natural base</h></idx><idx><h>exponential function</h><h>natural base</h></idx>
       <em>natural base</em>.
       You may encounter a more formal discussion of the number <m>e</m> in later Calculus courses.
       For now, it is enough to know that since <m>e > 1</m>,
@@ -652,12 +652,12 @@
       <statement>
         <p>
           The inverse of the exponential function <m>f(x) = b^{x}</m> is called the
-              <idx><h>function </h><h> logarithmic</h></idx>
+              <idx><h>function</h><h>logarithmic</h></idx>
           <term>base <m>b</m> logarithm function</term>,
           and is denoted <m>f^{-1}(x) = \log_{b}(x)</m> We read
           <q><m>\log_{b}(x)</m></q>
           as <q>log base <m>b</m> of <m>x</m>.</q>
-              <idx><h>logarithm </h><h> general,
+              <idx><h>logarithm</h><h>general,
           <q>base <m>b</m></q></h></idx>
         </p>
       </statement>
@@ -673,12 +673,12 @@
       <statement>
         <p>
           The
-              <idx><h>logarithm </h><h> common</h></idx>
+              <idx><h>logarithm</h><h>common</h></idx>
           <term>common logarithm</term>
           of a real number <m>x</m> is
           <m>\log_{10}(x)</m> and is usually written <m>\log(x)</m>.
           The
-              <idx><h>logarithm </h><h> natural</h></idx>
+              <idx><h>logarithm</h><h>natural</h></idx>
           <term>natural logarithm</term>
           of a real number <m>x</m> is
           <m>\log_{e}(x)</m> and is usually written <m>\ln(x)</m>.
@@ -750,7 +750,7 @@
       <statement>
         <p>
           Suppose <m>f(x) = \log_{b}(x)</m>.
-              <idx><h>logarithm </h><h> graphical properties of</h></idx>
+              <idx><h>logarithm</h><h>graphical properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -1040,7 +1040,7 @@
       we now have another restriction.
       Since the domain of <m>f(x) = \log_{b}(x)</m> is <m>(0, \infty)</m>,
       the argument of the log must be strictly positive.
-          <idx><h>argument </h><h> of a logarithm</h></idx>
+          <idx><h>argument</h><h>of a logarithm</h></idx>
     </p>
 
     <example xml:id="ex_logdomain">
@@ -2398,7 +2398,7 @@
     <exercise xml:id="Richterexercise">
       <statement>
         <p>
-              <idx><h>Richter Scale</h></idx> <idx><h>earthquake </h><h> Richter Scale</h></idx>
+              <idx><h>Richter Scale</h></idx> <idx><h>earthquake</h><h>Richter Scale</h></idx>
           Earthquakes are complicated events and it is not our intent to provide a complete discussion of the science involved in them.
           Instead, we refer the interested reader to a solid course in Geology<fn>Rock-solid,
           perhaps?</fn>or the U.S. Geological Survey's Earthquake Hazards Program found <url href="http://earthquake.usgs.gov/"><em>here</em></url> and present only a simplified version of the <url href="http://en.wikipedia.org/wiki/Richter_scale"><em>Richter scale</em></url>.
@@ -2458,7 +2458,7 @@
     <exercise xml:id="decibelexercise">
       <statement>
         <p>
-              <idx><h>decibel</h></idx> <idx><h>sound intensity level </h><h> decibel</h></idx>
+              <idx><h>decibel</h></idx> <idx><h>sound intensity level</h><h>decibel</h></idx>
           While the decibel scale can be used in many disciplines,<fn>See this  <url href="http://en.wikipedia.org/wiki/Decibel"><em>webpage</em></url> for more information.</fn>we shall restrict our attention to its use in acoustics,
           specifically its use in measuring the intensity level of sound.<fn>As of the writing of this exercise,
           the Wikipedia page given <url href="http://en.wikipedia.org/wiki/Sound_intensity_level"><em>here</em></url> states that it may not meet the
@@ -2528,7 +2528,7 @@
     <exercise xml:id="pHexercise">
       <statement>
         <p>
-              <idx><h>pH</h></idx> <idx><h>acidity of a solution </h><h> pH</h></idx> <idx><h>alkalinity of a solution </h><h> pH</h></idx>
+              <idx><h>pH</h></idx> <idx><h>acidity of a solution</h><h>pH</h></idx> <idx><h>alkalinity of a solution</h><h>pH</h></idx>
           The pH of a solution is a measure of its acidity or alkalinity.
           Specifically, <m>\mbox{pH}  = -\log[\mbox{H} ^{+}]</m> where
           <m>[\mbox{H} ^{+}]</m> is the hydrogen ion concentration in moles per litre.

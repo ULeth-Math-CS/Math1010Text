@@ -54,7 +54,7 @@
       <title>The Fundamental Theorem of Algebra</title>
       <statement>
         <p>
-              <idx><h>Fundamental Theorem of Algebra</h></idx> <idx><h>theorem </h><h> Fundamental Theorem of Algebra</h></idx>
+              <idx><h>Fundamental Theorem of Algebra</h></idx> <idx><h>theorem</h><h>Fundamental Theorem of Algebra</h></idx>
           Suppose <m>f</m> is a polynomial function with complex number coefficients of degree <m>n \geq 1</m>,
           then <m>f</m> has at least one complex zero.
         </p>
@@ -121,7 +121,7 @@
           with multiplicities <m>m_{1}</m>, <m>m_{2}</m>,
           <ellipsis />, <m>m_{k}</m>, respectively,
           then <m>f(x) = a\left(x - z_{1} \right)^{m_{1}}\left(x - z_{2} \right)^{m_{2}} \cdots \left(x - z_{k} \right)^{m_{k}}</m>.
-              <idx><h>Complex Factorization Theorem</h></idx><idx><h>factorization </h><h> over the complex numbers</h></idx>
+              <idx><h>Complex Factorization Theorem</h></idx><idx><h>factorization</h><h>over the complex numbers</h></idx>
         </p>
       </statement>
     </theorem>
@@ -215,16 +215,16 @@
       would be to take the factored form of <m>f(x)</m> in the previous example and multiply it out to see that it really does reduce to the original formula
       <m>f(x) = 12x^5 - 20x^4+19x^3-6x^2-2x+1</m>. (You really should do this once in your life to convince yourself that all of the theory actually does work!) When factoring a polynomial using <xref ref="complexfactorization">Theorem</xref>,
       we say that it is
-          <idx><h>polynomial function </h><h> completely factored ! over the complex numbers</h></idx>
+          <idx><h>polynomial function</h><h>completely factored ! over the complex numbers</h></idx>
       <em>factored completely over the complex numbers</em>,
       meaning that it is impossible to factor the polynomial any further using complex numbers.
       If we wanted to
-          <idx><h>polynomial function </h><h> completely factored ! over the real numbers</h></idx>
+          <idx><h>polynomial function</h><h>completely factored ! over the real numbers</h></idx>
       completely factor <m>f(x)</m> over the <em>real numbers</em>
       then we would have stopped short of finding the nonreal zeros of <m>f</m> and factored <m>f</m> using our work from the synthetic division to write <m>f(x) = \left(x - \frac{1}{2} \right)^2 \left(x + \frac{1}{3} \right)\left(12x^2 - 12x + 12\right)</m>,
       or <m>f(x) = 12\left(x - \frac{1}{2} \right)^2 \left(x + \frac{1}{3} \right)\left(x^2 - x + 1\right)</m>.
       Since the zeros of <m>x^2-x+1</m> are nonreal, we call <m>x^2-x+1</m> an
-          <idx><h>quadratic function </h><h> irreducible quadratic</h></idx><idx><h>irreducible quadratic</h></idx>
+          <idx><h>quadratic function</h><h>irreducible quadratic</h></idx><idx><h>irreducible quadratic</h></idx>
       <em>irreducible quadratic</em>
       meaning it is impossible to break it down any further using <em>real</em> numbers.
     </p>
@@ -250,16 +250,16 @@
       To prove the theorem,
       suppose <m>f</m> is a polynomial with real number coefficients.
       Specifically, let
-      <m>f(x) = a_{n} x^{n} + a_{n-\mbox{\tiny<m>1</m>} } x^{n-\mbox{\tiny<m>1</m>} } + \ldots + a_{2} x^{2} + a_{1} x + a_{0}</m>.
+      <m>f(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \ldots + a_{2} x^{2} + a_{1} x + a_{0}</m>.
       If <m>z</m> is a zero of <m>f</m>, then <m>f(z) = 0</m>,
-      which means <m>a_{n} z^{n} + a_{n-\mbox{\tiny<m>1</m>} } z^{n-\mbox{\tiny<m>1</m>} } + \ldots + a_{2} z^{2} + a_{1} z + a_{0} = 0</m>.
+      which means <m>a_{n} z^{n} + a_{n-1} z^{n-1} + \ldots + a_{2} z^{2} + a_{1} z + a_{0} = 0</m>.
       Next, we consider <m>f\left(\overline{z}\right)</m> and apply <xref ref="conjugateprops">Theorem</xref> below.
       <md>
-        <mrow>f\left(\overline{z}\right) \amp  =   a_{n} \left(\overline{z}\right)^{n} + a_{n-\mbox{\tiny\(1\)} } \left(\overline{z}\right)^{n-\mbox{\tiny\(1\)} } + \ldots + a_{2}\left( \overline{z}\right)^{2} + a_{1} \overline{z} + a_{0}</mrow>
-        <mrow>\amp   =  a_{n}\overline{z^{n}} + a_{n-\mbox{\tiny\(1\)} }\overline{z^{n-\mbox{\tiny\(1\)} }} + \ldots + a_{2}\overline{z^{2}} + a_{1} \overline{z} + a_{0}  \tag{ since $\left(\overline{z}\right)^n = \overline{z^{n}}$}</mrow>
-        <mrow>\amp  =  \overline{a_{n}}\overline{z^{n}} + \overline{a_{n-\mbox{\tiny\(1\)} }}\overline{z^{n-\mbox{\tiny\(1\)} }} + \ldots +  \overline{a_{2}}\overline{z^{2}} + \overline{a_{1}}\, \overline{z} + \overline{a_{0}}  \tag{since the coefficients are real}</mrow>
-        <mrow>\amp  =  \overline{a_{n} z^{n}} + \overline{a_{n-\mbox{\tiny\(1\)} } z^{n-\mbox{\tiny\(1\)} }} + \ldots +  \overline{a_{2} z^{2}} + \overline{a_{1} z} + \overline{a_{0}}  \tag{ since $\overline{z} \, \overline{w}=\overline{zw} $}</mrow>
-        <mrow>\amp  =  \overline{a_{n} z^{n} + a_{n-\mbox{\tiny\(1\)} } z^{n-\mbox{\tiny\(1\)} } + \ldots + a_{2} z^{2} + a_{1} z + a_{0}}  \tag{ since $ \overline{z} + \overline{w} = \overline{z+w} $}</mrow>
+        <mrow>f\left(\overline{z}\right) \amp  =   a_{n} \left(\overline{z}\right)^{n} + a_{n-1} \left(\overline{z}\right)^{n-1} + \ldots + a_{2}\left( \overline{z}\right)^{2} + a_{1} \overline{z} + a_{0}</mrow>
+        <mrow>\amp   =  a_{n}\overline{z^{n}} + a_{n-1}\overline{z^{n-1}} + \ldots + a_{2}\overline{z^{2}} + a_{1} \overline{z} + a_{0}  \tag{ since $\left(\overline{z}\right)^n = \overline{z^{n}}$}</mrow>
+        <mrow>\amp  =  \overline{a_{n}}\overline{z^{n}} + \overline{a_{n-1}}\overline{z^{n-1}} + \ldots +  \overline{a_{2}}\overline{z^{2}} + \overline{a_{1}}\, \overline{z} + \overline{a_{0}}  \tag{since the coefficients are real}</mrow>
+        <mrow>\amp  =  \overline{a_{n} z^{n}} + \overline{a_{n-1} z^{n-1}} + \ldots +  \overline{a_{2} z^{2}} + \overline{a_{1} z} + \overline{a_{0}}  \tag{ since $\overline{z} \, \overline{w}=\overline{zw} $}</mrow>
+        <mrow>\amp  =  \overline{a_{n} z^{n} + a_{n-1} z^{n-1} + \ldots + a_{2} z^{2} + a_{1} z + a_{0}}  \tag{ since $ \overline{z} + \overline{w} = \overline{z+w} $}</mrow>
         <mrow>\amp  =  \overline{f(z)}</mrow>
         <mrow>\amp  =  \overline{0}</mrow>
         <mrow>\amp  =  0</mrow>

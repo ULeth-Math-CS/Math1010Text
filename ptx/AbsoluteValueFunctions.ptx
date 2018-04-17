@@ -28,7 +28,7 @@
       <statement>
         <p>
           The
-              <idx><h>absolute value </h><h> definition of</h></idx><idx><h>function </h><h> absolute value</h></idx>
+              <idx><h>absolute value</h><h>definition of</h></idx><idx><h>function</h><h>absolute value</h></idx>
           <term>absolute value</term> of a real number <m>x</m>,
           denoted <m>|x|</m>, is given by
           <me>
@@ -63,13 +63,13 @@
           Let <m>a</m>,
           <m>b</m> and <m>x</m> be real numbers and let <m>n</m> be an integer.
           Then
-              <idx><h>absolute value </h><h> properties of</h></idx>
+              <idx><h>absolute value</h><h>properties of</h></idx>
 
           <ul>
             <li>
               <p>
                 <em>Product Rule:</em> <m>|ab|= |a||b|</m>
-                    <idx><h>product rule </h><h> for absolute value</h></idx>
+                    <idx><h>product rule</h><h>for absolute value</h></idx>
               </p>
             </li>
 
@@ -77,7 +77,7 @@
               <p>
                 <em>Power Rule:</em>
                 <m>\left| a^{n} \right| = |a|^{n}</m> whenever <m>a^{n}</m> is defined
-                    <idx><h>power rule </h><h> for absolute value</h></idx>
+                    <idx><h>power rule</h><h>for absolute value</h></idx>
               </p>
             </li>
 
@@ -86,7 +86,7 @@
                 <em>Quotient Rule:</em>
                 <m>\left| \dfrac{a}{b} \right| = \dfrac{|a|}{|b|}</m>,
                 provided <m>b \neq 0</m>
-                    <idx><h>quotient rule </h><h> for absolute value</h></idx>
+                    <idx><h>quotient rule</h><h>for absolute value</h></idx>
           </p>
             </li>
           </ul>

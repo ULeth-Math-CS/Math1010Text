@@ -27,10 +27,10 @@
       <statement>
         <p>
           The
-              <idx><h>slope </h><h> definition</h></idx> <term>slope</term>
+              <idx><h>slope</h><h>definition</h></idx> <term>slope</term>
           <m>m</m> of the line containing the points
           <m>P\left(x_{0}, y_{0}\right)</m> and <m>Q\left(x_{1}, y_{1}\right)</m> is:
-          <idx><h>line </h><h> slope of</h></idx> <idx><h>slope </h><h> of a line</h></idx>
+          <idx><h>line</h><h>slope of</h></idx> <idx><h>slope</h><h>of a line</h></idx>
           <me>
             m  = \dfrac{y_{1} - y_{0}}{x_{1} - x_{0}}
           </me>,
@@ -195,7 +195,7 @@
         m = \dfrac{\Delta y}{\Delta x}
       </me>,
       which describes the slope as the
-          <idx><h>slope </h><h> rate of change</h></idx><idx><h>rate of change </h><h> slope of a line</h></idx>
+          <idx><h>slope</h><h>rate of change</h></idx><idx><h>rate of change</h><h>slope of a line</h></idx>
       <em>rate of change</em> of <m>y</m> with respect to <m>x</m>.
       Rates of change abound in the <q>real world</q>,
       as the next example illustrates.
@@ -309,7 +309,7 @@
       <title>The point-slope form of a line</title>
       <p>
         The
-            <idx><h>line </h><h> point-slope form</h></idx>
+            <idx><h>line</h><h>point-slope form</h></idx>
         <term>point-slope form</term>
         of the equation of a line with slope <m>m</m> containing the point
         <m>\left(x_{0}, y_{0}\right)</m> is the equation <m>y - y_{0} = m\left(x - x_{0}\right)</m>.
@@ -363,7 +363,7 @@
       <title>Slope intercept form of a line</title>
       <p>
         The
-            <idx><h>line </h><h> slope-intercept form</h></idx>
+            <idx><h>line</h><h>slope-intercept form</h></idx>
         <term>slope-intercept form</term>
         of the line with slope <m>m</m> and <m>y</m>-intercept <m>(0,b)</m> is the equation <m>y = mx + b</m>.
             <idx><h>slope-intercept form of a line</h></idx>
@@ -384,7 +384,7 @@
       <statement>
         <p>
           A
-              <idx><h>function </h><h> linear</h></idx><idx><h>line </h><h> linear function</h></idx><idx><h>linear function</h></idx>
+              <idx><h>function</h><h>linear</h></idx><idx><h>line</h><h>linear function</h></idx><idx><h>linear function</h></idx>
           <term>linear function</term> is a function of the form
           <me>
             f(x) = mx + b
@@ -405,7 +405,7 @@
       <statement>
         <p>
           A
-              <idx><h>function </h><h> constant</h></idx><idx><h>constant function </h><h> as a horizontal line</h></idx>
+              <idx><h>function</h><h>constant</h></idx><idx><h>constant function</h><h>as a horizontal line</h></idx>
           <term>constant function</term> is a function of the form
           <me>
             f(x) =  b
@@ -672,7 +672,7 @@
                 In other words,  the cost is increasing at a rate of
                 <m>\dollar80</m> per PortaBoy produced.
                 This is often called the
-              <idx><h>cost </h><h> variable</h></idx><idx><h>variable cost</h></idx>
+              <idx><h>cost</h><h>variable</h></idx><idx><h>variable cost</h></idx>
           <em>variable cost</em> for this venture.
               </p>
             </li>
@@ -836,7 +836,7 @@
         <p>
           Let <m>f</m> be a function defined on the interval <m>[a,b]</m>.
           The
-              <idx><h>average rate of change</h></idx><idx><h>rate of change </h><h> average</h></idx>
+              <idx><h>average rate of change</h></idx><idx><h>rate of change</h><h>average</h></idx>
           <term>average rate of change</term>
           of <m>f</m> over <m>[a,b]</m> is defined as:
           <me>
@@ -877,7 +877,7 @@
       then sped up to <m>65</m> kilometres per hour, and so forth.
       The average rate of change is akin to your average speed on the trip.
       Your speedometer measures your speed at any one instant along the trip, your
-          <idx><h>rate of change </h><h> instantaneous</h></idx><idx><h>instantaneous rate of change</h></idx>
+          <idx><h>rate of change</h><h>instantaneous</h></idx><idx><h>instantaneous rate of change</h></idx>
       <em>instantaneous rate of change</em>,
       and this is one of the central themes of Calculus.
     </p>
@@ -2094,7 +2094,7 @@
     </exercise>
     <p>
       {\phantomsection (Parallel Lines)
-          <idx><h>line </h><h> parallel</h></idx>
+          <idx><h>line</h><h>parallel</h></idx>
       Recall from high school that parallel lines have the same slope. (Please note that two vertical lines are also parallel to one another even though they have an undefined slope.) In Exercises} {, you are given a line and a point which is not on that line.
       Find the line parallel to the given line which passes through the given point. }
     </p>
@@ -2172,11 +2172,12 @@
     </exercise>
     <p>
       {\phantomsection (Perpendicular Lines)
-          <idx><h>line </h><h> perpendicular</h></idx>
+          <idx><h>line</h><h>perpendicular</h></idx>
       Recall from high school that two non-vertical lines are perpendicular if and only if they have negative reciprocal slopes.
       That is to say,
-      if one line has slope <m>m_{\mbox{\tiny<m>1</m>} }</m> and the other has slope <m>m_{\mbox{\tiny<m>2</m>} }</m> then <m>m_{\mbox{\tiny<m>1</m>} } \cdot m_{\mbox{\tiny<m>2</m>} } = -1</m>. (You will be guided through a proof of this result in <xref ref="perpendicularlineproof">Exercise</xref>.) Please note that a horizontal line is perpendicular to a vertical line and vice versa,
-      so we assume <m>m_{\mbox{\tiny<m>1</m>} } \neq 0</m> and <m>m_{\mbox{\tiny<m>2</m>} } \neq 0</m>.
+      if one line has slope <m>m_{1}</m> and the other has slope <m>m_{2}</m> then
+      <m>m_{1} \cdot m_{2} = -1</m>. (You will be guided through a proof of this result in <xref ref="perpendicularlineproof">Exercise</xref>.) Please note that a horizontal line is perpendicular to a vertical line and vice versa,
+      so we assume <m>m_{1} \neq 0</m> and <m>m_{2} \neq 0</m>.
       In Exercises} {, you are given a line and a point which is not on that line.
       Find the line perpendicular to the given line which passes through the given point. }
     </p>
@@ -2255,20 +2256,24 @@
     <exercise xml:id="perpendicularlineproof">
       <statement>
         <p>
-          We shall now prove that <m>y = m_{\mbox{\tiny<m>1</m>} }x + b_{\mbox{\tiny<m>1</m>} }</m> is perpendicular to <m>y = m_{\mbox{\tiny<m>2</m>} }x + b_{\mbox{\tiny<m>2</m>} }</m> if and only if <m>m_{\mbox{\tiny<m>1</m>} } \cdot m_{\mbox{\tiny<m>2</m>} } = -1</m>.
-          To make our lives easier we shall assume that <m>m_{\mbox{\tiny<m>1</m>} } > 0</m> and <m>m_{\mbox{\tiny<m>2</m>} } \lt 0</m>.
+          We shall now prove that <m>y = m_{1}x + b_{1}</m> is perpendicular to
+          <m>y = m_{2}x + b_{2}</m> if and only if <m>m_{1} \cdot m_{2} = -1</m>.
+          To make our lives easier we shall assume that
+          <m>m_{1} > 0</m> and <m>m_{2} \lt 0</m>.
           We can also <q>move</q>
           the lines so that their point of intersection is the origin without messing things up,
-          so we'll assume <m>b_{\mbox{\tiny<m>1</m>} } = b_{\mbox{\tiny<m>2</m>} } = 0</m>. (Take a moment with your classmates to discuss why this is okay.) Graphing the lines and plotting the points <m>O(0, 0)\;</m>,
-          <m>P(1, m_{\mbox{\tiny<m>1</m>} })\;</m> and <m>Q(1, m_{\mbox{\tiny<m>2</m>} })</m> gives us the following set up. <img src="figures/LinearQuadraticGraphics/LinearFunctions-16.pdf"/>
+          so we'll assume <m>b_{1} = b_{2} = 0</m>. (Take a moment with your classmates to discuss why this is okay.) Graphing the lines and plotting the points <m>O(0, 0)\;</m>,
+          <m>P(1, m_{1})\;</m> and <m>Q(1, m_{2})</m> gives us the following set up. <img src="figures/LinearQuadraticGraphics/LinearFunctions-16.pdf"/>
         </p>
 
         <p>
-          The line <m>y = m_{\mbox{\tiny<m>1</m>} }x</m> will be perpendicular to the line <m>y = m_{\mbox{\tiny<m>2</m>} }x</m> if and only if <m>\bigtriangleup OPQ</m> is a right triangle.
-          Let <m>d_{\mbox{\tiny<m>1</m>} }</m> be the distance from <m>O</m> to <m>P</m>,
-          let <m>d_{\mbox{\tiny<m>2</m>} }</m> be the distance from <m>O</m> to <m>Q</m> and let <m>d_{\mbox{\tiny<m>3</m>} }</m> be the distance from <m>P</m> to <m>Q</m>.
+          The line <m>y = m_{1}x</m> will be perpendicular to the line
+          <m>y = m_{2}x</m> if and only if <m>\bigtriangleup OPQ</m> is a right triangle.
+          Let <m>d_{1}</m> be the distance from <m>O</m> to <m>P</m>,
+          let <m>d_{2}</m> be the distance from <m>O</m> to <m>Q</m> and let <m>d_{3}</m> be the distance from <m>P</m> to <m>Q</m>.
           Use the Pythagorean Theorem to show that
-          <m>\bigtriangleup OPQ</m> is a right triangle if and only if <m>m_{\mbox{\tiny<m>1</m>} } \cdot m_{\mbox{\tiny<m>2</m>} } = -1</m> by showing <m>d_{\mbox{\tiny<m>1</m>} }^{2} + d_{\mbox{\tiny<m>2</m>} }^{2} = d_{\mbox{\tiny<m>3</m>} }^2</m> if and only if <m>m_{\mbox{\tiny<m>1</m>} } \cdot m_{\mbox{\tiny<m>2</m>} } = -1</m>.
+          <m>\bigtriangleup OPQ</m> is a right triangle if and only if <m>m_{1} \cdot m_{2} = -1</m> by showing
+          <m>d_{1}^{2} + d_{2}^{2} = d_{3}^2</m> if and only if <m>m_{1} \cdot m_{2} = -1</m>.
         </p>
       </statement>
     </exercise>
@@ -2289,7 +2294,7 @@
       <statement>
         <p>
           The function defined by <m>I(x) = x</m> is called the
-              <idx><h>function </h><h> identity</h></idx>
+              <idx><h>function</h><h>identity</h></idx>
           Identity Function.
 
           <ol>

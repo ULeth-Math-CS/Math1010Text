@@ -15,7 +15,7 @@
       <statement>
         <p>
           A
-              <idx><h>relation </h><h> definition</h></idx>
+              <idx><h>relation</h><h>definition</h></idx>
           <term>relation</term> is a set of points in the plane.
         </p>
       </statement>
@@ -36,7 +36,7 @@
       Since <m>R</m> consists of points in the plane,
       we follow our instinct and plot the points.
       Doing so produces the
-          <idx><h>graph </h><h> of a relation</h></idx>
+          <idx><h>graph</h><h>of a relation</h></idx>
       <em>graph</em> of <m>R</m>:
       see <xref ref="fig_relgraph">Figure</xref>.
     </p>
@@ -241,7 +241,7 @@
 
     <p>
       The relations <m>V</m> and <m>H</m> in the previous example lead us to our final way to describe relations:
-          <idx><h>relation </h><h> algebraic description</h></idx>
+          <idx><h>relation</h><h>algebraic description</h></idx>
       <em>algebraically</em>.
       We can more succinctly describe the points in <m>V</m> as those points which satisfy the equation <q><m>x = 3</m></q>.
       Most likely, you have seen equations like this before.
@@ -261,7 +261,7 @@
           <p>
             The graph of the equation <m>x=a</m> is a
             <em>vertical line</em> through <m>(a,0)</m>.
-                <idx><h>line </h><h> vertical</h></idx> <idx><h>vertical line</h></idx>
+                <idx><h>line</h><h>vertical</h></idx> <idx><h>vertical line</h></idx>
           </p>
         </li>
 
@@ -269,7 +269,7 @@
           <p>
             The graph of the equation <m>y=b</m> is a
             <em>horizontal line</em> through <m>(0,b)</m>.
-                <idx><h>line </h><h> horizontal</h></idx> <idx><h>horizontal line</h></idx>
+                <idx><h>line</h><h>horizontal</h></idx> <idx><h>horizontal line</h></idx>
           </p>
         </li>
       </ul>
@@ -293,7 +293,7 @@
     <insight xml:id="fgp">
       <title>The Fundamental Graphing Principle</title>
       <p>
-            <idx><h>equation </h><h> graph of</h></idx> <idx><h>graph </h><h> of an equation</h></idx> <idx><h>Fundamental Graphing Principle </h><h> for equations</h></idx> <idx><h>relation </h><h> Fundamental Graphing Principle</h></idx>
+            <idx><h>equation</h><h>graph of</h></idx> <idx><h>graph</h><h>of an equation</h></idx> <idx><h>Fundamental Graphing Principle</h><h>for equations</h></idx> <idx><h>relation</h><h>Fundamental Graphing Principle</h></idx>
       </p>
 
       <p>
@@ -498,7 +498,7 @@
       Of all of the points on the graph of an equation,
       the places where the graph crosses or touches the axes hold special significance.
       These are called the <em>intercepts</em>
-          <idx><h>intercept </h><h> definition of</h></idx>
+          <idx><h>intercept</h><h>definition of</h></idx>
       of the graph.
       Intercepts come in two distinct varieties:
       <m>x</m>-intercepts and <m>y</m>-intercepts.
@@ -552,7 +552,7 @@
       <p>
         Given an equation involving <m>x</m> and <m>y</m>,
         we find the intercepts of the graph as follows:
-            <idx><h>intercept </h><h> location of</h></idx>
+            <idx><h>intercept</h><h>location of</h></idx>
         <ul>
           <li>
             <p>
@@ -601,7 +601,7 @@
       <title>Testing the Graph of an Equation for Symmetry</title>
       <p>
         To test the graph of an equation for symmetry
-            <idx><h>symmetry </h><h> testing an equation for</h></idx>
+            <idx><h>symmetry</h><h>testing an equation for</h></idx>
         <ul>
           <li>
             <p>

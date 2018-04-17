@@ -59,7 +59,7 @@
         <p>
           Suppose <m>f</m> and <m>g</m> are two functions.
           The
-              <idx><h>function </h><h> composite ! definition of</h></idx><idx><h>composite function </h><h> definition of</h></idx>
+              <idx><h>function</h><h>composite ! definition of</h></idx><idx><h>composite function</h><h>definition of</h></idx>
           <term>composite</term>
           of <m>g</m> with <m>f</m>, denoted <m>g \circ f</m>,
           is defined by the formula <m>(g \circ f) (x) = g(f(x))</m>,
@@ -624,7 +624,7 @@
       <q>iterating</q> the function,
       and we could easily spend an entire course on just that.
       The last two problems in <xref ref="functioncompex1">Example</xref> serve to demonstrate the
-          <idx><h>associative property </h><h> for function composition</h></idx>
+          <idx><h>associative property</h><h>for function composition</h></idx>
       <em>associative</em> property of functions.
       That is, when composing three
       (or more)
@@ -636,7 +636,7 @@
     <aside>
       <p>
         This shows us function composition isn't <em>commutative</em>.
-            <idx><h>commutative property </h><h> function composition does not have</h></idx>
+            <idx><h>commutative property</h><h>function composition does not have</h></idx>
         An example of an operation we perform on two functions which is commutative is function addition,
         which we defined in <xref ref="FunctionArithmetic">Section</xref>.
         In other words,
@@ -649,7 +649,7 @@
       <statement>
         <p>
           Suppose <m>f</m>, <m>g</m>, and <m>h</m> are functions.
-              <idx><h>function </h><h> composite ! properties of</h></idx> <idx><h>composite function </h><h> properties of</h></idx>
+              <idx><h>function</h><h>composite ! properties of</h></idx> <idx><h>composite function</h><h>properties of</h></idx>
           <ul>
             <li>
               <p>
@@ -680,7 +680,7 @@
       A consequence of the associativity of function composition is that there is no need for parentheses when we write <m>h \circ g \circ f</m>.
       The second property can also be verified using <xref ref="functioncompositiondefn">Definition</xref>.
       Recall that the function <m>I(x) = x</m> is called the
-          <idx><h>identity </h><h> function</h></idx>
+          <idx><h>identity</h><h>function</h></idx>
       <em>identity function</em>
       and was introduced in <xref ref="identityexercise">Exercise</xref>
       in <xref ref="LinearFunctions">Section</xref>.
