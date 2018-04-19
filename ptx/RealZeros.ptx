@@ -206,7 +206,7 @@
                 We plot <m>f(x)</m> using GeoGebra,
                 and zoom in to show the portion of the graph where <m>-4\leq x\leq 4</m>:
                 see <xref ref="fig_realzero1">Figure</xref>. <figure xml:id="fig_realzero1"> <caption>The graph
-                <m>y=f(x)=2x^4+4x^3-x^2-6x-3</m></caption> <img src="figures/PolynomialsGraphics/RealZero1.pdf"/> </figure>
+                <m>y=f(x)=2x^4+4x^3-x^2-6x-3</m></caption> <img src="figures/PolynomialsGraphics/RealZero1"/> </figure>
               </p>
             </li>
 
@@ -307,7 +307,7 @@
     </aside>
     <figure xml:id="fig_realzero2">
       <caption>Zooming in on the repeated zero in <xref ref="ex_rzerotech">Example</xref></caption>
-      <img src="figures/PolynomialsGraphics/RealZero2.pdf"/>
+      <img src="figures/PolynomialsGraphics/RealZero2"/>
     </figure>
 
     <p>
@@ -374,7 +374,7 @@
                 Zooming in a bit gives the graph (b).
                 Based on the graph,
                 none of our rational zeros will work. (Do you see why not?) <table xml:id="fig_realzero3"> <caption>Two views of the graph
-                <m>y=f(x)=x^4+x^2-12</m> in <xref ref="usubex">Example</xref></caption> <tabular> <row> <cell><img src="figures/PolynomialsGraphics/RealZero3.pdf"/></cell> </row> <row> <cell>(a)</cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/PolynomialsGraphics/RealZero4.pdf"/></cell> </row> <row> <cell>(b)</cell> </row> </tabular> </table>
+                <m>y=f(x)=x^4+x^2-12</m> in <xref ref="usubex">Example</xref></caption> <tabular> <row> <cell><img src="figures/PolynomialsGraphics/RealZero3"/></cell> </row> <row> <cell>(a)</cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/PolynomialsGraphics/RealZero4"/></cell> </row> <row> <cell>(b)</cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -600,7 +600,7 @@
 
     <figure xml:id="fig_realzero4">
       <caption>The graph <m>y=2x^4+4x^3-x^2-6x-3</m></caption>
-      <img src="figures/PolynomialsGraphics/RealZeros_New-1.pdf"/>
+      <img src="figures/PolynomialsGraphics/RealZeros_New-1"/>
     </figure>
 
     <p>
@@ -717,7 +717,7 @@
                 We found the zeros of
           <m>p(x) = 2x^5-3x^4+6x^3-8x^2+3</m> in part 1 to be <m>x=-\frac{1}{2}</m> and <m>x=1</m>.
                 We construct our sign diagram as before,
-                giving us <xref ref="fig_sdzeros1">Figure</xref>. <figure xml:id="fig_sdzeros1"> <caption>The sign diagram for <m>p(x)</m> in <xref ref="polyeqineqexample">Example</xref></caption> <img src="figures/PolynomialsGraphics/RealZeros_New-2.pdf"/> </figure> The solution to
+                giving us <xref ref="fig_sdzeros1">Figure</xref>. <figure xml:id="fig_sdzeros1"> <caption>The sign diagram for <m>p(x)</m> in <xref ref="polyeqineqexample">Example</xref></caption> <img src="figures/PolynomialsGraphics/RealZeros_New-2"/> </figure> The solution to
                 <m>p(x) \lt 0</m> is <m>\left(-\infty, -\frac{1}{2}\right)</m>,
                 and we know <m>p(x) = 0</m> at <m>x=-\frac{1}{2}</m> and <m>x=1</m>.
                 Hence, the solution to
@@ -750,7 +750,7 @@
       <caption>The polynomials <m>f(x)</m> and <m>g(x)</m> from <xref ref="polyeqineqexample">Example</xref>, part 3</caption>
       <tabular>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/RealZero5.pdf"/></cell>
+          <cell><img src="figures/PolynomialsGraphics/RealZero5"/></cell>
         </row>
         <row>
           <cell>(a)</cell>
@@ -759,7 +759,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/RealZero6.pdf"/></cell>
+          <cell><img src="figures/PolynomialsGraphics/RealZero6"/></cell>
         </row>
         <row>
           <cell>(b)</cell>
@@ -810,7 +810,7 @@
 
         <figure xml:id="fig_sdzeros2">
           <caption>The sign diagram for <m>P(x)</m> in <xref ref="ex_zerosappl">Example</xref></caption>
-          <img src="figures/PolynomialsGraphics/RealZeros_New-3.pdf"/>
+          <img src="figures/PolynomialsGraphics/RealZeros_New-3"/>
         </figure>
 
         <p>
@@ -838,7 +838,7 @@
 
     <figure xml:id="fig_applzeroeg">
       <caption>Plotting the profit function <m>P(x)</m> in <xref ref="ex_zerosappl">Example</xref></caption>
-      <img src="figures/PolynomialsGraphics/RealZero7.pdf"/>
+      <img src="figures/PolynomialsGraphics/RealZero7"/>
     </figure>
   </introduction>
 

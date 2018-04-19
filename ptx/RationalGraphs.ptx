@@ -56,7 +56,7 @@
     </aside>
     <figure xml:id="fig_ratgraph1">
       <caption>The graph <m>y=h(x)</m> from <xref ref="ratfuncex">Example</xref></caption>
-      <img src="figures/RationalsGraphics/RationalGraphs-1.pdf"/>
+      <img src="figures/RationalsGraphics/RationalGraphs-1"/>
     </figure>
 
     <p>
@@ -95,7 +95,7 @@
 
     <figure xml:id="fig_ratsd1">
       <caption>The sign diagram for the function <m>h(x)</m> from <xref ref="ratfuncex">Example</xref></caption>
-      <img src="figures/RationalsGraphics/RationalGraphs-2.pdf"/>
+      <img src="figures/RationalsGraphics/RationalGraphs-2"/>
     </figure>
 
     <insight xml:id="rationalsigndiagram">
@@ -354,7 +354,7 @@
               </aside>
               <figure xml:id="fig_ratgraph2">
                 <caption>The graph <m>y=\frac{3x}{x^2-4}</m> near its vertical asymptotes</caption>
-                <img src="figures/RationalsGraphics/RationalGraphs-3.pdf"/>
+                <img src="figures/RationalsGraphics/RationalGraphs-3"/>
               </figure>
 
             </li>
@@ -432,7 +432,7 @@
               </aside>
               <figure xml:id="fig_ratgraph3">
                 <caption>The end behavhiour of the graph <m>y=\frac{3x}{x^2-4}</m></caption>
-                <img src="figures/RationalsGraphics/RationalGraphs-4.pdf"/>
+                <img src="figures/RationalsGraphics/RationalGraphs-4"/>
               </figure>
 
             </li>
@@ -450,8 +450,8 @@
                 <m>f(1)</m> is <m>(-)</m> and <m>f(3)</m> is <m>(+)</m>.
                 Combining this with our previous work,
                 we get the graph of <m>y=f(x)</m> in <xref ref="fig_ratgraph4">Figure</xref>. <figure xml:id="fig_ratsd2"> <caption>The sign diagram for
-                <m>f(x)=\frac{3x}{x^2-4}</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-5.pdf"/> </figure> <figure xml:id="fig_ratgraph4"> <caption>The complete graph
-                <m>y=\frac{3x}{x^2-4}</m> for <xref ref="ex_ratgraph1">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-6.pdf"/> </figure>
+                <m>f(x)=\frac{3x}{x^2-4}</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-5"/> </figure> <figure xml:id="fig_ratgraph4"> <caption>The complete graph
+                <m>y=\frac{3x}{x^2-4}</m> for <xref ref="ex_ratgraph1">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-6"/> </figure>
               </p>
             </li>
           </ol>
@@ -566,7 +566,7 @@
 
               <figure xml:id="fig_ratgraph5">
                 <caption>The graph <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m> near the vertical asymptotes</caption>
-                <img src="figures/RationalsGraphics/RationalGraphs-7.pdf"/>
+                <img src="figures/RationalsGraphics/RationalGraphs-7"/>
               </figure>
 
             </li>
@@ -643,12 +643,12 @@
 
               <figure xml:id="fig_ratgraph6">
                 <caption>The end behaviour of <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m></caption>
-                <img src="figures/RationalsGraphics/RationalGraphs-8.pdf"/>
+                <img src="figures/RationalsGraphics/RationalGraphs-8"/>
               </figure>
 
               <figure xml:id="fig_ratsd3">
                 <caption>The sign diagram for <m>g(x)=\frac{2x^2-3x-5}{x^2-x-6}</m></caption>
-                <img src="figures/RationalsGraphics/RationalGraphs-9.pdf"/>
+                <img src="figures/RationalsGraphics/RationalGraphs-9"/>
               </figure>
 
             </li>
@@ -683,7 +683,7 @@
                 Calculus verifies that at <m>x=13</m>,
                 we have such a minimum at exactly
                 <m>(13, 1.96)</m>. <figure xml:id="fig_ratgraph7"> <caption>The complete graph
-                <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m> for <xref ref="ex_ratgraph2">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-10.pdf"/> </figure>
+                <m>y=\frac{2x^2-3x-5}{x^2-x-6}</m> for <xref ref="ex_ratgraph2">Example</xref></caption> <img src="figures/RationalsGraphics/RationalGraphs-10"/> </figure>
               </p>
             </li>
           </ol>
@@ -772,7 +772,7 @@
                     On the other side of <m>-2</m>,
                     as <m>x \rightarrow -2^{+}</m>,
                     we find that <m>h(x) \approx \frac{3}{\mbox{\scriptsize very small <m>(+)</m>} } \approx \mbox{very big <m>(+)</m>}</m>,
-                    so <m>h(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgraph8"> <caption>The behaviour of <m>y=h(x)</m> near the hole and vertical asymptote</caption> <img src="figures/RationalsGraphics/RationalGraphs-11.pdf"/> </figure>
+                    so <m>h(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgraph8"> <caption>The behaviour of <m>y=h(x)</m> near the hole and vertical asymptote</caption> <img src="figures/RationalsGraphics/RationalGraphs-11"/> </figure>
                   </p>
                 </li>
 
@@ -849,7 +849,7 @@
 
             <figure xml:id="fig_ratgraph9">
               <caption>End behaviour for <m>y=h(x)</m></caption>
-              <img src="figures/RationalsGraphics/RationalGraphs-12.pdf"/>
+              <img src="figures/RationalsGraphics/RationalGraphs-12"/>
             </figure>
 
           </li>
@@ -873,12 +873,12 @@
         <figure xml:id="fig_ratsd4">
           <caption>The sign diagram for
           <m>h(x)=\frac{2x^3+5x^2+4x+1}{x^2+3x+2}</m></caption>
-          <img src="figures/RationalsGraphics/RationalGraphs-13.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-13"/>
         </figure>
 
         <figure xml:id="fig_ratgraph10">
           <caption>The graph <m>y=h(x)</m> for <xref ref="ex_ratgraph3">Example</xref></caption>
-          <img src="figures/RationalsGraphics/RationalGraphs-14.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-14"/>
         </figure>
 
         <p>
@@ -957,7 +957,7 @@
               So the graph <m>y=r(x)</m> is a little bit <em>above</em>
               the graph of the parabola <m>y=x^2-1</m> as <m>x \rightarrow \pm \infty</m>.
               Graphically,
-              we have <xref ref="fig_ratgraph11">Figure</xref>. <figure xml:id="fig_ratgraph11"> <caption>Comparing <m>y=r(x)</m> to <m>y=x^2-1</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-15.pdf"/> </figure>
+              we have <xref ref="fig_ratgraph11">Figure</xref>. <figure xml:id="fig_ratgraph11"> <caption>Comparing <m>y=r(x)</m> to <m>y=x^2-1</m></caption> <img src="figures/RationalsGraphics/RationalGraphs-15"/> </figure>
             </p>
           </li>
 
@@ -986,7 +986,7 @@
           <caption>The limitations of our Precalculus methods</caption>
           <tabular>
             <row>
-              <cell><img src="figures/RationalsGraphics/RationalGraphs-16.pdf"/></cell>
+              <cell><img src="figures/RationalsGraphics/RationalGraphs-16"/></cell>
             </row>
             <row>
               <cell>Plotting by hand (without calculus)</cell>
@@ -995,7 +995,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><img src="figures/RationalsGraphics/Rationals09.pdf"/></cell>
+              <cell><img src="figures/RationalsGraphics/Rationals09"/></cell>
             </row>
             <row>
               <cell>Plotting with GeoGebra</cell>
@@ -1074,7 +1074,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-17.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-17"/>
         </p>
       </answer>
     </exercise>
@@ -1126,7 +1126,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-18.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-18"/>
         </p>
       </answer>
     </exercise>
@@ -1178,7 +1178,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-19.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-19"/>
         </p>
       </answer>
     </exercise>
@@ -1238,7 +1238,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-20.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-20"/>
         </p>
       </answer>
     </exercise>
@@ -1298,7 +1298,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-21.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-21"/>
         </p>
       </answer>
     </exercise>
@@ -1358,7 +1358,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-22.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-22"/>
         </p>
       </answer>
     </exercise>
@@ -1407,7 +1407,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-23.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-23"/>
         </p>
       </answer>
     </exercise>
@@ -1472,7 +1472,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-24.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-24"/>
         </p>
       </answer>
     </exercise>
@@ -1529,7 +1529,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-25.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-25"/>
         </p>
       </answer>
     </exercise>
@@ -1595,7 +1595,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-26.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-26"/>
         </p>
       </answer>
     </exercise>
@@ -1649,7 +1649,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-27.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-27"/>
         </p>
       </answer>
     </exercise>
@@ -1703,7 +1703,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-28.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-28"/>
         </p>
       </answer>
     </exercise>
@@ -1761,7 +1761,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-29.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-29"/>
         </p>
       </answer>
     </exercise>
@@ -1823,7 +1823,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-30.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-30"/>
         </p>
       </answer>
     </exercise>
@@ -1865,7 +1865,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-31.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-31"/>
         </p>
       </answer>
     </exercise>
@@ -1932,7 +1932,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-32.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-32"/>
         </p>
       </answer>
     </exercise>
@@ -1960,7 +1960,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-33.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-33"/>
         </p>
       </answer>
     </exercise>
@@ -2000,7 +2000,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-34.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-34"/>
         </p>
       </answer>
     </exercise>
@@ -2024,7 +2024,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-35.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-35"/>
         </p>
       </answer>
     </exercise>
@@ -2064,7 +2064,7 @@
         </p>
 
         <p>
-          <img src="figures/RationalsGraphics/RationalGraphs-36.pdf"/>
+          <img src="figures/RationalsGraphics/RationalGraphs-36"/>
         </p>
       </answer>
     </exercise>

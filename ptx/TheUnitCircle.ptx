@@ -30,7 +30,7 @@
 
     <figure xml:id="fig_circle1">
       <caption>Defining <m>\cos(\theta)</m> and <m>\sin(\theta)</m></caption>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-2.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-2"/>
     </figure>
 
     <aside>
@@ -94,7 +94,7 @@
                 Hence,
           the point we seek is <m>(0,-1)</m> so that <m>\cos\left(270^{\circ}\right) = 0</m> and
                 <m>\sin\left(270^{\circ}\right) = -1</m>. <figure xml:id="fig_circle2"> <caption>Finding <m>\cos(270^\circ)</m> and
-                <m>\sin(270^\circ)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-3.pdf"/> </figure>
+                <m>\sin(270^\circ)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-3"/> </figure>
               </p>
             </li>
 
@@ -103,7 +103,7 @@
                 The angle <m>\theta=-\pi</m> represents one half of a clockwise revolution so its terminal side lies on the negative <m>x</m>-axis.
                 The point on the Unit Circle that lies on the negative <m>x</m>-axis is <m>(-1,0)</m> which means <m>\cos(-\pi) = -1</m> and
                 <m>\sin(-\pi) = 0</m>. <figure xml:id="fig_circle3"> <caption>Finding <m>\cos(-\pi)</m> and
-                <m>\sin(-\pi)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-4.pdf"/> </figure>
+                <m>\sin(-\pi)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-4"/> </figure>
               </p>
             </li>
 
@@ -126,8 +126,8 @@
               Since <m>P(x,y)</m> lies in the first quadrant, <m>x>0</m>,
               so <m>x = \cos\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m> and with <m>y=x</m> we have
               <m>y = \sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{4}\right)</m> and
-              <m>\sin\left(\frac{\pi}{4}\right)</m></caption> --> <sidebyside> <tabular> {m{0.6\textwidth}m{0.4\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-5.pdf"/>&amp;
-              <img src="figures/IntroTrigGraphics/TheUnitCircle-6.pdf"/>\\
+              <m>\sin\left(\frac{\pi}{4}\right)</m></caption> --> <sidebyside> <tabular> {m{0.6\textwidth}m{0.4\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-5"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-6"/>\\
               <m>\theta=\frac{\pi}{4}</m> in standard position &amp;
               <m>45^{\circ} - 45^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
             </p>
@@ -151,8 +151,8 @@
               or <m>x = \pm \frac{\sqrt{3}}{2}</m>.
               Here, <m>x > 0</m> so
           <m>x = \cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{6}\right)</m> and
-              <m>\sin\left(\frac{\pi}{6}\right)</m></caption> --> <sidebyside> <tabular> {m{0.5\textwidth}m{0.5\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-7.pdf"/>&amp;
-              <img src="figures/IntroTrigGraphics/TheUnitCircle-8.pdf"/>\\
+              <m>\sin\left(\frac{\pi}{6}\right)</m></caption> --> <sidebyside> <tabular> {m{0.5\textwidth}m{0.5\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-7"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-8"/>\\
               <m>\theta=\frac{\pi}{6}</m> in standard position &amp;
               <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
             </p>
@@ -168,8 +168,8 @@
               after the usual computations,
               find <m>x = \cos\left(\frac{\pi}{3}\right) = \frac{1}{2}</m> and
               <m>y = \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>. <!-- <caption>Finding <m>\cos\left(\frac{\pi}{3}\right)</m> and
-              <m>\sin\left(\frac{\pi}{3}\right)</m></caption> --> <sidebyside> <tabular> {m{0.65\textwidth}m{0.35\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-9.pdf"/>&amp;
-              <img src="figures/IntroTrigGraphics/TheUnitCircle-10.pdf"/>\\
+              <m>\sin\left(\frac{\pi}{3}\right)</m></caption> --> <sidebyside> <tabular> {m{0.65\textwidth}m{0.35\textwidth}} <img src="figures/IntroTrigGraphics/TheUnitCircle-9"/>&amp;
+              <img src="figures/IntroTrigGraphics/TheUnitCircle-10"/>\\
               <m>\theta=\frac{\pi}{3}</m> in standard position &amp;
               <m>30^{\circ} - 60^{\circ} - 90^{\circ}</m> triangle </tabular> </sidebyside>
             </p>
@@ -317,8 +317,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-11.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-12.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-11"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-12"/></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -348,22 +348,22 @@
 
     <figure xml:id="fig_circle8">
       <caption>Reference angle <m>\alpha</m> for a Quadrant I angle</caption>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-13.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-13"/>
     </figure>
 
     <figure xml:id="fig_circle9">
       <caption>Reference angle <m>\alpha</m> for a Quadrant II angle</caption>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-14.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-14"/>
     </figure>
 
     <figure xml:id="fig_circle10">
       <caption>Reference angle <m>\alpha</m> for a Quadrant III angle</caption>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-15.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-15"/>
     </figure>
 
     <figure xml:id="fig_circle11">
       <caption>Reference angle <m>\alpha</m> for a Quadrant IV angle</caption>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-16.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-16"/>
     </figure>
 
     <p>
@@ -388,9 +388,12 @@
       In the table below,
       we summarize the values which we consider essential and must be memorized.
     </p>
+  </introduction>
 
+  <subsection xml:id="CosineSineFacts">
+    <title>PLACEHOLDER</title>
     <p>
-      \phantomsection <em>Cosine and Sine Values of Common Angles</em>
+      <em>Cosine and Sine Values of Common Angles</em>
       <me>
         \begin{array}{|c|c||c|c|} \hline
         \theta (\mbox{degrees} ) \amp   \theta (\mbox{radians} ) \amp  \cos(\theta) \amp  \sin(\theta) \\ \hline
@@ -465,9 +468,9 @@
                 so the Reference Angle Theorem gives:
                 <m>\cos\left(\frac{11 \pi}{6} \right) = \cos\left(\frac{\pi}{6} \right) = \frac{\sqrt{3}}{2}</m> and
           <m>\sin\left(\frac{11\pi}{6}\right) = -\sin\left(\frac{\pi}{6}\right) = -\frac{1}{2}</m>. <figure xml:id="fig_circle12"> <caption>Finding <m>\cos\left(\frac{5\pi}{4}\right)</m> and
-          <m>\sin\left(\frac{5\pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-17.pdf"/> </figure> <figure xml:id="fig_circle13"> <caption>Finding <m>\cos\left(\frac{11 \pi}{6}\right)</m> and
-                <m>\sin\left(\frac{11 \pi}{6}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-18.pdf"/> </figure> <figure xml:id="fig_circle14"> <caption>Finding <m>\cos\left(-\frac{5 \pi}{4}\right)</m> and
-                <m>\sin\left(-\frac{5 \pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-19.pdf"/> </figure>
+          <m>\sin\left(\frac{5\pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-17"/> </figure> <figure xml:id="fig_circle13"> <caption>Finding <m>\cos\left(\frac{11 \pi}{6}\right)</m> and
+                <m>\sin\left(\frac{11 \pi}{6}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-18"/> </figure> <figure xml:id="fig_circle14"> <caption>Finding <m>\cos\left(-\frac{5 \pi}{4}\right)</m> and
+                <m>\sin\left(-\frac{5 \pi}{4}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-19"/> </figure>
               </p>
             </li>
 
@@ -492,7 +495,7 @@
                 Since <m>\theta</m> and <m>\alpha</m> are coterminal,
                 <m>\cos\left(\frac{7\pi}{3}\right) = \cos\left(\frac{\pi}{3}\right) = \frac{1}{2}</m> and
                 <m>\sin\left(\frac{7\pi}{3}\right) = \sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}</m>. <figure xml:id="fig_circle15"> <caption>Finding <m>\cos\left(\frac{7 \pi}{3}\right)</m> and
-                <m>\sin\left(\frac{7 \pi}{3}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-20.pdf"/> </figure>
+                <m>\sin\left(\frac{7 \pi}{3}\right)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-20"/> </figure>
               </p>
             </li>
           </ol>
@@ -523,7 +526,7 @@
     <sidebyside>
       <idx><h>Unit Circle</h><h>important points</h></idx>
 
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-21.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-21"/>
     </sidebyside>
     <p>
       The next example summarizes all of the important ideas discussed thus far in the section.
@@ -589,7 +592,7 @@
                 Hence, <m>\sin(\alpha) = \frac{12}{13}</m>.
                 To plot <m>\alpha</m> in standard position,
                 we begin our rotation on the positive <m>x</m>-axis to the ray which contains the point <m>(\cos(\alpha), \sin(\alpha)) = \left(\frac{5}{13}, \frac{12}{13}\right)</m>:
-                see <xref ref="fig_circle16">Figure</xref>. <figure xml:id="fig_circle16"> <caption>Sketching <m>\alpha</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-22.pdf"/> </figure>
+                see <xref ref="fig_circle16">Figure</xref>. <figure xml:id="fig_circle16"> <caption>Sketching <m>\alpha</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-22"/> </figure>
               </p>
             </li>
 
@@ -610,7 +613,7 @@
                   <m>\cos(\theta)</m> and <m>\sin(\theta)</m> are negative, hence,
                   <m>\cos(\theta) = - \frac{5}{13}</m> and
           <m>\sin(\theta) = - \frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
-          <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-23.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-24.pdf"/></cell> </row> <row> <cell>Visualizing
+          <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-23"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-24"/></cell> </row> <row> <cell>Visualizing
                   <m>\theta = \pi+\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
                 </p>
               </li>
@@ -627,7 +630,7 @@
                 the Reference Angle Theorem gives:
                 <m>\cos(\theta) = \frac{5}{13}</m> and
           <m>\sin(\theta) = -\frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
-                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(b)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-25.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-26.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(b)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-25"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-26"/></cell> </row> <row> <cell>Visualizing
                 <m>\theta = 2\pi-\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
               </p>
               </li>
@@ -642,7 +645,7 @@
                 we end up in Quadrant II. Using the Reference Angle Theorem,
                 we get <m>\cos(\theta) = -\frac{5}{13}</m> and
           <m>\sin(\theta) = \frac{12}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
-                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(c)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-27.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-28.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(c)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-27"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-28"/></cell> </row> <row> <cell>Visualizing
                 <m>\theta = 3\pi-\alpha</m></cell> <cell><m>\theta</m> has reference angle <m>\alpha</m></cell> </row> </tabular> </sidebyside>
               </p>
               </li>
@@ -662,7 +665,7 @@
                 Hence, <m>x = \cos(\theta) = -\frac{12}{13}</m>.
                 Similarly,
           we find <m>y = \sin(\theta) = \frac{5}{13}</m>. <!-- <caption>Finding <m>\cos(\theta)</m> and
-                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-29.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-30.pdf"/></cell> </row> <row> <cell>Visualizing
+                <m>\sin(\theta)</m> in Example \ref{advancedrefangleex}.2(a)</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-29"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-30"/></cell> </row> <row> <cell>Visualizing
                 <m>\theta = \frac{\pi}{2}+\alpha</m></cell> <cell>Using symmetry to determine <m>Q(x,y)</m></cell> </row> </tabular> </sidebyside>
               </p>
               </li>
@@ -737,8 +740,8 @@
               <sidebyside>
                 <tabular>
                   <row>
-                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-31.pdf"/></cell>
-                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-32.pdf"/></cell>
+                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-31"/></cell>
+                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-32"/></cell>
                   </row>
                 </tabular>
               </sidebyside>
@@ -772,7 +775,7 @@
               From this,
           we determine <m>\theta</m> is a Quadrant III or Quadrant IV angle with reference angle
               <m>\frac{\pi}{6}</m>. <!-- <caption>Angles with
-              <m>\sin(\theta)=-\frac{1}{2}</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-33.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-34.pdf"/></cell> </row> </tabular> </sidebyside> In Quadrant III, one solution is <m>\frac{7\pi}{6}</m>,
+              <m>\sin(\theta)=-\frac{1}{2}</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-33"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-34"/></cell> </row> </tabular> </sidebyside> In Quadrant III, one solution is <m>\frac{7\pi}{6}</m>,
               so we capture all Quadrant III solutions by adding integer multiples of <m>2\pi</m>:
               <m>\theta = \frac{7\pi}{6} + 2\pi k</m>.
               In Quadrant IV, one solution is
@@ -787,7 +790,7 @@
               The angles with <m>\cos(\theta) = 0</m> are quadrantal angles whose terminal sides,
               when plotted in standard position,
               lie along the <m>y</m>-axis. <!-- <caption>Angles with
-              <m>\cos(\theta)=0</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-35.pdf"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-36.pdf"/></cell> </row> </tabular> </sidebyside> While,
+              <m>\cos(\theta)=0</m></caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-35"/></cell> <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-36"/></cell> </row> </tabular> </sidebyside> While,
               technically speaking,
               <m>\frac{\pi}{2}</m> isn't a reference angle we can nonetheless use it to find our answers.
               If we follow the procedure set forth in the previous examples,
@@ -820,7 +823,7 @@
       <m>\theta = \frac{11\pi}{6} + 2\pi k</m> for integers <m>k</m>,
       we leave it to the reader to show they represent the same list of angles.
     </p>
-  </introduction>
+  </subsection>
 
   <subsection xml:id="cosinesinebeyond">
     <title>Beyond the Unit Circle</title>
@@ -857,8 +860,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-37.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-38.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-37"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-38"/></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -928,7 +931,7 @@
                 with <m>x = 4</m> and <m>y = -2</m>,
                 we find <m>r = \sqrt{(4)^2 + (-2)^2} = \sqrt{20} = 2 \sqrt{5}</m> so that
                 <m>\cos(\theta) = \frac{x}{r} = \frac{4}{2 \sqrt{5}} = \frac{2 \sqrt{5}}{5}</m> and <m>\sin(\theta) = \frac{y}{r} = \frac{-2}{2 \sqrt{5}} = -\frac{\sqrt{5}}{5}</m>:
-                see <xref ref="fig_circle25">Figure</xref>. <figure xml:id="fig_circle25"> <caption>The terminal side of <m>\theta</m> contains <m>Q(4,-2)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-39.pdf"/> </figure>
+                see <xref ref="fig_circle25">Figure</xref>. <figure xml:id="fig_circle25"> <caption>The terminal side of <m>\theta</m> contains <m>Q(4,-2)</m></caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-39"/> </figure>
               </p>
             </li>
 
@@ -939,7 +942,7 @@
                 Viewing the Equator as the <m>x</m>-axis,
                 the value we seek is the <m>x</m>-coordinate of the point <m>Q(x,y)</m> indicated in <xref ref="fig_circle26">Figure</xref>
                 <figure xml:id="fig_circle26"> <caption>A point on the Earth at
-                <m>41.628^\circ</m>N</caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-40.pdf"/> </figure> Using <xref ref="cosinesinecircle">Theorem</xref>,
+                <m>41.628^\circ</m>N</caption> <img src="figures/IntroTrigGraphics/TheUnitCircle-40"/> </figure> Using <xref ref="cosinesinecircle">Theorem</xref>,
                 we get <m>x = 3960 \cos\left(41.628^{\circ}\right)</m>.
                 Using a calculator in <q>degree</q> mode,
                 we find <m>3960 \cos\left(41.628^{\circ}\right) \approx 2960</m>.
@@ -988,7 +991,7 @@
     -->
 
     <sidebyside>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-41.pdf"/>
+      <img src="figures/IntroTrigGraphics/TheUnitCircle-41"/>
     </sidebyside>
     <example xml:id="Lakelandrotates">
       <title>Motion on the Earth's surface</title>
@@ -1032,13 +1035,13 @@
       <caption>Relating triangular and circular trigonometry</caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-42.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-42"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-43.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-43"/></cell>
         </row>
       </tabular>
     </table>
@@ -1074,7 +1077,7 @@
 
         <figure xml:id="fig_tritrig2">
           <caption>The triangle for <xref ref="righttriangleex">Example</xref></caption>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-44.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-44"/>
         </figure>
       </statement>
       <solution>
@@ -1105,7 +1108,7 @@
 
         <figure xml:id="fig_tritrig3">
           <caption>The completed triangle for <xref ref="righttriangleex">Example</xref></caption>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-45.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-45"/>
         </figure>
       </solution>
     </example>
@@ -1147,13 +1150,13 @@
       <caption>Defining <m>\cos(t)</m> and <m>\sin(t)</m> as functions of a real variable</caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-46.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-46"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-47.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-47"/></cell>
         </row>
       </tabular>
     </table>
@@ -1204,9 +1207,12 @@
         </ul>
       </statement>
     </theorem>
+  </subsection>
 
+  <subsection xml:id="cosinesineequationsrealnumbers">
+    <title>PLACEHOLDER</title>
     <p>
-      \phantomsection Suppose, as in the Exercises,
+      Suppose, as in the Exercises,
       we are asked to solve an equation such as <m>\sin(t) = -\frac{1}{2}</m>.
       As we have already mentioned,
       the distinction between <m>t</m> as a real number and as an angle
@@ -1943,7 +1949,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-48.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-48"/>
         </p>
       </statement>
       <answer>
@@ -1961,7 +1967,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-49.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-49"/>
         </p>
       </statement>
       <answer>
@@ -1977,7 +1983,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-50.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-50"/>
         </p>
       </statement>
       <answer>
@@ -1995,7 +2001,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TheUnitCircle-48.pdf"/>
+          <img src="figures/IntroTrigGraphics/TheUnitCircle-48"/>
         </p>
       </statement>
       <answer>

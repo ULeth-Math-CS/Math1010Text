@@ -650,7 +650,7 @@
                 and <m>g(x) = e^{x \ln(2)}</m> (in blue).
                 Their graphs are indistinguishable which provides evidence that they are the same function:
                 see <xref ref="fig_logprop1">Figure</xref>. <figure xml:id="fig_logprop1"> <caption><m>y=f(x)=2^x</m> and
-                <m>y=g(x)=e^{x\ln(2)}</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs03.pdf"/> </figure>
+                <m>y=g(x)=e^{x\ln(2)}</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs03"/> </figure>
               </p>
             </li>
 
@@ -672,7 +672,7 @@
                 We write <m>\ln(x) = \log_{e}(x) = \frac{\log(x)}{\log(e)}</m>.
                 We graph both <m>f(x) = \ln(x)</m> and
                 <m>g(x) = \frac{\log(x)}{\log(e)}</m> and find both graphs appear to be identical. <figure xml:id="fig_logprop2"> <caption><m>y=f(x)=2^x</m> and
-                <m>y=g(x)=e^{x\ln(2)}</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs04.pdf"/> </figure>
+                <m>y=g(x)=e^{x\ln(2)}</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs04"/> </figure>
               </p>
             </li>
           </ol>

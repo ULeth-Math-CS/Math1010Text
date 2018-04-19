@@ -19,7 +19,7 @@
       </p>
     </aside>
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-21.pdf"/>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-21"/>
     </p>
 
     <p>
@@ -85,8 +85,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-22.pdf"/></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-23.pdf"/></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-22"/></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-23"/></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -161,7 +161,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-24.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-24"/>
         </p>
       </solution>
     </example>
@@ -174,14 +174,10 @@
       see <xref ref="quadrant">Figure</xref>.
     </p>
 
-    <table xml:id="quadrant">
+    <figure xml:id="quadrant">
       <caption>The four quadrants of the Cartesian plane</caption>
-      <tabular>
-        <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-25.pdf"/></cell>
-        </row>
-      </tabular>
-    </table>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-25"/>
+    </figure>
 
     <p>
       For example,
@@ -246,14 +242,10 @@
       as are <m>Q</m> and <m>S</m>.
     </p>
 
-    <table xml:id="fig_plansymm">
+    <figure xml:id="fig_plansymm">
       <caption>The three types of symmetry in the plane</caption>
-      <tabular>
-        <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-26.pdf"/></cell>
-        </row>
-      </tabular>
-    </table>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-26"/>
+    </figure>
 
     <example xml:id="ex_planesymm">
       <title>Finding points exhibiting symmetry</title>
@@ -319,7 +311,7 @@
 
         <figure xml:id="fig_pointsymm">
           <caption>The point <m>P(-2,3)</m> and its three reflections</caption>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-27.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-27"/>
         </figure>
       </solution>
     </example>
@@ -367,7 +359,7 @@
     </insight>
   </introduction>
 
-  <subsection xml:id="inversemidpoint">
+  <subsection>
     <title>Distance in the Plane</title>
     <p>
       Another important concept in Geometry is the notion of length.
@@ -389,13 +381,13 @@
       <caption>Distance between <m>P</m> and <m>Q</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-28.pdf"/></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-28"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-29.pdf"/></cell>
+          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-29"/></cell>
         </row>
       </tabular>
     </table>
@@ -498,14 +490,10 @@
       </solution>
     </example>
 
-    <table xml:id="fig_pointdist">
+    <figure xml:id="fig_pointdist">
       <caption>Diagram for <xref ref="ex_pointwithdist">Example</xref></caption>
-      <tabular>
-        <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-30.pdf"/></cell>
-        </row>
-      </tabular>
-    </table>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-30"/>
+    </figure>
 
     <p>
       Related to finding the distance between two points is the problem of finding the
@@ -516,14 +504,10 @@
       the <em>midpoint</em> <m>M</m> of <m>P</m> and <m>Q</m> is defined to be the point on the line segment connecting <m>P</m> and <m>Q</m> whose distance from <m>P</m> is equal to its distance from <m>Q</m>.
     </p>
 
-    <table xml:id="fig_midptseg">
+    <figure xml:id="fig_midptseg">
       <caption>The midpoint of a line segment</caption>
-      <tabular>
-        <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-31.pdf"/></cell>
-        </row>
-      </tabular>
-    </table>
+      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-31"/>
+    </figure>
 
     <p>
       If we think of reaching <m>M</m> by going <q>halfway over</q>
@@ -568,9 +552,12 @@
         </p>
       </solution>
     </example>
+  </subsection>
 
+  <subsection xml:id="inversemidpoint">
+    <title>PLACEHOLDER</title>
     <p>
-      \phantomsection We close with a more abstract application of the Midpoint Formula.
+      We close with a more abstract application of the Midpoint Formula.
       We will revisit the following example in <xref ref="inversemidpointex2">Exercise</xref>
       in <xref ref="LinearFunctions">Section</xref>.
     </p>
@@ -610,7 +597,7 @@
           Plot and label the points <m>\;A(-3, -7)</m>,
           <m>\;B(1.3, -2)</m>, <m>\;C(\pi, \sqrt{10})</m>,
           <m>\;D(0, 8)</m>, <m>\;E(-5.5, 0)</m>, <m>\;F(-8, 4)</m>,
-          <m>\;G(9.2, -7.8)</m> and <m>H(7, 5)</m> in the Cartesian Coordinate Plane given below. <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-35.pdf"/>
+          <m>\;G(9.2, -7.8)</m> and <m>H(7, 5)</m> in the Cartesian Coordinate Plane given below. <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-35"/>
         </p>
       </statement>
       <answer>
@@ -622,7 +609,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-46.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-46"/>
         </p>
       </answer>
     </exercise>

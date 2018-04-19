@@ -42,7 +42,7 @@
 
     <figure xml:id="fig_parabstd">
       <caption>The graph of the basic quadratic function <m>f(x)=x^2</m></caption>
-      <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-1.pdf"/>
+      <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-1"/>
     </figure>
 
     <p>
@@ -80,7 +80,7 @@
           <ol>
             <figure xml:id="fig_parabgr1">
               <caption>The graph <m>y=x^2</m> with points labelled</caption>
-              <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-2.pdf"/>
+              <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-2"/>
             </figure>
 
             <li>
@@ -101,7 +101,7 @@
                 <m>(-3,1)</m> to <m>(-3,-2)</m>,
                 <m>(-2,0)</m> to <m>(-2,3)</m>,
                 <m>(-1,1)</m> to <m>(-1,-2)</m> and <m>(0,4)</m> to <m>(0,1)</m>.
-                We connect the dots in parabolic fashion to get the graph in <xref ref="fig_parabgr2">Figure</xref>. <figure xml:id="fig_parabgr2"> <caption><m>g(x)=f(x+2)-3 = (x+2)^2-3</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-3.pdf"/> </figure> From the graph,
+                We connect the dots in parabolic fashion to get the graph in <xref ref="fig_parabgr2">Figure</xref>. <figure xml:id="fig_parabgr2"> <caption><m>g(x)=f(x+2)-3 = (x+2)^2-3</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-3"/> </figure> From the graph,
                 we see that the vertex has moved from <m>(0,0)</m> on the graph of
                 <m>y = f(x)</m> to <m>(-2,-3)</m> on the graph of <m>y = g(x)</m>.
                 This sets <m>[-3, \infty)</m> as the range of <m>g</m>.
@@ -143,7 +143,7 @@
                 <m>(2,1)</m> to <m>(2,-1)</m>,
                 <m>(3,0)</m> to <m>(3,1)</m>,
                 <m>(4,1)</m> to <m>(4,-1)</m> and <m>(5,4)</m> to <m>(5,-7)</m>,
-                giving us the graph in <xref ref="fig_parabgr3">Figure</xref>. <figure xml:id="fig_parabgr3"> <caption><m>h(x) = -2f(x-3)+1 = -2(x-3)^2+1</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-5.pdf"/> </figure> The vertex is <m>(3,1)</m> which makes the range of <m>h</m> <m>(-\infty, 1]</m>.
+                giving us the graph in <xref ref="fig_parabgr3">Figure</xref>. <figure xml:id="fig_parabgr3"> <caption><m>h(x) = -2f(x-3)+1 = -2(x-3)^2+1</m></caption> <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-5"/> </figure> The vertex is <m>(3,1)</m> which makes the range of <m>h</m> <m>(-\infty, 1]</m>.
                 From our graph, we know that there are two <m>x</m>-intercepts,
                 so we set <m>y = h(x) = 0</m> and solve.
                 We get <m>-2(x-3)^2+1 = 0</m> which gives <m>(x-3)^2 = \frac{1}{2}</m>.
@@ -304,13 +304,13 @@
       <caption>The axis of symmetry of a parabola</caption>
       <tabular>
         <row>
-          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-6.pdf"/></cell>
+          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-6"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-7.pdf"/></cell>
+          <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-7"/></cell>
         </row>
       </tabular>
     </table>
@@ -385,7 +385,7 @@
 
                 <figure xml:id="fig_parabgr4">
                   <caption><m>f(x) = x^2-4x+3</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-8.pdf"/>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-8"/>
                 </figure>
 
                 Of course, we can always check our answer by multiplying out
@@ -430,7 +430,7 @@
 
                 <figure xml:id="fig_parabgr5">
                   <caption><m>g(x) = 6-x-x^2</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-9.pdf"/>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-9"/>
                 </figure>
 
                 From <m>g(x) =  -\left(x +\frac{1}{2}\right)^2 + \frac{25}{4}</m>,
@@ -736,7 +736,7 @@
 
                 <figure xml:id="fig_parabprofit">
                   <caption>The graph of the profit function <m>P(x)</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-10.pdf"/>
+                  <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-10"/>
                 </figure>
 
               </p>
@@ -819,7 +819,7 @@
 
         <figure xml:id="fig_parabalpaca">
           <caption>A diagram of pasture dimensions</caption>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-11.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-11"/>
         </figure>
 
         <p>
@@ -935,7 +935,7 @@
           <caption>Obtaining the graph of <m>f(x)=\lvert x^2-x-6\rvert</m></caption>
           <tabular>
             <row>
-              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-12.pdf"/></cell>
+              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-12"/></cell>
             </row>
             <row>
               <cell><m>y=x^2-x-6</m></cell>
@@ -944,7 +944,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-13.pdf"/></cell>
+              <cell><img src="figures/LinearQuadraticGraphics/QuadraticFunctions-13"/></cell>
             </row>
             <row>
               <cell><m>y=\lvert x^2-x-6</m></cell>
@@ -1036,7 +1036,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-14.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-14"/>
         </p>
       </answer>
     </exercise>
@@ -1084,7 +1084,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-15.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-15"/>
         </p>
       </answer>
     </exercise>
@@ -1132,7 +1132,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-16.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-16"/>
         </p>
       </answer>
     </exercise>
@@ -1180,7 +1180,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-17.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-17"/>
         </p>
       </answer>
     </exercise>
@@ -1228,7 +1228,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-18.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-18"/>
         </p>
       </answer>
     </exercise>
@@ -1276,7 +1276,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-19.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-19"/>
         </p>
       </answer>
     </exercise>
@@ -1324,7 +1324,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-20.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-20"/>
         </p>
       </answer>
     </exercise>
@@ -1372,7 +1372,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-21.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-21"/>
         </p>
       </answer>
     </exercise>
@@ -1420,7 +1420,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-22.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-22"/>
         </p>
 
         <p>
@@ -1989,7 +1989,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-23.pdf"/>
+          <img src="figures/LinearQuadraticGraphics/QuadraticFunctions-23"/>
         </p>
       </answer>
     </exercise>

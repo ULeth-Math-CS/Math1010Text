@@ -86,7 +86,7 @@
 
     <figure xml:id="genericsinsuoidfigure">
       <caption>Properties of a generic sinusoid <idx><h>sinusoid</h><h>graph of</h></idx></caption>
-      <img src="figures/AppExtGraphics/Sinusoid-1.pdf"/>
+      <img src="figures/AppExtGraphics/Sinusoid-1"/>
     </figure>
 
     <p>
@@ -117,7 +117,7 @@
 
         <figure xml:id="fig_bigwheel">
           <caption>The Giant Wheel</caption>
-          <img src="figures/AppExtGraphics/Sinusoid-2.pdf"/>
+          <img src="figures/AppExtGraphics/Sinusoid-2"/>
         </figure>
 
         <p>
@@ -157,7 +157,7 @@
 
         <figure xml:id="fig_sinusoid1">
           <caption>The graph <m>y=h(t)=64\sin\left(\frac{4\pi}{127}t-\frac{\pi}{2}\right)+72</m></caption>
-          <img src="figures/AppExtGraphics/Sinusoid-3.pdf"/>
+          <img src="figures/AppExtGraphics/Sinusoid-3"/>
         </figure>
       </solution>
     </example>
@@ -261,9 +261,9 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/Sinusoid-5.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/Sinusoid-6.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/Sinusoid-7.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/Sinusoid-5"/></cell>
+          <cell><img src="figures/AppExtGraphics/Sinusoid-6"/></cell>
+          <cell><img src="figures/AppExtGraphics/Sinusoid-7"/></cell>
         </row>
         <row>
           <cell><m>x(t) = 0</m> at the</cell>
@@ -418,7 +418,7 @@
                 <m>x(t) \lt 0</m> means the object is above the equilibrium position,
                 the fact our graph in <xref ref="fig_sinusoid2">Figure</xref>
                 is crossing through the <m>t</m>-axis from positive <m>x</m> to negative <m>x</m> at
-                <m>t = \frac{\pi}{4}</m> confirms our answer. <figure xml:id="fig_sinusoid2"> <caption><m>y=x(t)=3\sin(2t+\frac{\pi}{2})</m> in <xref ref="freeudampedex">Example</xref>.1</caption> <img src="figures/AppExtGraphics/Sinusoid-8.pdf"/> </figure>
+                <m>t = \frac{\pi}{4}</m> confirms our answer. <figure xml:id="fig_sinusoid2"> <caption><m>y=x(t)=3\sin(2t+\frac{\pi}{2})</m> in <xref ref="freeudampedex">Example</xref>.1</caption> <img src="figures/AppExtGraphics/Sinusoid-8"/> </figure>
               </p>
             </li>
 
@@ -465,7 +465,7 @@
                 <figure xml:id="fig_sinusoid3">
                   <caption>The graph
           <m>y=5\sin(2x+[\pi-\arcsin(\frac{3}{5})])</m> in <xref ref="freeudampedex">Example</xref>.2</caption>
-                  <img src="figures/AppExtGraphics/Sinusoid01.pdf"/>
+                  <img src="figures/AppExtGraphics/Sinusoid01"/>
                 </figure>
 
               </p>
@@ -504,8 +504,8 @@
           <li>
             <p>
               Find the period of <m>x(t) = 5\sin(6t) - 5\sin\left(8t\right)</m>.
-              Graph <m>x(t)</m> using a graphing utility. <table xml:id="fig_sinusoid4"> <caption>Graphing <m>x(t)</m> in <xref ref="underdampedresonance">Example</xref>.1</caption> <tabular> <row> <cell><img src="figures/AppExtGraphics/Sinusoid02.pdf"/></cell> </row> <row> <cell>(a)
-              <m>y=10e^{-x/5}\sin(x+\frac{\pi}{3})</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/AppExtGraphics/Sinusoid03.pdf"/></cell> </row> <row> <cell>(b) {\color{blue} <m>y=10e^{-x/5}\sin(x+\frac{\pi}{3})</m>}, {\color{red}
+              Graph <m>x(t)</m> using a graphing utility. <table xml:id="fig_sinusoid4"> <caption>Graphing <m>x(t)</m> in <xref ref="underdampedresonance">Example</xref>.1</caption> <tabular> <row> <cell><img src="figures/AppExtGraphics/Sinusoid02"/></cell> </row> <row> <cell>(a)
+              <m>y=10e^{-x/5}\sin(x+\frac{\pi}{3})</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/AppExtGraphics/Sinusoid03"/></cell> </row> <row> <cell>(b) {\color{blue} <m>y=10e^{-x/5}\sin(x+\frac{\pi}{3})</m>}, {\color{red}
               <m>y=\pm 10e^{-x/5}</m>}</cell> </row> </tabular> </table>
             </p>
           </li>
@@ -566,7 +566,7 @@
                   <caption>Graphing <m>x(t)</m> in <xref ref="underdampedresonance">Example</xref>.2</caption>
                   <tabular>
                     <row>
-                      <cell><img src="figures/AppExtGraphics/Sinusoid04.pdf"/></cell>
+                      <cell><img src="figures/AppExtGraphics/Sinusoid04"/></cell>
                     </row>
                     <row>
                       <cell>(a) <m>y=2(x+3)\sin(2x+\frac{\pi}{4}</m></cell>
@@ -575,7 +575,7 @@
                       <cell></cell>
                     </row>
                     <row>
-                      <cell><img src="figures/AppExtGraphics/Sinusoid05.pdf"/></cell>
+                      <cell><img src="figures/AppExtGraphics/Sinusoid05"/></cell>
                     </row>
                     <row>
                       <cell>(b) {\color{blue}
@@ -617,7 +617,7 @@
                 <m>y = \pm 10 \sin(x)</m> over <m>[0,2\pi]</m>.
                 This is an example of the <q>beat</q> phenomena,
                 and the curious reader is invited to explore this concept as well. (A good place to start is this article on <url href="http://en.wikipedia.org/wiki/Beat_(acoustics)"><em>beats</em></url>.) <figure xml:id="fig_sinusoid6"> <caption>Graphing <m>x(t)</m> in <xref ref="underdampedresonance">Example</xref>.2</caption> <sidebyside> <figure> <caption>(a)
-          <m>y = 5\sin(6x) - 5\sin(8x)</m> over <m>[0,\pi]</m></caption> <img src="figures/AppExtGraphics/Sinusoid06.pdf"/> </figure> <figure> <caption>{\color{red} <m>y = \pm 10 \sin(x)</m> over
+          <m>y = 5\sin(6x) - 5\sin(8x)</m> over <m>[0,\pi]</m></caption> <img src="figures/AppExtGraphics/Sinusoid06"/> </figure> <figure> <caption>{\color{red} <m>y = \pm 10 \sin(x)</m> over
                 <m>[0,2\pi]</m>}</caption> (b) {\color{blue}
                 <m>y = 5\sin(6x) - 5\sin(8x)</m>} and </figure> </sidebyside> </figure>
               </p>
@@ -790,7 +790,7 @@
           Check with your friendly neighborhood physicist to make sure.</fn></p>
 
         <p>
-          <img src="figures/AppExtGraphics/Sinusoid-9.pdf"/>
+          <img src="figures/AppExtGraphics/Sinusoid-9"/>
         </p>
 
         <p>

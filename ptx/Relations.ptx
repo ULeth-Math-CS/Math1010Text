@@ -43,7 +43,7 @@
 
     <figure xml:id="fig_relgraph">
       <caption>The graph of the relation <m>R=\{(-2,1), (4,3), (0,-3)\}</m></caption>
-      <img src="figures/RelationsandFunctionsGraphics/Relations-1.pdf"/>
+      <img src="figures/RelationsandFunctionsGraphics/Relations-1"/>
     </figure>
 
     <p>
@@ -52,7 +52,7 @@
 
     <figure xml:id="fig_relgraphA">
       <caption>The graph of <m>A</m></caption>
-      <img src="figures/RelationsandFunctionsGraphics/Relations-2.pdf"/>
+      <img src="figures/RelationsandFunctionsGraphics/Relations-2"/>
     </figure>
 
     <example xml:id="relationgraphingexample">
@@ -147,7 +147,7 @@
                 </aside>
                 <figure xml:id="fig_relgraphHLS">
                   <caption>The graph of <m>HLS_1</m></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/Relations-3.pdf"/>
+                  <img src="figures/RelationsandFunctionsGraphics/Relations-3"/>
                 </figure>
 
               </p>
@@ -171,7 +171,7 @@
                 There is no real number that comes
                 <q>immediately before</q> <m>4</m>,
                 so to describe the set of points we want,
-                we draw the horizontal line segment starting at <m>(-2,3)</m> and draw an open circle at <m>(4,3)</m> as depicted below on the right. <table xml:id="HLS2opencircle"> <caption>Getting the right graph for <m>HLS_2</m></caption> <tabular> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-4.pdf"/></cell> </row> <row> <cell>This is NOT the correct graph of <m>HLS_{2}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-5.pdf"/></cell> </row> <row> <cell>The graph of <m>HLS_{2}</m></cell> </row> </tabular> </table>
+                we draw the horizontal line segment starting at <m>(-2,3)</m> and draw an open circle at <m>(4,3)</m> as depicted below on the right. <table xml:id="HLS2opencircle"> <caption>Getting the right graph for <m>HLS_2</m></caption> <tabular> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-4"/></cell> </row> <row> <cell>This is NOT the correct graph of <m>HLS_{2}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/RelationsandFunctionsGraphics/Relations-5"/></cell> </row> <row> <cell>The graph of <m>HLS_{2}</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -196,7 +196,7 @@
                 the relation <m>H = \{ (x,y) \, | \, y = -2 \}</m> is similar to the relation <m>V</m> above in that only one of the coordinates,
                 in this case the <m>y</m>-coordinate, is specified,
                 leaving <m>x</m> to be <q>free</q>.
-                Plotting some representative points gives us the horizontal line <m>y=-2</m>. <figure xml:id="fig_relgraphV"> <caption>The graph of <m>V</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-6.pdf"/> </figure> <figure xml:id="fig_relgraphH"> <caption>The graph of <m>H</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-7.pdf"/> </figure>
+                Plotting some representative points gives us the horizontal line <m>y=-2</m>. <figure xml:id="fig_relgraphV"> <caption>The graph of <m>V</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-6"/> </figure> <figure xml:id="fig_relgraphH"> <caption>The graph of <m>H</m></caption> <img src="figures/RelationsandFunctionsGraphics/Relations-7"/> </figure>
               </p>
             </li>
 
@@ -230,7 +230,7 @@
                 -->
 
                 <sidebyside>
-                  <img src="figures/RelationsandFunctionsGraphics/Relations-8.pdf"/>
+                  <img src="figures/RelationsandFunctionsGraphics/Relations-8"/>
                 </sidebyside>
               </p>
             </li>
@@ -468,7 +468,7 @@
               <cell></cell>
             </row>
           </tabular>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-9.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-9"/>
         </table>
 
         <p>
@@ -481,7 +481,7 @@
 
         <figure xml:id="fig_completecurve">
           <caption>The completed graph of <m>x^2+y^3=1</m></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-10.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-10"/>
         </figure>
 
         <p>
@@ -682,7 +682,7 @@
 
         <figure xml:id="fig_interceptplot">
           <caption>Plotting the data so far</caption>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-11.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-11"/>
         </figure>
 
         <p>
@@ -714,7 +714,7 @@
 
         <figure xml:id="fig_finalplot">
           <caption>The final result</caption>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-12.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-12"/>
         </figure>
       </solution>
     </example>
@@ -791,7 +791,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-23.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-23"/>
         </p>
       </answer>
     </exercise>
@@ -805,7 +805,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-24.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-24"/>
         </p>
       </answer>
     </exercise>
@@ -817,7 +817,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-25.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-25"/>
         </p>
       </answer>
     </exercise>
@@ -829,7 +829,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-26.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-26"/>
         </p>
       </answer>
     </exercise>
@@ -841,7 +841,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-27.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-27"/>
         </p>
       </answer>
     </exercise>
@@ -853,7 +853,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-28.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-28"/>
         </p>
       </answer>
     </exercise>
@@ -865,7 +865,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-29.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-29"/>
         </p>
       </answer>
     </exercise>
@@ -877,7 +877,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-30.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-30"/>
         </p>
       </answer>
     </exercise>
@@ -889,7 +889,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-31.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-31"/>
         </p>
       </answer>
     </exercise>
@@ -901,7 +901,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-32.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-32"/>
         </p>
       </answer>
     </exercise>
@@ -913,7 +913,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-33.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-33"/>
         </p>
       </answer>
     </exercise>
@@ -925,7 +925,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-34.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-34"/>
         </p>
       </answer>
     </exercise>
@@ -937,7 +937,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-35.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-35"/>
         </p>
       </answer>
     </exercise>
@@ -949,7 +949,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-36.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-36"/>
         </p>
       </answer>
     </exercise>
@@ -961,7 +961,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-37.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-37"/>
         </p>
       </answer>
     </exercise>
@@ -973,7 +973,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-38.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-38"/>
         </p>
       </answer>
     </exercise>
@@ -985,7 +985,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-39.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-39"/>
         </p>
       </answer>
     </exercise>
@@ -997,7 +997,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-40.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-40"/>
         </p>
       </answer>
     </exercise>
@@ -1009,7 +1009,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-41.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-41"/>
         </p>
       </answer>
     </exercise>
@@ -1021,7 +1021,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-42.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-42"/>
         </p>
       </answer>
     </exercise>
@@ -1032,7 +1032,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-14.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-14"/>
         </p>
 
         <p>
@@ -1048,7 +1048,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-15.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-15"/>
         </p>
 
         <p>
@@ -1064,7 +1064,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-16.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-16"/>
         </p>
 
         <p>
@@ -1080,7 +1080,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-17.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-17"/>
         </p>
 
         <p>
@@ -1096,7 +1096,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-18.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-18"/>
         </p>
 
         <p>
@@ -1112,7 +1112,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-19.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-19"/>
         </p>
 
         <p>
@@ -1128,7 +1128,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-20.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-20"/>
         </p>
 
         <p>
@@ -1144,7 +1144,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-21.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-21"/>
         </p>
 
         <p>
@@ -1160,7 +1160,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-22.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-22"/>
         </p>
 
         <p>
@@ -1176,7 +1176,7 @@
     <exercise>
       <statement>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-22.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-22"/>
         </p>
 
         <p>
@@ -1200,7 +1200,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-43.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-43"/>
         </p>
 
         <p>
@@ -1216,7 +1216,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-44.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-44"/>
         </p>
 
         <p>
@@ -1232,7 +1232,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-45.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-45"/>
         </p>
 
         <p>
@@ -1248,7 +1248,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-46.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-46"/>
         </p>
 
         <p>
@@ -1264,7 +1264,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-47.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-47"/>
         </p>
 
         <p>
@@ -1280,7 +1280,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-48.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-48"/>
         </p>
 
         <p>
@@ -1350,7 +1350,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-49.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-49"/>
         </p>
 
         <p>
@@ -1386,7 +1386,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-50.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-50"/>
         </p>
 
         <p>
@@ -1422,7 +1422,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-51.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-51"/>
         </p>
 
         <p>
@@ -1458,7 +1458,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-52.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-52"/>
         </p>
 
         <p>
@@ -1496,7 +1496,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-53.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-53"/>
         </p>
 
         <p>
@@ -1532,7 +1532,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-54.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-54"/>
         </p>
 
         <p>
@@ -1571,7 +1571,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-55.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-55"/>
         </p>
 
         <p>
@@ -1607,7 +1607,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-56.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-56"/>
         </p>
 
         <p>
@@ -1643,7 +1643,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-57.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-57"/>
         </p>
 
         <p>
@@ -1679,7 +1679,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-58.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-58"/>
         </p>
 
         <p>
@@ -1723,7 +1723,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-59.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-59"/>
         </p>
 
         <p>
@@ -1759,7 +1759,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Relations-60.pdf"/>
+          <img src="figures/RelationsandFunctionsGraphics/Relations-60"/>
         </p>
 
         <p>

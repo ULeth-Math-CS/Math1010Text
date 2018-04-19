@@ -90,7 +90,7 @@
 
                 <figure xml:id="fig_ratineq1">
                   <caption>The sign diagram for the inequality in <xref ref="ex_ratineq">Example</xref></caption>
-                  <img src="figures/RationalsGraphics/RationalIneq-1.pdf"/>
+                  <img src="figures/RationalsGraphics/RationalIneq-1"/>
                 </figure>
 
                 We are interested in where <m>r(x) \geq 0</m>.
@@ -111,7 +111,7 @@
                 the solutions to <m>f(x)=g(x)</m> are the <m>x</m>-coordinates of the points where the graphs of <m>y=f(x)</m> and <m>y=g(x)</m> intersect.
                 The solution to <m>f(x) \geq g(x)</m> represents not only where the graphs meet,
                 but the intervals over which the graph of <m>y=f(x)</m> is above (<m>></m>) the graph of <m>g(x)</m>.
-                Entering these two functions into GeoGebra gives us <xref ref="fig_ratineq2">Figure</xref>. <figure xml:id="fig_ratineq2"> <caption>The initial plot of <m>f(x)</m> and <m>g(x)</m></caption> <img src="figures/RationalsGraphics/Rationals10.pdf"/> </figure> <figure xml:id="fig_ratineq3"> <caption>Zooming in to find the intersection points</caption> <img src="figures/RationalsGraphics/Rationals11.pdf"/> </figure> Zooming in and using the Intersect tool,
+                Entering these two functions into GeoGebra gives us <xref ref="fig_ratineq2">Figure</xref>. <figure xml:id="fig_ratineq2"> <caption>The initial plot of <m>f(x)</m> and <m>g(x)</m></caption> <img src="figures/RationalsGraphics/Rationals10"/> </figure> <figure xml:id="fig_ratineq3"> <caption>Zooming in to find the intersection points</caption> <img src="figures/RationalsGraphics/Rationals11"/> </figure> Zooming in and using the Intersect tool,
                 we see in <xref ref="fig_ratineq3">Figure</xref>
                 that the graphs cross when <m>x=-\frac{1}{2}</m> and <m>x=0</m>.
                 It is clear from the calculator that the graph of <m>y=f(x)</m> is above the graph of <m>y=g(x)</m> on
@@ -519,7 +519,7 @@
 
                 <figure xml:id="fig_ratineqsd">
                   <caption>The sign digram for <m>r(x)</m></caption>
-                  <img src="figures/RationalsGraphics/RationalIneq-2.pdf"/>
+                  <img src="figures/RationalsGraphics/RationalIneq-2"/>
                 </figure>
 
                 In the context of the problem,
@@ -578,7 +578,7 @@
 
         <figure xml:id="fig_ratineq4">
           <caption>The box in <xref ref="boxnotopfixedvolume">Example</xref></caption>
-          <img src="figures/RationalsGraphics/RationalIneq-3.pdf"/>
+          <img src="figures/RationalsGraphics/RationalIneq-3"/>
         </figure>
 
         <ol>
@@ -668,7 +668,7 @@
 
                 <figure xml:id="fig_ratineqsd2">
                   <caption>The sign digram for <m>h(x)</m></caption>
-                  <img src="figures/RationalsGraphics/RationalIneq-4.pdf"/>
+                  <img src="figures/RationalsGraphics/RationalIneq-4"/>
                 </figure>
 
                 We see <m>r(x) > 0</m> on <m>(0,10)</m>,
@@ -732,7 +732,7 @@
                 This means that the width and depth of the box should each measure approximately <m>12.60</m> centimetres.
                 To determine the height,
           we find <m>h(12.60) \approx 6.30</m>,
-                so the height of the box should be approximately <m>6.30</m> centimetres. <figure xml:id="fig_ratineqlast"> <caption>Minimizing the surface area in <xref ref="boxnotopfixedvolume">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals12.pdf"/> </figure>
+                so the height of the box should be approximately <m>6.30</m> centimetres. <figure xml:id="fig_ratineqlast"> <caption>Minimizing the surface area in <xref ref="boxnotopfixedvolume">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals12"/> </figure>
               </p>
             </li>
           </ol>

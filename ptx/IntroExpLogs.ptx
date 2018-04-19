@@ -128,7 +128,7 @@
         <cell></cell>
       </row>
       <row>
-        <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-1.pdf"/></cell>
+        <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-1"/></cell>
       </row>
       </tabular>
     </table>
@@ -212,7 +212,14 @@
       <m>x \leq 0</m> because we cannot divide by <m>0</m> and <m>0^{0}</m> is an indeterminant form.
       For <m>x > 0</m>, <m>0^{x} = 0</m> so the function
       <m>f(x) = 0^{x}</m> is the same as the function <m>f(x) = 0</m>,
-      <m>x > 0</m>. \phantomsection We know everything we can possibly know about this function,
+      <m>x > 0</m>.
+    </p>
+  </introduction>
+
+  <subsection xml:id="indeterminantformtwo">
+    <title>PLACEHOLDER</title>
+    <p>
+      We know everything we can possibly know about this function,
       so we exclude it from our investigations.
       The only other base we exclude is <m>b=1</m>,
       since the function <m>f(x) = 1^{x} = 1</m> is, once again,
@@ -251,7 +258,7 @@
       <caption>Reflecting <m>y=2^x</m> across the <m>y</m>-axis to obtain the graph <m>y=2^{-x}</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-2.pdf"/></cell>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-2"/></cell>
         </row>
         <row>
           <cell>(a) <m>y=f(x)=2^x</m></cell>
@@ -260,7 +267,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-3.pdf"/></cell>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-3"/></cell>
         </row>
         <row>
           <cell>(b) <m>y=g(x)=f(-x)=2^{-x}</m></cell>
@@ -343,7 +350,7 @@
                 <li>
                   <p>
                     The graph of <m>f</m> resembles:
-                    <img src="figures/ExpLogsGraphics/IntroExpLogs-4.pdf"/> <m>y = b^{x}</m>,
+                    <img src="figures/ExpLogsGraphics/IntroExpLogs-4"/> <m>y = b^{x}</m>,
                     <m>b > 1</m>
                   </p>
                 </li>
@@ -381,7 +388,7 @@
                 <li>
                   <p>
                     The graph of <m>f</m> resembles:
-                    <img src="figures/ExpLogsGraphics/IntroExpLogs-5.pdf"/>
+                    <img src="figures/ExpLogsGraphics/IntroExpLogs-5"/>
                     <m>y = b^{x}</m>, <m>0 \lt b \lt 1</m>
                   </p>
                 </li>
@@ -474,7 +481,7 @@
                 The horizontal asymptote remains <m>y=0</m>.
                 Finally, we restrict the domain to
                 <m>[0,\infty)</m> to fit with the applied domain given to us.
-                We have the result in <xref ref="fig_introexp3">Figure</xref>. <table xml:id="fig_introexp3"> <caption>The graph <m>y=V(x)</m> in <xref ref="cardepreciationex">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-6.pdf"/></cell> </row> <row> <cell><m>y=f(x)=\left(\frac{4}{5}\right)^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-7.pdf"/></cell> </row> <row> <cell><m>y=V(x)=25f(x)</m>,
+                We have the result in <xref ref="fig_introexp3">Figure</xref>. <table xml:id="fig_introexp3"> <caption>The graph <m>y=V(x)</m> in <xref ref="cardepreciationex">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-6"/></cell> </row> <row> <cell><m>y=f(x)=\left(\frac{4}{5}\right)^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-7"/></cell> </row> <row> <cell><m>y=V(x)=25f(x)</m>,
                 <m>x\geq 0</m></cell> </row> </tabular> </table>
               </p>
             </li>
@@ -587,7 +594,7 @@
                   <caption>Graphing <m>T(t)</m> in <xref ref="exptempex">Example</xref></caption>
                   <tabular>
                     <row>
-                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-8.pdf"/></cell>
+                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-8"/></cell>
                     </row>
                     <row>
                       <cell><m>y=f(t)=e^t</m></cell>
@@ -602,7 +609,7 @@
                       <cell></cell>
                     </row>
                     <row>
-                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-9.pdf"/></cell>
+                      <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-9"/></cell>
                     </row>
                     <row>
                       <cell><m>y=T(t)</m></cell>
@@ -719,13 +726,13 @@
       <caption>The logarithm is the inverse of the exponential function</caption>
       <tabular>
         <row>
-          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-10.pdf"/></cell>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-10"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-11.pdf"/></cell>
+          <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-11"/></cell>
         </row>
       </tabular>
     </table>
@@ -821,7 +828,7 @@
               </ul>
             </p>
 
-            <img src="figures/ExpLogsGraphics/IntroExpLogs-12.pdf"/></li>
+            <img src="figures/ExpLogsGraphics/IntroExpLogs-12"/></li>
         </ul>
 
         <ul>
@@ -858,7 +865,7 @@
               </ul>
             </p>
 
-            <img src="figures/ExpLogsGraphics/IntroExpLogs-13.pdf"/></li>
+            <img src="figures/ExpLogsGraphics/IntroExpLogs-13"/></li>
         </ul>
       </statement>
     </theorem>
@@ -1091,7 +1098,7 @@
                 Next,
           we multiply the <m>y</m>-coordinates by <m>2</m> which results in a vertical stretch by a factor of <m>2</m>,
                 then we finish by subtracting <m>1</m> from the <m>y</m>-coordinates which shifts the graph down <m>1</m> unit.
-                We leave it to the reader to perform the indicated arithmetic on the points themselves and to verify the graph produced by the calculator below. <figure xml:id="fig_introexp6"> <caption><m>y=f(x)=2\log(3-x)-1</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs01.pdf"/> </figure>
+                We leave it to the reader to perform the indicated arithmetic on the points themselves and to verify the graph produced by the calculator below. <figure xml:id="fig_introexp6"> <caption><m>y=f(x)=2\log(3-x)-1</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs01"/> </figure>
               </p>
             </li>
 
@@ -1104,7 +1111,7 @@
                 we find <m>r</m> is undefined at <m>x=1</m> and <m>r(x) = 0</m> when <m>x=0</m>.
                 Choosing some test values,
                 we generate the sign diagram in <xref ref="fig_introexpsd1">Figure</xref>. <figure xml:id="fig_introexpsd1"> <caption>Sign diagram for
-                <m>r(x) = \frac{x}{x-1}</m></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-14.pdf"/> </figure> We find <m>\frac{x}{x-1} > 0</m> on
+                <m>r(x) = \frac{x}{x-1}</m></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-14"/> </figure> We find <m>\frac{x}{x-1} > 0</m> on
                 <m>(-\infty, 0) \cup (1, \infty)</m> to get the domain of <m>g</m>.
                 The graph of <m>y=g(x)</m> in <xref ref="fig_introexp7">Figure</xref> confirms this.
                 We can tell from the graph of <m>g</m> that it is not the result of <xref ref="Transformations">Section</xref>
@@ -1120,7 +1127,7 @@
                 we know that as <m>x \rightarrow \pm \infty</m>,
                 <m>\frac{x}{x-1} \approx 1</m>.
                 Hence, it makes sense that
-                <m>g(x) = \ln \left(\frac{x}{x-1}\right) \approx \ln(1) = 0</m>. <figure xml:id="fig_introexp7"> <caption><m>y=g(x)=\ln\left(\frac{x}{x-1}\right)</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs02.pdf"/> </figure>
+                <m>g(x) = \ln \left(\frac{x}{x-1}\right) \approx \ln(1) = 0</m>. <figure xml:id="fig_introexp7"> <caption><m>y=g(x)=\ln\left(\frac{x}{x-1}\right)</m></caption> <img src="figures/ExpLogsGraphics/ExpLogs02"/> </figure>
               </p>
             </li>
           </ol>
@@ -1201,7 +1208,7 @@
                 namely <m>(-\infty, \infty)</m>,
                 but that the range of <m>f</m> is
                 <m>(-3, \infty)</m>. <table xml:id="fig_introexp8"> <caption>Graphing
-                <m>f(x)=2^{x-1}-3</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-15.pdf"/></cell> </row> <row> <cell><m>y=h(x)=2^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-16.pdf"/></cell> </row> <row> <cell><m>y=f(x)=2^{x-1}-3</m></cell> </row> </tabular> </table>
+                <m>f(x)=2^{x-1}-3</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-15"/></cell> </row> <row> <cell><m>y=h(x)=2^x</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-16"/></cell> </row> <row> <cell><m>y=f(x)=2^{x-1}-3</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -1293,7 +1300,7 @@
                 which matches the range of <m>f</m>,
                 and the range of <m>f^{-1}</m> is <m>(-\infty, \infty)</m>,
                 which matches the domain of <m>f</m>. <table xml:id="fig_introexp9"> <caption>Graphing
-                <m>f^{-1}(x)=\log_2(x+3)+1</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-17.pdf"/></cell> </row> <row> <cell><m>y=j(x)=\log_2(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-18.pdf"/></cell> </row> <row> <cell><m>y=f^{-1}(x)=\log_2(x+3)+1</m></cell> </row> </tabular> </table>
+                <m>f^{-1}(x)=\log_2(x+3)+1</m> in <xref ref="proceduralinverse">Example</xref></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-17"/></cell> </row> <row> <cell><m>y=j(x)=\log_2(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><m>\boldsymbol{\downarrow}</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/IntroExpLogs-18"/></cell> </row> <row> <cell><m>y=f^{-1}(x)=\log_2(x+3)+1</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -1328,14 +1335,14 @@
                 Last, but certainly not least,
                 we graph <m>y=f(x)</m> and
                 <m>y=f^{-1}(x)</m> on the same set of axes and see the symmetry about the line <m>y=x</m> in <xref ref="fig_introexp10">Figure</xref>
-                <figure xml:id="fig_introexp10"> <caption>The graphs of <m>f</m> and <m>f^{-1}</m> in <xref ref="proceduralinverse">Example</xref></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-19.pdf"/> </figure>
+                <figure xml:id="fig_introexp10"> <caption>The graphs of <m>f</m> and <m>f^{-1}</m> in <xref ref="proceduralinverse">Example</xref></caption> <img src="figures/ExpLogsGraphics/IntroExpLogs-19"/> </figure>
               </p>
             </li>
           </ol>
         </p>
       </solution>
     </example>
-  </introduction>
+  </subsection>
 
   <subsection xml:id="logarithmicscales">
     <title>Problems</title>
@@ -2059,7 +2066,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-20.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-20"/>
         </p>
       </answer>
     </exercise>
@@ -2080,7 +2087,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-21.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-21"/>
         </p>
       </answer>
     </exercise>
@@ -2100,7 +2107,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-22.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-22"/>
         </p>
       </answer>
     </exercise>
@@ -2120,7 +2127,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-23.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-23"/>
         </p>
       </answer>
     </exercise>
@@ -2140,7 +2147,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-24.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-24"/>
         </p>
       </answer>
     </exercise>
@@ -2160,7 +2167,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-25.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-25"/>
         </p>
       </answer>
     </exercise>
@@ -2187,7 +2194,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-26.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-26"/>
         </p>
       </answer>
     </exercise>
@@ -2208,7 +2215,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-27.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-27"/>
         </p>
       </answer>
     </exercise>
@@ -2228,7 +2235,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-28.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-28"/>
         </p>
       </answer>
     </exercise>
@@ -2248,7 +2255,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-29.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-29"/>
         </p>
       </answer>
     </exercise>
@@ -2268,7 +2275,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-30.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-30"/>
         </p>
       </answer>
     </exercise>
@@ -2288,7 +2295,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-31.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-31"/>
         </p>
       </answer>
     </exercise>
@@ -2324,7 +2331,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-32.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-32"/>
         </p>
       </answer>
     </exercise>
@@ -2344,7 +2351,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-33.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-33"/>
         </p>
       </answer>
     </exercise>
@@ -2364,7 +2371,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-34.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-34"/>
         </p>
       </answer>
     </exercise>
@@ -2384,7 +2391,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/IntroExpLogs-35.pdf"/>
+          <img src="figures/ExpLogsGraphics/IntroExpLogs-35"/>
         </p>
       </answer>
     </exercise>

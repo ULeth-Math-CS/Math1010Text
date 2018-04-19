@@ -18,7 +18,7 @@
 
     <figure xml:id="fig_angles1">
       <caption>A ray with initial point <m>P</m></caption>
-      <img src="figures/IntroTrigGraphics/Angles-1.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-1"/>
     </figure>
 
     <p>
@@ -36,8 +36,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-2.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-3.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-2"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-3"/></cell>
         </row>
         <row>
           <cell>An angle with vertex <m>P</m></cell>
@@ -64,8 +64,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-4.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-5.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-4"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-5"/></cell>
         </row>
         <row>
           <cell>A straight angle</cell>
@@ -86,13 +86,13 @@
       <caption>Two ways to measure an angle</caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-6.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-6"/></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-7.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-7"/></cell>
         </row>
       </tabular>
     </table>
@@ -112,7 +112,7 @@
 
     <figure xml:id="fig_angles5">
       <caption>Labelling angles</caption>
-      <img src="figures/IntroTrigGraphics/Angles-8.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-8"/>
     </figure>
 
     <aside>
@@ -142,9 +142,9 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-9.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-10.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-11.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-9"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-10"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-11"/></cell>
         </row>
         <row>
           <cell>One revolution <m>\leftrightarrow 360^\circ</m></cell>
@@ -180,9 +180,9 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-12.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-13.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-14.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-12"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-13"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-14"/></cell>
         </row>
         <row>
           <cell><m>240^\circ</m></cell>
@@ -210,7 +210,7 @@
       <caption>Supplementary and complementary angles</caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-15.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-15"/></cell>
         </row>
         <row>
           <cell>Supplementary angles</cell>
@@ -219,7 +219,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-16.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-16"/></cell>
         </row>
         <row>
           <cell>Complementary angles</cell>
@@ -266,7 +266,7 @@
       <caption>The sign of an angle</caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-17.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-17"/></cell>
         </row>
         <row>
           <cell>A positive angle, <m>45^\circ</m></cell>
@@ -275,7 +275,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-18.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-18"/></cell>
         </row>
         <row>
           <cell>A negative angle, <m>-45^\circ</m></cell>
@@ -285,7 +285,7 @@
 
     <figure xml:id="fig_angles10">
       <caption>Angles can comprise more than one revolution</caption>
-      <img src="figures/IntroTrigGraphics/Angles-19.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-19"/>
     </figure>
 
     <p>
@@ -330,7 +330,7 @@
 
     <figure xml:id="fig_angles11">
       <caption>Two coterminal angles, <m>\alpha = 120^{\circ}</m> and <m>\beta = -240^{\circ}</m>, in standard position.</caption>
-      <img src="figures/IntroTrigGraphics/Angles-20.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-20"/>
     </figure>
 
     <example xml:id="orientedcoterminaldegree">
@@ -384,7 +384,7 @@
                 Substituting <m>k = -1</m> gives <m>\theta = 60^{\circ} - 360^{\circ} = -300^{\circ}</m>.
                 Finally, if we let <m>k = 2</m>,
                 we get <m>\theta = 60^{\circ} + 720^{\circ} = 780^{\circ}</m>:
-                see <xref ref="fig_angles12">Figure</xref>. <figure xml:id="fig_angles12"> <caption><m>\alpha = 60^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-21.pdf"/> </figure>
+                see <xref ref="fig_angles12">Figure</xref>. <figure xml:id="fig_angles12"> <caption><m>\alpha = 60^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-21"/> </figure>
               </p>
             </li>
 
@@ -400,7 +400,7 @@
                 We find <m>135^{\circ}</m>,
                 <m>-585^{\circ}</m> and
           <m>495^{\circ}</m> are all coterminal with <m>-225^{\circ}</m>:
-                see <xref ref="fig_angles13">Figure</xref>. <figure xml:id="fig_angles13"> <caption><m>\beta = -225^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-22.pdf"/> </figure> <figure xml:id="fig_angles14"> <caption><m>\gamma = 540^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-23.pdf"/> </figure>
+                see <xref ref="fig_angles13">Figure</xref>. <figure xml:id="fig_angles13"> <caption><m>\beta = -225^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-22"/> </figure> <figure xml:id="fig_angles14"> <caption><m>\gamma = 540^{\circ}</m> in standard position</caption> <img src="figures/IntroTrigGraphics/Angles-23"/> </figure>
               </p>
             </li>
 
@@ -454,7 +454,7 @@
 
     <figure xml:id="fig_angles15">
       <caption><m>\phi = -750^{\circ}</m> in standard position</caption>
-      <img src="figures/IntroTrigGraphics/Angles-24.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-24"/>
     </figure>
 
     <definition xml:id="pidefn">
@@ -510,7 +510,7 @@
 
     <figure xml:id="fig_angles16">
       <caption>The radian measure of <m>\theta</m> is <m>\dfrac{s}{r}</m></caption>
-      <img src="figures/IntroTrigGraphics/Angles-25.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-25"/>
     </figure>
 
     <p>
@@ -529,7 +529,7 @@
       <caption>An angle of <m>k</m> radians subtends an arc of length <m>k\cdot r</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-26.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-26"/></cell>
         </row>
         <row>
           <cell><m>\alpha</m> has radian measure 1</cell>
@@ -538,7 +538,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-27.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-27"/></cell>
         </row>
         <row>
           <cell><m>\beta</m> has radian measure 4</cell>
@@ -634,7 +634,7 @@
                 Substituting <m>k = -1</m> gives
                 <m>\theta = \frac{\pi}{6} - \frac{12 \pi}{6} = -\frac{11 \pi}{6}</m> and when we let <m>k = 2</m>,
                 we get <m>\theta = \frac{\pi}{6} + \frac{24 \pi}{6} = \frac{25 \pi}{6}</m>:
-                see <xref ref="fig_angles18">Figure</xref>. <figure xml:id="fig_angles18"> <caption><m>\alpha = \frac{\pi}{6}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-28.pdf"/> </figure>
+                see <xref ref="fig_angles18">Figure</xref>. <figure xml:id="fig_angles18"> <caption><m>\alpha = \frac{\pi}{6}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-28"/> </figure>
               </p>
             </li>
 
@@ -649,7 +649,7 @@
                 We obtain <m>\frac{2\pi}{3}</m>,
                 <m>-\frac{10 \pi}{3}</m> and
                 <m>\frac{8 \pi}{3}</m> as coterminal angles:
-                see <xref ref="fig_angles19">Figure</xref>. <figure xml:id="fig_angles19"> <caption><m>\beta=-\frac{4\pi}{3}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-29.pdf"/> </figure>
+                see <xref ref="fig_angles19">Figure</xref>. <figure xml:id="fig_angles19"> <caption><m>\beta=-\frac{4\pi}{3}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-29"/> </figure>
               </p>
             </li>
 
@@ -666,7 +666,7 @@
                 Working through the arithmetic, we find:
                 <m>\frac{\pi}{4}</m>,
                 <m>-\frac{7 \pi}{4}</m> and <m>\frac{17 \pi}{4}</m>:
-                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles20"> <caption><m>\gamma = \frac{9\pi}{4}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-30.pdf"/> </figure>
+                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles20"> <caption><m>\gamma = \frac{9\pi}{4}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-30"/> </figure>
               </p>
             </li>
 
@@ -683,7 +683,7 @@
                 To find coterminal angles,
                 we compute <m>\theta = -\frac{5 \pi}{2} + \frac{4 \pi}{2} \cdot k</m> for a few integers <m>k</m> and obtain <m>-\frac{\pi}{2}</m>,
                 <m>\frac{3 \pi}{2}</m> and <m>\frac{7 \pi}{2}</m>:
-                see <xref ref="fig_angles21">Figure</xref>. <figure xml:id="fig_angles21"> <caption><m>\phi = -\frac{5\pi}{2}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-31.pdf"/> </figure>
+                see <xref ref="fig_angles21">Figure</xref>. <figure xml:id="fig_angles21"> <caption><m>\phi = -\frac{5\pi}{2}</m> in standard position.</caption> <img src="figures/IntroTrigGraphics/Angles-31"/> </figure>
               </p>
             </li>
           </ol>
@@ -780,9 +780,9 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/Angles-32.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-33.pdf"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/Angles-34.pdf"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-32"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-33"/></cell>
+          <cell><img src="figures/IntroTrigGraphics/Angles-34"/></cell>
         </row>
         <row>
           <cell>On the unit circle, <m>\theta = s</m></cell>
@@ -832,7 +832,7 @@
                 The arc associated with
           <m>t = \frac{3 \pi}{4}</m> is the arc on the Unit Circle which subtends the angle <m>\frac{3 \pi}{4}</m> in radian measure.
                 Since <m>\frac{3 \pi}{4}</m> is <m>\frac{3}{8}</m> of a revolution,
-                we have an arc which begins at the point <m>(1,0)</m> proceeds counter-clockwise up to midway through Quadrant II: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles22"> <caption><m>t=\frac{3\pi}{4}</m></caption> <img src="figures/IntroTrigGraphics/Angles-35.pdf"/> </figure>
+                we have an arc which begins at the point <m>(1,0)</m> proceeds counter-clockwise up to midway through Quadrant II: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles22"> <caption><m>t=\frac{3\pi}{4}</m></caption> <img src="figures/IntroTrigGraphics/Angles-35"/> </figure>
               </p>
             </li>
 
@@ -842,7 +842,7 @@
                 and <m>t=-2\pi</m> is negative,
                 we graph the arc which begins at <m>(1,0)</m> and proceeds
                 <em>clockwise</em> for one full revolution:
-                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles23"> <caption><m>t=-2\pi</m></caption> <img src="figures/IntroTrigGraphics/Angles-36.pdf"/> </figure>
+                see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles23"> <caption><m>t=-2\pi</m></caption> <img src="figures/IntroTrigGraphics/Angles-36"/> </figure>
               </p>
             </li>
 
@@ -853,7 +853,7 @@
                 Since <m>\pi \approx 3.14</m> and <m>\frac{\pi}{2} \approx 1.57</m>,
                 we find that rotating <m>2</m> radians clockwise from the point <m>(1,0)</m> lands us in Quadrant III. To more accurately place the endpoint,
                 we successively halve the angle measure until we find
-                <m>\frac{5 \pi}{8} \approx 1.96</m> which tells us our arc extends just a bit beyond the quarter mark into Quadrant III: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles24"> <caption><m>t=-2</m></caption> <img src="figures/IntroTrigGraphics/Angles-37.pdf"/> </figure>
+                <m>\frac{5 \pi}{8} \approx 1.96</m> which tells us our arc extends just a bit beyond the quarter mark into Quadrant III: see <xref ref="fig_angles20">Figure</xref>. <figure xml:id="fig_angles24"> <caption><m>t=-2</m></caption> <img src="figures/IntroTrigGraphics/Angles-37"/> </figure>
               </p>
             </li>
 
@@ -887,12 +887,12 @@
 
     <figure xml:id="fig_angles25">
       <caption><m>t=117</m></caption>
-      <img src="figures/IntroTrigGraphics/Angles-38.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-38"/>
     </figure>
 
     <figure xml:id="fig_angles26">
       <caption>Circular motion</caption>
-      <img src="figures/IntroTrigGraphics/Angles-39.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-39"/>
     </figure>
 
     <p>
@@ -1030,7 +1030,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-41.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-41"/>
         </p>
       </answer>
     </exercise>
@@ -1050,7 +1050,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-42.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-42"/>
         </p>
       </answer>
     </exercise>
@@ -1070,7 +1070,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-43.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-43"/>
         </p>
       </answer>
     </exercise>
@@ -1090,7 +1090,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-44.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-44"/>
         </p>
       </answer>
     </exercise>
@@ -1110,7 +1110,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-45.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-45"/>
         </p>
       </answer>
     </exercise>
@@ -1130,7 +1130,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-46.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-46"/>
         </p>
       </answer>
     </exercise>
@@ -1150,7 +1150,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-47.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-47"/>
         </p>
       </answer>
     </exercise>
@@ -1170,7 +1170,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-48.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-48"/>
         </p>
       </answer>
     </exercise>
@@ -1190,7 +1190,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-49.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-49"/>
         </p>
       </answer>
     </exercise>
@@ -1210,7 +1210,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-50.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-50"/>
         </p>
       </answer>
     </exercise>
@@ -1230,7 +1230,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-51.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-51"/>
         </p>
       </answer>
     </exercise>
@@ -1250,7 +1250,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-52.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-52"/>
         </p>
       </answer>
     </exercise>
@@ -1270,7 +1270,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-53.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-53"/>
         </p>
       </answer>
     </exercise>
@@ -1290,7 +1290,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-54.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-54"/>
         </p>
       </answer>
     </exercise>
@@ -1310,7 +1310,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-55.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-55"/>
         </p>
       </answer>
     </exercise>
@@ -1330,7 +1330,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-56.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-56"/>
         </p>
       </answer>
     </exercise>
@@ -1350,7 +1350,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-57.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-57"/>
         </p>
       </answer>
     </exercise>
@@ -1370,7 +1370,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-58.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-58"/>
         </p>
       </answer>
     </exercise>
@@ -1390,7 +1390,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-59.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-59"/>
         </p>
       </answer>
     </exercise>
@@ -1410,7 +1410,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-60.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-60"/>
         </p>
       </answer>
     </exercise>
@@ -1631,7 +1631,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-61.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-61"/>
         </p>
       </answer>
     </exercise>
@@ -1648,7 +1648,7 @@
       </answer>
     </exercise>
     <p>
-      <img src="figures/IntroTrigGraphics/Angles-62.pdf"/>
+      <img src="figures/IntroTrigGraphics/Angles-62"/>
     </p>
     <exercise>
       <statement>
@@ -1662,7 +1662,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-63.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-63"/>
         </p>
       </answer>
     </exercise>
@@ -1678,7 +1678,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-64.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-64"/>
         </p>
       </answer>
     </exercise>
@@ -1694,7 +1694,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/Angles-65.pdf"/>
+          <img src="figures/IntroTrigGraphics/Angles-65"/>
         </p>
       </answer>
     </exercise>
@@ -1795,7 +1795,7 @@
 
         <p>
           (Hint: Use the proportion
-          <m>\frac{A}{\text{ area of the circle } } = \frac{s}{\text{ circumference of the circle } }</m>.) <img src="figures/IntroTrigGraphics/Angles-40.pdf"/>
+          <m>\frac{A}{\text{ area of the circle } } = \frac{s}{\text{ circumference of the circle } }</m>.) <img src="figures/IntroTrigGraphics/Angles-40"/>
         </p>
       </statement>
     </exercise>

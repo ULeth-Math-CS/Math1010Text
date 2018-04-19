@@ -35,7 +35,7 @@
 
         <figure xml:id="fig_sines1">
           <caption>The triangle in <xref ref="righttrianglereviewex">Example</xref></caption>
-          <img src="figures/AppExtGraphics/LawofSines-1.pdf"/>
+          <img src="figures/AppExtGraphics/LawofSines-1"/>
         </figure>
 
         <p>
@@ -140,9 +140,9 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-2.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-3.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-4.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-2"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-3"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-4"/></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -164,8 +164,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-5.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-6.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-5"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-6"/></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -195,7 +195,7 @@
     -->
 
     <sidebyside>
-      <img src="figures/AppExtGraphics/LawofSines-7.pdf"/>
+      <img src="figures/AppExtGraphics/LawofSines-7"/>
     </sidebyside>
     <p>
       In order to use the Law of Sines to solve a triangle,
@@ -289,7 +289,7 @@
                 but that becomes unnecessarily messy for the discussion at hand.
                 Thus <q>exact</q>
                 here means <m>\frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)}</m>. <figure xml:id="fig_sineseg1"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losaas">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-8.pdf"/> </figure>
+                <xref ref="losaas">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-8"/> </figure>
               </p>
             </li>
 
@@ -307,7 +307,7 @@
                 To find <m>b</m> we use the angle-side pair
                 <m>(\gamma,c)</m> which yields <m>\frac{b}{\sin\left(30^{\circ}\right)} = \frac{5.25}{\sin\left(65^{\circ}\right)}</m> hence
                 <m>b = \frac{5.25\sin\left(30^{\circ}\right)}{\sin\left(65^{\circ}\right)} \approx 2.90</m> units. <figure xml:id="fig_sineseg2"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losasa">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-9.pdf"/> </figure>
+                <xref ref="losasa">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-9"/> </figure>
               </p>
             </li>
 
@@ -322,7 +322,7 @@
                 we see that side <m>a</m> is just too short to make a triangle.
                 The next three examples keep the same values for the measure of <m>\alpha</m> and the length of <m>c</m> while varying the length of <m>a</m>.
                 We will discuss this case in more detail after we see what happens in those examples. <figure xml:id="fig_sineseg3"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losnotriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-10.pdf"/> </figure>
+                <xref ref="losnotriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-10"/> </figure>
               </p>
             </li>
 
@@ -343,7 +343,7 @@
                 We find <m>b = \frac{2 \sin\left(60^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 2 \sqrt{3} \approx 3.46</m> units.
                 In this case,
                 the side <m>a</m> is precisely long enough to form a unique right triangle. <figure xml:id="fig_sineseg4"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losrighttriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-11.pdf"/> </figure>
+                <xref ref="losrighttriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-11"/> </figure>
               </p>
             </li>
 
@@ -386,7 +386,7 @@
               we repeat the exact same steps and find <m>\beta \approx 11.81^{\circ}</m> and
               <m>b \approx 1.23</m> units. (An exact answer for <m>\beta</m> in this case is <m>\beta = \arcsin\left(\frac{2}{3}\right) - \frac{\pi}{6}</m> radians
               <m>\approx 11.81^{\circ}</m>.) Both triangles are drawn in <xref ref="fig_sineseg5">Figure</xref>
-              below. <!-- <caption>Triangle for Example \ref{losex} number \ref{lostwotriangleex}</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/AppExtGraphics/LawofSines-12.pdf"/></cell> <cell><img src="figures/AppExtGraphics/LawofSines-13.pdf"/></cell> </row> </tabular> </sidebyside>
+              below. <!-- <caption>Triangle for Example \ref{losex} number \ref{lostwotriangleex}</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/AppExtGraphics/LawofSines-12"/></cell> <cell><img src="figures/AppExtGraphics/LawofSines-13"/></cell> </row> </tabular> </sidebyside>
             </p>
             </li>
 
@@ -404,7 +404,7 @@
                 So <m>\beta = 180^{\circ} - 30^{\circ} - 30^{\circ} = 120^{\circ}</m> and,
                 using the Law of Sines one last time,
                 <m>b = \frac{4\sin\left(120^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 4\sqrt{3} \approx 6.93</m> units. <figure xml:id="fig_sineseg6"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losonetriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-14.pdf"/> </figure>
+                <xref ref="losonetriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-14"/> </figure>
               </p>
             </li>
           </ol>
@@ -508,8 +508,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-15.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-16.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-15"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-16"/></cell>
         </row>
         <row>
           <cell><m>a\lt h</m>, no triangle</cell>
@@ -561,8 +561,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-17.pdf"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-18.pdf"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-17"/></cell>
+          <cell><img src="figures/AppExtGraphics/LawofSines-18"/></cell>
         </row>
         <row>
           <cell><m>h \lt  a \lt  c</m>, two triangles</cell>
@@ -595,13 +595,13 @@
           <caption>Diagrams for <xref ref="losapplication">Example</xref></caption>
           <tabular>
             <row>
-              <cell><img src="figures/AppExtGraphics/LawofSines-19.pdf"/></cell>
+              <cell><img src="figures/AppExtGraphics/LawofSines-19"/></cell>
             </row>
             <row>
               <cell></cell>
             </row>
             <row>
-              <cell><img src="figures/AppExtGraphics/LawofSines-20.pdf"/></cell>
+              <cell><img src="figures/AppExtGraphics/LawofSines-20"/></cell>
             </row>
           </tabular>
         </table>
@@ -680,7 +680,7 @@
     </example>
   </introduction>
 
-  <subsection xml:id="gradeofroad">
+  <subsection>
     <title>Problems</title>
     <p>
       In the following exercises,
@@ -960,8 +960,12 @@
         </p>
       </answer>
     </exercise>
+  </subsection>
+
+  <subsection xml:id="gradeofroad">
+    <title>PLACEHOLDER</title>
     <p>
-      { \phantomsection (Another Classic Application: Grade of a Road) The grade of a road is much like the pitch of a roof (See <xref ref="roofpitchex">Example</xref>) in that it expresses the ratio of rise/run.
+      (Another Classic Application: Grade of a Road) The grade of a road is much like the pitch of a roof (See <xref ref="roofpitchex">Example</xref>) in that it expresses the ratio of rise/run.
       In the case of a road,
       this ratio is always positive because it is measured going uphill and it is usually given as a percentage.
       For example, a road which rises 7 feet for every 100 feet of (horizontal) forward progress is said to have a 7<percent /> grade.
@@ -1058,8 +1062,11 @@
         </p>
       </statement>
     </exercise>
+  </subsection>
+
+  <subsection xml:id="bearings">
+    <title>PLACEHOLDER</title>
     <p>
-      {\phantomsection
           <idx><h>bearings</h></idx>
       (Another Classic Application: Bearings) In Exercises} {, we introduce and work with the navigation tool known as bearings.
       Simply put,
@@ -1088,7 +1095,7 @@
     </p>
 
     <p>
-      <img src="figures/AppExtGraphics/LawofSines-21.pdf"/>
+      <img src="figures/AppExtGraphics/LawofSines-21"/>
     </p>
 
     <p>
