@@ -70,7 +70,7 @@
     <sidebyside>
       <figure>
         <caption><m>y=\sqrt{x}</m></caption>
-        <img src="figures/FurtherGraphics/AlgebraicFunctions-1.pdf"/>
+        <img src="figures/FurtherGraphics/AlgebraicFunctions-1"/>
       </figure>
 
       <figure>
@@ -79,7 +79,7 @@
 
       <figure>
         <caption><m>y=\sqrt[6]{x}</m></caption>
-        <img src="figures/FurtherGraphics/AlgebraicFunctions-3.pdf"/>
+        <img src="figures/FurtherGraphics/AlgebraicFunctions-3"/>
       </figure>
     </sidebyside>
     </figure>
@@ -103,7 +103,7 @@
     <sidebyside>
       <figure>
         <caption><m>y=\sqrt[3]{x}</m></caption>
-        <img src="figures/FurtherGraphics/AlgebraicFunctions-4.pdf"/>
+        <img src="figures/FurtherGraphics/AlgebraicFunctions-4"/>
       </figure>
 
       <figure>
@@ -112,7 +112,7 @@
 
       <figure>
         <caption><m>y=\sqrt[7]{x}</m></caption>
-        <img src="figures/FurtherGraphics/AlgebraicFunctions-6.pdf"/>
+        <img src="figures/FurtherGraphics/AlgebraicFunctions-6"/>
       </figure>
     </sidebyside>
     </figure>
@@ -370,7 +370,7 @@
                   <caption><m>f(x) = 3x\sqrt[3]{2-x}</m></caption>
                   <tabular>
                     <row>
-                      <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-7.pdf"/></cell>
+                      <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-7"/></cell>
                     </row>
                     <row>
                       <cell>Sign diagram for <m>f(x)</m></cell>
@@ -379,7 +379,7 @@
                       <cell></cell>
                     </row>
                     <row>
-                      <cell><img src="figures/FurtherGraphics/Algebraic01.pdf"/></cell>
+                      <cell><img src="figures/FurtherGraphics/Algebraic01"/></cell>
                     </row>
                     <row>
                       <cell>The graph <m>y=f(x)</m></cell>
@@ -414,7 +414,7 @@
                 we need to check to see if <m>x=13</m> is an extraneous solution. (Recall that this means we have produced a candidate which doesn't satisfy the original equation.
                 Do you remember how raising both sides of an equation to an even power could cause this?) We find <m>x=13</m> does check since <m>2-\sqrt[4]{x+3} = 2 - \sqrt[4]{13+3} = 2 - \sqrt[4]{16} = 2 - 2 = 0</m>.
                 Our sign diagram for <m>r</m> is given in <xref ref="fig_algfun4">Figure</xref>. <figure xml:id="fig_algfun4"> <caption>Sign diagram for
-                <m>r(x)=2-\sqrt[4]{x+3}</m></caption> <img src="figures/FurtherGraphics/AlgebraicFunctions-8.pdf"/> </figure> We find
+                <m>r(x)=2-\sqrt[4]{x+3}</m></caption> <img src="figures/FurtherGraphics/AlgebraicFunctions-8"/> </figure> We find
                 <m>2-\sqrt[4]{x+3} \geq 0</m> on <m>[-3,13]</m> so this is the domain of <m>g</m>.
                 To find a sign diagram for <m>g</m>,
                 we look for the zeros of <m>g</m>.
@@ -432,7 +432,7 @@
                 but the <em>complete</em> graph.
                 It is always above or on the <m>x</m>-axis,
                 which verifies our sign diagram:
-                see <xref ref="fig_algfun5">Figure</xref>. <table xml:id="fig_algfun5"> <caption><m>g(x)=\sqrt{2-\sqrt[4]{x+3}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-9.pdf"/></cell> </row> <row> <cell>Sign diagram for <m>g(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic02.pdf"/></cell> </row> <row> <cell>Complete graph of <m>y=g(x)</m></cell> </row> </tabular> </table>
+                see <xref ref="fig_algfun5">Figure</xref>. <table xml:id="fig_algfun5"> <caption><m>g(x)=\sqrt{2-\sqrt[4]{x+3}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-9"/></cell> </row> <row> <cell>Sign diagram for <m>g(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic02"/></cell> </row> <row> <cell>Complete graph of <m>y=g(x)</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -461,7 +461,7 @@
                 From this,
           it is hardly surprising that as <m>x \rightarrow \pm \infty</m>,
                 <m>h(x) = \sqrt[3]{\frac{8x}{x+1}} \approx \sqrt[3]{8} =2</m>.
-                The sign diagram and graph for <m>h</m> are given in <xref ref="fig_algfun6">Figure</xref>. <table xml:id="fig_algfun6"> <caption><m>h(x)=\sqrt[3]{\dfrac{8x}{x+1}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-10.pdf"/></cell> </row> <row> <cell>Sign diagram for <m>h(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic03.pdf"/></cell> </row> <row> <cell>Graph of <m>y=h(x)</m></cell> </row> </tabular> </table>
+                The sign diagram and graph for <m>h</m> are given in <xref ref="fig_algfun6">Figure</xref>. <table xml:id="fig_algfun6"> <caption><m>h(x)=\sqrt[3]{\dfrac{8x}{x+1}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-10"/></cell> </row> <row> <cell>Sign diagram for <m>h(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic03"/></cell> </row> <row> <cell>Graph of <m>y=h(x)</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -473,7 +473,7 @@
                 Setting <m>r(x) = x^2-1</m>,
                 we find the zeros of <m>r</m> to be <m>x = \pm 1</m>,
                 and we find the sign diagram of <m>r</m> shown in <xref ref="fig_algfun7">Figure</xref>. <figure xml:id="fig_algfun7"> <caption>The sign diagram of
-                <m>r(x)=x^2-1</m></caption> <img src="figures/FurtherGraphics/AlgebraicFunctions-11.pdf"/> </figure> We find
+                <m>r(x)=x^2-1</m></caption> <img src="figures/FurtherGraphics/AlgebraicFunctions-11"/> </figure> We find
                 <m>x^2 - 1 \geq 0</m> for <m>(-\infty, -1] \cup [1, \infty)</m>.
                 To keep the denominator of <m>k(x)</m> away from zero,
                 we set <m>\sqrt{x^2-1} = 0</m>.
@@ -507,7 +507,7 @@
                 and as such <m>k(x) \approx \frac{2x}{-x} = -2</m>.
                 Finally,
           it appears as though the graph of <m>k</m> passes the Horizontal Line Test which means <m>k</m> is one to one and <m>k^{-1}</m> exists.
-                Computing <m>k^{-1}</m> is left as an exercise. <table xml:id="fig_algfun8"> <caption><m>k(x)=\dfrac{2x}{\sqrt{x^2-1}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-12.pdf"/></cell> </row> <row> <cell>Sign diagram for <m>k(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic04.pdf"/></cell> </row> <row> <cell>Graph of <m>y=k(x)</m></cell> </row> </tabular> </table>
+                Computing <m>k^{-1}</m> is left as an exercise. <table xml:id="fig_algfun8"> <caption><m>k(x)=\dfrac{2x}{\sqrt{x^2-1}}</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-12"/></cell> </row> <row> <cell>Sign diagram for <m>k(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic04"/></cell> </row> <row> <cell>Graph of <m>y=k(x)</m></cell> </row> </tabular> </table>
               </p>
             </li>
           </ol>
@@ -606,8 +606,8 @@
                 (in red)
                 is below the graph of <m>g</m>
                 (in blue)
-                on <m>\left(-\infty, -3 \sqrt{3}\right)\cup \left(3 \sqrt{3}, \infty\right)</m>. <table xml:id="fig_algfun9"> <caption>Sign diagram and graph for <xref ref="ex_algfun2">Example</xref>.1</caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-13.pdf"/></cell> </row> <row> <cell>Sign diagram for
-                <m>x^{4/3}-x^{2/3}-6</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic05.pdf"/></cell> </row> <row> <cell>Graphs \color{red} <m>y=f(x)</m> and {\color{blue} <m>y=g(x)</m>}</cell> </row> </tabular> </table> As a point of interest,
+                on <m>\left(-\infty, -3 \sqrt{3}\right)\cup \left(3 \sqrt{3}, \infty\right)</m>. <table xml:id="fig_algfun9"> <caption>Sign diagram and graph for <xref ref="ex_algfun2">Example</xref>.1</caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-13"/></cell> </row> <row> <cell>Sign diagram for
+                <m>x^{4/3}-x^{2/3}-6</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic05"/></cell> </row> <row> <cell>Graphs \color{red} <m>y=f(x)</m> and {\color{blue} <m>y=g(x)</m>}</cell> </row> </tabular> </table> As a point of interest,
                 if we take a closer look at the graphs of <m>f</m> and <m>g</m> near <m>x=0</m> with the axes off,
                 we see in <xref ref="fig_algfun10">Figure</xref>
                 that despite the fact they both involve cube roots,
@@ -615,7 +615,7 @@
                 The graph of <m>f</m> has a sharp turn, or cusp,
                 while <m>g</m> does not. (Recall that we introduced this feature on <xref ref="cusppicture">page</xref>
                 as a feature which makes the graph of a function
-                <q>not smooth</q>.) <table xml:id="fig_algfun10"> <caption>The graphs of <m>f</m> and <m>g</m> near <m>x=0</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/Algebraic06.pdf"/></cell> </row> <row> <cell><m>y=f(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic07.pdf"/></cell> </row> <row> <cell><m>y=g(x)</m></cell> </row> </tabular> </table>
+                <q>not smooth</q>.) <table xml:id="fig_algfun10"> <caption>The graphs of <m>f</m> and <m>g</m> near <m>x=0</m></caption> <tabular> <row> <cell><img src="figures/FurtherGraphics/Algebraic06"/></cell> </row> <row> <cell><m>y=f(x)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/FurtherGraphics/Algebraic07"/></cell> </row> <row> <cell><m>y=g(x)</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -715,7 +715,7 @@
                 <caption>Sign diagram and graph for <xref ref="ex_algfun2">Example</xref>.2</caption>
                 <tabular>
                   <row>
-                    <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-14.pdf"/></cell>
+                    <cell><img src="figures/FurtherGraphics/AlgebraicFunctions-14"/></cell>
                   </row>
                   <row>
                     <cell>Sign diagram for <m>3(2-x)^{1/3}-x(2-x)^{-2/3}</m></cell>
@@ -724,7 +724,7 @@
                     <cell></cell>
                   </row>
                   <row>
-                    <cell><img src="figures/FurtherGraphics/Algebraic08.pdf"/></cell>
+                    <cell><img src="figures/FurtherGraphics/Algebraic08"/></cell>
                   </row>
                   <row>
                     <cell>Graphs \color{red} <m>y=f(x)</m> and {\color{blue} <m>y=g(x)</m>}</cell>
@@ -757,7 +757,7 @@
 
         <figure xml:id="fig_algfun12">
           <caption>Diagram for <xref ref="SasquatchCable">Example</xref></caption>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-15.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-15"/>
         </figure>
 
         <ol>
@@ -871,7 +871,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-16.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-16"/>
         </p>
 
         <p>
@@ -887,7 +887,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-17.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-17"/>
         </p>
       </answer>
     </exercise>
@@ -907,7 +907,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-18.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-18"/>
         </p>
 
         <p>
@@ -923,7 +923,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-19.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-19"/>
         </p>
       </answer>
     </exercise>
@@ -943,7 +943,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-20.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-20"/>
         </p>
 
         <p>
@@ -959,7 +959,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-21.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-21"/>
         </p>
       </answer>
     </exercise>
@@ -979,7 +979,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-22.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-22"/>
         </p>
 
         <p>
@@ -995,7 +995,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-23.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-23"/>
         </p>
       </answer>
     </exercise>
@@ -1015,7 +1015,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-24.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-24"/>
         </p>
 
         <p>
@@ -1035,7 +1035,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-25.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-25"/>
         </p>
       </answer>
     </exercise>
@@ -1055,7 +1055,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-26.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-26"/>
         </p>
 
         <p>
@@ -1071,7 +1071,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-27.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-27"/>
         </p>
       </answer>
     </exercise>
@@ -1091,7 +1091,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-28.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-28"/>
         </p>
 
         <p>
@@ -1106,7 +1106,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-29.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-29"/>
         </p>
       </answer>
     </exercise>
@@ -1126,7 +1126,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-30.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-30"/>
         </p>
 
         <p>
@@ -1142,7 +1142,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-31.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-31"/>
         </p>
       </answer>
     </exercise>
@@ -1162,7 +1162,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-32.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-32"/>
         </p>
 
         <p>
@@ -1178,7 +1178,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-33.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-33"/>
         </p>
       </answer>
     </exercise>
@@ -1198,7 +1198,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-34.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-34"/>
         </p>
 
         <p>
@@ -1213,7 +1213,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-35.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-35"/>
         </p>
       </answer>
     </exercise>
@@ -1234,7 +1234,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-36.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-36"/>
         </p>
       </answer>
     </exercise>
@@ -1250,7 +1250,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-37.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-37"/>
         </p>
       </answer>
     </exercise>
@@ -1266,7 +1266,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-38.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-38"/>
         </p>
       </answer>
     </exercise>
@@ -1282,7 +1282,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-39.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-39"/>
         </p>
       </answer>
     </exercise>
@@ -1298,7 +1298,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-40.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-40"/>
         </p>
       </answer>
     </exercise>
@@ -1314,7 +1314,7 @@
         </p>
 
         <p>
-          <img src="figures/FurtherGraphics/AlgebraicFunctions-41.pdf"/>
+          <img src="figures/FurtherGraphics/AlgebraicFunctions-41"/>
         </p>
       </answer>
     </exercise>
@@ -1725,7 +1725,7 @@
 
           <li>
             <p>
-              The graph is below. <img src="figures/FurtherGraphics/WINDCHILL.pdf"/>
+              The graph is below. <img src="figures/FurtherGraphics/WINDCHILL"/>
             </p>
           </li>
         </ol>
@@ -1946,7 +1946,7 @@
               <m>y \rightarrow \infty</m> which means,
               in this case, Fritzy's pursuit never ends;
               he never catches Chewbacca.
-              This makes sense since Chewbacca has a head start and is running faster than Fritzy. <tabular> <row> <cell><img src="figures/FurtherGraphics/PURSUIT01.jpg.pdf"/></cell> <cell><img src="figures/FurtherGraphics/PURSUIT02.jpg.pdf"/></cell> </row> <row> <cell><m>y = \frac{1}{3}x^{3/2} - \sqrt{x} + \frac{2}{3}</m></cell> <cell><m>y = \frac{1}{6}x^3+\frac{1}{2x} - \frac{2}{3}</m></cell> </row> </tabular>
+              This makes sense since Chewbacca has a head start and is running faster than Fritzy. <tabular> <row> <cell><img src="figures/FurtherGraphics/PURSUIT01.jpg"/></cell> <cell><img src="figures/FurtherGraphics/PURSUIT02.jpg"/></cell> </row> <row> <cell><m>y = \frac{1}{3}x^{3/2} - \sqrt{x} + \frac{2}{3}</m></cell> <cell><m>y = \frac{1}{6}x^3+\frac{1}{2x} - \frac{2}{3}</m></cell> </row> </tabular>
             </p>
           </li>
         </ol>

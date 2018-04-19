@@ -123,7 +123,7 @@
                 which means <m>x=1</m> is not in the domain of the original equation,
                 and is not a solution.
                 Using GeoGebra to solve the equation graphically gives us <xref ref="fig_logeqn1">Figure</xref>. <figure xml:id="fig_logeqn1"> <caption>\color{red} <m>y=f(x)=\log_{117}(1-3x)</m> and {\color{blue}
-                <m>y=g(x)=\log_{117}(x^2-3)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs15.pdf"/> </figure>
+                <m>y=g(x)=\log_{117}(x^2-3)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs15"/> </figure>
               </p>
             </li>
 
@@ -138,7 +138,7 @@
                 we see the graph of
           <m>f(x) = 2 - \ln(x-3)</m> intersects the graph of <m>g(x) = 1</m> at
                 <m>x = e+3 \approx 5.718</m>. <figure xml:id="fig_logeqn2"> <caption>\color{red} <m>y=f(x)=2-\ln(x-3)</m> and {\color{blue}
-                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs16.pdf"/> </figure>
+                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs16"/> </figure>
               </p>
             </li>
 
@@ -155,7 +155,7 @@
                 at <m>x=-3</m> and <m>x=2</m>
                 (<xref ref="fig_logeqn3">Figure</xref>).
                 <figure xml:id="fig_logeqn3"> <caption>\color{red} <m>y=f(x)=\log_6(x+4)+\log_6(3-x)</m> and {\color{blue}
-                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs17.pdf"/> </figure>
+                <m>y=g(x)=1</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs17"/> </figure>
               </p>
             </li>
 
@@ -174,7 +174,7 @@
                 see <xref ref="fig_logeqn4">Figure</xref>.
                 Checking <m>x=4</m> in the original equation produces <m>\log_{7}(-7) = 1 - \log_{7}(-1)</m>,
                 which is a clear domain violation. <figure xml:id="fig_logeqn4"> <caption>\color{red} <m>y=f(x)=\log_7(1-2x)</m> and {\color{blue}
-                <m>y=g(x)=1-\log_7(3-x)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs18.pdf"/> </figure>
+                <m>y=g(x)=1-\log_7(3-x)</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs18"/> </figure>
               </p>
             </li>
 
@@ -195,7 +195,7 @@
                 <figure xml:id="fig_logeqn5">
                   <caption>\color{red} <m>y=f(x)=\log_2(x+3)</m> 
                   and  {\color{blue} <m>y=g(x)=log_2(6-x)+3</m>}</caption>
-                  <img src="figures/ExpLogsGraphics/ExpLogs19.pdf"/>
+                  <img src="figures/ExpLogsGraphics/ExpLogs19"/>
                 </figure>
 
               </p>
@@ -233,7 +233,7 @@
                 <figure xml:id="fig_logeqn6">
                   <caption>\color{red} <m>y=f(x)=1+2\log_4(x+1)</m> 
                   and {\color{blue} <m>y=g(x)=2\log_2(x)</m>}</caption>
-                  <img src="figures/ExpLogsGraphics/ExpLogs20.pdf"/>
+                  <img src="figures/ExpLogsGraphics/ExpLogs20"/>
                 </figure>
 
               </p>
@@ -320,7 +320,7 @@
                 the graph of <m>f</m> is below the graph of <m>g</m> on the solution intervals,
                 and that the graphs intersect at <m>x=1</m>. <figure xml:id="fig_logineq1"> <caption>Solving
           <m>\dfrac{1}{\ln(x)+1}\leq 1</m></caption> <sidebyside> <figure> <caption>Sign diagram for
-          <m>r(x)=\dfrac{\ln(x)}{\ln(x)+1}</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-1.pdf"/> </figure> <figure> <caption>and {\color{blue}
+          <m>r(x)=\dfrac{\ln(x)}{\ln(x)+1}</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-1"/> </figure> <figure> <caption>and {\color{blue}
                 <m>y=g(x)=1</m>}</caption> {\color{red}
                 <m>y=f(x)=\dfrac{1}{\ln(x)+1}</m>} </figure> </sidebyside> </figure>
               </p>
@@ -352,7 +352,7 @@
                 <m>f(x)= \left(\frac{\ln(x)}{\ln(2)}\right)^2</m> is below the graph of
                 <m>y = g(x) = \frac{2 \ln(x)}{\ln(2)} + 3</m> on the solution interval:
                 see <xref ref="fig_logineq2">Figure</xref>. <table xml:id="fig_logineq2"> <caption>Solving
-          <m>(\log_2(x))^2\lt 2\log_2(x)+3</m></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/LogEquations-2.pdf"/></cell> </row> <row> <cell>Sign diagram for</cell> </row> <row> <cell><m>r(x)=(\log_2(x))^2-2\log_2(x)-3</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/ExpLogs22.pdf"/></cell> </row> <row> <cell>{\color{red}
+          <m>(\log_2(x))^2\lt 2\log_2(x)+3</m></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/LogEquations-2"/></cell> </row> <row> <cell>Sign diagram for</cell> </row> <row> <cell><m>r(x)=(\log_2(x))^2-2\log_2(x)-3</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/ExpLogs22"/></cell> </row> <row> <cell>{\color{red}
           <m>y=f(x)=(\log_2(x))^2</m>} and</cell> </row> <row> <cell>{\color{blue}
                 <m>y=g(x)=2\log_2(x)+3</m>}</cell> </row> </tabular> </table>
               </p>
@@ -376,7 +376,7 @@
                 indicates the graph of <m>y= f(x) = x \log(x+1)</m> is above
                 <m>y=g(x) = x</m> on the solution intervals,
                 and the graphs intersect at <m>x=0</m> and <m>x=9</m>. <figure xml:id="fig_logineq3"> <caption>Solving <m>x\log(x+1)\geq x</m></caption> <sidebyside> <figure> <caption>Sign diagram for
-          <m>r(x)=x\log(x+1)-x</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-3.pdf"/> </figure> <figure> <caption>and {\color{blue}
+          <m>r(x)=x\log(x+1)-x</m></caption> <img src="figures/ExpLogsGraphics/LogEquations-3"/> </figure> <figure> <caption>and {\color{blue}
           <m>y=g(x)=x</m>}</caption> {\color{red}
                 <m>y=f(x)=x\log(x+1)</m>} </figure> </sidebyside> </figure>
               </p>
@@ -418,7 +418,7 @@
 
         <figure xml:id="fig_pHlog">
           <caption>The graphs of {\color{red} <m>y = f(x) = -\log(x)</m>}, {\color{green} <m>y = 7.8</m>} and {\color{orange} <m>y = 8.5</m>}</caption>
-          <img src="figures/ExpLogsGraphics/ExpLogs24.pdf"/>
+          <img src="figures/ExpLogsGraphics/ExpLogs24"/>
         </figure>
       </solution>
     </example>
@@ -459,7 +459,7 @@
         <figure xml:id="fig_loginverse">
           <caption>\color{red} <m>y=f(x)=\dfrac{\log(x)}{1-\log(x)}</m>
           and {\color{blue} <m>y=g(x)=10^{\frac{x}{x+1}}</m>}</caption>
-          <img src="figures/ExpLogsGraphics/ExpLogs25.pdf"/>
+          <img src="figures/ExpLogsGraphics/ExpLogs25"/>
         </figure>
       </solution>
     </example>

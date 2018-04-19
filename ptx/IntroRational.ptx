@@ -208,7 +208,7 @@
 
     <figure xml:id="fig_ratgr1">
       <caption>The graph of <m>f(x) = \dfrac{2x-1}{x+1}</m></caption>
-      <img src="figures/RationalsGraphics/Rationals01.pdf"/>
+      <img src="figures/RationalsGraphics/Rationals01"/>
     </figure>
 
     <figure xml:id="fig_rattab1">
@@ -417,7 +417,7 @@
     </aside>
     <figure xml:id="fig_ratgr3">
       <caption>The graph <m>y=h(x)</m> showing asymptotes and the <q>hole</q></caption>
-      <img src="figures/RationalsGraphics/IntroRational-1.pdf"/>
+      <img src="figures/RationalsGraphics/IntroRational-1"/>
     </figure>
 
     <p>
@@ -533,7 +533,7 @@
                 as <m>x \rightarrow \sqrt{3}^{\, -}</m>,
                 <m>f(x) \rightarrow -\infty</m>,
                 and finally as <m>x\rightarrow \sqrt{3}^{\, +}</m>,
-                <m>f(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgr4"> <caption>The graph <m>y=f(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals02.pdf"/> </figure>
+                <m>f(x) \rightarrow \infty</m>. <figure xml:id="fig_ratgr4"> <caption>The graph <m>y=f(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals02"/> </figure>
               </p>
             </li>
 
@@ -559,7 +559,7 @@
                 as <m>x \rightarrow 3^{-}</m>,
                 <m>g(x) \rightarrow \frac{5}{6}^{-}</m>,
                 and as <m>x \rightarrow 3^{+}</m>,
-                <m>g(x) \rightarrow \frac{5}{6}^{+}</m>. <figure xml:id="fig_ratgr5"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals03.pdf"/> </figure>
+                <m>g(x) \rightarrow \frac{5}{6}^{+}</m>. <figure xml:id="fig_ratgr5"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals03"/> </figure>
               </p>
             </li>
 
@@ -569,7 +569,7 @@
                 since <m>x^2+9 = 0</m> has no real solutions.
                 Accordingly,
                 the graph of <m>y=h(x)</m> is devoid of both vertical asymptotes and holes,
-                as see in <xref ref="fig_ratgr6">Figure</xref>. <figure xml:id="fig_ratgr6"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals04.pdf"/> </figure>
+                as see in <xref ref="fig_ratgr6">Figure</xref>. <figure xml:id="fig_ratgr6"> <caption>The graph <m>y=g(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals04"/> </figure>
               </p>
             </li>
 
@@ -584,7 +584,7 @@
                 bears this out, and, moreover,
                 we see that as <m>x\rightarrow -2^{-}</m>,
                 <m>r(x) \rightarrow \infty</m> and as <m>x \rightarrow -2^{+}</m>,
-                <m>r(x) \rightarrow -\infty</m>. <figure xml:id="fig_ratgr7"> <caption>The graph <m>y=r(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals05.pdf"/> </figure>
+                <m>r(x) \rightarrow -\infty</m>. <figure xml:id="fig_ratgr7"> <caption>The graph <m>y=r(x)</m> in <xref ref="vavsholeexample">Example</xref></caption> <img src="figures/RationalsGraphics/Rationals05"/> </figure>
               </p>
             </li>
           </ol>
@@ -663,7 +663,7 @@
                 To determine the behaviour of <m>P</m> as <m>t \rightarrow 5^{-}</m>,
                 we make the table in <xref ref="fig_rattab4">Figure</xref>. <table xml:id="fig_rattab4"> <caption>The behaviour of <m>P</m> as
                 <m>t\to 5^-</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell><m>t</m></cell> <cell><m>P(t)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.9</cell> <cell>10000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.99</cell> <cell>1000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.999</cell> <cell>100000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> <row> <cell>4.9999</cell> <cell>10000000000</cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> </row> </tabular> </table> <figure xml:id="fig_doomsday"> <caption>The graph of <m>P(t)</m>,
-                for <m>0\leq t\lt 5</m></caption> <img src="figures/RationalsGraphics/Doomsday.pdf"/> </figure> In other words,
+                for <m>0\leq t\lt 5</m></caption> <img src="figures/RationalsGraphics/Doomsday"/> </figure> In other words,
                 as <m>t \rightarrow 5^{-}</m>,
                 <m>P(t) \rightarrow \infty</m>.
                 Graphically,
@@ -858,7 +858,7 @@
                 We see from the calculator's graph that as <m>x \rightarrow -\infty</m>,
                 <m>h(x) \rightarrow -3^{+}</m>,
                 and as <m>x \rightarrow \infty</m>,
-                <m>h(x) \rightarrow -3^{-}</m>. <figure xml:id="fig_ratgr8"> <caption>Graphs of the three functions in <xref ref="haexample">Example</xref></caption> <sidebyside> <figure> <caption><m>y=f(x)</m></caption> <img src="figures/RationalsGraphics/Rationals06.pdf"/> </figure> <figure> <m>y=g(x)</m> </figure> <figure> <caption><m>y=h(x)</m></caption> <img src="figures/RationalsGraphics/Rationals08.pdf"/> </figure> </sidebyside> </figure>
+                <m>h(x) \rightarrow -3^{-}</m>. <figure xml:id="fig_ratgr8"> <caption>Graphs of the three functions in <xref ref="haexample">Example</xref></caption> <sidebyside> <figure> <caption><m>y=f(x)</m></caption> <img src="figures/RationalsGraphics/Rationals06"/> </figure> <figure> <m>y=g(x)</m> </figure> <figure> <caption><m>y=h(x)</m></caption> <img src="figures/RationalsGraphics/Rationals08"/> </figure> </sidebyside> </figure>
               </p>
             </li>
           </ol>
@@ -974,7 +974,7 @@
 
 
 
-      <img src="figures/RationalsGraphics/SA01.pdf"/>
+      <img src="figures/RationalsGraphics/SA01"/>
     </figure>
 
     <figure xml:id="fig_slantas2">
@@ -1141,7 +1141,7 @@
 
                 <figure xml:id="fig_ratgr9">
                   <caption>The graph <m>y=f(x)</m> in <xref ref="saexample">Example</xref></caption>
-                  <img src="figures/RationalsGraphics/SAEX01.pdf"/>
+                  <img src="figures/RationalsGraphics/SAEX01"/>
                 </figure>
 
                 <aside>
@@ -1175,7 +1175,7 @@
 
                 <figure xml:id="fig_ratgr10">
                   <caption>The graph <m>y=g(x)</m> in <xref ref="saexample">Example</xref></caption>
-                  <img src="figures/RationalsGraphics/SAEX02.pdf"/>
+                  <img src="figures/RationalsGraphics/SAEX02"/>
                 </figure>
 
                 <aside>
@@ -1205,7 +1205,7 @@
                 the graph of <m>y=h(x)</m> approaches the asymptote from below,
                 and as <m>x \rightarrow \infty</m>,
                 the graph of <m>y=h(x)</m> approaches the asymptote from above:
-                see <xref ref="fig_ratgr11">Figure</xref>. <figure xml:id="fig_ratgr11"> <caption>The graph <m>y=h(x)</m> in <xref ref="saexample">Example</xref></caption> <img src="figures/RationalsGraphics/SAEX03.pdf"/> </figure>
+                see <xref ref="fig_ratgr11">Figure</xref>. <figure xml:id="fig_ratgr11"> <caption>The graph <m>y=h(x)</m> in <xref ref="saexample">Example</xref></caption> <img src="figures/RationalsGraphics/SAEX03"/> </figure>
               </p>
             </li>
           </ol>

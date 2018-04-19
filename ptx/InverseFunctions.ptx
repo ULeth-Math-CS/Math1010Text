@@ -92,7 +92,7 @@
 
     <figure xml:id="fig_inverse1">
       <caption>The relationship between a function and its inverse</caption>
-      <img src="figures/FurtherGraphics/InverseFunctions-1.pdf"/>
+      <img src="figures/FurtherGraphics/InverseFunctions-1"/>
     </figure>
 
     <p>
@@ -184,7 +184,7 @@
 
     <figure xml:id="fig_inverse2">
       <caption>Reflecting <m>y=f(x)</m> across <m>y=x</m> to obtain <m>y=g(x)</m></caption>
-      <img src="figures/FurtherGraphics/InverseFunctions-2.pdf"/>
+      <img src="figures/FurtherGraphics/InverseFunctions-2"/>
     </figure>
 
     <p>
@@ -224,10 +224,10 @@
         since it exposes the reader to more abstract ways of thinking of functions and inverses.
       </p>
     </aside>
-    <p>
-      \phantomsection
-    </p>
+  </introduction>
 
+  <subsection xml:id="inversefunctionuniqueness">
+    <title>PLACEHOLDER</title>
     <theorem xml:id="inverseuniquegraph">
       <title>Uniqueness of Inverse Functions and Their Graphs</title>
       <statement>
@@ -283,7 +283,7 @@
 
     <figure xml:id="fig_inverse3">
       <caption>The function <m>f(x)=x^2</m> is not invertible</caption>
-      <img src="figures/FurtherGraphics/InverseFunctions-3.pdf"/>
+      <img src="figures/FurtherGraphics/InverseFunctions-3"/>
     </figure>
 
     <p>
@@ -303,7 +303,7 @@
       <caption>Reflecting <m>y=x^2</m> across the line <m>y=x</m> does not produce a function</caption>
       <tabular>
         <row>
-          <cell><img src="figures/FurtherGraphics/InverseFunctions-4.pdf"/></cell>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-4"/></cell>
         </row>
         <row>
           <cell>(a) <m>y=f(x)=x^2</m></cell>
@@ -312,7 +312,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/FurtherGraphics/InverseFunctions-5.pdf"/></cell>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-5"/></cell>
         </row>
         <row>
           <cell>(b) <m>y=f^{-1}(x)</m>?</cell>
@@ -484,7 +484,7 @@
                   We have that <m>f</m> is a non-constant linear function,
                   which means its graph is a non-horizontal line.
                   Thus the graph of <m>f</m> passes the Horizontal Line Test:
-                  see <xref ref="fig_inverse5">Figure</xref>. <figure xml:id="fig_inverse5"> <caption>The function <m>f</m> is one-to-one</caption> <img src="figures/FurtherGraphics/InverseFunctions-6.pdf"/> </figure>
+                  see <xref ref="fig_inverse5">Figure</xref>. <figure xml:id="fig_inverse5"> <caption>The function <m>f</m> is one-to-one</caption> <img src="figures/FurtherGraphics/InverseFunctions-6"/> </figure>
                 </p>
               </li>
             </ol></li>
@@ -523,7 +523,7 @@
 
             <figure xml:id="fig_inverse6">
               <caption>The function <m>g</m> is one-to-one</caption>
-              <img src="figures/FurtherGraphics/InverseFunctions-7.pdf"/>
+              <img src="figures/FurtherGraphics/InverseFunctions-7"/>
             </figure>
 
           </li>
@@ -577,7 +577,7 @@
 
             <figure xml:id="fig_inverse7">
               <caption>The function <m>h</m> is not one-to-one</caption>
-              <img src="figures/FurtherGraphics/InverseFunctions-8.pdf"/>
+              <img src="figures/FurtherGraphics/InverseFunctions-8"/>
             </figure>
 
           </li>
@@ -608,7 +608,7 @@
 
         <figure xml:id="fig_inverse8">
           <caption>The function <m>F</m> is not one-to-one</caption>
-          <img src="figures/FurtherGraphics/InverseFunctions-9.pdf"/>
+          <img src="figures/FurtherGraphics/InverseFunctions-9"/>
         </figure>
       </solution>
     </example>
@@ -736,7 +736,7 @@
 
                 <figure xml:id="fig_inverse9">
                   <caption>The graphs of <m>f</m> and <m>f^{-1}</m> from <xref ref="ex_inverse1">Example</xref></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-10.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-10"/>
                 </figure>
 
               </p>
@@ -790,7 +790,7 @@
 
                 <figure xml:id="fig_inverse10">
                   <caption>The graphs of <m>g</m> and <m>g^{-1}</m> from <xref ref="ex_inverse1">Example</xref></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-11.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-11"/>
                 </figure>
 
               </p>
@@ -814,7 +814,7 @@
       <caption>Restricting the domain of <m>f(x)=x^2</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/FurtherGraphics/InverseFunctions-12.pdf"/></cell>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-12"/></cell>
         </row>
         <row>
           <cell>(a) <m>y=f(x)=x^2</m></cell>
@@ -823,7 +823,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/FurtherGraphics/InverseFunctions-13.pdf"/></cell>
+          <cell><img src="figures/FurtherGraphics/InverseFunctions-13"/></cell>
         </row>
         <row>
           <cell>(b) <m>y=g(x)=x^2, x\geq 0</m></cell>
@@ -897,7 +897,7 @@
 
                 <figure xml:id="fig_inverse12">
                   <caption>The restricted function <m>g</m> and its inverse</caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-14.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-14"/>
                 </figure>
 
                 We now use our algorithm to find <m>j^{-1}(x)</m>. (Here,
@@ -925,7 +925,7 @@
                 <figure xml:id="fig_inverse13">
                   <caption><m>y=x^2-2x+4</m>,
                 for <m>x\leq 1</m></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-15.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-15"/>
                 </figure>
 
                 We have <m>j^{-1}(x) = 1 - \sqrt{x-3}</m>.
@@ -957,7 +957,7 @@
 
                 <figure xml:id="fig_inverse14">
                   <caption>The graphs of <m>j</m> and <m>j^{-1}</m> from <xref ref="inverserestrictionex">Example</xref></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-16.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-16"/>
                 </figure>
 
               </p>
@@ -971,7 +971,7 @@
 
                 <figure xml:id="fig_inverse15">
                   <caption><m>y=\sqrt{x+2}-1</m></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-17.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-17"/>
                 </figure>
 
                 We now try to find <m>k^{-1}</m>.
@@ -1041,7 +1041,7 @@
 
                 <figure xml:id="fig_inverse16">
                   <caption>The graphs of <m>k</m> and <m>k^{-1}</m> from <xref ref="inverserestrictionex">Example</xref></caption>
-                  <img src="figures/FurtherGraphics/InverseFunctions-18.pdf"/>
+                  <img src="figures/FurtherGraphics/InverseFunctions-18"/>
                 </figure>
 
               </p>
@@ -1167,7 +1167,7 @@
         </p>
       </solution>
     </example>
-  </introduction>
+  </subsection>
 
   <subsection>
     <title>Problems</title>
