@@ -310,18 +310,14 @@
       Hence, <m>\cos\left(\frac{5\pi}{6}\right) = -\frac{\sqrt{3}}{2}</m> and <m>\sin\left( \frac{5\pi}{6} \right) = \frac{1}{2}</m>.
     </p>
 
-    <!--
-    <caption>Refelcting <m>P(x,y)</m> across the <m>y</m>-axis to obtain a Quadrant I angle</caption>
-    -->
+    <figure>
+      <caption>Refelcting <m>P(x,y)</m> across the <m>y</m>-axis to obtain a Quadrant I angle</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TheUnitCircle-11"></image>
+        <image source="figures/IntroTrigGraphics/TheUnitCircle-12"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-11"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-12"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       In the above scenario, the angle <m>\frac{\pi}{6}</m> is called the
           <idx><h>angle</h><h>reference</h></idx><idx><h>reference angle</h></idx>
@@ -730,21 +726,14 @@
               intersects the Unit Circle at <m>x = \frac{1}{2}</m>.
               This means <m>\theta</m> is a Quadrant I or IV angle with reference angle <m>\frac{\pi}{3}</m>.
 
+              <figure>
+                <caption>Angles with <m>\cos(\theta)=\frac{1}{2}</m></caption>
+                <sidebyside>
+                  <image source="figures/IntroTrigGraphics/TheUnitCircle-31"></image>
+                  <image source="figures/IntroTrigGraphics/TheUnitCircle-32"></image>
+                </sidebyside>
+              </figure>
 
-
-
-              <!--
-              <caption>Angles with <m>\cos(\theta)=\frac{1}{2}</m></caption>
-              -->
-
-              <sidebyside>
-                <tabular>
-                  <row>
-                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-31"/></cell>
-                    <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-32"/></cell>
-                  </row>
-                </tabular>
-              </sidebyside>
               One solution in  Quadrant I is  <m>\theta = \frac{\pi}{3}</m>,
               and since all other Quadrant I solutions must be coterminal with <m>\frac{\pi}{3}</m>,
               we find <m>\theta = \frac{\pi}{3} + 2\pi k</m> for integers <m>k</m>.
@@ -853,18 +842,14 @@
       and we leave it to the reader to verify these formulas hold for the quadrantal angles.
     </p>
 
-    <!--
-    <caption>Determining coordinates of <m>Q(x,y)</m> in terms of <m>\cos(\theta)</m> and <m>\sin(\theta)</m></caption>
-    -->
+    <figure>
+      <caption>Determining coordinates of <m>Q(x,y)</m> in terms of <m>\cos(\theta)</m> and <m>\sin(\theta)</m></caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TheUnitCircle-37"></image>
+        <image source="figures/IntroTrigGraphics/TheUnitCircle-38"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-37"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/TheUnitCircle-38"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       Not only can we describe the coordinates of <m>Q</m> in terms of <m>\cos(\theta)</m> and
       <m>\sin(\theta)</m> but since the radius of the circle is <m>r = \sqrt{x^2 + y^2}</m>,
@@ -986,13 +971,13 @@
       </statement>
     </theorem>
 
-    <!--
-    <caption>Equations for circular motion</caption>
-    -->
+    <figure>
+      <caption>Equations for circular motion</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TheUnitCircle-41"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TheUnitCircle-41"/>
-    </sidebyside>
     <example xml:id="Lakelandrotates">
       <title>Motion on the Earth's surface</title>
       <statement>

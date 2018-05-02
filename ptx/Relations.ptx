@@ -225,13 +225,14 @@
                     depending on the relation.
                   </p>
                 </aside>
-                <!--
-                <caption>The graph of <m>R</m></caption>
-                -->
 
-                <sidebyside>
-                  <img src="figures/RelationsandFunctionsGraphics/Relations-8"/>
-                </sidebyside>
+                <figure>
+                  <caption>The graph of <m>R</m></caption>
+                  <sidebyside>
+                    <image source="figures/RelationsandFunctionsGraphics/Relations-8"></image>
+                  </sidebyside>
+                </figure>
+
               </p>
             </li>
           </ol>

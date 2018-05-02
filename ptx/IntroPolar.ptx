@@ -41,18 +41,14 @@
       from the polar axis, (that's <m>\theta</m>).
     </p>
 
-    <!--
-    <caption>Rectangular vs. Polar Coordinates</caption>
-    -->
+    <figure>
+      <caption>Rectangular vs. Polar Coordinates</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-1"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-2"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-1"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-2"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       For example,
       if we wished to plot the point <m>P</m> with polar coordinates <m>\left(4, \frac{5\pi}{6}\right)</m>,
@@ -61,19 +57,15 @@
       as shown in <xref ref="fig_polar1">Figure</xref>.
     </p>
 
-    <!--
-    <caption>Locating a point using polar coordinates</caption>
-    -->
+    <figure>
+      <caption>Locating a point using polar coordinates</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-3"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-4"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-5"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-3"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-4"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-5"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       We may also visualize this process by thinking of the rotation first.(As with anything in Mathematics,
       the more ways you have to look at something, the better.
@@ -85,38 +77,30 @@
       <m>\frac{5\pi}{6}</m> which is <m>4</m> units away from the pole.
     </p>
 
-    <!--
-    <caption>Performing the rotation first</caption>
-    -->
+    <figure>
+      <caption>Performing the rotation first</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-6"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-7"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-8"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-6"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-7"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-8"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       If <m>r \lt 0</m>,
       we begin by moving in the opposite direction on the polar axis from the pole.
       For example, to plot <m>Q\left(-3.5, \frac{\pi}{4}\right)</m> we have the steps shown in <xref ref="fig_polar3">Figure</xref>.
     </p>
 
-    <!--
-    <caption>Using polar coordinates when <m>r\lt 0</m></caption>
-    -->
+    <figure>
+      <caption>Using polar coordinates when <m>r\lt 0</m></caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-9"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-10"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-11"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-9"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-10"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-11"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       If we interpret the angle first,
       we rotate <m>\frac{\pi}{4}</m> radians,
@@ -125,38 +109,30 @@
       <m>\frac{5\pi}{4}</m>, not <m>\frac{\pi}{4}</m>.
     </p>
 
-    <!--
-    <caption>Performing the rotation first to plot the point in Figure \ref{fig:polar3}</caption>
-    -->
+    <figure>
+      <caption>Performing the rotation first to plot the point in Figure \ref{fig:polar3}</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-12"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-13"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-14"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-12"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-13"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-14"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       As you may have guessed,
       <m>\theta \lt 0</m> means the rotation away from the polar axis is clockwise instead of counter-clockwise.
       Hence, to plot <m>R\left(3.5, -\frac{3\pi}{4}\right)</m> we have the following.
     </p>
 
-    <!--
-    <caption><m>\theta=-\frac{3\pi}{4}\lt 0</m> produces a clockwise rotation</caption>
-    -->
+    <figure>
+      <caption><m>\theta=-\frac{3\pi}{4}\lt 0</m> produces a clockwise rotation</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-15"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-16"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-17"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-15"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-16"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-17"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       From an <q>angles first</q> approach,
       we rotate <m>-\frac{3\pi}{4}</m> then move out <m>3.5</m> units from the pole.
@@ -164,19 +140,15 @@
       <m>\theta = -\frac{3\pi}{4}</m> which is <m>3.5</m> units from the pole.
     </p>
 
-    <!--
-    <caption>Rotating first with <m>\theta\lt 0</m></caption>
-    -->
+    <figure>
+      <caption>Rotating first with <m>\theta\lt 0</m></caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/IntroPolar-18"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-19"></image>
+        <image source="figures/AppExtGraphics/IntroPolar-20"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-18"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-19"/></cell>
-          <cell><img src="figures/AppExtGraphics/IntroPolar-20"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       The points <m>Q</m> and <m>R</m> above are, in fact,
       the same point despite the fact that their polar coordinate representations are different.

@@ -46,13 +46,13 @@
       we consider a generic triangle with the vertex of angle <m>\alpha</m> at the origin with side <m>b</m> positioned along the positive <m>x</m>-axis as in <xref ref="fig_cosines1">Figure</xref>.
     </p>
 
-    <!--
-    <caption>Generic triangle for the proof of Theorem \ref{lawofcosines}</caption>
-    -->
+    <figure>
+      <caption>Generic triangle for the proof of Theorem \ref{lawofcosines}</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/LawofCosines-1"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/AppExtGraphics/LawofCosines-1"/>
-    </sidebyside>
     <p>
       From this set-up,
       we immediately find that the coordinates of <m>A</m> and <m>C</m> are <m>A(0,0)</m> and <m>C(b,0)</m>.
@@ -178,18 +178,13 @@
               we get  <m>\gamma = \arccos\left(\frac{7-2 \cos\left(50^{\circ}\right)}{\sqrt{53-28\cos\left(50^{\circ} \right)}} \right)</m> radians <m>\approx 15.01^{\circ}</m>.
               We sketch the triangle in <xref ref="fig_cosines2">Figure</xref> below.
 
+              <figure>
+                <caption>Triangle for Example \ref{locex}.\ref{locsas}</caption>
+                <sidebyside>
+                  <image source="figures/AppExtGraphics/LawofCosines-2"></image>
+                </sidebyside>
+              </figure>
 
-
-
-
-
-              <!--
-              <caption>Triangle for Example \ref{locex}.\ref{locsas}</caption>
-              -->
-
-              <sidebyside>
-                <img src="figures/AppExtGraphics/LawofCosines-2"/>
-              </sidebyside>
               As we mentioned earlier,
               once we've determined <m>b</m> it is possible to use the Law of Sines to find the remaining angles.
               Here, however,

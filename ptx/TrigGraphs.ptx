@@ -350,13 +350,13 @@
       many of the applications involving the cosine and sine functions feature modelling wavelike phenomena.
     </p>
 
-    <!--
-    <caption>An accurately scaled graph of <m>y = \cos(x)</m>.</caption>
-    -->
+    <figure>
+      <caption>An accurately scaled graph of <m>y = \cos(x)</m>.</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-2"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-2"/>
-    </sidebyside>
     <p>
       We can plot the fundamental cycle of the graph of
       <m>y = \sin(x)</m> similarly, with similar results.
@@ -496,13 +496,13 @@
       <m>y = \sin(x)</m> below with the fundamental cycle highlighted.
     </p>
 
-    <!--
-    <caption>An accurately scaled graph of <m>y = \sin(x)</m>.</caption>
-    -->
+    <figure>
+      <caption>An accurately scaled graph of <m>y = \sin(x)</m>.</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-4"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-4"/>
-    </sidebyside>
     <p>
       It is no accident that the graphs of
       <m>y = \cos(x)</m> and <m>y = \sin(x)</m> are so similar.
@@ -1212,13 +1212,14 @@
         Hence, <m>\sec(x)</m> inherits its period from <m>\cos(x)</m>.
       </p>
     </aside>
-    <!--
-    <caption>The graph of <m>y=\sec{x}</m></caption>
-    -->
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-11"/>
-    </sidebyside>
+    <figure>
+      <caption>The graph of <m>y=\sec{x}</m></caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-11"></image>
+      </sidebyside>
+    </figure>
+
     <p>
       As one would expect, to graph <m>y = \csc(x)</m> we begin with
       <m>y = \sin(x)</m> and take reciprocals of the corresponding <m>y</m>-values.
@@ -1267,13 +1268,13 @@
       is verified geometrically in the graph of <m>y = G(x) = \csc(x)</m>.
     </p>
 
-    <!--
-    <caption>The graph of <m>y=\csc{x}</m></caption>
-    -->
+    <figure>
+      <caption>The graph of <m>y=\csc{x}</m></caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-13"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-13"/>
-    </sidebyside>
     <p>
       Note that, on the intervals between the vertical asymptotes,
       both <m>F(x) = \sec(x)</m> and
@@ -1608,13 +1609,14 @@
         <img src="figures/IntroTrigGraphics/TrigGraphs-16"/>
       </tabular>
     </sidebyside>
-    <!--
-    <caption>The graph of <m>y = \tan(x)</m></caption>
-    -->
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-17"/>
-    </sidebyside>
+    <figure>
+      <caption>The graph of <m>y = \tan(x)</m></caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-17"></image>
+      </sidebyside>
+    </figure>
+
     <p>
       From the graph,
       it appears as if the tangent function is periodic with period <m>\pi</m>.
@@ -1692,13 +1694,13 @@
       <m>K(x) = \cot(x)</m> as read from the graph matches with what we found analytically in <xref ref="circularfunctionsbeyond">Section</xref>.
     </p>
 
-    <!--
-    <caption>The graph of <m>y = \cot(x)</m></caption>
-    -->
+    <figure>
+      <caption>The graph of <m>y = \cot(x)</m></caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-19"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-19"/>
-    </sidebyside>
     <p>
       The properties of the tangent and cotangent functions are summarized below.
       As with <xref ref="secantcosecantfunctionprops">Theorem</xref>,

@@ -49,13 +49,14 @@
         <em>functions</em> of complex numbers.
       </p>
     </aside>
-    <!--
-    <caption>The complex plane</caption>
-    -->
 
-    <sidebyside>
-      <img src="figures/AppExtGraphics/PolarComplex-1"/>
-    </sidebyside>
+    <figure>
+      <caption>The complex plane</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/PolarComplex-1"></image>
+      </sidebyside>
+    </figure>
+
     <p>
       Since the ordered pair <m>(a,b)</m> gives the <em>rectangular</em>
       coordinates associated with the complex number <m>z = a+bi</m>,
@@ -511,13 +512,13 @@
       consider <xref ref="fig_polarcom2">Figure</xref> below.
     </p>
 
-    <!--
-    <caption>Polar coordinates, <m>(r, \theta)</m> associated with <m>z = a+bi</m> with <m>r \geq 0</m>.</caption>
-    -->
+    <figure>
+      <caption>Polar coordinates, <m>(r, \theta)</m> associated with <m>z = a+bi</m> with <m>r \geq 0</m>.</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/PolarComplex-3"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/AppExtGraphics/PolarComplex-3"/>
-    </sidebyside>
     <p>
       We know from <xref ref="polarrectangularconversion">Theorem</xref>
       that <m>a = r\cos(\theta)</m> and <m>b = r\sin(\theta)</m>.

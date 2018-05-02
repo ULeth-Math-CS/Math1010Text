@@ -133,19 +133,15 @@
       completing the proof for this case.
     </p>
 
-    <!--
-    <caption><m>\triangle ABC</m> for the first case of the proof of Theorem \ref{lawofsines}</caption>
-    -->
+    <figure>
+      <caption><m>\triangle ABC</m> for the first case of the proof of Theorem \ref{lawofsines}</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/LawofSines-2"></image>
+        <image source="figures/AppExtGraphics/LawofSines-3"></image>
+        <image source="figures/AppExtGraphics/LawofSines-4"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-2"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-3"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-4"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       For our next case consider the triangle
       <m>\triangle ABC</m> in <xref ref="fig_sines3">Figure</xref>
@@ -157,18 +153,14 @@
       <m>h = c \sin(\beta)</m> so that <m>\frac{\sin(\beta)}{b} = \frac{\sin(\gamma)}{c}</m>.
     </p>
 
-    <!--
-    <caption><m>\triangle ABC</m> for the second case of the proof of Theorem \ref{lawofsines}</caption>
-    -->
+    <figure>
+      <caption><m>\triangle ABC</m> for the second case of the proof of Theorem \ref{lawofsines}</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/LawofSines-5"></image>
+        <image source="figures/AppExtGraphics/LawofSines-6"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <tabular>
-        <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-5"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-6"/></cell>
-        </row>
-      </tabular>
-    </sidebyside>
     <p>
       Dropping an altitude from vertex B also generates two right triangles,
       <m>\triangle ABQ</m> and <m>\triangle BCQ</m>.
@@ -190,13 +182,13 @@
       and is left to the reader. (Refer to <xref ref="fig_sines4">Figure</xref>.)
     </p>
 
-    <!--
-    <caption><m>\triangle ABC</m> for the third case of the proof of Theorem \ref{lawofsines}</caption>
-    -->
+    <figure>
+      <caption><m>\triangle ABC</m> for the third case of the proof of Theorem \ref{lawofsines}</caption>
+      <sidebyside>
+        <image source="figures/AppExtGraphics/LawofSines-7"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/AppExtGraphics/LawofSines-7"/>
-    </sidebyside>
     <p>
       In order to use the Law of Sines to solve a triangle,
       we need at least one angle-side opposite pair.
