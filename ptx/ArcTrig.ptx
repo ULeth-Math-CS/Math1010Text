@@ -17,13 +17,13 @@
       Choosing the interval <m>[0,\pi]</m> allows us to keep the range as <m>[-1,1]</m> as well as the properties of being smooth and continuous.
     </p>
 
-    <!--
-    <caption>Restricting the domain of <m>f(x) = \cos(x)</m> to <m>[0,\pi]</m>.</caption>
-    -->
+    <figure>
+      <caption>Restricting the domain of <m>f(x) = \cos(x)</m> to <m>[0,\pi]</m>.</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/ArcTrig-1"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/ArcTrig-1"/>
-    </sidebyside>
     <p>
       Recall from <xref ref="InverseFunctions">Section</xref>
       that the inverse of a function <m>f</m> is typically denoted <m>f^{-1}</m>.
@@ -83,13 +83,13 @@
       although the interval of choice is <m>\left[ -\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.
     </p>
 
-    <!--
-    <caption>Restricting the domain of <m>f(x) = \sin(x)</m> to <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.</caption>
-    -->
+    <figure>
+      <caption>Restricting the domain of <m>f(x) = \sin(x)</m> to <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>.</caption>
+      <sidebyside>
+        <image source="figures/IntroTrigGraphics/ArcTrig-4"></image>
+      </sidebyside>
+    </figure>
 
-    <sidebyside>
-      <img src="figures/IntroTrigGraphics/ArcTrig-4"/>
-    </sidebyside>
     <p>
       It should be no surprise that we call <m>g^{-1}(x) = \arcsin(x)</m>,
       which is read <q>arc-sine of <m>x</m></q>.
