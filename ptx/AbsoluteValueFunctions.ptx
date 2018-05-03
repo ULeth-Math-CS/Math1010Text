@@ -11,7 +11,7 @@
     </p>
 
     <p>
-      <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1"/>
+      <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-1"></image>
     </p>
 
     <p>
@@ -191,11 +191,11 @@
 
             <li>
               <p>
-                <m>3|2x+1| - 5 = 0</m> \setcounter{HW}{\value{enumi}}
+                <m>3|2x+1| - 5 = 0</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -429,7 +429,7 @@
                 <sidebyside>
                   <figure>
                     <caption><m>f(x) = |x|</m>, <m>x \lt  0</m></caption>
-                    <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-2"/>
+                    <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-2"></image>
                   </figure>
 
                   <figure>
@@ -438,7 +438,7 @@
 
                   <figure>
                     <caption><m>f(x)=\lvert x\rvert</m></caption>
-                    <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4"/>
+                    <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-4"></image>
                   </figure>
                 </sidebyside>
                 </figure>
@@ -522,7 +522,7 @@
                 </me>.
                 <figure xml:id="fig_absvalgr2">
                   <caption><m>g(x) = |x-3|</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5"/>
+                  <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-5"></image>
                 </figure>
 
                 Once again,
@@ -538,7 +538,7 @@
 
                 <figure xml:id="fig_absvalgr3">
                   <caption><m>h(x) = |x|-3</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-6"/>
+                  <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-6"></image>
                 </figure>
 
               </p>
@@ -574,7 +574,7 @@
 
                 <figure xml:id="fig_absvalgr4">
                   <caption><m>i(x) = 4-2|3x+1|</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-7"/>
+                  <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-7"></image>
                 </figure>
 
                 The domain of <m>i</m> is
@@ -642,7 +642,7 @@
 
         <figure xml:id="fig_absvalgr5">
           <caption><m>f(x) = \lvert x\rvert</m> with three labelled points</caption>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-8"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-8"></image>
         </figure>
 
         <ol>
@@ -656,7 +656,7 @@
               <m>(0,0)</m> to <m>(3,0)</m> and <m>(1,1)</m> to <m>(4,1)</m>.
               Connecting these points in the classic <q><m>\vee</m></q>
               fashion produces the graph of
-              <m>y = g(x)</m> in <xref ref="fig_absvalgr6">Figure</xref>. <figure xml:id="fig_absvalgr6"> <caption><m>g(x) = |x-3| = f(x-3)</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-10"/> </figure>
+              <m>y = g(x)</m> in <xref ref="fig_absvalgr6">Figure</xref>. <figure xml:id="fig_absvalgr6"> <caption><m>g(x) = |x-3| = f(x-3)</m></caption> <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-10"></image> </figure>
             </p>
           </li>
 
@@ -670,7 +670,7 @@
               <m>(0,0)</m> to <m>(0,-3)</m> and <m>(1,1)</m> to <m>(1,-2)</m>.
               Connecting these points with the <q><m>\vee</m></q>
               shape produces our graph of <m>y=h(x)</m>:
-              see <xref ref="fig_absvalgr7">Figure</xref>. <figure xml:id="fig_absvalgr7"> <caption><m>h(x)=\lvert x\rvert -3 = f(x)-3</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-12"/> </figure>
+              see <xref ref="fig_absvalgr7">Figure</xref>. <figure xml:id="fig_absvalgr7"> <caption><m>h(x)=\lvert x\rvert -3 = f(x)-3</m></caption> <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-12"></image> </figure>
             </p>
           </li>
 
@@ -705,7 +705,7 @@
               and <m>\left(0,1\right)</m> to <m>\left(0, 2\right)</m>.
               Connecting these points with the usual <q><m>\vee</m></q>
               shape produces our graph of
-              <m>y = i(x)</m>. <figure xml:id="fig_absvalgr8"> <caption><m>i(x) = 4-2|3x+1| = -2f(3x+1)+4</m></caption> <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-14"/> </figure>
+              <m>y = i(x)</m>. <figure xml:id="fig_absvalgr8"> <caption><m>i(x) = 4-2|3x+1| = -2f(3x+1)+4</m></caption> <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-14"></image> </figure>
             </p>
           </li>
         </ol>
@@ -778,7 +778,7 @@
 
               <figure xml:id="fig_absvalgr9">
                 <caption><m>f(x) = \dfrac{\lvert x\rvert}{x}</m></caption>
-                <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15"/>
+                <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-15"></image>
               </figure>
 
               As we found earlier, the domain is <m>(-\infty, 0)\cup(0,\infty)</m>.
@@ -862,7 +862,7 @@
 
         <figure xml:id="fig_absvalgrlast">
           <caption><m>g(x) = \lvert x+2\rvert -\lvert x-3\rvert +1</m></caption>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-16"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-16"></image>
         </figure>
 
         <p>
@@ -1207,7 +1207,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-18"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-18"></image>
         </p>
       </answer>
     </exercise>
@@ -1259,7 +1259,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-19"></image>
         </p>
       </answer>
     </exercise>
@@ -1311,7 +1311,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-20"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-20"></image>
         </p>
       </answer>
     </exercise>
@@ -1363,7 +1363,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-21"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-21"></image>
         </p>
       </answer>
     </exercise>
@@ -1417,7 +1417,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-22"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-22"></image>
         </p>
       </answer>
     </exercise>
@@ -1469,7 +1469,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-23"></image>
         </p>
       </answer>
     </exercise>
@@ -1525,7 +1525,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-24"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-24"></image>
         </p>
       </answer>
     </exercise>
@@ -1581,7 +1581,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-25"></image>
         </p>
       </answer>
     </exercise>
@@ -1645,7 +1645,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-26"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-26"></image>
         </p>
       </answer>
     </exercise>
@@ -1709,7 +1709,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-27"></image>
         </p>
       </answer>
     </exercise>
@@ -1779,7 +1779,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-28"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-28"></image>
         </p>
       </answer>
     </exercise>
@@ -1847,7 +1847,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-29"></image>
         </p>
       </answer>
     </exercise>
@@ -1859,7 +1859,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17"/>
+          <image source="figures/LinearQuadraticGraphics/AbsoluteValueFunctions-17"></image>
         </p>
       </statement>
       <answer>

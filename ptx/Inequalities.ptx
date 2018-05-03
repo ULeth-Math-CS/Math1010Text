@@ -72,9 +72,9 @@
               <p>
                 To graph <m>y=f(x)</m>, we graph <m>y = 2x-1</m>,
                 which is a line with a <m>y</m>-intercept of <m>(0,-1)</m> and a slope of <m>2</m>.
-                The graph of <m>y=g(x)</m> is <m>y=5</m> which is a horizontal line through <m>(0,5)</m>. <figure xml:id="fig_linearineq"> <caption>Graphical interpretation of <xref ref="ex_motineq">Example</xref></caption> <sidebyside> <figure> <caption>Intersecting graphs <m>y=f(x)</m> and <m>y=g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-1"/> </figure> <figure> <m>f(x)\lt g(x)</m> on
+                The graph of <m>y=g(x)</m> is <m>y=5</m> which is a horizontal line through <m>(0,5)</m>. <figure xml:id="fig_linearineq"> <caption>Graphical interpretation of <xref ref="ex_motineq">Example</xref></caption> <sidebyside> <figure> <caption>Intersecting graphs <m>y=f(x)</m> and <m>y=g(x)</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-1"></image> </figure> <figure> <m>f(x)\lt g(x)</m> on
                 <m>(-\infty, 3)</m> </figure> <figure> <caption><m>f(x)>g(x)</m> on
-                <m>(3,\infty)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-3"/> </figure> </sidebyside> </figure> To see the connection between the graph and the Algebra,
+                <m>(3,\infty)</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-3"></image> </figure> </sidebyside> </figure> To see the connection between the graph and the Algebra,
                 we recall the Fundamental Graphing Principle for Functions in <xref ref="GraphsofFunctions">Section</xref>:
                 the point <m>(a,b)</m> is on the graph of <m>f</m> if and only if <m>f(a)=b</m>.
                 In other words,
@@ -150,7 +150,7 @@
 
         <figure xml:id="fig_graphineq">
           <caption>The graphs <m>y=f(x)</m> and <m>y=g(x)</m> for <xref ref="ex_solvewithgraph">Example</xref></caption>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-4"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-4"></image>
         </figure>
 
         <ol>
@@ -207,8 +207,8 @@
                 on the interval <m>(-1,1)</m>.
                 Hence, our solution to
           <m>f(x) \geq g(x)</m> is <m>[-1,1]</m>. <figure xml:id="fig_graphineq1"> <caption>The solution to
-                <m>f(x)\lt g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-5"/> </figure> <figure xml:id="fig_graphineq2"> <caption>The solution to
-                <m>f(x) \geq g(x)</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-6"/> </figure>
+                <m>f(x)\lt g(x)</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-5"></image> </figure> <figure xml:id="fig_graphineq2"> <caption>The solution to
+                <m>f(x) \geq g(x)</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-6"></image> </figure>
               </p>
             </li>
           </ol>
@@ -292,7 +292,7 @@
 
     <figure xml:id="fig_absvalineq">
       <caption>Solving <m>\lvert x\rvert \lt c</m> graphically</caption>
-      <img src="figures/LinearQuadraticGraphics/Inequalities-7"/>
+      <image source="figures/LinearQuadraticGraphics/Inequalities-7"></image>
     </figure>
 
     <p>
@@ -348,7 +348,7 @@
                 in interval notation is <m>(-\infty,-2] \cup [4,\infty)</m>.
                 Graphically,
                 we have <xref ref="fig_absvalineqeg1">Figure</xref>. <figure xml:id="fig_absvalineqeg1"> <caption>Solving
-                <m>\lvert x-1\rvert \geq 3</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-8"/> </figure> We see that the graph of <m>y=|x-1|</m> is above the horizontal line <m>y=3</m> for
+                <m>\lvert x-1\rvert \geq 3</m> in <xref ref="ex_absvalineq">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-8"></image> </figure> We see that the graph of <m>y=|x-1|</m> is above the horizontal line <m>y=3</m> for
                 <m>x \lt -2</m> and <m>x > 4</m> hence this is where <m>|x-1| > 3</m>.
                 The two graphs intersect when <m>x=-2</m> and <m>x=4</m>,
                 so we have graphical confirmation of our analytic solution.
@@ -368,7 +368,7 @@
                 Graphically we see in <xref ref="fig_absvalineqeg2">Figure</xref>
                 that the graph of <m>y=4-3|2x+1|</m> is above <m>y=-2</m> for <m>x</m> values between <m>-\frac{3}{2}</m> and
                 <m>\frac{1}{2}</m>. <figure xml:id="fig_absvalineqeg2"> <caption>Solving
-                <m>4 - 3|2x+1| > -2</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-9"/> </figure>
+                <m>4 - 3|2x+1| > -2</m> in <xref ref="ex_absvalineq">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-9"></image> </figure>
               </p>
             </li>
 
@@ -396,7 +396,7 @@
                 the horizontal lines <m>y=2</m> and <m>y=5</m> for <m>x</m> values between <m>-4</m> and <m>-1</m> as well as those between <m>3</m> and <m>6</m>.
                 Including the <m>x</m> values where <m>y=|x-1|</m> and <m>y=5</m> intersect,
                 we get <xref ref="fig_absvalineqeg3">Figure</xref>. <figure xml:id="fig_absvalineqeg3"> <caption>Solving
-                <m>2 \lt |x-1| \leq 5</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-10"/> </figure>
+                <m>2 \lt |x-1| \leq 5</m> in <xref ref="ex_absvalineq">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-10"></image> </figure>
               </p>
             </li>
 
@@ -427,7 +427,7 @@
                 we accept all of these solutions as well.
                 Our final answer is
           <m>(-\infty, -2] \cup [2,\infty)</m>. <figure xml:id="fig_absvalineqeg4"> <caption>Solving
-                <m>|x+1|\geq \dfrac{x+4}{2}</m> in <xref ref="ex_absvalineq">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-11"/> </figure>
+                <m>|x+1|\geq \dfrac{x+4}{2}</m> in <xref ref="ex_absvalineq">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-11"></image> </figure>
               </p>
             </li>
           </ol>
@@ -450,7 +450,7 @@
 
     <figure xml:id="fig_parabineq0">
       <caption><m>y=x^2-x-6</m></caption>
-      <img src="figures/LinearQuadraticGraphics/Inequalities-12"/>
+      <image source="figures/LinearQuadraticGraphics/Inequalities-12"></image>
     </figure>
   </introduction>
 
@@ -474,7 +474,7 @@
     </p>
 
     <p>
-      <img src="figures/LinearQuadraticGraphics/Inequalities-13"/>
+      <image source="figures/LinearQuadraticGraphics/Inequalities-13"></image>
     </p>
 
     <p>
@@ -613,13 +613,13 @@
                 </aside>
                 <figure xml:id="fig_quadineqeg1">
                   <caption>The sign diagram for <m>f(x)=2x^2+x-3</m></caption>
-                  <img src="figures/LinearQuadraticGraphics/Inequalities-14"/>
+                  <image source="figures/LinearQuadraticGraphics/Inequalities-14"></image>
                 </figure>
 
                 <figure xml:id="fig_quadineqeg2">
                   <caption>Verifying the solution to
                 <m>2x^2\leq 3-x</m> graphically</caption>
-                  <img src="figures/LinearQuadraticGraphics/Inequalities-15"/>
+                  <image source="figures/LinearQuadraticGraphics/Inequalities-15"></image>
                 </figure>
 
                 To verify our solution graphically,
@@ -688,10 +688,10 @@
                 Finding tangent lines to arbitrary functions is a fundamental problem solved,
                 in general,
                 with Calculus. <figure xml:id="fig_quadineqeg3"> <caption>The sign diagram for
-          <m>f(x)=x^2-2x-1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-16"/> </figure> <figure xml:id="fig_quadineqeg4"> <caption>Verifying the solution to
-          <m>x^2-2x > 1</m> graphically</caption> <img src="figures/LinearQuadraticGraphics/Inequalities-17"/> </figure> <figure xml:id="fig_quadineqeg5"> <caption>The sign diagram for
-                <m>f(x)=x^2-2x+1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-18"/> </figure> <figure xml:id="fig_quadineqeg6"> <caption>Verifying the solution to
-                <m>x^2+1\leq 2x</m> graphically</caption> <img src="figures/LinearQuadraticGraphics/Inequalities-19"/> </figure>
+          <m>f(x)=x^2-2x-1</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-16"></image> </figure> <figure xml:id="fig_quadineqeg4"> <caption>Verifying the solution to
+          <m>x^2-2x > 1</m> graphically</caption> <image source="figures/LinearQuadraticGraphics/Inequalities-17"></image> </figure> <figure xml:id="fig_quadineqeg5"> <caption>The sign diagram for
+                <m>f(x)=x^2-2x+1</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-18"></image> </figure> <figure xml:id="fig_quadineqeg6"> <caption>Verifying the solution to
+                <m>x^2+1\leq 2x</m> graphically</caption> <image source="figures/LinearQuadraticGraphics/Inequalities-19"></image> </figure>
               </p>
             </li>
 
@@ -727,8 +727,8 @@
                 yielding the sign diagram in <xref ref="fig_quadineqeg8">Figure</xref>.
                 Hence, our solution to <m>g(x) = x^2-x-2 \leq 0</m>,
                 in this region is <m>[1,2)</m>. <figure xml:id="fig_quadineqeg7"> <caption>The sign diagram for <m>f(x)=x^2-3x</m>,
-                where <m>x\lt 1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-20"/> </figure> <figure xml:id="fig_quadineqeg8"> <caption>The sign diagram for <m>g(x)=x^2-x-2</m>,
-                where <m>x\geq 1</m></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-21"/> </figure> Combining these into one sign diagram,
+                where <m>x\lt 1</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-20"></image> </figure> <figure xml:id="fig_quadineqeg8"> <caption>The sign diagram for <m>g(x)=x^2-x-2</m>,
+                where <m>x\geq 1</m></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-21"></image> </figure> Combining these into one sign diagram,
                 we have that our solution is <m>[0,2]</m>.
                 Graphically, to check <m>2x-x^2 \geq |x-1|-1</m>,
                 we set <m>h(x) = 2x-x^2</m> and
@@ -756,12 +756,12 @@
 
     <figure xml:id="fig_quadineqeg9">
       <caption>The overall sign diagram for Problem 4 in <xref ref="ex_quadineq">Example</xref></caption>
-      <img src="figures/LinearQuadraticGraphics/Inequalities-22"/>
+      <image source="figures/LinearQuadraticGraphics/Inequalities-22"></image>
     </figure>
 
     <figure xml:id="fig_quadineqeglast">
       <caption>Verifying the inequality <m>2x-x^2\geq \lvert x-1\rvert -1</m> graphically</caption>
-      <img src="figures/LinearQuadraticGraphics/Inequalities-23"/>
+      <image source="figures/LinearQuadraticGraphics/Inequalities-23"></image>
     </figure>
 
     <example xml:id="ex_tolerance">
@@ -871,7 +871,7 @@
                 its <m>y</m>-coordinate must be less than or equal to the <m>y</m>-coordinate on the parabola <m>y=2-x^2</m>.
                 This is the set of all points <em>below</em>
                 or <em>on</em> the parabola <m>y=2-x^2</m>:
-                see <xref ref="fig_ineqrel2">Figure</xref>. <figure xml:id="fig_ineqrel1"> <caption>Graph of the relation <m>R</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-24"/> </figure> <figure xml:id="fig_ineqrel2"> <caption>Graph of the relation <m>S</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-25"/> </figure>
+                see <xref ref="fig_ineqrel2">Figure</xref>. <figure xml:id="fig_ineqrel1"> <caption>Graph of the relation <m>R</m> in <xref ref="ex_ineqrels">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-24"></image> </figure> <figure xml:id="fig_ineqrel2"> <caption>Graph of the relation <m>S</m> in <xref ref="ex_ineqrels">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-25"></image> </figure>
               </p>
             </li>
 
@@ -887,7 +887,7 @@
                 so we set <m>|x| = 2-x^2</m>.
                 Proceeding as before,
                 breaking this equation into cases, we get <m>x=-1,1</m>.
-                Graphing yields <xref ref="fig_ineqrel3">Figure</xref>. <figure xml:id="fig_ineqrel3"> <caption>Graph of the relation <m>T</m> in <xref ref="ex_ineqrels">Example</xref></caption> <img src="figures/LinearQuadraticGraphics/Inequalities-26"/> </figure>
+                Graphing yields <xref ref="fig_ineqrel3">Figure</xref>. <figure xml:id="fig_ineqrel3"> <caption>Graph of the relation <m>T</m> in <xref ref="ex_ineqrels">Example</xref></caption> <image source="figures/LinearQuadraticGraphics/Inequalities-26"></image> </figure>
               </p>
             </li>
           </ol>
@@ -1482,7 +1482,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-27"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-27"></image>
         </p>
       </answer>
     </exercise>
@@ -1494,7 +1494,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-28"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-28"></image>
         </p>
       </answer>
     </exercise>
@@ -1506,7 +1506,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-29"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-29"></image>
         </p>
       </answer>
     </exercise>
@@ -1518,7 +1518,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-30"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-30"></image>
         </p>
       </answer>
     </exercise>
@@ -1530,7 +1530,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-31"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-31"></image>
         </p>
       </answer>
     </exercise>
@@ -1542,7 +1542,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/LinearQuadraticGraphics/Inequalities-32"/>
+          <image source="figures/LinearQuadraticGraphics/Inequalities-32"></image>
         </p>
       </answer>
     </exercise>

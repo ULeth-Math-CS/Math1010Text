@@ -17,7 +17,7 @@
 
     <figure xml:id="fig_tran1">
       <caption>The graph of a function <m>f</m></caption>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-1"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-1"></image>
     </figure>
 
     <p>
@@ -76,11 +76,11 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-2"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-2"></image></cell>
           <cell></cell>
           <cell><m>\stackrel{\stackrel{\mbox{\scriptsize shift up <m>2</m> units} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize add <m>2</m> to each <m>y</m>-coordinate} }</m></cell>
           <cell></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-3"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-3"></image></cell>
         </row>
         <row>
           <cell><m>y=f(x)</m></cell>
@@ -228,11 +228,11 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-4"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-4"></image></cell>
           <cell></cell>
           <cell><m>\stackrel{\stackrel{\mbox{\scriptsize shift left <m>2</m> units} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize subtract <m>2</m> from each <m>x</m>-coordinate} }</m></cell>
           <cell></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-5"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-5"></image></cell>
         </row>
         <row>
           <cell><m>y=f(x)</m></cell>
@@ -338,7 +338,7 @@
               <m>[0,\infty)</m> and the range of <m>f</m> is also <m>[0, \infty)</m>.
               The original function is plotted in <xref ref="fig_origf">Figure</xref>
               <table xml:id="fig_origf"> <caption>The graph
-              <m>y=f(x)=\sqrt{x}</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell><m>x</m></cell> <cell><m>f(x)</m></cell> <cell><m>(x,f(x))</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>0</cell> <cell>0</cell> <cell><m>(0,0)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>1</cell> <cell>1</cell> <cell><m>(1,1)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>4</cell> <cell>2</cell> <cell><m>(4,2)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> </tabular> <img src="figures/RelationsandFunctionsGraphics/Transformations-6"/> </table>
+              <m>y=f(x)=\sqrt{x}</m></caption> <tabular> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell><m>x</m></cell> <cell><m>f(x)</m></cell> <cell><m>(x,f(x))</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>0</cell> <cell>0</cell> <cell><m>(0,0)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>1</cell> <cell>1</cell> <cell><m>(1,1)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> <row> <cell>4</cell> <cell>2</cell> <cell><m>(4,2)</m></cell> </row> <row bottom="minor"> <cell></cell> <cell></cell> <cell></cell> </row> </tabular> <image source="figures/RelationsandFunctionsGraphics/Transformations-6"></image> </table>
             </p>
           </li>
 
@@ -362,7 +362,7 @@
               We confirm the domain of <m>g</m> is
               <m>[0, \infty)</m> and find the range of <m>g</m> to be <m>[-1, \infty)</m>.
               The graph of <m>g</m> is given in <xref ref="fig_transeg1-1">Figure</xref>. <figure xml:id="fig_transeg1-1"> <caption>Graphing
-              <m>g(x)=\sqrt{x}-1</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-8"/> </figure>
+              <m>g(x)=\sqrt{x}-1</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-8"></image> </figure>
             </p>
           </li>
 
@@ -378,7 +378,7 @@
               We add <m>1</m> to the <m>x</m>-coordinates of the points on the graph of <m>f</m> and get the result below.
               The graph reaffirms that the domain of <m>j</m> is <m>[1,\infty)</m> and tells us that the range of <m>j</m> is
               <m>[0,\infty)</m>. <figure xml:id="fig_transeg1-2"> <caption>Graphing
-              <m>j(x)=\sqrt{x}-1</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-10"/> </figure>
+              <m>j(x)=\sqrt{x}-1</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-10"></image> </figure>
             </p>
           </li>
 
@@ -400,14 +400,14 @@
               <xref ref="hshifts">Theorem</xref>
               tells us that the graph of
               <m>y=m_{1}(x)</m> is the graph of <m>f</m> shifted to the left <m>3</m> units.
-              Hence, we subtract <m>3</m> from each of the <m>x</m>-coordinates of the points on the graph of <m>f</m>. <figure xml:id="fig_transeg1-3"> <caption>Graphing <m>m_1(x)=\sqrt{x+3}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-12"/> </figure> Since
+              Hence, we subtract <m>3</m> from each of the <m>x</m>-coordinates of the points on the graph of <m>f</m>. <figure xml:id="fig_transeg1-3"> <caption>Graphing <m>m_1(x)=\sqrt{x+3}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-12"></image> </figure> Since
               <m>m(x) = f(x+3)-2</m> and <m>f(x+3) = m_{1}(x)</m>,
               we have <m>m(x) = m_{1}(x) - 2</m>.
               We can apply <xref ref="vshifts">Theorem</xref>
               and obtain the graph of <m>m</m> by subtracting <m>2</m> from the <m>y</m>-coordinates of each of the points on the graph of <m>m_{1}(x)</m>.
               The graph verifies that the domain of <m>m</m> is <m>[-3, \infty)</m> and we find the range of <m>m</m> to be
               <m>[-2, \infty)</m>. <figure xml:id="fig_transeg1-4"> <caption>Graphing
-              <m>m(x)=\sqrt{x+3}-2</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-14"/> </figure>
+              <m>m(x)=\sqrt{x+3}-2</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-14"></image> </figure>
             </p>
           </li>
         </ol>
@@ -483,11 +483,11 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-15"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-15"></image></cell>
           <cell></cell>
           <cell><m>\stackrel{\stackrel{\mbox{\scriptsize reflect across <m>x</m>-axis} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize multiply each <m>y</m>-coordinate by <m>-1</m>} }</m></cell>
           <cell></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-16"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-16"></image></cell>
         </row>
         <row>
           <cell><m>y=f(x)</m></cell>
@@ -510,11 +510,11 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-17"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-17"></image></cell>
           <cell></cell>
           <cell><m>\stackrel{\stackrel{\mbox{\scriptsize reflect across <m>y</m>-axis} }{\xrightarrow{\hspace{1in}}}}{\mbox{ \scriptsize multiply each <m>x</m>-coordinate by <m>-1</m>} }</m></cell>
           <cell></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-18"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-18"></image></cell>
         </row>
         <row>
           <cell><m>y=f(x)</m></cell>
@@ -543,7 +543,7 @@
 
         <figure xml:id="fig_sqrtagain">
           <caption>The graph <m>y=f(x)</m> from <xref ref="transformationex1">Example</xref></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-19"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-19"></image>
         </figure>
 
         <ol>
@@ -591,10 +591,10 @@
                 and <m>(-4,2)</m>, respectively.
                 Graphically, we see that the domain of <m>g</m> is
                 <m>(-\infty, 0]</m> and the range of <m>g</m> is the same as the range of <m>f</m>,
-                namely <m>[0,\infty)</m>. <figure xml:id="fig_reflecteg1"> <caption>Reflecting <m>y=f(x)</m> across the <m>y</m>-axis to obtain the graph of <m>g(x)=\sqrt{-x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-20"/> </figure> <figure xml:id="fig_reflecteg2"> <caption>The intermediate function
-          <m>j_1(x)=f(x+3)</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-22"/> </figure> <figure xml:id="fig_reflecteg3"> <caption>Reflecting
+                namely <m>[0,\infty)</m>. <figure xml:id="fig_reflecteg1"> <caption>Reflecting <m>y=f(x)</m> across the <m>y</m>-axis to obtain the graph of <m>g(x)=\sqrt{-x}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-20"></image> </figure> <figure xml:id="fig_reflecteg2"> <caption>The intermediate function
+          <m>j_1(x)=f(x+3)</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-22"></image> </figure> <figure xml:id="fig_reflecteg3"> <caption>Reflecting
           <m>y=j_1(x)</m> across the <m>y</m>-axis to obtain the graph of
-                <m>j(x)=\sqrt{3-x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-24"/> </figure> If we had done the reflection first,
+                <m>j(x)=\sqrt{3-x}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-24"></image> </figure> If we had done the reflection first,
                 then <m>j_{1}(x) = f(-x)</m>.
                 Following this by a shift left would give us
                 <m>j(x) = j_{1}(x+3) = f(-(x+3)) = f(-x-3) = \sqrt{-x-3}</m> which isn't what we want.
@@ -670,7 +670,7 @@
                 If we define an intermediate function
                 <m>m_{1}(x) = -f(x)</m> to take care of the reflection,
                 we get the graph in <xref ref="fig_reflecteg4">Figure</xref>. <figure xml:id="fig_reflecteg4"> <caption>Reflecting <m>y=f(x)</m> across the <m>x</m>-axis to obtain the graph of
-                <m>m_1(x)=-\sqrt{x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-26"/> </figure> To shift the graph of <m>m_{1}</m> up <m>3</m> units,
+                <m>m_1(x)=-\sqrt{x}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-26"></image> </figure> To shift the graph of <m>m_{1}</m> up <m>3</m> units,
                 we set <m>m(x) = m_{1}(x)+3</m>.
                 Since <m>m_{1}(x) = -f(x)</m>,
                 when we put it all together,
@@ -678,7 +678,7 @@
                 We see from the graph that the range of <m>m</m> is
           <m>(-\infty, 3]</m>. <figure xml:id="fig_reflecteg5"> <caption>Shifting
                 <m>y=m_1(x)</m> up by three units to obtain the graph of
-                <m>m(x)=3-\sqrt{x}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-28"/> </figure>
+                <m>m(x)=3-\sqrt{x}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-28"></image> </figure>
               </p>
             </li>
           </ol>
@@ -799,7 +799,7 @@
       <caption>Graphing <m>g(x) = 2f(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-29"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-29"></image></cell>
         </row>
         <row>
           <cell><m>y=f(x)</m></cell>
@@ -808,7 +808,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-31"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-31"></image></cell>
         </row>
         <row>
           <cell><m>y=2f(x)=g(x)</m></cell>
@@ -876,7 +876,7 @@
 
     <figure xml:id="fig_scalefhalf">
       <caption>Vertical scaling by  <m>\frac{1}{2}</m></caption>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-33"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-33"></image>
     </figure>
 
     <figure xml:id="fig_graphscale">
@@ -884,7 +884,7 @@
     <sidebyside>
       <figure>
         <caption>The graph <m>y=f(x)</m> from <xref ref="fig_tran1">Figure</xref></caption>
-        <img src="figures/RelationsandFunctionsGraphics/Transformations-34"/>
+        <image source="figures/RelationsandFunctionsGraphics/Transformations-34"></image>
       </figure>
 
       <figure>
@@ -893,7 +893,7 @@
 
       <figure>
         <caption>The graph <m>y=h(x)=f(\frac{1}{2}x)</m></caption>
-        <img src="figures/RelationsandFunctionsGraphics/Transformations-37"/>
+        <image source="figures/RelationsandFunctionsGraphics/Transformations-37"></image>
       </figure>
     </sidebyside>
     </figure>
@@ -1047,17 +1047,17 @@
 
         <figure xml:id="fig_sqrtoncemore">
           <caption>The graph <m>y=\sqrt{x}</m></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-40"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-40"></image>
         </figure>
 
         <figure xml:id="fig_scaleeg1">
           <caption>The graph <m>y=g(x) = 3\sqrt{x}</m></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-39"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-39"></image>
         </figure>
 
         <figure xml:id="fig_scaleeg2">
           <caption>The graph <m>y=j(x) = \sqrt{9x}</m></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-41"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-41"></image>
         </figure>
 
         <ol>
@@ -1137,13 +1137,13 @@
                 <m>m_{1}(x) = f\left(x+ \frac{3}{2}\right) = \sqrt{x+\frac{3}{2}}</m> will shift the graph of <m>f</m> to the left <m>\frac{3}{2}</m> units:
                 see <xref ref="fig_scaleeg3">Figure</xref>
                 <figure xml:id="fig_scaleeg3"> <caption>The graph
-                <m>y=m_1(x) = f(x+\frac{3}{2})=\sqrt{x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-43"/> </figure> Next,
+                <m>y=m_1(x) = f(x+\frac{3}{2})=\sqrt{x+\frac{3}{2}}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-43"></image> </figure> Next,
                 <m>m_{2}(x) = m_{1}\left(\frac{1}{2} x\right) = \sqrt{\frac{1}{2} x + \frac{3}{2}}</m> will,
                 according to <xref ref="hscalings">Theorem</xref>,
                 horizontally stretch the graph of <m>m_{1}</m> by a factor of <m>2</m>:
                 see <xref ref="fig_scaleeg4">Figure</xref>
                 <figure xml:id="fig_scaleeg4"> <caption>The graph
-                <m>y=m_2(x) = m_1(\frac{1}{2}x) = \sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-45"/> </figure> We now examine what's happening to the outputs.
+                <m>y=m_2(x) = m_1(\frac{1}{2}x) = \sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-45"></image> </figure> We now examine what's happening to the outputs.
                 From <m>m(x) = - f\left(\frac{1}{2} x + \frac{3}{2}\right) + 1</m>,
                 we see that the output from <m>f</m> is being multiplied by <m>-1</m> (a reflection about the <m>x</m>-axis) and then a <m>1</m> is added (a vertical shift up <m>1</m>).
                 As before,
@@ -1156,13 +1156,13 @@
                 is first multiplied by <m>-1</m> then the <m>1</m> is added meaning we first reflect the graph about the <m>x</m>-axis then shift up <m>1</m>.
                 <xref ref="reflections">Theorem</xref>
                 tells us <m>m_{3}(x) = - m_{2}(x)</m> will handle the reflection. <figure xml:id="fig_scaleeg5"> <caption>The graph
-                <m>y=m_3(x) = -m_2(x)=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-47"/> </figure> Finally,
+                <m>y=m_3(x) = -m_2(x)=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-47"></image> </figure> Finally,
                 to handle the vertical shift,
                 <xref ref="vshifts">Theorem</xref>
                 gives <m>m(x) = m_{3}(x) +1</m>,
                 and we see that the range of <m>m</m> is <m>(-\infty,1]</m>.
                 The graph of <m>m</m> is given in <xref ref="fig_scaleeg6">Figure</xref>. <figure xml:id="fig_scaleeg6"> <caption>The graph
-                <m>y=m(x) = m_3(x)+1=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <img src="figures/RelationsandFunctionsGraphics/Transformations-49"/> </figure>
+                <m>y=m(x) = m_3(x)+1=-\sqrt{\frac{1}{2}x+\frac{3}{2}}</m></caption> <image source="figures/RelationsandFunctionsGraphics/Transformations-49"></image> </figure>
               </p>
             </li>
           </ol>
@@ -1282,7 +1282,7 @@
 
         <figure xml:id="fig_gentransorig">
           <caption>The graph <m>y=f(x)</m> for <xref ref="transformationeg4">Example</xref></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-50"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-50"></image>
         </figure>
       </statement>
       <solution xml:id="fig_gentransresult">
@@ -1479,8 +1479,8 @@
         <sidebyside>
           <tabular>
             <row>
-              <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-51"/></cell>
-              <cell><img src="figures/RelationsandFunctionsGraphics/Transformations-52"/></cell>
+              <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-51"></image></cell>
+              <cell><image source="figures/RelationsandFunctionsGraphics/Transformations-52"></image></cell>
             </row>
             <row>
               <cell><m>y=f(x)</m></cell>
@@ -1556,7 +1556,7 @@
         <sidebyside>
           <figure>
             <caption><m>y=f(x)=x^2</m></caption>
-            <img src="figures/RelationsandFunctionsGraphics/Transformations01"/>
+            <image source="figures/RelationsandFunctionsGraphics/Transformations01"></image>
           </figure>
 
           <figure>
@@ -1822,7 +1822,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-53"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-53"></image>
     </p>
     <exercise>
       <statement>
@@ -1836,7 +1836,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-59"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-59"></image>
         </p>
       </answer>
     </exercise>
@@ -1852,7 +1852,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-60"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-60"></image>
         </p>
       </answer>
     </exercise>
@@ -1868,7 +1868,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-61"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-61"></image>
         </p>
       </answer>
     </exercise>
@@ -1884,7 +1884,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-62"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-62"></image>
         </p>
       </answer>
     </exercise>
@@ -1900,7 +1900,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-63"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-63"></image>
         </p>
       </answer>
     </exercise>
@@ -1916,7 +1916,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-64"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-64"></image>
         </p>
       </answer>
     </exercise>
@@ -1932,7 +1932,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-65"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-65"></image>
         </p>
       </answer>
     </exercise>
@@ -1948,7 +1948,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-66"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-66"></image>
         </p>
       </answer>
     </exercise>
@@ -1964,7 +1964,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-67"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-67"></image>
         </p>
       </answer>
     </exercise>
@@ -1976,7 +1976,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-54"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-54"></image>
     </p>
     <exercise>
       <statement>
@@ -1990,7 +1990,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-68"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-68"></image>
         </p>
       </answer>
     </exercise>
@@ -2006,7 +2006,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-69"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-69"></image>
         </p>
       </answer>
     </exercise>
@@ -2022,7 +2022,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-70"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-70"></image>
         </p>
       </answer>
     </exercise>
@@ -2038,7 +2038,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-71"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-71"></image>
         </p>
       </answer>
     </exercise>
@@ -2054,7 +2054,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-72"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-72"></image>
         </p>
       </answer>
     </exercise>
@@ -2070,7 +2070,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-73"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-73"></image>
         </p>
       </answer>
     </exercise>
@@ -2086,7 +2086,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-74"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-74"></image>
         </p>
       </answer>
     </exercise>
@@ -2102,7 +2102,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-75"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-75"></image>
         </p>
       </answer>
     </exercise>
@@ -2118,7 +2118,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-76"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-76"></image>
         </p>
       </answer>
     </exercise>
@@ -2130,7 +2130,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-55"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-55"></image>
     </p>
     <exercise>
       <statement>
@@ -2144,7 +2144,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-77"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-77"></image>
         </p>
       </answer>
     </exercise>
@@ -2160,7 +2160,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-78"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-78"></image>
         </p>
       </answer>
     </exercise>
@@ -2176,7 +2176,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-79"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-79"></image>
         </p>
       </answer>
     </exercise>
@@ -2192,7 +2192,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-80"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-80"></image>
         </p>
       </answer>
     </exercise>
@@ -2208,7 +2208,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-81"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-81"></image>
         </p>
       </answer>
     </exercise>
@@ -2224,7 +2224,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-82"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-82"></image>
         </p>
       </answer>
     </exercise>
@@ -2240,7 +2240,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-83"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-83"></image>
         </p>
       </answer>
     </exercise>
@@ -2256,7 +2256,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-84"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-84"></image>
         </p>
       </answer>
     </exercise>
@@ -2272,7 +2272,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-85"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-85"></image>
         </p>
       </answer>
     </exercise>
@@ -2288,7 +2288,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-86"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-86"></image>
         </p>
       </answer>
     </exercise>
@@ -2304,7 +2304,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-87"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-87"></image>
         </p>
       </answer>
     </exercise>
@@ -2320,7 +2320,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-88"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-88"></image>
         </p>
       </answer>
     </exercise>
@@ -2332,7 +2332,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/Transformations-56"/>
+      <image source="figures/RelationsandFunctionsGraphics/Transformations-56"></image>
     </p>
     <exercise>
       <statement>
@@ -2346,7 +2346,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-89"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-89"></image>
         </p>
       </answer>
     </exercise>
@@ -2362,7 +2362,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-90"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-90"></image>
         </p>
       </answer>
     </exercise>
@@ -2378,7 +2378,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-91"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-91"></image>
         </p>
       </answer>
     </exercise>
@@ -2394,7 +2394,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-92"/>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-92"></image>
         </p>
       </answer>
     </exercise>
@@ -2532,8 +2532,8 @@
         </p>
 
         <figure>
-          <caption><img src="figures/RelationsandFunctionsGraphics/Transformations-58"/></caption>
-          <img src="figures/RelationsandFunctionsGraphics/Transformations-57"/>
+          <caption><image source="figures/RelationsandFunctionsGraphics/Transformations-58"></image></caption>
+          <image source="figures/RelationsandFunctionsGraphics/Transformations-57"></image>
         </figure>
       </statement>
     </exercise>

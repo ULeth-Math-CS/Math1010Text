@@ -737,8 +737,8 @@
                 confirming our answer to part 2, and the graph intersects the line <m>y=42</m> at
                 <m>x = \ln(2799) \approx 7.937</m> in <xref ref="fig_expapp2">Figure</xref>,
                 which confirms our answer to part 3. <figure xml:id="fig_expapp1"> <caption>\color{red}
-          <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=84</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs26"/> </figure> <figure xml:id="fig_expapp2"> <caption>\color{red}
-                <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=42</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs27"/> </figure>
+          <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=84</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs26"></image> </figure> <figure xml:id="fig_expapp2"> <caption>\color{red}
+                <m>y=\dfrac{84}{1+2799e^{-x}}</m> and {\color{blue} <m>y=42</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs27"></image> </figure>
               </p>
             </li>
           </ol>
@@ -771,13 +771,13 @@
     <figure xml:id="fig_expapp3">
       <caption><m>y=\dfrac{84}{1+2799e^{-x}}</m>
       for <m>0\leq x\leq 8</m></caption>
-      <img src="figures/ExpLogsGraphics/ExpLogs28"/>
+      <image source="figures/ExpLogsGraphics/ExpLogs28"></image>
     </figure>
 
     <figure xml:id="fig_expapp4">
       <caption><m>y=\dfrac{84}{1+2799e^{-x}}</m>
       for <m>8\leq x\leq 16</m></caption>
-      <img src="figures/ExpLogsGraphics/ExpLogs29"/>
+      <image source="figures/ExpLogsGraphics/ExpLogs29"></image>
     </figure>
   </subsection>
 
@@ -2068,7 +2068,7 @@
         </p>
 
         <p>
-          <img src="figures/ExpLogsGraphics/PURSUIT03.jpg"/>
+          <image source="figures/ExpLogsGraphics/PURSUIT03.jpg"></image>
         </p>
 
         <p>

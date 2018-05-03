@@ -263,7 +263,7 @@
               just barely lies in the interval
               <m>(-\pi, \pi]</m> which means and <m>\operatorname{Arg}(z) =\pi</m>.
               We plot <m>z</m> along with the other numbers in this example in <xref ref="fig_polarcom1">Figure</xref>
-              below. <!-- <caption>Plots of the four complex numbers in Example \ref{plotmodargex}</caption> --> <sidebyside> <img src="figures/AppExtGraphics/PolarComplex-2"/> </sidebyside>
+              below. <!-- <caption>Plots of the four complex numbers in Example \ref{plotmodargex}</caption> --> <sidebyside> <image source="figures/AppExtGraphics/PolarComplex-2"></image> </sidebyside>
             </p>
             </li>
           </ol>
@@ -1045,8 +1045,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/PolarComplex-4"/></cell>
-          <cell><img src="figures/AppExtGraphics/PolarComplex-5"/></cell>
+          <cell><image source="figures/AppExtGraphics/PolarComplex-4"></image></cell>
+          <cell><image source="figures/AppExtGraphics/PolarComplex-5"></image></cell>
         </row>
         <row>
           <cell>{ Multiplying <m>z</m> by <m>|w| = 2</m>}.</cell>
@@ -1072,8 +1072,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/PolarComplex-6"/></cell>
-          <cell><img src="figures/AppExtGraphics/PolarComplex-7"/></cell>
+          <cell><image source="figures/AppExtGraphics/PolarComplex-6"></image></cell>
+          <cell><image source="figures/AppExtGraphics/PolarComplex-7"></image></cell>
         </row>
         <row>
           <cell>{ Dividing <m>z</m> by <m>|w| = 2</m>}.</cell>
@@ -1284,7 +1284,7 @@
                 <m>w_{0} = 1+i\sqrt{3}</m> and <m>w_{1} = -1-i\sqrt{3}</m>.
                 We can check our answers by squaring them and showing that we get <m>z= -2 + 2i\sqrt{3}</m>.
                 We've plotted the position of the two square roots along the circle <m>r=2</m> in <xref ref="fig_polarroot1">Figure</xref>. <figure xml:id="fig_polarroot1"> <caption>The two square roots of
-                <m>z=-2+2\sqrt{3}i</m></caption> <img src="figures/AppExtGraphics/PolarComplex01"/> </figure>
+                <m>z=-2+2\sqrt{3}i</m></caption> <image source="figures/AppExtGraphics/PolarComplex01"></image> </figure>
               </p>
             </li>
 
@@ -1300,7 +1300,7 @@
                 <m>w_{1} = -\sqrt{2} + i\sqrt{2}</m>,
                 <m>w_{2} = -\sqrt{2} - i\sqrt{2}</m> and <m>w_{3} = \sqrt{2} - i\sqrt{2}</m>.
                 We've plotted the four roots in <xref ref="fig_polarroot2">Figure</xref>.
-                Note how the roots are placed symmetrically about the circle <m>r=2</m>. <figure xml:id="fig_polarroot2"> <caption>The four fourth roots of <m>z=-16</m></caption> <img src="figures/AppExtGraphics/PolarComplex02"/> </figure>
+                Note how the roots are placed symmetrically about the circle <m>r=2</m>. <figure xml:id="fig_polarroot2"> <caption>The four fourth roots of <m>z=-16</m></caption> <image source="figures/AppExtGraphics/PolarComplex02"></image> </figure>
               </p>
             </li>
 
@@ -1318,7 +1318,7 @@
                 Since we are not explicitly told to do so,
                 we leave this as a good, but messy, exercise,
                 and plot the points in <xref ref="fig_polarroot3">Figure</xref>. <figure xml:id="fig_polarroot3"> <caption>The three third roots of
-                <m>z=\sqrt{2}+i\sqrt{2}</m></caption> <img src="figures/AppExtGraphics/PolarComplex03"/> </figure>
+                <m>z=\sqrt{2}+i\sqrt{2}</m></caption> <image source="figures/AppExtGraphics/PolarComplex03"></image> </figure>
               </p>
             </li>
 
@@ -1338,7 +1338,7 @@
                 we could approximate our answers using a calculator,
                 and we leave this as an exercise.
                 Once more, we plot the roots,
-                which in this case all lie on the unit circle. <figure xml:id="fig_polarroot4"> <caption>The five fifth roots of <m>1</m></caption> <img src="figures/AppExtGraphics/PolarComplex04"/> </figure>
+                which in this case all lie on the unit circle. <figure xml:id="fig_polarroot4"> <caption>The five fifth roots of <m>1</m></caption> <image source="figures/AppExtGraphics/PolarComplex04"></image> </figure>
               </p>
             </li>
           </ol>

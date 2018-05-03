@@ -111,7 +111,7 @@
 
     <figure xml:id="fig_cirfun1">
       <caption>Explaining the tangent and secant functions</caption>
-      <img src="figures/IntroTrigGraphics/CircularFunctions-1"/>
+      <image source="figures/IntroTrigGraphics/CircularFunctions-1"></image>
     </figure>
 
     <p>
@@ -457,7 +457,7 @@
           <xref ref="cosineiszero">number</xref>
                 in <xref ref="TheUnitCircle">Section</xref>
                 for another example of this kind of simplification of the solution.) <table xml:id="fig_cirfun2"> <caption>Solving
-                <m>\tan(\theta)=\sqrt{3}</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/CircularFunctions-2"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/CircularFunctions-3"/></cell> </row> </tabular> </table>
+                <m>\tan(\theta)=\sqrt{3}</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/CircularFunctions-2"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/CircularFunctions-3"></image></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -478,7 +478,7 @@
                 Can these lists be combined?
                 Indeed they can - one such way to capture all the solutions is:
                 <m>\theta = \frac{3\pi}{4} + \pi k</m> for integers <m>k</m>. <table xml:id="fig_cirfun3"> <caption>Solving
-                <m>\cot(\theta)=-1</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/CircularFunctions-4"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/CircularFunctions-5"/></cell> </row> </tabular> </table>
+                <m>\cot(\theta)=-1</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/CircularFunctions-4"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/CircularFunctions-5"></image></cell> </row> </tabular> </table>
               </p>
             </li>
           </ol>
@@ -609,11 +609,11 @@
 
             <li>
               <p>
-                <m>\tan(\theta) = \sin(\theta) \sec(\theta)</m> \setcounter{HW}{\value{enumi}}
+                <m>\tan(\theta) = \sin(\theta) \sec(\theta)</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -623,11 +623,11 @@
 
             <li>
               <p>
-                <m>\dfrac{\sec(\theta)}{1 - \tan(\theta)} = \dfrac{1}{\cos(\theta) - \sin(\theta)}</m> \setcounter{HW}{\value{enumi}}
+                <m>\dfrac{\sec(\theta)}{1 - \tan(\theta)} = \dfrac{1}{\cos(\theta) - \sin(\theta)}</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -1008,7 +1008,7 @@
 
     <figure xml:id="fig_cirfun4">
       <caption>A right-angled triangle</caption>
-      <img src="figures/IntroTrigGraphics/CircularFunctions-6"/>
+      <image source="figures/IntroTrigGraphics/CircularFunctions-6"></image>
     </figure>
 
     <theorem xml:id="circularfunctionstriangle">
@@ -1041,7 +1041,7 @@
 
     <figure xml:id="fig_cirfun5">
       <caption>The angle of inclination from the base line to the object is <m>\theta</m></caption>
-      <img src="figures/IntroTrigGraphics/CircularFunctions-7"/>
+      <image source="figures/IntroTrigGraphics/CircularFunctions-7"></image>
     </figure>
   </subsection>
 
@@ -1081,7 +1081,7 @@
                 gives <m>\tan\left(60^{\circ}\right) = \frac{h}{30}</m>.
                 From this we get <m>h = 30 \tan\left(60^{\circ}\right) = 30 \sqrt{3} \approx 51.96</m>.
                 Hence,
-          the Clocktower is approximately <m>52</m> feet tall. <figure xml:id="fig_cirfun6"> <caption>Finding the height of the Clocktower</caption> <img src="figures/IntroTrigGraphics/CircularFunctions-8"/> </figure>
+          the Clocktower is approximately <m>52</m> feet tall. <figure xml:id="fig_cirfun6"> <caption>Finding the height of the Clocktower</caption> <image source="figures/IntroTrigGraphics/CircularFunctions-8"></image> </figure>
               </p>
             </li>
 
@@ -1093,7 +1093,7 @@
 
                 <figure xml:id="fig_cirfun7">
                   <caption>Finding the height of a California Redwood</caption>
-                  <img src="figures/IntroTrigGraphics/CircularFunctions-9"/>
+                  <image source="figures/IntroTrigGraphics/CircularFunctions-9"></image>
                 </figure>
 
                 Using <xref ref="circularfunctionstriangle">Theorem</xref>,
@@ -1155,7 +1155,7 @@
     </p>
 
     <p>
-      <img src="figures/IntroTrigGraphics/CircularFunctions-10"/>
+      <image source="figures/IntroTrigGraphics/CircularFunctions-10"></image>
     </p>
 
     <p>
@@ -1947,7 +1947,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/CircularFunctions-11"/>
+          <image source="figures/IntroTrigGraphics/CircularFunctions-11"></image>
         </p>
       </statement>
       <answer>
@@ -1964,7 +1964,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/CircularFunctions-12"/>
+          <image source="figures/IntroTrigGraphics/CircularFunctions-12"></image>
         </p>
       </statement>
       <answer>
@@ -1981,7 +1981,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/CircularFunctions-13"/>
+          <image source="figures/IntroTrigGraphics/CircularFunctions-13"></image>
         </p>
       </statement>
       <answer>
@@ -1999,7 +1999,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/CircularFunctions-14"/>
+          <image source="figures/IntroTrigGraphics/CircularFunctions-14"></image>
         </p>
       </statement>
       <answer>
@@ -2137,7 +2137,7 @@
               <idx><h>angle</h><h>of depression</h></idx> the angle of depression (also known as <idx><h>angle</h><h>of declination</h></idx>
           the angle of declination).
           The angle of depression of an object refers to the angle whose initial side is a horizontal line above the object and whose terminal side is the line-of-sight to the object below the horizontal.
-          This is represented schematically below. <img src="figures/IntroTrigGraphics/CircularFunctions-15"/>
+          This is represented schematically below. <image source="figures/IntroTrigGraphics/CircularFunctions-15"></image>
         </p>
 
         <p>
@@ -2651,7 +2651,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/CircularFunctions-16"/>
+          <image source="figures/IntroTrigGraphics/CircularFunctions-16"></image>
 
           <ol>
             <li>
