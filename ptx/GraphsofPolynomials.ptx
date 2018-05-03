@@ -282,11 +282,11 @@
 
             <li>
               <p>
-                <m>g(x) = 12x +x^3</m> \setcounter{HW}{\value{enumi}}
+                <m>g(x) = 12x +x^3</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -382,7 +382,7 @@
             <li>
               <p>
                 Use software or a graphing calculator to graph <m>y=V(x)</m> on the domain you found in part 1 and approximate the dimensions of the box with maximum volume to two decimal places.
-                What is the maximum volume? <table xml:id="fig_boxnotop"> <caption>Constructing the box in <xref ref="boxnotopex">Example</xref></caption> <tabular> <row> <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-1"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-2"/></cell> </row> </tabular> </table>
+                What is the maximum volume? <table xml:id="fig_boxnotop"> <caption>Constructing the box in <xref ref="boxnotopex">Example</xref></caption> <tabular> <row> <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-1"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-2"></image></cell> </row> </tabular> </table>
               </p>
             </li>
           </ol>
@@ -454,7 +454,7 @@
       <caption>Optimizing the volume of the box in <xref ref="boxnotopex">Example</xref></caption>
       <tabular>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/BoxNoTopV"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/BoxNoTopV"></image></cell>
         </row>
         <row>
           <cell>The graph <m>y=V(x)</m></cell>
@@ -463,7 +463,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/BoxNoTopVmax"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/BoxNoTopVmax"></image></cell>
         </row>
         <row>
           <cell>The graph <m>y=V(x)</m> with maximum shown</cell>
@@ -569,9 +569,9 @@
       </p>
       <tabular>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-6"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-6"></image></cell>
           <cell>\hspace{2cm}</cell>
-          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-7"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-7"></image></cell>
         </row>
         <row>
           <cell><m>a>0</m></cell>
@@ -600,7 +600,7 @@
     <sidebyside>
       <figure>
         <caption><m>y=x^2</m></caption>
-        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-3"/>
+        <image source="figures/PolynomialsGraphics/GraphsofPolynomials-3"></image>
       </figure>
 
       <figure>
@@ -609,7 +609,7 @@
 
       <figure>
         <caption><m>y=x^6</m></caption>
-        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-5"/>
+        <image source="figures/PolynomialsGraphics/GraphsofPolynomials-5"></image>
       </figure>
     </sidebyside>
     </figure>
@@ -619,7 +619,7 @@
     <sidebyside>
       <figure>
         <caption><m>y=x^3</m></caption>
-        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-8"/>
+        <image source="figures/PolynomialsGraphics/GraphsofPolynomials-8"></image>
       </figure>
 
       <figure>
@@ -628,7 +628,7 @@
 
       <figure>
         <caption><m>y=x^7</m></caption>
-        <img src="figures/PolynomialsGraphics/GraphsofPolynomials-10"/>
+        <image source="figures/PolynomialsGraphics/GraphsofPolynomials-10"></image>
       </figure>
     </sidebyside>
     </figure>
@@ -669,9 +669,9 @@
       </p>
       <tabular>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-11"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-11"></image></cell>
           <cell>\hspace{2cm}</cell>
-          <cell><img src="figures/PolynomialsGraphics/GraphsofPolynomials-12"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/GraphsofPolynomials-12"></image></cell>
         </row>
         <row>
           <cell><m>a>0</m></cell>
@@ -720,7 +720,7 @@
     </aside>
     <figure xml:id="cusppicture">
       <caption>Pathologies not found on graphs of polynomials</caption>
-      <img src="figures/PolynomialsGraphics/GraphsofPolynomials-13"/>
+      <image source="figures/PolynomialsGraphics/GraphsofPolynomials-13"></image>
     </figure>
 
     <p>
@@ -748,7 +748,7 @@
 
     <figure xml:id="fig_polygraphgen">
       <caption>The graph of a polynomial</caption>
-      <img src="figures/PolynomialsGraphics/GraphsofPolynomials-14"/>
+      <image source="figures/PolynomialsGraphics/GraphsofPolynomials-14"></image>
     </figure>
 
     <p>
@@ -860,12 +860,12 @@
 
         <figure xml:id="fig_polysign1">
           <caption>The sign diagram of <m>f</m> in <xref ref="polygraphex">Example</xref></caption>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-15"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-15"></image>
         </figure>
 
         <figure xml:id="fig_polygraph1">
           <caption>The graph <m>y=f(x)</m> for <xref ref="polygraphex">Example</xref></caption>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-16"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-16"></image>
         </figure>
       </solution>
     </example>
@@ -957,7 +957,7 @@
       <caption>Two views of the polynomials <m>f(x)</m> and <m>g(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/EndBehaviour_near"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/EndBehaviour_near"></image></cell>
         </row>
         <row>
           <cell>A view close to the origin</cell>
@@ -966,7 +966,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/PolynomialsGraphics/EndBehaviour_far"/></cell>
+          <cell><image source="figures/PolynomialsGraphics/EndBehaviour_far"></image></cell>
         </row>
         <row>
           <cell>A <q>zoomed out</q> view</cell>
@@ -1116,7 +1116,7 @@
 
         <figure xml:id="fig_polygraph2">
           <caption>The graph <m>y=f(x)</m> for <xref ref="ex_multiplicity">Example</xref></caption>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-19"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-19"></image>
         </figure>
       </solution>
     </example>
@@ -1514,7 +1514,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-21"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-21"></image>
         </p>
       </answer>
     </exercise>
@@ -1538,7 +1538,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-22"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-22"></image>
         </p>
       </answer>
     </exercise>
@@ -1562,7 +1562,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-23"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-23"></image>
         </p>
       </answer>
     </exercise>
@@ -1586,7 +1586,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-24"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-24"></image>
         </p>
       </answer>
     </exercise>
@@ -1610,7 +1610,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-25"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-25"></image>
         </p>
       </answer>
     </exercise>
@@ -1642,7 +1642,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-26"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-26"></image>
         </p>
       </answer>
     </exercise>
@@ -1666,7 +1666,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-27"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-27"></image>
         </p>
       </answer>
     </exercise>
@@ -1694,7 +1694,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-28"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-28"></image>
         </p>
       </answer>
     </exercise>
@@ -1714,7 +1714,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-29"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-29"></image>
         </p>
       </answer>
     </exercise>
@@ -1742,7 +1742,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-30"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-30"></image>
         </p>
       </answer>
     </exercise>
@@ -1773,7 +1773,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-31"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-31"></image>
         </p>
       </answer>
     </exercise>
@@ -1797,7 +1797,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-32"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-32"></image>
         </p>
       </answer>
     </exercise>
@@ -1821,7 +1821,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-33"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-33"></image>
         </p>
       </answer>
     </exercise>
@@ -1845,7 +1845,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-34"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-34"></image>
         </p>
       </answer>
     </exercise>
@@ -1869,7 +1869,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-35"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-35"></image>
         </p>
       </answer>
     </exercise>
@@ -1893,7 +1893,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-36"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-36"></image>
         </p>
       </answer>
     </exercise>
@@ -2064,7 +2064,7 @@
         </p>
 
         <p>
-          <img src="figures/PolynomialsGraphics/GraphsofPolynomials-20"/>
+          <image source="figures/PolynomialsGraphics/GraphsofPolynomials-20"></image>
         </p>
       </statement>
       <answer>

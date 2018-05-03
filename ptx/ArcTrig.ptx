@@ -61,7 +61,7 @@
       <caption>Reflecting <m>y=\cos(x)</m> across <m>y=x</m> yields <m>y=\arccos(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-2"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-2"></image></cell>
         </row>
         <row>
           <cell><m>f(x) = \cos(x)</m>, <m>0 \leq x \leq \pi</m></cell>
@@ -70,7 +70,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-3"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-3"></image></cell>
         </row>
         <row>
           <cell><m>f^{-1}(x) = \arccos(x)</m></cell>
@@ -198,7 +198,7 @@
       <caption>Reflecting <m>y=\sin(x)</m> across <m>y=x</m> yields <m>y=\arcsin(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-5"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-5"></image></cell>
         </row>
         <row>
           <cell><m>g(x) = \sin(x)</m>,  <m>-\frac{\pi}{2} \leq x \leq  \frac{\pi}{2}</m></cell>
@@ -207,7 +207,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-6"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-6"></image></cell>
         </row>
         <row>
           <cell><m>g^{-1}(x) = \arcsin(x)</m></cell>
@@ -524,7 +524,7 @@
       <caption>Reflecting <m>y=\tan(x)</m> across <m>y=x</m> yields <m>y=\arctan(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-7"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-7"></image></cell>
         </row>
         <row>
           <cell><m>f(x) = \tan(x)</m>,  <m>-\frac{\pi}{2} \lt  x \lt   \frac{\pi}{2}</m></cell>
@@ -533,7 +533,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-8"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-8"></image></cell>
         </row>
         <row>
           <cell><m>f^{-1}(x) = \arctan(x)</m></cell>
@@ -679,7 +679,7 @@
       <caption>Reflecting <m>y=\cot(x)</m> across <m>y=x</m> yields <m>y=\operatorname{arccot}(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-9"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-9"></image></cell>
         </row>
         <row>
           <cell><m>g(x) = \cot(x)</m>,  <m>0 \lt  x \lt   \pi</m></cell>
@@ -688,7 +688,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-10"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-10"></image></cell>
         </row>
         <row>
           <cell><m>gf^{-1}(x) = \operatorname{arccot}(x)</m></cell>
@@ -906,8 +906,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-11"/></cell>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-12"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-11"></image></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-12"></image></cell>
         </row>
         <row>
           <cell>The graph <m>y=\sec(x)</m></cell>
@@ -1090,7 +1090,7 @@
       <caption>The <q>Trigonometry Friendly</q> definition of <m>\operatorname{arcsec}(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-13"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-13"></image></cell>
         </row>
         <row>
           <cell><m>f(x) = \sec(x)</m> on  <m>\left[0, \frac{\pi}{2}\right) \cup \left( \frac{\pi}{2}, \pi\right]</m></cell>
@@ -1099,7 +1099,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-14"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-14"></image></cell>
         </row>
         <row>
           <cell><m>f^{-1}(x)=\operatorname{arcsec}(x)</m></cell>
@@ -1111,7 +1111,7 @@
       <caption>The <q>Trigonometry Friendly</q> definition of <m>\operatorname{arccsc}(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-15"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-15"></image></cell>
         </row>
         <row>
           <cell><m>g(x) = \csc(x)</m> on  <m>\left[-\frac{\pi}{2}, 0\right) \cup \left(0,  \frac{\pi}{2}\right]</m></cell>
@@ -1120,7 +1120,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-16"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-16"></image></cell>
         </row>
         <row>
           <cell><m>g^{-1}(x)=\operatorname{arccsc}(x)</m></cell>
@@ -1454,7 +1454,7 @@
       <caption>The <q>Calculus Friendly</q> definition of <m>\operatorname{arcsec}(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-17"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-17"></image></cell>
         </row>
         <row>
           <cell><m>f(x) = \sec(x)</m> on  <m>\left[0, \frac{\pi}{2}\right) \cup \left[ \pi, \frac{3\pi}{2}\right)</m></cell>
@@ -1463,7 +1463,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-18"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-18"></image></cell>
         </row>
         <row>
           <cell><m>f^{-1}(x)=\operatorname{arcsec}(x)</m></cell>
@@ -1475,7 +1475,7 @@
       <caption>The ``Calculus Friendly definition of <m>\operatorname{arccsc}(x)</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-19"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-19"></image></cell>
         </row>
         <row>
           <cell><m>g(x) = \csc(x)</m> on  <m>\left(0, \frac{\pi}{2}\right] \cup \left(\pi,  \frac{3\pi}{2}\right]</m></cell>
@@ -1484,7 +1484,7 @@
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/IntroTrigGraphics/ArcTrig-20"/></cell>
+          <cell><image source="figures/IntroTrigGraphics/ArcTrig-20"></image></cell>
         </row>
         <row>
           <cell><m>g^{-1}(x)=\operatorname{arccsc}(x)</m></cell>
@@ -1822,7 +1822,7 @@
                     to get <m>\alpha = \operatorname{arccot}(2) =\arctan\left(\frac{1}{2}\right)</m> radians.
                     Since <m>\theta = \pi - \alpha = \pi - \arctan\left(\frac{1}{2}\right) \approx 2.6779</m> radians,
                     we get <m>\operatorname{arccot}(-2) \approx 2.6779</m>. <figure xml:id="fig_arctrig11"> <caption>Evaluating
-                    <m>\operatorname{arccot}(-2)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-21"/> </figure> Another way to attack the problem is to use <m>\arctan\left(-\frac{1}{2}\right)</m>.
+                    <m>\operatorname{arccot}(-2)</m></caption> <image source="figures/IntroTrigGraphics/ArcTrig-21"></image> </figure> Another way to attack the problem is to use <m>\arctan\left(-\frac{1}{2}\right)</m>.
                     By definition,
                     the real number <m>t = \arctan\left(-\frac{1}{2}\right)</m> satisfies
                     <m>\tan(t) = -\frac{1}{2}</m> with <m>-\frac{\pi}{2} \lt t \lt \frac{\pi}{2}</m>.
@@ -1835,7 +1835,7 @@
                     and we get <m>\theta = \pi + \beta = \pi + \arctan\left(-\frac{1}{2}\right) \approx 2.6779</m> radians.
                     Hence, as before,
                     <m>\operatorname{arccot}(-2) \approx 2.6779</m>. <figure xml:id="fig_arctrig12"> <caption>Evaluating
-                    <m>\operatorname{arccot}(-2)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-22"/> </figure>
+                    <m>\operatorname{arccot}(-2)</m></caption> <image source="figures/IntroTrigGraphics/ArcTrig-22"></image> </figure>
                   </p>
                 </li>
 
@@ -1862,7 +1862,7 @@
                     to get <m>\alpha = \operatorname{arccsc}\left(\frac{3}{2}\right) = \arcsin\left(\frac{2}{3}\right)</m> radians.
                     Since <m>\theta = \pi + \alpha = \pi + \arcsin\left(\frac{2}{3}\right) \approx 3.8713</m> radians,
                     <m>\operatorname{arccsc}\left(-\frac{3}{2}\right) \approx 3.8713</m>. <figure xml:id="fig_arctrig13"> <caption>Evaluating
-                    <m>\operatorname{arccsc}\left(-\frac{3}{2}\right)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig-23"/> </figure>
+                    <m>\operatorname{arccsc}\left(-\frac{3}{2}\right)</m></caption> <image source="figures/IntroTrigGraphics/ArcTrig-23"></image> </figure>
                   </p>
                 </li>
               </ol></li>
@@ -1888,7 +1888,7 @@
                     <m>(0, 0)</m> and <m>\left(5, \frac{\pi}{2}\right)</m>.
                     Plotting these values tells us that the range of <m>f</m> is
                     <m>\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]</m>. (It also confirms our domain!) The graph in <xref ref="fig_arctrig14">Figure</xref>
-                    confirms our results. <figure xml:id="fig_arctrig14"> <caption><m>y=f(x)=\dfrac{\pi}{2}-\arccos\left(\dfrac{x}{5}\right)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig1"/> </figure>
+                    confirms our results. <figure xml:id="fig_arctrig14"> <caption><m>y=f(x)=\dfrac{\pi}{2}-\arccos\left(\dfrac{x}{5}\right)</m></caption> <image source="figures/IntroTrigGraphics/ArcTrig1"></image> </figure>
                   </p>
                 </li>
 
@@ -1914,7 +1914,7 @@
                     <m>y = F(x) = \arctan(x)</m> by a horizontal compression by a factor of <m>4</m> and a vertical stretch by a factor of <m>3</m>.
                     It is the latter which affects the range,
                     producing a range of <m>\left(-\frac{3\pi}{2}, \frac{3\pi}{2} \right)</m>.
-                    We confirm our findings using GeoGebra in <xref ref="fig_arctrig15">Figure</xref>. <figure xml:id="fig_arctrig15"> <caption><m>y=f(x)=3\arctan(4x)</m></caption> <img src="figures/IntroTrigGraphics/ArcTrig2"/> </figure>
+                    We confirm our findings using GeoGebra in <xref ref="fig_arctrig15">Figure</xref>. <figure xml:id="fig_arctrig15"> <caption><m>y=f(x)=3\arctan(4x)</m></caption> <image source="figures/IntroTrigGraphics/ArcTrig2"></image> </figure>
                   </p>
                 </li>
 
@@ -1967,7 +1967,7 @@
 
                     <figure xml:id="fig_arctrig16">
                       <caption><m>y=g(x)=\operatorname{arccot}\left(\dfrac{\pi}{2}\right)+\pi</m></caption>
-                      <img src="figures/IntroTrigGraphics/ArcTrig3"/>
+                      <image source="figures/IntroTrigGraphics/ArcTrig3"></image>
                     </figure>
 
                     <aside>
@@ -2008,8 +2008,8 @@
         <sidebyside>
           <tabular>
             <row>
-              <cell><img src="figures/IntroTrigGraphics/ArcTrig05"/></cell>
-              <cell><img src="figures/IntroTrigGraphics/ArcTrig06"/></cell>
+              <cell><image source="figures/IntroTrigGraphics/ArcTrig05"></image></cell>
+              <cell><image source="figures/IntroTrigGraphics/ArcTrig06"></image></cell>
             </row>
             <row>
               <cell>Front View</cell>
@@ -2032,7 +2032,7 @@
 
         <figure xml:id="fig_arctrigappex">
           <caption>Angle of inclination <m>\theta</m> for <xref ref="roofpitchex">Example</xref></caption>
-          <img src="figures/IntroTrigGraphics/ArcTrig-24"/>
+          <image source="figures/IntroTrigGraphics/ArcTrig-24"></image>
         </figure>
       </solution>
     </example>
@@ -2122,7 +2122,7 @@
                 in Quadrant I and Quadrant II. If we let <m>\alpha</m> denote the acute solution to the equation,
                 then all the solutions to this equation in Quadrant I are coterminal with <m>\alpha</m>,
                 and <m>\alpha</m> serves as the reference angle for all of the solutions to this equation in Quadrant II. <table xml:id="fig_trigeqn1"> <caption>Solving
-                <m>\sin(\theta)=\frac{1}{3}</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-25"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-26"/></cell> </row> </tabular> </table> Since
+                <m>\sin(\theta)=\frac{1}{3}</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-25"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-26"></image></cell> </row> </tabular> </table> Since
                 <m>\frac{1}{3}</m> isn't the sine of any of the
                 <q>common angles</q> discussed earlier,
                 we use the arcsine functions to express our answers.
@@ -2145,7 +2145,7 @@
                 We may visualize the solutions to
                 <m>\tan(t)=-2</m> as angles <m>\theta</m> with <m>\tan(\theta) = -2</m>.
                 Since tangent is negative only in Quadrants II and IV, we focus our efforts there. <table xml:id="fig_trigeqn2"> <caption>Solving
-                <m>\tan(t)=-2</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-27"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-28"/></cell> </row> </tabular> </table> Since <m>-2</m> isn't the tangent of any of the <q>common angles</q>,
+                <m>\tan(t)=-2</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-27"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-28"></image></cell> </row> </tabular> </table> Since <m>-2</m> isn't the tangent of any of the <q>common angles</q>,
                 we need to use the arctangent function to express our answers.
                 The real number <m>t = \arctan(-2)</m> satisfies
                 <m>\tan(t)=-2</m> and <m>-\frac{\pi}{2} \lt t \lt 0</m>.
@@ -2194,7 +2194,7 @@
                 we record our final answer to
           <m>\sec(x) = -\frac{5}{3}</m> as <m>x = \arccos\left(-\frac{3}{5}\right) + 2\pi k</m> or
                 <m>x = -\arccos\left(-\frac{3}{5}\right) + 2\pi k</m> for integers <m>k</m>. <table xml:id="fig_trigeqn3"> <caption>Solving
-                <m>\sec(x)=-\frac{5}{3}</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-29"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/ArcTrig-30"/></cell> </row> </tabular> </table>
+                <m>\sec(x)=-\frac{5}{3}</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-29"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/ArcTrig-30"></image></cell> </row> </tabular> </table>
               </p>
             </li>
           </ol>
@@ -5171,7 +5171,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/ArcTrig-31"/>
+          <image source="figures/IntroTrigGraphics/ArcTrig-31"></image>
 
           <ol>
             <li>

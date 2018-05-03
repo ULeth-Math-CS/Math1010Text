@@ -13,7 +13,7 @@
 
     <figure xml:id="fig_linfun1">
       <caption>The line between two points <m>P</m> and <m>Q</m></caption>
-      <img src="figures/LinearQuadraticGraphics/LinearFunctions-1"/>
+      <image source="figures/LinearQuadraticGraphics/LinearFunctions-1"></image>
     </figure>
 
     <p>
@@ -72,11 +72,11 @@
 
             <li>
               <p>
-                <m>P(-1,2)</m>, <m>Q(3,4)</m> \setcounter{HW}{\value{enumi}}
+                <m>P(-1,2)</m>, <m>Q(3,4)</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -86,11 +86,11 @@
 
             <li>
               <p>
-                <m>P(-3,2)</m>, <m>Q(4,2)</m> \setcounter{HW}{\value{enumi}}
+                <m>P(-3,2)</m>, <m>Q(4,2)</m>
               </p>
             </li>
 
-            \setcounter{enumi}{\value{HW}}
+            
 
             <li>
               <p>
@@ -115,28 +115,28 @@
             <li>
               <p>
                 <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{4 - 0}{2 - 0} = \dfrac{4}{2} = 2</m> &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-2"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-2"></image> </tabular>
               </p>
             </li>
 
             <li>
               <p>
                 <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{4 - 2}{3 - (-1)} = \dfrac{2}{4} = \dfrac{1}{2}</m> &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-3"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-3"></image> </tabular>
               </p>
             </li>
 
             <li>
               <p>
                 <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{-3 - 3}{2 - (-2)} = \dfrac{-6}{4} = -\dfrac{3}{2}</m> &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-4"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-4"></image> </tabular>
               </p>
             </li>
 
             <li>
               <p>
                 <tabular> {m{2.5in}m{2.5in}} <m>m = \dfrac{2 - 2}{4 - (-3)} = \dfrac{0}{7} = 0</m> &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-5"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-5"></image> </tabular>
               </p>
             </li>
 
@@ -144,14 +144,14 @@
               <p>
                 <tabular> {m{3in}m{2in}} <m>m = \dfrac{-1 - 3}{2 - 2} = \dfrac{-4}{0}</m>,
                 which is undefined &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-6"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-6"></image> </tabular>
               </p>
             </li>
 
             <li>
               <p>
                 <tabular> {m{3in}m{2in}} <m>m = \dfrac{-1 - 3}{2.1 - 2} = \dfrac{-4}{0.1}=-40</m> &amp;
-                <img src="figures/LinearQuadraticGraphics/LinearFunctions-7"/> </tabular>
+                <image source="figures/LinearQuadraticGraphics/LinearFunctions-7"></image> </tabular>
               </p>
             </li>
           </ol>
@@ -178,7 +178,7 @@
 
     <figure xml:id="fig_riserun">
       <caption>Slope as <q>rise over run</q></caption>
-      <img src="figures/LinearQuadraticGraphics/LinearFunctions-8"/>
+      <image source="figures/LinearQuadraticGraphics/LinearFunctions-8"></image>
     </figure>
 
     <p>
@@ -302,7 +302,7 @@
 
     <figure xml:id="fig_linfun2">
       <caption>Deriving the point-slope formula</caption>
-      <img src="figures/LinearQuadraticGraphics/LinearFunctions-9"/>
+      <image source="figures/LinearQuadraticGraphics/LinearFunctions-9"></image>
     </figure>
 
     <insight xml:id="pointslope">
@@ -471,7 +471,7 @@
               <p>
                 To graph <m>f(x) = 3</m>, we graph <m>y=3</m>.
                 This is a horizontal line (<m>m=0</m>) through <m>(0,3)</m>:
-                see <xref ref="fig_linfun3">Figure</xref>. <figure xml:id="fig_linfun3"> <caption>The graph of <m>f(x)=3</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-10"/> </figure>
+                see <xref ref="fig_linfun3">Figure</xref>. <figure xml:id="fig_linfun3"> <caption>The graph of <m>f(x)=3</m></caption> <image source="figures/LinearQuadraticGraphics/LinearFunctions-10"></image> </figure>
               </p>
             </li>
 
@@ -485,7 +485,7 @@
                 To get another point on the line,
                 we can plot <m>(1,f(1)) = (1,2)</m>.
                 Constructing the line through these points gives us <xref ref="fig_linfun4">Figure</xref>. <figure xml:id="fig_linfun4"> <caption>The graph of
-                <m>f(x)=3x-1</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-11"/> </figure>
+                <m>f(x)=3x-1</m></caption> <image source="figures/LinearQuadraticGraphics/LinearFunctions-11"></image> </figure>
               </p>
             </li>
 
@@ -500,7 +500,7 @@
                 Plotting an additional point,
                 we can choose <m>(1,f(1))</m> to get <m>\left(1, \frac{1}{4}\right)</m>:
                 see <xref ref="fig_linfun5">Figure</xref>. <figure xml:id="fig_linfun5"> <caption>The graph of
-                <m>f(x)=\dfrac{3-2x}{4}</m></caption> <img src="figures/LinearQuadraticGraphics/LinearFunctions-12"/> </figure>
+                <m>f(x)=\dfrac{3-2x}{4}</m></caption> <image source="figures/LinearQuadraticGraphics/LinearFunctions-12"></image> </figure>
               </p>
             </li>
 
@@ -534,7 +534,7 @@
 
     <figure xml:id="fig_linfun6">
       <caption>The graph of <m>f(x)=\dfrac{x^2-4}{x-2}</m></caption>
-      <img src="figures/LinearQuadraticGraphics/LinearFunctions-13"/>
+      <image source="figures/LinearQuadraticGraphics/LinearFunctions-13"></image>
     </figure>
 
     <p>
@@ -860,7 +860,7 @@
 
     <figure xml:id="fig_avsecant">
       <caption>The graph of <m>y=f(x)</m> and its secant line through <m>(a,f(a))</m> and <m>(b,f(b))</m></caption>
-      <img src="figures/LinearQuadraticGraphics/LinearFunctions-14"/>
+      <image source="figures/LinearQuadraticGraphics/LinearFunctions-14"></image>
     </figure>
 
     <p>
@@ -1324,7 +1324,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-17"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-17"></image>
         </p>
       </answer>
     </exercise>
@@ -1352,7 +1352,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-18"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-18"></image>
         </p>
       </answer>
     </exercise>
@@ -1380,7 +1380,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-19"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-19"></image>
         </p>
       </answer>
     </exercise>
@@ -1409,7 +1409,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-20"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-20"></image>
         </p>
       </answer>
     </exercise>
@@ -1437,7 +1437,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-21"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-21"></image>
         </p>
       </answer>
     </exercise>
@@ -1465,7 +1465,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-22"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-22"></image>
         </p>
       </answer>
     </exercise>
@@ -1806,7 +1806,7 @@
         </p>
 
         <p>
-          <img src="figures/LinearQuadraticGraphics/LinearFunctions-15"/>
+          <image source="figures/LinearQuadraticGraphics/LinearFunctions-15"></image>
         </p>
       </statement>
       <answer>
@@ -1835,7 +1835,7 @@
 
           <li>
             <p>
-              <m>~</m> <tabular> <row> <cell><img src="figures/LinearQuadraticGraphics/LinearFunctions-23"/></cell> </row> <row> <cell><m>y=D(d)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/LinearQuadraticGraphics/LinearFunctions-24"/></cell> </row> <row> <cell><m>y=D(s)</m></cell> </row> </tabular>
+              <m>~</m> <tabular> <row> <cell><image source="figures/LinearQuadraticGraphics/LinearFunctions-23"></image></cell> </row> <row> <cell><m>y=D(d)</m></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/LinearQuadraticGraphics/LinearFunctions-24"></image></cell> </row> <row> <cell><m>y=D(s)</m></cell> </row> </tabular>
             </p>
           </li>
         </ol>
@@ -2274,7 +2274,7 @@
           We can also <q>move</q>
           the lines so that their point of intersection is the origin without messing things up,
           so we'll assume <m>b_{1} = b_{2} = 0</m>. (Take a moment with your classmates to discuss why this is okay.) Graphing the lines and plotting the points <m>O(0, 0)\;</m>,
-          <m>P(1, m_{1})\;</m> and <m>Q(1, m_{2})</m> gives us the following set up. <img src="figures/LinearQuadraticGraphics/LinearFunctions-16"/>
+          <m>P(1, m_{1})\;</m> and <m>Q(1, m_{2})</m> gives us the following set up. <image source="figures/LinearQuadraticGraphics/LinearFunctions-16"></image>
         </p>
 
         <p>

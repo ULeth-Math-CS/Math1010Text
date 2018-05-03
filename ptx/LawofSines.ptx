@@ -35,7 +35,7 @@
 
         <figure xml:id="fig_sines1">
           <caption>The triangle in <xref ref="righttrianglereviewex">Example</xref></caption>
-          <img src="figures/AppExtGraphics/LawofSines-1"/>
+          <image source="figures/AppExtGraphics/LawofSines-1"></image>
         </figure>
 
         <p>
@@ -281,7 +281,7 @@
                 but that becomes unnecessarily messy for the discussion at hand.
                 Thus <q>exact</q>
                 here means <m>\frac{7\sin\left(15^{\circ}\right)}{\sin\left(120^{\circ}\right)}</m>. <figure xml:id="fig_sineseg1"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losaas">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-8"/> </figure>
+                <xref ref="losaas">number</xref></caption> <image source="figures/AppExtGraphics/LawofSines-8"></image> </figure>
               </p>
             </li>
 
@@ -299,7 +299,7 @@
                 To find <m>b</m> we use the angle-side pair
                 <m>(\gamma,c)</m> which yields <m>\frac{b}{\sin\left(30^{\circ}\right)} = \frac{5.25}{\sin\left(65^{\circ}\right)}</m> hence
                 <m>b = \frac{5.25\sin\left(30^{\circ}\right)}{\sin\left(65^{\circ}\right)} \approx 2.90</m> units. <figure xml:id="fig_sineseg2"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losasa">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-9"/> </figure>
+                <xref ref="losasa">number</xref></caption> <image source="figures/AppExtGraphics/LawofSines-9"></image> </figure>
               </p>
             </li>
 
@@ -314,7 +314,7 @@
                 we see that side <m>a</m> is just too short to make a triangle.
                 The next three examples keep the same values for the measure of <m>\alpha</m> and the length of <m>c</m> while varying the length of <m>a</m>.
                 We will discuss this case in more detail after we see what happens in those examples. <figure xml:id="fig_sineseg3"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losnotriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-10"/> </figure>
+                <xref ref="losnotriangleex">number</xref></caption> <image source="figures/AppExtGraphics/LawofSines-10"></image> </figure>
               </p>
             </li>
 
@@ -335,7 +335,7 @@
                 We find <m>b = \frac{2 \sin\left(60^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 2 \sqrt{3} \approx 3.46</m> units.
                 In this case,
                 the side <m>a</m> is precisely long enough to form a unique right triangle. <figure xml:id="fig_sineseg4"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losrighttriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-11"/> </figure>
+                <xref ref="losrighttriangleex">number</xref></caption> <image source="figures/AppExtGraphics/LawofSines-11"></image> </figure>
               </p>
             </li>
 
@@ -378,7 +378,7 @@
               we repeat the exact same steps and find <m>\beta \approx 11.81^{\circ}</m> and
               <m>b \approx 1.23</m> units. (An exact answer for <m>\beta</m> in this case is <m>\beta = \arcsin\left(\frac{2}{3}\right) - \frac{\pi}{6}</m> radians
               <m>\approx 11.81^{\circ}</m>.) Both triangles are drawn in <xref ref="fig_sineseg5">Figure</xref>
-              below. <!-- <caption>Triangle for Example \ref{losex} number \ref{lostwotriangleex}</caption> --> <sidebyside> <tabular> <row> <cell><img src="figures/AppExtGraphics/LawofSines-12"/></cell> <cell><img src="figures/AppExtGraphics/LawofSines-13"/></cell> </row> </tabular> </sidebyside>
+              below. <!-- <caption>Triangle for Example \ref{losex} number \ref{lostwotriangleex}</caption> --> <sidebyside> <tabular> <row> <cell><image source="figures/AppExtGraphics/LawofSines-12"></image></cell> <cell><image source="figures/AppExtGraphics/LawofSines-13"></image></cell> </row> </tabular> </sidebyside>
             </p>
             </li>
 
@@ -396,7 +396,7 @@
                 So <m>\beta = 180^{\circ} - 30^{\circ} - 30^{\circ} = 120^{\circ}</m> and,
                 using the Law of Sines one last time,
                 <m>b = \frac{4\sin\left(120^{\circ}\right)}{\sin\left(30^{\circ}\right)} = 4\sqrt{3} \approx 6.93</m> units. <figure xml:id="fig_sineseg6"> <caption>Triangle for <xref ref="losex">Example</xref>
-                <xref ref="losonetriangleex">number</xref></caption> <img src="figures/AppExtGraphics/LawofSines-14"/> </figure>
+                <xref ref="losonetriangleex">number</xref></caption> <image source="figures/AppExtGraphics/LawofSines-14"></image> </figure>
               </p>
             </li>
           </ol>
@@ -500,8 +500,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-15"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-16"/></cell>
+          <cell><image source="figures/AppExtGraphics/LawofSines-15"></image></cell>
+          <cell><image source="figures/AppExtGraphics/LawofSines-16"></image></cell>
         </row>
         <row>
           <cell><m>a\lt h</m>, no triangle</cell>
@@ -553,8 +553,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/AppExtGraphics/LawofSines-17"/></cell>
-          <cell><img src="figures/AppExtGraphics/LawofSines-18"/></cell>
+          <cell><image source="figures/AppExtGraphics/LawofSines-17"></image></cell>
+          <cell><image source="figures/AppExtGraphics/LawofSines-18"></image></cell>
         </row>
         <row>
           <cell><m>h \lt  a \lt  c</m>, two triangles</cell>
@@ -587,13 +587,13 @@
           <caption>Diagrams for <xref ref="losapplication">Example</xref></caption>
           <tabular>
             <row>
-              <cell><img src="figures/AppExtGraphics/LawofSines-19"/></cell>
+              <cell><image source="figures/AppExtGraphics/LawofSines-19"></image></cell>
             </row>
             <row>
               <cell></cell>
             </row>
             <row>
-              <cell><img src="figures/AppExtGraphics/LawofSines-20"/></cell>
+              <cell><image source="figures/AppExtGraphics/LawofSines-20"></image></cell>
             </row>
           </tabular>
         </table>
@@ -1087,7 +1087,7 @@
     </p>
 
     <p>
-      <img src="figures/AppExtGraphics/LawofSines-21"/>
+      <image source="figures/AppExtGraphics/LawofSines-21"></image>
     </p>
 
     <p>

@@ -324,7 +324,7 @@
         <cell></cell>
       </row>
       <row>
-        <cell><img src="figures/IntroTrigGraphics/TrigGraphs-1"/></cell>
+        <cell><image source="figures/IntroTrigGraphics/TrigGraphs-1"></image></cell>
       </row>
       <row>
         <cell>The <q>fundamental cycle</q> of <m>y = \cos(x)</m>.</cell>
@@ -482,7 +482,7 @@
         <cell></cell>
       </row>
       <row>
-        <cell><img src="figures/IntroTrigGraphics/TrigGraphs-3"/></cell>
+        <cell><image source="figures/IntroTrigGraphics/TrigGraphs-3"></image></cell>
       </row>
       <row>
         <cell>The <q>fundamental cycle</q> of <m>y = \sin(x)</m></cell>
@@ -635,7 +635,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-5"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-5"></image>
                   </tabular>
                 </sidebyside>
                 One cycle is graphed on <m>[1,5]</m> so the period is the length of that interval which is <m>4</m>.
@@ -680,7 +680,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-6"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-6"></image>
                   </tabular>
                 </sidebyside>
                 <figure xml:id="fig_triggraph4">
@@ -748,7 +748,7 @@
     </aside>
     <figure xml:id="fig_triggraph5">
       <caption>Properties of sinusoids</caption>
-      <img src="figures/IntroTrigGraphics/TrigGraphs-7"/>
+      <image source="figures/IntroTrigGraphics/TrigGraphs-7"></image>
     </figure>
 
     <p>
@@ -906,7 +906,7 @@
 
         <figure xml:id="fig_triggraph6">
           <caption>One cycle of <m>y=f(x)</m> in <xref ref="fitsinusoidtodata1">Example</xref></caption>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-8"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-8"></image>
         </figure>
 
         <ol>
@@ -961,7 +961,7 @@
               Taking the phase shift to be <m>\frac{7}{2}</m>,
               we get <m>-\frac{\phi}{\omega} = \frac{7}{2}</m>,
               or <m>\phi = -\frac{7}{2} \omega = -\frac{7}{2}\left(\frac{\pi}{3}\right) = -\frac{7\pi}{6}</m>.
-              Hence, our answer is <m>S(x) = 2 \sin\left(\frac{\pi}{3} x - \frac{7\pi}{6}\right) + \frac{1}{2}</m>. <!-- <caption>Extending the graph of <m>y=f(x)</m></caption> --> <sidebyside> <img src="figures/IntroTrigGraphics/TrigGraphs-9"/> </sidebyside>
+              Hence, our answer is <m>S(x) = 2 \sin\left(\frac{\pi}{3} x - \frac{7\pi}{6}\right) + \frac{1}{2}</m>. <!-- <caption>Extending the graph of <m>y=f(x)</m></caption> --> <sidebyside> <image source="figures/IntroTrigGraphics/TrigGraphs-9"></image> </sidebyside>
             </p>
             </li>
           </ol>
@@ -1195,7 +1195,7 @@
           \end{array}
         </me>
         &amp;
-        <img src="figures/IntroTrigGraphics/TrigGraphs-10"/>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-10"></image>
       </tabular>
     </sidebyside>
     <aside>
@@ -1259,7 +1259,7 @@
           \end{array}
         </me>
         &amp;
-        <img src="figures/IntroTrigGraphics/TrigGraphs-12"/>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-12"></image>
       </tabular>
     </sidebyside>
     <p>
@@ -1474,7 +1474,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-14"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-14"></image>
                   </tabular>
                 </sidebyside>
               </p>
@@ -1536,7 +1536,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-15"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-15"></image>
                   </tabular>
                 </sidebyside>
               </p>
@@ -1606,7 +1606,7 @@
           \end{array}
         </me>
         &amp; 
-        <img src="figures/IntroTrigGraphics/TrigGraphs-16"/>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-16"></image>
       </tabular>
     </sidebyside>
 
@@ -1676,7 +1676,7 @@
           \end{array}
         </me>
         &amp; 
-        <img src="figures/IntroTrigGraphics/TrigGraphs-18"/>
+        <image source="figures/IntroTrigGraphics/TrigGraphs-18"></image>
       </tabular>
     </sidebyside>
     <p>
@@ -1876,7 +1876,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-20"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-20"></image>
                   </tabular>
                 </sidebyside>
                 We see that the period is <m>\pi - (-\pi) = 2\pi</m>.
@@ -1940,7 +1940,7 @@
                       \end{array}
                     </me>
                     &amp; 
-                    <img src="figures/IntroTrigGraphics/TrigGraphs-21"/>
+                    <image source="figures/IntroTrigGraphics/TrigGraphs-21"></image>
                   </tabular>
                 </sidebyside>
                 We find the period to be <m>0 - (-2) = 2</m>.
@@ -1996,7 +1996,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-22"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-22"></image>
         </p>
       </answer>
     </exercise>
@@ -2028,7 +2028,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-23"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-23"></image>
         </p>
       </answer>
     </exercise>
@@ -2060,7 +2060,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-24"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-24"></image>
         </p>
       </answer>
     </exercise>
@@ -2092,7 +2092,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-25"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-25"></image>
         </p>
       </answer>
     </exercise>
@@ -2124,7 +2124,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-26"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-26"></image>
         </p>
       </answer>
     </exercise>
@@ -2156,7 +2156,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-27"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-27"></image>
         </p>
       </answer>
     </exercise>
@@ -2188,7 +2188,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-28"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-28"></image>
         </p>
       </answer>
     </exercise>
@@ -2220,7 +2220,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-29"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-29"></image>
         </p>
       </answer>
     </exercise>
@@ -2255,7 +2255,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-30"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-30"></image>
         </p>
       </answer>
     </exercise>
@@ -2290,7 +2290,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-31"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-31"></image>
         </p>
       </answer>
     </exercise>
@@ -2322,7 +2322,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-32"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-32"></image>
         </p>
       </answer>
     </exercise>
@@ -2357,7 +2357,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-33"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-33"></image>
         </p>
       </answer>
     </exercise>
@@ -2381,7 +2381,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-34"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-34"></image>
         </p>
       </answer>
     </exercise>
@@ -2401,7 +2401,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-35"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-35"></image>
         </p>
       </answer>
     </exercise>
@@ -2433,7 +2433,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-36"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-36"></image>
         </p>
       </answer>
     </exercise>
@@ -2457,7 +2457,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-37"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-37"></image>
         </p>
       </answer>
     </exercise>
@@ -2481,7 +2481,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-38"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-38"></image>
         </p>
       </answer>
     </exercise>
@@ -2505,7 +2505,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-39"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-39"></image>
         </p>
       </answer>
     </exercise>
@@ -2529,7 +2529,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-40"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-40"></image>
         </p>
       </answer>
     </exercise>
@@ -2553,7 +2553,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-41"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-41"></image>
         </p>
       </answer>
     </exercise>
@@ -2577,7 +2577,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-42"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-42"></image>
         </p>
       </answer>
     </exercise>
@@ -2597,7 +2597,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-43"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-43"></image>
         </p>
       </answer>
     </exercise>
@@ -2617,7 +2617,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-44"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-44"></image>
         </p>
       </answer>
     </exercise>
@@ -2637,7 +2637,7 @@
         </p>
 
         <p>
-          <img src="figures/IntroTrigGraphics/TrigGraphs-45"/>
+          <image source="figures/IntroTrigGraphics/TrigGraphs-45"></image>
         </p>
       </answer>
     </exercise>

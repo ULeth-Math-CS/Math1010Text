@@ -154,7 +154,7 @@
 
                 <figure xml:id="fig_trigeg1-1">
                   <caption>Solving <m>\cos(2x)=-\frac{\sqrt{3}}{2}</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq01"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq01"></image>
                 </figure>
 
               </p>
@@ -208,7 +208,7 @@
 
                 <figure xml:id="fig_trigeg1-2">
                   <caption>Solving <m>\csc\left(\frac{1}{3}x-\pi\right)=\sqrt{2}</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq02"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq02"></image>
                 </figure>
 
               </p>
@@ -237,7 +237,7 @@
 
                 <figure xml:id="fig_trigeg1-3">
                   <caption>Solving <m>\cot(3x)=0</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq03"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq03"></image>
                 </figure>
 
                 <aside>
@@ -308,7 +308,7 @@
 
                 <figure xml:id="fig_trigeg1-4">
                   <caption>Solving <m>\sec^2(x)=4</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq04"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq04"></image>
                 </figure>
 
               </p>
@@ -354,7 +354,7 @@
 
                 <figure xml:id="fig_trigeg1-5">
                   <caption>Solving <m>\tan(\frac{x}{2})=-3</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq05"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq05"></image>
                 </figure>
 
               </p>
@@ -418,7 +418,7 @@
 
                 <figure xml:id="fig_trigeg1-6">
                   <caption>Solving <m>\sin(2x)=0.87</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq06"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq06"></image>
                 </figure>
 
               </p>
@@ -528,12 +528,12 @@
 
                 <figure xml:id="fig_trigeg2-1a">
                   <caption>Solving <m>3\sin^3(x)=\sin^2(x)</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq07"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq07"></image>
                 </figure>
 
                 <figure xml:id="fig_trigeg2-1b">
                   <caption>Zooming in on the first two solutions for <xref ref="TrigEqIdEx1">Example</xref>.1</caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq08"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq08"></image>
                 </figure>
 
               </p>
@@ -574,7 +574,7 @@
 
                 <figure xml:id="fig_trigeg2-2">
                   <caption>Solving <m>\sec^2(x)=\tan(x)+3</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq09"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq09"></image>
                 </figure>
 
               </p>
@@ -613,7 +613,7 @@
 
                 <figure xml:id="fig_trigeg2-3">
                   <caption>Solving <m>\cos(2x)=3\cos(x)-2</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq10"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq10"></image>
                 </figure>
 
               </p>
@@ -651,7 +651,7 @@
 
                 <figure xml:id="fig_trigeg2-4">
                   <caption>Solving <m>\cos(3x)=2-\cos(x)</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq11"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq11"></image>
                 </figure>
 
               </p>
@@ -686,7 +686,7 @@
                 Our plot of the graphs of <m>y = \cos(3x)</m> and
                 <m>y = \cos(5x)</m> in <xref ref="fig_trigeg2-5">Figure</xref>
                 bears this out. <figure xml:id="fig_trigeg2-5"> <caption>Solving
-                <m>\cos(3x)=\cos(5x)</m></caption> <img src="figures/IntroTrigGraphics/TrigEquIneq12"/> </figure>
+                <m>\cos(3x)=\cos(5x)</m></caption> <image source="figures/IntroTrigGraphics/TrigEquIneq12"></image> </figure>
               </p>
             </li>
 
@@ -719,12 +719,12 @@
 
                 <figure xml:id="fig_trigeg2-6">
                   <caption>Solving <m>\sin(2x)-\sqrt{3}\cos(x)</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq13"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq13"></image>
                 </figure>
 
                 <figure xml:id="fig_trigeg2-7">
                   <caption>Solving <m>\sin(x)\cos(\frac{x}{2})+\cos(x)\sin(\frac{x}{2})=1</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq14"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq14"></image>
                 </figure>
 
               </p>
@@ -770,7 +770,7 @@
                 Geometrically, we see in <xref ref="fig_trigeg2-8">Figure</xref>
                 that <m>y = \cos(x) - \sqrt{3} \sin(x)</m> and <m>y = 2</m> intersect just once,
                 supporting our answer. <figure xml:id="fig_trigeg2-8"> <caption>Solving
-                <m>\cos(x)-\sqrt{3}\sin(x)=2</m></caption> <img src="figures/IntroTrigGraphics/TrigEquIneq15"/> </figure>
+                <m>\cos(x)-\sqrt{3}\sin(x)=2</m></caption> <image source="figures/IntroTrigGraphics/TrigEquIneq15"></image> </figure>
               </p>
             </li>
           </ol>
@@ -859,7 +859,7 @@
                 We can confirm our answer graphically by seeing where the graph of
                 <m>y = 2\sin(x)</m> crosses or is below the graph of <m>y = 1</m>:
                 see <xref ref="fig_trigeg3-1">Figure</xref>. <table xml:id="fig_trigeg3-1"> <caption>Solving
-                <m>2\sin(x)\leq 1</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-1"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq16"/></cell> </row> </tabular> </table>
+                <m>2\sin(x)\leq 1</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq_new-1"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq16"></image></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -893,7 +893,7 @@
                 We can use GeoGebra to check that the graph of
                 <m>y = \sin(2x)</m> is indeed above the graph of <m>y = \cos(x)</m> on those intervals;
                 see <xref ref="fig_trigeg3-2">Figure</xref>. <table xml:id="fig_trigeg3-2"> <caption>Solving
-                <m>\sin(2x)>\cos(x)</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-2"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq17"/></cell> </row> </tabular> </table>
+                <m>\sin(2x)>\cos(x)</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq_new-2"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq17"></image></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -940,7 +940,7 @@
                 when the graph of the former is above
                 (or meets)
                 the graph of the latter. <table xml:id="fig_trigeg3-3"> <caption>Solving
-                <m>\tan(x)\geq 3</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-3"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq18"/></cell> </row> </tabular> </table>
+                <m>\tan(x)\geq 3</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq_new-3"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq18"></image></cell> </row> </tabular> </table>
               </p>
             </li>
           </ol>
@@ -1002,7 +1002,7 @@
                 where we have kept the denominators <m>6</m> throughout to help see the pattern.
                 Graphing the situation on a number line, we have
 
-                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-4"/>
+                <image source="figures/IntroTrigGraphics/TrigEquIneq_new-4"></image>
 
                 Proceeding as we did on <xref ref="extendedinterval">page</xref>
                 in <xref ref="circularfunctionsbeyond">Section</xref>,
@@ -1032,7 +1032,7 @@
                 or  <m>\left\{ x : x \neq \pm \frac{\pi}{3}, \pm \frac{5\pi}{3}, \pm \frac{7\pi}{3}, \pm \frac{11\pi}{3}, \ldots \right\}</m>,
                 so we have
 
-                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-5"/>
+                <image source="figures/IntroTrigGraphics/TrigEquIneq_new-5"></image>
 
                 Unlike the previous example,
                 we have <em>two</em>
@@ -1110,7 +1110,7 @@
                 we get <m>g\left(\frac{\pi}{6}\right) = 1 - \sqrt{3}</m>,
                 and <m>g\left(\frac{\pi}{2}\right) = 1</m>.
 
-                <img src="figures/IntroTrigGraphics/TrigEquIneq_new-6"/>
+                <image source="figures/IntroTrigGraphics/TrigEquIneq_new-6"></image>
 
                 We find <m>g(x) \geq 0</m> on <m>\left[\frac{\pi}{4}, \pi \right)</m>.
                 Adding multiples of the period we get our solution to consist of the intervals  <m>\left[\frac{\pi}{4} + \pi k, \pi + \pi k  \right) = \left[\frac{(4k+1)\pi}{4}, (k+1)\pi \right)</m>.
@@ -1198,7 +1198,7 @@
 
                 <figure xml:id="fig_trigeg4-1">
                   <caption>Solving <m>\arcsin(2x)=\frac{\pi}{3}</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq19"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq19"></image>
                 </figure>
 
               </p>
@@ -1223,7 +1223,7 @@
 
                 <figure xml:id="fig_trigeg4-2">
                   <caption>Solving <m>4\arccos(x)-3\pi=0</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq20"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq20"></image>
                 </figure>
 
               </p>
@@ -1258,7 +1258,7 @@
 
                 <figure xml:id="fig_trigeg4-3">
                   <caption>Solving <m>3\operatorname{arcsec}(2x-1)+\pi=2\pi</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq21"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq21"></image>
                 </figure>
 
               </p>
@@ -1286,7 +1286,7 @@
 
                 <figure xml:id="fig_trigeg4-4">
                   <caption>Solving <m>4\arctan^2(x)-3\pi\arctan(x)-\pi^2=0</m></caption>
-                  <img src="figures/IntroTrigGraphics/TrigEquIneq22"/>
+                  <image source="figures/IntroTrigGraphics/TrigEquIneq22"></image>
                 </figure>
 
               </p>
@@ -1317,7 +1317,7 @@
                 the graph of <m>y = \pi^2-4\arccos^{2}(x)</m> is below <m>y = 0</m>
                 (the <m>x</m>-axis.)
                 <table xml:id="fig_trigeg4-5"> <caption>Solving
-                <m>\pi^2-4\arccos^2(x)\lt 0</m></caption> <tabular> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-7"/></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/IntroTrigGraphics/TrigEquIneq23"/></cell> </row> </tabular> </table>
+                <m>\pi^2-4\arccos^2(x)\lt 0</m></caption> <tabular> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq_new-7"></image></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/IntroTrigGraphics/TrigEquIneq23"></image></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -1368,13 +1368,13 @@
                   <caption>Solving <m>4\operatorname{arccot}(3x)>\pi</m></caption>
                   <tabular>
                     <row>
-                      <cell><img src="figures/IntroTrigGraphics/TrigEquIneq_new-8"/></cell>
+                      <cell><image source="figures/IntroTrigGraphics/TrigEquIneq_new-8"></image></cell>
                     </row>
                     <row>
                       <cell></cell>
                     </row>
                     <row>
-                      <cell><img src="figures/IntroTrigGraphics/TrigEquIneq24"/></cell>
+                      <cell><image source="figures/IntroTrigGraphics/TrigEquIneq24"></image></cell>
                     </row>
                   </tabular>
                 </table>

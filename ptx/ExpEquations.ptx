@@ -150,7 +150,7 @@
                 To check graphically, we set <m>f(x) = 2^{3x}</m> and
                 <m>g(x) = 16^{1-x}</m> and see that they intersect at <m>x=\frac{4}{7} \approx 0.5714</m>:
                 see <xref ref="fig_expeqn1">Figure</xref>. <figure xml:id="fig_expeqn1"> <caption>\color{red} <m>y=f(x)=2^{3x}</m> and {\color{blue}
-                <m>y=g(x)=16^{1-x}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs05"/> </figure>
+                <m>y=g(x)=16^{1-x}</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs05"></image> </figure>
               </p>
             </li>
 
@@ -165,7 +165,7 @@
                 Using GeoGebra, we graph <m>f(x) = 2000</m> and
                 <m>g(x) = 1000 \cdot 3^{-0.1 x}</m> and find that they intersect at <m>x = -\frac{10\ln(2)}{\ln(3)} \approx -6.3093</m>:
                 see <xref ref="fig_expeqn2">Figure</xref>. <figure xml:id="fig_expeqn2"> <caption>\color{red} <m>y=f(x)=2000</m> and {\color{blue}
-                <m>y=g(x)=1000\cdot e^{-0.1x}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs06"/> </figure>
+                <m>y=g(x)=1000\cdot e^{-0.1x}</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs06"></image> </figure>
               </p>
             </li>
 
@@ -201,7 +201,7 @@
                 <figure xml:id="fig_expeqn3">
                   <caption>\color{red} <m>y=f(x)=9\cdot 3^x</m> and
                   {\color{blue} <m>y=g(x)=7^{2x}</m>}</caption>
-                  <img src="figures/ExpLogsGraphics/ExpLogs07"/>
+                  <image source="figures/ExpLogsGraphics/ExpLogs07"></image>
                 </figure>
 
               </p>
@@ -227,7 +227,7 @@
                 <m>t = \ln(3)</m>. (Can you explain why?) GeoGebra confirms the graphs of <m>f(x) = 75</m> and
                 <m>g(x) = \frac{100}{1 + 3e^{-2x}}</m> intersect at <m>x = \ln(3) \approx 1.099</m>:
                 see <xref ref="fig_expeqn4">Figure</xref>. <figure xml:id="fig_expeqn4"> <caption>\color{red} <m>y=f(x)=75</m> and {\color{blue}
-                <m>y=g(x)=\frac{100}{1+3e^{-2x}}</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs08"/> </figure>
+                <m>y=g(x)=\frac{100}{1+3e^{-2x}}</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs08"></image> </figure>
               </p>
             </li>
 
@@ -255,7 +255,7 @@
                 Using GeoGebra, we see the graphs of <m>f(x) = 25^{x}</m> and
                 <m>g(x) = 5^{x} + 6</m> intersect at <m>x=\frac{\ln(3)}{\ln(5)} \approx 0.6826</m>:
                 see <xref ref="fig_expeqn5">Figure</xref>. <figure xml:id="fig_expeqn5"> <caption>\color{red} <m>y=f(x)=25^x</m> and {\color{blue}
-                <m>y=g(x)=5^x+6</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs09"/> </figure>
+                <m>y=g(x)=5^x+6</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs09"></image> </figure>
               </p>
             </li>
 
@@ -284,7 +284,7 @@
                 we see in <xref ref="fig_expeqn6">Figure</xref>
                 that the graphs intersect at
                 <m>x = \ln\left(5 + \sqrt{26}\right) \approx 2.312</m>. <figure xml:id="fig_expeqn6"> <caption>\color{red} <m>y=f(x)=\dfrac{e^x-e^{-x}}{2}</m> and {\color{blue}
-                <m>y=g(x)=5</m>}</caption> <img src="figures/ExpLogsGraphics/ExpLogs10"/> </figure>
+                <m>y=g(x)=5</m>}</caption> <image source="figures/ExpLogsGraphics/ExpLogs10"></image> </figure>
               </p>
             </li>
           </ol>
@@ -374,8 +374,8 @@
                 which corresponds to where the graph of <m>y=r(x) = 2^{x^2-3x} - 16</m>,
                 is on or above the <m>x</m>-axis:
                 see <xref ref="fig_expineq1">Figure</xref>. <table xml:id="fig_expineq1"> <caption>Solving
-                <m>2^{x^2-3x}-16\geq 0</m></caption> <tabular> <row> <cell><img src="figures/ExpLogsGraphics/ExpEquations-1"/></cell> </row> <row> <cell>Sign diagram for
-                <m>r(x)=2^{x^2-3x}-16</m></cell> </row> <row> <cell></cell> </row> <row> <cell><img src="figures/ExpLogsGraphics/ExpLogs11"/></cell> </row> <row> <cell><m>y=r(x)=2^{x^2-3x}-16</m></cell> </row> </tabular> </table>
+                <m>2^{x^2-3x}-16\geq 0</m></caption> <tabular> <row> <cell><image source="figures/ExpLogsGraphics/ExpEquations-1"></image></cell> </row> <row> <cell>Sign diagram for
+                <m>r(x)=2^{x^2-3x}-16</m></cell> </row> <row> <cell></cell> </row> <row> <cell><image source="figures/ExpLogsGraphics/ExpLogs11"></image></cell> </row> <row> <cell><m>y=r(x)=2^{x^2-3x}-16</m></cell> </row> </tabular> </table>
               </p>
             </li>
 
@@ -425,7 +425,7 @@
                 <sidebyside>
                   <figure>
                     <caption>Sign diagram for <m>r(x)=\dfrac{12-2e^x}{e^x-4}</m></caption>
-                    <img src="figures/ExpLogsGraphics/ExpEquations-2"/>
+                    <image source="figures/ExpLogsGraphics/ExpEquations-2"></image>
                   </figure>
 
                   <figure>
@@ -475,7 +475,7 @@
                 <sidebyside>
                   <figure>
                     <caption>Sign diagram for <m>r(x)=xe^{2x}-4x</m></caption>
-                    <img src="figures/ExpLogsGraphics/ExpEquations-3"/>
+                    <image source="figures/ExpLogsGraphics/ExpEquations-3"></image>
                   </figure>
 
                   <figure>
@@ -530,7 +530,7 @@
           <caption>Solving <m>T(t)=100</m> in <xref ref="ex_newtoncool2">Example</xref></caption>
           <tabular>
             <row>
-              <cell><img src="figures/ExpLogsGraphics/ExpEquations-4"/></cell>
+              <cell><image source="figures/ExpLogsGraphics/ExpEquations-4"></image></cell>
             </row>
             <row>
               <cell>Sign diagram for <m>r(t)=90e^{-0.1t}-30</m></cell>
@@ -539,7 +539,7 @@
               <cell></cell>
             </row>
             <row>
-              <cell><img src="figures/ExpLogsGraphics/ExpEquations-5"/></cell>
+              <cell><image source="figures/ExpLogsGraphics/ExpEquations-5"></image></cell>
             </row>
             <row>
               <cell><m>y=T(t)</m> and <m>y=100</m></cell>
@@ -603,7 +603,7 @@
         <figure xml:id="fig_expinverse">
           <caption>\color{red} <m>y=f(x)=\frac{5e^x}{e^x+1}</m>
           {\color{blue} <m>y=g(x)=\ln\left(\frac{x}{5-x}\right)</m>}</caption>
-          <img src="figures/ExpLogsGraphics/ExpLogs14"/>
+          <image source="figures/ExpLogsGraphics/ExpLogs14"></image>
         </figure>
       </solution>
     </example>

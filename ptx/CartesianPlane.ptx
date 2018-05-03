@@ -19,7 +19,7 @@
       </p>
     </aside>
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-21"/>
+      <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-21"></image>
     </p>
 
     <p>
@@ -85,8 +85,8 @@
     <sidebyside>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-22"/></cell>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-23"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/CartesianPlane-22"></image></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/CartesianPlane-23"></image></cell>
         </row>
       </tabular>
     </sidebyside>
@@ -161,7 +161,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-24"/>
+          <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-24"></image>
         </p>
       </solution>
     </example>
@@ -176,7 +176,7 @@
 
     <figure xml:id="quadrant">
       <caption>The four quadrants of the Cartesian plane</caption>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-25"/>
+      <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-25"></image>
     </figure>
 
     <p>
@@ -244,7 +244,7 @@
 
     <figure xml:id="fig_plansymm">
       <caption>The three types of symmetry in the plane</caption>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-26"/>
+      <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-26"></image>
     </figure>
 
     <example xml:id="ex_planesymm">
@@ -311,7 +311,7 @@
 
         <figure xml:id="fig_pointsymm">
           <caption>The point <m>P(-2,3)</m> and its three reflections</caption>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-27"/>
+          <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-27"></image>
         </figure>
       </solution>
     </example>
@@ -381,13 +381,13 @@
       <caption>Distance between <m>P</m> and <m>Q</m></caption>
       <tabular>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-28"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/CartesianPlane-28"></image></cell>
         </row>
         <row>
           <cell></cell>
         </row>
         <row>
-          <cell><img src="figures/RelationsandFunctionsGraphics/CartesianPlane-29"/></cell>
+          <cell><image source="figures/RelationsandFunctionsGraphics/CartesianPlane-29"></image></cell>
         </row>
       </tabular>
     </table>
@@ -492,7 +492,7 @@
 
     <figure xml:id="fig_pointdist">
       <caption>Diagram for <xref ref="ex_pointwithdist">Example</xref></caption>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-30"/>
+      <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-30"></image>
     </figure>
 
     <p>
@@ -506,7 +506,7 @@
 
     <figure xml:id="fig_midptseg">
       <caption>The midpoint of a line segment</caption>
-      <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-31"/>
+      <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-31"></image>
     </figure>
 
     <p>
@@ -597,7 +597,7 @@
           Plot and label the points <m>\;A(-3, -7)</m>,
           <m>\;B(1.3, -2)</m>, <m>\;C(\pi, \sqrt{10})</m>,
           <m>\;D(0, 8)</m>, <m>\;E(-5.5, 0)</m>, <m>\;F(-8, 4)</m>,
-          <m>\;G(9.2, -7.8)</m> and <m>H(7, 5)</m> in the Cartesian Coordinate Plane given below. <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-35"/>
+          <m>\;G(9.2, -7.8)</m> and <m>H(7, 5)</m> in the Cartesian Coordinate Plane given below. <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-35"></image>
         </p>
       </statement>
       <answer>
@@ -609,7 +609,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/CartesianPlane-46"/>
+          <image source="figures/RelationsandFunctionsGraphics/CartesianPlane-46"></image>
         </p>
       </answer>
     </exercise>

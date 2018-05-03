@@ -168,7 +168,7 @@
           <cell></cell>
         </row>
       </tabular>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-1"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-1"></image>
     </table>
 
     <p>
@@ -283,7 +283,7 @@
           <cell></cell>
         </row>
       </tabular>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-2"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-2"></image>
     </table>
 
     <p>
@@ -428,7 +428,7 @@
 
           <li>
             <p>
-              <m>p(x) = \begin{cases}x+3 \amp \text{ if } x \lt 0 \\ -x+3, \amp \text{ if } x \geq 0 \end{cases} </m>. \setcounter{HW}{\value{enumi}}
+              <m>p(x) = \begin{cases}x+3 \amp \text{ if } x \lt 0 \\ -x+3, \amp \text{ if } x \geq 0 \end{cases} </m>.
             </p>
           </li>
         </ol>
@@ -451,7 +451,7 @@
 
                 <figure xml:id="fig_evenodd1">
                   <caption>The graph of <m>f(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/GoF-1"/>
+                  <image source="figures/RelationsandFunctionsGraphics/GoF-1"></image>
                 </figure>
 
                 This suggests that the graph of <m>f</m> is symmetric about the <m>y</m>-axis,
@@ -491,7 +491,7 @@
 
                 <figure xml:id="fig_evenodd2">
                   <caption>The graph of <m>g(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_02"/>
+                  <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_02"></image>
                 </figure>
 
               </p>
@@ -512,7 +512,7 @@
 
                 <figure xml:id="fig_evenodd3">
                   <caption>The graph of <m>h(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_03"/>
+                  <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_03"></image>
                 </figure>
 
                 In <xref ref="fig_evenodd3">Figure</xref>,
@@ -556,7 +556,7 @@
 
                 <figure xml:id="fig_evenodd4">
                   <caption>The graph of <m>i(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_04"/>
+                  <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_04"></image>
                 </figure>
 
               </p>
@@ -587,7 +587,7 @@
 
                 <figure xml:id="fig_evenodd5">
                   <caption>The graph of <m>j(x)</m> in <xref ref="ex_evenodd">Example</xref></caption>
-                  <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_05"/>
+                  <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_05"></image>
                 </figure>
 
                 Notice in <xref ref="fig_evenodd5">Figure</xref>
@@ -620,7 +620,7 @@
                 Hence, in all cases,
           <m>p(-x) = p(x)</m>, so <m>p</m> is even.
                 Since <m>p(0) = 3</m> but <m>p(-0) = p(0) = 3 \neq -3</m>,
-                we also have <m>p</m> is not odd. <figure xml:id="fig_evenodd6"> <caption>The graph of <m>p(x)</m> in <xref ref="ex_evenodd">Example</xref></caption> <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_06"/> </figure> In <xref ref="fig_evenodd6">Figure</xref>,
+                we also have <m>p</m> is not odd. <figure xml:id="fig_evenodd6"> <caption>The graph of <m>p(x)</m> in <xref ref="ex_evenodd">Example</xref></caption> <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_06"></image> </figure> In <xref ref="fig_evenodd6">Figure</xref>,
                 we see that the graph appears to be symmetric about the <m>y</m>-axis.
               </p>
             </li>
@@ -707,7 +707,7 @@
     </aside>
     <figure xml:id="fig_genbehav">
       <caption>The graph <m>y=f(x)</m></caption>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-3"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-3"></image>
     </figure>
 
     <p>
@@ -905,7 +905,7 @@
 
         <figure xml:id="fig_tamegraph">
           <caption>The graph for <xref ref="tame">Example</xref></caption>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-4"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-4"></image>
         </figure>
 
         <ol>
@@ -1088,7 +1088,7 @@
                 we see that the curve has two points with a <m>y</m> value of <m>1</m>,
                 as seen in the graph below.
                 That means there are two solutions to <m>f(x) = 1</m>:
-                see <xref ref="fig_tamey1">Figure</xref>. <figure xml:id="fig_tamey1"> <caption>Solving <m>f(x)=1</m> in <xref ref="tame">Example</xref>.9</caption> <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-5"/> </figure>
+                see <xref ref="fig_tamey1">Figure</xref>. <figure xml:id="fig_tamey1"> <caption>Solving <m>f(x)=1</m> in <xref ref="tame">Example</xref>.9</caption> <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-5"></image> </figure>
               </p>
             </li>
 
@@ -1169,7 +1169,7 @@
 
     <figure xml:id="fig_maxmincomp1">
       <caption>The local maximum and minimum of <m>f(x) = \dfrac{15x}{x^2+3}</m> in <xref ref="ex_maxmincomp">Example</xref></caption>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_07"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_07"></image>
     </figure>
 
     <example xml:id="ex_maxmincomp">
@@ -1241,7 +1241,7 @@
 
         <figure xml:id="fig_distfunctex">
           <caption>Minimizing <m>d(x)</m> in <xref ref="distancefunctionex">Example</xref></caption>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions_08"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions_08"></image>
         </figure>
 
         <p>
@@ -1305,7 +1305,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-17"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-17"></image>
         </p>
       </answer>
     </exercise>
@@ -1337,7 +1337,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-18"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-18"></image>
         </p>
       </answer>
     </exercise>
@@ -1369,7 +1369,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-19"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-19"></image>
         </p>
       </answer>
     </exercise>
@@ -1401,7 +1401,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-20"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-20"></image>
         </p>
       </answer>
     </exercise>
@@ -1433,7 +1433,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-21"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-21"></image>
         </p>
       </answer>
     </exercise>
@@ -1465,7 +1465,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-22"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-22"></image>
         </p>
       </answer>
     </exercise>
@@ -1498,7 +1498,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-23"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-23"></image>
         </p>
       </answer>
     </exercise>
@@ -1530,7 +1530,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-24"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-24"></image>
         </p>
       </answer>
     </exercise>
@@ -1562,7 +1562,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-25"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-25"></image>
         </p>
       </answer>
     </exercise>
@@ -1594,7 +1594,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-26"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-26"></image>
         </p>
       </answer>
     </exercise>
@@ -1626,7 +1626,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-27"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-27"></image>
         </p>
       </answer>
     </exercise>
@@ -1658,7 +1658,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-28"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-28"></image>
         </p>
       </answer>
     </exercise>
@@ -1674,7 +1674,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-29"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-29"></image>
         </p>
       </answer>
     </exercise>
@@ -1686,7 +1686,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-30"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-30"></image>
         </p>
       </answer>
     </exercise>
@@ -1698,7 +1698,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-31"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-31"></image>
         </p>
       </answer>
     </exercise>
@@ -1710,7 +1710,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-32"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-32"></image>
         </p>
       </answer>
     </exercise>
@@ -1722,7 +1722,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-33"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-33"></image>
         </p>
       </answer>
     </exercise>
@@ -1734,7 +1734,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-34"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-34"></image>
         </p>
       </answer>
     </exercise>
@@ -1746,7 +1746,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-35"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-35"></image>
         </p>
       </answer>
     </exercise>
@@ -1758,7 +1758,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-36"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-36"></image>
         </p>
       </answer>
     </exercise>
@@ -2025,7 +2025,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-6"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-6"></image>
     </p>
     <exercise>
       <statement>
@@ -2225,7 +2225,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-7"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-7"></image>
     </p>
     <exercise>
       <statement>
@@ -2564,8 +2564,8 @@
     </p>
     <tabular>
       <row>
-        <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-8"/></cell>
-        <cell><img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-9"/></cell>
+        <cell><image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-8"></image></cell>
+        <cell><image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-9"></image></cell>
       </row>
       <row>
         <cell><m>y=f(x)</m></cell>
@@ -2676,7 +2676,7 @@
     </p>
 
     <p>
-      <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-10"/>
+      <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-10"></image>
     </p>
     <exercise>
       <statement>
@@ -2757,7 +2757,7 @@
       </statement>
       <answer>
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-37"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-37"></image>
         </p>
 
         <p>
@@ -2839,7 +2839,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-11"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-11"></image>
 
           <ol>
             <li>
@@ -2882,7 +2882,7 @@
         </p>
 
         <p>
-          <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-12"/>
+          <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-12"></image>
         </p>
       </statement>
     </exercise>
@@ -2902,25 +2902,25 @@
           <ol>
             <li>
               <p>
-                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-13"/>
+                <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-13"></image>
               </p>
             </li>
 
             <li>
               <p>
-                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-14"/>
+                <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-14"></image>
               </p>
             </li>
 
             <li>
               <p>
-                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-15"/>
+                <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-15"></image>
               </p>
             </li>
 
             <li>
               <p>
-                <img src="figures/RelationsandFunctionsGraphics/GraphsofFunctions-16"/>
+                <image source="figures/RelationsandFunctionsGraphics/GraphsofFunctions-16"></image>
               </p>
             </li>
           </ol>

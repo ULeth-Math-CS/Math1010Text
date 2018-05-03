@@ -223,7 +223,7 @@
               Using this,
               we get <m>\gamma = \arccos\left(\frac{5}{7}\right)</m> radians
               <m>\approx 44.42^{\circ}</m> and <m>\alpha = \arccos\left(\frac{29}{35}\right)</m> radians
-              <m>\approx 34.05^{\circ}</m>. <!-- <caption>Triangle for Example \ref{locex}.\ref{locsss}</caption> --> <sidebyside> <img src="figures/AppExtGraphics/LawofCosines-3"/> </sidebyside>
+              <m>\approx 34.05^{\circ}</m>. <!-- <caption>Triangle for Example \ref{locex}.\ref{locsss}</caption> --> <sidebyside> <image source="figures/AppExtGraphics/LawofCosines-3"></image> </sidebyside>
             </p>
             </li>
           </ol>
@@ -258,7 +258,7 @@
 
         <figure xml:id="fig_cosines4">
           <caption>The pond in <xref ref="locapplication">Example</xref></caption>
-          <img src="figures/AppExtGraphics/LawofCosines-4"/>
+          <image source="figures/AppExtGraphics/LawofCosines-4"></image>
         </figure>
       </statement>
       <solution>
@@ -742,7 +742,7 @@
         </p>
 
         <p>
-          <img src="figures/AppExtGraphics/LawofCosines-5"/>
+          <image source="figures/AppExtGraphics/LawofCosines-5"></image>
         </p>
       </statement>
       <answer>
